@@ -1,0 +1,17 @@
+<inh f='WebKit/Source/JavaScriptCore/heap/MutatorScheduler.h' l='34' c='JSC::MutatorScheduler'/>
+<def f='WebKit/Source/JavaScriptCore/heap/SynchronousStopTheWorldMutatorScheduler.h' l='38' ll='54'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='325' c='_ZN3JSC4HeapC1ERNS_2VMENS_8HeapTypeE'/>
+<size>16</size>
+<doc f='WebKit/Source/JavaScriptCore/heap/SynchronousStopTheWorldMutatorScheduler.h' l='32'>// The JSC concurrent GC relies on stopping the world to stay ahead of the retreating wavefront.
+// It so happens that the same API can be reused to implement a non-concurrent GC mode, which we
+// use on platforms that don&apos;t support the GC&apos;s atomicity protocols. That means anything other
+// than X86-64 and ARM64. This scheduler is a drop-in replacement for the concurrent GC&apos;s
+// SpaceTimeMutatorScheduler. It tells the GC to never resume the world once the GC cycle begins.</doc>
+<fun r='_ZN3JSC39SynchronousStopTheWorldMutatorSchedulerC1Ev'/>
+<fun r='_ZN3JSC39SynchronousStopTheWorldMutatorSchedulerD1Ev'/>
+<fun r='_ZNK3JSC39SynchronousStopTheWorldMutatorScheduler5stateEv'/>
+<fun r='_ZN3JSC39SynchronousStopTheWorldMutatorScheduler15beginCollectionEv'/>
+<fun r='_ZN3JSC39SynchronousStopTheWorldMutatorScheduler10timeToStopEv'/>
+<fun r='_ZN3JSC39SynchronousStopTheWorldMutatorScheduler12timeToResumeEv'/>
+<fun r='_ZN3JSC39SynchronousStopTheWorldMutatorScheduler13endCollectionEv'/>
+<mbr r='JSC::SynchronousStopTheWorldMutatorScheduler::m_state' o='64' t='JSC::MutatorScheduler::State'/>

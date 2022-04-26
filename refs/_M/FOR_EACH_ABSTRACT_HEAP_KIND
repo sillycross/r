@@ -1,0 +1,11 @@
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractHeap.h' l='47'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractHeap.h' l='94' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractHeap.cpp' l='81' u='c'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractHeap.h' l='38'>// Implements a four-level type hierarchy:
+// - World is the supertype of all of the things.
+// - Stack with a TOP payload is a direct subtype of World
+// - Stack with a non-TOP payload is a direct subtype of Stack with a TOP payload.
+// - Heap is a direct subtype of World.
+// - SideState is a direct subtype of World.
+// - Any other kind with TOP payload is the direct subtype of Heap.
+// - Any other kind with non-TOP payload is the direct subtype of the same kind with a TOP payload.</doc>

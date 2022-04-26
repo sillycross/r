@@ -1,0 +1,19 @@
+<dec f='include/xcb/xcb.h' l='468' type='const struct xcb_setup_t * xcb_get_setup(xcb_connection_t * c)'/>
+<doc f='include/xcb/xcb.h' l='450'>/**
+ * @brief Access the data returned by the server.
+ * @param c The connection.
+ * @return A pointer to an xcb_setup_t structure.
+ *
+ * Accessor for the data returned by the server when the xcb_connection_t
+ * was initialized. This data includes
+ * - the server&apos;s required format for images,
+ * - a list of available visuals,
+ * - a list of available screens,
+ * - the server&apos;s maximum request length (in the absence of the
+ * BIG-REQUESTS extension),
+ * - and other assorted information.
+ *
+ * See the X protocol specification for more details.
+ *
+ * The result must not be freed.
+ */</doc>

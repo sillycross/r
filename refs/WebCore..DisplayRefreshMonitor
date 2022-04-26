@@ -1,0 +1,90 @@
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitorFactory.h' l='40' c='_ZN7WebCore28DisplayRefreshMonitorFactory27createDisplayRefreshMonitorEj'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/DrawingArea.h' l='178' c='_ZN6WebKit11DrawingArea27createDisplayRefreshMonitorEj'/>
+<inh f='WebKit/WTF/Headers/wtf/ThreadSafeRefCounted.h' l='109' c='WTF::ThreadSafeRefCounted'/>
+<def f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitor.h' l='42' ll='110'/>
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitor.h' l='42'/>
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitor.h' l='45' c='_ZN7WebCore21DisplayRefreshMonitor6createEPNS_28DisplayRefreshMonitorFactoryEj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitor.h' l='67' c='_ZN7WebCore21DisplayRefreshMonitor34createDefaultDisplayRefreshMonitorEj'/>
+<size>56</size>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor6createEPNS_28DisplayRefreshMonitorFactoryEj'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitorD1Ev'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor4stopEv'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor22requestRefreshCallbackEv'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor21windowScreenDidChangeEj'/>
+<fun r='_ZNK7WebCore21DisplayRefreshMonitor10hasClientsEv'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor9addClientERNS_27DisplayRefreshMonitorClientE'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor12removeClientERNS_27DisplayRefreshMonitorClientE'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor37clientPreferredFramesPerSecondChangedERNS_27DisplayRefreshMonitorClientE'/>
+<fun r='_ZNK7WebCore21DisplayRefreshMonitor33maxClientPreferredFramesPerSecondEv'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor29displayNominalFramesPerSecondEv'/>
+<fun r='_ZNK7WebCore21DisplayRefreshMonitor9displayIDEv'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor34createDefaultDisplayRefreshMonitorEj'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor16displayLinkFiredERKNS_13DisplayUpdateE'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitorC1Ej'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor25dispatchDisplayDidRefreshERKNS_13DisplayUpdateE'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor4lockEv'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor26setMaxUnscheduledFireCountEj'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor26startNotificationMechanismEv'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor25stopNotificationMechanismEv'/>
+<fun r='_ZNK7WebCore21DisplayRefreshMonitor11isScheduledEv'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor14setIsScheduledEb'/>
+<fun r='_ZNK7WebCore21DisplayRefreshMonitor19isPreviousFrameDoneEv'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor22setIsPreviousFrameDoneEb'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor17displayDidRefreshERKNS_13DisplayUpdateE'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor38firedAndReachedMaxUnscheduledFireCountEv'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor30adjustPreferredFramesPerSecondEj'/>
+<fun r='_ZNK7WebCore21DisplayRefreshMonitor37maximumClientPreferredFramesPerSecondEv'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor34computeMaxPreferredFramesPerSecondEv'/>
+<mbr r='WebCore::DisplayRefreshMonitor::m_clients' o='128' t='HashSet&lt;WebCore::DisplayRefreshMonitorClient *&gt;'/>
+<mbr r='WebCore::DisplayRefreshMonitor::m_clientsToBeNotified' o='192' t='HashSet&lt;WebCore::DisplayRefreshMonitorClient *&gt; *'/>
+<mbr r='WebCore::DisplayRefreshMonitor::m_displayID' o='256' t='WebCore::PlatformDisplayID'/>
+<mbr r='WebCore::DisplayRefreshMonitor::m_maxClientPreferredFramesPerSecond' o='288' t='std::optional&lt;FramesPerSecond&gt;'/>
+<mbr r='WebCore::DisplayRefreshMonitor::m_lock' o='352' t='WTF::Lock'/>
+<mbr r='WebCore::DisplayRefreshMonitor::m_scheduled' o='360' t='bool'/>
+<mbr r='WebCore::DisplayRefreshMonitor::m_previousFrameDone' o='368' t='bool'/>
+<mbr r='WebCore::DisplayRefreshMonitor::m_unscheduledFireCount' o='384' t='unsigned int'/>
+<mbr r='WebCore::DisplayRefreshMonitor::m_maxUnscheduledFireCount' o='416' t='unsigned int'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/CoordinatedGraphics/DrawingAreaCoordinatedGraphics.h' l='78' c='_ZN6WebKit30DrawingAreaCoordinatedGraphics27createDisplayRefreshMonitorEj'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/DrawingArea.cpp' l='93' c='_ZN6WebKit11DrawingArea27createDisplayRefreshMonitorEj'/>
+<size>56</size>
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitorManager.h' l='41'/>
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitorManager.h' l='60' c='_ZN7WebCore28DisplayRefreshMonitorManager17displayDidRefreshERNS_21DisplayRefreshMonitorE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitorManager.h' l='63' c='_ZNK7WebCore28DisplayRefreshMonitorManager19monitorForDisplayIDEj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitorManager.h' l='64' c='_ZN7WebCore28DisplayRefreshMonitorManager16monitorForClientERNS_27DisplayRefreshMonitorClientE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitorManager.h' l='66' c='_ZN7WebCore28DisplayRefreshMonitorManager25ensureMonitorForDisplayIDEjPNS_28DisplayRefreshMonitorFactoryE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitorManager.h' l='76'/>
+<ovr f='WebKit/Source/WebCore/platform/graphics/gtk/DisplayRefreshMonitorGtk.h' l='36' c='WebCore::DisplayRefreshMonitorGtk'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gtk/DisplayRefreshMonitorGtk.h' l='36'/>
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitor.cpp' l='49' c='_ZN7WebCore21DisplayRefreshMonitor34createDefaultDisplayRefreshMonitorEj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitor.cpp' l='67' c='_ZN7WebCore21DisplayRefreshMonitor6createEPNS_28DisplayRefreshMonitorFactoryEj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitor.cpp' l='202' c='_ZN7WebCore21DisplayRefreshMonitor17displayDidRefreshERKNS_13DisplayUpdateE'/>
+<size>56</size>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor34createDefaultDisplayRefreshMonitorEj'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor6createEPNS_28DisplayRefreshMonitorFactoryEj'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitorC1Ej'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitorD1Ev'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor4stopEv'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor9addClientERNS_27DisplayRefreshMonitorClientE'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor12removeClientERNS_27DisplayRefreshMonitorClientE'/>
+<fun r='_ZNK7WebCore21DisplayRefreshMonitor37maximumClientPreferredFramesPerSecondEv'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor34computeMaxPreferredFramesPerSecondEv'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor37clientPreferredFramesPerSecondChangedERNS_27DisplayRefreshMonitorClientE'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor22requestRefreshCallbackEv'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor38firedAndReachedMaxUnscheduledFireCountEv'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor16displayLinkFiredERKNS_13DisplayUpdateE'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor25dispatchDisplayDidRefreshERKNS_13DisplayUpdateE'/>
+<fun r='_ZN7WebCore21DisplayRefreshMonitor17displayDidRefreshERKNS_13DisplayUpdateE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitorManager.cpp' l='44' c='_ZN7WebCore28DisplayRefreshMonitorManager25ensureMonitorForDisplayIDEjPNS_28DisplayRefreshMonitorFactoryE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitorManager.cpp' l='54' c='_ZN7WebCore28DisplayRefreshMonitorManager25ensureMonitorForDisplayIDEjPNS_28DisplayRefreshMonitorFactoryE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitorManager.cpp' l='69' c='_ZN7WebCore28DisplayRefreshMonitorManager16unregisterClientERNS_27DisplayRefreshMonitorClientE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitorManager.cpp' l='88' c='_ZN7WebCore28DisplayRefreshMonitorManager17displayDidRefreshERNS_21DisplayRefreshMonitorE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitorManager.cpp' l='127' c='_ZN7WebCore28DisplayRefreshMonitorManager16monitorForClientERNS_27DisplayRefreshMonitorClientE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/DisplayRefreshMonitorManager.cpp' l='139' c='_ZNK7WebCore28DisplayRefreshMonitorManager19monitorForDisplayIDEj'/>
+<size>56</size>
+<use f='WebKit/Source/WebCore/platform/graphics/gtk/DisplayRefreshMonitorGtk.cpp' l='39' c='_ZN7WebCore24DisplayRefreshMonitorGtkC1Ej'/>
+<size>56</size>
+<ovr f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='142' c='WebCore::EmptyDisplayRefreshMonitor'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='142'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='158' c='_ZN7WebCore26EmptyDisplayRefreshMonitorC1Ej'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='172' c='_ZN7WebCore33EmptyDisplayRefreshMonitorFactory27createDisplayRefreshMonitorEj'/>
+<size>56</size>

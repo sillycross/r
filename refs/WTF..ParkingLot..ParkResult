@@ -1,0 +1,63 @@
+<def f='WebKit/WTF/Headers/wtf/ParkingLot.h' l='71' ll='74'/>
+<use f='WebKit/WTF/Headers/wtf/ParkingLot.h' l='76' c='_ZN3WTF10ParkingLot17parkConditionallyEPKvRKT_RKT0_RKNS_24TimeWithDynamicClockTypeE'/>
+<use f='WebKit/WTF/Headers/wtf/ParkingLot.h' l='92' c='_ZN3WTF10ParkingLot14compareAndParkEPKNS_6AtomicIT_EET0_'/>
+<use f='WebKit/WTF/Headers/wtf/ParkingLot.h' l='166' c='_ZN3WTF10ParkingLot21parkConditionallyImplEPKvRKNS_12ScopedLambdaIFbvEEERKNS3_IFvvEEERKNS_24TimeWithDynamicClockTypeE'/>
+<size>16</size>
+<doc f='WebKit/WTF/Headers/wtf/ParkingLot.h' l='53'>// Parks the thread in a queue associated with the given address, which cannot be null. The
+    // parking only succeeds if the validation function returns true while the queue lock is held.
+    //
+    // If validation returns false, it will unlock the internal parking queue and then it will
+    // return a null ParkResult (wasUnparked = false, token = 0) without doing anything else.
+    //
+    // If validation returns true, it will enqueue the thread, unlock the parking queue lock, call
+    // the beforeSleep function, and then it will sleep so long as the thread continues to be on the
+    // queue and the timeout hasn&apos;t fired. Finally, this returns wasUnparked = true if we actually
+    // got unparked or wasUnparked = false if the timeout was hit. When wasUnparked = true, the
+    // token will contain whatever token was returned from the callback to unparkOne(), or 0 if the
+    // thread was unparked using unparkAll() or the form of unparkOne() that doesn&apos;t take a
+    // callback.
+    //
+    // Note that beforeSleep is called with no locks held, so it&apos;s OK to do pretty much anything so
+    // long as you don&apos;t recursively call parkConditionally(). You can call unparkOne()/unparkAll()
+    // though. It&apos;s useful to use beforeSleep() to unlock some mutex in the implementation of
+    // Condition::wait().</doc>
+<mbr r='WTF::ParkingLot::ParkResult::wasUnparked' o='0' t='bool'/>
+<mbr r='WTF::ParkingLot::ParkResult::token' o='64' t='intptr_t'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOperations.cpp' l='834' c='_ZN3JSC4WasmL4waitERNS_2VMEPT_S3_l'/>
+<size>16</size>
+<use f='WebKit/WTF/Headers/wtf/LockAlgorithmInlines.h' l='83' c='_ZN3WTF13LockAlgorithm8lockSlowERNS_6AtomicIT_EE'/>
+<size>16</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/AtomicsObject.cpp' l='451' c='_ZN3JSC15atomicsWaitImplEPNS_14JSGlobalObjectEPT0_jT_NS_7JSValueE'/>
+<size>16</size>
+<def f='WebKit/Source/WTF/wtf/ParkingLot.h' l='71' ll='74'/>
+<use f='WebKit/Source/WTF/wtf/ParkingLot.h' l='76' c='_ZN3WTF10ParkingLot17parkConditionallyEPKvRKT_RKT0_RKNS_24TimeWithDynamicClockTypeE'/>
+<use f='WebKit/Source/WTF/wtf/ParkingLot.h' l='92' c='_ZN3WTF10ParkingLot14compareAndParkEPKNS_6AtomicIT_EET0_'/>
+<use f='WebKit/Source/WTF/wtf/ParkingLot.h' l='166' c='_ZN3WTF10ParkingLot21parkConditionallyImplEPKvRKNS_12ScopedLambdaIFbvEEERKNS3_IFvvEEERKNS_24TimeWithDynamicClockTypeE'/>
+<size>16</size>
+<doc f='WebKit/Source/WTF/wtf/ParkingLot.h' l='53'>// Parks the thread in a queue associated with the given address, which cannot be null. The
+    // parking only succeeds if the validation function returns true while the queue lock is held.
+    //
+    // If validation returns false, it will unlock the internal parking queue and then it will
+    // return a null ParkResult (wasUnparked = false, token = 0) without doing anything else.
+    //
+    // If validation returns true, it will enqueue the thread, unlock the parking queue lock, call
+    // the beforeSleep function, and then it will sleep so long as the thread continues to be on the
+    // queue and the timeout hasn&apos;t fired. Finally, this returns wasUnparked = true if we actually
+    // got unparked or wasUnparked = false if the timeout was hit. When wasUnparked = true, the
+    // token will contain whatever token was returned from the callback to unparkOne(), or 0 if the
+    // thread was unparked using unparkAll() or the form of unparkOne() that doesn&apos;t take a
+    // callback.
+    //
+    // Note that beforeSleep is called with no locks held, so it&apos;s OK to do pretty much anything so
+    // long as you don&apos;t recursively call parkConditionally(). You can call unparkOne()/unparkAll()
+    // though. It&apos;s useful to use beforeSleep() to unlock some mutex in the implementation of
+    // Condition::wait().</doc>
+<mbr r='WTF::ParkingLot::ParkResult::wasUnparked' o='0' t='bool'/>
+<mbr r='WTF::ParkingLot::ParkResult::token' o='64' t='intptr_t'/>
+<use f='WebKit/Source/WTF/wtf/LockAlgorithmInlines.h' l='83' c='_ZN3WTF13LockAlgorithm8lockSlowERNS_6AtomicIT_EE'/>
+<size>16</size>
+<use f='WebKit/Source/WTF/wtf/ParkingLot.cpp' l='561' c='_ZN3WTF10ParkingLot21parkConditionallyImplEPKvRKNS_12ScopedLambdaIFbvEEERKNS3_IFvvEEERKNS_24TimeWithDynamicClockTypeE'/>
+<use f='WebKit/Source/WTF/wtf/ParkingLot.cpp' l='587' c='_ZN3WTF10ParkingLot21parkConditionallyImplEPKvRKNS_12ScopedLambdaIFbvEEERKNS3_IFvvEEERKNS_24TimeWithDynamicClockTypeE'/>
+<use f='WebKit/Source/WTF/wtf/ParkingLot.cpp' l='611' c='_ZN3WTF10ParkingLot21parkConditionallyImplEPKvRKNS_12ScopedLambdaIFbvEEERKNS3_IFvvEEERKNS_24TimeWithDynamicClockTypeE'/>
+<use f='WebKit/Source/WTF/wtf/ParkingLot.cpp' l='650' c='_ZN3WTF10ParkingLot21parkConditionallyImplEPKvRKNS_12ScopedLambdaIFbvEEERKNS3_IFvvEEERKNS_24TimeWithDynamicClockTypeE'/>
+<size>16</size>

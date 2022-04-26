@@ -1,0 +1,23 @@
+<dec f='include/gstreamer-1.0/gst/gstelement.h' l='517'/>
+<doc f='include/gstreamer-1.0/gst/gstelement.h' l='495'>/**
+ * GST_ELEMENT_INFO_WITH_DETAILS:
+ * @el:     the element that generates the information
+ * @domain: like CORE, LIBRARY, RESOURCE or STREAM (see #gstreamer-GstGError)
+ * @code:   error code defined for that domain (see #gstreamer-GstGError)
+ * @text:   the message to display (format string and args enclosed in
+            parentheses)
+ * @debug:  debugging information for the message (format string and args
+            enclosed in parentheses)
+ * @args:   optional name, type, value triplets, which will be stored
+ *          in the associated GstStructure. NULL terminator required.
+ *          Must be enclosed within parentheses.
+ *
+ * Utility function that elements can use in case they want to inform
+ * the application of something noteworthy that is not an error.
+ * The pipeline will post a info message and the
+ * application will be informed.
+ * Optional name, type, value triplets may be supplied, and will be stored
+ * in the associated GstStructure. NULL terminator required.
+ *
+ * Since: 1.10
+ */</doc>

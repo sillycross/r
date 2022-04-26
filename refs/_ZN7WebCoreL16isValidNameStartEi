@@ -1,0 +1,19 @@
+<def f='WebKit/Source/WebCore/dom/Document.cpp' l='408' ll='432' type='bool WebCore::isValidNameStart(UChar32 c)'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='437' u='c' c='_ZN7WebCoreL15isValidNamePartEi'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='5349' u='c' c='_ZN7WebCoreL19isValidNameNonASCIIEPKhj'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='5366' u='c' c='_ZN7WebCoreL19isValidNameNonASCIIEPKDsj'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='5438' u='c' c='_ZN7WebCore8Document18parseQualifiedNameERKN3WTF6StringE'/>
+<doc f='WebKit/Source/WebCore/dom/Document.cpp' l='393'>// DOM Level 2 says (letters added):
+//
+// a) Name start characters must have one of the categories Ll, Lu, Lo, Lt, Nl.
+// b) Name characters other than Name-start characters must have one of the categories Mc, Me, Mn, Lm, or Nd.
+// c) Characters in the compatibility area (i.e. with character code greater than #xF900 and less than #xFFFE) are not allowed in XML names.
+// d) Characters which have a font or compatibility decomposition (i.e. those with a &quot;compatibility formatting tag&quot; in field 5 of the database -- marked by field 5 beginning with a &quot;&lt;&quot;) are not allowed.
+// e) The following characters are treated as name-start characters rather than name characters, because the property file classifies them as Alphabetic: [#x02BB-#x02C1], #x0559, #x06E5, #x06E6.
+// f) Characters #x20DD-#x20E0 are excluded (in accordance with Unicode, section 5.14).
+// g) Character #x00B7 is classified as an extender, because the property list so identifies it.
+// h) Character #x0387 is added as a name character, because #x00B7 is its canonical equivalent.
+// i) Characters &apos;:&apos; and &apos;_&apos; are allowed as name-start characters.
+// j) Characters &apos;-&apos; and &apos;.&apos; are allowed as name characters.
+//
+// It also contains complete tables. If we decide it&apos;s better, we could include those instead of the following code.</doc>

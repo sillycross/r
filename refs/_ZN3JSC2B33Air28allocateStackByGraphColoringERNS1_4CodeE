@@ -1,0 +1,10 @@
+<dec f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateStackByGraphColoring.h' l='42' type='void JSC::B3::Air::allocateStackByGraphColoring(JSC::B3::Air::Code &amp; )'/>
+<def f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateStackByGraphColoring.cpp' l='373' ll='397' type='void JSC::B3::Air::allocateStackByGraphColoring(JSC::B3::Air::Code &amp; code)'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateStackByGraphColoring.h' l='34'>// This allocates StackSlots to places on the stack. It first allocates the pinned ones in index
+// order and then it allocates the rest using first fit. Takes the opportunity to kill dead
+// assignments to stack slots, since it knows which ones are live. Also coalesces spill slots
+// whenever possible.
+//
+// This is meant to be an optimal stack allocator, focused on generating great code. It&apos;s not
+// particularly fast, though.</doc>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirGenerate.cpp' l='150' u='c' c='_ZN3JSC2B33Air20prepareForGenerationERNS1_4CodeE'/>

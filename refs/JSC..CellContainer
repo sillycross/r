@@ -1,0 +1,98 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapCell.h' l='66' c='_ZNK3JSC8HeapCell13cellContainerEv'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CellContainer.h' l='44' ll='99'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WeakBlock.h' l='58' c='_ZN3JSC9WeakBlock6createERNS_4HeapENS_13CellContainerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WeakBlock.h' l='75' c='_ZN3JSC9WeakBlock19disconnectContainerEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WeakBlock.h' l='85' c='_ZN3JSC9WeakBlockC1ENS_13CellContainerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WeakBlock.h' l='91'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WeakSet.h' l='64' c='_ZN3JSC7WeakSet13findAllocatorENS_13CellContainerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WeakSet.h' l='66' c='_ZN3JSC7WeakSet12addAllocatorENS_13CellContainerE'/>
+<size>8</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CellContainer.h' l='41'>// This is how we abstract over either MarkedBlock&amp; or PreciseAllocation&amp;. Put things in here as you
+// find need for them.</doc>
+<fun r='_ZN3JSC13CellContainerC1Ev'/>
+<fun r='_ZN3JSC13CellContainerC1ERNS_11MarkedBlockE'/>
+<fun r='_ZN3JSC13CellContainerC1ERNS_17PreciseAllocationE'/>
+<fun r='_ZNK3JSC13CellContainer2vmEv'/>
+<fun r='_ZNK3JSC13CellContainer4heapEv'/>
+<fun r='_ZNK3JSC13CellContainercvbEv'/>
+<fun r='_ZNK3JSC13CellContainer13isMarkedBlockEv'/>
+<fun r='_ZNK3JSC13CellContainer19isPreciseAllocationEv'/>
+<fun r='_ZNK3JSC13CellContainer11markedBlockEv'/>
+<fun r='_ZNK3JSC13CellContainer17preciseAllocationEv'/>
+<fun r='_ZN3JSC13CellContainer11aboutToMarkEj'/>
+<fun r='_ZNK3JSC13CellContainer13areMarksStaleEv'/>
+<fun r='_ZNK3JSC13CellContainer8isMarkedEPNS_8HeapCellE'/>
+<fun r='_ZNK3JSC13CellContainer8isMarkedEjPNS_8HeapCellE'/>
+<fun r='_ZNK3JSC13CellContainer16isNewlyAllocatedEPNS_8HeapCellE'/>
+<fun r='_ZN3JSC13CellContainer10noteMarkedEv'/>
+<fun r='_ZNK3JSC13CellContainer15assertValidCellERNS_2VMEPNS_8HeapCellE'/>
+<fun r='_ZNK3JSC13CellContainer8cellSizeEv'/>
+<fun r='_ZNK3JSC13CellContainer7weakSetEv'/>
+<smbr r='JSC::CellContainer::isPreciseAllocationBit' t='const uintptr_t'/>
+<mbr r='JSC::CellContainer::m_encodedPointer' o='0' t='uintptr_t'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapCellInlines.h' l='40' c='_ZNK3JSC8HeapCell13cellContainerEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WeakSetInlines.h' l='35' c='_ZN3JSC7WeakSet8allocateENS_7JSValueEPNS_15WeakHandleOwnerEPv'/>
+<size>8</size>
+<fun r='_ZNK3JSC13CellContainer2vmEv'/>
+<fun r='_ZNK3JSC13CellContainer4heapEv'/>
+<fun r='_ZNK3JSC13CellContainer8isMarkedEPNS_8HeapCellE'/>
+<fun r='_ZNK3JSC13CellContainer8isMarkedEjPNS_8HeapCellE'/>
+<fun r='_ZN3JSC13CellContainer10noteMarkedEv'/>
+<fun r='_ZNK3JSC13CellContainer15assertValidCellERNS_2VMEPNS_8HeapCellE'/>
+<fun r='_ZNK3JSC13CellContainer8cellSizeEv'/>
+<fun r='_ZNK3JSC13CellContainer7weakSetEv'/>
+<fun r='_ZN3JSC13CellContainer11aboutToMarkEj'/>
+<fun r='_ZNK3JSC13CellContainer13areMarksStaleEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/HeapCell.h' l='66' c='_ZNK3JSC8HeapCell13cellContainerEv'/>
+<def f='WebKit/Source/JavaScriptCore/heap/CellContainer.h' l='44' ll='99'/>
+<use f='WebKit/Source/JavaScriptCore/heap/WeakBlock.h' l='58' c='_ZN3JSC9WeakBlock6createERNS_4HeapENS_13CellContainerE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/WeakBlock.h' l='75' c='_ZN3JSC9WeakBlock19disconnectContainerEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/WeakBlock.h' l='85' c='_ZN3JSC9WeakBlockC1ENS_13CellContainerE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/WeakBlock.h' l='91'/>
+<use f='WebKit/Source/JavaScriptCore/heap/WeakSet.h' l='64' c='_ZN3JSC7WeakSet13findAllocatorENS_13CellContainerE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/WeakSet.h' l='66' c='_ZN3JSC7WeakSet12addAllocatorENS_13CellContainerE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/HeapCellInlines.h' l='40' c='_ZNK3JSC8HeapCell13cellContainerEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/WeakSetInlines.h' l='35' c='_ZN3JSC7WeakSet8allocateENS_7JSValueEPNS_15WeakHandleOwnerEPv'/>
+<size>8</size>
+<doc f='WebKit/Source/JavaScriptCore/heap/CellContainer.h' l='41'>// This is how we abstract over either MarkedBlock&amp; or PreciseAllocation&amp;. Put things in here as you
+// find need for them.</doc>
+<fun r='_ZN3JSC13CellContainerC1Ev'/>
+<fun r='_ZN3JSC13CellContainerC1ERNS_11MarkedBlockE'/>
+<fun r='_ZN3JSC13CellContainerC1ERNS_17PreciseAllocationE'/>
+<fun r='_ZNK3JSC13CellContainer2vmEv'/>
+<fun r='_ZNK3JSC13CellContainer4heapEv'/>
+<fun r='_ZNK3JSC13CellContainercvbEv'/>
+<fun r='_ZNK3JSC13CellContainer13isMarkedBlockEv'/>
+<fun r='_ZNK3JSC13CellContainer19isPreciseAllocationEv'/>
+<fun r='_ZNK3JSC13CellContainer11markedBlockEv'/>
+<fun r='_ZNK3JSC13CellContainer17preciseAllocationEv'/>
+<fun r='_ZN3JSC13CellContainer11aboutToMarkEj'/>
+<fun r='_ZNK3JSC13CellContainer13areMarksStaleEv'/>
+<fun r='_ZNK3JSC13CellContainer8isMarkedEPNS_8HeapCellE'/>
+<fun r='_ZNK3JSC13CellContainer8isMarkedEjPNS_8HeapCellE'/>
+<fun r='_ZNK3JSC13CellContainer16isNewlyAllocatedEPNS_8HeapCellE'/>
+<fun r='_ZN3JSC13CellContainer10noteMarkedEv'/>
+<fun r='_ZNK3JSC13CellContainer15assertValidCellERNS_2VMEPNS_8HeapCellE'/>
+<fun r='_ZNK3JSC13CellContainer8cellSizeEv'/>
+<fun r='_ZNK3JSC13CellContainer7weakSetEv'/>
+<smbr r='JSC::CellContainer::isPreciseAllocationBit' t='const uintptr_t'/>
+<mbr r='JSC::CellContainer::m_encodedPointer' o='0' t='uintptr_t'/>
+<fun r='_ZNK3JSC13CellContainer2vmEv'/>
+<fun r='_ZNK3JSC13CellContainer4heapEv'/>
+<fun r='_ZNK3JSC13CellContainer8isMarkedEPNS_8HeapCellE'/>
+<fun r='_ZNK3JSC13CellContainer8isMarkedEjPNS_8HeapCellE'/>
+<fun r='_ZN3JSC13CellContainer10noteMarkedEv'/>
+<fun r='_ZNK3JSC13CellContainer15assertValidCellERNS_2VMEPNS_8HeapCellE'/>
+<fun r='_ZNK3JSC13CellContainer8cellSizeEv'/>
+<fun r='_ZNK3JSC13CellContainer7weakSetEv'/>
+<fun r='_ZN3JSC13CellContainer11aboutToMarkEj'/>
+<fun r='_ZNK3JSC13CellContainer13areMarksStaleEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SlotVisitor.cpp' l='164' c='_ZN3JSC11SlotVisitor23appendJSCellOrAuxiliaryEPNS_8HeapCellE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SlotVisitor.cpp' l='316' c='_ZN3JSC11SlotVisitor21noteLiveAuxiliaryCellEPNS_8HeapCellE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/heap/WeakBlock.cpp' l='39' c='_ZN3JSC9WeakBlock6createERNS_4HeapENS_13CellContainerE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/WeakBlock.cpp' l='53' c='_ZN3JSC9WeakBlockC1ENS_13CellContainerE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/heap/WeakSet.cpp' l='85' c='_ZN3JSC7WeakSet13findAllocatorENS_13CellContainerE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/WeakSet.cpp' l='107' c='_ZN3JSC7WeakSet12addAllocatorENS_13CellContainerE'/>
+<size>8</size>

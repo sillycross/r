@@ -1,0 +1,20 @@
+<use f='include/gstreamer-1.0/gst/gstdevice.h' l='27'/>
+<def f='include/gstreamer-1.0/gst/gstdevice.h' l='77' ll='85'/>
+<size>232</size>
+<doc f='include/gstreamer-1.0/gst/gstdevice.h' l='63'>/**
+ * GstDeviceClass:
+ * @parent_class: The parent #GstObjectClass structure.
+ * @create_element: Creates the fully configured element to access this device.
+ *  Subclasses need to override this and return a new element.
+ * @reconfigure_element: This only needs to be implemented by subclasses if the
+ *  element can be reconfigured to use a different device. See the documentation
+ *  for gst_device_reconfigure_element().
+ *
+ * The class structure for a #GstDevice object.
+ *
+ * Since: 1.4
+ */</doc>
+<mbr r='_GstDeviceClass::parent_class' o='0' t='GstObjectClass'/>
+<mbr r='_GstDeviceClass::create_element' o='1472' t='GstElement *(*)(GstDevice *, const gchar *)'/>
+<mbr r='_GstDeviceClass::reconfigure_element' o='1536' t='gboolean (*)(GstDevice *, GstElement *)'/>
+<mbr r='_GstDeviceClass::_gst_reserved' o='1600' t='gpointer [4]'/>

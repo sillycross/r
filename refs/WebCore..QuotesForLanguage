@@ -1,0 +1,26 @@
+<def f='WebKit/Source/WebCore/rendering/RenderQuote.cpp' l='138' ll='145'/>
+<use f='WebKit/Source/WebCore/rendering/RenderQuote.cpp' l='159' c='_ZN7WebCoreL36quoteTableLanguageComparisonFunctionEPKvS1_'/>
+<use f='WebKit/Source/WebCore/rendering/RenderQuote.cpp' l='160' c='_ZN7WebCoreL36quoteTableLanguageComparisonFunctionEPKvS1_'/>
+<use f='WebKit/Source/WebCore/rendering/RenderQuote.cpp' l='205' c='_ZN7WebCoreL17quotesForLanguageERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderQuote.cpp' l='209' c='_ZN7WebCoreL17quotesForLanguageERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderQuote.cpp' l='398' c='_ZN7WebCoreL17quotesForLanguageERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderQuote.cpp' l='400' c='_ZN7WebCoreL17quotesForLanguageERKN3WTF6StringE'/>
+<size>24</size>
+<doc f='WebKit/Source/WebCore/rendering/RenderQuote.cpp' l='126'>// These strings need to be compared according to &quot;Extended Filtering&quot;, as in Section 3.3.2 in RFC4647.
+// https://tools.ietf.org/html/rfc4647#page-10
+//
+// The &quot;checkFurther&quot; field is needed in one specific situation.
+// In the quoteTable below, there are lines like:
+// { &quot;de&quot;   , 0x201e, 0x201c, 0x201a, 0x2018 },
+// { &quot;de-ch&quot;, 0x00ab, 0x00bb, 0x2039, 0x203a },
+// Let&apos;s say the binary search arbitrarily decided to test our key against the upper line &quot;de&quot; first.
+// If the key we&apos;re testing against is &quot;de-ch&quot;, then we should report &quot;greater than&quot;,
+// so the binary search will keep searching and eventually find the &quot;de-ch&quot; line.
+// However, if the key we&apos;re testing against is &quot;de-de&quot;, then we should report &quot;equal to&quot;,
+// because these are the quotes we should use for all &quot;de&quot; except for &quot;de-ch&quot;.</doc>
+<mbr r='WebCore::QuotesForLanguage::language' o='0' t='const char *'/>
+<mbr r='WebCore::QuotesForLanguage::checkFurther' o='64' t='UChar'/>
+<mbr r='WebCore::QuotesForLanguage::open1' o='80' t='UChar'/>
+<mbr r='WebCore::QuotesForLanguage::close1' o='96' t='UChar'/>
+<mbr r='WebCore::QuotesForLanguage::open2' o='112' t='UChar'/>
+<mbr r='WebCore::QuotesForLanguage::close2' o='128' t='UChar'/>

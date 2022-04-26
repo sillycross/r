@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/WebCore/platform/graphics/opengl/GraphicsContextGLOpenGL.h' l='150' type='bool WebCore::GraphicsContextGLOpenGL::texImage2DResourceSafe(GCGLenum target, GCGLint level, GCGLenum internalformat, GCGLsizei width, GCGLsizei height, GCGLint border, GCGLenum format, GCGLenum type, GCGLint alignment = 4)'/>
+<doc f='WebKit/Source/WebCore/platform/graphics/opengl/GraphicsContextGLOpenGL.h' l='147'>// Helper to texImage2D with pixel==0 case: pixels are initialized to 0.
+    // Return true if no GL error is synthesized.
+    // By default, alignment is 4, the OpenGL default setting.</doc>
+<def f='WebKit/Source/WebCore/platform/graphics/opengl/GraphicsContextGLOpenGL.cpp' l='84' ll='106' type='bool WebCore::GraphicsContextGLOpenGL::texImage2DResourceSafe(GCGLenum target, GCGLint level, GCGLenum internalformat, GCGLsizei width, GCGLsizei height, GCGLint border, GCGLenum format, GCGLenum type, GCGLint unpackAlignment = 4)'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='5108' u='c' c='_ZN7WebCore25WebGLRenderingContextBase14texImage2DBaseEjijiiijjiPKv'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='5720' u='c' c='_ZN7WebCore25WebGLRenderingContextBase14copyTexImage2DEjijiiiii'/>

@@ -1,0 +1,22 @@
+<use f='WebKit/Source/WebCore/css/CSSPrimitiveValue.h' l='173' c='_ZNK7WebCore17CSSPrimitiveValue10fontFamilyEv'/>
+<use f='WebKit/Source/WebCore/css/CSSPrimitiveValue.h' l='260'/>
+<def f='WebKit/Source/WebCore/css/CSSFontFamily.h' l='41' ll='44'/>
+<use f='WebKit/Source/WebCore/css/CSSFontFamily.h' l='46' c='_ZN7WebCoreeqERKNS_13CSSFontFamilyES2_'/>
+<use f='WebKit/Source/WebCore/css/CSSFontFamily.h' l='46' c='_ZN7WebCoreeqERKNS_13CSSFontFamilyES2_'/>
+<use f='WebKit/Source/WebCore/css/CSSPrimitiveValueMappings.h' l='4635' c='_ZN7WebCore17CSSPrimitiveValueC1ET_'/>
+<use f='WebKit/Source/WebCore/css/CSSPrimitiveValueMappings.h' l='4639' c='_ZN7WebCore17CSSPrimitiveValueC1ET_'/>
+<size>16</size>
+<doc f='WebKit/Source/WebCore/css/CSSFontFamily.h' l='32'>// We use a CSSFontFamily instead of a String to store the font family inside CSSPrimitiveValue.
+// This is because require an extra bit to determine if the font family was resolved by the CSS
+// parser from a system font ID (caption | icon | menu | message-box | small-caption |
+// status-bar).
+//
+// This is needed by the StyleBuilder to correctly set the &quot;isSpecifiedFont&quot; flag on the
+// FontDescription. This flag is used to determine if we should do the &quot;use backslash as Yen
+// sign&quot; hack.</doc>
+<mbr r='WebCore::CSSFontFamily::familyName' o='0' t='WTF::String'/>
+<mbr r='WebCore::CSSFontFamily::fromSystemFontID' o='64' t='bool'/>
+<use f='WebKit/Source/WebCore/css/CSSValuePool.cpp' l='146' c='_ZN7WebCore12CSSValuePool21createFontFamilyValueERKN3WTF6StringENS_16FromSystemFontIDE'/>
+<size>16</size>
+<use f='WebKit/Source/WebCore/style/StyleBuilderCustom.h' l='1055' c='_ZN7WebCore5Style13BuilderCustom20applyValueFontFamilyERNS0_12BuilderStateERNS_8CSSValueE'/>
+<size>16</size>

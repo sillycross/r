@@ -1,0 +1,20 @@
+<def f='WebKit/WTF/Headers/wtf/UniqueArray.h' l='88' ll='101'/>
+<use f='WebKit/WTF/Headers/wtf/UniqueArray.h' l='94' c='_ZN3WTF16UniqueArrayMakerILb0ET_E18UniqueArrayElement7DeleterclEPS1_'/>
+<use f='WebKit/WTF/Headers/wtf/UniqueArray.h' l='102'/>
+<use f='WebKit/WTF/Headers/wtf/UniqueArray.h' l='108' c='_ZN3WTF16UniqueArrayMakerILb0ET_E4makeEm'/>
+<doc f='WebKit/WTF/Headers/wtf/UniqueArray.h' l='84'>// Since we do not know how to store/retrieve N size to/from allocated memory when calling new [] and delete [],
+    // we use new [] and delete [] operators simply. We create UniqueArrayElement container for the type T.
+    // UniqueArrayElement has new [] and delete [] operators for FastMalloc. We allocate UniqueArrayElement[] and cast
+    // it to T[]. When deleting, the custom deleter casts T[] to UniqueArrayElement[] and deletes it.</doc>
+<fun r='_ZN3WTF16UniqueArrayMakerILb0ET_E18UniqueArrayElementC1Ev'/>
+<mbr r='WTF::UniqueArrayMaker{false,type-parameter-0-0}::UniqueArrayElement::value' t='T'/>
+<def f='WebKit/Source/WTF/wtf/UniqueArray.h' l='88' ll='101'/>
+<use f='WebKit/Source/WTF/wtf/UniqueArray.h' l='94' c='_ZN3WTF16UniqueArrayMakerILb0ET_E18UniqueArrayElement7DeleterclEPS1_'/>
+<use f='WebKit/Source/WTF/wtf/UniqueArray.h' l='102'/>
+<use f='WebKit/Source/WTF/wtf/UniqueArray.h' l='108' c='_ZN3WTF16UniqueArrayMakerILb0ET_E4makeEm'/>
+<doc f='WebKit/Source/WTF/wtf/UniqueArray.h' l='84'>// Since we do not know how to store/retrieve N size to/from allocated memory when calling new [] and delete [],
+    // we use new [] and delete [] operators simply. We create UniqueArrayElement container for the type T.
+    // UniqueArrayElement has new [] and delete [] operators for FastMalloc. We allocate UniqueArrayElement[] and cast
+    // it to T[]. When deleting, the custom deleter casts T[] to UniqueArrayElement[] and deletes it.</doc>
+<fun r='_ZN3WTF16UniqueArrayMakerILb0ET_E18UniqueArrayElementC1Ev'/>
+<mbr r='WTF::UniqueArrayMaker{false,type-parameter-0-0}::UniqueArrayElement::value' t='T'/>

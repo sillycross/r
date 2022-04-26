@@ -1,0 +1,29 @@
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitWebsiteData.h' l='34'/>
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebsiteData.cpp' l='53' ll='62'/>
+<size>96</size>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebsiteData.cpp' l='31'>/**
+ * SECTION: WebKitWebsiteData
+ * @Short_description: Website data
+ * @Title: WebKitWebsiteData
+ * @See_also: #WebKitWebsiteDataManager
+ *
+ * WebKitWebsiteData represents data stored in the client by a particular website.
+ * A website is normally a set of URLs grouped by domain name. You can get the website name,
+ * which is usually the domain, with webkit_website_data_get_name().
+ * Documents loaded from the file system, like file:// URIs, are all grouped in the same WebKitWebsiteData
+ * with the name &quot;Local files&quot;.
+ *
+ * A website can store different types of data in the client side. #WebKitWebsiteDataTypes is an enum containing
+ * all the possible data types; use webkit_website_data_get_types() to get the bitmask of data types.
+ * It&apos;s also possible to know the size of the data stored for some of the #WebKitWebsiteDataTypes by using
+ * webkit_website_data_get_size().
+ *
+ * A list of WebKitWebsiteData can be retrieved with webkit_website_data_manager_fetch(). See #WebKitWebsiteDataManager
+ * for more information.
+ *
+ * Since: 2.16
+ */</doc>
+<fun r='_ZN18_WebKitWebsiteDataC1EON6WebKit17WebsiteDataRecordE'/>
+<mbr r='_WebKitWebsiteData::record' o='0' t='WebKit::WebsiteDataRecord'/>
+<mbr r='_WebKitWebsiteData::displayName' o='640' t='WTF::CString'/>
+<mbr r='_WebKitWebsiteData::referenceCount' o='704' t='int'/>

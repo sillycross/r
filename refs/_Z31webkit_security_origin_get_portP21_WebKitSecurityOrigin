@@ -1,0 +1,15 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSecurityOrigin.cpp' l='215' ll='220' type='guint16 webkit_security_origin_get_port(WebKitSecurityOrigin * origin)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSecurityOrigin.cpp' l='201'>/**
+ * webkit_security_origin_get_port:
+ * @origin: a #WebKitSecurityOrigin
+ *
+ * Gets the port of @origin. This function will always return 0 if the
+ * port is the default port for the given protocol. For example,
+ * http://example.com has the same security origin as
+ * http://example.com:80, and this function will return 0 for a
+ * #WebKitSecurityOrigin constructed from either URI.
+ *
+ * Returns: The port of the #WebKitSecurityOrigin.
+ *
+ * Since: 2.16
+ */</doc>

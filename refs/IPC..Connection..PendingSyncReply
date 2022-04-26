@@ -1,0 +1,12 @@
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='433'/>
+<def f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='244' ll='261'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='611' c='_ZN3IPC10Connection24pushPendingSyncRequestIDEN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='680' c='_ZN3IPC10Connection16waitForSyncReplyEN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEENS_11MessageNameENS_7TimeoutENS1_9OptionSetINS_14SendSyncOptionEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='725' c='_ZN3IPC10Connection24processIncomingSyncReplyESt10unique_ptrINS_7DecoderESt14default_deleteIS2_EE'/>
+<size>24</size>
+<doc f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='243'>// Represents a sync request for which we&apos;re waiting on a reply.</doc>
+<mbr r='IPC::Connection::PendingSyncReply::syncRequestID' o='0' t='Connection::SyncRequestID'/>
+<mbr r='IPC::Connection::PendingSyncReply::replyDecoder' o='64' t='std::unique_ptr&lt;Decoder&gt;'/>
+<mbr r='IPC::Connection::PendingSyncReply::didReceiveReply' o='128' t='bool'/>
+<fun r='_ZN3IPC10Connection16PendingSyncReplyC1Ev'/>
+<fun r='_ZN3IPC10Connection16PendingSyncReplyC1EN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEE'/>

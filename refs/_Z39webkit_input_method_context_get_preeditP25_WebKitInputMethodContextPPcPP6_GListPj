@@ -1,0 +1,13 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitInputMethodContext.cpp' l='386' ll='402' type='void webkit_input_method_context_get_preedit(WebKitInputMethodContext * context, char ** text, GList ** underlines, unsigned int * cursorOffset)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitInputMethodContext.cpp' l='374'>/**
+ * webkit_input_method_context_get_preedit:
+ * @context: a #WebKitInputMethodContext
+ * @text: (out) (transfer full) (nullable): location to store the preedit string
+ * @underlines: (out) (transfer full) (nullable) (element-type WebKit2.InputMethodUnderline): location to store the underlines as a #GList of #WebKitInputMethodUnderline
+ * @cursor_offset: (out) (nullable): location to store the position of cursor in preedit string
+ *
+ * Get the current preedit string for the @context, and a list of WebKitInputMethodUnderline to apply to the string.
+ * The string will be displayed inserted at @cursor_offset.
+ *
+ * Since: 2.28
+ */</doc>

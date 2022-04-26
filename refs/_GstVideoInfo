@@ -1,0 +1,48 @@
+<use f='include/gstreamer-1.0/gst/video/video-info.h' l='31'/>
+<def f='include/gstreamer-1.0/gst/video/video-info.h' l='302' ll='334'/>
+<size>152</size>
+<doc f='include/gstreamer-1.0/gst/video/video-info.h' l='275'>/**
+ * GstVideoInfo:
+ * @finfo: the format info of the video
+ * @interlace_mode: the interlace mode
+ * @flags: additional video flags
+ * @width: the width of the video
+ * @height: the height of the video
+ * @views: the number of views for multiview video
+ * @size: the default size of one frame
+ * @chroma_site: a #GstVideoChromaSite.
+ * @colorimetry: the colorimetry info
+ * @par_n: the pixel-aspect-ratio numerator
+ * @par_d: the pixel-aspect-ratio demnominator
+ * @fps_n: the framerate numerator
+ * @fps_d: the framerate demnominator
+ * @offset: offsets of the planes
+ * @stride: strides of the planes
+ * @multiview_mode: delivery mode for multiple views. (Since: 1.6)
+ * @multiview_flags: flags for multiple views configuration (Since: 1.6)
+ *
+ * Information describing image properties. This information can be filled
+ * in from GstCaps with gst_video_info_from_caps(). The information is also used
+ * to store the specific video info when mapping a video frame with
+ * gst_video_frame_map().
+ *
+ * Use the provided macros to access the info in this structure.
+ */</doc>
+<mbr r='_GstVideoInfo::finfo' o='0' t='const GstVideoFormatInfo *'/>
+<mbr r='_GstVideoInfo::interlace_mode' o='64' t='GstVideoInterlaceMode'/>
+<mbr r='_GstVideoInfo::flags' o='96' t='GstVideoFlags'/>
+<mbr r='_GstVideoInfo::width' o='128' t='gint'/>
+<mbr r='_GstVideoInfo::height' o='160' t='gint'/>
+<mbr r='_GstVideoInfo::size' o='192' t='gsize'/>
+<mbr r='_GstVideoInfo::views' o='256' t='gint'/>
+<mbr r='_GstVideoInfo::chroma_site' o='288' t='GstVideoChromaSite'/>
+<mbr r='_GstVideoInfo::colorimetry' o='320' t='GstVideoColorimetry'/>
+<mbr r='_GstVideoInfo::par_n' o='448' t='gint'/>
+<mbr r='_GstVideoInfo::par_d' o='480' t='gint'/>
+<mbr r='_GstVideoInfo::fps_n' o='512' t='gint'/>
+<mbr r='_GstVideoInfo::fps_d' o='544' t='gint'/>
+<mbr r='_GstVideoInfo::offset' o='576' t='gsize [4]'/>
+<mbr r='_GstVideoInfo::stride' o='832' t='gint [4]'/>
+<mbr r='_GstVideoInfo::ABI' o='960' t='union (anonymous union at /usr/include/gstreamer-1.0/gst/video/video-info.h:325:3)'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='77'/>
+<size>152</size>

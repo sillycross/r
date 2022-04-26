@@ -1,0 +1,6 @@
+<dec f='WebKit/Source/JavaScriptCore/b3/B3EnsureLoopPreHeaders.h' l='38' type='bool JSC::B3::ensureLoopPreHeaders(JSC::B3::Procedure &amp; )'/>
+<def f='WebKit/Source/JavaScriptCore/b3/B3EnsureLoopPreHeaders.cpp' l='38' ll='79' type='bool JSC::B3::ensureLoopPreHeaders(JSC::B3::Procedure &amp; proc)'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3HoistLoopInvariantValues.cpp' l='46' u='c' c='_ZN3JSC2B324hoistLoopInvariantValuesERNS0_9ProcedureE'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/B3EnsureLoopPreHeaders.h' l='34'>// Creates a pre-header for any loop that don&apos;t already have one. A loop has a pre-header if its header has
+// exactly one predecessor that isn&apos;t in the loop body. If a loop header has more than one out-of-body
+// predecessor, then this creates a new block and rewires those predecessors to it.</doc>

@@ -1,0 +1,26 @@
+<dec f='include/glib-2.0/glib/gmem.h' l='299'/>
+<doc f='include/glib-2.0/glib/gmem.h' l='283'>/**
+ * g_new0:
+ * @struct_type: the type of the elements to allocate.
+ * @n_structs: the number of elements to allocate.
+ * 
+ * Allocates @n_structs elements of type @struct_type, initialized to 0&apos;s.
+ * The returned pointer is cast to a pointer to the given type.
+ * If @n_structs is 0 it returns %NULL.
+ * Care is taken to avoid overflow when calculating the size of the allocated block.
+ * 
+ * Since the returned pointer is already casted to the right type,
+ * it is normally unnecessary to cast it explicitly, and doing
+ * so might hide memory allocation errors.
+ * 
+ * Returns: a pointer to the allocated memory, cast to a pointer to @struct_type.
+ */</doc>
+<use f='WebKit/Source/WebKit/Shared/soup/WebCoreArgumentCodersSoup.cpp' l='158' u='c'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/WebSocketTaskSoup.cpp' l='66' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCContext.cpp' l='371' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='852' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/GStreamerCommon.cpp' l='258' u='c'/>
+<use f='WebKit/Source/WebDriver/glib/SessionHostGlib.cpp' l='147' u='c'/>
+<use f='WebKit/Source/WebDriver/glib/SessionHostGlib.cpp' l='292' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitAutomationSession.cpp' l='328' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUserContentFilterStore.cpp' l='475' u='c'/>

@@ -1,0 +1,536 @@
+<def f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='65' ll='213'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='71' c='_ZN2sh14ShaderVariableC1ERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='72' c='_ZN2sh14ShaderVariableaSERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='72' c='_ZN2sh14ShaderVariableaSERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='73' c='_ZNK2sh14ShaderVariableeqERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='74' c='_ZNK2sh14ShaderVariableneERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='121' c='_ZNK2sh14ShaderVariable20findInfoByMappedNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPPKS0_PS6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='126' c='_ZNK2sh14ShaderVariable9findFieldERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='160'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='175' c='_ZNK2sh14ShaderVariable23isSameUniformAtLinkTimeERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='190' c='_ZNK2sh14ShaderVariable35isSameInterfaceBlockFieldAtLinkTimeERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='200' c='_ZNK2sh14ShaderVariable23isSameVaryingAtLinkTimeERKS0_i'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='202' c='_ZNK2sh14ShaderVariable23isSameVaryingAtLinkTimeERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='208' c='_ZNK2sh14ShaderVariable24isSameVariableAtLinkTimeERKS0_bb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='217'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='218'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='219'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='220'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='221'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='256'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderLang.h' l='678' c='_ZN2sh11GetUniformsEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderLang.h' l='679' c='_ZN2sh11GetVaryingsEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderLang.h' l='680' c='_ZN2sh16GetInputVaryingsEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderLang.h' l='681' c='_ZN2sh17GetOutputVaryingsEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderLang.h' l='682' c='_ZN2sh13GetAttributesEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderLang.h' l='683' c='_ZN2sh18GetOutputVariablesEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderLang.h' l='702' c='_ZN2sh33CheckVariablesWithinPackingLimitsEiRKSt6vectorINS_14ShaderVariableESaIS1_EE'/>
+<size>200</size>
+<doc f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='61'>// Base class for all variables defined in shaders, including Varyings, Uniforms, etc
+// Note: we must override the copy constructor and assignment operator so we can
+// work around excessive GCC binary bloating:
+// See https://code.google.com/p/angleproject/issues/detail?id=697</doc>
+<fun r='_ZN2sh14ShaderVariableC1Ev'/>
+<fun r='_ZN2sh14ShaderVariableC1Ej'/>
+<fun r='_ZN2sh14ShaderVariableC1Ejj'/>
+<fun r='_ZN2sh14ShaderVariableD1Ev'/>
+<fun r='_ZN2sh14ShaderVariableC1ERKS0_'/>
+<fun r='_ZN2sh14ShaderVariableaSERKS0_'/>
+<fun r='_ZNK2sh14ShaderVariableeqERKS0_'/>
+<fun r='_ZNK2sh14ShaderVariableneERKS0_'/>
+<fun r='_ZNK2sh14ShaderVariable15isArrayOfArraysEv'/>
+<fun r='_ZNK2sh14ShaderVariable7isArrayEv'/>
+<fun r='_ZNK2sh14ShaderVariable19getArraySizeProductEv'/>
+<fun r='_ZNK2sh14ShaderVariable24getInnerArraySizeProductEv'/>
+<fun r='_ZNK2sh14ShaderVariable21getOutermostArraySizeEv'/>
+<fun r='_ZN2sh14ShaderVariable12setArraySizeEj'/>
+<fun r='_ZN2sh14ShaderVariable14indexIntoArrayEj'/>
+<fun r='_ZNK2sh14ShaderVariable18getNestedArraySizeEj'/>
+<fun r='_ZNK2sh14ShaderVariable24getBasicTypeElementCountEv'/>
+<fun r='_ZNK2sh14ShaderVariable15getExternalSizeEv'/>
+<fun r='_ZNK2sh14ShaderVariable8isStructEv'/>
+<fun r='_ZNK2sh14ShaderVariable20findInfoByMappedNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPPKS0_PS6_'/>
+<fun r='_ZNK2sh14ShaderVariable9findFieldERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPj'/>
+<fun r='_ZNK2sh14ShaderVariable9isBuiltInEv'/>
+<fun r='_ZNK2sh14ShaderVariable17isEmulatedBuiltInEv'/>
+<mbr r='sh::ShaderVariable::type' o='0' t='sh::GLenum'/>
+<mbr r='sh::ShaderVariable::precision' o='32' t='sh::GLenum'/>
+<mbr r='sh::ShaderVariable::name' o='64' t='std::string'/>
+<mbr r='sh::ShaderVariable::mappedName' o='320' t='std::string'/>
+<mbr r='sh::ShaderVariable::arraySizes' o='576' t='std::vector&lt;unsigned int&gt;'/>
+<fun r='_ZNK2sh14ShaderVariable16parentArrayIndexEv'/>
+<fun r='_ZN2sh14ShaderVariable19setParentArrayIndexEi'/>
+<fun r='_ZNK2sh14ShaderVariable19hasParentArrayIndexEv'/>
+<mbr r='sh::ShaderVariable::staticUse' o='768' t='bool'/>
+<mbr r='sh::ShaderVariable::active' o='776' t='bool'/>
+<mbr r='sh::ShaderVariable::fields' o='832' t='std::vector&lt;ShaderVariable&gt;'/>
+<mbr r='sh::ShaderVariable::structName' o='1024' t='std::string'/>
+<mbr r='sh::ShaderVariable::isRowMajorLayout' o='1280' t='bool'/>
+<mbr r='sh::ShaderVariable::location' o='1312' t='int'/>
+<mbr r='sh::ShaderVariable::binding' o='1344' t='int'/>
+<fun r='_ZNK2sh14ShaderVariable23isSameUniformAtLinkTimeERKS0_'/>
+<mbr r='sh::ShaderVariable::imageUnitFormat' o='1376' t='sh::GLenum'/>
+<mbr r='sh::ShaderVariable::offset' o='1408' t='int'/>
+<mbr r='sh::ShaderVariable::readonly' o='1440' t='bool'/>
+<mbr r='sh::ShaderVariable::writeonly' o='1448' t='bool'/>
+<mbr r='sh::ShaderVariable::index' o='1472' t='int'/>
+<fun r='_ZNK2sh14ShaderVariable35isSameInterfaceBlockFieldAtLinkTimeERKS0_'/>
+<mbr r='sh::ShaderVariable::interpolation' o='1504' t='sh::InterpolationType'/>
+<mbr r='sh::ShaderVariable::isInvariant' o='1536' t='bool'/>
+<fun r='_ZNK2sh14ShaderVariable23isSameVaryingAtLinkTimeERKS0_i'/>
+<fun r='_ZNK2sh14ShaderVariable23isSameVaryingAtLinkTimeERKS0_'/>
+<mbr r='sh::ShaderVariable::texelFetchStaticUse' o='1544' t='bool'/>
+<fun r='_ZNK2sh14ShaderVariable24isSameVariableAtLinkTimeERKS0_bb'/>
+<mbr r='sh::ShaderVariable::flattenedOffsetInParentArrays' o='1568' t='int'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='117' c='_ZNK2sh9TCompiler13getAttributesEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='118' c='_ZNK2sh9TCompiler18getOutputVariablesEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='119' c='_ZNK2sh9TCompiler11getUniformsEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='120' c='_ZNK2sh9TCompiler16getInputVaryingsEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='121' c='_ZNK2sh9TCompiler17getOutputVaryingsEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='153' c='_ZNK2sh9TCompiler13getStructSizeERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='191'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='192'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='193'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='194'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='195'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='196'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/util.h' l='66' c='_ZN2sh26GetShaderVariableBasicTypeERKNS_14ShaderVariableE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.h' l='22' c='_ZN2sh16CollectVariablesEPNS_12TIntermBlockEPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcmEPNS_115761621'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.h' l='23' c='_ZN2sh16CollectVariablesEPNS_12TIntermBlockEPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcmEPNS_115761621'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.h' l='24' c='_ZN2sh16CollectVariablesEPNS_12TIntermBlockEPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcmEPNS_115761621'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.h' l='25' c='_ZN2sh16CollectVariablesEPNS_12TIntermBlockEPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcmEPNS_115761621'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.h' l='26' c='_ZN2sh16CollectVariablesEPNS_12TIntermBlockEPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcmEPNS_115761621'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.h' l='27' c='_ZN2sh16CollectVariablesEPNS_12TIntermBlockEPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcmEPNS_115761621'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='71' c='_ZN2sh12_GLOBAL__N_110MarkActiveEPNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='88' c='_ZN2sh12_GLOBAL__N_128FindVariableInInterfaceBlockERKNS_15ImmutableStringEPKNS_15TInterfaceBlockEPSt6vectorINS_14InterfaceBlockESaIS8_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='107' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverserC1EPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcm10328784'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='108' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverserC1EPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcm10328784'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='109' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverserC1EPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcm10328784'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='110' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverserC1EPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcm10328784'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='111' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverserC1EPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcm10328784'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='112' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverserC1EPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcm10328784'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='132' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser28setFieldOrVariablePropertiesERKNS_5TTypeEbPNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='136' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser18setFieldPropertiesERKNS_5TTypeERKNS_15ImmutableStringEbPNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='139' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser27setCommonVariablePropertiesERKNS_5TTypeERKNS_9TVariableEPNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='141' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser15recordAttributeERKNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='142' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser20recordOutputVariableERKNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='143' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser13recordVaryingERKNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='147' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser13recordUniformERKNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='149' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverser24setBuiltInInfoFromSymbolERKNS_9TVariableEPNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='153' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverser24recordBuiltInVaryingUsedERKNS_9TVariableEPbPSt6vectorINS_14ShaderVariableESaIS7_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='159'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='160'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='161'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='162'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='163'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='164'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='169'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='225' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverserC1EPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcm10328784'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='226' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverserC1EPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcm10328784'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='227' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverserC1EPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcm10328784'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='228' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverserC1EPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcm10328784'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='229' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverserC1EPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcm10328784'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='230' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverserC1EPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcm10328784'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='290' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverser24setBuiltInInfoFromSymbolERKNS_9TVariableEPNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='302' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverser24recordBuiltInVaryingUsedERKNS_9TVariableEPbPSt6vectorINS_14ShaderVariableESaIS7_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='307' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverser24recordBuiltInVaryingUsedERKNS_9TVariableEPbPSt6vectorINS_14ShaderVariableESaIS7_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='322' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverser31recordBuiltInFragmentOutputUsedERKNS_9TVariableEPb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='335' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverser26recordBuiltInAttributeUsedERKNS_9TVariableEPb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='385' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverser11visitSymbolEPNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='411' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverser11visitSymbolEPNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='420' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverser11visitSymbolEPNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='428' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverser11visitSymbolEPNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='436' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverser11visitSymbolEPNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='548' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverser11visitSymbolEPNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='629' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser28setFieldOrVariablePropertiesERKNS_5TTypeEbPNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='656' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser28setFieldOrVariablePropertiesERKNS_5TTypeEbPNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='671' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser18setFieldPropertiesERKNS_5TTypeERKNS_15ImmutableStringEbPNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='681' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser27setCommonVariablePropertiesERKNS_5TTypeERKNS_9TVariableEPNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='692' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser15recordAttributeERKNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='697' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser15recordAttributeERKNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='704' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser20recordOutputVariableERKNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='709' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser20recordOutputVariableERKNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='717' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser13recordVaryingERKNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='721' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser13recordVaryingERKNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='813' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser20recordInterfaceBlockEPKcRKNS_5TTypeEPNS_14InterfaceBlockE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='825' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser13recordUniformERKNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='827' c='_ZNK2sh12_GLOBAL__N_125CollectVariablesTraverser13recordUniformERKNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='1000' c='_ZN2sh16CollectVariablesEPNS_12TIntermBlockEPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcmEPNS_115761621'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='1001' c='_ZN2sh16CollectVariablesEPNS_12TIntermBlockEPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcmEPNS_115761621'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='1002' c='_ZN2sh16CollectVariablesEPNS_12TIntermBlockEPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcmEPNS_115761621'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='1003' c='_ZN2sh16CollectVariablesEPNS_12TIntermBlockEPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcmEPNS_115761621'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='1004' c='_ZN2sh16CollectVariablesEPNS_12TIntermBlockEPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcmEPNS_115761621'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='1005' c='_ZN2sh16CollectVariablesEPNS_12TIntermBlockEPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcmEPNS_115761621'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.h' l='28' c='_ZN2sh29CheckVariablesInPackingLimitsEjRKSt6vectorINS_14ShaderVariableESaIS1_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateGLFragColorBroadcast.h' l='30' c='_ZN2sh27EmulateGLFragColorBroadcastEPNS_9TCompilerEPNS_12TIntermBlockEiPSt6vectorINS_14ShaderVariableESaIS5_EEPNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateMultiDrawShaderBuiltins.h' l='35' c='_ZN2sh15EmulateGLDrawIDEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPSt6vectorINS_14ShaderVariableESaIS7_EEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateMultiDrawShaderBuiltins.h' l='41' c='_ZN2sh31EmulateGLBaseVertexBaseInstanceEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPSt6vectorINS_14ShaderVariableESaIS7_EEbb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.h' l='20'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='496' c='_ZNK2sh9TCompiler19getSharedMemorySizeEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='1402' c='_ZN2sh9TCompiler20initializeGLPositionEPNS_12TIntermBlockE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='1430' c='_ZN2sh9TCompiler25initializeOutputVariablesEPNS_12TIntermBlockE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='1443' c='_ZN2sh9TCompiler25initializeOutputVariablesEPNS_12TIntermBlockE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderLang.cpp' l='391' c='_ZN2sh11GetUniformsEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderLang.cpp' l='401' c='_ZN2sh16GetInputVaryingsEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderLang.cpp' l='411' c='_ZN2sh17GetOutputVaryingsEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderLang.cpp' l='421' c='_ZN2sh11GetVaryingsEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderLang.cpp' l='445' c='_ZN2sh13GetAttributesEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderLang.cpp' l='455' c='_ZN2sh18GetOutputVariablesEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderLang.cpp' l='521' c='_ZN2sh33CheckVariablesWithinPackingLimitsEiRKSt6vectorINS_14ShaderVariableESaIS1_EE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderVars.cpp' l='34' c='_ZN2sh14ShaderVariableC1Ev'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderVars.cpp' l='55' c='_ZN2sh14ShaderVariableC1Ejj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderVars.cpp' l='63' c='_ZN2sh14ShaderVariableC1ERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderVars.cpp' l='87' c='_ZN2sh14ShaderVariableaSERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderVars.cpp' l='87' c='_ZN2sh14ShaderVariableaSERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderVars.cpp' l='113' c='_ZNK2sh14ShaderVariableeqERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderVars.cpp' l='219' c='_ZNK2sh14ShaderVariable20findInfoByMappedNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPPKS0_PS6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderVars.cpp' l='274' c='_ZNK2sh14ShaderVariable20findInfoByMappedNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPPKS0_PS6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderVars.cpp' l='288' c='_ZNK2sh14ShaderVariable9findFieldERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderVars.cpp' l='331' c='_ZNK2sh14ShaderVariable24isSameVariableAtLinkTimeERKS0_bb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderVars.cpp' l='364' c='_ZNK2sh14ShaderVariable23isSameUniformAtLinkTimeERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderVars.cpp' l='391' c='_ZNK2sh14ShaderVariable35isSameInterfaceBlockFieldAtLinkTimeERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderVars.cpp' l='396' c='_ZNK2sh14ShaderVariable23isSameVaryingAtLinkTimeERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderVars.cpp' l='401' c='_ZNK2sh14ShaderVariable23isSameVaryingAtLinkTimeERKS0_i'/>
+<size>200</size>
+<fun r='_ZN2sh14ShaderVariableC1Ev'/>
+<fun r='_ZN2sh14ShaderVariableC1Ej'/>
+<fun r='_ZN2sh14ShaderVariableC1Ejj'/>
+<fun r='_ZN2sh14ShaderVariableD1Ev'/>
+<fun r='_ZN2sh14ShaderVariableC1ERKS0_'/>
+<fun r='_ZN2sh14ShaderVariableaSERKS0_'/>
+<fun r='_ZNK2sh14ShaderVariableeqERKS0_'/>
+<fun r='_ZN2sh14ShaderVariable12setArraySizeEj'/>
+<fun r='_ZNK2sh14ShaderVariable24getInnerArraySizeProductEv'/>
+<fun r='_ZNK2sh14ShaderVariable19getArraySizeProductEv'/>
+<fun r='_ZN2sh14ShaderVariable14indexIntoArrayEj'/>
+<fun r='_ZNK2sh14ShaderVariable18getNestedArraySizeEj'/>
+<fun r='_ZNK2sh14ShaderVariable24getBasicTypeElementCountEv'/>
+<fun r='_ZNK2sh14ShaderVariable15getExternalSizeEv'/>
+<fun r='_ZNK2sh14ShaderVariable20findInfoByMappedNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPPKS0_PS6_'/>
+<fun r='_ZNK2sh14ShaderVariable9findFieldERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPj'/>
+<fun r='_ZNK2sh14ShaderVariable9isBuiltInEv'/>
+<fun r='_ZNK2sh14ShaderVariable17isEmulatedBuiltInEv'/>
+<fun r='_ZNK2sh14ShaderVariable24isSameVariableAtLinkTimeERKS0_bb'/>
+<fun r='_ZNK2sh14ShaderVariable23isSameUniformAtLinkTimeERKS0_'/>
+<fun r='_ZNK2sh14ShaderVariable35isSameInterfaceBlockFieldAtLinkTimeERKS0_'/>
+<fun r='_ZNK2sh14ShaderVariable23isSameVaryingAtLinkTimeERKS0_'/>
+<fun r='_ZNK2sh14ShaderVariable23isSameVaryingAtLinkTimeERKS0_i'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='24' c='_ZN2sh12_GLOBAL__N_114ExpandVariableERKNS_14ShaderVariableERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPSt6vectorIS1_SaIS1_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='26' c='_ZN2sh12_GLOBAL__N_114ExpandVariableERKNS_14ShaderVariableERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPSt6vectorIS1_SaIS1_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='28' c='_ZN2sh12_GLOBAL__N_120ExpandStructVariableERKNS_14ShaderVariableERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPSt6vectorIS1_SaIS1_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='30' c='_ZN2sh12_GLOBAL__N_120ExpandStructVariableERKNS_14ShaderVariableERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPSt6vectorIS1_SaIS1_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='34' c='_ZN2sh12_GLOBAL__N_120ExpandStructVariableERKNS_14ShaderVariableERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPSt6vectorIS1_SaIS1_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='38' c='_ZN2sh12_GLOBAL__N_120ExpandStructVariableERKNS_14ShaderVariableERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPSt6vectorIS1_SaIS1_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='43' c='_ZN2sh12_GLOBAL__N_125ExpandStructArrayVariableERKNS_14ShaderVariableEjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPSt6vectorIS1_SaIS1_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='46' c='_ZN2sh12_GLOBAL__N_125ExpandStructArrayVariableERKNS_14ShaderVariableEjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPSt6vectorIS1_SaIS1_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='65' c='_ZN2sh12_GLOBAL__N_114ExpandVariableERKNS_14ShaderVariableERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPSt6vectorIS1_SaIS1_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='67' c='_ZN2sh12_GLOBAL__N_114ExpandVariableERKNS_14ShaderVariableERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPSt6vectorIS1_SaIS1_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='82' c='_ZN2sh12_GLOBAL__N_114ExpandVariableERKNS_14ShaderVariableERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPSt6vectorIS1_SaIS1_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='89' c='_ZN2sh12_GLOBAL__N_122GetVariablePackingRowsERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='98' c='_ZN2sh12_GLOBAL__N_114VariablePacker41checkExpandedVariablesWithinPackingLimitsEjPSt6vectorINS_14ShaderVariableESaIS3_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='116' c='_ZNK2sh12_GLOBAL__N_121TVariableInfoComparerclERKNS_14ShaderVariableES4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='116' c='_ZNK2sh12_GLOBAL__N_121TVariableInfoComparerclERKNS_14ShaderVariableES4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='208' c='_ZN2sh12_GLOBAL__N_114VariablePacker41checkExpandedVariablesWithinPackingLimitsEjPSt6vectorINS_14ShaderVariableESaIS3_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='216' c='_ZN2sh12_GLOBAL__N_114VariablePacker41checkExpandedVariablesWithinPackingLimitsEjPSt6vectorINS_14ShaderVariableESaIS3_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='236' c='_ZN2sh12_GLOBAL__N_114VariablePacker41checkExpandedVariablesWithinPackingLimitsEjPSt6vectorINS_14ShaderVariableESaIS3_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='253' c='_ZN2sh12_GLOBAL__N_114VariablePacker41checkExpandedVariablesWithinPackingLimitsEjPSt6vectorINS_14ShaderVariableESaIS3_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='275' c='_ZN2sh12_GLOBAL__N_114VariablePacker41checkExpandedVariablesWithinPackingLimitsEjPSt6vectorINS_14ShaderVariableESaIS3_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='303' c='_ZN2sh12_GLOBAL__N_114VariablePacker41checkExpandedVariablesWithinPackingLimitsEjPSt6vectorINS_14ShaderVariableESaIS3_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='396' c='_ZN2sh29CheckVariablesInPackingLimitsEjRKSt6vectorINS_14ShaderVariableESaIS1_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='399' c='_ZN2sh29CheckVariablesInPackingLimitsEjRKSt6vectorINS_14ShaderVariableESaIS1_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='400' c='_ZN2sh29CheckVariablesInPackingLimitsEjRKSt6vectorINS_14ShaderVariableESaIS1_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VariablePacker.cpp' l='408' c='_ZN2sh29CheckVariablesInPackingLimitsEjRKSt6vectorINS_14ShaderVariableESaIS1_EE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='84' c='_ZN2sh18BlockLayoutEncoder21getShaderVariableSizeERKNS_14ShaderVariableEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='87' c='_ZN2sh18BlockLayoutEncoder18enterAggregateTypeERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='88' c='_ZN2sh18BlockLayoutEncoder17exitAggregateTypeERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='119' c='_ZN2sh16StubBlockEncoder18enterAggregateTypeERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='120' c='_ZN2sh16StubBlockEncoder17exitAggregateTypeERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='145' c='_ZN2sh18Std140BlockEncoder18enterAggregateTypeERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='146' c='_ZN2sh18Std140BlockEncoder17exitAggregateTypeERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='160' c='_ZNK2sh18Std140BlockEncoder16getBaseAlignmentERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='170' c='_ZNK2sh18Std430BlockEncoder16getBaseAlignmentERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='176' c='_ZN2sh21GetInterfaceBlockInfoERKSt6vectorINS_14ShaderVariableESaIS1_EERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS_18BlockLayoutEncoderEP12660260'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='182' c='_ZN2sh25GetActiveUniformBlockInfoERKSt6vectorINS_14ShaderVariableESaIS1_EERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS_18BlockLayoutEncod4637594'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='192' c='_ZN2sh21ShaderVariableVisitor11enterStructERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='193' c='_ZN2sh21ShaderVariableVisitor10exitStructERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='195' c='_ZN2sh21ShaderVariableVisitor17enterStructAccessERKNS_14ShaderVariableEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='196' c='_ZN2sh21ShaderVariableVisitor16exitStructAccessERKNS_14ShaderVariableEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='198' c='_ZN2sh21ShaderVariableVisitor10enterArrayERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='199' c='_ZN2sh21ShaderVariableVisitor9exitArrayERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='201' c='_ZN2sh21ShaderVariableVisitor17enterArrayElementERKNS_14ShaderVariableEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='202' c='_ZN2sh21ShaderVariableVisitor16exitArrayElementERKNS_14ShaderVariableEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='204' c='_ZN2sh21ShaderVariableVisitor19visitSamplerOrImageERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='206' c='_ZN2sh21ShaderVariableVisitor13visitVariableERKNS_14ShaderVariableEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='218' c='_ZN2sh19VariableNameVisitor11enterStructERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='219' c='_ZN2sh19VariableNameVisitor10exitStructERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='220' c='_ZN2sh19VariableNameVisitor17enterStructAccessERKNS_14ShaderVariableEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='221' c='_ZN2sh19VariableNameVisitor16exitStructAccessERKNS_14ShaderVariableEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='222' c='_ZN2sh19VariableNameVisitor10enterArrayERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='223' c='_ZN2sh19VariableNameVisitor9exitArrayERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='224' c='_ZN2sh19VariableNameVisitor17enterArrayElementERKNS_14ShaderVariableEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='225' c='_ZN2sh19VariableNameVisitor16exitArrayElementERKNS_14ShaderVariableEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='228' c='_ZN2sh19VariableNameVisitor24visitNamedSamplerOrImageERKNS_14ShaderVariableERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESB_RKSt6vectorIjSaIjEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='233' c='_ZN2sh19VariableNameVisitor18visitNamedVariableERKNS_14ShaderVariableEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESB_RKSt6vectorIjSaIjEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='243' c='_ZN2sh19VariableNameVisitor19visitSamplerOrImageERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='244' c='_ZN2sh19VariableNameVisitor13visitVariableERKNS_14ShaderVariableEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='259' c='_ZN2sh19BlockEncoderVisitor17enterStructAccessERKNS_14ShaderVariableEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='260' c='_ZN2sh19BlockEncoderVisitor16exitStructAccessERKNS_14ShaderVariableEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='261' c='_ZN2sh19BlockEncoderVisitor17enterArrayElementERKNS_14ShaderVariableEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='262' c='_ZN2sh19BlockEncoderVisitor16exitArrayElementERKNS_14ShaderVariableEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='264' c='_ZN2sh19BlockEncoderVisitor18visitNamedVariableERKNS_14ShaderVariableEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESB_RKSt6vectorIjSaIjEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='270' c='_ZN2sh19BlockEncoderVisitor14encodeVariableERKNS_14ShaderVariableERKNS_15BlockMemberInfoERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESE_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.h' l='287' c='_ZN2sh22TraverseShaderVariableERKNS_14ShaderVariableEbPNS_21ShaderVariableVisitorE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='30' c='_ZN2sh12_GLOBAL__N_121BlockLayoutMapVisitor14encodeVariableERKNS_14ShaderVariableERKNS_15BlockMemberInfoERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESF_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='65' c='_ZN2sh12_GLOBAL__N_122TraverseStructVariableERKNS_14ShaderVariableEbPNS_21ShaderVariableVisitorE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='69' c='_ZN2sh12_GLOBAL__N_122TraverseStructVariableERKNS_14ShaderVariableEbPNS_21ShaderVariableVisitorE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='76' c='_ZN2sh12_GLOBAL__N_127TraverseStructArrayVariableERKNS_14ShaderVariableEbPNS_21ShaderVariableVisitorE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='88' c='_ZN2sh12_GLOBAL__N_127TraverseStructArrayVariableERKNS_14ShaderVariableEbPNS_21ShaderVariableVisitorE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='106' c='_ZN2sh12_GLOBAL__N_129TraverseArrayOfArraysVariableERKNS_14ShaderVariableEjbPNS_21ShaderVariableVisitorE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='119' c='_ZN2sh12_GLOBAL__N_129TraverseArrayOfArraysVariableERKNS_14ShaderVariableEjbPNS_21ShaderVariableVisitorE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='165' c='_ZN2sh12_GLOBAL__N_120BaseAlignmentVisitor13visitVariableERKNS_14ShaderVariableEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='201' c='_ZN2sh18BlockLayoutEncoder21getShaderVariableSizeERKNS_14ShaderVariableEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='245' c='_ZN2sh18Std140BlockEncoder18enterAggregateTypeERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='250' c='_ZN2sh18Std140BlockEncoder17exitAggregateTypeERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='318' c='_ZNK2sh18Std140BlockEncoder16getBaseAlignmentERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='331' c='_ZNK2sh18Std430BlockEncoder16getBaseAlignmentERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='348' c='_ZN2sh21GetInterfaceBlockInfoERKSt6vectorINS_14ShaderVariableESaIS1_EERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS_18BlockLayoutEncoderEP12660260'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='359' c='_ZN2sh25GetActiveUniformBlockInfoERKSt6vectorINS_14ShaderVariableESaIS1_EERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS_18BlockLayoutEncod4637594'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='387' c='_ZN2sh19VariableNameVisitor11enterStructERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='393' c='_ZN2sh19VariableNameVisitor10exitStructERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='399' c='_ZN2sh19VariableNameVisitor17enterStructAccessERKNS_14ShaderVariableEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='405' c='_ZN2sh19VariableNameVisitor16exitStructAccessERKNS_14ShaderVariableEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='411' c='_ZN2sh19VariableNameVisitor10enterArrayERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='421' c='_ZN2sh19VariableNameVisitor9exitArrayERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='431' c='_ZN2sh19VariableNameVisitor17enterArrayElementERKNS_14ShaderVariableEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='441' c='_ZN2sh19VariableNameVisitor16exitArrayElementERKNS_14ShaderVariableEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='458' c='_ZN2sh19VariableNameVisitor19visitSamplerOrImageERKNS_14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='478' c='_ZN2sh19VariableNameVisitor13visitVariableERKNS_14ShaderVariableEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='507' c='_ZN2sh19BlockEncoderVisitor17enterStructAccessERKNS_14ShaderVariableEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='521' c='_ZN2sh19BlockEncoderVisitor16exitStructAccessERKNS_14ShaderVariableEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='528' c='_ZN2sh19BlockEncoderVisitor17enterArrayElementERKNS_14ShaderVariableEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='552' c='_ZN2sh19BlockEncoderVisitor16exitArrayElementERKNS_14ShaderVariableEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='565' c='_ZN2sh19BlockEncoderVisitor18visitNamedVariableERKNS_14ShaderVariableEbRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESB_RKSt6vectorIjSaIjEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/blocklayout.cpp' l='589' c='_ZN2sh22TraverseShaderVariableERKNS_14ShaderVariableEbPNS_21ShaderVariableVisitorE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateGLFragColorBroadcast.cpp' l='108' c='_ZN2sh27EmulateGLFragColorBroadcastEPNS_9TCompilerEPNS_12TIntermBlockEiPSt6vectorINS_14ShaderVariableESaIS5_EEPNS_12TSymbolTableEi'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateMultiDrawShaderBuiltins.cpp' l='123' c='_ZN2sh15EmulateGLDrawIDEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPSt6vectorINS_14ShaderVariableESaIS7_EEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateMultiDrawShaderBuiltins.cpp' l='139' c='_ZN2sh15EmulateGLDrawIDEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPSt6vectorINS_14ShaderVariableESaIS7_EEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateMultiDrawShaderBuiltins.cpp' l='167' c='_ZN2sh31EmulateGLBaseVertexBaseInstanceEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPSt6vectorINS_14ShaderVariableESaIS7_EEbb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateMultiDrawShaderBuiltins.cpp' l='172' c='_ZN2sh31EmulateGLBaseVertexBaseInstanceEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPSt6vectorINS_14ShaderVariableESaIS7_EEbb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateMultiDrawShaderBuiltins.cpp' l='172' c='_ZN2sh31EmulateGLBaseVertexBaseInstanceEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPSt6vectorINS_14ShaderVariableESaIS7_EEbb'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/FlagSamplersWithTexelFetch.h' l='28' c='_ZN2sh25FlagSamplersForTexelFetchEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPSt6vectorINS_14ShaderVariableESaIS7_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/FlagSamplersWithTexelFetch.cpp' l='35' c='_ZN2sh12_GLOBAL__N_135FlagSamplersWithTexelFetchTraverserC1EPNS_12TSymbolTableEPSt6vectorINS_14ShaderVariableESaIS5_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/FlagSamplersWithTexelFetch.cpp' l='66' c='_ZN2sh12_GLOBAL__N_135FlagSamplersWithTexelFetchTraverser14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/FlagSamplersWithTexelFetch.cpp' l='80'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/FlagSamplersWithTexelFetch.cpp' l='88' c='_ZN2sh25FlagSamplersForTexelFetchEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPSt6vectorINS_14ShaderVariableESaIS7_EE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.h' l='32' c='_ZN2sh32RemoveInactiveInterfaceVariablesEPNS_9TCompilerEPNS_12TIntermBlockERKSt6vectorINS_14ShaderVariableESaIS5_EES9_S9_S9_RKS4_INS_14InterfaceBlockESaISA_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.h' l='33' c='_ZN2sh32RemoveInactiveInterfaceVariablesEPNS_9TCompilerEPNS_12TIntermBlockERKSt6vectorINS_14ShaderVariableESaIS5_EES9_S9_S9_RKS4_INS_14InterfaceBlockESaISA_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.h' l='34' c='_ZN2sh32RemoveInactiveInterfaceVariablesEPNS_9TCompilerEPNS_12TIntermBlockERKSt6vectorINS_14ShaderVariableESaIS5_EES9_S9_S9_RKS4_INS_14InterfaceBlockESaISA_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.h' l='35' c='_ZN2sh32RemoveInactiveInterfaceVariablesEPNS_9TCompilerEPNS_12TIntermBlockERKSt6vectorINS_14ShaderVariableESaIS5_EES9_S9_S9_RKS4_INS_14InterfaceBlockESaISA_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.cpp' l='27' c='_ZN2sh12_GLOBAL__N_141RemoveInactiveInterfaceVariablesTraverserC1ERKSt6vectorINS_14ShaderVariableESaIS3_EES7_S7_S7_RKS2_INS_14InterfaceBlockESaIS8_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.cpp' l='28' c='_ZN2sh12_GLOBAL__N_141RemoveInactiveInterfaceVariablesTraverserC1ERKSt6vectorINS_14ShaderVariableESaIS3_EES7_S7_S7_RKS2_INS_14InterfaceBlockESaIS8_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.cpp' l='29' c='_ZN2sh12_GLOBAL__N_141RemoveInactiveInterfaceVariablesTraverserC1ERKSt6vectorINS_14ShaderVariableESaIS3_EES7_S7_S7_RKS2_INS_14InterfaceBlockESaIS8_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.cpp' l='30' c='_ZN2sh12_GLOBAL__N_141RemoveInactiveInterfaceVariablesTraverserC1ERKSt6vectorINS_14ShaderVariableESaIS3_EES7_S7_S7_RKS2_INS_14InterfaceBlockESaIS8_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.cpp' l='36'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.cpp' l='37'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.cpp' l='38'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.cpp' l='39'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.cpp' l='44' c='_ZN2sh12_GLOBAL__N_141RemoveInactiveInterfaceVariablesTraverserC1ERKSt6vectorINS_14ShaderVariableESaIS3_EES7_S7_S7_RKS2_INS_14InterfaceBlockESaIS8_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.cpp' l='45' c='_ZN2sh12_GLOBAL__N_141RemoveInactiveInterfaceVariablesTraverserC1ERKSt6vectorINS_14ShaderVariableESaIS3_EES7_S7_S7_RKS2_INS_14InterfaceBlockESaIS8_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.cpp' l='46' c='_ZN2sh12_GLOBAL__N_141RemoveInactiveInterfaceVariablesTraverserC1ERKSt6vectorINS_14ShaderVariableESaIS3_EES7_S7_S7_RKS2_INS_14InterfaceBlockESaIS8_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.cpp' l='47' c='_ZN2sh12_GLOBAL__N_141RemoveInactiveInterfaceVariablesTraverserC1ERKSt6vectorINS_14ShaderVariableESaIS3_EES7_S7_S7_RKS2_INS_14InterfaceBlockESaIS8_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.cpp' l='134' c='_ZN2sh32RemoveInactiveInterfaceVariablesEPNS_9TCompilerEPNS_12TIntermBlockERKSt6vectorINS_14ShaderVariableESaIS5_EES9_S9_S9_RKS4_INS_14InterfaceBlockESaISA_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.cpp' l='135' c='_ZN2sh32RemoveInactiveInterfaceVariablesEPNS_9TCompilerEPNS_12TIntermBlockERKSt6vectorINS_14ShaderVariableESaIS5_EES9_S9_S9_RKS4_INS_14InterfaceBlockESaISA_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.cpp' l='136' c='_ZN2sh32RemoveInactiveInterfaceVariablesEPNS_9TCompilerEPNS_12TIntermBlockERKSt6vectorINS_14ShaderVariableESaIS5_EES9_S9_S9_RKS4_INS_14InterfaceBlockESaISA_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveInactiveInterfaceVariables.cpp' l='137' c='_ZN2sh32RemoveInactiveInterfaceVariablesEPNS_9TCompilerEPNS_12TIntermBlockERKSt6vectorINS_14ShaderVariableESaIS5_EES9_S9_S9_RKS4_INS_14InterfaceBlockESaISA_EE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/UseInterfaceBlockFields.cpp' l='43' c='_ZN2sh12_GLOBAL__N_121AddFieldUseStatementsERKNS_14ShaderVariableEPNS_7TVectorIPNS_11TIntermNodeEEERKNS_12TSymbolTableE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/util.cpp' l='633' c='_ZN2sh26GetShaderVariableBasicTypeERKNS_14ShaderVariableE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/VaryingPacking.h' l='37' c='_ZN2gl18VaryingInShaderRefC1ENS_10ShaderTypeEPKN2sh14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/VaryingPacking.h' l='43'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/VaryingPacking.h' l='85' c='_ZNK2gl13PackedVarying7varyingEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/VaryingPacking.h' l='243' c='_ZN2gl14VaryingPacking22packUserVaryingFieldTFERKNS_17ProgramVaryingRefERKN2sh14ShaderVariableEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='73' c='_ZNK2gl11ShaderState16getInputVaryingsEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='74' c='_ZNK2gl11ShaderState17getOutputVaryingsEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='75' c='_ZNK2gl11ShaderState11getUniformsEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='81' c='_ZNK2gl11ShaderState19getActiveAttributesEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='82' c='_ZNK2gl11ShaderState16getAllAttributesEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='83' c='_ZNK2gl11ShaderState24getActiveOutputVariablesEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='124'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='125'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='126'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='129'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='130'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='131'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='196' c='_ZN2gl6Shader16getInputVaryingsEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='197' c='_ZN2gl6Shader17getOutputVaryingsEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='198' c='_ZN2gl6Shader11getUniformsEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='201' c='_ZN2gl6Shader19getActiveAttributesEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='202' c='_ZN2gl6Shader16getAllAttributesEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='203' c='_ZN2gl6Shader24getActiveOutputVariablesEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='262' c='_ZN2gl16CompareShaderVarERKN2sh14ShaderVariableES3_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Shader.h' l='262' c='_ZN2gl16CompareShaderVarERKN2sh14ShaderVariableES3_'/>
+<ovr f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Uniform.h' l='48' c='gl::LinkedUniform'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Uniform.h' l='48'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Uniform.h' l='60' c='_ZN2gl13LinkedUniformC1ERKN2sh14ShaderVariableE'/>
+<ovr f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Uniform.h' l='81' c='gl::BufferVariable'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Uniform.h' l='81'/>
+<ovr f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='55' c='gl::TransformFeedbackVarying'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='55'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='57' c='_ZN2gl24TransformFeedbackVaryingC1ERKN2sh14ShaderVariableEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='58' c='_ZN2gl24TransformFeedbackVaryingC1ERKN2sh14ShaderVariableEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='63' c='_ZN2gl24TransformFeedbackVaryingC1ERKN2sh14ShaderVariableES4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='63' c='_ZN2gl24TransformFeedbackVaryingC1ERKN2sh14ShaderVariableES4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='66' c='_ZN2gl24TransformFeedbackVaryingC1ERKN2sh14ShaderVariableES4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='211' c='_ZNK2gl17ProgramExecutable16getProgramInputsEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='212' c='_ZNK2gl17ProgramExecutable18getOutputVariablesEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='294' c='_ZN2gl17ProgramExecutable23getLinkedOutputVaryingsENS_10ShaderTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='298' c='_ZN2gl17ProgramExecutable22getLinkedInputVaryingsENS_10ShaderTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='343'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='346'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='395'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='396'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='103' c='_ZN2gl14WriteShaderVarEPNS_18BinaryOutputStreamERKN2sh14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='104' c='_ZN2gl13LoadShaderVarEPNS_17BinaryInputStreamEPN2sh14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='173' c='_ZNK2gl15ProgramBindings10getBindingERKN2sh14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='193' c='_ZNK2gl22ProgramAliasedBindings10getBindingERKN2sh14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='233' c='_ZNK2gl12ProgramState16getProgramInputsEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='238' c='_ZNK2gl12ProgramState18getOutputVariablesEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='448' c='_ZNK2gl17ProgramVaryingRef3getENS_10ShaderTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='451' c='_ZNK2gl17ProgramVaryingRef3getENS_10ShaderTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='456'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='457'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='540' c='_ZNK2gl7Program13getAttributesEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='763' c='_ZN2gl7Program25LinkValidateVariablesBaseERKN2sh14ShaderVariableES4_bbPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='764' c='_ZN2gl7Program25LinkValidateVariablesBaseERKN2sh14ShaderVariableES4_bbPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='778' c='_ZNK2gl7Program16getInputResourceEm'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='779' c='_ZNK2gl7Program22getResourceMaxNameSizeERKN2sh14ShaderVariableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='782' c='_ZNK2gl7Program19getResourceLocationEPKcRKN2sh14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='785' c='_ZNK2gl7Program15getResourceNameB5cxx11ERKN2sh14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='788' c='_ZNK2gl7Program17getOutputResourceEm'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='842' c='_ZN2gl7Program19getFilteredVaryingsERKSt6vectorIN2sh14ShaderVariableESaIS3_EEPS1_IPKS3_SaIS9_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='843' c='_ZN2gl7Program19getFilteredVaryingsERKSt6vectorIN2sh14ShaderVariableESaIS3_EEPS1_IPKS3_SaIS9_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='847' c='_ZN2gl7Program22doShaderVariablesMatchEiNS_10ShaderTypeES1_RKN2sh14ShaderVariableES5_bbRNS_7InfoLogE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='848' c='_ZN2gl7Program22doShaderVariablesMatchEiNS_10ShaderTypeES1_RKN2sh14ShaderVariableES5_bbRNS_7InfoLogE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='853' c='_ZN2gl7Program35linkValidateShaderInterfaceMatchingERKSt6vectorIN2sh14ShaderVariableESaIS3_EES7_NS_10ShaderTypeES8_iibRNS_7InfoLogE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='854' c='_ZN2gl7Program35linkValidateShaderInterfaceMatchingERKSt6vectorIN2sh14ShaderVariableESaIS3_EES7_NS_10ShaderTypeES8_iibRNS_7InfoLogE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='861' c='_ZN2gl7Program27linkValidateBuiltInVaryingsERKSt6vectorIN2sh14ShaderVariableESaIS3_EES7_iRNS_7InfoLogE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='862' c='_ZN2gl7Program27linkValidateBuiltInVaryingsERKSt6vectorIN2sh14ShaderVariableESaIS3_EES7_iRNS_7InfoLogE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='901' c='_ZN2gl7Program20LinkValidateVaryingsERKN2sh14ShaderVariableES4_ibbPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='902' c='_ZN2gl7Program20LinkValidateVaryingsERKN2sh14ShaderVariableES4_ibbPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='917' c='_ZNK2gl7Program24getOutputLocationForLinkERKN2sh14ShaderVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Program.h' l='918' c='_ZNK2gl7Program24isOutputSecondaryForLinkERKN2sh14ShaderVariableE'/>
+<size>200</size>
+<def f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='65' ll='213'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='71' c='_ZN2sh14ShaderVariableC1ERKS0_'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='72' c='_ZN2sh14ShaderVariableaSERKS0_'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='72' c='_ZN2sh14ShaderVariableaSERKS0_'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='73' c='_ZNK2sh14ShaderVariableeqERKS0_'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='74' c='_ZNK2sh14ShaderVariableneERKS0_'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='121' c='_ZNK2sh14ShaderVariable20findInfoByMappedNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPPKS0_PS6_'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='126' c='_ZNK2sh14ShaderVariable9findFieldERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPj'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='160'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='175' c='_ZNK2sh14ShaderVariable23isSameUniformAtLinkTimeERKS0_'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='190' c='_ZNK2sh14ShaderVariable35isSameInterfaceBlockFieldAtLinkTimeERKS0_'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='200' c='_ZNK2sh14ShaderVariable23isSameVaryingAtLinkTimeERKS0_i'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='202' c='_ZNK2sh14ShaderVariable23isSameVaryingAtLinkTimeERKS0_'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='208' c='_ZNK2sh14ShaderVariable24isSameVariableAtLinkTimeERKS0_bb'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='217'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='218'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='219'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='220'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='221'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='256'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderLang.h' l='678' c='_ZN2sh11GetUniformsEPv'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderLang.h' l='679' c='_ZN2sh11GetVaryingsEPv'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderLang.h' l='680' c='_ZN2sh16GetInputVaryingsEPv'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderLang.h' l='681' c='_ZN2sh17GetOutputVaryingsEPv'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderLang.h' l='682' c='_ZN2sh13GetAttributesEPv'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderLang.h' l='683' c='_ZN2sh18GetOutputVariablesEPv'/>
+<use f='WebKit/ANGLE/Headers/ANGLE/ShaderLang.h' l='702' c='_ZN2sh33CheckVariablesWithinPackingLimitsEiRKSt6vectorINS_14ShaderVariableESaIS1_EE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ANGLEWebKitBridge.h' l='79' c='_ZN7WebCore17ANGLEWebKitBridge19compileShaderSourceEPKcNS_15ANGLEShaderTypeERN3WTF6StringES6_RNS4_6VectorISt4pairINS_21ANGLEShaderSymbolTypeEN2sh14Sha5587038'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opengl/GraphicsContextGLOpenGL.h' l='602'/>
+<size>200</size>
+<doc f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='61'>// Base class for all variables defined in shaders, including Varyings, Uniforms, etc
+// Note: we must override the copy constructor and assignment operator so we can
+// work around excessive GCC binary bloating:
+// See https://code.google.com/p/angleproject/issues/detail?id=697</doc>
+<fun r='_ZN2sh14ShaderVariableC1Ev'/>
+<fun r='_ZN2sh14ShaderVariableC1Ej'/>
+<fun r='_ZN2sh14ShaderVariableC1Ejj'/>
+<fun r='_ZN2sh14ShaderVariableD1Ev'/>
+<fun r='_ZN2sh14ShaderVariableC1ERKS0_'/>
+<fun r='_ZN2sh14ShaderVariableaSERKS0_'/>
+<fun r='_ZNK2sh14ShaderVariableeqERKS0_'/>
+<fun r='_ZNK2sh14ShaderVariableneERKS0_'/>
+<fun r='_ZNK2sh14ShaderVariable15isArrayOfArraysEv'/>
+<fun r='_ZNK2sh14ShaderVariable7isArrayEv'/>
+<fun r='_ZNK2sh14ShaderVariable19getArraySizeProductEv'/>
+<fun r='_ZNK2sh14ShaderVariable24getInnerArraySizeProductEv'/>
+<fun r='_ZNK2sh14ShaderVariable21getOutermostArraySizeEv'/>
+<fun r='_ZN2sh14ShaderVariable12setArraySizeEj'/>
+<fun r='_ZN2sh14ShaderVariable14indexIntoArrayEj'/>
+<fun r='_ZNK2sh14ShaderVariable18getNestedArraySizeEj'/>
+<fun r='_ZNK2sh14ShaderVariable24getBasicTypeElementCountEv'/>
+<fun r='_ZNK2sh14ShaderVariable15getExternalSizeEv'/>
+<fun r='_ZNK2sh14ShaderVariable8isStructEv'/>
+<fun r='_ZNK2sh14ShaderVariable20findInfoByMappedNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPPKS0_PS6_'/>
+<fun r='_ZNK2sh14ShaderVariable9findFieldERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPj'/>
+<fun r='_ZNK2sh14ShaderVariable9isBuiltInEv'/>
+<fun r='_ZNK2sh14ShaderVariable17isEmulatedBuiltInEv'/>
+<mbr r='sh::ShaderVariable::type' o='0' t='sh::GLenum'/>
+<mbr r='sh::ShaderVariable::precision' o='32' t='sh::GLenum'/>
+<mbr r='sh::ShaderVariable::name' o='64' t='std::string'/>
+<mbr r='sh::ShaderVariable::mappedName' o='320' t='std::string'/>
+<mbr r='sh::ShaderVariable::arraySizes' o='576' t='std::vector&lt;unsigned int&gt;'/>
+<fun r='_ZNK2sh14ShaderVariable16parentArrayIndexEv'/>
+<fun r='_ZN2sh14ShaderVariable19setParentArrayIndexEi'/>
+<fun r='_ZNK2sh14ShaderVariable19hasParentArrayIndexEv'/>
+<mbr r='sh::ShaderVariable::staticUse' o='768' t='bool'/>
+<mbr r='sh::ShaderVariable::active' o='776' t='bool'/>
+<mbr r='sh::ShaderVariable::fields' o='832' t='std::vector&lt;ShaderVariable&gt;'/>
+<mbr r='sh::ShaderVariable::structName' o='1024' t='std::string'/>
+<mbr r='sh::ShaderVariable::isRowMajorLayout' o='1280' t='bool'/>
+<mbr r='sh::ShaderVariable::location' o='1312' t='int'/>
+<mbr r='sh::ShaderVariable::binding' o='1344' t='int'/>
+<fun r='_ZNK2sh14ShaderVariable23isSameUniformAtLinkTimeERKS0_'/>
+<mbr r='sh::ShaderVariable::imageUnitFormat' o='1376' t='sh::GLenum'/>
+<mbr r='sh::ShaderVariable::offset' o='1408' t='int'/>
+<mbr r='sh::ShaderVariable::readonly' o='1440' t='bool'/>
+<mbr r='sh::ShaderVariable::writeonly' o='1448' t='bool'/>
+<mbr r='sh::ShaderVariable::index' o='1472' t='int'/>
+<fun r='_ZNK2sh14ShaderVariable35isSameInterfaceBlockFieldAtLinkTimeERKS0_'/>
+<mbr r='sh::ShaderVariable::interpolation' o='1504' t='sh::InterpolationType'/>
+<mbr r='sh::ShaderVariable::isInvariant' o='1536' t='bool'/>
+<fun r='_ZNK2sh14ShaderVariable23isSameVaryingAtLinkTimeERKS0_i'/>
+<fun r='_ZNK2sh14ShaderVariable23isSameVaryingAtLinkTimeERKS0_'/>
+<mbr r='sh::ShaderVariable::texelFetchStaticUse' o='1544' t='bool'/>
+<fun r='_ZNK2sh14ShaderVariable24isSameVariableAtLinkTimeERKS0_bb'/>
+<mbr r='sh::ShaderVariable::flattenedOffsetInParentArrays' o='1568' t='int'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opengl/ExtensionsGLOpenGLCommon.cpp' l='198' c='_ZN7WebCore24ExtensionsGLOpenGLCommon30getTranslatedShaderSourceANGLEEj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opengl/ExtensionsGLOpenGLCommon.cpp' l='204' c='_ZN7WebCore24ExtensionsGLOpenGLCommon30getTranslatedShaderSourceANGLEEj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opengl/ExtensionsGLOpenGLCommon.cpp' l='206' c='_ZN7WebCore24ExtensionsGLOpenGLCommon30getTranslatedShaderSourceANGLEEj'/>
+<size>200</size>
+<use f='WebKit/Source/WebCore/platform/graphics/opengl/GraphicsContextGLOpenGLCommon.cpp' l='289' c='_ZNK7WebCore23GraphicsContextGLOpenGL20checkVaryingsPackingEjj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opengl/GraphicsContextGLOpenGLCommon.cpp' l='310' c='_ZNK7WebCore23GraphicsContextGLOpenGL20checkVaryingsPackingEjj'/>
+<size>200</size>
+<use f='WebKit/Source/WebCore/platform/graphics/ANGLEWebKitBridge.cpp' l='38' c='_ZN7WebCoreL12appendSymbolERKN2sh14ShaderVariableENS_21ANGLEShaderSymbolTypeERN3WTF6VectorISt4pairIS4_S1_ELm0ENS5_15CrashOnOverflowELm16ENS5_10FastMal3892237'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ANGLEWebKitBridge.cpp' l='38' c='_ZN7WebCoreL12appendSymbolERKN2sh14ShaderVariableENS_21ANGLEShaderSymbolTypeERN3WTF6VectorISt4pairIS4_S1_ELm0ENS5_15CrashOnOverflowELm16ENS5_10FastMal3892237'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ANGLEWebKitBridge.cpp' l='42' c='_ZN7WebCoreL12appendSymbolERKN2sh14ShaderVariableENS_21ANGLEShaderSymbolTypeERN3WTF6VectorISt4pairIS4_S1_ELm0ENS5_15CrashOnOverflowELm16ENS5_10FastMal3892237'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ANGLEWebKitBridge.cpp' l='60' c='_ZN7WebCoreL13getStructInfoERKN2sh14ShaderVariableENS_21ANGLEShaderSymbolTypeERN3WTF6VectorISt4pairIS4_S1_ELm0ENS5_15CrashOnOverflowELm16ENS5_10FastMa10158614'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ANGLEWebKitBridge.cpp' l='60' c='_ZN7WebCoreL13getStructInfoERKN2sh14ShaderVariableENS_21ANGLEShaderSymbolTypeERN3WTF6VectorISt4pairIS4_S1_ELm0ENS5_15CrashOnOverflowELm16ENS5_10FastMa10158614'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ANGLEWebKitBridge.cpp' l='74' c='_ZN7WebCoreL13getSymbolInfoERKN2sh14ShaderVariableENS_21ANGLEShaderSymbolTypeERN3WTF6VectorISt4pairIS4_S1_ELm0ENS5_15CrashOnOverflowELm16ENS5_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ANGLEWebKitBridge.cpp' l='74' c='_ZN7WebCoreL13getSymbolInfoERKN2sh14ShaderVariableENS_21ANGLEShaderSymbolTypeERN3WTF6VectorISt4pairIS4_S1_ELm0ENS5_15CrashOnOverflowELm16ENS5_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ANGLEWebKitBridge.cpp' l='93' c='_ZN7WebCoreL13getSymbolInfoEPvNS_21ANGLEShaderSymbolTypeERN3WTF6VectorISt4pairIS1_N2sh14ShaderVariableEELm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ANGLEWebKitBridge.cpp' l='163' c='_ZN7WebCore17ANGLEWebKitBridge19compileShaderSourceEPKcNS_15ANGLEShaderTypeERN3WTF6StringES6_RNS4_6VectorISt4pairINS_21ANGLEShaderSymbolTypeEN2sh14Sha5587038'/>
+<size>200</size>

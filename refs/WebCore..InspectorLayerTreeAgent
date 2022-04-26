@@ -1,0 +1,40 @@
+<use f='WebKit/Source/WebCore/inspector/InstrumentingAgents.h' l='83' c='_ZNK7WebCore19InstrumentingAgents21enabledLayerTreeAgentEv'/>
+<use f='WebKit/Source/WebCore/inspector/InstrumentingAgents.h' l='83' c='_ZN7WebCore19InstrumentingAgents24setEnabledLayerTreeAgentEPNS_23InspectorLayerTreeAgentE'/>
+<use f='WebKit/Source/WebCore/inspector/InstrumentingAgents.h' l='83'/>
+<inh f='WebKit/Source/WebCore/inspector/InspectorWebAgentBase.h' l='69' c='WebCore::InspectorAgentBase'/>
+<inh f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorBackendDispatchers.h' l='374' c='Inspector::LayerTreeBackendDispatcherHandler'/>
+<def f='WebKit/Source/WebCore/inspector/agents/InspectorLayerTreeAgent.h' l='46' ll='95'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorLayerTreeAgent.h' l='47' c='_ZN7WebCore23InspectorLayerTreeAgentC1ERKS0_'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorLayerTreeAgent.h' l='47' c='_ZN7WebCore23InspectorLayerTreeAgentaSERKS0_'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorLayerTreeAgent.h' l='47' c='_ZN7WebCore23InspectorLayerTreeAgentaSERKS0_'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorController.cpp' l='169' c='_ZN7WebCore19InspectorController16createLazyAgentsEv'/>
+<size>104</size>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgentC1ERKS0_'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgentC1ERNS_15WebAgentContextE'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgentD1Ev'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent27didCreateFrontendAndBackendEPN9Inspector14FrontendRouterEPNS1_17BackendDispatcherE'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent29willDestroyFrontendAndBackendEN9Inspector16DisconnectReasonE'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent6enableEv'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent7disableEv'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent13layersForNodeEi'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent26reasonsForCompositingLayerERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent18layerTreeDidChangeEv'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent20renderLayerDestroyedERKNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent22pseudoElementDestroyedERNS_13PseudoElementE'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent5resetEv'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent4bindEPKNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent6unbindEPKNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent38gatherLayersUsingRenderObjectHierarchyERNS_13RenderElementERN3WTF8JSONImpl7ArrayOfIN9Inspector8Protocol9LayerTree5LayerEEE'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent37gatherLayersUsingRenderLayerHierarchyEPNS_11RenderLayerERN3WTF8JSONImpl7ArrayOfIN9Inspector8Protocol9LayerTree5LayerEEE'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent19buildObjectForLayerEPNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent21buildObjectForIntRectERKNS_7IntRectE'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent9idForNodeEPNS_4NodeE'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent17bindPseudoElementEPNS_13PseudoElementE'/>
+<fun r='_ZN7WebCore23InspectorLayerTreeAgent19unbindPseudoElementEPNS_13PseudoElementE'/>
+<mbr r='WebCore::InspectorLayerTreeAgent::m_frontendDispatcher' o='320' t='std::unique_ptr&lt;Inspector::LayerTreeFrontendDispatcher&gt;'/>
+<mbr r='WebCore::InspectorLayerTreeAgent::m_backendDispatcher' o='384' t='RefPtr&lt;Inspector::LayerTreeBackendDispatcher&gt;'/>
+<mbr r='WebCore::InspectorLayerTreeAgent::m_documentLayerToIdMap' o='448' t='HashMap&lt;const WebCore::RenderLayer *, Inspector::Protocol::LayerTree::LayerId&gt;'/>
+<mbr r='WebCore::InspectorLayerTreeAgent::m_idToLayer' o='512' t='HashMap&lt;Inspector::Protocol::LayerTree::LayerId, const WebCore::RenderLayer *&gt;'/>
+<mbr r='WebCore::InspectorLayerTreeAgent::m_pseudoElementToIdMap' o='576' t='WeakHashMap&lt;WebCore::PseudoElement, Inspector::Protocol::LayerTree::PseudoElementId&gt;'/>
+<mbr r='WebCore::InspectorLayerTreeAgent::m_idToPseudoElement' o='704' t='HashMap&lt;Inspector::Protocol::LayerTree::PseudoElementId, WeakPtr&lt;WebCore::PseudoElement&gt; &gt;'/>
+<mbr r='WebCore::InspectorLayerTreeAgent::m_suppressLayerChangeEvents' o='768' t='bool'/>

@@ -1,0 +1,104 @@
+<inh f='WebKit/Source/WebKit/Platform/IPC/MessageSender.h' l='34' c='IPC::MessageSender'/>
+<inh f='WebKit/Source/WebKit/Platform/IPC/MessageReceiver.h' l='37' c='IPC::MessageReceiver'/>
+<inh f='WebKit/Source/WebCore/Modules/websockets/ThreadableWebSocketChannel.h' l='52' c='WebCore::ThreadableWebSocketChannel'/>
+<inh f='WebKit/WTF/Headers/wtf/RefCounted.h' l='184' c='WTF::RefCounted'/>
+<def f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannel.h' l='47' ll='121'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannel.h' l='47'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannel.h' l='49' c='_ZN6WebKit16WebSocketChannel6createEN3WTF16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEERN7WebCore8DocumentERNS5_22WebSocketChannelClientE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannel.h' l='62' c='_ZN6WebKit16WebSocketChannel18createMessageQueueERN7WebCore8DocumentERS0_'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannelManager.h' l='49' c='_ZN6WebKit23WebSocketChannelManager10addChannelERNS_16WebSocketChannelE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannelManager.h' l='50' c='_ZN6WebKit23WebSocketChannelManager13removeChannelERNS_16WebSocketChannelE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannelManager.h' l='53'/>
+<size>704</size>
+<fun r='_ZN6WebKit16WebSocketChannel6createEN3WTF16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEERN7WebCore8DocumentERNS5_22WebSocketChannelClientE'/>
+<fun r='_ZN6WebKit16WebSocketChannelD1Ev'/>
+<fun r='_ZN6WebKit16WebSocketChannel17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<fun r='_ZN6WebKit16WebSocketChannel21networkProcessCrashedEv'/>
+<fun r='_ZN6WebKit16WebSocketChannelC1EN3WTF16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEERN7WebCore8DocumentERNS5_22WebSocketChannelClientE'/>
+<fun r='_ZN6WebKit16WebSocketChannel18createMessageQueueERN7WebCore8DocumentERS0_'/>
+<fun r='_ZN6WebKit16WebSocketChannel7connectERKN3WTF3URLERKNS1_6StringE'/>
+<fun r='_ZN6WebKit16WebSocketChannel11subprotocolEv'/>
+<fun r='_ZN6WebKit16WebSocketChannel10extensionsEv'/>
+<fun r='_ZN6WebKit16WebSocketChannel4sendERKN3WTF6StringE'/>
+<fun r='_ZN6WebKit16WebSocketChannel4sendERKN3JSC11ArrayBufferEjj'/>
+<fun r='_ZN6WebKit16WebSocketChannel4sendERN7WebCore4BlobE'/>
+<fun r='_ZNK6WebKit16WebSocketChannel14bufferedAmountEv'/>
+<fun r='_ZN6WebKit16WebSocketChannel5closeEiRKN3WTF6StringE'/>
+<fun r='_ZN6WebKit16WebSocketChannel4failERKN3WTF6StringE'/>
+<fun r='_ZN6WebKit16WebSocketChannel10disconnectEv'/>
+<fun r='_ZN6WebKit16WebSocketChannel7suspendEv'/>
+<fun r='_ZN6WebKit16WebSocketChannel6resumeEv'/>
+<fun r='_ZN6WebKit16WebSocketChannel29refThreadableWebSocketChannelEv'/>
+<fun r='_ZN6WebKit16WebSocketChannel31derefThreadableWebSocketChannelEv'/>
+<fun r='_ZN6WebKit16WebSocketChannel15notifySendFrameEN7WebCore14WebSocketFrame6OpCodeEPKhm'/>
+<fun r='_ZN6WebKit16WebSocketChannel15logErrorMessageERKN3WTF6StringE'/>
+<fun r='_ZN6WebKit16WebSocketChannel10didConnectEON3WTF6StringES3_'/>
+<fun r='_ZN6WebKit16WebSocketChannel14didReceiveTextEON3WTF6StringE'/>
+<fun r='_ZN6WebKit16WebSocketChannel20didReceiveBinaryDataEON3IPC14ArrayReferenceIhLm18446744073709551615EEE'/>
+<fun r='_ZN6WebKit16WebSocketChannel8didCloseEtON3WTF6StringE'/>
+<fun r='_ZN6WebKit16WebSocketChannel22didReceiveMessageErrorEON3WTF6StringE'/>
+<fun r='_ZN6WebKit16WebSocketChannel23didSendHandshakeRequestEON7WebCore15ResourceRequestE'/>
+<fun r='_ZN6WebKit16WebSocketChannel27didReceiveHandshakeResponseEON7WebCore16ResourceResponseE'/>
+<fun r='_ZNK6WebKit16WebSocketChannel23messageSenderConnectionEv'/>
+<fun r='_ZNK6WebKit16WebSocketChannel26messageSenderDestinationIDEv'/>
+<fun r='_ZN6WebKit16WebSocketChannel22increaseBufferedAmountEm'/>
+<fun r='_ZN6WebKit16WebSocketChannel22decreaseBufferedAmountEm'/>
+<fun r='_ZN6WebKit16WebSocketChannel11sendMessageEOT_m'/>
+<fun r='_ZN6WebKit16WebSocketChannel11enqueueTaskEON3WTF8FunctionIFvvEEE'/>
+<fun r='_ZNK6WebKit16WebSocketChannel18progressIdentifierEv'/>
+<fun r='_ZNK6WebKit16WebSocketChannel19hasCreatedHandshakeEv'/>
+<fun r='_ZNK6WebKit16WebSocketChannel11isConnectedEv'/>
+<fun r='_ZNK6WebKit16WebSocketChannel22clientHandshakeRequestERKN3WTF8FunctionIFNS1_6StringERKNS1_3URLEEEE'/>
+<fun r='_ZNK6WebKit16WebSocketChannel23serverHandshakeResponseEv'/>
+<mbr r='WebKit::WebSocketChannel::m_document' o='384' t='WeakPtr&lt;WebCore::Document&gt;'/>
+<mbr r='WebKit::WebSocketChannel::m_client' o='448' t='WeakPtr&lt;WebCore::WebSocketChannelClient&gt;'/>
+<mbr r='WebKit::WebSocketChannel::m_url' o='512' t='WTF::URL'/>
+<mbr r='WebKit::WebSocketChannel::m_subprotocol' o='832' t='WTF::String'/>
+<mbr r='WebKit::WebSocketChannel::m_extensions' o='896' t='WTF::String'/>
+<mbr r='WebKit::WebSocketChannel::m_bufferedAmount' o='960' t='size_t'/>
+<mbr r='WebKit::WebSocketChannel::m_isClosing' o='1024' t='bool'/>
+<mbr r='WebKit::WebSocketChannel::m_isSuspended' o='1032' t='bool'/>
+<mbr r='WebKit::WebSocketChannel::m_pendingTasks' o='1088' t='Deque&lt;Function&lt;void ()&gt; &gt;'/>
+<mbr r='WebKit::WebSocketChannel::m_messageQueue' o='1344' t='WebCore::NetworkSendQueue'/>
+<mbr r='WebKit::WebSocketChannel::m_inspector' o='1920' t='WebCore::WebSocketChannelInspector'/>
+<mbr r='WebKit::WebSocketChannel::m_handshakeRequest' o='1984' t='WebCore::ResourceRequest'/>
+<mbr r='WebKit::WebSocketChannel::m_handshakeResponse' o='3456' t='WebCore::ResourceResponse'/>
+<mbr r='WebKit::WebSocketChannel::m_webPageProxyID' o='5568' t='WebKit::WebPageProxyIdentifier'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannelManager.cpp' l='33' c='_ZN6WebKit23WebSocketChannelManager10addChannelERNS_16WebSocketChannelE'/>
+<size>704</size>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannel.cpp' l='45' c='_ZN6WebKit16WebSocketChannel6createEN3WTF16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEERN7WebCore8DocumentERNS5_22WebSocketChannelClientE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannel.cpp' l='47' c='_ZN6WebKit16WebSocketChannel6createEN3WTF16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEERN7WebCore8DocumentERNS5_22WebSocketChannelClientE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannel.cpp' l='56' c='_ZN6WebKit16WebSocketChannel18createMessageQueueERN7WebCore8DocumentERS0_'/>
+<size>704</size>
+<fun r='_ZN6WebKit16WebSocketChannel6createEN3WTF16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEERN7WebCore8DocumentERNS5_22WebSocketChannelClientE'/>
+<fun r='_ZN6WebKit16WebSocketChannel15notifySendFrameEN7WebCore14WebSocketFrame6OpCodeEPKhm'/>
+<fun r='_ZN6WebKit16WebSocketChannel18createMessageQueueERN7WebCore8DocumentERS0_'/>
+<fun r='_ZN6WebKit16WebSocketChannelC1EN3WTF16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEERN7WebCore8DocumentERNS5_22WebSocketChannelClientE'/>
+<fun r='_ZN6WebKit16WebSocketChannelD1Ev'/>
+<fun r='_ZNK6WebKit16WebSocketChannel23messageSenderConnectionEv'/>
+<fun r='_ZNK6WebKit16WebSocketChannel26messageSenderDestinationIDEv'/>
+<fun r='_ZN6WebKit16WebSocketChannel11subprotocolEv'/>
+<fun r='_ZN6WebKit16WebSocketChannel10extensionsEv'/>
+<fun r='_ZN6WebKit16WebSocketChannel7connectERKN3WTF3URLERKNS1_6StringE'/>
+<fun r='_ZN6WebKit16WebSocketChannel22increaseBufferedAmountEm'/>
+<fun r='_ZN6WebKit16WebSocketChannel22decreaseBufferedAmountEm'/>
+<fun r='_ZN6WebKit16WebSocketChannel11sendMessageEOT_m'/>
+<fun r='_ZN6WebKit16WebSocketChannel4sendERKN3WTF6StringE'/>
+<fun r='_ZN6WebKit16WebSocketChannel4sendERKN3JSC11ArrayBufferEjj'/>
+<fun r='_ZN6WebKit16WebSocketChannel4sendERN7WebCore4BlobE'/>
+<fun r='_ZNK6WebKit16WebSocketChannel14bufferedAmountEv'/>
+<fun r='_ZN6WebKit16WebSocketChannel5closeEiRKN3WTF6StringE'/>
+<fun r='_ZN6WebKit16WebSocketChannel4failERKN3WTF6StringE'/>
+<fun r='_ZN6WebKit16WebSocketChannel10disconnectEv'/>
+<fun r='_ZN6WebKit16WebSocketChannel10didConnectEON3WTF6StringES3_'/>
+<fun r='_ZN6WebKit16WebSocketChannel14didReceiveTextEON3WTF6StringE'/>
+<fun r='_ZN6WebKit16WebSocketChannel20didReceiveBinaryDataEON3IPC14ArrayReferenceIhLm18446744073709551615EEE'/>
+<fun r='_ZN6WebKit16WebSocketChannel8didCloseEtON3WTF6StringE'/>
+<fun r='_ZN6WebKit16WebSocketChannel15logErrorMessageERKN3WTF6StringE'/>
+<fun r='_ZN6WebKit16WebSocketChannel22didReceiveMessageErrorEON3WTF6StringE'/>
+<fun r='_ZN6WebKit16WebSocketChannel21networkProcessCrashedEv'/>
+<fun r='_ZN6WebKit16WebSocketChannel7suspendEv'/>
+<fun r='_ZN6WebKit16WebSocketChannel6resumeEv'/>
+<fun r='_ZN6WebKit16WebSocketChannel11enqueueTaskEON3WTF8FunctionIFvvEEE'/>
+<fun r='_ZN6WebKit16WebSocketChannel23didSendHandshakeRequestEON7WebCore15ResourceRequestE'/>
+<fun r='_ZN6WebKit16WebSocketChannel27didReceiveHandshakeResponseEON7WebCore16ResourceResponseE'/>

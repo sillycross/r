@@ -1,0 +1,38 @@
+<inh f='WebKit/WTF/Headers/wtf/RefCounted.h' l='184' c='WTF::RefCounted'/>
+<inh f='WebKit/WTF/Headers/wtf/WeakPtr.h' l='218' c='WTF::CanMakeWeakPtr'/>
+<def f='WebKit/Source/WebCore/dom/EventLoop.h' l='65' ll='101'/>
+<use f='WebKit/Source/WebCore/dom/EventLoop.h' l='65'/>
+<use f='WebKit/Source/WebCore/dom/EventLoop.h' l='65'/>
+<use f='WebKit/Source/WebCore/dom/EventLoop.h' l='108' c='_ZN7WebCore18EventLoopTaskGroupC1ERNS_9EventLoopE'/>
+<use f='WebKit/Source/WebCore/dom/EventLoop.h' l='190'/>
+<size>64</size>
+<doc f='WebKit/Source/WebCore/dom/EventLoop.h' l='64'>// https://html.spec.whatwg.org/multipage/webappapis.html#event-loop</doc>
+<fun r='_ZN7WebCore9EventLoopD1Ev'/>
+<fun r='_ZN7WebCore9EventLoop9queueTaskEOSt10unique_ptrINS_13EventLoopTaskESt14default_deleteIS2_EE'/>
+<fun r='_ZN7WebCore9EventLoop14queueMicrotaskEOSt10unique_ptrINS_13EventLoopTaskESt14default_deleteIS2_EE'/>
+<fun r='_ZN7WebCore9EventLoop26performMicrotaskCheckpointEv'/>
+<fun r='_ZN7WebCore9EventLoop14microtaskQueueEv'/>
+<fun r='_ZN7WebCore9EventLoop11resumeGroupERNS_18EventLoopTaskGroupE'/>
+<fun r='_ZN7WebCore9EventLoop9stopGroupERNS_18EventLoopTaskGroupE'/>
+<fun r='_ZN7WebCore9EventLoop13registerGroupERNS_18EventLoopTaskGroupE'/>
+<fun r='_ZN7WebCore9EventLoop15unregisterGroupERNS_18EventLoopTaskGroupE'/>
+<fun r='_ZN7WebCore9EventLoop31stopAssociatedGroupsIfNecessaryEv'/>
+<fun r='_ZN7WebCore9EventLoopC1Ev'/>
+<fun r='_ZN7WebCore9EventLoop3runEv'/>
+<fun r='_ZN7WebCore9EventLoop13clearAllTasksEv'/>
+<fun r='_ZN7WebCore9EventLoop21scheduleToRunIfNeededEv'/>
+<fun r='_ZN7WebCore9EventLoop13scheduleToRunEv'/>
+<fun r='_ZNK7WebCore9EventLoop15isContextThreadEv'/>
+<mbr r='WebCore::EventLoop::m_tasks' o='192' t='Vector&lt;std::unique_ptr&lt;EventLoopTask&gt; &gt;'/>
+<mbr r='WebCore::EventLoop::m_associatedGroups' o='320' t='WeakHashSet&lt;WebCore::EventLoopTaskGroup&gt;'/>
+<mbr r='WebCore::EventLoop::m_groupsWithSuspenedTasks' o='384' t='WeakHashSet&lt;WebCore::EventLoopTaskGroup&gt;'/>
+<mbr r='WebCore::EventLoop::m_isScheduledToRun' o='448' t='bool'/>
+<ovr f='WebKit/Source/WebCore/dom/WindowEventLoop.h' l='43' c='WebCore::WindowEventLoop'/>
+<use f='WebKit/Source/WebCore/dom/WindowEventLoop.h' l='43'/>
+<size>64</size>
+<ovr f='WebKit/Source/WebCore/dom/EmptyScriptExecutionContext.h' l='97' c='WebCore::EmptyScriptExecutionContext::EmptyEventLoop'/>
+<use f='WebKit/Source/WebCore/dom/EmptyScriptExecutionContext.h' l='97'/>
+<size>64</size>
+<ovr f='WebKit/Source/WebCore/workers/WorkerEventLoop.h' l='35' c='WebCore::WorkerEventLoop'/>
+<use f='WebKit/Source/WebCore/workers/WorkerEventLoop.h' l='35'/>
+<size>64</size>

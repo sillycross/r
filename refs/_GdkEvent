@@ -1,0 +1,100 @@
+<use f='WebKit/WTF/Headers/wtf/glib/GTypedefs.h' l='69'/>
+<use f='include/gtk-3.0/gdk/gdkevents.h' l='151'/>
+<def f='include/gtk-3.0/gdk/gdkevents.h' l='1417' ll='1444'/>
+<use f='WebKit/Source/WebKit/Shared/NativeWebKeyboardEvent.h' l='43'/>
+<use f='WebKit/Source/WebKit/Shared/gtk/WebEventFactory.h' l='40'/>
+<use f='WebKit/Source/WebKit/Shared/NativeWebMouseEvent.h' l='41'/>
+<size>96</size>
+<doc f='include/gtk-3.0/gdk/gdkevents.h' l='1358'>/**
+ * GdkEvent:
+ * @type: the #GdkEventType
+ * @any: a #GdkEventAny
+ * @expose: a #GdkEventExpose
+ * @visibility: a #GdkEventVisibility
+ * @motion: a #GdkEventMotion
+ * @button: a #GdkEventButton
+ * @touch: a #GdkEventTouch
+ * @scroll: a #GdkEventScroll
+ * @key: a #GdkEventKey
+ * @crossing: a #GdkEventCrossing
+ * @focus_change: a #GdkEventFocus
+ * @configure: a #GdkEventConfigure
+ * @property: a #GdkEventProperty
+ * @selection: a #GdkEventSelection
+ * @owner_change: a #GdkEventOwnerChange
+ * @proximity: a #GdkEventProximity
+ * @dnd: a #GdkEventDND
+ * @window_state: a #GdkEventWindowState
+ * @setting: a #GdkEventSetting
+ * @grab_broken: a #GdkEventGrabBroken
+ * @touchpad_swipe: a #GdkEventTouchpadSwipe
+ * @touchpad_pinch: a #GdkEventTouchpadPinch
+ * @pad_button: a #GdkEventPadButton
+ * @pad_axis: a #GdkEventPadAxis
+ * @pad_group_mode: a #GdkEventPadGroupMode
+ *
+ * A #GdkEvent contains a union of all of the event types,
+ * and allows access to the data fields in a number of ways.
+ *
+ * The event type is always the first field in all of the event types, and
+ * can always be accessed with the following code, no matter what type of
+ * event it is:
+ * |[&lt;!-- language=&quot;C&quot; --&gt;
+ *   GdkEvent *event;
+ *   GdkEventType type;
+ *
+ *   type = event-&gt;type;
+ * ]|
+ *
+ * To access other fields of the event, the pointer to the event
+ * can be cast to the appropriate event type, or the union member
+ * name can be used. For example if the event type is %GDK_BUTTON_PRESS
+ * then the x coordinate of the button press can be accessed with:
+ * |[&lt;!-- language=&quot;C&quot; --&gt;
+ *   GdkEvent *event;
+ *   gdouble x;
+ *
+ *   x = ((GdkEventButton*)event)-&gt;x;
+ * ]|
+ * or:
+ * |[&lt;!-- language=&quot;C&quot; --&gt;
+ *   GdkEvent *event;
+ *   gdouble x;
+ *
+ *   x = event-&gt;button.x;
+ * ]|
+ */</doc>
+<mbr r='_GdkEvent::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEvent::any' o='0' t='GdkEventAny'/>
+<mbr r='_GdkEvent::expose' o='0' t='GdkEventExpose'/>
+<mbr r='_GdkEvent::visibility' o='0' t='GdkEventVisibility'/>
+<mbr r='_GdkEvent::motion' o='0' t='GdkEventMotion'/>
+<mbr r='_GdkEvent::button' o='0' t='GdkEventButton'/>
+<mbr r='_GdkEvent::touch' o='0' t='GdkEventTouch'/>
+<mbr r='_GdkEvent::scroll' o='0' t='GdkEventScroll'/>
+<mbr r='_GdkEvent::key' o='0' t='GdkEventKey'/>
+<mbr r='_GdkEvent::crossing' o='0' t='GdkEventCrossing'/>
+<mbr r='_GdkEvent::focus_change' o='0' t='GdkEventFocus'/>
+<mbr r='_GdkEvent::configure' o='0' t='GdkEventConfigure'/>
+<mbr r='_GdkEvent::property' o='0' t='GdkEventProperty'/>
+<mbr r='_GdkEvent::selection' o='0' t='GdkEventSelection'/>
+<mbr r='_GdkEvent::owner_change' o='0' t='GdkEventOwnerChange'/>
+<mbr r='_GdkEvent::proximity' o='0' t='GdkEventProximity'/>
+<mbr r='_GdkEvent::dnd' o='0' t='GdkEventDND'/>
+<mbr r='_GdkEvent::window_state' o='0' t='GdkEventWindowState'/>
+<mbr r='_GdkEvent::setting' o='0' t='GdkEventSetting'/>
+<mbr r='_GdkEvent::grab_broken' o='0' t='GdkEventGrabBroken'/>
+<mbr r='_GdkEvent::touchpad_swipe' o='0' t='GdkEventTouchpadSwipe'/>
+<mbr r='_GdkEvent::touchpad_pinch' o='0' t='GdkEventTouchpadPinch'/>
+<mbr r='_GdkEvent::pad_button' o='0' t='GdkEventPadButton'/>
+<mbr r='_GdkEvent::pad_axis' o='0' t='GdkEventPadAxis'/>
+<mbr r='_GdkEvent::pad_group_mode' o='0' t='GdkEventPadGroupMode'/>
+<use f='WebKit/Source/WebKit/Shared/NativeWebWheelEvent.h' l='41'/>
+<size>96</size>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WebPopupMenuProxyGtk.h' l='35'/>
+<size>96</size>
+<use f='WebKit/Source/WTF/wtf/glib/GTypedefs.h' l='69'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/InputMethodFilter.h' l='35'/>
+<size>96</size>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/PointerLockManager.h' l='36'/>
+<size>96</size>

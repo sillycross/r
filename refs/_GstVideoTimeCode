@@ -1,0 +1,29 @@
+<use f='include/gstreamer-1.0/gst/video/gstvideotimecode.h' l='29'/>
+<def f='include/gstreamer-1.0/gst/video/gstvideotimecode.h' l='95' ll='103'/>
+<size>48</size>
+<doc f='include/gstreamer-1.0/gst/video/gstvideotimecode.h' l='75'>/**
+ * GstVideoTimeCode:
+ * @hours: the hours field of #GstVideoTimeCode
+ * @minutes: the minutes field of #GstVideoTimeCode
+ * @seconds: the seconds field of #GstVideoTimeCode
+ * @frames: the frames field of #GstVideoTimeCode
+ * @field_count: Interlaced video field count
+ * @config: the corresponding #GstVideoTimeCodeConfig
+ *
+ * @field_count must be 0 for progressive video and 1 or 2 for interlaced.
+ *
+ * A representation of a SMPTE time code.
+ *
+ * @hours must be positive and less than 24. Will wrap around otherwise.
+ * @minutes and @seconds must be positive and less than 60.
+ * @frames must be less than or equal to @config.fps_n / @config.fps_d
+ * These values are *NOT* automatically normalized.
+ *
+ * Since: 1.10
+ */</doc>
+<mbr r='_GstVideoTimeCode::config' o='0' t='GstVideoTimeCodeConfig'/>
+<mbr r='_GstVideoTimeCode::hours' o='192' t='guint'/>
+<mbr r='_GstVideoTimeCode::minutes' o='224' t='guint'/>
+<mbr r='_GstVideoTimeCode::seconds' o='256' t='guint'/>
+<mbr r='_GstVideoTimeCode::frames' o='288' t='guint'/>
+<mbr r='_GstVideoTimeCode::field_count' o='320' t='guint'/>

@@ -1,0 +1,23 @@
+<use f='include/gstreamer-1.0/gst/gstmemory.h' l='40'/>
+<def f='include/gstreamer-1.0/gst/gstmemory.h' l='156' ll='166'/>
+<size>112</size>
+<doc f='include/gstreamer-1.0/gst/gstmemory.h' l='143'>/**
+ * GstMemory:
+ * @mini_object: parent structure
+ * @allocator: pointer to the #GstAllocator
+ * @parent: parent memory block
+ * @maxsize: the maximum size allocated
+ * @align: the alignment of the memory
+ * @offset: the offset where valid data starts
+ * @size: the size of valid data
+ *
+ * Base structure for memory implementations. Custom memory will put this structure
+ * as the first member of their structure.
+ */</doc>
+<mbr r='_GstMemory::mini_object' o='0' t='GstMiniObject'/>
+<mbr r='_GstMemory::allocator' o='512' t='GstAllocator *'/>
+<mbr r='_GstMemory::parent' o='576' t='GstMemory *'/>
+<mbr r='_GstMemory::maxsize' o='640' t='gsize'/>
+<mbr r='_GstMemory::align' o='704' t='gsize'/>
+<mbr r='_GstMemory::offset' o='768' t='gsize'/>
+<mbr r='_GstMemory::size' o='832' t='gsize'/>

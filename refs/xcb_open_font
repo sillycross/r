@@ -1,0 +1,16 @@
+<dec f='include/xcb/xproto.h' l='8545' type='xcb_void_cookie_t xcb_open_font(xcb_connection_t * c, xcb_font_t fid, uint16_t name_len, const char * name)'/>
+<doc f='include/xcb/xproto.h' l='8529'>/**
+ * @brief opens a font
+ *
+ * @param c The connection
+ * @param fid The ID with which you will refer to the font, created by `xcb_generate_id`.
+ * @param name_len Length (in bytes) of \a name.
+ * @param name A pattern describing an X core font.
+ * @return A cookie
+ *
+ * Opens any X core font matching the given \a name (for example &quot;-misc-fixed-*&quot;).
+ * 
+ * Note that X core fonts are deprecated (but still supported) in favor of
+ * client-side rendering using Xft.
+ *
+ */</doc>

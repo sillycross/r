@@ -1,0 +1,11 @@
+<dec f='WebKit/Source/JavaScriptCore/b3/air/AirFixPartialRegisterStalls.h' l='42' type='void JSC::B3::Air::fixPartialRegisterStalls(JSC::B3::Air::Code &amp; )'/>
+<def f='WebKit/Source/JavaScriptCore/b3/air/AirFixPartialRegisterStalls.cpp' l='133' ll='235' type='void JSC::B3::Air::fixPartialRegisterStalls(JSC::B3::Air::Code &amp; code)'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirGenerate.cpp' l='169' u='c' c='_ZN3JSC2B33Air20prepareForGenerationERNS1_4CodeE'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/air/AirFixPartialRegisterStalls.h' l='34'>// x86 has a pipelining hazard caused by false dependencies between instructions.
+//
+// Some instructions update only part of a register, they can only be scheduled after
+// the previous definition is computed. This problem can be avoided by the compiler
+// by explicitly resetting the entire register before executing the instruction with
+// partial update.
+//
+// See &quot;Partial XMM Register Stalls&quot; and &quot;Dependency Breaking Idioms&quot; in the manual.</doc>

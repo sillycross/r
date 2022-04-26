@@ -1,0 +1,8 @@
+<def f='WebKit/WTF/Headers/wtf/SortedArrayMap.h' l='45' type='const size_t'/>
+<use f='WebKit/WTF/Headers/wtf/SortedArrayMap.h' l='170' c='_ZNK3WTF14SortedArrayMap6tryGetERKT_'/>
+<use f='WebKit/WTF/Headers/wtf/SortedArrayMap.h' l='209' c='_ZNK3WTF14SortedArraySet8containsERKT_'/>
+<doc f='WebKit/WTF/Headers/wtf/SortedArrayMap.h' l='40'>// Some informal empirical tests indicate that arrays shorter than this are faster to
+    // search with linear search than with binary search. Even if we don&apos;t get this threshold
+    // exactly right, it&apos;s helpful for both performance and code size to use linear search at
+    // least for very small arrays, and important for performance to make sure that we use
+    // binary search for much larger ones.</doc>

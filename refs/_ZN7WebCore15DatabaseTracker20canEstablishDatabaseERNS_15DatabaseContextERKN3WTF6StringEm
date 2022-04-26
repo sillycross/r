@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseTracker.h' l='71' type='ExceptionOr&lt;void&gt; WebCore::DatabaseTracker::canEstablishDatabase(WebCore::DatabaseContext &amp; , const WTF::String &amp; name, uint64_t estimatedSize)'/>
+<doc f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseTracker.h' l='64'>// This singleton will potentially be used from multiple worker threads and the page&apos;s context thread simultaneously.  To keep this safe, it&apos;s
+    // currently using 4 locks.  In order to avoid deadlock when taking multiple locks, you must take them in the correct order:
+    // m_databaseGuard before quotaManager if both locks are needed.
+    // m_openDatabaseMapGuard before quotaManager if both locks are needed.
+    // m_databaseGuard and m_openDatabaseMapGuard currently don&apos;t overlap.
+    // notificationMutex() is currently independent of the other locks.</doc>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseManager.cpp' l='162' u='c' c='_ZN7WebCore15DatabaseManager24tryToOpenDatabaseBackendERNS_8DocumentERKN3WTF6StringES6_S6_jbNS0_11OpenAttemptE'/>
+<def f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseTracker.cpp' l='160' ll='198' type='ExceptionOr&lt;void&gt; WebCore::DatabaseTracker::canEstablishDatabase(WebCore::DatabaseContext &amp; context, const WTF::String &amp; name, uint64_t estimatedSize)'/>

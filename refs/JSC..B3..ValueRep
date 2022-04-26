@@ -1,0 +1,128 @@
+<def f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='52' ll='324'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='119' c='_ZN3JSC2B38ValueRepC1ERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='149' c='_ZN3JSC2B38ValueRep3regENS_3RegE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='151' c='_ZN3JSC2B38ValueRep3regENS_3RegE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='154' c='_ZN3JSC2B38ValueRep7lateRegENS_3RegE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='156' c='_ZN3JSC2B38ValueRep7lateRegENS_3RegE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='161' c='_ZN3JSC2B38ValueRep5stackEl'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='163' c='_ZN3JSC2B38ValueRep5stackEl'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='169' c='_ZN3JSC2B38ValueRep13stackArgumentEl'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='171' c='_ZN3JSC2B38ValueRep13stackArgumentEl'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='177' c='_ZN3JSC2B38ValueRep8constantEl'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='179' c='_ZN3JSC2B38ValueRep8constantEl'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='185' c='_ZN3JSC2B38ValueRep14constantDoubleEd'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='190' c='_ZN3JSC2B38ValueRep13constantFloatEf'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='197' c='_ZNK3JSC2B38ValueRepeqERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='216' c='_ZNK3JSC2B38ValueRepneERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='273' c='_ZNK3JSC2B38ValueRep10withOffsetEl'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='294' c='_ZN3JSC2B38ValueRep13usedRegistersERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.h' l='123' c='_ZN3JSC3FTL7OSRExitC1EPNS0_17OSRExitDescriptorENS_8ExitKindENS_10CodeOriginES5_bjON3WTF11FixedVectorINS_2B38ValueRepEEE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.h' l='129'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ConstrainedValue.h' l='48' c='_ZN3JSC2B316ConstrainedValueC1EPNS0_5ValueERKNS0_8ValueRepE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ConstrainedValue.h' l='57' c='_ZNK3JSC2B316ConstrainedValue3repEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ConstrainedValue.h' l='63'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapValue.h' l='73' c='_ZN3JSC2B313StackmapValue6appendEPNS0_5ValueERKNS0_8ValueRepE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapValue.h' l='84' c='_ZN3JSC2B313StackmapValue19appendVectorWithRepERKT_RKNS0_8ValueRepE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapValue.h' l='107' c='_ZNK3JSC2B313StackmapValue4repsEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapValue.h' l='223' c='_ZN3JSC2B313StackmapValue13setConstraintEjRKNS0_8ValueRepE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapValue.h' l='312'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3PatchpointValue.h' l='57'/>
+<size>16</size>
+<doc f='WebKit/Source/JavaScriptCore/b3/B3ValueRep.h' l='47'>// We use this class to describe value representations at stackmaps. It&apos;s used both to force a
+// representation and to get the representation. When the B3 client forces a representation, we say
+// that it&apos;s an input. When B3 tells the client what representation it picked, we say that it&apos;s an
+// output.</doc>
+<fun r='_ZN3JSC2B38ValueRepC1Ev'/>
+<fun r='_ZN3JSC2B38ValueRepC1ENS_3RegE'/>
+<fun r='_ZN3JSC2B38ValueRepC1ERKS1_'/>
+<fun r='_ZN3JSC2B38ValueRepC1ENS1_4KindE'/>
+<fun r='_ZN3JSC2B38ValueRepC1ENS_4Wasm13ValueLocationE'/>
+<fun r='_ZN3JSC2B38ValueRep3regENS_3RegE'/>
+<fun r='_ZN3JSC2B38ValueRep7lateRegENS_3RegE'/>
+<fun r='_ZN3JSC2B38ValueRep5stackEl'/>
+<fun r='_ZN3JSC2B38ValueRep13stackArgumentEl'/>
+<fun r='_ZN3JSC2B38ValueRep8constantEl'/>
+<fun r='_ZN3JSC2B38ValueRep14constantDoubleEd'/>
+<fun r='_ZN3JSC2B38ValueRep13constantFloatEf'/>
+<fun r='_ZNK3JSC2B38ValueRep4kindEv'/>
+<fun r='_ZNK3JSC2B38ValueRepeqERKS1_'/>
+<fun r='_ZNK3JSC2B38ValueRepneERKS1_'/>
+<fun r='_ZNK3JSC2B38ValueRepcvbEv'/>
+<fun r='_ZNK3JSC2B38ValueRep5isAnyEv'/>
+<fun r='_ZNK3JSC2B38ValueRep5isRegEv'/>
+<fun r='_ZNK3JSC2B38ValueRep3regEv'/>
+<fun r='_ZNK3JSC2B38ValueRep5isGPREv'/>
+<fun r='_ZNK3JSC2B38ValueRep5isFPREv'/>
+<fun r='_ZNK3JSC2B38ValueRep3gprEv'/>
+<fun r='_ZNK3JSC2B38ValueRep3fprEv'/>
+<fun r='_ZNK3JSC2B38ValueRep7isStackEv'/>
+<fun r='_ZNK3JSC2B38ValueRep12offsetFromFPEv'/>
+<fun r='_ZNK3JSC2B38ValueRep15isStackArgumentEv'/>
+<fun r='_ZNK3JSC2B38ValueRep12offsetFromSPEv'/>
+<fun r='_ZNK3JSC2B38ValueRep10isConstantEv'/>
+<fun r='_ZNK3JSC2B38ValueRep5valueEv'/>
+<fun r='_ZNK3JSC2B38ValueRep11doubleValueEv'/>
+<fun r='_ZNK3JSC2B38ValueRep10floatValueEv'/>
+<fun r='_ZNK3JSC2B38ValueRep10withOffsetEl'/>
+<fun r='_ZNK3JSC2B38ValueRep18addUsedRegistersToERNS_11RegisterSetE'/>
+<fun r='_ZNK3JSC2B38ValueRep13usedRegistersEv'/>
+<fun r='_ZN3JSC2B38ValueRep13usedRegistersERKT_'/>
+<fun r='_ZNK3JSC2B38ValueRep4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZNK3JSC2B38ValueRep11emitRestoreERNS_15AssemblyHelpersENS_3RegE'/>
+<fun r='_ZNK3JSC2B38ValueRep18recoveryForJSValueEv'/>
+<mbr r='JSC::B3::ValueRep::u' o='0' t='union U'/>
+<mbr r='JSC::B3::ValueRep::m_kind' o='64' t='JSC::B3::ValueRep::Kind'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLocation.h' l='91' c='_ZN3JSC3FTL8Location11forValueRepERKNS_2B38ValueRepE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLocation.cpp' l='40' c='_ZN3JSC3FTL8Location11forValueRepERKNS_2B38ValueRepE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapGenerationParams.h' l='56' c='_ZNK3JSC2B324StackmapGenerationParams4repsEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapGenerationParams.h' l='61' c='_ZNK3JSC2B324StackmapGenerationParams2atEj'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapGenerationParams.h' l='62' c='_ZNK3JSC2B324StackmapGenerationParamsixEj'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapGenerationParams.h' l='124' c='_ZN3JSC2B324StackmapGenerationParamsC1EPNS0_13StackmapValueERKN3WTF6VectorINS0_8ValueRepELm0ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEERNS0_3Air17GenerationContextE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapGenerationParams.h' l='127'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.cpp' l='85' c='_ZN3JSC3FTL17OSRExitDescriptor20prepareOSRExitHandleERNS0_5StateENS_8ExitKindERKNS_3DFG10NodeOriginERKNS_2B324StackmapGenerationParamsEjj'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.cpp' l='95' c='_ZN3JSC3FTL7OSRExitC1EPNS0_17OSRExitDescriptorENS_8ExitKindENS_10CodeOriginES5_bjON3WTF11FixedVectorINS_2B38ValueRepEEE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExitCompiler.cpp' l='105' c='_ZN3JSC3FTLL15compileRecoveryERNS_12CCallHelpersERKNS0_9ExitValueERKN3WTF11FixedVectorINS_2B38ValueRepEEEPcRKNS6_7HashMapIPNS0_29ExitTimeObjectMateria10178757'/>
+<size>16</size>
+<ovr f='WebKit/Source/JavaScriptCore/wasm/WasmOSREntryData.h' l='36' c='JSC::Wasm::OSREntryValue'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOSREntryData.h' l='36'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOSREntryData.h' l='38' c='_ZN3JSC4Wasm13OSREntryValueC1ERKNS_2B38ValueRepENS2_4TypeE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOSREntryData.h' l='39' c='_ZN3JSC4Wasm13OSREntryValueC1ERKNS_2B38ValueRepENS2_4TypeE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='2296' c='_ZN3JSC4Wasm13B3IRGenerator9addReturnERKNS1_11ControlDataERKN3WTF6VectorINS0_14FunctionParserIS1_E15TypedExpressionELm16ENS5_20UnsafeVectorOverflowELm2614109'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='2411' c='_ZN3JSC4Wasm13B3IRGenerator20createCallPatchpointEPNS_2B310BasicBlockENS2_6OriginERKNS0_9SignatureERN3WTF6VectorIPNS2_5ValueELm0ENS9_15CrashOnOverflow12163252'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='2413' c='_ZN3JSC4Wasm13B3IRGenerator20createCallPatchpointEPNS_2B310BasicBlockENS2_6OriginERKNS0_9SignatureERN3WTF6VectorIPNS2_5ValueELm0ENS9_15CrashOnOverflow12163252'/>
+<size>16</size>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapSpecial.h' l='73' c='_ZN3JSC2B315StackmapSpecial8repsImplERNS0_3Air17GenerationContextEjjRNS2_4InstE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapSpecial.h' l='77' c='_ZN3JSC2B315StackmapSpecial16isArgValidForRepERNS0_3Air4CodeERKNS2_3ArgERKNS0_8ValueRepE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapSpecial.h' l='78' c='_ZN3JSC2B315StackmapSpecial9repForArgERNS0_3Air4CodeERKNS2_3ArgE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3CheckSpecial.cpp' l='169' c='_ZN3JSC2B312CheckSpecial8generateERNS0_3Air4InstERNS_12CCallHelpersERNS2_17GenerationContextE'/>
+<size>16</size>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='3678' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<size>16</size>
+<use f='WebKit/Source/JavaScriptCore/b3/B3PatchpointSpecial.cpp' l='155' c='_ZN3JSC2B317PatchpointSpecial8generateERNS0_3Air4InstERNS_12CCallHelpersERNS2_17GenerationContextE'/>
+<size>16</size>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapGenerationParams.cpp' l='94' c='_ZN3JSC2B324StackmapGenerationParamsC1EPNS0_13StackmapValueERKN3WTF6VectorINS0_8ValueRepELm0ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEERNS0_3Air17GenerationContextE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapSpecial.cpp' l='186' c='_ZN3JSC2B315StackmapSpecial11isValidImplEjjRNS0_3Air4InstE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapSpecial.cpp' l='223' c='_ZN3JSC2B315StackmapSpecial8repsImplERNS0_3Air17GenerationContextEjjRNS2_4InstE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapSpecial.cpp' l='225' c='_ZN3JSC2B315StackmapSpecial8repsImplERNS0_3Air17GenerationContextEjjRNS2_4InstE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapSpecial.cpp' l='247' c='_ZN3JSC2B315StackmapSpecial16isArgValidForRepERNS0_3Air4CodeERKNS2_3ArgERKNS0_8ValueRepE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapSpecial.cpp' l='281' c='_ZN3JSC2B315StackmapSpecial9repForArgERNS0_3Air4CodeERKNS2_3ArgE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapSpecial.cpp' l='301' c='_ZN3JSC2B315StackmapSpecial9repForArgERNS0_3Air4CodeERKNS2_3ArgE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapValue.cpp' l='39' c='_ZN3JSC2B313StackmapValue6appendEPNS0_5ValueERKNS0_8ValueRepE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapValue.cpp' l='69' c='_ZN3JSC2B313StackmapValue13setConstraintEjRKNS0_8ValueRepE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapValue.cpp' l='71' c='_ZN3JSC2B313StackmapValue13setConstraintEjRKNS0_8ValueRepE'/>
+<size>16</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10395' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB335compileCallOrConstructVarargsSpreadEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10427' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB335compileCallOrConstructVarargsSpreadEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10471' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB335compileCallOrConstructVarargsSpreadEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10673' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB329compileCallOrConstructVarargsEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10674' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB329compileCallOrConstructVarargsEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10675' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB329compileCallOrConstructVarargsEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='17616' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB312lazySlowPathERKT_RKN3WTF6VectorIPNS_2B35ValueELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEE'/>
+<size>16</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='72' c='_ZN3JSC4Wasm14ConstrainedTmpC1ENS_2B33Air3TmpENS2_8ValueRepE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='81'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='906' c='_ZN3JSC4Wasm14AirIRGeneratorC1ERKNS0_17ModuleInformationERNS_2B39ProcedureEPNS0_16InternalFunctionERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENSA_7929608'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='3004' c='_ZN3JSC4Wasm14AirIRGenerator9addReturnERKNS1_11ControlDataERKN3WTF6VectorINS0_14FunctionParserIS1_E15TypedExpressionELm16ENS5_20UnsafeVectorOverflowEL1695862'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='3170' c='_ZN3JSC4Wasm14AirIRGenerator18emitCallPatchpointEPNS_2B33Air10BasicBlockERKNS0_9SignatureERKN3WTF6VectorINS0_8TypedTmpELm8ENS9_15CrashOnOverflowELm16E11864107'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='3172' c='_ZN3JSC4Wasm14AirIRGenerator18emitCallPatchpointEPNS_2B33Air10BasicBlockERKNS0_9SignatureERKN3WTF6VectorINS0_8TypedTmpELm8ENS9_15CrashOnOverflowELm16E11864107'/>
+<size>16</size>

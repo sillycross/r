@@ -1,0 +1,13 @@
+<def f='include/gstreamer-1.0/gst/gstbuffer.h' l='479' ll='483' type='GstBuffer * gst_buffer_copy(const GstBuffer * buf)'/>
+<doc f='include/gstreamer-1.0/gst/gstbuffer.h' l='467'>/**
+ * gst_buffer_copy:
+ * @buf: a #GstBuffer.
+ *
+ * Create a copy of the given buffer. This will only copy the buffer&apos;s
+ * data to a newly allocated memory if needed (if the type of memory
+ * requires it), otherwise the underlying data is just referenced.
+ * Check gst_buffer_copy_deep() if you want to force the data
+ * to be copied to newly allocated memory.
+ *
+ * Returns: (transfer full): a new copy of @buf.
+ */</doc>

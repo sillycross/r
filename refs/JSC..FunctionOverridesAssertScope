@@ -1,0 +1,63 @@
+<def f='WebKit/Source/JavaScriptCore/tools/FunctionOverrides.cpp' l='92' ll='95'/>
+<use f='WebKit/Source/JavaScriptCore/tools/FunctionOverrides.cpp' l='99' c='_ZN3JSC17FunctionOverrides9overridesEv'/>
+<use f='WebKit/Source/JavaScriptCore/tools/FunctionOverrides.cpp' l='103' c='_ZN3JSC17FunctionOverrides9overridesEv'/>
+<use f='WebKit/Source/JavaScriptCore/tools/FunctionOverrides.cpp' l='112' c='_ZN3JSC17FunctionOverridesC1EPKc'/>
+<use f='WebKit/Source/JavaScriptCore/tools/FunctionOverrides.cpp' l='119' c='_ZN3JSC17FunctionOverrides18reinstallOverridesEv'/>
+<use f='WebKit/Source/JavaScriptCore/tools/FunctionOverrides.cpp' l='129' c='_ZN3JSCL22initializeOverrideInfoERKNS_10SourceCodeERKN3WTF6StringERNS_20FunctionOverrideInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/tools/FunctionOverrides.cpp' l='159' c='_ZN3JSC17FunctionOverrides21initializeOverrideForERKNS_10SourceCodeERNS_20FunctionOverrideInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/tools/FunctionOverrides.cpp' l='207' c='_ZN3JSCL11parseClauseEPKcmP8_IO_FILES1_Pcm'/>
+<use f='WebKit/Source/JavaScriptCore/tools/FunctionOverrides.cpp' l='254' c='_ZN3JSC17FunctionOverrides20parseOverridesInFileEPKc'/>
+<size>1</size>
+<doc f='WebKit/Source/JavaScriptCore/tools/FunctionOverrides.cpp' l='40'>/*
+  The overrides file defines function bodies that we will want to override with
+  a replacement for debugging purposes. The overrides file may contain
+  &apos;override&apos; and &apos;with&apos; clauses like these:
+
+     // Example 1: function foo1(a)
+     override !@#$%{ print(&quot;In foo1&quot;); }!@#$%
+     with abc{
+         print(&quot;I am overridden&quot;);
+     }abc
+
+     // Example 2: function foo2(a)
+     override %%%{
+         print(&quot;foo2&apos;s body has a string with }%% in it.&quot;);
+         // Because }%% appears in the function body here, we cannot use
+         // %% or % as the delimiter. %%% is ok though.
+     }%%%
+     with %%%{
+         print(&quot;Overridden foo2&quot;);
+     }%%%
+
+  1. Comments are lines starting with //.  All comments will be ignored.
+
+  2. An &apos;override&apos; clause is used to specify the original function body we
+     want to override. The with clause is used to specify the overriding
+     function body.
+
+     An &apos;override&apos; clause must be followed immediately by a &apos;with&apos; clause.
+
+  3. An &apos;override&apos; clause must be of the form:
+         override &lt;delimiter&gt;{...function body...}&lt;delimiter&gt;
+
+     The override keyword must be at the start of the line.
+
+     &lt;delimiter&gt; may be any string of any ASCII characters (except for &apos;{&apos;,
+     &apos;}&apos;, and whitespace characters) as long as the pattern of &quot;}&lt;delimiter&gt;&quot;
+     does not appear in the function body e.g. the override clause of Example 2
+     above illustrates this.
+
+     The start and end &lt;delimiter&gt; must be identical.
+
+     The space between the override keyword and the start &lt;delimiter&gt; is
+     required.
+
+     All characters between the pair of delimiters will be considered to
+     be part of the function body string. This allows us to also work
+     with script source that are multi-lined i.e. newlines are allowed.
+     
+  4. A &apos;with&apos; clause is identical in form to an &apos;override&apos; clause except that
+     it uses the &apos;with&apos; keyword instead of the &apos;override&apos; keyword.
+ */</doc>
+<fun r='_ZN3JSC28FunctionOverridesAssertScopeC1Ev'/>
+<fun r='_ZN3JSC28FunctionOverridesAssertScopeD1Ev'/>

@@ -1,0 +1,80 @@
+<dec f='WebKit/Source/WebCore/dom/Position.h' l='167' type='WebCore::Position WebCore::Position::downstream(WebCore::EditingBoundaryCrossingRule  = CannotCrossEditingBoundary) const'/>
+<use f='WebKit/Source/WebCore/rendering/RenderObject.cpp' l='1729' u='c' c='_ZNK7WebCore12RenderObject21createVisiblePositionEiNS_8AffinityE'/>
+<use f='WebKit/Source/WebCore/platform/DragImage.cpp' l='168' u='c' c='_ZN7WebCore23createDragImageForRangeERNS_5FrameERKNS_11SimpleRangeEb'/>
+<use f='WebKit/Source/WebCore/page/EventHandler.cpp' l='460' u='c' c='_ZN7WebCoreL41expandSelectionToRespectSelectOnMouseDownERNS_4NodeERKNS_16VisibleSelectionE'/>
+<use f='WebKit/Source/WebCore/page/EventHandler.cpp' l='993' u='c' c='_ZN7WebCore12EventHandler27updateSelectionForMouseDragERKNS_13HitTestResultE'/>
+<use f='WebKit/Source/WebCore/page/EventHandler.cpp' l='997' u='c' c='_ZN7WebCore12EventHandler27updateSelectionForMouseDragERKNS_13HitTestResultE'/>
+<use f='WebKit/Source/WebCore/page/EventHandler.cpp' l='1003' u='c' c='_ZN7WebCore12EventHandler27updateSelectionForMouseDragERKNS_13HitTestResultE'/>
+<use f='WebKit/Source/WebCore/dom/Position.cpp' l='489' u='c' c='_ZNK7WebCore8Position17atEditingBoundaryEv'/>
+<def f='WebKit/Source/WebCore/dom/Position.cpp' l='779' ll='876' type='WebCore::Position WebCore::Position::downstream(WebCore::EditingBoundaryCrossingRule rule = CannotCrossEditingBoundary) const'/>
+<use f='WebKit/Source/WebCore/dom/Position.cpp' l='1182' u='c' c='_ZN7WebCoreL35downstreamIgnoringEditingBoundariesENS_8PositionE'/>
+<doc f='WebKit/Source/WebCore/dom/Position.cpp' l='772'>// This function and upstream() are used for moving back and forth between visually equivalent candidates.
+// For example, for the text node &quot;foo     bar&quot; where whitespace is collapsible, there are two candidates 
+// that map to the VisiblePosition between &apos;b&apos; and the space.  This function will return the right candidate 
+// and upstream() will return the left one.
+// Also, downstream() will return the last position in the last atomic node in boundary for all of the positions
+// in boundary after the last candidate, where endsOfNodeAreVisuallyDistinctPositions(boundary).
+// FIXME: This function should never be called when the line box tree is dirty. See https://bugs.webkit.org/show_bug.cgi?id=97264</doc>
+<use f='WebKit/Source/WebCore/editing/ApplyBlockElementCommand.cpp' l='114' u='c' c='_ZN7WebCore24ApplyBlockElementCommand15formatSelectionERKNS_15VisiblePositionES3_'/>
+<use f='WebKit/Source/WebCore/editing/ApplyStyleCommand.cpp' l='132' u='c' c='_ZN7WebCore17ApplyStyleCommandC1ERNS_8DocumentEPKNS_12EditingStyleENS_10EditActionENS0_14EPropertyLevelE'/>
+<use f='WebKit/Source/WebCore/editing/ApplyStyleCommand.cpp' l='154' u='c' c='_ZN7WebCore17ApplyStyleCommandC1EON3WTF3RefINS_7ElementENS1_12RawPtrTraitsIS3_EEEEbNS_10EditActionE'/>
+<use f='WebKit/Source/WebCore/editing/ApplyStyleCommand.cpp' l='166' u='c' c='_ZN7WebCore17ApplyStyleCommandC1ERNS_8DocumentEPKNS_12EditingStyleEPFbPKNS_7ElementEENS_10EditActionE'/>
+<use f='WebKit/Source/WebCore/editing/ApplyStyleCommand.cpp' l='617' u='c' c='_ZN7WebCore17ApplyStyleCommand16applyInlineStyleERNS_12EditingStyleE'/>
+<use f='WebKit/Source/WebCore/editing/ApplyStyleCommand.cpp' l='1080' u='c' c='_ZN7WebCore17ApplyStyleCommand17removeInlineStyleERNS_12EditingStyleERKNS_8PositionES5_'/>
+<use f='WebKit/Source/WebCore/editing/BreakBlockquoteCommand.cpp' l='66' u='c' c='_ZN7WebCore22BreakBlockquoteCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='980' u='c' c='_ZN7WebCore20CompositeEditCommand35prepareWhitespaceAtPositionForSplitERNS_8PositionE'/>
+<use f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='981' u='c' c='_ZN7WebCore20CompositeEditCommand35prepareWhitespaceAtPositionForSplitERNS_8PositionE'/>
+<use f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='1104' u='c' c='_ZN7WebCore20CompositeEditCommand33deleteInsignificantTextDownstreamERKNS_8PositionE'/>
+<use f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='1338' u='c' c='_ZN7WebCore20CompositeEditCommand20cleanupAfterDeletionENS_15VisiblePositionE'/>
+<use f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='1388' u='c' c='_ZN7WebCore20CompositeEditCommand23moveParagraphWithClonesERKNS_15VisiblePositionES3_PNS_7ElementEPNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='1461' u='c' c='_ZN7WebCore20CompositeEditCommand14moveParagraphsERKNS_15VisiblePositionES3_S3_bb'/>
+<use f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='1659' u='c' c='_ZN7WebCore20CompositeEditCommand39breakOutOfEmptyMailBlockquotedParagraphEv'/>
+<use f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='1711' u='c' c='_ZN7WebCore20CompositeEditCommand38positionAvoidingSpecialElementBoundaryERKNS_8PositionE'/>
+<use f='WebKit/Source/WebCore/editing/DeleteSelectionCommand.cpp' l='278' u='c' c='_ZN7WebCore22DeleteSelectionCommand27smartDeleteParagraphSpacersEv'/>
+<use f='WebKit/Source/WebCore/editing/DeleteSelectionCommand.cpp' l='291' u='c' c='_ZN7WebCore22DeleteSelectionCommand27smartDeleteParagraphSpacersEv'/>
+<use f='WebKit/Source/WebCore/editing/DeleteSelectionCommand.cpp' l='311' u='c' c='_ZN7WebCore22DeleteSelectionCommand22initializePositionDataEv'/>
+<use f='WebKit/Source/WebCore/editing/DeleteSelectionCommand.cpp' l='313' u='c' c='_ZN7WebCore22DeleteSelectionCommand22initializePositionDataEv'/>
+<use f='WebKit/Source/WebCore/editing/DeleteSelectionCommand.cpp' l='372' u='c' c='_ZN7WebCore22DeleteSelectionCommand22initializePositionDataEv'/>
+<use f='WebKit/Source/WebCore/editing/DeleteSelectionCommand.cpp' l='385' u='c' c='_ZN7WebCore22DeleteSelectionCommand22initializePositionDataEv'/>
+<use f='WebKit/Source/WebCore/editing/DeleteSelectionCommand.cpp' l='812' u='c' c='_ZN7WebCore22DeleteSelectionCommand15mergeParagraphsEv'/>
+<use f='WebKit/Source/WebCore/editing/DeleteSelectionCommand.cpp' l='813' u='c' c='_ZN7WebCore22DeleteSelectionCommand15mergeParagraphsEv'/>
+<use f='WebKit/Source/WebCore/editing/DeleteSelectionCommand.cpp' l='989' u='c' c='_ZN7WebCore22DeleteSelectionCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='208' u='c' c='_ZN7WebCore29nextVisuallyDistinctCandidateERKNS_8PositionE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='211' u='c' c='_ZN7WebCore29nextVisuallyDistinctCandidateERKNS_8PositionE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='236' u='c' c='_ZN7WebCore33previousVisuallyDistinctCandidateERKNS_8PositionE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='239' u='c' c='_ZN7WebCore33previousVisuallyDistinctCandidateERKNS_8PositionE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='420' u='c' c='_ZN7WebCore25isLastPositionBeforeTableERKNS_15VisiblePositionE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='915' u='c' c='_ZN7WebCore32lineBreakExistsAtVisiblePositionERKNS_15VisiblePositionE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='1120' u='c' c='_ZN7WebCore41adjustedSelectionStartForStyleComputationERKNS_16VisibleSelectionE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='1124' u='c' c='_ZN7WebCore41adjustedSelectionStartForStyleComputationERKNS_16VisibleSelectionE'/>
+<use f='WebKit/Source/WebCore/editing/EditingStyle.cpp' l='1532' u='c' c='_ZN7WebCore12EditingStyle25textDirectionForSelectionERKNS_16VisibleSelectionEPS0_Rb'/>
+<use f='WebKit/Source/WebCore/editing/Editor.cpp' l='801' u='c' c='_ZNK7WebCore6Editor16hasBidiSelectionEv'/>
+<use f='WebKit/Source/WebCore/editing/Editor.cpp' l='2136' u='c' c='_ZN7WebCore6Editor14setCompositionERKN3WTF6StringERKNS1_6VectorINS_20CompositionUnderlineELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEERKNS5_INS_2787605'/>
+<use f='WebKit/Source/WebCore/editing/Editor.cpp' l='2550' u='c' c='_ZN7WebCore6Editor33markMisspellingsAfterTypingToWordERKNS_15VisiblePositionERKNS_16VisibleSelectionEb'/>
+<use f='WebKit/Source/WebCore/editing/FrameSelection.cpp' l='767' u='c' c='_ZN7WebCoreL30adjustPositionForUserSelectAllERNS_15VisiblePositionEb'/>
+<use f='WebKit/Source/WebCore/editing/FrameSelection.cpp' l='2190' u='c' c='_ZN7WebCore14FrameSelection16updateAppearanceEv'/>
+<use f='WebKit/Source/WebCore/editing/InsertParagraphSeparatorCommand.cpp' l='182' u='c' c='_ZN7WebCore31InsertParagraphSeparatorCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/InsertParagraphSeparatorCommand.cpp' l='284' u='c' c='_ZN7WebCore31InsertParagraphSeparatorCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/InsertParagraphSeparatorCommand.cpp' l='325' u='c' c='_ZN7WebCore31InsertParagraphSeparatorCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/InsertParagraphSeparatorCommand.cpp' l='338' u='c' c='_ZN7WebCore31InsertParagraphSeparatorCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/InsertTextCommand.cpp' l='161' u='c' c='_ZN7WebCore17InsertTextCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/InsertTextCommand.cpp' l='178' u='c' c='_ZN7WebCore17InsertTextCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/InsertTextCommand.cpp' l='182' u='c' c='_ZN7WebCore17InsertTextCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/ReplaceSelectionCommand.cpp' l='1196' u='c' c='_ZN7WebCore23ReplaceSelectionCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/ReplaceSelectionCommand.cpp' l='1202' u='c' c='_ZN7WebCore23ReplaceSelectionCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/ReplaceSelectionCommand.cpp' l='1202' u='c' c='_ZN7WebCore23ReplaceSelectionCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/ReplaceSelectionCommand.cpp' l='1407' u='c' c='_ZN7WebCore23ReplaceSelectionCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/ReplaceSelectionCommand.cpp' l='1438' u='c' c='_ZN7WebCore23ReplaceSelectionCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/ReplaceSelectionCommand.cpp' l='1594' u='c' c='_ZN7WebCore23ReplaceSelectionCommand24addSpacesForSmartReplaceEv'/>
+<use f='WebKit/Source/WebCore/editing/ReplaceSelectionCommand.cpp' l='1803' u='c' c='_ZN7WebCore23ReplaceSelectionCommand21performTrivialReplaceERKNS_19ReplacementFragmentE'/>
+<use f='WebKit/Source/WebCore/editing/TypingCommand.cpp' l='780' u='c' c='_ZN7WebCore13TypingCommand23forwardDeleteKeyPressedENS_15TextGranularityEb'/>
+<use f='WebKit/Source/WebCore/editing/TypingCommand.cpp' l='786' u='c' c='_ZN7WebCore13TypingCommand23forwardDeleteKeyPressedENS_15TextGranularityEb'/>
+<use f='WebKit/Source/WebCore/editing/VisiblePosition.cpp' l='122' u='c' c='_ZNK7WebCore15VisiblePosition29leftVisuallyDistinctCandidateEv'/>
+<use f='WebKit/Source/WebCore/editing/VisiblePosition.cpp' l='249' u='c' c='_ZNK7WebCore15VisiblePosition29leftVisuallyDistinctCandidateEv'/>
+<use f='WebKit/Source/WebCore/editing/VisiblePosition.cpp' l='284' u='c' c='_ZNK7WebCore15VisiblePosition30rightVisuallyDistinctCandidateEv'/>
+<use f='WebKit/Source/WebCore/editing/VisiblePosition.cpp' l='414' u='c' c='_ZNK7WebCore15VisiblePosition30rightVisuallyDistinctCandidateEv'/>
+<use f='WebKit/Source/WebCore/editing/VisiblePosition.cpp' l='551' u='c' c='_ZN7WebCore15VisiblePosition17canonicalPositionERKNS_8PositionE'/>
+<use f='WebKit/Source/WebCore/editing/VisiblePosition.cpp' l='602' u='c' c='_ZNK7WebCore15VisiblePosition14characterAfterEv'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='205' u='c' c='_ZNK7WebCore16VisibleSelection17toNormalizedRangeEv'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='433' u='c' c='_ZN7WebCore16VisibleSelection8validateENS_15TextGranularityE'/>
+<use f='WebKit/Source/WebCore/editing/markup.cpp' l='812' u='c' c='_ZN7WebCoreL27needInterchangeNewlineAfterERKNS_15VisiblePositionE'/>

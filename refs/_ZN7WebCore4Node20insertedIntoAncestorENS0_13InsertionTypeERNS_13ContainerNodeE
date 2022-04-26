@@ -1,0 +1,12 @@
+<dec f='WebKit/Source/WebCore/dom/Node.h' l='423' type='WebCore::Node::InsertedIntoAncestorResult WebCore::Node::insertedIntoAncestor(WebCore::Node::InsertionType , WebCore::ContainerNode &amp; parentOfInsertedTree)'/>
+<doc f='WebKit/Source/WebCore/dom/Node.h' l='421'>// Called *after* this node or its ancestor is inserted into a new parent (may or may not be a part of document) by scripts or parser.
+    // insertedInto **MUST NOT** invoke scripts. Return NeedsPostInsertionCallback and implement didFinishInsertingNode instead to run scripts.</doc>
+<def f='WebKit/Source/WebCore/dom/Node.cpp' l='1300' ll='1310' type='Node::InsertedIntoAncestorResult WebCore::Node::insertedIntoAncestor(WebCore::Node::InsertionType insertionType, WebCore::ContainerNode &amp; parentOfInsertedTree)'/>
+<ovr f='WebKit/Source/WebCore/dom/ProcessingInstruction.cpp' l='277' c='_ZN7WebCore21ProcessingInstruction20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ProcessingInstruction.cpp' l='279' u='c' c='_ZN7WebCore21ProcessingInstruction20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<ovr f='WebKit/Source/WebCore/dom/ShadowRoot.cpp' l='110' c='_ZN7WebCore10ShadowRoot20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ShadowRoot.cpp' l='112' u='c' c='_ZN7WebCore10ShadowRoot20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='48' u='c' c='_ZN7WebCoreL30notifyNodeInsertedIntoDocumentERNS_13ContainerNodeERNS_4NodeENS_15TreeScopeChangeERN3WTF6VectorINS5_3RefIS2_NS5_12RawPtrTraitsIS2_EEEELm7605931'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='73' u='c' c='_ZN7WebCoreL26notifyNodeInsertedIntoTreeERNS_13ContainerNodeERNS_4NodeENS_15TreeScopeChangeERN3WTF6VectorINS5_3RefIS2_NS5_12RawPtrTraitsIS2_EEEELm11EN7217756'/>
+<ovr f='WebKit/Source/WebCore/dom/Element.cpp' l='2193' c='_ZN7WebCore7Element20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Element.cpp' l='2195' u='c' c='_ZN7WebCore7Element20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>

@@ -1,0 +1,13 @@
+<dec f='WebKit/Source/WebCore/dom/Position.h' l='154' type='bool WebCore::Position::atEditingBoundary() const'/>
+<doc f='WebKit/Source/WebCore/dom/Position.h' l='153'>// Returns true if the visually equivalent positions around have different editability</doc>
+<def f='WebKit/Source/WebCore/dom/Position.cpp' l='487' ll='499' type='bool WebCore::Position::atEditingBoundary() const'/>
+<use f='WebKit/Source/WebCore/dom/Position.cpp' l='1004' u='c' c='_ZNK7WebCore8Position11isCandidateEv'/>
+<use f='WebKit/Source/WebCore/dom/Position.cpp' l='1009' u='c' c='_ZNK7WebCore8Position11isCandidateEv'/>
+<use f='WebKit/Source/WebCore/dom/PositionIterator.cpp' l='172' u='c' c='_ZNK7WebCore16PositionIterator11isCandidateEv'/>
+<doc f='WebKit/Source/WebCore/dom/Position.cpp' l='480'>// A position is considered at editing boundary if one of the following is true:
+// 1. It is the first position in the node and the next visually equivalent position
+//    is non editable.
+// 2. It is the last position in the node and the previous visually equivalent position
+//    is non editable.
+// 3. It is an editable position and both the next and previous visually equivalent
+//    positions are both non editable.</doc>

@@ -1,0 +1,6 @@
+<dec f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseTracker.h' l='157' type='bool WebCore::DatabaseTracker::deleteDatabaseFile(const WebCore::SecurityOriginData &amp; , const WTF::String &amp; name, WebCore::DatabaseTracker::DeletionMode )'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseTracker.cpp' l='847' u='c' c='_ZN7WebCore15DatabaseTracker12deleteOriginERKNS_18SecurityOriginDataENS0_12DeletionModeE'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseTracker.cpp' l='1079' u='c' c='_ZN7WebCore15DatabaseTracker14deleteDatabaseERKNS_18SecurityOriginDataERKN3WTF6StringE'/>
+<def f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseTracker.cpp' l='1116' ll='1166' type='bool WebCore::DatabaseTracker::deleteDatabaseFile(const WebCore::SecurityOriginData &amp; origin, const WTF::String &amp; name, WebCore::DatabaseTracker::DeletionMode deletionMode)'/>
+<doc f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseTracker.cpp' l='1114'>// deleteDatabaseFile has to release locks between looking up the list of databases to close and closing them.  While this is in progress, the caller
+// is responsible for making sure no new databases are opened in the file to be deleted.</doc>

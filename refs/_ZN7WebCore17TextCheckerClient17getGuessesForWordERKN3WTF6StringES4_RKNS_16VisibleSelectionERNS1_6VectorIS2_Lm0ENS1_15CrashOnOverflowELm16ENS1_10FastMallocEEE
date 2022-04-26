@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebCore/platform/text/TextCheckerClient.h' l='54' type='void WebCore::TextCheckerClient::getGuessesForWord(const WTF::String &amp; word, const WTF::String &amp; context, const WebCore::VisibleSelection &amp; currentSelection, Vector&lt;WTF::String&gt; &amp; guesses)'/>
+<doc f='WebKit/Source/WebCore/platform/text/TextCheckerClient.h' l='51'>// For spellcheckers that support multiple languages, it&apos;s often important to be able to identify the language in order to
+    // provide more accurate correction suggestions. Caller can pass in more text in &quot;context&quot; to aid such spellcheckers on language
+    // identification. Noramlly it&apos;s the text surrounding the &quot;word&quot; for which we are getting correction suggestions.</doc>
+<ovr f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebEditorClient.cpp' l='577' c='_ZN6WebKit15WebEditorClient17getGuessesForWordERKN3WTF6StringES4_RKN7WebCore16VisibleSelectionERNS1_6VectorIS2_Lm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<ovr f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='371' c='_ZN7WebCore17EmptyEditorClient22EmptyTextCheckerClient17getGuessesForWordERKN3WTF6StringES5_RKNS_16VisibleSelectionERNS2_6VectorIS3_Lm0ENS2_15CrashOnO6243498'/>
+<use f='WebKit/Source/WebCore/editing/Editor.cpp' l='2422' u='c' c='_ZNK7WebCore6Editor24guessesForMisspelledWordERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/editing/TextCheckingHelper.cpp' l='528' u='c' c='_ZNK7WebCore18TextCheckingHelper45guessesForMisspelledWordOrUngrammaticalPhraseEb'/>

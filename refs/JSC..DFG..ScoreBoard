@@ -1,0 +1,23 @@
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGScoreBoard.h' l='42' ll='177'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGVirtualRegisterAllocationPhase.cpp' l='48' c='_ZN3JSC3DFG30VirtualRegisterAllocationPhase3runEv'/>
+<size>552</size>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGScoreBoard.h' l='35'>// === ScoreBoard ===
+//
+// This class is used in performing a virtual register allocation over the graph.
+// VirtualRegisters are allocated to nodes, with a used count for each virtual
+// register tracking the lifespan of the value; after the final use of a node
+// the VirtualRegister associated is freed such that it can be reused for
+// another node.</doc>
+<fun r='_ZN3JSC3DFG10ScoreBoardC1Ej'/>
+<fun r='_ZN3JSC3DFG10ScoreBoardD1Ev'/>
+<fun r='_ZN3JSC3DFG10ScoreBoard8sortFreeEv'/>
+<fun r='_ZN3JSC3DFG10ScoreBoard11assertClearEv'/>
+<fun r='_ZN3JSC3DFG10ScoreBoard8allocateEv'/>
+<fun r='_ZN3JSC3DFG10ScoreBoard3useEPNS0_4NodeE'/>
+<fun r='_ZN3JSC3DFG10ScoreBoard3useENS0_4EdgeE'/>
+<fun r='_ZN3JSC3DFG10ScoreBoard14useIfHasResultENS0_4EdgeE'/>
+<fun r='_ZN3JSC3DFG10ScoreBoard13highWatermarkEv'/>
+<fun r='_ZN3JSC3DFG10ScoreBoard3maxEv'/>
+<mbr r='JSC::DFG::ScoreBoard::m_highWatermark' o='0' t='unsigned int'/>
+<mbr r='JSC::DFG::ScoreBoard::m_used' o='64' t='Vector&lt;uint32_t, 64&gt;'/>
+<mbr r='JSC::DFG::ScoreBoard::m_free' o='2240' t='Vector&lt;uint32_t, 64&gt;'/>

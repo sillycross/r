@@ -1,0 +1,27 @@
+<dec f='WebKit/Source/WebCore/dom/Position.h' l='220' type='bool WebCore::operator==(const WebCore::Position &amp; , const WebCore::Position &amp; )'/>
+<def f='WebKit/Source/WebCore/dom/Position.h' l='277' ll='280' type='bool WebCore::operator==(const WebCore::Position &amp; a, const WebCore::Position &amp; b)'/>
+<use f='WebKit/Source/WebCore/dom/Position.h' l='284' u='c' c='_ZN7WebCoreneERKNS_8PositionES2_'/>
+<use f='WebKit/Source/WebCore/editing/VisiblePosition.h' l='153' u='c' c='_ZN7WebCoreeqERKNS_15VisiblePositionES2_'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.h' l='167' u='c' c='_ZN7WebCoreeqERKNS_16VisibleSelectionES2_'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.h' l='167' u='c' c='_ZN7WebCoreeqERKNS_16VisibleSelectionES2_'/>
+<doc f='WebKit/Source/WebCore/dom/Position.h' l='274'>// FIXME: Positions at the same document location with different anchoring will return false; that&apos;s unlike &lt;= and &gt;=.
+// FIXME: This ignores differences in m_isLegacyEditingPosition in a subtle way.
+// FIXME: For legacy editing positions, &lt;div&gt;&lt;img&gt;&lt;/div&gt; [div, 0] != [img, 0] even though most of editing code will treat them as identical.</doc>
+<use f='WebKit/Source/WebCore/platform/DragImage.cpp' l='177' u='c' c='_ZN7WebCore23createDragImageForRangeERNS_5FrameERKNS_11SimpleRangeEb'/>
+<use f='WebKit/Source/WebCore/html/HTMLTextFormControlElement.cpp' l='647' u='c' c='_ZNK7WebCore26HTMLTextFormControlElement16indexForPositionERKNS_8PositionE'/>
+<use f='WebKit/Source/WebCore/dom/Position.cpp' l='1258' u='c' c='_ZNK7WebCore8Position18inlineRunAndOffsetENS_8AffinityENS_13TextDirectionE'/>
+<use f='WebKit/Source/WebCore/dom/Position.cpp' l='1261' u='c' c='_ZNK7WebCore8Position18inlineRunAndOffsetENS_8AffinityENS_13TextDirectionE'/>
+<use f='WebKit/Source/WebCore/dom/Position.cpp' l='1261' u='c' c='_ZNK7WebCore8Position18inlineRunAndOffsetENS_8AffinityENS_13TextDirectionE'/>
+<use f='WebKit/Source/WebCore/editing/ApplyBlockElementCommand.cpp' l='132' u='c' c='_ZN7WebCore24ApplyBlockElementCommand15formatSelectionERKNS_15VisiblePositionES3_'/>
+<use f='WebKit/Source/WebCore/editing/ApplyBlockElementCommand.cpp' l='144' u='c' c='_ZN7WebCore24ApplyBlockElementCommand15formatSelectionERKNS_15VisiblePositionES3_'/>
+<use f='WebKit/Source/WebCore/editing/ApplyBlockElementCommand.cpp' l='236' u='c' c='_ZN7WebCore24ApplyBlockElementCommand43rangeForParagraphSplittingTextNodesIfNeededERKNS_15VisiblePositionERNS_8PositionES5_'/>
+<use f='WebKit/Source/WebCore/editing/ApplyStyleCommand.cpp' l='699' u='c' c='_ZN7WebCore17ApplyStyleCommand27fixRangeAndApplyInlineStyleERNS_12EditingStyleERKNS_8PositionES5_'/>
+<use f='WebKit/Source/WebCore/editing/FrameSelection.cpp' l='315' u='c' c='_ZN7WebCore14FrameSelection30setSelectionByMouseIfDifferentERKNS_16VisibleSelectionENS_15TextGranularityENS0_23EndPointsAdjustmentModeE'/>
+<use f='WebKit/Source/WebCore/editing/InsertListCommand.cpp' l='416' u='c' c='_ZN7WebCore17InsertListCommand16listifyParagraphERKNS_15VisiblePositionERKNS_13QualifiedNameE'/>
+<use f='WebKit/Source/WebCore/editing/ReplaceSelectionCommand.cpp' l='147' u='c' c='_ZN7WebCoreL30positionAvoidingPrecedingNodesENS_8PositionE'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='257' u='c' c='_ZN7WebCore16VisibleSelection33setBaseAndExtentToDeepEquivalentsEv'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='398' u='c' c='_ZN7WebCore16VisibleSelection19updateSelectionTypeEv'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='398' u='c' c='_ZN7WebCore16VisibleSelection19updateSelectionTypeEv'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='469' u='c' c='_ZN7WebCore16VisibleSelection20setWithoutValidationERKNS_8PositionES3_'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='558' u='c' c='_ZN7WebCore16VisibleSelection47adjustSelectionToAvoidCrossingEditingBoundariesEv'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='558' u='c' c='_ZN7WebCore16VisibleSelection47adjustSelectionToAvoidCrossingEditingBoundariesEv'/>

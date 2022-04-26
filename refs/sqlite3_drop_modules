@@ -1,0 +1,13 @@
+<dec f='include/sqlite3.h' l='6887' type='int sqlite3_drop_modules(sqlite3 * db, const char ** azKeep)'/>
+<doc f='include/sqlite3.h' l='6875'>/*
+** CAPI3REF: Remove Unnecessary Virtual Table Implementations
+** METHOD: sqlite3
+**
+** ^The sqlite3_drop_modules(D,L) interface removes all virtual
+** table modules from database connection D except those named on list L.
+** The L parameter must be either NULL or a pointer to an array of pointers
+** to strings where the array is terminated by a single NULL pointer.
+** ^If the L parameter is NULL, then all virtual table modules are removed.
+**
+** See also: [sqlite3_create_module()]
+*/</doc>

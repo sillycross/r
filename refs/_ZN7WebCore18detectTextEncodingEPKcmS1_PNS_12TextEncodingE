@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebCore/platform/text/TextEncodingDetector.h' l='42' type='bool WebCore::detectTextEncoding(const char * data, size_t len, const char * hintEncodingName, WebCore::TextEncoding * detectedEncoding)'/>
+<def f='WebKit/Source/WebCore/platform/text/TextEncodingDetectorICU.cpp' l='40' ll='115' type='bool WebCore::detectTextEncoding(const char * data, size_t len, const char * hintEncodingName, WebCore::TextEncoding * detectedEncoding)'/>
+<doc f='WebKit/Source/WebCore/platform/text/TextEncodingDetector.h' l='38'>// Given a sequence of bytes in |data| of length |len| and an optional
+    // hintEncodingName, detect the most likely character encoding. 
+    // The way hintEncodingName is used is up to an implementation.
+    // Currently, the only caller sets it to the parent frame encoding.</doc>
+<use f='WebKit/Source/WebCore/loader/TextResourceDecoder.cpp' l='611' u='c' c='_ZN7WebCore19TextResourceDecoder6decodeEPKcm'/>
+<use f='WebKit/Source/WebCore/loader/TextResourceDecoder.cpp' l='643' u='c' c='_ZN7WebCore19TextResourceDecoder5flushEv'/>

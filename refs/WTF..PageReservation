@@ -1,0 +1,47 @@
+<inh f='WebKit/WTF/Headers/wtf/PageBlock.h' l='63' c='WTF::PageBlock'/>
+<def f='WebKit/WTF/Headers/wtf/PageReservation.h' l='56' ll='136'/>
+<use f='WebKit/WTF/Headers/wtf/PageReservation.h' l='91' c='_ZN3WTF15PageReservation7reserveEmNS_11OSAllocator5UsageEbbb'/>
+<use f='WebKit/WTF/Headers/wtf/PageReservation.h' l='94' c='_ZN3WTF15PageReservation7reserveEmNS_11OSAllocator5UsageEbbb'/>
+<use f='WebKit/WTF/Headers/wtf/PageReservation.h' l='97' c='_ZN3WTF15PageReservation21reserveWithGuardPagesEmNS_11OSAllocator5UsageEbbb'/>
+<use f='WebKit/WTF/Headers/wtf/PageReservation.h' l='100' c='_ZN3WTF15PageReservation21reserveWithGuardPagesEmNS_11OSAllocator5UsageEbbb'/>
+<use f='WebKit/WTF/Headers/wtf/PageReservation.h' l='103' c='_ZN3WTF15PageReservation30reserveAndCommitWithGuardPagesEmNS_11OSAllocator5UsageEbbb'/>
+<use f='WebKit/WTF/Headers/wtf/PageReservation.h' l='106' c='_ZN3WTF15PageReservation30reserveAndCommitWithGuardPagesEmNS_11OSAllocator5UsageEbbb'/>
+<use f='WebKit/WTF/Headers/wtf/PageReservation.h' l='115' c='_ZN3WTF15PageReservation10deallocateEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ExecutableAllocator.cpp' l='335'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ExecutableAllocator.cpp' l='955'/>
+<size>40</size>
+<doc f='WebKit/WTF/Headers/wtf/PageReservation.h' l='32'>/*
+    PageReservation
+
+    Like PageAllocation, the PageReservation class provides a cross-platform memory
+    allocation interface, but with a set of capabilities more similar to that of
+    VirtualAlloc than posix mmap.  PageReservation can be used to allocate virtual
+    memory without committing physical memory pages using PageReservation::reserve.
+    Following a call to reserve all memory in the region is in a decommited state,
+    in which the memory should not be used (accessing the memory may cause a fault).
+
+    Before using memory it must be committed by calling commit, which is passed start
+    and size values (both of which require system page size granularity).  One the
+    committed memory is no longer needed &apos;decommit&apos; may be called to return the
+    memory to its devommitted state.  Commit should only be called on memory that is
+    currently decommitted, and decommit should only be called on memory regions that
+    are currently committed.  All memory should be decommited before the reservation
+    is deallocated.  Values in memory may not be retained accross a pair of calls if
+    the region of memory is decommitted and then committed again.
+
+    Memory protection should not be changed on decommitted memory, and if protection
+    is changed on memory while it is committed it should be returned to the orignal
+    protection before decommit is called.
+*/</doc>
+<fun r='_ZN3WTF15PageReservationC1Ev'/>
+<fun r='_ZN3WTF15PageReservation6commitEPvm'/>
+<fun r='_ZN3WTF15PageReservation8decommitEPvm'/>
+<fun r='_ZN3WTF15PageReservation9committedEv'/>
+<fun r='_ZN3WTF15PageReservation7reserveEmNS_11OSAllocator5UsageEbbb'/>
+<fun r='_ZN3WTF15PageReservation21reserveWithGuardPagesEmNS_11OSAllocator5UsageEbbb'/>
+<fun r='_ZN3WTF15PageReservation30reserveAndCommitWithGuardPagesEmNS_11OSAllocator5UsageEbbb'/>
+<fun r='_ZN3WTF15PageReservation10deallocateEv'/>
+<fun r='_ZN3WTF15PageReservationC1EPvmbbbb'/>
+<mbr r='WTF::PageReservation::m_committed' o='192' t='size_t'/>
+<mbr r='WTF::PageReservation::m_writable' o='256' t='bool'/>
+<mbr r='WTF::PageReservation::m_executable' o='264' t='bool'/>

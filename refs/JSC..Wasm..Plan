@@ -1,0 +1,78 @@
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCodeBlock.h' l='132'/>
+<inh f='WebKit/WTF/Headers/wtf/ThreadSafeRefCounted.h' l='109' c='WTF::ThreadSafeRefCounted'/>
+<def f='WebKit/Source/JavaScriptCore/wasm/WasmPlan.h' l='49' ll='99'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmPlan.h' l='49'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmPlan.h' l='51'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmPlan.h' l='54' c='_ZN3JSC4Wasm4Plan12dontFinalizeEv'/>
+<ovr f='WebKit/Source/JavaScriptCore/wasm/WasmEntryPlan.h' l='44' c='JSC::Wasm::EntryPlan'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmEntryPlan.h' l='44'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmEntryPlan.h' l='46'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmWorklist.h' l='50' c='_ZN3JSC4Wasm8Worklist7enqueueEN3WTF3RefINS0_4PlanENS2_12RawPtrTraitsIS4_EEEE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmWorklist.h' l='53' c='_ZN3JSC4Wasm8Worklist25completePlanSynchronouslyERNS0_4PlanE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmWorklist.h' l='75'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCodeBlock.cpp' l='52' c='_ZN3JSC4Wasm9CodeBlockC1EPNS0_7ContextENS0_10MemoryModeERNS0_17ModuleInformationEN3WTF6RefPtrINS0_12LLIntCalleesENS7_12RawPtrTraitsIS9_EENS7_21Default8799563'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCodeBlock.cpp' l='79' c='_ZN3JSC4Wasm9CodeBlockC1EPNS0_7ContextENS0_10MemoryModeERNS0_17ModuleInformationEN3WTF6RefPtrINS0_12LLIntCalleesENS7_12RawPtrTraitsIS9_EENS7_21Default8799563'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCodeBlock.cpp' l='120' c='_ZN3JSC4Wasm9CodeBlock17waitUntilFinishedEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCodeBlock.cpp' l='135' c='_ZN3JSC4Wasm9CodeBlock12compileAsyncEPNS0_7ContextEON3WTF6RefPtrINS4_10SharedTaskIFvONS4_3RefIS1_NS4_12RawPtrTraitsIS1_EEEEEEENS8_ISD_EENS4_21DefaultR840098'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCodeBlock.cpp' l='145' c='_ZN3JSC4Wasm9CodeBlock12compileAsyncEPNS0_7ContextEON3WTF6RefPtrINS4_10SharedTaskIFvONS4_3RefIS1_NS4_12RawPtrTraitsIS1_EEEEEEENS8_ISD_EENS4_21DefaultR840098'/>
+<size>72</size>
+<fun r='_ZN3JSC4Wasm4Plan12dontFinalizeEv'/>
+<fun r='_ZN3JSC4Wasm4PlanC1EPNS0_7ContextEN3WTF3RefINS0_17ModuleInformationENS4_12RawPtrTraitsIS6_EEEEONS4_6RefPtrINS4_10SharedTaskIFvRS1_EEENS7_ISE_EENS4_21D8379342'/>
+<fun r='_ZN3JSC4Wasm4PlanC1EPNS0_7ContextEON3WTF6RefPtrINS4_10SharedTaskIFvRS1_EEENS4_12RawPtrTraitsIS9_EENS4_21DefaultRefDerefTraitsIS9_EEEE'/>
+<fun r='_ZN3JSC4Wasm4PlanD1Ev'/>
+<fun r='_ZN3JSC4Wasm4Plan17addCompletionTaskEPNS0_7ContextEON3WTF6RefPtrINS4_10SharedTaskIFvRS1_EEENS4_12RawPtrTraitsIS9_EENS4_21DefaultRefDerefTraitsIS9_EEEE'/>
+<fun r='_ZN3JSC4Wasm4Plan7setModeENS0_10MemoryModeE'/>
+<fun r='_ZNK3JSC4Wasm4Plan4modeEv'/>
+<fun r='_ZNK3JSC4Wasm4Plan12errorMessageEv'/>
+<fun r='_ZNK3JSC4Wasm4Plan6failedEv'/>
+<fun r='_ZNK3JSC4Wasm4Plan7hasWorkEv'/>
+<fun r='_ZN3JSC4Wasm4Plan4workENS1_17CompilationEffortE'/>
+<fun r='_ZNK3JSC4Wasm4Plan13multiThreadedEv'/>
+<fun r='_ZN3JSC4Wasm4Plan17waitForCompletionEv'/>
+<fun r='_ZN3JSC4Wasm4Plan31tryRemoveContextAndCancelIfLastERNS0_7ContextE'/>
+<fun r='_ZN3JSC4Wasm4Plan18runCompletionTasksEv'/>
+<fun r='_ZN3JSC4Wasm4Plan4failEON3WTF6StringE'/>
+<fun r='_ZNK3JSC4Wasm4Plan10isCompleteEv'/>
+<fun r='_ZN3JSC4Wasm4Plan8completeEv'/>
+<fun r='_ZN3JSC4Wasm4Plan23updateCallSitesToCallUsERNS0_9CodeBlockENS_17CodeLocationLabelILN3WTF6PtrTagE64376EEEjj'/>
+<mbr r='JSC::Wasm::Plan::m_moduleInformation' o='128' t='Ref&lt;JSC::Wasm::ModuleInformation&gt;'/>
+<mbr r='JSC::Wasm::Plan::m_completionTasks' o='192' t='Vector&lt;std::pair&lt;Context *, CompletionTask&gt;, 1&gt;'/>
+<mbr r='JSC::Wasm::Plan::m_errorMessage' o='448' t='WTF::String'/>
+<mbr r='JSC::Wasm::Plan::m_mode' o='512' t='JSC::Wasm::MemoryMode'/>
+<mbr r='JSC::Wasm::Plan::m_lock' o='520' t='WTF::Lock'/>
+<mbr r='JSC::Wasm::Plan::m_completed' o='528' t='WTF::Condition'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmModule.cpp' l='61' c='_ZN3JSC4WasmL22makeValidationCallbackEON3WTF6RefPtrINS1_10SharedTaskIFvONSt12experimental15fundamentals_v38expectedINS2_INS0_6ModuleENS1_12RawPtrTrait12384418'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmModule.cpp' l='77' c='_ZN3JSC4Wasm6Module13validateAsyncEPNS0_7ContextEON3WTF6VectorIhLm0ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEEONS4_6RefPtrINS4_10SharedTaskIFvONSt10365771'/>
+<size>72</size>
+<ovr f='WebKit/Source/JavaScriptCore/wasm/WasmOMGForOSREntryPlan.h' l='42' c='JSC::Wasm::OMGForOSREntryPlan'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOMGForOSREntryPlan.h' l='42'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOMGForOSREntryPlan.h' l='44'/>
+<ovr f='WebKit/Source/JavaScriptCore/wasm/WasmOMGPlan.h' l='40' c='JSC::Wasm::OMGPlan'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOMGPlan.h' l='40'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOMGPlan.h' l='42'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOperations.cpp' l='98' c='_ZN3JSC4WasmL28triggerOMGReplacementCompileERNS0_11TierUpCountEPNS0_9OMGCalleeEPNS0_8InstanceERNS0_9CodeBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOperations.cpp' l='398' c='_ZN3JSC4Wasm31operationWasmTriggerOSREntryNowERNS_5Probe7ContextE'/>
+<size>72</size>
+<fun r='_ZN3JSC4Wasm4PlanC1EPNS0_7ContextEN3WTF3RefINS0_17ModuleInformationENS4_12RawPtrTraitsIS6_EEEEONS4_6RefPtrINS4_10SharedTaskIFvRS1_EEENS7_ISE_EENS4_21D8379342'/>
+<fun r='_ZN3JSC4Wasm4PlanC1EPNS0_7ContextEON3WTF6RefPtrINS4_10SharedTaskIFvRS1_EEENS4_12RawPtrTraitsIS9_EENS4_21DefaultRefDerefTraitsIS9_EEEE'/>
+<fun r='_ZN3JSC4Wasm4Plan18runCompletionTasksEv'/>
+<fun r='_ZN3JSC4Wasm4Plan17addCompletionTaskEPNS0_7ContextEON3WTF6RefPtrINS4_10SharedTaskIFvRS1_EEENS4_12RawPtrTraitsIS9_EENS4_21DefaultRefDerefTraitsIS9_EEEE'/>
+<fun r='_ZN3JSC4Wasm4Plan17waitForCompletionEv'/>
+<fun r='_ZN3JSC4Wasm4Plan31tryRemoveContextAndCancelIfLastERNS0_7ContextE'/>
+<fun r='_ZN3JSC4Wasm4Plan4failEON3WTF6StringE'/>
+<fun r='_ZN3JSC4Wasm4Plan23updateCallSitesToCallUsERNS0_9CodeBlockENS_17CodeLocationLabelILN3WTF6PtrTagE64376EEEjj'/>
+<fun r='_ZN3JSC4Wasm4PlanD1Ev'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='131' c='_ZN3JSC5LLInt26jitCompileAndSetHeuristicsEPNS_4Wasm11LLIntCalleeEPNS1_17FunctionCodeBlockEPNS1_8InstanceE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='229' c='JSC::LLInt::slow_path_wasm_loop_osr'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='229' c='JSC::LLInt::slow_path_wasm_loop_osr'/>
+<ovr f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingPlan.h' l='40' c='JSC::Wasm::StreamingPlan'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingPlan.h' l='40'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingPlan.h' l='42'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingCompiler.cpp' l='87' c='_ZN3JSC4Wasm17StreamingCompiler22didReceiveFunctionDataEjRKNS0_12FunctionDataE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingCompiler.cpp' l='87' c='_ZN3JSC4Wasm17StreamingCompiler22didReceiveFunctionDataEjRKNS0_12FunctionDataE'/>
+<size>72</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmWorklist.cpp' l='107' c='_ZN3JSC4Wasm8Worklist6Thread4workEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmWorklist.cpp' l='151' c='_ZN3JSC4Wasm8Worklist7enqueueEN3WTF3RefINS0_4PlanENS2_12RawPtrTraitsIS4_EEEE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmWorklist.cpp' l='169' c='_ZN3JSC4Wasm8Worklist25completePlanSynchronouslyERNS0_4PlanE'/>
+<size>72</size>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmCodeBlock.h' l='132'/>

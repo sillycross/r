@@ -1,0 +1,17 @@
+<use f='include/gstreamer-1.0/gst/video/gstvideofilter.h' l='30'/>
+<def f='include/gstreamer-1.0/gst/video/gstvideofilter.h' l='66' ll='80'/>
+<size>872</size>
+<doc f='include/gstreamer-1.0/gst/video/gstvideofilter.h' l='57'>/**
+ * GstVideoFilterClass:
+ * @parent_class: the parent class structure
+ * @set_info: function to be called with the negotiated caps and video infos
+ * @transform_frame: transform a video frame
+ * @transform_frame_ip: transform a video frame in place
+ *
+ * The video filter class structure.
+ */</doc>
+<mbr r='_GstVideoFilterClass::parent_class' o='0' t='GstBaseTransformClass'/>
+<mbr r='_GstVideoFilterClass::set_info' o='6528' t='gboolean (*)(GstVideoFilter *, GstCaps *, GstVideoInfo *, GstCaps *, GstVideoInfo *)'/>
+<mbr r='_GstVideoFilterClass::transform_frame' o='6592' t='GstFlowReturn (*)(GstVideoFilter *, GstVideoFrame *, GstVideoFrame *)'/>
+<mbr r='_GstVideoFilterClass::transform_frame_ip' o='6656' t='GstFlowReturn (*)(GstVideoFilter *, GstVideoFrame *)'/>
+<mbr r='_GstVideoFilterClass::_gst_reserved' o='6720' t='gpointer [4]'/>

@@ -1,0 +1,47 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DFGCommon.h' l='137' type='1'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DFGCommon.h' l='115'>// At this point we know what is numerical and what isn&apos;t. Non-numerical inputs
+    // to arithmetic operations will not have useful information in the Baseline JIT
+    // rare case profiles because Baseline may take slow path on non-numerical
+    // inputs even if the DFG could handle the input on the fast path. Boolean
+    // inputs are the most obvious example. This pass of prediction propagation will
+    // use Baseline rare case profiles for purely numerical operations and it will
+    // ignore them for everything else. The point of this pass is to develop a good
+    // guess of which variables are likely to be doubles.
+    //
+    // This pass is intentionally weird and goes against what is considered good
+    // form when writing a static analysis: a new data flow of booleans will cause
+    // us to ignore rare case profiles except that by then, we will have already
+    // propagated double types based on our prior assumption that we shouldn&apos;t
+    // ignore rare cases. This probably won&apos;t happen because the PrimaryPass is
+    // almost certainly going to establish what is and isn&apos;t numerical. But it&apos;s
+    // conceivable that during this pass we will discover a new boolean data flow.
+    // This ends up being sound because the prediction propagator could literally
+    // make any guesses it wants and still be sound (worst case, we OSR exit more
+    // often or use too general of types are run a bit slower). This will converge
+    // because we force monotonicity on the types of nodes and variables. So, the
+    // worst thing that can happen is that we violate basic laws of theoretical
+    // decency.</doc>
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGCommon.h' l='137' type='1'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGCommon.h' l='115'>// At this point we know what is numerical and what isn&apos;t. Non-numerical inputs
+    // to arithmetic operations will not have useful information in the Baseline JIT
+    // rare case profiles because Baseline may take slow path on non-numerical
+    // inputs even if the DFG could handle the input on the fast path. Boolean
+    // inputs are the most obvious example. This pass of prediction propagation will
+    // use Baseline rare case profiles for purely numerical operations and it will
+    // ignore them for everything else. The point of this pass is to develop a good
+    // guess of which variables are likely to be doubles.
+    //
+    // This pass is intentionally weird and goes against what is considered good
+    // form when writing a static analysis: a new data flow of booleans will cause
+    // us to ignore rare case profiles except that by then, we will have already
+    // propagated double types based on our prior assumption that we shouldn&apos;t
+    // ignore rare cases. This probably won&apos;t happen because the PrimaryPass is
+    // almost certainly going to establish what is and isn&apos;t numerical. But it&apos;s
+    // conceivable that during this pass we will discover a new boolean data flow.
+    // This ends up being sound because the prediction propagator could literally
+    // make any guesses it wants and still be sound (worst case, we OSR exit more
+    // often or use too general of types are run a bit slower). This will converge
+    // because we force monotonicity on the types of nodes and variables. So, the
+    // worst thing that can happen is that we violate basic laws of theoretical
+    // decency.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPredictionPropagationPhase.cpp' l='61' u='r' c='_ZN3JSC3DFG12_GLOBAL__N_126PredictionPropagationPhase3runEv'/>

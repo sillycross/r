@@ -1,0 +1,26 @@
+<use f='include/gstreamer-1.0/gst/audio/gstaudiosrc.h' l='43'/>
+<def f='include/gstreamer-1.0/gst/audio/gstaudiosrc.h' l='74' ll='97'/>
+<size>984</size>
+<doc f='include/gstreamer-1.0/gst/audio/gstaudiosrc.h' l='60'>/**
+ * GstAudioSrcClass:
+ * @parent_class: the parent class.
+ * @open: open the device with the specified caps
+ * @prepare: configure device with format
+ * @unprepare: undo the configuration
+ * @close: close the device
+ * @read: read samples from the audio device
+ * @delay: the number of frames queued in the device
+ * @reset: unblock a read to the device and reset.
+ *
+ * #GstAudioSrc class. Override the vmethod to implement
+ * functionality.
+ */</doc>
+<mbr r='_GstAudioSrcClass::parent_class' o='0' t='GstAudioBaseSrcClass'/>
+<mbr r='_GstAudioSrcClass::open' o='7168' t='gboolean (*)(GstAudioSrc *)'/>
+<mbr r='_GstAudioSrcClass::prepare' o='7232' t='gboolean (*)(GstAudioSrc *, GstAudioRingBufferSpec *)'/>
+<mbr r='_GstAudioSrcClass::unprepare' o='7296' t='gboolean (*)(GstAudioSrc *)'/>
+<mbr r='_GstAudioSrcClass::close' o='7360' t='gboolean (*)(GstAudioSrc *)'/>
+<mbr r='_GstAudioSrcClass::read' o='7424' t='guint (*)(GstAudioSrc *, gpointer, guint, GstClockTime *)'/>
+<mbr r='_GstAudioSrcClass::delay' o='7488' t='guint (*)(GstAudioSrc *)'/>
+<mbr r='_GstAudioSrcClass::reset' o='7552' t='void (*)(GstAudioSrc *)'/>
+<mbr r='_GstAudioSrcClass::_gst_reserved' o='7616' t='gpointer [4]'/>

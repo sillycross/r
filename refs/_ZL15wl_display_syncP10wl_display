@@ -1,0 +1,16 @@
+<def f='include/wayland-client-protocol.h' l='957' ll='966' type='struct wl_callback * wl_display_sync(struct wl_display * wl_display)'/>
+<doc f='include/wayland-client-protocol.h' l='942'>/**
+ * @ingroup iface_wl_display
+ *
+ * The sync request asks the server to emit the &apos;done&apos; event
+ * on the returned wl_callback object.  Since requests are
+ * handled in-order and events are delivered in-order, this can
+ * be used as a barrier to ensure all previous requests and the
+ * resulting events have been handled.
+ *
+ * The object returned by this request will be destroyed by the
+ * compositor after the callback is fired and as such the client must not
+ * attempt to use it after that point.
+ *
+ * The callback_data passed in the callback is the event serial.
+ */</doc>

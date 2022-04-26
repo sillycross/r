@@ -1,0 +1,232 @@
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='107' ll='1263'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='1159'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='1204' c='_ZN3JSC3DFG14ByteCodeParser16InlineStackEntryC1EPS1_PNS_9CodeBlockES5_PNS_10JSFunctionENS_7OperandENS_15VirtualRegisterEiNS_15InlineCallFrame4KindEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='1245' c='_ZN3JSC3DFG14ByteCodeParser15DelayedSetLocal7executeEPS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='8578' c='_ZN3JSC3DFG14ByteCodeParser16InlineStackEntryC1EPS1_PNS_9CodeBlockES5_PNS_10JSFunctionENS_7OperandENS_15VirtualRegisterEiNS_15InlineCallFrame4KindEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='9110' c='_ZN3JSC3DFG5parseERNS0_5GraphE'/>
+<size>464</size>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='104'>// === ByteCodeParser ===
+//
+// This class is used to compile the dataflow graph from a CodeBlock.</doc>
+<fun r='_ZN3JSC3DFG14ByteCodeParserC1ERNS0_5GraphE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser5parseEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser14parseCodeBlockEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser12ensureLocalsEj'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10ensureTmpsEj'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser12handleMinMaxENS_7OperandENS0_8NodeTypeEiiRKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser16refineStaticallyERNS_14CallLinkStatusEPNS0_4NodeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser23allocateTargetableBlockENS_13BytecodeIndexE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser25allocateUntargetableBlockEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser19makeBlockTargetableEPNS0_10BasicBlockENS_13BytecodeIndexE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser9addJumpToEPNS0_10BasicBlockE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser9addJumpToEj'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10handleCallENS_7OperandENS0_8NodeTypeENS_15InlineCallFrame4KindENS_13BytecodeIndexEPNS0_4NodeEiiNS_14CallLinkStatusEmNS_8ECMAModeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10handleCallEPKNS_11InstructionENS0_8NodeTypeENS_8CallModeENS_13BytecodeIndexE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser17handleVarargsCallEPKNS_11InstructionENS0_8NodeTypeENS_8CallModeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser18emitFunctionChecksENS_11CallVariantEPNS0_4NodeENS_15VirtualRegisterE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser20emitArgumentPhantomsEii'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser16getArgumentCountEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser23handleRecursiveTailCallEPNS0_4NodeENS_11CallVariantEiiRKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser12inliningCostENS_11CallVariantEiNS_15InlineCallFrame4KindE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser21handleVarargsInliningEPNS0_4NodeENS_7OperandERKNS_14CallLinkStatusEiNS_15VirtualRegisterES8_jNS0_8NodeTypeENS_15InlineCallFrame4KindE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser18getInliningBalanceERKNS_14CallLinkStatusENS_22CodeSpecializationKindE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser17handleCallVariantEPNS0_4NodeENS_7OperandENS_11CallVariantEiNS_15VirtualRegisterEiNS_13BytecodeIndexENS_15InlineCallFrame416513732'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser14handleInliningEPNS0_4NodeENS_7OperandERKNS_14CallLinkStatusEiNS_15VirtualRegisterEiNS_13BytecodeIndexENS0_8NodeTypeENS_158442622'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10inlineCallEPNS0_4NodeENS_7OperandENS_11CallVariantEiiNS_15InlineCallFrame4KindEPNS0_10BasicBlockERKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser19handleIntrinsicCallEPNS0_4NodeENS_7OperandENS_9IntrinsicEiimRKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser16handleDOMJITCallEPNS0_4NodeENS_7OperandEPKNS_6DOMJIT9SignatureEiimRKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser21handleIntrinsicGetterENS_7OperandEmRKNS_12GetByVariantEPNS0_4NodeERKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser27handleTypedArrayConstructorENS_7OperandEPNS_16InternalFunctionEiiNS_14TypedArrayTypeERKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser30handleConstantInternalFunctionEPNS0_4NodeENS_7OperandEPNS_16InternalFunctionEiiNS_22CodeSpecializationKindEmRKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser17handlePutByOffsetEPNS0_4NodeEjiS3_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser17handleGetByOffsetEmPNS0_4NodeEjiNS0_8NodeTypeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser18handleDOMJITGetterENS_7OperandERKNS_12GetByVariantEPNS0_4NodeEjm'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser25handleModuleNamespaceLoadENS_15VirtualRegisterEmPNS0_4NodeENS_11GetByStatusE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser14handlePutByValET_NS_13BytecodeIndexE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser21handlePutAccessorByIdENS0_8NodeTypeET_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser22handlePutAccessorByValENS0_8NodeTypeET_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser13handleNewFuncENS0_8NodeTypeET_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser16handleNewFuncExpENS0_8NodeTypeET_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser31handleCreateInternalFieldObjectEPKNS_9ClassInfoENS0_8NodeTypeES5_T_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser29presenceConditionIfConsistentEPNS_8JSObjectEPN3WTF17UniquedStringImplEiRKNS_12StructureSetE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser13checkPresenceEPNS_8JSObjectEPN3WTF17UniquedStringImplEiRKNS_12StructureSetE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser23checkPresenceForReplaceEPNS0_4NodeEPN3WTF17UniquedStringImplEiRKNS_12StructureSetE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser4loadEmPNS0_4NodeEjRKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser5storeEPNS0_4NodeEjRKNS_14PutByIdVariantES3_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser12parseGetByIdEPKNS_11InstructionE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser19simplifyGetByStatusEPNS0_4NodeERNS_11GetByStatusE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser13handleGetByIdENS_15VirtualRegisterEmPNS0_4NodeENS_19CacheableIdentifierEjNS_11GetByStatusENS_10AccessTypeENS_13BytecodeIndexE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser24handleGetPrivateNameByIdENS_15VirtualRegisterEmPNS0_4NodeENS_19CacheableIdentifierEjNS_11GetByStatusE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser11emitPutByIdEPNS0_4NodeENS_19CacheableIdentifierES3_RKNS_13PutByIdStatusEbNS_8ECMAModeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser13handlePutByIdEPNS0_4NodeENS_19CacheableIdentifierEjS3_RKNS_13PutByIdStatusEbNS_13BytecodeIndexENS_8ECMAModeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser24handlePutPrivateNameByIdEPNS0_4NodeENS_19CacheableIdentifierEjS3_RKNS_13PutByIdStatusENS_19PrivateFieldPutKindE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser16handleDeleteByIdENS_15VirtualRegisterEPNS0_4NodeENS_19CacheableIdentifierEjNS_14DeleteByStatusENS_8ECMAModeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser26handleInByAsMatchStructureENS_15VirtualRegisterEPNS0_4NodeENS_10InByStatusE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser12handleInByIdENS_15VirtualRegisterEPNS0_4NodeENS_19CacheableIdentifierENS_10InByStatusE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser5checkERKNS_23ObjectPropertyConditionE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser17promoteToConstantENS0_17GetByOffsetMethodE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser8planLoadERKNS_23ObjectPropertyConditionE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser4loadEmjRKNS0_17GetByOffsetMethodENS0_8NodeTypeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser4loadEmRKNS_23ObjectPropertyConditionENS0_8NodeTypeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser5checkERKNS_26ObjectPropertyConditionSetE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser8planLoadERKNS_26ObjectPropertyConditionSetE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser4loadEmRKNS_26ObjectPropertyConditionSetENS0_8NodeTypeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser19prepareToParseBlockEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser11clearCachesEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser9linkBlockEPNS0_10BasicBlockERN3WTF6VectorIS3_Lm0ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10linkBlocksERN3WTF6VectorIPNS0_10BasicBlockELm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEES9_'/>
+<fun r='_ZNK3JSC3DFG14ByteCodeParser15nextOpcodeIndexEv'/>
+<fun r='_ZNK3JSC3DFG14ByteCodeParser14nextCheckpointEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser24progressToNextCheckpointEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser21newVariableAccessDataENS_7OperandE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser9getDirectENS_7OperandE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser3getENS_7OperandE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser9setDirectENS_7OperandEPNS0_4NodeENS1_7SetModeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser20processSetLocalQueueEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser3setENS_7OperandEPNS0_4NodeENS1_7SetModeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser28injectLazyOperandSpeculationEPNS0_4NodeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser13getLocalOrTmpENS_7OperandE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser13setLocalOrTmpERKNS_10CodeOriginENS_7OperandEPNS0_4NodeENS1_7SetModeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser11getArgumentENS_15VirtualRegisterE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser11setArgumentERKNS_10CodeOriginENS_7OperandEPNS0_4NodeENS1_7SetModeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser31findArgumentPositionForArgumentEi'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser28findArgumentPositionForLocalENS_15VirtualRegisterE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser20findArgumentPositionENS_7OperandE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser9flushImplEPNS_15InlineCallFrameERKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser20flushForTerminalImplENS_10CodeOriginERKT_RKT0_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser5flushENS_7OperandE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser11flushDirectENS_7OperandE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser11flushDirectENS_7OperandEPNS0_16ArgumentPositionE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser22addFlushOrPhantomLocalENS_7OperandEPNS0_16ArgumentPositionE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser18phantomLocalDirectENS_7OperandE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser5flushEPNS1_16InlineStackEntryE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser16flushForTerminalEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser14flushForReturnEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser15flushIfTerminalERNS0_10SwitchDataE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10jsConstantEPNS0_11FrozenValueE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10jsConstantENS_7JSValueE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser14weakJSConstantENS_7JSValueE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser7getThisEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser7setThisEPNS0_4NodeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser15inlineCallFrameEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser27allInlineFramesAreTailCallsEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser17currentCodeOriginEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser17currentNodeOriginEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10branchDataEjj'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10addToGraphEPNS0_4NodeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10addToGraphENS0_8NodeTypeEPNS0_4NodeES4_S4_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10addToGraphENS0_8NodeTypeENS0_4EdgeES3_S3_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10addToGraphENS0_8NodeTypeENS0_6OpInfoEPNS0_4NodeES5_S5_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10addToGraphENS0_8NodeTypeENS0_6OpInfoENS0_4EdgeES4_S4_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10addToGraphENS0_8NodeTypeENS0_6OpInfoES3_PNS0_4NodeES5_S5_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10addToGraphENS0_8NodeTypeENS_7OperandEPNS0_4NodeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10addToGraphENS0_8NodeTypeENS0_6OpInfoES3_NS0_4EdgeES4_S4_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10addToGraphENS0_4Node9VarArgTagENS0_8NodeTypeENS0_6OpInfoES5_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser14addVarArgChildEPNS0_4NodeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser14addVarArgChildENS0_4EdgeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser27addCallWithoutSettingResultENS0_8NodeTypeENS0_6OpInfoEPNS0_4NodeEiiS3_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser7addCallENS_7OperandENS0_8NodeTypeENS0_6OpInfoEPNS0_4NodeEiim'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser30cellConstantWithStructureCheckEPNS_6JSCellEPNS_9StructureE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser27getPredictionWithoutOSRExitENS_13BytecodeIndexE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser13getPredictionENS_13BytecodeIndexE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser27getPredictionWithoutOSRExitEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser13getPredictionEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser12getArrayModeENS0_5Array6ActionE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser12getArrayModeERNS_12ArrayProfileENS0_5Array6ActionE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser8makeSafeEPNS0_4NodeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser11makeDivSafeEPNS0_4NodeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser18noticeArgumentsUseEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser18needsDynamicLookupENS_11ResolveTypeENS_8OpcodeIDE'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_vm' o='0' t='JSC::VM *'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_codeBlock' o='64' t='JSC::CodeBlock *'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_profiledBlock' o='128' t='JSC::CodeBlock *'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_graph' o='192' t='JSC::DFG::Graph &amp;'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_currentBlock' o='256' t='JSC::DFG::BasicBlock *'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_currentIndex' o='320' t='JSC::BytecodeIndex'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_currentSemanticOrigin' o='384' t='JSC::CodeOrigin'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_currentExitOrigin' o='448' t='JSC::CodeOrigin'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_exitOK' o='512' t='bool'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_constantUndefined' o='576' t='JSC::DFG::FrozenValue *'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_constantNull' o='640' t='JSC::DFG::FrozenValue *'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_constantNaN' o='704' t='JSC::DFG::FrozenValue *'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_constantOne' o='768' t='JSC::DFG::FrozenValue *'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_constants' o='832' t='Vector&lt;JSC::DFG::Node *, 16&gt;'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_inlineCallFrameToArgumentPositions' o='1984' t='HashMap&lt;JSC::InlineCallFrame *, Vector&lt;JSC::DFG::ArgumentPosition *&gt;, WTF::DefaultHash&lt;InlineCallFrame *&gt;, WTF::NullableHashTraits&lt;InlineCallFrame *&gt; &gt;'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_numArguments' o='2048' t='unsigned int'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_numLocals' o='2080' t='unsigned int'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_numTmps' o='2112' t='unsigned int'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_parameterSlots' o='2144' t='unsigned int'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_numPassedVarArgs' o='2176' t='unsigned int'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_inlineStackTop' o='2240' t='JSC::DFG::ByteCodeParser::InlineStackEntry *'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_icContextStack' o='2304' t='JSC::ICStatusContextStack'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_setLocalQueue' o='2944' t='Vector&lt;JSC::DFG::ByteCodeParser::DelayedSetLocal, 2&gt;'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_currentInstruction' o='3584' t='const JSC::Instruction *'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_hasDebuggerEnabled' o='3648' t='bool'/>
+<mbr r='JSC::DFG::ByteCodeParser::m_hasAnyForceOSRExits' o='3656' t='bool'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser23allocateTargetableBlockENS_13BytecodeIndexE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser25allocateUntargetableBlockEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser19makeBlockTargetableEPNS0_10BasicBlockENS_13BytecodeIndexE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser9addJumpToEPNS0_10BasicBlockE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser9addJumpToEj'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10handleCallEPKNS_11InstructionENS0_8NodeTypeENS_8CallModeENS_13BytecodeIndexE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser16refineStaticallyERNS_14CallLinkStatusEPNS0_4NodeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10handleCallENS_7OperandENS0_8NodeTypeENS_15InlineCallFrame4KindENS_13BytecodeIndexEPNS0_4NodeEiiNS_14CallLinkStatusEmNS_8ECMAModeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser17handleVarargsCallEPKNS_11InstructionENS0_8NodeTypeENS_8CallModeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser18emitFunctionChecksENS_11CallVariantEPNS0_4NodeENS_15VirtualRegisterE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser16getArgumentCountEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser20emitArgumentPhantomsEii'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser23handleRecursiveTailCallEPNS0_4NodeENS_11CallVariantEiiRKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser12inliningCostENS_11CallVariantEiNS_15InlineCallFrame4KindE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10inlineCallEPNS0_4NodeENS_7OperandENS_11CallVariantEiiNS_15InlineCallFrame4KindEPNS0_10BasicBlockERKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser17handleCallVariantEPNS0_4NodeENS_7OperandENS_11CallVariantEiNS_15VirtualRegisterEiNS_13BytecodeIndexENS_15InlineCallFrame416513732'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser21handleVarargsInliningEPNS0_4NodeENS_7OperandERKNS_14CallLinkStatusEiNS_15VirtualRegisterES8_jNS0_8NodeTypeENS_15InlineCallFrame4KindE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser18getInliningBalanceERKNS_14CallLinkStatusENS_22CodeSpecializationKindE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser14handleInliningEPNS0_4NodeENS_7OperandERKNS_14CallLinkStatusEiNS_15VirtualRegisterEiNS_13BytecodeIndexENS0_8NodeTypeENS_158442622'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser12handleMinMaxENS_7OperandENS0_8NodeTypeEiiRKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser19handleIntrinsicCallEPNS0_4NodeENS_7OperandENS_9IntrinsicEiimRKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser16handleDOMJITCallEPNS0_4NodeENS_7OperandEPKNS_6DOMJIT9SignatureEiimRKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser21handleIntrinsicGetterENS_7OperandEmRKNS_12GetByVariantEPNS0_4NodeERKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser18handleDOMJITGetterENS_7OperandERKNS_12GetByVariantEPNS0_4NodeEjm'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser25handleModuleNamespaceLoadENS_15VirtualRegisterEmPNS0_4NodeENS_11GetByStatusE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser27handleTypedArrayConstructorENS_7OperandEPNS_16InternalFunctionEiiNS_14TypedArrayTypeERKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser30handleConstantInternalFunctionEPNS0_4NodeENS_7OperandEPNS_16InternalFunctionEiiNS_22CodeSpecializationKindEmRKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser17handleGetByOffsetEmPNS0_4NodeEjiNS0_8NodeTypeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser17handlePutByOffsetEPNS0_4NodeEjiS3_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser5checkERKNS_23ObjectPropertyConditionE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser17promoteToConstantENS0_17GetByOffsetMethodE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser18needsDynamicLookupENS_11ResolveTypeENS_8OpcodeIDE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser8planLoadERKNS_23ObjectPropertyConditionE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser4loadEmjRKNS0_17GetByOffsetMethodENS0_8NodeTypeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser4loadEmRKNS_23ObjectPropertyConditionENS0_8NodeTypeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser5checkERKNS_26ObjectPropertyConditionSetE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser8planLoadERKNS_26ObjectPropertyConditionSetE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser4loadEmRKNS_26ObjectPropertyConditionSetENS0_8NodeTypeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser29presenceConditionIfConsistentEPNS_8JSObjectEPN3WTF17UniquedStringImplEiRKNS_12StructureSetE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser13checkPresenceEPNS_8JSObjectEPN3WTF17UniquedStringImplEiRKNS_12StructureSetE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser23checkPresenceForReplaceEPNS0_4NodeEPN3WTF17UniquedStringImplEiRKNS_12StructureSetE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser4loadEmPNS0_4NodeEjRKT_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser5storeEPNS0_4NodeEjRKNS_14PutByIdVariantES3_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser19simplifyGetByStatusEPNS0_4NodeERNS_11GetByStatusE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser13handleGetByIdENS_15VirtualRegisterEmPNS0_4NodeENS_19CacheableIdentifierEjNS_11GetByStatusENS_10AccessTypeENS_13BytecodeIndexE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser24handleGetPrivateNameByIdENS_15VirtualRegisterEmPNS0_4NodeENS_19CacheableIdentifierEjNS_11GetByStatusE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser16handleDeleteByIdENS_15VirtualRegisterEPNS0_4NodeENS_19CacheableIdentifierEjNS_14DeleteByStatusENS_8ECMAModeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser26handleInByAsMatchStructureENS_15VirtualRegisterEPNS0_4NodeENS_10InByStatusE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser12handleInByIdENS_15VirtualRegisterEPNS0_4NodeENS_19CacheableIdentifierENS_10InByStatusE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser11emitPutByIdEPNS0_4NodeENS_19CacheableIdentifierES3_RKNS_13PutByIdStatusEbNS_8ECMAModeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser13handlePutByIdEPNS0_4NodeENS_19CacheableIdentifierEjS3_RKNS_13PutByIdStatusEbNS_13BytecodeIndexENS_8ECMAModeE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser24handlePutPrivateNameByIdEPNS0_4NodeENS_19CacheableIdentifierEjS3_RKNS_13PutByIdStatusENS_19PrivateFieldPutKindE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser19prepareToParseBlockEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser11clearCachesEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser12parseGetByIdEPKNS_11InstructionE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser9linkBlockEPNS0_10BasicBlockERN3WTF6VectorIS3_Lm0ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser10linkBlocksERN3WTF6VectorIPNS0_10BasicBlockELm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEES9_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser14parseCodeBlockEv'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser14handlePutByValET_NS_13BytecodeIndexE'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser21handlePutAccessorByIdENS0_8NodeTypeET_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser22handlePutAccessorByValENS0_8NodeTypeET_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser13handleNewFuncENS0_8NodeTypeET_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser16handleNewFuncExpENS0_8NodeTypeET_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser31handleCreateInternalFieldObjectEPKNS_9ClassInfoENS0_8NodeTypeES5_T_'/>
+<fun r='_ZN3JSC3DFG14ByteCodeParser5parseEv'/>

@@ -1,0 +1,625 @@
+<use f='WebKit/Source/WebKit/Platform/IPC/MessageReceiver.h' l='44' c='_ZN3IPC15MessageReceiver17didReceiveMessageERNS_10ConnectionERNS_7DecoderE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/MessageReceiver.h' l='49' c='_ZN3IPC15MessageReceiver21didReceiveSyncMessageERNS_10ConnectionERNS_7DecoderERN3WTF9UniqueRefINS_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/MessageReceiveQueue.h' l='40' c='_ZN3IPC19MessageReceiveQueue14enqueueMessageERNS_10ConnectionEOSt10unique_ptrINS_7DecoderESt14default_deleteIS4_EE'/>
+<inh f='WebKit/WTF/Headers/wtf/ThreadSafeRefCounted.h' l='109' c='WTF::ThreadSafeRefCounted'/>
+<inh f='WebKit/WTF/Headers/wtf/WeakPtr.h' l='218' c='WTF::CanMakeWeakPtr'/>
+<def f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='107' ll='510'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='107'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='107'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='114' c='_ZN3IPC10Connection6Client8didCloseERS0_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='115' c='_ZN3IPC10Connection6Client24didReceiveInvalidMessageERS0_NS_11MessageNameE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='200' c='_ZN3IPC10Connection22createServerConnectionEiRNS0_6ClientE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='201' c='_ZN3IPC10Connection22createClientConnectionEiRNS0_6ClientE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='209' c='_ZN3IPC10Connection10connectionEN3WTF16ObjectIdentifierINS0_12UniqueIDTypeEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='220'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='331' c='_ZN3IPC10Connection13connectionMapEv'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='377' c='_ZN3IPC10Connection17MessagesThrottlerC1ERS0_MS0_FvvE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='383'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='384'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='534' c='_ZN3IPC20addAsyncReplyHandlerERNS_10ConnectionEmON3WTF17CompletionHandlerIFvPNS_7DecoderEEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='535' c='_ZN3IPC21takeAsyncReplyHandlerERNS_10ConnectionEm'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/unix/ConnectionUnix.cpp' l='374' c='_ZN3IPC10Connection4openEv'/>
+<size>352</size>
+<fun r='_ZN3IPC10Connection17identifierIsValidEi'/>
+<fun r='_ZN3IPC10Connection24createPlatformConnectionEj'/>
+<fun r='_ZN3IPC10Connection22createServerConnectionEiRNS0_6ClientE'/>
+<fun r='_ZN3IPC10Connection22createClientConnectionEiRNS0_6ClientE'/>
+<fun r='_ZN3IPC10ConnectionD1Ev'/>
+<fun r='_ZNK3IPC10Connection6clientEv'/>
+<fun r='_ZN3IPC10Connection10connectionEN3WTF16ObjectIdentifierINS0_12UniqueIDTypeEEE'/>
+<fun r='_ZNK3IPC10Connection8uniqueIDEv'/>
+<fun r='_ZN3IPC10Connection78setOnlySendMessagesAsDispatchWhenWaitingForSyncReplyWhenProcessingSuchAMessageEb'/>
+<fun r='_ZN3IPC10Connection37setShouldExitOnSyncMessageSendFailureEb'/>
+<fun r='_ZN3IPC10Connection40setDidCloseOnConnectionWorkQueueCallbackEPFvPS0_E'/>
+<fun r='_ZN3IPC10Connection22addMessageReceiveQueueERNS_19MessageReceiveQueueENS_12ReceiverNameEm'/>
+<fun r='_ZN3IPC10Connection25removeMessageReceiveQueueENS_12ReceiverNameEm'/>
+<fun r='_ZN3IPC10Connection27addWorkQueueMessageReceiverENS_12ReceiverNameERN3WTF9WorkQueueEPNS0_24WorkQueueMessageReceiverEm'/>
+<fun r='_ZN3IPC10Connection30removeWorkQueueMessageReceiverENS_12ReceiverNameEm'/>
+<fun r='_ZN3IPC10Connection24addThreadMessageReceiverENS_12ReceiverNameEPNS0_21ThreadMessageReceiverEm'/>
+<fun r='_ZN3IPC10Connection27removeThreadMessageReceiverENS_12ReceiverNameEm'/>
+<fun r='_ZN3IPC10Connection4openEv'/>
+<fun r='_ZN3IPC10Connection10invalidateEv'/>
+<fun r='_ZN3IPC10Connection39markCurrentlyDispatchedMessageAsInvalidEv'/>
+<fun r='_ZN3IPC10Connection43postConnectionDidCloseOnConnectionWorkQueueEv'/>
+<fun r='_ZN3IPC10Connection18sendWithAsyncReplyEOT_OT0_mN3WTF9OptionSetINS_10SendOptionEEE'/>
+<fun r='_ZN3IPC10Connection4sendEOT_mN3WTF9OptionSetINS_10SendOptionEEE'/>
+<fun r='_ZN3IPC10Connection4sendEN3WTF16ObjectIdentifierINS0_12UniqueIDTypeEEEOT_mNS1_9OptionSetINS_10SendOptionEEE'/>
+<fun r='_ZN3IPC10Connection8sendSyncEOT_ONS1_5ReplyEmNS_7TimeoutEN3WTF9OptionSetINS_14SendSyncOptionEEE'/>
+<fun r='_ZN3IPC10Connection29waitForAndDispatchImmediatelyEmNS_7TimeoutEN3WTF9OptionSetINS_13WaitForOptionEEE'/>
+<fun r='_ZN3IPC10Connection42waitForAsyncCallbackAndDispatchImmediatelyEmNS_7TimeoutE'/>
+<fun r='_ZN3IPC10Connection18sendWithAsyncReplyEOT_OT0_N3WTF16ObjectIdentifierIT1_EENS5_9OptionSetINS_10SendOptionEEE'/>
+<fun r='_ZN3IPC10Connection4sendEOT_N3WTF16ObjectIdentifierIT0_EENS3_9OptionSetINS_10SendOptionEEE'/>
+<fun r='_ZN3IPC10Connection8sendSyncEOT_ONS1_5ReplyEN3WTF16ObjectIdentifierIT0_EENS_7TimeoutENS5_9OptionSetINS_14SendSyncOptionEEE'/>
+<fun r='_ZN3IPC10Connection29waitForAndDispatchImmediatelyEN3WTF16ObjectIdentifierIT0_EENS_7TimeoutENS1_9OptionSetINS_13WaitForOptionEEE'/>
+<fun r='_ZN3IPC10Connection11sendMessageEON3WTF9UniqueRefINS_7EncoderEEENS1_9OptionSetINS_10SendOptionEEE'/>
+<fun r='_ZN3IPC10Connection24createSyncMessageEncoderENS_11MessageNameEmRN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEE'/>
+<fun r='_ZN3IPC10Connection15sendSyncMessageEN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEEONS1_9UniqueRefINS_7EncoderEEENS_7TimeoutENS1_9OptionSetINS_14SendSyncOptionEEE'/>
+<fun r='_ZN3IPC10Connection13sendSyncReplyEON3WTF9UniqueRefINS_7EncoderEEE'/>
+<fun r='_ZN3IPC10Connection13wakeUpRunLoopEv'/>
+<fun r='_ZN3IPC10Connection66incrementDispatchMessageMarkedDispatchWhenWaitingForSyncReplyCountEv'/>
+<fun r='_ZN3IPC10Connection66decrementDispatchMessageMarkedDispatchWhenWaitingForSyncReplyCountEv'/>
+<fun r='_ZNK3IPC10Connection10inSendSyncEv'/>
+<fun r='_ZNK3IPC10Connection10identifierEv'/>
+<fun r='_ZNK3IPC10Connection7isValidEv'/>
+<fun r='_ZN3IPC10Connection34installIncomingSyncMessageCallbackEON3WTF8FunctionIFvvEEE'/>
+<fun r='_ZN3IPC10Connection36uninstallIncomingSyncMessageCallbackEm'/>
+<fun r='_ZN3IPC10Connection22hasIncomingSyncMessageEv'/>
+<fun r='_ZN3IPC10Connection35allowFullySynchronousModeForTestingEv'/>
+<fun r='_ZN3IPC10Connection24ignoreTimeoutsForTestingEv'/>
+<fun r='_ZN3IPC10Connection32enableIncomingMessagesThrottlingEv'/>
+<fun r='_ZN3IPC10Connection30dispatchMessageReceiverMessageERNS_15MessageReceiverEOSt10unique_ptrINS_7DecoderESt14default_deleteIS4_EE'/>
+<fun r='_ZN3IPC10Connection32dispatchDidReceiveInvalidMessageENS_11MessageNameE'/>
+<fun r='_ZN3IPC10ConnectionC1EibRNS0_6ClientE'/>
+<fun r='_ZN3IPC10Connection18platformInitializeEi'/>
+<fun r='_ZN3IPC10Connection18platformInvalidateEv'/>
+<fun r='_ZNK3IPC10Connection35isIncomingMessagesThrottlingEnabledEv'/>
+<fun r='_ZN3IPC10Connection13connectionMapEv'/>
+<fun r='_ZN3IPC10Connection14waitForMessageENS_11MessageNameEmNS_7TimeoutEN3WTF9OptionSetINS_13WaitForOptionEEE'/>
+<fun r='_ZN3IPC10Connection17makeSyncRequestIDEv'/>
+<fun r='_ZN3IPC10Connection24pushPendingSyncRequestIDEN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEE'/>
+<fun r='_ZN3IPC10Connection23popPendingSyncRequestIDEN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEE'/>
+<fun r='_ZN3IPC10Connection16waitForSyncReplyEN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEENS_11MessageNameENS_7TimeoutENS1_9OptionSetINS_14SendSyncOptionEEE'/>
+<fun r='_ZN3IPC10Connection44enqueueMatchingMessagesToMessageReceiveQueueERNS_19MessageReceiveQueueENS_12ReceiverNameEm'/>
+<fun r='_ZN3IPC10Connection22processIncomingMessageESt10unique_ptrINS_7DecoderESt14default_deleteIS2_EE'/>
+<fun r='_ZN3IPC10Connection24processIncomingSyncReplyESt10unique_ptrINS_7DecoderESt14default_deleteIS2_EE'/>
+<fun r='_ZNK3IPC10Connection23canSendOutgoingMessagesEv'/>
+<fun r='_ZNK3IPC10Connection31platformCanSendOutgoingMessagesEv'/>
+<fun r='_ZN3IPC10Connection20sendOutgoingMessagesEv'/>
+<fun r='_ZN3IPC10Connection19sendOutgoingMessageEON3WTF9UniqueRefINS_7EncoderEEE'/>
+<fun r='_ZN3IPC10Connection18connectionDidCloseEv'/>
+<fun r='_ZN3IPC10Connection26dispatchOneIncomingMessageEv'/>
+<fun r='_ZN3IPC10Connection24dispatchIncomingMessagesEv'/>
+<fun r='_ZN3IPC10Connection15dispatchMessageESt10unique_ptrINS_7DecoderESt14default_deleteIS2_EE'/>
+<fun r='_ZN3IPC10Connection15dispatchMessageERNS_7DecoderE'/>
+<fun r='_ZN3IPC10Connection19dispatchSyncMessageERNS_7DecoderE'/>
+<fun r='_ZN3IPC10Connection24didFailToSendSyncMessageEv'/>
+<fun r='_ZN3IPC10Connection22enqueueIncomingMessageESt10unique_ptrINS_7DecoderESt14default_deleteIS2_EE'/>
+<fun r='_ZNK3IPC10Connection36incomingMessagesDispatchingBatchSizeEv'/>
+<fun r='_ZN3IPC10Connection19willSendSyncMessageEN3WTF9OptionSetINS_14SendSyncOptionEEE'/>
+<fun r='_ZN3IPC10Connection19didReceiveSyncReplyEN3WTF9OptionSetINS_14SendSyncOptionEEE'/>
+<fun r='_ZNK3IPC10Connection41timeoutRespectingIgnoreTimeoutsForTestingENS_7TimeoutE'/>
+<smbr r='IPC::Connection::s_connectionMapLock' t='WTF::Lock'/>
+<mbr r='IPC::Connection::m_client' o='128' t='IPC::Connection::Client &amp;'/>
+<mbr r='IPC::Connection::m_uniqueID' o='192' t='IPC::Connection::UniqueID'/>
+<mbr r='IPC::Connection::m_isServer' o='256' t='bool'/>
+<mbr r='IPC::Connection::m_isValid' o='264' t='std::atomic&lt;bool&gt;'/>
+<mbr r='IPC::Connection::m_onlySendMessagesAsDispatchWhenWaitingForSyncReplyWhenProcessingSuchAMessage' o='272' t='bool'/>
+<mbr r='IPC::Connection::m_shouldExitOnSyncMessageSendFailure' o='280' t='bool'/>
+<mbr r='IPC::Connection::m_didCloseOnConnectionWorkQueueCallback' o='320' t='IPC::Connection::DidCloseOnConnectionWorkQueueCallback'/>
+<mbr r='IPC::Connection::m_isConnected' o='384' t='bool'/>
+<mbr r='IPC::Connection::m_connectionQueue' o='448' t='Ref&lt;WTF::WorkQueue&gt;'/>
+<mbr r='IPC::Connection::m_inSendSyncCount' o='512' t='unsigned int'/>
+<mbr r='IPC::Connection::m_inDispatchMessageCount' o='544' t='unsigned int'/>
+<mbr r='IPC::Connection::m_inDispatchSyncMessageCount' o='576' t='unsigned int'/>
+<mbr r='IPC::Connection::m_inDispatchMessageMarkedDispatchWhenWaitingForSyncReplyCount' o='608' t='unsigned int'/>
+<mbr r='IPC::Connection::m_inDispatchMessageMarkedToUseFullySynchronousModeForTesting' o='640' t='unsigned int'/>
+<mbr r='IPC::Connection::m_fullySynchronousModeIsAllowedForTesting' o='672' t='bool'/>
+<mbr r='IPC::Connection::m_ignoreTimeoutsForTesting' o='680' t='bool'/>
+<mbr r='IPC::Connection::m_didReceiveInvalidMessage' o='688' t='bool'/>
+<mbr r='IPC::Connection::m_incomingMessagesLock' o='696' t='WTF::Lock'/>
+<mbr r='IPC::Connection::m_incomingMessages' o='704' t='Deque&lt;std::unique_ptr&lt;Decoder&gt; &gt;'/>
+<mbr r='IPC::Connection::m_incomingMessagesThrottler' o='960' t='std::unique_ptr&lt;MessagesThrottler&gt;'/>
+<mbr r='IPC::Connection::m_receiveQueues' o='1024' t='IPC::MessageReceiveQueueMap'/>
+<mbr r='IPC::Connection::m_outgoingMessagesLock' o='1088' t='WTF::Lock'/>
+<mbr r='IPC::Connection::m_outgoingMessages' o='1152' t='Deque&lt;UniqueRef&lt;IPC::Encoder&gt; &gt;'/>
+<mbr r='IPC::Connection::m_waitForMessageCondition' o='1408' t='WTF::Condition'/>
+<mbr r='IPC::Connection::m_waitForMessageLock' o='1416' t='WTF::Lock'/>
+<mbr r='IPC::Connection::m_waitingForMessage' o='1472' t='IPC::Connection::WaitForMessageState *'/>
+<mbr r='IPC::Connection::m_syncReplyStateLock' o='1536' t='WTF::Lock'/>
+<mbr r='IPC::Connection::m_shouldWaitForSyncReplies' o='1544' t='bool'/>
+<mbr r='IPC::Connection::m_shouldWaitForMessages' o='1552' t='bool'/>
+<mbr r='IPC::Connection::m_pendingSyncReplies' o='1600' t='Vector&lt;IPC::Connection::PendingSyncReply&gt;'/>
+<mbr r='IPC::Connection::m_incomingSyncMessageCallbackLock' o='1728' t='WTF::Lock'/>
+<mbr r='IPC::Connection::m_incomingSyncMessageCallbacks' o='1792' t='HashMap&lt;uint64_t, WTF::Function&lt;void ()&gt; &gt;'/>
+<mbr r='IPC::Connection::m_incomingSyncMessageCallbackQueue' o='1856' t='RefPtr&lt;WTF::WorkQueue&gt;'/>
+<mbr r='IPC::Connection::m_nextIncomingSyncMessageCallbackID' o='1920' t='uint64_t'/>
+<fun r='_ZN3IPC10Connection16readyReadHandlerEv'/>
+<fun r='_ZN3IPC10Connection14processMessageEv'/>
+<fun r='_ZN3IPC10Connection17sendOutputMessageERNS_11UnixMessageE'/>
+<mbr r='IPC::Connection::m_readBuffer' o='1984' t='Vector&lt;uint8_t&gt;'/>
+<mbr r='IPC::Connection::m_fileDescriptors' o='2112' t='Vector&lt;int&gt;'/>
+<mbr r='IPC::Connection::m_socketDescriptor' o='2240' t='int'/>
+<mbr r='IPC::Connection::m_pendingOutputMessage' o='2304' t='std::unique_ptr&lt;UnixMessage&gt;'/>
+<mbr r='IPC::Connection::m_socket' o='2368' t='GRefPtr&lt;GSocket&gt;'/>
+<mbr r='IPC::Connection::m_readSocketMonitor' o='2432' t='WTF::GSocketMonitor'/>
+<mbr r='IPC::Connection::m_writeSocketMonitor' o='2624' t='WTF::GSocketMonitor'/>
+<fun r='_ZN3IPC10Connection4sendEOT_mN3WTF9OptionSetINS_10SendOptionEEE'/>
+<fun r='_ZN3IPC10Connection4sendEN3WTF16ObjectIdentifierINS0_12UniqueIDTypeEEEOT_mNS1_9OptionSetINS_10SendOptionEEE'/>
+<fun r='_ZN3IPC10Connection18sendWithAsyncReplyEOT_OT0_mN3WTF9OptionSetINS_10SendOptionEEE'/>
+<fun r='_ZN3IPC10Connection8sendSyncEOT_ONS1_5ReplyEmNS_7TimeoutEN3WTF9OptionSetINS_14SendSyncOptionEEE'/>
+<fun r='_ZN3IPC10Connection29waitForAndDispatchImmediatelyEmNS_7TimeoutEN3WTF9OptionSetINS_13WaitForOptionEEE'/>
+<fun r='_ZN3IPC10Connection42waitForAsyncCallbackAndDispatchImmediatelyEmNS_7TimeoutE'/>
+<fun r='_ZN3IPC10Connection18platformInitializeEi'/>
+<fun r='_ZN3IPC10Connection18platformInvalidateEv'/>
+<fun r='_ZN3IPC10Connection14processMessageEv'/>
+<fun r='_ZN3IPC10Connection16readyReadHandlerEv'/>
+<fun r='_ZN3IPC10Connection4openEv'/>
+<fun r='_ZNK3IPC10Connection31platformCanSendOutgoingMessagesEv'/>
+<fun r='_ZN3IPC10Connection19sendOutgoingMessageEON3WTF9UniqueRefINS_7EncoderEEE'/>
+<fun r='_ZN3IPC10Connection17sendOutputMessageERNS_11UnixMessageE'/>
+<fun r='_ZN3IPC10Connection24createPlatformConnectionEj'/>
+<fun r='_ZN3IPC10Connection19willSendSyncMessageEN3WTF9OptionSetINS_14SendSyncOptionEEE'/>
+<fun r='_ZN3IPC10Connection19didReceiveSyncReplyEN3WTF9OptionSetINS_14SendSyncOptionEEE'/>
+<use f='WebKit/Source/WebKit/Shared/AuxiliaryProcessSupplement.h' l='40' c='_ZN6WebKit26AuxiliaryProcessSupplement20initializeConnectionEPN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/Shared/Authentication/AuthenticationManager.h' l='99' c='_ZN6WebKit21AuthenticationManager17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/Download.h' l='101' c='_ZNK6WebKit8Download23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.h' l='298' c='_ZN6WebKit14NetworkProcess28connectionToWebProcessClosedERN3IPC10ConnectionEN3PAL9SessionIDE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.h' l='393' c='_ZN6WebKit14NetworkProcess31didReceiveNetworkProcessMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.h' l='409' c='_ZN6WebKit14NetworkProcess20initializeConnectionEPN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.h' l='413' c='_ZN6WebKit14NetworkProcess17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.h' l='414' c='_ZN6WebKit14NetworkProcess21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.h' l='415' c='_ZN6WebKit14NetworkProcess8didCloseERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.h' l='420' c='_ZN6WebKit14NetworkProcess23downloadProxyConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.h' l='421' c='_ZN6WebKit14NetworkProcess35parentProcessConnectionForDownloadsEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.h' l='425' c='_ZN6WebKit14NetworkProcess35didReceiveSyncNetworkProcessMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/MessageSender.h' l='110' c='_ZNK3IPC13MessageSender23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/PendingDownload.h' l='53' c='_ZN6WebKit15PendingDownloadC1EPN3IPC10ConnectionEONS_21NetworkLoadParametersEN3WTF16ObjectIdentifierINS_22DownloadIdentifierTypeEEERNS_14NetworkSessio11778347'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/PendingDownload.h' l='54' c='_ZN6WebKit15PendingDownloadC1EPN3IPC10ConnectionEOSt10unique_ptrINS_11NetworkLoadESt14default_deleteIS5_EEON3WTF17CompletionHandlerIFvN7WebCore12Polic2295143'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/PendingDownload.h' l='76' c='_ZNK6WebKit15PendingDownload23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/PendingDownload.h' l='81'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.h' l='429' c='_ZN6WebKit15WebProcessProxy18connectionWillOpenERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.h' l='430' c='_ZN6WebKit15WebProcessProxy19processWillShutDownERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.h' l='490' c='_ZN6WebKit15WebProcessProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.h' l='491' c='_ZN6WebKit15WebProcessProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.h' l='492' c='_ZN6WebKit15WebProcessProxy8didCloseERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.h' l='493' c='_ZN6WebKit15WebProcessProxy24didReceiveInvalidMessageERN3IPC10ConnectionENS1_11MessageNameE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.h' l='502' c='_ZN6WebKit15WebProcessProxy32didReceiveWebProcessProxyMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.h' l='503' c='_ZN6WebKit15WebProcessProxy36didReceiveSyncWebProcessProxyMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/UserContent/WebUserContentController.h' l='92' c='_ZN6WebKit24WebUserContentController17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='504' c='_ZN6WebKit7WebPage17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='505' c='_ZN6WebKit7WebPage21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1309' c='_ZN6WebKit7WebPage24didReceiveWebPageMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1489' c='_ZNK6WebKit7WebPage23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1508' c='_ZN6WebKit7WebPage28didReceiveSyncWebPageMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/MessageReceiverMap.h' l='55' c='_ZN3IPC18MessageReceiverMap15dispatchMessageERNS_10ConnectionERNS_7DecoderE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/MessageReceiverMap.h' l='56' c='_ZN3IPC18MessageReceiverMap19dispatchSyncMessageERNS_10ConnectionERNS_7DecoderERN3WTF9UniqueRefINS_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/Shared/AuxiliaryProcess.h' l='88' c='_ZNK6WebKit16AuxiliaryProcess23parentProcessConnectionEv'/>
+<use f='WebKit/Source/WebKit/Shared/AuxiliaryProcess.h' l='109' c='_ZN6WebKit16AuxiliaryProcess20initializeConnectionEPN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/Shared/AuxiliaryProcess.h' l='129' c='_ZN6WebKit16AuxiliaryProcess17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/Shared/AuxiliaryProcess.h' l='141' c='_ZNK6WebKit16AuxiliaryProcess23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/Shared/AuxiliaryProcess.h' l='145' c='_ZN6WebKit16AuxiliaryProcess24didReceiveInvalidMessageERN3IPC10ConnectionENS1_11MessageNameE'/>
+<use f='WebKit/Source/WebKit/Shared/AuxiliaryProcess.h' l='146' c='_ZN6WebKit16AuxiliaryProcess8didCloseERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/Shared/AuxiliaryProcess.h' l='165'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/SuspendedPageProxy.h' l='97' c='_ZN6WebKit18SuspendedPageProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/SuspendedPageProxy.h' l='98' c='_ZN6WebKit18SuspendedPageProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/SuspendedPageProxy.h' l='101' c='_ZNK6WebKit18SuspendedPageProxy23messageSenderConnectionEv'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/Shared/WebConnection.h' l='55' c='_ZN6WebKit13WebConnection17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/Authentication/AuthenticationChallengeProxy.h' l='45' c='_ZN6WebKit28AuthenticationChallengeProxy6createEON7WebCore23AuthenticationChallengeEmON3WTF3RefIN3IPC10ConnectionENS4_12RawPtrTraitsIS7_EEEEONS4_7Weak2942712'/>
+<use f='WebKit/Source/WebKit/UIProcess/Authentication/AuthenticationChallengeProxy.h' l='57' c='_ZN6WebKit28AuthenticationChallengeProxyC1EON7WebCore23AuthenticationChallengeEmON3WTF3RefIN3IPC10ConnectionENS4_12RawPtrTraitsIS7_EEEEONS4_7WeakPtrIN12673370'/>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.h' l='75' c='_ZNK6WebKit21AuxiliaryProcessProxy10connectionEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.h' l='86' c='_ZNK6WebKit21AuxiliaryProcessProxy13hasConnectionERKN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.h' l='147' c='_ZN6WebKit21AuxiliaryProcessProxy15dispatchMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.h' l='148' c='_ZN6WebKit21AuxiliaryProcessProxy19dispatchSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.h' l='150' c='_ZN6WebKit21AuxiliaryProcessProxy17logInvalidMessageERN3IPC10ConnectionENS1_11MessageNameE'/>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.h' l='172' c='_ZN6WebKit21AuxiliaryProcessProxy18connectionWillOpenERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.h' l='173' c='_ZN6WebKit21AuxiliaryProcessProxy19processWillShutDownERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.h' l='178'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.h' l='278' c='_ZN6WebKit19NetworkProcessProxy18connectionWillOpenERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.h' l='279' c='_ZN6WebKit19NetworkProcessProxy19processWillShutDownERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.h' l='282' c='_ZN6WebKit19NetworkProcessProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.h' l='283' c='_ZN6WebKit19NetworkProcessProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.h' l='284' c='_ZN6WebKit19NetworkProcessProxy8didCloseERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.h' l='285' c='_ZN6WebKit19NetworkProcessProxy24didReceiveInvalidMessageERN3IPC10ConnectionENS1_11MessageNameE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.h' l='286' c='_ZN6WebKit19NetworkProcessProxy40didReceiveSyncNetworkProcessProxyMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.h' l='292' c='_ZN6WebKit19NetworkProcessProxy36didReceiveNetworkProcessProxyMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/VisitedLinkStore.h' l='58' c='_ZN6WebKit16VisitedLinkStore17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/SpeechRecognitionServer.h' l='59' c='_ZN6WebKit23SpeechRecognitionServerC1EON3WTF3RefIN3IPC10ConnectionENS1_12RawPtrTraitsIS4_EEEENS1_16ObjectIdentifierIN7WebCore18PageIdentifierTypeEEEON12008861'/>
+<use f='WebKit/Source/WebKit/UIProcess/SpeechRecognitionServer.h' l='75' c='_ZN6WebKit23SpeechRecognitionServer17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/SpeechRecognitionServer.h' l='78' c='_ZNK6WebKit23SpeechRecognitionServer23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/SpeechRecognitionServer.h' l='81'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebConnectionToWebProcess.h' l='51' c='_ZNK6WebKit25WebConnectionToWebProcess23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.h' l='174' c='_ZN6WebKit14WebProcessPool15dispatchMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.h' l='175' c='_ZN6WebKit14WebProcessPool19dispatchSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.h' l='529' c='_ZN6WebKit14WebProcessPool13handleMessageERN3IPC10ConnectionERKN3WTF6StringERKNS_8UserDataE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.h' l='530' c='_ZN6WebKit14WebProcessPool24handleSynchronousMessageERN3IPC10ConnectionERKN3WTF6StringERKNS_8UserDataEONS4_17CompletionHandlerIFvOS8_EEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.h' l='544' c='_ZN6WebKit14WebProcessPool17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.h' l='545' c='_ZN6WebKit14WebProcessPool21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/UserContent/WebUserContentControllerProxy.h' l='118' c='_ZN6WebKit29WebUserContentControllerProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebConnectionToUIProcess.h' l='49' c='_ZNK6WebKit24WebConnectionToUIProcess23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/Inspector/WebInspectorInterruptDispatcher.h' l='37' c='_ZN6WebKit31WebInspectorInterruptDispatcher20initializeConnectionEPN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Inspector/WebInspectorInterruptDispatcher.h' l='42' c='_ZN6WebKit31WebInspectorInterruptDispatcher17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannel.h' l='52' c='_ZN6WebKit16WebSocketChannel17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannel.h' l='93' c='_ZNK6WebKit16WebSocketChannel23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannelManager.h' l='47' c='_ZN6WebKit23WebSocketChannelManager17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebProcess.h' l='508' c='_ZN6WebKit10WebProcess20initializeConnectionEPN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebProcess.h' l='553' c='_ZN6WebKit10WebProcess17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebProcess.h' l='554' c='_ZN6WebKit10WebProcess21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebProcess.h' l='557' c='_ZN6WebKit10WebProcess27didReceiveWebProcessMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebConnectionToUIProcess.cpp' l='69' c='_ZNK6WebKit24WebConnectionToUIProcess23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/DrawingArea.h' l='167' c='_ZN6WebKit11DrawingArea17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/EventDispatcher.h' l='75' c='_ZN6WebKit15EventDispatcher20initializeConnectionEPN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/EventDispatcher.h' l='83' c='_ZN6WebKit15EventDispatcher17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/webrtc/LibWebRTCNetwork.h' l='44' c='_ZN6WebKit16LibWebRTCNetwork10connectionEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/webrtc/LibWebRTCNetwork.h' l='45' c='_ZN6WebKit16LibWebRTCNetwork13setConnectionEON3WTF6RefPtrIN3IPC10ConnectionENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/webrtc/LibWebRTCNetwork.h' l='91'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/NetworkProcessConnection.h' l='63' c='_ZN6WebKit24NetworkProcessConnection10connectionEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/NetworkProcessConnection.h' l='65' c='_ZN6WebKit24NetworkProcessConnection41didReceiveNetworkProcessConnectionMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/NetworkProcessConnection.h' l='94' c='_ZN6WebKit24NetworkProcessConnection17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/NetworkProcessConnection.h' l='95' c='_ZN6WebKit24NetworkProcessConnection21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/NetworkProcessConnection.h' l='96' c='_ZN6WebKit24NetworkProcessConnection8didCloseERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/NetworkProcessConnection.h' l='97' c='_ZN6WebKit24NetworkProcessConnection24didReceiveInvalidMessageERN3IPC10ConnectionENS1_11MessageNameE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/NetworkProcessConnection.h' l='118'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebStorage/StorageAreaMap.h' l='66' c='_ZN6WebKit14StorageAreaMap17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Automation/WebAutomationSessionProxy.h' l='70' c='_ZN6WebKit25WebAutomationSessionProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebBroadcastChannelRegistry.h' l='48' c='_ZN6WebKit27WebBroadcastChannelRegistry17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Cache/WebCacheStorageConnection.h' l='47' c='_ZN6WebKit25WebCacheStorageConnection17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Cache/WebCacheStorageConnection.h' l='52' c='_ZN6WebKit25WebCacheStorageConnection10connectionEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/Geolocation/WebGeolocationManager.h' l='61' c='_ZN6WebKit21WebGeolocationManager17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Databases/IndexedDB/WebIDBConnectionToServer.h' l='45' c='_ZN6WebKit24WebIDBConnectionToServer17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Databases/IndexedDB/WebIDBConnectionToServer.h' l='51' c='_ZNK6WebKit24WebIDBConnectionToServer23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebResourceLoader.h' l='68' c='_ZN6WebKit17WebResourceLoader34didReceiveWebResourceLoaderMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebResourceLoader.h' l='78' c='_ZNK6WebKit17WebResourceLoader23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebProcess.cpp' l='250' c='_ZN6WebKitL8callExitEPN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebProcess.cpp' l='350' c='_ZN6WebKit10WebProcess20initializeConnectionEPN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebProcess.cpp' l='848' c='_ZN6WebKit10WebProcess21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebProcess.cpp' l='855' c='_ZN6WebKit10WebProcess17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebProcess.cpp' l='1070' c='_ZN6WebKitL27getNetworkProcessConnectionERN3IPC10ConnectionE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/WebProcess/FullScreen/WebFullScreenManager.h' l='57' c='_ZN6WebKit20WebFullScreenManager17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/FullScreen/WebFullScreenManager.h' l='88' c='_ZN6WebKit20WebFullScreenManager37didReceiveWebFullScreenManagerMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Inspector/WebInspector.h' l='49' c='_ZN6WebKit12WebInspector17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Inspector/WebInspector.h' l='52' c='_ZN6WebKit12WebInspector8didCloseERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Inspector/WebInspector.h' l='53' c='_ZN6WebKit12WebInspector24didReceiveInvalidMessageERN3IPC10ConnectionENS1_11MessageNameE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Inspector/WebInspector.h' l='100'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/WebProcess/Databases/IndexedDB/WebIDBConnectionToServer.cpp' l='73' c='_ZNK6WebKit24WebIDBConnectionToServer23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/FullScreen/WebFullScreenManager.cpp' l='120' c='_ZN6WebKit20WebFullScreenManager17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/WebProcess/Inspector/RemoteWebInspectorUI.h' l='60' c='_ZN6WebKit20RemoteWebInspectorUI17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Inspector/WebInspectorInterruptDispatcher.cpp' l='51' c='_ZN6WebKit31WebInspectorInterruptDispatcher20initializeConnectionEPN3IPC10ConnectionE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/WebProcess/Network/NetworkProcessConnection.cpp' l='92' c='_ZN6WebKit24NetworkProcessConnection17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/NetworkProcessConnection.cpp' l='182' c='_ZN6WebKit24NetworkProcessConnection21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/NetworkProcessConnection.cpp' l='205' c='_ZN6WebKit24NetworkProcessConnection8didCloseERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/NetworkProcessConnection.cpp' l='220' c='_ZN6WebKit24NetworkProcessConnection24didReceiveInvalidMessageERN3IPC10ConnectionENS1_11MessageNameE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebSWContextManagerConnection.h' l='62' c='_ZN6WebKit29WebSWContextManagerConnectionC1EON3WTF3RefIN3IPC10ConnectionENS1_12RawPtrTraitsIS4_EEEEON7WebCore17RegistrableDomainEmNS1_16ObjectIdentifi7089074'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebSWContextManagerConnection.h' l='65' c='_ZN6WebKit29WebSWContextManagerConnection17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebSWContextManagerConnection.h' l='106'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebServiceWorkerProvider.h' l='48' c='_ZN6WebKit24WebServiceWorkerProvider46didReceiveServiceWorkerClientRegistrationMatchERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebResourceLoader.cpp' l='77' c='_ZNK6WebKit17WebResourceLoader23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannelManager.cpp' l='46' c='_ZN6WebKit23WebSocketChannelManager17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketStream.h' l='51' c='_ZN6WebKit15WebSocketStream17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketStream.h' l='72' c='_ZNK6WebKit15WebSocketStream23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketStream.cpp' l='103' c='_ZNK6WebKit15WebSocketStream23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/webrtc/LibWebRTCNetwork.cpp' l='62' c='_ZN6WebKit16LibWebRTCNetwork13setConnectionEON3WTF6RefPtrIN3IPC10ConnectionENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/WebProcess/Notifications/WebNotificationManager.h' l='76' c='_ZN6WebKit22WebNotificationManager17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebSWClientConnection.h' l='59' c='_ZN6WebKit21WebSWClientConnection17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebSWClientConnection.h' l='98' c='_ZNK6WebKit21WebSWClientConnection23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebSWClientConnection.cpp' l='69' c='_ZNK6WebKit21WebSWClientConnection23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebSWContextManagerConnection.cpp' l='102' c='_ZN6WebKit29WebSWContextManagerConnectionC1EON3WTF3RefIN3IPC10ConnectionENS1_12RawPtrTraitsIS4_EEEEON7WebCore17RegistrableDomainEmNS1_16ObjectIdentifi7089074'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebServiceWorkerFetchTaskClient.h' l='42' c='_ZN6WebKit31WebServiceWorkerFetchTaskClient6createEON3WTF3RefIN3IPC10ConnectionENS1_12RawPtrTraitsIS4_EEEENS1_16ObjectIdentifierIN7WebCore27ServiceWor12579424'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebServiceWorkerFetchTaskClient.h' l='48' c='_ZN6WebKit31WebServiceWorkerFetchTaskClientC1EON3WTF3RefIN3IPC10ConnectionENS1_12RawPtrTraitsIS4_EEEENS1_16ObjectIdentifierIN7WebCore27ServiceWorkerId15849119'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebServiceWorkerFetchTaskClient.h' l='78'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebServiceWorkerFetchTaskClient.cpp' l='45' c='_ZN6WebKit31WebServiceWorkerFetchTaskClientC1EON3WTF3RefIN3IPC10ConnectionENS1_12RawPtrTraitsIS4_EEEENS1_16ObjectIdentifierIN7WebCore27ServiceWorkerId15849119'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/ServiceWorkerFetchTask.h' l='65' c='_ZN6WebKit22ServiceWorkerFetchTask17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/WebSWServerConnection.h' l='66' c='_ZN6WebKit21WebSWServerConnectionC1ERNS_14NetworkProcessERN7WebCore8SWServerERN3IPC10ConnectionEN3WTF16ObjectIdentifierINS3_21ProcessIdentifierTypeEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/WebSWServerConnection.h' l='73' c='_ZNK6WebKit21WebSWServerConnection13ipcConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/WebSWServerConnection.h' l='75' c='_ZN6WebKit21WebSWServerConnection17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/WebSWServerConnection.h' l='126' c='_ZNK6WebKit21WebSWServerConnection23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/WebSWServerConnection.h' l='131'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebBroadcastChannelRegistry.cpp' l='37' c='_ZN6WebKitL24networkProcessConnectionEv'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='1791' c='_ZN6WebKit12WebPageProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='1792' c='_ZN6WebKit12WebPageProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='1996' c='_ZNK6WebKit12WebPageProxy23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='2427' c='_ZN6WebKit12WebPageProxy13handleMessageERN3IPC10ConnectionERKN3WTF6StringERKNS_8UserDataE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='2428' c='_ZN6WebKit12WebPageProxy24handleSynchronousMessageERN3IPC10ConnectionERKN3WTF6StringERKNS_8UserDataEONS4_17CompletionHandlerIFvOS8_EEE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebMessagePortChannelProvider.cpp' l='54' c='_ZN6WebKitL24networkProcessConnectionEv'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebSpeechRecognitionConnection.h' l='64' c='_ZN6WebKit30WebSpeechRecognitionConnection17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebSpeechRecognitionConnection.h' l='67' c='_ZNK6WebKit30WebSpeechRecognitionConnection23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebSpeechRecognitionConnection.cpp' l='142' c='_ZNK6WebKit30WebSpeechRecognitionConnection23messageSenderConnectionEv'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/EventDispatcher.cpp' l='94' c='_ZN6WebKit15EventDispatcher20initializeConnectionEPN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/VisitedLinkTableController.h' l='48' c='_ZN6WebKit26VisitedLinkTableController17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/DownloadManager.h' l='75' c='_ZN6WebKit15DownloadManager6Client23downloadProxyConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/DownloadManager.h' l='76' c='_ZN6WebKit15DownloadManager6Client35parentProcessConnectionForDownloadsEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/DownloadManager.h' l='109' c='_ZN6WebKit15DownloadManager23downloadProxyConnectionEv'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/ViewGestureGeometryCollector.h' l='54' c='_ZN6WebKit28ViewGestureGeometryCollector17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/WebProcess/gtk/GtkSettingsManagerProxy.h' l='46' c='_ZN6WebKit23GtkSettingsManagerProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkBroadcastChannelRegistry.h' l='44' c='_ZN6WebKit31NetworkBroadcastChannelRegistry16removeConnectionERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkBroadcastChannelRegistry.h' l='46' c='_ZN6WebKit31NetworkBroadcastChannelRegistry17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkBroadcastChannelRegistry.h' l='48' c='_ZN6WebKit31NetworkBroadcastChannelRegistry15registerChannelERN3IPC10ConnectionERKN7WebCore18SecurityOriginDataERKN3WTF6StringENS8_16ObjectIdentifierI8071631'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkBroadcastChannelRegistry.h' l='49' c='_ZN6WebKit31NetworkBroadcastChannelRegistry17unregisterChannelERN3IPC10ConnectionERKN7WebCore18SecurityOriginDataERKN3WTF6StringENS8_16ObjectIdentifie6264160'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkBroadcastChannelRegistry.h' l='50' c='_ZN6WebKit31NetworkBroadcastChannelRegistry11postMessageERN3IPC10ConnectionERKN7WebCore18SecurityOriginDataERKN3WTF6StringENS8_16ObjectIdentifierINS4_9022553'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkBroadcastChannelRegistry.cpp' l='35' c='_ZN6WebKit31NetworkBroadcastChannelRegistry15registerChannelERN3IPC10ConnectionERKN7WebCore18SecurityOriginDataERKN3WTF6StringENS8_16ObjectIdentifierI8071631'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkBroadcastChannelRegistry.cpp' l='44' c='_ZN6WebKit31NetworkBroadcastChannelRegistry17unregisterChannelERN3IPC10ConnectionERKN7WebCore18SecurityOriginDataERKN3WTF6StringENS8_16ObjectIdentifie6264160'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkBroadcastChannelRegistry.cpp' l='60' c='_ZN6WebKit31NetworkBroadcastChannelRegistry11postMessageERN3IPC10ConnectionERKN7WebCore18SecurityOriginDataERKN3WTF6StringENS8_16ObjectIdentifierINS4_9022553'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkBroadcastChannelRegistry.cpp' l='80' c='_ZN6WebKit31NetworkBroadcastChannelRegistry16removeConnectionERN3IPC10ConnectionE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkContentRuleListManager.h' l='48' c='_ZN6WebKit29NetworkContentRuleListManager17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/IndexedDB/WebIDBConnectionToClient.h' l='47' c='_ZN6WebKit24WebIDBConnectionToClientC1ERN3IPC10ConnectionEN3WTF16ObjectIdentifierIN7WebCore21ProcessIdentifierTypeEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/IndexedDB/WebIDBConnectionToClient.h' l='55' c='_ZNK6WebKit24WebIDBConnectionToClient23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/IndexedDB/WebIDBConnectionToClient.h' l='87'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/IndexedDB/WebIDBServer.h' l='85' c='_ZN6WebKit12WebIDBServer30getAllDatabaseNamesAndVersionsERN3IPC10ConnectionERKN7WebCore21IDBResourceIdentifierERKNS4_12ClientOriginE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/IndexedDB/WebIDBServer.h' l='87' c='_ZN6WebKit12WebIDBServer13addConnectionERN3IPC10ConnectionEN3WTF16ObjectIdentifierIN7WebCore21ProcessIdentifierTypeEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/IndexedDB/WebIDBServer.h' l='88' c='_ZN6WebKit12WebIDBServer16removeConnectionERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/IndexedDB/WebIDBServer.h' l='90' c='_ZN6WebKit12WebIDBServer17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/IndexedDB/WebIDBServer.h' l='107'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSocketChannel.h' l='63' c='_ZN6WebKit20NetworkSocketChannel17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSocketChannel.h' l='83' c='_ZNK6WebKit20NetworkSocketChannel23messageSenderConnectionEv'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/CacheStorageEngineConnection.h' l='61' c='_ZN6WebKit28CacheStorageEngineConnection17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkConnectionToWebProcess.h' l='112' c='_ZN6WebKit29NetworkConnectionToWebProcess10connectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkConnectionToWebProcess.h' l='196' c='_ZN6WebKit29NetworkConnectionToWebProcess17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkConnectionToWebProcess.h' l='197' c='_ZN6WebKit29NetworkConnectionToWebProcess21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkConnectionToWebProcess.h' l='198' c='_ZN6WebKit29NetworkConnectionToWebProcess8didCloseERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkConnectionToWebProcess.h' l='199' c='_ZN6WebKit29NetworkConnectionToWebProcess24didReceiveInvalidMessageERN3IPC10ConnectionENS1_11MessageNameE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkConnectionToWebProcess.h' l='202' c='_ZN6WebKit29NetworkConnectionToWebProcess46didReceiveNetworkConnectionToWebProcessMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkConnectionToWebProcess.h' l='203' c='_ZN6WebKit29NetworkConnectionToWebProcess50didReceiveSyncNetworkConnectionToWebProcessMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkConnectionToWebProcess.h' l='362'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='89' c='_ZN6WebKit21NetworkResourceLoader38didReceiveNetworkResourceLoaderMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='150' c='_ZNK6WebKit21NetworkResourceLoader23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.cpp' l='122' c='_ZN6WebKitL12callExitSoonEPN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.cpp' l='220' c='_ZN6WebKit14NetworkProcess17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.cpp' l='247' c='_ZN6WebKit14NetworkProcess21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.cpp' l='262' c='_ZN6WebKit14NetworkProcess8didCloseERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.cpp' l='292' c='_ZN6WebKit14NetworkProcess23downloadProxyConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.cpp' l='369' c='_ZN6WebKit14NetworkProcess20initializeConnectionEPN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.cpp' l='2687' c='_ZN6WebKit14NetworkProcess28connectionToWebProcessClosedERN3IPC10ConnectionEN3PAL9SessionIDE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.cpp' l='1224' c='_ZNK6WebKit21NetworkResourceLoader23messageSenderConnectionEv'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSocketChannel.cpp' l='153' c='_ZNK6WebKit20NetworkSocketChannel23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSocketStream.h' l='49' c='_ZN6WebKit19NetworkSocketStream6createERNS_14NetworkProcessEON3WTF3URLEN3PAL9SessionIDERKNS3_6StringENS3_16ObjectIdentifierIN7WebCore23WebSocketIdenti13414112'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSocketStream.h' l='52' c='_ZN6WebKit19NetworkSocketStream17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSocketStream.h' l='68' c='_ZNK6WebKit19NetworkSocketStream23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSocketStream.h' l='71' c='_ZN6WebKit19NetworkSocketStreamC1ERNS_14NetworkProcessEON3WTF3URLEN3PAL9SessionIDERKNS3_6StringENS3_16ObjectIdentifierIN7WebCore23WebSocketIdentifierT13576650'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSocketStream.h' l='74'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSocketStream.cpp' l='38' c='_ZN6WebKit19NetworkSocketStream6createERNS_14NetworkProcessEON3WTF3URLEN3PAL9SessionIDERKNS3_6StringENS3_16ObjectIdentifierIN7WebCore23WebSocketIdenti13414112'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSocketStream.cpp' l='43' c='_ZN6WebKit19NetworkSocketStreamC1ERNS_14NetworkProcessEON3WTF3URLEN3PAL9SessionIDERKNS3_6StringENS3_16ObjectIdentifierIN7WebCore23WebSocketIdentifierT13576650'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSocketStream.cpp' l='123' c='_ZNK6WebKit19NetworkSocketStream23messageSenderConnectionEv'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/Cookies/WebCookieManager.h' l='70' c='_ZN6WebKit16WebCookieManager17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/Download.cpp' l='173' c='_ZNK6WebKit8Download23messageSenderConnectionEv'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/DownloadManager.cpp' l='159' c='_ZN6WebKit15DownloadManager23downloadProxyConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/PendingDownload.cpp' l='39' c='_ZN6WebKit15PendingDownloadC1EPN3IPC10ConnectionEONS_21NetworkLoadParametersEN3WTF16ObjectIdentifierINS_22DownloadIdentifierTypeEEERNS_14NetworkSessio11778347'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/PendingDownload.cpp' l='53' c='_ZN6WebKit15PendingDownloadC1EPN3IPC10ConnectionEOSt10unique_ptrINS_11NetworkLoadESt14default_deleteIS5_EEON3WTF17CompletionHandlerIFvN7WebCore12Polic2295143'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/PendingDownload.cpp' l='102' c='_ZNK6WebKit15PendingDownload23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/IndexedDB/WebIDBConnectionToClient.cpp' l='41' c='_ZN6WebKit24WebIDBConnectionToClientC1ERN3IPC10ConnectionEN3WTF16ObjectIdentifierIN7WebCore21ProcessIdentifierTypeEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/IndexedDB/WebIDBConnectionToClient.cpp' l='53' c='_ZNK6WebKit24WebIDBConnectionToClient23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/IndexedDB/WebIDBServer.cpp' l='361' c='_ZN6WebKit12WebIDBServer30getAllDatabaseNamesAndVersionsERN3IPC10ConnectionERKN7WebCore21IDBResourceIdentifierERKNS4_12ClientOriginE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/IndexedDB/WebIDBServer.cpp' l='372' c='_ZN6WebKit12WebIDBServer13addConnectionERN3IPC10ConnectionEN3WTF16ObjectIdentifierIN7WebCore21ProcessIdentifierTypeEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/IndexedDB/WebIDBServer.cpp' l='390' c='_ZN6WebKit12WebIDBServer16removeConnectionERN3IPC10ConnectionE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/WebStorage/StorageManager.h' l='76' c='_ZN6WebKit14StorageManager17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/WebStorage/StorageManager.h' l='77' c='_ZN6WebKit14StorageManager21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.cpp' l='232' c='_ZN6WebKit21AuxiliaryProcessProxy15dispatchMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.cpp' l='237' c='_ZN6WebKit21AuxiliaryProcessProxy19dispatchSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.cpp' l='322' c='_ZN6WebKit21AuxiliaryProcessProxy18connectionWillOpenERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.cpp' l='326' c='_ZN6WebKit21AuxiliaryProcessProxy17logInvalidMessageERN3IPC10ConnectionENS1_11MessageNameE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebCookieManagerProxy.h' l='96' c='_ZN6WebKit21WebCookieManagerProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/Downloads/DownloadProxy.h' l='82' c='_ZN6WebKit13DownloadProxy30didReceiveDownloadProxyMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Downloads/DownloadProxy.h' l='83' c='_ZN6WebKit13DownloadProxy34didReceiveSyncDownloadProxyMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Downloads/DownloadProxy.h' l='129' c='_ZN6WebKit13DownloadProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebGeolocationManagerProxy.h' l='74' c='_ZN6WebKit26WebGeolocationManagerProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebGeolocationManagerProxy.h' l='79' c='_ZN6WebKit26WebGeolocationManagerProxy13startUpdatingERN3IPC10ConnectionEN3WTF16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEERKNS4_6StringE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebGeolocationManagerProxy.h' l='80' c='_ZN6WebKit26WebGeolocationManagerProxy12stopUpdatingERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebGeolocationManagerProxy.h' l='82' c='_ZN6WebKit26WebGeolocationManagerProxy21setEnableHighAccuracyERN3IPC10ConnectionEb'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/WebInspectorUIProxy.h' l='206' c='_ZN6WebKit19WebInspectorUIProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/Automation/WebAutomationSession.h' l='246' c='_ZN6WebKit20WebAutomationSession17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/ProvisionalPageProxy.h' l='115' c='_ZN6WebKit20ProvisionalPageProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/ProvisionalPageProxy.h' l='116' c='_ZN6WebKit20ProvisionalPageProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/ProvisionalPageProxy.h' l='119' c='_ZNK6WebKit20ProvisionalPageProxy23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/ProvisionalPageProxy.cpp' l='449' c='_ZN6WebKit20ProvisionalPageProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/ProvisionalPageProxy.cpp' l='586' c='_ZN6WebKit20ProvisionalPageProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/ProvisionalPageProxy.cpp' l='597' c='_ZNK6WebKit20ProvisionalPageProxy23messageSenderConnectionEv'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/ViewGestureController.h' l='207' c='_ZN6WebKit21ViewGestureController17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Authentication/AuthenticationChallengeProxy.cpp' l='46' c='_ZN6WebKit28AuthenticationChallengeProxyC1EON7WebCore23AuthenticationChallengeEmON3WTF3RefIN3IPC10ConnectionENS4_12RawPtrTraitsIS7_EEEEONS4_7WeakPtrIN12673370'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/DrawingAreaProxy.h' l='136' c='_ZN6WebKit16DrawingAreaProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/DrawingAreaProxy.h' l='141' c='_ZNK6WebKit16DrawingAreaProxy23messageSenderConnectionEv'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/RemoteWebInspectorUIProxy.h' l='124' c='_ZN6WebKit25RemoteWebInspectorUIProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.cpp' l='229' c='_ZN6WebKit19NetworkProcessProxy18connectionWillOpenERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.cpp' l='238' c='_ZN6WebKit19NetworkProcessProxy19processWillShutDownERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.cpp' l='330' c='_ZN6WebKit19NetworkProcessProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.cpp' l='338' c='_ZN6WebKit19NetworkProcessProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.cpp' l='346' c='_ZN6WebKit19NetworkProcessProxy8didCloseERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.cpp' l='358' c='_ZN6WebKit19NetworkProcessProxy24didReceiveInvalidMessageERN3IPC10ConnectionENS1_11MessageNameE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.h' l='80' c='_ZN6WebKit18WebPasteboardProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.h' l='81' c='_ZN6WebKit18WebPasteboardProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.h' l='83' c='_ZNK6WebKit18WebPasteboardProxy28webProcessProxyForConnectionERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.h' l='110' c='_ZN6WebKit18WebPasteboardProxy24readStringFromPasteboardERN3IPC10ConnectionEmRKN3WTF6StringES7_St8optionalINS4_16ObjectIdentifierIN7WebCore18PageIdent8627344'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.h' l='111' c='_ZN6WebKit18WebPasteboardProxy21readURLFromPasteboardERN3IPC10ConnectionEmRKN3WTF6StringESt8optionalINS4_16ObjectIdentifierIN7WebCore18PageIdentifierT7647303'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.h' l='112' c='_ZN6WebKit18WebPasteboardProxy24readBufferFromPasteboardERN3IPC10ConnectionEmRKN3WTF6StringES7_St8optionalINS4_16ObjectIdentifierIN7WebCore18PageIdent4643084'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.h' l='113' c='_ZN6WebKit18WebPasteboardProxy23getPasteboardItemsCountERN3IPC10ConnectionERKN3WTF6StringESt8optionalINS4_16ObjectIdentifierIN7WebCore18PageIdentifier653104'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.h' l='114' c='_ZN6WebKit18WebPasteboardProxy25informationForItemAtIndexERN3IPC10ConnectionEmRKN3WTF6StringElSt8optionalINS4_16ObjectIdentifierIN7WebCore18PageIdenti810582'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.h' l='115' c='_ZN6WebKit18WebPasteboardProxy21allPasteboardItemInfoERN3IPC10ConnectionERKN3WTF6StringElSt8optionalINS4_16ObjectIdentifierIN7WebCore18PageIdentifierT4216014'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.h' l='117' c='_ZN6WebKit18WebPasteboardProxy15writeCustomDataERN3IPC10ConnectionERKN3WTF6VectorIN7WebCore20PasteboardCustomDataELm0ENS4_15CrashOnOverflowELm16ENS4_110044127'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.h' l='118' c='_ZN6WebKit18WebPasteboardProxy29typesSafeForDOMToReadAndWriteERN3IPC10ConnectionERKN3WTF6StringES7_St8optionalINS4_16ObjectIdentifierIN7WebCore18PageI14368085'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.h' l='119' c='_ZN6WebKit18WebPasteboardProxy37containsStringSafeForDOMToReadForTypeERN3IPC10ConnectionERKN3WTF6StringES7_St8optionalINS4_16ObjectIdentifierIN7WebCor15113870'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.h' l='120' c='_ZN6WebKit18WebPasteboardProxy35containsURLStringSuitableForLoadingERN3IPC10ConnectionERKN3WTF6StringESt8optionalINS4_16ObjectIdentifierIN7WebCore18Pa12639577'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.h' l='121' c='_ZN6WebKit18WebPasteboardProxy27urlStringSuitableForLoadingERN3IPC10ConnectionERKN3WTF6StringESt8optionalINS4_16ObjectIdentifierIN7WebCore18PageIdenti11954835'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WebPasteboardProxyGtk.cpp' l='90' c='_ZN6WebKit18WebPasteboardProxy29typesSafeForDOMToReadAndWriteERN3IPC10ConnectionERKN3WTF6StringES7_St8optionalINS4_16ObjectIdentifierIN7WebCore18PageI14368085'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WebPasteboardProxyGtk.cpp' l='117' c='_ZN6WebKit18WebPasteboardProxy15writeCustomDataERN3IPC10ConnectionERKN3WTF6VectorIN7WebCore20PasteboardCustomDataELm0ENS4_15CrashOnOverflowELm16ENS4_110044127'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/SpeechRecognitionServer.cpp' l='39' c='_ZN6WebKit23SpeechRecognitionServerC1EON3WTF3RefIN3IPC10ConnectionENS1_12RawPtrTraitsIS4_EEEENS1_16ObjectIdentifierIN7WebCore18PageIdentifierTypeEEEON12008861'/>
+<use f='WebKit/Source/WebKit/UIProcess/SpeechRecognitionServer.cpp' l='164' c='_ZNK6WebKit23SpeechRecognitionServer23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/SuspendedPageProxy.cpp' l='245' c='_ZN6WebKit18SuspendedPageProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/SuspendedPageProxy.cpp' l='265' c='_ZN6WebKit18SuspendedPageProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/SuspendedPageProxy.cpp' l='270' c='_ZNK6WebKit18SuspendedPageProxy23messageSenderConnectionEv'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebConnectionToWebProcess.cpp' l='69' c='_ZNK6WebKit25WebConnectionToWebProcess23messageSenderConnectionEv'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebFullScreenManagerProxy.h' l='92' c='_ZN6WebKit25WebFullScreenManagerProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebFullScreenManagerProxy.h' l='93' c='_ZN6WebKit25WebFullScreenManagerProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebGeolocationManagerProxy.cpp' l='118' c='_ZN6WebKit26WebGeolocationManagerProxy13startUpdatingERN3IPC10ConnectionEN3WTF16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEERKNS4_6StringE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebGeolocationManagerProxy.cpp' l='135' c='_ZN6WebKit26WebGeolocationManagerProxy12stopUpdatingERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebGeolocationManagerProxy.cpp' l='157' c='_ZN6WebKit26WebGeolocationManagerProxy21setEnableHighAccuracyERN3IPC10ConnectionEb'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='806' c='_ZN6WebKit12WebPageProxy13handleMessageERN3IPC10ConnectionERKN3WTF6StringERKNS_8UserDataE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='816' c='_ZN6WebKit12WebPageProxy24handleSynchronousMessageERN3IPC10ConnectionERKN3WTF6StringERKNS_8UserDataEONS4_17CompletionHandlerIFvOS8_EEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='6709' c='_ZNK6WebKit12WebPageProxy23messageSenderConnectionEv'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.cpp' l='71' c='_ZNK6WebKit18WebPasteboardProxy28webProcessProxyForConnectionERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.cpp' l='94' c='_ZN6WebKit18WebPasteboardProxy21allPasteboardItemInfoERN3IPC10ConnectionERKN3WTF6StringElSt8optionalINS4_16ObjectIdentifierIN7WebCore18PageIdentifierT4216014'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.cpp' l='99' c='_ZN6WebKit18WebPasteboardProxy25informationForItemAtIndexERN3IPC10ConnectionEmRKN3WTF6StringElSt8optionalINS4_16ObjectIdentifierIN7WebCore18PageIdenti810582'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.cpp' l='104' c='_ZN6WebKit18WebPasteboardProxy23getPasteboardItemsCountERN3IPC10ConnectionERKN3WTF6StringESt8optionalINS4_16ObjectIdentifierIN7WebCore18PageIdentifier653104'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.cpp' l='109' c='_ZN6WebKit18WebPasteboardProxy21readURLFromPasteboardERN3IPC10ConnectionEmRKN3WTF6StringESt8optionalINS4_16ObjectIdentifierIN7WebCore18PageIdentifierT7647303'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.cpp' l='114' c='_ZN6WebKit18WebPasteboardProxy24readBufferFromPasteboardERN3IPC10ConnectionEmRKN3WTF6StringES7_St8optionalINS4_16ObjectIdentifierIN7WebCore18PageIdent4643084'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.cpp' l='121' c='_ZN6WebKit18WebPasteboardProxy24readStringFromPasteboardERN3IPC10ConnectionEmRKN3WTF6StringES7_St8optionalINS4_16ObjectIdentifierIN7WebCore18PageIdent8627344'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.cpp' l='128' c='_ZN6WebKit18WebPasteboardProxy37containsStringSafeForDOMToReadForTypeERN3IPC10ConnectionERKN3WTF6StringES7_St8optionalINS4_16ObjectIdentifierIN7WebCor15113870'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.cpp' l='133' c='_ZN6WebKit18WebPasteboardProxy35containsURLStringSuitableForLoadingERN3IPC10ConnectionERKN3WTF6StringESt8optionalINS4_16ObjectIdentifierIN7WebCore18Pa12639577'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.cpp' l='138' c='_ZN6WebKit18WebPasteboardProxy27urlStringSuitableForLoadingERN3IPC10ConnectionERKN3WTF6StringESt8optionalINS4_16ObjectIdentifierIN7WebCore18PageIdenti11954835'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.cpp' l='1416' c='_ZN6WebKit14WebProcessPool15dispatchMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.cpp' l='1421' c='_ZN6WebKit14WebProcessPool19dispatchSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.cpp' l='1524' c='_ZN6WebKitL29webProcessProxyFromConnectionERN3IPC10ConnectionERKN3WTF6VectorINS3_3RefINS_15WebProcessProxyENS3_12RawPtrTraitsIS6_EEEELm0ENS3_15CrashOn10753957'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.cpp' l='1535' c='_ZN6WebKit14WebProcessPool13handleMessageERN3IPC10ConnectionERKN3WTF6StringERKNS_8UserDataE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.cpp' l='1543' c='_ZN6WebKit14WebProcessPool24handleSynchronousMessageERN3IPC10ConnectionERKN3WTF6StringERKNS_8UserDataEONS4_17CompletionHandlerIFvOS8_EEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.cpp' l='431' c='_ZN6WebKit15WebProcessProxy18connectionWillOpenERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.cpp' l='449' c='_ZN6WebKit15WebProcessProxy19processWillShutDownERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.cpp' l='840' c='_ZN6WebKit15WebProcessProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.cpp' l='856' c='_ZN6WebKit15WebProcessProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.cpp' l='871' c='_ZN6WebKit15WebProcessProxy8didCloseERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.cpp' l='944' c='_ZN6WebKit15WebProcessProxy24didReceiveInvalidMessageERN3IPC10ConnectionENS1_11MessageNameE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/WebSWServerConnection.cpp' l='68' c='_ZN6WebKit21WebSWServerConnectionC1ERNS_14NetworkProcessERN7WebCore8SWServerERN3IPC10ConnectionEN3WTF16ObjectIdentifierINS3_21ProcessIdentifierTypeEEE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/WebSWServerToContextConnection.h' l='62' c='_ZNK6WebKit30WebSWServerToContextConnection13ipcConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/WebSWServerToContextConnection.h' l='65' c='_ZN6WebKit30WebSWServerToContextConnection17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/WebSWServerToContextConnection.h' l='70' c='_ZN6WebKit30WebSWServerToContextConnection26didReceiveFetchTaskMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/WebSWServerToContextConnection.h' l='82' c='_ZNK6WebKit30WebSWServerToContextConnection23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/WebSWServerToContextConnection.cpp' l='66' c='_ZNK6WebKit30WebSWServerToContextConnection13ipcConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/WebSWServerToContextConnection.cpp' l='71' c='_ZNK6WebKit30WebSWServerToContextConnection23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/WebSWServerToContextConnection.cpp' l='164' c='_ZN6WebKit30WebSWServerToContextConnection26didReceiveFetchTaskMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/MessageReceiveQueues.h' l='43' c='_ZN3IPC23FunctionDispatcherQueue14enqueueMessageERNS_10ConnectionEOSt10unique_ptrINS_7DecoderESt14default_deleteIS4_EE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/MessageReceiveQueues.h' l='63' c='_ZN3IPC26ThreadMessageReceiverQueue14enqueueMessageERNS_10ConnectionEOSt10unique_ptrINS_7DecoderESt14default_deleteIS4_EE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/MessageReceiveQueues.h' l='83' c='_ZN3IPC29WorkQueueMessageReceiverQueue14enqueueMessageERNS_10ConnectionEOSt10unique_ptrINS_7DecoderESt14default_deleteIS4_EE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='95' c='_ZN3IPC10Connection16SyncMessageState22processIncomingMessageERS0_RSt10unique_ptrINS_7DecoderESt14default_deleteIS4_EE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='101' c='_ZN3IPC10Connection16SyncMessageState23enqueueMatchingMessagesERS0_RNS_19MessageReceiveQueueENS_12ReceiverNameEm'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='108' c='_ZN3IPC10Connection16SyncMessageState64dispatchMessagesAndResetDidScheduleDispatchMessagesForConnectionERS0_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='116'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='119'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='143' c='_ZN3IPC10Connection16SyncMessageState23enqueueMatchingMessagesERS0_RNS_19MessageReceiveQueueENS_12ReceiverNameEm'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='161' c='_ZN3IPC10Connection16SyncMessageState22processIncomingMessageERS0_RSt10unique_ptrINS_7DecoderESt14default_deleteIS4_EE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='220' c='_ZN3IPC10Connection16SyncMessageState64dispatchMessagesAndResetDidScheduleDispatchMessagesForConnectionERS0_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='263' c='_ZN3IPC10Connection22createServerConnectionEiRNS0_6ClientE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='265' c='_ZN3IPC10Connection22createServerConnectionEiRNS0_6ClientE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='268' c='_ZN3IPC10Connection22createClientConnectionEiRNS0_6ClientE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='270' c='_ZN3IPC10Connection22createClientConnectionEiRNS0_6ClientE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='273' c='_ZN3IPC10Connection13connectionMapEv'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='275' c='_ZN3IPC10Connection13connectionMapEv'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='287' c='_ZN3IPCL23clearAsyncReplyHandlersERKNS_10ConnectionE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='321' c='_ZN3IPC10Connection10connectionEN3WTF16ObjectIdentifierINS0_12UniqueIDTypeEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='652' c='_ZN3IPC10Connection15sendSyncMessageEN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEEONS1_9UniqueRefINS_7EncoderEEENS_7TimeoutENS1_9OptionSetINS_14SendSyncOptionEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='1122' c='_ZN3IPC10Connection17MessagesThrottlerC1ERS0_MS0_FvvE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='1227' c='_ZN3IPC20addAsyncReplyHandlerERNS_10ConnectionEmON3WTF17CompletionHandlerIFvPNS_7DecoderEEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='1236' c='_ZN3IPCL23clearAsyncReplyHandlersERKNS_10ConnectionE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='1250' c='_ZN3IPC21takeAsyncReplyHandlerERNS_10ConnectionEm'/>
+<size>352</size>
+<smbr r='IPC::Connection::s_connectionMapLock' t='WTF::Lock'/>
+<fun r='_ZN3IPC10Connection22createServerConnectionEiRNS0_6ClientE'/>
+<fun r='_ZN3IPC10Connection22createClientConnectionEiRNS0_6ClientE'/>
+<fun r='_ZN3IPC10Connection13connectionMapEv'/>
+<fun r='_ZN3IPC10ConnectionC1EibRNS0_6ClientE'/>
+<fun r='_ZN3IPC10ConnectionD1Ev'/>
+<fun r='_ZN3IPC10Connection10connectionEN3WTF16ObjectIdentifierINS0_12UniqueIDTypeEEE'/>
+<fun r='_ZN3IPC10Connection78setOnlySendMessagesAsDispatchWhenWaitingForSyncReplyWhenProcessingSuchAMessageEb'/>
+<fun r='_ZN3IPC10Connection37setShouldExitOnSyncMessageSendFailureEb'/>
+<fun r='_ZN3IPC10Connection44enqueueMatchingMessagesToMessageReceiveQueueERNS_19MessageReceiveQueueENS_12ReceiverNameEm'/>
+<fun r='_ZN3IPC10Connection22addMessageReceiveQueueERNS_19MessageReceiveQueueENS_12ReceiverNameEm'/>
+<fun r='_ZN3IPC10Connection27addWorkQueueMessageReceiverENS_12ReceiverNameERN3WTF9WorkQueueEPNS0_24WorkQueueMessageReceiverEm'/>
+<fun r='_ZN3IPC10Connection24addThreadMessageReceiverENS_12ReceiverNameEPNS0_21ThreadMessageReceiverEm'/>
+<fun r='_ZN3IPC10Connection25removeMessageReceiveQueueENS_12ReceiverNameEm'/>
+<fun r='_ZN3IPC10Connection30dispatchMessageReceiverMessageERNS_15MessageReceiverEOSt10unique_ptrINS_7DecoderESt14default_deleteIS4_EE'/>
+<fun r='_ZN3IPC10Connection40setDidCloseOnConnectionWorkQueueCallbackEPFvPS0_E'/>
+<fun r='_ZN3IPC10Connection10invalidateEv'/>
+<fun r='_ZN3IPC10Connection39markCurrentlyDispatchedMessageAsInvalidEv'/>
+<fun r='_ZN3IPC10Connection24createSyncMessageEncoderENS_11MessageNameEmRN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEE'/>
+<fun r='_ZN3IPC10Connection11sendMessageEON3WTF9UniqueRefINS_7EncoderEEENS1_9OptionSetINS_10SendOptionEEE'/>
+<fun r='_ZN3IPC10Connection13sendSyncReplyEON3WTF9UniqueRefINS_7EncoderEEE'/>
+<fun r='_ZNK3IPC10Connection41timeoutRespectingIgnoreTimeoutsForTestingENS_7TimeoutE'/>
+<fun r='_ZN3IPC10Connection14waitForMessageENS_11MessageNameEmNS_7TimeoutEN3WTF9OptionSetINS_13WaitForOptionEEE'/>
+<fun r='_ZN3IPC10Connection24pushPendingSyncRequestIDEN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEE'/>
+<fun r='_ZN3IPC10Connection23popPendingSyncRequestIDEN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEE'/>
+<fun r='_ZN3IPC10Connection15sendSyncMessageEN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEEONS1_9UniqueRefINS_7EncoderEEENS_7TimeoutENS1_9OptionSetINS_14SendSyncOptionEEE'/>
+<fun r='_ZN3IPC10Connection16waitForSyncReplyEN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEENS_11MessageNameENS_7TimeoutENS1_9OptionSetINS_14SendSyncOptionEEE'/>
+<fun r='_ZN3IPC10Connection24processIncomingSyncReplyESt10unique_ptrINS_7DecoderESt14default_deleteIS2_EE'/>
+<fun r='_ZN3IPC10Connection22processIncomingMessageESt10unique_ptrINS_7DecoderESt14default_deleteIS2_EE'/>
+<fun r='_ZN3IPC10Connection34installIncomingSyncMessageCallbackEON3WTF8FunctionIFvvEEE'/>
+<fun r='_ZN3IPC10Connection36uninstallIncomingSyncMessageCallbackEm'/>
+<fun r='_ZN3IPC10Connection22hasIncomingSyncMessageEv'/>
+<fun r='_ZN3IPC10Connection32enableIncomingMessagesThrottlingEv'/>
+<fun r='_ZN3IPC10Connection43postConnectionDidCloseOnConnectionWorkQueueEv'/>
+<fun r='_ZN3IPC10Connection18connectionDidCloseEv'/>
+<fun r='_ZNK3IPC10Connection23canSendOutgoingMessagesEv'/>
+<fun r='_ZN3IPC10Connection20sendOutgoingMessagesEv'/>
+<fun r='_ZN3IPC10Connection19dispatchSyncMessageERNS_7DecoderE'/>
+<fun r='_ZN3IPC10Connection32dispatchDidReceiveInvalidMessageENS_11MessageNameE'/>
+<fun r='_ZN3IPC10Connection24didFailToSendSyncMessageEv'/>
+<fun r='_ZN3IPC10Connection22enqueueIncomingMessageESt10unique_ptrINS_7DecoderESt14default_deleteIS2_EE'/>
+<fun r='_ZN3IPC10Connection15dispatchMessageERNS_7DecoderE'/>
+<fun r='_ZN3IPC10Connection15dispatchMessageESt10unique_ptrINS_7DecoderESt14default_deleteIS2_EE'/>
+<fun r='_ZN3IPC10Connection26dispatchOneIncomingMessageEv'/>
+<fun r='_ZN3IPC10Connection24dispatchIncomingMessagesEv'/>
+<fun r='_ZN3IPC10Connection13wakeUpRunLoopEv'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/MessageReceiverMap.cpp' l='119' c='_ZN3IPC18MessageReceiverMap15dispatchMessageERNS_10ConnectionERNS_7DecoderE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/MessageReceiverMap.cpp' l='136' c='_ZN3IPC18MessageReceiverMap19dispatchSyncMessageERNS_10ConnectionERNS_7DecoderERN3WTF9UniqueRefINS_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamClientConnection.h' l='52' c='_ZN3IPC22StreamClientConnectionC1ERNS_10ConnectionEm'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamClientConnection.h' l='100'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamClientConnection.cpp' l='31' c='_ZN3IPC22StreamClientConnectionC1ERNS_10ConnectionEm'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamServerConnection.h' l='47' c='_ZN3IPC26StreamServerConnectionBase10connectionEv'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamServerConnection.h' l='59' c='_ZN3IPC26StreamServerConnectionBaseC1ERNS_10ConnectionEONS_22StreamConnectionBufferERNS_25StreamConnectionWorkQueueE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamServerConnection.h' l='65' c='_ZN3IPC26StreamServerConnectionBase14enqueueMessageERNS_10ConnectionEOSt10unique_ptrINS_7DecoderESt14default_deleteIS4_EE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamServerConnection.h' l='90'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamServerConnection.h' l='137' c='_ZN3IPC22StreamServerConnection6createERNS_10ConnectionEONS_22StreamConnectionBufferERNS_25StreamConnectionWorkQueueE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamServerConnection.h' l='151' c='_ZN3IPC22StreamServerConnectionC1ERNS_10ConnectionEONS_22StreamConnectionBufferERNS_25StreamConnectionWorkQueueE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamServerConnection.cpp' l='34' c='_ZN3IPC26StreamServerConnectionBaseC1ERNS_10ConnectionEONS_22StreamConnectionBufferERNS_25StreamConnectionWorkQueueE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamServerConnection.cpp' l='53' c='_ZN3IPC26StreamServerConnectionBase14enqueueMessageERNS_10ConnectionEOSt10unique_ptrINS_7DecoderESt14default_deleteIS4_EE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/Shared/AuxiliaryProcess.cpp' l='59' c='_ZN6WebKit16AuxiliaryProcess8didCloseERN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/Shared/AuxiliaryProcess.cpp' l='117' c='_ZN6WebKit16AuxiliaryProcess20initializeConnectionEPN3IPC10ConnectionE'/>
+<use f='WebKit/Source/WebKit/Shared/AuxiliaryProcess.cpp' l='173' c='_ZNK6WebKit16AuxiliaryProcess23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/Shared/AuxiliaryProcess.cpp' l='255' c='_ZN6WebKit16AuxiliaryProcess24didReceiveInvalidMessageERN3IPC10ConnectionENS1_11MessageNameE'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannel.cpp' l='86' c='_ZNK6WebKit16WebSocketChannel23messageSenderConnectionEv'/>
+<size>352</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='1060' c='_ZNK6WebKit7WebPage23messageSenderConnectionEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='4953' c='_ZN6WebKit7WebPage17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='4983' c='_ZN6WebKit7WebPage21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<size>352</size>

@@ -1,0 +1,8 @@
+<dec f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSContextRef.h' l='56' type='JSContextGroupRef JSContextGroupCreate()'/>
+<dec f='WebKit/Source/JavaScriptCore/API/JSContextRef.h' l='56' type='JSContextGroupRef JSContextGroupCreate()'/>
+<def f='WebKit/Source/JavaScriptCore/API/JSContextRef.cpp' l='67' ll='71' type='JSContextGroupRef JSContextGroupCreate()'/>
+<doc f='WebKit/Source/JavaScriptCore/API/JSContextRef.cpp' l='62'>// From the API&apos;s perspective, a context group remains alive iff
+//     (a) it has been JSContextGroupRetained
+//     OR
+//     (b) one of its contexts has been JSContextRetained</doc>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCVirtualMachine.cpp' l='97' u='c' c='_ZL35jscVirtualMachineEnsureContextGroupP18_JSCVirtualMachine'/>

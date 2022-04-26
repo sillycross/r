@@ -1,0 +1,12 @@
+<dec f='WebKit/Source/WebCore/page/ChromeClient.h' l='268' type='void WebCore::ChromeClient::reachedApplicationCacheOriginQuota(WebCore::SecurityOrigin &amp; , int64_t totalSpaceNeeded)'/>
+<doc f='WebKit/Source/WebCore/page/ChromeClient.h' l='260'>// Callback invoked when the application cache origin quota is reached. This
+    // means that the resources attempting to be cached via the manifest are
+    // more than allowed on this origin. This callback allows the chrome client
+    // to take action, such as prompting the user to ask to increase the quota
+    // for this origin. The totalSpaceNeeded parameter is the total amount of
+    // storage, in bytes, needed to store the new cache along with all of the
+    // other existing caches for the origin that would not be replaced by
+    // the new cache.</doc>
+<ovr f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebChromeClient.cpp' l='786' c='_ZN6WebKit15WebChromeClient34reachedApplicationCacheOriginQuotaERN7WebCore14SecurityOriginEl'/>
+<ovr f='WebKit/Source/WebCore/loader/EmptyClients.h' l='133' c='_ZN7WebCore17EmptyChromeClient34reachedApplicationCacheOriginQuotaERNS_14SecurityOriginEl'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheGroup.cpp' l='699' u='c' c='_ZN7WebCore21ApplicationCacheGroup19didReachOriginQuotaEl'/>

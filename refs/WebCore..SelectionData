@@ -1,0 +1,90 @@
+<use f='WebKit/Source/WebKit/Shared/gtk/ArgumentCodersGtk.h' l='46'/>
+<use f='WebKit/Source/WebKit/Shared/gtk/ArgumentCodersGtk.h' l='47' c='_ZN3IPC13ArgumentCoderIN7WebCore13SelectionDataEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/gtk/ArgumentCodersGtk.h' l='48' c='_ZN3IPC13ArgumentCoderIN7WebCore13SelectionDataEvE6decodeERNS_7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='970' c='_ZN6WebKit7WebPage27performDragControllerActionENS_20DragControllerActionERKN7WebCore8IntPointES5_N3WTF9OptionSetINS2_13DragOperationEEEONS2_13Selecti13813922'/>
+<def f='WebKit/Source/WebCore/platform/gtk/SelectionData.h' l='29' ll='80'/>
+<use f='WebKit/Source/WebKit/Shared/gtk/ArgumentCodersGtk.cpp' l='68' c='_ZN3IPC13ArgumentCoderIN7WebCore13SelectionDataEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/gtk/ArgumentCodersGtk.cpp' l='104' c='_ZN3IPC13ArgumentCoderIN7WebCore13SelectionDataEvE6decodeERNS_7DecoderE'/>
+<use f='WebKit/Source/WebKit/Shared/gtk/ArgumentCodersGtk.cpp' l='106' c='_ZN3IPC13ArgumentCoderIN7WebCore13SelectionDataEvE6decodeERNS_7DecoderE'/>
+<size>104</size>
+<fun r='_ZN7WebCore13SelectionData7setTextERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore13SelectionData4textEv'/>
+<fun r='_ZNK7WebCore13SelectionData7hasTextEv'/>
+<fun r='_ZN7WebCore13SelectionData9clearTextEv'/>
+<fun r='_ZN7WebCore13SelectionData9setMarkupERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore13SelectionData6markupEv'/>
+<fun r='_ZNK7WebCore13SelectionData9hasMarkupEv'/>
+<fun r='_ZN7WebCore13SelectionData11clearMarkupEv'/>
+<fun r='_ZN7WebCore13SelectionData6setURLERKN3WTF3URLERKNS1_6StringE'/>
+<fun r='_ZNK7WebCore13SelectionData3urlEv'/>
+<fun r='_ZNK7WebCore13SelectionData8urlLabelEv'/>
+<fun r='_ZNK7WebCore13SelectionData6hasURLEv'/>
+<fun r='_ZN7WebCore13SelectionData8clearURLEv'/>
+<fun r='_ZN7WebCore13SelectionData10setURIListERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore13SelectionData7uriListEv'/>
+<fun r='_ZNK7WebCore13SelectionData9filenamesEv'/>
+<fun r='_ZNK7WebCore13SelectionData10hasURIListEv'/>
+<fun r='_ZNK7WebCore13SelectionData12hasFilenamesEv'/>
+<fun r='_ZN7WebCore13SelectionData12clearURIListEv'/>
+<fun r='_ZN7WebCore13SelectionData8setImageEPNS_5ImageE'/>
+<fun r='_ZNK7WebCore13SelectionData5imageEv'/>
+<fun r='_ZNK7WebCore13SelectionData8hasImageEv'/>
+<fun r='_ZN7WebCore13SelectionData10clearImageEv'/>
+<fun r='_ZN7WebCore13SelectionData18setCanSmartReplaceEb'/>
+<fun r='_ZNK7WebCore13SelectionData15canSmartReplaceEv'/>
+<fun r='_ZN7WebCore13SelectionData13setCustomDataEON3WTF3RefINS_12SharedBufferENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZNK7WebCore13SelectionData10customDataEv'/>
+<fun r='_ZNK7WebCore13SelectionData13hasCustomDataEv'/>
+<fun r='_ZN7WebCore13SelectionData15clearCustomDataEv'/>
+<fun r='_ZN7WebCore13SelectionData8clearAllEv'/>
+<fun r='_ZN7WebCore13SelectionData23clearAllExceptFilenamesEv'/>
+<mbr r='WebCore::SelectionData::m_text' o='0' t='WTF::String'/>
+<mbr r='WebCore::SelectionData::m_markup' o='64' t='WTF::String'/>
+<mbr r='WebCore::SelectionData::m_url' o='128' t='WTF::URL'/>
+<mbr r='WebCore::SelectionData::m_uriList' o='448' t='WTF::String'/>
+<mbr r='WebCore::SelectionData::m_filenames' o='512' t='Vector&lt;WTF::String&gt;'/>
+<mbr r='WebCore::SelectionData::m_image' o='640' t='RefPtr&lt;WebCore::Image&gt;'/>
+<mbr r='WebCore::SelectionData::m_canSmartReplace' o='704' t='bool'/>
+<mbr r='WebCore::SelectionData::m_customData' o='768' t='RefPtr&lt;WebCore::SharedBuffer&gt;'/>
+<use f='WebKit/Source/WebCore/platform/PasteboardStrategy.h' l='89' c='_ZN7WebCore18PasteboardStrategy16writeToClipboardERKN3WTF6StringEONS_13SelectionDataE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebPlatformStrategies.h' l='82' c='_ZN6WebKit21WebPlatformStrategies16writeToClipboardERKN3WTF6StringEON7WebCore13SelectionDataE'/>
+<use f='WebKit/Source/WebCore/platform/DragData.h' l='55'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='1237' c='_ZN6WebKit12WebPageProxy9startDragEON7WebCore13SelectionDataEN3WTF9OptionSetINS1_13DragOperationEEERKNS_15ShareableBitmap6HandleE'/>
+<use f='WebKit/Source/WebKit/UIProcess/PageClient.h' l='286' c='_ZN6WebKit10PageClient9startDragEON7WebCore13SelectionDataEN3WTF9OptionSetINS1_13DragOperationEEEONS4_6RefPtrINS_15ShareableBitmapENS4_12RawPtrTraitsI36253'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitWebViewBasePrivate.h' l='87' c='_Z26webkitWebViewBaseStartDragP18_WebKitWebViewBaseON7WebCore13SelectionDataEiON3WTF6RefPtrIN6WebKit15ShareableBitmapENS4_12RawPtrTraitsIS7_EENS4_21De9322501'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.h' l='128' c='_ZN6WebKit18WebPasteboardProxy16writeToClipboardERKN3WTF6StringEON7WebCore13SelectionDataE'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/Clipboard.h' l='59' c='_ZN6WebKit9Clipboard5writeEON7WebCore13SelectionDataE'/>
+<use f='WebKit/Source/WebCore/platform/Pasteboard.h' l='185' c='_ZN7WebCore10PasteboardC1EOSt10unique_ptrINS_17PasteboardContextESt14default_deleteIS2_EERNS_13SelectionDataE'/>
+<use f='WebKit/Source/WebCore/platform/Pasteboard.h' l='187' c='_ZN7WebCore10PasteboardC1EOSt10unique_ptrINS_17PasteboardContextESt14default_deleteIS2_EEONS_13SelectionDataE'/>
+<use f='WebKit/Source/WebCore/platform/Pasteboard.h' l='252' c='_ZNK7WebCore10Pasteboard13selectionDataEv'/>
+<use f='WebKit/Source/WebCore/platform/Pasteboard.h' l='337'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WebPasteboardProxyGtk.cpp' l='63' c='_ZN6WebKit18WebPasteboardProxy16writeToClipboardERKN3WTF6StringEON7WebCore13SelectionDataE'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WebPasteboardProxyGtk.cpp' l='125' c='_ZN6WebKit18WebPasteboardProxy15writeCustomDataERN3IPC10ConnectionERKN3WTF6VectorIN7WebCore20PasteboardCustomDataELm0ENS4_15CrashOnOverflowELm16ENS4_110044127'/>
+<size>104</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='2654' c='_ZN6WebKit12WebPageProxy9startDragEON7WebCore13SelectionDataEiRKNS_15ShareableBitmap6HandleE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/DragSource.h' l='55' c='_ZN6WebKit10DragSource5beginEON7WebCore13SelectionDataEN3WTF9OptionSetINS1_13DragOperationEEEONS4_6RefPtrINS_15ShareableBitmapENS4_12RawPtrTraitsIS9_E8937227'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/DragSource.h' l='64'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/DragSourceGtk3.cpp' l='115' c='_ZN6WebKit10DragSource5beginEON7WebCore13SelectionDataEN3WTF9OptionSetINS1_13DragOperationEEEONS4_6RefPtrINS_15ShareableBitmapENS4_12RawPtrTraitsIS9_E8937227'/>
+<size>104</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/DropTarget.h' l='84'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/DropTargetGtk3.cpp' l='138' c='_ZN6WebKit10DropTarget6acceptEP15_GdkDragContextSt8optionalIN7WebCore8IntPointEEj'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/DropTargetGtk3.cpp' l='243' c='_ZN6WebKit10DropTarget15leaveTimerFiredEv'/>
+<size>104</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/PageClientImpl.h' l='107' c='_ZN6WebKit14PageClientImpl9startDragEON7WebCore13SelectionDataEN3WTF9OptionSetINS1_13DragOperationEEEONS4_6RefPtrINS_15ShareableBitmapENS4_12RawPtrTra7309663'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/PageClientImpl.cpp' l='339' c='_ZN6WebKit14PageClientImpl9startDragEON7WebCore13SelectionDataEN3WTF9OptionSetINS1_13DragOperationEEEONS4_6RefPtrINS_15ShareableBitmapENS4_12RawPtrTra7309663'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitWebViewBase.cpp' l='2248' c='_Z26webkitWebViewBaseStartDragP18_WebKitWebViewBaseON7WebCore13SelectionDataEN3WTF9OptionSetINS1_13DragOperationEEEONS4_6RefPtrIN6WebKit15ShareableBit15966429'/>
+<size>104</size>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/ClipboardGtk3.cpp' l='150' c='_ZN6WebKit14WriteAsyncDataC1EON7WebCore13SelectionDataERNS_9ClipboardE'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/ClipboardGtk3.cpp' l='156'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/ClipboardGtk3.cpp' l='162' c='_ZN6WebKit9Clipboard5writeEON7WebCore13SelectionDataE'/>
+<size>104</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='4304' c='_ZN6WebKit7WebPage27performDragControllerActionENS_20DragControllerActionERKN7WebCore8IntPointES5_N3WTF9OptionSetINS2_13DragOperationEEEONS2_13Selecti13813922'/>
+<use f='WebKit/Source/WebCore/platform/gtk/PasteboardGtk.cpp' l='58' c='_ZN7WebCore10Pasteboard20createForDragAndDropEOSt10unique_ptrINS_17PasteboardContextESt14default_deleteIS2_EE'/>
+<use f='WebKit/Source/WebCore/platform/gtk/PasteboardGtk.cpp' l='67' c='_ZN7WebCore10PasteboardC1EOSt10unique_ptrINS_17PasteboardContextESt14default_deleteIS2_EEONS_13SelectionDataE'/>
+<use f='WebKit/Source/WebCore/platform/gtk/PasteboardGtk.cpp' l='74' c='_ZN7WebCore10PasteboardC1EOSt10unique_ptrINS_17PasteboardContextESt14default_deleteIS2_EERNS_13SelectionDataE'/>
+<use f='WebKit/Source/WebCore/platform/gtk/PasteboardGtk.cpp' l='93' c='_ZNK7WebCore10Pasteboard13selectionDataEv'/>
+<use f='WebKit/Source/WebCore/platform/gtk/PasteboardGtk.cpp' l='141' c='_ZN7WebCore10Pasteboard14writePlainTextERKN3WTF6StringENS0_18SmartReplaceOptionE'/>
+<use f='WebKit/Source/WebCore/platform/gtk/PasteboardGtk.cpp' l='155' c='_ZN7WebCore10Pasteboard5writeERKNS_13PasteboardURLE'/>
+<use f='WebKit/Source/WebCore/platform/gtk/PasteboardGtk.cpp' l='176' c='_ZN7WebCore10Pasteboard5writeERKNS_15PasteboardImageE'/>
+<use f='WebKit/Source/WebCore/platform/gtk/PasteboardGtk.cpp' l='197' c='_ZN7WebCore10Pasteboard5writeERKNS_20PasteboardWebContentE'/>
+<size>104</size>

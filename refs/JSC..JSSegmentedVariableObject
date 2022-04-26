@@ -1,0 +1,96 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSCast.h' l='96'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSCast.h' l='96' c='_ZN3JSC16JSCastingHelpers14InheritsTraitsINS_25JSSegmentedVariableObjectEE8inheritsERNS_2VMEPT_'/>
+<inh f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSSymbolTableObject.h' l='39' c='JSC::JSSymbolTableObject'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSSegmentedVariableObject.h' l='50' ll='104'/>
+<ovr f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGlobalLexicalEnvironment.h' l='32' c='JSC::JSGlobalLexicalEnvironment'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGlobalLexicalEnvironment.h' l='32'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGlobalLexicalEnvironment.h' l='34'/>
+<ovr f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGlobalObject.h' l='262' c='JSC::JSGlobalObject'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGlobalObject.h' l='262'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGlobalObject.h' l='597'/>
+<size>56</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSSegmentedVariableObject.h' l='41'>// This is a mostly drop-in replacement for JSLexicalEnvironment, except that it preserves
+// the invariant that after a variable is created, its address in memory will not change
+// so long as the JSSegmentedVariableObject is alive. This allows optimizations based
+// on getting the address of the variable and remembering it. As well, unlike a
+// JSLexicalEnvironment, this will manage the memory for the registers itself and neither
+// requires nor allows for the subclasses to manage that memory. Finally,
+// JSSegmentedVariableObject has its own GC tracing functionality, since it knows the
+// exact dimensions of the variables array at all times.</doc>
+<smbr r='JSC::JSSegmentedVariableObject::s_info' t='const ::JSC::ClassInfo'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject4infoEv'/>
+<smbr r='JSC::JSSegmentedVariableObject::needsDestruction' t='const bool'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject11subspaceForERNS_2VME'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject18isValidScopeOffsetENS_11ScopeOffsetE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject10variableAtENS_11ScopeOffsetE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject17findVariableIndexEPv'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject28assertVariableIsInThisObjectEPNS_12WriteBarrierINS_7UnknownEN3WTF14RawValueTraitsIS2_EEEE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject12addVariablesEjNS_7JSValueE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject17visitChildrenImplEPNS_6JSCellERT_'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject13visitChildrenEPNS_6JSCellERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject13visitChildrenEPNS_6JSCellERNS_11SlotVisitorE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject11analyzeHeapEPNS_6JSCellERNS_12HeapAnalyzerE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObjectC1ERNS_2VMEPNS_9StructureEPNS_7JSScopeE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObjectD1Ev'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject14finishCreationERNS_2VME'/>
+<mbr r='JSC::JSSegmentedVariableObject::m_variables' o='256' t='SegmentedVector&lt;WriteBarrier&lt;JSC::Unknown&gt;, 16&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCast.h' l='96'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCast.h' l='96' c='_ZN3JSC16JSCastingHelpers14InheritsTraitsINS_25JSSegmentedVariableObjectEE8inheritsERNS_2VMEPT_'/>
+<inh f='WebKit/Source/JavaScriptCore/runtime/JSSymbolTableObject.h' l='39' c='JSC::JSSymbolTableObject'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/JSSegmentedVariableObject.h' l='50' ll='104'/>
+<ovr f='WebKit/Source/JavaScriptCore/runtime/JSGlobalLexicalEnvironment.h' l='32' c='JSC::JSGlobalLexicalEnvironment'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalLexicalEnvironment.h' l='32'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalLexicalEnvironment.h' l='34'/>
+<ovr f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.h' l='262' c='JSC::JSGlobalObject'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.h' l='262'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.h' l='597'/>
+<size>56</size>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSSegmentedVariableObject.h' l='41'>// This is a mostly drop-in replacement for JSLexicalEnvironment, except that it preserves
+// the invariant that after a variable is created, its address in memory will not change
+// so long as the JSSegmentedVariableObject is alive. This allows optimizations based
+// on getting the address of the variable and remembering it. As well, unlike a
+// JSLexicalEnvironment, this will manage the memory for the registers itself and neither
+// requires nor allows for the subclasses to manage that memory. Finally,
+// JSSegmentedVariableObject has its own GC tracing functionality, since it knows the
+// exact dimensions of the variables array at all times.</doc>
+<smbr r='JSC::JSSegmentedVariableObject::s_info' t='const ::JSC::ClassInfo'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject4infoEv'/>
+<smbr r='JSC::JSSegmentedVariableObject::needsDestruction' t='const bool'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject11subspaceForERNS_2VME'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject18isValidScopeOffsetENS_11ScopeOffsetE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject10variableAtENS_11ScopeOffsetE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject17findVariableIndexEPv'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject28assertVariableIsInThisObjectEPNS_12WriteBarrierINS_7UnknownEN3WTF14RawValueTraitsIS2_EEEE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject12addVariablesEjNS_7JSValueE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject17visitChildrenImplEPNS_6JSCellERT_'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject13visitChildrenEPNS_6JSCellERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject13visitChildrenEPNS_6JSCellERNS_11SlotVisitorE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject11analyzeHeapEPNS_6JSCellERNS_12HeapAnalyzerE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObjectC1ERNS_2VMEPNS_9StructureEPNS_7JSScopeE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObjectD1Ev'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject14finishCreationERNS_2VME'/>
+<mbr r='JSC::JSSegmentedVariableObject::m_variables' o='256' t='SegmentedVector&lt;WriteBarrier&lt;JSC::Unknown&gt;, 16&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/Interpreter.cpp' l='712' c='_ZN3JSC11Interpreter14executeProgramERKNS_10SourceCodeEPNS_14JSGlobalObjectEPNS_8JSObjectE'/>
+<size>56</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='7832' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='7832' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='8011' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='8011' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<size>56</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSegmentedVariableObject.cpp' l='37'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSegmentedVariableObject.cpp' l='37'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSegmentedVariableObject.cpp' l='68' c='_ZN3JSC25JSSegmentedVariableObject17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSegmentedVariableObject.cpp' l='68' c='_ZN3JSC25JSSegmentedVariableObject17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSegmentedVariableObject.cpp' l='83' c='_ZN3JSC25JSSegmentedVariableObject11analyzeHeapEPNS_6JSCellERNS_12HeapAnalyzerE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSegmentedVariableObject.cpp' l='83' c='_ZN3JSC25JSSegmentedVariableObject11analyzeHeapEPNS_6JSCellERNS_12HeapAnalyzerE'/>
+<size>56</size>
+<smbr r='JSC::JSSegmentedVariableObject::s_info' t='const JSC::ClassInfo'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject17findVariableIndexEPv'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject12addVariablesEjNS_7JSValueE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject17visitChildrenImplEPNS_6JSCellERT_'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject13visitChildrenEPNS_6JSCellERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject13visitChildrenEPNS_6JSCellERNS_11SlotVisitorE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject11analyzeHeapEPNS_6JSCellERNS_12HeapAnalyzerE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObjectC1ERNS_2VMEPNS_9StructureEPNS_7JSScopeE'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObjectD1Ev'/>
+<fun r='_ZN3JSC25JSSegmentedVariableObject14finishCreationERNS_2VME'/>

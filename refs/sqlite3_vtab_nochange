@@ -1,0 +1,18 @@
+<dec f='include/sqlite3.h' l='9118' type='int sqlite3_vtab_nochange(sqlite3_context * )'/>
+<doc f='include/sqlite3.h' l='9101'>/*
+** CAPI3REF: Determine If Virtual Table Column Access Is For UPDATE
+**
+** If the sqlite3_vtab_nochange(X) routine is called within the [xColumn]
+** method of a [virtual table], then it returns true if and only if the
+** column is being fetched as part of an UPDATE operation during which the
+** column value will not change.  Applications might use this to substitute
+** a return value that is less expensive to compute and that the corresponding
+** [xUpdate] method understands as a &quot;no-change&quot; value.
+**
+** If the [xColumn] method calls sqlite3_vtab_nochange() and finds that
+** the column is not changed by the UPDATE statement, then the xColumn
+** method can optionally return without setting a result, without calling
+** any of the [sqlite3_result_int|sqlite3_result_xxxxx() interfaces].
+** In that case, [sqlite3_value_nochange(X)] will return true for the
+** same column in the [xUpdate] method.
+*/</doc>

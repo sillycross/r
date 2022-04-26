@@ -1,0 +1,1009 @@
+<use f='WebKit/Source/WebCore/platform/graphics/ImageBufferBackend.h' l='114' c='_ZNK7WebCore18ImageBufferBackend21copyToPlatformTextureERNS_17GraphicsContextGLEjjjbb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ImageBuffer.h' l='133' c='_ZNK7WebCore11ImageBuffer21copyToPlatformTextureERNS_17GraphicsContextGLEjjjbb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/MediaPlayer.h' l='461' c='_ZN7WebCore11MediaPlayer33copyVideoTextureToPlatformTextureEPNS_17GraphicsContextGLEjjijjjbb'/>
+<inh f='WebKit/WTF/Headers/wtf/RefCounted.h' l='184' c='WTF::RefCounted'/>
+<def f='WebKit/Source/WebCore/platform/graphics/GraphicsContextGL.h' l='65' ll='1371'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsContextGL.h' l='65'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsContextGL.h' l='913' c='_ZN7WebCore17GraphicsContextGL6createERKNS_27GraphicsContextGLAttributesEPNS_10HostWindowE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsContextGL.h' l='915' c='_ZN7WebCore17GraphicsContextGLC1ENS_27GraphicsContextGLAttributesEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/HostWindow.h' l='70' c='_ZNK7WebCore10HostWindow23createGraphicsContextGLERKNS_27GraphicsContextGLAttributesE'/>
+<use f='WebKit/Source/WebCore/page/ChromeClient.h' l='357' c='_ZNK7WebCore12ChromeClient23createGraphicsContextGLERKNS_27GraphicsContextGLAttributesEj'/>
+<size>64</size>
+<doc f='WebKit/Source/WebCore/platform/graphics/GraphicsContextGL.h' l='64'>// Base class for graphics context for implementing WebGL rendering model.</doc>
+<smbr r='WebCore::GraphicsContextGL::DEPTH_BUFFER_BIT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_BUFFER_BIT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_BUFFER_BIT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::POINTS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::LINES' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::LINE_LOOP' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::LINE_STRIP' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TRIANGLES' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TRIANGLE_STRIP' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TRIANGLE_FAN' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ZERO' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ONE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SRC_COLOR' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ONE_MINUS_SRC_COLOR' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SRC_ALPHA' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ONE_MINUS_SRC_ALPHA' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DST_ALPHA' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ONE_MINUS_DST_ALPHA' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DST_COLOR' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ONE_MINUS_DST_COLOR' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SRC_ALPHA_SATURATE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FUNC_ADD' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BLEND_EQUATION' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BLEND_EQUATION_RGB' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BLEND_EQUATION_ALPHA' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FUNC_SUBTRACT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FUNC_REVERSE_SUBTRACT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BLEND_DST_RGB' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BLEND_SRC_RGB' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BLEND_DST_ALPHA' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BLEND_SRC_ALPHA' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::CONSTANT_COLOR' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ONE_MINUS_CONSTANT_COLOR' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::CONSTANT_ALPHA' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ONE_MINUS_CONSTANT_ALPHA' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BLEND_COLOR' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ARRAY_BUFFER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ELEMENT_ARRAY_BUFFER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ARRAY_BUFFER_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ELEMENT_ARRAY_BUFFER_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STREAM_DRAW' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STATIC_DRAW' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DYNAMIC_DRAW' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BUFFER_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BUFFER_USAGE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::CURRENT_VERTEX_ATTRIB' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRONT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BACK' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRONT_AND_BACK' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_2D' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::CULL_FACE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BLEND' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DITHER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_TEST' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DEPTH_TEST' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SCISSOR_TEST' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::POLYGON_OFFSET_FILL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SAMPLE_ALPHA_TO_COVERAGE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SAMPLE_COVERAGE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::NO_ERROR' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INVALID_ENUM' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INVALID_VALUE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INVALID_OPERATION' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::OUT_OF_MEMORY' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::CW' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::CCW' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::LINE_WIDTH' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ALIASED_POINT_SIZE_RANGE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ALIASED_LINE_WIDTH_RANGE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::CULL_FACE_MODE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRONT_FACE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DEPTH_RANGE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DEPTH_WRITEMASK' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DEPTH_CLEAR_VALUE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DEPTH_FUNC' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_CLEAR_VALUE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_FUNC' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_FAIL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_PASS_DEPTH_FAIL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_PASS_DEPTH_PASS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_REF' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_VALUE_MASK' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_WRITEMASK' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_BACK_FUNC' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_BACK_FAIL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_BACK_PASS_DEPTH_FAIL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_BACK_PASS_DEPTH_PASS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_BACK_REF' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_BACK_VALUE_MASK' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_BACK_WRITEMASK' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::VIEWPORT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SCISSOR_BOX' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_CLEAR_VALUE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_WRITEMASK' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNPACK_ALIGNMENT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::PACK_ALIGNMENT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_TEXTURE_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_VIEWPORT_DIMS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SUBPIXEL_BITS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RED_BITS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::GREEN_BITS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BLUE_BITS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ALPHA_BITS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DEPTH_BITS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_BITS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::POLYGON_OFFSET_UNITS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::POLYGON_OFFSET_FACTOR' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_BINDING_2D' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SAMPLE_BUFFERS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SAMPLES' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SAMPLE_COVERAGE_VALUE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SAMPLE_COVERAGE_INVERT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::NUM_COMPRESSED_TEXTURE_FORMATS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COMPRESSED_TEXTURE_FORMATS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DONT_CARE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FASTEST' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::NICEST' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::GENERATE_MIPMAP_HINT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BYTE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNED_BYTE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SHORT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNED_SHORT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNED_INT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FLOAT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::HALF_FLOAT_OES' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FIXED' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DEPTH_COMPONENT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ALPHA' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGB' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGBA' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BGRA' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::LUMINANCE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::LUMINANCE_ALPHA' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNED_SHORT_4_4_4_4' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNED_SHORT_5_5_5_1' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNED_SHORT_5_6_5' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAGMENT_SHADER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::VERTEX_SHADER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_VERTEX_ATTRIBS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_VERTEX_UNIFORM_VECTORS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_VARYING_VECTORS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_COMBINED_TEXTURE_IMAGE_UNITS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_VERTEX_TEXTURE_IMAGE_UNITS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_TEXTURE_IMAGE_UNITS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_FRAGMENT_UNIFORM_VECTORS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SHADER_TYPE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DELETE_STATUS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::LINK_STATUS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::VALIDATE_STATUS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ATTACHED_SHADERS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ACTIVE_UNIFORMS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ACTIVE_UNIFORM_MAX_LENGTH' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ACTIVE_ATTRIBUTES' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ACTIVE_ATTRIBUTE_MAX_LENGTH' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SHADING_LANGUAGE_VERSION' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::CURRENT_PROGRAM' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::NEVER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::LESS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::EQUAL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::LEQUAL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::GREATER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::NOTEQUAL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::GEQUAL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ALWAYS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::KEEP' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::REPLACE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INCR' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DECR' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INVERT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INCR_WRAP' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DECR_WRAP' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::VENDOR' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RENDERER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::VERSION' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::EXTENSIONS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::NEAREST' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::LINEAR' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::NEAREST_MIPMAP_NEAREST' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::LINEAR_MIPMAP_NEAREST' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::NEAREST_MIPMAP_LINEAR' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::LINEAR_MIPMAP_LINEAR' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_MAG_FILTER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_MIN_FILTER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_WRAP_S' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_WRAP_T' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_CUBE_MAP' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_BINDING_CUBE_MAP' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_CUBE_MAP_POSITIVE_X' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_CUBE_MAP_NEGATIVE_X' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_CUBE_MAP_POSITIVE_Y' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_CUBE_MAP_NEGATIVE_Y' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_CUBE_MAP_POSITIVE_Z' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_CUBE_MAP_NEGATIVE_Z' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_CUBE_MAP_TEXTURE_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE0' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE1' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE2' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE3' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE4' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE5' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE6' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE7' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE8' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE9' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE10' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE11' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE12' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE13' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE14' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE15' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE16' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE17' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE18' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE19' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE20' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE21' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE22' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE23' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE24' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE25' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE26' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE27' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE28' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE29' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE30' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE31' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ACTIVE_TEXTURE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::REPEAT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::CLAMP_TO_EDGE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MIRRORED_REPEAT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FLOAT_VEC2' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FLOAT_VEC3' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FLOAT_VEC4' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INT_VEC2' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INT_VEC3' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INT_VEC4' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BOOL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BOOL_VEC2' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BOOL_VEC3' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BOOL_VEC4' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FLOAT_MAT2' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FLOAT_MAT3' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FLOAT_MAT4' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SAMPLER_2D' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SAMPLER_CUBE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::VERTEX_ATTRIB_ARRAY_ENABLED' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::VERTEX_ATTRIB_ARRAY_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::VERTEX_ATTRIB_ARRAY_STRIDE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::VERTEX_ATTRIB_ARRAY_TYPE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::VERTEX_ATTRIB_ARRAY_NORMALIZED' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::VERTEX_ATTRIB_ARRAY_POINTER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::VERTEX_ATTRIB_ARRAY_BUFFER_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::IMPLEMENTATION_COLOR_READ_TYPE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::IMPLEMENTATION_COLOR_READ_FORMAT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COMPILE_STATUS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INFO_LOG_LENGTH' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SHADER_SOURCE_LENGTH' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SHADER_COMPILER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SHADER_BINARY_FORMATS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::NUM_SHADER_BINARY_FORMATS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::LOW_FLOAT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MEDIUM_FLOAT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::HIGH_FLOAT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::LOW_INT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MEDIUM_INT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::HIGH_INT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RENDERBUFFER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGBA4' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGB5_A1' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGB565' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DEPTH_COMPONENT16' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_INDEX' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_INDEX8' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RENDERBUFFER_WIDTH' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RENDERBUFFER_HEIGHT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RENDERBUFFER_INTERNAL_FORMAT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RENDERBUFFER_RED_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RENDERBUFFER_GREEN_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RENDERBUFFER_BLUE_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RENDERBUFFER_ALPHA_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RENDERBUFFER_DEPTH_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RENDERBUFFER_STENCIL_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_ATTACHMENT_OBJECT_NAME' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_ATTACHMENT0' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DEPTH_ATTACHMENT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL_ATTACHMENT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::NONE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_COMPLETE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_INCOMPLETE_ATTACHMENT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_INCOMPLETE_DIMENSIONS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_UNSUPPORTED' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RENDERBUFFER_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_RENDERBUFFER_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INVALID_FRAMEBUFFER_OPERATION' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNPACK_FLIP_Y_WEBGL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNPACK_PREMULTIPLY_ALPHA_WEBGL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::CONTEXT_LOST_WEBGL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNPACK_COLORSPACE_CONVERSION_WEBGL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BROWSER_DEFAULT_WEBGL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::READ_BUFFER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNPACK_ROW_LENGTH' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNPACK_SKIP_ROWS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNPACK_SKIP_PIXELS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::PACK_ROW_LENGTH' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::PACK_SKIP_ROWS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::PACK_SKIP_PIXELS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DEPTH' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STENCIL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RED' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGB8' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGBA8' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGB10_A2' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_BINDING_3D' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNPACK_SKIP_IMAGES' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNPACK_IMAGE_HEIGHT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_3D' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_WRAP_R' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_3D_TEXTURE_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNED_INT_2_10_10_10_REV' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_ELEMENTS_VERTICES' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_ELEMENTS_INDICES' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_MIN_LOD' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_MAX_LOD' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_BASE_LEVEL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_MAX_LEVEL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MIN' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DEPTH_COMPONENT24' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_TEXTURE_LOD_BIAS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_COMPARE_MODE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_COMPARE_FUNC' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::CURRENT_QUERY' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::QUERY_RESULT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::QUERY_RESULT_AVAILABLE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STREAM_READ' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STREAM_COPY' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STATIC_READ' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::STATIC_COPY' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DYNAMIC_READ' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DYNAMIC_COPY' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_DRAW_BUFFERS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DRAW_BUFFER0' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DRAW_BUFFER1' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DRAW_BUFFER2' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DRAW_BUFFER3' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DRAW_BUFFER4' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DRAW_BUFFER5' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DRAW_BUFFER6' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DRAW_BUFFER7' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DRAW_BUFFER8' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DRAW_BUFFER9' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DRAW_BUFFER10' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DRAW_BUFFER11' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DRAW_BUFFER12' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DRAW_BUFFER13' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DRAW_BUFFER14' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DRAW_BUFFER15' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_FRAGMENT_UNIFORM_COMPONENTS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_VERTEX_UNIFORM_COMPONENTS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SAMPLER_3D' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SAMPLER_2D_SHADOW' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAGMENT_SHADER_DERIVATIVE_HINT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::PIXEL_PACK_BUFFER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::PIXEL_UNPACK_BUFFER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::PIXEL_PACK_BUFFER_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::PIXEL_UNPACK_BUFFER_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FLOAT_MAT2x3' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FLOAT_MAT2x4' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FLOAT_MAT3x2' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FLOAT_MAT3x4' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FLOAT_MAT4x2' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FLOAT_MAT4x3' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SRGB' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SRGB8' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SRGB_ALPHA' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SRGB8_ALPHA8' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COMPARE_REF_TO_TEXTURE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGBA32F' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGB32F' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGBA16F' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGB16F' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::VERTEX_ATTRIB_ARRAY_INTEGER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_ARRAY_TEXTURE_LAYERS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MIN_PROGRAM_TEXEL_OFFSET' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_PROGRAM_TEXEL_OFFSET' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_VARYING_COMPONENTS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_2D_ARRAY' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_BINDING_2D_ARRAY' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::R11F_G11F_B10F' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNED_INT_10F_11F_11F_REV' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGB9_E5' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNED_INT_5_9_9_9_REV' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TRANSFORM_FEEDBACK_VARYING_MAX_LENGTH' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TRANSFORM_FEEDBACK_BUFFER_MODE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TRANSFORM_FEEDBACK_VARYINGS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TRANSFORM_FEEDBACK_BUFFER_START' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TRANSFORM_FEEDBACK_BUFFER_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RASTERIZER_DISCARD' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INTERLEAVED_ATTRIBS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SEPARATE_ATTRIBS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TRANSFORM_FEEDBACK_BUFFER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TRANSFORM_FEEDBACK_BUFFER_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGBA32UI' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGB32UI' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGBA16UI' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGB16UI' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGBA8UI' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGB8UI' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGBA32I' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGB32I' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGBA16I' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGB16I' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGBA8I' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGB8I' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RED_INTEGER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGB_INTEGER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGBA_INTEGER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SAMPLER_2D_ARRAY' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SAMPLER_2D_ARRAY_SHADOW' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SAMPLER_CUBE_SHADOW' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNED_INT_VEC2' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNED_INT_VEC3' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNED_INT_VEC4' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INT_SAMPLER_2D' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INT_SAMPLER_3D' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INT_SAMPLER_CUBE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INT_SAMPLER_2D_ARRAY' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNED_INT_SAMPLER_2D' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNED_INT_SAMPLER_3D' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNED_INT_SAMPLER_CUBE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNED_INT_SAMPLER_2D_ARRAY' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DEPTH_COMPONENT32F' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DEPTH32F_STENCIL8' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FLOAT_32_UNSIGNED_INT_24_8_REV' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_ATTACHMENT_RED_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_ATTACHMENT_GREEN_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_ATTACHMENT_BLUE_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_DEFAULT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DEPTH_STENCIL_ATTACHMENT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DEPTH_STENCIL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNED_INT_24_8' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DEPTH24_STENCIL8' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNED_NORMALIZED' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DRAW_FRAMEBUFFER_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::READ_FRAMEBUFFER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::DRAW_FRAMEBUFFER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::READ_FRAMEBUFFER_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RENDERBUFFER_SAMPLES' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_COLOR_ATTACHMENTS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_ATTACHMENT1' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_ATTACHMENT2' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_ATTACHMENT3' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_ATTACHMENT4' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_ATTACHMENT5' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_ATTACHMENT6' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_ATTACHMENT7' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_ATTACHMENT8' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_ATTACHMENT9' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_ATTACHMENT10' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_ATTACHMENT11' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_ATTACHMENT12' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_ATTACHMENT13' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_ATTACHMENT14' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COLOR_ATTACHMENT15' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::FRAMEBUFFER_INCOMPLETE_MULTISAMPLE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_SAMPLES' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::HALF_FLOAT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RG' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RG_INTEGER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::R8' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RG8' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::R16F' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::R32F' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RG16F' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RG32F' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::R8I' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::R8UI' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::R16I' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::R16UI' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::R32I' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::R32UI' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RG8I' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RG8UI' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RG16I' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RG16UI' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RG32I' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RG32UI' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::VERTEX_ARRAY_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::VERTEX_ARRAY_BINDING_OES' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::R8_SNORM' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RG8_SNORM' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGB8_SNORM' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGBA8_SNORM' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SIGNED_NORMALIZED' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COPY_READ_BUFFER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COPY_WRITE_BUFFER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COPY_READ_BUFFER_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COPY_WRITE_BUFFER_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNIFORM_BUFFER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNIFORM_BUFFER_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNIFORM_BUFFER_START' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNIFORM_BUFFER_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_VERTEX_UNIFORM_BLOCKS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_FRAGMENT_UNIFORM_BLOCKS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_COMBINED_UNIFORM_BLOCKS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_UNIFORM_BUFFER_BINDINGS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_UNIFORM_BLOCK_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNIFORM_BUFFER_OFFSET_ALIGNMENT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ACTIVE_UNIFORM_BLOCKS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNIFORM_TYPE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNIFORM_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNIFORM_BLOCK_INDEX' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNIFORM_OFFSET' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNIFORM_ARRAY_STRIDE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNIFORM_MATRIX_STRIDE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNIFORM_IS_ROW_MAJOR' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNIFORM_BLOCK_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNIFORM_BLOCK_DATA_SIZE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNIFORM_BLOCK_ACTIVE_UNIFORMS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INVALID_INDEX' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_VERTEX_OUTPUT_COMPONENTS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_FRAGMENT_INPUT_COMPONENTS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_SERVER_WAIT_TIMEOUT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::OBJECT_TYPE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SYNC_CONDITION' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SYNC_STATUS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SYNC_FLAGS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SYNC_FENCE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SYNC_GPU_COMMANDS_COMPLETE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::UNSIGNALED' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SIGNALED' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ALREADY_SIGNALED' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TIMEOUT_EXPIRED' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::CONDITION_SATISFIED' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::WAIT_FAILED_WEBGL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SYNC_FLUSH_COMMANDS_BIT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::VERTEX_ATTRIB_ARRAY_DIVISOR' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ANY_SAMPLES_PASSED' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::ANY_SAMPLES_PASSED_CONSERVATIVE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::SAMPLER_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::RGB10_A2UI' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_SWIZZLE_R' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_SWIZZLE_G' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_SWIZZLE_B' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_SWIZZLE_A' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::GREEN' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::BLUE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::INT_2_10_10_10_REV' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TRANSFORM_FEEDBACK' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TRANSFORM_FEEDBACK_PAUSED' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TRANSFORM_FEEDBACK_ACTIVE' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TRANSFORM_FEEDBACK_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COMPRESSED_R11_EAC' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COMPRESSED_SIGNED_R11_EAC' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COMPRESSED_RG11_EAC' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COMPRESSED_SIGNED_RG11_EAC' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COMPRESSED_RGB8_ETC2' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COMPRESSED_SRGB8_ETC2' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COMPRESSED_RGBA8_ETC2_EAC' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::COMPRESSED_SRGB8_ALPHA8_ETC2_EAC' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_IMMUTABLE_FORMAT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_ELEMENT_INDEX' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::NUM_SAMPLE_COUNTS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_IMMUTABLE_LEVELS' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::PRIMITIVE_RESTART_FIXED_INDEX' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::PRIMITIVE_RESTART' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAP_READ_BIT' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::MAX_CLIENT_WAIT_TIMEOUT_WEBGL' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_RECTANGLE_ARB' t='const GCGLenum'/>
+<smbr r='WebCore::GraphicsContextGL::TEXTURE_BINDING_RECTANGLE_ARB' t='const GCGLenum'/>
+<fun r='_ZNK7WebCore17GraphicsContextGL13platformLayerEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL8hasAlphaENS0_10DataFormatE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL8hasColorENS0_10DataFormatE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL39srcFormatComesFromDOMElementOrImageDataENS0_10DataFormatE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL6createERKNS_27GraphicsContextGLAttributesEPNS_10HostWindowE'/>
+<fun r='_ZN7WebCore17GraphicsContextGLC1ENS_27GraphicsContextGLAttributesEPS0_'/>
+<fun r='_ZN7WebCore17GraphicsContextGLD1Ev'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9addClientERNS0_6ClientE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL12removeClientERNS0_6ClientE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13activeTextureEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL12attachShaderEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL18bindAttribLocationEjjRKN3WTF6StringE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10bindBufferEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL15bindFramebufferEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL16bindRenderbufferEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL11bindTextureEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10blendColorEffff'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13blendEquationEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL21blendEquationSeparateEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9blendFuncEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17blendFuncSeparateEjjjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL22checkFramebufferStatusEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL5clearEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10clearColorEffff'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10clearDepthEf'/>
+<fun r='_ZN7WebCore17GraphicsContextGL12clearStencilEi'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9colorMaskEhhhh'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13compileShaderEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL14copyTexImage2DEjijiiiii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17copyTexSubImage2DEjiiiiiii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL12createBufferEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17createFramebufferEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13createProgramEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL18createRenderbufferEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL12createShaderEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13createTextureEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL8cullFaceEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL12deleteBufferEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17deleteFramebufferEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13deleteProgramEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL18deleteRenderbufferEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL12deleteShaderEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13deleteTextureEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9depthFuncEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9depthMaskEh'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10depthRangeEff'/>
+<fun r='_ZN7WebCore17GraphicsContextGL12detachShaderEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL7disableEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL24disableVertexAttribArrayEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10drawArraysEjii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL12drawElementsEjijl'/>
+<fun r='_ZN7WebCore17GraphicsContextGL6enableEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL23enableVertexAttribArrayEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL6finishEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL5flushEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL23framebufferRenderbufferEjjjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL20framebufferTexture2DEjjjji'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9frontFaceEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL14generateMipmapEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL15getActiveAttribEjjRNS0_10ActiveInfoE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL16getActiveUniformEjjRNS0_10ActiveInfoE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17getAttribLocationEjRKN3WTF6StringE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL19getBufferParameteriEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9getStringEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9getFloatvEj8GCGLSpanIfLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL11getIntegervEj8GCGLSpanIiLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL12getInteger64Ej'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13getInteger64iEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL11getProgramiEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL11getBooleanvEj8GCGLSpanIhLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL8getErrorEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL34getFramebufferAttachmentParameteriEjjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17getProgramInfoLogEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL25getRenderbufferParameteriEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10getShaderiEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL16getShaderInfoLogEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL24getShaderPrecisionFormatEjj8GCGLSpanIiLm2EEPi'/>
+<fun r='_ZN7WebCore17GraphicsContextGL15getShaderSourceEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL16getTexParameterfEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL16getTexParameteriEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL12getUniformfvEji8GCGLSpanIfLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL12getUniformivEji8GCGLSpanIiLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13getUniformuivEji8GCGLSpanIjLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL18getUniformLocationEjRKN3WTF6StringE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL21getVertexAttribOffsetEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL4hintEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL8isBufferEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9isEnabledEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13isFramebufferEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9isProgramEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL14isRenderbufferEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL8isShaderEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9isTextureEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9lineWidthEf'/>
+<fun r='_ZN7WebCore17GraphicsContextGL11linkProgramEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL11pixelStoreiEji'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13polygonOffsetEff'/>
+<fun r='_ZN7WebCore17GraphicsContextGL19renderbufferStorageEjjii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL14sampleCoverageEfh'/>
+<fun r='_ZN7WebCore17GraphicsContextGL7scissorEiiii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL12shaderSourceEjRKN3WTF6StringE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL11stencilFuncEjij'/>
+<fun r='_ZN7WebCore17GraphicsContextGL19stencilFuncSeparateEjjij'/>
+<fun r='_ZN7WebCore17GraphicsContextGL11stencilMaskEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL19stencilMaskSeparateEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9stencilOpEjjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17stencilOpSeparateEjjjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13texParameterfEjjf'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13texParameteriEjji'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9uniform1fEif'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10uniform1fvEi8GCGLSpanIKfLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9uniform1iEii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10uniform1ivEi8GCGLSpanIKiLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9uniform2fEiff'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10uniform2fvEi8GCGLSpanIKfLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9uniform2iEiii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10uniform2ivEi8GCGLSpanIKiLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9uniform3fEifff'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10uniform3fvEi8GCGLSpanIKfLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9uniform3iEiiii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10uniform3ivEi8GCGLSpanIKiLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9uniform4fEiffff'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10uniform4fvEi8GCGLSpanIKfLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9uniform4iEiiiii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10uniform4ivEi8GCGLSpanIKiLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL16uniformMatrix2fvEih8GCGLSpanIKfLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL16uniformMatrix3fvEih8GCGLSpanIKfLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL16uniformMatrix4fvEih8GCGLSpanIKfLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10useProgramEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL15validateProgramEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL14vertexAttrib1fEjf'/>
+<fun r='_ZN7WebCore17GraphicsContextGL15vertexAttrib1fvEj8GCGLSpanIKfLm1EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL14vertexAttrib2fEjff'/>
+<fun r='_ZN7WebCore17GraphicsContextGL15vertexAttrib2fvEj8GCGLSpanIKfLm2EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL14vertexAttrib3fEjfff'/>
+<fun r='_ZN7WebCore17GraphicsContextGL15vertexAttrib3fvEj8GCGLSpanIKfLm3EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL14vertexAttrib4fEjffff'/>
+<fun r='_ZN7WebCore17GraphicsContextGL15vertexAttrib4fvEj8GCGLSpanIKfLm4EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL19vertexAttribPointerEjijhil'/>
+<fun r='_ZN7WebCore17GraphicsContextGL8viewportEiiii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10bufferDataEjlj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10bufferDataEj8GCGLSpanIKvLm18446744073709551615EEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13bufferSubDataEjl8GCGLSpanIKvLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL11readnPixelsEiiiijj8GCGLSpanIvLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL11readnPixelsEiiiijjl'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10texImage2DEjijiiijj8GCGLSpanIKvLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10texImage2DEjijiiijjl'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13texSubImage2DEjiiiiijj8GCGLSpanIKvLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13texSubImage2DEjiiiiijjl'/>
+<fun r='_ZN7WebCore17GraphicsContextGL20compressedTexImage2DEjijiiii8GCGLSpanIKvLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL20compressedTexImage2DEjijiiiil'/>
+<fun r='_ZN7WebCore17GraphicsContextGL23compressedTexSubImage2DEjiiiiiji8GCGLSpanIKvLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL23compressedTexSubImage2DEjiiiiijil'/>
+<fun r='_ZN7WebCore17GraphicsContextGL19drawArraysInstancedEjiii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL21drawElementsInstancedEjijli'/>
+<fun r='_ZN7WebCore17GraphicsContextGL19vertexAttribDivisorEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17createVertexArrayEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17deleteVertexArrayEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13isVertexArrayEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL15bindVertexArrayEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17copyBufferSubDataEjjlll'/>
+<fun r='_ZN7WebCore17GraphicsContextGL16getBufferSubDataEjl8GCGLSpanIvLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL15blitFramebufferEiiiiiiiijj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL23framebufferTextureLayerEjjjii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL21invalidateFramebufferEj8GCGLSpanIKjLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL24invalidateSubFramebufferEj8GCGLSpanIKjLm18446744073709551615EEiiii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10readBufferEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL19getInternalformativEjjj8GCGLSpanIiLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL30renderbufferStorageMultisampleEjijii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL12texStorage2DEjijii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL12texStorage3DEjijiii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10texImage3DEjiiiiiijj8GCGLSpanIKvLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10texImage3DEjiiiiiijjl'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13texSubImage3DEjiiiiiiijj8GCGLSpanIKvLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13texSubImage3DEjiiiiiiijjl'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17copyTexSubImage3DEjiiiiiiii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL20compressedTexImage3DEjijiiiii8GCGLSpanIKvLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL20compressedTexImage3DEjijiiiiil'/>
+<fun r='_ZN7WebCore17GraphicsContextGL23compressedTexSubImage3DEjiiiiiiiji8GCGLSpanIKvLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL23compressedTexSubImage3DEjiiiiiiijil'/>
+<fun r='_ZN7WebCore17GraphicsContextGL19getFragDataLocationEjRKN3WTF6StringE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10uniform1uiEij'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10uniform2uiEijj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10uniform3uiEijjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10uniform4uiEijjjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL11uniform1uivEi8GCGLSpanIKjLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL11uniform2uivEi8GCGLSpanIKjLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL11uniform3uivEi8GCGLSpanIKjLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL11uniform4uivEi8GCGLSpanIKjLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL18uniformMatrix2x3fvEih8GCGLSpanIKfLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL18uniformMatrix3x2fvEih8GCGLSpanIKfLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL18uniformMatrix2x4fvEih8GCGLSpanIKfLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL18uniformMatrix4x2fvEih8GCGLSpanIKfLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL18uniformMatrix3x4fvEih8GCGLSpanIKfLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL18uniformMatrix4x3fvEih8GCGLSpanIKfLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL15vertexAttribI4iEjiiii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL16vertexAttribI4ivEj8GCGLSpanIKiLm4EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL16vertexAttribI4uiEjjjjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17vertexAttribI4uivEj8GCGLSpanIKjLm4EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL20vertexAttribIPointerEjijil'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17drawRangeElementsEjjjijl'/>
+<fun r='_ZN7WebCore17GraphicsContextGL11drawBuffersE8GCGLSpanIKjLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13clearBufferivEji8GCGLSpanIKiLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL14clearBufferuivEji8GCGLSpanIKjLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13clearBufferfvEji8GCGLSpanIKfLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13clearBufferfiEjifi'/>
+<fun r='_ZN7WebCore17GraphicsContextGL11createQueryEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL11deleteQueryEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL7isQueryEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10beginQueryEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL8endQueryEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL8getQueryEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL16getQueryObjectuiEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13createSamplerEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13deleteSamplerEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9isSamplerEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL11bindSamplerEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17samplerParameteriEjji'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17samplerParameterfEjjf'/>
+<fun r='_ZN7WebCore17GraphicsContextGL20getSamplerParameterfEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL20getSamplerParameteriEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL9fenceSyncEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL6isSyncEP8__GLsync'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10deleteSyncEP8__GLsync'/>
+<fun r='_ZN7WebCore17GraphicsContextGL14clientWaitSyncEP8__GLsyncjm'/>
+<fun r='_ZN7WebCore17GraphicsContextGL8waitSyncEP8__GLsyncjl'/>
+<fun r='_ZN7WebCore17GraphicsContextGL8getSynciEP8__GLsyncj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL23createTransformFeedbackEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL23deleteTransformFeedbackEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL19isTransformFeedbackEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL21bindTransformFeedbackEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL22beginTransformFeedbackEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL20endTransformFeedbackEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL25transformFeedbackVaryingsEjRKN3WTF6VectorINS1_6StringELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL27getTransformFeedbackVaryingEjjRNS0_10ActiveInfoE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL22pauseTransformFeedbackEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL23resumeTransformFeedbackEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL14bindBufferBaseEjjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL15bindBufferRangeEjjjll'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17getUniformIndicesEjRKN3WTF6VectorINS1_6StringELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17getActiveUniformsEjRKN3WTF6VectorIjLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL20getUniformBlockIndexEjRKN3WTF6StringE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL25getActiveUniformBlockNameEjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL19uniformBlockBindingEjjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL23getActiveUniformBlockivEjjj8GCGLSpanIiLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL20multiDrawArraysANGLEEj8GCGLSpanIKiLm18446744073709551615EES3_i'/>
+<fun r='_ZN7WebCore17GraphicsContextGL29multiDrawArraysInstancedANGLEEj8GCGLSpanIKiLm18446744073709551615EES3_S3_i'/>
+<fun r='_ZN7WebCore17GraphicsContextGL22multiDrawElementsANGLEEj8GCGLSpanIKiLm18446744073709551615EEjS3_i'/>
+<fun r='_ZN7WebCore17GraphicsContextGL31multiDrawElementsInstancedANGLEEj8GCGLSpanIKiLm18446744073709551615EEjS3_S3_i'/>
+<fun r='_ZN7WebCore17GraphicsContextGL8getFloatEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10getBooleanEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10getIntegerEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL22getActiveUniformBlockiEjjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL18getInternalformatiEjjj'/>
+<fun r='_ZNK7WebCore17GraphicsContextGL17contextAttributesEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL20setContextAttributesERKNS_27GraphicsContextGLAttributesE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL27enablePreserveDrawingBufferEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13getExtensionsEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL7reshapeEii'/>
+<fun r='_ZN7WebCore17GraphicsContextGL20setContextVisibilityEb'/>
+<fun r='_ZNK7WebCore17GraphicsContextGL16isGLES2CompliantEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17synthesizeGLErrorEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL30moveErrorsToSyntheticErrorListEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL17prepareForDisplayEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL18markContextChangedEv'/>
+<fun r='_ZNK7WebCore17GraphicsContextGL15layerCompositedEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL21setBuffersToAutoClearEj'/>
+<fun r='_ZNK7WebCore17GraphicsContextGL21getBuffersToAutoClearEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL29paintRenderingResultsToCanvasERNS_11ImageBufferE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL34paintRenderingResultsToPixelBufferEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL30paintCompositedResultsToCanvasERNS_11ImageBufferE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL19markLayerCompositedEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL23simulateEventForTestingENS0_24SimulatedEventForTestingE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL20copyTextureFromMediaERNS_11MediaPlayerEjjijjjbb'/>
+<fun r='_ZNK7WebCore17GraphicsContextGL26getInternalFramebufferSizeEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL28getClearBitsByAttachmentTypeEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL20getClearBitsByFormatEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL22getChannelBitsByFormatEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL30computeFormatAndTypeParametersEjjPjS1_'/>
+<fun r='_ZN7WebCore17GraphicsContextGL23computeImageSizeInBytesEjjiiiRKNS0_16PixelStoreParamsEPjS4_S4_'/>
+<fun r='_ZN7WebCore17GraphicsContextGL18extractPixelBufferERKNS_11PixelBufferENS0_10DataFormatERKNS_7IntRectEiijjbbRN3WTF6VectorIhLm0ENS8_15CrashOnOverflowELm10728332'/>
+<fun r='_ZN7WebCore17GraphicsContextGL18extractTextureDataEjjjjRKNS0_16PixelStoreParamsEbbPKvRN3WTF6VectorIhLm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEE'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13packImageDataEPNS_5ImageEPKvjjbNS0_7AlphaOpENS0_10DataFormatEjjRKNS_7IntRectEijiRN3WTF6VectorIhLm0ENSA_15CrashOnOverfl10178803'/>
+<mbr r='WebCore::GraphicsContextGL::m_currentWidth' o='96' t='int'/>
+<mbr r='WebCore::GraphicsContextGL::m_currentHeight' o='128' t='int'/>
+<mbr r='WebCore::GraphicsContextGL::m_clients' o='192' t='HashSet&lt;WebCore::GraphicsContextGL::Client *&gt;'/>
+<mbr r='WebCore::GraphicsContextGL::m_attrs' o='256' t='WebCore::GraphicsContextGLAttributes'/>
+<fun r='_ZN7WebCore17GraphicsContextGL8getFloatEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10getBooleanEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL10getIntegerEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL22getActiveUniformBlockiEjjj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL18getInternalformatiEjjj'/>
+<use f='WebKit/Source/WebCore/page/Chrome.h' l='91' c='_ZNK7WebCore6Chrome23createGraphicsContextGLERKNS_27GraphicsContextGLAttributesE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/platform/graphics/MediaPlayerPrivate.h' l='172' c='_ZN7WebCore27MediaPlayerPrivateInterface33copyVideoTextureToPlatformTextureEPNS_17GraphicsContextGLEjjijjjbb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='211' c='_ZN7WebCore27MediaPlayerPrivateGStreamer33copyVideoTextureToPlatformTextureEPNS_17GraphicsContextGLEjjijjjbb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='3259' c='_ZN7WebCore27MediaPlayerPrivateGStreamer33copyVideoTextureToPlatformTextureEPNS_17GraphicsContextGLEjjijjjbb'/>
+<ovr f='WebKit/Source/WebCore/platform/graphics/opengl/GraphicsContextGLOpenGL.h' l='100' c='WebCore::GraphicsContextGLOpenGL'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opengl/GraphicsContextGLOpenGL.h' l='100'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLObject.h' l='52' c='_ZN7WebCore11WebGLObject12deleteObjectERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLObject.h' l='55' c='_ZN7WebCore11WebGLObject10onDetachedERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLObject.h' l='81' c='_ZN7WebCore11WebGLObject16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLObject.h' l='87' c='_ZNK7WebCore11WebGLObject21getAGraphicsContextGLEv'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLSharedObject.h' l='69' c='_ZNK7WebCore17WebGLSharedObject21getAGraphicsContextGLEv'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLBuffer.h' l='70' c='_ZN7WebCore11WebGLBuffer16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLContextObject.h' l='62' c='_ZNK7WebCore18WebGLContextObject21getAGraphicsContextGLEv'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.h' l='65' c='_ZN7WebCore16WebGLFramebuffer15WebGLAttachment10onDetachedERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.h' l='66' c='_ZN7WebCore16WebGLFramebuffer15WebGLAttachment6attachEPNS_17GraphicsContextGLEjj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.h' l='67' c='_ZN7WebCore16WebGLFramebuffer15WebGLAttachment8unattachEPNS_17GraphicsContextGLEjj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.h' l='100' c='_ZN7WebCore16WebGLFramebuffer8onAccessEPNS_17GraphicsContextGLEPPKc'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.h' l='130' c='_ZN7WebCore16WebGLFramebuffer16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.h' l='136' c='_ZN7WebCore16WebGLFramebuffer21initializeAttachmentsEPNS_17GraphicsContextGLEPPKc'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLProgram.h' l='96' c='_ZN7WebCore12WebGLProgram16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLProgram.h' l='98' c='_ZN7WebCore12WebGLProgram26cacheActiveAttribLocationsEPNS_17GraphicsContextGLE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderbuffer.h' l='68' c='_ZN7WebCore17WebGLRenderbuffer16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLTexture.h' l='93' c='_ZN7WebCore12WebGLTexture16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLVertexArrayObjectBase.h' l='84' c='_ZN7WebCore26WebGLVertexArrayObjectBase16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLVertexArrayObjectOES.h' l='40' c='_ZN7WebCore25WebGLVertexArrayObjectOES16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.h' l='386' c='_ZNK7WebCore25WebGLRenderingContextBase17graphicsContextGLEv'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.h' l='433' c='_ZN7WebCore25WebGLRenderingContextBaseC1ERNS_10CanvasBaseEON3WTF3RefINS_17GraphicsContextGLENS3_12RawPtrTraitsIS5_EEEENS_27GraphicsContextGLAttributesE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.h' l='541'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/GraphicsContextGLTextureMapper.cpp' l='178' c='_ZN7WebCore23GraphicsContextGLOpenGLC1ENS_27GraphicsContextGLAttributesEPNS_10HostWindowEPS0_'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContext.h' l='39' c='_ZN7WebCore21WebGLRenderingContext6createERNS_10CanvasBaseEON3WTF3RefINS_17GraphicsContextGLENS3_12RawPtrTraitsIS5_EEEENS_27GraphicsContextGLAttributesE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContext.h' l='56' c='_ZN7WebCore21WebGLRenderingContextC1ERNS_10CanvasBaseEON3WTF3RefINS_17GraphicsContextGLENS3_12RawPtrTraitsIS5_EEEENS_27GraphicsContextGLAttributesE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLShader.h' l='51' c='_ZN7WebCore11WebGLShader16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLDepthTexture.h' l='40' c='_ZN7WebCore17WebGLDepthTexture9supportedERNS_17GraphicsContextGLE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLQuery.h' l='52' c='_ZN7WebCore10WebGLQuery16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLSampler.h' l='45' c='_ZN7WebCore12WebGLSampler16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLSync.h' l='53' c='_ZN7WebCore9WebGLSync16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsContextGL.cpp' l='408' c='_ZN7WebCore17GraphicsContextGL6createERKNS_27GraphicsContextGLAttributesEPNS_10HostWindowE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsContextGL.cpp' l='410' c='_ZN7WebCore17GraphicsContextGL6createERKNS_27GraphicsContextGLAttributesEPNS_10HostWindowE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsContextGL.cpp' l='418' c='_ZN7WebCore17GraphicsContextGLC1ENS_27GraphicsContextGLAttributesEPS0_'/>
+<size>64</size>
+<fun r='_ZN7WebCore17GraphicsContextGL6createERKNS_27GraphicsContextGLAttributesEPNS_10HostWindowE'/>
+<fun r='_ZN7WebCore17GraphicsContextGLC1ENS_27GraphicsContextGLAttributesEPS0_'/>
+<fun r='_ZN7WebCore17GraphicsContextGL27enablePreserveDrawingBufferEv'/>
+<fun r='_ZN7WebCore17GraphicsContextGL28getClearBitsByAttachmentTypeEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL20getClearBitsByFormatEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL22getChannelBitsByFormatEj'/>
+<fun r='_ZN7WebCore17GraphicsContextGL30computeFormatAndTypeParametersEjjPjS1_'/>
+<fun r='_ZN7WebCore17GraphicsContextGL23computeImageSizeInBytesEjjiiiRKNS0_16PixelStoreParamsEPjS4_S4_'/>
+<fun r='_ZN7WebCore17GraphicsContextGL13packImageDataEPNS_5ImageEPKvjjbNS0_7AlphaOpENS0_10DataFormatEjjRKNS_7IntRectEijiRN3WTF6VectorIhLm0ENSA_15CrashOnOverfl10178803'/>
+<fun r='_ZN7WebCore17GraphicsContextGL18extractPixelBufferERKNS_11PixelBufferENS0_10DataFormatERKNS_7IntRectEiijjbbRN3WTF6VectorIhLm0ENS8_15CrashOnOverflowELm10728332'/>
+<fun r='_ZN7WebCore17GraphicsContextGL18extractTextureDataEjjjjRKNS0_16PixelStoreParamsEbbPKvRN3WTF6VectorIhLm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ConcreteImageBuffer.h' l='249' c='_ZNK7WebCore19ConcreteImageBuffer21copyToPlatformTextureERNS_17GraphicsContextGLEjjjbb'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/platform/graphics/MediaPlayer.cpp' l='1027' c='_ZN7WebCore11MediaPlayer33copyVideoTextureToPlatformTextureEPNS_17GraphicsContextGLEjjijjjbb'/>
+<use f='WebKit/Source/WebCore/page/Chrome.cpp' l='543' c='_ZNK7WebCore6Chrome23createGraphicsContextGLERKNS_27GraphicsContextGLAttributesE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLContextGroup.h' l='47' c='_ZN7WebCore17WebGLContextGroup21getAGraphicsContextGLEv'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLBuffer.cpp' l='59' c='_ZN7WebCore11WebGLBuffer16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLContextGroup.cpp' l='52' c='_ZN7WebCore17WebGLContextGroup21getAGraphicsContextGLEv'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLContextObject.cpp' l='64' c='_ZNK7WebCore18WebGLContextObject21getAGraphicsContextGLEv'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLDepthTexture.cpp' l='53' c='_ZN7WebCore17WebGLDepthTexture9supportedERNS_17GraphicsContextGLE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLDrawBuffers.cpp' l='98' c='_ZN7WebCore16WebGLDrawBuffers26satisfiesWebGLRequirementsERNS_25WebGLRenderingContextBaseE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.cpp' l='63' c='_ZN7WebCore12_GLOBAL__N_127WebGLRenderbufferAttachment10onDetachedERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.cpp' l='64' c='_ZN7WebCore12_GLOBAL__N_127WebGLRenderbufferAttachment6attachEPNS_17GraphicsContextGLEjj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.cpp' l='65' c='_ZN7WebCore12_GLOBAL__N_127WebGLRenderbufferAttachment8unattachEPNS_17GraphicsContextGLEjj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.cpp' l='126' c='_ZN7WebCore12_GLOBAL__N_127WebGLRenderbufferAttachment10onDetachedERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.cpp' l='131' c='_ZN7WebCore12_GLOBAL__N_127WebGLRenderbufferAttachment6attachEPNS_17GraphicsContextGLEjj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.cpp' l='137' c='_ZN7WebCore12_GLOBAL__N_127WebGLRenderbufferAttachment8unattachEPNS_17GraphicsContextGLEjj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.cpp' l='169' c='_ZN7WebCore12_GLOBAL__N_122WebGLTextureAttachment10onDetachedERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.cpp' l='170' c='_ZN7WebCore12_GLOBAL__N_122WebGLTextureAttachment6attachEPNS_17GraphicsContextGLEjj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.cpp' l='171' c='_ZN7WebCore12_GLOBAL__N_122WebGLTextureAttachment8unattachEPNS_17GraphicsContextGLEjj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.cpp' l='238' c='_ZN7WebCore12_GLOBAL__N_122WebGLTextureAttachment10onDetachedERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.cpp' l='243' c='_ZN7WebCore12_GLOBAL__N_122WebGLTextureAttachment6attachEPNS_17GraphicsContextGLEjj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.cpp' l='252' c='_ZN7WebCore12_GLOBAL__N_122WebGLTextureAttachment8unattachEPNS_17GraphicsContextGLEjj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.cpp' l='574' c='_ZN7WebCore16WebGLFramebuffer8onAccessEPNS_17GraphicsContextGLEPPKc'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.cpp' l='590' c='_ZN7WebCore16WebGLFramebuffer16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.cpp' l='599' c='_ZN7WebCore16WebGLFramebuffer21initializeAttachmentsEPNS_17GraphicsContextGLEPPKc'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLObject.cpp' l='61' c='_ZN7WebCore11WebGLObject12deleteObjectERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLObject.cpp' l='87' c='_ZN7WebCore11WebGLObject10onDetachedERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLProgram.cpp' l='103' c='_ZN7WebCore12WebGLProgram16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLProgram.cpp' l='216' c='_ZN7WebCore12WebGLProgram26cacheActiveAttribLocationsEPNS_17GraphicsContextGLE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLProgram.cpp' l='241' c='_ZN7WebCore12WebGLProgram17cacheInfoIfNeededEv'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLQuery.cpp' l='57' c='_ZN7WebCore10WebGLQuery16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderbuffer.cpp' l='64' c='_ZN7WebCore17WebGLRenderbuffer16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContext.cpp' l='102' c='_ZN7WebCore21WebGLRenderingContext6createERNS_10CanvasBaseEON3WTF3RefINS_17GraphicsContextGLENS3_12RawPtrTraitsIS5_EEEENS_27GraphicsContextGLAttributesE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContext.cpp' l='118' c='_ZN7WebCore21WebGLRenderingContextC1ERNS_10CanvasBaseEON3WTF3RefINS_17GraphicsContextGLENS3_12RawPtrTraitsIS5_EEEENS_27GraphicsContextGLAttributesE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='648' c='_ZN7WebCoreL24isHighPerformanceContextERKN3WTF6RefPtrINS_17GraphicsContextGLENS0_12RawPtrTraitsIS2_EENS0_21DefaultRefDerefTraitsIS2_EEEE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='777' c='_ZN7WebCore25WebGLRenderingContextBaseC1ERNS_10CanvasBaseEON3WTF3RefINS_17GraphicsContextGLENS3_12RawPtrTraitsIS5_EEEENS_27GraphicsContextGLAttributesE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='7582' c='_ZN7WebCore25WebGLRenderingContextBase19maybeRestoreContextEv'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLSampler.cpp' l='57' c='_ZN7WebCore12WebGLSampler16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLShader.cpp' l='61' c='_ZN7WebCore11WebGLShader16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLSharedObject.cpp' l='80' c='_ZNK7WebCore17WebGLSharedObject21getAGraphicsContextGLEv'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLSync.cpp' l='61' c='_ZN7WebCore9WebGLSync16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLTexture.cpp' l='98' c='_ZN7WebCore12WebGLTexture16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLVertexArrayObjectOES.cpp' l='62' c='_ZN7WebCore25WebGLVertexArrayObjectOES16deleteObjectImplERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLEj'/>
+<size>64</size>

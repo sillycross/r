@@ -1,0 +1,9 @@
+<def f='WebKit/Source/WebCore/page/FrameViewLayoutContext.h' l='161' type='void WebCore::FrameViewLayoutContext::disablePaintOffsetCache()'/>
+<doc f='WebKit/Source/WebCore/page/FrameViewLayoutContext.h' l='156'>// Suspends the LayoutState optimization. Used under transforms that cannot be represented by
+    // LayoutState (common in SVG) and when manipulating the render tree during layout in ways
+    // that can trigger repaint of a non-child (e.g. when a list item moves its list marker around).
+    // Note that even when disabled, LayoutState is still used to store layoutDelta.
+    // These functions may only be accessed by LayoutStateMaintainer or LayoutStateDisabler.</doc>
+<use f='WebKit/Source/WebCore/rendering/RenderLayoutState.cpp' l='277' u='c' c='_ZN7WebCore21LayoutStateMaintainerC1ERNS_9RenderBoxENS_10LayoutSizeEbNS_10LayoutUnitEb'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayoutState.cpp' l='292' u='c' c='_ZN7WebCore19LayoutStateDisablerC1ERNS_22FrameViewLayoutContextE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayoutState.cpp' l='315' u='c' c='_ZN7WebCore28SubtreeLayoutStateMaintainerC1EPNS_13RenderElementE'/>

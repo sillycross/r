@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderTheme.h' l='69' type='void WebCore::RenderTheme::adjustStyle(WebCore::RenderStyle &amp; , const WebCore::Element * , const WebCore::RenderStyle * userAgentAppearanceStyle)'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderTheme.h' l='64'>// This method is called whenever style has been computed for an element and the appearance
+    // property has been set to a value other than &quot;none&quot;.  The theme should map in all of the appropriate
+    // metrics and defaults given the contents of the style.  This includes sophisticated operations like
+    // selection of control size based off the font, the disabling of appearance when certain other properties like
+    // &quot;border&quot; are set, or if the appearance is not supported by the theme.</doc>
+<def f='WebKit/Source/WebCore/rendering/RenderTheme.cpp' l='78' ll='274' type='void WebCore::RenderTheme::adjustStyle(WebCore::RenderStyle &amp; style, const WebCore::Element * element, const WebCore::RenderStyle * userAgentAppearanceStyle)'/>
+<use f='WebKit/Source/WebCore/style/StyleAdjuster.cpp' l='475' u='c' c='_ZNK7WebCore5Style8Adjuster6adjustERNS_11RenderStyleEPKS2_'/>

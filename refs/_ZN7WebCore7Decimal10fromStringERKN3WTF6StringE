@@ -1,0 +1,11 @@
+<dec f='WebKit/Source/WebCore/platform/Decimal.h' l='152' type='static WebCore::Decimal WebCore::Decimal::fromString(const WTF::String &amp; )'/>
+<doc f='WebKit/Source/WebCore/platform/Decimal.h' l='145'>// fromString supports following syntax EBNF:
+    //  number ::= sign? digit+ (&apos;.&apos; digit*) (exponent-marker sign? digit+)?
+    //          | sign? &apos;.&apos; digit+ (exponent-marker sign? digit+)?
+    //  sign ::= &apos;+&apos; | &apos;-&apos;
+    //  exponent-marker ::= &apos;e&apos; | &apos;E&apos;
+    //  digit ::= &apos;0&apos; | &apos;1&apos; | ... | &apos;9&apos;
+    // Note: fromString doesn&apos;t support &quot;infinity&quot; and &quot;nan&quot;.</doc>
+<use f='WebKit/Source/WebCore/platform/Decimal.cpp' l='687' u='c' c='_ZN7WebCore7Decimal10fromDoubleEd'/>
+<def f='WebKit/Source/WebCore/platform/Decimal.cpp' l='696' ll='898' type='static WebCore::Decimal WebCore::Decimal::fromString(const WTF::String &amp; str)'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLParserIdioms.cpp' l='104' u='c' c='_ZN7WebCore27parseToDecimalForNumberTypeERKN3WTF6StringERKNS_7DecimalE'/>

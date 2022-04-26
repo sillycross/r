@@ -1,0 +1,8 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ArrayBuffer.h' l='117' type='static Ref&lt;JSC::ArrayBuffer&gt; JSC::ArrayBuffer::createAdopted(const void * data, unsigned int byteLength)'/>
+<dec f='WebKit/Source/JavaScriptCore/runtime/ArrayBuffer.h' l='117' type='static Ref&lt;JSC::ArrayBuffer&gt; JSC::ArrayBuffer::createAdopted(const void * data, unsigned int byteLength)'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/ArrayBuffer.cpp' l='211' ll='215' type='static Ref&lt;JSC::ArrayBuffer&gt; JSC::ArrayBuffer::createAdopted(const void * data, unsigned int byteLength)'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/ArrayBuffer.cpp' l='207'>// FIXME: We cannot use this except if the memory comes from the cage.
+// Current this is only used from:
+// - JSGenericTypedArrayView&lt;&gt;::slowDownAndWasteMemory. But in that case, the memory should have already come
+//   from the cage.</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.cpp' l='284' u='c' c='_ZN3JSC17JSArrayBufferView22slowDownAndWasteMemoryEv'/>

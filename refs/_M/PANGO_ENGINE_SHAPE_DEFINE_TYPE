@@ -1,0 +1,28 @@
+<dec f='include/pango-1.0/pango/pango-engine.h' l='428'/>
+<doc f='include/pango-1.0/pango/pango-engine.h' l='401'>/**
+ * PANGO_ENGINE_SHAPE_DEFINE_TYPE:
+ * @name: Name of the the type to register (for example:, &lt;literal&gt;ArabicEngineFc&lt;/literal&gt;
+ * @prefix: Prefix for symbols that will be defined (for example:, &lt;literal&gt;arabic_engine_fc&lt;/literal&gt;
+ * @class_init: (nullable): Class initialization function for the new type, or %NULL
+ * @instance_init: (nullable): Instance initialization function for the new type, or %NULL
+ *
+ * Outputs the necessary code for GObject type registration for a
+ * #PangoEngineShape class defined in a module. Two static symbols
+ * are defined.
+ *
+ * &lt;programlisting&gt;
+ *  static GType &lt;replaceable&gt;prefix&lt;/replaceable&gt;_type;
+ *  static void &lt;replaceable&gt;prefix&lt;/replaceable&gt;_register_type (GTypeModule module);
+ * &lt;/programlisting&gt;
+ *
+ * The &lt;function&gt;&lt;replaceable&gt;prefix&lt;/replaceable&gt;_register_type()&lt;/function&gt;
+ * function should be called in your script_engine_init() function for
+ * each type that your module implements, and then your script_engine_create()
+ * function can create instances of the object as follows:
+ *
+ * &lt;informalexample&gt;&lt;programlisting&gt;
+ *  PangoEngine *engine = g_object_new (&lt;replaceable&gt;prefix&lt;/replaceable&gt;_type, NULL);
+ * &lt;/programlisting&gt;&lt;/informalexample&gt;
+ *
+ * Deprecated: 1.38
+ **/</doc>

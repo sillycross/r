@@ -1,0 +1,257 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='78' ll='436'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='114' c='_ZN3JSC16SymbolTableEntry4FastC1ERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='163'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='191' c='_ZN3JSC16SymbolTableEntryC1ERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='197' c='_ZN3JSC16SymbolTableEntryaSERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='197' c='_ZN3JSC16SymbolTableEntryaSERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='206' c='_ZN3JSC16SymbolTableEntryC1EOS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='212' c='_ZN3JSC16SymbolTableEntryaSEOS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='212' c='_ZN3JSC16SymbolTableEntryaSEOS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='218' c='_ZN3JSC16SymbolTableEntry4swapERS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='350' c='_ZN3JSC16SymbolTableEntry8copySlowERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='350' c='_ZN3JSC16SymbolTableEntry8copySlowERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='438'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='449'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='453'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='488' c='_ZN3JSC11SymbolTable3getERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='493' c='_ZN3JSC11SymbolTable3getEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='499' c='_ZN3JSC11SymbolTable9inlineGetERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='504' c='_ZN3JSC11SymbolTable9inlineGetEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='699' c='_ZN3JSC11SymbolTable8entryForERKNS_18ConcurrentJSLockerENS_11ScopeOffsetE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSSymbolTableObject.h' l='102' c='_ZN3JSC14symbolTableGetEPT_NS_12PropertyNameERNS_16SymbolTableEntryERNS_18PropertyDescriptorE'/>
+<size>8</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='52'>// The bit twiddling in this class assumes that every register index is a
+// reasonably small positive or negative number, and therefore has its high
+// four bits all set or all unset.
+
+// In addition to implementing semantics-mandated variable attributes and
+// implementation-mandated variable indexing, this class also implements
+// watchpoints to be used for JIT optimizations. Because watchpoints are
+// meant to be relatively rare, this class optimizes heavily for the case
+// that they are not being used. To that end, this class uses the thin-fat
+// idiom: either it is thin, in which case it contains an in-place encoded
+// word that consists of attributes, the index, and a bit saying that it is
+// thin; or it is fat, in which case it contains a pointer to a malloc&apos;d
+// data structure and a bit saying that it is fat. The malloc&apos;d data
+// structure will be malloced a second time upon copy, to preserve the
+// property that in-place edits to SymbolTableEntry do not manifest in any
+// copies. However, the malloc&apos;d FatEntry data structure contains a ref-
+// counted pointer to a shared WatchpointSet. Thus, in-place edits of the
+// WatchpointSet will manifest in all copies. Here&apos;s a picture:
+//
+// SymbolTableEntry --&gt; FatEntry --&gt; WatchpointSet
+//
+// If you make a copy of a SymbolTableEntry, you will have:
+//
+// original: SymbolTableEntry --&gt; FatEntry --&gt; WatchpointSet
+// copy:     SymbolTableEntry --&gt; FatEntry -----^</doc>
+<fun r='_ZN3JSC16SymbolTableEntry17varOffsetFromBitsEl'/>
+<fun r='_ZN3JSC16SymbolTableEntry19scopeOffsetFromBitsEl'/>
+<fun r='_ZN3JSC16SymbolTableEntryC1Ev'/>
+<fun r='_ZN3JSC16SymbolTableEntryC1ENS_9VarOffsetE'/>
+<fun r='_ZN3JSC16SymbolTableEntryC1ENS_9VarOffsetEj'/>
+<fun r='_ZN3JSC16SymbolTableEntryD1Ev'/>
+<fun r='_ZN3JSC16SymbolTableEntryC1ERKS0_'/>
+<fun r='_ZN3JSC16SymbolTableEntryaSERKS0_'/>
+<fun r='_ZN3JSC16SymbolTableEntryC1EOS0_'/>
+<fun r='_ZN3JSC16SymbolTableEntryaSEOS0_'/>
+<fun r='_ZN3JSC16SymbolTableEntry4swapERS0_'/>
+<fun r='_ZNK3JSC16SymbolTableEntry6isNullEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry9varOffsetEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry11isWatchableEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry11scopeOffsetEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry7getFastEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry7getFastERb'/>
+<fun r='_ZNK3JSC16SymbolTableEntry13getAttributesEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry11setReadOnlyEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry10isReadOnlyEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry12constantModeEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry10isDontEnumEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry15disableWatchingERNS_2VME'/>
+<fun r='_ZN3JSC16SymbolTableEntry14prepareToWatchEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry13watchpointSetEv'/>
+<smbr r='JSC::SymbolTableEntry::SlimFlag' t='const intptr_t'/>
+<smbr r='JSC::SymbolTableEntry::ReadOnlyFlag' t='const intptr_t'/>
+<smbr r='JSC::SymbolTableEntry::DontEnumFlag' t='const intptr_t'/>
+<smbr r='JSC::SymbolTableEntry::NotNullFlag' t='const intptr_t'/>
+<smbr r='JSC::SymbolTableEntry::KindBitsMask' t='const intptr_t'/>
+<smbr r='JSC::SymbolTableEntry::ScopeKindBits' t='const intptr_t'/>
+<smbr r='JSC::SymbolTableEntry::UnwatchableScopeKindBits' t='const intptr_t'/>
+<smbr r='JSC::SymbolTableEntry::StackKindBits' t='const intptr_t'/>
+<smbr r='JSC::SymbolTableEntry::DirectArgumentKindBits' t='const intptr_t'/>
+<smbr r='JSC::SymbolTableEntry::FlagBits' t='const intptr_t'/>
+<fun r='_ZN3JSC16SymbolTableEntry8copySlowERKS0_'/>
+<fun r='_ZNK3JSC16SymbolTableEntry5isFatEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry8fatEntryEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry8fatEntryEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry7inflateEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry11inflateSlowEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry4bitsEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry4bitsEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry12freeFatEntryEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry16freeFatEntrySlowEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry4packENS_9VarOffsetEbbb'/>
+<fun r='_ZN3JSC16SymbolTableEntry16isValidVarOffsetENS_9VarOffsetE'/>
+<mbr r='JSC::SymbolTableEntry::m_bits' o='0' t='intptr_t'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='78' ll='436'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='114' c='_ZN3JSC16SymbolTableEntry4FastC1ERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='163'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='191' c='_ZN3JSC16SymbolTableEntryC1ERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='197' c='_ZN3JSC16SymbolTableEntryaSERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='197' c='_ZN3JSC16SymbolTableEntryaSERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='206' c='_ZN3JSC16SymbolTableEntryC1EOS0_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='212' c='_ZN3JSC16SymbolTableEntryaSEOS0_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='212' c='_ZN3JSC16SymbolTableEntryaSEOS0_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='218' c='_ZN3JSC16SymbolTableEntry4swapERS0_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='350' c='_ZN3JSC16SymbolTableEntry8copySlowERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='350' c='_ZN3JSC16SymbolTableEntry8copySlowERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='438'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='449'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='453'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='488' c='_ZN3JSC11SymbolTable3getERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='493' c='_ZN3JSC11SymbolTable3getEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='499' c='_ZN3JSC11SymbolTable9inlineGetERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='504' c='_ZN3JSC11SymbolTable9inlineGetEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='699' c='_ZN3JSC11SymbolTable8entryForERKNS_18ConcurrentJSLockerENS_11ScopeOffsetE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSymbolTableObject.h' l='102' c='_ZN3JSC14symbolTableGetEPT_NS_12PropertyNameERNS_16SymbolTableEntryERNS_18PropertyDescriptorE'/>
+<size>8</size>
+<doc f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='52'>// The bit twiddling in this class assumes that every register index is a
+// reasonably small positive or negative number, and therefore has its high
+// four bits all set or all unset.
+
+// In addition to implementing semantics-mandated variable attributes and
+// implementation-mandated variable indexing, this class also implements
+// watchpoints to be used for JIT optimizations. Because watchpoints are
+// meant to be relatively rare, this class optimizes heavily for the case
+// that they are not being used. To that end, this class uses the thin-fat
+// idiom: either it is thin, in which case it contains an in-place encoded
+// word that consists of attributes, the index, and a bit saying that it is
+// thin; or it is fat, in which case it contains a pointer to a malloc&apos;d
+// data structure and a bit saying that it is fat. The malloc&apos;d data
+// structure will be malloced a second time upon copy, to preserve the
+// property that in-place edits to SymbolTableEntry do not manifest in any
+// copies. However, the malloc&apos;d FatEntry data structure contains a ref-
+// counted pointer to a shared WatchpointSet. Thus, in-place edits of the
+// WatchpointSet will manifest in all copies. Here&apos;s a picture:
+//
+// SymbolTableEntry --&gt; FatEntry --&gt; WatchpointSet
+//
+// If you make a copy of a SymbolTableEntry, you will have:
+//
+// original: SymbolTableEntry --&gt; FatEntry --&gt; WatchpointSet
+// copy:     SymbolTableEntry --&gt; FatEntry -----^</doc>
+<fun r='_ZN3JSC16SymbolTableEntry17varOffsetFromBitsEl'/>
+<fun r='_ZN3JSC16SymbolTableEntry19scopeOffsetFromBitsEl'/>
+<fun r='_ZN3JSC16SymbolTableEntryC1Ev'/>
+<fun r='_ZN3JSC16SymbolTableEntryC1ENS_9VarOffsetE'/>
+<fun r='_ZN3JSC16SymbolTableEntryC1ENS_9VarOffsetEj'/>
+<fun r='_ZN3JSC16SymbolTableEntryD1Ev'/>
+<fun r='_ZN3JSC16SymbolTableEntryC1ERKS0_'/>
+<fun r='_ZN3JSC16SymbolTableEntryaSERKS0_'/>
+<fun r='_ZN3JSC16SymbolTableEntryC1EOS0_'/>
+<fun r='_ZN3JSC16SymbolTableEntryaSEOS0_'/>
+<fun r='_ZN3JSC16SymbolTableEntry4swapERS0_'/>
+<fun r='_ZNK3JSC16SymbolTableEntry6isNullEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry9varOffsetEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry11isWatchableEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry11scopeOffsetEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry7getFastEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry7getFastERb'/>
+<fun r='_ZNK3JSC16SymbolTableEntry13getAttributesEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry11setReadOnlyEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry10isReadOnlyEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry12constantModeEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry10isDontEnumEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry15disableWatchingERNS_2VME'/>
+<fun r='_ZN3JSC16SymbolTableEntry14prepareToWatchEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry13watchpointSetEv'/>
+<smbr r='JSC::SymbolTableEntry::SlimFlag' t='const intptr_t'/>
+<smbr r='JSC::SymbolTableEntry::ReadOnlyFlag' t='const intptr_t'/>
+<smbr r='JSC::SymbolTableEntry::DontEnumFlag' t='const intptr_t'/>
+<smbr r='JSC::SymbolTableEntry::NotNullFlag' t='const intptr_t'/>
+<smbr r='JSC::SymbolTableEntry::KindBitsMask' t='const intptr_t'/>
+<smbr r='JSC::SymbolTableEntry::ScopeKindBits' t='const intptr_t'/>
+<smbr r='JSC::SymbolTableEntry::UnwatchableScopeKindBits' t='const intptr_t'/>
+<smbr r='JSC::SymbolTableEntry::StackKindBits' t='const intptr_t'/>
+<smbr r='JSC::SymbolTableEntry::DirectArgumentKindBits' t='const intptr_t'/>
+<smbr r='JSC::SymbolTableEntry::FlagBits' t='const intptr_t'/>
+<fun r='_ZN3JSC16SymbolTableEntry8copySlowERKS0_'/>
+<fun r='_ZNK3JSC16SymbolTableEntry5isFatEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry8fatEntryEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry8fatEntryEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry7inflateEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry11inflateSlowEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry4bitsEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry4bitsEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry12freeFatEntryEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry16freeFatEntrySlowEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry4packENS_9VarOffsetEbbb'/>
+<fun r='_ZN3JSC16SymbolTableEntry16isValidVarOffsetENS_9VarOffsetE'/>
+<mbr r='JSC::SymbolTableEntry::m_bits' o='0' t='intptr_t'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssemblyModule.cpp' l='80' c='_ZN3JSC19JSWebAssemblyModule14finishCreationERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssemblyModule.cpp' l='85' c='_ZN3JSC19JSWebAssemblyModule14finishCreationERNS_2VME'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/WebAssemblyModuleRecord.cpp' l='185' c='_ZN3JSC23WebAssemblyModuleRecord8linkImplEPNS_14JSGlobalObjectEPNS_8JSObjectENS_4Wasm12CreationModeE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPathsInlines.h' l='61' c='_ZN3JSC15CommonSlowPaths24tryCachePutToScopeGlobalEPNS_14JSGlobalObjectEPNS_9CodeBlockERNS_12OpPutToScopeEPNS_8JSObjectERNS_15PutPropertySlotERKNS_10IdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPathsInlines.h' l='123' c='_ZN3JSC15CommonSlowPaths26tryCacheGetFromScopeGlobalEPNS_14JSGlobalObjectEPNS_9CodeBlockERNS_2VMERNS_14OpGetFromScopeEPNS_8JSObjectERNS_12PropertySlotERKNS_10IdentifierE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='1144' c='_ZN3JSC17BytecodeGenerator21variableForLocalEntryERKNS_10IdentifierERKNS_16SymbolTableEntryEib'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='542' c='_ZN3JSC17BytecodeGeneratorC1ERNS_2VMEPNS_12FunctionNodeEPNS_25UnlinkedFunctionCodeBlockEN3WTF9OptionSetINS_18CodeGenerationModeEEERKNS7_6RefPtrINS_18T13194151'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='561' c='_ZN3JSC17BytecodeGeneratorC1ERNS_2VMEPNS_12FunctionNodeEPNS_25UnlinkedFunctionCodeBlockEN3WTF9OptionSetINS_18CodeGenerationModeEEERKNS7_6RefPtrINS_18T13194151'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='579' c='_ZN3JSC17BytecodeGeneratorC1ERNS_2VMEPNS_12FunctionNodeEPNS_25UnlinkedFunctionCodeBlockEN3WTF9OptionSetINS_18CodeGenerationModeEEERKNS7_6RefPtrINS_18T13194151'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='586' c='_ZN3JSC17BytecodeGeneratorC1ERNS_2VMEPNS_12FunctionNodeEPNS_25UnlinkedFunctionCodeBlockEN3WTF9OptionSetINS_18CodeGenerationModeEEERKNS7_6RefPtrINS_18T13194151'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='1202' c='_ZN3JSC17BytecodeGenerator43initializeArrowFunctionContextScopeIfNeededEPNS_11SymbolTableEb'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='1207' c='_ZN3JSC17BytecodeGenerator43initializeArrowFunctionContextScopeIfNeededEPNS_11SymbolTableEb'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='1212' c='_ZN3JSC17BytecodeGenerator43initializeArrowFunctionContextScopeIfNeededEPNS_11SymbolTableEb'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='1896' c='_ZN3JSC17BytecodeGenerator27instantiateLexicalVariablesERKNS_19VariableEnvironmentENS0_9ScopeTypeEPNS_11SymbolTableENS0_17ScopeRegisterTypeET_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='1900' c='_ZN3JSC17BytecodeGenerator27instantiateLexicalVariablesERKNS_19VariableEnvironmentENS0_9ScopeTypeEPNS_11SymbolTableENS0_17ScopeRegisterTypeET_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='1953' c='_ZN3JSC17BytecodeGenerator27instantiateLexicalVariablesERKNS_19VariableEnvironmentENS0_9ScopeTypeEPNS_11SymbolTableENS0_17ScopeRegisterTypeET_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='1989' c='_ZN3JSC17BytecodeGenerator28emitPrefillStackTDZVariablesERKNS_19VariableEnvironmentEPNS_11SymbolTableE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='2137' c='_ZN3JSC17BytecodeGenerator30initializeBlockScopedFunctionsERNS_19VariableEnvironmentERN3WTF6VectorIPNS_20FunctionMetadataNodeELm0ENS3_15CrashOnOverflo1789034'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='2163' c='_ZN3JSC17BytecodeGenerator34hoistSloppyModeFunctionIfNecessaryERKNS_10IdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='2235' c='_ZN3JSC17BytecodeGenerator23popLexicalScopeInternalERNS_19VariableEnvironmentE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='2311' c='_ZN3JSC17BytecodeGenerator42prepareLexicalScopeForNextForLoopIterationEPNS_23VariableEnvironmentNodeEPNS_10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='2349' c='_ZN3JSC17BytecodeGenerator8variableERKNS_10IdentifierENS_18ThisResolutionTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='2372' c='_ZN3JSC17BytecodeGenerator21variableForLocalEntryERKNS_10IdentifierERKNS_16SymbolTableEntryEib'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='2389' c='_ZN3JSC17BytecodeGenerator14createVariableERKNS_10IdentifierENS_7VarKindEPNS_11SymbolTableENS0_20ExistingVariableModeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='2418' c='_ZN3JSC17BytecodeGenerator14createVariableERKNS_10IdentifierENS_7VarKindEPNS_11SymbolTableENS0_20ExistingVariableModeE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='7835' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='8013' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1367' c='_ZN3JSC3DFG5Graph24tryGetConstantClosureVarENS_7JSValueENS_11ScopeOffsetE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeGeneratorification.cpp' l='158' c='_ZN3JSC26BytecodeGeneratorification24storageForGeneratorLocalERNS_2VMEj'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalLexicalEnvironment.cpp' l='59' c='_ZN3JSC26JSGlobalLexicalEnvironment15isConstVariableEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='1604' c='_ZN3JSC14JSGlobalObject17defineOwnPropertyEPNS_8JSObjectEPS0_NS_12PropertyNameERKNS_18PropertyDescriptorEb'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='1635' c='_ZN3JSC14JSGlobalObject12addGlobalVarERKNS_10IdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='1640' c='_ZN3JSC14JSGlobalObject12addGlobalVarERKNS_10IdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='2261' c='_ZN3JSC14JSGlobalObject16addStaticGlobalsEPNS0_18GlobalPropertyInfoEi'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleNamespaceObject.cpp' l='113' c='_ZN3JSCL8getValueEPNS_19JSModuleEnvironmentENS_12PropertyNameERNS_11ScopeOffsetE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleRecord.cpp' l='199' c='_ZN3JSC14JSModuleRecord23instantiateDeclarationsEPNS_14JSGlobalObjectEPNS_23ModuleProgramExecutableENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleRecord.cpp' l='215' c='_ZN3JSC14JSModuleRecord23instantiateDeclarationsEPNS_14JSGlobalObjectEPNS_23ModuleProgramExecutableENS_7JSValueE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSScope.cpp' l='67' c='_ZN3JSCL14abstractAccessEPNS_14JSGlobalObjectEPNS_7JSScopeERKNS_10IdentifierENS_8GetOrPutEmRbRNS_9ResolveOpENS_18InitializationModeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSScope.cpp' l='92' c='_ZN3JSCL14abstractAccessEPNS_14JSGlobalObjectEPNS_7JSScopeERKNS_10IdentifierENS_8GetOrPutEmRbRNS_9ResolveOpENS_18InitializationModeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSScope.cpp' l='110' c='_ZN3JSCL14abstractAccessEPNS_14JSGlobalObjectEPNS_7JSScopeERKNS_10IdentifierENS_8GetOrPutEmRbRNS_9ResolveOpENS_18InitializationModeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSScope.cpp' l='143' c='_ZN3JSCL14abstractAccessEPNS_14JSGlobalObjectEPNS_7JSScopeERKNS_10IdentifierENS_8GetOrPutEmRbRNS_9ResolveOpENS_18InitializationModeE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/ProgramExecutable.cpp' l='185' c='_ZN3JSC17ProgramExecutable26initializeGlobalPropertiesERNS_2VMEPNS_14JSGlobalObjectEPNS_7JSScopeE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.cpp' l='44' c='_ZN3JSC16SymbolTableEntry8copySlowERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.cpp' l='44' c='_ZN3JSC16SymbolTableEntry8copySlowERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.cpp' l='137' c='_ZN3JSC11SymbolTable8entryForERKNS_18ConcurrentJSLockerENS_11ScopeOffsetE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.cpp' l='158' c='_ZN3JSC11SymbolTable14cloneScopePartERNS_2VME'/>
+<size>8</size>
+<fun r='_ZN3JSC16SymbolTableEntry8copySlowERKS0_'/>
+<fun r='_ZN3JSC16SymbolTableEntry16freeFatEntrySlowEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry14prepareToWatchEv'/>
+<fun r='_ZN3JSC16SymbolTableEntry11inflateSlowEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CachedTypes.cpp' l='1155'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CachedTypes.cpp' l='1157' c='_ZN3JSC22CachedSymbolTableEntry6encodeERNS_7EncoderERKNS_16SymbolTableEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CachedTypes.cpp' l='1162' c='_ZNK3JSC22CachedSymbolTableEntry6decodeERNS_7DecoderERNS_16SymbolTableEntryE'/>
+<size>8</size>

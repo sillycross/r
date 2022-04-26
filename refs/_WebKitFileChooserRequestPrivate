@@ -1,0 +1,32 @@
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitFileChooserRequest.h' l='41'/>
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitFileChooserRequest.cpp' l='64' ll='73'/>
+<size>48</size>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitFileChooserRequest.cpp' l='40'>/**
+ * SECTION: WebKitFileChooserRequest
+ * @Short_description: A request to open a file chooser
+ * @Title: WebKitFileChooserRequest
+ * @See_also: #WebKitWebView
+ *
+ * Whenever the user interacts with an &amp;lt;input type=&apos;file&apos; /&amp;gt;
+ * HTML element, WebKit will need to show a dialog to choose one or
+ * more files to be uploaded to the server along with the rest of the
+ * form data. For that to happen in a general way, instead of just
+ * opening a #GtkFileChooserDialog (which might be not desirable in
+ * some cases, which could prefer to use their own file chooser
+ * dialog), WebKit will fire the #WebKitWebView::run-file-chooser
+ * signal with a #WebKitFileChooserRequest object, which will allow
+ * the client application to specify the files to be selected, to
+ * inspect the details of the request (e.g. if multiple selection
+ * should be allowed) and to cancel the request, in case nothing was
+ * selected.
+ *
+ * In case the client application does not wish to handle this signal,
+ * WebKit will provide a default handler which will asynchronously run
+ * a regular #GtkFileChooserDialog for the user to interact with.
+ */</doc>
+<mbr r='_WebKitFileChooserRequestPrivate::parameters' o='0' t='RefPtr&lt;API::OpenPanelParameters&gt;'/>
+<mbr r='_WebKitFileChooserRequestPrivate::listener' o='64' t='RefPtr&lt;WebKit::WebOpenPanelResultListenerProxy&gt;'/>
+<mbr r='_WebKitFileChooserRequestPrivate::filter' o='128' t='GRefPtr&lt;GtkFileFilter&gt;'/>
+<mbr r='_WebKitFileChooserRequestPrivate::mimeTypes' o='192' t='GRefPtr&lt;GPtrArray&gt;'/>
+<mbr r='_WebKitFileChooserRequestPrivate::selectedFiles' o='256' t='GRefPtr&lt;GPtrArray&gt;'/>
+<mbr r='_WebKitFileChooserRequestPrivate::handledRequest' o='320' t='bool'/>

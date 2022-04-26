@@ -1,0 +1,32 @@
+<dec f='include/sqlite3.h' l='4503' type='const char * sqlite3_column_decltype(sqlite3_stmt * , int )'/>
+<doc f='include/sqlite3.h' l='4473'>/*
+** CAPI3REF: Declared Datatype Of A Query Result
+** METHOD: sqlite3_stmt
+**
+** ^(The first parameter is a [prepared statement].
+** If this statement is a [SELECT] statement and the Nth column of the
+** returned result set of that [SELECT] is a table column (not an
+** expression or subquery) then the declared type of the table
+** column is returned.)^  ^If the Nth column of the result set is an
+** expression or subquery, then a NULL pointer is returned.
+** ^The returned string is always UTF-8 encoded.
+**
+** ^(For example, given the database schema:
+**
+** CREATE TABLE t1(c1 VARIANT);
+**
+** and the following statement to be compiled:
+**
+** SELECT c1 + 1, c1 FROM t1;
+**
+** this routine would return the string &quot;VARIANT&quot; for the second result
+** column (i==1), and a NULL pointer for the first result column (i==0).)^
+**
+** ^SQLite uses dynamic run-time typing.  ^So just because a column
+** is declared to contain a particular type does not mean that the
+** data stored in that column is of the declared type.  SQLite is
+** strongly typed, but the typing is dynamic not static.  ^Type
+** is associated with individual values, not with the containers
+** used to hold those values.
+*/</doc>
+<use f='WebKit/Source/WebCore/platform/sql/SQLiteStatement.cpp' l='187' u='c' c='_ZN7WebCore15SQLiteStatement22isColumnDeclaredAsBlobEi'/>

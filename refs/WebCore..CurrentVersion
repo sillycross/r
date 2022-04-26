@@ -1,0 +1,19 @@
+<def f='WebKit/Source/WebCore/bindings/js/SerializedScriptValue.cpp' l='325' type='const unsigned int'/>
+<use f='WebKit/Source/WebCore/bindings/js/SerializedScriptValue.cpp' l='622' u='r' c='_ZN7WebCore15CloneSerializer9serializeEN3WTF10StringViewERNS1_6VectorIhLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/bindings/js/SerializedScriptValue.cpp' l='662' u='r' c='_ZN7WebCore15CloneSerializerC1EPN3JSC14JSGlobalObjectERN3WTF6VectorINS4_6RefPtrINS_11MessagePortENS4_12RawPtrTraitsIS7_EENS4_21DefaultRefDerefTraitsIS10493262'/>
+<use f='WebKit/Source/WebCore/bindings/js/SerializedScriptValue.cpp' l='2049' u='r' c='_ZN7WebCore17CloneDeserializer17deserializeStringERKN3WTF6VectorIhLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/bindings/js/SerializedScriptValue.cpp' l='2225' u='r' c='_ZNK7WebCore17CloneDeserializer7isValidEv'/>
+<use f='WebKit/Source/WebCore/bindings/js/SerializedScriptValue.cpp' l='4362' u='r' c='_ZN7WebCore21SerializedScriptValue17wireFormatVersionEv'/>
+<doc f='WebKit/Source/WebCore/bindings/js/SerializedScriptValue.cpp' l='312'>/* CurrentVersion tracks the serialization version so that persistent stores
+ * are able to correctly bail out in the case of encountering newer formats.
+ *
+ * Initial version was 1.
+ * Version 2. added the ObjectReferenceTag and support for serialization of cyclic graphs.
+ * Version 3. added the FalseObjectTag, TrueObjectTag, NumberObjectTag, StringObjectTag
+ * and EmptyStringObjectTag for serialization of Boolean, Number and String objects.
+ * Version 4. added support for serializing non-index properties of arrays.
+ * Version 5. added support for Map and Set types.
+ * Version 6. added support for 8-bit strings.
+ * Version 7. added support for File&apos;s lastModified attribute.
+ * Version 8. added support for ImageData&apos;s colorSpace attribute.
+ */</doc>

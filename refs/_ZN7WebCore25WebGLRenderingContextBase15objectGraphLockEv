@@ -1,0 +1,36 @@
+<dec f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.h' l='429' type='WTF::Lock &amp; WebCore::WebGLRenderingContextBase::objectGraphLock()'/>
+<doc f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.h' l='415'>// This lock must be held across all mutations of containers like
+    // Vectors, HashSets, etc. which contain RefPtr&lt;WebGLObject&gt;, and
+    // which are traversed by addMembersToOpaqueRoots() or any of the
+    // similarly-named methods in WebGLObject subclasses.
+    //
+    // FIXME: consider changing this mechanism to instead record when
+    // individual WebGLObjects are latched / unlatched in the
+    // context&apos;s state, either directly, or indirectly through
+    // container objects. If that were done, then the
+    // &quot;GenerateIsReachable=Impl&quot; in various WebGL objects&apos; IDL files
+    // would need to be changed to instead query whether the object is
+    // currently latched into the context - without traversing all of
+    // the latched objects to find the current one, which would be
+    // prohibitively expensive.</doc>
+<use f='WebKit/Source/WebCore/html/canvas/OESVertexArrayObject.cpp' l='66' u='c' c='_ZN7WebCore20OESVertexArrayObject20deleteVertexArrayOESEPNS_25WebGLVertexArrayObjectOESE'/>
+<use f='WebKit/Source/WebCore/html/canvas/OESVertexArrayObject.cpp' l='91' u='c' c='_ZN7WebCore20OESVertexArrayObject18bindVertexArrayOESEPNS_25WebGLVertexArrayObjectOESE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLContextGroup.cpp' l='66' u='c' c='_ZN7WebCore17WebGLContextGroup26objectGraphLockForAContextEv'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLContextObject.cpp' l='61' u='c' c='_ZN7WebCore18WebGLContextObject25objectGraphLockForContextEv'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='1355' u='c' c='_ZN7WebCore25WebGLRenderingContextBase12attachShaderERNS_12WebGLProgramERNS_11WebGLShaderE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='1455' u='c' c='_ZN7WebCore25WebGLRenderingContextBase10bindBufferEjPNS_11WebGLBufferE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='1468' u='c' c='_ZN7WebCore25WebGLRenderingContextBase15bindFramebufferEjPNS_16WebGLFramebufferE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='1483' u='c' c='_ZN7WebCore25WebGLRenderingContextBase16bindRenderbufferEjPNS_17WebGLRenderbufferE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='1499' u='c' c='_ZN7WebCore25WebGLRenderingContextBase11bindTextureEjPNS_12WebGLTextureE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='2056' u='c' c='_ZN7WebCore25WebGLRenderingContextBase12deleteBufferEPNS_11WebGLBufferE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='2066' u='c' c='_ZN7WebCore25WebGLRenderingContextBase17deleteFramebufferEPNS_16WebGLFramebufferE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='2089' u='c' c='_ZN7WebCore25WebGLRenderingContextBase13deleteProgramEPNS_12WebGLProgramE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='2098' u='c' c='_ZN7WebCore25WebGLRenderingContextBase18deleteRenderbufferEPNS_17WebGLRenderbufferE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='2113' u='c' c='_ZN7WebCore25WebGLRenderingContextBase12deleteShaderEPNS_11WebGLShaderE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='2119' u='c' c='_ZN7WebCore25WebGLRenderingContextBase13deleteTextureEPNS_12WebGLTextureE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='2181' u='c' c='_ZN7WebCore25WebGLRenderingContextBase12detachShaderERNS_12WebGLProgramERNS_11WebGLShaderE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='6055' u='c' c='_ZN7WebCore25WebGLRenderingContextBase10useProgramEPNS_12WebGLProgramE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='6122' u='c' c='_ZN7WebCore25WebGLRenderingContextBase19vertexAttribPointerEjijhix'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='6317' u='c' c='_ZN7WebCore25WebGLRenderingContextBase25detachAndRemoveAllObjectsEv'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='7968' u='c' c='_ZN7WebCore25WebGLRenderingContextBase23addMembersToOpaqueRootsERN3JSC19AbstractSlotVisitorE'/>
+<def f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='8000' ll='8003' type='WTF::Lock &amp; WebCore::WebGLRenderingContextBase::objectGraphLock()'/>

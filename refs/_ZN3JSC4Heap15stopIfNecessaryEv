@@ -1,0 +1,47 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='363' type='void JSC::Heap::stopIfNecessary()'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='345'>// This is like a super optimized way of saying:
+    //
+    //     releaseAccess()
+    //     acquireAccess()
+    //
+    // The fast path is an inlined relaxed load and branch. The slow path will block the mutator if
+    // the GC wants to do bad things to the heap.
+    //
+    // All allocations logically call this. As an optimization to improve GC progress, you can call
+    // this anywhere that you can afford a load-branch and where an object allocation would have been
+    // safe.
+    //
+    // The GC will also push a stopIfNecessary() event onto the runloop of the thread that
+    // instantiated the VM whenever it wants the mutator to stop. This means that if you never block
+    // but instead use the runloop to wait for events, then you could safely run in a mode where the
+    // mutator has permanent heap access (like the DOM does). If you have good event handling
+    // discipline (i.e. you don&apos;t block the runloop) then you can be sure that stopIfNecessary() will
+    // already be called for you at the right times.</doc>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapInlines.h' l='264' ll='271' type='void JSC::Heap::stopIfNecessary()'/>
+<dec f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='363' type='void JSC::Heap::stopIfNecessary()'/>
+<def f='WebKit/Source/JavaScriptCore/heap/HeapInlines.h' l='264' ll='271' type='void JSC::Heap::stopIfNecessary()'/>
+<doc f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='345'>// This is like a super optimized way of saying:
+    //
+    //     releaseAccess()
+    //     acquireAccess()
+    //
+    // The fast path is an inlined relaxed load and branch. The slow path will block the mutator if
+    // the GC wants to do bad things to the heap.
+    //
+    // All allocations logically call this. As an optimization to improve GC progress, you can call
+    // this anywhere that you can afford a load-branch and where an object allocation would have been
+    // safe.
+    //
+    // The GC will also push a stopIfNecessary() event onto the runloop of the thread that
+    // instantiated the VM whenever it wants the mutator to stop. This means that if you never block
+    // but instead use the runloop to wait for events, then you could safely run in a mode where the
+    // mutator has permanent heap access (like the DOM does). If you have good event handling
+    // discipline (i.e. you don&apos;t block the runloop) then you can be sure that stopIfNecessary() will
+    // already be called for you at the right times.</doc>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='1071' u='c' c='_ZN3JSC4Heap10collectNowENS_15SynchronousnessENS_9GCRequestE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='1912' u='c' c='_ZN3JSC4Heap17acquireAccessSlowEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='2083' u='c' c='_ZN3JSC4Heap17requestCollectionENS_9GCRequestE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='2599' u='c' c='_ZN3JSC4Heap25collectIfNecessaryOrDeferEPNS_17GCDeferralContextE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='2623' u='c' c='_ZN3JSC4Heap25collectIfNecessaryOrDeferEPNS_17GCDeferralContextE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IncrementalSweeper.cpp' l='76' u='c' c='_ZN3JSC18IncrementalSweeper14sweepNextBlockERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/heap/StopIfNecessaryTimer.cpp' l='43' u='c' c='_ZN3JSC20StopIfNecessaryTimer6doWorkERNS_2VME'/>

@@ -1,0 +1,30 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Watchpoint.h' l='105'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Watchpoint.h' l='91'>// Really unfortunately, we do not have the way to dispatch appropriate destructor in base class&apos; destructor
+// based on enum type. If we call destructor explicitly in the base class, it ends up calling the base destructor
+// twice. C++20 allows this by using std::std::destroying_delete_t. But we are not using C++20 right now.
+//
+// Because we cannot dispatch destructors of derived classes in the destructor of the base class, what it means is,
+// 1. Calling Watchpoint::~Watchpoint directly is illegal.
+// 2. `delete watchpoint` where watchpoint is non-final derived class is illegal. If watchpoint is final derived class, it works.
+// 3. If we really want to do (2), we need to call `watchpoint-&gt;destroy()` instead, and dispatch an appropriate destructor in Watchpoint::destroy.
+//
+// Luckily, none of our derived watchpoint classes have members which require destructors. So we do not dispatch
+// the destructor call to the drived class in the base class. If it becomes really required, we can introduce
+// a custom deleter for some classes which directly call &quot;delete&quot; to the allocated non-final Watchpoint class
+// (e.g. std::unique_ptr&lt;Watchpoint&gt;, RefPtr&lt;Watchpoint&gt;), and call Watchpoint::destroy instead of &quot;delete&quot;
+// operator. But since we do not require it for now, we are doing the simplest thing.</doc>
+<dec f='WebKit/Source/JavaScriptCore/bytecode/Watchpoint.h' l='105'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/Watchpoint.h' l='91'>// Really unfortunately, we do not have the way to dispatch appropriate destructor in base class&apos; destructor
+// based on enum type. If we call destructor explicitly in the base class, it ends up calling the base destructor
+// twice. C++20 allows this by using std::std::destroying_delete_t. But we are not using C++20 right now.
+//
+// Because we cannot dispatch destructors of derived classes in the destructor of the base class, what it means is,
+// 1. Calling Watchpoint::~Watchpoint directly is illegal.
+// 2. `delete watchpoint` where watchpoint is non-final derived class is illegal. If watchpoint is final derived class, it works.
+// 3. If we really want to do (2), we need to call `watchpoint-&gt;destroy()` instead, and dispatch an appropriate destructor in Watchpoint::destroy.
+//
+// Luckily, none of our derived watchpoint classes have members which require destructors. So we do not dispatch
+// the destructor call to the drived class in the base class. If it becomes really required, we can introduce
+// a custom deleter for some classes which directly call &quot;delete&quot; to the allocated non-final Watchpoint class
+// (e.g. std::unique_ptr&lt;Watchpoint&gt;, RefPtr&lt;Watchpoint&gt;), and call Watchpoint::destroy instead of &quot;delete&quot;
+// operator. But since we do not require it for now, we are doing the simplest thing.</doc>

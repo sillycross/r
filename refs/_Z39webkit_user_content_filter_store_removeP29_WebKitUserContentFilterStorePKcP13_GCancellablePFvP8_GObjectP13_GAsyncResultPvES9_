@@ -1,0 +1,17 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUserContentFilterStore.cpp' l='355' ll='372' type='void webkit_user_content_filter_store_remove(WebKitUserContentFilterStore * store, const gchar * identifier, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer userData)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUserContentFilterStore.cpp' l='339'>/**
+ * webkit_user_content_filter_store_remove:
+ * @store: a #WebKitUserContentFilterStore
+ * @identifier: a filter identifier
+ * @cancellable: (allow-none): a #GCancellable or %NULL to ignore
+ * @callback: (scope async): a #GAsyncReadyCallback to call when the removal is completed
+ * @user_data: (closure): the data to pass to the callback function
+ *
+ * Asynchronously remove a content filter given its @identifier.
+ *
+ * When the operation is finished, @callback will be invoked, which then can use
+ * webkit_user_content_filter_store_remove_finish() to check whether the removal was
+ * successful.
+ *
+ * Since: 2.24
+ */</doc>

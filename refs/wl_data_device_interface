@@ -1,0 +1,30 @@
+<dec f='include/wayland-client-protocol.h' l='336' type='const struct wl_interface'/>
+<use f='include/wayland-client-protocol.h' l='2862' u='a' c='_ZL38wl_data_device_manager_get_data_deviceP22wl_data_device_managerP7wl_seat'/>
+<dec f='include/wayland-server-protocol.h' l='339' type='const struct wl_interface'/>
+<def f='include/wayland-server-protocol.h' l='2024' ll='2088'/>
+<size>24</size>
+<doc f='include/wayland-client-protocol.h' l='327'>/**
+ * @defgroup iface_wl_data_device The wl_data_device interface
+ *
+ * There is one wl_data_device per seat which can be obtained
+ * from the global wl_data_device_manager singleton.
+ *
+ * A wl_data_device provides access to inter-client data transfer
+ * mechanisms such as copy-and-paste and drag-and-drop.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='330'>/**
+ * @defgroup iface_wl_data_device The wl_data_device interface
+ *
+ * There is one wl_data_device per seat which can be obtained
+ * from the global wl_data_device_manager singleton.
+ *
+ * A wl_data_device provides access to inter-client data transfer
+ * mechanisms such as copy-and-paste and drag-and-drop.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='2020'>/**
+ * @ingroup iface_wl_data_device
+ * @struct wl_data_device_interface
+ */</doc>
+<mbr r='wl_data_device_interface::start_drag' o='0' t='void (*)(struct wl_client *, struct wl_resource *, struct wl_resource *, struct wl_resource *, struct wl_resource *, uint32_t)'/>
+<mbr r='wl_data_device_interface::set_selection' o='64' t='void (*)(struct wl_client *, struct wl_resource *, struct wl_resource *, uint32_t)'/>
+<mbr r='wl_data_device_interface::release' o='128' t='void (*)(struct wl_client *, struct wl_resource *)'/>

@@ -1,0 +1,12 @@
+<dec f='WebKit/Source/WebCore/platform/graphics/GraphicsContextGL.h' l='1273' type='void WebCore::GraphicsContextGL::synthesizeGLError(GCGLenum error)'/>
+<doc f='WebKit/Source/WebCore/platform/graphics/GraphicsContextGL.h' l='1265'>// Synthesizes an OpenGL error which will be returned from a
+    // later call to getError. This is used to emulate OpenGL ES
+    // 2.0 behavior on the desktop and to enforce additional error
+    // checking mandated by WebGL.
+    //
+    // Per the behavior of glGetError, this stores at most one
+    // instance of any given error, and returns them from calls to
+    // getError in the order they were added.</doc>
+<ovr f='WebKit/Source/WebCore/platform/graphics/opengl/GraphicsContextGLOpenGLCommon.cpp' l='2100' c='_ZN7WebCore23GraphicsContextGLOpenGL17synthesizeGLErrorEj'/>
+<use f='WebKit/Source/WebCore/html/canvas/OESVertexArrayObject.cpp' l='97' u='c' c='_ZN7WebCore20OESVertexArrayObject18bindVertexArrayOESEPNS_25WebGLVertexArrayObjectOESE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='7681' u='c' c='_ZN7WebCore25WebGLRenderingContextBase17synthesizeGLErrorEjPKcS2_NS0_24ConsoleDisplayPreferenceE'/>

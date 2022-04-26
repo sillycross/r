@@ -1,0 +1,13 @@
+<dec f='WebKit/Source/WebCore/dom/SecurityContext.h' l='83' type='void WebCore::SecurityContext::setContentSecurityPolicy(std::unique_ptr&lt;ContentSecurityPolicy&gt; &amp;&amp; )'/>
+<doc f='WebKit/Source/WebCore/dom/SecurityContext.h' l='80'>// Explicitly override the content security policy for this security context.
+    // Note: It is dangerous to change the content security policy of a script
+    //       context that already contains content.</doc>
+<def f='WebKit/Source/WebCore/dom/SecurityContext.cpp' l='56' ll='59' type='void WebCore::SecurityContext::setContentSecurityPolicy(std::unique_ptr&lt;ContentSecurityPolicy&gt; &amp;&amp; contentSecurityPolicy)'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='6172' u='c' c='_ZN7WebCore8Document19initSecurityContextEv'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='6191' u='c' c='_ZN7WebCore8Document19initSecurityContextEv'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='6294' u='c' c='_ZN7WebCore8Document25initContentSecurityPolicyEv'/>
+<use f='WebKit/Source/WebCore/loader/DocumentWriter.cpp' l='179' u='c' c='_ZN7WebCore14DocumentWriter5beginERKN3WTF3URLEbPNS_8DocumentE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentWriter.cpp' l='184' u='c' c='_ZN7WebCore14DocumentWriter5beginERKN3WTF3URLEbPNS_8DocumentE'/>
+<use f='WebKit/Source/WebCore/worklets/WorkletGlobalScope.cpp' l='62' u='c' c='_ZN7WebCore18WorkletGlobalScopeC1ERNS_21WorkerOrWorkletThreadEON3WTF3RefIN3JSC2VMENS3_12RawPtrTraitsIS6_EEEERKNS_17WorkletParametersE'/>
+<use f='WebKit/Source/WebCore/worklets/WorkletGlobalScope.cpp' l='79' u='c' c='_ZN7WebCore18WorkletGlobalScopeC1ERNS_8DocumentEON3WTF3RefIN3JSC2VMENS3_12RawPtrTraitsIS6_EEEEONS_16ScriptSourceCodeE'/>
+<use f='WebKit/Source/WebCore/workers/WorkerGlobalScope.cpp' l='104' u='c' c='_ZN7WebCore17WorkerGlobalScopeC1ENS_16WorkerThreadTypeERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS5_12RawPtrTraitsIS7_EEEERNS_12WorkerTh11103912'/>

@@ -1,0 +1,10 @@
+<def f='WebKit/Source/WebCore/platform/graphics/GlyphBuffer.h' l='174' ll='183' type='void WebCore::GlyphBuffer::flatten()'/>
+<doc f='WebKit/Source/WebCore/platform/graphics/GlyphBuffer.h' l='168'>// FontCascade::layoutText() returns a GlyphBuffer which includes layout information that is split
+    // into &quot;advances&quot; and &quot;origins&quot;. See the ASCII-art diagram in ComplexTextController.h
+    // In order to get paint advances, we need to run this &quot;flatten&quot; operation.
+    // This merges the layout advances and origins together,
+    // leaves the paint advances in the &quot;m_advances&quot; field,
+    // and zeros-out the origins in the &quot;m_origins&quot; field.</doc>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='173' u='c' c='_ZNK7WebCore11FontCascade8drawTextERNS_15GraphicsContextERKNS_7TextRunERKNS_10FloatPointEjSt8optionalIjENS0_24CustomFontNotReadyActionE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='191' u='c' c='_ZNK7WebCore11FontCascade17drawEmphasisMarksERNS_15GraphicsContextERKNS_7TextRunERKN3WTF10AtomStringERKNS_10FloatPointEjSt8optionalIjE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='211' u='c' c='_ZNK7WebCore11FontCascade21displayListForTextRunERNS_15GraphicsContextERKNS_7TextRunEjSt8optionalIjENS0_24CustomFontNotReadyActionE'/>

@@ -1,0 +1,16 @@
+<use f='include/gtk-3.0/gtk/gtktreednd.h' l='36'/>
+<def f='include/gtk-3.0/gtk/gtktreednd.h' l='47' ll='65'/>
+<size>40</size>
+<doc f='include/gtk-3.0/gtk/gtktreednd.h' l='38'>/**
+ * GtkTreeDragSourceIface:
+ * @row_draggable: Asks the #GtkTreeDragSource whether a particular
+ *    row can be used as the source of a DND operation.
+ * @drag_data_get: Asks the #GtkTreeDragSource to fill in
+ *    selection_data with a representation of the row at path.
+ * @drag_data_delete: Asks the #GtkTreeDragSource to delete the row at
+ *    path, because it was moved somewhere else via drag-and-drop.
+ */</doc>
+<mbr r='_GtkTreeDragSourceIface::g_iface' o='0' t='GTypeInterface'/>
+<mbr r='_GtkTreeDragSourceIface::row_draggable' o='128' t='gboolean (*)(GtkTreeDragSource *, GtkTreePath *)'/>
+<mbr r='_GtkTreeDragSourceIface::drag_data_get' o='192' t='gboolean (*)(GtkTreeDragSource *, GtkTreePath *, GtkSelectionData *)'/>
+<mbr r='_GtkTreeDragSourceIface::drag_data_delete' o='256' t='gboolean (*)(GtkTreeDragSource *, GtkTreePath *)'/>

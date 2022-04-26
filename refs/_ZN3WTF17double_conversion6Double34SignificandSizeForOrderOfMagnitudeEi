@@ -1,0 +1,8 @@
+<def f='WebKit/Source/WTF/wtf/dtoa/ieee.h' l='209' ll='215' type='static int WTF::double_conversion::Double::SignificandSizeForOrderOfMagnitude(int order)'/>
+<doc f='WebKit/Source/WTF/wtf/dtoa/ieee.h' l='203'>// Returns the significand size for a given order of magnitude.
+  // If v = f*2^e with 2^p-1 &lt;= f &lt;= 2^p then p+e is v&apos;s order of magnitude.
+  // This function returns the number of significant binary digits v will have
+  // once it&apos;s encoded into a double. In almost all cases this is equal to
+  // kSignificandSize. The only exceptions are denormals. They start with
+  // leading zeroes and their effective significand-size is hence smaller.</doc>
+<use f='WebKit/Source/WTF/wtf/dtoa/strtod.cc' l='349' u='c' c='_ZN3WTF17double_conversionL11DiyFpStrtodENS0_15BufferReferenceIKcEEiPd'/>

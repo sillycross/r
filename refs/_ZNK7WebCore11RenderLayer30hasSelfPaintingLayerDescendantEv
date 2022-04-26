@@ -1,0 +1,12 @@
+<def f='WebKit/Source/WebCore/rendering/RenderLayer.h' l='568' type='bool WebCore::RenderLayer::hasSelfPaintingLayerDescendant() const'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderLayer.h' l='566'>// FIXME: We should ASSERT(!m_hasSelfPaintingLayerDescendantDirty); here but we hit the same bugs as visible content above.
+    // Part of the issue is with subtree relayout: we don&apos;t check if our ancestors have some descendant flags dirty, missing some updates.</doc>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='408' u='c' c='_ZN7WebCore11RenderLayer8addChildERS0_PS0_'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='454' u='c' c='_ZN7WebCore11RenderLayer11removeChildERS0_'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='1046' u='c' c='_ZN7WebCore11RenderLayer46setAncestorChainHasSelfPaintingLayerDescendantEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='1497' u='c' c='_ZN7WebCore11RenderLayer30updateDescendantDependentFlagsEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='3000' u='c' c='_ZN7WebCore11RenderLayer21paintLayerWithEffectsERNS_15GraphicsContextERKNS0_17LayerPaintingInfoEN3WTF9OptionSetINS0_14PaintLayerFlagEEE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='3487' u='c' c='_ZN7WebCore11RenderLayer9paintListENS0_9LayerListERNS_15GraphicsContextERKNS0_17LayerPaintingInfoEN3WTF9OptionSetINS0_14PaintLayerFlagEEE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4044' u='c' c='_ZN7WebCore11RenderLayer12hitTestLayerEPS0_S1_RKNS_14HitTestRequestERNS_13HitTestResultERKNS_10LayoutRectERKNS_15HitTestLocationEbPKNS_24HitTestingTransformStateEPd'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4328' u='c' c='_ZN7WebCore11RenderLayer11hitTestListENS0_9LayerListEPS0_RKNS_14HitTestRequestERNS_13HitTestResultERKNS_10LayoutRectERKNS_15HitTestLocationEPKNS_24Hit13804349'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='5005' u='c' c='_ZNK7WebCore11RenderLayer33backgroundIsKnownToBeOpaqueInRectERKNS_10LayoutRectE'/>

@@ -1,0 +1,33 @@
+<use f='include/pango-1.0/pango/pango-engine.h' l='169'/>
+<def f='include/pango-1.0/pango/pango-engine.h' l='217' ll='235'/>
+<size>152</size>
+<doc f='include/pango-1.0/pango/pango-engine.h' l='190'>/**
+ * PangoEngineShapeClass:
+ * @script_shape: Given a font, a piece of text, and a #PangoAnalysis
+ *   structure, converts characters to glyphs and positions the
+ *   resulting glyphs. The results are stored in the #PangoGlyphString
+ *   that is passed in. (The implementation should resize it
+ *   appropriately using pango_glyph_string_set_size()). All fields
+ *   of the @log_clusters and @glyphs array must be filled in, with
+ *   the exception that Pango will automatically generate
+ *   &lt;literal&gt;glyphs-&gt;glyphs[i].attr.is_cluster_start&lt;/literal&gt;
+ *   using the @log_clusters array. Each input character must occur in one
+ *   of the output logical clusters;
+ *   if no rendering is desired for a character, this may involve
+ *   inserting glyphs with the #PangoGlyph ID #PANGO_GLYPH_EMPTY, which
+ *   is guaranteed never to render. If the shaping fails for any reason,
+ *   the shaper should return with an empty (zero-size) glyph string.
+ *   If the shaper has not set the size on the glyph string yet, simply
+ *   returning signals the failure too.
+ * @covers: Returns the characters that this engine can cover
+ *   with a given font for a given language. If not overridden, the default
+ *   implementation simply returns the coverage information for the
+ *   font itself unmodified.
+ *
+ * Class structure for #PangoEngineShape
+ *
+ * Deprecated: 1.38
+ **/</doc>
+<mbr r='_PangoEngineShapeClass::parent_class' o='0' t='PangoEngineClass'/>
+<mbr r='_PangoEngineShapeClass::script_shape' o='1088' t='void (*)(PangoEngineShape *, PangoFont *, const char *, unsigned int, const PangoAnalysis *, PangoGlyphString *, const char *, unsigned int)'/>
+<mbr r='_PangoEngineShapeClass::covers' o='1152' t='PangoCoverageLevel (*)(PangoEngineShape *, PangoFont *, PangoLanguage *, gunichar)'/>

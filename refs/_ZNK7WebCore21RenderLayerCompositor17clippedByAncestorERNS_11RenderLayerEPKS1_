@@ -1,0 +1,10 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='214' type='bool WebCore::RenderLayerCompositor::clippedByAncestor(WebCore::RenderLayer &amp; , const WebCore::RenderLayer * compositingAncestor) const'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='213'>// Whether layer&apos;s backing needs a graphics layer to do clipping by an ancestor (non-stacking-context parent with overflow).</doc>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='998' u='c' c='_ZN7WebCore18RenderLayerBacking19updateConfigurationEPKNS_11RenderLayerE'/>
+<def f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='2858' ll='2887' type='bool WebCore::RenderLayerCompositor::clippedByAncestor(WebCore::RenderLayer &amp; layer, const WebCore::RenderLayer * compositingAncestor) const'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='2852'>// Return true if the given layer has some ancestor in the RenderLayer hierarchy that clips,
+// up to the enclosing compositing ancestor. This is required because compositing layers are parented
+// according to the z-order hierarchy, yet clipping goes down the renderer hierarchy.
+// Thus, a RenderLayer can be clipped by a RenderLayer that is an ancestor in the renderer hierarchy,
+// but a sibling in the z-order hierarchy.
+// FIXME: can we do this without a tree walk?</doc>

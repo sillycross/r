@@ -1,0 +1,34 @@
+<doc f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSObjectRef.h' l='222'>/*! 
+@typedef JSObjectCallAsConstructorCallback
+@abstract The callback invoked when an object is used as a constructor in a &apos;new&apos; expression.
+@param ctx The execution context to use.
+@param constructor A JSObject that is the constructor being called.
+@param argumentCount An integer count of the number of arguments in arguments.
+@param arguments A JSValue array of the  arguments passed to the function.
+@param exception A pointer to a JSValueRef in which to return an exception, if any.
+@result A JSObject that is the constructor&apos;s return value.
+@discussion If you named your function CallAsConstructor, you would declare it like this:
+
+JSObjectRef CallAsConstructor(JSContextRef ctx, JSObjectRef constructor, size_t argumentCount, const JSValueRef arguments[], JSValueRef* exception);
+
+If your callback were invoked by the JavaScript expression &apos;new myConstructor()&apos;, constructor would be set to myConstructor.
+
+If this callback is NULL, using your object as a constructor in a &apos;new&apos; expression will throw an exception.
+*/</doc>
+<doc f='WebKit/Source/JavaScriptCore/API/JSObjectRef.h' l='222'>/*! 
+@typedef JSObjectCallAsConstructorCallback
+@abstract The callback invoked when an object is used as a constructor in a &apos;new&apos; expression.
+@param ctx The execution context to use.
+@param constructor A JSObject that is the constructor being called.
+@param argumentCount An integer count of the number of arguments in arguments.
+@param arguments A JSValue array of the  arguments passed to the function.
+@param exception A pointer to a JSValueRef in which to return an exception, if any.
+@result A JSObject that is the constructor&apos;s return value.
+@discussion If you named your function CallAsConstructor, you would declare it like this:
+
+JSObjectRef CallAsConstructor(JSContextRef ctx, JSObjectRef constructor, size_t argumentCount, const JSValueRef arguments[], JSValueRef* exception);
+
+If your callback were invoked by the JavaScript expression &apos;new myConstructor()&apos;, constructor would be set to myConstructor.
+
+If this callback is NULL, using your object as a constructor in a &apos;new&apos; expression will throw an exception.
+*/</doc>

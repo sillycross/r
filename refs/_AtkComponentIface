@@ -1,0 +1,52 @@
+<use f='include/atk-1.0/atk/atkcomponent.h' l='73'/>
+<def f='include/atk-1.0/atk/atkcomponent.h' l='146' ll='222'/>
+<size>152</size>
+<doc f='include/atk-1.0/atk/atkcomponent.h' l='115'>/**
+ * AtkComponentIface:
+ * @add_focus_handler: This virtual function is deprecated since 2.9.4
+ *   and it should not be overriden. See atk_component_add_focus_handler()
+ *   for more information.
+ * @get_position: This virtual function is deprecated since 2.12 and
+ *   it should not be overriden. Use @AtkComponentIface.get_extents instead.
+ * @get_size: This virtual function is deprecated since 2.12 and it
+ *   should not be overriden. Use @AtkComponentIface.get_extents instead.
+ * @remove_focus_handler: This virtual function is deprecated since
+ *   2.9.4 and it should not be overriden. See atk_component_remove_focus_handler()
+ *   for more information.
+ * @contains:
+ * @ref_accessible_at_point:
+ * @get_extents:
+ * @grab_focus:
+ * @set_extents:
+ * @set_position:
+ * @set_size:
+ * @get_layer:
+ * @get_mdi_zorder:
+ * @bounds_changed:
+ * @get_alpha:
+ * @scroll_to:
+ * @scroll_to_point:
+ *
+ * The AtkComponent interface should be supported by any object that is
+ * rendered on the screen. The interface provides the standard mechanism
+ * for an assistive technology to determine and set the graphical
+ * representation of an object.
+ */</doc>
+<mbr r='_AtkComponentIface::parent' o='0' t='GTypeInterface'/>
+<mbr r='_AtkComponentIface::add_focus_handler' o='128' t='guint (*)(AtkComponent *, AtkFocusHandler)'/>
+<mbr r='_AtkComponentIface::contains' o='192' t='gboolean (*)(AtkComponent *, gint, gint, AtkCoordType)'/>
+<mbr r='_AtkComponentIface::ref_accessible_at_point' o='256' t='AtkObject *(*)(AtkComponent *, gint, gint, AtkCoordType)'/>
+<mbr r='_AtkComponentIface::get_extents' o='320' t='void (*)(AtkComponent *, gint *, gint *, gint *, gint *, AtkCoordType)'/>
+<mbr r='_AtkComponentIface::get_position' o='384' t='void (*)(AtkComponent *, gint *, gint *, AtkCoordType)'/>
+<mbr r='_AtkComponentIface::get_size' o='448' t='void (*)(AtkComponent *, gint *, gint *)'/>
+<mbr r='_AtkComponentIface::grab_focus' o='512' t='gboolean (*)(AtkComponent *)'/>
+<mbr r='_AtkComponentIface::remove_focus_handler' o='576' t='void (*)(AtkComponent *, guint)'/>
+<mbr r='_AtkComponentIface::set_extents' o='640' t='gboolean (*)(AtkComponent *, gint, gint, gint, gint, AtkCoordType)'/>
+<mbr r='_AtkComponentIface::set_position' o='704' t='gboolean (*)(AtkComponent *, gint, gint, AtkCoordType)'/>
+<mbr r='_AtkComponentIface::set_size' o='768' t='gboolean (*)(AtkComponent *, gint, gint)'/>
+<mbr r='_AtkComponentIface::get_layer' o='832' t='AtkLayer (*)(AtkComponent *)'/>
+<mbr r='_AtkComponentIface::get_mdi_zorder' o='896' t='gint (*)(AtkComponent *)'/>
+<mbr r='_AtkComponentIface::bounds_changed' o='960' t='void (*)(AtkComponent *, AtkRectangle *)'/>
+<mbr r='_AtkComponentIface::get_alpha' o='1024' t='gdouble (*)(AtkComponent *)'/>
+<mbr r='_AtkComponentIface::scroll_to' o='1088' t='gboolean (*)(AtkComponent *, AtkScrollType)'/>
+<mbr r='_AtkComponentIface::scroll_to_point' o='1152' t='gboolean (*)(AtkComponent *, AtkCoordType, gint, gint)'/>

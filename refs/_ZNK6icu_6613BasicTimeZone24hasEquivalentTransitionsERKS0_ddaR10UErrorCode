@@ -1,0 +1,21 @@
+<dec f='include/unicode/basictz.h' l='94' type='UBool icu_66::BasicTimeZone::hasEquivalentTransitions(const icu_66::BasicTimeZone &amp; tz, UDate start, UDate end, UBool ignoreDstAmount, UErrorCode &amp; ec) const'/>
+<doc f='include/unicode/basictz.h' l='74'>/**
+     * Checks if the time zone has equivalent transitions in the time range.
+     * This method returns true when all of transition times, from/to standard
+     * offsets and DST savings used by this time zone match the other in the
+     * time range.
+     * @param tz    The &lt;code&gt;BasicTimeZone&lt;/code&gt; object to be compared with.
+     * @param start The start time of the evaluated time range (inclusive)
+     * @param end   The end time of the evaluated time range (inclusive)
+     * @param ignoreDstAmount
+     *              When true, any transitions with only daylight saving amount
+     *              changes will be ignored, except either of them is zero.
+     *              For example, a transition from rawoffset 3:00/dstsavings 1:00
+     *              to rawoffset 2:00/dstsavings 2:00 is excluded from the comparison,
+     *              but a transtion from rawoffset 2:00/dstsavings 1:00 to
+     *              rawoffset 3:00/dstsavings 0:00 is included.
+     * @param ec    Output param to filled in with a success or an error.
+     * @return      true if the other time zone has the equivalent transitions in the
+     *              time range.
+     * @stable ICU 3.8
+     */</doc>

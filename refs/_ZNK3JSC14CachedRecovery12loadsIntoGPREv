@@ -1,0 +1,10 @@
+<dec f='WebKit/Source/JavaScriptCore/jit/CachedRecovery.h' l='115' type='bool JSC::CachedRecovery::loadsIntoGPR() const'/>
+<def f='WebKit/Source/JavaScriptCore/jit/CachedRecovery.cpp' l='51' ll='67' type='bool JSC::CachedRecovery::loadsIntoGPR() const'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='242' u='c' c='_ZN3JSC17CallFrameShuffler10ensureLoadERNS_14CachedRecoveryE'/>
+<doc f='WebKit/Source/JavaScriptCore/jit/CachedRecovery.cpp' l='50'>// Integers, booleans and cells can be loaded into GPRs</doc>
+<doc f='WebKit/Source/JavaScriptCore/jit/CachedRecovery.h' l='111'>// This is used to determine what kind of register we need to be
+    // able to load a recovery. We only use it when a direct load is
+    // currently impossible, to determine whether we should spill a
+    // GPR or an FPR for loading this value.</doc>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler64.cpp' l='184' u='c' c='_ZN3JSC17CallFrameShuffler8emitLoadERNS_14CachedRecoveryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler64.cpp' l='232' u='c' c='_ZN3JSC17CallFrameShuffler7canLoadERNS_14CachedRecoveryE'/>

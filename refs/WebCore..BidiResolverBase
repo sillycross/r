@@ -1,0 +1,79 @@
+<def f='WebKit/Source/WebCore/platform/text/BidiResolver.h' l='193' ll='284'/>
+<use f='WebKit/Source/WebCore/platform/text/BidiResolver.h' l='287'/>
+<use f='WebKit/Source/WebCore/platform/text/BidiResolver.h' l='291'/>
+<use f='WebKit/Source/WebCore/platform/text/BidiResolver.h' l='312' c='_ZN7WebCore16BidiResolverBase17appendRunInternalEv'/>
+<use f='WebKit/Source/WebCore/platform/text/BidiResolver.h' l='335' c='_ZN7WebCore16BidiResolverBase5embedE14UCharDirectionNS_19BidiEmbeddingSourceE'/>
+<use f='WebKit/Source/WebCore/platform/text/BidiResolver.h' l='346' c='_ZN7WebCore16BidiResolverBase40checkDirectionInLowerRaiseEmbeddingLevelEv'/>
+<use f='WebKit/Source/WebCore/platform/text/BidiResolver.h' l='361' c='_ZN7WebCore16BidiResolverBase27lowerExplicitEmbeddingLevelE14UCharDirection'/>
+<use f='WebKit/Source/WebCore/platform/text/BidiResolver.h' l='397' c='_ZN7WebCore16BidiResolverBase27raiseExplicitEmbeddingLevelE14UCharDirectionS1_'/>
+<use f='WebKit/Source/WebCore/platform/text/BidiResolver.h' l='434' c='_ZN7WebCore16BidiResolverBase23commitExplicitEmbeddingEv'/>
+<use f='WebKit/Source/WebCore/platform/text/BidiResolver.h' l='476' c='_ZN7WebCore16BidiResolverBase36updateStatusLastFromCurrentDirectionE14UCharDirection'/>
+<use f='WebKit/Source/WebCore/platform/text/BidiResolver.h' l='517' c='_ZN7WebCore16BidiResolverBase21reorderRunsFromLevelsEv'/>
+<use f='WebKit/Source/WebCore/platform/text/BidiResolver.h' l='554' c='_ZN7WebCore16BidiResolverBase21createBidiRunsForLineERKT_NS_23VisualDirectionOverrideEb'/>
+<use f='WebKit/Source/WebCore/platform/text/BidiResolver.h' l='580' c='_ZN7WebCore16BidiResolverBase21createBidiRunsForLineERKT_NS_23VisualDirectionOverrideEb'/>
+<use f='WebKit/Source/WebCore/platform/text/BidiResolver.h' l='962' c='_ZN7WebCore16BidiResolverBase47setWhitespaceCollapsingTransitionForIsolatedRunERT0_m'/>
+<use f='WebKit/Source/WebCore/platform/text/BidiResolver.h' l='969' c='_ZN7WebCore16BidiResolverBase44whitespaceCollapsingTransitionForIsolatedRunERT0_'/>
+<doc f='WebKit/Source/WebCore/platform/text/BidiResolver.h' l='191'>// BidiResolver is WebKit&apos;s implementation of the Unicode Bidi Algorithm
+// http://unicode.org/reports/tr9</doc>
+<fun r='_ZN7WebCore16BidiResolverBaseC1ERKNS_16BidiResolverBaseIT_T0_T1_EE'/>
+<fun r='_ZNK7WebCore16BidiResolverBase8positionEv'/>
+<fun r='_ZN7WebCore16BidiResolverBase33setPositionIgnoringNestedIsolatesERKT_'/>
+<fun r='_ZN7WebCore16BidiResolverBase11setPositionERKT_j'/>
+<fun r='_ZN7WebCore16BidiResolverBase9incrementEv'/>
+<fun r='_ZNK7WebCore16BidiResolverBase7contextEv'/>
+<fun r='_ZN7WebCore16BidiResolverBase10setContextEON3WTF6RefPtrINS_11BidiContextENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore16BidiResolverBase10setLastDirE14UCharDirection'/>
+<fun r='_ZN7WebCore16BidiResolverBase16setLastStrongDirE14UCharDirection'/>
+<fun r='_ZN7WebCore16BidiResolverBase9setEorDirE14UCharDirection'/>
+<fun r='_ZNK7WebCore16BidiResolverBase3dirEv'/>
+<fun r='_ZN7WebCore16BidiResolverBase6setDirE14UCharDirection'/>
+<fun r='_ZNK7WebCore16BidiResolverBase6statusEv'/>
+<fun r='_ZN7WebCore16BidiResolverBase9setStatusENS_10BidiStatusE'/>
+<fun r='_ZN7WebCore16BidiResolverBase25whitespaceCollapsingStateEv'/>
+<fun r='_ZN7WebCore16BidiResolverBase12enterIsolateEv'/>
+<fun r='_ZN7WebCore16BidiResolverBase11exitIsolateEv'/>
+<fun r='_ZNK7WebCore16BidiResolverBase9inIsolateEv'/>
+<fun r='_ZN7WebCore16BidiResolverBase5embedE14UCharDirectionNS_19BidiEmbeddingSourceE'/>
+<fun r='_ZN7WebCore16BidiResolverBase23commitExplicitEmbeddingEv'/>
+<fun r='_ZN7WebCore16BidiResolverBase21createBidiRunsForLineERKT_NS_23VisualDirectionOverrideEb'/>
+<fun r='_ZN7WebCore16BidiResolverBase4runsEv'/>
+<fun r='_ZN7WebCore16BidiResolverBase19markCurrentRunEmptyEv'/>
+<fun r='_ZN7WebCore16BidiResolverBase47setWhitespaceCollapsingTransitionForIsolatedRunERT0_m'/>
+<fun r='_ZN7WebCore16BidiResolverBase44whitespaceCollapsingTransitionForIsolatedRunERT0_'/>
+<fun r='_ZN7WebCore16BidiResolverBaseC1Ev'/>
+<fun r='_ZN7WebCore16BidiResolverBase9appendRunEv'/>
+<fun r='_ZNK7WebCore16BidiResolverBase20needsContinuePastEndEv'/>
+<mbr r='WebCore::BidiResolverBase::m_current' t='Iterator'/>
+<mbr r='WebCore::BidiResolverBase::m_sor' t='Iterator'/>
+<mbr r='WebCore::BidiResolverBase::m_eor' t='Iterator'/>
+<mbr r='WebCore::BidiResolverBase::m_last' t='Iterator'/>
+<mbr r='WebCore::BidiResolverBase::m_status' t='WebCore::BidiStatus'/>
+<mbr r='WebCore::BidiResolverBase::m_direction' t='UCharDirection'/>
+<mbr r='WebCore::BidiResolverBase::endOfLine' t='Iterator'/>
+<mbr r='WebCore::BidiResolverBase::m_reachedEndOfLine' t='bool'/>
+<mbr r='WebCore::BidiResolverBase::m_lastBeforeET' t='Iterator'/>
+<mbr r='WebCore::BidiResolverBase::m_emptyRun' t='bool'/>
+<mbr r='WebCore::BidiResolverBase::m_runs' t='BidiRunList&lt;Run&gt;'/>
+<mbr r='WebCore::BidiResolverBase::m_whitespaceCollapsingState' t='WhitespaceCollapsingState&lt;Iterator&gt;'/>
+<mbr r='WebCore::BidiResolverBase::m_nestedIsolateCount' t='unsigned int'/>
+<mbr r='WebCore::BidiResolverBase::m_whitespaceCollapsingTransitionForIsolatedRun' t='HashMap&lt;Run *, unsigned int&gt;'/>
+<fun r='_ZN7WebCore16BidiResolverBase27raiseExplicitEmbeddingLevelE14UCharDirectionS1_'/>
+<fun r='_ZN7WebCore16BidiResolverBase27lowerExplicitEmbeddingLevelE14UCharDirection'/>
+<fun r='_ZN7WebCore16BidiResolverBase40checkDirectionInLowerRaiseEmbeddingLevelEv'/>
+<fun r='_ZN7WebCore16BidiResolverBase36updateStatusLastFromCurrentDirectionE14UCharDirection'/>
+<fun r='_ZN7WebCore16BidiResolverBase21reorderRunsFromLevelsEv'/>
+<fun r='_ZN7WebCore16BidiResolverBase17incrementInternalEv'/>
+<fun r='_ZN7WebCore16BidiResolverBase17appendRunInternalEv'/>
+<fun r='_ZNK7WebCore16BidiResolverBase28needsContinuePastEndInternalEv'/>
+<mbr r='WebCore::BidiResolverBase::m_currentExplicitEmbeddingSequence' t='Vector&lt;WebCore::BidiEmbedding, 8&gt;'/>
+<fun r='_ZN7WebCore16BidiResolverBase17appendRunInternalEv'/>
+<fun r='_ZN7WebCore16BidiResolverBase5embedE14UCharDirectionNS_19BidiEmbeddingSourceE'/>
+<fun r='_ZN7WebCore16BidiResolverBase40checkDirectionInLowerRaiseEmbeddingLevelEv'/>
+<fun r='_ZN7WebCore16BidiResolverBase27lowerExplicitEmbeddingLevelE14UCharDirection'/>
+<fun r='_ZN7WebCore16BidiResolverBase27raiseExplicitEmbeddingLevelE14UCharDirectionS1_'/>
+<fun r='_ZN7WebCore16BidiResolverBase23commitExplicitEmbeddingEv'/>
+<fun r='_ZN7WebCore16BidiResolverBase36updateStatusLastFromCurrentDirectionE14UCharDirection'/>
+<fun r='_ZN7WebCore16BidiResolverBase21reorderRunsFromLevelsEv'/>
+<fun r='_ZN7WebCore16BidiResolverBase21createBidiRunsForLineERKT_NS_23VisualDirectionOverrideEb'/>
+<fun r='_ZN7WebCore16BidiResolverBase47setWhitespaceCollapsingTransitionForIsolatedRunERT0_m'/>
+<fun r='_ZN7WebCore16BidiResolverBase44whitespaceCollapsingTransitionForIsolatedRunERT0_'/>

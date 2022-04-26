@@ -1,0 +1,15 @@
+<def f='WebKit/Source/WebCore/Modules/webaudio/IIRFilterNode.cpp' l='53' ll='83' type='bool WebCore::isFilterStable(const Vector&lt;double&gt; &amp; feedback)'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/IIRFilterNode.cpp' l='100' u='c' c='_ZN7WebCore13IIRFilterNode6createERNS_22ScriptExecutionContextERNS_16BaseAudioContextEONS_16IIRFilterOptionsE'/>
+<doc f='WebKit/Source/WebCore/Modules/webaudio/IIRFilterNode.cpp' l='40'>// Determine if filter is stable based on the feedback coefficients.
+// We compute the reflection coefficients for the filter. If, at any
+// point, the magnitude of the reflection coefficient is greater than
+// or equal to 1, the filter is declared unstable.
+//
+// Let A(z) be the feedback polynomial given by
+//   A[n](z) = 1 + a[1]/z + a[2]/z^2 + ... + a[n]/z^n
+//
+// The first reflection coefficient k[n] = a[n]. Then, recursively compute
+//
+//   A[n-1](z) = (A[n](z) - k[n]*A[n](1/z)/z^n)/(1-k[n]^2);
+//
+// stopping at A[1](z). If at any point |k[n]| &gt;= 1, the filter is unstable.</doc>

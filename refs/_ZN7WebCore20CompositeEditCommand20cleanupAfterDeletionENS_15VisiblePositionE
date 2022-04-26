@@ -1,0 +1,10 @@
+<dec f='WebKit/Source/WebCore/editing/CompositeEditCommand.h' l='207' type='void WebCore::CompositeEditCommand::cleanupAfterDeletion(WebCore::VisiblePosition destination = WebCore::VisiblePosition())'/>
+<def f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='1333' ll='1367' type='void WebCore::CompositeEditCommand::cleanupAfterDeletion(WebCore::VisiblePosition destination = WebCore::VisiblePosition())'/>
+<use f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='1400' u='c' c='_ZN7WebCore20CompositeEditCommand23moveParagraphWithClonesERKNS_15VisiblePositionES3_PNS_7ElementEPNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='1494' u='c' c='_ZN7WebCore20CompositeEditCommand14moveParagraphsERKNS_15VisiblePositionES3_S3_bb'/>
+<doc f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='1327'>// There are bugs in deletion when it removes a fully selected table/list.
+// It expands and removes the entire table/list, but will let content
+// before and after the table/list collapse onto one line.   
+// Deleting a paragraph will leave a placeholder. Remove it (and prune
+// empty or unrendered parents).</doc>
+<use f='WebKit/Source/WebCore/editing/MoveSelectionCommand.cpp' l='77' u='c' c='_ZN7WebCore20MoveSelectionCommand7doApplyEv'/>

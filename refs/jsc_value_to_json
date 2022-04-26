@@ -1,0 +1,14 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.h' l='268' type='char * jsc_value_to_json(JSCValue * value, guint indent)'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='1508' ll='1529' type='char * jsc_value_to_json(JSCValue * value, unsigned int indent)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='1496'>/**
+ * jsc_value_to_json:
+ * @value: a #JSCValue
+ * @indent: The number of spaces to indent when nesting.
+ *
+ * Create a JSON string of @value serialization. If @indent is 0, the resulting JSON will
+ * not contain newlines. The size of the indent is clamped to 10 spaces.
+ *
+ * Returns: (transfer full): a null-terminated JSON string with serialization of @value
+ *
+ * Since: 2.28
+ */</doc>

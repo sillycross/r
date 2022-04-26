@@ -1,0 +1,495 @@
+<use f='WebKit/WTF/Headers/wtf/Seconds.h' l='180' c='_ZNK3WTF7SecondsplENS_8WallTimeE'/>
+<use f='WebKit/WTF/Headers/wtf/Seconds.h' l='180' c='_ZNK3WTF7SecondsplENS_8WallTimeE'/>
+<use f='WebKit/WTF/Headers/wtf/Seconds.h' l='184' c='_ZNK3WTF7SecondsmiENS_8WallTimeE'/>
+<use f='WebKit/WTF/Headers/wtf/Seconds.h' l='184' c='_ZNK3WTF7SecondsmiENS_8WallTimeE'/>
+<def f='WebKit/WTF/Headers/wtf/WallTime.h' l='41' ll='146'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='51' c='_ZN3WTF8WallTime14fromRawSecondsEd'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='53' c='_ZN3WTF8WallTime14fromRawSecondsEd'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='56' c='_ZN3WTF8WallTime3nowEv'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='58' c='_ZN3WTF8WallTime8infinityEv'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='59' c='_ZN3WTF8WallTime3nanEv'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='63' c='_ZNK3WTF8WallTime19approximateWallTimeEv'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='68' c='_ZNK3WTF8WallTimeplENS_7SecondsE'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='73' c='_ZNK3WTF8WallTimemiENS_7SecondsE'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='80' c='_ZNK3WTF8WallTimengEv'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='85' c='_ZN3WTF8WallTimepLENS_7SecondsE'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='90' c='_ZN3WTF8WallTimemIENS_7SecondsE'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='95' c='_ZNK3WTF8WallTimemiES0_'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='100' c='_ZNK3WTF8WallTimeeqES0_'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='105' c='_ZNK3WTF8WallTimeneES0_'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='110' c='_ZNK3WTF8WallTimeltES0_'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='115' c='_ZNK3WTF8WallTimegtES0_'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='120' c='_ZNK3WTF8WallTimeleES0_'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='125' c='_ZNK3WTF8WallTimegeES0_'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='132' c='_ZNK3WTF8WallTime12isolatedCopyEv'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='149' c='_ZN3WTF8WallTime14MarkableTraits12isEmptyValueES0_'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='154' c='_ZN3WTF8WallTime14MarkableTraits10emptyValueEv'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='160' c='_ZN3WTF5sleepENS_8WallTimeE'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='166' c='_ZSt5isnanN3WTF8WallTimeE'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='171' c='_ZSt5isinfN3WTF8WallTimeE'/>
+<use f='WebKit/WTF/Headers/wtf/WallTime.h' l='176' c='_ZSt8isfiniteN3WTF8WallTimeE'/>
+<use f='WebKit/WTF/Headers/wtf/ThreadingPrimitives.h' l='105' c='_ZN3WTF15ThreadCondition9timedWaitERNS_5MutexENS_8WallTimeE'/>
+<use f='WebKit/WTF/Headers/wtf/FileSystem.h' l='115' c='_ZN3WTF14FileSystemImpl20fileModificationTimeERKNS_6StringE'/>
+<use f='WebKit/WTF/Headers/wtf/FileSystem.h' l='117' c='_ZN3WTF14FileSystemImpl16fileCreationTimeERKNS_6StringE'/>
+<use f='WebKit/WTF/Headers/wtf/MonotonicTime.h' l='68' c='_ZNK3WTF13MonotonicTime19approximateWallTimeEv'/>
+<use f='WebKit/WTF/Headers/wtf/TimeWithDynamicClockType.h' l='41' c='_ZN3WTF24TimeWithDynamicClockTypeC1ENS_8WallTimeE'/>
+<use f='WebKit/WTF/Headers/wtf/TimeWithDynamicClockType.h' l='74' c='_ZNK3WTF24TimeWithDynamicClockType8wallTimeEv'/>
+<use f='WebKit/WTF/Headers/wtf/TimeWithDynamicClockType.h' l='77' c='_ZNK3WTF24TimeWithDynamicClockType19approximateWallTimeEv'/>
+<use f='WebKit/WTF/Headers/wtf/ParkingLot.h' l='51'/>
+<size>8</size>
+<doc f='WebKit/WTF/Headers/wtf/WallTime.h' l='36'>// The current time according to a wall clock (aka real time clock). This uses floating point
+// internally so that you can reason about infinity and other things that arise in math. It&apos;s
+// acceptable to use this to wrap NaN times, negative times, and infinite times, so long as they
+// are relative to the same clock. Use this only if wall clock time is needed. For elapsed time
+// measurement use MonotonicTime instead.</doc>
+<smbr r='WTF::WallTime::clockType' t='const WTF::ClockType'/>
+<fun r='_ZN3WTF8WallTimeC1Ev'/>
+<fun r='_ZN3WTF8WallTime14fromRawSecondsEd'/>
+<fun r='_ZN3WTF8WallTime3nowEv'/>
+<fun r='_ZN3WTF8WallTime8infinityEv'/>
+<fun r='_ZN3WTF8WallTime3nanEv'/>
+<fun r='_ZNK3WTF8WallTime17secondsSinceEpochEv'/>
+<fun r='_ZNK3WTF8WallTime19approximateWallTimeEv'/>
+<fun r='_ZNK3WTF8WallTime24approximateMonotonicTimeEv'/>
+<fun r='_ZNK3WTF8WallTimecvbEv'/>
+<fun r='_ZNK3WTF8WallTimeplENS_7SecondsE'/>
+<fun r='_ZNK3WTF8WallTimemiENS_7SecondsE'/>
+<fun r='_ZNK3WTF8WallTimengEv'/>
+<fun r='_ZN3WTF8WallTimepLENS_7SecondsE'/>
+<fun r='_ZN3WTF8WallTimemIENS_7SecondsE'/>
+<fun r='_ZNK3WTF8WallTimemiES0_'/>
+<fun r='_ZNK3WTF8WallTimeeqES0_'/>
+<fun r='_ZNK3WTF8WallTimeneES0_'/>
+<fun r='_ZNK3WTF8WallTimeltES0_'/>
+<fun r='_ZNK3WTF8WallTimegtES0_'/>
+<fun r='_ZNK3WTF8WallTimeleES0_'/>
+<fun r='_ZNK3WTF8WallTimegeES0_'/>
+<fun r='_ZNK3WTF8WallTime4dumpERNS_11PrintStreamE'/>
+<fun r='_ZNK3WTF8WallTime12isolatedCopyEv'/>
+<fun r='_ZN3WTF8WallTimeC1Ed'/>
+<mbr r='WTF::WallTime::m_value' o='0' t='double'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadStatistics.h' l='59' c='_ZN7WebCore22ResourceLoadStatistics20reduceTimeResolutionEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadStatistics.h' l='59' c='_ZN7WebCore22ResourceLoadStatistics20reduceTimeResolutionEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadStatistics.h' l='70'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadStatistics.h' l='75'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='723'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='724' c='_ZN3IPC13ArgumentCoderIN3WTF8WallTimeEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='725' c='_ZN3IPC13ArgumentCoderIN3WTF8WallTimeEvE6decodeERNS_7DecoderERS2_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='726' c='_ZN3IPC13ArgumentCoderIN3WTF8WallTimeEvE6decodeERNS_7DecoderE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/page/PageOverlay.h' l='130'/>
+<use f='WebKit/Source/WebCore/platform/PlatformEvent.h' l='99' c='_ZNK7WebCore13PlatformEvent9timestampEv'/>
+<use f='WebKit/Source/WebCore/platform/PlatformEvent.h' l='112' c='_ZN7WebCore13PlatformEventC1ENS0_4TypeEN3WTF9OptionSetINS0_8ModifierEEENS2_8WallTimeE'/>
+<use f='WebKit/Source/WebCore/platform/PlatformEvent.h' l='119' c='_ZN7WebCore13PlatformEventC1ENS0_4TypeEbbbbN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebCore/platform/PlatformEvent.h' l='137'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='949' c='_ZN7WebCore8Document20overrideLastModifiedERKSt8optionalIN3WTF8WallTimeEE'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='2021'/>
+<use f='WebKit/Source/WebCore/page/Page.h' l='1026'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/network/BlobDataFileReference.h' l='49' c='_ZN7WebCore21BlobDataFileReference24expectedModificationTimeEv'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobDataFileReference.h' l='68'/>
+<use f='WebKit/Source/WebCore/platform/network/FormData.h' l='48' c='_ZN7WebCore15FormDataElementC1ERKN3WTF6StringEllSt8optionalINS1_8WallTimeEE'/>
+<use f='WebKit/Source/WebCore/platform/network/FormData.h' l='75'/>
+<use f='WebKit/Source/WebCore/platform/network/FormData.h' l='112' c='_ZN7WebCore15FormDataElement15EncodedFileData6decodeERT_'/>
+<use f='WebKit/Source/WebCore/platform/network/FormData.h' l='215' c='_ZN7WebCore8FormData15appendFileRangeERKN3WTF6StringExxSt8optionalINS1_8WallTimeEE'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.h' l='50'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.h' l='54' c='_ZN7WebCore17computeCurrentAgeERKNS_16ResourceResponseEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.h' l='55' c='_ZN7WebCore37computeFreshnessLifetimeForHTTPFamilyERKNS_16ResourceResponseEN3WTF8WallTimeE'/>
+<use f='WebKit/WTF/Headers/wtf/persistence/PersistentCoders.h' l='274'/>
+<use f='WebKit/WTF/Headers/wtf/persistence/PersistentCoders.h' l='275' c='_ZN3WTF11Persistence5CoderINS_8WallTimeEE6encodeERNS0_7EncoderERKS2_'/>
+<use f='WebKit/WTF/Headers/wtf/persistence/PersistentCoders.h' l='280' c='_ZN3WTF11Persistence5CoderINS_8WallTimeEE6decodeERNS0_7DecoderE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='156' c='_ZNK7WebCore20ResourceResponseBase4dateEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='158' c='_ZNK7WebCore20ResourceResponseBase7expiresEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='159' c='_ZNK7WebCore20ResourceResponseBase12lastModifiedEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='258'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='259'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='260'/>
+<use f='WebKit/Source/WebKit/Shared/WebEvent.h' l='100' c='_ZNK6WebKit8WebEvent9timestampEv'/>
+<use f='WebKit/Source/WebKit/Shared/WebEvent.h' l='105' c='_ZN6WebKit8WebEventC1ENS0_4TypeEN3WTF9OptionSetINS0_8ModifierEEENS2_8WallTimeE'/>
+<use f='WebKit/Source/WebKit/Shared/WebEvent.h' l='113'/>
+<use f='WebKit/Source/WebKit/Shared/WebMouseEvent.h' l='57' c='_ZN6WebKit13WebMouseEventC1ENS_8WebEvent4TypeENS0_6ButtonEtRKN7WebCore8IntPointES7_fffiN3WTF9OptionSetINS1_8ModifierEEENS8_8WallTimeEdNS0_18SyntheticC1493251'/>
+<use f='WebKit/Source/WebCore/platform/PlatformMouseEvent.h' l='52' c='_ZN7WebCore18PlatformMouseEventC1ERKNS_8IntPointES3_NS_11MouseButtonENS_13PlatformEvent4TypeEibbbbN3WTF8WallTimeEdNS_18SyntheticClickTypeEi'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.h' l='204' c='_ZN6WebKit14NetworkProcess14clearHSTSCacheEN3PAL9SessionIDEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.h' l='241' c='_ZN6WebKit14NetworkProcess34scheduleClearInMemoryAndPersistentEN3PAL9SessionIDESt8optionalIN3WTF8WallTimeEENS_27ShouldGrandfatherStatisticsEONS4_17Com6091688'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.h' l='430' c='_ZN6WebKit14NetworkProcess17deleteWebsiteDataEN3PAL9SessionIDEN3WTF9OptionSetINS_15WebsiteDataTypeEEENS3_8WallTimeEONS3_17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.h' l='439' c='_ZN6WebKit14NetworkProcess14clearDiskCacheEN3WTF8WallTimeEONS1_17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/PrivateClickMeasurement.h' l='232'/>
+<use f='WebKit/Source/WebCore/loader/PrivateClickMeasurement.h' l='233'/>
+<use f='WebKit/Source/WebCore/loader/PrivateClickMeasurement.h' l='235' c='_ZN7WebCore23PrivateClickMeasurement25AttributionTimeToSendData18earliestTimeToSendEv'/>
+<use f='WebKit/Source/WebCore/loader/PrivateClickMeasurement.h' l='246' c='_ZN7WebCore23PrivateClickMeasurement25AttributionTimeToSendData16latestTimeToSendEv'/>
+<use f='WebKit/Source/WebCore/loader/PrivateClickMeasurement.h' l='284' c='_ZN7WebCore23PrivateClickMeasurement25AttributionTimeToSendData6decodeERT_'/>
+<use f='WebKit/Source/WebCore/loader/PrivateClickMeasurement.h' l='289' c='_ZN7WebCore23PrivateClickMeasurement25AttributionTimeToSendData6decodeERT_'/>
+<use f='WebKit/Source/WebCore/loader/PrivateClickMeasurement.h' l='299' c='_ZN7WebCore23PrivateClickMeasurementC1ENS0_8SourceIDERKNS0_10SourceSiteERKNS0_26AttributionDestinationSiteEON3WTF6StringESA_NS8_8WallTimeE'/>
+<use f='WebKit/Source/WebCore/loader/PrivateClickMeasurement.h' l='318' c='_ZNK7WebCore23PrivateClickMeasurement13timeOfAdClickEv'/>
+<use f='WebKit/Source/WebCore/loader/PrivateClickMeasurement.h' l='376'/>
+<use f='WebKit/Source/WebCore/loader/PrivateClickMeasurement.h' l='437' c='_ZN7WebCore23PrivateClickMeasurement6decodeERT_'/>
+<use f='WebKit/Source/WebCore/workers/service/ServiceWorkerRegistrationData.h' l='46'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoaderClient.h' l='164' c='_ZN7WebCore17FrameLoaderClient33dispatchWillPerformClientRedirectERKN3WTF3URLEdNS1_8WallTimeENS_19LockBackForwardListE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.h' l='110' c='_ZN6WebKit20WebFrameLoaderClient33dispatchWillPerformClientRedirectERKN3WTF3URLEdNS1_8WallTimeEN7WebCore19LockBackForwardListE'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/API/APIInjectedBundlePageLoaderClient.h' l='83' c='_ZN3API14InjectedBundle16PageLoaderClient33willPerformClientRedirectForFrameERN6WebKit7WebPageERNS2_8WebFrameERKN3WTF6StringEdNS7_8WallTimeE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.h' l='232' c='_ZN6WebKit15WebProcessProxy17deleteWebsiteDataEN3PAL9SessionIDEN3WTF9OptionSetINS_15WebsiteDataTypeEEENS3_8WallTimeEONS3_17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.h' l='343'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1047' c='_ZN6WebKit7WebPage17simulateMouseDownEiN7WebCore8IntPointEijN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1048' c='_ZN6WebKit7WebPage15simulateMouseUpEiN7WebCore8IntPointEijN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1049' c='_ZN6WebKit7WebPage19simulateMouseMotionEN7WebCore8IntPointEN3WTF8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/Shared/WebKeyboardEvent.h' l='47' c='_ZN6WebKit16WebKeyboardEventC1ENS_8WebEvent4TypeERKN3WTF6StringES6_S6_S6_iibOSt8optionalINS3_6VectorIN7WebCore20CompositionUnderlineELm0ENS3_15CrashOn15957419'/>
+<use f='WebKit/Source/WebKit/Shared/WebWheelEvent.h' l='54' c='_ZN6WebKit13WebWheelEventC1ENS_8WebEvent4TypeERKN7WebCore8IntPointES6_RKNS3_9FloatSizeES9_NS0_11GranularityEN3WTF9OptionSetINS1_8ModifierEEENSB_8WallTimeE'/>
+<use f='WebKit/Source/WebKit/Shared/WebWheelEvent.h' l='58' c='_ZN6WebKit13WebWheelEventC1ENS_8WebEvent4TypeERKN7WebCore8IntPointES6_RKNS3_9FloatSizeES9_NS0_5PhaseESA_NS0_11GranularityEbN3WTF9OptionSetINS1_8ModifierEEENSC_8WallTimeE'/>
+<use f='WebKit/Source/WebKit/Shared/WebTouchEvent.h' l='193' c='_ZN6WebKit13WebTouchEventC1ENS_8WebEvent4TypeEON3WTF6VectorINS_21WebPlatformTouchPointELm0ENS3_15CrashOnOverflowELm16ENS3_10FastMallocEEENS3_9OptionSe13414323'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/gtk/GtkUtilities.h' l='39' c='_ZN7WebCore16wallTimeForEventEPKT_'/>
+<use f='WebKit/Source/WebCore/platform/gtk/GtkUtilities.h' l='48' c='_ZN7WebCore16wallTimeForEventEPKT_'/>
+<use f='WebKit/Source/WebCore/platform/PlatformKeyboardEvent.h' l='55' c='_ZN7WebCore21PlatformKeyboardEventC1ENS_13PlatformEvent4TypeERKN3WTF6StringES6_S6_S6_S6_ibbbNS3_9OptionSetINS1_8ModifierEEENS3_8WallTimeE'/>
+<use f='WebKit/Source/WebKit/Shared/linux/WebMemorySamplerLinux.cpp' l='98' c='_ZNK6WebKit16WebMemorySampler12sampleWebKitEv'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/Shared/SessionState.h' l='68'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/WebStorage/LocalStorageDatabaseTracker.h' l='48' c='_ZN6WebKit27LocalStorageDatabaseTracker22databasesModifiedSinceEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/WebStorage/LocalStorageDatabaseTracker.h' l='54'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/WebStorage/LocalStorageDatabaseTracker.h' l='55'/>
+<use f='WebKit/Source/WebCore/platform/network/NetworkStorageSession.h' l='164' c='_ZN7WebCore21NetworkStorageSession29deleteAllCookiesModifiedSinceEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/WebResourceLoadStatisticsStore.h' l='196' c='_ZN6WebKit30WebResourceLoadStatisticsStore34scheduleClearInMemoryAndPersistentEN3WTF8WallTimeENS_27ShouldGrandfatherStatisticsEONS1_17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebsiteData/WebsiteDataStore.h' l='166' c='_ZN6WebKit16WebsiteDataStore10removeDataEN3WTF9OptionSetINS_15WebsiteDataTypeEEENS1_8WallTimeEONS1_8FunctionIFvvEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebsiteData/WebsiteDataStore.h' l='191' c='_ZN6WebKit16WebsiteDataStore34scheduleClearInMemoryAndPersistentEN3WTF8WallTimeENS_27ShouldGrandfatherStatisticsEONS1_17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebsiteData/WebsiteDataStore.h' l='378' c='_ZN6WebKit16WebsiteDataStore28platformRemoveRecentSearchesEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebsiteData/WebsiteDataStore.h' l='399' c='_ZN6WebKit16WebsiteDataStore15removeMediaKeysERKN3WTF6StringENS1_8WallTimeE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.h' l='126' c='_ZN6WebKit19NetworkProcessProxy17deleteWebsiteDataEN3PAL9SessionIDEN3WTF9OptionSetINS_15WebsiteDataTypeEEENS3_8WallTimeEONS3_17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.h' l='176' c='_ZN6WebKit19NetworkProcessProxy34scheduleClearInMemoryAndPersistentEN3PAL9SessionIDESt8optionalIN3WTF8WallTimeEENS_27ShouldGrandfatherStatisticsEONS4_5376113'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebProcess.h' l='477' c='_ZN6WebKit10WebProcess17deleteWebsiteDataEN3WTF9OptionSetINS_15WebsiteDataTypeEEENS1_8WallTimeEONS1_17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/PrefetchCache.h' l='70'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheStorage.h' l='55'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheStorage.h' l='89' c='_ZN6WebKit12NetworkCache7Storage5clearERKN3WTF6StringENS2_8WallTimeEONS2_17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheEntry.h' l='56' c='_ZNK6WebKit12NetworkCache5Entry9timeStampEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheEntry.h' l='86'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSession.h' l='87' c='_ZN6WebKit14NetworkSession24clearAlternativeServicesEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSession.h' l='174' c='_ZN6WebKit14NetworkSession24removeNetworkWebsiteDataESt8optionalIN3WTF8WallTimeEEOS1_INS2_7HashSetIN7WebCore17RegistrableDomainENS2_11DefaultHashIS7_E9498781'/>
+<use f='WebKit/Source/WebKit/WebProcess/MediaCache/WebMediaKeyStorageManager.h' l='55' c='_ZN6WebKit25WebMediaKeyStorageManager41deleteMediaKeyEntriesModifiedBetweenDatesEN3WTF8WallTimeES2_'/>
+<use f='WebKit/Source/WebKit/WebProcess/MediaCache/WebMediaKeyStorageManager.h' l='55' c='_ZN6WebKit25WebMediaKeyStorageManager41deleteMediaKeyEntriesModifiedBetweenDatesEN3WTF8WallTimeES2_'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebProcess.cpp' l='1398' c='_ZN6WebKit10WebProcess17deleteWebsiteDataEN3WTF9OptionSetINS_15WebsiteDataTypeEEENS1_8WallTimeEONS1_17CompletionHandlerIFvvEEE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/InjectedBundlePageLoaderClient.h' l='74' c='_ZN6WebKit30InjectedBundlePageLoaderClient33willPerformClientRedirectForFrameERNS_7WebPageERNS_8WebFrameERKN3WTF6StringEdNS5_8WallTimeE'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseDetails.h' l='69' c='_ZN7WebCore15DatabaseDetailsC1ERKN3WTF6StringES4_mmSt8optionalINS1_8WallTimeEES7_'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseDetails.h' l='69' c='_ZN7WebCore15DatabaseDetailsC1ERKN3WTF6StringES4_mmSt8optionalINS1_8WallTimeEES7_'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseDetails.h' l='83' c='_ZNK7WebCore15DatabaseDetails12creationTimeEv'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseDetails.h' l='84' c='_ZNK7WebCore15DatabaseDetails16modificationTimeEv'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseDetails.h' l='94'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseDetails.h' l='95'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.h' l='282' c='_ZN7WebCore11FrameLoader16clientRedirectedERKN3WTF3URLEdNS1_8WallTimeENS_19LockBackForwardListE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/MediaPlayer.h' l='311' c='_ZN7WebCore11MediaPlayer15clearMediaCacheERKN3WTF6StringENS1_8WallTimeE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/MediaPlayer.h' l='732' c='_ZNK7WebCore18MediaPlayerFactory15clearMediaCacheERKN3WTF6StringENS1_8WallTimeE'/>
+<use f='WebKit/Source/WebCore/platform/SearchPopupMenu.h' l='34'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.h' l='456' c='_ZN7WebCore16HTMLMediaElement15clearMediaCacheERKN3WTF6StringENS1_8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/workers/service/SWClientConnection.h' l='102' c='_ZN7WebCore18SWClientConnection29setRegistrationLastUpdateTimeEN3WTF16ObjectIdentifierINS_39ServiceWorkerRegistrationIdentifierTypeEEENS1_8WallTimeE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyFrameLoaderClient.h' l='80' c='_ZN7WebCore22EmptyFrameLoaderClient33dispatchWillPerformClientRedirectERKN3WTF3URLEdNS1_8WallTimeENS_19LockBackForwardListE'/>
+<use f='WebKit/Source/WebCore/workers/service/server/SWServer.h' l='89' c='_ZN7WebCore8SWServer10Connection29setRegistrationLastUpdateTimeEN3WTF16ObjectIdentifierINS_39ServiceWorkerRegistrationIdentifierTypeEEENS2_8WallTimeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/WebSWServerConnection.h' l='91' c='_ZN6WebKit21WebSWServerConnection29setRegistrationLastUpdateTimeEN3WTF16ObjectIdentifierIN7WebCore39ServiceWorkerRegistrationIdentifierTypeEEENS1_8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='387' c='_ZN6WebKit20WebFrameLoaderClient33dispatchWillPerformClientRedirectERKN3WTF3URLEdNS1_8WallTimeEN7WebCore19LockBackForwardListE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/network/soup/SoupNetworkSession.h' l='73' c='_ZN7WebCore18SoupNetworkSession14clearHSTSCacheEN3WTF8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/page/EventHandler.h' l='579'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseTracker.h' l='96' c='_ZN7WebCore15DatabaseTracker28deleteDatabasesModifiedSinceEN3WTF8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/Modules/indexeddb/server/IDBServer.h' l='102' c='_ZN7WebCore9IDBServer9IDBServer36closeAndDeleteDatabasesModifiedSinceEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebCore/Modules/indexeddb/server/IDBServer.h' l='117' c='_ZN7WebCore9IDBServer9IDBServer38removeDatabasesModifiedSinceForVersionEN3WTF8WallTimeERKNS2_6StringE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/IndexedDB/WebIDBServer.h' l='51' c='_ZN6WebKit12WebIDBServer36closeAndDeleteDatabasesModifiedSinceEN3WTF8WallTimeEONS1_17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/platform/network/HTTPParsers.h' l='80' c='_ZN7WebCore13parseHTTPDateERKN3WTF6StringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.h' l='183' c='_ZN6WebKit12NetworkCache5Cache5clearEN3WTF8WallTimeEONS2_8FunctionIFvvEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.cpp' l='706' c='_ZN6WebKit14NetworkProcess34scheduleClearInMemoryAndPersistentEN3PAL9SessionIDESt8optionalIN3WTF8WallTimeEENS_27ShouldGrandfatherStatisticsEONS4_17Com6091688'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.cpp' l='1558' c='_ZN6WebKit14NetworkProcess17deleteWebsiteDataEN3PAL9SessionIDEN3WTF9OptionSetINS_15WebsiteDataTypeEEENS3_8WallTimeEONS3_17CompletionHandlerIFvvEEE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/PrivateClickMeasurementManager.cpp' l='403' c='_ZN6WebKit30PrivateClickMeasurementManager30firePendingAttributionRequestsEv'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsStore.h' l='57' c='_ZN6WebKit13OperatingDate12fromWallTimeEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsStore.h' l='203' c='_ZNK6WebKit27ResourceLoadStatisticsStore20hasStatisticsExpiredEN3WTF8WallTimeENS_20OperatingDatesWindowE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsStore.h' l='253' c='_ZN6WebKit27ResourceLoadStatisticsStore28endOfGrandfatheringTimestampEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsStore.h' l='254' c='_ZNK6WebKit27ResourceLoadStatisticsStore28endOfGrandfatheringTimestampEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsStore.h' l='255' c='_ZN6WebKit27ResourceLoadStatisticsStore31setEndOfGrandfatheringTimestampERKN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsStore.h' l='291'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsDatabaseStore.h' l='161' c='_ZNK6WebKit35ResourceLoadStatisticsDatabaseStore20hasStatisticsExpiredEN3WTF8WallTimeENS_20OperatingDatesWindowE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsDatabaseStore.h' l='197' c='_ZN6WebKit35ResourceLoadStatisticsDatabaseStore14updateLastSeenERKN7WebCore17RegistrableDomainEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsDatabaseStore.h' l='199' c='_ZN6WebKit35ResourceLoadStatisticsDatabaseStore18setUserInteractionERKN7WebCore17RegistrableDomainEbN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsDatabaseStore.h' l='212'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsDatabaseStore.h' l='259' c='_ZN6WebKit35ResourceLoadStatisticsDatabaseStore29mostRecentUserInteractionTimeERKNS0_10DomainDataE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsMemoryStore.h' l='129' c='_ZNK6WebKit33ResourceLoadStatisticsMemoryStore20hasStatisticsExpiredEN3WTF8WallTimeENS_20OperatingDatesWindowE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsMemoryStore.h' l='150' c='_ZN6WebKit33ResourceLoadStatisticsMemoryStore29mostRecentUserInteractionTimeERKN7WebCore22ResourceLoadStatisticsE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsDatabaseStore.cpp' l='1817' c='_ZN6WebKit35ResourceLoadStatisticsDatabaseStore18setUserInteractionERKN7WebCore17RegistrableDomainEbN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsDatabaseStore.cpp' l='1898' c='_ZN6WebKit35ResourceLoadStatisticsDatabaseStore21hasHadUserInteractionERKN7WebCore17RegistrableDomainENS_20OperatingDatesWindowE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsDatabaseStore.cpp' l='2589' c='_ZN6WebKit35ResourceLoadStatisticsDatabaseStore29mostRecentUserInteractionTimeERKNS0_10DomainDataE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsDatabaseStore.cpp' l='2691' c='_ZN6WebKit35ResourceLoadStatisticsDatabaseStore14updateLastSeenERKN7WebCore17RegistrableDomainEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsDatabaseStore.cpp' l='3078' c='_ZNK6WebKit35ResourceLoadStatisticsDatabaseStore20hasStatisticsExpiredEN3WTF8WallTimeENS_20OperatingDatesWindowE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsDatabaseStore.cpp' l='3178' c='_ZN6WebKit35ResourceLoadStatisticsDatabaseStore40buildPrivateClickMeasurementFromDatabaseEPN7WebCore15SQLiteStatementENS_38PrivateClickMeasurementAttributionTypeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsDatabaseStore.cpp' l='3179' c='_ZN6WebKit35ResourceLoadStatisticsDatabaseStore40buildPrivateClickMeasurementFromDatabaseEPN7WebCore15SQLiteStatementENS_38PrivateClickMeasurementAttributionTypeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsMemoryStore.cpp' l='57'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsMemoryStore.cpp' l='932' c='_ZN6WebKit33ResourceLoadStatisticsMemoryStore29mostRecentUserInteractionTimeERKN7WebCore22ResourceLoadStatisticsE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsMemoryStore.cpp' l='1103' c='_ZNK6WebKit33ResourceLoadStatisticsMemoryStore20hasStatisticsExpiredEN3WTF8WallTimeENS_20OperatingDatesWindowE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsStore.cpp' l='74' c='_ZN6WebKit13OperatingDate12fromWallTimeEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/WebResourceLoadStatisticsStore.cpp' l='1168' c='_ZN6WebKit30WebResourceLoadStatisticsStore34scheduleClearInMemoryAndPersistentEN3WTF8WallTimeENS_27ShouldGrandfatherStatisticsEONS1_17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Cookies/WebCookieManager.h' l='77' c='_ZN6WebKit16WebCookieManager29deleteAllCookiesModifiedSinceEN3PAL9SessionIDEN3WTF8WallTimeEONS3_17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Cookies/WebCookieManager.cpp' l='85' c='_ZN6WebKit16WebCookieManager29deleteAllCookiesModifiedSinceEN3PAL9SessionIDEN3WTF8WallTimeEONS3_17CompletionHandlerIFvvEEE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/IndexedDB/WebIDBServer.cpp' l='73' c='_ZN6WebKit12WebIDBServer36closeAndDeleteDatabasesModifiedSinceEN3WTF8WallTimeEONS1_17CompletionHandlerIFvvEEE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/sql/SQLiteFileSystem.h' l='93' c='_ZN7WebCore16SQLiteFileSystem20databaseCreationTimeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/platform/sql/SQLiteFileSystem.h' l='94' c='_ZN7WebCore16SQLiteFileSystem24databaseModificationTimeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/WebStorage/LocalStorageDatabaseTracker.cpp' l='85' c='_ZN6WebKit27LocalStorageDatabaseTracker22databasesModifiedSinceEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/WebStorage/StorageManager.h' l='69' c='_ZN6WebKit14StorageManager38deleteLocalStorageOriginsModifiedSinceEN3WTF8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheFileSystem.h' l='37'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheFileSystem.h' l='38'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.cpp' l='181' c='_ZN6WebKit12NetworkCacheL25responseNeedsRevalidationERNS_14NetworkSessionERKN7WebCore16ResourceResponseEN3WTF8WallTimeESt8optionalINS7_7SecondsEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.cpp' l='211' c='_ZN6WebKit12NetworkCacheL25responseNeedsRevalidationERNS_14NetworkSessionERKN7WebCore16ResourceResponseERKNS3_15ResourceRequestEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.cpp' l='659' c='_ZN6WebKit12NetworkCache5Cache5clearEN3WTF8WallTimeEONS2_8FunctionIFvvEEE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheSubresourcesEntry.h' l='47' c='_ZNK6WebKit12NetworkCache15SubresourceInfo8lastSeenEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheSubresourcesEntry.h' l='48' c='_ZNK6WebKit12NetworkCache15SubresourceInfo9firstSeenEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheSubresourcesEntry.h' l='67'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheSubresourcesEntry.h' l='68'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheSubresourcesEntry.h' l='99' c='_ZNK6WebKit12NetworkCache17SubresourcesEntry9timeStampEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheSubresourcesEntry.h' l='106'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheSpeculativeLoadManager.cpp' l='118' c='_ZN6WebKit12NetworkCacheL25responseNeedsRevalidationERKN7WebCore16ResourceResponseEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheStorage.cpp' l='453'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheStorage.cpp' l='482' c='_ZN6WebKit12NetworkCacheL20decodeRecordMetaDataERNS0_14RecordMetaDataERKNS0_4DataE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheStorage.cpp' l='1069' c='_ZN6WebKit12NetworkCache7Storage5clearERKN3WTF6StringENS2_8WallTimeEONS2_17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheSubresourcesEntry.cpp' l='65' c='_ZN6WebKit12NetworkCache15SubresourceInfo6decodeERN3WTF11Persistence7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheSubresourcesEntry.cpp' l='71' c='_ZN6WebKit12NetworkCache15SubresourceInfo6decodeERN3WTF11Persistence7DecoderE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkProcessSoup.cpp' l='110' c='_ZN6WebKit14NetworkProcess14clearHSTSCacheEN3PAL9SessionIDEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkProcessSoup.cpp' l='148' c='_ZN6WebKit14NetworkProcess14clearDiskCacheEN3WTF8WallTimeEONS1_17CompletionHandlerIFvvEEE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebCookieManagerProxy.h' l='65' c='_ZN6WebKit21WebCookieManagerProxy29deleteAllCookiesModifiedSinceEN3PAL9SessionIDEN3WTF8WallTimeEONS3_17CompletionHandlerIFvvEEE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.cpp' l='294' c='_ZN6WebKit19NetworkProcessProxy17deleteWebsiteDataEN3PAL9SessionIDEN3WTF9OptionSetINS_15WebsiteDataTypeEEENS3_8WallTimeEONS3_17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.cpp' l='669' c='_ZN6WebKit19NetworkProcessProxy34scheduleClearInMemoryAndPersistentEN3PAL9SessionIDESt8optionalIN3WTF8WallTimeEENS_27ShouldGrandfatherStatisticsEONS4_5376113'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/DeviceIdHashSaltStorage.h' l='48' c='_ZN6WebKit23DeviceIdHashSaltStorage42deleteDeviceIdHashSaltOriginsModifiedSinceEN3WTF8WallTimeEONS1_17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/DeviceIdHashSaltStorage.h' l='71'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebsiteData/WebsiteDataStore.cpp' l='668' c='_ZN6WebKit16WebsiteDataStore10removeDataEN3WTF9OptionSetINS_15WebsiteDataTypeEEENS1_8WallTimeEONS1_8FunctionIFvvEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebsiteData/WebsiteDataStore.cpp' l='1249' c='_ZN6WebKit16WebsiteDataStore34scheduleClearInMemoryAndPersistentEN3WTF8WallTimeENS_27ShouldGrandfatherStatisticsEONS1_17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebsiteData/WebsiteDataStore.cpp' l='1692' c='_ZN6WebKit16WebsiteDataStore15removeMediaKeysERKN3WTF6StringENS1_8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebCookieManagerProxy.cpp' l='84' c='_ZN6WebKit21WebCookieManagerProxy29deleteAllCookiesModifiedSinceEN3PAL9SessionIDEN3WTF8WallTimeEONS3_17CompletionHandlerIFvvEEE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.cpp' l='898' c='_ZN6WebKit14WebProcessPool25processDidFinishLaunchingERNS_15WebProcessProxyE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.cpp' l='1444' c='_ZN6WebKit14WebProcessPool18startMemorySamplerEd'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.cpp' l='1252' c='_ZN6WebKit15WebProcessProxy17deleteWebsiteDataEN3PAL9SessionIDEN3WTF9OptionSetINS_15WebsiteDataTypeEEENS3_8WallTimeEONS3_17CompletionHandlerIFvvEEE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerEvent.h' l='44' c='_ZN3JSC8Profiler5EventC1EN3WTF8WallTimeEPNS0_9BytecodesEPNS0_11CompilationEPKcRKNS2_7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerEvent.h' l='58' c='_ZNK3JSC8Profiler5Event4timeEv'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerEvent.h' l='68'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/Seconds.h' l='180' c='_ZNK3WTF7SecondsplENS_8WallTimeE'/>
+<use f='WebKit/Source/WTF/wtf/Seconds.h' l='180' c='_ZNK3WTF7SecondsplENS_8WallTimeE'/>
+<use f='WebKit/Source/WTF/wtf/Seconds.h' l='184' c='_ZNK3WTF7SecondsmiENS_8WallTimeE'/>
+<use f='WebKit/Source/WTF/wtf/Seconds.h' l='184' c='_ZNK3WTF7SecondsmiENS_8WallTimeE'/>
+<def f='WebKit/Source/WTF/wtf/WallTime.h' l='41' ll='146'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='51' c='_ZN3WTF8WallTime14fromRawSecondsEd'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='53' c='_ZN3WTF8WallTime14fromRawSecondsEd'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='56' c='_ZN3WTF8WallTime3nowEv'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='58' c='_ZN3WTF8WallTime8infinityEv'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='59' c='_ZN3WTF8WallTime3nanEv'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='63' c='_ZNK3WTF8WallTime19approximateWallTimeEv'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='68' c='_ZNK3WTF8WallTimeplENS_7SecondsE'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='73' c='_ZNK3WTF8WallTimemiENS_7SecondsE'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='80' c='_ZNK3WTF8WallTimengEv'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='85' c='_ZN3WTF8WallTimepLENS_7SecondsE'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='90' c='_ZN3WTF8WallTimemIENS_7SecondsE'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='95' c='_ZNK3WTF8WallTimemiES0_'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='100' c='_ZNK3WTF8WallTimeeqES0_'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='105' c='_ZNK3WTF8WallTimeneES0_'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='110' c='_ZNK3WTF8WallTimeltES0_'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='115' c='_ZNK3WTF8WallTimegtES0_'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='120' c='_ZNK3WTF8WallTimeleES0_'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='125' c='_ZNK3WTF8WallTimegeES0_'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='132' c='_ZNK3WTF8WallTime12isolatedCopyEv'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='149' c='_ZN3WTF8WallTime14MarkableTraits12isEmptyValueES0_'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='154' c='_ZN3WTF8WallTime14MarkableTraits10emptyValueEv'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='160' c='_ZN3WTF5sleepENS_8WallTimeE'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='166' c='_ZSt5isnanN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='171' c='_ZSt5isinfN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WTF/wtf/WallTime.h' l='176' c='_ZSt8isfiniteN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WTF/wtf/ThreadingPrimitives.h' l='105' c='_ZN3WTF15ThreadCondition9timedWaitERNS_5MutexENS_8WallTimeE'/>
+<size>8</size>
+<doc f='WebKit/Source/WTF/wtf/WallTime.h' l='36'>// The current time according to a wall clock (aka real time clock). This uses floating point
+// internally so that you can reason about infinity and other things that arise in math. It&apos;s
+// acceptable to use this to wrap NaN times, negative times, and infinite times, so long as they
+// are relative to the same clock. Use this only if wall clock time is needed. For elapsed time
+// measurement use MonotonicTime instead.</doc>
+<smbr r='WTF::WallTime::clockType' t='const WTF::ClockType'/>
+<fun r='_ZN3WTF8WallTimeC1Ev'/>
+<fun r='_ZN3WTF8WallTime14fromRawSecondsEd'/>
+<fun r='_ZN3WTF8WallTime3nowEv'/>
+<fun r='_ZN3WTF8WallTime8infinityEv'/>
+<fun r='_ZN3WTF8WallTime3nanEv'/>
+<fun r='_ZNK3WTF8WallTime17secondsSinceEpochEv'/>
+<fun r='_ZNK3WTF8WallTime19approximateWallTimeEv'/>
+<fun r='_ZNK3WTF8WallTime24approximateMonotonicTimeEv'/>
+<fun r='_ZNK3WTF8WallTimecvbEv'/>
+<fun r='_ZNK3WTF8WallTimeplENS_7SecondsE'/>
+<fun r='_ZNK3WTF8WallTimemiENS_7SecondsE'/>
+<fun r='_ZNK3WTF8WallTimengEv'/>
+<fun r='_ZN3WTF8WallTimepLENS_7SecondsE'/>
+<fun r='_ZN3WTF8WallTimemIENS_7SecondsE'/>
+<fun r='_ZNK3WTF8WallTimemiES0_'/>
+<fun r='_ZNK3WTF8WallTimeeqES0_'/>
+<fun r='_ZNK3WTF8WallTimeneES0_'/>
+<fun r='_ZNK3WTF8WallTimeltES0_'/>
+<fun r='_ZNK3WTF8WallTimegtES0_'/>
+<fun r='_ZNK3WTF8WallTimeleES0_'/>
+<fun r='_ZNK3WTF8WallTimegeES0_'/>
+<fun r='_ZNK3WTF8WallTime4dumpERNS_11PrintStreamE'/>
+<fun r='_ZNK3WTF8WallTime12isolatedCopyEv'/>
+<fun r='_ZN3WTF8WallTimeC1Ed'/>
+<mbr r='WTF::WallTime::m_value' o='0' t='double'/>
+<use f='WebKit/Source/WTF/wtf/MonotonicTime.h' l='68' c='_ZNK3WTF13MonotonicTime19approximateWallTimeEv'/>
+<use f='WebKit/Source/WTF/wtf/TimeWithDynamicClockType.h' l='41' c='_ZN3WTF24TimeWithDynamicClockTypeC1ENS_8WallTimeE'/>
+<use f='WebKit/Source/WTF/wtf/TimeWithDynamicClockType.h' l='74' c='_ZNK3WTF24TimeWithDynamicClockType8wallTimeEv'/>
+<use f='WebKit/Source/WTF/wtf/TimeWithDynamicClockType.h' l='77' c='_ZNK3WTF24TimeWithDynamicClockType19approximateWallTimeEv'/>
+<use f='WebKit/Source/WTF/wtf/ParkingLot.h' l='51'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/CurrentTime.cpp' l='248' c='_ZN3WTF8WallTime3nowEv'/>
+<size>8</size>
+<fun r='_ZN3WTF8WallTime3nowEv'/>
+<use f='WebKit/Source/WTF/wtf/FileSystem.h' l='115' c='_ZN3WTF14FileSystemImpl20fileModificationTimeERKNS_6StringE'/>
+<use f='WebKit/Source/WTF/wtf/FileSystem.h' l='117' c='_ZN3WTF14FileSystemImpl16fileCreationTimeERKNS_6StringE'/>
+<use f='WebKit/Source/WTF/wtf/FileSystem.cpp' l='144' c='_ZN3WTF14FileSystemImplL10toWallTimeENSt6chrono10time_pointINSt10filesystem12__file_clockENS1_8durationIlSt5ratioILl1ELl1000000000EEEEEE'/>
+<use f='WebKit/Source/WTF/wtf/FileSystem.cpp' l='625' c='_ZN3WTF14FileSystemImpl20fileModificationTimeERKNS_6StringE'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/MonotonicTime.cpp' l='34' c='_ZNK3WTF13MonotonicTime19approximateWallTimeEv'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/Seconds.cpp' l='39' c='_ZNK3WTF7SecondsplENS_8WallTimeE'/>
+<use f='WebKit/Source/WTF/wtf/Seconds.cpp' l='39' c='_ZNK3WTF7SecondsplENS_8WallTimeE'/>
+<use f='WebKit/Source/WTF/wtf/Seconds.cpp' l='54' c='_ZNK3WTF7SecondsmiENS_8WallTimeE'/>
+<use f='WebKit/Source/WTF/wtf/Seconds.cpp' l='54' c='_ZNK3WTF7SecondsmiENS_8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/TimeWithDynamicClockType.cpp' l='53' c='_ZNK3WTF24TimeWithDynamicClockType8wallTimeEv'/>
+<use f='WebKit/Source/WTF/wtf/TimeWithDynamicClockType.cpp' l='65' c='_ZNK3WTF24TimeWithDynamicClockType19approximateWallTimeEv'/>
+<use f='WebKit/Source/WTF/wtf/TimeWithDynamicClockType.cpp' l='74' c='_ZNK3WTF24TimeWithDynamicClockType19approximateWallTimeEv'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/glib/FileSystemGlib.cpp' l='131' c='_ZN3WTF14FileSystemImpl16fileCreationTimeERKNS_6StringE'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/persistence/PersistentCoders.h' l='274'/>
+<use f='WebKit/Source/WTF/wtf/persistence/PersistentCoders.h' l='275' c='_ZN3WTF11Persistence5CoderINS_8WallTimeEE6encodeERNS0_7EncoderERKS2_'/>
+<use f='WebKit/Source/WTF/wtf/persistence/PersistentCoders.h' l='280' c='_ZN3WTF11Persistence5CoderINS_8WallTimeEE6decodeERNS0_7DecoderE'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/posix/ThreadingPOSIX.cpp' l='586' c='_ZN3WTF15ThreadCondition9timedWaitERNS_5MutexENS_8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/graphics/MediaPlayerPrivate.h' l='227' c='_ZN7WebCore27MediaPlayerPrivateInterface15clearMediaCacheERKN3WTF6StringENS1_8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='126'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/gtk/GtkUtilities.cpp' l='124' c='_ZN7WebCore16wallTimeForEventEPKT_'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/workers/service/ServiceWorkerRegistration.h' l='63' c='_ZNK7WebCore25ServiceWorkerRegistration14lastUpdateTimeEv'/>
+<use f='WebKit/Source/WebCore/workers/service/ServiceWorkerRegistration.h' l='64' c='_ZN7WebCore25ServiceWorkerRegistration17setLastUpdateTimeEN3WTF8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/WebSWServerConnection.cpp' l='119' c='_ZN6WebKit21WebSWServerConnection29setRegistrationLastUpdateTimeEN3WTF16ObjectIdentifierIN7WebCore39ServiceWorkerRegistrationIdentifierTypeEEENS1_8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.cpp' l='36' c='_ZN3IPC13ArgumentCoderIN3WTF8WallTimeEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.cpp' l='41' c='_ZN3IPC13ArgumentCoderIN3WTF8WallTimeEvE6decodeERNS_7DecoderERS2_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.cpp' l='51' c='_ZN3IPC13ArgumentCoderIN3WTF8WallTimeEvE6decodeERNS_7DecoderE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='825' c='_ZN3IPC13ArgumentCoderIN7WebCore12RecentSearchEvE6decodeERNS_7DecoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1563' c='_ZN3IPC13ArgumentCoderIN7WebCore15DatabaseDetailsEvE6decodeERNS_7DecoderERS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1567' c='_ZN3IPC13ArgumentCoderIN7WebCore15DatabaseDetailsEvE6decodeERNS_7DecoderERS2_'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/Shared/WebEvent.cpp' l='40' c='_ZN6WebKit8WebEventC1ENS0_4TypeEN3WTF9OptionSetINS0_8ModifierEEENS2_8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/Shared/WebKeyboardEvent.cpp' l='61' c='_ZN6WebKit16WebKeyboardEventC1ENS_8WebEvent4TypeERKN3WTF6StringES6_S6_S6_iibOSt8optionalINS3_6VectorIN7WebCore20CompositionUnderlineELm0ENS3_15CrashOn15957419'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/Shared/WebMouseEvent.cpp' l='39' c='_ZN6WebKit13WebMouseEventC1ENS_8WebEvent4TypeENS0_6ButtonEtRKN7WebCore8IntPointES7_fffiN3WTF9OptionSetINS1_8ModifierEEENS8_8WallTimeEdNS0_18SyntheticC1493251'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/Shared/WebTouchEvent.cpp' l='37' c='_ZN6WebKit13WebTouchEventC1ENS_8WebEvent4TypeEON3WTF6VectorINS_21WebPlatformTouchPointELm0ENS3_15CrashOnOverflowELm16ENS3_10FastMallocEEENS3_9OptionSe13414323'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/Shared/WebWheelEvent.cpp' l='35' c='_ZN6WebKit13WebWheelEventC1ENS_8WebEvent4TypeERKN7WebCore8IntPointES6_RKNS3_9FloatSizeES9_NS0_11GranularityEN3WTF9OptionSetINS1_8ModifierEEENSB_8WallTimeE'/>
+<use f='WebKit/Source/WebKit/Shared/WebWheelEvent.cpp' l='64' c='_ZN6WebKit13WebWheelEventC1ENS_8WebEvent4TypeERKN7WebCore8IntPointES6_RKNS3_9FloatSizeES9_NS0_5PhaseESA_NS0_11GranularityEbN3WTF9OptionSetINS1_8ModifierEEENSC_8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebsiteDataManager.cpp' l='1152' c='_Z33webkit_website_data_manager_clearP25_WebKitWebsiteDataManager22WebKitWebsiteDataTypeslP13_GCancellablePFvP8_GObjectP13_GAsyncResultPvES8_'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/glib/WebsiteDataStoreGLib.cpp' l='107' c='_ZN6WebKit16WebsiteDataStore28platformRemoveRecentSearchesEN3WTF8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='5544' c='_ZN6WebKit7WebPage17simulateMouseDownEiN7WebCore8IntPointEijN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='5550' c='_ZN6WebKit7WebPage15simulateMouseUpEiN7WebCore8IntPointEijN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='5556' c='_ZN6WebKit7WebPage19simulateMouseMotionEN7WebCore8IntPointEN3WTF8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/page/History.h' l='86'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/FileStream.h' l='46' c='_ZN7WebCore10FileStream7getSizeERKN3WTF6StringESt8optionalINS1_8WallTimeEE'/>
+<use f='WebKit/Source/WebCore/platform/FileStream.cpp' l='50' c='_ZN7WebCore10FileStream7getSizeERKN3WTF6StringESt8optionalINS1_8WallTimeEE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/graphics/MediaPlayer.cpp' l='1242' c='_ZN7WebCore11MediaPlayer15clearMediaCacheERKN3WTF6StringENS1_8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/network/BlobDataFileReference.cpp' l='68' c='_ZN7WebCore21BlobDataFileReference24expectedModificationTimeEv'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/fileapi/AsyncFileStream.h' l='49' c='_ZN7WebCore15AsyncFileStream7getSizeERKN3WTF6StringESt8optionalINS1_8WallTimeEE'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.cpp' l='100' c='_ZN7WebCore17computeCurrentAgeERKNS_16ResourceResponseEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.cpp' l='113' c='_ZN7WebCore37computeFreshnessLifetimeForHTTPFamilyERKNS_16ResourceResponseEN3WTF8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/network/FormData.cpp' l='195' c='_ZN7WebCore8FormData15appendFileRangeERKN3WTF6StringExxSt8optionalINS1_8WallTimeEE'/>
+<use f='WebKit/Source/WebCore/platform/network/HTTPParsers.cpp' l='322' c='_ZN7WebCore13parseHTTPDateERKN3WTF6StringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='678' c='_ZN7WebCoreL22parseDateValueInHeaderERKNS_13HTTPHeaderMapENS_14HTTPHeaderNameE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='690' c='_ZNK7WebCore20ResourceResponseBase4dateEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='716' c='_ZNK7WebCore20ResourceResponseBase7expiresEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='727' c='_ZNK7WebCore20ResourceResponseBase12lastModifiedEv'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/network/soup/NetworkStorageSessionSoup.cpp' l='451' c='_ZN7WebCore21NetworkStorageSession29deleteAllCookiesModifiedSinceEN3WTF8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/sql/SQLiteFileSystem.cpp' l='117' c='_ZN7WebCore16SQLiteFileSystem20databaseCreationTimeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/platform/sql/SQLiteFileSystem.cpp' l='122' c='_ZN7WebCore16SQLiteFileSystem24databaseModificationTimeERKN3WTF6StringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/Modules/indexeddb/server/IDBServer.cpp' l='569' c='_ZN7WebCore9IDBServer9IDBServer36closeAndDeleteDatabasesModifiedSinceEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebCore/Modules/indexeddb/server/IDBServer.cpp' l='626' c='_ZN7WebCore9IDBServerL35removeAllDatabasesForFullOriginPathERKN3WTF6StringENS1_8WallTimeE'/>
+<use f='WebKit/Source/WebCore/Modules/indexeddb/server/IDBServer.cpp' l='683' c='_ZN7WebCore9IDBServerL31removeAllDatabasesForOriginPathERKN3WTF6StringENS1_8WallTimeE'/>
+<use f='WebKit/Source/WebCore/Modules/indexeddb/server/IDBServer.cpp' l='698' c='_ZN7WebCore9IDBServer9IDBServer38removeDatabasesModifiedSinceForVersionEN3WTF8WallTimeERKNS2_6StringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseTracker.cpp' l='783' c='_ZN7WebCore15DatabaseTracker28deleteDatabasesModifiedSinceEN3WTF8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/page/AutoscrollController.h' l='63' c='_ZN7WebCore20AutoscrollController17updateDragAndDropEPNS_4NodeERKNS_8IntPointEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebCore/page/AutoscrollController.h' l='83'/>
+<use f='WebKit/Source/WebCore/page/AutoscrollController.cpp' l='142' c='_ZN7WebCore20AutoscrollController17updateDragAndDropEPNS_4NodeERKNS_8IntPointEN3WTF8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/page/History.cpp' l='222' c='_ZN7WebCore7History16stateObjectAddedEON3WTF6RefPtrINS_21SerializedScriptValueENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEERKNS1_6Strin7031944'/>
+<use f='WebKit/Source/WebCore/page/LoggedInStatus.h' l='53' c='_ZNK7WebCore14LoggedInStatus6expiryEv'/>
+<use f='WebKit/Source/WebCore/page/LoggedInStatus.h' l='59' c='_ZNK7WebCore14LoggedInStatus12loggedInTimeEv'/>
+<use f='WebKit/Source/WebCore/page/LoggedInStatus.h' l='68'/>
+<use f='WebKit/Source/WebCore/page/LoggedInStatus.cpp' l='86' c='_ZNK7WebCore14LoggedInStatus6expiryEv'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/inspector/NetworkResourcesData.h' l='103' c='_ZNK7WebCore20NetworkResourcesData12ResourceData17responseTimestampEv'/>
+<use f='WebKit/Source/WebCore/inspector/NetworkResourcesData.h' l='104' c='_ZN7WebCore20NetworkResourcesData12ResourceData20setResponseTimestampEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebCore/inspector/NetworkResourcesData.h' l='132'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='427' c='_ZN7WebCore21InspectorNetworkAgent15willSendRequestEmPNS_14DocumentLoaderERNS_15ResourceRequestERKNS_16ResourceResponseENS_18InspectorPageAgent12ResourceTypeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='6542' c='_ZN7WebCore16HTMLMediaElement15clearMediaCacheERKN3WTF6StringENS1_8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='5310' c='_ZN7WebCore8Document20overrideLastModifiedERKSt8optionalIN3WTF8WallTimeEE'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='5318' c='_ZNK7WebCore8Document12lastModifiedEv'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='750' c='_ZN7WebCore22EmptyFrameLoaderClient33dispatchWillPerformClientRedirectERKN3WTF3URLEdNS1_8WallTimeENS_19LockBackForwardListE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='2244' c='_ZN7WebCore11FrameLoader16clientRedirectedERKN3WTF3URLEdNS1_8WallTimeENS_19LockBackForwardListE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadStatistics.cpp' l='570' c='_ZN7WebCore22ResourceLoadStatistics20reduceTimeResolutionEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadStatistics.cpp' l='570' c='_ZN7WebCore22ResourceLoadStatistics20reduceTimeResolutionEN3WTF8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/fileapi/AsyncFileStream.cpp' l='139' c='_ZN7WebCore15AsyncFileStream7getSizeERKN3WTF6StringESt8optionalINS1_8WallTimeEE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/workers/service/SWClientConnection.cpp' l='185' c='_ZN7WebCore18SWClientConnection29setRegistrationLastUpdateTimeEN3WTF16ObjectIdentifierINS_39ServiceWorkerRegistrationIdentifierTypeEEENS1_8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/workers/service/ServiceWorkerRegistration.cpp' l='123' c='_ZNK7WebCore25ServiceWorkerRegistration14lastUpdateTimeEv'/>
+<use f='WebKit/Source/WebCore/workers/service/ServiceWorkerRegistration.cpp' l='128' c='_ZN7WebCore25ServiceWorkerRegistration17setLastUpdateTimeEN3WTF8WallTimeE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/workers/service/server/SWServerRegistration.h' l='64' c='_ZN7WebCore20SWServerRegistration17setLastUpdateTimeEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebCore/workers/service/server/SWServerRegistration.h' l='65' c='_ZNK7WebCore20SWServerRegistration14lastUpdateTimeEv'/>
+<use f='WebKit/Source/WebCore/workers/service/server/SWServerRegistration.h' l='128'/>
+<use f='WebKit/Source/WebCore/workers/service/server/SWServerRegistration.cpp' l='124' c='_ZN7WebCore20SWServerRegistration17setLastUpdateTimeEN3WTF8WallTimeE'/>
+<size>8</size>

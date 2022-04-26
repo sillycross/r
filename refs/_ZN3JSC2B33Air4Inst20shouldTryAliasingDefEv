@@ -1,0 +1,10 @@
+<dec f='WebKit/Source/JavaScriptCore/b3/air/AirInst.h' l='203' type='std::optional&lt;unsigned int&gt; JSC::B3::Air::Inst::shouldTryAliasingDef()'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/air/AirInst.h' l='197'>// If source arguments benefits from being aliased to a destination argument,
+    // this return the index of the destination argument.
+    // The source are assumed to be at (index - 1) and (index - 2)
+    // For example,
+    //     Add Tmp1, Tmp2, Tmp3
+    // returns 2 if 0 and 1 benefit from aliasing to Tmp3.</doc>
+<def f='WebKit/Source/JavaScriptCore/b3/air/AirInstInlines.h' l='119' ll='182' type='std::optional&lt;unsigned int&gt; JSC::B3::Air::Inst::shouldTryAliasingDef()'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='1643' u='c' c='_ZN3JSC2B33Air12_GLOBAL__N_117ColoringAllocator24buildLowPriorityMoveListEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3CheckSpecial.cpp' l='155' u='c' c='_ZN3JSC2B312CheckSpecial20shouldTryAliasingDefERNS0_3Air4InstE'/>

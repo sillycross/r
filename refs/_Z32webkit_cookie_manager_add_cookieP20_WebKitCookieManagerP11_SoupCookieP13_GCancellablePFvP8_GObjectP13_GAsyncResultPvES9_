@@ -1,0 +1,16 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitCookieManager.cpp' l='280' ll='289' type='void webkit_cookie_manager_add_cookie(WebKitCookieManager * manager, SoupCookie * cookie, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer userData)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitCookieManager.cpp' l='265'>/**
+ * webkit_cookie_manager_add_cookie:
+ * @cookie_manager: a #WebKitCookieManager
+ * @cookie: the #SoupCookie to be added
+ * @cancellable: (allow-none): a #GCancellable or %NULL to ignore
+ * @callback: (scope async): a #GAsyncReadyCallback to call when the request is satisfied
+ * @user_data: (closure): the data to pass to callback function
+ *
+ * Asynchronously add a #SoupCookie to the underlying storage.
+ *
+ * When the operation is finished, @callback will be called. You can then call
+ * webkit_cookie_manager_add_cookie_finish() to get the result of the operation.
+ *
+ * Since: 2.20
+ */</doc>

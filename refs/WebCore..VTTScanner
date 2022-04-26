@@ -1,0 +1,78 @@
+<use f='WebKit/Source/WebCore/html/track/VTTRegion.h' l='117' c='_ZN7WebCore9VTTRegion15scanSettingNameERNS_10VTTScannerE'/>
+<use f='WebKit/Source/WebCore/html/track/VTTRegion.h' l='119' c='_ZN7WebCore9VTTRegion17parseSettingValueENS0_13RegionSettingERNS_10VTTScannerE'/>
+<use f='WebKit/Source/WebCore/html/track/VTTCue.h' l='224' c='_ZN7WebCore6VTTCue11settingNameERNS_10VTTScannerE'/>
+<use f='WebKit/Source/WebCore/html/track/WebVTTParser.h' l='142' c='_ZN7WebCore12WebVTTParser25parseFloatPercentageValueERNS_10VTTScannerERf'/>
+<use f='WebKit/Source/WebCore/html/track/WebVTTParser.h' l='143' c='_ZN7WebCore12WebVTTParser29parseFloatPercentageValuePairERNS_10VTTScannerEcRNS_10FloatPointE'/>
+<use f='WebKit/Source/WebCore/html/track/WebVTTParser.h' l='181' c='_ZN7WebCore12WebVTTParser16collectTimeStampERNS_10VTTScannerERN3WTF9MediaTimeE'/>
+<def f='WebKit/Source/WebCore/html/track/VTTScanner.h' l='48' ll='150'/>
+<use f='WebKit/Source/WebCore/html/track/VTTScanner.h' l='49' c='_ZN7WebCore10VTTScannerC1ERKS0_'/>
+<use f='WebKit/Source/WebCore/html/track/VTTScanner.h' l='49' c='_ZN7WebCore10VTTScanneraSERKS0_'/>
+<use f='WebKit/Source/WebCore/html/track/VTTScanner.h' l='49' c='_ZN7WebCore10VTTScanneraSERKS0_'/>
+<use f='WebKit/Source/WebCore/html/track/VTTCue.cpp' l='1111' c='_ZN7WebCore6VTTCue11settingNameERNS_10VTTScannerE'/>
+<use f='WebKit/Source/WebCore/html/track/VTTCue.cpp' l='1139' c='_ZN7WebCore6VTTCue14setCueSettingsERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/track/VTTRegion.cpp' l='163' c='_ZN7WebCore9VTTRegion17setRegionSettingsERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/track/VTTRegion.cpp' l='184' c='_ZN7WebCore9VTTRegion15scanSettingNameERNS_10VTTScannerE'/>
+<use f='WebKit/Source/WebCore/html/track/VTTRegion.cpp' l='202' c='_ZN7WebCoreL15parsedEntireRunERKNS_10VTTScannerERKNS0_3RunE'/>
+<use f='WebKit/Source/WebCore/html/track/VTTRegion.cpp' l='207' c='_ZN7WebCore9VTTRegion17parseSettingValueENS0_13RegionSettingERNS_10VTTScannerE'/>
+<size>24</size>
+<doc f='WebKit/Source/WebCore/html/track/VTTScanner.h' l='37'>// Helper class for &quot;scanning&quot; an input string and performing parsing of
+// &quot;micro-syntax&quot;-like constructs.
+//
+// There&apos;s two primary operations: match and scan.
+//
+// The &apos;match&apos; operation matches an explicitly or implicitly specified sequence
+// against the characters ahead of the current input pointer, and returns true
+// if the sequence can be matched.
+//
+// The &apos;scan&apos; operation performs a &apos;match&apos;, and if the match is successful it
+// advance the input pointer past the matched sequence.</doc>
+<fun r='_ZN7WebCore10VTTScannerC1ERKS0_'/>
+<fun r='_ZN7WebCore10VTTScannerC1ERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore10VTTScanner4isAtEPKh'/>
+<fun r='_ZNK7WebCore10VTTScanner7isAtEndEv'/>
+<fun r='_ZNK7WebCore10VTTScanner5matchEc'/>
+<fun r='_ZN7WebCore10VTTScanner4scanEc'/>
+<fun r='_ZN7WebCore10VTTScanner4scanEPKhm'/>
+<fun r='_ZN7WebCore10VTTScanner4scanERAT__Kc'/>
+<fun r='_ZN7WebCore10VTTScanner9skipWhileEv'/>
+<fun r='_ZN7WebCore10VTTScanner9skipUntilEv'/>
+<fun r='_ZN7WebCore10VTTScanner12collectWhileEv'/>
+<fun r='_ZN7WebCore10VTTScanner12collectUntilEv'/>
+<fun r='_ZN7WebCore10VTTScanner7scanRunERKNS0_3RunERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore10VTTScanner7skipRunERKNS0_3RunE'/>
+<fun r='_ZN7WebCore10VTTScanner13extractStringERKNS0_3RunE'/>
+<fun r='_ZN7WebCore10VTTScanner19restOfInputAsStringEv'/>
+<fun r='_ZN7WebCore10VTTScanner10scanDigitsERi'/>
+<fun r='_ZN7WebCore10VTTScanner9scanFloatERfPb'/>
+<fun r='_ZNK7WebCore10VTTScanner8positionEv'/>
+<fun r='_ZNK7WebCore10VTTScanner3endEv'/>
+<fun r='_ZN7WebCore10VTTScanner6seekToEPKh'/>
+<fun r='_ZNK7WebCore10VTTScanner11currentCharEv'/>
+<fun r='_ZN7WebCore10VTTScanner7advanceEj'/>
+<fun r='_ZN7WebCore10VTTScanner21LCharPredicateAdapterEh'/>
+<mbr r='WebCore::VTTScanner::m_data' o='0' t='union (anonymous union at /home/lemon/WebKit/Source/WebCore/html/track/VTTScanner.h:141:5)'/>
+<mbr r='WebCore::VTTScanner::m_end' o='64' t='union (anonymous union at /home/lemon/WebKit/Source/WebCore/html/track/VTTScanner.h:145:5)'/>
+<mbr r='WebCore::VTTScanner::m_is8Bit' o='128' t='bool'/>
+<fun r='_ZN7WebCore10VTTScanner4scanERAT__Kc'/>
+<fun r='_ZN7WebCore10VTTScanner9skipWhileEv'/>
+<fun r='_ZN7WebCore10VTTScanner9skipUntilEv'/>
+<fun r='_ZN7WebCore10VTTScanner12collectWhileEv'/>
+<fun r='_ZN7WebCore10VTTScanner12collectUntilEv'/>
+<fun r='_ZN7WebCore10VTTScanner6seekToEPKh'/>
+<fun r='_ZNK7WebCore10VTTScanner11currentCharEv'/>
+<fun r='_ZN7WebCore10VTTScanner7advanceEj'/>
+<fun r='_ZN7WebCore10VTTScannerC1ERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore10VTTScanner4scanEc'/>
+<fun r='_ZN7WebCore10VTTScanner4scanEPKhm'/>
+<fun r='_ZN7WebCore10VTTScanner7scanRunERKNS0_3RunERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore10VTTScanner7skipRunERKNS0_3RunE'/>
+<fun r='_ZN7WebCore10VTTScanner13extractStringERKNS0_3RunE'/>
+<fun r='_ZN7WebCore10VTTScanner19restOfInputAsStringEv'/>
+<fun r='_ZN7WebCore10VTTScanner10scanDigitsERi'/>
+<fun r='_ZN7WebCore10VTTScanner9scanFloatERfPb'/>
+<use f='WebKit/Source/WebCore/html/track/WebVTTParser.cpp' l='59' c='_ZN7WebCore12WebVTTParser25parseFloatPercentageValueERNS_10VTTScannerERf'/>
+<use f='WebKit/Source/WebCore/html/track/WebVTTParser.cpp' l='75' c='_ZN7WebCore12WebVTTParser29parseFloatPercentageValuePairERNS_10VTTScannerEcRNS_10FloatPointE'/>
+<use f='WebKit/Source/WebCore/html/track/WebVTTParser.cpp' l='426' c='_ZN7WebCore12WebVTTParser25collectTimingsAndSettingsERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/track/WebVTTParser.cpp' l='568' c='_ZN7WebCore12WebVTTParser16collectTimeStampERKN3WTF6StringERNS1_9MediaTimeE'/>
+<use f='WebKit/Source/WebCore/html/track/WebVTTParser.cpp' l='572' c='_ZN7WebCore12WebVTTParser16collectTimeStampERNS_10VTTScannerERN3WTF9MediaTimeE'/>
+<size>24</size>

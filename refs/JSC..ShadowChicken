@@ -1,0 +1,108 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VM.h' l='1113' c='_ZN3JSC2VM13shadowChickenEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VM.h' l='1284'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ShadowChicken.h' l='69' ll='221'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ShadowChicken.h' l='70' c='_ZN3JSC13ShadowChickenC1ERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ShadowChicken.h' l='70' c='_ZN3JSC13ShadowChickenaSERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ShadowChicken.h' l='70' c='_ZN3JSC13ShadowChickenaSERKS0_'/>
+<size>48</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ShadowChicken.h' l='47'>// ShadowChicken is a log that can be used to produce a shadow stack of CHICKEN-style stack frames.
+// This enables the debugger to almost always see the tail-deleted stack frames, so long as we have
+// memory inside ShadowChicken to remember them.
+//
+// The ShadowChicken log comprises packets that have one of two shapes:
+//
+// Prologue Packet, which has:
+//     - Callee object.
+//     - Frame pointer.
+//     - Caller frame pointer.
+//
+// Tail Call Packet, which has just:
+//     - Frame pointer.
+//
+// Prologue Packets are placed into the log in any JS function&apos;s prologue. Tail Call Packets are
+// placed into the log just before making a proper tail call. We never log returns, since that would
+// require a lot of infrastructure (unwinding, multiple ways of returning, etc). We don&apos;t need to
+// see the returns because the prologue packets have a frame pointer. The tail call packets tell us
+// when there was a tail call, and record the FP *before* the tail call.
+//
+// At any time it is possible to construct a shadow stack from the log and the actual machine stack.</doc>
+<fun r='_ZN3JSC13ShadowChickenC1ERKS0_'/>
+<fun r='_ZN3JSC13ShadowChickenC1Ev'/>
+<fun r='_ZN3JSC13ShadowChickenD1Ev'/>
+<fun r='_ZN3JSC13ShadowChicken3logERNS_2VMEPNS_9CallFrameERKNS0_6PacketE'/>
+<fun r='_ZN3JSC13ShadowChicken6updateERNS_2VMEPNS_9CallFrameE'/>
+<fun r='_ZN3JSC13ShadowChicken7iterateERNS_2VMEPNS_9CallFrameERKT_'/>
+<fun r='_ZN3JSC13ShadowChicken13visitChildrenERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC13ShadowChicken5resetEv'/>
+<fun r='_ZNK3JSC13ShadowChicken3logEv'/>
+<fun r='_ZNK3JSC13ShadowChicken7logSizeEv'/>
+<fun r='_ZN3JSC13ShadowChicken18addressOfLogCursorEv'/>
+<fun r='_ZN3JSC13ShadowChicken6logEndEv'/>
+<fun r='_ZNK3JSC13ShadowChicken4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZN3JSC13ShadowChicken16functionsOnStackEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<mbr r='JSC::ShadowChicken::m_log' o='0' t='JSC::ShadowChicken::Packet *'/>
+<mbr r='JSC::ShadowChicken::m_logSize' o='64' t='unsigned int'/>
+<mbr r='JSC::ShadowChicken::m_logCursor' o='128' t='JSC::ShadowChicken::Packet *'/>
+<mbr r='JSC::ShadowChicken::m_logEnd' o='192' t='JSC::ShadowChicken::Packet *'/>
+<mbr r='JSC::ShadowChicken::m_stack' o='256' t='Vector&lt;JSC::ShadowChicken::Frame&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.h' l='1113' c='_ZN3JSC2VM13shadowChickenEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.h' l='1284'/>
+<def f='WebKit/Source/JavaScriptCore/interpreter/ShadowChicken.h' l='69' ll='221'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/ShadowChicken.h' l='70' c='_ZN3JSC13ShadowChickenC1ERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/ShadowChicken.h' l='70' c='_ZN3JSC13ShadowChickenaSERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/ShadowChicken.h' l='70' c='_ZN3JSC13ShadowChickenaSERKS0_'/>
+<size>48</size>
+<doc f='WebKit/Source/JavaScriptCore/interpreter/ShadowChicken.h' l='47'>// ShadowChicken is a log that can be used to produce a shadow stack of CHICKEN-style stack frames.
+// This enables the debugger to almost always see the tail-deleted stack frames, so long as we have
+// memory inside ShadowChicken to remember them.
+//
+// The ShadowChicken log comprises packets that have one of two shapes:
+//
+// Prologue Packet, which has:
+//     - Callee object.
+//     - Frame pointer.
+//     - Caller frame pointer.
+//
+// Tail Call Packet, which has just:
+//     - Frame pointer.
+//
+// Prologue Packets are placed into the log in any JS function&apos;s prologue. Tail Call Packets are
+// placed into the log just before making a proper tail call. We never log returns, since that would
+// require a lot of infrastructure (unwinding, multiple ways of returning, etc). We don&apos;t need to
+// see the returns because the prologue packets have a frame pointer. The tail call packets tell us
+// when there was a tail call, and record the FP *before* the tail call.
+//
+// At any time it is possible to construct a shadow stack from the log and the actual machine stack.</doc>
+<fun r='_ZN3JSC13ShadowChickenC1ERKS0_'/>
+<fun r='_ZN3JSC13ShadowChickenC1Ev'/>
+<fun r='_ZN3JSC13ShadowChickenD1Ev'/>
+<fun r='_ZN3JSC13ShadowChicken3logERNS_2VMEPNS_9CallFrameERKNS0_6PacketE'/>
+<fun r='_ZN3JSC13ShadowChicken6updateERNS_2VMEPNS_9CallFrameE'/>
+<fun r='_ZN3JSC13ShadowChicken7iterateERNS_2VMEPNS_9CallFrameERKT_'/>
+<fun r='_ZN3JSC13ShadowChicken13visitChildrenERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC13ShadowChicken5resetEv'/>
+<fun r='_ZNK3JSC13ShadowChicken3logEv'/>
+<fun r='_ZNK3JSC13ShadowChicken7logSizeEv'/>
+<fun r='_ZN3JSC13ShadowChicken18addressOfLogCursorEv'/>
+<fun r='_ZN3JSC13ShadowChicken6logEndEv'/>
+<fun r='_ZNK3JSC13ShadowChicken4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZN3JSC13ShadowChicken16functionsOnStackEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<mbr r='JSC::ShadowChicken::m_log' o='0' t='JSC::ShadowChicken::Packet *'/>
+<mbr r='JSC::ShadowChicken::m_logSize' o='64' t='unsigned int'/>
+<mbr r='JSC::ShadowChicken::m_logCursor' o='128' t='JSC::ShadowChicken::Packet *'/>
+<mbr r='JSC::ShadowChicken::m_logEnd' o='192' t='JSC::ShadowChicken::Packet *'/>
+<mbr r='JSC::ShadowChicken::m_stack' o='256' t='Vector&lt;JSC::ShadowChicken::Frame&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CCallHelpers.cpp' l='58' c='_ZN3JSC12CCallHelpers25ensureShadowChickenPacketERNS_2VMENS_12X86Registers10RegisterIDES4_S4_'/>
+<size>48</size>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp' l='2268' c='JSC::LLInt::llint_slow_path_log_shadow_chicken_prologue'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp' l='2285' c='JSC::LLInt::llint_slow_path_log_shadow_chicken_tail'/>
+<size>48</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.cpp' l='1524' c='_ZN3JSC2VM19ensureShadowChickenEv'/>
+<size>48</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='16355' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB325ensureShadowChickenPacketEv'/>
+<size>48</size>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='1995' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='1998' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='1995' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='1998' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<size>48</size>

@@ -1,0 +1,16 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='266' type='void JSC::CodeBlock::getICStatusMap(const JSC::ConcurrentJSLocker &amp; , JSC::ICStatusMap &amp; result)'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='261'>// Because we might throw out baseline JIT code and all its baseline JIT data (m_jitData),
+    // you need to be careful about the lifetime of when you use the return value of this function.
+    // The return value may have raw pointers into this data structure that gets thrown away.
+    // Specifically, you need to ensure that no GC can be finalized (typically that means no
+    // allocations) between calling this and the last use of it.</doc>
+<dec f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='266' type='void JSC::CodeBlock::getICStatusMap(const JSC::ConcurrentJSLocker &amp; , JSC::ICStatusMap &amp; result)'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='261'>// Because we might throw out baseline JIT code and all its baseline JIT data (m_jitData),
+    // you need to be careful about the lifetime of when you use the return value of this function.
+    // The return value may have raw pointers into this data structure that gets thrown away.
+    // Specifically, you need to ensure that no GC can be finalized (typically that means no
+    // allocations) between calling this and the last use of it.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='8604' u='c' c='_ZN3JSC3DFG14ByteCodeParser16InlineStackEntryC1EPS1_PNS_9CodeBlockES5_PNS_10JSFunctionENS_7OperandENS_15VirtualRegisterEiNS_15InlineCallFrame4KindEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='8611' u='c' c='_ZN3JSC3DFG14ByteCodeParser16InlineStackEntryC1EPS1_PNS_9CodeBlockES5_PNS_10JSFunctionENS_7OperandENS_15VirtualRegisterEiNS_15InlineCallFrame4KindEPNS0_10BasicBlockE'/>
+<def f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1618' ll='1649' type='void JSC::CodeBlock::getICStatusMap(const JSC::ConcurrentJSLocker &amp; , JSC::ICStatusMap &amp; result)'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1654' u='c' c='_ZN3JSC9CodeBlock14getICStatusMapERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS1_10HashTraitsIS3_EENS6_IS4_EENS1_15HashTableTraitsEEE'/>

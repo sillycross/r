@@ -1,0 +1,46 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='292' type='int16_t'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='658' u='r' c='_ZNK3JSC11MarkedBlock12hasAnyMarkedEv'/>
+<offset>240</offset>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='273'>// We bias the mark count so that if m_biasedMarkCount &gt;= 0 then the block should be retired.
+        // We go to all this trouble to make marking a bit faster: this way, marking knows when to
+        // retire a block using a js/jns on m_biasedMarkCount.
+        //
+        // For example, if a block has room for 100 objects and retirement happens whenever 90% are
+        // live, then m_markCountBias will be -90. This way, when marking begins, this will cause us to
+        // set m_biasedMarkCount to -90 as well, since:
+        //
+        //     m_biasedMarkCount = actualMarkCount + m_markCountBias.
+        //
+        // Marking an object will increment m_biasedMarkCount. Once 90 objects get marked, we will have
+        // m_biasedMarkCount = 0, which will trigger retirement. In other words, we want to set
+        // m_markCountBias like so:
+        //
+        //     m_markCountBias = -(minMarkedBlockUtilization * cellsPerBlock)
+        //
+        // All of this also means that you can detect if any objects are marked by doing:
+        //
+        //     m_biasedMarkCount != m_markCountBias</doc>
+<dec f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='292' type='int16_t'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='658' u='r' c='_ZNK3JSC11MarkedBlock12hasAnyMarkedEv'/>
+<offset>240</offset>
+<doc f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='273'>// We bias the mark count so that if m_biasedMarkCount &gt;= 0 then the block should be retired.
+        // We go to all this trouble to make marking a bit faster: this way, marking knows when to
+        // retire a block using a js/jns on m_biasedMarkCount.
+        //
+        // For example, if a block has room for 100 objects and retirement happens whenever 90% are
+        // live, then m_markCountBias will be -90. This way, when marking begins, this will cause us to
+        // set m_biasedMarkCount to -90 as well, since:
+        //
+        //     m_biasedMarkCount = actualMarkCount + m_markCountBias.
+        //
+        // Marking an object will increment m_biasedMarkCount. Once 90 objects get marked, we will have
+        // m_biasedMarkCount = 0, which will trigger retirement. In other words, we want to set
+        // m_markCountBias like so:
+        //
+        //     m_markCountBias = -(minMarkedBlockUtilization * cellsPerBlock)
+        //
+        // All of this also means that you can detect if any objects are marked by doing:
+        //
+        //     m_biasedMarkCount != m_markCountBias</doc>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.cpp' l='303' u='r' c='_ZN3JSC11MarkedBlock17clearHasAnyMarkedEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.cpp' l='347' u='w' c='_ZN3JSC11MarkedBlock6Handle17didAddToDirectoryEPNS_14BlockDirectoryEj'/>

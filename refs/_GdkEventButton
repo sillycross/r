@@ -1,0 +1,74 @@
+<use f='include/gtk-3.0/gdk/gdkevents.h' l='128'/>
+<def f='include/gtk-3.0/gdk/gdkevents.h' l='751' ll='764'/>
+<size>80</size>
+<doc f='include/gtk-3.0/gdk/gdkevents.h' l='692'>/**
+ * GdkEventButton:
+ * @type: the type of the event (%GDK_BUTTON_PRESS, %GDK_2BUTTON_PRESS,
+ *   %GDK_3BUTTON_PRESS or %GDK_BUTTON_RELEASE).
+ * @window: the window which received the event.
+ * @send_event: %TRUE if the event was sent explicitly.
+ * @time: the time of the event in milliseconds.
+ * @x: the x coordinate of the pointer relative to the window.
+ * @y: the y coordinate of the pointer relative to the window.
+ * @axes: @x, @y translated to the axes of @device, or %NULL if @device is
+ *   the mouse.
+ * @state: (type GdkModifierType): a bit-mask representing the state of
+ *   the modifier keys (e.g. Control, Shift and Alt) and the pointer
+ *   buttons. See #GdkModifierType.
+ * @button: the button which was pressed or released, numbered from 1 to 5.
+ *   Normally button 1 is the left mouse button, 2 is the middle button,
+ *   and 3 is the right button. On 2-button mice, the middle button can
+ *   often be simulated by pressing both mouse buttons together.
+ * @device: the master device that the event originated from. Use
+ * gdk_event_get_source_device() to get the slave device.
+ * @x_root: the x coordinate of the pointer relative to the root of the
+ *   screen.
+ * @y_root: the y coordinate of the pointer relative to the root of the
+ *   screen.
+ *
+ * Used for button press and button release events. The
+ * @type field will be one of %GDK_BUTTON_PRESS,
+ * %GDK_2BUTTON_PRESS, %GDK_3BUTTON_PRESS or %GDK_BUTTON_RELEASE,
+ *
+ * Double and triple-clicks result in a sequence of events being received.
+ * For double-clicks the order of events will be:
+ *
+ * - %GDK_BUTTON_PRESS
+ * - %GDK_BUTTON_RELEASE
+ * - %GDK_BUTTON_PRESS
+ * - %GDK_2BUTTON_PRESS
+ * - %GDK_BUTTON_RELEASE
+ *
+ * Note that the first click is received just like a normal
+ * button press, while the second click results in a %GDK_2BUTTON_PRESS
+ * being received just after the %GDK_BUTTON_PRESS.
+ *
+ * Triple-clicks are very similar to double-clicks, except that
+ * %GDK_3BUTTON_PRESS is inserted after the third click. The order of the
+ * events is:
+ *
+ * - %GDK_BUTTON_PRESS
+ * - %GDK_BUTTON_RELEASE
+ * - %GDK_BUTTON_PRESS
+ * - %GDK_2BUTTON_PRESS
+ * - %GDK_BUTTON_RELEASE
+ * - %GDK_BUTTON_PRESS
+ * - %GDK_3BUTTON_PRESS
+ * - %GDK_BUTTON_RELEASE
+ *
+ * For a double click to occur, the second button press must occur within
+ * 1/4 of a second of the first. For a triple click to occur, the third
+ * button press must also occur within 1/2 second of the first button press.
+ */</doc>
+<mbr r='_GdkEventButton::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventButton::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventButton::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventButton::time' o='160' t='guint32'/>
+<mbr r='_GdkEventButton::x' o='192' t='gdouble'/>
+<mbr r='_GdkEventButton::y' o='256' t='gdouble'/>
+<mbr r='_GdkEventButton::axes' o='320' t='gdouble *'/>
+<mbr r='_GdkEventButton::state' o='384' t='guint'/>
+<mbr r='_GdkEventButton::button' o='416' t='guint'/>
+<mbr r='_GdkEventButton::device' o='448' t='GdkDevice *'/>
+<mbr r='_GdkEventButton::x_root' o='512' t='gdouble'/>
+<mbr r='_GdkEventButton::y_root' o='576' t='gdouble'/>

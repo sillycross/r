@@ -1,0 +1,85 @@
+<dec f='WebKit/Source/JavaScriptCore/assembler/LinkBuffer.h' l='470'/>
+<doc f='WebKit/Source/JavaScriptCore/assembler/LinkBuffer.h' l='454'>// Use this to finalize code, like so:
+//
+// CodeRef code = FINALIZE_CODE(linkBuffer, tag, &quot;my super thingy number %d&quot;, number);
+//
+// Which, in disassembly mode, will print:
+//
+// Generated JIT code for my super thingy number 42:
+//     Code at [0x123456, 0x234567]:
+//         0x123456: mov $0, 0
+//         0x12345a: ret
+//
+// ... and so on.
+//
+// Note that the format string and print arguments are only evaluated when dumpDisassembly
+// is true, so you can hide expensive disassembly-only computations inside there.</doc>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.cpp' l='123' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.cpp' l='246' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmBBQPlan.cpp' l='232' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmBBQPlan.cpp' l='244' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntPlan.cpp' l='141' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntPlan.cpp' l='164' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Compile.cpp' l='49' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITMathIC.h' l='134' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CCallHelpers.cpp' l='82' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.cpp' l='999' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='396' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='506' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='666' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='737' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='1297' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='1558' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='174' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='288' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='749' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='864' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='1028' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='1146' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='1426' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='1513' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='1626' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2169' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2226' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2594' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2661' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2882' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/SlowPathCall.cpp' l='92' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/SpecializedThunkJIT.h' l='162' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='61' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='77' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='95' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='135' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='176' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='246' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='258' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='336' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='512' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='691' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='701' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='752' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1430' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='92' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='119' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='129' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='251' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGThunks.cpp' l='129' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGThunks.cpp' l='171' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InlineAccess.cpp' l='160' u='c'/>
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/LinkBuffer.h' l='470'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='1499' u='c'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/LinkBuffer.h' l='454'>// Use this to finalize code, like so:
+//
+// CodeRef code = FINALIZE_CODE(linkBuffer, tag, &quot;my super thingy number %d&quot;, number);
+//
+// Which, in disassembly mode, will print:
+//
+// Generated JIT code for my super thingy number 42:
+//     Code at [0x123456, 0x234567]:
+//         0x123456: mov $0, 0
+//         0x12345a: ret
+//
+// ... and so on.
+//
+// Note that the format string and print arguments are only evaluated when dumpDisassembly
+// is true, so you can hide expensive disassembly-only computations inside there.</doc>

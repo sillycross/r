@@ -1,0 +1,44 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FunctionRareData.h' l='72' u='a' c='_ZN3JSC16FunctionRareData31offsetOfObjectAllocationProfileEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FunctionRareData.h' l='81' u='a' c='_ZN3JSC16FunctionRareData23objectAllocationProfileEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FunctionRareData.h' l='84' u='m' c='_ZN3JSC16FunctionRareData25objectAllocationStructureEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FunctionRareData.h' l='85' u='m' c='_ZN3JSC16FunctionRareData25objectAllocationPrototypeEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FunctionRareData.h' l='96' u='m' c='_ZN3JSC16FunctionRareData36isObjectAllocationProfileInitializedEv'/>
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FunctionRareData.h' l='160' type='JSC::ObjectAllocationProfileWithPrototype'/>
+<offset>64</offset>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FunctionRareData.h' l='147'>// Ideally, there would only be one allocation profile for subclassing but due to Reflect.construct we
+    // have two. There are some pros and cons in comparison to our current system to using the same profile
+    // for both JS constructors and subclasses of builtin constructors:
+    //
+    // 1) + Uses less memory.
+    // 2) + Conceptually simplier as there is only one profile.
+    // 3) - We would need a check in all JSFunction object creations (both with classes and without) that the
+    //      new.target&apos;s profiled structure has a JSFinalObject ClassInfo. This is needed, for example, if we have
+    //      `Reflect.construct(Array, args, myConstructor)` since myConstructor will be the new.target of Array
+    //      the Array constructor will set the allocation profile of myConstructor to hold an Array structure
+    //
+    // We don&apos;t really care about 1) since this memory is rare and small in total. 2) is unfortunate but is
+    // probably outweighed by the cost of 3).</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/FunctionRareData.h' l='72' u='a' c='_ZN3JSC16FunctionRareData31offsetOfObjectAllocationProfileEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FunctionRareData.h' l='81' u='a' c='_ZN3JSC16FunctionRareData23objectAllocationProfileEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FunctionRareData.h' l='84' u='m' c='_ZN3JSC16FunctionRareData25objectAllocationStructureEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FunctionRareData.h' l='85' u='m' c='_ZN3JSC16FunctionRareData25objectAllocationPrototypeEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FunctionRareData.h' l='96' u='m' c='_ZN3JSC16FunctionRareData36isObjectAllocationProfileInitializedEv'/>
+<dec f='WebKit/Source/JavaScriptCore/runtime/FunctionRareData.h' l='160' type='JSC::ObjectAllocationProfileWithPrototype'/>
+<offset>64</offset>
+<doc f='WebKit/Source/JavaScriptCore/runtime/FunctionRareData.h' l='147'>// Ideally, there would only be one allocation profile for subclassing but due to Reflect.construct we
+    // have two. There are some pros and cons in comparison to our current system to using the same profile
+    // for both JS constructors and subclasses of builtin constructors:
+    //
+    // 1) + Uses less memory.
+    // 2) + Conceptually simplier as there is only one profile.
+    // 3) - We would need a check in all JSFunction object creations (both with classes and without) that the
+    //      new.target&apos;s profiled structure has a JSFinalObject ClassInfo. This is needed, for example, if we have
+    //      `Reflect.construct(Array, args, myConstructor)` since myConstructor will be the new.target of Array
+    //      the Array constructor will set the allocation profile of myConstructor to hold an Array structure
+    //
+    // We don&apos;t really care about 1) since this memory is rare and small in total. 2) is unfortunate but is
+    // probably outweighed by the cost of 3).</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/FunctionRareData.cpp' l='61' u='c' c='_ZN3JSC16FunctionRareData17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FunctionRareData.cpp' l='71' u='w' c='_ZN3JSC16FunctionRareDataC1ERNS_2VMEPNS_14ExecutableBaseE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FunctionRareData.cpp' l='91' u='m' c='_ZN3JSC16FunctionRareData33initializeObjectAllocationProfileERNS_2VMEPNS_14JSGlobalObjectEPNS_8JSObjectEmPNS_10JSFunctionE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FunctionRareData.cpp' l='96' u='m' c='_ZN3JSC16FunctionRareData5clearEPKc'/>

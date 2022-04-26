@@ -1,0 +1,13 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitScriptDialog.cpp' l='156' ll='162' type='void webkit_script_dialog_prompt_set_text(WebKitScriptDialog * dialog, const char * text)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitScriptDialog.cpp' l='144'>/**
+ * webkit_script_dialog_prompt_set_text:
+ * @dialog: a #WebKitScriptDialog
+ * @text: the text to set
+ *
+ * This method is used for %WEBKIT_SCRIPT_DIALOG_PROMPT dialogs when
+ * #WebKitWebView::script-dialog signal is emitted to set the text
+ * entered by the user. The default implementation of #WebKitWebView::script-dialog
+ * signal sets the text of the entry form when OK button is clicked, otherwise %NULL is set.
+ * It&apos;s an error to use this method with a #WebKitScriptDialog that is not of type
+ * %WEBKIT_SCRIPT_DIALOG_PROMPT.
+ */</doc>

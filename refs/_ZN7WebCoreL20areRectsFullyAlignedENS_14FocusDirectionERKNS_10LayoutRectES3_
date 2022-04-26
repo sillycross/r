@@ -1,0 +1,10 @@
+<dec f='WebKit/Source/WebCore/page/SpatialNavigation.cpp' l='49' type='bool WebCore::areRectsFullyAligned(WebCore::FocusDirection , const WebCore::LayoutRect &amp; , const WebCore::LayoutRect &amp; )'/>
+<use f='WebKit/Source/WebCore/page/SpatialNavigation.cpp' l='101' u='c' c='_ZN7WebCoreL17alignmentForRectsENS_14FocusDirectionERKNS_10LayoutRectES3_RKNS_10LayoutSizeE'/>
+<def f='WebKit/Source/WebCore/page/SpatialNavigation.cpp' l='138' ll='204' type='bool WebCore::areRectsFullyAligned(WebCore::FocusDirection direction, const WebCore::LayoutRect &amp; a, const WebCore::LayoutRect &amp; b)'/>
+<doc f='WebKit/Source/WebCore/page/SpatialNavigation.cpp' l='131'>// This method checks if rects |a| and |b| are fully aligned either vertically or
+// horizontally. In general, rects whose central point falls between the top or
+// bottom of each other are considered fully aligned.
+// Rects that match this criteria are preferable target nodes in move focus changing
+// operations.
+// * a = Current focused node&apos;s rect.
+// * b = Focus candidate node&apos;s rect.</doc>

@@ -1,0 +1,11 @@
+<dec f='WebKit/WTF/Headers/wtf/text/StringBuilder.h' l='112' type='CharacterType * WTF::StringBuilder::extendBufferForAppending(unsigned int requiredLength)'/>
+<dec f='WebKit/Source/WTF/wtf/text/StringBuilder.h' l='112' type='CharacterType * WTF::StringBuilder::extendBufferForAppending(unsigned int requiredLength)'/>
+<def f='WebKit/Source/WTF/wtf/text/StringBuilderInternals.h' l='74' ll='81' type='CharacterType * WTF::StringBuilder::extendBufferForAppending(unsigned int requiredLength)'/>
+<use f='WebKit/Source/WTF/wtf/text/StringBuilder.cpp' l='138' u='c' c='_ZN3WTF13StringBuilder29extendBufferForAppendingLCharEj'/>
+<use f='WebKit/Source/WTF/wtf/text/StringBuilder.cpp' l='149' u='c' c='_ZN3WTF13StringBuilder37extendBufferForAppendingWithUpconvertEj'/>
+<use f='WebKit/Source/WTF/wtf/text/StringBuilder.cpp' l='169' u='c' c='_ZN3WTF13StringBuilder16appendCharactersEPKhj'/>
+<use f='WebKit/Source/WTF/wtf/text/StringBuilder.cpp' l='172' u='c' c='_ZN3WTF13StringBuilder16appendCharactersEPKhj'/>
+<doc f='WebKit/Source/WTF/wtf/text/StringBuilderInternals.h' l='70'>// Make &apos;additionalLength&apos; additional capacity be available in m_buffer, update m_string &amp; m_length to use,
+// that capacity and return a pointer to the newly allocated storage so the caller can write characters there.
+// Returns nullptr if allocation fails, length overflows, or if total capacity is 0 so no buffer is needed.
+// The caller has the responsibility for checking that CharacterType is the type of the existing buffer.</doc>

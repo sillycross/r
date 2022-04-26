@@ -1,0 +1,55 @@
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1578' c='_ZN6WebKit7WebPage32platformDidReceiveLoadParametersERKNS_14LoadParametersE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1579' c='_ZN6WebKit7WebPage11loadRequestEONS_14LoadParametersE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1580' c='_ZN6WebKit7WebPage34loadRequestWaitingForProcessLaunchEONS_14LoadParametersEON3WTF3URLENS3_16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEEb'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1581' c='_ZN6WebKit7WebPage8loadDataEONS_14LoadParametersE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1582' c='_ZN6WebKit7WebPage17loadAlternateHTMLEONS_14LoadParametersE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1583' c='_ZN6WebKit7WebPage31loadSimulatedRequestAndResponseEONS_14LoadParametersEON7WebCore16ResourceResponseE'/>
+<def f='WebKit/Source/WebKit/Shared/LoadParameters.h' l='46' ll='85'/>
+<use f='WebKit/Source/WebKit/Shared/LoadParameters.h' l='48' c='_ZN6WebKit14LoadParameters6decodeERN3IPC7DecoderERS0_'/>
+<use f='WebKit/Source/WebKit/Shared/LoadParameters.h' l='51' c='_ZN6WebKit14LoadParameters14platformDecodeERN3IPC7DecoderERS0_'/>
+<use f='WebKit/Source/WebKit/Shared/LoadParameters.cpp' l='65' c='_ZN6WebKit14LoadParameters6decodeERN3IPC7DecoderERS0_'/>
+<use f='WebKit/Source/WebKit/Shared/LoadParameters.cpp' l='156' c='_ZN6WebKit14LoadParameters14platformDecodeERN3IPC7DecoderERS0_'/>
+<size>376</size>
+<fun r='_ZNK6WebKit14LoadParameters6encodeERN3IPC7EncoderE'/>
+<fun r='_ZN6WebKit14LoadParameters6decodeERN3IPC7DecoderERS0_'/>
+<fun r='_ZNK6WebKit14LoadParameters14platformEncodeERN3IPC7EncoderE'/>
+<fun r='_ZN6WebKit14LoadParameters14platformDecodeERN3IPC7DecoderERS0_'/>
+<mbr r='WebKit::LoadParameters::navigationID' o='0' t='uint64_t'/>
+<mbr r='WebKit::LoadParameters::request' o='64' t='WebCore::ResourceRequest'/>
+<mbr r='WebKit::LoadParameters::sandboxExtensionHandle' o='1536' t='SandboxExtension::Handle'/>
+<mbr r='WebKit::LoadParameters::data' o='1600' t='IPC::DataReference'/>
+<mbr r='WebKit::LoadParameters::MIMEType' o='1728' t='WTF::String'/>
+<mbr r='WebKit::LoadParameters::encodingName' o='1792' t='WTF::String'/>
+<mbr r='WebKit::LoadParameters::baseURLString' o='1856' t='WTF::String'/>
+<mbr r='WebKit::LoadParameters::unreachableURLString' o='1920' t='WTF::String'/>
+<mbr r='WebKit::LoadParameters::provisionalLoadErrorURLString' o='1984' t='WTF::String'/>
+<mbr r='WebKit::LoadParameters::websitePolicies' o='2048' t='std::optional&lt;WebsitePoliciesData&gt;'/>
+<mbr r='WebKit::LoadParameters::shouldOpenExternalURLsPolicy' o='2688' t='WebCore::ShouldOpenExternalURLsPolicy'/>
+<mbr r='WebKit::LoadParameters::shouldTreatAsContinuingLoad' o='2696' t='bool'/>
+<mbr r='WebKit::LoadParameters::userData' o='2752' t='WebKit::UserData'/>
+<mbr r='WebKit::LoadParameters::lockHistory' o='2816' t='WebCore::LockHistory'/>
+<mbr r='WebKit::LoadParameters::lockBackForwardList' o='2824' t='WebCore::LockBackForwardList'/>
+<mbr r='WebKit::LoadParameters::sessionHistoryVisibility' o='2832' t='WebCore::SubstituteData::SessionHistoryVisibility'/>
+<mbr r='WebKit::LoadParameters::clientRedirectSourceForHistory' o='2880' t='WTF::String'/>
+<mbr r='WebKit::LoadParameters::isNavigatingToAppBoundDomain' o='2944' t='std::optional&lt;NavigatingToAppBoundDomain&gt;'/>
+<fun r='_ZNK6WebKit14LoadParameters6encodeERN3IPC7EncoderE'/>
+<fun r='_ZN6WebKit14LoadParameters6decodeERN3IPC7DecoderERS0_'/>
+<fun r='_ZNK6WebKit14LoadParameters14platformEncodeERN3IPC7EncoderE'/>
+<fun r='_ZN6WebKit14LoadParameters14platformDecodeERN3IPC7DecoderERS0_'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='640' c='_ZN6WebKit12WebPageProxy25addPlatformLoadParametersERNS_15WebProcessProxyERNS_14LoadParametersE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='1320' c='_ZN6WebKit12WebPageProxy25addPlatformLoadParametersERNS_15WebProcessProxyERNS_14LoadParametersE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='1369' c='_ZN6WebKit12WebPageProxy31loadRequestWithNavigationSharedEON3WTF3RefINS_15WebProcessProxyENS1_12RawPtrTraitsIS3_EEEENS1_16ObjectIdentifierIN7WebCore185231250'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='1433' c='_ZN6WebKit12WebPageProxy8loadFileERKN3WTF6StringES4_PN3API6ObjectE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='1487' c='_ZN6WebKit12WebPageProxy28loadDataWithNavigationSharedEON3WTF3RefINS_15WebProcessProxyENS1_12RawPtrTraitsIS3_EEEENS1_16ObjectIdentifierIN7WebCore18Pag5423350'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='1539' c='_ZN6WebKit12WebPageProxy20loadSimulatedRequestEON7WebCore15ResourceRequestEONS1_16ResourceResponseERKN3IPC14ArrayReferenceIhLm18446744073709551615EEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='1590' c='_ZN6WebKit12WebPageProxy17loadAlternateHTMLERKN3IPC14ArrayReferenceIhLm18446744073709551615EEERKN3WTF6StringERKNS6_3URLESC_PN3API6ObjectE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='1622' c='_ZN6WebKit12WebPageProxy18loadWebArchiveDataEPN3API4DataEPNS1_6ObjectE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.cpp' l='415' c='_ZN6WebKit15WebProcessProxy24shouldSendPendingMessageERKNS_21AuxiliaryProcessProxy14PendingMessageE'/>
+<size>376</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='1679' c='_ZN6WebKit7WebPage32platformDidReceiveLoadParametersERKNS_14LoadParametersE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='1684' c='_ZN6WebKit7WebPage11loadRequestEONS_14LoadParametersE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='1721' c='_ZN6WebKit7WebPage34loadRequestWaitingForProcessLaunchEONS_14LoadParametersEON3WTF3URLENS3_16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEEb'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='1751' c='_ZN6WebKit7WebPage8loadDataEONS_14LoadParametersE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='1773' c='_ZN6WebKit7WebPage17loadAlternateHTMLEONS_14LoadParametersE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='1788' c='_ZN6WebKit7WebPage31loadSimulatedRequestAndResponseEONS_14LoadParametersEON7WebCore16ResourceResponseE'/>
+<size>376</size>

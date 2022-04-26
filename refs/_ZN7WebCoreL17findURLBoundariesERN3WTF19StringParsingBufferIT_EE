@@ -1,0 +1,12 @@
+<def f='WebKit/Source/WebCore/loader/LinkHeader.cpp' l='84' ll='99' type='std::optional&lt;String&gt; WebCore::findURLBoundaries(StringParsingBuffer&lt;CharacterType&gt; &amp; buffer)'/>
+<doc f='WebKit/Source/WebCore/loader/LinkHeader.cpp' l='73'>// Before:
+//
+// &lt;cat.jpg&gt;; rel=preload
+// ^                     ^
+// position              end
+//
+// After (if successful: otherwise the method returns false)
+//
+// &lt;cat.jpg&gt;; rel=preload
+//          ^            ^
+//          position     end</doc>

@@ -1,0 +1,13 @@
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGLiveCatchVariablePreservationPhase.h' l='45' type='bool JSC::DFG::performLiveCatchVariablePreservationPhase(JSC::DFG::Graph &amp; )'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPlan.cpp' l='238' u='c' c='_ZN3JSC3DFG4Plan19compileInThreadImplEv'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGLiveCatchVariablePreservationPhase.h' l='34'>// This phase ensures that we maintain liveness for locals
+// that are live in the &quot;catch&quot; block. Because a &quot;catch&quot;
+// block will not be in the control flow graph, we need to ensure
+// anything live inside the &quot;catch&quot; block in bytecode will maintain 
+// liveness inside the &quot;try&quot; block for an OSR exit from the &quot;try&quot; 
+// block into the &quot;catch&quot; block in the case of an exception being thrown.
+//
+// The mechanism currently used to demonstrate liveness to OSR exit
+// is ensuring all variables live in a &quot;catch&quot; are flushed to the
+// stack inside the &quot;try&quot; block.</doc>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGLiveCatchVariablePreservationPhase.cpp' l='226' ll='229' type='bool JSC::DFG::performLiveCatchVariablePreservationPhase(JSC::DFG::Graph &amp; graph)'/>

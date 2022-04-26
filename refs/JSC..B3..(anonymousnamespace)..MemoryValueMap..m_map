@@ -1,0 +1,11 @@
+<use f='WebKit/Source/JavaScriptCore/b3/B3EliminateCommonSubexpressions.cpp' l='71' u='m' c='_ZN3JSC2B312_GLOBAL__N_114MemoryValueMap3addEPNS0_11MemoryValueE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3EliminateCommonSubexpressions.cpp' l='80' u='c' c='_ZN3JSC2B312_GLOBAL__N_114MemoryValueMap8removeIfERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3EliminateCommonSubexpressions.cpp' l='94' u='m' c='_ZN3JSC2B312_GLOBAL__N_114MemoryValueMap4findEPNS0_5ValueE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3EliminateCommonSubexpressions.cpp' l='95' u='m' c='_ZN3JSC2B312_GLOBAL__N_114MemoryValueMap4findEPNS0_5ValueE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3EliminateCommonSubexpressions.cpp' l='124' c='_ZNK3JSC2B312_GLOBAL__N_114MemoryValueMap4dumpERN3WTF11PrintStreamE'/>
+<dec f='WebKit/Source/JavaScriptCore/b3/B3EliminateCommonSubexpressions.cpp' l='134' type='HashMap&lt;JSC::B3::Value *, JSC::B3::Matches&gt;'/>
+<offset>0</offset>
+<doc f='WebKit/Source/JavaScriptCore/b3/B3EliminateCommonSubexpressions.cpp' l='130'>// This uses Matches for two reasons:
+    // - It cannot be a MemoryValue* because the key is imprecise. Many MemoryValues could have the
+    //   same key while being unaliased.
+    // - It can&apos;t be a MemoryMatches array because the MemoryValue*&apos;s could be turned into Identity&apos;s.</doc>

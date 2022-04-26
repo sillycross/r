@@ -1,0 +1,23 @@
+<dec f='include/libsoup-2.4/libsoup/soup-method.h' l='37'/>
+<doc f='include/libsoup-2.4/libsoup/soup-method.h' l='14'>/**
+ * SECTION:soup-method
+ * @short_description: HTTP method definitions
+ *
+ * soup-method.h contains a number of defines for standard HTTP and
+ * WebDAV headers. You do not need to use these defines; you can pass
+ * arbitrary strings to soup_message_new() if you prefer.
+ * 
+ * The thing that these defines &lt;emphasis&gt;are&lt;/emphasis&gt; useful for is
+ * performing quick comparisons against #SoupMessage&apos;s %method field;
+ * because that field always contains an interned string, and these
+ * macros return interned strings, you can compare %method directly
+ * against these macros rather than needing to use strcmp(). This is
+ * most useful in SoupServer handlers. Eg:
+ * 
+ * &lt;informalexample&gt;&lt;programlisting&gt;
+ * 	if (msg-&gt;method != SOUP_METHOD_GET &amp;amp;&amp;amp; msg-&gt;method != SOUP_METHOD_HEAD) {
+ * 		soup_message_set_status (msg, SOUP_METHOD_NOT_IMPLEMENTED);
+ * 		return;
+ * 	}
+ * &lt;/programlisting&gt;&lt;/informalexample&gt;
+ **/</doc>

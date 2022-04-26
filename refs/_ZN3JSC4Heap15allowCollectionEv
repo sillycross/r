@@ -1,0 +1,6 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='380' type='void JSC::Heap::allowCollection()'/>
+<dec f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='380' type='void JSC::Heap::allowCollection()'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreventCollectionScope.h' l='42' u='c' c='_ZN3JSC22PreventCollectionScopeD1Ev'/>
+<def f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='2975' ll='2981' type='void JSC::Heap::allowCollection()'/>
+<doc f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='2973'>// Use WTF_IGNORES_THREAD_SAFETY_ANALYSIS because this function conditionally unlocks m_collectContinuouslyLock,
+// which is not supported by analysis.</doc>

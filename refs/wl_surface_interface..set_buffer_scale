@@ -1,0 +1,34 @@
+<dec f='include/wayland-server-protocol.h' l='3075' type='void (*)(struct wl_client *, struct wl_resource *, int32_t)'/>
+<offset>512</offset>
+<doc f='include/wayland-server-protocol.h' l='3043'>/**
+	 * sets the buffer scaling factor
+	 *
+	 * This request sets an optional scaling factor on how the
+	 * compositor interprets the contents of the buffer attached to the
+	 * window.
+	 *
+	 * Buffer scale is double-buffered state, see wl_surface.commit.
+	 *
+	 * A newly created surface has its buffer scale set to 1.
+	 *
+	 * wl_surface.set_buffer_scale changes the pending buffer scale.
+	 * wl_surface.commit copies the pending buffer scale to the current
+	 * one. Otherwise, the pending and current values are never
+	 * changed.
+	 *
+	 * The purpose of this request is to allow clients to supply higher
+	 * resolution buffer data for use on high resolution outputs. It is
+	 * intended that you pick the same buffer scale as the scale of the
+	 * output that the surface is displayed on. This means the
+	 * compositor can avoid scaling when rendering the surface on that
+	 * output.
+	 *
+	 * Note that if the scale is larger than 1, then you have to attach
+	 * a buffer that is larger (by a factor of scale in each dimension)
+	 * than the desired surface size.
+	 *
+	 * If scale is not positive the invalid_scale protocol error is
+	 * raised.
+	 * @param scale positive scale for interpreting buffer contents
+	 * @since 3
+	 */</doc>

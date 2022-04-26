@@ -1,0 +1,16 @@
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='214' u='a' c='_ZNK2gl17ProgramExecutable11getUniformsEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='264' u='m' c='_ZNK2gl17ProgramExecutable17getUniformByIndexEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='265' u='m' c='_ZNK2gl17ProgramExecutable17getUniformByIndexEj'/>
+<dec f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='362' type='std::vector&lt;LinkedUniform&gt;'/>
+<offset>6336</offset>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/ProgramExecutable.h' l='351'>// Uniforms are sorted in order:
+    //  1. Non-opaque uniforms
+    //  2. Sampler uniforms
+    //  3. Image uniforms
+    //  4. Atomic counter uniforms
+    //  5. Uniform block uniforms
+    // This makes opaque uniform validation easier, since we don&apos;t need a separate list.
+    // For generating the entries and naming them we follow the spec: GLES 3.1 November 2016 section
+    // 7.3.1.1 Naming Active Resources. There&apos;s a separate entry for each struct member and each
+    // inner array of an array of arrays. Names and mapped names of uniforms that are arrays include
+    // [0] in the end. This makes implementation of queries simpler.</doc>

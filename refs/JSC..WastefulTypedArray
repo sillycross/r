@@ -1,0 +1,31 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferView.h' l='80' type='2'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferView.h' l='91' u='r' c='_ZN3JSC14hasArrayBufferENS_14TypedArrayModeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferViewInlines.h' l='37' c='_ZN3JSC17JSArrayBufferView8isSharedEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferViewInlines.h' l='53' c='_ZN3JSC17JSArrayBufferView24possiblySharedBufferImplEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/StructureInlines.h' l='261' u='r' c='_ZNK3JSC9Structure17hasIndexingHeaderEPKNS_6JSCellE'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferView.h' l='75'>// A typed array that was used in some crazy way. B&apos;s IndexingHeader
+    // is hijacked to contain a reference to the native array buffer. The
+    // native typed array view points back to the JS view. V points to a
+    // vector allocated using who-knows-what, and M = WastefulTypedArray.
+    // The view does not own the vector.</doc>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGenericTypedArrayViewInlines.h' l='555' c='_ZN3JSC23JSGenericTypedArrayView17visitChildrenImplEPNS_6JSCellERT_'/>
+<dec f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.h' l='80' type='2'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.h' l='91' u='r' c='_ZN3JSC14hasArrayBufferENS_14TypedArrayModeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/StructureInlines.h' l='261' u='r' c='_ZNK3JSC9Structure17hasIndexingHeaderEPKNS_6JSCellE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferViewInlines.h' l='37' c='_ZN3JSC17JSArrayBufferView8isSharedEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferViewInlines.h' l='53' c='_ZN3JSC17JSArrayBufferView24possiblySharedBufferImplEv'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.h' l='75'>// A typed array that was used in some crazy way. B&apos;s IndexingHeader
+    // is hijacked to contain a reference to the native array buffer. The
+    // native typed array view points back to the JS view. V points to a
+    // vector allocated using who-knows-what, and M = WastefulTypedArray.
+    // The view does not own the vector.</doc>
+<use f='WebKit/Source/JavaScriptCore/jit/IntrinsicEmitter.cpp' l='109' u='r' c='_ZN3JSC25IntrinsicGetterAccessCase19emitIntrinsicGetterERNS_21AccessGenerationStateE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGenericTypedArrayViewInlines.h' l='555' c='_ZN3JSC23JSGenericTypedArrayView17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.cpp' l='106' u='r' c='_ZN3JSC17JSArrayBufferView19ConstructionContextC1ERNS_2VMEPNS_9StructureEON3WTF6RefPtrINS_11ArrayBufferENS6_12RawPtrTraitsIS8_EENS6_21DefaultRefDerefTraitsIS8_EEEEjj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.cpp' l='147' c='_ZN3JSC17JSArrayBufferView14finishCreationERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.cpp' l='304' u='r' c='_ZN3JSC17JSArrayBufferView22slowDownAndWasteMemoryEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.cpp' l='373' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC14TypedArrayModeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='3305' u='r' c='_ZN3JSC3DFG14SpeculativeJIT40jumpForTypedArrayIsDetachedIfOutOfBoundsEPNS0_4NodeENS_12X86Registers10RegisterIDENS_22AbstractMacroAssemblerINS_12X86AssemblerEE4JumpE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='8003' u='r' c='_ZN3JSC3DFG14SpeculativeJIT30compileGetTypedArrayByteOffsetEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='4754' u='r' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB330compileGetTypedArrayByteOffsetEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='19491' u='r' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB332speculateTypedArrayIsNotDetachedEPNS_2B35ValueE'/>

@@ -1,0 +1,32 @@
+<use f='include/gstreamer-1.0/gst/gstbin.h' l='73'/>
+<def f='include/gstreamer-1.0/gst/gstbin.h' l='115' ll='139'/>
+<size>376</size>
+<doc f='include/gstreamer-1.0/gst/gstbin.h' l='99'>/**
+ * GstBin:
+ * @numchildren: the number of children in this bin
+ * @children: (element-type Gst.Element): the list of children in this bin
+ * @children_cookie: updated whenever @children changes
+ * @child_bus: internal bus for handling child messages
+ * @messages: (element-type Gst.Message): queued and cached messages
+ * @polling: the bin is currently calculating its state
+ * @state_dirty: the bin needs to recalculate its state (deprecated)
+ * @clock_dirty: the bin needs to select a new clock
+ * @provided_clock: the last clock selected
+ * @clock_provider: the element that provided @provided_clock
+ *
+ * The GstBin base class. Subclasses can access these fields provided
+ * the LOCK is taken.
+ */</doc>
+<mbr r='_GstBin::element' o='0' t='GstElement'/>
+<mbr r='_GstBin::numchildren' o='2112' t='gint'/>
+<mbr r='_GstBin::children' o='2176' t='GList *'/>
+<mbr r='_GstBin::children_cookie' o='2240' t='guint32'/>
+<mbr r='_GstBin::child_bus' o='2304' t='GstBus *'/>
+<mbr r='_GstBin::messages' o='2368' t='GList *'/>
+<mbr r='_GstBin::polling' o='2432' t='gboolean'/>
+<mbr r='_GstBin::state_dirty' o='2464' t='gboolean'/>
+<mbr r='_GstBin::clock_dirty' o='2496' t='gboolean'/>
+<mbr r='_GstBin::provided_clock' o='2560' t='GstClock *'/>
+<mbr r='_GstBin::clock_provider' o='2624' t='GstElement *'/>
+<mbr r='_GstBin::priv' o='2688' t='GstBinPrivate *'/>
+<mbr r='_GstBin::_gst_reserved' o='2752' t='gpointer [4]'/>

@@ -1,0 +1,29 @@
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapValue.h' l='308'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapGenerationParams.h' l='122'/>
+<inh f='WebKit/Source/JavaScriptCore/b3/B3StackmapSpecial.h' l='42' c='JSC::B3::StackmapSpecial'/>
+<def f='WebKit/Source/JavaScriptCore/b3/B3PatchpointSpecial.h' l='44' ll='64'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='4281'/>
+<size>24</size>
+<doc f='WebKit/Source/JavaScriptCore/b3/B3PatchpointSpecial.h' l='34'>// This is a special that recognizes that there are two uses of Patchpoint: Void and and non-Void.
+// In the Void case, the syntax of the Air Patch instruction is:
+//
+//     Patch &amp;patchpoint, args...
+//
+// Where &quot;args...&quot; are the lowered arguments to the Patchpoint instruction. In the non-Void case
+// we will have:
+//
+//     Patch &amp;patchpoint, result, args...</doc>
+<fun r='_ZN3JSC2B317PatchpointSpecialC1Ev'/>
+<fun r='_ZN3JSC2B317PatchpointSpecialD1Ev'/>
+<fun r='_ZN3JSC2B317PatchpointSpecial10forEachArgERNS0_3Air4InstERKN3WTF12ScopedLambdaIFvRNS2_3ArgENS7_4RoleENS0_4BankENS0_5WidthEEEE'/>
+<fun r='_ZN3JSC2B317PatchpointSpecial7isValidERNS0_3Air4InstE'/>
+<fun r='_ZN3JSC2B317PatchpointSpecial11admitsStackERNS0_3Air4InstEj'/>
+<fun r='_ZN3JSC2B317PatchpointSpecial24admitsExtendedOffsetAddrERNS0_3Air4InstEj'/>
+<fun r='_ZN3JSC2B317PatchpointSpecial8generateERNS0_3Air4InstERNS_12CCallHelpersERNS2_17GenerationContextE'/>
+<fun r='_ZN3JSC2B317PatchpointSpecial10isTerminalERNS0_3Air4InstE'/>
+<fun r='_ZNK3JSC2B317PatchpointSpecial8dumpImplERN3WTF11PrintStreamE'/>
+<fun r='_ZNK3JSC2B317PatchpointSpecial12deepDumpImplERN3WTF11PrintStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='481' c='_ZN3JSC4Wasm14AirIRGenerator14emitPatchpointEPNS_2B33Air10BasicBlockEPNS2_15PatchpointValueERKN3WTF6VectorIT_Lm8ENS8_15CrashOnOverflowELm16ENS8_10Fast4755338'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='481' c='_ZN3JSC4Wasm14AirIRGenerator14emitPatchpointEPNS_2B33Air10BasicBlockEPNS2_15PatchpointValueERKN3WTF6VectorIT_Lm8ENS8_15CrashOnOverflowELm16ENS8_10Fast4755338'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='752'/>
+<size>24</size>

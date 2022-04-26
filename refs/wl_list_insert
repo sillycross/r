@@ -1,0 +1,15 @@
+<dec f='include/wayland-util.h' l='319' type='void wl_list_insert(struct wl_list * list, struct wl_list * elm)'/>
+<use f='include/wayland-server-core.h' l='441' u='c' c='_ZL13wl_signal_addP9wl_signalP11wl_listener'/>
+<doc f='include/wayland-util.h' l='305'>/**
+ * Inserts an element into the list, after the element represented by \p list.
+ * When \p list is a reference to the list itself (the head), set the containing
+ * struct of \p elm as the first element in the list.
+ *
+ * \note If \p elm is already part of a list, inserting it again will lead to
+ *       list corruption.
+ *
+ * \param list List element after which the new element is inserted
+ * \param elm Link of the containing struct to insert into the list
+ *
+ * \memberof wl_list
+ */</doc>

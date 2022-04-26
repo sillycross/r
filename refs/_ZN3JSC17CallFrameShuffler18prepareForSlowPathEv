@@ -1,0 +1,13 @@
+<dec f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='187' type='void JSC::CallFrameShuffler::prepareForSlowPath()'/>
+<def f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='344' ll='368' type='void JSC::CallFrameShuffler::prepareForSlowPath()'/>
+<doc f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='179'>// This will emit code to build the new frame as if performing a
+    // regular call. However, the callee save registers will be
+    // restored, and any locals (not the header or arguments) of the
+    // current frame can be overwritten.
+    //
+    // A frame built using prepareForSlowPath() should be used either
+    // to throw an exception in, or destroyed using
+    // CCallHelpers::prepareForTailCallSlow() followed by a tail call.</doc>
+<use f='WebKit/Source/JavaScriptCore/jit/Repatch.cpp' l='1674' u='c' c='_ZN3JSC19linkPolymorphicCallEPNS_14JSGlobalObjectEPNS_9CallFrameERNS_12CallLinkInfoENS_11CallVariantE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='918' u='c' c='_ZN3JSC3DFG14SpeculativeJIT8emitCallEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10188' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB315compileTailCallEv'/>

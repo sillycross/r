@@ -1,0 +1,22 @@
+<use f='include/gstreamer-1.0/gst/gstpipeline.h' l='39'/>
+<def f='include/gstreamer-1.0/gst/gstpipeline.h' l='69' ll='82'/>
+<size>440</size>
+<doc f='include/gstreamer-1.0/gst/gstpipeline.h' l='56'>/**
+ * GstPipeline:
+ * @fixed_clock: The fixed clock of the pipeline, used when
+ *               GST_PIPELINE_FLAG_FIXED_CLOCK is set.
+ * @stream_time: The stream time of the pipeline. A better name for this
+ *         property would be the running_time, the total time spent in the
+ *         PLAYING state without being flushed. (deprecated, use the start_time
+ *         on GstElement).
+ * @delay: Extra delay added to base_time to compensate for computing delays
+ *         when setting elements to PLAYING.
+ *
+ * The #GstPipeline structure.
+ */</doc>
+<mbr r='_GstPipeline::bin' o='0' t='GstBin'/>
+<mbr r='_GstPipeline::fixed_clock' o='3008' t='GstClock *'/>
+<mbr r='_GstPipeline::stream_time' o='3072' t='GstClockTime'/>
+<mbr r='_GstPipeline::delay' o='3136' t='GstClockTime'/>
+<mbr r='_GstPipeline::priv' o='3200' t='GstPipelinePrivate *'/>
+<mbr r='_GstPipeline::_gst_reserved' o='3264' t='gpointer [4]'/>

@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseContext.h' l='74' type='void WebCore::DatabaseContext::contextDestroyed()'/>
+<inh f='WebKit/Source/WebCore/dom/ContextDestructionObserver.h' l='36' c='_ZN7WebCore26ContextDestructionObserver16contextDestroyedEv'/>
+<def f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseContext.cpp' l='119' ll='123' type='void WebCore::DatabaseContext::contextDestroyed()'/>
+<doc f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseContext.cpp' l='114'>// This is called if the associated ScriptExecutionContext is destroyed while
+// we&apos;re still associated with it. That&apos;s our cue to disassociate and shutdown.
+// To do this, we stop the database and let everything shut down naturally
+// because the database closing process might still make use of this context.
+// It is not safe to just delete the context here.</doc>

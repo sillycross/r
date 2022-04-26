@@ -1,0 +1,13 @@
+<dec f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.h' l='109' type='Ref&lt;JSC::FTL::OSRExitHandle&gt; JSC::FTL::OSRExitDescriptor::emitOSRExitLater(JSC::FTL::State &amp; , JSC::ExitKind , const DFG::NodeOrigin &amp; , const B3::StackmapGenerationParams &amp; , uint32_t dfgNodeIndex, unsigned int offset)'/>
+<doc f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.h' l='101'>// In some cases you want an OSRExit to come into existence, but you don&apos;t want to emit it right now.
+    // This will emit the OSR exit in a late path. You can&apos;t be sure exactly when that will happen, but
+    // you know that it will be done by the time late path emission is done. So, a linker task will
+    // surely happen after that. You can use the OSRExitHandle to retrieve the exit&apos;s label.
+    //
+    // This API is meant to be used for things like exception handling, where some patchpoint wants to
+    // have a place to jump to for OSR exit. It doesn&apos;t care where that OSR exit is emitted so long as it
+    // eventually gets access to its label.</doc>
+<def f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.cpp' l='68' ll='79' type='Ref&lt;JSC::FTL::OSRExitHandle&gt; JSC::FTL::OSRExitDescriptor::emitOSRExitLater(JSC::FTL::State &amp; state, JSC::ExitKind exitKind, const JSC::DFG::NodeOrigin &amp; nodeOrigin, const JSC::B3::StackmapGenerationParams &amp; params, uint32_t dfgNodeIndex, unsigned int offset)'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLPatchpointExceptionHandle.cpp' l='116' u='c' c='_ZN3JSC3FTL25PatchpointExceptionHandle12createHandleENS_8ExitKindERKNS_2B324StackmapGenerationParamsE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='11527' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB324compileInvalidationPointEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='14863' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB318compileCheckJSCastEv'/>

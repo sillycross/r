@@ -1,0 +1,34 @@
+<def f='include/GL/glxproto.h' l='1319' ll='1331'/>
+<use f='include/GL/glxproto.h' l='1319'/>
+<size>24</size>
+<doc f='include/GL/glxproto.h' l='1296'>/**
+ * Protocol header for glXSetClientInfoARB
+ *
+ * This structure is followed by \c numVersions * 2 \c CARD32 values listing
+ * the OpenGL versions supported by the client.  The pairs of values are an
+ * OpenGL major version followed by a minor version.  For example,
+ *
+ *      CARD32 versions[4] = { 2, 1, 3, 0 };
+ *
+ * says that the client supports OpenGL 2.1 and OpenGL 3.0.
+ *
+ * These are followed by \c numGLExtensionBytes bytes of \c STRING8 containing
+ * the OpenGL extension string supported by the client and up to 3 bytes of
+ * padding.
+ *
+ * The list of OpenGL extensions is followed by \c numGLXExtensionBytes bytes
+ * of \c STRING8 containing the GLX extension string supported by the client
+ * and up to 3 bytes of padding.
+ *
+ * This protocol replaces \c GLXClientInfo.
+ *
+ * \sa GLXClientInfo, GLXSetClientInfo2ARB
+ */</doc>
+<mbr r='GLXSetClientInfoARB::reqType' o='0' t='CARD8'/>
+<mbr r='GLXSetClientInfoARB::glxCode' o='8' t='CARD8'/>
+<mbr r='GLXSetClientInfoARB::length' o='16' t='CARD16'/>
+<mbr r='GLXSetClientInfoARB::major' o='32' t='CARD32'/>
+<mbr r='GLXSetClientInfoARB::minor' o='64' t='CARD32'/>
+<mbr r='GLXSetClientInfoARB::numVersions' o='96' t='CARD32'/>
+<mbr r='GLXSetClientInfoARB::numGLExtensionBytes' o='128' t='CARD32'/>
+<mbr r='GLXSetClientInfoARB::numGLXExtensionBytes' o='160' t='CARD32'/>

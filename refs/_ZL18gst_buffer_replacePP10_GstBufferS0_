@@ -1,0 +1,17 @@
+<def f='include/gstreamer-1.0/gst/gstbuffer.h' l='595' ll='599' type='gboolean gst_buffer_replace(GstBuffer ** obuf, GstBuffer * nbuf)'/>
+<doc f='include/gstreamer-1.0/gst/gstbuffer.h' l='579'>/**
+ * gst_buffer_replace:
+ * @obuf: (inout) (transfer full) (nullable): pointer to a pointer to
+ *     a #GstBuffer to be replaced.
+ * @nbuf: (transfer none) (allow-none): pointer to a #GstBuffer that will
+ *     replace the buffer pointed to by @obuf.
+ *
+ * Modifies a pointer to a #GstBuffer to point to a different #GstBuffer. The
+ * modification is done atomically (so this is useful for ensuring thread safety
+ * in some cases), and the reference counts are updated appropriately (the old
+ * buffer is unreffed, the new is reffed).
+ *
+ * Either @nbuf or the #GstBuffer pointed to by @obuf may be %NULL.
+ *
+ * Returns: %TRUE when @obuf was different from @nbuf.
+ */</doc>

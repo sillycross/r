@@ -1,0 +1,13 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.h' l='259' type='JSCValue * jsc_value_constructor_callv(JSCValue * value, guint n_parameters, JSCValue ** parameters)'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='1425' ll='1449' type='JSCValue * jsc_value_constructor_callv(JSCValue * value, unsigned int parametersCount, JSCValue ** parameters)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='1414'>/**
+ * jsc_value_constructor_callv: (rename-to jsc_value_constructor_call)
+ * @value: a #JSCValue
+ * @n_parameters: the number of parameters
+ * @parameters: (nullable) (array length=n_parameters) (element-type JSCValue): the #JSCValue&lt;!-- --&gt;s to pass as parameters to the constructor, or %NULL
+ *
+ * Invoke &lt;function&gt;new&lt;/function&gt; with constructor referenced by @value. If @n_parameters
+ * is 0 no parameters will be passed to the constructor.
+ *
+ * Returns: (transfer full): a #JSCValue referencing the newly created object instance.
+ */</doc>

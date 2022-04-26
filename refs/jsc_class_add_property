@@ -1,0 +1,23 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCClass.h' l='144' type='void jsc_class_add_property(JSCClass * jsc_class, const char * name, GType property_type, GCallback getter, GCallback setter, gpointer user_data, GDestroyNotify destroy_notify)'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCClass.cpp' l='850' ll='863' type='void jsc_class_add_property(JSCClass * jscClass, const char * name, GType propertyType, GCallback getter, GCallback setter, gpointer userData, GDestroyNotify destroyNotify)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCClass.cpp' l='829'>/**
+ * jsc_class_add_property:
+ * @jsc_class: a #JSCClass
+ * @name: the property name
+ * @property_type: the #GType of the property value
+ * @getter: (scope async) (nullable): a #GCallback to be called to get the property value
+ * @setter: (scope async) (nullable): a #GCallback to be called to set the property value
+ * @user_data: (closure): user data to pass to @getter and @setter
+ * @destroy_notify: (nullable): destroy notifier for @user_data
+ *
+ * Add a property with @name to @jsc_class. When the property value needs to be getted, @getter is called
+ * receiving the the class instance as first parameter and @user_data as last parameter. When the property
+ * value needs to be set, @setter is called receiving the the class instance as first parameter, followed
+ * by the value to be set and then @user_data as the last parameter. When the property is cleared in the
+ * #JSCClass context, @destroy_notify is called with @user_data as parameter.
+ *
+ * Note that the value returned by @getter must be transfer full. In case of non-refcounted boxed types, you should use
+ * %G_TYPE_POINTER instead of the actual boxed #GType to ensure that the instance owned by #JSCClass is used.
+ * If you really want to return a new copy of the boxed type, use #JSC_TYPE_VALUE and return a #JSCValue created
+ * with jsc_value_new_object() that receives the copy as the instance parameter.
+ */</doc>

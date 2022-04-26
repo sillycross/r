@@ -1,0 +1,31 @@
+<inh f='WebKit/Source/WebCore/rendering/RenderFragmentContainer.h' l='44' c='WebCore::RenderFragmentContainer'/>
+<def f='WebKit/Source/WebCore/rendering/RenderFragmentContainerSet.h' l='45' ll='59'/>
+<use f='WebKit/Source/WebCore/rendering/RenderFragmentContainerSet.h' l='46' c='_ZN7WebCore26RenderFragmentContainerSet8bisoHeapEv'/>
+<ovr f='WebKit/Source/WebCore/rendering/RenderMultiColumnSet.h' l='45' c='WebCore::RenderMultiColumnSet'/>
+<use f='WebKit/Source/WebCore/rendering/RenderMultiColumnSet.h' l='45'/>
+<use f='WebKit/Source/WebCore/rendering/RenderMultiColumnSet.cpp' l='44' c='_ZN7WebCore20RenderMultiColumnSetC1ERNS_20RenderFragmentedFlowEONS_11RenderStyleE'/>
+<size>296</size>
+<doc f='WebKit/Source/WebCore/rendering/RenderFragmentContainerSet.h' l='34'>// RenderFragmentContainerSet represents a set of regions that all have the same width and height. It is a &quot;composite region box&quot; that
+// can be used to represent a single run of contiguous regions.
+//
+// By combining runs of same-size columns or pages into a single object, we significantly reduce the number of unique RenderObjects
+// required to represent those objects.
+//
+// This class is abstract and is only intended for use by renderers that generate anonymous runs of identical regions, i.e.,
+// columns and printing. RenderMultiColumnSet and RenderPageSet represent runs of columns and pages respectively.
+//
+// FIXME: For now we derive from RenderFragmentContainer, but this may change at some point.</doc>
+<fun r='_ZN7WebCore26RenderFragmentContainerSet8bisoHeapEv'/>
+<fun r='_ZN7WebCore26RenderFragmentContainerSet47expandToEncompassFragmentedFlowContentsIfNeededEv'/>
+<fun r='_ZN7WebCore26RenderFragmentContainerSetC1ERNS_8DocumentEONS_11RenderStyleERNS_20RenderFragmentedFlowE'/>
+<fun r='_ZN7WebCore26RenderFragmentContainerSet21installFragmentedFlowEv'/>
+<fun r='_ZNK7WebCore26RenderFragmentContainerSet10renderNameEv'/>
+<fun r='_ZNK7WebCore26RenderFragmentContainerSet28isRenderFragmentContainerSetEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderFragmentContainerSet.cpp' l='35' c='_ZN7WebCore26RenderFragmentContainerSet8bisoHeapEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderFragmentContainerSet.cpp' l='35' c='_ZN7WebCore26RenderFragmentContainerSet8bisoHeapEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderFragmentContainerSet.cpp' l='35' c='_ZN7WebCore26RenderFragmentContainerSetnwEm'/>
+<size>296</size>
+<fun r='_ZN7WebCore26RenderFragmentContainerSet8bisoHeapEv'/>
+<fun r='_ZN7WebCore26RenderFragmentContainerSetC1ERNS_8DocumentEONS_11RenderStyleERNS_20RenderFragmentedFlowE'/>
+<fun r='_ZN7WebCore26RenderFragmentContainerSet21installFragmentedFlowEv'/>
+<fun r='_ZN7WebCore26RenderFragmentContainerSet47expandToEncompassFragmentedFlowContentsIfNeededEv'/>

@@ -1,0 +1,16 @@
+<def f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderLang.h' l='100' type='const ShCompileOptions'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderLang.h' l='93'>// This flag will keep invariant declaration for input in fragment shader for GLSL &gt;=4.20 on AMD.
+// From GLSL &gt;= 4.20, it&apos;s optional to add invariant for fragment input, but GPU vendors have
+// different implementations about this. Some drivers forbid invariant in fragment for GLSL&gt;= 4.20,
+// e.g. Linux Mesa, some drivers treat that as optional, e.g. NVIDIA, some drivers require invariant
+// must match between vertex and fragment shader, e.g. AMD. The behavior on AMD is obviously wrong.
+// Remove invariant for input in fragment shader to workaround the restriction on Intel Mesa.
+// But don&apos;t remove on AMD Linux to avoid triggering the bug on AMD.</doc>
+<def f='WebKit/ANGLE/Headers/ANGLE/ShaderLang.h' l='100' type='const ShCompileOptions'/>
+<doc f='WebKit/ANGLE/Headers/ANGLE/ShaderLang.h' l='93'>// This flag will keep invariant declaration for input in fragment shader for GLSL &gt;=4.20 on AMD.
+// From GLSL &gt;= 4.20, it&apos;s optional to add invariant for fragment input, but GPU vendors have
+// different implementations about this. Some drivers forbid invariant in fragment for GLSL&gt;= 4.20,
+// e.g. Linux Mesa, some drivers treat that as optional, e.g. NVIDIA, some drivers require invariant
+// must match between vertex and fragment shader, e.g. AMD. The behavior on AMD is obviously wrong.
+// Remove invariant for input in fragment shader to workaround the restriction on Intel Mesa.
+// But don&apos;t remove on AMD Linux to avoid triggering the bug on AMD.</doc>

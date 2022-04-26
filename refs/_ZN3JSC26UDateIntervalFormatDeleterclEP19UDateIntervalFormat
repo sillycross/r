@@ -1,0 +1,4 @@
+<dec f='WebKit/Source/JavaScriptCore/runtime/IntlDateTimeFormat.h' l='49' type='void JSC::UDateIntervalFormatDeleter::operator()(UDateIntervalFormat * )'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/IntlDateTimeFormat.cpp' l='57' ll='61' type='void JSC::UDateIntervalFormatDeleter::operator()(UDateIntervalFormat * formatter)'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/IntlDateTimeFormat.cpp' l='55'>// We do not use ICUDeleter&lt;udtitvfmt_close&gt; because we do not want to include udateintervalformat.h in IntlDateTimeFormat.h.
+// udateintervalformat.h needs to be included with #undef U_HIDE_DRAFT_API, and we would like to minimize this effect in IntlDateTimeFormat.cpp.</doc>

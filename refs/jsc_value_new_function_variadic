@@ -1,0 +1,23 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.h' l='230' type='JSCValue * jsc_value_new_function_variadic(JSCContext * context, const char * name, GCallback callback, gpointer user_data, GDestroyNotify destroy_notify, GType return_type)'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='1265' ll='1271' type='JSCValue * jsc_value_new_function_variadic(JSCContext * context, const char * name, GCallback callback, gpointer userData, GDestroyNotify destroyNotify, GType returnType)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='1244'>/**
+ * jsc_value_new_function_variadic:
+ * @context: a #JSCContext
+ * @name: (nullable): the function name or %NULL
+ * @callback: (scope async): a #GCallback.
+ * @user_data: (closure): user data to pass to @callback.
+ * @destroy_notify: (nullable): destroy notifier for @user_data
+ * @return_type: the #GType of the function return value, or %G_TYPE_NONE if the function is void.
+ *
+ * Create a function in @context. If @name is %NULL an anonymous function will be created.
+ * When the function is called by JavaScript or jsc_value_function_call(), @callback is called
+ * receiving an #GPtrArray of #JSCValue&lt;!-- --&gt;s with the arguments and then @user_data as last parameter.
+ * When the function is cleared in @context, @destroy_notify is called with @user_data as parameter.
+ *
+ * Note that the value returned by @callback must be fully transferred. In case of boxed types, you could use
+ * %G_TYPE_POINTER instead of the actual boxed #GType to ensure that the instance owned by #JSCClass is used.
+ * If you really want to return a new copy of the boxed type, use #JSC_TYPE_VALUE and return a #JSCValue created
+ * with jsc_value_new_object() that receives the copy as instance parameter.
+ *
+ * Returns: (transfer full): a #JSCValue.
+ */</doc>

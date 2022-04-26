@@ -1,0 +1,11 @@
+<dec f='WebKit/Source/WebCore/loader/cache/CachedResourceLoader.h' l='144' type='void WebCore::CachedResourceLoader::garbageCollectDocumentResources()'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='3186' u='c' c='_ZNK7WebCore9Internals31garbageCollectDocumentResourcesEv'/>
+<use f='WebKit/Source/WebCore/page/MemoryRelease.cpp' l='112' u='c' c='_ZN7WebCoreL21releaseCriticalMemoryEN3WTF11SynchronousENS_24MaintainBackForwardCacheENS_19MaintainMemoryCacheE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResourceLoader.cpp' l='203' u='a' c='_ZN7WebCore20CachedResourceLoaderC1EPNS_14DocumentLoaderE'/>
+<def f='WebKit/Source/WebCore/loader/cache/CachedResourceLoader.cpp' l='1441' ll='1460' type='void WebCore::CachedResourceLoader::garbageCollectDocumentResources()'/>
+<doc f='WebKit/Source/WebCore/loader/cache/CachedResourceLoader.cpp' l='1435'>// Garbage collecting m_documentResources is a workaround for the
+// CachedResourceHandles on the RHS being strong references. Ideally this
+// would be a weak map, however CachedResourceHandles perform additional
+// bookkeeping on CachedResources, so instead pseudo-GC them -- when the
+// reference count reaches 1, m_documentResources is the only reference, so
+// remove it from the map.</doc>

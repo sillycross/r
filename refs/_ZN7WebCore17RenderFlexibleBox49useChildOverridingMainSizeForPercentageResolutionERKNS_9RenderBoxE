@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderFlexibleBox.h' l='164' type='bool WebCore::RenderFlexibleBox::useChildOverridingMainSizeForPercentageResolution(const WebCore::RenderBox &amp; )'/>
+<def f='WebKit/Source/WebCore/rendering/RenderFlexibleBox.cpp' l='1329' ll='1344' type='bool WebCore::RenderFlexibleBox::useChildOverridingMainSizeForPercentageResolution(const WebCore::RenderBox &amp; child)'/>
+<use f='WebKit/Source/WebCore/rendering/RenderFlexibleBox.cpp' l='1350' u='c' c='_ZN7WebCore17RenderFlexibleBox54useChildOverridingLogicalHeightForPercentageResolutionERKNS_9RenderBoxE'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderFlexibleBox.cpp' l='1323'>// This method is only called whenever a descendant of a flex item wants to resolve a percentage in its
+// block axis (logical height). The key here is that percentages should be generally resolved before the
+// flex item is flexed, meaning that they shouldn&apos;t be recomputed once the flex item has been flexed. There
+// are some exceptions though that are implemented here, like the case of fully inflexible items with
+// definite flex-basis, or whenever the flex container has a definite main size. See
+// https://drafts.csswg.org/css-flexbox/#definite-sizes for additional details.</doc>

@@ -1,0 +1,63 @@
+<def f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.h' l='133' ll='216'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.h' l='134' c='_ZN7WebCore11DisplayList10ItemBufferC1ERKS1_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.h' l='134' c='_ZN7WebCore11DisplayList10ItemBufferaSERKS1_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.h' l='134' c='_ZN7WebCore11DisplayList10ItemBufferaSERKS1_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.h' l='142' c='_ZN7WebCore11DisplayList10ItemBufferC1EOS1_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.h' l='143' c='_ZN7WebCore11DisplayList10ItemBufferaSEOS1_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.h' l='143' c='_ZN7WebCore11DisplayList10ItemBufferaSEOS1_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayList.h' l='105' c='_ZNK7WebCore11DisplayList11DisplayList18itemBufferIfExistsEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayList.h' l='106' c='_ZN7WebCore11DisplayList11DisplayList10itemBufferEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayList.h' l='140'/>
+<size>128</size>
+<doc f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.h' l='129'>// An ItemBuffer contains display list item data, and consists of a readwrite ItemBufferHandle (to which display
+// list items are appended) as well as a number of readonly ItemBufferHandles. Items are appended to the readwrite
+// buffer until all available capacity is exhausted, at which point we will move this writable handle to the list
+// of readonly handles.</doc>
+<fun r='_ZN7WebCore11DisplayList10ItemBufferC1ERKS1_'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBufferC1Ev'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBufferD1Ev'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBufferC1EON3WTF6VectorINS0_16ItemBufferHandleELm2ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBufferC1EOS1_'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBufferaSEOS1_'/>
+<fun r='_ZNK7WebCore11DisplayList10ItemBuffer11sizeInBytesEv'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBuffer5clearEv'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBuffer11shrinkToFitEv'/>
+<fun r='_ZNK7WebCore11DisplayList10ItemBuffer7isEmptyEv'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBuffer16createItemBufferEm'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBuffer6appendEDpOT0_'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBuffer9setClientEPNS0_23ItemBufferWritingClientE'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBuffer9setClientEPNS0_23ItemBufferReadingClientE'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBuffer15prepareToAppendEONS0_16ItemBufferHandleE'/>
+<fun r='_ZNK7WebCore11DisplayList10ItemBuffer15readOnlyBuffersEv'/>
+<fun r='_ZNK7WebCore11DisplayList10ItemBuffer17forEachItemBufferEON3WTF8FunctionIFvRKNS0_16ItemBufferHandleEEEE'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBuffer13didAppendDataEmNS0_19DidChangeItemBufferE'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBuffer26swapWritableBufferIfNeededEm'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBuffer6appendERKN3WTF7VariantIJNS0_22ApplyDeviceScaleFactorENS0_26BeginClipToDrawingCommandsENS0_22BeginTransparencyLaye5360524'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBuffer15uncheckedAppendENS0_19DidChangeItemBufferEDpOT0_'/>
+<mbr r='WebCore::DisplayList::ItemBuffer::m_readingClient' o='0' t='WebCore::DisplayList::ItemBufferReadingClient *'/>
+<mbr r='WebCore::DisplayList::ItemBuffer::m_writingClient' o='64' t='WebCore::DisplayList::ItemBufferWritingClient *'/>
+<mbr r='WebCore::DisplayList::ItemBuffer::m_allocatedBuffers' o='128' t='Vector&lt;uint8_t *&gt;'/>
+<mbr r='WebCore::DisplayList::ItemBuffer::m_readOnlyBuffers' o='256' t='WebCore::DisplayList::ItemBufferHandles'/>
+<mbr r='WebCore::DisplayList::ItemBuffer::m_writableBuffer' o='768' t='WebCore::DisplayList::ItemBufferHandle'/>
+<mbr r='WebCore::DisplayList::ItemBuffer::m_writtenNumberOfBytes' o='960' t='size_t'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListIterator.h' l='87' c='_ZNK7WebCore11DisplayList11DisplayList8Iterator10itemBufferEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayList.cpp' l='63' c='_ZN7WebCore11DisplayList11DisplayListC1EON3WTF6VectorINS0_16ItemBufferHandleELm2ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayList.cpp' l='158' c='_ZN7WebCore11DisplayList11DisplayList10itemBufferEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayList.cpp' l='161' c='_ZN7WebCore11DisplayList11DisplayList10itemBufferEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.cpp' l='674' c='_ZN7WebCore11DisplayList10ItemBufferC1EOS1_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.cpp' l='684' c='_ZN7WebCore11DisplayList10ItemBufferaSEOS1_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.cpp' l='684' c='_ZN7WebCore11DisplayList10ItemBufferaSEOS1_'/>
+<size>128</size>
+<fun r='_ZN7WebCore11DisplayList10ItemBufferC1EON3WTF6VectorINS0_16ItemBufferHandleELm2ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBufferC1Ev'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBufferD1Ev'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBufferC1EOS1_'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBufferaSEOS1_'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBuffer16createItemBufferEm'/>
+<fun r='_ZNK7WebCore11DisplayList10ItemBuffer17forEachItemBufferEON3WTF8FunctionIFvRKNS0_16ItemBufferHandleEEEE'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBuffer5clearEv'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBuffer11shrinkToFitEv'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBuffer26swapWritableBufferIfNeededEm'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBuffer6appendERKN3WTF7VariantIJNS0_22ApplyDeviceScaleFactorENS0_26BeginClipToDrawingCommandsENS0_22BeginTransparencyLaye5360524'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBuffer13didAppendDataEmNS0_19DidChangeItemBufferE'/>
+<fun r='_ZN7WebCore11DisplayList10ItemBuffer15prepareToAppendEONS0_16ItemBufferHandleE'/>

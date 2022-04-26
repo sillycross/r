@@ -1,0 +1,35 @@
+<dec f='include/wayland-client-protocol.h' l='572' type='const struct wl_interface'/>
+<use f='include/wayland-client-protocol.h' l='4072' u='a' c='_ZL19wl_seat_get_pointerP7wl_seat'/>
+<dec f='include/wayland-server-protocol.h' l='575' type='const struct wl_interface'/>
+<def f='include/wayland-server-protocol.h' l='3448' ll='3506'/>
+<size>16</size>
+<doc f='include/wayland-client-protocol.h' l='560'>/**
+ * @defgroup iface_wl_pointer The wl_pointer interface
+ *
+ * The wl_pointer interface represents one or more input devices,
+ * such as mice, which control the pointer location and pointer_focus
+ * of a seat.
+ *
+ * The wl_pointer interface generates motion, enter and leave
+ * events for the surfaces that the pointer is located over,
+ * and button and axis events for button presses, button releases
+ * and scrolling.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='563'>/**
+ * @defgroup iface_wl_pointer The wl_pointer interface
+ *
+ * The wl_pointer interface represents one or more input devices,
+ * such as mice, which control the pointer location and pointer_focus
+ * of a seat.
+ *
+ * The wl_pointer interface generates motion, enter and leave
+ * events for the surfaces that the pointer is located over,
+ * and button and axis events for button presses, button releases
+ * and scrolling.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='3444'>/**
+ * @ingroup iface_wl_pointer
+ * @struct wl_pointer_interface
+ */</doc>
+<mbr r='wl_pointer_interface::set_cursor' o='0' t='void (*)(struct wl_client *, struct wl_resource *, uint32_t, struct wl_resource *, int32_t, int32_t)'/>
+<mbr r='wl_pointer_interface::release' o='64' t='void (*)(struct wl_client *, struct wl_resource *)'/>

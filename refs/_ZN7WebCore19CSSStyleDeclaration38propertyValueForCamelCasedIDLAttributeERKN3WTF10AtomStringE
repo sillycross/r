@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebCore/css/CSSStyleDeclaration.h' l='82' type='WTF::String WebCore::CSSStyleDeclaration::propertyValueForCamelCasedIDLAttribute(const WTF::AtomString &amp; )'/>
+<doc f='WebKit/Source/WebCore/css/CSSStyleDeclaration.h' l='77'>// FIXME: It would be more efficient, by virtue of avoiding the text transformation and hash lookup currently
+    // required in the implementation, if we could could smuggle the CSSPropertyID through the bindings, perhaps
+    // by encoding it into the HashTableValue and then passing it together with the PropertyName.
+
+    // Shared implementation for all properties that match https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-camel_cased_attribute.</doc>
+<def f='WebKit/Source/WebCore/css/CSSStyleDeclaration.cpp' l='271' ll='276' type='WTF::String WebCore::CSSStyleDeclaration::propertyValueForCamelCasedIDLAttribute(const WTF::AtomString &amp; attribute)'/>
+<use f='WebKit/WebCore/DerivedSources/JSCSSStyleDeclaration.cpp' l='1749' u='c' c='_ZN7WebCoreL66jsCSSStyleDeclaration_propertyValueForCamelCasedIDLAttributeGetterERN3JSC14JSGlobalObjectERNS_21JSCSSStyleDeclarationENS0_12PropertyNameE'/>

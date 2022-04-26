@@ -1,0 +1,16 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1051' ll='1077' type='void webkit_web_context_set_favicon_database_directory(WebKitWebContext * context, const gchar * path)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1036'>/**
+ * webkit_web_context_set_favicon_database_directory:
+ * @context: a #WebKitWebContext
+ * @path: (allow-none): an absolute path to the icon database
+ * directory or %NULL to use the defaults
+ *
+ * Set the directory path to be used to store the favicons database
+ * for @context on disk. Passing %NULL as @path means using the
+ * default directory for the platform (see g_get_user_cache_dir()).
+ *
+ * Calling this method also means enabling the favicons database for
+ * its use from the applications, so that&apos;s why it&apos;s expected to be
+ * called only once. Further calls for the same instance of
+ * #WebKitWebContext won&apos;t cause any effect.
+ */</doc>

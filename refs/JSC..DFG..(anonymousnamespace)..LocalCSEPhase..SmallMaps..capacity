@@ -1,0 +1,13 @@
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='331' u='r' c='_ZN3JSC3DFG12_GLOBAL__N_113LocalCSEPhase3runEv'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='352' type='const unsigned int'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='384' u='r' c='_ZN3JSC3DFG12_GLOBAL__N_113LocalCSEPhase9SmallMaps7addPureENS0_9PureValueEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='406' u='r' c='_ZN3JSC3DFG12_GLOBAL__N_113LocalCSEPhase9SmallMaps9addImpureENS0_12HeapLocationENS0_8LazyNodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='412'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='413'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='345'>// This permits SmallMaps to be used for blocks that have up to 100 nodes. In practice,
+        // fewer than half of the nodes in a block have pure defs, and even fewer have impure defs.
+        // Thus, a capacity limit of 100 probably means that somewhere around ~40 things may end up
+        // in one of these &quot;small&quot; list-based maps. That number still seems largeish, except that
+        // the overhead of HashMaps can be quite high currently: clearing them, or even removing
+        // enough things from them, deletes (or resizes) their backing store eagerly. Hence
+        // HashMaps induce a lot of malloc traffic.</doc>

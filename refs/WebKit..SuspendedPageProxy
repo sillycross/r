@@ -1,0 +1,88 @@
+<use f='WebKit/Source/WebKit/Shared/WebBackForwardListItem.h' l='86' c='_ZNK6WebKit22WebBackForwardListItem13suspendedPageEv'/>
+<inh f='WebKit/Source/WebKit/Platform/IPC/MessageReceiver.h' l='37' c='IPC::MessageReceiver'/>
+<inh f='WebKit/Source/WebKit/Platform/IPC/MessageSender.h' l='34' c='IPC::MessageSender'/>
+<def f='WebKit/Source/WebKit/UIProcess/SuspendedPageProxy.h' l='55' ll='125'/>
+<use f='WebKit/Source/WebKit/UIProcess/SuspendedPageProxy.h' l='72' c='_ZN6WebKit18SuspendedPageProxy25waitUntilReadyToUnsuspendEON3WTF17CompletionHandlerIFvPS0_EEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/SuspendedPageProxy.h' l='114'/>
+<use f='WebKit/Source/WebKit/UIProcess/SuspendedPageProxy.h' l='115'/>
+<use f='WebKit/Source/WebKit/Shared/WebBackForwardListItem.cpp' l='183' c='_ZNK6WebKit22WebBackForwardListItem13suspendedPageEv'/>
+<size>1</size>
+<fun r='_ZN6WebKit18SuspendedPageProxyC1ERNS_12WebPageProxyEOiN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEENS_38ShouldDelayClosingUntilFirstLayerFlushE'/>
+<fun r='_ZN6WebKit18SuspendedPageProxyD1Ev'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy32findReusableSuspendedPageProcessERNS_14WebProcessPoolERKN7WebCore17RegistrableDomainERNS_16WebsiteDataStoreE'/>
+<fun r='_ZNK6WebKit18SuspendedPageProxy4pageEv'/>
+<fun r='_ZNK6WebKit18SuspendedPageProxy9webPageIDEv'/>
+<fun r='_ZNK6WebKit18SuspendedPageProxy7processEv'/>
+<fun r='_ZNK6WebKit18SuspendedPageProxy11mainFrameIDEv'/>
+<fun r='_ZNK6WebKit18SuspendedPageProxy16backForwardCacheEv'/>
+<fun r='_ZNK6WebKit18SuspendedPageProxy21pageIsClosedOrClosingEv'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy25waitUntilReadyToUnsuspendEON3WTF17CompletionHandlerIFvPS0_EEE'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy9unsuspendEv'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy22pageDidFirstLayerFlushEv'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy20closeWithoutFlashingEv'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy26didProcessRequestToSuspendENS0_15SuspensionStateE'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy18suspensionTimedOutEv'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy5closeEv'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<fun r='_ZNK6WebKit18SuspendedPageProxy23messageSenderConnectionEv'/>
+<fun r='_ZNK6WebKit18SuspendedPageProxy26messageSenderDestinationIDEv'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy11sendMessageEON3WTF9UniqueRefIN3IPC7EncoderEEENS1_9OptionSetINS3_10SendOptionEEEOSt8optionalISt4pairINS1_17CompletionHa10187433'/>
+<mbr r='WebKit::SuspendedPageProxy::m_page' t='WebKit::WebPageProxy &amp;'/>
+<mbr r='WebKit::SuspendedPageProxy::m_webPageID' t='WebCore::PageIdentifier'/>
+<mbr r='WebKit::SuspendedPageProxy::m_process' t='int'/>
+<mbr r='WebKit::SuspendedPageProxy::m_mainFrameID' t='WebCore::FrameIdentifier'/>
+<mbr r='WebKit::SuspendedPageProxy::m_isClosed' t='bool'/>
+<mbr r='WebKit::SuspendedPageProxy::m_shouldDelayClosingUntilFirstLayerFlush' t='WebKit::ShouldDelayClosingUntilFirstLayerFlush'/>
+<mbr r='WebKit::SuspendedPageProxy::m_shouldCloseWhenEnteringAcceleratedCompositingMode' t='bool'/>
+<mbr r='WebKit::SuspendedPageProxy::m_suspensionState' t='WebKit::SuspendedPageProxy::SuspensionState'/>
+<mbr r='WebKit::SuspendedPageProxy::m_readyToUnsuspendHandler' t='CompletionHandler&lt;void (WebKit::SuspendedPageProxy *)&gt;'/>
+<mbr r='WebKit::SuspendedPageProxy::m_suspensionTimeoutTimer' t='RunLoop::Timer&lt;SuspendedPageProxy&gt;'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.h' l='447' c='_ZN6WebKit14WebProcessPool20processForNavigationERNS_12WebPageProxyERKN3API10NavigationEON3WTF3RefINS_15WebProcessProxyENS7_12RawPtrTraitsIS9_EEEERKNS2932148'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.h' l='522' c='_ZN6WebKit14WebProcessPool28processForNavigationInternalERNS_12WebPageProxyERKN3API10NavigationEON3WTF3RefINS_15WebProcessProxyENS7_12RawPtrTraitsIS9_8178068'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='2455' c='_ZN6WebKit12WebPageProxy30continueNavigationInNewProcessERN3API10NavigationEOSt10unique_ptrINS_18SuspendedPageProxyESt14default_deleteIS5_EEON3WTF3Ref10380700'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='2994'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='2995'/>
+<size>1</size>
+<use f='WebKit/Source/WebKit/UIProcess/ProvisionalPageProxy.cpp' l='61' c='_ZN6WebKit20ProvisionalPageProxyC1ERNS_12WebPageProxyEON3WTF3RefINS_15WebProcessProxyENS3_12RawPtrTraitsIS5_EEEESt10unique_ptrINS_18SuspendedPageProxy15641360'/>
+<size>1</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebBackForwardCache.h' l='59' c='_ZN6WebKit19WebBackForwardCache8addEntryERNS_22WebBackForwardListItemEOSt10unique_ptrINS_18SuspendedPageProxyESt14default_deleteIS4_EE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebBackForwardCache.h' l='62' c='_ZN6WebKit19WebBackForwardCache11removeEntryERNS_18SuspendedPageProxyE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebBackForwardCache.h' l='63' c='_ZN6WebKit19WebBackForwardCache17takeSuspendedPageERNS_22WebBackForwardListItemE'/>
+<size>1</size>
+<use f='WebKit/Source/WebKit/UIProcess/SuspendedPageProxy.cpp' l='47' c='_ZN6WebKitL17allSuspendedPagesEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/SuspendedPageProxy.cpp' l='49' c='_ZN6WebKitL17allSuspendedPagesEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/SuspendedPageProxy.cpp' l='149' c='_ZN6WebKit18SuspendedPageProxy25waitUntilReadyToUnsuspendEON3WTF17CompletionHandlerIFvPS0_EEE'/>
+<size>1</size>
+<fun r='_ZN6WebKit18SuspendedPageProxy32findReusableSuspendedPageProcessERNS_14WebProcessPoolERKN7WebCore17RegistrableDomainERNS_16WebsiteDataStoreE'/>
+<fun r='_ZN6WebKit18SuspendedPageProxyC1ERNS_12WebPageProxyEON3WTF3RefINS_15WebProcessProxyENS3_12RawPtrTraitsIS5_EEEENS3_16ObjectIdentifierIN7WebCore19FrameI4192976'/>
+<fun r='_ZN6WebKit18SuspendedPageProxyD1Ev'/>
+<fun r='_ZNK6WebKit18SuspendedPageProxy16backForwardCacheEv'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy25waitUntilReadyToUnsuspendEON3WTF17CompletionHandlerIFvPS0_EEE'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy9unsuspendEv'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy5closeEv'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy22pageDidFirstLayerFlushEv'/>
+<fun r='_ZNK6WebKit18SuspendedPageProxy21pageIsClosedOrClosingEv'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy20closeWithoutFlashingEv'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy26didProcessRequestToSuspendENS0_15SuspensionStateE'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy18suspensionTimedOutEv'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<fun r='_ZNK6WebKit18SuspendedPageProxy23messageSenderConnectionEv'/>
+<fun r='_ZNK6WebKit18SuspendedPageProxy26messageSenderDestinationIDEv'/>
+<fun r='_ZN6WebKit18SuspendedPageProxy11sendMessageEON3WTF9UniqueRefIN3IPC7EncoderEEENS1_9OptionSetINS3_10SendOptionEEEOSt8optionalISt4pairINS1_17CompletionHa10187433'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebBackForwardCacheEntry.h' l='42' c='_ZN6WebKit24WebBackForwardCacheEntryC1ERNS_19WebBackForwardCacheEN7WebCore25BackForwardItemIdentifierEN3WTF16ObjectIdentifierINS3_21ProcessIdentifierT1724534'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebBackForwardCacheEntry.h' l='47' c='_ZNK6WebKit24WebBackForwardCacheEntry13suspendedPageEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebBackForwardCacheEntry.h' l='48' c='_ZN6WebKit24WebBackForwardCacheEntry17takeSuspendedPageEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebBackForwardCacheEntry.h' l='58'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebBackForwardCache.cpp' l='107' c='_ZN6WebKit19WebBackForwardCache11removeEntryERNS_18SuspendedPageProxyE'/>
+<size>1</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='909' c='_ZN6WebKit12WebPageProxy28suspendCurrentPageIfPossibleERN3API10NavigationESt8optionalIN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEENS_28P13062022'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='3454' c='_ZN6WebKit12WebPageProxy32receivedNavigationPolicyDecisionEN7WebCore12PolicyActionEPN3API10NavigationEON3WTF3RefINS3_16NavigationActionENS6_12RawPtrTr5935571'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='3589' c='_ZN6WebKit12WebPageProxy30continueNavigationInNewProcessERN3API10NavigationEOSt10unique_ptrINS_18SuspendedPageProxyESt14default_deleteIS5_EEON3WTF3Ref12262606'/>
+<size>1</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.cpp' l='1777' c='_ZN6WebKit14WebProcessPool20processForNavigationERNS_12WebPageProxyERKN3API10NavigationEON3WTF3RefINS_15WebProcessProxyENS7_12RawPtrTraitsIS9_EEEERKNS2932148'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.cpp' l='1779' c='_ZN6WebKit14WebProcessPool20processForNavigationERNS_12WebPageProxyERKN3API10NavigationEON3WTF3RefINS_15WebProcessProxyENS7_12RawPtrTraitsIS9_EEEERKNS2932148'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.cpp' l='1802' c='_ZN6WebKit14WebProcessPool28processForNavigationInternalERNS_12WebPageProxyERKN3API10NavigationEON3WTF3RefINS_15WebProcessProxyENS7_12RawPtrTraitsIS9_8178068'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.cpp' l='1839' c='_ZN6WebKit14WebProcessPool28processForNavigationInternalERNS_12WebPageProxyERKN3API10NavigationEON3WTF3RefINS_15WebProcessProxyENS7_12RawPtrTraitsIS9_8178068'/>
+<size>1</size>

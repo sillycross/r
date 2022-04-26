@@ -1,0 +1,10 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Structure.h' l='254' ll='257' type='bool JSC::Structure::takesSlowPathInDFGForImpureProperty()'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Structure.h' l='252'>// We use SlowPath in GetByStatus for structures that may get new impure properties later to prevent
+    // DFG from inlining property accesses since structures don&apos;t transition when a new impure property appears.</doc>
+<def f='WebKit/Source/JavaScriptCore/runtime/Structure.h' l='254' ll='257' type='bool JSC::Structure::takesSlowPathInDFGForImpureProperty()'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/Structure.h' l='252'>// We use SlowPath in GetByStatus for structures that may get new impure properties later to prevent
+    // DFG from inlining property accesses since structures don&apos;t transition when a new impure property appears.</doc>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ComplexGetStatus.cpp' l='44' u='c' c='_ZN3JSC16ComplexGetStatus10computeForEPNS_9StructureERKNS_26ObjectPropertyConditionSetEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/GetByStatus.cpp' l='132' u='c' c='_ZN3JSC11GetByStatus16computeFromLLIntEPNS_9CodeBlockENS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/GetByStatus.cpp' l='217' u='c' c='_ZN3JSC11GetByStatus41computeForStubInfoWithoutExitSiteFeedbackERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoENS_14CallLinkStatus12ExitSiteDataE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InByStatus.cpp' l='143' u='c' c='_ZN3JSC10InByStatus41computeForStubInfoWithoutExitSiteFeedbackERKNS_18ConcurrentJSLockerERNS_2VMEPNS_17StructureStubInfoE'/>

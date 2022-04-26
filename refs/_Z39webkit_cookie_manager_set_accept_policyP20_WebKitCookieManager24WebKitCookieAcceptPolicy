@@ -1,0 +1,12 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitCookieManager.cpp' l='212' ll='218' type='void webkit_cookie_manager_set_accept_policy(WebKitCookieManager * manager, WebKitCookieAcceptPolicy policy)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitCookieManager.cpp' l='201'>/**
+ * webkit_cookie_manager_set_accept_policy:
+ * @cookie_manager: a #WebKitCookieManager
+ * @policy: a #WebKitCookieAcceptPolicy
+ *
+ * Set the cookie acceptance policy of @cookie_manager as @policy.
+ * Note that ITP has its own way to handle third-party cookies, so when it&apos;s enabled,
+ * and @policy is set to %WEBKIT_COOKIE_POLICY_ACCEPT_NO_THIRD_PARTY, %WEBKIT_COOKIE_POLICY_ACCEPT_ALWAYS
+ * will be used instead. Once disabled, the policy will be set back to %WEBKIT_COOKIE_POLICY_ACCEPT_NO_THIRD_PARTY.
+ * See also webkit_website_data_manager_set_itp_enabled().
+ */</doc>

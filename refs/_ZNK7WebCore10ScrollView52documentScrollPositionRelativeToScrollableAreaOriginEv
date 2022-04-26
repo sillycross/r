@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/WebCore/platform/ScrollView.h' l='262' type='WebCore::ScrollPosition WebCore::ScrollView::documentScrollPositionRelativeToScrollableAreaOrigin() const'/>
+<doc f='WebKit/Source/WebCore/platform/ScrollView.h' l='257'>// scrollOffset() anchors its (0,0) point at the ScrollableArea&apos;s origin. When the Page has a
+    // header, the header is positioned at (0,0), ABOVE the start of the Document. So when a page with
+    // a header is pinned to the top, the scrollOffset() is (0,0), but the Document is actually at
+    // (0, -headerHeight()). documentScrollPositionRelativeToScrollableAreaOrigin() will return this
+    // version of the offset, which tracks the top of Document relative to where scrolling was achored.</doc>
+<def f='WebKit/Source/WebCore/platform/ScrollView.cpp' l='430' ll='433' type='WebCore::ScrollPosition WebCore::ScrollView::documentScrollPositionRelativeToScrollableAreaOrigin() const'/>

@@ -1,0 +1,63 @@
+<use f='include/gstreamer-1.0/gst/video/video-format.h' l='219'/>
+<def f='include/gstreamer-1.0/gst/video/video-format.h' l='405' ll='432'/>
+<size>232</size>
+<doc f='include/gstreamer-1.0/gst/video/video-format.h' l='367'>/**
+ * GstVideoFormatInfo:
+ * @format: #GstVideoFormat
+ * @name: string representation of the format
+ * @description: use readable description of the format
+ * @flags: #GstVideoFormatFlags
+ * @bits: The number of bits used to pack data items. This can be less than 8
+ *    when multiple pixels are stored in a byte. for values &gt; 8 multiple bytes
+ *    should be read according to the endianness flag before applying the shift
+ *    and mask.
+ * @n_components: the number of components in the video format.
+ * @shift: the number of bits to shift away to get the component data
+ * @depth: the depth in bits for each component
+ * @pixel_stride: the pixel stride of each component. This is the amount of
+ *    bytes to the pixel immediately to the right. When bits &lt; 8, the stride is
+ *    expressed in bits. For 24-bit RGB, this would be 3 bytes, for example,
+ *    while it would be 4 bytes for RGBx or ARGB.
+ * @n_planes: the number of planes for this format. The number of planes can be
+ *    less than the amount of components when multiple components are packed into
+ *    one plane.
+ * @plane: the plane number where a component can be found
+ * @poffset: the offset in the plane where the first pixel of the components
+ *    can be found.
+ * @w_sub: subsampling factor of the width for the component. Use
+ *     GST_VIDEO_SUB_SCALE to scale a width.
+ * @h_sub: subsampling factor of the height for the component. Use
+ *     GST_VIDEO_SUB_SCALE to scale a height.
+ * @unpack_format: the format of the unpacked pixels. This format must have the
+ *     #GST_VIDEO_FORMAT_FLAG_UNPACK flag set.
+ * @unpack_func: an unpack function for this format
+ * @pack_lines: the amount of lines that will be packed
+ * @pack_func: an pack function for this format
+ * @tile_mode: The tiling mode
+ * @tile_ws: The width of a tile, in bytes, represented as a shift
+ * @tile_hs: The height of a tile, in bytes, represented as a shift
+ *
+ * Information for a video format.
+ */</doc>
+<mbr r='_GstVideoFormatInfo::format' o='0' t='GstVideoFormat'/>
+<mbr r='_GstVideoFormatInfo::name' o='64' t='const gchar *'/>
+<mbr r='_GstVideoFormatInfo::description' o='128' t='const gchar *'/>
+<mbr r='_GstVideoFormatInfo::flags' o='192' t='GstVideoFormatFlags'/>
+<mbr r='_GstVideoFormatInfo::bits' o='224' t='guint'/>
+<mbr r='_GstVideoFormatInfo::n_components' o='256' t='guint'/>
+<mbr r='_GstVideoFormatInfo::shift' o='288' t='guint [4]'/>
+<mbr r='_GstVideoFormatInfo::depth' o='416' t='guint [4]'/>
+<mbr r='_GstVideoFormatInfo::pixel_stride' o='544' t='gint [4]'/>
+<mbr r='_GstVideoFormatInfo::n_planes' o='672' t='guint'/>
+<mbr r='_GstVideoFormatInfo::plane' o='704' t='guint [4]'/>
+<mbr r='_GstVideoFormatInfo::poffset' o='832' t='guint [4]'/>
+<mbr r='_GstVideoFormatInfo::w_sub' o='960' t='guint [4]'/>
+<mbr r='_GstVideoFormatInfo::h_sub' o='1088' t='guint [4]'/>
+<mbr r='_GstVideoFormatInfo::unpack_format' o='1216' t='GstVideoFormat'/>
+<mbr r='_GstVideoFormatInfo::unpack_func' o='1280' t='GstVideoFormatUnpack'/>
+<mbr r='_GstVideoFormatInfo::pack_lines' o='1344' t='gint'/>
+<mbr r='_GstVideoFormatInfo::pack_func' o='1408' t='GstVideoFormatPack'/>
+<mbr r='_GstVideoFormatInfo::tile_mode' o='1472' t='GstVideoTileMode'/>
+<mbr r='_GstVideoFormatInfo::tile_ws' o='1504' t='guint'/>
+<mbr r='_GstVideoFormatInfo::tile_hs' o='1536' t='guint'/>
+<mbr r='_GstVideoFormatInfo::_gst_reserved' o='1600' t='gpointer [4]'/>

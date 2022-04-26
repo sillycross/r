@@ -1,0 +1,15 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='138' type='bool JSC::CodeBlock::finishCreation(JSC::VM &amp; , JSC::ScriptExecutable * ownerExecutable, JSC::UnlinkedCodeBlock * , JSC::JSScope * )'/>
+<dec f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='138' type='bool JSC::CodeBlock::finishCreation(JSC::VM &amp; , JSC::ScriptExecutable * ownerExecutable, JSC::UnlinkedCodeBlock * , JSC::JSScope * )'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/FunctionCodeBlock.h' l='60' u='c' c='_ZN3JSC17FunctionCodeBlock6createERNS_2VMEPNS_18FunctionExecutableEPNS_25UnlinkedFunctionCodeBlockEPNS_7JSScopeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/EvalCodeBlock.h' l='59' u='c' c='_ZN3JSC13EvalCodeBlock6createERNS_2VMEPNS_14EvalExecutableEPNS_21UnlinkedEvalCodeBlockEPNS_7JSScopeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ModuleProgramCodeBlock.h' l='60' u='c' c='_ZN3JSC22ModuleProgramCodeBlock6createERNS_2VMEPNS_23ModuleProgramExecutableEPNS_30UnlinkedModuleProgramCodeBlockEPNS_7JSScopeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ProgramCodeBlock.h' l='60' u='c' c='_ZN3JSC16ProgramCodeBlock6createERNS_2VMEPNS_17ProgramExecutableEPNS_24UnlinkedProgramCodeBlockEPNS_7JSScopeE'/>
+<def f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='375' ll='784' type='bool JSC::CodeBlock::finishCreation(JSC::VM &amp; vm, JSC::ScriptExecutable * ownerExecutable, JSC::UnlinkedCodeBlock * unlinkedCodeBlock, JSC::JSScope * scope)'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='367'>// The main purpose of this function is to generate linked bytecode from unlinked bytecode. The process
+// of linking is taking an abstract representation of bytecode and tying it to a GlobalObject and scope
+// chain. For example, this process allows us to cache the depth of lexical environment reads that reach
+// outside of this CodeBlock&apos;s compilation unit. It also allows us to generate particular constants that
+// we can&apos;t generate during unlinked bytecode generation. This process is not allowed to generate control
+// flow or introduce new locals. The reason for this is we rely on liveness analysis to be the same for
+// all the CodeBlocks of an UnlinkedCodeBlock. We rely on this fact by caching the liveness analysis
+// inside UnlinkedCodeBlock.</doc>

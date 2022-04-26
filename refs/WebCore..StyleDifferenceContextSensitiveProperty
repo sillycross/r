@@ -1,0 +1,28 @@
+<def f='WebKit/Source/WebCore/rendering/style/RenderStyleConstants.h' l='75' ll='83'/>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.h' l='1492' c='_ZNK7WebCore11RenderStyle4diffERKS0_RN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.h' l='1975' c='_ZNK7WebCore11RenderStyle20changeRequiresLayoutERKS0_RN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.h' l='1976' c='_ZNK7WebCore11RenderStyle34changeRequiresPositionedLayoutOnlyERKS0_RN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.h' l='1977' c='_ZNK7WebCore11RenderStyle26changeRequiresLayerRepaintERKS0_RN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.h' l='1978' c='_ZNK7WebCore11RenderStyle21changeRequiresRepaintERKS0_RN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.h' l='1979' c='_ZNK7WebCore11RenderStyle44changeRequiresRepaintIfTextOrBorderOrOutlineERKS0_RN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.h' l='1980' c='_ZNK7WebCore11RenderStyle30changeRequiresRecompositeLayerERKS0_RN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderElement.h' l='342' c='_ZNK7WebCore13RenderElement21adjustStyleDifferenceENS_15StyleDifferenceEN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<doc f='WebKit/Source/WebCore/rendering/style/RenderStyleConstants.h' l='71'>// When some style properties change, different amounts of work have to be done depending on
+// context (e.g. whether the property is changing on an element which has a compositing layer).
+// A simple StyleDifference does not provide enough information so we return a bit mask of
+// StyleDifferenceContextSensitiveProperties from RenderStyle::diff() too.</doc>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.cpp' l='649' c='_ZN7WebCoreL40rareNonInheritedDataChangeRequiresLayoutERKNS_25StyleRareNonInheritedDataES2_RN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.cpp' l='812' c='_ZNK7WebCore11RenderStyle20changeRequiresLayoutERKS0_RN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.cpp' l='964' c='_ZNK7WebCore11RenderStyle34changeRequiresPositionedLayoutOnlyERKS0_RN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.cpp' l='978' c='_ZN7WebCoreL46rareNonInheritedDataChangeRequiresLayerRepaintERKNS_25StyleRareNonInheritedDataES2_RN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.cpp' l='1008' c='_ZNK7WebCore11RenderStyle26changeRequiresLayerRepaintERKS0_RN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.cpp' l='1037' c='_ZN7WebCoreL41rareNonInheritedDataChangeRequiresRepaintERKNS_25StyleRareNonInheritedDataES2_RN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.cpp' l='1126' c='_ZNK7WebCore11RenderStyle21changeRequiresRepaintERKS0_RN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.cpp' l='1157' c='_ZNK7WebCore11RenderStyle44changeRequiresRepaintIfTextOrBorderOrOutlineERKS0_RN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.cpp' l='1176' c='_ZNK7WebCore11RenderStyle30changeRequiresRecompositeLayerERKS0_RN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.cpp' l='1193' c='_ZNK7WebCore11RenderStyle4diffERKS0_RN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.cpp' l='1195' c='_ZNK7WebCore11RenderStyle4diffERKS0_RN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/style/RenderStyle.cpp' l='1242' c='_ZNK7WebCore11RenderStyle24diffRequiresLayerRepaintERKS0_b'/>
+<use f='WebKit/Source/WebCore/rendering/RenderElement.cpp' l='276' c='_ZNK7WebCore13RenderElement21adjustStyleDifferenceENS_15StyleDifferenceEN3WTF9OptionSetINS_39StyleDifferenceContextSensitivePropertyEEE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderElement.cpp' l='514' c='_ZN7WebCore13RenderElement8setStyleEONS_11RenderStyleENS_15StyleDifferenceE'/>
+<use f='WebKit/Source/WebCore/editing/SimplifyMarkupCommand.cpp' l='82' c='_ZN7WebCore21SimplifyMarkupCommand7doApplyEv'/>

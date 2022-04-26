@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.h' l='234' type='bool JSC::DFG::StructureAbstractValue::contains(JSC::DFG::RegisteredStructure ) const'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.h' l='228'>// The methods below are all conservative and err on the side of making &apos;this&apos; appear bigger
+    // than it is. For example, contains() may return true if the set is clobbered or TOP.
+    // isSubsetOf() may return false in case of ambiguities. Therefore you should only perform
+    // optimizations as a consequence of the &quot;this is smaller&quot; return value - so false for
+    // contains(), true for isSubsetOf(), false for isSupersetOf(), and false for overlaps().</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='340' u='c' c='_ZNK3JSC3DFG13AbstractValue8containsENS0_19RegisteredStructureE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGRegisteredStructureSet.cpp' l='40' u='c' c='_ZN3JSC3DFG22RegisteredStructureSet6filterERKNS0_22StructureAbstractValueE'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.cpp' l='271' ll='277' type='bool JSC::DFG::StructureAbstractValue::contains(JSC::DFG::RegisteredStructure structure) const'/>

@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='420' type='bool WebCore::RenderLayerCompositor::requiresCompositingLayer(const WebCore::RenderLayer &amp; , WebCore::RenderLayerCompositor::RequiresCompositingData &amp; ) const'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='419'>// Whether the layer has an intrinsic need for compositing layer.</doc>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='1158' u='c' c='_ZN7WebCore21RenderLayerCompositor30computeCompositingRequirementsEPNS_11RenderLayerERS1_RNS_15LayerOverlapMapERNS0_16CompositingStateERNS0_19BackingSharingStateERb'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='2597' u='c' c='_ZNK7WebCore21RenderLayerCompositor19needsToBeCompositedERKNS_11RenderLayerERNS0_23RequiresCompositingDataE'/>
+<def f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='2603' ll='2620' type='bool WebCore::RenderLayerCompositor::requiresCompositingLayer(const WebCore::RenderLayer &amp; layer, WebCore::RenderLayerCompositor::RequiresCompositingData &amp; queryData) const'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='2600'>// Note: this specifies whether the RL needs a compositing layer for intrinsic reasons.
+// Use needsToBeComposited() to determine if a RL actually needs a compositing layer.
+// FIXME: is clipsCompositingDescendants() an intrinsic reason?</doc>

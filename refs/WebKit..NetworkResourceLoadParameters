@@ -1,0 +1,56 @@
+<inh f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadParameters.h' l='45' c='WebKit::NetworkLoadParameters'/>
+<def f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoadParameters.h' l='46' ll='79'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoadParameters.h' l='49' c='_ZN6WebKit29NetworkResourceLoadParameters6decodeERN3IPC7DecoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='272' c='_ZN6WebKitL19addParametersSharedEPKN7WebCore5FrameERNS_29NetworkResourceLoadParametersE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='304' c='_ZN6WebKit17WebLoaderStrategy30scheduleLoadFromNetworkProcessERN7WebCore14ResourceLoaderERKNS1_15ResourceRequestERKNS_17WebResourceLoader18TrackingPar6290377'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='618' c='_ZN6WebKit17WebLoaderStrategy25loadResourceSynchronouslyERN7WebCore11FrameLoaderEmRKNS1_15ResourceRequestENS1_22ClientCredentialPolicyERKNS1_12FetchOp10967908'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='703' c='_ZN6WebKit17WebLoaderStrategy13startPingLoadERN7WebCore5FrameERNS1_15ResourceRequestERKNS1_13HTTPHeaderMapERKNS1_12FetchOptionsENS1_31ContentSecurityP910965'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='786' c='_ZN6WebKit17WebLoaderStrategy12preconnectToEON7WebCore15ResourceRequestERNS_7WebPageERNS_8WebFrameENS1_23StoredCredentialsPolicyEON3WTF8FunctionIFvRKN9641632'/>
+<size>592</size>
+<fun r='_ZNK6WebKit29NetworkResourceLoadParameters6encodeERN3IPC7EncoderE'/>
+<fun r='_ZN6WebKit29NetworkResourceLoadParameters6decodeERN3IPC7DecoderE'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::identifier' o='2176' t='WebKit::ResourceLoadIdentifier'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::requestBodySandboxExtensions' o='2240' t='Vector&lt;RefPtr&lt;WebKit::SandboxExtension&gt; &gt;'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::resourceSandboxExtension' o='2368' t='RefPtr&lt;WebKit::SandboxExtension&gt;'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::maximumBufferingTime' o='2432' t='WTF::Seconds'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::options' o='2496' t='WebCore::FetchOptions'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::cspResponseHeaders' o='2688' t='std::optional&lt;WebCore::ContentSecurityPolicyResponseHeaders&gt;'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::originalRequestHeaders' o='2944' t='WebCore::HTTPHeaderMap'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::shouldRestrictHTTPResponseAccess' o='3200' t='bool'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::preflightPolicy' o='3208' t='WebCore::PreflightPolicy'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::shouldEnableCrossOriginResourcePolicy' o='3216' t='bool'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::frameAncestorOrigins' o='3264' t='Vector&lt;RefPtr&lt;WebCore::SecurityOrigin&gt; &gt;'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::pageHasResourceLoadClient' o='3392' t='bool'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::parentFrameID' o='3456' t='std::optional&lt;WebCore::FrameIdentifier&gt;'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::crossOriginAccessControlCheckEnabled' o='3584' t='bool'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::documentURL' o='3648' t='WTF::URL'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::serviceWorkersMode' o='3968' t='WebCore::ServiceWorkersMode'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::serviceWorkerRegistrationIdentifier' o='4032' t='std::optional&lt;WebCore::ServiceWorkerRegistrationIdentifier&gt;'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::httpHeadersToKeep' o='4160' t='OptionSet&lt;WebCore::HTTPHeadersToKeepFromCleaning&gt;'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::mainDocumentURL' o='4224' t='WTF::URL'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::userContentControllerIdentifier' o='4544' t='std::optional&lt;UserContentControllerIdentifier&gt;'/>
+<mbr r='WebKit::NetworkResourceLoadParameters::isNavigatingToAppBoundDomain' o='4672' t='std::optional&lt;NavigatingToAppBoundDomain&gt;'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='1884' c='_ZN6WebKit20WebFrameLoaderClient10sendH2PingERKN3WTF3URLEONS1_17CompletionHandlerIFvONSt12experimental15fundamentals_v38expectedINS1_7SecondsEN7WebCor13009155'/>
+<size>592</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkConnectionToWebProcess.h' l='169' c='_ZN6WebKit29NetworkConnectionToWebProcess21resolveBlobReferencesERKNS_29NetworkResourceLoadParametersE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkConnectionToWebProcess.h' l='205' c='_ZN6WebKit29NetworkConnectionToWebProcess20scheduleResourceLoadEONS_29NetworkResourceLoadParametersE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkConnectionToWebProcess.h' l='206' c='_ZN6WebKit29NetworkConnectionToWebProcess22performSynchronousLoadEONS_29NetworkResourceLoadParametersEOi'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkConnectionToWebProcess.h' l='208' c='_ZN6WebKit29NetworkConnectionToWebProcess8loadPingEONS_29NetworkResourceLoadParametersE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkConnectionToWebProcess.h' l='210' c='_ZN6WebKit29NetworkConnectionToWebProcess10sendH2PingEONS_29NetworkResourceLoadParametersEON3WTF17CompletionHandlerIFvONSt12experimental15fundamentals14379075'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkConnectionToWebProcess.h' l='211' c='_ZN6WebKit29NetworkConnectionToWebProcess12preconnectToESt8optionalImEONS_29NetworkResourceLoadParametersE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='75' c='_ZN6WebKit21NetworkResourceLoader6createEONS_29NetworkResourceLoadParametersERNS_29NetworkConnectionToWebProcessEOi'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='100' c='_ZNK6WebKit21NetworkResourceLoader10parametersEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='147' c='_ZN6WebKit21NetworkResourceLoaderC1EONS_29NetworkResourceLoadParametersERNS_29NetworkConnectionToWebProcessEOi'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='211'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoadParameters.cpp' l='129' c='_ZN6WebKit29NetworkResourceLoadParameters6decodeERN3IPC7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoadParameters.cpp' l='131' c='_ZN6WebKit29NetworkResourceLoadParameters6decodeERN3IPC7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.cpp' l='103' c='_ZN6WebKit21NetworkResourceLoaderC1EONS_29NetworkResourceLoadParametersERNS_29NetworkConnectionToWebProcessEOi'/>
+<size>592</size>
+<fun r='_ZNK6WebKit29NetworkResourceLoadParameters6encodeERN3IPC7EncoderE'/>
+<fun r='_ZN6WebKit29NetworkResourceLoadParameters6decodeERN3IPC7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PingLoad.h' l='45' c='_ZN6WebKit8PingLoadC1ERNS_14NetworkProcessEN3PAL9SessionIDEONS_29NetworkResourceLoadParametersEON3WTF17CompletionHandlerIFvRKN7WebCore13ResourceErrorE12268560'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PingLoad.h' l='46' c='_ZN6WebKit8PingLoadC1ERNS_29NetworkConnectionToWebProcessEONS_29NetworkResourceLoadParametersEON3WTF17CompletionHandlerIFvRKN7WebCore13ResourceErrorER13927344'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PingLoad.h' l='70'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PingLoad.cpp' l='43' c='_ZN6WebKit8PingLoadC1ERNS_14NetworkProcessEN3PAL9SessionIDEONS_29NetworkResourceLoadParametersEON3WTF17CompletionHandlerIFvRKN7WebCore13ResourceErrorE12268560'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PingLoad.cpp' l='53' c='_ZN6WebKit8PingLoadC1ERNS_29NetworkConnectionToWebProcessEONS_29NetworkResourceLoadParametersEON3WTF17CompletionHandlerIFvRKN7WebCore13ResourceErrorER13927344'/>
+<size>1</size>

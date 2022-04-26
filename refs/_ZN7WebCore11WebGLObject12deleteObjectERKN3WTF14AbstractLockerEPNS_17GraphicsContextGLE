@@ -1,0 +1,15 @@
+<dec f='WebKit/Source/WebCore/html/canvas/WebGLObject.h' l='52' type='void WebCore::WebGLObject::deleteObject(const WTF::AbstractLocker &amp; , WebCore::GraphicsContextGL * )'/>
+<doc f='WebKit/Source/WebCore/html/canvas/WebGLObject.h' l='46'>// deleteObject may not always delete the OpenGL resource.  For programs and
+    // shaders, deletion is delayed until they are no longer attached.
+    // FIXME: revisit this when resource sharing between contexts are implemented.
+    // The AbstractLocker argument enforces at compile time that the objectGraphLock
+    // is held. This isn&apos;t necessary for all object types, but enough of them that
+    // it&apos;s done for all of them.</doc>
+<use f='WebKit/Source/WebCore/html/canvas/OESVertexArrayObject.cpp' l='74' u='c' c='_ZN7WebCore20OESVertexArrayObject20deleteVertexArrayOESEPNS_25WebGLVertexArrayObjectOESE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLContextObject.cpp' l='51' u='c' c='_ZN7WebCore18WebGLContextObject13detachContextERKN3WTF14AbstractLockerE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLObject.cpp' l='54' u='c' c='_ZN7WebCore11WebGLObject13runDestructorEv'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLObject.cpp' l='57' u='c' c='_ZN7WebCore11WebGLObject13runDestructorEv'/>
+<def f='WebKit/Source/WebCore/html/canvas/WebGLObject.cpp' l='61' ll='80' type='void WebCore::WebGLObject::deleteObject(const WTF::AbstractLocker &amp; locker, WebCore::GraphicsContextGL * context3d)'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLObject.cpp' l='92' u='c' c='_ZN7WebCore11WebGLObject10onDetachedERKN3WTF14AbstractLockerEPNS_17GraphicsContextGLE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='2032' u='c' c='_ZN7WebCore25WebGLRenderingContextBase12deleteObjectERKN3WTF14AbstractLockerEPNS_11WebGLObjectE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLSharedObject.cpp' l='52' u='c' c='_ZN7WebCore17WebGLSharedObject18detachContextGroupERKN3WTF14AbstractLockerE'/>

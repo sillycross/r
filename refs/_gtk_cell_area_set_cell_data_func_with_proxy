@@ -1,0 +1,7 @@
+<dec f='include/gtk-3.0/gtk/gtkcellarea.h' l='525' type='void _gtk_cell_area_set_cell_data_func_with_proxy(GtkCellArea * area, GtkCellRenderer * cell, GFunc func, gpointer func_data, GDestroyNotify destroy, gpointer proxy)'/>
+<doc f='include/gtk-3.0/gtk/gtkcellarea.h' l='519'>/* For api stability, this is called from gtkcelllayout.c in order to ensure the correct
+ * object is passed to the user function in gtk_cell_layout_set_cell_data_func.
+ *
+ * This private api takes gpointer &amp; GFunc arguments to circumvent circular header file
+ * dependancies.
+ */</doc>

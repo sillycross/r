@@ -1,0 +1,6 @@
+<dec f='WebKit/Source/JavaScriptCore/jit/SetupVarargsFrame.h' l='38' type='void JSC::emitSetupVarargsFrameFastCase(JSC::VM &amp; , JSC::CCallHelpers &amp; , JSC::GPRReg numUsedSlotsGPR, JSC::GPRReg scratchGPR1, JSC::GPRReg scratchGPR2, JSC::GPRReg scratchGPR3, JSC::InlineCallFrame * , unsigned int firstVarArgOffset, CCallHelpers::JumpList &amp; slowCase)'/>
+<doc f='WebKit/Source/JavaScriptCore/jit/SetupVarargsFrame.h' l='36'>// Assumes that SP refers to the last in-use stack location, and after this returns SP will point to
+// the newly created frame plus the native header. scratchGPR2 may be the same as numUsedSlotsGPR.</doc>
+<def f='WebKit/Source/JavaScriptCore/jit/SetupVarargsFrame.cpp' l='114' ll='135' type='void JSC::emitSetupVarargsFrameFastCase(JSC::VM &amp; vm, JSC::CCallHelpers &amp; jit, JSC::GPRReg numUsedSlotsGPR, JSC::GPRReg scratchGPR1, JSC::GPRReg scratchGPR2, JSC::GPRReg scratchGPR3, JSC::InlineCallFrame * inlineCallFrame, unsigned int firstVarArgOffset, CCallHelpers::JumpList &amp; slowCase)'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='652' u='c' c='_ZN3JSC3DFG14SpeculativeJIT8emitCallEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10751' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB329compileCallOrConstructVarargsEv'/>

@@ -1,0 +1,6 @@
+<dec f='WebKit/Source/WebCore/dom/MessagePort.h' l='77' type='WebCore::MessagePort * WebCore::MessagePort::locallyEntangledPort() const'/>
+<doc f='WebKit/Source/WebCore/dom/MessagePort.h' l='74'>// Returns null if there is no entangled port, or if the entangled port is run by a different thread.
+    // This is used solely to enable a GC optimization. Some platforms may not be able to determine ownership
+    // of the remote port (since it may live cross-process) - those platforms may always return null.</doc>
+<use f='WebKit/Source/WebCore/bindings/js/JSMessagePortCustom.cpp' l='38' u='c' c='_ZN7WebCore13JSMessagePort23visitAdditionalChildrenERT_'/>
+<def f='WebKit/Source/WebCore/dom/MessagePort.cpp' l='361' ll='366' type='WebCore::MessagePort * WebCore::MessagePort::locallyEntangledPort() const'/>

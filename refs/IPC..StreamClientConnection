@@ -1,0 +1,61 @@
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='509'/>
+<def f='WebKit/Source/WebKit/Platform/IPC/StreamClientConnection.h' l='49' ll='106'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamClientConnection.h' l='50' c='_ZN3IPC22StreamClientConnectionC1ERKS0_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamClientConnection.h' l='50' c='_ZN3IPC22StreamClientConnectionaSERKS0_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamClientConnection.h' l='50' c='_ZN3IPC22StreamClientConnectionaSERKS0_'/>
+<size>56</size>
+<doc f='WebKit/Source/WebKit/Platform/IPC/StreamClientConnection.h' l='39'>// A message stream is a half-duplex two-way stream of messages to a between the client and the
+// server.
+//
+// StreamClientConnection can send messages and receive synchronous replies
+// through this message stream or through IPC::Connection.
+//
+// The server will receive messages in order _for the destination messages_.
+// The whole IPC::Connection message order is not preserved.
+//
+// The StreamClientConnection trusts the StreamServerConnection.</doc>
+<fun r='_ZN3IPC22StreamClientConnectionC1ERKS0_'/>
+<fun r='_ZN3IPC22StreamClientConnectionC1ERNS_10ConnectionEm'/>
+<fun r='_ZN3IPC22StreamClientConnection12streamBufferEv'/>
+<fun r='_ZN3IPC22StreamClientConnection18setWakeUpSemaphoreEONS_9SemaphoreE'/>
+<fun r='_ZN3IPC22StreamClientConnection4sendEOT_N3WTF16ObjectIdentifierIT0_EENS_7TimeoutE'/>
+<fun r='_ZN3IPC22StreamClientConnection8sendSyncEOT_ONS1_5ReplyEN3WTF16ObjectIdentifierIT0_EENS_7TimeoutE'/>
+<smbr r='IPC::StreamClientConnection::minimumMessageSize' t='const size_t'/>
+<smbr r='IPC::StreamClientConnection::messageAlignment' t='const size_t'/>
+<fun r='_ZN3IPC22StreamClientConnection13trySendStreamERT_RNS0_4SpanE'/>
+<fun r='_ZN3IPC22StreamClientConnection17trySendSyncStreamERT_RNS1_5ReplyENS_7TimeoutERNS0_4SpanE'/>
+<fun r='_ZN3IPC22StreamClientConnection28trySendDestinationIDIfNeededEmNS_7TimeoutE'/>
+<fun r='_ZN3IPC22StreamClientConnection29sendProcessOutOfStreamMessageEONS0_4SpanE'/>
+<fun r='_ZN3IPC22StreamClientConnection10tryAcquireENS_7TimeoutE'/>
+<fun r='_ZN3IPC22StreamClientConnection13tryAcquireAllENS_7TimeoutE'/>
+<fun r='_ZN3IPC22StreamClientConnection7releaseEm'/>
+<fun r='_ZN3IPC22StreamClientConnection12wakeUpServerEv'/>
+<fun r='_ZN3IPC22StreamClientConnection11alignedSpanEmm'/>
+<fun r='_ZN3IPC22StreamClientConnection4sizeEmm'/>
+<fun r='_ZNK3IPC22StreamClientConnection10wrapOffsetEm'/>
+<fun r='_ZNK3IPC22StreamClientConnection11alignOffsetEm'/>
+<fun r='_ZN3IPC22StreamClientConnection18sharedClientOffsetEv'/>
+<fun r='_ZN3IPC22StreamClientConnection17sharedClientLimitEv'/>
+<fun r='_ZNK3IPC22StreamClientConnection7toLimitENS_22StreamConnectionBuffer12ServerOffsetE'/>
+<fun r='_ZNK3IPC22StreamClientConnection4dataEv'/>
+<fun r='_ZNK3IPC22StreamClientConnection8dataSizeEv'/>
+<mbr r='IPC::StreamClientConnection::m_connection' o='0' t='IPC::Connection &amp;'/>
+<mbr r='IPC::StreamClientConnection::m_currentDestinationID' o='64' t='uint64_t'/>
+<mbr r='IPC::StreamClientConnection::m_clientOffset' o='128' t='size_t'/>
+<mbr r='IPC::StreamClientConnection::m_buffer' o='192' t='IPC::StreamConnectionBuffer'/>
+<mbr r='IPC::StreamClientConnection::m_wakeUpSemaphore' o='384' t='std::optional&lt;Semaphore&gt;'/>
+<fun r='_ZN3IPC22StreamClientConnection4sendEOT_N3WTF16ObjectIdentifierIT0_EENS_7TimeoutE'/>
+<fun r='_ZN3IPC22StreamClientConnection13trySendStreamERT_RNS0_4SpanE'/>
+<fun r='_ZN3IPC22StreamClientConnection8sendSyncEOT_ONS1_5ReplyEN3WTF16ObjectIdentifierIT0_EENS_7TimeoutE'/>
+<fun r='_ZN3IPC22StreamClientConnection17trySendSyncStreamERT_RNS1_5ReplyENS_7TimeoutERNS0_4SpanE'/>
+<fun r='_ZN3IPC22StreamClientConnection28trySendDestinationIDIfNeededEmNS_7TimeoutE'/>
+<fun r='_ZN3IPC22StreamClientConnection29sendProcessOutOfStreamMessageEONS0_4SpanE'/>
+<fun r='_ZN3IPC22StreamClientConnection10tryAcquireENS_7TimeoutE'/>
+<fun r='_ZN3IPC22StreamClientConnection13tryAcquireAllENS_7TimeoutE'/>
+<fun r='_ZN3IPC22StreamClientConnection7releaseEm'/>
+<fun r='_ZN3IPC22StreamClientConnection11alignedSpanEmm'/>
+<fun r='_ZN3IPC22StreamClientConnection4sizeEmm'/>
+<fun r='_ZNK3IPC22StreamClientConnection7toLimitENS_22StreamConnectionBuffer12ServerOffsetE'/>
+<fun r='_ZN3IPC22StreamClientConnectionC1ERNS_10ConnectionEm'/>
+<fun r='_ZN3IPC22StreamClientConnection18setWakeUpSemaphoreEONS_9SemaphoreE'/>
+<fun r='_ZN3IPC22StreamClientConnection12wakeUpServerEv'/>

@@ -1,0 +1,30 @@
+<use f='include/gstreamer-1.0/gst/gl/gstglsyncmeta.h' l='30'/>
+<def f='include/gstreamer-1.0/gst/gl/gstglsyncmeta.h' l='55' ll='72'/>
+<size>104</size>
+<doc f='include/gstreamer-1.0/gst/gl/gstglsyncmeta.h' l='40'>/**
+ * GstGLSyncMeta:
+ * @parent: the parent #GstMeta
+ * @context: the #GstGLContext used to allocate the meta
+ * @data: a custom data pointer for the implementation
+ * @set_sync: set a sync point in the OpenGL command stream
+ * @set_sync_gl: the same as @set_sync but called from @context&apos;s thread
+ * @wait: execute a wait on the previously set sync point into the OpenGL command stream
+ * @wait_gl: the same as @wait but called from @context&apos;s thread
+ * @wait_cpu: wait for the previously set sync point to pass from the CPU
+ * @wait_cpu_gl: the same as @wait_cpu but called from @context&apos;s thread
+ * @copy: copy @data into a new #GstGLSyncMeta
+ * @free: free @data
+ * @free_gl: free @data in @context&apos;s thread
+ */</doc>
+<mbr r='_GstGLSyncMeta::parent' o='0' t='GstMeta'/>
+<mbr r='_GstGLSyncMeta::context' o='128' t='GstGLContext *'/>
+<mbr r='_GstGLSyncMeta::data' o='192' t='gpointer'/>
+<mbr r='_GstGLSyncMeta::set_sync' o='256' t='void (*)(GstGLSyncMeta *, GstGLContext *)'/>
+<mbr r='_GstGLSyncMeta::set_sync_gl' o='320' t='void (*)(GstGLSyncMeta *, GstGLContext *)'/>
+<mbr r='_GstGLSyncMeta::wait' o='384' t='void (*)(GstGLSyncMeta *, GstGLContext *)'/>
+<mbr r='_GstGLSyncMeta::wait_gl' o='448' t='void (*)(GstGLSyncMeta *, GstGLContext *)'/>
+<mbr r='_GstGLSyncMeta::wait_cpu' o='512' t='void (*)(GstGLSyncMeta *, GstGLContext *)'/>
+<mbr r='_GstGLSyncMeta::wait_cpu_gl' o='576' t='void (*)(GstGLSyncMeta *, GstGLContext *)'/>
+<mbr r='_GstGLSyncMeta::copy' o='640' t='void (*)(GstGLSyncMeta *, GstBuffer *, GstGLSyncMeta *, GstBuffer *)'/>
+<mbr r='_GstGLSyncMeta::free' o='704' t='void (*)(GstGLSyncMeta *, GstGLContext *)'/>
+<mbr r='_GstGLSyncMeta::free_gl' o='768' t='void (*)(GstGLSyncMeta *, GstGLContext *)'/>

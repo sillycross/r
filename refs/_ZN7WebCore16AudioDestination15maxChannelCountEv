@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/WebCore/platform/audio/AudioDestination.h' l='73' type='static unsigned long WebCore::AudioDestination::maxChannelCount()'/>
+<doc f='WebKit/Source/WebCore/platform/audio/AudioDestination.h' l='67'>// maxChannelCount() returns the total number of output channels of the audio hardware.
+    // A value of 0 indicates that the number of channels cannot be configured and
+    // that only stereo (2-channel) destinations can be created.
+    // The numberOfOutputChannels parameter of AudioDestination::create() is allowed to
+    // be a value: 1 &lt;= numberOfOutputChannels &lt;= maxChannelCount(),
+    // or if maxChannelCount() equals 0, then numberOfOutputChannels must be 2.</doc>
+<def f='WebKit/Source/WebCore/platform/audio/gstreamer/AudioDestinationGStreamer.cpp' l='118' ll='121' type='static unsigned long WebCore::AudioDestination::maxChannelCount()'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/DefaultAudioDestinationNode.cpp' l='214' u='c' c='_ZNK7WebCore27DefaultAudioDestinationNode15maxChannelCountEv'/>

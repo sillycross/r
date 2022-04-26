@@ -1,0 +1,144 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssembler.h' l='1977' type='void JSC::MacroAssembler::probe(Probe::Function , void * arg)'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssembler.h' l='1928'>// This function emits code to preserve the CPUState (e.g. registers),
+    // call a user supplied probe function, and restore the CPUState before
+    // continuing with other JIT generated code.
+    //
+    // The user supplied probe function will be called with a single pointer to
+    // a Probe::State struct (defined below) which contains, among other things,
+    // the preserved CPUState. This allows the user probe function to inspect
+    // the CPUState at that point in the JIT generated code.
+    //
+    // If the user probe function alters the register values in the Probe::State,
+    // the altered values will be loaded into the CPU registers when the probe
+    // returns.
+    //
+    // The Probe::State is stack allocated and is only valid for the duration
+    // of the call to the user probe function.
+    //
+    // The probe function may choose to move the stack pointer (in any direction).
+    // To do this, the probe function needs to set the new sp value in the CPUState.
+    //
+    // The probe function may also choose to fill stack space with some values.
+    // To do this, the probe function must first:
+    // 1. Set the new sp value in the Probe::State&apos;s CPUState.
+    // 2. Set the Probe::State&apos;s initializeStackFunction to a Probe::Function callback
+    //    which will do the work of filling in the stack values after the probe
+    //    trampoline has adjusted the machine stack pointer.
+    // 3. Set the Probe::State&apos;s initializeStackArgs to any value that the client wants
+    //    to pass to the initializeStackFunction callback.
+    // 4. Return from the probe function.
+    //
+    // Upon returning from the probe function, the probe trampoline will adjust the
+    // the stack pointer based on the sp value in CPUState. If initializeStackFunction
+    // is not set, the probe trampoline will restore registers and return to its caller.
+    //
+    // If initializeStackFunction is set, the trampoline will move the Probe::State
+    // beyond the range of the stack pointer i.e. it will place the new Probe::State at
+    // an address lower than where CPUState.sp() points. This ensures that the
+    // Probe::State will not be trashed by the initializeStackFunction when it writes to
+    // the stack. Then, the trampoline will call back to the initializeStackFunction
+    // Probe::Function to let it fill in the stack values as desired. The
+    // initializeStackFunction Probe::Function will be passed the moved Probe::State at
+    // the new location.
+    //
+    // initializeStackFunction may now write to the stack at addresses greater or
+    // equal to CPUState.sp(), but not below that. initializeStackFunction is also
+    // not allowed to change CPUState.sp(). If the initializeStackFunction does not
+    // abide by these rules, then behavior is undefined, and bad things may happen.
+    //
+    // Note: this version of probe() should be implemented by the target specific
+    // MacroAssembler.</doc>
+<dec f='WebKit/Source/JavaScriptCore/assembler/MacroAssembler.h' l='1977' type='void JSC::MacroAssembler::probe(Probe::Function , void * arg)'/>
+<doc f='WebKit/Source/JavaScriptCore/assembler/MacroAssembler.h' l='1928'>// This function emits code to preserve the CPUState (e.g. registers),
+    // call a user supplied probe function, and restore the CPUState before
+    // continuing with other JIT generated code.
+    //
+    // The user supplied probe function will be called with a single pointer to
+    // a Probe::State struct (defined below) which contains, among other things,
+    // the preserved CPUState. This allows the user probe function to inspect
+    // the CPUState at that point in the JIT generated code.
+    //
+    // If the user probe function alters the register values in the Probe::State,
+    // the altered values will be loaded into the CPU registers when the probe
+    // returns.
+    //
+    // The Probe::State is stack allocated and is only valid for the duration
+    // of the call to the user probe function.
+    //
+    // The probe function may choose to move the stack pointer (in any direction).
+    // To do this, the probe function needs to set the new sp value in the CPUState.
+    //
+    // The probe function may also choose to fill stack space with some values.
+    // To do this, the probe function must first:
+    // 1. Set the new sp value in the Probe::State&apos;s CPUState.
+    // 2. Set the Probe::State&apos;s initializeStackFunction to a Probe::Function callback
+    //    which will do the work of filling in the stack values after the probe
+    //    trampoline has adjusted the machine stack pointer.
+    // 3. Set the Probe::State&apos;s initializeStackArgs to any value that the client wants
+    //    to pass to the initializeStackFunction callback.
+    // 4. Return from the probe function.
+    //
+    // Upon returning from the probe function, the probe trampoline will adjust the
+    // the stack pointer based on the sp value in CPUState. If initializeStackFunction
+    // is not set, the probe trampoline will restore registers and return to its caller.
+    //
+    // If initializeStackFunction is set, the trampoline will move the Probe::State
+    // beyond the range of the stack pointer i.e. it will place the new Probe::State at
+    // an address lower than where CPUState.sp() points. This ensures that the
+    // Probe::State will not be trashed by the initializeStackFunction when it writes to
+    // the stack. Then, the trampoline will call back to the initializeStackFunction
+    // Probe::Function to let it fill in the stack values as desired. The
+    // initializeStackFunction Probe::Function will be passed the moved Probe::State at
+    // the new location.
+    //
+    // initializeStackFunction may now write to the stack at addresses greater or
+    // equal to CPUState.sp(), but not below that. initializeStackFunction is also
+    // not allowed to change CPUState.sp(). If the initializeStackFunction does not
+    // abide by these rules, then behavior is undefined, and bad things may happen.
+    //
+    // Note: this version of probe() should be implemented by the target specific
+    // MacroAssembler.</doc>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='2134' u='c' c='_ZN3JSC4Wasm13B3IRGenerator19emitLoopTierUpCheckEjRKN3WTF6VectorINS0_14FunctionParserIS1_E15TypedExpressionELm16ENS2_20UnsafeVectorOverflowELm16ENS2_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerPrinter.h' l='235' u='c' c='_ZN3JSC14MacroAssembler5printEDpOT_'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerPrinter.h' l='240' u='c' c='_ZN3JSC14MacroAssembler5printEPN3WTF6VectorINS_7Printer11PrintRecordELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssembler.cpp' l='58' u='c' c='_ZN3JSC14MacroAssembler10probeDebugEN3WTF8FunctionIFvRNS_5Probe7ContextEEEE'/>
+<def f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerX86Common.cpp' l='752' ll='763' type='void JSC::MacroAssembler::probe(Probe::Function function, void * arg)'/>
+<doc f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerX86Common.cpp' l='713'>// What code is emitted for the probe?
+// ==================================
+// We want to keep the size of the emitted probe invocation code as compact as
+// possible to minimize the perturbation to the JIT generated code. However,
+// we also need to preserve the CPU registers and set up the Probe::State to be
+// passed to the user probe function.
+//
+// Hence, we do only the minimum here to preserve a scratch register (i.e. rax
+// in this case) and the stack pointer (i.e. rsp), and pass the probe arguments.
+// We&apos;ll let the ctiMasmProbeTrampoline handle the rest of the probe invocation
+// work i.e. saving the CPUState (and setting up the Probe::State), calling the
+// user probe function, and restoring the CPUState before returning to JIT
+// generated code.
+//
+// What registers need to be saved?
+// ===============================
+// The registers are saved for 2 reasons:
+// 1. To preserve their state in the JITted code. This means that all registers
+//    that are not callee saved needs to be saved. We also need to save the
+//    condition code registers because the probe can be inserted between a test
+//    and a branch.
+// 2. To allow the probe to inspect the values of the registers for debugging
+//    purposes. This means all registers need to be saved.
+//
+// In summary, save everything. But for reasons stated above, we should do the
+// minimum here and let ctiMasmProbeTrampoline do the heavy lifting to save the
+// full set.
+//
+// What values are in the saved registers?
+// ======================================
+// Conceptually, the saved registers should contain values as if the probe
+// is not present in the JIT generated code. Hence, they should contain values
+// that are expected at the start of the instruction immediately following the
+// probe.
+//
+// Specifically, the saved stack pointer register will point to the stack
+// position before we push the Probe::State frame. The saved rip will point to
+// the address of the instruction immediately following the probe. </doc>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='2909' u='c' c='_ZN3JSC4Wasm14AirIRGenerator19emitLoopTierUpCheckEjRKN3WTF6VectorINS0_14FunctionParserIS1_E15TypedExpressionELm16ENS2_20UnsafeVectorOverflowELm16ENS2_10FastMallocEEE'/>

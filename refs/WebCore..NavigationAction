@@ -1,0 +1,171 @@
+<def f='WebKit/Source/WebCore/loader/NavigationAction.h' l='52' ll='162'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.h' l='60' c='_ZN7WebCore16NavigationActionC1ERKS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.h' l='61' c='_ZN7WebCore16NavigationActionaSERKS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.h' l='61' c='_ZN7WebCore16NavigationActionaSERKS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.h' l='63' c='_ZN7WebCore16NavigationActionC1EOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.h' l='64' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.h' l='64' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.h' l='101' c='_ZNK7WebCore16NavigationAction36copyWithShouldOpenExternalURLsPolicyENS_28ShouldOpenExternalURLsPolicyE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='258' c='_ZNK7WebCore14DocumentLoader16triggeringActionEv'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='259' c='_ZN7WebCore14DocumentLoader19setTriggeringActionEONS_16NavigationActionE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='569'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoaderClient.h' l='190' c='_ZN7WebCore17FrameLoaderClient18dispatchCreatePageERKNS_16NavigationActionENS_20NewFrameOpenerPolicyE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoaderClient.h' l='194' c='_ZN7WebCore17FrameLoaderClient38dispatchDecidePolicyForNewWindowActionERKNS_16NavigationActionERKNS_15ResourceRequestEPNS_9FormStateERKN3WTF6StringENS4848680'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoaderClient.h' l='195' c='_ZN7WebCore17FrameLoaderClient39dispatchDecidePolicyForNavigationActionERKNS_16NavigationActionERKNS_15ResourceRequestERKNS_16ResourceResponseEPNS_9Fo2376685'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.h' l='129' c='_ZN6WebKit20WebFrameLoaderClient18dispatchCreatePageERKN7WebCore16NavigationActionENS1_20NewFrameOpenerPolicyE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.h' l='133' c='_ZN6WebKit20WebFrameLoaderClient38dispatchDecidePolicyForNewWindowActionERKN7WebCore16NavigationActionERKNS1_15ResourceRequestEPNS1_9FormStateERKN3WTF208074'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.h' l='134' c='_ZN6WebKit20WebFrameLoaderClient39dispatchDecidePolicyForNavigationActionERKN7WebCore16NavigationActionERKNS1_15ResourceRequestERKNS1_16ResourceRespon314531'/>
+<size>544</size>
+<doc f='WebKit/Source/WebCore/loader/NavigationAction.h' l='49'>// NavigationAction should never hold a strong reference to the originating document either directly
+// or indirectly as doing so prevents its destruction even after navigating away from it because
+// DocumentLoader keeps around the NavigationAction for the last navigation.</doc>
+<fun r='_ZN7WebCore16NavigationActionC1Ev'/>
+<fun r='_ZN7WebCore16NavigationActionC1ERNS_8DocumentERKNS_15ResourceRequestENS_20InitiatedByMainFrameENS_14NavigationTypeENS_28ShouldOpenExternalURLsPolicyEP13544031'/>
+<fun r='_ZN7WebCore16NavigationActionC1ERNS_8DocumentERKNS_15ResourceRequestENS_20InitiatedByMainFrameENS_13FrameLoadTypeEbPNS_5EventENS_28ShouldOpenExternalU7290033'/>
+<fun r='_ZN7WebCore16NavigationActionD1Ev'/>
+<fun r='_ZN7WebCore16NavigationActionC1ERKS0_'/>
+<fun r='_ZN7WebCore16NavigationActionaSERKS0_'/>
+<fun r='_ZN7WebCore16NavigationActionC1EOS0_'/>
+<fun r='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<fun r='_ZNK7WebCore16NavigationAction9requesterEv'/>
+<fun r='_ZNK7WebCore16NavigationAction17keyStateEventDataEv'/>
+<fun r='_ZNK7WebCore16NavigationAction14mouseEventDataEv'/>
+<fun r='_ZNK7WebCore16NavigationAction36copyWithShouldOpenExternalURLsPolicyENS_28ShouldOpenExternalURLsPolicyE'/>
+<fun r='_ZNK7WebCore16NavigationAction7isEmptyEv'/>
+<fun r='_ZNK7WebCore16NavigationAction3urlEv'/>
+<fun r='_ZNK7WebCore16NavigationAction15resourceRequestEv'/>
+<fun r='_ZNK7WebCore16NavigationAction4typeEv'/>
+<fun r='_ZNK7WebCore16NavigationAction21processingUserGestureEv'/>
+<fun r='_ZNK7WebCore16NavigationAction16userGestureTokenEv'/>
+<fun r='_ZNK7WebCore16NavigationAction28shouldOpenExternalURLsPolicyEv'/>
+<fun r='_ZN7WebCore16NavigationAction31setShouldOpenExternalURLsPolicyENS_28ShouldOpenExternalURLsPolicyE'/>
+<fun r='_ZNK7WebCore16NavigationAction20initiatedByMainFrameEv'/>
+<fun r='_ZNK7WebCore16NavigationAction17downloadAttributeEv'/>
+<fun r='_ZNK7WebCore16NavigationAction27treatAsSameOriginNavigationEv'/>
+<fun r='_ZNK7WebCore16NavigationAction15hasOpenedFramesEv'/>
+<fun r='_ZN7WebCore16NavigationAction18setHasOpenedFramesEb'/>
+<fun r='_ZNK7WebCore16NavigationAction21openedByDOMWithOpenerEv'/>
+<fun r='_ZN7WebCore16NavigationAction24setOpenedByDOMWithOpenerEv'/>
+<fun r='_ZN7WebCore16NavigationAction24setTargetBackForwardItemERNS_11HistoryItemE'/>
+<fun r='_ZNK7WebCore16NavigationAction31targetBackForwardItemIdentifierEv'/>
+<fun r='_ZN7WebCore16NavigationAction24setSourceBackForwardItemEPNS_11HistoryItemE'/>
+<fun r='_ZNK7WebCore16NavigationAction31sourceBackForwardItemIdentifierEv'/>
+<fun r='_ZNK7WebCore16NavigationAction11lockHistoryEv'/>
+<fun r='_ZN7WebCore16NavigationAction14setLockHistoryENS_11LockHistoryE'/>
+<fun r='_ZNK7WebCore16NavigationAction19lockBackForwardListEv'/>
+<fun r='_ZN7WebCore16NavigationAction22setLockBackForwardListENS_19LockBackForwardListE'/>
+<fun r='_ZNK7WebCore16NavigationAction23privateClickMeasurementEv'/>
+<fun r='_ZN7WebCore16NavigationAction26setPrivateClickMeasurementEONS_23PrivateClickMeasurementE'/>
+<mbr r='WebCore::NavigationAction::m_requester' o='0' t='std::optional&lt;Requester&gt;'/>
+<mbr r='WebCore::NavigationAction::m_resourceRequest' o='576' t='WebCore::ResourceRequest'/>
+<mbr r='WebCore::NavigationAction::m_type' o='2048' t='WebCore::NavigationType'/>
+<mbr r='WebCore::NavigationAction::m_shouldOpenExternalURLsPolicy' o='2056' t='WebCore::ShouldOpenExternalURLsPolicy'/>
+<mbr r='WebCore::NavigationAction::m_initiatedByMainFrame' o='2064' t='WebCore::InitiatedByMainFrame'/>
+<mbr r='WebCore::NavigationAction::m_keyStateEventData' o='2072' t='std::optional&lt;UIEventWithKeyStateData&gt;'/>
+<mbr r='WebCore::NavigationAction::m_mouseEventData' o='2144' t='std::optional&lt;MouseEventData&gt;'/>
+<mbr r='WebCore::NavigationAction::m_userGestureToken' o='2432' t='RefPtr&lt;WebCore::UserGestureToken&gt;'/>
+<mbr r='WebCore::NavigationAction::m_downloadAttribute' o='2496' t='WTF::AtomString'/>
+<mbr r='WebCore::NavigationAction::m_treatAsSameOriginNavigation' o='2560' t='bool'/>
+<mbr r='WebCore::NavigationAction::m_hasOpenedFrames' o='2568' t='bool'/>
+<mbr r='WebCore::NavigationAction::m_openedByDOMWithOpener' o='2576' t='bool'/>
+<mbr r='WebCore::NavigationAction::m_targetBackForwardItemIdentifier' o='2624' t='std::optional&lt;BackForwardItemIdentifier&gt;'/>
+<mbr r='WebCore::NavigationAction::m_sourceBackForwardItemIdentifier' o='2816' t='std::optional&lt;BackForwardItemIdentifier&gt;'/>
+<mbr r='WebCore::NavigationAction::m_lockHistory' o='3008' t='WebCore::LockHistory'/>
+<mbr r='WebCore::NavigationAction::m_lockBackForwardList' o='3016' t='WebCore::LockBackForwardList'/>
+<mbr r='WebCore::NavigationAction::m_privateClickMeasurement' o='3072' t='std::optional&lt;PrivateClickMeasurement&gt;'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.h' l='355' c='_ZN7WebCore11FrameLoader32continueLoadAfterNewWindowPolicyERKNS_15ResourceRequestEPNS_9FormStateERKN3WTF6StringERKNS_16NavigationActionENS_25ShouldCon642457'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.h' l='380' c='_ZN7WebCore11FrameLoader24loadWithNavigationActionERKNS_15ResourceRequestEONS_16NavigationActionENS_13FrameLoadTypeEON3WTF6RefPtrINS_9FormStateENS7_129580964'/>
+<use f='WebKit/Source/WebCore/loader/PolicyChecker.h' l='71'/>
+<use f='WebKit/Source/WebCore/loader/PolicyChecker.h' l='75' c='_ZN7WebCore11FrameLoader13PolicyChecker20checkNewWindowPolicyEONS_16NavigationActionEONS_15ResourceRequestEON3WTF6RefPtrINS_9FormStateENS6_12RawPtrTra3726976'/>
+<use f='WebKit/Source/WebCore/page/ChromeClient.h' l='163' c='_ZN7WebCore12ChromeClient12createWindowERNS_5FrameERKNS_14WindowFeaturesERKNS_16NavigationActionE'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/loader/EmptyFrameLoaderClient.h' l='96' c='_ZN7WebCore22EmptyFrameLoaderClient18dispatchCreatePageERKNS_16NavigationActionENS_20NewFrameOpenerPolicyE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyFrameLoaderClient.h' l='100' c='_ZN7WebCore22EmptyFrameLoaderClient38dispatchDecidePolicyForNewWindowActionERKNS_16NavigationActionERKNS_15ResourceRequestEPNS_9FormStateERKN3WTF6Stri1373257'/>
+<use f='WebKit/Source/WebCore/loader/EmptyFrameLoaderClient.h' l='101' c='_ZN7WebCore22EmptyFrameLoaderClient39dispatchDecidePolicyForNavigationActionERKNS_16NavigationActionERKNS_15ResourceRequestERKNS_16ResourceResponseEPN11502048'/>
+<size>544</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebChromeClient.h' l='78' c='_ZN6WebKit15WebChromeClient12createWindowERN7WebCore5FrameERKNS1_14WindowFeaturesERKNS1_16NavigationActionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/InjectedBundleNavigationAction.h' l='47' c='_ZN6WebKit30InjectedBundleNavigationAction6createEPNS_8WebFrameERKN7WebCore16NavigationActionEON3WTF6RefPtrINS3_9FormStateENS7_12RawPtrTraitsIS9_EENS712671808'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/InjectedBundleNavigationAction.h' l='49' c='_ZN6WebKit30InjectedBundleNavigationAction28modifiersForNavigationActionERKN7WebCore16NavigationActionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/InjectedBundleNavigationAction.h' l='50' c='_ZN6WebKit30InjectedBundleNavigationAction30mouseButtonForNavigationActionERKN7WebCore16NavigationActionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/InjectedBundleNavigationAction.h' l='51' c='_ZN6WebKit30InjectedBundleNavigationAction37syntheticClickTypeForNavigationActionERKN7WebCore16NavigationActionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/InjectedBundleNavigationAction.h' l='52' c='_ZN6WebKit30InjectedBundleNavigationAction53clickLocationInRootViewCoordinatesForNavigationActionERKN7WebCore16NavigationActionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/InjectedBundleNavigationAction.h' l='67' c='_ZN6WebKit30InjectedBundleNavigationActionC1EPNS_8WebFrameERKN7WebCore16NavigationActionEON3WTF6RefPtrINS3_9FormStateENS7_12RawPtrTraitsIS9_EENS7_21De15186830'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebChromeClient.cpp' l='262' c='_ZN6WebKit15WebChromeClient12createWindowERN7WebCore5FrameERKNS1_14WindowFeaturesERKNS1_16NavigationActionE'/>
+<size>544</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='794' c='_ZN6WebKit20WebFrameLoaderClient18dispatchCreatePageERKN7WebCore16NavigationActionENS1_20NewFrameOpenerPolicyE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='858' c='_ZN6WebKit20WebFrameLoaderClient38dispatchDecidePolicyForNewWindowActionERKN7WebCore16NavigationActionERKNS1_15ResourceRequestEPNS1_9FormStateERKN3WTF208074'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='918' c='_ZN6WebKit20WebFrameLoaderClient39dispatchDecidePolicyForNavigationActionERKN7WebCore16NavigationActionERKNS1_15ResourceRequestERKNS1_16ResourceRespon314531'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/page/Chrome.h' l='120' c='_ZNK7WebCore6Chrome12createWindowERNS_5FrameERKNS_14WindowFeaturesERKNS_16NavigationActionE'/>
+<size>544</size>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/InjectedBundleNavigationAction.cpp' l='61' c='_ZN6WebKit30InjectedBundleNavigationAction28modifiersForNavigationActionERKN7WebCore16NavigationActionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/InjectedBundleNavigationAction.cpp' l='78' c='_ZN6WebKit30InjectedBundleNavigationAction30mouseButtonForNavigationActionERKN7WebCore16NavigationActionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/InjectedBundleNavigationAction.cpp' l='83' c='_ZN6WebKit30InjectedBundleNavigationAction37syntheticClickTypeForNavigationActionERKN7WebCore16NavigationActionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/InjectedBundleNavigationAction.cpp' l='88' c='_ZN6WebKit30InjectedBundleNavigationAction53clickLocationInRootViewCoordinatesForNavigationActionERKN7WebCore16NavigationActionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/InjectedBundleNavigationAction.cpp' l='93' c='_ZN6WebKit30InjectedBundleNavigationAction6createEPNS_8WebFrameERKN7WebCore16NavigationActionEON3WTF6RefPtrINS3_9FormStateENS7_12RawPtrTraitsIS9_EENS712671808'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/InjectedBundleNavigationAction.cpp' l='98' c='_ZN6WebKit30InjectedBundleNavigationActionC1EPNS_8WebFrameERKN7WebCore16NavigationActionEON3WTF6RefPtrINS3_9FormStateENS7_12RawPtrTraitsIS9_EENS7_21De15186830'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/page/Chrome.cpp' l='192' c='_ZNK7WebCore6Chrome12createWindowERNS_5FrameERKNS_14WindowFeaturesERKNS_16NavigationActionE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.h' l='65' c='_ZN7WebCore17EmptyChromeClient12createWindowERNS_5FrameERKNS_14WindowFeaturesERKNS_16NavigationActionE'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='2239' c='_ZN7WebCore14DocumentLoader19setTriggeringActionEONS_16NavigationActionE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='594' c='_ZN7WebCore22EmptyFrameLoaderClient38dispatchDecidePolicyForNewWindowActionERKNS_16NavigationActionERKNS_15ResourceRequestEPNS_9FormStateERKN3WTF6Stri1373257'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='598' c='_ZN7WebCore22EmptyFrameLoaderClient39dispatchDecidePolicyForNavigationActionERKNS_16NavigationActionERKNS_15ResourceRequestERKNS_16ResourceResponseEPN11502048'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='810' c='_ZN7WebCore22EmptyFrameLoaderClient18dispatchCreatePageERKNS_16NavigationActionENS_20NewFrameOpenerPolicyE'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='1351' c='_ZN7WebCore11FrameLoader7loadURLEONS_16FrameLoadRequestERKN3WTF6StringENS_13FrameLoadTypeEPNS_5EventEONS3_6RefPtrINS_9FormStateENS3_12RawPtrTraitsISB_3936764'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='1361' c='_ZN7WebCore11FrameLoader7loadURLEONS_16FrameLoadRequestERKN3WTF6StringENS_13FrameLoadTypeEPNS_5EventEONS3_6RefPtrINS_9FormStateENS3_12RawPtrTraitsISB_3936764'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='1443' c='_ZN7WebCore11FrameLoader4loadEONS_16FrameLoadRequestE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='1444' c='_ZN7WebCore11FrameLoader4loadEONS_16FrameLoadRequestE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='1472' c='_ZN7WebCore11FrameLoader24loadWithNavigationActionERKNS_15ResourceRequestEONS_16NavigationActionENS_13FrameLoadTypeEON3WTF6RefPtrINS_9FormStateENS7_129580964'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='1578' c='_ZN7WebCore11FrameLoader22loadWithDocumentLoaderEPNS_14DocumentLoaderENS_13FrameLoadTypeEON3WTF6RefPtrINS_9FormStateENS4_12RawPtrTraitsIS6_EENS4_21Def7653511'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='3049' c='_ZN7WebCore11FrameLoader15loadPostRequestEONS_16FrameLoadRequestERKN3WTF6StringENS_13FrameLoadTypeEPNS_5EventEONS3_6RefPtrINS_9FormStateENS3_12RawPtrT10896572'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='3059' c='_ZN7WebCore11FrameLoader15loadPostRequestEONS_16FrameLoadRequestERKN3WTF6StringENS_13FrameLoadTypeEPNS_5EventEONS3_6RefPtrINS_9FormStateENS3_12RawPtrT10896572'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='3532' c='_ZN7WebCore11FrameLoader32continueLoadAfterNewWindowPolicyERKNS_15ResourceRequestEPNS_9FormStateERKN3WTF6StringERKNS_16NavigationActionENS_25ShouldCon642457'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='3556' c='_ZN7WebCore11FrameLoader32continueLoadAfterNewWindowPolicyERKNS_15ResourceRequestEPNS_9FormStateERKN3WTF6StringERKNS_16NavigationActionENS_25ShouldCon642457'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='3755' c='_ZN7WebCore11FrameLoader25loadDifferentDocumentItemERNS_11HistoryItemEPS1_NS_13FrameLoadTypeENS0_29FormSubmissionCacheLoadPolicyENS_27ShouldTreatAsContinuingLoadE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='3782' c='_ZN7WebCore11FrameLoader25loadDifferentDocumentItemERNS_11HistoryItemEPS1_NS_13FrameLoadTypeENS0_29FormSubmissionCacheLoadPolicyENS_27ShouldTreatAsContinuingLoadE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='4105' c='_ZN7WebCore12createWindowERNS_5FrameES1_ONS_16FrameLoadRequestERKNS_14WindowFeaturesERb'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='76' c='_ZN7WebCore16NavigationActionC1ERKS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='77' c='_ZN7WebCore16NavigationActionC1EOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='79' c='_ZN7WebCore16NavigationActionaSERKS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='79' c='_ZN7WebCore16NavigationActionaSERKS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='80' c='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='142' c='_ZNK7WebCore16NavigationAction36copyWithShouldOpenExternalURLsPolicyENS_28ShouldOpenExternalURLsPolicyE'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.cpp' l='144' c='_ZNK7WebCore16NavigationAction36copyWithShouldOpenExternalURLsPolicyENS_28ShouldOpenExternalURLsPolicyE'/>
+<size>544</size>
+<fun r='_ZN7WebCore16NavigationActionC1Ev'/>
+<fun r='_ZN7WebCore16NavigationActionD1Ev'/>
+<fun r='_ZN7WebCore16NavigationActionC1ERKS0_'/>
+<fun r='_ZN7WebCore16NavigationActionC1EOS0_'/>
+<fun r='_ZN7WebCore16NavigationActionaSERKS0_'/>
+<fun r='_ZN7WebCore16NavigationActionaSEOS0_'/>
+<fun r='_ZN7WebCore16NavigationActionC1ERNS_8DocumentERKNS_15ResourceRequestENS_20InitiatedByMainFrameENS_14NavigationTypeENS_28ShouldOpenExternalURLsPolicyEP13544031'/>
+<fun r='_ZN7WebCore16NavigationActionC1ERNS_8DocumentERKNS_15ResourceRequestENS_20InitiatedByMainFrameENS_13FrameLoadTypeEbPNS_5EventENS_28ShouldOpenExternalU7290033'/>
+<fun r='_ZNK7WebCore16NavigationAction36copyWithShouldOpenExternalURLsPolicyENS_28ShouldOpenExternalURLsPolicyE'/>
+<fun r='_ZN7WebCore16NavigationAction24setTargetBackForwardItemERNS_11HistoryItemE'/>
+<fun r='_ZN7WebCore16NavigationAction24setSourceBackForwardItemEPNS_11HistoryItemE'/>
+<use f='WebKit/Source/WebCore/loader/PolicyChecker.cpp' l='122' c='_ZN7WebCore11FrameLoader13PolicyChecker21checkNavigationPolicyEONS_15ResourceRequestERKNS_16ResourceResponseEPNS_14DocumentLoaderEON3WTF6RefPtrINS_9Fo16209104'/>
+<use f='WebKit/Source/WebCore/loader/PolicyChecker.cpp' l='124' c='_ZN7WebCore11FrameLoader13PolicyChecker21checkNavigationPolicyEONS_15ResourceRequestERKNS_16ResourceResponseEPNS_14DocumentLoaderEON3WTF6RefPtrINS_9Fo16209104'/>
+<use f='WebKit/Source/WebCore/loader/PolicyChecker.cpp' l='125' c='_ZN7WebCore11FrameLoader13PolicyChecker21checkNavigationPolicyEONS_15ResourceRequestERKNS_16ResourceResponseEPNS_14DocumentLoaderEON3WTF6RefPtrINS_9Fo16209104'/>
+<use f='WebKit/Source/WebCore/loader/PolicyChecker.cpp' l='250' c='_ZN7WebCore11FrameLoader13PolicyChecker20checkNewWindowPolicyEONS_16NavigationActionEONS_15ResourceRequestEON3WTF6RefPtrINS_9FormStateENS6_12RawPtrTra3726976'/>
+<size>544</size>

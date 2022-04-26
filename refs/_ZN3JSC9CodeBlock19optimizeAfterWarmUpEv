@@ -1,0 +1,23 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='741' type='void JSC::CodeBlock::optimizeAfterWarmUp()'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='735'>// Call this to reinitialize the counter to its starting state,
+    // forcing a warm-up to happen before the next optimization trigger
+    // fires. This is called in the CodeBlock constructor. It also
+    // makes sense to call this if an OSR exit occurred. Note that
+    // OSR exit code is code generated, so the value of the execute
+    // counter that this corresponds to is also available directly.</doc>
+<dec f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='741' type='void JSC::CodeBlock::optimizeAfterWarmUp()'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='735'>// Call this to reinitialize the counter to its starting state,
+    // forcing a warm-up to happen before the next optimization trigger
+    // fires. This is called in the CodeBlock constructor. It also
+    // makes sense to call this if an OSR exit occurred. Note that
+    // OSR exit code is code generated, so the value of the execute
+    // counter that this corresponds to is also available directly.</doc>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='1940' u='c' c='_ZN3JSCL42updateAllPredictionsAndOptimizeAfterWarmUpEPNS_9CodeBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='2165' u='c' c='_ZN3JSC17operationOptimizeEPNS_2VMEj'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='321' u='c' c='_ZN3JSC9CodeBlock14finishCreationERNS_2VMENS0_18CopyParsedBlockTagERS0_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='769' u='c' c='_ZN3JSC9CodeBlock14finishCreationERNS_2VMEPNS_16ScriptExecutableEPNS_17UnlinkedCodeBlockEPNS_7JSScopeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2273' u='c' c='_ZN3JSC9CodeBlock8jettisonENS_8Profiler14JettisonReasonENS_18ReoptimizationModeEPKNS_10FireDetailE'/>
+<def f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2673' ll='2680' type='void JSC::CodeBlock::optimizeAfterWarmUp()'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2740' u='c' c='_ZN3JSC9CodeBlock48setOptimizationThresholdBasedOnCompilationResultENS_17CompilationResultE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2745' u='c' c='_ZN3JSC9CodeBlock48setOptimizationThresholdBasedOnCompilationResultENS_17CompilationResultE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='3001' u='c' c='_ZN3JSC9CodeBlock17shouldOptimizeNowEv'/>

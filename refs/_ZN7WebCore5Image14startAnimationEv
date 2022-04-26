@@ -1,0 +1,10 @@
+<def f='WebKit/Source/WebCore/platform/graphics/Image.h' l='141' type='void WebCore::Image::startAnimation()'/>
+<doc f='WebKit/Source/WebCore/platform/graphics/Image.h' l='139'>// Animation begins whenever someone draws the image, so startAnimation() is not normally called.
+    // It will automatically pause once all observers no longer want to render the image anywhere.</doc>
+<ovr f='WebKit/Source/WebCore/platform/graphics/BitmapImage.h' l='186' c='_ZN7WebCore11BitmapImage14startAnimationEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderElement.cpp' l='1486' u='c' c='_ZN7WebCore13RenderElement39repaintForPausedImageAnimationsIfNeededERKNS_7IntRectERNS_11CachedImageE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='2923' u='c' c='_ZN7WebCore18RenderLayerBacking19updateImageContentsERNS_19PaintedContentsInfoE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Image.cpp' l='255' u='c' c='_ZN7WebCore5Image9drawTiledERNS_15GraphicsContextERKNS_9FloatRectERKNS_10FloatPointERKNS_9FloatSizeESB_RKNS_20ImagePaintingOptionsE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Image.cpp' l='335' u='c' c='_ZN7WebCore5Image9drawTiledERNS_15GraphicsContextERKNS_9FloatRectES5_RKNS_9FloatSizeENS0_8TileRuleES9_RKNS_20ImagePaintingOptionsE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Image.cpp' l='349' u='a' c='_ZN7WebCore5Image28startAnimationAsynchronouslyEv'/>
+<ovr f='WebKit/Source/WebCore/svg/graphics/SVGImage.cpp' l='421' c='_ZN7WebCore8SVGImage14startAnimationEv'/>

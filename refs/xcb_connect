@@ -1,0 +1,18 @@
+<dec f='include/xcb/xcb.h' l='567' type='xcb_connection_t * xcb_connect(const char * displayname, int * screenp)'/>
+<doc f='include/xcb/xcb.h' l='550'>/**
+ * @brief Connects to the X server.
+ * @param displayname The name of the display.
+ * @param screenp A pointer to a preferred screen number.
+ * @return A newly allocated xcb_connection_t structure.
+ *
+ * Connects to the X server specified by @p displayname. If @p
+ * displayname is @c NULL, uses the value of the DISPLAY environment
+ * variable. If a particular screen on that server is preferred, the
+ * int pointed to by @p screenp (if not @c NULL) will be set to that
+ * screen; otherwise the screen will be set to 0.
+ *
+ * Always returns a non-NULL pointer to a xcb_connection_t, even on failure.
+ * Callers need to use xcb_connection_has_error() to check for failure.
+ * When finished, use xcb_disconnect() to close the connection and free
+ * the structure.
+ */</doc>

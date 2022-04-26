@@ -1,0 +1,12 @@
+<dec f='WebKit/Source/WebCore/editing/TextIterator.h' l='275' type='void WebCore::WordAwareIterator::advance()'/>
+<use f='WebKit/Source/WebCore/editing/TextCheckingHelper.cpp' l='237' u='c' c='_ZNK7WebCore18TextCheckingHelper19findMisspelledWordsENS0_9OperationE'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='1528' u='c' c='_ZN7WebCore17WordAwareIteratorC1ERKNS_11SimpleRangeE'/>
+<def f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='1540' ll='1581' type='void WebCore::WordAwareIterator::advance()'/>
+<doc f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='1531'>// We&apos;re always in one of these modes:
+// - The current chunk in the text iterator is our current chunk
+//      (typically its a piece of whitespace, or text that ended with whitespace)
+// - The previous chunk in the text iterator is our current chunk
+//      (we looked ahead to the next chunk and found a word boundary)
+// - We built up our own chunk of text from many chunks from the text iterator
+
+// FIXME: Performance could be bad for huge spans next to each other that don&apos;t fall on word boundaries.</doc>

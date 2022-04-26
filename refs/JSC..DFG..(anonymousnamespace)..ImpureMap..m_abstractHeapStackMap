@@ -1,0 +1,20 @@
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='110' u='m' c='_ZN3JSC3DFG12_GLOBAL__N_19ImpureMapC1EOS2_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='110' u='a' c='_ZN3JSC3DFG12_GLOBAL__N_19ImpureMapC1EOS2_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='149' u='m' c='_ZN3JSC3DFG12_GLOBAL__N_19ImpureMap7clobberENS0_12AbstractHeapEb'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='206' u='m' c='_ZN3JSC3DFG12_GLOBAL__N_19ImpureMap5clearEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='227' u='m' c='_ZN3JSC3DFG12_GLOBAL__N_19ImpureMap7addImplERKNS0_12HeapLocationERKNS0_8LazyNodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='249' u='m' c='_ZNK3JSC3DFG12_GLOBAL__N_19ImpureMap7getImplERKNS0_12HeapLocationE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='250' u='m' c='_ZNK3JSC3DFG12_GLOBAL__N_19ImpureMap7getImplERKNS0_12HeapLocationE'/>
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='297' type='HashMap&lt;int64_t, std::unique_ptr&lt;ImpureDataSlot&gt;, DefaultHash&lt;int64_t&gt;, WTF::SignedWithZeroKeyHashTraits&lt;int64_t&gt; &gt;'/>
+<offset>0</offset>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='286'>// The majority of Impure Stack Slots are unique per value.
+    // This is very useful for fast clobber(), we can just remove the slot addressed by AbstractHeap
+    // in O(1).
+    //
+    // When there are conflict, any additional HeapLocation is added in the fallback map.
+    // This works well because fallbackStackMap remains tiny.
+    //
+    // One cannot assume a unique ImpureData is in m_abstractHeapStackMap. It may have been
+    // a duplicate in the past and now only live in m_fallbackStackMap.
+    //
+    // Obviously, TOP always goes into m_fallbackStackMap since it does not have a unique value.</doc>

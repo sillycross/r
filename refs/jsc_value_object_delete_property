@@ -1,0 +1,12 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.h' l='175' type='gboolean jsc_value_object_delete_property(JSCValue * value, const char * name)'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='801' ll='819' type='gboolean jsc_value_object_delete_property(JSCValue * value, const char * name)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='791'>/**
+ * jsc_value_object_delete_property:
+ * @value: a #JSCValue
+ * @name: the property name
+ *
+ * Try to delete property with @name from @value. This function will return %FALSE if
+ * the property was defined without %JSC_VALUE_PROPERTY_CONFIGURABLE flag.
+ *
+ * Returns: %TRUE if the property was deleted, or %FALSE otherwise.
+ */</doc>

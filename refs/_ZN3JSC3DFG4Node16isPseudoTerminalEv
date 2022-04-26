@@ -1,0 +1,10 @@
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGNode.h' l='1582' ll='1591' type='bool JSC::DFG::Node::isPseudoTerminal()'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGNode.h' l='1577'>// As is described in DFGNodeType.h&apos;s ForceOSRExit, this is a pseudo-terminal.
+    // It means that execution should fall out of DFG at this point, but execution
+    // does continue in the basic block - just in a different compiler.
+    // FIXME: This is used for lightweight reachability decision. But this should
+    // be replaced with AI-based reachability ideally.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArgumentsEliminationPhase.cpp' l='164' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_125ArgumentsEliminationPhase18identifyCandidatesEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArgumentsEliminationPhase.cpp' l='469' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_125ArgumentsEliminationPhase29eliminateCandidatesThatEscapeEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArgumentsEliminationPhase.cpp' l='1292' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_125ArgumentsEliminationPhase9transformEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='952' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_18Validate11validateSSAEv'/>

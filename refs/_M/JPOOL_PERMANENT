@@ -1,0 +1,11 @@
+<dec f='include/jpeglib.h' l='825'/>
+<doc f='include/jpeglib.h' l='814'>/* Memory manager object.
+ * Allocates &quot;small&quot; objects (a few K total), &quot;large&quot; objects (tens of K),
+ * and &quot;really big&quot; objects (virtual arrays with backing store if needed).
+ * The memory manager does not allow individual objects to be freed; rather,
+ * each created object is assigned to a pool, and whole pools can be freed
+ * at once.  This is faster and more convenient than remembering exactly what
+ * to free, especially where malloc()/free() are not too speedy.
+ * NB: alloc routines never return NULL.  They exit to error_exit if not
+ * successful.
+ */</doc>

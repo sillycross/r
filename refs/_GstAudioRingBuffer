@@ -1,0 +1,43 @@
+<use f='include/gstreamer-1.0/gst/audio/gstaudioringbuffer.h' l='40'/>
+<def f='include/gstreamer-1.0/gst/audio/gstaudioringbuffer.h' l='181' ll='220'/>
+<size>888</size>
+<doc f='include/gstreamer-1.0/gst/audio/gstaudioringbuffer.h' l='164'>/**
+ * GstAudioRingBuffer:
+ * @cond: used to signal start/stop/pause/resume actions
+ * @open: boolean indicating that the ringbuffer is open
+ * @acquired: boolean indicating that the ringbuffer is acquired
+ * @memory: data in the ringbuffer
+ * @size: size of data in the ringbuffer
+ * @spec: format and layout of the ringbuffer data
+ * @samples_per_seg: number of samples in one segment
+ * @empty_seg: pointer to memory holding one segment of silence samples
+ * @state: state of the buffer
+ * @segdone: readpointer in the ringbuffer
+ * @segbase: segment corresponding to segment 0 (unused)
+ * @waiting: is a reader or writer waiting for a free segment
+ *
+ * The ringbuffer base class structure.
+ */</doc>
+<mbr r='_GstAudioRingBuffer::object' o='0' t='GstObject'/>
+<mbr r='_GstAudioRingBuffer::cond' o='704' t='GCond'/>
+<mbr r='_GstAudioRingBuffer::open' o='832' t='gboolean'/>
+<mbr r='_GstAudioRingBuffer::acquired' o='864' t='gboolean'/>
+<mbr r='_GstAudioRingBuffer::memory' o='896' t='guint8 *'/>
+<mbr r='_GstAudioRingBuffer::size' o='960' t='gsize'/>
+<mbr r='_GstAudioRingBuffer::timestamps' o='1024' t='GstClockTime *'/>
+<mbr r='_GstAudioRingBuffer::spec' o='1088' t='GstAudioRingBufferSpec'/>
+<mbr r='_GstAudioRingBuffer::samples_per_seg' o='4288' t='gint'/>
+<mbr r='_GstAudioRingBuffer::empty_seg' o='4352' t='guint8 *'/>
+<mbr r='_GstAudioRingBuffer::state' o='4416' t='gint'/>
+<mbr r='_GstAudioRingBuffer::segdone' o='4448' t='gint'/>
+<mbr r='_GstAudioRingBuffer::segbase' o='4480' t='gint'/>
+<mbr r='_GstAudioRingBuffer::waiting' o='4512' t='gint'/>
+<mbr r='_GstAudioRingBuffer::callback' o='4544' t='GstAudioRingBufferCallback'/>
+<mbr r='_GstAudioRingBuffer::cb_data' o='4608' t='gpointer'/>
+<mbr r='_GstAudioRingBuffer::need_reorder' o='4672' t='gboolean'/>
+<mbr r='_GstAudioRingBuffer::channel_reorder_map' o='4704' t='gint [64]'/>
+<mbr r='_GstAudioRingBuffer::flushing' o='6752' t='gboolean'/>
+<mbr r='_GstAudioRingBuffer::may_start' o='6784' t='gint'/>
+<mbr r='_GstAudioRingBuffer::active' o='6816' t='gboolean'/>
+<mbr r='_GstAudioRingBuffer::cb_data_notify' o='6848' t='GDestroyNotify'/>
+<mbr r='_GstAudioRingBuffer::_gst_reserved' o='6912' t='gpointer [3]'/>

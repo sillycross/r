@@ -1,0 +1,26 @@
+<use f='include/gtk-3.0/gdk/gdkevents.h' l='136'/>
+<def f='include/gtk-3.0/gdk/gdkevents.h' l='1032' ll='1042'/>
+<size>64</size>
+<doc f='include/gtk-3.0/gdk/gdkevents.h' l='1017'>/**
+ * GdkEventSelection:
+ * @type: the type of the event (%GDK_SELECTION_CLEAR,
+ *   %GDK_SELECTION_NOTIFY or %GDK_SELECTION_REQUEST).
+ * @window: the window which received the event.
+ * @send_event: %TRUE if the event was sent explicitly.
+ * @selection: the selection.
+ * @target: the target to which the selection should be converted.
+ * @property: the property in which to place the result of the conversion.
+ * @time: the time of the event in milliseconds.
+ * @requestor: the window on which to place @property or %NULL if none.
+ *
+ * Generated when a selection is requested or ownership of a selection
+ * is taken over by another client application.
+ */</doc>
+<mbr r='_GdkEventSelection::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventSelection::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventSelection::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventSelection::selection' o='192' t='GdkAtom'/>
+<mbr r='_GdkEventSelection::target' o='256' t='GdkAtom'/>
+<mbr r='_GdkEventSelection::property' o='320' t='GdkAtom'/>
+<mbr r='_GdkEventSelection::time' o='384' t='guint32'/>
+<mbr r='_GdkEventSelection::requestor' o='448' t='GdkWindow *'/>

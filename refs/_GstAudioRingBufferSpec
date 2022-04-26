@@ -1,0 +1,26 @@
+<use f='include/gstreamer-1.0/gst/audio/gstaudioringbuffer.h' l='42'/>
+<def f='include/gstreamer-1.0/gst/audio/gstaudioringbuffer.h' l='127' ll='157'/>
+<size>400</size>
+<doc f='include/gstreamer-1.0/gst/audio/gstaudioringbuffer.h' l='113'>/**
+ * GstAudioRingBufferSpec:
+ * @caps: The caps that generated the Spec.
+ * @type: the sample type
+ * @info: the #GstAudioInfo
+ * @latency_time: the latency in microseconds
+ * @buffer_time: the total buffer size in microseconds
+ * @segsize: the size of one segment in bytes
+ * @segtotal: the total number of segments
+ * @seglatency: number of segments queued in the lower level device,
+ *  defaults to segtotal
+ *
+ * The structure containing the format specification of the ringbuffer.
+ */</doc>
+<mbr r='_GstAudioRingBufferSpec::caps' o='0' t='GstCaps *'/>
+<mbr r='_GstAudioRingBufferSpec::type' o='64' t='GstAudioRingBufferFormatType'/>
+<mbr r='_GstAudioRingBufferSpec::info' o='128' t='GstAudioInfo'/>
+<mbr r='_GstAudioRingBufferSpec::latency_time' o='2688' t='guint64'/>
+<mbr r='_GstAudioRingBufferSpec::buffer_time' o='2752' t='guint64'/>
+<mbr r='_GstAudioRingBufferSpec::segsize' o='2816' t='gint'/>
+<mbr r='_GstAudioRingBufferSpec::segtotal' o='2848' t='gint'/>
+<mbr r='_GstAudioRingBufferSpec::seglatency' o='2880' t='gint'/>
+<mbr r='_GstAudioRingBufferSpec::_gst_reserved' o='2944' t='gpointer [4]'/>

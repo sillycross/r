@@ -1,0 +1,77 @@
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/EventDispatcher.h' l='122'/>
+<inh f='WebKit/Source/WebCore/page/scrolling/ScrollingTree.h' l='82' c='WebCore::ScrollingTree'/>
+<def f='WebKit/Source/WebCore/page/scrolling/ThreadedScrollingTree.h' l='44' ll='117'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ThreadedScrollingTree.h' l='113'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ThreadedScrollingTree.h' l='121'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ThreadedScrollingTree.cpp' l='359' c='_ZN7WebCore21ThreadedScrollingTree44scheduleDelayedRenderingUpdateDetectionTimerEN3WTF7SecondsE'/>
+<ovr f='WebKit/Source/WebCore/page/scrolling/nicosia/ScrollingTreeNicosia.h' l='36' c='WebCore::ScrollingTreeNicosia'/>
+<use f='WebKit/Source/WebCore/page/scrolling/nicosia/ScrollingTreeNicosia.h' l='36'/>
+<use f='WebKit/Source/WebCore/page/scrolling/nicosia/ScrollingCoordinatorNicosia.cpp' l='59' c='_ZN7WebCore27ScrollingCoordinatorNicosia13pageDestroyedEv'/>
+<use f='WebKit/Source/WebCore/page/scrolling/nicosia/ScrollingCoordinatorNicosia.cpp' l='59' c='_ZN7WebCore27ScrollingCoordinatorNicosia13pageDestroyedEv'/>
+<use f='WebKit/Source/WebCore/page/scrolling/nicosia/ScrollingCoordinatorNicosia.cpp' l='80' c='_ZN7WebCore27ScrollingCoordinatorNicosia28handleWheelEventForScrollingERKNS_18PlatformWheelEventEmSt8optionalINS_23WheelScrollGestureStateEE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/nicosia/ScrollingCoordinatorNicosia.cpp' l='88' c='_ZN7WebCore27ScrollingCoordinatorNicosia34wheelEventWasProcessedByMainThreadERKNS_18PlatformWheelEventESt8optionalINS_23WheelScrollGestureStateEE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/nicosia/ScrollingCoordinatorNicosia.cpp' l='88' c='_ZN7WebCore27ScrollingCoordinatorNicosia34wheelEventWasProcessedByMainThreadERKNS_18PlatformWheelEventESt8optionalINS_23WheelScrollGestureStateEE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/nicosia/ScrollingCoordinatorNicosia.cpp' l='99' c='_ZN7WebCore27ScrollingCoordinatorNicosia24willStartRenderingUpdateEv'/>
+<use f='WebKit/Source/WebCore/page/scrolling/nicosia/ScrollingCoordinatorNicosia.cpp' l='99' c='_ZN7WebCore27ScrollingCoordinatorNicosia24willStartRenderingUpdateEv'/>
+<use f='WebKit/Source/WebCore/page/scrolling/nicosia/ScrollingTreeFrameScrollingNodeNicosia.cpp' l='49' c='_ZN7WebCore38ScrollingTreeFrameScrollingNodeNicosiaC1ERNS_13ScrollingTreeENS_17ScrollingNodeTypeEm'/>
+<use f='WebKit/Source/WebCore/page/scrolling/nicosia/ScrollingTreeNicosia.cpp' l='51' c='_ZN7WebCore20ScrollingTreeNicosiaC1ERNS_25AsyncScrollingCoordinatorE'/>
+<size>312</size>
+<doc f='WebKit/Source/WebCore/page/scrolling/ThreadedScrollingTree.h' l='40'>// The ThreadedScrollingTree class lives almost exclusively on the scrolling thread and manages the
+// hierarchy of scrollable regions on the page. It&apos;s also responsible for dispatching events
+// to the correct scrolling tree nodes or dispatching events back to the ScrollingCoordinator
+// object on the main thread if they can&apos;t be handled on the scrolling thread for various reasons.</doc>
+<fun r='_ZN7WebCore21ThreadedScrollingTreeD1Ev'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree16handleWheelEventERKNS_18PlatformWheelEventEN3WTF9OptionSetINS_25WheelEventProcessingStepsEEE'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree31handleWheelEventAfterMainThreadERKNS_18PlatformWheelEventEmSt8optionalINS_23WheelScrollGestureStateEE'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree34wheelEventWasProcessedByMainThreadERKNS_18PlatformWheelEventESt8optionalINS_23WheelScrollGestureStateEE'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree25willSendEventToMainThreadERKNS_18PlatformWheelEventE'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree37waitForEventToBeProcessedByMainThreadERKNS_18PlatformWheelEventE'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree10invalidateEv'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree17displayDidRefreshEj'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree24willStartRenderingUpdateEv'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree26didCompleteRenderingUpdateEv'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree8treeLockEv'/>
+<fun r='_ZNK7WebCore21ThreadedScrollingTree21scrollAnimatorEnabledEv'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTreeC1ERNS_25AsyncScrollingCoordinatorE'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree26scrollingTreeNodeDidScrollERNS_26ScrollingTreeScrollingNodeENS_28ScrollingLayerPositionActionE'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree25reportExposedUnfilledAreaEN3WTF13MonotonicTimeEj'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree40reportSynchronousScrollingReasonsChangedEN3WTF13MonotonicTimeENS1_9OptionSetINS_26SynchronousScrollingReasonEEE'/>
+<mbr r='WebCore::ThreadedScrollingTree::m_scrollingCoordinator' o='2240' t='RefPtr&lt;WebCore::AsyncScrollingCoordinator&gt;'/>
+<fun r='_ZNK7WebCore21ThreadedScrollingTree23isThreadedScrollingTreeEv'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree36propagateSynchronousScrollingReasonsERKN3WTF7HashSetImNS1_11DefaultHashImEENS1_10HashTraitsImEENS1_15HashTableTraitsEEE'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree34displayDidRefreshOnScrollingThreadEv'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree41waitForRenderingUpdateCompletionOrTimeoutEv'/>
+<fun r='_ZNK7WebCore21ThreadedScrollingTree32canUpdateLayersOnScrollingThreadEv'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree44scheduleDelayedRenderingUpdateDetectionTimerEN3WTF7SecondsE'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree41delayedRenderingUpdateDetectionTimerFiredEv'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree53maxAllowableRenderingUpdateDurationForSynchronizationEv'/>
+<mbr r='WebCore::ThreadedScrollingTree::m_state' o='2304' t='WebCore::ThreadedScrollingTree::SynchronizationState'/>
+<mbr r='WebCore::ThreadedScrollingTree::m_stateCondition' o='2312' t='WTF::Condition'/>
+<mbr r='WebCore::ThreadedScrollingTree::m_receivedBeganEventFromMainThread' o='2320' t='bool'/>
+<mbr r='WebCore::ThreadedScrollingTree::m_waitingForBeganEventCondition' o='2328' t='WTF::Condition'/>
+<mbr r='WebCore::ThreadedScrollingTree::m_delayedRenderingUpdateDetectionTimer' o='2368' t='std::unique_ptr&lt;RunLoop::Timer&lt;ThreadedScrollingTree&gt; &gt;'/>
+<mbr r='WebCore::ThreadedScrollingTree::m_scrollAnimatorEnabled' o='2432' t='const bool'/>
+<mbr r='WebCore::ThreadedScrollingTree::m_hasNodesWithSynchronousScrollingReasons' o='2440' t='bool'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTreeC1ERNS_25AsyncScrollingCoordinatorE'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTreeD1Ev'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree16handleWheelEventERKNS_18PlatformWheelEventEN3WTF9OptionSetINS_25WheelEventProcessingStepsEEE'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree31handleWheelEventAfterMainThreadERKNS_18PlatformWheelEventEmSt8optionalINS_23WheelScrollGestureStateEE'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree34wheelEventWasProcessedByMainThreadERKNS_18PlatformWheelEventESt8optionalINS_23WheelScrollGestureStateEE'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree25willSendEventToMainThreadERKNS_18PlatformWheelEventE'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree37waitForEventToBeProcessedByMainThreadERKNS_18PlatformWheelEventE'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree10invalidateEv'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree36propagateSynchronousScrollingReasonsERKN3WTF7HashSetImNS1_11DefaultHashImEENS1_10HashTraitsImEENS1_15HashTableTraitsEEE'/>
+<fun r='_ZNK7WebCore21ThreadedScrollingTree32canUpdateLayersOnScrollingThreadEv'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree26scrollingTreeNodeDidScrollERNS_26ScrollingTreeScrollingNodeENS_28ScrollingLayerPositionActionE'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree40reportSynchronousScrollingReasonsChangedEN3WTF13MonotonicTimeENS1_9OptionSetINS_26SynchronousScrollingReasonEEE'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree25reportExposedUnfilledAreaEN3WTF13MonotonicTimeEj'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree24willStartRenderingUpdateEv'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree53maxAllowableRenderingUpdateDurationForSynchronizationEv'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree41waitForRenderingUpdateCompletionOrTimeoutEv'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree26didCompleteRenderingUpdateEv'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree44scheduleDelayedRenderingUpdateDetectionTimerEN3WTF7SecondsE'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree41delayedRenderingUpdateDetectionTimerFiredEv'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree34displayDidRefreshOnScrollingThreadEv'/>
+<fun r='_ZN7WebCore21ThreadedScrollingTree17displayDidRefreshEj'/>
+<use f='WebKit/Source/WebCore/page/scrolling/nicosia/ScrollingTreeOverflowScrollingNodeNicosia.cpp' l='44' c='_ZN7WebCore41ScrollingTreeOverflowScrollingNodeNicosiaC1ERNS_13ScrollingTreeEm'/>
+<size>312</size>

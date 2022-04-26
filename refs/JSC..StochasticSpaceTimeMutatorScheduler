@@ -1,0 +1,59 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='430'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='430'/>
+<inh f='WebKit/Source/JavaScriptCore/heap/MutatorScheduler.h' l='34' c='JSC::MutatorScheduler'/>
+<def f='WebKit/Source/JavaScriptCore/heap/StochasticSpaceTimeMutatorScheduler.h' l='42' ll='89'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='319' c='_ZN3JSC4HeapC1ERNS_2VMENS_8HeapTypeE'/>
+<size>104</size>
+<doc f='WebKit/Source/JavaScriptCore/heap/StochasticSpaceTimeMutatorScheduler.h' l='36'>// The JSC concurrent GC sometimes stops the world in order to stay ahead of it. These deliberate,
+// synthetic pauses ensure that the GC won&apos;t have to do one huge pause in order to catch up to the
+// retreating wavefront. The scheduler is called &quot;space-time&quot; because it links the amount of time
+// that the world is paused for to the amount of space that the world allocated since the GC cycle
+// began.</doc>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorSchedulerC1ERNS_4HeapE'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorSchedulerD1Ev'/>
+<fun r='_ZNK3JSC35StochasticSpaceTimeMutatorScheduler5stateEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler15beginCollectionEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler7didStopEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler10willResumeEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler19didReachTerminationEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler21didExecuteConstraintsEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler27synchronousDrainingDidStallEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler10timeToStopEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler12timeToResumeEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler3logEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler13endCollectionEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler27bytesAllocatedThisCycleImplEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler26bytesSinceBeginningOfCycleERKNS0_8SnapshotE'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler11maxHeadroomEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler16headroomFullnessERKNS0_8SnapshotE'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler18mutatorUtilizationERKNS0_8SnapshotE'/>
+<mbr r='JSC::StochasticSpaceTimeMutatorScheduler::m_heap' o='64' t='JSC::Heap &amp;'/>
+<mbr r='JSC::StochasticSpaceTimeMutatorScheduler::m_state' o='128' t='JSC::MutatorScheduler::State'/>
+<mbr r='JSC::StochasticSpaceTimeMutatorScheduler::m_random' o='192' t='WTF::WeakRandom'/>
+<mbr r='JSC::StochasticSpaceTimeMutatorScheduler::m_minimumPause' o='384' t='WTF::Seconds'/>
+<mbr r='JSC::StochasticSpaceTimeMutatorScheduler::m_pauseScale' o='448' t='double'/>
+<mbr r='JSC::StochasticSpaceTimeMutatorScheduler::m_targetPause' o='512' t='WTF::Seconds'/>
+<mbr r='JSC::StochasticSpaceTimeMutatorScheduler::m_bytesAllocatedThisCycleAtTheBeginning' o='576' t='double'/>
+<mbr r='JSC::StochasticSpaceTimeMutatorScheduler::m_bytesAllocatedThisCycleAtTheEnd' o='640' t='double'/>
+<mbr r='JSC::StochasticSpaceTimeMutatorScheduler::m_beforeConstraints' o='704' t='WTF::MonotonicTime'/>
+<mbr r='JSC::StochasticSpaceTimeMutatorScheduler::m_plannedResumeTime' o='768' t='WTF::MonotonicTime'/>
+<use f='WebKit/Source/JavaScriptCore/heap/StochasticSpaceTimeMutatorScheduler.cpp' l='39' c='_ZN3JSC35StochasticSpaceTimeMutatorScheduler8SnapshotC1ERS0_'/>
+<size>104</size>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorSchedulerC1ERNS_4HeapE'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorSchedulerD1Ev'/>
+<fun r='_ZNK3JSC35StochasticSpaceTimeMutatorScheduler5stateEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler15beginCollectionEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler7didStopEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler10willResumeEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler19didReachTerminationEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler21didExecuteConstraintsEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler27synchronousDrainingDidStallEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler10timeToStopEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler12timeToResumeEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler3logEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler13endCollectionEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler27bytesAllocatedThisCycleImplEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler26bytesSinceBeginningOfCycleERKNS0_8SnapshotE'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler11maxHeadroomEv'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler16headroomFullnessERKNS0_8SnapshotE'/>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler18mutatorUtilizationERKNS0_8SnapshotE'/>

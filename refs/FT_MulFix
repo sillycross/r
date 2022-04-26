@@ -1,0 +1,31 @@
+<dec f='include/freetype2/freetype/freetype.h' l='4615' type='FT_Long FT_MulFix(FT_Long a, FT_Long b)'/>
+<doc f='include/freetype2/freetype/freetype.h' l='4584'>/**************************************************************************
+   *
+   * @function:
+   *   FT_MulFix
+   *
+   * @description:
+   *   Compute `(a*b)/0x10000` with maximum accuracy.  Its main use is to
+   *   multiply a given value by a 16.16 fixed-point factor.
+   *
+   * @input:
+   *   a ::
+   *     The first multiplier.
+   *
+   *   b ::
+   *     The second multiplier.  Use a 16.16 factor here whenever possible
+   *     (see note below).
+   *
+   * @return:
+   *   The result of `(a*b)/0x10000`.
+   *
+   * @note:
+   *   This function has been optimized for the case where the absolute value
+   *   of `a` is less than 2048, and `b` is a 16.16 scaling factor.  As this
+   *   happens mainly when scaling from notional units to fractional pixels
+   *   in FreeType, it resulted in noticeable speed improvements between
+   *   versions 2.x and 1.x.
+   *
+   *   As a conclusion, always try to place a 16.16 factor as the _second_
+   *   argument of this function; this can make a great difference.
+   */</doc>

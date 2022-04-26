@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='517' type='bool WebCore::DocumentLoader::disallowWebArchive() const'/>
+<def f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='965' ll='1001' type='bool WebCore::DocumentLoader::disallowWebArchive() const'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='1037' u='c' c='_ZN7WebCore14DocumentLoader26continueAfterContentPolicyENS_12PolicyActionE'/>
+<doc f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='960'>// Prevent web archives from loading if
+// 1) it is remote;
+// 2) it is not the main frame;
+// 3) it is not any of { loaded by clients; loaded by drag; reloaded from any of the previous two };
+// because they can claim to be from any domain and thus avoid cross-domain security checks (4120255, 45524528, 47610130).</doc>

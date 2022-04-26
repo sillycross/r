@@ -1,0 +1,22 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='172' type='bool WebCore::RenderLayerBacking::paintsIntoWindow() const'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='401' u='c' c='_ZNK7WebCore18RenderLayerBacking23canIssueSetNeedsDisplayEv'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='166'>// RenderLayers with backing normally short-circuit paintLayer() because
+    // their content is rendered via callbacks from GraphicsLayer. However, the document
+    // layer is special, because it has a GraphicsLayer to act as a container for the GraphicsLayers
+    // for descendants, but its contents usually render into the window (in which case this returns true).
+    // This returns false for other layers, and when the document layer actually needs to paint into its backing store
+    // for some reason.</doc>
+<use f='WebKit/Source/WebCore/rendering/RenderObject.cpp' l='897' u='c' c='_ZNK7WebCore12RenderObject21repaintUsingContainerEPKNS_22RenderLayerModelObjectERKNS_10LayoutRectEb'/>
+<use f='WebKit/Source/WebCore/rendering/RenderView.cpp' l='378' u='c' c='_ZN7WebCore10RenderView19paintBoxDecorationsERNS_9PaintInfoERKNS_11LayoutPointE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='1962' u='c' c='_ZN7WebCore11RenderLayer37setFilterBackendNeedsRepaintingInRectERKNS_10LayoutRectE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='2964' u='c' c='_ZN7WebCore11RenderLayer10paintLayerERNS_15GraphicsContextERKNS0_17LayerPaintingInfoEN3WTF9OptionSetINS0_14PaintLayerFlagEEE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4975' u='c' c='_ZNK7WebCore11RenderLayer19paintsWithTransformEN3WTF9OptionSetINS_13PaintBehaviorEEE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4984' u='c' c='_ZNK7WebCore11RenderLayer15shouldPaintMaskEN3WTF9OptionSetINS_13PaintBehaviorEEENS2_INS0_14PaintLayerFlagEEE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4996' u='c' c='_ZNK7WebCore11RenderLayer19shouldApplyClipPathEN3WTF9OptionSetINS_13PaintBehaviorEEENS2_INS0_14PaintLayerFlagEEE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='5090' u='c' c='_ZN7WebCore11RenderLayer22setBackingNeedsRepaintENS_13GraphicsLayer17ShouldClipToLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='5103' u='c' c='_ZN7WebCore11RenderLayer28setBackingNeedsRepaintInRectERKNS_10LayoutRectENS_13GraphicsLayer17ShouldClipToLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='2803' u='c' c='_ZNK7WebCore18RenderLayerBacking22containsPaintedContentERNS_19PaintedContentsInfoE'/>
+<def f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3022' ll='3041' type='bool WebCore::RenderLayerBacking::paintsIntoWindow() const'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3163' u='c' c='_ZN7WebCore18RenderLayerBacking14paintIntoLayerEPKNS_13GraphicsLayerERNS_15GraphicsContextERKNS_7IntRectEN3WTF9OptionSetINS_13PaintBehaviorEEEPNS_18EventRegionContextE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3907' u='c' c='_ZN7WebCorelsERN3WTF10TextStreamERKNS_18RenderLayerBackingE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='2663' u='c' c='_ZNK7WebCore21RenderLayerCompositor23requiresOwnBackingStoreERKNS_11RenderLayerEPS2_RKNS_10LayoutRectES7_'/>

@@ -1,0 +1,17 @@
+<use f='WebKit/Source/JavaScriptCore/b3/B3ReduceStrength.cpp' l='1319' u='c' c='_ZN3JSC2B312_GLOBAL__N_114ReduceStrength19reduceValueStrengthEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ReduceStrength.cpp' l='1369' u='c' c='_ZN3JSC2B312_GLOBAL__N_114ReduceStrength19reduceValueStrengthEv'/>
+<def f='WebKit/Source/JavaScriptCore/b3/B3ReduceStrength.cpp' l='2624' ll='2672' type='bool JSC::B3::(anonymous namespace)::ReduceStrength::handleBitAndDistributivity()'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/B3ReduceStrength.cpp' l='2610'>// For Op==BitOr or BitXor, turn any of these:
+    //      Op(BitAnd(x1, x2), BitAnd(x1, x3))
+    //      Op(BitAnd(x2, x1), BitAnd(x1, x3))
+    //      Op(BitAnd(x1, x2), BitAnd(x3, x1))
+    //      Op(BitAnd(x2, x1), BitAnd(x3, x1))
+    // Into this: BitAnd(Op(x2, x3), x1)
+    // And any of these:
+    //      Op(BitAnd(x1, x2), x1)
+    //      Op(BitAnd(x2, x1), x1)
+    //      Op(x1, BitAnd(x1, x2))
+    //      Op(x1, BitAnd(x2, x1))
+    // Into this: BitAnd(Op(x2, x1), x1)
+    // This second set is equivalent to doing x1 =&gt; BitAnd(x1, x1), and then applying the first set.
+    // It does not reduce the number of operations executed, but provides some useful normalization: we prefer to have BitAnd at the outermost, then BitXor, and finally BitOr at the innermost</doc>

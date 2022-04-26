@@ -1,0 +1,28 @@
+<dec f='include/wayland-client-protocol.h' l='544' type='const struct wl_interface'/>
+<dec f='include/wayland-server-protocol.h' l='547' type='const struct wl_interface'/>
+<def f='include/wayland-server-protocol.h' l='3235' ll='3290'/>
+<size>32</size>
+<doc f='include/wayland-client-protocol.h' l='536'>/**
+ * @defgroup iface_wl_seat The wl_seat interface
+ *
+ * A seat is a group of keyboards, pointer and touch devices. This
+ * object is published as a global during start up, or when such a
+ * device is hot plugged.  A seat typically has a pointer and
+ * maintains a keyboard focus and a pointer focus.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='539'>/**
+ * @defgroup iface_wl_seat The wl_seat interface
+ *
+ * A seat is a group of keyboards, pointer and touch devices. This
+ * object is published as a global during start up, or when such a
+ * device is hot plugged.  A seat typically has a pointer and
+ * maintains a keyboard focus and a pointer focus.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='3231'>/**
+ * @ingroup iface_wl_seat
+ * @struct wl_seat_interface
+ */</doc>
+<mbr r='wl_seat_interface::get_pointer' o='0' t='void (*)(struct wl_client *, struct wl_resource *, uint32_t)'/>
+<mbr r='wl_seat_interface::get_keyboard' o='64' t='void (*)(struct wl_client *, struct wl_resource *, uint32_t)'/>
+<mbr r='wl_seat_interface::get_touch' o='128' t='void (*)(struct wl_client *, struct wl_resource *, uint32_t)'/>
+<mbr r='wl_seat_interface::release' o='192' t='void (*)(struct wl_client *, struct wl_resource *)'/>

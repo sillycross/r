@@ -1,0 +1,12 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CellState.h' l='45' type='2'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CellState.h' l='42'>// This sorta means that the object is grey - i.e. it will be scanned. Or it could be white
+    // during a full collection if its mark bit is clear. That would happen if it had been black,
+    // got barriered, and we did a full collection.</doc>
+<dec f='WebKit/Source/JavaScriptCore/heap/CellState.h' l='45' type='2'/>
+<doc f='WebKit/Source/JavaScriptCore/heap/CellState.h' l='42'>// This sorta means that the object is grey - i.e. it will be scanned. Or it could be white
+    // during a full collection if its mark bit is clear. That would happen if it had been black,
+    // got barriered, and we did a full collection.</doc>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='1031' u='r' c='_ZN3JSC4Heap18addToRememberedSetEPKNS_6JSCellE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SlotVisitor.cpp' l='213' u='r' c='_ZN3JSC11SlotVisitor23appendJSCellOrAuxiliaryEPNS_8HeapCellE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SlotVisitor.cpp' l='263' u='r' c='_ZN3JSC11SlotVisitor29setMarkedAndAppendToMarkStackERT_PNS_6JSCellEN3WTF10DependencyE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SlotVisitor.cpp' l='788' u='r' c='_ZN3JSC11SlotVisitor7didRaceERKNS_12VisitRaceKeyE'/>

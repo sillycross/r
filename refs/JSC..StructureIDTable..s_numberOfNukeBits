@@ -1,0 +1,40 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/StructureIDTable.h' l='159' type='const uint32_t'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/StructureIDTable.h' l='163' u='r'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/StructureIDTable.h' l='140'>// 1. StructureID is encoded as:
+    //
+    //    ----------------------------------------------------------------
+    //    | 1 Nuke Bit | 24 StructureIDTable index bits | 7 entropy bits |
+    //    ----------------------------------------------------------------
+    //
+    //    The entropy bits are chosen at random and assigned when a StructureID
+    //    is allocated.
+    //
+    // 2. For each StructureID, the StructureIDTable stores encodedStructureBits
+    //    which are encoded from the structure pointer as such:
+    //
+    //    -----------------------------------------------------------------
+    //    | 9 low index bits | 7 entropy bits | 48 structure pointer bits |
+    //    -----------------------------------------------------------------
+    //
+    //    The entropy bits here are the same 7 bits used in the encoding of the
+    //    StructureID for this structure entry in the StructureIDTable.</doc>
+<def f='WebKit/Source/JavaScriptCore/runtime/StructureIDTable.h' l='159' type='const uint32_t'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/StructureIDTable.h' l='163' u='r'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/StructureIDTable.h' l='140'>// 1. StructureID is encoded as:
+    //
+    //    ----------------------------------------------------------------
+    //    | 1 Nuke Bit | 24 StructureIDTable index bits | 7 entropy bits |
+    //    ----------------------------------------------------------------
+    //
+    //    The entropy bits are chosen at random and assigned when a StructureID
+    //    is allocated.
+    //
+    // 2. For each StructureID, the StructureIDTable stores encodedStructureBits
+    //    which are encoded from the structure pointer as such:
+    //
+    //    -----------------------------------------------------------------
+    //    | 9 low index bits | 7 entropy bits | 48 structure pointer bits |
+    //    -----------------------------------------------------------------
+    //
+    //    The entropy bits here are the same 7 bits used in the encoding of the
+    //    StructureID for this structure entry in the StructureIDTable.</doc>

@@ -1,0 +1,72 @@
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGFinalizer.h' l='40' c='_ZN3JSC3DFG9FinalizerC1ERNS0_4PlanE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGFinalizer.h' l='47'/>
+<inh f='WebKit/Source/JavaScriptCore/jit/JITPlan.h' l='45' c='JSC::JITPlan'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGPlan.h' l='54' ll='137'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.h' l='164' c='_ZN3JSC3DFG5GraphC1ERNS_2VMERNS0_4PlanE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.h' l='1081'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLJITFinalizer.h' l='52' c='_ZN3JSC3FTL12JITFinalizerC1ERNS_3DFG4PlanE'/>
+<size>448</size>
+<fun r='_ZN3JSC3DFG4PlanC1EPNS_9CodeBlockES3_NS_18JITCompilationModeENS_13BytecodeIndexERKNS_8OperandsISt8optionalINS_7JSValueEEN3WTF6VectorIS9_Lm0ENSA_20Unsa8993005'/>
+<fun r='_ZN3JSC3DFG4PlanD1Ev'/>
+<fun r='_ZNK3JSC3DFG4Plan8codeSizeEv'/>
+<fun r='_ZN3JSC3DFG4Plan12finalizeInGCEv'/>
+<fun r='_ZN3JSC3DFG4Plan8finalizeEv'/>
+<fun r='_ZN3JSC3DFG4Plan11notifyReadyEv'/>
+<fun r='_ZN3JSC3DFG4Plan6cancelEv'/>
+<fun r='_ZN3JSC3DFG4Plan22isKnownToBeLiveAfterGCEv'/>
+<fun r='_ZN3JSC3DFG4Plan23isKnownToBeLiveDuringGCERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC3DFG4Plan22iterateCodeBlocksForGCERNS_19AbstractSlotVisitorERKN3WTF8FunctionIFvPNS_9CodeBlockEEEE'/>
+<fun r='_ZN3JSC3DFG4Plan29checkLivenessAndVisitChildrenERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZNK3JSC3DFG4Plan20canTierUpAndOSREnterEv'/>
+<fun r='_ZN3JSC3DFG4Plan32cleanMustHandleValuesIfNecessaryEv'/>
+<fun r='_ZNK3JSC3DFG4Plan21osrEntryBytecodeIndexEv'/>
+<fun r='_ZNK3JSC3DFG4Plan16mustHandleValuesEv'/>
+<fun r='_ZNK3JSC3DFG4Plan11compilationEv'/>
+<fun r='_ZNK3JSC3DFG4Plan9finalizerEv'/>
+<fun r='_ZN3JSC3DFG4Plan12setFinalizerEOSt10unique_ptrINS0_9FinalizerESt14default_deleteIS3_EE'/>
+<fun r='_ZNK3JSC3DFG4Plan16inlineCallFramesEv'/>
+<fun r='_ZN3JSC3DFG4Plan11watchpointsEv'/>
+<fun r='_ZN3JSC3DFG4Plan11identifiersEv'/>
+<fun r='_ZN3JSC3DFG4Plan14weakReferencesEv'/>
+<fun r='_ZN3JSC3DFG4Plan11transitionsEv'/>
+<fun r='_ZN3JSC3DFG4Plan16recordedStatusesEv'/>
+<fun r='_ZNK3JSC3DFG4Plan15willTryToTierUpEv'/>
+<fun r='_ZN3JSC3DFG4Plan18setWillTryToTierUpEb'/>
+<fun r='_ZN3JSC3DFG4Plan21tierUpInLoopHierarchyEv'/>
+<fun r='_ZN3JSC3DFG4Plan26tierUpAndOSREnterBytecodesEv'/>
+<fun r='_ZNK3JSC3DFG4Plan8callbackEv'/>
+<fun r='_ZN3JSC3DFG4Plan11setCallbackEON3WTF3RefINS_27DeferredCompilationCallbackENS2_12RawPtrTraitsIS4_EEEE'/>
+<fun r='_ZN3JSC3DFG4Plan19compileInThreadImplEv'/>
+<fun r='_ZN3JSC3DFG4Plan24isStillValidOnMainThreadEv'/>
+<fun r='_ZN3JSC3DFG4Plan12isStillValidEv'/>
+<fun r='_ZN3JSC3DFG4Plan9reallyAddEPNS0_10CommonDataE'/>
+<mbr r='JSC::DFG::Plan::m_profiledDFGCodeBlock' o='448' t='JSC::CodeBlock *'/>
+<mbr r='JSC::DFG::Plan::m_mustHandleValues' o='512' t='Operands&lt;std::optional&lt;JSValue&gt; &gt;'/>
+<mbr r='JSC::DFG::Plan::m_mustHandleValuesMayIncludeGarbage' o='704' t='bool'/>
+<mbr r='JSC::DFG::Plan::m_mustHandleValueCleaningLock' o='712' t='WTF::Lock'/>
+<mbr r='JSC::DFG::Plan::m_willTryToTierUp' o='720' t='bool'/>
+<mbr r='JSC::DFG::Plan::m_osrEntryBytecodeIndex' o='736' t='const JSC::BytecodeIndex'/>
+<mbr r='JSC::DFG::Plan::m_compilation' o='768' t='RefPtr&lt;Profiler::Compilation&gt;'/>
+<mbr r='JSC::DFG::Plan::m_finalizer' o='832' t='std::unique_ptr&lt;Finalizer&gt;'/>
+<mbr r='JSC::DFG::Plan::m_inlineCallFrames' o='896' t='RefPtr&lt;JSC::InlineCallFrameSet&gt;'/>
+<mbr r='JSC::DFG::Plan::m_watchpoints' o='960' t='JSC::DFG::DesiredWatchpoints'/>
+<mbr r='JSC::DFG::Plan::m_identifiers' o='1792' t='JSC::DFG::DesiredIdentifiers'/>
+<mbr r='JSC::DFG::Plan::m_weakReferences' o='2112' t='JSC::DFG::DesiredWeakReferences'/>
+<mbr r='JSC::DFG::Plan::m_transitions' o='2240' t='JSC::DFG::DesiredTransitions'/>
+<mbr r='JSC::DFG::Plan::m_recordedStatuses' o='2432' t='JSC::RecordedStatuses'/>
+<mbr r='JSC::DFG::Plan::m_tierUpInLoopHierarchy' o='3328' t='HashMap&lt;JSC::BytecodeIndex, FixedVector&lt;JSC::BytecodeIndex&gt; &gt;'/>
+<mbr r='JSC::DFG::Plan::m_tierUpAndOSREnterBytecodes' o='3392' t='Vector&lt;JSC::BytecodeIndex&gt;'/>
+<mbr r='JSC::DFG::Plan::m_callback' o='3520' t='RefPtr&lt;JSC::DeferredCompilationCallback&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGFailedFinalizer.h' l='36' c='_ZN3JSC3DFG15FailedFinalizerC1ERNS0_4PlanE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLJITFinalizer.cpp' l='39' c='_ZN3JSC3FTL12JITFinalizerC1ERNS_3DFG4PlanE'/>
+<size>448</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDriver.cpp' l='84' c='_ZN3JSC3DFGL11compileImplERNS_2VMEPNS_9CodeBlockES4_NS_18JITCompilationModeENS_13BytecodeIndexERKNS_8OperandsISt8optionalINS_7JSValueEEN3WTF6VectorISA1843053'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDriver.cpp' l='85' c='_ZN3JSC3DFGL11compileImplERNS_2VMEPNS_9CodeBlockES4_NS_18JITCompilationModeENS_13BytecodeIndexERKNS_8OperandsISt8optionalINS_7JSValueEEN3WTF6VectorISA1843053'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGFailedFinalizer.cpp' l='33' c='_ZN3JSC3DFG15FailedFinalizerC1ERNS0_4PlanE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGFinalizer.cpp' l='33' c='_ZN3JSC3DFG9FinalizerC1ERNS0_4PlanE'/>
+<size>448</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='72' c='_ZN3JSC3DFG5GraphC1ERNS_2VMERNS0_4PlanE'/>
+<size>448</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITFinalizer.h' l='38' c='_ZN3JSC3DFG12JITFinalizerC1ERNS0_4PlanEON3WTF3RefINS0_7JITCodeENS4_12RawPtrTraitsIS6_EEEESt10unique_ptrINS_10LinkBufferESt14default_deleteISC_EENS_21M16112622'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITFinalizer.cpp' l='39' c='_ZN3JSC3DFG12JITFinalizerC1ERNS0_4PlanEON3WTF3RefINS0_7JITCodeENS4_12RawPtrTraitsIS6_EEEESt10unique_ptrINS_10LinkBufferESt14default_deleteISC_EENS_21M16112622'/>
+<size>448</size>

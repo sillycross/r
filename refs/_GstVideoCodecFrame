@@ -1,0 +1,43 @@
+<use f='include/gstreamer-1.0/gst/video/gstvideoutils.h' l='40'/>
+<def f='include/gstreamer-1.0/gst/video/gstvideoutils.h' l='226' ll='267'/>
+<size>264</size>
+<doc f='include/gstreamer-1.0/gst/video/gstvideoutils.h' l='202'>/**
+ * GstVideoCodecFrame:
+ * @pts: Presentation timestamp
+ * @dts: Decoding timestamp
+ * @duration: Duration of the frame
+ * @system_frame_number: Unique identifier for the frame. Use this if you need
+ *       to get hold of the frame later (like when data is being decoded).
+ *       Typical usage in decoders is to set this on the opaque value provided
+ *       to the library and get back the frame using gst_video_decoder_get_frame()
+ * @distance_from_sync: Distance in frames from the last synchronization point.
+ * @input_buffer: the input #GstBuffer that created this frame. The buffer is owned
+ *           by the frame and references to the frame instead of the buffer should
+ *           be kept.
+ * @output_buffer: the output #GstBuffer. Implementations should set this either
+ *           directly, or by using the
+ *           @gst_video_decoder_allocate_output_frame() or
+ *           @gst_video_decoder_allocate_output_buffer() methods. The buffer is
+ *           owned by the frame and references to the frame instead of the
+ *           buffer should be kept.
+ * @deadline: Running time when the frame will be used.
+ *
+ * A #GstVideoCodecFrame represents a video frame both in raw and
+ * encoded form.
+ */</doc>
+<mbr r='_GstVideoCodecFrame::ref_count' o='0' t='gint'/>
+<mbr r='_GstVideoCodecFrame::flags' o='32' t='guint32'/>
+<mbr r='_GstVideoCodecFrame::system_frame_number' o='64' t='guint32'/>
+<mbr r='_GstVideoCodecFrame::decode_frame_number' o='96' t='guint32'/>
+<mbr r='_GstVideoCodecFrame::presentation_frame_number' o='128' t='guint32'/>
+<mbr r='_GstVideoCodecFrame::dts' o='192' t='GstClockTime'/>
+<mbr r='_GstVideoCodecFrame::pts' o='256' t='GstClockTime'/>
+<mbr r='_GstVideoCodecFrame::duration' o='320' t='GstClockTime'/>
+<mbr r='_GstVideoCodecFrame::distance_from_sync' o='384' t='int'/>
+<mbr r='_GstVideoCodecFrame::input_buffer' o='448' t='GstBuffer *'/>
+<mbr r='_GstVideoCodecFrame::output_buffer' o='512' t='GstBuffer *'/>
+<mbr r='_GstVideoCodecFrame::deadline' o='576' t='GstClockTime'/>
+<mbr r='_GstVideoCodecFrame::events' o='640' t='GList *'/>
+<mbr r='_GstVideoCodecFrame::user_data' o='704' t='gpointer'/>
+<mbr r='_GstVideoCodecFrame::user_data_destroy_notify' o='768' t='GDestroyNotify'/>
+<mbr r='_GstVideoCodecFrame::abidata' o='832' t='union (anonymous union at /usr/include/gstreamer-1.0/gst/video/gstvideoutils.h:260:3)'/>

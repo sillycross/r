@@ -1,0 +1,21 @@
+<use f='include/gstreamer-1.0/gst/video/colorbalance.h' l='40'/>
+<def f='include/gstreamer-1.0/gst/video/colorbalance.h' l='71' ll='91'/>
+<size>88</size>
+<doc f='include/gstreamer-1.0/gst/video/colorbalance.h' l='60'>/**
+ * GstColorBalanceInterface:
+ * @iface: the parent interface
+ * @get_balance_type: implementation type
+ * @list_channels: list handled channels
+ * @set_value: set a channel value
+ * @get_value: get a channel value
+ * @value_changed: default handler for value changed notification
+ *
+ * Color-balance interface.
+ */</doc>
+<mbr r='_GstColorBalanceInterface::iface' o='0' t='GTypeInterface'/>
+<mbr r='_GstColorBalanceInterface::list_channels' o='128' t='const GList *(*)(GstColorBalance *)'/>
+<mbr r='_GstColorBalanceInterface::set_value' o='192' t='void (*)(GstColorBalance *, GstColorBalanceChannel *, gint)'/>
+<mbr r='_GstColorBalanceInterface::get_value' o='256' t='gint (*)(GstColorBalance *, GstColorBalanceChannel *)'/>
+<mbr r='_GstColorBalanceInterface::get_balance_type' o='320' t='GstColorBalanceType (*)(GstColorBalance *)'/>
+<mbr r='_GstColorBalanceInterface::value_changed' o='384' t='void (*)(GstColorBalance *, GstColorBalanceChannel *, gint)'/>
+<mbr r='_GstColorBalanceInterface::_gst_reserved' o='448' t='gpointer [4]'/>

@@ -1,0 +1,74 @@
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.h' l='236'/>
+<def f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='51' ll='235'/>
+<size>6624</size>
+<doc f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='50'>// See https://trac.webkit.org/wiki/ComplexTextController for more information about ComplexTextController.</doc>
+<fun r='_ZN7WebCore21ComplexTextControllerC1ERKNS_11FontCascadeERKNS_7TextRunEbPN3WTF7HashSetIPKNS_4FontENS7_11DefaultHashISB_EENS7_10HashTraitsISB_EENS7_15HashTableTraitsEEEb'/>
+<fun r='_ZN7WebCore21ComplexTextControllerC1ERKNS_11FontCascadeERKNS_7TextRunERN3WTF6VectorINS7_3RefINS0_14ComplexTextRunENS7_12RawPtrTraitsISA_EEEELm0ENS7_1513814495'/>
+<fun r='_ZN7WebCore21ComplexTextController7advanceEjPNS_11GlyphBufferENS_19GlyphIterationStyleEPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTrai4476861'/>
+<fun r='_ZN7WebCore21ComplexTextController17offsetForPositionEfb'/>
+<fun r='_ZNK7WebCore21ComplexTextController13runWidthSoFarEv'/>
+<fun r='_ZNK7WebCore21ComplexTextController12totalAdvanceEv'/>
+<fun r='_ZNK7WebCore21ComplexTextController20minGlyphBoundingBoxXEv'/>
+<fun r='_ZNK7WebCore21ComplexTextController20maxGlyphBoundingBoxXEv'/>
+<fun r='_ZNK7WebCore21ComplexTextController20minGlyphBoundingBoxYEv'/>
+<fun r='_ZNK7WebCore21ComplexTextController20maxGlyphBoundingBoxYEv'/>
+<fun r='_ZN7WebCore21ComplexTextController27computeExpansionOpportunityEv'/>
+<fun r='_ZN7WebCore21ComplexTextController18finishConstructionEv'/>
+<fun r='_ZN7WebCore21ComplexTextController11stringBeginERKNS0_14ComplexTextRunE'/>
+<fun r='_ZN7WebCore21ComplexTextController9stringEndERKNS0_14ComplexTextRunE'/>
+<fun r='_ZN7WebCore21ComplexTextController22collectComplexTextRunsEv'/>
+<fun r='_ZN7WebCore21ComplexTextController35collectComplexTextRunsForCharactersEPKDsjjPKNS_4FontE'/>
+<fun r='_ZN7WebCore21ComplexTextController23adjustGlyphsAndAdvancesEv'/>
+<fun r='_ZN7WebCore21ComplexTextController17indexOfCurrentRunERj'/>
+<fun r='_ZN7WebCore21ComplexTextController19incrementCurrentRunERj'/>
+<fun r='_ZNK7WebCore21ComplexTextController21runWidthSoFarFractionEjjjNS_19GlyphIterationStyleE'/>
+<fun r='_ZNK7WebCore21ComplexTextController11glyphOriginEj'/>
+<mbr r='WebCore::ComplexTextController::m_adjustedBaseAdvances' o='0' t='Vector&lt;WebCore::FloatSize, 256&gt;'/>
+<mbr r='WebCore::ComplexTextController::m_glyphOrigins' o='24704' t='Vector&lt;WebCore::FloatPoint, 256&gt;'/>
+<mbr r='WebCore::ComplexTextController::m_adjustedGlyphs' o='41216' t='Vector&lt;CGGlyph, 256&gt;'/>
+<mbr r='WebCore::ComplexTextController::m_smallCapsBuffer' o='45440' t='Vector&lt;UChar, 256&gt;'/>
+<mbr r='WebCore::ComplexTextController::m_complexTextRuns' o='49664' t='Vector&lt;RefPtr&lt;WebCore::ComplexTextController::ComplexTextRun&gt;, 16&gt;'/>
+<mbr r='WebCore::ComplexTextController::m_runIndices' o='50816' t='Vector&lt;unsigned int, 16&gt;'/>
+<mbr r='WebCore::ComplexTextController::m_glyphCountFromStartToIndex' o='51456' t='Vector&lt;unsigned int, 16&gt;'/>
+<mbr r='WebCore::ComplexTextController::m_stringsFor8BitRuns' o='52096' t='Vector&lt;WTF::String&gt;'/>
+<mbr r='WebCore::ComplexTextController::m_fallbackFonts' o='52224' t='HashSet&lt;const WebCore::Font *&gt; *'/>
+<mbr r='WebCore::ComplexTextController::m_font' o='52288' t='const WebCore::FontCascade &amp;'/>
+<mbr r='WebCore::ComplexTextController::m_run' o='52352' t='const WebCore::TextRun &amp;'/>
+<mbr r='WebCore::ComplexTextController::m_currentCharacter' o='52416' t='unsigned int'/>
+<mbr r='WebCore::ComplexTextController::m_end' o='52448' t='unsigned int'/>
+<mbr r='WebCore::ComplexTextController::m_totalAdvance' o='52480' t='WebCore::FloatSize'/>
+<mbr r='WebCore::ComplexTextController::m_runWidthSoFar' o='52576' t='float'/>
+<mbr r='WebCore::ComplexTextController::m_numGlyphsSoFar' o='52608' t='unsigned int'/>
+<mbr r='WebCore::ComplexTextController::m_currentRun' o='52640' t='unsigned int'/>
+<mbr r='WebCore::ComplexTextController::m_glyphInCurrentRun' o='52672' t='unsigned int'/>
+<mbr r='WebCore::ComplexTextController::m_characterInCurrentGlyph' o='52704' t='unsigned int'/>
+<mbr r='WebCore::ComplexTextController::m_expansion' o='52736' t='float'/>
+<mbr r='WebCore::ComplexTextController::m_expansionPerOpportunity' o='52768' t='float'/>
+<mbr r='WebCore::ComplexTextController::m_minGlyphBoundingBoxX' o='52800' t='float'/>
+<mbr r='WebCore::ComplexTextController::m_maxGlyphBoundingBoxX' o='52832' t='float'/>
+<mbr r='WebCore::ComplexTextController::m_minGlyphBoundingBoxY' o='52864' t='float'/>
+<mbr r='WebCore::ComplexTextController::m_maxGlyphBoundingBoxY' o='52896' t='float'/>
+<mbr r='WebCore::ComplexTextController::m_isLTROnly' o='52928' t='bool'/>
+<mbr r='WebCore::ComplexTextController::m_mayUseNaturalWritingDirection' o='52936' t='bool'/>
+<mbr r='WebCore::ComplexTextController::m_forTextEmphasis' o='52944' t='bool'/>
+<fun r='_ZN7WebCore21ComplexTextController35collectComplexTextRunsForCharactersEPKDsjjPKNS_4FontE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='57' c='_ZN7WebCore10TextLayoutC1ERNS_10RenderTextERKNS_11FontCascadeEf'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='83'/>
+<size>6624</size>
+<fun r='_ZN7WebCore21ComplexTextController27computeExpansionOpportunityEv'/>
+<fun r='_ZN7WebCore21ComplexTextControllerC1ERKNS_11FontCascadeERKNS_7TextRunEbPN3WTF7HashSetIPKNS_4FontENS7_11DefaultHashISB_EENS7_10HashTraitsISB_EENS7_15HashTableTraitsEEEb'/>
+<fun r='_ZN7WebCore21ComplexTextControllerC1ERKNS_11FontCascadeERKNS_7TextRunERN3WTF6VectorINS7_3RefINS0_14ComplexTextRunENS7_12RawPtrTraitsISA_EEEELm0ENS7_1513814495'/>
+<fun r='_ZN7WebCore21ComplexTextController18finishConstructionEv'/>
+<fun r='_ZN7WebCore21ComplexTextController17offsetForPositionEfb'/>
+<fun r='_ZN7WebCore21ComplexTextController22collectComplexTextRunsEv'/>
+<fun r='_ZN7WebCore21ComplexTextController17indexOfCurrentRunERj'/>
+<fun r='_ZN7WebCore21ComplexTextController19incrementCurrentRunERj'/>
+<fun r='_ZNK7WebCore21ComplexTextController21runWidthSoFarFractionEjjjNS_19GlyphIterationStyleE'/>
+<fun r='_ZN7WebCore21ComplexTextController7advanceEjPNS_11GlyphBufferENS_19GlyphIterationStyleEPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTrai4476861'/>
+<fun r='_ZN7WebCore21ComplexTextController23adjustGlyphsAndAdvancesEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='240' c='_ZNK7WebCore11FontCascade16widthOfTextRangeERKNS_7TextRunEjjPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTableTraitsEEEPfSG_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1291' c='_ZNK7WebCore11FontCascade17layoutComplexTextERKNS_7TextRunEjjNS0_20ForTextEmphasisOrNotE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1424' c='_ZNK7WebCore11FontCascade24floatWidthForComplexTextERKNS_7TextRunEPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTab14672171'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1457' c='_ZNK7WebCore11FontCascade33adjustSelectionRectForComplexTextERKNS_7TextRunERNS_10LayoutRectEjj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1516' c='_ZNK7WebCore11FontCascade31offsetForPositionForComplexTextERKNS_7TextRunEfb'/>
+<size>6624</size>

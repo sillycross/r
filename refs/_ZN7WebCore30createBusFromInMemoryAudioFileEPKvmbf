@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/WebCore/platform/audio/AudioFileReader.h' l='42' type='RefPtr&lt;WebCore::AudioBus&gt; WebCore::createBusFromInMemoryAudioFile(const void * data, size_t dataSize, bool mixToMono, float sampleRate)'/>
+<def f='WebKit/Source/WebCore/platform/audio/gstreamer/AudioFileReaderGStreamer.cpp' l='407' ll='417' type='RefPtr&lt;WebCore::AudioBus&gt; WebCore::createBusFromInMemoryAudioFile(const void * data, size_t dataSize, bool mixToMono, float sampleRate)'/>
+<doc f='WebKit/Source/WebCore/platform/audio/AudioFileReader.h' l='38'>// Pass in 0.0 for sampleRate to use the file&apos;s sample-rate, otherwise a sample-rate conversion to the requested
+// sampleRate will be made (if it doesn&apos;t already match the file&apos;s sample-rate).
+// The created buffer will have its sample-rate set correctly to the result.</doc>
+<use f='WebKit/Source/WebCore/platform/audio/glib/AudioBusGLib.cpp' l='43' u='c' c='_ZN7WebCore8AudioBus20loadPlatformResourceEPKcf'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioBuffer.cpp' l='78' u='c' c='_ZN7WebCore11AudioBuffer23createFromAudioFileDataEPKvmbf'/>

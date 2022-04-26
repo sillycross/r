@@ -1,0 +1,139 @@
+<def f='WebKit/WTF/Headers/wtf/MemoryPressureHandler.h' l='62' ll='273'/>
+<use f='WebKit/WTF/Headers/wtf/MemoryPressureHandler.h' l='64'/>
+<use f='WebKit/WTF/Headers/wtf/MemoryPressureHandler.h' l='66' c='_ZN3WTF21MemoryPressureHandler9singletonEv'/>
+<use f='WebKit/WTF/Headers/wtf/MemoryPressureHandler.h' l='251'/>
+<use f='WebKit/WTF/Headers/wtf/MemoryPressureHandler.h' l='266'/>
+<size>152</size>
+<fun r='_ZN3WTF21MemoryPressureHandler9singletonEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler7installEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler33setShouldUsePeriodicMemoryMonitorEb'/>
+<fun r='_ZN3WTF21MemoryPressureHandler26triggerMemoryPressureEventEb'/>
+<fun r='_ZN3WTF21MemoryPressureHandler21setMemoryKillCallbackEONS_8FunctionIFvvEEE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler38setMemoryPressureStatusChangedCallbackEONS_8FunctionIFvbEEE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler44setDidExceedInactiveLimitWhileActiveCallbackEONS_8FunctionIFvvEEE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler19setLowMemoryHandlerEONS_8FunctionIFvNS_8CriticalENS_11SynchronousEEEE'/>
+<fun r='_ZNK3WTF21MemoryPressureHandler21isUnderMemoryPressureEv'/>
+<fun r='_ZNK3WTF21MemoryPressureHandler26isSimulatingMemoryPressureEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler22setUnderMemoryPressureEb'/>
+<fun r='_ZN3WTF21MemoryPressureHandler24currentMemoryUsagePolicyEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler16setConfigurationEONS0_13ConfigurationE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler13releaseMemoryENS_8CriticalENS_11SynchronousE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler28beginSimulatedMemoryPressureEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler26endSimulatedMemoryPressureEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler15setProcessStateENS_18WebsamProcessStateE'/>
+<fun r='_ZNK3WTF21MemoryPressureHandler12processStateEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler12setPageCountEj'/>
+<fun r='_ZN3WTF21MemoryPressureHandler38setShouldLogMemoryMemoryPressureEventsEb'/>
+<fun r='_ZN3WTF21MemoryPressureHandler22thresholdForMemoryKillEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler18thresholdForPolicyENS_17MemoryUsagePolicyE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler18policyForFootprintEm'/>
+<fun r='_ZN3WTF21MemoryPressureHandler27memoryPressureStatusChangedEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler9uninstallEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler7holdOffENS_7SecondsE'/>
+<fun r='_ZN3WTF21MemoryPressureHandlerC1Ev'/>
+<fun r='_ZN3WTF21MemoryPressureHandlerD1Ev'/>
+<fun r='_ZN3WTF21MemoryPressureHandler23respondToMemoryPressureENS_8CriticalENS_11SynchronousE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler21platformReleaseMemoryENS_8CriticalE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler18platformInitializeEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler21measurementTimerFiredEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler11shrinkOrDieEm'/>
+<fun r='_ZN3WTF21MemoryPressureHandler36setMemoryUsagePolicyBasedOnFootprintEm'/>
+<fun r='_ZN3WTF21MemoryPressureHandler34doesExceedInactiveLimitWhileActiveEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler37doesNotExceedInactiveLimitWhileActiveEv'/>
+<mbr r='WTF::MemoryPressureHandler::m_pageCount' o='0' t='unsigned int'/>
+<mbr r='WTF::MemoryPressureHandler::m_underMemoryPressure' o='32' t='std::atomic&lt;bool&gt;'/>
+<mbr r='WTF::MemoryPressureHandler::m_installed' o='40' t='bool'/>
+<mbr r='WTF::MemoryPressureHandler::m_isSimulatingMemoryPressure' o='48' t='bool'/>
+<mbr r='WTF::MemoryPressureHandler::m_shouldLogMemoryMemoryPressureEvents' o='56' t='bool'/>
+<mbr r='WTF::MemoryPressureHandler::m_hasInvokedDidExceedInactiveLimitWhileActiveCallback' o='64' t='bool'/>
+<mbr r='WTF::MemoryPressureHandler::m_processState' o='72' t='WTF::WebsamProcessState'/>
+<mbr r='WTF::MemoryPressureHandler::m_memoryUsagePolicy' o='80' t='WTF::MemoryUsagePolicy'/>
+<mbr r='WTF::MemoryPressureHandler::m_measurementTimer' o='128' t='std::unique_ptr&lt;RunLoop::Timer&lt;MemoryPressureHandler&gt; &gt;'/>
+<mbr r='WTF::MemoryPressureHandler::m_memoryKillCallback' o='192' t='WTF::Function&lt;void ()&gt;'/>
+<mbr r='WTF::MemoryPressureHandler::m_memoryPressureStatusChangedCallback' o='256' t='WTF::Function&lt;void (bool)&gt;'/>
+<mbr r='WTF::MemoryPressureHandler::m_didExceedInactiveLimitWhileActiveCallback' o='320' t='WTF::Function&lt;void ()&gt;'/>
+<mbr r='WTF::MemoryPressureHandler::m_lowMemoryHandler' o='384' t='WTF::LowMemoryHandler'/>
+<mbr r='WTF::MemoryPressureHandler::m_configuration' o='448' t='WTF::MemoryPressureHandler::Configuration'/>
+<mbr r='WTF::MemoryPressureHandler::m_holdOffTimer' o='832' t='RunLoop::Timer&lt;MemoryPressureHandler&gt;'/>
+<fun r='_ZN3WTF21MemoryPressureHandler17holdOffTimerFiredEv'/>
+<def f='WebKit/Source/WTF/wtf/MemoryPressureHandler.h' l='62' ll='273'/>
+<use f='WebKit/Source/WTF/wtf/MemoryPressureHandler.h' l='64'/>
+<use f='WebKit/Source/WTF/wtf/MemoryPressureHandler.h' l='66' c='_ZN3WTF21MemoryPressureHandler9singletonEv'/>
+<use f='WebKit/Source/WTF/wtf/MemoryPressureHandler.h' l='251'/>
+<use f='WebKit/Source/WTF/wtf/MemoryPressureHandler.h' l='266'/>
+<use f='WebKit/Source/WTF/wtf/MemoryPressureHandler.cpp' l='51' c='_ZN3WTF21MemoryPressureHandler9singletonEv'/>
+<use f='WebKit/Source/WTF/wtf/MemoryPressureHandler.cpp' l='53' c='_ZN3WTF21MemoryPressureHandler9singletonEv'/>
+<use f='WebKit/Source/WTF/wtf/MemoryPressureHandler.cpp' l='85' c='_ZN3WTF21MemoryPressureHandler33setShouldUsePeriodicMemoryMonitorEb'/>
+<size>152</size>
+<fun r='_ZN3WTF21MemoryPressureHandler9singletonEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler7installEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler33setShouldUsePeriodicMemoryMonitorEb'/>
+<fun r='_ZN3WTF21MemoryPressureHandler26triggerMemoryPressureEventEb'/>
+<fun r='_ZN3WTF21MemoryPressureHandler21setMemoryKillCallbackEONS_8FunctionIFvvEEE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler38setMemoryPressureStatusChangedCallbackEONS_8FunctionIFvbEEE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler44setDidExceedInactiveLimitWhileActiveCallbackEONS_8FunctionIFvvEEE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler19setLowMemoryHandlerEONS_8FunctionIFvNS_8CriticalENS_11SynchronousEEEE'/>
+<fun r='_ZNK3WTF21MemoryPressureHandler21isUnderMemoryPressureEv'/>
+<fun r='_ZNK3WTF21MemoryPressureHandler26isSimulatingMemoryPressureEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler22setUnderMemoryPressureEb'/>
+<fun r='_ZN3WTF21MemoryPressureHandler24currentMemoryUsagePolicyEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler16setConfigurationEONS0_13ConfigurationE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler13releaseMemoryENS_8CriticalENS_11SynchronousE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler28beginSimulatedMemoryPressureEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler26endSimulatedMemoryPressureEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler15setProcessStateENS_18WebsamProcessStateE'/>
+<fun r='_ZNK3WTF21MemoryPressureHandler12processStateEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler12setPageCountEj'/>
+<fun r='_ZN3WTF21MemoryPressureHandler38setShouldLogMemoryMemoryPressureEventsEb'/>
+<fun r='_ZN3WTF21MemoryPressureHandler22thresholdForMemoryKillEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler18thresholdForPolicyENS_17MemoryUsagePolicyE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler18policyForFootprintEm'/>
+<fun r='_ZN3WTF21MemoryPressureHandler27memoryPressureStatusChangedEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler9uninstallEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler7holdOffENS_7SecondsE'/>
+<fun r='_ZN3WTF21MemoryPressureHandlerC1Ev'/>
+<fun r='_ZN3WTF21MemoryPressureHandlerD1Ev'/>
+<fun r='_ZN3WTF21MemoryPressureHandler23respondToMemoryPressureENS_8CriticalENS_11SynchronousE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler21platformReleaseMemoryENS_8CriticalE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler18platformInitializeEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler21measurementTimerFiredEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler11shrinkOrDieEm'/>
+<fun r='_ZN3WTF21MemoryPressureHandler36setMemoryUsagePolicyBasedOnFootprintEm'/>
+<fun r='_ZN3WTF21MemoryPressureHandler34doesExceedInactiveLimitWhileActiveEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler37doesNotExceedInactiveLimitWhileActiveEv'/>
+<mbr r='WTF::MemoryPressureHandler::m_pageCount' o='0' t='unsigned int'/>
+<mbr r='WTF::MemoryPressureHandler::m_underMemoryPressure' o='32' t='std::atomic&lt;bool&gt;'/>
+<mbr r='WTF::MemoryPressureHandler::m_installed' o='40' t='bool'/>
+<mbr r='WTF::MemoryPressureHandler::m_isSimulatingMemoryPressure' o='48' t='bool'/>
+<mbr r='WTF::MemoryPressureHandler::m_shouldLogMemoryMemoryPressureEvents' o='56' t='bool'/>
+<mbr r='WTF::MemoryPressureHandler::m_hasInvokedDidExceedInactiveLimitWhileActiveCallback' o='64' t='bool'/>
+<mbr r='WTF::MemoryPressureHandler::m_processState' o='72' t='WTF::WebsamProcessState'/>
+<mbr r='WTF::MemoryPressureHandler::m_memoryUsagePolicy' o='80' t='WTF::MemoryUsagePolicy'/>
+<mbr r='WTF::MemoryPressureHandler::m_measurementTimer' o='128' t='std::unique_ptr&lt;RunLoop::Timer&lt;MemoryPressureHandler&gt; &gt;'/>
+<mbr r='WTF::MemoryPressureHandler::m_memoryKillCallback' o='192' t='WTF::Function&lt;void ()&gt;'/>
+<mbr r='WTF::MemoryPressureHandler::m_memoryPressureStatusChangedCallback' o='256' t='WTF::Function&lt;void (bool)&gt;'/>
+<mbr r='WTF::MemoryPressureHandler::m_didExceedInactiveLimitWhileActiveCallback' o='320' t='WTF::Function&lt;void ()&gt;'/>
+<mbr r='WTF::MemoryPressureHandler::m_lowMemoryHandler' o='384' t='WTF::LowMemoryHandler'/>
+<mbr r='WTF::MemoryPressureHandler::m_configuration' o='448' t='WTF::MemoryPressureHandler::Configuration'/>
+<mbr r='WTF::MemoryPressureHandler::m_holdOffTimer' o='832' t='RunLoop::Timer&lt;MemoryPressureHandler&gt;'/>
+<fun r='_ZN3WTF21MemoryPressureHandler17holdOffTimerFiredEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler9singletonEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandlerC1Ev'/>
+<fun r='_ZN3WTF21MemoryPressureHandler33setShouldUsePeriodicMemoryMonitorEb'/>
+<fun r='_ZN3WTF21MemoryPressureHandler12setPageCountEj'/>
+<fun r='_ZN3WTF21MemoryPressureHandler22thresholdForMemoryKillEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler18thresholdForPolicyENS_17MemoryUsagePolicyE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler18policyForFootprintEm'/>
+<fun r='_ZN3WTF21MemoryPressureHandler24currentMemoryUsagePolicyEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler11shrinkOrDieEm'/>
+<fun r='_ZN3WTF21MemoryPressureHandler36setMemoryUsagePolicyBasedOnFootprintEm'/>
+<fun r='_ZN3WTF21MemoryPressureHandler21measurementTimerFiredEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler34doesExceedInactiveLimitWhileActiveEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler37doesNotExceedInactiveLimitWhileActiveEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler15setProcessStateENS_18WebsamProcessStateE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler28beginSimulatedMemoryPressureEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler26endSimulatedMemoryPressureEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler13releaseMemoryENS_8CriticalENS_11SynchronousE'/>
+<fun r='_ZN3WTF21MemoryPressureHandler22setUnderMemoryPressureEb'/>
+<fun r='_ZN3WTF21MemoryPressureHandler27memoryPressureStatusChangedEv'/>
+<fun r='_ZN3WTF21MemoryPressureHandler18platformInitializeEv'/>

@@ -1,0 +1,916 @@
+<use f='WebKit/Source/WebCore/page/csp/ContentSecurityPolicyResponseHeaders.h' l='44' c='_ZN7WebCore36ContentSecurityPolicyResponseHeadersC1ERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.h' l='84' c='_ZN7WebCore24passesAccessControlCheckERKNS_16ResourceResponseENS_23StoredCredentialsPolicyERKNS_14SecurityOriginEPKNS_37CrossOriginAccessControlCheckDisablerE'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.h' l='85' c='_ZN7WebCore25validatePreflightResponseEN3PAL9SessionIDERKNS_15ResourceRequestERKNS_16ResourceResponseENS_23StoredCredentialsPolicyERKNS_14SecurityOrig10797570'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.h' l='87' c='_ZN7WebCore33validateCrossOriginResourcePolicyERKNS_14SecurityOriginERKN3WTF3URLERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.h' l='88' c='_ZN7WebCore26validateRangeRequestedFlagERKNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceRequestBase.h' l='70' c='_ZN7WebCore19ResourceRequestBase21redirectAsGETIfNeededERKS0_RKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceRequestBase.h' l='71' c='_ZNK7WebCore19ResourceRequestBase17redirectedRequestERKNS_16ResourceResponseEb'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.h' l='54' c='_ZN7WebCore17computeCurrentAgeERKNS_16ResourceResponseEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.h' l='55' c='_ZN7WebCore37computeFreshnessLifetimeForHTTPFamilyERKNS_16ResourceResponseEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.h' l='56' c='_ZN7WebCore38updateResponseHeadersAfterRevalidationERNS_16ResourceResponseERKS0_'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.h' l='56' c='_ZN7WebCore38updateResponseHeadersAfterRevalidationERNS_16ResourceResponseERKS0_'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.h' l='57' c='_ZN7WebCore25updateRedirectChainStatusERNS_24RedirectChainCacheStatusERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.h' l='80' c='_ZN7WebCore28collectVaryingRequestHeadersEPNS_21NetworkStorageSessionERKNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.h' l='81' c='_ZN7WebCore28collectVaryingRequestHeadersEPKNS_9CookieJarERKNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/network/soup/CertificateInfo.h' l='46' c='_ZN7WebCore15CertificateInfoC1ERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='48' c='_ZN7WebCore24isScriptAllowedByNosniffERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='87' c='_ZN7WebCore20ResourceResponseBase19fromCrossThreadDataEONS0_15CrossThreadDataE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='204' c='_ZN7WebCore20ResourceResponseBase6filterERKNS_16ResourceResponseENS0_28PerformExposeAllHeadersCheckE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='204' c='_ZN7WebCore20ResourceResponseBase6filterERKNS_16ResourceResponseENS0_28PerformExposeAllHeadersCheckE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='206' c='_ZN7WebCore20ResourceResponseBase25syntheticRedirectResponseERKN3WTF3URLES4_'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='208' c='_ZN7WebCore20ResourceResponseBase7compareERKNS_16ResourceResponseES3_'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='208' c='_ZN7WebCore20ResourceResponseBase7compareERKNS_16ResourceResponseES3_'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='218' c='_ZN7WebCore20ResourceResponseBase15dataURLResponseERKN3WTF3URLERKNS_14DataURLDecoder6ResultE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='237' c='_ZN7WebCore20ResourceResponseBase15platformCompareERKNS_16ResourceResponseES3_'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='237' c='_ZN7WebCore20ResourceResponseBase15platformCompareERKNS_16ResourceResponseES3_'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='284' c='_ZN7WebCoreeqERKNS_16ResourceResponseES2_'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='284' c='_ZN7WebCoreeqERKNS_16ResourceResponseES2_'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='285' c='_ZN7WebCoreneERKNS_16ResourceResponseES2_'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='285' c='_ZN7WebCoreneERKNS_16ResourceResponseES2_'/>
+<inh f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='55' c='WebCore::ResourceResponseBase'/>
+<def f='WebKit/Source/WebCore/platform/network/soup/ResourceResponse.h' l='36' ll='63'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIURLResponse.h' l='42' c='_ZN3API11URLResponse6createERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIURLResponse.h' l='47' c='_ZNK3API11URLResponse16resourceResponseEv'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIURLResponse.h' l='53' c='_ZN3API11URLResponseC1ERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIURLResponse.h' l='55'/>
+<use f='WebKit/Source/WebKit/Shared/API/c/WKSharedAPICast.h' l='216' c='_ZN6WebKit5toAPIERKN7WebCore16ResourceResponseE'/>
+<size>264</size>
+<fun r='_ZN7WebCore16ResourceResponseC1Ev'/>
+<fun r='_ZN7WebCore16ResourceResponseC1ERKN3WTF3URLERKNS1_6StringExS7_'/>
+<fun r='_ZN7WebCore16ResourceResponseC1EP12_SoupMessageRKN3WTF7CStringE'/>
+<fun r='_ZNK7WebCore16ResourceResponse24updateSoupMessageHeadersEP18SoupMessageHeaders'/>
+<fun r='_ZN7WebCore16ResourceResponse28updateFromSoupMessageHeadersEP18SoupMessageHeaders'/>
+<fun r='_ZNK7WebCore16ResourceResponse22soupMessageCertificateEv'/>
+<fun r='_ZNK7WebCore16ResourceResponse20soupMessageTLSErrorsEv'/>
+<mbr r='WebCore::ResourceResponse::m_sniffedContentType' o='1920' t='WTF::String'/>
+<mbr r='WebCore::ResourceResponse::m_certificate' o='1984' t='GRefPtr&lt;GTlsCertificate&gt;'/>
+<mbr r='WebCore::ResourceResponse::m_tlsErrors' o='2048' t='GTlsCertificateFlags'/>
+<fun r='_ZN7WebCore16ResourceResponse24doUpdateResourceResponseEv'/>
+<fun r='_ZNK7WebCore16ResourceResponse25platformSuggestedFilenameEv'/>
+<fun r='_ZNK7WebCore16ResourceResponse23platformCertificateInfoEv'/>
+<use f='WebKit/Source/WebCore/platform/network/AuthenticationChallengeBase.h' l='40' c='_ZN7WebCore27AuthenticationChallengeBaseC1ERKNS_15ProtectionSpaceERKNS_10CredentialEjRKNS_16ResourceResponseERKNS_13ResourceErrorE'/>
+<use f='WebKit/Source/WebCore/platform/network/AuthenticationChallengeBase.h' l='45' c='_ZNK7WebCore27AuthenticationChallengeBase15failureResponseEv'/>
+<use f='WebKit/Source/WebCore/platform/network/AuthenticationChallengeBase.h' l='61'/>
+<use f='WebKit/Source/WebCore/platform/network/soup/AuthenticationChallenge.h' l='44' c='_ZN7WebCore23AuthenticationChallengeC1ERKNS_15ProtectionSpaceERKNS_10CredentialEjRKNS_16ResourceResponseERKNS_13ResourceErrorE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.h' l='207' c='_ZN6WebKit14NetworkProcess27findPendingDownloadLocationERNS_15NetworkDataTaskEOiRKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadClient.h' l='52' c='_ZN6WebKit17NetworkLoadClient25willSendRedirectedRequestEON7WebCore15ResourceRequestES3_ONS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadClient.h' l='53' c='_ZN6WebKit17NetworkLoadClient18didReceiveResponseEON7WebCore16ResourceResponseEON3WTF17CompletionHandlerIFvNS1_12PolicyActionEEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/PendingDownload.h' l='54' c='_ZN6WebKit15PendingDownloadC1EPN3IPC10ConnectionEOSt10unique_ptrINS_11NetworkLoadESt14default_deleteIS5_EEON3WTF17CompletionHandlerIFvN7WebCore12Polic2295143'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/PendingDownload.h' l='69' c='_ZN6WebKit15PendingDownload25willSendRedirectedRequestEON7WebCore15ResourceRequestES3_ONS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/PendingDownload.h' l='70' c='_ZN6WebKit15PendingDownload18didReceiveResponseEON7WebCore16ResourceResponseEON3WTF17CompletionHandlerIFvNS1_12PolicyActionEEEE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedRawResourceClient.h' l='42' c='_ZN7WebCore23CachedRawResourceClient16responseReceivedERNS_14CachedResourceERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedRawResourceClient.h' l='48' c='_ZN7WebCore23CachedRawResourceClient19shouldCacheResponseERNS_14CachedResourceERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedRawResourceClient.h' l='50' c='_ZN7WebCore23CachedRawResourceClient16redirectReceivedERNS_14CachedResourceEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<use f='WebKit/Source/WebCore/loader/SubstituteData.h' l='46' c='_ZN7WebCore14SubstituteDataC1EON3WTF6RefPtrINS_12SharedBufferENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEERKNS1_3URLERKNS_16ResourceRes14206046'/>
+<use f='WebKit/Source/WebCore/loader/SubstituteData.h' l='61' c='_ZNK7WebCore14SubstituteData8responseEv'/>
+<use f='WebKit/Source/WebCore/loader/SubstituteData.h' l='66'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='205' c='_ZNK7WebCore14DocumentLoader8responseEv'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='208' c='_ZN7WebCore14DocumentLoader11setResponseERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='255' c='_ZN7WebCore14DocumentLoader11addResponseERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='256' c='_ZNK7WebCore14DocumentLoader9responsesEv'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='297' c='_ZN7WebCore14DocumentLoader58stopLoadingAfterXFrameOptionsOrContentSecurityPolicyDeniedEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='462' c='_ZN7WebCore14DocumentLoader15willSendRequestEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='465' c='_ZN7WebCore14DocumentLoader16redirectReceivedERNS_14CachedResourceEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='466' c='_ZN7WebCore14DocumentLoader16responseReceivedERNS_14CachedResourceERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='473' c='_ZN7WebCore14DocumentLoader16responseReceivedERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='488' c='_ZN7WebCore14DocumentLoader25isPostOrRedirectAfterPostERKNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='548'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='578'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoaderClient.h' l='143' c='_ZN7WebCore17FrameLoaderClient23dispatchWillSendRequestEPNS_14DocumentLoaderEmRNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoaderClient.h' l='154' c='_ZN7WebCore17FrameLoaderClient26dispatchDidReceiveResponseEPNS_14DocumentLoaderEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoaderClient.h' l='158' c='_ZN7WebCore17FrameLoaderClient38dispatchDidLoadResourceFromMemoryCacheEPNS_14DocumentLoaderERKNS_15ResourceRequestERKNS_16ResourceResponseEi'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoaderClient.h' l='193' c='_ZN7WebCore17FrameLoaderClient31dispatchDecidePolicyForResponseERKNS_16ResourceResponseERKNS_15ResourceRequestENS_21PolicyCheckIdentifierERKN3WTF6Stri7729428'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoaderClient.h' l='195' c='_ZN7WebCore17FrameLoaderClient39dispatchDecidePolicyForNavigationActionERKNS_16NavigationActionERKNS_15ResourceRequestERKNS_16ResourceResponseEPNS_9Fo2376685'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoaderClient.h' l='248' c='_ZNK7WebCore17FrameLoaderClient23cannotShowMIMETypeErrorERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoaderClient.h' l='249' c='_ZNK7WebCore17FrameLoaderClient21fileDoesNotExistErrorERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoaderClient.h' l='250' c='_ZNK7WebCore17FrameLoaderClient25pluginWillHandleLoadErrorERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoaderClient.h' l='285' c='_ZN7WebCore17FrameLoaderClient33convertMainResourceLoadToDownloadEPNS_14DocumentLoaderERKNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.h' l='86' c='_ZN6WebKit20WebFrameLoaderClient23dispatchWillSendRequestEPN7WebCore14DocumentLoaderEmRNS1_15ResourceRequestERKNS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.h' l='95' c='_ZN6WebKit20WebFrameLoaderClient26dispatchDidReceiveResponseEPN7WebCore14DocumentLoaderEmRKNS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.h' l='99' c='_ZN6WebKit20WebFrameLoaderClient38dispatchDidLoadResourceFromMemoryCacheEPN7WebCore14DocumentLoaderERKNS1_15ResourceRequestERKNS1_16ResourceResponseEi'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.h' l='132' c='_ZN6WebKit20WebFrameLoaderClient31dispatchDecidePolicyForResponseERKN7WebCore16ResourceResponseERKNS1_15ResourceRequestENS1_21PolicyCheckIdentifierERK12593634'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.h' l='134' c='_ZN6WebKit20WebFrameLoaderClient39dispatchDecidePolicyForNavigationActionERKN7WebCore16NavigationActionERKNS1_15ResourceRequestERKNS1_16ResourceRespon314531'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.h' l='176' c='_ZNK6WebKit20WebFrameLoaderClient23cannotShowMIMETypeErrorERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.h' l='177' c='_ZNK6WebKit20WebFrameLoaderClient21fileDoesNotExistErrorERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.h' l='178' c='_ZNK6WebKit20WebFrameLoaderClient25pluginWillHandleLoadErrorERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.h' l='214' c='_ZN6WebKit20WebFrameLoaderClient33convertMainResourceLoadToDownloadEPN7WebCore14DocumentLoaderERKNS1_15ResourceRequestERKNS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebFrame.h' l='96' c='_ZN6WebKit8WebFrame33convertMainResourceLoadToDownloadEPN7WebCore14DocumentLoaderERKNS1_15ResourceRequestERKNS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/API/APIInjectedBundlePageResourceLoadClient.h' l='49' c='_ZN3API14InjectedBundle18ResourceLoadClient23willSendRequestForFrameERN6WebKit7WebPageERNS2_8WebFrameEmRN7WebCore15ResourceRequestERKNS7_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/API/APIInjectedBundlePageResourceLoadClient.h' l='50' c='_ZN3API14InjectedBundle18ResourceLoadClient29didReceiveResponseForResourceERN6WebKit7WebPageERNS2_8WebFrameEmRKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/InjectedBundlePagePolicyClient.h' l='57' c='_ZN6WebKit30InjectedBundlePagePolicyClient23decidePolicyForResponseEPNS_7WebPageEPNS_8WebFrameERKN7WebCore16ResourceResponseERKNS5_15ResourceRequestER14931834'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeTask.h' l='55'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeTask.h' l='84' c='_ZN6WebKit16WebURLSchemeTask22willPerformRedirectionEON7WebCore16ResourceResponseEONS1_15ResourceRequestEON3WTF8FunctionIFvS5_EEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeTask.h' l='85' c='_ZN6WebKit16WebURLSchemeTask21didPerformRedirectionEON7WebCore16ResourceResponseEONS1_15ResourceRequestE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeTask.h' l='86' c='_ZN6WebKit16WebURLSchemeTask18didReceiveResponseERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeTask.h' l='117'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeHandler.h' l='44'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.h' l='217' c='_ZN7WebCore14CachedResource16redirectReceivedEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.h' l='218' c='_ZN7WebCore14CachedResource16responseReceivedERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.h' l='219' c='_ZN7WebCore14CachedResource19shouldCacheResponseERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.h' l='220' c='_ZN7WebCore14CachedResource11setResponseERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.h' l='221' c='_ZNK7WebCore14CachedResource8responseEv'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.h' l='278' c='_ZN7WebCore14CachedResource31updateResponseAfterRevalidationERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.h' l='321' c='_ZNK7WebCore14CachedResource17freshnessLifetimeERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.h' l='329'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.h' l='99' c='_ZN7WebCore14ResourceHandle25loadResourceSynchronouslyEPNS_17NetworkingContextERKNS_15ResourceRequestENS_23StoredCredentialsPolicyEPNS_14SecurityOrigi8894014'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.h' l='106' c='_ZN7WebCore14ResourceHandle18didReceiveResponseEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.h' l='179' c='_ZN7WebCore14ResourceHandle8checkTAOERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.h' l='208'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.h' l='228' c='_ZN7WebCore14ResourceHandle33platformLoadResourceSynchronouslyEPNS_17NetworkingContextERKNS_15ResourceRequestENS_23StoredCredentialsPolicyEPNS_14Secur1644635'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.h' l='51' c='_ZN7WebCore18BlobResourceHandle25loadResourceSynchronouslyEPNS_8BlobDataERKNS_15ResourceRequestERNS_13ResourceErrorERNS_16ResourceResponseERN3WTF6Vect3974053'/>
+<use f='WebKit/Source/WebCore/loader/ThreadableLoaderClient.h' l='44' c='_ZN7WebCore22ThreadableLoaderClient18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/fileapi/FileReaderLoader.h' l='72' c='_ZN7WebCore16FileReaderLoader18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1109' c='_ZN6WebKit7WebPage41shouldUseCustomContentProviderForResponseERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1153' c='_ZNK6WebKit7WebPage15canShowResponseERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1574' c='_ZN6WebKit7WebPage12loadDataImplEmbOSt8optionalINS_19WebsitePoliciesDataEEON3WTF3RefIN7WebCore12SharedBufferENS5_12RawPtrTraitsIS8_EEEEONS7_15Resource16749402'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1583' c='_ZN6WebKit7WebPage31loadSimulatedRequestAndResponseEONS_14LoadParametersEON7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1854' c='_ZN6WebKit7WebPage23canPluginHandleResponseERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1872' c='_ZN6WebKit7WebPage35urlSchemeTaskWillPerformRedirectionEmmON7WebCore16ResourceResponseEONS1_15ResourceRequestEON3WTF17CompletionHandlerIFvS5_EEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1873' c='_ZN6WebKit7WebPage34urlSchemeTaskDidPerformRedirectionEmmON7WebCore16ResourceResponseEONS1_15ResourceRequestE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1874' c='_ZN6WebKit7WebPage31urlSchemeTaskDidReceiveResponseEmmRKN7WebCore16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/Shared/WebErrors.h' l='48' c='_ZN6WebKit23cannotShowMIMETypeErrorERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/Shared/WebErrors.h' l='49' c='_ZN6WebKit21fileDoesNotExistErrorERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/Shared/WebErrors.h' l='50' c='_ZN6WebKit25pluginWillHandleLoadErrorERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/Shared/WebErrors.h' l='54' c='_ZN6WebKit28downloadCancelledByUserErrorERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/Shared/WebErrors.h' l='55' c='_ZN6WebKit24downloadDestinationErrorERKN7WebCore16ResourceResponseERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebKit/Shared/soup/WebErrorsSoup.cpp' l='42' c='_ZN6WebKit28downloadCancelledByUserErrorERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/Shared/soup/WebErrorsSoup.cpp' l='47' c='_ZN6WebKit24downloadDestinationErrorERKN7WebCore16ResourceResponseERKN3WTF6StringE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/cache/CachedImage.h' l='133' c='_ZN7WebCore11CachedImage16responseReceivedERKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadObserver.h' l='54' c='_ZN7WebCore20ResourceLoadObserver21logSubresourceLoadingEPKNS_5FrameERKNS_15ResourceRequestERKNS_16ResourceResponseENS0_28FetchDestinationIsScriptLikeE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.h' l='245' c='_ZN6WebKit19NetworkProcessProxy37resourceLoadDidPerformHTTPRedirectionEN3WTF16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEEONS_16ResourceLoadInf10896112'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.h' l='247' c='_ZN6WebKit19NetworkProcessProxy30resourceLoadDidReceiveResponseEN3WTF16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEEONS_16ResourceLoadInfoEON7We177333'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.h' l='248' c='_ZN6WebKit19NetworkProcessProxy32resourceLoadDidCompleteWithErrorEN3WTF16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEEONS_16ResourceLoadInfoEON712063778'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/Shared/API/APIURLResponse.cpp' l='34' c='_ZN3API11URLResponseC1ERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIURLResponse.cpp' l='46' c='_ZN3API11URLResponse6decodeERN3IPC7DecoderERN3WTF6RefPtrINS_6ObjectENS4_12RawPtrTraitsIS6_EENS4_21DefaultRefDerefTraitsIS6_EEEE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/Modules/websockets/ThreadableWebSocketChannel.h' l='88' c='_ZNK7WebCore26ThreadableWebSocketChannel23serverHandshakeResponseEv'/>
+<use f='WebKit/Source/WebCore/Modules/websockets/WebSocketChannelInspector.h' l='43' c='_ZN7WebCore25WebSocketChannelInspector36didReceiveWebSocketHandshakeResponseEPNS_8DocumentERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannel.h' l='90' c='_ZN6WebKit16WebSocketChannel27didReceiveHandshakeResponseEON7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannel.h' l='105' c='_ZNK6WebKit16WebSocketChannel23serverHandshakeResponseEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannel.h' l='119'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/NetworkProcessConnection.h' l='99' c='_ZN6WebKit24NetworkProcessConnection17didFinishPingLoadEmON7WebCore13ResourceErrorEONS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/PrefetchCache.h' l='50' c='_ZN6WebKit13PrefetchCache5EntryC1EON7WebCore16ResourceResponseEON3WTF6RefPtrINS2_12SharedBufferENS5_12RawPtrTraitsIS7_EENS5_21DefaultRefDerefTraitsIS7_EEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/PrefetchCache.h' l='51' c='_ZN6WebKit13PrefetchCache5EntryC1EON7WebCore16ResourceResponseEONS2_15ResourceRequestE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/PrefetchCache.h' l='55'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/PrefetchCache.h' l='61' c='_ZN6WebKit13PrefetchCache5storeERKN3WTF3URLEON7WebCore16ResourceResponseEONS1_6RefPtrINS5_12SharedBufferENS1_12RawPtrTraitsIS9_EENS1_21DefaultRefDerefTraitsIS9_EEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/PrefetchCache.h' l='62' c='_ZN6WebKit13PrefetchCache13storeRedirectERKN3WTF3URLEON7WebCore16ResourceResponseEONS5_15ResourceRequestE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkDataTask.h' l='62' c='_ZN6WebKit21NetworkDataTaskClient26willPerformHTTPRedirectionEON7WebCore16ResourceResponseEONS1_15ResourceRequestEON3WTF17CompletionHandlerIFvS5_EEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkDataTask.h' l='64' c='_ZN6WebKit21NetworkDataTaskClient18didReceiveResponseEON7WebCore16ResourceResponseENS_19NegotiatedLegacyTLSEON3WTF17CompletionHandlerIFvNS1_12PolicyActionEEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkDataTask.h' l='95' c='_ZN6WebKit15NetworkDataTask18didReceiveResponseEON7WebCore16ResourceResponseENS_19NegotiatedLegacyTLSEON3WTF17CompletionHandlerIFvNS1_12PolicyActionEEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoad.h' l='66' c='_ZN6WebKit11NetworkLoad21convertTaskToDownloadERNS_15PendingDownloadERKN7WebCore15ResourceRequestERKNS3_16ResourceResponseEON3WTF17CompletionHandlerIF6808249'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoad.h' l='79' c='_ZN6WebKit11NetworkLoad26willPerformHTTPRedirectionEON7WebCore16ResourceResponseEONS1_15ResourceRequestEON3WTF17CompletionHandlerIFvS5_EEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoad.h' l='81' c='_ZN6WebKit11NetworkLoad18didReceiveResponseEON7WebCore16ResourceResponseENS_19NegotiatedLegacyTLSEON3WTF17CompletionHandlerIFvNS1_12PolicyActionEEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoad.h' l='90' c='_ZN6WebKit11NetworkLoad24notifyDidReceiveResponseEON7WebCore16ResourceResponseENS_19NegotiatedLegacyTLSEON3WTF17CompletionHandlerIFvNS1_12PolicyActionEEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PrivateClickMeasurementNetworkLoader.h' l='42'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PrivateClickMeasurementNetworkLoader.h' l='52' c='_ZN6WebKit36PrivateClickMeasurementNetworkLoader25willSendRedirectedRequestEON7WebCore15ResourceRequestES3_ONS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PrivateClickMeasurementNetworkLoader.h' l='53' c='_ZN6WebKit36PrivateClickMeasurementNetworkLoader18didReceiveResponseEON7WebCore16ResourceResponseEON3WTF17CompletionHandlerIFvNS1_12PolicyActionEEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PrivateClickMeasurementNetworkLoader.h' l='65'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheEntry.h' l='47' c='_ZN6WebKit12NetworkCache5EntryC1ERKNS0_3KeyERKN7WebCore16ResourceResponseEON3WTF6RefPtrINS5_12SharedBufferENS9_12RawPtrTraitsISB_EENS9_21DefaultRefDer2775677'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheEntry.h' l='48' c='_ZN6WebKit12NetworkCache5EntryC1ERKNS0_3KeyERKN7WebCore16ResourceResponseERKNS5_15ResourceRequestERKN3WTF6VectorISt4pairINSC_6StringESF_ELm0ENSC_15Cra14948298'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheEntry.h' l='57' c='_ZNK6WebKit12NetworkCache5Entry8responseEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheEntry.h' l='87'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/ServiceWorkerSoftUpdateLoader.h' l='64' c='_ZN6WebKit29ServiceWorkerSoftUpdateLoader25willSendRedirectedRequestEON7WebCore15ResourceRequestES3_ONS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/ServiceWorkerSoftUpdateLoader.h' l='65' c='_ZN6WebKit29ServiceWorkerSoftUpdateLoader18didReceiveResponseEON7WebCore16ResourceResponseEON3WTF17CompletionHandlerIFvNS1_12PolicyActionEEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/ServiceWorkerSoftUpdateLoader.h' l='74' c='_ZN6WebKit29ServiceWorkerSoftUpdateLoader15processResponseERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/Modules/cache/DOMCacheEngine.h' l='56' c='_ZN7WebCore14DOMCacheEngine15queryCacheMatchERKNS_15ResourceRequestES3_RKNS_16ResourceResponseERKNS_17CacheQueryOptionsE'/>
+<use f='WebKit/Source/WebCore/Modules/cache/DOMCacheEngine.h' l='76'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebResourceLoader.h' l='81' c='_ZN6WebKit17WebResourceLoader15willSendRequestEON7WebCore15ResourceRequestEON3IPC17FormDataReferenceEONS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebResourceLoader.h' l='83' c='_ZN6WebKit17WebResourceLoader18didReceiveResponseERKN7WebCore16ResourceResponseEb'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebResourceLoader.h' l='91' c='_ZN6WebKit17WebResourceLoader58stopLoadingAfterXFrameOptionsOrContentSecurityPolicyDeniedERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/LoaderStrategy.h' l='61' c='_ZN7WebCore14LoaderStrategy25loadResourceSynchronouslyERNS_11FrameLoaderEmRKNS_15ResourceRequestENS_22ClientCredentialPolicyERKNS_12FetchOptionsERKNS_9904374'/>
+<use f='WebKit/Source/WebCore/loader/LoaderStrategy.h' l='77'/>
+<use f='WebKit/Source/WebCore/loader/LoaderStrategy.h' l='89' c='_ZNK7WebCore14LoaderStrategy27havePerformedSecurityChecksERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/LoaderStrategy.h' l='91' c='_ZN7WebCore14LoaderStrategy34responseFromResourceLoadIdentifierEm'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandleClient.h' l='78' c='_ZN7WebCore20ResourceHandleClient20willSendRequestAsyncEPNS_14ResourceHandleEONS_15ResourceRequestEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandleClient.h' l='80' c='_ZN7WebCore20ResourceHandleClient23didReceiveResponseAsyncEPNS_14ResourceHandleEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.h' l='68' c='_ZN7WebCore14ResourceLoader22deliverResponseAndDataERKNS_16ResourceResponseEON3WTF6RefPtrINS_12SharedBufferENS4_12RawPtrTraitsIS6_EENS4_21DefaultRefDerefTraitsIS6_EEEE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.h' l='98' c='_ZNK7WebCore14ResourceLoader8responseEv'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.h' l='105' c='_ZN7WebCore14ResourceLoader15willSendRequestEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.h' l='107' c='_ZN7WebCore14ResourceLoader18didReceiveResponseERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.h' l='177' c='_ZN7WebCore14ResourceLoader23willSendRequestInternalEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.h' l='182'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.h' l='201' c='_ZN7WebCore14ResourceLoader23didReceiveResponseAsyncEPNS_14ResourceHandleEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.h' l='202' c='_ZN7WebCore14ResourceLoader20willSendRequestAsyncEPNS_14ResourceHandleEONS_15ResourceRequestEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.h' l='55' c='_ZN6WebKit17WebLoaderStrategy25loadResourceSynchronouslyERN7WebCore11FrameLoaderEmRKNS1_15ResourceRequestENS1_22ClientCredentialPolicyERKNS1_12FetchOp10967908'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.h' l='70' c='_ZN6WebKit17WebLoaderStrategy17didFinishPingLoadEmON7WebCore13ResourceErrorEONS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.h' l='102'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.h' l='109' c='_ZN6WebKit17WebLoaderStrategy34responseFromResourceLoadIdentifierEm'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.h' l='114' c='_ZNK6WebKit17WebLoaderStrategy27havePerformedSecurityChecksERKN7WebCore16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/InjectedBundlePageResourceLoadClient.h' l='55' c='_ZN6WebKit36InjectedBundlePageResourceLoadClient23willSendRequestForFrameERNS_7WebPageERNS_8WebFrameEmRN7WebCore15ResourceRequestERKNS5_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/InjectedBundlePageResourceLoadClient.h' l='56' c='_ZN6WebKit36InjectedBundlePageResourceLoadClient29didReceiveResponseForResourceERNS_7WebPageERNS_8WebFrameEmRKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.h' l='55' c='_ZN7WebCore20ResourceLoadNotifier15willSendRequestEPNS_14ResourceLoaderERNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.h' l='56' c='_ZN7WebCore20ResourceLoadNotifier18didReceiveResponseEPNS_14ResourceLoaderERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.h' l='62' c='_ZN7WebCore20ResourceLoadNotifier23dispatchWillSendRequestEPNS_14DocumentLoaderEmRNS_15ResourceRequestERKNS_16ResourceResponseEPKNS_14CachedResourceE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.h' l='63' c='_ZN7WebCore20ResourceLoadNotifier26dispatchDidReceiveResponseEPNS_14DocumentLoaderEmRKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.h' l='68' c='_ZN7WebCore20ResourceLoadNotifier29sendRemainingDelegateMessagesEPNS_14DocumentLoaderEmRKNS_15ResourceRequestERKNS_16ResourceResponseEPKhiiRKNS_13ResourceErrorE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.h' l='130' c='_ZN7WebCore11FrameLoader25loadResourceSynchronouslyERKNS_15ResourceRequestENS_22ClientCredentialPolicyERKNS_12FetchOptionsERKNS_13HTTPHeaderMapERNS_13665605'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.h' l='223' c='_ZN7WebCore11FrameLoader18checkContentPolicyERKNS_16ResourceResponseENS_21PolicyCheckIdentifierEON3WTF8FunctionIFvNS_12PolicyActionES4_EEE'/>
+<use f='WebKit/Source/WebCore/loader/PolicyChecker.h' l='73' c='_ZN7WebCore11FrameLoader13PolicyChecker21checkNavigationPolicyEONS_15ResourceRequestERKNS_16ResourceResponseEPNS_14DocumentLoaderEON3WTF6RefPtrINS_9Fo16209104'/>
+<use f='WebKit/Source/WebCore/loader/PolicyChecker.h' l='74' c='_ZN7WebCore11FrameLoader13PolicyChecker21checkNavigationPolicyEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS3_ONS7_7Weak4259530'/>
+<use f='WebKit/Source/WebCore/loader/PolicyChecker.h' l='79' c='_ZN7WebCore11FrameLoader13PolicyChecker18cannotShowMIMETypeERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/PlatformMediaResourceLoader.h' l='48' c='_ZN7WebCore27PlatformMediaResourceClient16responseReceivedERNS_21PlatformMediaResourceERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvNS_25Should6958749'/>
+<use f='WebKit/Source/WebCore/platform/graphics/PlatformMediaResourceLoader.h' l='49' c='_ZN7WebCore27PlatformMediaResourceClient16redirectReceivedERNS_21PlatformMediaResourceEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/PlatformMediaResourceLoader.h' l='50' c='_ZN7WebCore27PlatformMediaResourceClient19shouldCacheResponseERNS_21PlatformMediaResourceERKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/WebProcess/Network/NetworkProcessConnection.cpp' l='229' c='_ZN6WebKit24NetworkProcessConnection17didFinishPingLoadEmON7WebCore13ResourceErrorEONS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebURLSchemeTaskProxy.h' l='55' c='_ZN6WebKit21WebURLSchemeTaskProxy21didPerformRedirectionEON7WebCore16ResourceResponseEONS1_15ResourceRequestEON3WTF17CompletionHandlerIFvS5_EEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebURLSchemeTaskProxy.h' l='56' c='_ZN6WebKit21WebURLSchemeTaskProxy18didReceiveResponseERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebURLSchemeHandlerProxy.h' l='55' c='_ZN6WebKit24WebURLSchemeHandlerProxy17loadSynchronouslyEmRNS_8WebFrameERKN7WebCore15ResourceRequestERNS3_16ResourceResponseERNS3_13ResourceErrorERN3WT12463681'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebURLSchemeHandlerProxy.h' l='60' c='_ZN6WebKit24WebURLSchemeHandlerProxy25taskDidPerformRedirectionEmON7WebCore16ResourceResponseEONS1_15ResourceRequestEON3WTF17CompletionHandlerIFvS5_EEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebURLSchemeHandlerProxy.h' l='61' c='_ZN6WebKit24WebURLSchemeHandlerProxy22taskDidReceiveResponseEmRKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.h' l='97' c='_ZN7WebCore20ApplicationCacheHost32maybeLoadFallbackForMainResponseERKNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.h' l='103' c='_ZN7WebCore20ApplicationCacheHost28maybeLoadFallbackForRedirectEPNS_14ResourceLoaderERNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.h' l='104' c='_ZN7WebCore20ApplicationCacheHost28maybeLoadFallbackForResponseEPNS_14ResourceLoaderERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.h' l='107' c='_ZN7WebCore20ApplicationCacheHost22maybeLoadSynchronouslyERNS_15ResourceRequestERNS_13ResourceErrorERNS_16ResourceResponseERN3WTF6RefPtrINS_12SharedBu10947111'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.h' l='108' c='_ZN7WebCore20ApplicationCacheHost30maybeLoadFallbackSynchronouslyERKNS_15ResourceRequestERNS_13ResourceErrorERNS_16ResourceResponseERN3WTF6RefPtrINS_116047735'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentationWebKit.h' l='44' c='_ZN7WebCore30InspectorInstrumentationWebKit23shouldInterceptResponseEPKNS_5FrameERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentationWebKit.h' l='46' c='_ZN7WebCore30InspectorInstrumentationWebKit17interceptResponseEPKNS_5FrameERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS6_NS7_6RefPtrINS_12Sh8288438'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentationWebKit.h' l='46' c='_ZN7WebCore30InspectorInstrumentationWebKit17interceptResponseEPKNS_5FrameERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS6_NS7_6RefPtrINS_12Sh8288438'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentationWebKit.h' l='50' c='_ZN7WebCore30InspectorInstrumentationWebKit31shouldInterceptResponseInternalERKNS_5FrameERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentationWebKit.h' l='52' c='_ZN7WebCore30InspectorInstrumentationWebKit25interceptResponseInternalERKNS_5FrameERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS6_NS7_6RefPtr2852903'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentationWebKit.h' l='52' c='_ZN7WebCore30InspectorInstrumentationWebKit25interceptResponseInternalERKNS_5FrameERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS6_NS7_6RefPtr2852903'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentationWebKit.h' l='64' c='_ZN7WebCore30InspectorInstrumentationWebKit23shouldInterceptResponseEPKNS_5FrameERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentationWebKit.h' l='79' c='_ZN7WebCore30InspectorInstrumentationWebKit17interceptResponseEPKNS_5FrameERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS6_NS7_6RefPtrINS_12Sh8288438'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentationWebKit.h' l='79' c='_ZN7WebCore30InspectorInstrumentationWebKit17interceptResponseEPKNS_5FrameERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS6_NS7_6RefPtrINS_12Sh8288438'/>
+<use f='WebKit/Source/WebCore/loader/NetscapePlugInStreamLoader.h' l='42' c='_ZN7WebCore32NetscapePlugInStreamLoaderClient15willSendRequestEPNS_26NetscapePlugInStreamLoaderEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF1715169576'/>
+<use f='WebKit/Source/WebCore/loader/NetscapePlugInStreamLoader.h' l='43' c='_ZN7WebCore32NetscapePlugInStreamLoaderClient18didReceiveResponseEPNS_26NetscapePlugInStreamLoaderERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/NetscapePlugInStreamLoader.h' l='63' c='_ZN7WebCore26NetscapePlugInStreamLoader15willSendRequestEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<use f='WebKit/Source/WebCore/loader/NetscapePlugInStreamLoader.h' l='64' c='_ZN7WebCore26NetscapePlugInStreamLoader18didReceiveResponseERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/platform/network/NetworkLoadInformation.h' l='39'/>
+<use f='WebKit/Source/WebCore/platform/network/NetworkLoadInformation.h' l='49'/>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.h' l='73' c='_ZN7WebCore17SubresourceLoader23willSendRequestInternalEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.h' l='75' c='_ZN7WebCore17SubresourceLoader18didReceiveResponseERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.h' l='92' c='_ZN7WebCore17SubresourceLoader37checkResponseCrossOriginAccessControlERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.h' l='93' c='_ZN7WebCore17SubresourceLoader40checkRedirectionCrossOriginAccessControlERKNS_15ResourceRequestERKNS_16ResourceResponseERS1_'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='578' c='_ZN6WebKit17WebLoaderStrategy25loadResourceSynchronouslyERN7WebCore11FrameLoaderEmRKNS1_15ResourceRequestENS1_22ClientCredentialPolicyERKNS1_12FetchOp10967908'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='658' c='_ZN6WebKit17WebLoaderStrategy25loadResourceSynchronouslyERN7WebCore11FrameLoaderEmRKNS1_15ResourceRequestENS1_22ClientCredentialPolicyERKNS1_12FetchOp10967908'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='741' c='_ZN6WebKit17WebLoaderStrategy17didFinishPingLoadEmON7WebCore13ResourceErrorEONS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='855' c='_ZN6WebKit17WebLoaderStrategy34responseFromResourceLoadIdentifierEm'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='857' c='_ZN6WebKit17WebLoaderStrategy34responseFromResourceLoadIdentifierEm'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='881' c='_ZNK6WebKit17WebLoaderStrategy27havePerformedSecurityChecksERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebResourceLoader.cpp' l='95' c='_ZN6WebKit17WebResourceLoader15willSendRequestEON7WebCore15ResourceRequestEON3IPC17FormDataReferenceEONS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebResourceLoader.cpp' l='126' c='_ZN6WebKit17WebResourceLoader18didReceiveResponseERKN7WebCore16ResourceResponseEb'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebResourceLoader.cpp' l='158' c='_ZN6WebKit17WebResourceLoader18didReceiveResponseERKN7WebCore16ResourceResponseEb'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebResourceLoader.cpp' l='284' c='_ZN6WebKit17WebResourceLoader58stopLoadingAfterXFrameOptionsOrContentSecurityPolicyDeniedERKN7WebCore16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/workers/WorkerScriptLoader.h' l='79' c='_ZN7WebCore18WorkerScriptLoader18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/workers/WorkerScriptLoader.h' l='86' c='_ZN7WebCore18WorkerScriptLoader22validateWorkerResponseERKNS_16ResourceResponseENS_12FetchOptions11DestinationE'/>
+<use f='WebKit/Source/WebCore/workers/WorkerScriptLoaderClient.h' l='35' c='_ZN7WebCore24WorkerScriptLoaderClient18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/workers/service/ServiceWorkerJob.h' l='73' c='_ZN7WebCore16ServiceWorkerJob29validateServiceWorkerResponseERKNS_20ServiceWorkerJobDataERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/workers/service/ServiceWorkerJob.h' l='77' c='_ZN7WebCore16ServiceWorkerJob18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyFrameLoaderClient.h' l='54' c='_ZN7WebCore22EmptyFrameLoaderClient33convertMainResourceLoadToDownloadEPNS_14DocumentLoaderERKNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyFrameLoaderClient.h' l='58' c='_ZN7WebCore22EmptyFrameLoaderClient23dispatchWillSendRequestEPNS_14DocumentLoaderEmRNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyFrameLoaderClient.h' l='68' c='_ZN7WebCore22EmptyFrameLoaderClient26dispatchDidReceiveResponseEPNS_14DocumentLoaderEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyFrameLoaderClient.h' l='75' c='_ZN7WebCore22EmptyFrameLoaderClient38dispatchDidLoadResourceFromMemoryCacheEPNS_14DocumentLoaderERKNS_15ResourceRequestERKNS_16ResourceResponseEi'/>
+<use f='WebKit/Source/WebCore/loader/EmptyFrameLoaderClient.h' l='99' c='_ZN7WebCore22EmptyFrameLoaderClient31dispatchDecidePolicyForResponseERKNS_16ResourceResponseERKNS_15ResourceRequestENS_21PolicyCheckIdentifierERKN3WTF15861978'/>
+<use f='WebKit/Source/WebCore/loader/EmptyFrameLoaderClient.h' l='101' c='_ZN7WebCore22EmptyFrameLoaderClient39dispatchDecidePolicyForNavigationActionERKNS_16NavigationActionERKNS_15ResourceRequestERKNS_16ResourceResponseEPN11502048'/>
+<use f='WebKit/Source/WebCore/loader/EmptyFrameLoaderClient.h' l='134' c='_ZNK7WebCore22EmptyFrameLoaderClient23cannotShowMIMETypeErrorERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyFrameLoaderClient.h' l='135' c='_ZNK7WebCore22EmptyFrameLoaderClient21fileDoesNotExistErrorERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyFrameLoaderClient.h' l='136' c='_ZNK7WebCore22EmptyFrameLoaderClient25pluginWillHandleLoadErrorERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/workers/service/context/ServiceWorkerFetch.h' l='51' c='_ZN7WebCore18ServiceWorkerFetch6Client21didReceiveRedirectionERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/workers/service/context/ServiceWorkerFetch.h' l='52' c='_ZN7WebCore18ServiceWorkerFetch6Client18didReceiveResponseERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchLoader.h' l='60' c='_ZN7WebCore11FetchLoader18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchLoaderClient.h' l='42' c='_ZN7WebCore17FetchLoaderClient18didReceiveResponseERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebServiceWorkerFetchTaskClient.h' l='50' c='_ZN6WebKit31WebServiceWorkerFetchTaskClient18didReceiveResponseERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebServiceWorkerFetchTaskClient.h' l='51' c='_ZN6WebKit31WebServiceWorkerFetchTaskClient21didReceiveRedirectionERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebServiceWorkerFetchTaskClient.h' l='69' c='_ZN6WebKit31WebServiceWorkerFetchTaskClient10BlobLoader18didReceiveResponseERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebServiceWorkerFetchTaskClient.cpp' l='54' c='_ZN6WebKit31WebServiceWorkerFetchTaskClient21didReceiveRedirectionERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebServiceWorkerFetchTaskClient.cpp' l='63' c='_ZN6WebKit31WebServiceWorkerFetchTaskClient18didReceiveResponseERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/ServiceWorkerFetchTask.h' l='79' c='_ZN6WebKit22ServiceWorkerFetchTask26didReceiveRedirectResponseEON7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/ServiceWorkerFetchTask.h' l='80' c='_ZN6WebKit22ServiceWorkerFetchTask18didReceiveResponseEON7WebCore16ResourceResponseEb'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/WebProcess/Plugins/PluginView.h' l='77' c='_ZN6WebKit10PluginView28manualLoadDidReceiveResponseERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Plugins/PluginView.h' l='266'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='519' c='_ZN6WebKit12WebPageProxy37resourceLoadDidPerformHTTPRedirectionEONS_16ResourceLoadInfoEON7WebCore16ResourceResponseEONS3_15ResourceRequestE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='521' c='_ZN6WebKit12WebPageProxy30resourceLoadDidReceiveResponseEONS_16ResourceLoadInfoEON7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='522' c='_ZN6WebKit12WebPageProxy32resourceLoadDidCompleteWithErrorEONS_16ResourceLoadInfoEON7WebCore16ResourceResponseEONS3_13ResourceErrorE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='644' c='_ZN6WebKit12WebPageProxy20loadSimulatedRequestEON7WebCore15ResourceRequestEONS1_16ResourceResponseERKN3IPC14ArrayReferenceIhLm18446744073709551615EEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='1742' c='_ZN6WebKit12WebPageProxy42decidePolicyForNavigationActionAsyncSharedEON3WTF3RefINS_15WebProcessProxyENS1_12RawPtrTraitsIS3_EEEENS1_16ObjectIdentifierI7128253'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='1743' c='_ZN6WebKit12WebPageProxy29decidePolicyForResponseSharedEON3WTF3RefINS_15WebProcessProxyENS1_12RawPtrTraitsIS3_EEEENS1_16ObjectIdentifierIN7WebCore18Pa15290405'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='1748' c='_ZN6WebKit12WebPageProxy41decidePolicyForNavigationActionSyncSharedEON3WTF3RefINS_15WebProcessProxyENS1_12RawPtrTraitsIS3_EEEENS1_16ObjectIdentifierIN16162262'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='2045' c='_ZN6WebKit12WebPageProxy31decidePolicyForNavigationActionEON3WTF3RefINS_15WebProcessProxyENS1_12RawPtrTraitsIS3_EEEERNS_13WebFrameProxyEONS_13FrameInf7131185'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='2048' c='_ZN6WebKit12WebPageProxy36decidePolicyForNavigationActionAsyncEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS_13FrameInfoDataENS3_21Poli7734577'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='2051' c='_ZN6WebKit12WebPageProxy35decidePolicyForNavigationActionSyncEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEbONS_13FrameInfoDataENS3_21Poli14737339'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='2055' c='_ZN6WebKit12WebPageProxy23decidePolicyForResponseEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS_13FrameInfoDataENS3_21PolicyCheckIdenti10795596'/>
+<use f='WebKit/Source/WebKit/Shared/WebNavigationDataStore.h' l='64'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='237' c='_ZN6WebKit20WebFrameLoaderClient23dispatchWillSendRequestEPN7WebCore14DocumentLoaderEmRNS1_15ResourceRequestERKNS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='277' c='_ZN6WebKit20WebFrameLoaderClient26dispatchDidReceiveResponseEPN7WebCore14DocumentLoaderEmRKNS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='325' c='_ZN6WebKit20WebFrameLoaderClient38dispatchDidLoadResourceFromMemoryCacheEPN7WebCore14DocumentLoaderERKNS1_15ResourceRequestERKNS1_16ResourceResponseEi'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='819' c='_ZN6WebKit20WebFrameLoaderClient31dispatchDecidePolicyForResponseERKN7WebCore16ResourceResponseERKNS1_15ResourceRequestENS1_21PolicyCheckIdentifierERK12593634'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='918' c='_ZN6WebKit20WebFrameLoaderClient39dispatchDecidePolicyForNavigationActionERKN7WebCore16NavigationActionERKNS1_15ResourceRequestERKNS1_16ResourceRespon314531'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='1329' c='_ZNK6WebKit20WebFrameLoaderClient23cannotShowMIMETypeErrorERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='1334' c='_ZNK6WebKit20WebFrameLoaderClient21fileDoesNotExistErrorERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='1339' c='_ZNK6WebKit20WebFrameLoaderClient25pluginWillHandleLoadErrorERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='1347' c='_ZNK6WebKit20WebFrameLoaderClient14shouldFallBackERKN7WebCore13ResourceErrorE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='1499' c='_ZN6WebKit20WebFrameLoaderClient36transitionToCommittedFromCachedFrameEPN7WebCore11CachedFrameE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='1593' c='_ZN6WebKit20WebFrameLoaderClient33convertMainResourceLoadToDownloadEPN7WebCore14DocumentLoaderERKNS1_15ResourceRequestERKNS1_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/DownloadManager.h' l='88' c='_ZN6WebKit15DownloadManager28convertNetworkLoadToDownloadEN3WTF16ObjectIdentifierINS_22DownloadIdentifierTypeEEEOSt10unique_ptrINS_11NetworkLoadESt14d14667575'/>
+<use f='WebKit/Source/WebCore/loader/SubstituteResource.h' l='39' c='_ZNK7WebCore18SubstituteResource8responseEv'/>
+<use f='WebKit/Source/WebCore/loader/SubstituteResource.h' l='45' c='_ZN7WebCore18SubstituteResourceC1EON3WTF3URLEONS_16ResourceResponseEONS1_3RefINS_12SharedBufferENS1_12RawPtrTraitsIS7_EEEE'/>
+<use f='WebKit/Source/WebCore/loader/SubstituteResource.h' l='54'/>
+<use f='WebKit/Source/WebCore/loader/archive/ArchiveResource.h' l='37' c='_ZN7WebCore15ArchiveResource6createEON3WTF6RefPtrINS_12SharedBufferENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEERKNS1_3URLERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/archive/ArchiveResource.h' l='40' c='_ZN7WebCore15ArchiveResource6createEON3WTF6RefPtrINS_12SharedBufferENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEERKNS1_3URLERKNS1_6Strin3508149'/>
+<use f='WebKit/Source/WebCore/loader/archive/ArchiveResource.h' l='40' c='_ZN7WebCore15ArchiveResource6createEON3WTF6RefPtrINS_12SharedBufferENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEERKNS1_3URLERKNS1_6Strin3508149'/>
+<use f='WebKit/Source/WebCore/loader/archive/ArchiveResource.h' l='50' c='_ZN7WebCore15ArchiveResourceC1EON3WTF3RefINS_12SharedBufferENS1_12RawPtrTraitsIS3_EEEERKNS1_3URLERKNS1_6StringESD_SD_RKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebFrame.cpp' l='303' c='_ZN6WebKit8WebFrame33convertMainResourceLoadToDownloadEPN7WebCore14DocumentLoaderERKNS1_15ResourceRequestERKNS1_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebURLSchemeHandlerProxy.cpp' l='66' c='_ZN6WebKit24WebURLSchemeHandlerProxy17loadSynchronouslyEmRNS_8WebFrameERKN7WebCore15ResourceRequestERNS3_16ResourceResponseERNS3_13ResourceErrorERN3WT12463681'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebURLSchemeHandlerProxy.cpp' l='81' c='_ZN6WebKit24WebURLSchemeHandlerProxy25taskDidPerformRedirectionEmON7WebCore16ResourceResponseEONS1_15ResourceRequestEON3WTF17CompletionHandlerIFvS5_EEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebURLSchemeHandlerProxy.cpp' l='90' c='_ZN6WebKit24WebURLSchemeHandlerProxy22taskDidReceiveResponseEmRKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebURLSchemeTaskProxy.cpp' l='96' c='_ZN6WebKit21WebURLSchemeTaskProxy21didPerformRedirectionEON7WebCore16ResourceResponseEONS1_15ResourceRequestEON3WTF17CompletionHandlerIFvS5_EEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebURLSchemeTaskProxy.cpp' l='123' c='_ZN6WebKit21WebURLSchemeTaskProxy18didReceiveResponseERKN7WebCore16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.h' l='102' c='_ZN7WebCore11MemoryCache21revalidationSucceededERNS_14CachedResourceERKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSocketChannel.h' l='74' c='_ZN6WebKit20NetworkSocketChannel27didReceiveHandshakeResponseEON7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/Modules/websockets/WebSocketHandshake.h' l='82' c='_ZNK7WebCore18WebSocketHandshake23serverHandshakeResponseEv'/>
+<use f='WebKit/Source/WebCore/Modules/websockets/WebSocketHandshake.h' l='106'/>
+<use f='WebKit/Source/WebCore/Modules/websockets/WebSocketChannel.h' l='121' c='_ZNK7WebCore16WebSocketChannel23serverHandshakeResponseEv'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadChecker.h' l='69'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadChecker.h' l='78' c='_ZN6WebKit18NetworkLoadChecker16checkRedirectionEON7WebCore15ResourceRequestES3_ONS1_16ResourceResponseEPNS1_27ContentSecurityPolicyClientEON3WTF17Com6710466'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadChecker.h' l='80' c='_ZN6WebKit18NetworkLoadChecker16validateResponseERKN7WebCore15ResourceRequestERNS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadChecker.h' l='97' c='_ZN6WebKit18NetworkLoadChecker24storeRedirectionIfNeededERKN7WebCore15ResourceRequestERKNS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkCORSPreflightChecker.h' l='71' c='_ZN6WebKit27NetworkCORSPreflightChecker26willPerformHTTPRedirectionEON7WebCore16ResourceResponseEONS1_15ResourceRequestEON3WTF17CompletionHandlerIFvS5_EEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkCORSPreflightChecker.h' l='73' c='_ZN6WebKit27NetworkCORSPreflightChecker18didReceiveResponseEON7WebCore16ResourceResponseENS_19NegotiatedLegacyTLSEON3WTF17CompletionHandlerIFvNS1_12PolicyActionEEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkCORSPreflightChecker.h' l='83'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.h' l='169' c='_ZN6WebKit12NetworkCache5Cache5storeERKN7WebCore15ResourceRequestERKNS2_16ResourceResponseEON3WTF6RefPtrINS2_12SharedBufferENS9_12RawPtrTraitsISB_EENS14878778'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.h' l='170' c='_ZN6WebKit12NetworkCache5Cache13storeRedirectERKN7WebCore15ResourceRequestERKNS2_16ResourceResponseES5_St8optionalIN3WTF7SecondsEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.h' l='171' c='_ZN6WebKit12NetworkCache5Cache6updateERKN7WebCore15ResourceRequestERKNS0_5EntryERKNS2_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.h' l='188' c='_ZN6WebKit12NetworkCache5Cache9makeEntryERKN7WebCore15ResourceRequestERKNS2_16ResourceResponseEON3WTF6RefPtrINS2_12SharedBufferENS9_12RawPtrTraitsISB_13097757'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.h' l='189' c='_ZN6WebKit12NetworkCache5Cache17makeRedirectEntryERKN7WebCore15ResourceRequestERKNS2_16ResourceResponseES5_'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkConnectionToWebProcess.h' l='126' c='_ZN6WebKit29NetworkConnectionToWebProcess33getNetworkLoadInformationResponseEmON3WTF17CompletionHandlerIFvRKN7WebCore16ResourceResponseEEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkConnectionToWebProcess.h' l='219' c='_ZN6WebKit29NetworkConnectionToWebProcess33convertMainResourceLoadToDownloadEmN3WTF16ObjectIdentifierINS_22DownloadIdentifierTypeEEERKN7WebCore15Resou824454'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='93' c='_ZNK6WebKit21NetworkResourceLoader8responseEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='110' c='_ZN6WebKit21NetworkResourceLoader25willSendRedirectedRequestEON7WebCore15ResourceRequestES3_ONS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='111' c='_ZN6WebKit21NetworkResourceLoader18didReceiveResponseEON7WebCore16ResourceResponseEON3WTF17CompletionHandlerIFvNS1_12PolicyActionEEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='122' c='_ZN6WebKit21NetworkResourceLoader17convertToDownloadEN3WTF16ObjectIdentifierINS_22DownloadIdentifierTypeEEERKN7WebCore15ResourceRequestERKNS5_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='165' c='_ZN6WebKit21NetworkResourceLoader54shouldInterruptLoadForCSPFrameAncestorsOrXFrameOptionsERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='171' c='_ZN6WebKit21NetworkResourceLoader30didReceiveMainResourceResponseERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='181' c='_ZN6WebKit21NetworkResourceLoader26platformDidReceiveResponseERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='194' c='_ZN6WebKit21NetworkResourceLoader33continueWillSendRedirectedRequestEON7WebCore15ResourceRequestES3_ONS1_16ResourceResponseEOSt8optionalINS1_23Private3933481'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='195' c='_ZN6WebKit21NetworkResourceLoader29didFinishWithRedirectResponseEON7WebCore15ResourceRequestES3_ONS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='196' c='_ZN6WebKit21NetworkResourceLoader26sanitizeResponseIfPossibleEON7WebCore16ResourceResponseENS1_20ResourceResponseBase16SanitizationTypeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='196' c='_ZN6WebKit21NetworkResourceLoader26sanitizeResponseIfPossibleEON7WebCore16ResourceResponseENS1_20ResourceResponseBase16SanitizationTypeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='207' c='_ZN6WebKit21NetworkResourceLoader40validateCacheEntryForMaxAgeCapValidationERKN7WebCore15ResourceRequestES4_RKNS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='217'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.h' l='251'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginPreflightResultCache.h' l='46' c='_ZN7WebCore35CrossOriginPreflightResultCacheItem6createENS_23StoredCredentialsPolicyERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadChecker.cpp' l='97' c='_ZN6WebKitL16redirectionErrorERKN7WebCore16ResourceResponseEON3WTF6StringE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadChecker.cpp' l='102' c='_ZN6WebKit18NetworkLoadChecker16checkRedirectionEON7WebCore15ResourceRequestES3_ONS1_16ResourceResponseEPNS1_27ContentSecurityPolicyClientEON3WTF17Com6710466'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadChecker.cpp' l='160' c='_ZN6WebKit18NetworkLoadChecker16validateResponseERKN7WebCore15ResourceRequestERNS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadChecker.cpp' l='244' c='_ZN6WebKit18NetworkLoadChecker44continueCheckingRequestOrDoSyntheticRedirectEON7WebCore15ResourceRequestES3_ON3WTF17CompletionHandlerIFvONS4_7VariantI11366762'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadChecker.cpp' l='456' c='_ZN6WebKit18NetworkLoadChecker24storeRedirectionIfNeededERKN7WebCore15ResourceRequestERKNS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadChecker.cpp' l='460' c='_ZN6WebKit18NetworkLoadChecker24storeRedirectionIfNeededERKN7WebCore15ResourceRequestERKNS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadChecker.cpp' l='460' c='_ZN6WebKit18NetworkLoadChecker24storeRedirectionIfNeededERKN7WebCore15ResourceRequestERKNS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.cpp' l='2119' c='_ZN6WebKit14NetworkProcess27findPendingDownloadLocationERNS_15NetworkDataTaskEON3WTF17CompletionHandlerIFvN7WebCore12PolicyActionEEEERKNS5_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheSpeculativeLoadManager.h' l='54' c='_ZN6WebKit12NetworkCache22SpeculativeLoadManager32registerMainResourceLoadResponseERKNS0_13GlobalFrameIDERKN7WebCore15ResourceRequestERKNS5_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.cpp' l='84'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.cpp' l='352' c='_ZN6WebKit21NetworkResourceLoader16resourceLoadInfoEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.cpp' l='476' c='_ZN6WebKit21NetworkResourceLoader17convertToDownloadEN3WTF16ObjectIdentifierINS_22DownloadIdentifierTypeEEERKN7WebCore15ResourceRequestERKNS5_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.cpp' l='560' c='_ZN6WebKit21NetworkResourceLoader54shouldInterruptLoadForCSPFrameAncestorsOrXFrameOptionsERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.cpp' l='586' c='_ZN6WebKit21NetworkResourceLoader18didReceiveResponseEON7WebCore16ResourceResponseEON3WTF17CompletionHandlerIFvNS1_12PolicyActionEEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.cpp' l='624' c='_ZN6WebKit21NetworkResourceLoader18didReceiveResponseEON7WebCore16ResourceResponseEON3WTF17CompletionHandlerIFvNS1_12PolicyActionEEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.cpp' l='641' c='_ZN6WebKit21NetworkResourceLoader18didReceiveResponseEON7WebCore16ResourceResponseEON3WTF17CompletionHandlerIFvNS1_12PolicyActionEEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.cpp' l='797' c='_ZN6WebKit21NetworkResourceLoader40validateCacheEntryForMaxAgeCapValidationERKN7WebCore15ResourceRequestES4_RKNS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.cpp' l='819' c='_ZN6WebKit21NetworkResourceLoader25willSendRedirectedRequestEON7WebCore15ResourceRequestES3_ONS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.cpp' l='883' c='_ZN6WebKit21NetworkResourceLoader33continueWillSendRedirectedRequestEON7WebCore15ResourceRequestES3_ONS1_16ResourceResponseEOSt8optionalINS1_23Private3933481'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.cpp' l='904' c='_ZN6WebKit21NetworkResourceLoader29didFinishWithRedirectResponseEON7WebCore15ResourceRequestES3_ONS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.cpp' l='929' c='_ZN6WebKit21NetworkResourceLoader26sanitizeResponseIfPossibleEON7WebCore16ResourceResponseENS1_20ResourceResponseBase16SanitizationTypeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.cpp' l='929' c='_ZN6WebKit21NetworkResourceLoader26sanitizeResponseIfPossibleEON7WebCore16ResourceResponseENS1_20ResourceResponseBase16SanitizationTypeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.cpp' l='1111' c='_ZN6WebKit21NetworkResourceLoader30didReceiveMainResourceResponseERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoader.cpp' l='1221' c='_ZN6WebKit21NetworkResourceLoader36dispatchWillSendRequestForCacheEntryEON7WebCore15ResourceRequestEOSt10unique_ptrINS_12NetworkCache5EntryESt14default_deleteIS6_EE'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSocketChannel.cpp' l='147' c='_ZN6WebKit20NetworkSocketChannel27didReceiveHandshakeResponseEON7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PingLoad.h' l='45' c='_ZN6WebKit8PingLoadC1ERNS_14NetworkProcessEN3PAL9SessionIDEONS_29NetworkResourceLoadParametersEON3WTF17CompletionHandlerIFvRKN7WebCore13ResourceErrorE12268560'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PingLoad.h' l='46' c='_ZN6WebKit8PingLoadC1ERNS_29NetworkConnectionToWebProcessEONS_29NetworkResourceLoadParametersEON3WTF17CompletionHandlerIFvRKN7WebCore13ResourceErrorER13927344'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PingLoad.h' l='54' c='_ZN6WebKit8PingLoad26willPerformHTTPRedirectionEON7WebCore16ResourceResponseEONS1_15ResourceRequestEON3WTF17CompletionHandlerIFvS5_EEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PingLoad.h' l='56' c='_ZN6WebKit8PingLoad18didReceiveResponseEON7WebCore16ResourceResponseENS_19NegotiatedLegacyTLSEON3WTF17CompletionHandlerIFvNS1_12PolicyActionEEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PingLoad.h' l='67' c='_ZN6WebKit8PingLoad9didFinishERKN7WebCore13ResourceErrorERKNS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PingLoad.h' l='71'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PingLoad.cpp' l='43' c='_ZN6WebKit8PingLoadC1ERNS_14NetworkProcessEN3PAL9SessionIDEONS_29NetworkResourceLoadParametersEON3WTF17CompletionHandlerIFvRKN7WebCore13ResourceErrorE12268560'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PingLoad.cpp' l='53' c='_ZN6WebKit8PingLoadC1ERNS_29NetworkConnectionToWebProcessEONS_29NetworkResourceLoadParametersEON3WTF17CompletionHandlerIFvRKN7WebCore13ResourceErrorER13927344'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PingLoad.cpp' l='113' c='_ZN6WebKit8PingLoad9didFinishERKN7WebCore13ResourceErrorERKNS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PingLoad.cpp' l='131' c='_ZN6WebKit8PingLoad26willPerformHTTPRedirectionEON7WebCore16ResourceResponseEONS1_15ResourceRequestEON3WTF17CompletionHandlerIFvS5_EEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PingLoad.cpp' l='163' c='_ZN6WebKit8PingLoad18didReceiveResponseEON7WebCore16ResourceResponseENS_19NegotiatedLegacyTLSEON3WTF17CompletionHandlerIFvNS1_12PolicyActionEEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PrivateClickMeasurementManager.h' l='51'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/PrivateClickMeasurementNetworkLoader.cpp' l='63' c='_ZN6WebKit36PrivateClickMeasurementNetworkLoader25willSendRedirectedRequestEON7WebCore15ResourceRequestES3_ONS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PrivateClickMeasurementNetworkLoader.cpp' l='68' c='_ZN6WebKit36PrivateClickMeasurementNetworkLoader18didReceiveResponseEON7WebCore16ResourceResponseEON3WTF17CompletionHandlerIFvNS1_12PolicyActionEEEE'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/DownloadManager.cpp' l='85' c='_ZN6WebKit15DownloadManager28convertNetworkLoadToDownloadEN3WTF16ObjectIdentifierINS_22DownloadIdentifierTypeEEEOSt10unique_ptrINS_11NetworkLoadESt14d14667575'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/PendingDownload.cpp' l='53' c='_ZN6WebKit15PendingDownloadC1EPN3IPC10ConnectionEOSt10unique_ptrINS_11NetworkLoadESt14default_deleteIS5_EEON3WTF17CompletionHandlerIFvN7WebCore12Polic2295143'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/PendingDownload.cpp' l='65' c='_ZN6WebKit15PendingDownload25willSendRedirectedRequestEON7WebCore15ResourceRequestES3_ONS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/PendingDownload.cpp' l='107' c='_ZN6WebKit15PendingDownload18didReceiveResponseEON7WebCore16ResourceResponseEON3WTF17CompletionHandlerIFvNS1_12PolicyActionEEEE'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/CacheStorageEngineCache.cpp' l='79' c='_ZN6WebKit12CacheStorageL21updateVaryInformationERNS0_17RecordInformationERKN7WebCore15ResourceRequestERKNS3_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/CacheStorageEngineCache.cpp' l='605' c='_ZN6WebKit12CacheStorageL20decodeDOMCacheRecordERN3WTF11Persistence7DecoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheSpeculativeLoad.h' l='62' c='_ZN6WebKit12NetworkCache15SpeculativeLoad25willSendRedirectedRequestEON7WebCore15ResourceRequestES4_ONS2_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheSpeculativeLoad.h' l='63' c='_ZN6WebKit12NetworkCache15SpeculativeLoad18didReceiveResponseEON7WebCore16ResourceResponseEON3WTF17CompletionHandlerIFvNS2_12PolicyActionEEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheSpeculativeLoad.h' l='76'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.cpp' l='181' c='_ZN6WebKit12NetworkCacheL25responseNeedsRevalidationERNS_14NetworkSessionERKN7WebCore16ResourceResponseEN3WTF8WallTimeESt8optionalINS7_7SecondsEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.cpp' l='211' c='_ZN6WebKit12NetworkCacheL25responseNeedsRevalidationERNS_14NetworkSessionERKN7WebCore16ResourceResponseERKNS3_15ResourceRequestEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.cpp' l='265' c='_ZN6WebKit12NetworkCacheL17makeStoreDecisionERKN7WebCore15ResourceRequestERKNS1_16ResourceResponseEm'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.cpp' l='457' c='_ZN6WebKit12NetworkCache5Cache9makeEntryERKN7WebCore15ResourceRequestERKNS2_16ResourceResponseEON3WTF6RefPtrINS2_12SharedBufferENS9_12RawPtrTraitsISB_13097757'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.cpp' l='462' c='_ZN6WebKit12NetworkCache5Cache17makeRedirectEntryERKN7WebCore15ResourceRequestERKNS2_16ResourceResponseES5_'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.cpp' l='467' c='_ZN6WebKit12NetworkCache5Cache5storeERKN7WebCore15ResourceRequestERKNS2_16ResourceResponseEON3WTF6RefPtrINS2_12SharedBufferENS9_12RawPtrTraitsISB_EENS14878778'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.cpp' l='511' c='_ZN6WebKit12NetworkCache5Cache13storeRedirectERKN7WebCore15ResourceRequestERKNS2_16ResourceResponseES5_St8optionalIN3WTF7SecondsEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.cpp' l='539' c='_ZN6WebKit12NetworkCache5Cache6updateERKN7WebCore15ResourceRequestERKNS0_5EntryERKNS2_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.cpp' l='543' c='_ZN6WebKit12NetworkCache5Cache6updateERKN7WebCore15ResourceRequestERKNS0_5EntryERKNS2_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheEntry.cpp' l='40' c='_ZN6WebKit12NetworkCache5EntryC1ERKNS0_3KeyERKN7WebCore16ResourceResponseEON3WTF6RefPtrINS5_12SharedBufferENS9_12RawPtrTraitsISB_EENS9_21DefaultRefDer2775677'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheEntry.cpp' l='50' c='_ZN6WebKit12NetworkCache5EntryC1ERKNS0_3KeyERKN7WebCore16ResourceResponseERKNS5_15ResourceRequestERKN3WTF6VectorISt4pairINSC_6StringESF_ELm0ENSC_15Cra14948298'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheEntry.cpp' l='115' c='_ZN6WebKit12NetworkCache5Entry19decodeStorageRecordERKNS0_7Storage6RecordE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheSpeculativeLoad.cpp' l='89' c='_ZN6WebKit12NetworkCache15SpeculativeLoad25willSendRedirectedRequestEON7WebCore15ResourceRequestES4_ONS2_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheSpeculativeLoad.cpp' l='107' c='_ZN6WebKit12NetworkCache15SpeculativeLoad18didReceiveResponseEON7WebCore16ResourceResponseEON3WTF17CompletionHandlerIFvNS2_12PolicyActionEEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheSpeculativeLoadManager.cpp' l='118' c='_ZN6WebKit12NetworkCacheL25responseNeedsRevalidationERKN7WebCore16ResourceResponseEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheSpeculativeLoadManager.cpp' l='388' c='_ZN6WebKit12NetworkCache22SpeculativeLoadManager32registerMainResourceLoadResponseERKNS0_13GlobalFrameIDERKN7WebCore15ResourceRequestERKNS5_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/PrefetchCache.cpp' l='33' c='_ZN6WebKit13PrefetchCache5EntryC1EON7WebCore16ResourceResponseEOi'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/PrefetchCache.cpp' l='38' c='_ZN6WebKit13PrefetchCache5EntryC1EON7WebCore16ResourceResponseEONS2_15ResourceRequestE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/PrefetchCache.cpp' l='75' c='_ZN6WebKit13PrefetchCache5storeERKN3WTF3URLEON7WebCore16ResourceResponseEOi'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/PrefetchCache.cpp' l='88' c='_ZN6WebKit13PrefetchCache13storeRedirectERKN3WTF3URLEON7WebCore16ResourceResponseEONS5_15ResourceRequestE'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkDataTaskSoup.h' l='199'/>
+<use f='WebKit/Source/WebCore/platform/network/TimingAllowOrigin.h' l='33' c='_ZN7WebCore28passesTimingAllowOriginCheckERKNS_16ResourceResponseERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkDataTaskSoup.cpp' l='473' c='_ZN6WebKit19NetworkDataTaskSoup14didSendRequestEON3WTF7GRefPtrI13_GInputStreamEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkDataTaskSoup.cpp' l='506' c='_ZN6WebKit19NetworkDataTaskSoup26dispatchDidReceiveResponseEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkDataTaskSoup.cpp' l='993' c='_ZN6WebKit19NetworkDataTaskSoup23continueHTTPRedirectionEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkDataTaskSoup.cpp' l='1130' c='_ZN6WebKit19NetworkDataTaskSoup18didRequestNextPartEON3WTF7GRefPtrI13_GInputStreamEE'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/APINavigation.h' l='65' c='_ZN3API14SubstituteDataC1EON3WTF6VectorIhLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEERKN7WebCore16ResourceResponseENS7_14SubstituteData24SessionHistoryVisibilityE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APINavigation.cpp' l='42' c='_ZN3API14SubstituteDataC1EON3WTF6VectorIhLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEERKN7WebCore16ResourceResponseENS7_14SubstituteData24SessionHistoryVisibilityE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APINavigationData.h' l='46' c='_ZNK3API14NavigationData8responseEv'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/APIDownloadClient.h' l='62' c='_ZN3API14DownloadClient38decideDestinationWithSuggestedFilenameERN6WebKit13DownloadProxyERKN7WebCore16ResourceResponseERKN3WTF6StringEONS8_17Completio15207701'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APIDownloadClient.h' l='68' c='_ZN3API14DownloadClient15willSendRequestERN6WebKit13DownloadProxyEON7WebCore15ResourceRequestERKNS4_16ResourceResponseEON3WTF17CompletionHandlerIFvS6_EEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Downloads/DownloadProxy.h' l='122' c='_ZN6WebKit13DownloadProxy15willSendRequestEON7WebCore15ResourceRequestERKNS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Downloads/DownloadProxy.h' l='123' c='_ZN6WebKit13DownloadProxy38decideDestinationWithSuggestedFilenameERKN7WebCore16ResourceResponseEON3WTF6StringEONS5_17CompletionHandlerIFvS6_NS_16Sandb2752803'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/C/WKContext.cpp' l='193' c='_ZZ26WKContextSetDownloadClientEN20LegacyDownloadClient18didReceiveResponseERN6WebKit13DownloadProxyERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/C/WKContext.cpp' l='205' c='_ZZ26WKContextSetDownloadClientEN20LegacyDownloadClient38decideDestinationWithSuggestedFilenameERN6WebKit13DownloadProxyERKN7WebCore16ResourceResponse3616143'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/C/WKContext.cpp' l='244' c='_ZZ26WKContextSetDownloadClientEN20LegacyDownloadClient15willSendRequestERN6WebKit13DownloadProxyEON7WebCore15ResourceRequestERKNS3_16ResourceResponse5943813'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/C/WKDownloadRef.cpp' l='102' c='_ZZ19WKDownloadSetClientEN14DownloadClient38decideDestinationWithSuggestedFilenameERN6WebKit13DownloadProxyERKN7WebCore16ResourceResponseERKN3WTF6Stri7286787'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/C/WKDownloadRef.cpp' l='135' c='_ZZ19WKDownloadSetClientEN14DownloadClient15willSendRequestERN6WebKit13DownloadProxyEON7WebCore15ResourceRequestERKNS3_16ResourceResponseEON3WTF17Comp567132'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/APINavigationResponse.h' l='47' c='_ZNK3API18NavigationResponse8responseEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APINavigationResponse.h' l='53' c='_ZN3API18NavigationResponseC1ERNS_9FrameInfoERKN7WebCore15ResourceRequestERKNS3_16ResourceResponseEbRKN3WTF6StringE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APINavigationResponse.h' l='63'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APIPolicyClient.h' l='61' c='_ZN3API12PolicyClient23decidePolicyForResponseERN6WebKit12WebPageProxyERNS1_13WebFrameProxyERKN7WebCore16ResourceResponseERKNS6_15ResourceRequestEbON315187948'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/C/WKPage.cpp' l='1357' c='_ZZ25WKPageSetPagePolicyClientEN12PolicyClient23decidePolicyForResponseERN6WebKit12WebPageProxyERNS0_13WebFrameProxyERKN7WebCore16ResourceResponseERKN1932674'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/UIProcess/ProvisionalPageProxy.h' l='125' c='_ZN6WebKit20ProvisionalPageProxy36decidePolicyForNavigationActionAsyncEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS_13FrameInfoDataENS13097801'/>
+<use f='WebKit/Source/WebKit/UIProcess/ProvisionalPageProxy.h' l='126' c='_ZN6WebKit20ProvisionalPageProxy23decidePolicyForResponseEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS_13FrameInfoDataENS3_21PolicyChe9580269'/>
+<use f='WebKit/Source/WebKit/UIProcess/ProvisionalPageProxy.h' l='144' c='_ZN6WebKit20ProvisionalPageProxy35decidePolicyForNavigationActionSyncEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEbONS_13FrameInfoDataENS4268658'/>
+<use f='WebKit/Source/WebKit/UIProcess/ProvisionalPageProxy.cpp' l='317' c='_ZN6WebKit20ProvisionalPageProxy36decidePolicyForNavigationActionAsyncEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS_13FrameInfoDataENS13097801'/>
+<use f='WebKit/Source/WebKit/UIProcess/ProvisionalPageProxy.cpp' l='326' c='_ZN6WebKit20ProvisionalPageProxy23decidePolicyForResponseEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS_13FrameInfoDataENS3_21PolicyChe9580269'/>
+<use f='WebKit/Source/WebKit/UIProcess/ProvisionalPageProxy.cpp' l='362' c='_ZN6WebKit20ProvisionalPageProxy35decidePolicyForNavigationActionSyncEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEbONS_13FrameInfoDataENS4268658'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/UIProcess/Downloads/DownloadProxy.cpp' l='138' c='_ZN6WebKit13DownloadProxy15willSendRequestEON7WebCore15ResourceRequestERKNS1_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Downloads/DownloadProxy.cpp' l='154' c='_ZN6WebKit13DownloadProxy38decideDestinationWithSuggestedFilenameERKN7WebCore16ResourceResponseEON3WTF6StringEONS5_17CompletionHandlerIFvS6_NS_16Sandb2752803'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.cpp' l='507' c='_ZN6WebKit19NetworkProcessProxy37resourceLoadDidPerformHTTPRedirectionEN3WTF16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEEONS_16ResourceLoadInf10896112'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.cpp' l='525' c='_ZN6WebKit19NetworkProcessProxy30resourceLoadDidReceiveResponseEN3WTF16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEEONS_16ResourceLoadInfoEON7We177333'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.cpp' l='534' c='_ZN6WebKit19NetworkProcessProxy32resourceLoadDidCompleteWithErrorEN3WTF16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEEONS_16ResourceLoadInfoEON712063778'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/APIResourceLoadClient.h' l='47' c='_ZNK3API18ResourceLoadClient25didPerformHTTPRedirectionEON6WebKit16ResourceLoadInfoEON7WebCore16ResourceResponseEONS4_15ResourceRequestE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APIResourceLoadClient.h' l='49' c='_ZNK3API18ResourceLoadClient18didReceiveResponseEON6WebKit16ResourceLoadInfoEON7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APIResourceLoadClient.h' l='50' c='_ZNK3API18ResourceLoadClient20didCompleteWithErrorEON6WebKit16ResourceLoadInfoEON7WebCore16ResourceResponseEONS4_13ResourceErrorE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='1506' c='_ZN6WebKit12WebPageProxy20loadSimulatedRequestEON7WebCore15ResourceRequestEONS1_16ResourceResponseERKN3IPC14ArrayReferenceIhLm18446744073709551615EEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='5249' c='_ZN6WebKit12WebPageProxy36decidePolicyForNavigationActionAsyncEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS_13FrameInfoDataENS3_21Poli7734577'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='5256' c='_ZN6WebKit12WebPageProxy42decidePolicyForNavigationActionAsyncSharedEON3WTF3RefINS_15WebProcessProxyENS1_12RawPtrTraitsIS3_EEEENS1_16ObjectIdentifierI7128253'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='5272' c='_ZN6WebKit12WebPageProxy31decidePolicyForNavigationActionEON3WTF3RefINS_15WebProcessProxyENS1_12RawPtrTraitsIS3_EEEERNS_13WebFrameProxyEONS_13FrameInf7131185'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='5520' c='_ZN6WebKit12WebPageProxy35decidePolicyForNavigationActionSyncEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEbONS_13FrameInfoDataENS3_21Poli14737339'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='5535' c='_ZN6WebKit12WebPageProxy41decidePolicyForNavigationActionSyncSharedEON3WTF3RefINS_15WebProcessProxyENS1_12RawPtrTraitsIS3_EEEENS1_16ObjectIdentifierIN16162262'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='5583' c='_ZN6WebKit12WebPageProxy23decidePolicyForResponseEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS_13FrameInfoDataENS3_21PolicyCheckIdenti10795596'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='5589' c='_ZN6WebKit12WebPageProxy29decidePolicyForResponseSharedEON3WTF3RefINS_15WebProcessProxyENS1_12RawPtrTraitsIS3_EEEENS1_16ObjectIdentifierIN7WebCore18Pa15290405'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='6464' c='_ZN6WebKit12WebPageProxy37resourceLoadDidPerformHTTPRedirectionEONS_16ResourceLoadInfoEON7WebCore16ResourceResponseEONS3_15ResourceRequestE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='6476' c='_ZN6WebKit12WebPageProxy30resourceLoadDidReceiveResponseEONS_16ResourceLoadInfoEON7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='6482' c='_ZN6WebKit12WebPageProxy32resourceLoadDidCompleteWithErrorEONS_16ResourceLoadInfoEON7WebCore16ResourceResponseEONS3_13ResourceErrorE'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeTask.cpp' l='70' c='_ZN6WebKit16WebURLSchemeTask22willPerformRedirectionEON7WebCore16ResourceResponseEONS1_15ResourceRequestEON3WTF8FunctionIFvS5_EEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeTask.cpp' l='114' c='_ZN6WebKit16WebURLSchemeTask21didPerformRedirectionEON7WebCore16ResourceResponseEONS1_15ResourceRequestE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeTask.cpp' l='146' c='_ZN6WebKit16WebURLSchemeTask18didReceiveResponseERKN7WebCore16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='71' c='_ZN29CachedResourceStreamingClient16responseReceivedERN7WebCore21PlatformMediaResourceERKNS0_16ResourceResponseEON3WTF17CompletionHandlerIFvNS0_25Shou11662265'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='989' c='_ZN29CachedResourceStreamingClient16responseReceivedERN7WebCore21PlatformMediaResourceERKNS0_16ResourceResponseEON3WTF17CompletionHandlerIFvNS0_25Shou11662265'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/cache/KeepaliveRequestTracker.h' l='41' c='_ZN7WebCore23KeepaliveRequestTracker16responseReceivedERNS_14CachedResourceERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchBodyOwner.h' l='114' c='_ZN7WebCore14FetchBodyOwner10BlobLoader18didReceiveResponseERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchResponse.h' l='60' c='_ZN7WebCore13FetchResponse6createERNS_22ScriptExecutionContextEOSt8optionalINS_9FetchBodyEENS_12FetchHeaders5GuardEONS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchResponse.h' l='100' c='_ZNK7WebCore13FetchResponse16resourceResponseEv'/>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchResponse.h' l='115' c='_ZN7WebCore13FetchResponseC1ERNS_22ScriptExecutionContextEOSt8optionalINS_9FetchBodyEEON3WTF3RefINS_12FetchHeadersENS7_12RawPtrTraitsIS9_EEEEONS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchResponse.h' l='120' c='_ZNK7WebCore13FetchResponse16filteredResponseEv'/>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchResponse.h' l='145' c='_ZN7WebCore13FetchResponse10BodyLoader18didReceiveResponseERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchResponse.h' l='156'/>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchResponse.h' l='157'/>
+<use f='WebKit/Source/WebCore/loader/MediaResourceLoader.h' l='61' c='_ZNK7WebCore19MediaResourceLoader19responsesForTestingEv'/>
+<use f='WebKit/Source/WebCore/loader/MediaResourceLoader.h' l='62' c='_ZN7WebCore19MediaResourceLoader21addResponseForTestingERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/MediaResourceLoader.h' l='71'/>
+<use f='WebKit/Source/WebCore/loader/MediaResourceLoader.h' l='85' c='_ZN7WebCore13MediaResource16responseReceivedERNS_14CachedResourceERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/MediaResourceLoader.h' l='86' c='_ZN7WebCore13MediaResource16redirectReceivedERNS_14CachedResourceEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<use f='WebKit/Source/WebCore/loader/MediaResourceLoader.h' l='87' c='_ZN7WebCore13MediaResource19shouldCacheResponseERNS_14CachedResourceERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/xml/XMLHttpRequest.h' l='127' c='_ZNK7WebCore14XMLHttpRequest16resourceResponseEv'/>
+<use f='WebKit/Source/WebCore/xml/XMLHttpRequest.h' l='164' c='_ZN7WebCore14XMLHttpRequest18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/xml/XMLHttpRequest.h' l='233'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='793' c='_ZN7WebCoreL22responseSourceToStringERKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/testing/ServiceWorkerInternals.cpp' l='87' c='_ZN7WebCore22ServiceWorkerInternals32createOpaqueWithBlobBodyResponseERNS_22ScriptExecutionContextE'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/ServiceWorkerFetchTask.cpp' l='122' c='_ZN6WebKit22ServiceWorkerFetchTask26didReceiveRedirectResponseEON7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/ServiceWorker/ServiceWorkerFetchTask.cpp' l='138' c='_ZN6WebKit22ServiceWorkerFetchTask18didReceiveResponseEON7WebCore16ResourceResponseEb'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='371' c='_ZN3IPC13ArgumentCoderIN7WebCore14DOMCacheEngine6RecordEvE6decodeERNS_7DecoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='954' c='_ZN3IPC13ArgumentCoderIN7WebCore23AuthenticationChallengeEvE6decodeERNS_7DecoderERS2_'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/Shared/API/glib/WebKitURIResponsePrivate.h' l='32' c='_Z42webkitURIResponseCreateForResourceResponseRKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/Shared/API/glib/WebKitURIResponsePrivate.h' l='33'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitDownloadClient.cpp' l='51' c='_ZN20LegacyDownloadClient15willSendRequestERN6WebKit13DownloadProxyEON7WebCore15ResourceRequestERKNS3_16ResourceResponseEON3WTF17CompletionHandlerIFvS5_EEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitDownloadClient.cpp' l='73' c='_ZN20LegacyDownloadClient18didReceiveResponseERN6WebKit13DownloadProxyERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitDownloadClient.cpp' l='89' c='_ZN20LegacyDownloadClient38decideDestinationWithSuggestedFilenameERN6WebKit13DownloadProxyERKN7WebCore16ResourceResponseERKN3WTF6StringEONS7_17Complet9594411'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitURISchemeRequest.cpp' l='181' c='_ZL34webkitURISchemeRequestReadCallbackP13_GInputStreamP13_GAsyncResultP23_WebKitURISchemeRequest'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebView.cpp' l='533' c='_ZL25webkitWebViewDecidePolicyPiS_24WebKitPolicyDecisionType'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/API/glib/WebKitWebPage.cpp' l='252' c='_ZN22PageResourceLoadClient23willSendRequestForFrameERN6WebKit7WebPageERNS0_8WebFrameEmRN7WebCore15ResourceRequestERKNS5_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/API/glib/WebKitWebPage.cpp' l='275' c='_ZN22PageResourceLoadClient29didReceiveResponseForResourceERN6WebKit7WebPageERNS0_8WebFrameEmRKN7WebCore16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebSocketChannel.cpp' l='415' c='_ZN6WebKit16WebSocketChannel27didReceiveHandshakeResponseEON7WebCore16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/WebProcess/Plugins/PluginView.cpp' l='130' c='_ZN6WebKit10PluginView6Stream15willSendRequestEPN7WebCore26NetscapePlugInStreamLoaderEONS2_15ResourceRequestERKNS2_16ResourceResponseEON3WTF17CompletionHandlerIFvS6_EEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Plugins/PluginView.cpp' l='131' c='_ZN6WebKit10PluginView6Stream18didReceiveResponseEPN7WebCore26NetscapePlugInStreamLoaderERKNS2_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Plugins/PluginView.cpp' l='187' c='_ZN6WebKitL16buildHTTPHeadersERKN7WebCore16ResourceResponseERx'/>
+<use f='WebKit/Source/WebKit/WebProcess/Plugins/PluginView.cpp' l='207' c='_ZN6WebKitL18lastModifiedDateMSERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Plugins/PluginView.cpp' l='216' c='_ZN6WebKit10PluginView6Stream15willSendRequestEPN7WebCore26NetscapePlugInStreamLoaderEONS2_15ResourceRequestERKNS2_16ResourceResponseEON3WTF17CompletionHandlerIFvS6_EEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Plugins/PluginView.cpp' l='226' c='_ZN6WebKit10PluginView6Stream18didReceiveResponseEPN7WebCore26NetscapePlugInStreamLoaderERKNS2_16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Plugins/PluginView.cpp' l='383' c='_ZN6WebKit10PluginView28manualLoadDidReceiveResponseERKN7WebCore16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='1673' c='_ZN6WebKit7WebPage15loadDataInFrameEON3IPC14ArrayReferenceIhLm18446744073709551615EEEON3WTF6StringES7_ONS5_3URLENS5_16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='1726' c='_ZN6WebKit7WebPage12loadDataImplEmbOSt8optionalINS_19WebsitePoliciesDataEEON3WTF3RefIN7WebCore12SharedBufferENS5_12RawPtrTraitsIS8_EEEEONS7_15Resource16749402'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='1769' c='_ZN6WebKit7WebPage8loadDataEONS_14LoadParametersE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='1783' c='_ZN6WebKit7WebPage17loadAlternateHTMLEONS_14LoadParametersE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='1788' c='_ZN6WebKit7WebPage31loadSimulatedRequestAndResponseEONS_14LoadParametersEON7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='5667' c='_ZN6WebKit7WebPage23canPluginHandleResponseERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='5689' c='_ZN6WebKit7WebPage41shouldUseCustomContentProviderForResponseERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='6187' c='_ZNK6WebKit7WebPage15canShowResponseERKN7WebCore16ResourceResponseE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='6881' c='_ZN6WebKit7WebPage35urlSchemeTaskWillPerformRedirectionEmmON7WebCore16ResourceResponseEONS1_15ResourceRequestEON3WTF17CompletionHandlerIFvS5_EEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='6890' c='_ZN6WebKit7WebPage34urlSchemeTaskDidPerformRedirectionEmmON7WebCore16ResourceResponseEONS1_15ResourceRequestE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='6898' c='_ZN6WebKit7WebPage31urlSchemeTaskDidReceiveResponseEmmRKN7WebCore16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/CrossOriginPreflightChecker.h' l='57' c='_ZN7WebCore27CrossOriginPreflightChecker16redirectReceivedERNS_14CachedResourceEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginPreflightChecker.h' l='60' c='_ZN7WebCore27CrossOriginPreflightChecker25validatePreflightResponseERNS_24DocumentThreadableLoaderEONS_15ResourceRequestEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentThreadableLoader.h' l='87' c='_ZN7WebCore24DocumentThreadableLoader16responseReceivedERNS_14CachedResourceERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentThreadableLoader.h' l='89' c='_ZN7WebCore24DocumentThreadableLoader16redirectReceivedERNS_14CachedResourceEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentThreadableLoader.h' l='94' c='_ZN7WebCore24DocumentThreadableLoader18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='197' c='_ZN7WebCore24InspectorInstrumentation15willSendRequestEPNS_5FrameEmPNS_14DocumentLoaderERNS_15ResourceRequestERKNS_16ResourceResponseEPKNS_14CachedResourceE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='199' c='_ZN7WebCore24InspectorInstrumentation26didReceiveResourceResponseERNS_5FrameEmPNS_14DocumentLoaderERKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='206' c='_ZN7WebCore24InspectorInstrumentation26didReceiveResourceResponseERNS_26WorkerOrWorkletGlobalScopeEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='217' c='_ZN7WebCore24InspectorInstrumentation32continueAfterXFrameOptionsDeniedERNS_5FrameEmRNS_14DocumentLoaderERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='218' c='_ZN7WebCore24InspectorInstrumentation26continueWithPolicyDownloadERNS_5FrameEmRNS_14DocumentLoaderERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='219' c='_ZN7WebCore24InspectorInstrumentation24continueWithPolicyIgnoreERNS_5FrameEmRNS_14DocumentLoaderERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='242' c='_ZN7WebCore24InspectorInstrumentation23shouldInterceptResponseERKNS_5FrameERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='244' c='_ZN7WebCore24InspectorInstrumentation17interceptResponseERKNS_5FrameERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS6_NS7_6RefPtrINS_12SharedBu10301263'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='244' c='_ZN7WebCore24InspectorInstrumentation17interceptResponseERKNS_5FrameERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS6_NS7_6RefPtrINS_12SharedBu10301263'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='285' c='_ZN7WebCore24InspectorInstrumentation36didReceiveWebSocketHandshakeResponseEPNS_8DocumentEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='423' c='_ZN7WebCore24InspectorInstrumentation19willSendRequestImplERNS_19InstrumentingAgentsEmPNS_14DocumentLoaderERNS_15ResourceRequestERKNS_16ResourceRespon1927687'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='427' c='_ZN7WebCore24InspectorInstrumentation30didReceiveResourceResponseImplERNS_19InstrumentingAgentsEmPNS_14DocumentLoaderERKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='454' c='_ZN7WebCore24InspectorInstrumentation27shouldInterceptResponseImplERNS_19InstrumentingAgentsERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='456' c='_ZN7WebCore24InspectorInstrumentation21interceptResponseImplERNS_19InstrumentingAgentsERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS5_NS6_6Re15404997'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='456' c='_ZN7WebCore24InspectorInstrumentation21interceptResponseImplERNS_19InstrumentingAgentsERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS5_NS6_6Re15404997'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='492' c='_ZN7WebCore24InspectorInstrumentation40didReceiveWebSocketHandshakeResponseImplERNS_19InstrumentingAgentsEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='1061' c='_ZN7WebCore24InspectorInstrumentation15willSendRequestEPNS_5FrameEmPNS_14DocumentLoaderERNS_15ResourceRequestERKNS_16ResourceResponseEPKNS_14CachedResourceE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='1071' c='_ZN7WebCore24InspectorInstrumentation15willSendRequestERNS_26WorkerOrWorkletGlobalScopeEmRNS_15ResourceRequestE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='1087' c='_ZN7WebCore24InspectorInstrumentation26didReceiveResourceResponseERNS_5FrameEmPNS_14DocumentLoaderERKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='1093' c='_ZN7WebCore24InspectorInstrumentation26didReceiveResourceResponseERNS_26WorkerOrWorkletGlobalScopeEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='1142' c='_ZN7WebCore24InspectorInstrumentation32continueAfterXFrameOptionsDeniedERNS_5FrameEmRNS_14DocumentLoaderERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='1149' c='_ZN7WebCore24InspectorInstrumentation26continueWithPolicyDownloadERNS_5FrameEmRNS_14DocumentLoaderERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='1156' c='_ZN7WebCore24InspectorInstrumentation24continueWithPolicyIgnoreERNS_5FrameEmRNS_14DocumentLoaderERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='1297' c='_ZN7WebCore24InspectorInstrumentation23shouldInterceptResponseERKNS_5FrameERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='1312' c='_ZN7WebCore24InspectorInstrumentation17interceptResponseERKNS_5FrameERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS6_NS7_6RefPtrINS_12SharedBu10301263'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='1312' c='_ZN7WebCore24InspectorInstrumentation17interceptResponseERKNS_5FrameERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS6_NS7_6RefPtrINS_12SharedBu10301263'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='1368' c='_ZN7WebCore24InspectorInstrumentation36didReceiveWebSocketHandshakeResponseEPNS_8DocumentEmRKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/ProgressTracker.h' l='58' c='_ZN7WebCore15ProgressTracker17incrementProgressEmRKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/page/EventSource.h' l='86' c='_ZN7WebCore11EventSource18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/page/EventSource.h' l='107' c='_ZNK7WebCore11EventSource15responseIsValidERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/workers/Worker.h' l='92' c='_ZN7WebCore6Worker18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.h' l='44' c='_ZN7WebCore14ResourceTiming15fromMemoryCacheERKN3WTF3URLERKNS1_6StringERKNS_18ResourceLoadTimingERKNS_16ResourceResponseERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.h' l='46' c='_ZN7WebCore14ResourceTiming19fromSynchronousLoadERKN3WTF3URLERKNS1_6StringERKNS_18ResourceLoadTimingERKNS_18NetworkLoadMetricsERKNS_16ResourceResponse2354542'/>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.h' l='58' c='_ZN7WebCore14ResourceTimingC1ERKN3WTF3URLERKNS1_6StringERKNS_18ResourceLoadTimingERKNS_18NetworkLoadMetricsERKNS_16ResourceResponseERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.h' l='59' c='_ZN7WebCore14ResourceTimingC1ERKN3WTF3URLERKNS1_6StringERKNS_18ResourceLoadTimingERKNS_16ResourceResponseERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.h' l='68' c='_ZN7WebCore14ResourceTiming16initServerTimingERKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/platform/network/AuthenticationChallengeBase.cpp' l='39' c='_ZN7WebCore27AuthenticationChallengeBaseC1ERKNS_15ProtectionSpaceERKNS_10CredentialEjRKNS_16ResourceResponseERKNS_13ResourceErrorE'/>
+<use f='WebKit/Source/WebCore/platform/network/AuthenticationChallengeBase.cpp' l='65' c='_ZNK7WebCore27AuthenticationChallengeBase15failureResponseEv'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/platform/network/BlobRegistryImpl.cpp' l='59' c='_ZN7WebCoreL29loadBlobResourceSynchronouslyEPNS_17NetworkingContextERKNS_15ResourceRequestENS_23StoredCredentialsPolicyERNS_13ResourceErrorERNS_16Reso13173371'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='77' c='_ZN7WebCore12_GLOBAL__N_129BlobResourceSynchronousLoaderC1ERNS_13ResourceErrorERNS_16ResourceResponseERN3WTF6VectorIhLm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='79' c='_ZN7WebCore12_GLOBAL__N_129BlobResourceSynchronousLoader23didReceiveResponseAsyncEPNS_14ResourceHandleEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='81' c='_ZN7WebCore12_GLOBAL__N_129BlobResourceSynchronousLoader20willSendRequestAsyncEPNS_14ResourceHandleEONS_15ResourceRequestEONS_16ResourceResponseEON3WT2860898'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='88'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='92' c='_ZN7WebCore12_GLOBAL__N_129BlobResourceSynchronousLoaderC1ERNS_13ResourceErrorERNS_16ResourceResponseERN3WTF6VectorIhLm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='99' c='_ZN7WebCore12_GLOBAL__N_129BlobResourceSynchronousLoader20willSendRequestAsyncEPNS_14ResourceHandleEONS_15ResourceRequestEONS_16ResourceResponseEON3WT2860898'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='113' c='_ZN7WebCore12_GLOBAL__N_129BlobResourceSynchronousLoader23didReceiveResponseAsyncEPNS_14ResourceHandleEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='145' c='_ZN7WebCore18BlobResourceHandle25loadResourceSynchronouslyEPNS_8BlobDataERKNS_15ResourceRequestERNS_13ResourceErrorERNS_16ResourceResponseERN3WTF6Vect3974053'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='573' c='_ZN7WebCore18BlobResourceHandle23notifyResponseOnSuccessEv'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='596' c='_ZN7WebCore18BlobResourceHandle21notifyResponseOnErrorEv'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.cpp' l='84' c='_ZN7WebCore38updateResponseHeadersAfterRevalidationERNS_16ResourceResponseERKS0_'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.cpp' l='84' c='_ZN7WebCore38updateResponseHeadersAfterRevalidationERNS_16ResourceResponseERKS0_'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.cpp' l='100' c='_ZN7WebCore17computeCurrentAgeERKNS_16ResourceResponseEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.cpp' l='113' c='_ZN7WebCore37computeFreshnessLifetimeForHTTPFamilyERKNS_16ResourceResponseEN3WTF8WallTimeE'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.cpp' l='144' c='_ZN7WebCore25updateRedirectChainStatusERNS_24RedirectChainCacheStatusERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.cpp' l='364' c='_ZN7WebCoreL36collectVaryingRequestHeadersInternalERKNS_16ResourceResponseEON3WTF8FunctionIFNS3_6StringERKS5_EEE'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.cpp' l='380' c='_ZN7WebCore28collectVaryingRequestHeadersEPNS_21NetworkStorageSessionERKNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/network/CacheValidation.cpp' l='391' c='_ZN7WebCore28collectVaryingRequestHeadersEPKNS_9CookieJarERKNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='138' c='_ZN7WebCore14ResourceHandle25loadResourceSynchronouslyEPNS_17NetworkingContextERKNS_15ResourceRequestENS_23StoredCredentialsPolicyEPNS_14SecurityOrigi8894014'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='158' c='_ZN7WebCore14ResourceHandle18didReceiveResponseEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='214' c='_ZN7WebCore14ResourceHandle8checkTAOERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceRequestBase.cpp' l='131' c='_ZN7WebCoreL12shouldUseGetERKNS_19ResourceRequestBaseERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceRequestBase.cpp' l='141' c='_ZN7WebCore19ResourceRequestBase21redirectAsGETIfNeededERKS0_RKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceRequestBase.cpp' l='154' c='_ZNK7WebCore19ResourceRequestBase17redirectedRequestERKNS_16ResourceResponseEb'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='43' c='_ZN7WebCore24isScriptAllowedByNosniffERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='114' c='_ZN7WebCore20ResourceResponseBase19fromCrossThreadDataEONS0_15CrossThreadDataE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='116' c='_ZN7WebCore20ResourceResponseBase19fromCrossThreadDataEONS0_15CrossThreadDataE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='140' c='_ZN7WebCore20ResourceResponseBase25syntheticRedirectResponseERKN3WTF3URLES4_'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='142' c='_ZN7WebCore20ResourceResponseBase25syntheticRedirectResponseERKN3WTF3URLES4_'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='152' c='_ZN7WebCore20ResourceResponseBase15dataURLResponseERKN3WTF3URLERKNS_14DataURLDecoder6ResultE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='154' c='_ZN7WebCore20ResourceResponseBase15dataURLResponseERKN3WTF3URLERKNS_14DataURLDecoder6ResultE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='163' c='_ZN7WebCore20ResourceResponseBase6filterERKNS_16ResourceResponseENS0_28PerformExposeAllHeadersCheckE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='163' c='_ZN7WebCore20ResourceResponseBase6filterERKNS_16ResourceResponseENS0_28PerformExposeAllHeadersCheckE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='166' c='_ZN7WebCore20ResourceResponseBase6filterERKNS_16ResourceResponseENS0_28PerformExposeAllHeadersCheckE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='173' c='_ZN7WebCore20ResourceResponseBase6filterERKNS_16ResourceResponseENS0_28PerformExposeAllHeadersCheckE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='180' c='_ZN7WebCore20ResourceResponseBase6filterERKNS_16ResourceResponseENS0_28PerformExposeAllHeadersCheckE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='297' c='_ZNK7WebCore20ResourceResponseBase22includeCertificateInfoEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='302' c='_ZNK7WebCore20ResourceResponseBase17suggestedFilenameEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='310' c='_ZN7WebCore20ResourceResponseBase25sanitizeSuggestedFilenameERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='798' c='_ZNK7WebCore20ResourceResponseBase8lazyInitENS0_9InitLevelE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='798' c='_ZNK7WebCore20ResourceResponseBase8lazyInitENS0_9InitLevelE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='801' c='_ZN7WebCore20ResourceResponseBase7compareERKNS_16ResourceResponseES3_'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='801' c='_ZN7WebCore20ResourceResponseBase7compareERKNS_16ResourceResponseES3_'/>
+<use f='WebKit/Source/WebCore/platform/network/SynchronousLoaderClient.h' l='57' c='_ZNK7WebCore23SynchronousLoaderClient8responseEv'/>
+<use f='WebKit/Source/WebCore/platform/network/SynchronousLoaderClient.h' l='65' c='_ZN7WebCore23SynchronousLoaderClient20willSendRequestAsyncEPNS_14ResourceHandleEONS_15ResourceRequestEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<use f='WebKit/Source/WebCore/platform/network/SynchronousLoaderClient.h' l='68' c='_ZN7WebCore23SynchronousLoaderClient23didReceiveResponseAsyncEPNS_14ResourceHandleEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/platform/network/SynchronousLoaderClient.h' l='77'/>
+<use f='WebKit/Source/WebCore/platform/network/SynchronousLoaderClient.cpp' l='41' c='_ZN7WebCore23SynchronousLoaderClient20willSendRequestAsyncEPNS_14ResourceHandleEONS_15ResourceRequestEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<use f='WebKit/Source/WebCore/platform/network/SynchronousLoaderClient.cpp' l='68' c='_ZN7WebCore23SynchronousLoaderClient23didReceiveResponseAsyncEPNS_14ResourceHandleEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/platform/network/TimingAllowOrigin.cpp' l='35' c='_ZN7WebCore28passesTimingAllowOriginCheckERKNS_16ResourceResponseERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/platform/network/soup/CertificateInfoSoup.cpp' l='45' c='_ZN7WebCore15CertificateInfoC1ERKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/xml/XMLHttpRequest.cpp' l='731' c='_ZN7WebCore14XMLHttpRequest13clearResponseEv'/>
+<use f='WebKit/Source/WebCore/xml/XMLHttpRequest.cpp' l='968' c='_ZN7WebCore14XMLHttpRequest18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/xml/parser/XMLDocumentParserLibxml2.cpp' l='383' c='_ZN7WebCoreL29externalEntityMimeTypeAllowedERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/xml/parser/XMLDocumentParserLibxml2.cpp' l='465' c='_ZN7WebCoreL8openFuncEPKc'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/cache/CachedRawResource.h' l='61' c='_ZN7WebCore17CachedRawResource16redirectReceivedEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedRawResource.h' l='62' c='_ZN7WebCore17CachedRawResource16responseReceivedERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedRawResource.h' l='63' c='_ZN7WebCore17CachedRawResource19shouldCacheResponseERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedRawResource.h' l='82' c='_ZN7WebCore17CachedRawResource12RedirectPairC1ERKNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedRawResource.h' l='89'/>
+<use f='WebKit/Source/WebCore/Modules/cache/DOMCacheEngine.cpp' l='81' c='_ZN7WebCore14DOMCacheEngine15queryCacheMatchERKNS_15ResourceRequestES3_RKNS_16ResourceResponseERKNS_17CacheQueryOptionsE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchBodyOwner.cpp' l='315' c='_ZN7WebCore14FetchBodyOwner10BlobLoader18didReceiveResponseERKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/Modules/websockets/WorkerThreadableWebSocketChannel.h' l='169' c='_ZNK7WebCore32WorkerThreadableWebSocketChannel23serverHandshakeResponseEv'/>
+<use f='WebKit/Source/WebCore/Modules/websockets/WorkerThreadableWebSocketChannel.h' l='176'/>
+<use f='WebKit/Source/WebCore/Modules/websockets/WebSocketChannel.cpp' l='839' c='_ZNK7WebCore16WebSocketChannel23serverHandshakeResponseEv'/>
+<use f='WebKit/Source/WebCore/Modules/websockets/WebSocketChannelInspector.cpp' l='58' c='_ZN7WebCore25WebSocketChannelInspector36didReceiveWebSocketHandshakeResponseEPNS_8DocumentERKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchLoader.cpp' l='145' c='_ZN7WebCore11FetchLoader18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchResponse.cpp' l='51' c='_ZN7WebCore13FetchResponse6createERNS_22ScriptExecutionContextEOSt8optionalINS_9FetchBodyEENS_12FetchHeaders5GuardEONS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchResponse.cpp' l='166' c='_ZN7WebCore13FetchResponseC1ERNS_22ScriptExecutionContextEOSt8optionalINS_9FetchBodyEEON3WTF3RefINS_12FetchHeadersENS7_12RawPtrTraitsIS9_EEEEONS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchResponse.cpp' l='190' c='_ZN7WebCore13FetchResponse5cloneERNS_22ScriptExecutionContextE'/>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchResponse.cpp' l='266' c='_ZNK7WebCore13FetchResponse16filteredResponseEv'/>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchResponse.cpp' l='334' c='_ZN7WebCore13FetchResponse10BodyLoader18didReceiveResponseERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchResponse.cpp' l='531' c='_ZNK7WebCore13FetchResponse16resourceResponseEv'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/Modules/websockets/WebSocketHandshake.cpp' l='238' c='_ZN7WebCore18WebSocketHandshake19readServerHandshakeEPKhm'/>
+<use f='WebKit/Source/WebCore/Modules/websockets/WebSocketHandshake.cpp' l='309' c='_ZNK7WebCore18WebSocketHandshake23serverHandshakeResponseEv'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/bindings/js/WorkerModuleScriptLoader.h' l='68' c='_ZN7WebCore24WorkerModuleScriptLoader18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/page/csp/ContentSecurityPolicyResponseHeaders.cpp' l='34' c='_ZN7WebCore36ContentSecurityPolicyResponseHeadersC1ERKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/page/EventSource.cpp' l='164' c='_ZNK7WebCore11EventSource15responseIsValidERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/page/EventSource.cpp' l='191' c='_ZN7WebCore11EventSource18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/inspector/agents/WebConsoleAgent.h' l='46' c='_ZN7WebCore15WebConsoleAgent18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='101' c='_ZN7WebCore21InspectorNetworkAgent15willSendRequestEmPNS_14DocumentLoaderERNS_15ResourceRequestERKNS_16ResourceResponseEPKNS_14CachedResourceE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='103' c='_ZN7WebCore21InspectorNetworkAgent18didReceiveResponseEmPNS_14DocumentLoaderERKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='115' c='_ZN7WebCore21InspectorNetworkAgent36didReceiveWebSocketHandshakeResponseEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='125' c='_ZN7WebCore21InspectorNetworkAgent23shouldInterceptResponseERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='126' c='_ZN7WebCore21InspectorNetworkAgent17interceptResponseERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS3_NS4_6RefPtrINS_12SharedBufferENS4_12RawP14367280'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='126' c='_ZN7WebCore21InspectorNetworkAgent17interceptResponseERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS3_NS4_6RefPtrINS_12SharedBufferENS4_12RawP14367280'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='143' c='_ZN7WebCore21InspectorNetworkAgent15willSendRequestEmPNS_14DocumentLoaderERNS_15ResourceRequestERKNS_16ResourceResponseENS_18InspectorPageAgent12ResourceTypeE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='154' c='_ZN7WebCore21InspectorNetworkAgent30buildObjectForResourceResponseERKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='188' c='_ZN7WebCore21InspectorNetworkAgent24PendingInterceptResponseC1ERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_NS5_6RefPtrINS_12SharedBufferENS2312962'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='188' c='_ZN7WebCore21InspectorNetworkAgent24PendingInterceptResponseC1ERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_NS5_6RefPtrINS_12SharedBufferENS2312962'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='198' c='_ZN7WebCore21InspectorNetworkAgent24PendingInterceptResponse16originalResponseEv'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='205' c='_ZN7WebCore21InspectorNetworkAgent24PendingInterceptResponse7respondERKNS_16ResourceResponseEN3WTF6RefPtrINS_12SharedBufferENS5_12RawPtrTraitsIS7_EENS4033563'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='217'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='218'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.cpp' l='583' c='_ZN7WebCore24InspectorInstrumentation19willSendRequestImplERNS_19InstrumentingAgentsEmPNS_14DocumentLoaderERNS_15ResourceRequestERKNS_16ResourceRespon1927687'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.cpp' l='604' c='_ZN7WebCore24InspectorInstrumentation30didReceiveResourceResponseImplERNS_19InstrumentingAgentsEmPNS_14DocumentLoaderERKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.cpp' l='845' c='_ZN7WebCore24InspectorInstrumentation27shouldInterceptResponseImplERNS_19InstrumentingAgentsERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.cpp' l='858' c='_ZN7WebCore24InspectorInstrumentation21interceptResponseImplERNS_19InstrumentingAgentsERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS5_NS6_6Re15404997'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.cpp' l='858' c='_ZN7WebCore24InspectorInstrumentation21interceptResponseImplERNS_19InstrumentingAgentsERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS5_NS6_6Re15404997'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.cpp' l='1037' c='_ZN7WebCore24InspectorInstrumentation40didReceiveWebSocketHandshakeResponseImplERNS_19InstrumentingAgentsEmRKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentationWebKit.cpp' l='38' c='_ZN7WebCore30InspectorInstrumentationWebKit31shouldInterceptResponseInternalERKNS_5FrameERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentationWebKit.cpp' l='48' c='_ZN7WebCore30InspectorInstrumentationWebKit25interceptResponseInternalERKNS_5FrameERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS6_NS7_6RefPtr2852903'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentationWebKit.cpp' l='48' c='_ZN7WebCore30InspectorInstrumentationWebKit25interceptResponseInternalERKNS_5FrameERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS6_NS7_6RefPtr2852903'/>
+<use f='WebKit/Source/WebCore/inspector/NetworkResourcesData.h' l='140' c='_ZN7WebCore20NetworkResourcesData16responseReceivedERKN3WTF6StringES4_RKNS_16ResourceResponseENS_18InspectorPageAgent12ResourceTypeEb'/>
+<use f='WebKit/Source/WebCore/inspector/NetworkResourcesData.cpp' l='146' c='_ZN7WebCore20NetworkResourcesData16responseReceivedERKN3WTF6StringES4_RKNS_16ResourceResponseENS_18InspectorPageAgent12ResourceTypeEb'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='111' c='_ZN7WebCore12_GLOBAL__N_131InspectorThreadableLoaderClient18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='340' c='_ZN7WebCore21InspectorNetworkAgent30buildObjectForResourceResponseERKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='419' c='_ZN7WebCore21InspectorNetworkAgent15willSendRequestEmPNS_14DocumentLoaderERNS_15ResourceRequestERKNS_16ResourceResponseENS_18InspectorPageAgent12ResourceTypeE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='489' c='_ZN7WebCore21InspectorNetworkAgent15willSendRequestEmPNS_14DocumentLoaderERNS_15ResourceRequestERKNS_16ResourceResponseEPKNS_14CachedResourceE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='498' c='_ZN7WebCore21InspectorNetworkAgent21willSendRequestOfTypeEmPNS_14DocumentLoaderERNS_15ResourceRequestENS_24InspectorInstrumentation8LoadTypeE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='501' c='_ZN7WebCore21InspectorNetworkAgent18didReceiveResponseEmPNS_14DocumentLoaderERKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='508' c='_ZN7WebCore21InspectorNetworkAgent18didReceiveResponseEmPNS_14DocumentLoaderERKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='795' c='_ZN7WebCore21InspectorNetworkAgent36didReceiveWebSocketHandshakeResponseEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='1119' c='_ZN7WebCore21InspectorNetworkAgent23shouldInterceptResponseERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='1141' c='_ZN7WebCore21InspectorNetworkAgent17interceptResponseERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS3_NS4_6RefPtrINS_12SharedBufferENS4_12RawP14367280'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='1141' c='_ZN7WebCore21InspectorNetworkAgent17interceptResponseERKNS_16ResourceResponseEmON3WTF17CompletionHandlerIFvS3_NS4_6RefPtrINS_12SharedBufferENS4_12RawP14367280'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='1224' c='_ZN7WebCore21InspectorNetworkAgent21interceptWithResponseERKN3WTF6StringES4_bS4_OSt8optionalIiES4_ONS1_6RefPtrINS1_8JSONImpl6ObjectENS1_12RawPtrTraits5578243'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='1285' c='_ZN7WebCore21InspectorNetworkAgent28interceptRequestWithResponseERKN3WTF6StringES4_bS4_iS4_ONS1_3RefINS1_8JSONImpl6ObjectENS1_12RawPtrTraitsIS7_EEEE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/WebConsoleAgent.cpp' l='68' c='_ZN7WebCore15WebConsoleAgent18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheResource.h' l='43' c='_ZN7WebCore24ApplicationCacheResource6createERKN3WTF3URLERKNS_16ResourceResponseEjONS1_6RefPtrINS_12SharedBufferENS1_12RawPtrTraitsIS9_EENS1_21Default2306578'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheResource.h' l='61' c='_ZN7WebCore24ApplicationCacheResourceC1EON3WTF3URLEONS_16ResourceResponseEjONS1_3RefINS_12SharedBufferENS1_12RawPtrTraitsIS7_EEEERKNS1_6StringE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/FetchIdioms.h' l='35' c='_ZN7WebCore32shouldBlockResponseDueToMIMETypeERKNS_16ResourceResponseENS_12FetchOptions11DestinationE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.cpp' l='231' c='_ZN7WebCore24passesAccessControlCheckERKNS_16ResourceResponseENS_23StoredCredentialsPolicyERKNS_14SecurityOriginEPKNS_37CrossOriginAccessControlCheckDisablerE'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.cpp' l='260' c='_ZN7WebCore25validatePreflightResponseEN3PAL9SessionIDERKNS_15ResourceRequestERKNS_16ResourceResponseENS_23StoredCredentialsPolicyERKNS_14SecurityOrig10797570'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.cpp' l='283' c='_ZN7WebCoreL41shouldCrossOriginResourcePolicyCancelLoadERKNS_14SecurityOriginERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.cpp' l='307' c='_ZN7WebCore33validateCrossOriginResourcePolicyERKNS_14SecurityOriginERKN3WTF3URLERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.cpp' l='314' c='_ZN7WebCore26validateRangeRequestedFlagERKNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginPreflightChecker.cpp' l='61' c='_ZN7WebCore27CrossOriginPreflightChecker25validatePreflightResponseERNS_24DocumentThreadableLoaderEONS_15ResourceRequestEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginPreflightChecker.cpp' l='110' c='_ZN7WebCore27CrossOriginPreflightChecker16redirectReceivedERNS_14CachedResourceEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginPreflightChecker.cpp' l='141' c='_ZN7WebCore27CrossOriginPreflightChecker11doPreflightERNS_24DocumentThreadableLoaderEONS_15ResourceRequestE'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginPreflightResultCache.cpp' l='56' c='_ZN7WebCore35CrossOriginPreflightResultCacheItem6createENS_23StoredCredentialsPolicyERKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/cache/CachedRawResource.cpp' l='142' c='_ZN7WebCoreL16iterateRedirectsEONS_20CachedResourceHandleINS_17CachedRawResourceEEERNS_23CachedRawResourceClientEON3WTF6VectorISt4pairINS_15ResourceRe13632499'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedRawResource.cpp' l='158' c='_ZN7WebCore17CachedRawResource12didAddClientERNS_20CachedResourceClientE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedRawResource.cpp' l='182' c='_ZN7WebCore17CachedRawResource12didAddClientERNS_20CachedResourceClientE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedRawResource.cpp' l='201' c='_ZN7WebCoreL14iterateClientsEONS_26CachedResourceClientWalkerINS_23CachedRawResourceClientEEEONS_20CachedResourceHandleINS_17CachedRawResourceEEEONS_111201449'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedRawResource.cpp' l='206' c='_ZN7WebCoreL14iterateClientsEONS_26CachedResourceClientWalkerINS_23CachedRawResourceClientEEEONS_20CachedResourceHandleINS_17CachedRawResourceEEEONS_111201449'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedRawResource.cpp' l='212' c='_ZN7WebCore17CachedRawResource16redirectReceivedEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedRawResource.cpp' l='219' c='_ZN7WebCore17CachedRawResource16redirectReceivedEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedRawResource.cpp' l='225' c='_ZN7WebCore17CachedRawResource16responseReceivedERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedRawResource.cpp' l='236' c='_ZN7WebCore17CachedRawResource19shouldCacheResponseERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.cpp' l='271' c='_ZN7WebCore14CachedResource4loadERNS_20CachedResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.cpp' l='429' c='_ZNK7WebCore14CachedResource17freshnessLifetimeERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.cpp' l='447' c='_ZN7WebCore14CachedResource16redirectReceivedEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.cpp' l='458' c='_ZN7WebCore14CachedResource11setResponseERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.cpp' l='475' c='_ZN7WebCore14CachedResource16responseReceivedERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.cpp' l='789' c='_ZN7WebCore14CachedResource31updateResponseAfterRevalidationERKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/cache/KeepaliveRequestTracker.cpp' l='69' c='_ZN7WebCore23KeepaliveRequestTracker16responseReceivedERNS_14CachedResourceERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.cpp' l='133' c='_ZN7WebCore11MemoryCache21revalidationSucceededERNS_14CachedResourceERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/soup/ResourceLoaderSoup.cpp' l='67' c='_ZN7WebCore14ResourceLoader13loadGResourceEv'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='511' c='_ZN7WebCore14DocumentLoader25isPostOrRedirectAfterPostERKNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='528' c='_ZN7WebCore14DocumentLoader27handleSubstituteDataLoadNowEv'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='530' c='_ZN7WebCore14DocumentLoader27handleSubstituteDataLoadNowEv'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='582' c='_ZN7WebCore14DocumentLoader16redirectReceivedERNS_14CachedResourceEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='620' c='_ZN7WebCore14DocumentLoader15willSendRequestEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='750' c='_ZN7WebCore14DocumentLoader24tryLoadingSubstituteDataEv'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='801' c='_ZN7WebCore14DocumentLoader58stopLoadingAfterXFrameOptionsOrContentSecurityPolicyDeniedEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='821' c='_ZN7WebCore14DocumentLoader16responseReceivedERNS_14CachedResourceERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='857' c='_ZN7WebCore14DocumentLoader16responseReceivedERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='1725' c='_ZN7WebCore14DocumentLoader11addResponseERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='1909' c='_ZN7WebCore14DocumentLoader14maybeLoadEmptyEv'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='1939' c='_ZN7WebCore14DocumentLoader24startLoadingMainResourceEv'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='2078' c='_ZN7WebCore14DocumentLoader16loadMainResourceEONS_15ResourceRequestE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentThreadableLoader.cpp' l='307' c='_ZN7WebCore24DocumentThreadableLoader16redirectReceivedERNS_14CachedResourceEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentThreadableLoader.cpp' l='386' c='_ZN7WebCore24DocumentThreadableLoader16responseReceivedERNS_14CachedResourceERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentThreadableLoader.cpp' l='390' c='_ZN7WebCore24DocumentThreadableLoader16responseReceivedERNS_14CachedResourceERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentThreadableLoader.cpp' l='400' c='_ZN7WebCore24DocumentThreadableLoader18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentThreadableLoader.cpp' l='598' c='_ZN7WebCore24DocumentThreadableLoader11loadRequestEONS_15ResourceRequestENS_19SecurityCheckPolicyE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='598' c='_ZN7WebCore22EmptyFrameLoaderClient39dispatchDecidePolicyForNavigationActionERKNS_16NavigationActionERKNS_15ResourceRequestERKNS_16ResourceResponseEPN11502048'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='670' c='_ZN7WebCore22EmptyFrameLoaderClient33convertMainResourceLoadToDownloadEPNS_14DocumentLoaderERKNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='683' c='_ZN7WebCore22EmptyFrameLoaderClient23dispatchWillSendRequestEPNS_14DocumentLoaderEmRNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='709' c='_ZN7WebCore22EmptyFrameLoaderClient26dispatchDidReceiveResponseEPNS_14DocumentLoaderEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='733' c='_ZN7WebCore22EmptyFrameLoaderClient38dispatchDidLoadResourceFromMemoryCacheEPNS_14DocumentLoaderERKNS_15ResourceRequestERKNS_16ResourceResponseEi'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='819' c='_ZN7WebCore22EmptyFrameLoaderClient31dispatchDecidePolicyForResponseERKNS_16ResourceResponseERKNS_15ResourceRequestENS_21PolicyCheckIdentifierERKN3WTF15861978'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='905' c='_ZNK7WebCore22EmptyFrameLoaderClient23cannotShowMIMETypeErrorERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='910' c='_ZNK7WebCore22EmptyFrameLoaderClient21fileDoesNotExistErrorERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='915' c='_ZNK7WebCore22EmptyFrameLoaderClient25pluginWillHandleLoadErrorERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/FetchIdioms.cpp' l='34' c='_ZN7WebCore32shouldBlockResponseDueToMIMETypeERKNS_16ResourceResponseENS_12FetchOptions11DestinationE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='360' c='_ZN7WebCore11FrameLoader26initForSynthesizedDocumentERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='414' c='_ZN7WebCore11FrameLoader18checkContentPolicyERKNS_16ResourceResponseENS_21PolicyCheckIdentifierEON3WTF8FunctionIFvNS_12PolicyActionES4_EEE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='990' c='_ZN7WebCore11FrameLoader11loadArchiveEON3WTF3RefINS_7ArchiveENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='1382' c='_ZN7WebCore11FrameLoader7loadURLEONS_16FrameLoadRequestERKN3WTF6StringENS_13FrameLoadTypeEPNS_5EventEONS3_6RefPtrINS_9FormStateENS3_12RawPtrTraitsISB_3936764'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='1420' c='_ZN7WebCore11FrameLoader27defaultSubstituteDataForURLERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='1584' c='_ZN7WebCore11FrameLoader22loadWithDocumentLoaderEPNS_14DocumentLoaderENS_13FrameLoadTypeEON3WTF6RefPtrINS_9FormStateENS4_12RawPtrTraitsIS6_EENS4_21Def7653511'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='1619' c='_ZN7WebCore11FrameLoader22loadWithDocumentLoaderEPNS_14DocumentLoaderENS_13FrameLoadTypeEON3WTF6RefPtrINS_9FormStateENS4_12RawPtrTraitsIS6_EENS4_21Def7653511'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='1672' c='_ZN7WebCore11FrameLoader23willLoadMediaElementURLERN3WTF3URLERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='2072' c='_ZN7WebCore11FrameLoader21commitProvisionalLoadEv'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='3080' c='_ZN7WebCore11FrameLoader25loadResourceSynchronouslyERKNS_15ResourceRequestENS_22ClientCredentialPolicyERKNS_12FetchOptionsERKNS_13HTTPHeaderMapERNS_13665605'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='3571' c='_ZN7WebCore11FrameLoader19requestFromDelegateERNS_15ResourceRequestERmRNS_13ResourceErrorE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='3610' c='_ZN7WebCore11FrameLoader29loadedResourceFromMemoryCacheERNS_14CachedResourceERNS_15ResourceRequestERNS_13ResourceErrorE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/LoaderStrategy.cpp' l='44' c='_ZN7WebCore14LoaderStrategy34responseFromResourceLoadIdentifierEm'/>
+<use f='WebKit/Source/WebCore/loader/MediaResourceLoader.cpp' l='137' c='_ZN7WebCore19MediaResourceLoader21addResponseForTestingERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/MediaResourceLoader.cpp' l='173' c='_ZN7WebCore13MediaResource16responseReceivedERNS_14CachedResourceERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/MediaResourceLoader.cpp' l='204' c='_ZN7WebCore13MediaResource19shouldCacheResponseERNS_14CachedResourceERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/MediaResourceLoader.cpp' l='214' c='_ZN7WebCore13MediaResource16redirectReceivedERNS_14CachedResourceEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<use f='WebKit/Source/WebCore/loader/NavigationScheduler.cpp' l='354' c='_ZN7WebCore18ScheduledPageBlock4fireERNS_5FrameE'/>
+<use f='WebKit/Source/WebCore/loader/NetscapePlugInStreamLoader.cpp' l='102' c='_ZN7WebCore26NetscapePlugInStreamLoader15willSendRequestEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<use f='WebKit/Source/WebCore/loader/NetscapePlugInStreamLoader.cpp' l='115' c='_ZN7WebCore26NetscapePlugInStreamLoader18didReceiveResponseERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/PingLoader.cpp' l='218' c='_ZN7WebCore10PingLoader13startPingLoadERNS_5FrameERNS_15ResourceRequestEONS_13HTTPHeaderMapENS0_21ShouldFollowRedirectsENS_31ContentSecurityPolicyImpo4235151'/>
+<use f='WebKit/Source/WebCore/loader/PolicyChecker.cpp' l='102' c='_ZN7WebCore11FrameLoader13PolicyChecker21checkNavigationPolicyEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS3_ONS7_7Weak4259530'/>
+<use f='WebKit/Source/WebCore/loader/PolicyChecker.cpp' l='120' c='_ZN7WebCore11FrameLoader13PolicyChecker21checkNavigationPolicyEONS_15ResourceRequestERKNS_16ResourceResponseEPNS_14DocumentLoaderEON3WTF6RefPtrINS_9Fo16209104'/>
+<use f='WebKit/Source/WebCore/loader/PolicyChecker.cpp' l='292' c='_ZN7WebCore11FrameLoader13PolicyChecker18cannotShowMIMETypeERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/ProgressTracker.cpp' l='186' c='_ZN7WebCore15ProgressTracker17incrementProgressEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.cpp' l='64' c='_ZN7WebCore20ResourceLoadNotifier15willSendRequestEPNS_14ResourceLoaderERNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.cpp' l='71' c='_ZN7WebCore20ResourceLoadNotifier18didReceiveResponseEPNS_14ResourceLoaderERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.cpp' l='122' c='_ZN7WebCore20ResourceLoadNotifier23dispatchWillSendRequestEPNS_14DocumentLoaderEmRNS_15ResourceRequestERKNS_16ResourceResponseEPKNS_14CachedResourceE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.cpp' l='155' c='_ZN7WebCore20ResourceLoadNotifier26dispatchDidReceiveResponseEPNS_14DocumentLoaderEmRKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.cpp' l='191' c='_ZN7WebCore20ResourceLoadNotifier29sendRemainingDelegateMessagesEPNS_14DocumentLoaderEmRKNS_15ResourceRequestERKNS_16ResourceResponseEPKhiiRKNS_13ResourceErrorE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='170' c='_ZN7WebCore14ResourceLoader4initEONS_15ResourceRequestEON3WTF17CompletionHandlerIFvbEEE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='192' c='_ZN7WebCore14ResourceLoader22deliverResponseAndDataERKNS_16ResourceResponseEON3WTF6RefPtrINS_12SharedBufferENS4_12RawPtrTraitsIS6_EENS4_21DefaultRefDerefTraitsIS6_EEEE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='302' c='_ZN7WebCore14ResourceLoader11loadDataURLEv'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='362' c='_ZN7WebCore14ResourceLoader23willSendRequestInternalEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='456' c='_ZN7WebCore14ResourceLoader15willSendRequestEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='514' c='_ZN7WebCore14ResourceLoader18didReceiveResponseERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='708' c='_ZN7WebCore14ResourceLoader20willSendRequestAsyncEPNS_14ResourceHandleEONS_15ResourceRequestEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='724' c='_ZN7WebCore14ResourceLoader23didReceiveResponseAsyncEPNS_14ResourceHandleEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.cpp' l='38' c='_ZN7WebCore14ResourceTiming15fromMemoryCacheERKN3WTF3URLERKNS1_6StringERKNS_18ResourceLoadTimingERKNS_16ResourceResponseERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.cpp' l='48' c='_ZN7WebCore14ResourceTiming19fromSynchronousLoadERKN3WTF3URLERKNS1_6StringERKNS_18ResourceLoadTimingERKNS_18NetworkLoadMetricsERKNS_16ResourceResponse2354542'/>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.cpp' l='53' c='_ZN7WebCore14ResourceTimingC1ERKN3WTF3URLERKNS1_6StringERKNS_18ResourceLoadTimingERKNS_16ResourceResponseERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.cpp' l='61' c='_ZN7WebCore14ResourceTimingC1ERKN3WTF3URLERKNS1_6StringERKNS_18ResourceLoadTimingERKNS_18NetworkLoadMetricsERKNS_16ResourceResponseERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.cpp' l='70' c='_ZN7WebCore14ResourceTiming16initServerTimingERKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.cpp' l='186' c='_ZN7WebCore17SubresourceLoader23willSendRequestInternalEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.cpp' l='248' c='_ZN7WebCore17SubresourceLoader23willSendRequestInternalEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.cpp' l='349' c='_ZN7WebCoreL20isLocationURLFailureERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.cpp' l='355' c='_ZN7WebCore17SubresourceLoader18didReceiveResponseERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.cpp' l='415' c='_ZN7WebCore17SubresourceLoader18didReceiveResponseERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.cpp' l='447' c='_ZN7WebCore17SubresourceLoader18didReceiveResponseERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.cpp' l='623' c='_ZN7WebCore17SubresourceLoader37checkResponseCrossOriginAccessControlERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.cpp' l='643' c='_ZN7WebCore17SubresourceLoader40checkRedirectionCrossOriginAccessControlERKNS_15ResourceRequestERKNS_16ResourceResponseERS1_'/>
+<use f='WebKit/Source/WebCore/loader/ThreadableLoaderClientWrapper.h' l='63' c='_ZN7WebCore29ThreadableLoaderClientWrapper18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/ThreadableLoaderClientWrapper.h' l='95' c='_ZN7WebCore29ThreadableLoaderClientWrapper36didReceiveAuthenticationCancellationEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/WorkerThreadableLoader.h' l='106' c='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/WorkerThreadableLoader.cpp' l='221' c='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheResourceLoader.h' l='58' c='_ZN7WebCore30ApplicationCacheResourceLoader16responseReceivedERNS_14CachedResourceERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheResourceLoader.h' l='60' c='_ZN7WebCore30ApplicationCacheResourceLoader16redirectReceivedERNS_14CachedResourceEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheGroup.cpp' l='441' c='_ZN7WebCore21ApplicationCacheGroup6updateERNS_5FrameENS_28ApplicationCacheUpdateOptionE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheGroup.cpp' l='902' c='_ZN7WebCore21ApplicationCacheGroup17startLoadingEntryEv'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.cpp' l='103' c='_ZN7WebCore20ApplicationCacheHost21maybeLoadMainResourceERKNS_15ResourceRequestERNS_14SubstituteDataE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.cpp' l='124' c='_ZN7WebCore20ApplicationCacheHost32maybeLoadFallbackForMainResponseERKNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.cpp' l='208' c='_ZN7WebCore20ApplicationCacheHost28maybeLoadFallbackForRedirectEPNS_14ResourceLoaderERNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.cpp' l='220' c='_ZN7WebCore20ApplicationCacheHost28maybeLoadFallbackForResponseEPNS_14ResourceLoaderERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.cpp' l='265' c='_ZN7WebCore20ApplicationCacheHost22maybeLoadSynchronouslyERNS_15ResourceRequestERNS_13ResourceErrorERNS_16ResourceResponseERN3WTF6RefPtrINS_12SharedBu10947111'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.cpp' l='282' c='_ZN7WebCore20ApplicationCacheHost30maybeLoadFallbackSynchronouslyERKNS_15ResourceRequestERNS_13ResourceErrorERNS_16ResourceResponseERN3WTF6RefPtrINS_116047735'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheResource.cpp' l='32' c='_ZN7WebCore24ApplicationCacheResource6createERKN3WTF3URLERKNS_16ResourceResponseEjONS1_6RefPtrINS_12SharedBufferENS1_12RawPtrTraitsIS9_EENS1_21Default2306578'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheResource.cpp' l='43' c='_ZN7WebCore24ApplicationCacheResourceC1EON3WTF3URLEONS_16ResourceResponseEjONS1_3RefINS_12SharedBufferENS1_12RawPtrTraitsIS7_EEEERKNS1_6StringE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheResourceLoader.cpp' l='79' c='_ZN7WebCore30ApplicationCacheResourceLoader16responseReceivedERNS_14CachedResourceERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheResourceLoader.cpp' l='107' c='_ZN7WebCore30ApplicationCacheResourceLoader16redirectReceivedERNS_14CachedResourceEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheStorage.cpp' l='1056' c='_ZN7WebCoreL11parseHeaderEPKT_jRNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheStorage.cpp' l='1069' c='_ZN7WebCoreL12parseHeadersERKN3WTF6StringERNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheStorage.cpp' l='1130' c='_ZN7WebCore23ApplicationCacheStorage9loadCacheEj'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/loader/archive/ArchiveResource.cpp' l='36' c='_ZN7WebCore15ArchiveResourceC1EON3WTF3RefINS_12SharedBufferENS1_12RawPtrTraitsIS3_EEEERKNS1_3URLERKNS1_6StringESD_SD_RKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/archive/ArchiveResource.cpp' l='37' c='_ZN7WebCore15ArchiveResourceC1EON3WTF3RefINS_12SharedBufferENS1_12RawPtrTraitsIS3_EEEERKNS1_3URLERKNS1_6StringESD_SD_RKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/archive/ArchiveResource.cpp' l='45' c='_ZN7WebCore15ArchiveResource6createEON3WTF6RefPtrINS_12SharedBufferENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEERKNS1_3URLERKNS1_6Strin3508149'/>
+<use f='WebKit/Source/WebCore/loader/archive/ArchiveResource.cpp' l='52' c='_ZN7WebCore15ArchiveResource6createEON3WTF6RefPtrINS_12SharedBufferENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEERKNS1_3URLERKNS1_6Strin3508149'/>
+<use f='WebKit/Source/WebCore/loader/archive/ArchiveResource.cpp' l='57' c='_ZN7WebCore15ArchiveResource6createEON3WTF6RefPtrINS_12SharedBufferENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEERKNS1_3URLERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedImage.cpp' l='610' c='_ZN7WebCore11CachedImage16responseReceivedERKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/fileapi/FileReaderLoader.cpp' l='129' c='_ZN7WebCore16FileReaderLoader18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/workers/Worker.cpp' l='197' c='_ZN7WebCore6Worker18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/workers/WorkerFontLoadRequest.h' l='63' c='_ZN7WebCore21WorkerFontLoadRequest18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/workers/WorkerFontLoadRequest.cpp' l='108' c='_ZN7WebCore21WorkerFontLoadRequest18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/workers/WorkerScriptLoader.cpp' l='161' c='_ZN7WebCore18WorkerScriptLoader22validateWorkerResponseERKNS_16ResourceResponseENS_12FetchOptions11DestinationE'/>
+<use f='WebKit/Source/WebCore/workers/WorkerScriptLoader.cpp' l='179' c='_ZN7WebCore18WorkerScriptLoader18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/workers/service/ServiceWorkerJob.cpp' l='118' c='_ZN7WebCore16ServiceWorkerJob29validateServiceWorkerResponseERKNS_20ServiceWorkerJobDataERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/workers/service/ServiceWorkerJob.cpp' l='143' c='_ZN7WebCore16ServiceWorkerJob18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<size>264</size>
+<use f='WebKit/Source/WebCore/workers/service/context/ServiceWorkerFetch.cpp' l='49' c='_ZN7WebCore18ServiceWorkerFetchL16validateResponseERKNS_16ResourceResponseENS_12FetchOptions4ModeENS4_8RedirectE'/>
+<size>264</size>

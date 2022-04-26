@@ -1,0 +1,30 @@
+<doc f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSObjectRef.h' l='149'>/*! 
+@typedef JSObjectSetPropertyCallback
+@abstract The callback invoked when setting a property&apos;s value.
+@param ctx The execution context to use.
+@param object The JSObject on which to set the property&apos;s value.
+@param propertyName A JSString containing the name of the property to set.
+@param value A JSValue to use as the property&apos;s value.
+@param exception A pointer to a JSValueRef in which to return an exception, if any.
+@result true if the property was set, otherwise false.
+@discussion If you named your function SetProperty, you would declare it like this:
+
+bool SetProperty(JSContextRef ctx, JSObjectRef object, JSStringRef propertyName, JSValueRef value, JSValueRef* exception);
+
+If this function returns false, the set request forwards to object&apos;s statically declared properties, then its parent class chain (which includes the default object class).
+*/</doc>
+<doc f='WebKit/Source/JavaScriptCore/API/JSObjectRef.h' l='149'>/*! 
+@typedef JSObjectSetPropertyCallback
+@abstract The callback invoked when setting a property&apos;s value.
+@param ctx The execution context to use.
+@param object The JSObject on which to set the property&apos;s value.
+@param propertyName A JSString containing the name of the property to set.
+@param value A JSValue to use as the property&apos;s value.
+@param exception A pointer to a JSValueRef in which to return an exception, if any.
+@result true if the property was set, otherwise false.
+@discussion If you named your function SetProperty, you would declare it like this:
+
+bool SetProperty(JSContextRef ctx, JSObjectRef object, JSStringRef propertyName, JSValueRef value, JSValueRef* exception);
+
+If this function returns false, the set request forwards to object&apos;s statically declared properties, then its parent class chain (which includes the default object class).
+*/</doc>

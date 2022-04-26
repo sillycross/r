@@ -1,0 +1,15 @@
+<def f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='3596' ll='3669' type='void JSC::Yarr::YarrGenerator::opCompileBody(JSC::Yarr::PatternDisjunction * disjunction)'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='3842' u='c' c='_ZN3JSC4Yarr13YarrGenerator7compileEv'/>
+<doc f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='3583'>// opCompileBody
+    // This method compiles the body disjunction of the regular expression.
+    // The body consists of two sets of alternatives - zero or more &apos;once
+    // through&apos; (BOL anchored) alternatives, followed by zero or more
+    // repeated alternatives.
+    // For each of these two sets of alteratives, if not empty they will be
+    // wrapped in a set of YarrOpCode::BodyAlternativeBegin/Next/End nodes (with the
+    // &apos;begin&apos; node referencing the first alternative, and &apos;next&apos; nodes
+    // referencing any further alternatives. The begin/next/end nodes are
+    // linked together in a doubly linked list. In the case of repeating
+    // alternatives, the end node is also linked back to the beginning.
+    // If no repeating alternatives exist, then a YarrOpCode::MatchFailed node exists
+    // to return the failing result.</doc>

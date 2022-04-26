@@ -1,0 +1,11 @@
+<dec f='WebKit/Source/WebCore/editing/CompositeEditCommand.h' l='205' type='void WebCore::CompositeEditCommand::moveParagraphWithClones(const WebCore::VisiblePosition &amp; startOfParagraphToMove, const WebCore::VisiblePosition &amp; endOfParagraphToMove, WebCore::Element * blockElement, WebCore::Node * outerNode)'/>
+<def f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='1375' ll='1418' type='void WebCore::CompositeEditCommand::moveParagraphWithClones(const WebCore::VisiblePosition &amp; startOfParagraphToMove, const WebCore::VisiblePosition &amp; endOfParagraphToMove, WebCore::Element * blockElement, WebCore::Node * outerNode)'/>
+<doc f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='1369'>// This is a version of moveParagraph that preserves style by keeping the original markup
+// It is currently used only by IndentOutdentCommand but it is meant to be used in the
+// future by several other commands such as InsertList and the align commands.
+// The blockElement parameter is the element to move the paragraph to,
+// outerNode is the top element of the paragraph hierarchy. </doc>
+<use f='WebKit/Source/WebCore/editing/FormatBlockCommand.cpp' l='96' u='c' c='_ZN7WebCore18FormatBlockCommand11formatRangeERKNS_8PositionES3_S3_RN3WTF6RefPtrINS_7ElementENS4_12RawPtrTraitsIS6_EENS4_21DefaultRefDerefTraitsIS6_EEEE'/>
+<use f='WebKit/Source/WebCore/editing/IndentOutdentCommand.cpp' l='83' u='c' c='_ZN7WebCore20IndentOutdentCommand22tryIndentingAsListItemERKNS_8PositionES3_'/>
+<use f='WebKit/Source/WebCore/editing/IndentOutdentCommand.cpp' l='127' u='c' c='_ZN7WebCore20IndentOutdentCommand20indentIntoBlockquoteERKNS_8PositionES3_RN3WTF6RefPtrINS_7ElementENS4_12RawPtrTraitsIS6_EENS4_21DefaultRefDerefTraitsIS6_EEEE'/>
+<use f='WebKit/Source/WebCore/editing/InsertListCommand.cpp' l='249' u='c' c='_ZN7WebCore17InsertListCommand25doApplyForSingleParagraphEbRKNS_17HTMLQualifiedNameERNS_11SimpleRangeE'/>

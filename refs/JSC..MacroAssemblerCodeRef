@@ -1,0 +1,496 @@
+<inh f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssemblerCodeRef.h' l='420' c='JSC::MacroAssemblerCodeRefBase'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssemblerCodeRef.h' l='428' ll='527'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssemblerCodeRef.h' l='450' c='_ZN3JSC21MacroAssemblerCodeRefaSERKNS_21MacroAssemblerCodeRefIXT_EEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssemblerCodeRef.h' l='482' c='_ZNK3JSC21MacroAssemblerCodeRef8retaggedEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssemblerCodeRef.h' l='484' c='_ZNK3JSC21MacroAssemblerCodeRef8retaggedEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssemblerCodeRef.h' l='518' c='_ZN3JSC21MacroAssemblerCodeRefC1ERKNS_21MacroAssemblerCodeRefIXT_EEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ThunkGenerator.h' l='36'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VM.h' l='866' c='_ZN3JSC2VM10getCTIStubEPFNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE26129EEERS0_E'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/YarrJIT.h' l='81' c='_ZN3JSC4Yarr13YarrCodeBlock11set8BitCodeENS_21MacroAssemblerCodeRefILN3WTF6PtrTagE40109EEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/YarrJIT.h' l='82' c='_ZN3JSC4Yarr13YarrCodeBlock12set16BitCodeENS_21MacroAssemblerCodeRefILN3WTF6PtrTagE57659EEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/YarrJIT.h' l='86' c='_ZN3JSC4Yarr13YarrCodeBlock20set8BitCodeMatchOnlyENS_21MacroAssemblerCodeRefILN3WTF6PtrTagE38072EEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/YarrJIT.h' l='87' c='_ZN3JSC4Yarr13YarrCodeBlock21set16BitCodeMatchOnlyENS_21MacroAssemblerCodeRefILN3WTF6PtrTagE50227EEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/YarrJIT.h' l='175' c='_ZN3JSC4Yarr13YarrCodeBlock5clearEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/YarrJIT.h' l='176' c='_ZN3JSC4Yarr13YarrCodeBlock5clearEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/YarrJIT.h' l='177' c='_ZN3JSC4Yarr13YarrCodeBlock5clearEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/YarrJIT.h' l='178' c='_ZN3JSC4Yarr13YarrCodeBlock5clearEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/YarrJIT.h' l='183'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/YarrJIT.h' l='184'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/YarrJIT.h' l='185'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/YarrJIT.h' l='186'/>
+<fun r='_ZN3JSC21MacroAssemblerCodeRefC1ENS_21MacroAssemblerCodePtrIXT_EEE'/>
+<fun r='_ZN3JSC21MacroAssemblerCodeRefC1Ev'/>
+<fun r='_ZN3JSC21MacroAssemblerCodeRefC1EON3WTF3RefINS1_19MetaAllocatorHandleENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN3JSC21MacroAssemblerCodeRefaSERKNS_21MacroAssemblerCodeRefIXT_EEE'/>
+<fun r='_ZN3JSC21MacroAssemblerCodeRef24createSelfManagedCodeRefENS_21MacroAssemblerCodePtrIXT_EEE'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRef16executableMemoryEv'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRef4codeEv'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRef12retaggedCodeEv'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRef8retaggedEv'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRef4sizeEv'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRef16tryToDisassembleERN3WTF11PrintStreamEPKc'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRef16tryToDisassembleEPKc'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRef11disassemblyEv'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRefcvbEv'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRef4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZN3JSC21MacroAssemblerCodeRefC1ERKNS_21MacroAssemblerCodeRefIXT_EEE'/>
+<mbr r='JSC::MacroAssemblerCodeRef::m_codePtr' t='MacroAssemblerCodePtr&lt;tag&gt;'/>
+<mbr r='JSC::MacroAssemblerCodeRef::m_executableMemory' t='RefPtr&lt;JSC::ExecutableMemoryHandle&gt;'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='86'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITCode.h' l='67'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ExecutableBase.h' l='60' c='_ZN3JSC26boundFunctionCallGeneratorEPNS_2VME'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITStubRoutine.h' l='60' c='_ZN3JSC14JITStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITStubRoutine.h' l='71' c='_ZN3JSC14JITStubRoutine24createSelfManagedRoutineENS_21MacroAssemblerCodePtrILN3WTF6PtrTagE49594EEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITStubRoutine.h' l='80' c='_ZNK3JSC14JITStubRoutine4codeEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITStubRoutine.h' l='120'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCAwareJITStubRoutine.h' l='59' c='_ZN3JSC21GCAwareJITStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCAwareJITStubRoutine.h' l='62' c='_ZN3JSC21GCAwareJITStubRoutine6createERNS_2VMERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCAwareJITStubRoutine.h' l='97' c='_ZN3JSC31PolymorphicAccessJITStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEERNS_2VMEONS2_11FixedVectorINS2_6RefPtrINS_10AccessCaseEN14966298'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCAwareJITStubRoutine.h' l='127' c='_ZN3JSC28MarkingGCAwareJITStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEERNS_2VMEONS2_11FixedVectorINS2_6RefPtrINS_10AccessCaseENS2_5439086'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCAwareJITStubRoutine.h' l='148' c='_ZN3JSC41GCAwareJITStubRoutineWithExceptionHandlerC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEERNS_2VMEONS2_11FixedVectorINS2_6RefPtrINS_10Ac2549210'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCAwareJITStubRoutine.h' l='183' c='_ZN3JSC22createICJITStubRoutineERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEEONS1_11FixedVectorINS1_6RefPtrINS_10AccessCaseENS1_12RawPtrTraitsIS12468927'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PolymorphicCallStubRoutine.h' l='86' c='_ZN3JSC26PolymorphicCallStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEERNS_2VMEPKNS_6JSCellEPNS_9CallFrameERNS_12CallLinkInfoERKNS2_4249919'/>
+<inh f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerCodeRef.h' l='420' c='JSC::MacroAssemblerCodeRefBase'/>
+<def f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerCodeRef.h' l='428' ll='527'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerCodeRef.h' l='450' c='_ZN3JSC21MacroAssemblerCodeRefaSERKNS_21MacroAssemblerCodeRefIXT_EEE'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerCodeRef.h' l='482' c='_ZNK3JSC21MacroAssemblerCodeRef8retaggedEv'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerCodeRef.h' l='484' c='_ZNK3JSC21MacroAssemblerCodeRef8retaggedEv'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerCodeRef.h' l='518' c='_ZN3JSC21MacroAssemblerCodeRefC1ERKNS_21MacroAssemblerCodeRefIXT_EEE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerator.h' l='36'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.h' l='866' c='_ZN3JSC2VM10getCTIStubEPFNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE26129EEERS0_E'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='86'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCode.h' l='67'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.h' l='81' c='_ZN3JSC4Yarr13YarrCodeBlock11set8BitCodeENS_21MacroAssemblerCodeRefILN3WTF6PtrTagE40109EEE'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.h' l='82' c='_ZN3JSC4Yarr13YarrCodeBlock12set16BitCodeENS_21MacroAssemblerCodeRefILN3WTF6PtrTagE57659EEE'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.h' l='86' c='_ZN3JSC4Yarr13YarrCodeBlock20set8BitCodeMatchOnlyENS_21MacroAssemblerCodeRefILN3WTF6PtrTagE38072EEE'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.h' l='87' c='_ZN3JSC4Yarr13YarrCodeBlock21set16BitCodeMatchOnlyENS_21MacroAssemblerCodeRefILN3WTF6PtrTagE50227EEE'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.h' l='175' c='_ZN3JSC4Yarr13YarrCodeBlock5clearEv'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.h' l='176' c='_ZN3JSC4Yarr13YarrCodeBlock5clearEv'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.h' l='177' c='_ZN3JSC4Yarr13YarrCodeBlock5clearEv'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.h' l='178' c='_ZN3JSC4Yarr13YarrCodeBlock5clearEv'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.h' l='183'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.h' l='184'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.h' l='185'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.h' l='186'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ExecutableBase.h' l='60' c='_ZN3JSC26boundFunctionCallGeneratorEPNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITStubRoutine.h' l='60' c='_ZN3JSC14JITStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITStubRoutine.h' l='71' c='_ZN3JSC14JITStubRoutine24createSelfManagedRoutineENS_21MacroAssemblerCodePtrILN3WTF6PtrTagE49594EEE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITStubRoutine.h' l='80' c='_ZNK3JSC14JITStubRoutine4codeEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITStubRoutine.h' l='120'/>
+<use f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.h' l='59' c='_ZN3JSC21GCAwareJITStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.h' l='62' c='_ZN3JSC21GCAwareJITStubRoutine6createERNS_2VMERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.h' l='97' c='_ZN3JSC31PolymorphicAccessJITStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEERNS_2VMEONS2_11FixedVectorINS2_6RefPtrINS_10AccessCaseEN14966298'/>
+<use f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.h' l='127' c='_ZN3JSC28MarkingGCAwareJITStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEERNS_2VMEONS2_11FixedVectorINS2_6RefPtrINS_10AccessCaseENS2_5439086'/>
+<use f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.h' l='148' c='_ZN3JSC41GCAwareJITStubRoutineWithExceptionHandlerC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEERNS_2VMEONS2_11FixedVectorINS2_6RefPtrINS_10Ac2549210'/>
+<use f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.h' l='183' c='_ZN3JSC22createICJITStubRoutineERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEEONS1_11FixedVectorINS1_6RefPtrINS_10AccessCaseENS1_12RawPtrTraitsIS12468927'/>
+<use f='WebKit/Source/JavaScriptCore/jit/PolymorphicCallStubRoutine.h' l='86' c='_ZN3JSC26PolymorphicCallStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEERNS_2VMEPKNS_6JSCellEPNS_9CallFrameERNS_12CallLinkInfoERKNS2_4249919'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/LinkBuffer.h' l='70'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCompilation.h' l='47' c='_ZN3JSC11CompilationC1ENS_21MacroAssemblerCodeRefILN3WTF6PtrTagE2367EEESt10unique_ptrINS_16OpaqueByproductsESt14default_deleteIS6_EE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCompilation.h' l='52' c='_ZNK3JSC11Compilation7codeRefEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCompilation.h' l='57'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/WebAssemblyFunction.h' l='97'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCodeBlock.h' l='151'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmModule.h' l='75'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssemblyCodeBlock.h' l='92'/>
+<fun r='_ZN3JSC21MacroAssemblerCodeRefC1ENS_21MacroAssemblerCodePtrIXT_EEE'/>
+<fun r='_ZN3JSC21MacroAssemblerCodeRefC1Ev'/>
+<fun r='_ZN3JSC21MacroAssemblerCodeRefC1EON3WTF3RefINS1_19MetaAllocatorHandleENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN3JSC21MacroAssemblerCodeRefaSERKNS_21MacroAssemblerCodeRefIXT_EEE'/>
+<fun r='_ZN3JSC21MacroAssemblerCodeRef24createSelfManagedCodeRefENS_21MacroAssemblerCodePtrIXT_EEE'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRef16executableMemoryEv'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRef4codeEv'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRef12retaggedCodeEv'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRef8retaggedEv'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRef4sizeEv'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRef16tryToDisassembleERN3WTF11PrintStreamEPKc'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRef16tryToDisassembleEPKc'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRef11disassemblyEv'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRefcvbEv'/>
+<fun r='_ZNK3JSC21MacroAssemblerCodeRef4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZN3JSC21MacroAssemblerCodeRefC1ERKNS_21MacroAssemblerCodeRefIXT_EEE'/>
+<mbr r='JSC::MacroAssemblerCodeRef::m_codePtr' t='MacroAssemblerCodePtr&lt;tag&gt;'/>
+<mbr r='JSC::MacroAssemblerCodeRef::m_executableMemory' t='RefPtr&lt;JSC::ExecutableMemoryHandle&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='72' c='_ZN3JSC5LLInt10getCodeRefENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='196' c='_ZN3JSC5LLInt10getCodeRefENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='198' c='_ZN3JSC5LLInt10getCodeRefENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='202' c='_ZN3JSC5LLInt16getWide16CodeRefENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='204' c='_ZN3JSC5LLInt16getWide16CodeRefENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='208' c='_ZN3JSC5LLInt16getWide32CodeRefENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='210' c='_ZN3JSC5LLInt16getWide32CodeRefENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLazySlowPath.h' l='84' c='_ZNK3JSC3FTL12LazySlowPath4stubEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLazySlowPath.h' l='92'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.h' l='126'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='40' c='_ZN3JSC24handleExceptionGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='41' c='_ZN3JSC45handleExceptionWithCallFrameRollbackGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='42' c='_ZN3JSC49popThunkStackPreservesAndHandleExceptionGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='47' c='_ZN3JSC39throwExceptionFromCallSlowPathGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='49' c='_ZN3JSC22linkCallThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='50' c='_ZN3JSC33linkPolymorphicCallThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='52' c='_ZN3JSC15virtualThunkForERNS_2VMERNS_12CallLinkInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='54' c='_ZN3JSC19nativeCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='55' c='_ZN3JSC24nativeConstructGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='56' c='_ZN3JSC23nativeTailCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='57' c='_ZN3JSC39nativeTailCallWithoutSavedTagsGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='58' c='_ZN3JSC29internalFunctionCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='59' c='_ZN3JSC34internalFunctionConstructGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='60' c='_ZN3JSC19arityFixupGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='61' c='_ZN3JSC20unreachableGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='62' c='_ZN3JSC23stringGetByValGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='64' c='_ZN3JSC24charCodeAtThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='65' c='_ZN3JSC20charAtThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='66' c='_ZN3JSC40stringPrototypeCodePointAtThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='67' c='_ZN3JSC19clz32ThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='68' c='_ZN3JSC26fromCharCodeThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='69' c='_ZN3JSC17absThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='70' c='_ZN3JSC18ceilThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='71' c='_ZN3JSC17expThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='72' c='_ZN3JSC19floorThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='73' c='_ZN3JSC17logThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='74' c='_ZN3JSC19roundThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='75' c='_ZN3JSC18sqrtThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='76' c='_ZN3JSC18imulThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='77' c='_ZN3JSC20randomThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='78' c='_ZN3JSC19truncThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='80' c='_ZN3JSC26boundFunctionCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.h' l='83' c='_ZN3JSC23checkExceptionGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLink.cpp' l='164' c='_ZN3JSC3FTL4linkERNS0_5StateE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLink.cpp' l='168' c='_ZN3JSC3FTL4linkERNS0_5StateE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLink.cpp' l='171' c='_ZN3JSC3FTL4linkERNS0_5StateE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.h' l='155'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.h' l='41' c='_ZN3JSC3FTL31osrExitGenerationThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.h' l='42' c='_ZN3JSC3FTL36lazySlowPathGenerationThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.h' l='43' c='_ZN3JSC3FTL26slowPathCallThunkGeneratorERNS_2VMERKNS0_15SlowPathCallKeyE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.h' l='48'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.h' l='56' c='_ZN3JSC3FTL19generateIfNecessaryERNS_2VMERT_RKNS3_7KeyTypeET0_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.h' l='63' c='_ZN3JSC3FTL19generateIfNecessaryERNS_2VMERT_RKNS3_7KeyTypeET0_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.h' l='82' c='_ZN3JSC3FTL6Thunks20getSlowPathCallThunkERNS_2VMERKNS0_15SlowPathCallKeyE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCall.cpp' l='134' c='_ZN3JSC3FTL19SlowPathCallContext8makeCallERNS_2VMENS_11FunctionPtrILN3WTF6PtrTagE1EEE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCall.cpp' l='150' c='_ZN3JSC3FTL19SlowPathCallContext8makeCallERNS_2VMENS_22AbstractMacroAssemblerINS_12X86AssemblerEE7AddressE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.cpp' l='48' c='_ZN3JSC3FTLL31genericGenerationThunkGeneratorERNS_2VMENS_11FunctionPtrILN3WTF6PtrTagE1EEES5_PKcjNS0_34FrameAndStackAdjustmentRequirementE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.cpp' l='126' c='_ZN3JSC3FTL31osrExitGenerationThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.cpp' l='133' c='_ZN3JSC3FTL36lazySlowPathGenerationThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.cpp' l='168' c='_ZN3JSC3FTL26slowPathCallThunkGeneratorERNS_2VMERKNS0_15SlowPathCallKeyE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='69' c='_ZN3JSC5LLInt25functionForCallEntryThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='70' c='_ZN3JSC5LLInt30functionForConstructEntryThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='71' c='_ZN3JSC5LLInt30functionForCallArityCheckThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='72' c='_ZN3JSC5LLInt35functionForConstructArityCheckThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='73' c='_ZN3JSC5LLInt14evalEntryThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='74' c='_ZN3JSC5LLInt17programEntryThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='75' c='_ZN3JSC5LLInt23moduleProgramEntryThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='76' c='_ZN3JSC5LLInt27getHostCallReturnValueThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='77' c='_ZN3JSC5LLInt23genericReturnPointThunkENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='78' c='_ZN3JSC5LLInt34fuzzerReturnEarlyFromLoopHintThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='80' c='_ZN3JSC5LLInt16callToThrowThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='81' c='_ZN3JSC5LLInt28handleUncaughtExceptionThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='82' c='_ZN3JSC5LLInt16handleCatchThunkENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='101' c='_ZN3JSC5LLInt28normalOSRExitTrampolineThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='103' c='_ZN3JSC5LLInt32checkpointOSRExitTrampolineThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='104' c='_ZN3JSC5LLInt47checkpointOSRExitFromInlinedCallTrampolineThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='105' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='109' c='_ZN3JSC5LLInt22wasmFunctionEntryThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmThunks.h' l='35' c='_ZN3JSC4Wasm36throwExceptionFromWasmThunkGeneratorERKN3WTF14AbstractLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmThunks.h' l='36' c='_ZN3JSC4Wasm40throwStackOverflowFromWasmThunkGeneratorERKN3WTF14AbstractLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmThunks.h' l='38' c='_ZN3JSC4Wasm35triggerOMGEntryTierUpThunkGeneratorERKN3WTF14AbstractLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmThunks.h' l='41'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmThunks.h' l='50' c='_ZN3JSC4Wasm6Thunks4stubEPFNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE26129EEERKNS3_14AbstractLockerEE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmThunks.h' l='51' c='_ZN3JSC4Wasm6Thunks4stubERKN3WTF14AbstractLockerEPFNS_21MacroAssemblerCodeRefILNS2_6PtrTagE26129EEES5_E'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmThunks.h' l='52' c='_ZN3JSC4Wasm6Thunks12existingStubEPFNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE26129EEERKNS3_14AbstractLockerEE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmThunks.h' l='57'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmEntryPlan.h' l='64' c='_ZN3JSC4Wasm9EntryPlan23takeWasmToWasmExitStubsEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmEntryPlan.h' l='117'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmBinding.h' l='44' c='_ZN3JSC4Wasm10wasmToWasmEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmBinding.cpp' l='40' c='_ZN3JSC4Wasm10wasmToWasmEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntPlan.h' l='53' c='_ZN3JSC4Wasm9LLIntPlan15takeEntryThunksEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntPlan.h' l='94'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmThunks.cpp' l='40' c='_ZN3JSC4Wasm36throwExceptionFromWasmThunkGeneratorERKN3WTF14AbstractLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmThunks.cpp' l='61' c='_ZN3JSC4Wasm40throwStackOverflowFromWasmThunkGeneratorERKN3WTF14AbstractLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmThunks.cpp' l='76' c='_ZN3JSC4Wasm35triggerOMGEntryTierUpThunkGeneratorERKN3WTF14AbstractLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmThunks.cpp' l='113' c='_ZN3JSC4Wasm6Thunks4stubEPFNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE26129EEERKNS3_14AbstractLockerEE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmThunks.cpp' l='119' c='_ZN3JSC4Wasm6Thunks4stubERKN3WTF14AbstractLockerEPFNS_21MacroAssemblerCodeRefILNS2_6PtrTagE26129EEES5_E'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmThunks.cpp' l='123' c='_ZN3JSC4Wasm6Thunks4stubERKN3WTF14AbstractLockerEPFNS_21MacroAssemblerCodeRefILNS2_6PtrTagE26129EEES5_E'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmThunks.cpp' l='128' c='_ZN3JSC4Wasm6Thunks4stubERKN3WTF14AbstractLockerEPFNS_21MacroAssemblerCodeRefILNS2_6PtrTagE26129EEES5_E'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmThunks.cpp' l='134' c='_ZN3JSC4Wasm6Thunks12existingStubEPFNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE26129EEERKNS3_14AbstractLockerEE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmThunks.cpp' l='142' c='_ZN3JSC4Wasm6Thunks12existingStubEPFNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE26129EEERKNS3_14AbstractLockerEE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/WasmToJS.h' l='45' c='_ZN3JSC4Wasm8wasmToJSERNS_2VMERN3WTF3BagINS_12CallLinkInfoENS3_12RawPtrTraitsIS5_EEEEmj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/WasmToJS.cpp' l='54' c='_ZN3JSC4Wasm8wasmToJSERNS_2VMERN3WTF3BagINS_12CallLinkInfoENS3_12RawPtrTraitsIS5_EEEEmj'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/Disassembler.h' l='55' c='_ZN3JSC25disassembleAsynchronouslyERKN3WTF7CStringERKNS_21MacroAssemblerCodeRefILNS0_6PtrTagE3123EEEmPKc'/>
+<use f='WebKit/Source/JavaScriptCore/jit/AssemblyHelpers.cpp' l='707' c='_ZN3JSC15AssemblyHelpers15emitVirtualCallERNS_2VMEPNS_14JSGlobalObjectEPNS_12CallLinkInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITMathIC.h' l='239'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='805' c='_ZN3JSC3JIT38slow_op_del_by_id_prepareCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='806' c='_ZN3JSC3JIT39slow_op_del_by_val_prepareCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='807' c='_ZN3JSC3JIT38slow_op_get_by_id_prepareCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='808' c='_ZN3JSC3JIT48slow_op_get_by_id_with_this_prepareCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='809' c='_ZN3JSC3JIT39slow_op_get_by_val_prepareCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='810' c='_ZN3JSC3JIT31slow_op_get_from_scopeGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='811' c='_ZN3JSC3JIT45slow_op_get_private_name_prepareCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='812' c='_ZN3JSC3JIT38slow_op_put_by_id_prepareCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='813' c='_ZN3JSC3JIT39slow_op_put_by_val_prepareCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='814' c='_ZN3JSC3JIT45slow_op_put_private_name_prepareCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='815' c='_ZN3JSC3JIT29slow_op_put_to_scopeGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='816' c='_ZN3JSC3JIT30slow_op_resolve_scopeGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='818' c='_ZN3JSC3JIT31op_check_traps_handlerGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='819' c='_ZN3JSC3JIT25op_enter_handlerGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='820' c='_ZN3JSC3JIT23op_ret_handlerGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='821' c='_ZN3JSC3JIT25op_throw_handlerGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='831' c='_ZN3JSC3JIT41op_get_from_scope_GlobalPropertyGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='831' c='_ZN3JSC3JIT36op_get_from_scope_GlobalVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='831' c='_ZN3JSC3JIT43op_get_from_scope_GlobalLexicalVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='831' c='_ZN3JSC3JIT37op_get_from_scope_ClosureVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='831' c='_ZN3JSC3JIT45op_get_from_scope_ResolvedClosureVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='831' c='_ZN3JSC3JIT36op_get_from_scope_ModuleVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='831' c='_ZN3JSC3JIT63op_get_from_scope_GlobalPropertyWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='831' c='_ZN3JSC3JIT58op_get_from_scope_GlobalVarWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='831' c='_ZN3JSC3JIT65op_get_from_scope_GlobalLexicalVarWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='831' c='_ZN3JSC3JIT59op_get_from_scope_ClosureVarWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='831' c='_ZN3JSC3JIT45op_get_from_scope_UnresolvedPropertyGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='831' c='_ZN3JSC3JIT67op_get_from_scope_UnresolvedPropertyWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='831' c='_ZN3JSC3JIT34op_get_from_scope_DynamicGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='835' c='_ZN3JSC3JIT27generateOpGetFromScopeThunkENS_11ResolveTypeEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='845' c='_ZN3JSC3JIT40op_resolve_scope_GlobalPropertyGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='845' c='_ZN3JSC3JIT35op_resolve_scope_GlobalVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='845' c='_ZN3JSC3JIT42op_resolve_scope_GlobalLexicalVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='845' c='_ZN3JSC3JIT36op_resolve_scope_ClosureVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='845' c='_ZN3JSC3JIT44op_resolve_scope_ResolvedClosureVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='845' c='_ZN3JSC3JIT35op_resolve_scope_ModuleVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='845' c='_ZN3JSC3JIT62op_resolve_scope_GlobalPropertyWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='845' c='_ZN3JSC3JIT57op_resolve_scope_GlobalVarWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='845' c='_ZN3JSC3JIT64op_resolve_scope_GlobalLexicalVarWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='845' c='_ZN3JSC3JIT58op_resolve_scope_ClosureVarWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='845' c='_ZN3JSC3JIT44op_resolve_scope_UnresolvedPropertyGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='845' c='_ZN3JSC3JIT66op_resolve_scope_UnresolvedPropertyWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='845' c='_ZN3JSC3JIT33op_resolve_scope_DynamicGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='849' c='_ZN3JSC3JIT27generateOpResolveScopeThunkENS_11ResolveTypeEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='851' c='_ZN3JSC3JIT22valueIsFalseyGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='852' c='_ZN3JSC3JIT22valueIsTruthyGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.cpp' l='42' c='_ZN3JSC21GCAwareJITStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.cpp' l='81' c='_ZN3JSC31PolymorphicAccessJITStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEERNS_2VMEONS2_11FixedVectorINS2_6RefPtrINS_10AccessCaseEN14966298'/>
+<use f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.cpp' l='107' c='_ZN3JSC28MarkingGCAwareJITStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEERNS_2VMEONS2_11FixedVectorINS2_6RefPtrINS_10AccessCaseENS2_5439086'/>
+<use f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.cpp' l='138' c='_ZN3JSC41GCAwareJITStubRoutineWithExceptionHandlerC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEERNS_2VMEONS2_11FixedVectorINS2_6RefPtrINS_10Ac2549210'/>
+<use f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.cpp' l='185' c='_ZN3JSC22createICJITStubRoutineERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEEONS1_11FixedVectorINS1_6RefPtrINS_10AccessCaseENS1_12RawPtrTraitsIS12468927'/>
+<use f='WebKit/Source/JavaScriptCore/jit/SlowPathCall.h' l='48' c='_ZN3JSC15JITSlowPathCall13generateThunkERNS_2VMEPFNS_18SlowPathReturnTypeEPNS_9CallFrameEPKNS_11InstructionEE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCompilation.cpp' l='35' c='_ZN3JSC11CompilationC1ENS_21MacroAssemblerCodeRefILN3WTF6PtrTagE2367EEESt10unique_ptrINS_16OpaqueByproductsESt14default_deleteIS6_EE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntExceptions.h' l='47' c='_ZN3JSC5LLInt11callToThrowERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntExceptions.h' l='49' c='_ZN3JSC5LLInt23handleUncaughtExceptionERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntExceptions.h' l='50' c='_ZN3JSC5LLInt11handleCatchENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITThunks.h' l='65' c='_ZN3JSC9JITThunks7ctiStubERNS_2VMEPFNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE26129EEES2_E'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITThunks.h' l='67' c='_ZN3JSC9JITThunks23ctiSlowPathFunctionStubERNS_2VMEPFNS_18SlowPathReturnTypeEPNS_9CallFrameEPKNS_11InstructionEE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITThunks.h' l='76' c='_ZN3JSC9JITThunks11ctiStubImplEPFNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE26129EEERNS_2VMEET_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='386' c='_ZN3JSC3JIT23op_ret_handlerGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='477' c='_ZN3JSC3JIT22valueIsFalseyGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='637' c='_ZN3JSC3JIT22valueIsTruthyGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='712' c='_ZN3JSC3JIT25op_throw_handlerGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='1213' c='_ZN3JSC3JIT25op_enter_handlerGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='1523' c='_ZN3JSC3JIT31op_check_traps_handlerGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGThunks.h' l='38' c='_ZN3JSC3DFG31osrExitGenerationThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGThunks.h' l='39' c='_ZN3JSC3DFG22osrEntryThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntEntrypoint.h' l='44' c='_ZN3JSC5LLInt32getHostCallReturnValueEntrypointEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntEntrypoint.h' l='45' c='_ZN3JSC5LLInt39fuzzerReturnEarlyFromLoopHintEntrypointEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntEntrypoint.h' l='46' c='_ZN3JSC5LLInt28genericReturnPointEntrypointENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='140' c='_ZN3JSC3JIT39slow_op_get_by_val_prepareCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='255' c='_ZN3JSC3JIT45slow_op_get_private_name_prepareCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='716' c='_ZN3JSC3JIT39slow_op_put_by_val_prepareCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='831' c='_ZN3JSC3JIT45slow_op_put_private_name_prepareCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='996' c='_ZN3JSC3JIT38slow_op_del_by_id_prepareCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='1114' c='_ZN3JSC3JIT39slow_op_del_by_val_prepareCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='1394' c='_ZN3JSC3JIT38slow_op_get_by_id_prepareCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='1479' c='_ZN3JSC3JIT48slow_op_get_by_id_with_this_prepareCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='1592' c='_ZN3JSC3JIT38slow_op_put_by_id_prepareCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2022' c='_ZN3JSC3JIT27generateOpResolveScopeThunkENS_11ResolveTypeEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2172' c='_ZN3JSC3JIT40op_resolve_scope_GlobalPropertyGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2172' c='_ZN3JSC3JIT35op_resolve_scope_GlobalVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2172' c='_ZN3JSC3JIT42op_resolve_scope_GlobalLexicalVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2172' c='_ZN3JSC3JIT36op_resolve_scope_ClosureVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2172' c='_ZN3JSC3JIT44op_resolve_scope_ResolvedClosureVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2172' c='_ZN3JSC3JIT35op_resolve_scope_ModuleVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2172' c='_ZN3JSC3JIT62op_resolve_scope_GlobalPropertyWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2172' c='_ZN3JSC3JIT57op_resolve_scope_GlobalVarWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2172' c='_ZN3JSC3JIT64op_resolve_scope_GlobalLexicalVarWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2172' c='_ZN3JSC3JIT58op_resolve_scope_ClosureVarWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2172' c='_ZN3JSC3JIT44op_resolve_scope_UnresolvedPropertyGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2172' c='_ZN3JSC3JIT66op_resolve_scope_UnresolvedPropertyWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2172' c='_ZN3JSC3JIT33op_resolve_scope_DynamicGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2183' c='_ZN3JSC3JIT30slow_op_resolve_scopeGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2424' c='_ZN3JSC3JIT27generateOpGetFromScopeThunkENS_11ResolveTypeEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2597' c='_ZN3JSC3JIT41op_get_from_scope_GlobalPropertyGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2597' c='_ZN3JSC3JIT36op_get_from_scope_GlobalVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2597' c='_ZN3JSC3JIT43op_get_from_scope_GlobalLexicalVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2597' c='_ZN3JSC3JIT37op_get_from_scope_ClosureVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2597' c='_ZN3JSC3JIT45op_get_from_scope_ResolvedClosureVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2597' c='_ZN3JSC3JIT36op_get_from_scope_ModuleVarGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2597' c='_ZN3JSC3JIT63op_get_from_scope_GlobalPropertyWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2597' c='_ZN3JSC3JIT58op_get_from_scope_GlobalVarWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2597' c='_ZN3JSC3JIT65op_get_from_scope_GlobalLexicalVarWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2597' c='_ZN3JSC3JIT59op_get_from_scope_ClosureVarWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2597' c='_ZN3JSC3JIT45op_get_from_scope_UnresolvedPropertyGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2597' c='_ZN3JSC3JIT67op_get_from_scope_UnresolvedPropertyWithVarInjectionChecksGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2597' c='_ZN3JSC3JIT34op_get_from_scope_DynamicGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2608' c='_ZN3JSC3JIT31slow_op_get_from_scopeGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2840' c='_ZN3JSC3JIT29slow_op_put_to_scopeGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITThunks.cpp' l='133' c='_ZN3JSC9JITThunks11ctiStubImplEPFNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE26129EEERNS_2VMEET_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITThunks.cpp' l='149' c='_ZN3JSC9JITThunks11ctiStubImplEPFNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE26129EEERNS_2VMEET_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITThunks.cpp' l='159' c='_ZN3JSC9JITThunks11ctiStubImplEPFNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE26129EEERNS_2VMEET_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITThunks.cpp' l='167' c='_ZN3JSC9JITThunks7ctiStubERNS_2VMEPFNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE26129EEES2_E'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITThunks.cpp' l='176' c='_ZN3JSC9JITThunks23ctiSlowPathFunctionStubERNS_2VMEPFNS_18SlowPathReturnTypeEPNS_9CallFrameEPKNS_11InstructionEE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITThunks.cpp' l='238' c='_ZN3JSC9JITThunks16hostFunctionStubERNS_2VMENS_20TaggedNativeFunctionES3_PFNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE26129EEES2_ENS_9IntrinsicEPKNS_6DO9188934'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITThunks.cpp' l='241' c='_ZN3JSC9JITThunks16hostFunctionStubERNS_2VMENS_20TaggedNativeFunctionES3_PFNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE26129EEES2_ENS_9IntrinsicEPKNS_6DO9188934'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITThunks.cpp' l='243' c='_ZN3JSC9JITThunks16hostFunctionStubERNS_2VMENS_20TaggedNativeFunctionES3_PFNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE26129EEES2_ENS_9IntrinsicEPKNS_6DO9188934'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITThunks.cpp' l='245' c='_ZN3JSC9JITThunks16hostFunctionStubERNS_2VMENS_20TaggedNativeFunctionES3_PFNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE26129EEES2_ENS_9IntrinsicEPKNS_6DO9188934'/>
+<use f='WebKit/Source/JavaScriptCore/jit/PolymorphicCallStubRoutine.cpp' l='68' c='_ZN3JSC26PolymorphicCallStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEERNS_2VMEPKNS_6JSCellEPNS_9CallFrameERNS_12CallLinkInfoERKNS2_4249919'/>
+<use f='WebKit/Source/JavaScriptCore/jit/Repatch.cpp' l='1290' c='_ZN3JSCL14linkSlowPathToERNS_2VMERNS_12CallLinkInfoENS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/Repatch.cpp' l='1302' c='_ZN3JSCL11linkSlowForERNS_2VMERNS_12CallLinkInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/Repatch.cpp' l='1383' c='_ZN3JSCL10revertCallERNS_2VMERNS_12CallLinkInfoENS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/Repatch.cpp' l='1420' c='_ZN3JSCL14linkVirtualForERNS_2VMEPNS_9CallFrameERNS_12CallLinkInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/SlowPathCall.cpp' l='53' c='_ZN3JSC15JITSlowPathCall13generateThunkERNS_2VMEPFNS_18SlowPathReturnTypeEPNS_9CallFrameEPKNS_11InstructionEE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/SpecializedThunkJIT.h' l='156' c='_ZN3JSC19SpecializedThunkJIT8finalizeENS_21MacroAssemblerCodePtrILN3WTF6PtrTagE26129EEEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='46' c='_ZN3JSC24handleExceptionGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='64' c='_ZN3JSC45handleExceptionWithCallFrameRollbackGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='80' c='_ZN3JSC49popThunkStackPreservesAndHandleExceptionGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='98' c='_ZN3JSC23checkExceptionGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='158' c='_ZN3JSC39throwExceptionFromCallSlowPathGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='234' c='_ZN3JSC22linkCallThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='251' c='_ZN3JSC33linkPolymorphicCallThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='265' c='_ZN3JSCL15virtualThunkForERNS_2VMENS_8CallModeENS_22CodeSpecializationKindE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='342' c='_ZN3JSCL26virtualThunkForRegularCallERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='347' c='_ZN3JSCL31virtualThunkForRegularConstructERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='352' c='_ZN3JSCL23virtualThunkForTailCallERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='357' c='_ZN3JSCL28virtualThunkForTailConstructERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='362' c='_ZN3JSCL28virtualThunkForConstructCallERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='367' c='_ZN3JSCL33virtualThunkForConstructConstructERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='372' c='_ZN3JSC15virtualThunkForERNS_2VMERNS_12CallLinkInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='399' c='_ZN3JSCL18nativeForGeneratorERNS_2VMENS_17ThunkFunctionTypeENS_22CodeSpecializationKindENS_14ThunkEntryTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='515' c='_ZN3JSC19nativeCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='520' c='_ZN3JSC23nativeTailCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='525' c='_ZN3JSC39nativeTailCallWithoutSavedTagsGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='530' c='_ZN3JSC24nativeConstructGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='535' c='_ZN3JSC29internalFunctionCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='540' c='_ZN3JSC34internalFunctionConstructGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='545' c='_ZN3JSC19arityFixupGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='694' c='_ZN3JSC20unreachableGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='704' c='_ZN3JSC23stringGetByValGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='793' c='_ZN3JSC24charCodeAtThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='801' c='_ZN3JSC20charAtThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='810' c='_ZN3JSC26fromCharCodeThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='820' c='_ZN3JSC40stringPrototypeCodePointAtThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='864' c='_ZN3JSC19clz32ThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='885' c='_ZN3JSC18sqrtThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='889' c='_ZN3JSC18sqrtThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1049' c='_ZN3JSC19floorThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1054' c='_ZN3JSC19floorThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1092' c='_ZN3JSC18ceilThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1096' c='_ZN3JSC18ceilThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1115' c='_ZN3JSC19truncThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1119' c='_ZN3JSC19truncThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1138' c='_ZN3JSC19roundThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1142' c='_ZN3JSC19roundThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1177' c='_ZN3JSC17expThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1180' c='_ZN3JSC17expThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1183' c='_ZN3JSC17expThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1190' c='_ZN3JSC17logThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1193' c='_ZN3JSC17logThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1196' c='_ZN3JSC17logThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1203' c='_ZN3JSC17absThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1207' c='_ZN3JSC17absThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1260' c='_ZN3JSC18imulThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1291' c='_ZN3JSC20randomThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1295' c='_ZN3JSC20randomThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1307' c='_ZN3JSC26boundFunctionCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/Disassembler.cpp' l='66'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/Disassembler.cpp' l='134' c='_ZN3JSC25disassembleAsynchronouslyERKN3WTF7CStringERKNS_21MacroAssemblerCodeRefILNS0_6PtrTagE3123EEEmPKc'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntEntrypoint.cpp' l='119' c='_ZN3JSC5LLIntL17setEvalEntrypointEPNS_9CodeBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntEntrypoint.cpp' l='146' c='_ZN3JSC5LLIntL20setProgramEntrypointEPNS_9CodeBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntEntrypoint.cpp' l='173' c='_ZN3JSC5LLIntL26setModuleProgramEntrypointEPNS_9CodeBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntEntrypoint.cpp' l='193' c='_ZN3JSC5LLInt32getHostCallReturnValueEntrypointEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntEntrypoint.cpp' l='202' c='_ZN3JSC5LLInt39fuzzerReturnEarlyFromLoopHintEntrypointEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntEntrypoint.cpp' l='211' c='_ZN3JSC5LLInt28genericReturnPointEntrypointENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntExceptions.cpp' l='52' c='_ZN3JSC5LLInt11callToThrowERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntExceptions.cpp' l='68' c='_ZN3JSC5LLInt23handleUncaughtExceptionERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntExceptions.cpp' l='77' c='_ZN3JSC5LLInt11handleCatchENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp' l='2082' c='_ZN3JSC5LLInt14commonCallEvalEPNS_9CallFrameEPKNS_11InstructionENS_21MacroAssemblerCodeRefILN3WTF6PtrTagE357EEE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='77' c='_ZN3JSC5LLIntL23generateThunkWithJumpToEPFvvEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='96' c='_ZN3JSC5LLIntL23generateThunkWithJumpToENS_8OpcodeIDEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='102' c='_ZN3JSC5LLIntL31generateThunkWithJumpToPrologueENS_8OpcodeIDEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='123' c='_ZN3JSC5LLIntL39generateThunkWithJumpToLLIntReturnPointEPFvvEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='133' c='_ZN3JSC5LLIntL39generateThunkWithJumpToLLIntReturnPointENS_8OpcodeIDEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='138' c='_ZN3JSC5LLInt25functionForCallEntryThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='140' c='_ZN3JSC5LLInt25functionForCallEntryThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='148' c='_ZN3JSC5LLInt30functionForConstructEntryThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='150' c='_ZN3JSC5LLInt30functionForConstructEntryThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='158' c='_ZN3JSC5LLInt30functionForCallArityCheckThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='160' c='_ZN3JSC5LLInt30functionForCallArityCheckThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='168' c='_ZN3JSC5LLInt35functionForConstructArityCheckThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='170' c='_ZN3JSC5LLInt35functionForConstructArityCheckThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='178' c='_ZN3JSC5LLInt14evalEntryThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='180' c='_ZN3JSC5LLInt14evalEntryThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='188' c='_ZN3JSC5LLInt17programEntryThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='190' c='_ZN3JSC5LLInt17programEntryThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='198' c='_ZN3JSC5LLInt23moduleProgramEntryThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='200' c='_ZN3JSC5LLInt23moduleProgramEntryThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='209' c='_ZN3JSC5LLInt22wasmFunctionEntryThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='211' c='_ZN3JSC5LLInt22wasmFunctionEntryThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='223' c='_ZN3JSC5LLInt27getHostCallReturnValueThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='225' c='_ZN3JSC5LLInt27getHostCallReturnValueThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='256' c='_ZN3JSC5LLInt16callToThrowThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='258' c='_ZN3JSC5LLInt16callToThrowThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='266' c='_ZN3JSC5LLInt28handleUncaughtExceptionThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='268' c='_ZN3JSC5LLInt28handleUncaughtExceptionThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='276' c='_ZN3JSC5LLInt16handleCatchThunkENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='280' c='_ZN3JSC5LLInt16handleCatchThunkENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='288' c='_ZN3JSC5LLInt16handleCatchThunkENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='296' c='_ZN3JSC5LLInt16handleCatchThunkENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='308' c='_ZN3JSC5LLInt23genericReturnPointThunkENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='312' c='_ZN3JSC5LLInt23genericReturnPointThunkENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='320' c='_ZN3JSC5LLInt23genericReturnPointThunkENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='328' c='_ZN3JSC5LLInt23genericReturnPointThunkENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='340' c='_ZN3JSC5LLInt34fuzzerReturnEarlyFromLoopHintThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='342' c='_ZN3JSC5LLInt34fuzzerReturnEarlyFromLoopHintThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='513' c='_ZN3JSC5LLInt28normalOSRExitTrampolineThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='515' c='_ZN3JSC5LLInt28normalOSRExitTrampolineThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='525' c='_ZN3JSC5LLInt32checkpointOSRExitTrampolineThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='527' c='_ZN3JSC5LLInt32checkpointOSRExitTrampolineThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='535' c='_ZN3JSC5LLInt47checkpointOSRExitFromInlinedCallTrampolineThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='537' c='_ZN3JSC5LLInt47checkpointOSRExitFromInlinedCallTrampolineThunkEv'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='545' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='551' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='559' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='567' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='551' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='559' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='567' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='551' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='559' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='567' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='551' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='559' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='567' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='551' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='559' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='567' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='551' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='559' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='567' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='551' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='559' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='567' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='551' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='559' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='567' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='551' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='559' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='567' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='551' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='559' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='567' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGThunks.cpp' l='43' c='_ZN3JSC3DFG31osrExitGenerationThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGThunks.cpp' l='132' c='_ZN3JSC3DFG22osrEntryThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.cpp' l='283' c='_ZN3JSC3DFG11JITCompiler4linkERNS_10LinkBufferE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PolymorphicAccess.cpp' l='841' c='_ZN3JSC17PolymorphicAccess10regenerateERKNS_24GCSafeConcurrentJSLockerERNS_2VMEPNS_14JSGlobalObjectEPNS_9CodeBlockENS_8ECMAModeERNS_17StructureStubInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.cpp' l='816' c='_ZN3JSC2VM10getCTIStubEPFNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE26129EEERS0_E'/>
+<use f='WebKit/Source/WebCore/cssjit/CompiledSelector.h' l='48'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/LinkBuffer.h' l='70'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='322' c='_ZN7WebCore16SelectorCompiler21SelectorCodeGenerator7compileERN3JSC21MacroAssemblerCodeRefILN3WTF6PtrTagE53711EEE'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='1467' c='_ZN7WebCore16SelectorCompiler21SelectorCodeGenerator7compileERN3JSC21MacroAssemblerCodeRefILN3WTF6PtrTagE53711EEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITCompilation.h' l='47' c='_ZN3JSC11CompilationC1ENS_21MacroAssemblerCodeRefILN3WTF6PtrTagE2367EEESt10unique_ptrINS_16OpaqueByproductsESt14default_deleteIS6_EE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITCompilation.h' l='52' c='_ZNK3JSC11Compilation7codeRefEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITCompilation.h' l='57'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmCodeBlock.h' l='151'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmModule.h' l='75'/>

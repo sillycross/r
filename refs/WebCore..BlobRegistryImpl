@@ -1,0 +1,33 @@
+<use f='WebKit/Source/WebCore/platform/network/BlobData.h' l='115'/>
+<use f='WebKit/Source/WebCore/platform/network/FormData.h' l='223' c='_ZN7WebCore8FormData21resolveBlobReferencesEPNS_16BlobRegistryImplE'/>
+<use f='WebKit/Source/WebCore/platform/network/soup/ResourceRequest.h' l='61' c='_ZNK7WebCore15ResourceRequest17createSoupMessageERNS_16BlobRegistryImplE'/>
+<use f='WebKit/Source/WebCore/platform/network/soup/ResourceRequest.h' l='71' c='_ZNK7WebCore15ResourceRequest21updateSoupMessageBodyEP12_SoupMessageRNS_16BlobRegistryImplE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/PendingDownload.h' l='53' c='_ZN6WebKit15PendingDownloadC1EPN3IPC10ConnectionEONS_21NetworkLoadParametersEN3WTF16ObjectIdentifierINS_22DownloadIdentifierTypeEEERNS_14NetworkSessio11778347'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoad.h' l='48' c='_ZN6WebKit11NetworkLoadC1ERNS_17NetworkLoadClientEPN7WebCore16BlobRegistryImplEONS_21NetworkLoadParametersERNS_14NetworkSessionE'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobRegistry.h' l='70' c='_ZN7WebCore12BlobRegistry16blobRegistryImplEv'/>
+<def f='WebKit/Source/WebCore/platform/network/BlobRegistryImpl.h' l='49' ll='82'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSession.h' l='151' c='_ZN6WebKit14NetworkSession12blobRegistryEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSession.h' l='217'/>
+<size>16</size>
+<doc f='WebKit/Source/WebCore/platform/network/BlobRegistryImpl.h' l='48'>// BlobRegistryImpl is not thread-safe. It should only be called from main thread.</doc>
+<fun r='_ZN7WebCore16BlobRegistryImplD1Ev'/>
+<fun r='_ZNK7WebCore16BlobRegistryImpl18getBlobDataFromURLERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore16BlobRegistryImpl20createResourceHandleERKNS_15ResourceRequestEPNS_20ResourceHandleClientE'/>
+<fun r='_ZN7WebCore16BlobRegistryImpl19writeBlobToFilePathERKN3WTF3URLERKNS1_6StringEONS1_8FunctionIFvbEEE'/>
+<fun r='_ZN7WebCore16BlobRegistryImpl18appendStorageItemsEPNS_8BlobDataERKN3WTF6VectorINS_12BlobDataItemELm0ENS3_15CrashOnOverflowELm16ENS3_10FastMallocEEExx'/>
+<fun r='_ZN7WebCore16BlobRegistryImpl19registerFileBlobURLERKN3WTF3URLEONS1_3RefINS_21BlobDataFileReferenceENS1_12RawPtrTraitsIS6_EEEERKNS1_6StringE'/>
+<fun r='_ZN7WebCore16BlobRegistryImpl15registerBlobURLERKN3WTF3URLEONS1_6VectorINS_8BlobPartELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEERKNS1_6StringE'/>
+<fun r='_ZN7WebCore16BlobRegistryImpl15registerBlobURLERKN3WTF3URLES4_'/>
+<fun r='_ZN7WebCore16BlobRegistryImpl35registerBlobURLOptionallyFileBackedERKN3WTF3URLES4_ONS1_6RefPtrINS_21BlobDataFileReferenceENS1_12RawPtrTraitsIS6_EENS1_5289773'/>
+<fun r='_ZN7WebCore16BlobRegistryImpl23registerBlobURLForSliceERKN3WTF3URLES4_xxRKNS1_6StringE'/>
+<fun r='_ZN7WebCore16BlobRegistryImpl17unregisterBlobURLERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore16BlobRegistryImpl8blobSizeERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore16BlobRegistryImpl26writeBlobsToTemporaryFilesERKN3WTF6VectorINS1_6StringELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEEONS1_17CompletionHandlerIFvOS6_EEE'/>
+<fun r='_ZN7WebCore16BlobRegistryImpl27populateBlobsForFileWritingERKN3WTF6VectorINS1_6StringELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEERNS2_INS0_18Bl1247127'/>
+<fun r='_ZNK7WebCore16BlobRegistryImpl11filesInBlobERKN3WTF3URLE'/>
+<mbr r='WebCore::BlobRegistryImpl::m_blobs' o='64' t='HashMap&lt;WTF::String, RefPtr&lt;WebCore::BlobData&gt; &gt;'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/PendingDownload.cpp' l='39' c='_ZN6WebKit15PendingDownloadC1EPN3IPC10ConnectionEONS_21NetworkLoadParametersEN3WTF16ObjectIdentifierINS_22DownloadIdentifierTypeEEERNS_14NetworkSessio11778347'/>
+<size>16</size>
+<use f='WebKit/Source/WebCore/platform/network/FormData.cpp' l='304' c='_ZN7WebCoreL18appendBlobResolvedEPNS_16BlobRegistryImplERNS_8FormDataERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/platform/network/FormData.cpp' l='337' c='_ZN7WebCore8FormData21resolveBlobReferencesEPNS_16BlobRegistryImplE'/>
+<size>16</size>

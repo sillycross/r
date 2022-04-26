@@ -1,0 +1,60 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSCell.h' l='127' type='JSC::JSCellLock &amp; JSC::JSCell::cellLock()'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSCell.h' l='120'>// Each cell has a built-in lock. Currently it&apos;s simply available for use if you need it. It&apos;s
+    // a full-blown WTF::Lock. Note that this lock is currently used in JSArray and that lock&apos;s
+    // ordering with the Structure lock is that the Structure lock must be acquired first.
+
+    // We use this abstraction to make it easier to grep for places where we lock cells.
+    // to lock a cell you can just do:
+    // Locker locker { cell-&gt;cellLocker() };</doc>
+<def f='WebKit/Source/JavaScriptCore/runtime/JSCell.h' l='127' type='JSC::JSCellLock &amp; JSC::JSCell::cellLock()'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSCell.h' l='120'>// Each cell has a built-in lock. Currently it&apos;s simply available for use if you need it. It&apos;s
+    // a full-blown WTF::Lock. Note that this lock is currently used in JSArray and that lock&apos;s
+    // ordering with the Structure lock is that the Structure lock must be acquired first.
+
+    // We use this abstraction to make it easier to grep for places where we lock cells.
+    // to lock a cell you can just do:
+    // Locker locker { cell-&gt;cellLocker() };</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/WeakMapImpl.h' l='213' u='c' c='_ZN3JSC11WeakMapImpl14finishCreationERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmInstance.cpp' l='127' u='c' c='_ZN3JSC4Wasm8Instance18setFunctionWrapperEjNS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTable.cpp' l='88' u='c' c='_ZN3JSC4Wasm5Table4growEjNS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTable.cpp' l='171' u='c' c='_ZN3JSC4Wasm5Table18visitAggregateImplERT_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssemblyInstance.cpp' l='101' u='c' c='_ZN3JSC21JSWebAssemblyInstance17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/WeakMapImplInlines.h' l='95' u='c' c='_ZN3JSC11WeakMapImpl6rehashENS0_10RehashModeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreterInlines.h' l='2258' u='c' c='_ZN3JSC3DFG19AbstractInterpreter14executeEffectsEjPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlock.cpp' l='72' u='c' c='_ZN3JSC17UnlinkedCodeBlockC1ERNS_2VMEPNS_9StructureENS_8CodeTypeERKNS_14ExecutableInfoEN3WTF9OptionSetINS_18CodeGenerationModeEEE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlock.cpp' l='77' u='c' c='_ZN3JSC17UnlinkedCodeBlockC1ERNS_2VMEPNS_9StructureENS_8CodeTypeERKNS_14ExecutableInfoEN3WTF9OptionSetINS_18CodeGenerationModeEEE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlock.cpp' l='89' u='c' c='_ZN3JSC17UnlinkedCodeBlock17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlockGenerator.cpp' l='120' u='c' c='_ZN3JSC26UnlinkedCodeBlockGenerator8finalizeESt10unique_ptrINS_17InstructionStreamESt14default_deleteIS2_EE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FunctionExecutable.cpp' l='84' u='c' c='_ZN3JSC18FunctionExecutable17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='795' u='c' c='_ZN3JSC7JSArray26shiftCountWithArrayStorageERNS_2VMEjjPNS_12ArrayStorageE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='983' u='c' c='_ZN3JSC7JSArray28unshiftCountWithArrayStorageEPNS_14JSGlobalObjectEjjPNS_12ArrayStorageE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.cpp' l='216' u='c' c='_ZN3JSC17JSArrayBufferView6detachEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.cpp' l='300' u='c' c='_ZN3JSC17JSArrayBufferView22slowDownAndWasteMemoryEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSFinalizationRegistry.cpp' l='71' u='c' c='_ZN3JSC22JSFinalizationRegistry17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSFinalizationRegistry.cpp' l='101' u='c' c='_ZN3JSC22JSFinalizationRegistry23finalizeUnconditionallyERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSFinalizationRegistry.cpp' l='177' u='c' c='_ZN3JSC22JSFinalizationRegistry21takeDeadHoldingsValueEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSFinalizationRegistry.cpp' l='201' u='c' c='_ZN3JSC22JSFinalizationRegistry14registerTargetERNS_2VMEPNS_8JSObjectENS_7JSValueES5_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSFinalizationRegistry.cpp' l='217' u='c' c='_ZN3JSC22JSFinalizationRegistry10unregisterERNS_2VMEPNS_8JSObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleNamespaceObject.cpp' l='63' u='c' c='_ZN3JSC23JSModuleNamespaceObject14finishCreationEPNS_14JSGlobalObjectEPNS_20AbstractModuleRecordEON3WTF6VectorISt4pairINS_10IdentifierENS3_10Resolutio14102983'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleNamespaceObject.cpp' l='98' u='c' c='_ZN3JSC23JSModuleNamespaceObject17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='387' u='c' c='_ZN3JSC8JSObject18visitButterflyImplERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSegmentedVariableObject.cpp' l='41' u='c' c='_ZN3JSC25JSSegmentedVariableObject17findVariableIndexEPv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSegmentedVariableObject.cpp' l='54' u='c' c='_ZN3JSC25JSSegmentedVariableObject12addVariablesEjNS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSegmentedVariableObject.cpp' l='74' u='c' c='_ZN3JSC25JSSegmentedVariableObject17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ModuleProgramExecutable.cpp' l='92' u='c' c='_ZN3JSC23ModuleProgramExecutable17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ProgramExecutable.cpp' l='222' u='c' c='_ZN3JSC17ProgramExecutable17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/RegExp.cpp' l='232' u='c' c='_ZN3JSC6RegExp7compileEPNS_2VMENS_4Yarr8CharSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/RegExp.cpp' l='283' u='c' c='_ZN3JSC6RegExp17matchConcurrentlyERNS_2VMERKN3WTF6StringEjRiRNS3_6VectorIiLm0ENS3_15CrashOnOverflowELm16ENS3_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/RegExp.cpp' l='296' u='c' c='_ZN3JSC6RegExp16compileMatchOnlyEPNS_2VMENS_4Yarr8CharSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/RegExp.cpp' l='346' u='c' c='_ZN3JSC6RegExp17matchConcurrentlyERNS_2VMERKN3WTF6StringEjRNS_11MatchResultE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/RegExp.cpp' l='357' u='c' c='_ZN3JSC6RegExp10deleteCodeEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScriptExecutable.cpp' l='460' u='c' c='_ZN3JSC16ScriptExecutable20createTemplateObjectEPNS_14JSGlobalObjectEPNS_26JSTemplateObjectDescriptorE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SparseArrayValueMap.cpp' l='72' u='c' c='_ZN3JSC19SparseArrayValueMap3addEPNS_8JSObjectEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SparseArrayValueMap.cpp' l='87' u='c' c='_ZN3JSC19SparseArrayValueMap6removeEN3WTF24HashTableIteratorAdapterINS1_9HashTableImNS1_12KeyValuePairImNS_16SparseArrayEntryEEENS1_24KeyValuePairKeyE11524209'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SparseArrayValueMap.cpp' l='93' u='c' c='_ZN3JSC19SparseArrayValueMap6removeEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SparseArrayValueMap.cpp' l='145' u='c' c='_ZN3JSC19SparseArrayValueMap15getConcurrentlyEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SparseArrayValueMap.cpp' l='220' u='c' c='_ZN3JSC19SparseArrayValueMap17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ErrorInstance.cpp' l='126' u='c' c='_ZN3JSC13ErrorInstance14finishCreationERNS_2VMEPNS_14JSGlobalObjectERKN3WTF6StringENS_7JSValueEPFS6_S8_S8_NS_11RuntimeTypeENS0_28SourceTextWhereErrorOccurredEESA_b'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/EvalExecutable.cpp' l='62' u='c' c='_ZN3JSC14EvalExecutable17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='2405' u='c' c='_ZL37functionFinalizationRegistryLiveCountPN3JSC14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='2418' u='c' c='_ZL37functionFinalizationRegistryDeadCountPN3JSC14JSGlobalObjectEPNS_9CallFrameE'/>

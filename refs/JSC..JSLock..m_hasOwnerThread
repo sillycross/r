@@ -1,0 +1,18 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSLock.h' l='99' u='r' c='_ZNK3JSC6JSLock11ownerThreadEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSLock.h' l='103' u='r' c='_ZN3JSC6JSLock26currentThreadIsHoldingLockEv'/>
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSLock.h' l='147' type='bool'/>
+<offset>48</offset>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSLock.h' l='143'>// We cannot make m_ownerThread an optional (instead of pairing it with an explicit
+    // m_hasOwnerThread) because currentThreadIsHoldingLock() may be called from a
+    // different thread, and an optional is vulnerable to races.
+    // See https://bugs.webkit.org/show_bug.cgi?id=169042#c6</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSLock.h' l='99' u='r' c='_ZNK3JSC6JSLock11ownerThreadEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSLock.h' l='103' u='r' c='_ZN3JSC6JSLock26currentThreadIsHoldingLockEv'/>
+<dec f='WebKit/Source/JavaScriptCore/runtime/JSLock.h' l='147' type='bool'/>
+<offset>48</offset>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSLock.h' l='143'>// We cannot make m_ownerThread an optional (instead of pairing it with an explicit
+    // m_hasOwnerThread) because currentThreadIsHoldingLock() may be called from a
+    // different thread, and an optional is vulnerable to races.
+    // See https://bugs.webkit.org/show_bug.cgi?id=169042#c6</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSLock.cpp' l='123' u='w' c='_ZN3JSC6JSLock4lockEl'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSLock.cpp' l='195' u='w' c='_ZN3JSC6JSLock6unlockEl'/>

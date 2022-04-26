@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderBoxModelObject.h' l='288' type='void WebCore::RenderBoxModelObject::ContinuationChainNode::ContinuationChainNode(WebCore::RenderBoxModelObject &amp; )'/>
+<def f='WebKit/Source/WebCore/rendering/RenderBoxModelObject.cpp' l='88' ll='91' type='void WebCore::RenderBoxModelObject::ContinuationChainNode::ContinuationChainNode(WebCore::RenderBoxModelObject &amp; renderer)'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderBoxModelObject.cpp' l='81'>// The HashMap for storing continuation pointers.
+// An inline can be split with blocks occuring in between the inline content.
+// When this occurs we need a pointer to the next object. We can basically be
+// split into a sequence of inlines and blocks. The continuation will either be
+// an anonymous block (that houses other blocks) or it will be an inline flow.
+// &lt;b&gt;&lt;i&gt;&lt;p&gt;Hello&lt;/p&gt;&lt;/i&gt;&lt;/b&gt;. In this example the &lt;i&gt; will have a block as
+// its continuation but the &lt;b&gt; will just have an inline as its continuation.</doc>

@@ -1,0 +1,39 @@
+<use f='WebKit/Source/WebKit/NetworkProcess/WebStorage/LocalStorageNamespace.h' l='45' c='_ZN6WebKit21LocalStorageNamespaceC1ERNS_14StorageManagerEN3WTF16ObjectIdentifierINS_30StorageNamespaceIdentifierTypeEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/WebStorage/LocalStorageNamespace.h' l='48' c='_ZNK6WebKit21LocalStorageNamespace14storageManagerEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/WebStorage/LocalStorageNamespace.h' l='63'/>
+<def f='WebKit/Source/WebKit/NetworkProcess/WebStorage/StorageManager.h' l='53' ll='98'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/WebStorage/StorageManager.h' l='54' c='_ZN6WebKit14StorageManagerC1ERKS0_'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/WebStorage/StorageManager.h' l='54' c='_ZN6WebKit14StorageManageraSERKS0_'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/WebStorage/StorageManager.h' l='54' c='_ZN6WebKit14StorageManageraSERKS0_'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/WebStorage/LocalStorageNamespace.cpp' l='38' c='_ZN6WebKit21LocalStorageNamespaceC1ERNS_14StorageManagerEN3WTF16ObjectIdentifierINS_30StorageNamespaceIdentifierTypeEEE'/>
+<size>32</size>
+<fun r='_ZN6WebKit14StorageManagerC1ERKS0_'/>
+<fun r='_ZN6WebKit14StorageManagerC1EON3WTF6StringE'/>
+<fun r='_ZN6WebKit14StorageManagerD1Ev'/>
+<fun r='_ZN6WebKit14StorageManager29createSessionStorageNamespaceEN3WTF16ObjectIdentifierINS_30StorageNamespaceIdentifierTypeEEEj'/>
+<fun r='_ZN6WebKit14StorageManager30destroySessionStorageNamespaceEN3WTF16ObjectIdentifierINS_30StorageNamespaceIdentifierTypeEEE'/>
+<fun r='_ZN6WebKit14StorageManager28cloneSessionStorageNamespaceEN3WTF16ObjectIdentifierINS_30StorageNamespaceIdentifierTypeEEES4_'/>
+<fun r='_ZNK6WebKit14StorageManager39getSessionStorageOriginsCrossThreadCopyEv'/>
+<fun r='_ZN6WebKit14StorageManager27deleteSessionStorageOriginsEv'/>
+<fun r='_ZN6WebKit14StorageManager37deleteSessionStorageEntriesForOriginsERKN3WTF6VectorIN7WebCore18SecurityOriginDataELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<fun r='_ZNK6WebKit14StorageManager37getLocalStorageOriginsCrossThreadCopyEv'/>
+<fun r='_ZN6WebKit14StorageManager38deleteLocalStorageOriginsModifiedSinceEN3WTF8WallTimeE'/>
+<fun r='_ZN6WebKit14StorageManager35deleteLocalStorageEntriesForOriginsERKN3WTF6VectorIN7WebCore18SecurityOriginDataELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<fun r='_ZNK6WebKit14StorageManager43getLocalStorageOriginDetailsCrossThreadCopyEv'/>
+<fun r='_ZN6WebKit14StorageManager12renameOriginERKN3WTF3URLES4_'/>
+<fun r='_ZN6WebKit14StorageManager22clearStorageNamespacesEv'/>
+<fun r='_ZN6WebKit14StorageManager17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<fun r='_ZN6WebKit14StorageManager21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<fun r='_ZNK6WebKit14StorageManager27localStorageDatabaseTrackerEv'/>
+<smbr r='WebKit::StorageManager::localStorageDatabaseQuotaInBytes' t='const unsigned int'/>
+<fun r='_ZN6WebKit14StorageManager22createLocalStorageAreaEN3WTF16ObjectIdentifierINS_30StorageNamespaceIdentifierTypeEEEON7WebCore18SecurityOriginDataEONS1_32444969'/>
+<fun r='_ZN6WebKit14StorageManager31createTransientLocalStorageAreaEN3WTF16ObjectIdentifierINS_30StorageNamespaceIdentifierTypeEEEON7WebCore18SecurityOriginDa8870579'/>
+<fun r='_ZN6WebKit14StorageManager24createSessionStorageAreaEN3WTF16ObjectIdentifierINS_30StorageNamespaceIdentifierTypeEEEON7WebCore18SecurityOriginDataEONS115752456'/>
+<fun r='_ZNK6WebKit14StorageManager25allStorageAreaIdentifiersEv'/>
+<fun r='_ZN6WebKit14StorageManager32getOrCreateLocalStorageNamespaceEN3WTF16ObjectIdentifierINS_30StorageNamespaceIdentifierTypeEEE'/>
+<fun r='_ZN6WebKit14StorageManager41getOrCreateTransientLocalStorageNamespaceEN3WTF16ObjectIdentifierINS_30StorageNamespaceIdentifierTypeEEEON7WebCore18SecurityOriginDataE'/>
+<fun r='_ZN6WebKit14StorageManager34getOrCreateSessionStorageNamespaceEN3WTF16ObjectIdentifierINS_30StorageNamespaceIdentifierTypeEEE'/>
+<mbr r='WebKit::StorageManager::m_localStorageDatabaseTracker' o='0' t='RefPtr&lt;WebKit::LocalStorageDatabaseTracker&gt;'/>
+<mbr r='WebKit::StorageManager::m_localStorageNamespaces' o='64' t='HashMap&lt;WebKit::StorageNamespaceIdentifier, std::unique_ptr&lt;LocalStorageNamespace&gt; &gt;'/>
+<mbr r='WebKit::StorageManager::m_transientLocalStorageNamespaces' o='128' t='HashMap&lt;std::pair&lt;StorageNamespaceIdentifier, WebCore::SecurityOriginData&gt;, std::unique_ptr&lt;TransientLocalStorageNamespace&gt; &gt;'/>
+<mbr r='WebKit::StorageManager::m_sessionStorageNamespaces' o='192' t='HashMap&lt;WebKit::StorageNamespaceIdentifier, std::unique_ptr&lt;SessionStorageNamespace&gt; &gt;'/>

@@ -1,0 +1,15 @@
+<def f='WebKit/Source/WebCore/dom/ScriptDisallowedScope.h' l='155' ll='169'/>
+<size>4</size>
+<doc f='WebKit/Source/WebCore/dom/ScriptDisallowedScope.h' l='152'>// FIXME: Remove this class once the sync layout inside SVGImage::draw is removed,
+    // CachedSVGFont::ensureCustomFontData no longer synchronously creates a document during style resolution,
+    // and refactored the code in RenderFrameBase::performLayoutWithFlattening.</doc>
+<fun r='_ZN7WebCore21ScriptDisallowedScope24DisableAssertionsInScopeC1Ev'/>
+<fun r='_ZN7WebCore21ScriptDisallowedScope24DisableAssertionsInScopeD1Ev'/>
+<mbr r='WebCore::ScriptDisallowedScope::DisableAssertionsInScope::m_originalCount' o='0' t='unsigned int'/>
+<use f='WebKit/Source/WebCore/rendering/RenderFrameBase.cpp' l='78' c='_ZN7WebCore15RenderFrameBase27performLayoutWithFlatteningEbb'/>
+<size>4</size>
+<use f='WebKit/Source/WebCore/svg/graphics/SVGImage.cpp' l='88' c='_ZN7WebCore8SVGImageD1Ev'/>
+<use f='WebKit/Source/WebCore/svg/graphics/SVGImage.cpp' l='316' c='_ZN7WebCore8SVGImage4drawERNS_15GraphicsContextERKNS_9FloatRectES5_RKNS_20ImagePaintingOptionsE'/>
+<size>4</size>
+<use f='WebKit/Source/WebCore/loader/cache/CachedSVGFont.cpp' l='79' c='_ZN7WebCore13CachedSVGFont20ensureCustomFontDataERKN3WTF10AtomStringE'/>
+<size>4</size>

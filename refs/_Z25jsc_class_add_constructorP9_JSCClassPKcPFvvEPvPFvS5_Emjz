@@ -1,0 +1,25 @@
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCClass.cpp' l='597' ll='620' type='JSCValue * jsc_class_add_constructor(JSCClass * jscClass, const char * name, GCallback callback, gpointer userData, GDestroyNotify destroyNotify, GType returnType, unsigned int paramCount)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCClass.cpp' l='573'>/**
+ * jsc_class_add_constructor: (skip)
+ * @jsc_class: a #JSCClass
+ * @name: (nullable): the constructor name or %NULL
+ * @callback: (scope async): a #GCallback to be called to create an instance of @jsc_class
+ * @user_data: (closure): user data to pass to @callback
+ * @destroy_notify: (nullable): destroy notifier for @user_data
+ * @return_type: the #GType of the constructor return value
+ * @n_params: the number of parameter types to follow or 0 if constructor doesn&apos;t receive parameters.
+ * @...: a list of #GType&lt;!-- --&gt;s, one for each parameter.
+ *
+ * Add a constructor to @jsc_class. If @name is %NULL, the class name will be used. When &lt;function&gt;new&lt;/function&gt;
+ * is used with the constructor or jsc_value_constructor_call() is called, @callback is invoked receiving the
+ * parameters and @user_data as the last parameter. When the constructor object is cleared in the #JSCClass context,
+ * @destroy_notify is called with @user_data as parameter.
+ *
+ * This function creates the constructor, which needs to be added to an object as a property to be able to use it. Use
+ * jsc_context_set_value() to make the constructor available in the global object.
+ *
+ * Note that the value returned by @callback is adopted by @jsc_class, and the #GDestroyNotify passed to
+ * jsc_context_register_class() is responsible for disposing of it.
+ *
+ * Returns: (transfer full): a #JSCValue representing the class constructor.
+ */</doc>

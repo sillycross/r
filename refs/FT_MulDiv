@@ -1,0 +1,28 @@
+<dec f='include/freetype2/freetype/freetype.h' l='4579' type='FT_Long FT_MulDiv(FT_Long a, FT_Long b, FT_Long c)'/>
+<doc f='include/freetype2/freetype/freetype.h' l='4551'>/**************************************************************************
+   *
+   * @function:
+   *   FT_MulDiv
+   *
+   * @description:
+   *   Compute `(a*b)/c` with maximum accuracy, using a 64-bit intermediate
+   *   integer whenever necessary.
+   *
+   *   This function isn&apos;t necessarily as fast as some processor-specific
+   *   operations, but is at least completely portable.
+   *
+   * @input:
+   *   a ::
+   *     The first multiplier.
+   *
+   *   b ::
+   *     The second multiplier.
+   *
+   *   c ::
+   *     The divisor.
+   *
+   * @return:
+   *   The result of `(a*b)/c`.  This function never traps when trying to
+   *   divide by zero; it simply returns &apos;MaxInt&apos; or &apos;MinInt&apos; depending on
+   *   the signs of `a` and `b`.
+   */</doc>

@@ -1,0 +1,29 @@
+<def f='WebKit/Source/WebCore/rendering/svg/SVGTextLayoutAttributesBuilder.h' l='40' ll='76'/>
+<use f='WebKit/Source/WebCore/rendering/svg/SVGTextLayoutAttributesBuilder.h' l='41' c='_ZN7WebCore30SVGTextLayoutAttributesBuilderC1ERKS0_'/>
+<use f='WebKit/Source/WebCore/rendering/svg/SVGTextLayoutAttributesBuilder.h' l='41' c='_ZN7WebCore30SVGTextLayoutAttributesBuilderaSERKS0_'/>
+<use f='WebKit/Source/WebCore/rendering/svg/SVGTextLayoutAttributesBuilder.h' l='41' c='_ZN7WebCore30SVGTextLayoutAttributesBuilderaSERKS0_'/>
+<use f='WebKit/Source/WebCore/rendering/svg/RenderSVGText.h' l='100'/>
+<size>176</size>
+<doc f='WebKit/Source/WebCore/rendering/svg/SVGTextLayoutAttributesBuilder.h' l='32'>// SVGTextLayoutAttributesBuilder performs the first layout phase for SVG text.
+//
+// It extracts the x/y/dx/dy/rotate values from the SVGTextPositioningElements in the DOM.
+// These values are propagated to the corresponding RenderSVGInlineText renderers.
+// The first layout phase only extracts the relevant information needed in RenderBlockLineLayout
+// to create the InlineBox tree based on text chunk boundaries &amp; BiDi information.
+// The second layout phase is carried out by SVGTextLayoutEngine.</doc>
+<fun r='_ZN7WebCore30SVGTextLayoutAttributesBuilderC1ERKS0_'/>
+<fun r='_ZN7WebCore30SVGTextLayoutAttributesBuilderC1Ev'/>
+<fun r='_ZN7WebCore30SVGTextLayoutAttributesBuilder34buildLayoutAttributesForForSubtreeERNS_13RenderSVGTextE'/>
+<fun r='_ZN7WebCore30SVGTextLayoutAttributesBuilder36buildLayoutAttributesForTextRendererERNS_19RenderSVGInlineTextE'/>
+<fun r='_ZN7WebCore30SVGTextLayoutAttributesBuilder29rebuildMetricsForTextRendererERNS_19RenderSVGInlineTextE'/>
+<fun r='_ZN7WebCore30SVGTextLayoutAttributesBuilder28clearTextPositioningElementsEv'/>
+<fun r='_ZNK7WebCore30SVGTextLayoutAttributesBuilder31numberOfTextPositioningElementsEv'/>
+<fun r='_ZN7WebCore30SVGTextLayoutAttributesBuilder21buildCharacterDataMapERNS_13RenderSVGTextE'/>
+<fun r='_ZN7WebCore30SVGTextLayoutAttributesBuilder30collectTextPositioningElementsERNS_20RenderBoxModelObjectERb'/>
+<fun r='_ZN7WebCore30SVGTextLayoutAttributesBuilder20fillCharacterDataMapERKNS0_12TextPositionE'/>
+<mbr r='WebCore::SVGTextLayoutAttributesBuilder::m_textLength' o='0' t='unsigned int'/>
+<mbr r='WebCore::SVGTextLayoutAttributesBuilder::m_textPositions' o='64' t='Vector&lt;WebCore::SVGTextLayoutAttributesBuilder::TextPosition&gt;'/>
+<mbr r='WebCore::SVGTextLayoutAttributesBuilder::m_characterDataMap' o='192' t='WebCore::SVGCharacterDataMap'/>
+<mbr r='WebCore::SVGTextLayoutAttributesBuilder::m_metricsBuilder' o='256' t='WebCore::SVGTextMetricsBuilder'/>
+<use f='WebKit/Source/WebCore/rendering/svg/RenderSVGText.cpp' l='326' c='_ZN7WebCoreL26updateFontInAllDescendantsEPNS_12RenderObjectEPNS_30SVGTextLayoutAttributesBuilderE'/>
+<size>176</size>

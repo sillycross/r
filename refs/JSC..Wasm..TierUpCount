@@ -1,0 +1,95 @@
+<inh f='WebKit/Source/JavaScriptCore/bytecode/ExecutionCounter.h' l='55' c='JSC::ExecutionCounter'/>
+<def f='WebKit/Source/JavaScriptCore/wasm/WasmTierUpCount.h' l='46' ll='134'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTierUpCount.h' l='47' c='_ZN3JSC4Wasm11TierUpCountC1ERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTierUpCount.h' l='47' c='_ZN3JSC4Wasm11TierUpCountaSERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTierUpCount.h' l='47' c='_ZN3JSC4Wasm11TierUpCountaSERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCallee.h' l='157' c='_ZN3JSC4Wasm9BBQCallee6createEONS0_10EntrypointEmOSt4pairIPKN3WTF6VectorIhLm0ENS5_15CrashOnOverflowELm16ENS5_10FastMallocEEENS5_6RefPtrINS0_11NameSect13464236'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCallee.h' l='177' c='_ZN3JSC4Wasm9BBQCallee11tierUpCountEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCallee.h' l='180' c='_ZN3JSC4Wasm9BBQCalleeC1EONS0_10EntrypointEmOSt4pairIPKN3WTF6VectorIhLm0ENS5_15CrashOnOverflowELm16ENS5_10FastMallocEEENS5_6RefPtrINS0_11NameSectionEN11536997'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCallee.h' l='188'/>
+<size>72</size>
+<doc f='WebKit/Source/JavaScriptCore/wasm/WasmTierUpCount.h' l='41'>// This class manages the tier up counts for Wasm binaries. The main interesting thing about
+// wasm tiering up counts is that the least significant bit indicates if the tier up has already
+// started. Also, wasm code does not atomically update this count. This is because we
+// don&apos;t care too much if the countdown is slightly off. The tier up trigger is atomic, however,
+// so tier up will be triggered exactly once.</doc>
+<fun r='_ZN3JSC4Wasm11TierUpCountC1ERKS1_'/>
+<fun r='_ZN3JSC4Wasm11TierUpCountC1Ev'/>
+<fun r='_ZN3JSC4Wasm11TierUpCountD1Ev'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount13loopIncrementEv'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount22functionEntryIncrementEv'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount16osrEntryTriggersEv'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount10outerLoopsEv'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount7getLockEv'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount15addOSREntryDataEjj'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount19optimizeAfterWarmUpEj'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount35checkIfOptimizationThresholdReachedEv'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount23dontOptimizeAnytimeSoonEj'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount22optimizeNextInvocationEj'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount12optimizeSoonEj'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount48setOptimizationThresholdBasedOnCompilationResultEjNS_17CompilationResultE'/>
+<mbr r='JSC::Wasm::TierUpCount::m_lock' o='96' t='WTF::Lock'/>
+<mbr r='JSC::Wasm::TierUpCount::m_compilationStatusForOMG' o='104' t='JSC::Wasm::TierUpCount::CompilationStatus'/>
+<mbr r='JSC::Wasm::TierUpCount::m_compilationStatusForOMGForOSREntry' o='112' t='JSC::Wasm::TierUpCount::CompilationStatus'/>
+<mbr r='JSC::Wasm::TierUpCount::m_osrEntryTriggers' o='128' t='SegmentedVector&lt;JSC::Wasm::TierUpCount::TriggerReason, 16&gt;'/>
+<mbr r='JSC::Wasm::TierUpCount::m_outerLoops' o='320' t='Vector&lt;uint32_t&gt;'/>
+<mbr r='JSC::Wasm::TierUpCount::m_osrEntryData' o='448' t='Vector&lt;std::unique_ptr&lt;OSREntryData&gt; &gt;'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.h' l='53' c='_ZN3JSC4Wasm15parseAndCompileERNS0_18CompilationContextERKNS0_12FunctionDataERKNS0_9SignatureERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENS9_15Cra12438790'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='209' c='_ZN3JSC4Wasm13B3IRGeneratorC1ERKNS0_17ModuleInformationERNS_2B39ProcedureEPNS0_16InternalFunctionERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENSA_114661019'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='348'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='418' c='_ZN3JSC4Wasm13B3IRGeneratorC1ERKNS0_17ModuleInformationERNS_2B39ProcedureEPNS0_16InternalFunctionERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENSA_114661019'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='2696' c='_ZN3JSC4Wasm15parseAndCompileERNS0_18CompilationContextERKNS0_12FunctionDataERKNS0_9SignatureERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENS9_15Cra12438790'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmBBQPlan.h' l='83' c='_ZN3JSC4Wasm7BBQPlan15compileFunctionEjRNS0_18CompilationContextERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENS4_15CrashOnOverflowELm16ENS4_10FastM9137864'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmBBQPlan.h' l='88'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.h' l='34' c='_ZN3JSC4Wasm18parseAndCompileAirERNS0_18CompilationContextERKNS0_12FunctionDataERKNS0_9SignatureERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENS9_1511364851'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmBBQPlan.cpp' l='102' c='_ZN3JSC4Wasm7BBQPlan4workENS0_4Plan17CompilationEffortE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmBBQPlan.cpp' l='102' c='_ZN3JSC4Wasm7BBQPlan4workENS0_4Plan17CompilationEffortE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmBBQPlan.cpp' l='166' c='_ZN3JSC4Wasm7BBQPlan15compileFunctionEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmBBQPlan.cpp' l='181' c='_ZN3JSC4Wasm7BBQPlan15compileFunctionEjRNS0_18CompilationContextERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENS4_15CrashOnOverflowELm16ENS4_10FastM9137864'/>
+<size>72</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOperations.cpp' l='62' c='_ZN3JSC4WasmL23shouldTriggerOMGCompileERNS0_11TierUpCountEPNS0_9OMGCalleeEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOperations.cpp' l='72' c='_ZN3JSC4WasmL28triggerOMGReplacementCompileERNS0_11TierUpCountEPNS0_9OMGCalleeEPNS0_8InstanceERNS0_9CodeBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOperations.cpp' l='248' c='_ZN3JSC4Wasm31operationWasmTriggerOSREntryNowERNS_5Probe7ContextE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOperations.cpp' l='427' c='_ZN3JSC4Wasm29operationWasmTriggerTierUpNowEPNS0_8InstanceEj'/>
+<size>72</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='250' c='_ZN3JSC4Wasm14AirIRGeneratorC1ERKNS0_17ModuleInformationERNS_2B39ProcedureEPNS0_16InternalFunctionERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENSA_7929608'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='720'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='798' c='_ZN3JSC4Wasm14AirIRGeneratorC1ERKNS0_17ModuleInformationERNS_2B39ProcedureEPNS0_16InternalFunctionERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENSA_7929608'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='3495' c='_ZN3JSC4Wasm18parseAndCompileAirERNS0_18CompilationContextERKNS0_12FunctionDataERKNS0_9SignatureERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENS9_1511364851'/>
+<size>72</size>
+<inh f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ExecutionCounter.h' l='55' c='JSC::ExecutionCounter'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmTierUpCount.h' l='46' ll='134'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmTierUpCount.h' l='47' c='_ZN3JSC4Wasm11TierUpCountC1ERKS1_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmTierUpCount.h' l='47' c='_ZN3JSC4Wasm11TierUpCountaSERKS1_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmTierUpCount.h' l='47' c='_ZN3JSC4Wasm11TierUpCountaSERKS1_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmCallee.h' l='157' c='_ZN3JSC4Wasm9BBQCallee6createEONS0_10EntrypointEmOSt4pairIPKN3WTF6VectorIhLm0ENS5_15CrashOnOverflowELm16ENS5_10FastMallocEEENS5_6RefPtrINS0_11NameSect13464236'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmCallee.h' l='177' c='_ZN3JSC4Wasm9BBQCallee11tierUpCountEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmCallee.h' l='180' c='_ZN3JSC4Wasm9BBQCalleeC1EONS0_10EntrypointEmOSt4pairIPKN3WTF6VectorIhLm0ENS5_15CrashOnOverflowELm16ENS5_10FastMallocEEENS5_6RefPtrINS0_11NameSectionEN11536997'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmCallee.h' l='188'/>
+<size>72</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmTierUpCount.h' l='41'>// This class manages the tier up counts for Wasm binaries. The main interesting thing about
+// wasm tiering up counts is that the least significant bit indicates if the tier up has already
+// started. Also, wasm code does not atomically update this count. This is because we
+// don&apos;t care too much if the countdown is slightly off. The tier up trigger is atomic, however,
+// so tier up will be triggered exactly once.</doc>
+<fun r='_ZN3JSC4Wasm11TierUpCountC1ERKS1_'/>
+<fun r='_ZN3JSC4Wasm11TierUpCountC1Ev'/>
+<fun r='_ZN3JSC4Wasm11TierUpCountD1Ev'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount13loopIncrementEv'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount22functionEntryIncrementEv'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount16osrEntryTriggersEv'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount10outerLoopsEv'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount7getLockEv'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount15addOSREntryDataEjj'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount19optimizeAfterWarmUpEj'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount35checkIfOptimizationThresholdReachedEv'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount23dontOptimizeAnytimeSoonEj'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount22optimizeNextInvocationEj'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount12optimizeSoonEj'/>
+<fun r='_ZN3JSC4Wasm11TierUpCount48setOptimizationThresholdBasedOnCompilationResultEjNS_17CompilationResultE'/>
+<mbr r='JSC::Wasm::TierUpCount::m_lock' o='96' t='WTF::Lock'/>
+<mbr r='JSC::Wasm::TierUpCount::m_compilationStatusForOMG' o='104' t='JSC::Wasm::TierUpCount::CompilationStatus'/>
+<mbr r='JSC::Wasm::TierUpCount::m_compilationStatusForOMGForOSREntry' o='112' t='JSC::Wasm::TierUpCount::CompilationStatus'/>
+<mbr r='JSC::Wasm::TierUpCount::m_osrEntryTriggers' o='128' t='SegmentedVector&lt;JSC::Wasm::TierUpCount::TriggerReason, 16&gt;'/>
+<mbr r='JSC::Wasm::TierUpCount::m_outerLoops' o='320' t='Vector&lt;uint32_t&gt;'/>
+<mbr r='JSC::Wasm::TierUpCount::m_osrEntryData' o='448' t='Vector&lt;std::unique_ptr&lt;OSREntryData&gt; &gt;'/>

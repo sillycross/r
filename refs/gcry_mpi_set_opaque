@@ -1,0 +1,5 @@
+<dec f='include/gcrypt.h' l='797' type='gcry_mpi_t gcry_mpi_set_opaque(gcry_mpi_t a, void * p, unsigned int nbits)'/>
+<doc f='include/gcrypt.h' l='793'>/* Store NBITS of the value P points to in A and mark A as an opaque
+   value.  On success A received the the ownership of the value P.
+   WARNING: Never use an opaque MPI for anything thing else than
+   gcry_mpi_release, gcry_mpi_get_opaque. */</doc>

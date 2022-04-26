@@ -1,0 +1,52 @@
+<def f='WebKit/Source/JavaScriptCore/jit/SnippetReg.h' l='45' ll='90'/>
+<use f='WebKit/Source/JavaScriptCore/jit/SnippetParams.h' l='44' c='_ZN3JSC13SnippetParams5ValueC1ENS_10SnippetRegE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/SnippetParams.h' l='49' c='_ZN3JSC13SnippetParams5ValueC1ENS_10SnippetRegENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/SnippetParams.h' l='62' c='_ZNK3JSC13SnippetParams5Value3regEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/SnippetParams.h' l='73'/>
+<size>2</size>
+<doc f='WebKit/Source/JavaScriptCore/jit/SnippetReg.h' l='36'>// It is quite unfortunate that 32 bit environment exists on DFG! This means that JSValueRegs contains 2 registers
+// in such an environment. If we use GPRReg and FPRReg in SnippetParams, SnippetParams may contain
+// different number of registers in 32bit and 64bit environments when we pass JSValueRegs, it is confusing.
+// Therefore, we introduce an abstraction that SnippetReg, which is a polymorphic register class. It can refer FPRReg,
+// GPRReg, and &quot;JSValueRegs&quot;. Note that isGPR() will return false if the target Reg is &quot;JSValueRegs&quot; even if the
+// environment is 64bit.
+//
+// FIXME: Eventually we should move this class into JSC and make is available for other JIT code.
+// https://bugs.webkit.org/show_bug.cgi?id=162990</doc>
+<fun r='_ZN3JSC10SnippetRegC1ENS_12X86Registers10RegisterIDE'/>
+<fun r='_ZN3JSC10SnippetRegC1ENS_12X86Registers13XMMRegisterIDE'/>
+<fun r='_ZN3JSC10SnippetRegC1ENS_11JSValueRegsE'/>
+<fun r='_ZNK3JSC10SnippetReg5isGPREv'/>
+<fun r='_ZNK3JSC10SnippetReg5isFPREv'/>
+<fun r='_ZNK3JSC10SnippetReg13isJSValueRegsEv'/>
+<fun r='_ZNK3JSC10SnippetReg3gprEv'/>
+<fun r='_ZNK3JSC10SnippetReg3fprEv'/>
+<fun r='_ZNK3JSC10SnippetReg11jsValueRegsEv'/>
+<mbr r='JSC::SnippetReg::m_variant' o='0' t='Variant&lt;JSC::GPRReg, JSC::FPRReg, JSC::JSValueRegs&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/GetterSetterAccessCase.cpp' l='215' c='_ZN3JSC22GetterSetterAccessCase16emitDOMJITGetterERNS_21AccessGenerationStateEPKNS_6DOMJIT12GetterSetterENS_12X86Registers10RegisterIDE'/>
+<size>2</size>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SnippetReg.h' l='45' ll='90'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SnippetParams.h' l='44' c='_ZN3JSC13SnippetParams5ValueC1ENS_10SnippetRegE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SnippetParams.h' l='49' c='_ZN3JSC13SnippetParams5ValueC1ENS_10SnippetRegENS_7JSValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SnippetParams.h' l='62' c='_ZNK3JSC13SnippetParams5Value3regEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SnippetParams.h' l='73'/>
+<size>2</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SnippetReg.h' l='36'>// It is quite unfortunate that 32 bit environment exists on DFG! This means that JSValueRegs contains 2 registers
+// in such an environment. If we use GPRReg and FPRReg in SnippetParams, SnippetParams may contain
+// different number of registers in 32bit and 64bit environments when we pass JSValueRegs, it is confusing.
+// Therefore, we introduce an abstraction that SnippetReg, which is a polymorphic register class. It can refer FPRReg,
+// GPRReg, and &quot;JSValueRegs&quot;. Note that isGPR() will return false if the target Reg is &quot;JSValueRegs&quot; even if the
+// environment is 64bit.
+//
+// FIXME: Eventually we should move this class into JSC and make is available for other JIT code.
+// https://bugs.webkit.org/show_bug.cgi?id=162990</doc>
+<fun r='_ZN3JSC10SnippetRegC1ENS_12X86Registers10RegisterIDE'/>
+<fun r='_ZN3JSC10SnippetRegC1ENS_12X86Registers13XMMRegisterIDE'/>
+<fun r='_ZN3JSC10SnippetRegC1ENS_11JSValueRegsE'/>
+<fun r='_ZNK3JSC10SnippetReg5isGPREv'/>
+<fun r='_ZNK3JSC10SnippetReg5isFPREv'/>
+<fun r='_ZNK3JSC10SnippetReg13isJSValueRegsEv'/>
+<fun r='_ZNK3JSC10SnippetReg3gprEv'/>
+<fun r='_ZNK3JSC10SnippetReg3fprEv'/>
+<fun r='_ZNK3JSC10SnippetReg11jsValueRegsEv'/>
+<mbr r='JSC::SnippetReg::m_variant' o='0' t='Variant&lt;JSC::GPRReg, JSC::FPRReg, JSC::JSValueRegs&gt;'/>

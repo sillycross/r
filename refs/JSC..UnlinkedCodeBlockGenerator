@@ -1,0 +1,148 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/UnlinkedCodeBlock.h' l='353'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlock.h' l='353'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeBasicBlock.h' l='76' c='_ZN3JSC18BytecodeBasicBlock7computeEPNS_26UnlinkedCodeBlockGeneratorERKNS_17InstructionStreamE'/>
+<def f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlockGenerator.h' l='36' ll='224'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlockGenerator.h' l='38' c='_ZN3JSC26UnlinkedCodeBlockGeneratorC1ERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlockGenerator.h' l='38' c='_ZN3JSC26UnlinkedCodeBlockGeneratoraSERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlockGenerator.h' l='38' c='_ZN3JSC26UnlinkedCodeBlockGeneratoraSERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='296' c='_ZN3JSC12ForInContext8finalizeERNS_17BytecodeGeneratorEPNS_26UnlinkedCodeBlockGeneratorEj'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='341' c='_ZN3JSC21StructureForInContext8finalizeERNS_17BytecodeGeneratorEPNS_26UnlinkedCodeBlockGeneratorEj'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='364' c='_ZN3JSC19IndexedForInContext8finalizeERNS_17BytecodeGeneratorEPNS_26UnlinkedCodeBlockGeneratorEj'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='393'/>
+<size>256</size>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlockGenerator.h' l='34'>// FIXME: Create UnlinkedCodeBlock inside UnlinkedCodeBlockGenerator.
+// https://bugs.webkit.org/show_bug.cgi?id=207212</doc>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGeneratorC1ERKS0_'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGeneratorC1ERNS_2VMEPNS_17UnlinkedCodeBlockE'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator2vmEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator13isConstructorEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator15constructorKindEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator12superBindingEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator10scriptModeEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator26needsClassFieldInitializerEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator23privateBrandRequirementEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator12usesCallEvalEv'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator15setUsesCallEvalEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator9parseModeEv'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator15isArrowFunctionEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator18derivedContextTypeEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator15evalContextTypeEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator22isArrowFunctionContextEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator14isClassContextEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator15numCalleeLocalsEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator7numVarsEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator13numParametersEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator12thisRegisterEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator13scopeRegisterEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator31wasCompiledWithDebuggingOpcodesEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator14hasCheckpointsEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator12hasTailCallsEv'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator17setHasCheckpointsEv'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator15setHasTailCallsEv'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator18setNumCalleeLocalsEj'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator10setNumVarsEj'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator15setThisRegisterENS_15VirtualRegisterE'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator16setScopeRegisterENS_15VirtualRegisterE'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator16setNumParametersEj'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator8metadataEv'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator17addExpressionInfoEjiiijj'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator29addTypeProfilerExpressionInfoEjjj'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator37addOpProfileControlFlowBytecodeOffsetEj'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator19numberOfJumpTargetsEv'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator13addJumpTargetEj'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator10jumpTargetEi'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator14lastJumpTargetEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator32numberOfUnlinkedSwitchJumpTablesEv'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator26addUnlinkedSwitchJumpTableEv'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator23unlinkedSwitchJumpTableEi'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator38numberOfUnlinkedStringSwitchJumpTablesEv'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator32addUnlinkedStringSwitchJumpTableEv'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator29unlinkedStringSwitchJumpTableEi'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator25numberOfExceptionHandlersEv'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator16exceptionHandlerEi'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator19addExceptionHandlerERKNS_19UnlinkedHandlerInfoE'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator23handlerForBytecodeIndexENS_13BytecodeIndexENS_15RequiredHandlerE'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator15handlerForIndexEjNS_15RequiredHandlerE'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator9bitVectorEm'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator12addBitVectorEON3WTF9BitVectorE'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator30numberOfConstantIdentifierSetsEv'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator22constantIdentifierSetsEv'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator14addSetConstantEON3WTF7HashSetINS1_6RefPtrINS1_17UniquedStringImplENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTr10717042'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator16constantRegisterENS_15VirtualRegisterE'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator17constantRegistersEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator11getConstantENS_15VirtualRegisterE'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator32constantSourceCodeRepresentationENS_15VirtualRegisterE'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator32constantSourceCodeRepresentationEj'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator11addConstantENS_7JSValueENS_24SourceCodeRepresentationE'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator11addConstantENS_16LinkTimeConstantE'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator15addFunctionDeclEPNS_26UnlinkedFunctionExecutableE'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator15addFunctionExprEPNS_26UnlinkedFunctionExecutableE'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator19numberOfIdentifiersEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator10identifierEi'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator13addIdentifierERKNS_10IdentifierE'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator22addOutOfLineJumpTargetEji'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator19outOfLineJumpOffsetEj'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator19outOfLineJumpOffsetERKNS_17InstructionStream7BaseRefIKN3WTF6VectorIhLm0ENS3_20UnsafeVectorOverflowELm16ENS3_10FastMallocEEEEE'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator27replaceOutOfLineJumpTargetsEv'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator19metadataSizeInBytesEv'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator16getLineAndColumnERKNS_19ExpressionRangeInfoERjS4_'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator17applyModificationERNS_16BytecodeRewriterERNS_23InstructionStreamWriterE'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator8finalizeESt10unique_ptrINS_17InstructionStreamESt14default_deleteIS2_EE'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator4dumpERN3WTF11PrintStreamE'/>
+<mbr r='JSC::UnlinkedCodeBlockGenerator::m_vm' o='0' t='JSC::VM &amp;'/>
+<mbr r='JSC::UnlinkedCodeBlockGenerator::m_codeBlock' o='64' t='Strong&lt;JSC::UnlinkedCodeBlock&gt;'/>
+<mbr r='JSC::UnlinkedCodeBlockGenerator::m_jumpTargets' o='128' t='Vector&lt;InstructionStream::Offset&gt;'/>
+<mbr r='JSC::UnlinkedCodeBlockGenerator::m_identifiers' o='256' t='Vector&lt;JSC::Identifier&gt;'/>
+<mbr r='JSC::UnlinkedCodeBlockGenerator::m_constantRegisters' o='384' t='Vector&lt;WriteBarrier&lt;JSC::Unknown&gt; &gt;'/>
+<mbr r='JSC::UnlinkedCodeBlockGenerator::m_constantsSourceCodeRepresentation' o='512' t='Vector&lt;JSC::SourceCodeRepresentation&gt;'/>
+<mbr r='JSC::UnlinkedCodeBlockGenerator::m_functionDecls' o='640' t='Vector&lt;WriteBarrier&lt;JSC::UnlinkedFunctionExecutable&gt; &gt;'/>
+<mbr r='JSC::UnlinkedCodeBlockGenerator::m_functionExprs' o='768' t='Vector&lt;WriteBarrier&lt;JSC::UnlinkedFunctionExecutable&gt; &gt;'/>
+<mbr r='JSC::UnlinkedCodeBlockGenerator::m_expressionInfo' o='896' t='Vector&lt;JSC::ExpressionRangeInfo&gt;'/>
+<mbr r='JSC::UnlinkedCodeBlockGenerator::m_outOfLineJumpTargets' o='1024' t='JSC::UnlinkedCodeBlockGenerator::OutOfLineJumpTargets'/>
+<mbr r='JSC::UnlinkedCodeBlockGenerator::m_exceptionHandlers' o='1088' t='Vector&lt;JSC::UnlinkedHandlerInfo&gt;'/>
+<mbr r='JSC::UnlinkedCodeBlockGenerator::m_unlinkedSwitchJumpTables' o='1216' t='Vector&lt;JSC::UnlinkedSimpleJumpTable&gt;'/>
+<mbr r='JSC::UnlinkedCodeBlockGenerator::m_unlinkedStringSwitchJumpTables' o='1344' t='Vector&lt;JSC::UnlinkedStringJumpTable&gt;'/>
+<mbr r='JSC::UnlinkedCodeBlockGenerator::m_expressionInfoFatPositions' o='1472' t='Vector&lt;ExpressionRangeInfo::FatPosition&gt;'/>
+<mbr r='JSC::UnlinkedCodeBlockGenerator::m_typeProfilerInfoMap' o='1600' t='HashMap&lt;unsigned int, UnlinkedCodeBlock::RareData::TypeProfilerExpressionRange&gt;'/>
+<mbr r='JSC::UnlinkedCodeBlockGenerator::m_opProfileControlFlowBytecodeOffsets' o='1664' t='Vector&lt;InstructionStream::Offset&gt;'/>
+<mbr r='JSC::UnlinkedCodeBlockGenerator::m_bitVectors' o='1792' t='Vector&lt;WTF::BitVector&gt;'/>
+<mbr r='JSC::UnlinkedCodeBlockGenerator::m_constantIdentifierSets' o='1920' t='Vector&lt;JSC::IdentifierSet&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeGeneratorification.h' l='37' c='_ZN3JSC25performGeneratorificationERNS_17BytecodeGeneratorEPNS_26UnlinkedCodeBlockGeneratorERNS_23InstructionStreamWriterEPNS_11SymbolTableEi'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='294' c='_ZN3JSC17BytecodeGeneratorC1ERNS_2VMEPNS_11ProgramNodeEPNS_24UnlinkedProgramCodeBlockEN3WTF9OptionSetINS_18CodeGenerationModeEEERKNS7_6RefPtrINS_18TDZ13770524'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='341' c='_ZN3JSC17BytecodeGeneratorC1ERNS_2VMEPNS_12FunctionNodeEPNS_25UnlinkedFunctionCodeBlockEN3WTF9OptionSetINS_18CodeGenerationModeEEERKNS7_6RefPtrINS_18T13194151'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='867' c='_ZN3JSC17BytecodeGeneratorC1ERNS_2VMEPNS_8EvalNodeEPNS_21UnlinkedEvalCodeBlockEN3WTF9OptionSetINS_18CodeGenerationModeEEERKNS7_6RefPtrINS_18TDZEnviron2288662'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='932' c='_ZN3JSC17BytecodeGeneratorC1ERNS_2VMEPNS_17ModuleProgramNodeEPNS_30UnlinkedModuleProgramCodeBlockEN3WTF9OptionSetINS_18CodeGenerationModeEEERKNS7_6Ref10936391'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='5387' c='_ZN3JSC12ForInContext8finalizeERNS_17BytecodeGeneratorEPNS_26UnlinkedCodeBlockGeneratorEj'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='5448' c='_ZN3JSC21StructureForInContext8finalizeERNS_17BytecodeGeneratorEPNS_26UnlinkedCodeBlockGeneratorEj'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='5490' c='_ZN3JSC19IndexedForInContext8finalizeERNS_17BytecodeGeneratorEPNS_26UnlinkedCodeBlockGeneratorEj'/>
+<size>256</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PreciseJumpTargets.h' l='37' c='_ZN3JSC25computePreciseJumpTargetsEPNS_26UnlinkedCodeBlockGeneratorERKNS_17InstructionStreamERN3WTF6VectorIjLm32ENS5_15CrashOnOverflowELm16ENS5_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PreciseJumpTargets.h' l='39' c='_ZN3JSC27recomputePreciseJumpTargetsEPNS_26UnlinkedCodeBlockGeneratorERKNS_17InstructionStreamERN3WTF6VectorIjLm0ENS5_15CrashOnOverflowELm16ENS5_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PreciseJumpTargets.h' l='42' c='_ZN3JSC29findJumpTargetsForInstructionEPNS_26UnlinkedCodeBlockGeneratorERKNS_17InstructionStream7BaseRefIKN3WTF6VectorIhLm0ENS4_20UnsafeVectorOverflow13936389'/>
+<size>256</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeBasicBlock.cpp' l='222' c='_ZN3JSC18BytecodeBasicBlock7computeEPNS_26UnlinkedCodeBlockGeneratorERKNS_17InstructionStreamE'/>
+<size>256</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PreciseJumpTargets.cpp' l='101' c='_ZN3JSC25computePreciseJumpTargetsEPNS_26UnlinkedCodeBlockGeneratorERKNS_17InstructionStreamERN3WTF6VectorIjLm32ENS5_15CrashOnOverflowELm16ENS5_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PreciseJumpTargets.cpp' l='106' c='_ZN3JSC27recomputePreciseJumpTargetsEPNS_26UnlinkedCodeBlockGeneratorERKNS_17InstructionStreamERN3WTF6VectorIjLm0ENS5_15CrashOnOverflowELm16ENS5_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PreciseJumpTargets.cpp' l='116' c='_ZN3JSC29findJumpTargetsForInstructionEPNS_26UnlinkedCodeBlockGeneratorERKNS_17InstructionStream7BaseRefIKN3WTF6VectorIhLm0ENS4_20UnsafeVectorOverflow13936389'/>
+<size>256</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeRewriter.h' l='176' c='_ZN3JSC16BytecodeRewriterC1ERNS_17BytecodeGeneratorERNS_13BytecodeGraphEPNS_26UnlinkedCodeBlockGeneratorERNS_23InstructionStreamWriterE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeRewriter.h' l='230'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeRewriter.h' l='239'/>
+<size>256</size>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator16getLineAndColumnERKNS_19ExpressionRangeInfoERjS4_'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator17addExpressionInfoEjiiijj'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator29addTypeProfilerExpressionInfoEjjj'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator8finalizeESt10unique_ptrINS_17InstructionStreamESt14default_deleteIS2_EE'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator23handlerForBytecodeIndexENS_13BytecodeIndexENS_15RequiredHandlerE'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator15handlerForIndexEjNS_15RequiredHandlerE'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator17applyModificationERNS_16BytecodeRewriterERNS_23InstructionStreamWriterE'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator22addOutOfLineJumpTargetEji'/>
+<fun r='_ZN3JSC26UnlinkedCodeBlockGenerator19outOfLineJumpOffsetEj'/>
+<fun r='_ZNK3JSC26UnlinkedCodeBlockGenerator4dumpERN3WTF11PrintStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeDumper.cpp' l='321'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeGeneratorification.cpp' l='62' c='_ZN3JSC26BytecodeGeneratorificationC1ERNS_17BytecodeGeneratorEPNS_26UnlinkedCodeBlockGeneratorERNS_23InstructionStreamWriterEPNS_11SymbolTableEi'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeGeneratorification.cpp' l='172'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeGeneratorification.cpp' l='188' c='_ZN3JSC25GeneratorLivenessAnalysis3runEPNS_26UnlinkedCodeBlockGeneratorERNS_23InstructionStreamWriterE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeGeneratorification.cpp' l='293' c='_ZN3JSC25performGeneratorificationERNS_17BytecodeGeneratorEPNS_26UnlinkedCodeBlockGeneratorERNS_23InstructionStreamWriterEPNS_11SymbolTableEi'/>
+<size>256</size>

@@ -1,0 +1,47 @@
+<def f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='86' ll='139'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='87' c='_ZN7WebCore12SearchBufferC1ERKS0_'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='87' c='_ZN7WebCore12SearchBufferaSERKS0_'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='87' c='_ZN7WebCore12SearchBufferaSERKS0_'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='2477' c='_ZN7WebCoreL12forEachMatchERKNS_11SimpleRangeERKN3WTF6StringENS3_9OptionSetINS_14FindOptionFlagEEERKNS3_8FunctionIFbNS_14CharacterRangeEEEE'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='2569' c='_ZN7WebCore17containsPlainTextERKN3WTF6StringES3_NS0_9OptionSetINS_14FindOptionFlagEEE'/>
+<size>176</size>
+<doc f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='80'>// Buffer that knows how to compare with a search target.
+// Keeps enough of the previous text to be able to search in the future, but no more.
+// Non-breaking spaces are always equal to normal spaces.
+// Case folding is also done if the CaseInsensitive option is specified.
+// Matches are further filtered if the AtWordStarts option is specified, although some
+// matches inside a word are permitted if TreatMedialCapitalAsWordStart is specified as well.</doc>
+<fun r='_ZN7WebCore12SearchBufferC1ERKS0_'/>
+<fun r='_ZN7WebCore12SearchBufferC1ERKN3WTF6StringENS1_9OptionSetINS_14FindOptionFlagEEE'/>
+<fun r='_ZN7WebCore12SearchBufferD1Ev'/>
+<fun r='_ZN7WebCore12SearchBuffer6appendEN3WTF10StringViewE'/>
+<fun r='_ZNK7WebCore12SearchBuffer16needsMoreContextEv'/>
+<fun r='_ZN7WebCore12SearchBuffer14prependContextEN3WTF10StringViewE'/>
+<fun r='_ZN7WebCore12SearchBuffer12reachedBreakEv'/>
+<fun r='_ZN7WebCore12SearchBuffer6searchERm'/>
+<fun r='_ZNK7WebCore12SearchBuffer7atBreakEv'/>
+<fun r='_ZNK7WebCore12SearchBuffer10isBadMatchEPKDsm'/>
+<fun r='_ZNK7WebCore12SearchBuffer16isWordStartMatchEmm'/>
+<fun r='_ZNK7WebCore12SearchBuffer14isWordEndMatchEmm'/>
+<mbr r='WebCore::SearchBuffer::m_target' o='0' t='const WTF::String'/>
+<mbr r='WebCore::SearchBuffer::m_targetCharacters' o='64' t='const StringView::UpconvertedCharacters'/>
+<mbr r='WebCore::SearchBuffer::m_options' o='768' t='WebCore::FindOptions'/>
+<mbr r='WebCore::SearchBuffer::m_buffer' o='832' t='Vector&lt;UChar&gt;'/>
+<mbr r='WebCore::SearchBuffer::m_overlap' o='960' t='size_t'/>
+<mbr r='WebCore::SearchBuffer::m_prefixLength' o='1024' t='size_t'/>
+<mbr r='WebCore::SearchBuffer::m_atBreak' o='1088' t='bool'/>
+<mbr r='WebCore::SearchBuffer::m_needsMoreContext' o='1096' t='bool'/>
+<mbr r='WebCore::SearchBuffer::m_targetRequiresKanaWorkaround' o='1104' t='const bool'/>
+<mbr r='WebCore::SearchBuffer::m_normalizedTarget' o='1152' t='Vector&lt;UChar&gt;'/>
+<mbr r='WebCore::SearchBuffer::m_normalizedMatch' o='1280' t='Vector&lt;UChar&gt;'/>
+<fun r='_ZN7WebCore12SearchBufferC1ERKN3WTF6StringENS1_9OptionSetINS_14FindOptionFlagEEE'/>
+<fun r='_ZN7WebCore12SearchBufferD1Ev'/>
+<fun r='_ZN7WebCore12SearchBuffer6appendEN3WTF10StringViewE'/>
+<fun r='_ZNK7WebCore12SearchBuffer16needsMoreContextEv'/>
+<fun r='_ZN7WebCore12SearchBuffer14prependContextEN3WTF10StringViewE'/>
+<fun r='_ZNK7WebCore12SearchBuffer7atBreakEv'/>
+<fun r='_ZN7WebCore12SearchBuffer12reachedBreakEv'/>
+<fun r='_ZNK7WebCore12SearchBuffer10isBadMatchEPKDsm'/>
+<fun r='_ZNK7WebCore12SearchBuffer14isWordEndMatchEmm'/>
+<fun r='_ZNK7WebCore12SearchBuffer16isWordStartMatchEmm'/>
+<fun r='_ZN7WebCore12SearchBuffer6searchERm'/>

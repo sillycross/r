@@ -1,0 +1,435 @@
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/AudioTrackPrivateGStreamer.h' l='41' c='_ZN7WebCore26AudioTrackPrivateGStreamer6createEN3WTF7WeakPtrINS_27MediaPlayerPrivateGStreamerENS1_12EmptyCounterEEEiNS1_7GRefPtrI7_GstPadEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/AudioTrackPrivateGStreamer.h' l='46' c='_ZN7WebCore26AudioTrackPrivateGStreamer6createEN3WTF7WeakPtrINS_27MediaPlayerPrivateGStreamerENS1_12EmptyCounterEEEiNS1_7GRefPtrI10_GstStreamEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/AudioTrackPrivateGStreamer.h' l='65' c='_ZN7WebCore26AudioTrackPrivateGStreamerC1EN3WTF7WeakPtrINS_27MediaPlayerPrivateGStreamerENS1_12EmptyCounterEEEiNS1_7GRefPtrI7_GstPadEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/AudioTrackPrivateGStreamer.h' l='66' c='_ZN7WebCore26AudioTrackPrivateGStreamerC1EN3WTF7WeakPtrINS_27MediaPlayerPrivateGStreamerENS1_12EmptyCounterEEEiNS1_7GRefPtrI10_GstStreamEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/AudioTrackPrivateGStreamer.h' l='69'/>
+<inh f='WebKit/Source/WebCore/platform/graphics/MediaPlayerPrivate.h' l='37' c='WebCore::MediaPlayerPrivateInterface'/>
+<inh f='WebKit/WTF/Headers/wtf/WeakPtr.h' l='218' c='WTF::CanMakeWeakPtr'/>
+<inh f='WebKit/WTF/Headers/wtf/LoggerHelper.h' l='33' c='WTF::LoggerHelper'/>
+<inh f='WebKit/Source/WebCore/platform/graphics/nicosia/texmap/NicosiaContentLayerTextureMapperImpl.h' l='46' c='Nicosia::ContentLayerTextureMapperImpl::Client'/>
+<def f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='111' ll='570'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='112'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='290' c='_ZN7WebCore27MediaPlayerPrivateGStreamer15repaintCallbackEPS0_P10_GstSample'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='291' c='_ZN7WebCore27MediaPlayerPrivateGStreamer24repaintCancelledCallbackEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='296' c='_ZN7WebCore27MediaPlayerPrivateGStreamer21volumeChangedCallbackEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='297' c='_ZN7WebCore27MediaPlayerPrivateGStreamer19muteChangedCallbackEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='309' c='_ZN7WebCore27MediaPlayerPrivateGStreamer32setAudioStreamPropertiesCallbackEPS0_P8_GObject'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='311' c='_ZN7WebCore27MediaPlayerPrivateGStreamer19sourceSetupCallbackEPS0_P11_GstElement'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='312' c='_ZN7WebCore27MediaPlayerPrivateGStreamer20videoChangedCallbackEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='313' c='_ZN7WebCore27MediaPlayerPrivateGStreamer20audioChangedCallbackEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='314' c='_ZN7WebCore27MediaPlayerPrivateGStreamer19textChangedCallbackEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='465' c='_ZN7WebCore27MediaPlayerPrivateGStreamer32uriDecodeBinElementAddedCallbackEP7_GstBinP11_GstElementPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='466' c='_ZN7WebCore27MediaPlayerPrivateGStreamer33downloadBufferFileCreatedCallbackEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='504'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='505'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/AudioTrackPrivateGStreamer.cpp' l='37' c='_ZN7WebCore26AudioTrackPrivateGStreamerC1EN3WTF7WeakPtrINS_27MediaPlayerPrivateGStreamerENS1_12EmptyCounterEEEiNS1_7GRefPtrI7_GstPadEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/AudioTrackPrivateGStreamer.cpp' l='45' c='_ZN7WebCore26AudioTrackPrivateGStreamerC1EN3WTF7WeakPtrINS_27MediaPlayerPrivateGStreamerENS1_12EmptyCounterEEEiNS1_7GRefPtrI10_GstStreamEE'/>
+<size>832</size>
+<doc f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='110'>// Use eager initialization for the WeakPtrFactory since we call makeWeakPtr() from another thread.</doc>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamerC1EPNS_11MediaPlayerE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamerD1Ev'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer19registerMediaEngineEPFvOSt10unique_ptrINS_18MediaPlayerFactoryESt14default_deleteIS2_EEE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer20extendedSupportsTypeERKNS_28MediaEngineSupportParametersENS_16MediaPlayerEnums12SupportsTypeE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer17supportsKeySystemERKN3WTF6StringES4_'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer8hasVideoEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer8hasAudioEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer4loadERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer4loadERKN3WTF3URLERKNS_11ContentTypeEPNS_24MediaSourcePrivateClientE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer10cancelLoadEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer13prepareToPlayEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer4playEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer5pauseEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer6pausedEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer7seekingEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer4seekERKN3WTF9MediaTimeE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer7setRateEf'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer4rateEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer17setPreservesPitchEb'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer10setPreloadENS_16MediaPlayerEnums7PreloadE'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer11naturalSizeEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer9setVolumeEf'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer6volumeEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer8setMutedEb'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer12networkStateEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer10readyStateEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer10setVisibleEb'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer7setSizeERKNS_7IntSizeE'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer8durationEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer14durationDoubleEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer17durationMediaTimeEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer11currentTimeEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer17currentTimeDoubleEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer16currentMediaTimeEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer8bufferedEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer4seekEf'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer10seekDoubleEd'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer15maxTimeSeekableEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer20maxMediaTimeSeekableEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer15minTimeSeekableEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer20minMediaTimeSeekableEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer18didLoadingProgressEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer10totalBytesEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer23hasSingleSecurityOriginEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer16wouldTaintOriginERKNS_14SecurityOriginE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer25simulateAudioInterruptionEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer19audioSourceProviderEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer5paintERNS_15GraphicsContextERKNS_9FloatRectE'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer18supportsFullscreenEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer13movieLoadTypeEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer27videoPlaybackQualityMetricsEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer32acceleratedRenderingStateChangedEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer22performTaskAtMediaTimeEON3WTF8FunctionIFvvEEERKNS1_9MediaTimeE'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer13platformLayerEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer28supportsAcceleratedRenderingEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer33copyVideoTextureToPlatformTextureEPNS_17GraphicsContextGLEjjijjjbb'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer25nativeImageForCurrentTimeEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer23updateEnabledVideoTrackEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer23updateEnabledAudioTrackEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer38playbin3SendSelectStreamsIfAppropriateEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer24handleNeedContextMessageEP11_GstMessage'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer29handleStreamCollectionMessageEP11_GstMessage'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer13handleMessageEP11_GstMessage'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer14triggerRepaintEP10_GstSample'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer18flushCurrentBufferEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer16handleTextSampleEP10_GstSamplePKc'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer6loggerEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer12logClassNameEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer13logIdentifierEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer10logChannelEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer24mediaPlayerLogIdentifierEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer17mediaPlayerLoggerEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer11isAvailableEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer15durationChangedEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer11sourceSetupEP11_GstElement'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer19changePipelineStateE8GstState'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer18updatePlaybackRateEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer17createVideoSinkGLEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer23pushTextureToCompositorEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer19swapBuffersIfNeededEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer9videoSinkEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer22setStreamVolumeElementEP16_GstStreamVolume'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer8pipelineEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer7repaintEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer13cancelRepaintEb'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer15repaintCallbackEPS0_P10_GstSample'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer24repaintCancelledCallbackEPS0_'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer26notifyPlayerOfVolumeChangeEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer18notifyPlayerOfMuteEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer21volumeChangedCallbackEPS0_'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer19muteChangedCallbackEPS0_'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer15readyTimerFiredEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer19notifyPlayerOfTrackEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer25ensureAudioSourceProviderEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer24setAudioStreamPropertiesEP8_GObject'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer6doSeekERKN3WTF9MediaTimeEf12GstSeekFlags'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer24invalidateCachedPositionEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer32setAudioStreamPropertiesCallbackEPS0_P8_GObject'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer19sourceSetupCallbackEPS0_P11_GstElement'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer20videoChangedCallbackEPS0_'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer20audioChangedCallbackEPS0_'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer19textChangedCallbackEPS0_'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer11timeChangedEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer13loadingFailedENS_16MediaPlayerEnums12NetworkStateENS1_10ReadyStateEb'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer16loadStateChangedEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer24updateTextureMapperFlagsEv'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_notifier' o='256' t='Ref&lt;MainThreadNotifier&lt;WebCore::MediaPlayerPrivateGStreamer::MainThreadNotification&gt; &gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_player' o='320' t='WebCore::MediaPlayer *'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_referrer' o='384' t='WTF::String'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_cachedPosition' o='448' t='std::optional&lt;MediaTime&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_cachedDuration' o='640' t='WTF::MediaTime'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_canFallBackToLastFinishedSeekPosition' o='768' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_isChangingRate' o='776' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_didDownloadFinish' o='784' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_didErrorOccur' o='792' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_isEndReached' o='800' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_isLiveStream' o='808' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_isPaused' o='816' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_playbackRate' o='832' t='float'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_currentState' o='864' t='GstState'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_oldState' o='896' t='GstState'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_requestedState' o='928' t='GstState'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_shouldResetPipeline' o='960' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_isSeeking' o='968' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_isSeekPending' o='976' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_seekTime' o='1024' t='WTF::MediaTime'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_source' o='1152' t='GRefPtr&lt;GstElement&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_areVolumeAndMuteInitialized' o='1216' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_textureMapperFlags' o='1248' t='TextureMapperGL::Flags'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_volumeElement' o='1280' t='GRefPtr&lt;GstStreamVolume&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_audioSink' o='1344' t='GRefPtr&lt;GstElement&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_videoSink' o='1408' t='GRefPtr&lt;GstElement&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_pipeline' o='1472' t='GRefPtr&lt;GstElement&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_size' o='1536' t='WebCore::IntSize'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_readyState' o='1600' t='MediaPlayer::ReadyState'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_networkState' o='1608' t='MediaPlayer::NetworkState'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_sampleMutex' o='1616' t='WTF::Lock'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_sample' o='1664' t='GRefPtr&lt;GstSample&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_videoSize' o='1728' t='WebCore::FloatSize'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_isUsingFallbackVideoSink' o='1824' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_canRenderingBeAccelerated' o='1832' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_isBeingDestroyed' o='1840' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_videoTextureCopier' o='1856' t='std::unique_ptr&lt;VideoTextureCopierGStreamer&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_colorConvert' o='1920' t='GRefPtr&lt;GstGLColorConvert&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_colorConvertInputCaps' o='1984' t='GRefPtr&lt;GstCaps&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_colorConvertOutputCaps' o='2048' t='GRefPtr&lt;GstCaps&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_videoSourceOrientation' o='2112' t='WebCore::ImageOrientation'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_videoDecoderPlatform' o='2144' t='std::optional&lt;GstVideoDecoderPlatform&gt;'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer20isPlayerShuttingDownEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer13maxTimeLoadedEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer25setVideoSourceOrientationENS_16ImageOrientationE'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer16platformDurationEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer7isMutedEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer10commitLoadEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer14fillTimerFiredEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer6didEndEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer15createVideoSinkEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer15createAudioSinkEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer9audioSinkEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer17getSupportedTypesERN3WTF7HashSetINS1_6StringENS1_24ASCIICaseInsensitiveHashENS1_10HashTraitsIS3_EENS1_15HashTableTraitsEEE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer12supportsTypeERKNS_28MediaEngineSupportParametersE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer11syncOnClockEb'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer16playbackPositionEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer12updateStatesEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer20asyncStateChangeDoneEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer16createGSTPlayBinERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer16loadNextLocationEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer20mediaLocationChangedEP11_GstMessage'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer27updateDownloadBufferingFlagEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer21processBufferingStatsEP11_GstMessage'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer21updateBufferingStatusE16GstBufferingModed'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer19updateMaxTimeLoadedEd'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer22processTableOfContentsEP11_GstMessage'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer27processTableOfContentsEntryEP12_GstTocEntry'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer17engineDescriptionEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer22didPassCORSAccessCheckEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer16canSaveMediaDataEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer21purgeOldDownloadFilesERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer32uriDecodeBinElementAddedCallbackEP7_GstBinP11_GstElementPS0_'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer33downloadBufferFileCreatedCallbackEPS0_'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer13setPlaybinURLERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer12updateTracksERKN3WTF7GRefPtrI20_GstStreamCollectionEE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer20videoSinkCapsChangedEP7_GstPad'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer37updateVideoSizeAndOrientationFromCapsEPK8_GstCaps'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer30hasFirstVideoSampleReachedSinkEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer31configureMediaStreamAudioTracksEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer39invalidateCachedPositionOnNextIterationEv'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_isPlayerShuttingDown' o='2208' t='Atomic&lt;bool&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_textSink' o='2240' t='GRefPtr&lt;GstElement&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_mediaLocations' o='2304' t='GUniquePtr&lt;GstStructure&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_mediaLocationCurrentIndex' o='2368' t='int'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_isPlaybackRatePaused' o='2400' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_timeOfOverlappingSeek' o='2432' t='WTF::MediaTime'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_lastPlaybackRate' o='2560' t='float'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_fillTimer' o='2624' t='WebCore::Timer'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_maxTimeLoaded' o='3008' t='WTF::MediaTime'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_loadingStalled' o='3136' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_preload' o='3144' t='MediaPlayer::Preload'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_isDelayingLoad' o='3152' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_maxTimeLoadedAtLastDidLoadingProgress' o='3200' t='WTF::MediaTime'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_hasVideo' o='3328' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_hasAudio' o='3336' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_drawCondition' o='3344' t='WTF::Condition'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_drawLock' o='3352' t='WTF::Lock'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_drawTimer' o='3392' t='RunLoop::Timer&lt;MediaPlayerPrivateGStreamer&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_readyTimerHandler' o='3776' t='RunLoop::Timer&lt;MediaPlayerPrivateGStreamer&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_nicosiaLayer' o='4160' t='Ref&lt;Nicosia::ContentLayer&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_isBuffering' o='4224' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_bufferingPercentage' o='4256' t='int'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_hasWebKitWebSrcSentEOS' o='4288' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_totalBytes' o='4352' t='unsigned long long'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_url' o='4416' t='WTF::URL'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_shouldPreservePitch' o='4736' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_isLegacyPlaybin' o='4744' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_visible' o='4752' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_waitingForStreamsSelectedEvent' o='4760' t='bool'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_currentAudioStreamId' o='4800' t='WTF::AtomString'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_currentVideoStreamId' o='4864' t='WTF::AtomString'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_wantedAudioStreamId' o='4928' t='WTF::AtomString'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_wantedVideoStreamId' o='4992' t='WTF::AtomString'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_requestedAudioStreamId' o='5056' t='WTF::AtomString'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_requestedVideoStreamId' o='5120' t='WTF::AtomString'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_audioSourceProvider' o='5184' t='std::unique_ptr&lt;AudioSourceProviderGStreamer&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_downloadBuffer' o='5248' t='GRefPtr&lt;GstElement&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_missingPluginCallbacks' o='5312' t='Vector&lt;RefPtr&lt;WebCore::MediaPlayerRequestInstallMissingPluginsCallback&gt; &gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_audioTracks' o='5440' t='HashMap&lt;WTF::AtomString, RefPtr&lt;WebCore::AudioTrackPrivateGStreamer&gt; &gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_textTracks' o='5504' t='HashMap&lt;WTF::AtomString, RefPtr&lt;WebCore::InbandTextTrackPrivateGStreamer&gt; &gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_videoTracks' o='5568' t='HashMap&lt;WTF::AtomString, RefPtr&lt;WebCore::VideoTrackPrivateGStreamer&gt; &gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_chaptersTrack' o='5632' t='RefPtr&lt;WebCore::InbandMetadataTextTrackPrivateGStreamer&gt;'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer13isMediaSourceEv'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_httpResponseTotalSize' o='5696' t='uint64_t'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_networkReadPosition' o='5760' t='uint64_t'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_readPositionAtLastDidLoadingProgress' o='5824' t='uint64_t'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_origins' o='5888' t='HashSet&lt;RefPtr&lt;WebCore::SecurityOrigin&gt; &gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_hasTaintedOrigin' o='5952' t='std::optional&lt;bool&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_fpsSink' o='6016' t='GRefPtr&lt;GstElement&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_totalVideoFrames' o='6080' t='uint64_t'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_droppedVideoFrames' o='6144' t='uint64_t'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_TaskAtMediaTimeSchedulerDataMutex' o='6208' t='DataMutex&lt;WebCore::MediaPlayerPrivateGStreamer::TaskAtMediaTimeScheduler&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_logger' o='6528' t='Ref&lt;const WTF::Logger&gt;'/>
+<mbr r='WebCore::MediaPlayerPrivateGStreamer::m_logIdentifier' o='6592' t='const void *'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/GLVideoSinkGStreamer.h' l='54' c='webKitGLVideoSinkSetMediaPlayerPrivate'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/GLVideoSinkGStreamer.cpp' l='48'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/GLVideoSinkGStreamer.cpp' l='237' c='webKitGLVideoSinkSetMediaPlayerPrivate'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/GLVideoSinkGStreamer.cpp' l='242' c='webKitGLVideoSinkSetMediaPlayerPrivate'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/GLVideoSinkGStreamer.cpp' l='249' c='webKitGLVideoSinkSetMediaPlayerPrivate'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/GLVideoSinkGStreamer.cpp' l='275' c='webKitGLVideoSinkSetMediaPlayerPrivate'/>
+<size>832</size>
+<ovr f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/MediaPlayerPrivateGStreamerMSE.h' l='42' c='WebCore::MediaPlayerPrivateGStreamerMSE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/MediaPlayerPrivateGStreamerMSE.h' l='42'/>
+<size>832</size>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/InbandTextTrackPrivateGStreamer.h' l='47' c='_ZN7WebCore31InbandTextTrackPrivateGStreamer6createEN3WTF7WeakPtrINS_27MediaPlayerPrivateGStreamerENS1_12EmptyCounterEEEiNS1_7GRefPtrI7_GstPadEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/TextSinkGStreamer.h' l='62' c='webkitTextSinkNew'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/VideoTrackPrivateGStreamer.h' l='42' c='_ZN7WebCore26VideoTrackPrivateGStreamer6createEN3WTF7WeakPtrINS_27MediaPlayerPrivateGStreamerENS1_12EmptyCounterEEEiNS1_7GRefPtrI7_GstPadEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/VideoTrackPrivateGStreamer.h' l='47' c='_ZN7WebCore26VideoTrackPrivateGStreamer6createEN3WTF7WeakPtrINS_27MediaPlayerPrivateGStreamerENS1_12EmptyCounterEEEiNS1_7GRefPtrI10_GstStreamEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/VideoTrackPrivateGStreamer.h' l='66' c='_ZN7WebCore26VideoTrackPrivateGStreamerC1EN3WTF7WeakPtrINS_27MediaPlayerPrivateGStreamerENS1_12EmptyCounterEEEiNS1_7GRefPtrI7_GstPadEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/VideoTrackPrivateGStreamer.h' l='67' c='_ZN7WebCore26VideoTrackPrivateGStreamerC1EN3WTF7WeakPtrINS_27MediaPlayerPrivateGStreamerENS1_12EmptyCounterEEEiNS1_7GRefPtrI10_GstStreamEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/VideoTrackPrivateGStreamer.h' l='70'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='275' c='_ZNK7WebCore27MediaPlayerFactoryGStreamer23createMediaEnginePlayerEPNS_11MediaPlayerE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='896' c='_ZN7WebCore27MediaPlayerPrivateGStreamer32setAudioStreamPropertiesCallbackEPS0_P8_GObject'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='913' c='_ZN7WebCore27MediaPlayerPrivateGStreamer19sourceSetupCallbackEPS0_P11_GstElement'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='1129' c='_ZN7WebCore27MediaPlayerPrivateGStreamer20audioChangedCallbackEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='1136' c='_ZN7WebCore27MediaPlayerPrivateGStreamer19textChangedCallbackEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='1497' c='_ZN7WebCore27MediaPlayerPrivateGStreamer20videoChangedCallbackEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='1656' c='_ZN7WebCore27MediaPlayerPrivateGStreamer21volumeChangedCallbackEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='1700' c='_ZN7WebCore27MediaPlayerPrivateGStreamer19muteChangedCallbackEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='2118' c='_ZN7WebCore27MediaPlayerPrivateGStreamer32uriDecodeBinElementAddedCallbackEP7_GstBinP11_GstElementPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='2141' c='_ZN7WebCore27MediaPlayerPrivateGStreamer33downloadBufferFileCreatedCallbackEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='2678' c='_ZN7WebCore27MediaPlayerPrivateGStreamer16createGSTPlayBinERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='2681' c='_ZN7WebCore27MediaPlayerPrivateGStreamer16createGSTPlayBinERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='2687' c='_ZN7WebCore27MediaPlayerPrivateGStreamer16createGSTPlayBinERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='2693' c='_ZN7WebCore27MediaPlayerPrivateGStreamer16createGSTPlayBinERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='2748' c='_ZN7WebCore27MediaPlayerPrivateGStreamer16createGSTPlayBinERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='3117' c='_ZN7WebCore27MediaPlayerPrivateGStreamer15repaintCallbackEPS0_P10_GstSample'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='3140' c='_ZN7WebCore27MediaPlayerPrivateGStreamer24repaintCancelledCallbackEPS0_'/>
+<size>832</size>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamerC1EPNS_11MediaPlayerE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamerD1Ev'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer11isAvailableEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer19registerMediaEngineEPFvOSt10unique_ptrINS_18MediaPlayerFactoryESt14default_deleteIS2_EEE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer4loadERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer4loadERKN3WTF3URLERKNS_11ContentTypeEPNS_24MediaSourcePrivateClientE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer10cancelLoadEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer13prepareToPlayEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer4playEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer5pauseEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer6pausedEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer6doSeekERKN3WTF9MediaTimeEf12GstSeekFlags'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer4seekERKN3WTF9MediaTimeE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer18updatePlaybackRateEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer17durationMediaTimeEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer16currentMediaTimeEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer7setRateEf'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer4rateEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer17setPreservesPitchEb'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer10setPreloadENS_16MediaPlayerEnums7PreloadE'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer8bufferedEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer20maxMediaTimeSeekableEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer13maxTimeLoadedEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer18didLoadingProgressEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer10totalBytesEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer23hasSingleSecurityOriginEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer16wouldTaintOriginERKNS_14SecurityOriginE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer25simulateAudioInterruptionEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer25ensureAudioSourceProviderEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer19audioSourceProviderEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer15durationChangedEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer11sourceSetupEP11_GstElement'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer32setAudioStreamPropertiesCallbackEPS0_P8_GObject'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer24setAudioStreamPropertiesEP8_GObject'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer19sourceSetupCallbackEPS0_P11_GstElement'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer19changePipelineStateE8GstState'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer13setPlaybinURLERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer11syncOnClockEb'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer19notifyPlayerOfTrackEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer30hasFirstVideoSampleReachedSinkEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer20videoSinkCapsChangedEP7_GstPad'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer20audioChangedCallbackEPS0_'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer19textChangedCallbackEPS0_'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer16handleTextSampleEP10_GstSamplePKc'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer16platformDurationEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer7isMutedEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer10commitLoadEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer14fillTimerFiredEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer16loadStateChangedEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer11timeChangedEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer13loadingFailedENS_16MediaPlayerEnums12NetworkStateENS1_10ReadyStateEb'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer15createAudioSinkEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer9audioSinkEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer16playbackPositionEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer23updateEnabledVideoTrackEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer23updateEnabledAudioTrackEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer38playbin3SendSelectStreamsIfAppropriateEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer12updateTracksERKN3WTF7GRefPtrI20_GstStreamCollectionEE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer20videoChangedCallbackEPS0_'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer29handleStreamCollectionMessageEP11_GstMessage'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer24handleNeedContextMessageEP11_GstMessage'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer11naturalSizeEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer31configureMediaStreamAudioTracksEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer9setVolumeEf'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer6volumeEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer26notifyPlayerOfVolumeChangeEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer21volumeChangedCallbackEPS0_'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer12networkStateEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer10readyStateEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer8setMutedEb'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer18notifyPlayerOfMuteEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer19muteChangedCallbackEPS0_'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer13handleMessageEP11_GstMessage'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer21processBufferingStatsEP11_GstMessage'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer19updateMaxTimeLoadedEd'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer21updateBufferingStatusE16GstBufferingModed'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer22processTableOfContentsEP11_GstMessage'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer27processTableOfContentsEntryEP12_GstTocEntry'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer32uriDecodeBinElementAddedCallbackEP7_GstBinP11_GstElementPS0_'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer33downloadBufferFileCreatedCallbackEPS0_'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer21purgeOldDownloadFilesERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer20asyncStateChangeDoneEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer12updateStatesEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer20mediaLocationChangedEP11_GstMessage'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer16loadNextLocationEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer6didEndEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer17getSupportedTypesERN3WTF7HashSetINS1_6StringENS1_24ASCIICaseInsensitiveHashENS1_10HashTraitsIS3_EENS1_15HashTableTraitsEEE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer12supportsTypeERKNS_28MediaEngineSupportParametersE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer27updateDownloadBufferingFlagEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer16createGSTPlayBinERKN3WTF3URLE'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer22didPassCORSAccessCheckEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer16canSaveMediaDataEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer15readyTimerFiredEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer32acceleratedRenderingStateChangedEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer22performTaskAtMediaTimeEON3WTF8FunctionIFvvEEERKNS1_9MediaTimeE'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer13platformLayerEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer19swapBuffersIfNeededEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer23pushTextureToCompositorEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer7repaintEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer37updateVideoSizeAndOrientationFromCapsEPK8_GstCaps'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer24invalidateCachedPositionEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer39invalidateCachedPositionOnNextIterationEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer14triggerRepaintEP10_GstSample'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer15repaintCallbackEPS0_P10_GstSample'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer13cancelRepaintEb'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer24repaintCancelledCallbackEPS0_'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer18flushCurrentBufferEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer7setSizeERKNS_7IntSizeE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer5paintERNS_15GraphicsContextERKNS_9FloatRectE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer33copyVideoTextureToPlatformTextureEPNS_17GraphicsContextGLEjjijjjbb'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer25nativeImageForCurrentTimeEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer25setVideoSourceOrientationENS_16ImageOrientationE'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer24updateTextureMapperFlagsEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer18supportsFullscreenEv'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer13movieLoadTypeEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer17createVideoSinkGLEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer15createVideoSinkEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer22setStreamVolumeElementEP16_GstStreamVolume'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer27videoPlaybackQualityMetricsEv'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer17supportsKeySystemERKN3WTF6StringES4_'/>
+<fun r='_ZN7WebCore27MediaPlayerPrivateGStreamer20extendedSupportsTypeERKNS_28MediaEngineSupportParametersENS_16MediaPlayerEnums12SupportsTypeE'/>
+<fun r='_ZNK7WebCore27MediaPlayerPrivateGStreamer10logChannelEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/TextSinkGStreamer.cpp' l='44'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/TextSinkGStreamer.cpp' l='66' c='_ZL26webkitTextSinkHandleSampleP15_WebKitTextSinkON3WTF7GRefPtrI10_GstSampleEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/TextSinkGStreamer.cpp' l='133' c='webkitTextSinkNew'/>
+<size>832</size>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/VideoTrackPrivateGStreamer.cpp' l='37' c='_ZN7WebCore26VideoTrackPrivateGStreamerC1EN3WTF7WeakPtrINS_27MediaPlayerPrivateGStreamerENS1_12EmptyCounterEEEiNS1_7GRefPtrI7_GstPadEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/VideoTrackPrivateGStreamer.cpp' l='45' c='_ZN7WebCore26VideoTrackPrivateGStreamerC1EN3WTF7WeakPtrINS_27MediaPlayerPrivateGStreamerENS1_12EmptyCounterEEEiNS1_7GRefPtrI10_GstStreamEE'/>
+<size>832</size>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/MediaPlayerPrivateGStreamerMSE.cpp' l='107' c='_ZN7WebCore30MediaPlayerPrivateGStreamerMSEC1EPNS_11MediaPlayerE'/>
+<size>832</size>

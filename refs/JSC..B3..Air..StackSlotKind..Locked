@@ -1,0 +1,11 @@
+<dec f='WebKit/Source/JavaScriptCore/b3/air/AirStackSlotKind.h' l='37' type='0'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirStackSlot.h' l='49' u='r' c='_ZNK3JSC2B33Air9StackSlot8isLockedEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirStackSlot.h' l='91'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirStackSlot.h' l='91'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/air/AirStackSlotKind.h' l='33'>// A locked stack slot is an area of stack requested by the client. It cannot be killed. The
+    // client can get its FP offset and write to it from stack walking code, so we must assume
+    // that reads and writes to a locked stack slot can be clobbered the same way as reads and
+    // writes to any memory location.</doc>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirHandleCalleeSaves.cpp' l='77' u='r' c='_ZN3JSC2B33Air17handleCalleeSavesERNS1_4CodeENS_11RegisterSetE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirStackSlotKind.cpp' l='40' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC2B33Air13StackSlotKindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Procedure.cpp' l='78' u='r' c='_ZN3JSC2B39Procedure12addStackSlotEm'/>

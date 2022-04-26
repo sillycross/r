@@ -1,0 +1,80 @@
+<def f='WebKit/Source/WebCore/css/MediaQueryEvaluator.h' l='61' ll='91'/>
+<size>32</size>
+<doc f='WebKit/Source/WebCore/css/MediaQueryEvaluator.h' l='58'>// Some of the constructors are used for cases where the device characteristics are not known.
+// These  can be used to prune the loading of stylesheets to only those which are not already known to not match.</doc>
+<fun r='_ZN7WebCore19MediaQueryEvaluatorC1Eb'/>
+<fun r='_ZN7WebCore19MediaQueryEvaluatorC1ERKN3WTF6StringEb'/>
+<fun r='_ZN7WebCore19MediaQueryEvaluatorC1ERKN3WTF6StringERKNS_8DocumentEPKNS_11RenderStyleE'/>
+<fun r='_ZNK7WebCore19MediaQueryEvaluator14mediaTypeMatchERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore19MediaQueryEvaluator22mediaTypeMatchSpecificEPKc'/>
+<fun r='_ZNK7WebCore19MediaQueryEvaluator8evaluateERKNS_20MediaQueryExpressionE'/>
+<fun r='_ZNK7WebCore19MediaQueryEvaluator18evaluateForChangesERKNS_24MediaQueryDynamicResultsE'/>
+<fun r='_ZNK7WebCore19MediaQueryEvaluator8evaluateERKNS_13MediaQuerySetEPNS_24MediaQueryDynamicResultsENS0_4ModeE'/>
+<fun r='_ZN7WebCore19MediaQueryEvaluator21mediaAttributeMatchesERNS_8DocumentERKN3WTF6StringE'/>
+<mbr r='WebCore::MediaQueryEvaluator::m_mediaType' o='0' t='WTF::String'/>
+<mbr r='WebCore::MediaQueryEvaluator::m_document' o='64' t='WeakPtr&lt;const WebCore::Document&gt;'/>
+<mbr r='WebCore::MediaQueryEvaluator::m_style' o='128' t='const WebCore::RenderStyle *'/>
+<mbr r='WebCore::MediaQueryEvaluator::m_fallbackResult' o='192' t='bool'/>
+<use f='WebKit/Source/WebCore/style/RuleSet.h' l='84'/>
+<use f='WebKit/Source/WebCore/style/RuleSet.h' l='104' c='_ZN7WebCore5Style7RuleSet17addRulesFromSheetERNS_18StyleSheetContentsERKNS_19MediaQueryEvaluatorE'/>
+<use f='WebKit/Source/WebCore/style/RuleSet.h' l='105' c='_ZN7WebCore5Style7RuleSet17addRulesFromSheetERNS_18StyleSheetContentsEPNS_13MediaQuerySetERKNS_19MediaQueryEvaluatorERNS0_8ResolverE'/>
+<use f='WebKit/Source/WebCore/style/RuleSet.h' l='116' c='_ZN7WebCore5Style7RuleSet30evaluateDynamicMediaQueryRulesERKNS_19MediaQueryEvaluatorE'/>
+<use f='WebKit/Source/WebCore/style/RuleSet.h' l='152' c='_ZN7WebCore5Style7RuleSet30evaluateDynamicMediaQueryRulesERKNS_19MediaQueryEvaluatorEm'/>
+<use f='WebKit/Source/WebCore/style/ElementRuleCollector.h' l='108' c='_ZN7WebCore5Style20ElementRuleCollector9setMediumEPKNS_19MediaQueryEvaluatorE'/>
+<use f='WebKit/Source/WebCore/style/StyleScopeRuleSets.h' l='76' c='_ZN7WebCore5Style13ScopeRuleSets23appendAuthorStyleSheetsERKN3WTF6VectorINS2_6RefPtrINS_13CSSStyleSheetENS2_12RawPtrTraitsIS5_EENS2_21DefaultRefDerefT12904078'/>
+<use f='WebKit/Source/WebCore/style/StyleScopeRuleSets.h' l='82' c='_ZN7WebCore5Style13ScopeRuleSets30evaluateDynamicMediaQueryRulesERKNS_19MediaQueryEvaluatorE'/>
+<use f='WebKit/Source/WebCore/style/StyleScopeRuleSets.h' l='90' c='_ZN7WebCore5Style13ScopeRuleSets31collectRulesFromUserStyleSheetsERKN3WTF6VectorINS2_6RefPtrINS_13CSSStyleSheetENS2_12RawPtrTraitsIS5_EENS2_21DefaultR7451281'/>
+<use f='WebKit/Source/WebCore/style/StyleResolver.h' l='106' c='_ZNK7WebCore5Style8Resolver19mediaQueryEvaluatorEv'/>
+<use f='WebKit/Source/WebCore/style/StyleResolver.h' l='190'/>
+<size>32</size>
+<use f='WebKit/Source/WebCore/style/StyleInvalidator.h' l='49' c='_ZN7WebCore5Style11InvalidatorC1ERKN3WTF6VectorIPNS_18StyleSheetContentsELm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEERKNS_19MediaQueryEvaluatorE'/>
+<size>32</size>
+<use f='WebKit/Source/WebCore/style/RuleSet.cpp' l='312' c='_ZN7WebCore5Style7RuleSet17addRulesFromSheetERNS_18StyleSheetContentsERKNS_19MediaQueryEvaluatorE'/>
+<use f='WebKit/Source/WebCore/style/RuleSet.cpp' l='318' c='_ZN7WebCore5Style7RuleSet17addRulesFromSheetERNS_18StyleSheetContentsEPNS_13MediaQuerySetERKNS_19MediaQueryEvaluatorERNS0_8ResolverE'/>
+<use f='WebKit/Source/WebCore/style/RuleSet.cpp' l='402' c='_ZN7WebCore5Style7RuleSet30evaluateDynamicMediaQueryRulesERKNS_19MediaQueryEvaluatorE'/>
+<use f='WebKit/Source/WebCore/style/RuleSet.cpp' l='424' c='_ZN7WebCore5Style7RuleSet30evaluateDynamicMediaQueryRulesERKNS_19MediaQueryEvaluatorEm'/>
+<size>32</size>
+<use f='WebKit/Source/WebCore/style/StyleInvalidator.cpp' l='86' c='_ZN7WebCore5Style11InvalidatorC1ERKN3WTF6VectorIPNS_18StyleSheetContentsELm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEERKNS_19MediaQueryEvaluatorE'/>
+<use f='WebKit/Source/WebCore/style/StyleResolver.cpp' l='110' c='_ZN7WebCore5Style8ResolverC1ERNS_8DocumentE'/>
+<use f='WebKit/Source/WebCore/style/StyleResolver.cpp' l='112' c='_ZN7WebCore5Style8ResolverC1ERNS_8DocumentE'/>
+<use f='WebKit/Source/WebCore/style/StyleResolver.cpp' l='124' c='_ZN7WebCore5Style8ResolverC1ERNS_8DocumentE'/>
+<size>32</size>
+<use f='WebKit/Source/WebCore/style/StyleScopeRuleSets.cpp' l='112' c='_ZN7WebCore5Style13ScopeRuleSets31collectRulesFromUserStyleSheetsERKN3WTF6VectorINS2_6RefPtrINS_13CSSStyleSheetENS2_12RawPtrTraitsIS5_EENS2_21DefaultR7451281'/>
+<use f='WebKit/Source/WebCore/style/StyleScopeRuleSets.cpp' l='156' c='_ZN7WebCore5Style13ScopeRuleSets30evaluateDynamicMediaQueryRulesERKNS_19MediaQueryEvaluatorE'/>
+<use f='WebKit/Source/WebCore/style/StyleScopeRuleSets.cpp' l='178' c='_ZN7WebCore5Style13ScopeRuleSets23appendAuthorStyleSheetsERKN3WTF6VectorINS2_6RefPtrINS_13CSSStyleSheetENS2_12RawPtrTraitsIS5_EENS2_21DefaultRefDerefT12904078'/>
+<use f='WebKit/Source/WebCore/style/UserAgentStyle.cpp' l='89' c='_ZN7WebCore5StyleL10screenEvalEv'/>
+<use f='WebKit/Source/WebCore/style/UserAgentStyle.cpp' l='91' c='_ZN7WebCore5StyleL10screenEvalEv'/>
+<use f='WebKit/Source/WebCore/style/UserAgentStyle.cpp' l='95' c='_ZN7WebCore5StyleL9printEvalEv'/>
+<use f='WebKit/Source/WebCore/style/UserAgentStyle.cpp' l='97' c='_ZN7WebCore5StyleL9printEvalEv'/>
+<size>32</size>
+<use f='WebKit/Source/WebCore/css/MediaQueryEvaluator.cpp' l='936' c='_ZN7WebCore19MediaQueryEvaluator21mediaAttributeMatchesERNS_8DocumentERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/css/MediaQueryList.h' l='47' c='_ZN7WebCore14MediaQueryList8evaluateERNS_19MediaQueryEvaluatorERb'/>
+<use f='WebKit/Source/WebCore/css/MediaQueryList.cpp' l='81' c='_ZN7WebCore14MediaQueryList8evaluateERNS_19MediaQueryEvaluatorERb'/>
+<use f='WebKit/Source/WebCore/css/MediaQueryMatcher.cpp' l='83' c='_ZN7WebCore17MediaQueryMatcher8evaluateERKNS_13MediaQuerySetE'/>
+<use f='WebKit/Source/WebCore/css/MediaQueryMatcher.cpp' l='120' c='_ZN7WebCore17MediaQueryMatcher11evaluateAllEv'/>
+<size>32</size>
+<fun r='_ZN7WebCore19MediaQueryEvaluatorC1Eb'/>
+<fun r='_ZN7WebCore19MediaQueryEvaluatorC1ERKN3WTF6StringEb'/>
+<fun r='_ZN7WebCore19MediaQueryEvaluatorC1ERKN3WTF6StringERKNS_8DocumentEPKNS_11RenderStyleE'/>
+<fun r='_ZNK7WebCore19MediaQueryEvaluator14mediaTypeMatchERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore19MediaQueryEvaluator22mediaTypeMatchSpecificEPKc'/>
+<fun r='_ZNK7WebCore19MediaQueryEvaluator8evaluateERKNS_13MediaQuerySetEPNS_24MediaQueryDynamicResultsENS0_4ModeE'/>
+<fun r='_ZNK7WebCore19MediaQueryEvaluator18evaluateForChangesERKNS_24MediaQueryDynamicResultsE'/>
+<fun r='_ZNK7WebCore19MediaQueryEvaluator8evaluateERKNS_20MediaQueryExpressionE'/>
+<fun r='_ZN7WebCore19MediaQueryEvaluator21mediaAttributeMatchesERNS_8DocumentERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/css/StyleMedia.cpp' l='73' c='_ZNK7WebCore10StyleMedia11matchMediumERKN3WTF6StringE'/>
+<size>32</size>
+<use f='WebKit/Source/WebCore/css/parser/SizesAttributeParser.cpp' l='115' c='_ZN7WebCore20SizesAttributeParser21mediaConditionMatchesERKNS_13MediaQuerySetE'/>
+<size>32</size>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='4607' c='_ZN7WebCore16HTMLMediaElement21selectNextSourceChildEPNS_11ContentTypeEPN3WTF6StringENS_21HTMLMediaElementEnums16InvalidURLActionE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMetaElement.cpp' l='81' c='_ZN7WebCore15HTMLMetaElement21mediaAttributeMatchesEv'/>
+<size>32</size>
+<use f='WebKit/Source/WebCore/html/parser/HTMLPreloadScanner.cpp' l='241' c='_ZN7WebCore19TokenPreloadScanner15StartTagScanner16processAttributeERKN3WTF10AtomStringERKNS2_6StringERKNS2_6VectorIbLm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<size>32</size>
+<use f='WebKit/Source/WebCore/html/HTMLImageElement.cpp' l='210' c='_ZN7WebCore16HTMLImageElement31bestFitSourceFromPictureElementEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLImageElement.cpp' l='234' c='_ZN7WebCore16HTMLImageElement37evaluateDynamicMediaQueryDependenciesEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLLinkElement.cpp' l='315' c='_ZN7WebCore15HTMLLinkElement7processEv'/>
+<size>32</size>
+<use f='WebKit/Source/WebCore/dom/InlineStyleSheetOwner.cpp' l='177' c='_ZN7WebCore21InlineStyleSheetOwner11createSheetERNS_7ElementERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/dom/InlineStyleSheetOwner.cpp' l='178' c='_ZN7WebCore21InlineStyleSheetOwner11createSheetERNS_7ElementERKN3WTF6StringE'/>
+<size>32</size>

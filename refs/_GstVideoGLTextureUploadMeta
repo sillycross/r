@@ -1,0 +1,24 @@
+<use f='include/gstreamer-1.0/gst/video/gstvideometa.h' l='203'/>
+<def f='include/gstreamer-1.0/gst/video/gstvideometa.h' l='234' ll='248'/>
+<size>80</size>
+<doc f='include/gstreamer-1.0/gst/video/gstvideometa.h' l='221'>/**
+ * GstVideoGLTextureUploadMeta:
+ * @meta: parent #GstMeta
+ * @texture_orientation: Orientation of the textures
+ * @n_textures: Number of textures that are generated
+ * @texture_type: Type of each texture
+ *
+ * Extra buffer metadata for uploading a buffer to an OpenGL texture
+ * ID. The caller of gst_video_gl_texture_upload_meta_upload() must
+ * have OpenGL set up and call this from a thread where it is valid
+ * to upload something to an OpenGL texture.
+ */</doc>
+<mbr r='_GstVideoGLTextureUploadMeta::meta' o='0' t='GstMeta'/>
+<mbr r='_GstVideoGLTextureUploadMeta::texture_orientation' o='128' t='GstVideoGLTextureOrientation'/>
+<mbr r='_GstVideoGLTextureUploadMeta::n_textures' o='160' t='guint'/>
+<mbr r='_GstVideoGLTextureUploadMeta::texture_type' o='192' t='GstVideoGLTextureType [4]'/>
+<mbr r='_GstVideoGLTextureUploadMeta::buffer' o='320' t='GstBuffer *'/>
+<mbr r='_GstVideoGLTextureUploadMeta::upload' o='384' t='GstVideoGLTextureUpload'/>
+<mbr r='_GstVideoGLTextureUploadMeta::user_data' o='448' t='gpointer'/>
+<mbr r='_GstVideoGLTextureUploadMeta::user_data_copy' o='512' t='GBoxedCopyFunc'/>
+<mbr r='_GstVideoGLTextureUploadMeta::user_data_free' o='576' t='GBoxedFreeFunc'/>

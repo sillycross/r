@@ -1,0 +1,17 @@
+<use f='include/gstreamer-1.0/gst/video/gstvideoaggregator.h' l='51'/>
+<def f='include/gstreamer-1.0/gst/video/gstvideoaggregator.h' l='83' ll='98'/>
+<size>592</size>
+<doc f='include/gstreamer-1.0/gst/video/gstvideoaggregator.h' l='74'>/**
+ * GstVideoAggregatorPadClass:
+ * @update_conversion_info: Called when either the input or output formats
+ *                          have changed.
+ * @prepare_frame: Prepare the frame from the pad buffer and sets it to prepared_frame
+ * @clean_frame:   clean the frame previously prepared in prepare_frame
+ *
+ * Since: 1.16
+ */</doc>
+<mbr r='_GstVideoAggregatorPadClass::parent_class' o='0' t='GstAggregatorPadClass'/>
+<mbr r='_GstVideoAggregatorPadClass::update_conversion_info' o='3264' t='void (*)(GstVideoAggregatorPad *)'/>
+<mbr r='_GstVideoAggregatorPadClass::prepare_frame' o='3328' t='gboolean (*)(GstVideoAggregatorPad *, GstVideoAggregator *, GstBuffer *, GstVideoFrame *)'/>
+<mbr r='_GstVideoAggregatorPadClass::clean_frame' o='3392' t='void (*)(GstVideoAggregatorPad *, GstVideoAggregator *, GstVideoFrame *)'/>
+<mbr r='_GstVideoAggregatorPadClass::_gst_reserved' o='3456' t='gpointer [20]'/>

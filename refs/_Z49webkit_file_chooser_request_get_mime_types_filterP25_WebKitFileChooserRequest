@@ -1,0 +1,18 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitFileChooserRequest.cpp' l='257' ll='281' type='GtkFileFilter * webkit_file_chooser_request_get_mime_types_filter(WebKitFileChooserRequest * request)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitFileChooserRequest.cpp' l='240'>/**
+ * webkit_file_chooser_request_get_mime_types_filter:
+ * @request: a #WebKitFileChooserRequest
+ *
+ * Get the filter currently associated with the request, ready to be
+ * used by #GtkFileChooser. This function should normally be called
+ * before presenting the file chooser dialog to the user, to decide
+ * whether to apply a filter so the user would not be allowed to
+ * select files with other MIME types.
+ *
+ * See webkit_file_chooser_request_get_mime_types() if you are
+ * interested in getting the list of accepted MIME types.
+ *
+ * Returns: (transfer none): a #GtkFileFilter if a list of accepted
+ * MIME types is defined or %NULL otherwise. The returned object is
+ * owned by WebKit should not be modified or freed.
+ */</doc>

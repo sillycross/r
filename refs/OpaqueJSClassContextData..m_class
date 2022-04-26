@@ -1,0 +1,17 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSClassRef.h' l='83' type='RefPtr&lt;OpaqueJSClass&gt;'/>
+<offset>0</offset>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSClassRef.h' l='77'>// It is necessary to keep OpaqueJSClass alive because of the following rare scenario:
+    // 1. A class is created and used, so its context data is stored in VM hash map.
+    // 2. The class is released, and when all JS objects that use it are collected, OpaqueJSClass
+    // is deleted (that&apos;s the part prevented by this RefPtr).
+    // 3. Another class is created at the same address.
+    // 4. When it is used, the old context data is found in VM and used.</doc>
+<dec f='WebKit/Source/JavaScriptCore/API/JSClassRef.h' l='83' type='RefPtr&lt;OpaqueJSClass&gt;'/>
+<offset>0</offset>
+<doc f='WebKit/Source/JavaScriptCore/API/JSClassRef.h' l='77'>// It is necessary to keep OpaqueJSClass alive because of the following rare scenario:
+    // 1. A class is created and used, so its context data is stored in VM hash map.
+    // 2. The class is released, and when all JS objects that use it are collected, OpaqueJSClass
+    // is deleted (that&apos;s the part prevented by this RefPtr).
+    // 3. Another class is created at the same address.
+    // 4. When it is used, the old context data is found in VM and used.</doc>
+<use f='WebKit/Source/JavaScriptCore/API/JSClassRef.cpp' l='123' u='w' c='_ZN24OpaqueJSClassContextDataC1ERN3JSC2VMEP13OpaqueJSClass'/>

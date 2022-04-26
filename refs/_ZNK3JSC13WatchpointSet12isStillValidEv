@@ -1,0 +1,25 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Watchpoint.h' l='215' ll='218' type='bool JSC::WatchpointSet::isStillValid() const'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Watchpoint.h' l='225' u='c' c='_ZNK3JSC13WatchpointSet18hasBeenInvalidatedEv'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Watchpoint.h' l='209'>// It is safe to call this from another thread.  It may return true
+    // even if the set actually had been invalidated, but that ought to happen
+    // only in the case of races, and should be rare. Guarantees that if you
+    // call this after observing something that must imply that the set is
+    // invalidated, then you will see this return false. This is ensured by
+    // issuing a load-load fence prior to querying the state.</doc>
+<def f='WebKit/Source/JavaScriptCore/bytecode/Watchpoint.h' l='215' ll='218' type='bool JSC::WatchpointSet::isStillValid() const'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Watchpoint.h' l='225' u='c' c='_ZNK3JSC13WatchpointSet18hasBeenInvalidatedEv'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/Watchpoint.h' l='209'>// It is safe to call this from another thread.  It may return true
+    // even if the set actually had been invalidated, but that ought to happen
+    // only in the case of races, and should be rare. Guarantees that if you
+    // call this after observing something that must imply that the set is
+    // invalidated, then you will see this return false. This is ensured by
+    // issuing a load-load fence prior to querying the state.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.h' l='506' u='c' c='_ZN3JSC3DFG5Graph44masqueradesAsUndefinedWatchpointIsStillValidERKNS_10CodeOriginE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='2525' u='c' c='_ZN3JSC3DFG14ByteCodeParser19handleIntrinsicCallEPNS0_4NodeENS_7OperandENS_9IntrinsicEiimRKT_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='4487' u='c' c='_ZN3JSC3DFG14ByteCodeParser23checkPresenceForReplaceEPNS0_4NodeEPN3WTF17UniquedStringImplEiRKNS_12StructureSetE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGFixupPhase.cpp' l='862' u='c' c='_ZN3JSC3DFG10FixupPhase9fixupNodeEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGFixupPhase.cpp' l='1578' u='c' c='_ZN3JSC3DFG10FixupPhase9fixupNodeEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1104' u='c' c='_ZN3JSC3DFG5Graph19watchGlobalPropertyEPNS_14JSGlobalObjectEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1277' u='c' c='_ZN3JSC3DFG5Graph22tryGetConstantPropertyENS_7JSValueERKNS0_22RegisteredStructureSetEi'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PropertyCondition.cpp' l='341' u='c' c='_ZNK3JSC17PropertyCondition20isWatchableWhenValidEPNS_9StructureENS0_18WatchabilityEffortE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PutByIdStatus.cpp' l='322' u='c' c='_ZN3JSC13PutByIdStatus10computeForEPNS_14JSGlobalObjectERKNS_12StructureSetEPN3WTF17UniquedStringImplEbNS_19PrivateFieldPutKindE'/>

@@ -1,0 +1,13 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AssemblyHelpers.h' l='1734' type='void JSC::AssemblyHelpers::emitAllocateWithNonNullAllocator(JSC::GPRReg resultGPR, const JSC::JITAllocator &amp; allocator, JSC::GPRReg allocatorGPR, JSC::GPRReg scratchGPR, JSC::AbstractMacroAssembler&lt;JSC::X86Assembler&gt;::JumpList &amp; slowPath)'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AssemblyHelpers.h' l='1730'>// Call this if you know that the value held in allocatorGPR is non-null. This DOES NOT mean
+    // that allocator is non-null; allocator can be null as a signal that we don&apos;t know what the
+    // value of allocatorGPR is. Additionally, if the allocator is not null, then there is no need
+    // to populate allocatorGPR - this code will ignore the contents of allocatorGPR.</doc>
+<dec f='WebKit/Source/JavaScriptCore/jit/AssemblyHelpers.h' l='1734' type='void JSC::AssemblyHelpers::emitAllocateWithNonNullAllocator(JSC::GPRReg resultGPR, const JSC::JITAllocator &amp; allocator, JSC::GPRReg allocatorGPR, JSC::GPRReg scratchGPR, JSC::AbstractMacroAssembler&lt;JSC::X86Assembler&gt;::JumpList &amp; slowPath)'/>
+<doc f='WebKit/Source/JavaScriptCore/jit/AssemblyHelpers.h' l='1730'>// Call this if you know that the value held in allocatorGPR is non-null. This DOES NOT mean
+    // that allocator is non-null; allocator can be null as a signal that we don&apos;t know what the
+    // value of allocatorGPR is. Additionally, if the allocator is not null, then there is no need
+    // to populate allocatorGPR - this code will ignore the contents of allocatorGPR.</doc>
+<def f='WebKit/Source/JavaScriptCore/jit/AssemblyHelpers.cpp' l='527' ll='572' type='void JSC::AssemblyHelpers::emitAllocateWithNonNullAllocator(JSC::GPRReg resultGPR, const JSC::JITAllocator &amp; allocator, JSC::GPRReg allocatorGPR, JSC::GPRReg scratchGPR, JSC::AbstractMacroAssembler&lt;JSC::X86Assembler&gt;::JumpList &amp; slowPath)'/>
+<use f='WebKit/Source/JavaScriptCore/jit/AssemblyHelpers.cpp' l='583' u='c' c='_ZN3JSC15AssemblyHelpers12emitAllocateENS_12X86Registers10RegisterIDERKNS_12JITAllocatorES2_S2_RNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='15993' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB316allocateHeapCellEPNS_2B35ValueEPNS3_10BasicBlockE'/>

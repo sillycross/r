@@ -1,0 +1,14 @@
+<use f='WebKit/Source/JavaScriptCore/b3/B3ReduceStrength.cpp' l='2275' u='c' c='_ZN3JSC2B312_GLOBAL__N_114ReduceStrength19reduceValueStrengthEv'/>
+<def f='WebKit/Source/JavaScriptCore/b3/B3ReduceStrength.cpp' l='2424' ll='2524' type='void JSC::B3::(anonymous namespace)::ReduceStrength::specializeSelect(JSC::B3::Value * source)'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/B3ReduceStrength.cpp' l='2412'>// This specializes a sequence of code up to a Select. This doesn&apos;t work when we&apos;re at a
+    // terminal. It would be cool to fix that eventually. The main problem is that instead of
+    // splitting the block, we should just insert the then/else blocks. We&apos;ll have to create
+    // double the Phis and double the Upsilons. It&apos;ll probably be the sort of optimization that
+    // we want to do only after we&apos;ve done loop optimizations, since this will *definitely*
+    // obscure things. In fact, even this simpler form of select specialization will possibly
+    // obscure other optimizations. It would be great to have two modes of strength reduction,
+    // one that does obscuring optimizations and runs late, and another that does not do
+    // obscuring optimizations and runs early.
+    // FIXME: Make select specialization handle branches.
+    // FIXME: Have a form of strength reduction that does no obscuring optimizations and runs
+    // early.</doc>

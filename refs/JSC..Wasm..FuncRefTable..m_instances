@@ -1,0 +1,10 @@
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTable.h' l='110' u='a' c='_ZN3JSC4Wasm12FuncRefTable17offsetOfInstancesEv'/>
+<dec f='WebKit/Source/JavaScriptCore/wasm/WasmTable.h' l='117' type='MallocPtr&lt;JSC::Wasm::Instance *, JSC::VMMalloc&gt;'/>
+<offset>384</offset>
+<doc f='WebKit/Source/JavaScriptCore/wasm/WasmTable.h' l='116'>// call_indirect needs to do an Instance check to potentially context switch when calling a function to another instance. We can hold raw pointers to Instance here because the embedder ensures that Table keeps all the instances alive. We couldn&apos;t hold a Ref here because it would cause cycles.</doc>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTable.cpp' l='120' u='a' c='_ZN3JSC4Wasm5Table4growEjNS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTable.cpp' l='146' u='m' c='_ZN3JSC4Wasm5Table5clearEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTable.cpp' l='198' u='w' c='_ZN3JSC4Wasm12FuncRefTableC1EjSt8optionalIjE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTable.cpp' l='202' u='m' c='_ZN3JSC4Wasm12FuncRefTableC1EjSt8optionalIjE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTable.cpp' l='214' u='m' c='_ZN3JSC4Wasm12FuncRefTable11setFunctionEjPNS_8JSObjectENS0_28WasmToWasmImportableFunctionEPNS0_8InstanceE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTable.cpp' l='224' u='m' c='_ZNK3JSC4Wasm12FuncRefTable8instanceEj'/>

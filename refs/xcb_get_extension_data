@@ -1,0 +1,17 @@
+<dec f='include/xcb/xcb.h' l='432' type='const struct xcb_query_extension_reply_t * xcb_get_extension_data(xcb_connection_t * c, xcb_extension_t * ext)'/>
+<doc f='include/xcb/xcb.h' l='416'>/**
+ * @brief Caches reply information from QueryExtension requests.
+ * @param c The connection.
+ * @param ext The extension data.
+ * @return A pointer to the xcb_query_extension_reply_t for the extension.
+ *
+ * This function is the primary interface to the &quot;extension cache&quot;,
+ * which caches reply information from QueryExtension
+ * requests. Invoking this function may cause a call to
+ * xcb_query_extension to retrieve extension information from the
+ * server, and may block until extension data is received from the
+ * server.
+ *
+ * The result must not be freed. This storage is managed by the cache
+ * itself.
+ */</doc>

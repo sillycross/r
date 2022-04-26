@@ -1,0 +1,11 @@
+<def f='WebKit/Source/WebCore/platform/graphics/SourceBufferPrivate.cpp' l='51' type='const WTF::MediaTime'/>
+<use f='WebKit/Source/WebCore/platform/graphics/SourceBufferPrivate.cpp' l='60' u='r' c='_ZN7WebCore19SourceBufferPrivate11TrackBufferC1Ev'/>
+<use f='WebKit/Source/WebCore/platform/graphics/SourceBufferPrivate.cpp' l='363' u='r' c='_ZN7WebCore19SourceBufferPrivate16provideMediaDataERNS0_11TrackBufferERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/SourceBufferPrivate.cpp' l='387' u='r' c='_ZN7WebCore19SourceBufferPrivate21reenqueueMediaForTimeERNS0_11TrackBufferERKN3WTF10AtomStringERKNS3_9MediaTimeE'/>
+<doc f='WebKit/Source/WebCore/platform/graphics/SourceBufferPrivate.cpp' l='44'>// Do not enqueue samples spanning a significant unbuffered gap.
+// NOTE: one second is somewhat arbitrary. MediaSource::monitorSourceBuffers() is run
+// on the playbackTimer, which is effectively every 350ms. Allowing &gt; 350ms gap between
+// enqueued samples allows for situations where we overrun the end of a buffered range
+// but don&apos;t notice for 350ms of playback time, and the client can enqueue data for the
+// new current time without triggering this early return.
+// FIXME(135867): Make this gap detection logic less arbitrary.</doc>

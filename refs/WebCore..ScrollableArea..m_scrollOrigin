@@ -1,0 +1,18 @@
+<use f='WebKit/Source/WebCore/platform/ScrollableArea.h' l='216' u='a' c='_ZNK7WebCore14ScrollableArea12scrollOriginEv'/>
+<dec f='WebKit/Source/WebCore/platform/ScrollableArea.h' l='393' type='WebCore::IntPoint'/>
+<offset>192</offset>
+<doc f='WebKit/Source/WebCore/platform/ScrollableArea.h' l='382'>// There are 8 possible combinations of writing mode and direction. Scroll origin will be non-zero in the x or y axis
+    // if there is any reversed direction or writing-mode. The combinations are:
+    // writing-mode / direction     scrollOrigin.x() set    scrollOrigin.y() set
+    // horizontal-tb / ltr          NO                      NO
+    // horizontal-tb / rtl          YES                     NO
+    // horizontal-bt / ltr          NO                      YES
+    // horizontal-bt / rtl          YES                     YES
+    // vertical-lr / ltr            NO                      NO
+    // vertical-lr / rtl            NO                      YES
+    // vertical-rl / ltr            YES                     NO
+    // vertical-rl / rtl            YES                     YES</doc>
+<use f='WebKit/Source/WebCore/platform/ScrollableArea.cpp' l='92' u='r' c='_ZN7WebCore14ScrollableArea15setScrollOriginERKNS_8IntPointE'/>
+<use f='WebKit/Source/WebCore/platform/ScrollableArea.cpp' l='93' u='w' c='_ZN7WebCore14ScrollableArea15setScrollOriginERKNS_8IntPointE'/>
+<use f='WebKit/Source/WebCore/platform/ScrollableArea.cpp' l='667' u='r' c='_ZNK7WebCore14ScrollableArea24scrollPositionFromOffsetENS_8IntPointE'/>
+<use f='WebKit/Source/WebCore/platform/ScrollableArea.cpp' l='672' u='r' c='_ZNK7WebCore14ScrollableArea24scrollOffsetFromPositionENS_8IntPointE'/>

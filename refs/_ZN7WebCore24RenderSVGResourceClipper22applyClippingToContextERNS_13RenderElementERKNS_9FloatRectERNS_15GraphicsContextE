@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebCore/rendering/svg/RenderSVGResourceClipper.h' l='48' type='bool WebCore::RenderSVGResourceClipper::applyClippingToContext(WebCore::RenderElement &amp; , const WebCore::FloatRect &amp; , WebCore::GraphicsContext &amp; )'/>
+<use f='WebKit/Source/WebCore/rendering/svg/RenderSVGResourceClipper.cpp' l='79' u='c' c='_ZN7WebCore24RenderSVGResourceClipper13applyResourceERNS_13RenderElementERKNS_11RenderStyleERPNS_15GraphicsContextEN3WTF9OptionSetINS_21RenderSVGResourceModeEEE'/>
+<def f='WebKit/Source/WebCore/rendering/svg/RenderSVGResourceClipper.cpp' l='135' ll='182' type='bool WebCore::RenderSVGResourceClipper::applyClippingToContext(WebCore::RenderElement &amp; renderer, const WebCore::FloatRect &amp; objectBoundingBox, WebCore::GraphicsContext &amp; context)'/>
+<use f='WebKit/Source/WebCore/rendering/svg/RenderSVGResourceClipper.cpp' l='165' u='c' c='_ZN7WebCore24RenderSVGResourceClipper22applyClippingToContextERNS_13RenderElementERKNS_9FloatRectERNS_15GraphicsContextE'/>
+<doc f='WebKit/Source/WebCore/rendering/svg/RenderSVGResourceClipper.h' l='45'>// clipPath can be clipped too, but don&apos;t have a boundingBox or repaintRect. So we can&apos;t call
+    // applyResource directly and use the rects from the object, since they are empty for RenderSVGResources
+    // FIXME: We made applyClippingToContext public because we cannot call applyResource on HTML elements (it asserts on RenderObject::objectBoundingBox)</doc>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='3169' u='c' c='_ZN7WebCore11RenderLayer13setupClipPathERNS_15GraphicsContextERKNS0_17LayerPaintingInfoERKNS_10LayoutSizeE'/>

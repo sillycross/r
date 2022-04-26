@@ -1,0 +1,49 @@
+<def f='WebKit/WTF/Headers/wtf/dtoa/double-conversion.h' l='158' ll='160' type='bool WTF::double_conversion::DoubleToStringConverter::ToShortest(double value, WTF::double_conversion::StringBuilder * result_builder) const'/>
+<doc f='WebKit/WTF/Headers/wtf/dtoa/double-conversion.h' l='135'>// Computes the shortest string of digits that correctly represent the input
+  // number. Depending on decimal_in_shortest_low and decimal_in_shortest_high
+  // (see constructor) it then either returns a decimal representation, or an
+  // exponential representation.
+  // Example with decimal_in_shortest_low = -6,
+  //              decimal_in_shortest_high = 21,
+  //              EMIT_POSITIVE_EXPONENT_SIGN activated, and
+  //              EMIT_TRAILING_DECIMAL_POINT deactived:
+  //   ToShortest(0.000001)  -&gt; &quot;0.000001&quot;
+  //   ToShortest(0.0000001) -&gt; &quot;1e-7&quot;
+  //   ToShortest(111111111111111111111.0)  -&gt; &quot;111111111111111110000&quot;
+  //   ToShortest(100000000000000000000.0)  -&gt; &quot;100000000000000000000&quot;
+  //   ToShortest(1111111111111111111111.0) -&gt; &quot;1.1111111111111111e+21&quot;
+  //
+  // Note: the conversion may round the output if the returned string
+  // is accurate enough to uniquely identify the input-number.
+  // For example the most precise representation of the double 9e59 equals
+  // &quot;899999999999999918767229449717619953810131273674690656206848&quot;, but
+  // the converter will return the shorter (but still correct) &quot;9e59&quot;.
+  //
+  // Returns true if the conversion succeeds. The conversion always succeeds
+  // except when the input value is special and no infinity_symbol or
+  // nan_symbol has been given to the constructor.</doc>
+<def f='WebKit/Source/WTF/wtf/dtoa/double-conversion.h' l='158' ll='160' type='bool WTF::double_conversion::DoubleToStringConverter::ToShortest(double value, WTF::double_conversion::StringBuilder * result_builder) const'/>
+<doc f='WebKit/Source/WTF/wtf/dtoa/double-conversion.h' l='135'>// Computes the shortest string of digits that correctly represent the input
+  // number. Depending on decimal_in_shortest_low and decimal_in_shortest_high
+  // (see constructor) it then either returns a decimal representation, or an
+  // exponential representation.
+  // Example with decimal_in_shortest_low = -6,
+  //              decimal_in_shortest_high = 21,
+  //              EMIT_POSITIVE_EXPONENT_SIGN activated, and
+  //              EMIT_TRAILING_DECIMAL_POINT deactived:
+  //   ToShortest(0.000001)  -&gt; &quot;0.000001&quot;
+  //   ToShortest(0.0000001) -&gt; &quot;1e-7&quot;
+  //   ToShortest(111111111111111111111.0)  -&gt; &quot;111111111111111110000&quot;
+  //   ToShortest(100000000000000000000.0)  -&gt; &quot;100000000000000000000&quot;
+  //   ToShortest(1111111111111111111111.0) -&gt; &quot;1.1111111111111111e+21&quot;
+  //
+  // Note: the conversion may round the output if the returned string
+  // is accurate enough to uniquely identify the input-number.
+  // For example the most precise representation of the double 9e59 equals
+  // &quot;899999999999999918767229449717619953810131273674690656206848&quot;, but
+  // the converter will return the shorter (but still correct) &quot;9e59&quot;.
+  //
+  // Returns true if the conversion succeeds. The conversion always succeeds
+  // except when the input value is special and no infinity_symbol or
+  // nan_symbol has been given to the constructor.</doc>
+<use f='WebKit/Source/WTF/wtf/dtoa.cpp' l='37' u='c' c='_ZN3WTF14numberToStringEdRSt5arrayIcLm124EE'/>

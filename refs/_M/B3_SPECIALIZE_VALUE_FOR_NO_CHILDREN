@@ -1,0 +1,21 @@
+<dec f='WebKit/Source/JavaScriptCore/b3/B3Value.h' l='767'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3FenceValue.h' l='75' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ArgumentRegValue.h' l='43' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3BottomTupleValue.h' l='40' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Const32Value.h' l='78' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Const64Value.h' l='78' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ConstDoubleValue.h' l='67' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ConstFloatValue.h' l='66' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3SlotBaseValue.h' l='49' u='c'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/B3Value.h' l='755'>// The following macros are designed for subclasses of B3::Value to use.
+// They are never required for correctness, but can improve the performance of child/lastChild/numChildren/children methods,
+// for users that already know the specific subclass of Value they are manipulating.
+// The first set is to be used when you know something about the number of children of all values of a class, including its subclasses:
+// - B3_SPECIALIZE_VALUE_FOR_NO_CHILDREN: always 0 children (e.g. Const32Value)
+// - B3_SPECIALIZE_VALUE_FOR_FIXED_CHILDREN(n): always n children, with n in {1, 2, 3} (e.g. UpsilonValue, with n = 1)
+// - B3_SPECIALIZE_VALUE_FOR_NON_VARARGS_CHILDREN: different numbers of children, but never a variable number at runtime (e.g. MemoryValue, that can have between 1 and 3 children)
+// - B3_SPECIALIZE_VALUE_FOR_VARARGS_CHILDREN: always a varargs (e.g. CCallValue)
+// The second set is only to be used by classes that we know are not further subclassed by anyone adding fields,
+// as they hardcode the offset of the children array/vector (which is equal to the size of the object).
+// - B3_SPECIALIZE_VALUE_FOR_FINAL_SIZE_FIXED_CHILDREN
+// - B3_SPECIALIZE_VALUE_FOR_FINAL_SIZE_VARARGS_CHILDREN</doc>

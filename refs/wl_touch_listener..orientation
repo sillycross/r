@@ -1,0 +1,32 @@
+<dec f='include/wayland-client-protocol.h' l='5018' type='void (*)(void *, struct wl_touch *, int32_t, wl_fixed_t)'/>
+<offset>384</offset>
+<doc f='include/wayland-client-protocol.h' l='4988'>/**
+	 * update orientation of touch point
+	 *
+	 * Sent when a touchpoint has changed its orientation.
+	 *
+	 * This event does not occur on its own. It is sent before a
+	 * wl_touch.frame event and carries the new shape information for
+	 * any previously reported, or new touch points of that frame.
+	 *
+	 * Other events describing the touch point such as wl_touch.down,
+	 * wl_touch.motion or wl_touch.shape may be sent within the same
+	 * wl_touch.frame. A client should treat these events as a single
+	 * logical touch point update. The order of wl_touch.shape,
+	 * wl_touch.orientation and wl_touch.motion is not guaranteed. A
+	 * wl_touch.down event is guaranteed to occur before the first
+	 * wl_touch.orientation event for this touch ID but both events may
+	 * occur within the same wl_touch.frame.
+	 *
+	 * The orientation describes the clockwise angle of a touchpoint&apos;s
+	 * major axis to the positive surface y-axis and is normalized to
+	 * the -180 to +180 degree range. The granularity of orientation
+	 * depends on the touch device, some devices only support binary
+	 * rotation values between 0 and 90 degrees.
+	 *
+	 * This event is only sent by the compositor if the touch device
+	 * supports orientation reports.
+	 * @param id the unique ID of this touch point
+	 * @param orientation angle between major axis and positive surface y-axis in degrees
+	 * @since 6
+	 */</doc>

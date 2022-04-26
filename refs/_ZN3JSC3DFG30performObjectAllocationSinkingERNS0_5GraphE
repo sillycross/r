@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.h' l='39' type='bool JSC::DFG::performObjectAllocationSinking(JSC::DFG::Graph &amp; )'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='2676' ll='2679' type='bool JSC::DFG::performObjectAllocationSinking(JSC::DFG::Graph &amp; graph)'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPlan.cpp' l='383' u='c' c='_ZN3JSC3DFG4Plan19compileInThreadImplEv'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.h' l='34'>// Eliminates allocations allocations that are never used except
+// locally. This will insert phantom allocations and store hints so
+// that OSR exit can materialize the objects. Replaces all uses of the
+// objects&apos; fields with SSA data flow. This phase is able to handle cyclic allocation graphs.</doc>

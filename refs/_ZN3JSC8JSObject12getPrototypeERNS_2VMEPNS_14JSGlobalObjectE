@@ -1,0 +1,33 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='120' type='JSC::JSValue JSC::JSObject::getPrototype(JSC::VM &amp; , JSC::JSGlobalObject * )'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='1366' ll='1371' type='JSC::JSValue JSC::JSObject::getPrototype(JSC::VM &amp; vm, JSC::JSGlobalObject * globalObject)'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='117'>// This is the fully virtual [[GetPrototypeOf]] internal function defined
+    // in the ECMAScript 6 specification. Use this when doing a [[GetPrototypeOf]] 
+    // operation as dictated in the specification.</doc>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSCJSValueInlines.h' l='1087' u='c' c='_ZNK3JSC7JSValue12getPrototypeEPNS_14JSGlobalObjectE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObjectInlines.h' l='131' u='c' c='_ZN3JSC8JSObject15getPropertySlotEPNS_14JSGlobalObjectEjRNS_12PropertySlotE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObjectInlines.h' l='177' u='c' c='_ZN3JSC8JSObject23getNonIndexPropertySlotEPNS_14JSGlobalObjectENS_12PropertyNameERNS_12PropertySlotE'/>
+<dec f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='120' type='JSC::JSValue JSC::JSObject::getPrototype(JSC::VM &amp; , JSC::JSGlobalObject * )'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='1366' ll='1371' type='JSC::JSValue JSC::JSObject::getPrototype(JSC::VM &amp; vm, JSC::JSGlobalObject * globalObject)'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCJSValueInlines.h' l='1087' u='c' c='_ZNK3JSC7JSValue12getPrototypeEPNS_14JSGlobalObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObjectInlines.h' l='131' u='c' c='_ZN3JSC8JSObject15getPropertySlotEPNS_14JSGlobalObjectEjRNS_12PropertySlotE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObjectInlines.h' l='177' u='c' c='_ZN3JSC8JSObject23getNonIndexPropertySlotEPNS_14JSGlobalObjectENS_12PropertyNameERNS_12PropertySlotE'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='117'>// This is the fully virtual [[GetPrototypeOf]] internal function defined
+    // in the ECMAScript 6 specification. Use this when doing a [[GetPrototypeOf]] 
+    // operation as dictated in the specification.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='3453' u='c' c='_ZN3JSC3DFG29operationGetPrototypeOfObjectEPNS_14JSGlobalObjectEPNS_8JSObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSBoundFunction.cpp' l='163' u='c' c='_ZN3JSC25getBoundFunctionStructureERNS_2VMEPNS_14JSGlobalObjectEPNS_8JSObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='676' u='c' c='_ZN3JSC15ordinarySetSlowEPNS_14JSGlobalObjectEPNS_8JSObjectENS_12PropertyNameENS_7JSValueES5_b'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='850' u='c' c='_ZN3JSC8JSObject13putInlineSlowEPNS_14JSGlobalObjectENS_12PropertyNameENS_7JSValueERNS_15PutPropertySlotE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='1895' u='c' c='_ZN3JSC8JSObject26setPrototypeWithCycleCheckERNS_2VMEPNS_14JSGlobalObjectENS_7JSValueEb'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='2425' u='c' c='_ZN3JSC8JSObject18defaultHasInstanceEPNS_14JSGlobalObjectENS_7JSValueES3_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='2456' u='c' c='_ZN3JSC8JSObject16getPropertyNamesEPNS_14JSGlobalObjectERNS_17PropertyNameArrayENS_22DontEnumPropertiesModeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='2904' u='c' c='_ZN3JSC8JSObject46attemptToInterceptPutByIndexOnHoleForPrototypeEPNS_14JSGlobalObjectENS_7JSValueEjS3_bRb'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='2918' u='c' c='_ZN3JSC8JSObject34attemptToInterceptPutByIndexOnHoleEPNS_14JSGlobalObjectEjNS_7JSValueEbRb'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSPropertyNameEnumerator.cpp' l='135' u='c' c='_ZN3JSC26getEnumerablePropertyNamesEPNS_14JSGlobalObjectEPNS_8JSObjectERNS_17PropertyNameArrayERjS6_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ObjectPrototype.cpp' l='144' u='c' c='_ZN3JSCL28objectProtoFuncIsPrototypeOfEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ObjectPrototype.cpp' l='152' u='c' c='_ZN3JSCL28objectProtoFuncIsPrototypeOfEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ProxyObject.cpp' l='1071' u='c' c='_ZN3JSC11ProxyObject19performSetPrototypeEPNS_14JSGlobalObjectENS_7JSValueEb'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ProxyObject.cpp' l='1112' u='c' c='_ZN3JSC11ProxyObject19performGetPrototypeEPNS_14JSGlobalObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ProxyObject.cpp' l='1130' u='c' c='_ZN3JSC11ProxyObject19performGetPrototypeEPNS_14JSGlobalObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ReflectObject.cpp' l='198' u='c' c='_ZN3JSCL27reflectObjectGetPrototypeOfEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioWorkletGlobalScope.cpp' l='87' u='c' c='_ZN7WebCore23AudioWorkletGlobalScope17registerProcessorEON3WTF6StringEONS1_3RefINS_34JSAudioWorkletProcessorConstructorENS1_12RawPtrTraitsIS5_EEEE'/>

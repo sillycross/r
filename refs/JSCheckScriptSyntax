@@ -1,0 +1,22 @@
+<dec f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSBase.h' l='125' type='bool JSCheckScriptSyntax(JSContextRef ctx, JSStringRef script, JSStringRef sourceURL, int startingLineNumber, JSValueRef * exception)'/>
+<doc f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSBase.h' l='115'>/*!
+@function JSCheckScriptSyntax
+@abstract Checks for syntax errors in a string of JavaScript.
+@param ctx The execution context to use.
+@param script A JSString containing the script to check for syntax errors.
+@param sourceURL A JSString containing a URL for the script&apos;s source file. This is only used when reporting exceptions. Pass NULL if you do not care to include source file information in exceptions.
+@param startingLineNumber An integer value specifying the script&apos;s starting line number in the file located at sourceURL. This is only used when reporting exceptions. The value is one-based, so the first line is line 1 and invalid values are clamped to 1.
+@param exception A pointer to a JSValueRef in which to store a syntax error exception, if any. Pass NULL if you do not care to store a syntax error exception.
+@result true if the script is syntactically correct, otherwise false.
+*/</doc>
+<def f='WebKit/Source/JavaScriptCore/API/JSBase.cpp' l='94' ll='123' type='bool JSCheckScriptSyntax(JSContextRef ctx, JSStringRef script, JSStringRef sourceURLString, int startingLineNumber, JSValueRef * exception)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/JSBase.h' l='115'>/*!
+@function JSCheckScriptSyntax
+@abstract Checks for syntax errors in a string of JavaScript.
+@param ctx The execution context to use.
+@param script A JSString containing the script to check for syntax errors.
+@param sourceURL A JSString containing a URL for the script&apos;s source file. This is only used when reporting exceptions. Pass NULL if you do not care to include source file information in exceptions.
+@param startingLineNumber An integer value specifying the script&apos;s starting line number in the file located at sourceURL. This is only used when reporting exceptions. The value is one-based, so the first line is line 1 and invalid values are clamped to 1.
+@param exception A pointer to a JSValueRef in which to store a syntax error exception, if any. Pass NULL if you do not care to store a syntax error exception.
+@result true if the script is syntactically correct, otherwise false.
+*/</doc>

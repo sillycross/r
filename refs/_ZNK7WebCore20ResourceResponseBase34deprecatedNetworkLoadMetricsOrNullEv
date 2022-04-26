@@ -1,0 +1,9 @@
+<def f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='176' ll='181' type='const WebCore::NetworkLoadMetrics * WebCore::ResourceResponseBase::deprecatedNetworkLoadMetricsOrNull() const'/>
+<doc f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.h' l='173'>// FIXME: This should be eliminated from ResourceResponse.
+    // Network loading metrics should be delivered via didFinishLoad
+    // and should not be part of the ResourceResponse.</doc>
+<use f='WebKit/Source/WebCore/page/PerformanceNavigation.cpp' l='77' u='c' c='_ZNK7WebCore21PerformanceNavigation13redirectCountEv'/>
+<use f='WebKit/Source/WebCore/page/PerformanceTiming.cpp' l='299' u='c' c='_ZNK7WebCore17PerformanceTiming18networkLoadMetricsEv'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='355' u='c' c='_ZN7WebCore21InspectorNetworkAgent30buildObjectForResourceResponseERKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentThreadableLoader.cpp' l='664' u='c' c='_ZN7WebCore24DocumentThreadableLoader11loadRequestEONS_15ResourceRequestENS_19SecurityCheckPolicyE'/>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.cpp' l='738' u='c' c='_ZN7WebCore17SubresourceLoader16didFinishLoadingERKNS_18NetworkLoadMetricsE'/>

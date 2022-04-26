@@ -1,0 +1,144 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGlobalObject.h' l='224'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGlobalObject.h' l='230'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSDOMGlobalObject.h' l='120' c='_ZN7WebCore17JSDOMGlobalObject17moduleLoaderFetchEPN3JSC14JSGlobalObjectEPNS1_14JSModuleLoaderENS1_7JSValueES6_S6_'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSDOMGlobalObject.h' l='122' c='_ZN7WebCore17JSDOMGlobalObject24moduleLoaderImportModuleEPN3JSC14JSGlobalObjectEPNS1_14JSModuleLoaderEPNS1_8JSStringENS1_7JSValueERKNS1_12SourceOriginE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Completion.h' l='67' c='_ZN3JSC21loadAndEvaluateModuleEPNS_14JSGlobalObjectEPNS_6SymbolENS_7JSValueES4_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Completion.h' l='68' c='_ZN3JSC21loadAndEvaluateModuleEPNS_14JSGlobalObjectERKN3WTF6StringENS_7JSValueES6_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Completion.h' l='69' c='_ZN3JSC21loadAndEvaluateModuleEPNS_14JSGlobalObjectERKNS_10SourceCodeENS_7JSValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Completion.h' l='72' c='_ZN3JSC10loadModuleEPNS_14JSGlobalObjectERKN3WTF6StringENS_7JSValueES6_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Completion.h' l='73' c='_ZN3JSC10loadModuleEPNS_14JSGlobalObjectERKNS_10SourceCodeENS_7JSValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Completion.h' l='78' c='_ZN3JSC12importModuleEPNS_14JSGlobalObjectERKNS_10IdentifierENS_7JSValueES5_'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSExecState.h' l='94' c='_ZN7WebCore11JSExecState10loadModuleERN3JSC14JSGlobalObjectERKN3WTF6StringENS1_7JSValueES8_'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSExecState.h' l='100' c='_ZN7WebCore11JSExecState10loadModuleERN3JSC14JSGlobalObjectERKNS1_10SourceCodeENS1_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.h' l='224'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.h' l='230'/>
+<inh f='WebKit/Source/JavaScriptCore/runtime/JSPromise.h' l='33' c='JSC::JSPromise'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/JSInternalPromise.h' l='42' ll='58'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSInternalPromise.h' l='46' c='_ZN3JSC17JSInternalPromise6createERNS_2VMEPNS_9StructureE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSInternalPromise.h' l='47' c='_ZN3JSC17JSInternalPromise23createWithInitialValuesERNS_2VMEPNS_9StructureE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSInternalPromise.h' l='52' c='_ZN3JSC17JSInternalPromise4thenEPNS_14JSGlobalObjectEPNS_10JSFunctionES4_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSInternalPromise.h' l='54' c='_ZN3JSC17JSInternalPromise25rejectWithCaughtExceptionEPNS_14JSGlobalObjectERNS_10ThrowScopeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOperations.cpp' l='150' c='_ZN3JSC3FTL28operationPopulateObjectInOSREPNS_14JSGlobalObjectEPNS0_29ExitTimeObjectMaterializationEPlS5_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOperations.cpp' l='359' c='_ZN3JSC3FTL31operationMaterializeObjectInOSREPNS_14JSGlobalObjectEPNS0_29ExitTimeObjectMaterializationEPl'/>
+<size>32</size>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSInternalPromise.h' l='34'>// JSInternalPromise is completely separated instance from the JSPromise.
+// Since its prototype and constructor are different from the exposed Promises&apos; ones,
+// all the user modification onto the exposed Promise does not have effect on JSInternalPromise.
+//
+// e.g.
+//     Replacing Promise.prototype.then with the user-customized one does not effect on JSInternalPromise.
+//
+// CAUTION: Must not leak the JSInternalPromise to the user space to keep its integrity.</doc>
+<fun r='_ZN3JSC17JSInternalPromise6createERNS_2VMEPNS_9StructureE'/>
+<fun r='_ZN3JSC17JSInternalPromise23createWithInitialValuesERNS_2VMEPNS_9StructureE'/>
+<fun r='_ZN3JSC17JSInternalPromise15createStructureERNS_2VMEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<smbr r='JSC::JSInternalPromise::s_info' t='const ::JSC::ClassInfo'/>
+<fun r='_ZN3JSC17JSInternalPromise4infoEv'/>
+<fun r='_ZN3JSC17JSInternalPromise4thenEPNS_14JSGlobalObjectEPNS_10JSFunctionES4_'/>
+<fun r='_ZN3JSC17JSInternalPromise25rejectWithCaughtExceptionEPNS_14JSGlobalObjectERNS_10ThrowScopeE'/>
+<fun r='_ZN3JSC17JSInternalPromiseC1ERNS_2VMEPNS_9StructureE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Completion.h' l='67' c='_ZN3JSC21loadAndEvaluateModuleEPNS_14JSGlobalObjectEPNS_6SymbolENS_7JSValueES4_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Completion.h' l='68' c='_ZN3JSC21loadAndEvaluateModuleEPNS_14JSGlobalObjectERKN3WTF6StringENS_7JSValueES6_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Completion.h' l='69' c='_ZN3JSC21loadAndEvaluateModuleEPNS_14JSGlobalObjectERKNS_10SourceCodeENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Completion.h' l='72' c='_ZN3JSC10loadModuleEPNS_14JSGlobalObjectERKN3WTF6StringENS_7JSValueES6_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Completion.h' l='73' c='_ZN3JSC10loadModuleEPNS_14JSGlobalObjectERKNS_10SourceCodeENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Completion.h' l='78' c='_ZN3JSC12importModuleEPNS_14JSGlobalObjectERKNS_10IdentifierENS_7JSValueES5_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='997' c='_ZN3JSC3DFG12_GLOBAL__N_128ObjectAllocationSinkingPhase10handleNodeEPNS0_4NodeERKT_RKT0_'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/API/JSAPIGlobalObject.h' l='64' c='_ZN3JSC17JSAPIGlobalObject24moduleLoaderImportModuleEPNS_14JSGlobalObjectEPNS_14JSModuleLoaderEPNS_8JSStringENS_7JSValueERKNS_12SourceOriginE'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSAPIGlobalObject.h' l='66' c='_ZN3JSC17JSAPIGlobalObject17moduleLoaderFetchEPNS_14JSGlobalObjectEPNS_14JSModuleLoaderENS_7JSValueES5_S5_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleLoader.h' l='74' c='_ZN3JSC14JSModuleLoader21loadAndEvaluateModuleEPNS_14JSGlobalObjectENS_7JSValueES3_S3_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleLoader.h' l='75' c='_ZN3JSC14JSModuleLoader10loadModuleEPNS_14JSGlobalObjectENS_7JSValueES3_S3_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleLoader.h' l='77' c='_ZN3JSC14JSModuleLoader19requestImportModuleEPNS_14JSGlobalObjectERKNS_10IdentifierENS_7JSValueES6_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleLoader.h' l='80' c='_ZN3JSC14JSModuleLoader12importModuleEPNS_14JSGlobalObjectEPNS_8JSStringENS_7JSValueERKNS_12SourceOriginE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleLoader.h' l='81' c='_ZN3JSC14JSModuleLoader7resolveEPNS_14JSGlobalObjectENS_7JSValueES3_S3_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleLoader.h' l='83' c='_ZN3JSC14JSModuleLoader5fetchEPNS_14JSGlobalObjectENS_7JSValueES3_S3_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObjectFunctions.cpp' l='775' c='_ZN3JSC37globalFuncHostPromiseRejectionTrackerEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSInternalPromise.cpp' l='34'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSInternalPromise.cpp' l='34'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSInternalPromise.cpp' l='36' c='_ZN3JSC17JSInternalPromise6createERNS_2VMEPNS_9StructureE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSInternalPromise.cpp' l='38' c='_ZN3JSC17JSInternalPromise6createERNS_2VMEPNS_9StructureE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSInternalPromise.cpp' l='38' c='_ZN3JSC17JSInternalPromise6createERNS_2VMEPNS_9StructureE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSInternalPromise.cpp' l='38' c='_ZN3JSC17JSInternalPromise6createERNS_2VMEPNS_9StructureE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSInternalPromise.cpp' l='43' c='_ZN3JSC17JSInternalPromise23createWithInitialValuesERNS_2VMEPNS_9StructureE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSInternalPromise.cpp' l='58' c='_ZN3JSC17JSInternalPromise4thenEPNS_14JSGlobalObjectEPNS_10JSFunctionES4_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSInternalPromise.cpp' l='74' c='_ZN3JSC17JSInternalPromise4thenEPNS_14JSGlobalObjectEPNS_10JSFunctionES4_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSInternalPromise.cpp' l='77' c='_ZN3JSC17JSInternalPromise25rejectWithCaughtExceptionEPNS_14JSGlobalObjectERNS_10ThrowScopeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSInternalPromise.cpp' l='79' c='_ZN3JSC17JSInternalPromise25rejectWithCaughtExceptionEPNS_14JSGlobalObjectERNS_10ThrowScopeE'/>
+<size>32</size>
+<smbr r='JSC::JSInternalPromise::s_info' t='const JSC::ClassInfo'/>
+<fun r='_ZN3JSC17JSInternalPromise6createERNS_2VMEPNS_9StructureE'/>
+<fun r='_ZN3JSC17JSInternalPromise23createWithInitialValuesERNS_2VMEPNS_9StructureE'/>
+<fun r='_ZN3JSC17JSInternalPromise15createStructureERNS_2VMEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<fun r='_ZN3JSC17JSInternalPromiseC1ERNS_2VMEPNS_9StructureE'/>
+<fun r='_ZN3JSC17JSInternalPromise4thenEPNS_14JSGlobalObjectEPNS_10JSFunctionES4_'/>
+<fun r='_ZN3JSC17JSInternalPromise25rejectWithCaughtExceptionEPNS_14JSGlobalObjectERNS_10ThrowScopeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleLoader.cpp' l='164' c='_ZN3JSC14JSModuleLoader21loadAndEvaluateModuleEPNS_14JSGlobalObjectENS_7JSValueES3_S3_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleLoader.cpp' l='182' c='_ZN3JSC14JSModuleLoader21loadAndEvaluateModuleEPNS_14JSGlobalObjectENS_7JSValueES3_S3_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleLoader.cpp' l='185' c='_ZN3JSC14JSModuleLoader10loadModuleEPNS_14JSGlobalObjectENS_7JSValueES3_S3_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleLoader.cpp' l='203' c='_ZN3JSC14JSModuleLoader10loadModuleEPNS_14JSGlobalObjectENS_7JSValueES3_S3_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleLoader.cpp' l='224' c='_ZN3JSC14JSModuleLoader19requestImportModuleEPNS_14JSGlobalObjectERKNS_10IdentifierENS_7JSValueES6_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleLoader.cpp' l='242' c='_ZN3JSC14JSModuleLoader19requestImportModuleEPNS_14JSGlobalObjectERKNS_10IdentifierENS_7JSValueES6_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleLoader.cpp' l='245' c='_ZN3JSC14JSModuleLoader12importModuleEPNS_14JSGlobalObjectEPNS_8JSStringENS_7JSValueERKNS_12SourceOriginE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleLoader.cpp' l='273' c='_ZN3JSC14JSModuleLoader7resolveEPNS_14JSGlobalObjectENS_7JSValueES3_S3_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleLoader.cpp' l='287' c='_ZN3JSC14JSModuleLoader5fetchEPNS_14JSGlobalObjectENS_7JSValueES3_S3_'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/Completion.cpp' l='179' c='_ZN3JSCL13rejectPromiseERNS_10ThrowScopeEPNS_14JSGlobalObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Completion.cpp' l='182' c='_ZN3JSCL13rejectPromiseERNS_10ThrowScopeEPNS_14JSGlobalObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Completion.cpp' l='186' c='_ZN3JSC21loadAndEvaluateModuleEPNS_14JSGlobalObjectEPNS_6SymbolENS_7JSValueES4_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Completion.cpp' l='196' c='_ZN3JSC21loadAndEvaluateModuleEPNS_14JSGlobalObjectERKN3WTF6StringENS_7JSValueES6_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Completion.cpp' l='206' c='_ZN3JSC21loadAndEvaluateModuleEPNS_14JSGlobalObjectERKNS_10SourceCodeENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Completion.cpp' l='222' c='_ZN3JSC10loadModuleEPNS_14JSGlobalObjectERKN3WTF6StringENS_7JSValueES6_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Completion.cpp' l='232' c='_ZN3JSC10loadModuleEPNS_14JSGlobalObjectERKNS_10SourceCodeENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Completion.cpp' l='259' c='_ZN3JSC12importModuleEPNS_14JSGlobalObjectERKNS_10IdentifierENS_7JSValueES5_'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='14213' c='_ZN3JSC3DFG14SpeculativeJIT20compileCreatePromiseEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='14213' c='_ZN3JSC3DFG14SpeculativeJIT20compileCreatePromiseEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='14361' c='_ZN3JSC3DFG14SpeculativeJIT29compileNewInternalFieldObjectEPNS0_4NodeE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='7169' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB329compileNewInternalFieldObjectEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='7630' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB320compileCreatePromiseEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='13666' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB340compileMaterializeNewInternalFieldObjectEv'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='713' c='_ZN12GlobalObject24moduleLoaderImportModuleEPN3JSC14JSGlobalObjectEPNS0_14JSModuleLoaderEPNS0_8JSStringENS0_7JSValueERKNS0_12SourceOriginE'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='715' c='_ZN12GlobalObject17moduleLoaderFetchEPN3JSC14JSGlobalObjectEPNS0_14JSModuleLoaderENS0_7JSValueES5_S5_'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='834' c='_ZN12GlobalObject24moduleLoaderImportModuleEPN3JSC14JSGlobalObjectEPNS0_14JSModuleLoaderEPNS0_8JSStringENS0_7JSValueERKNS0_12SourceOriginE'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='1175' c='_ZN12GlobalObject17moduleLoaderFetchEPN3JSC14JSGlobalObjectEPNS0_14JSModuleLoaderENS0_7JSValueES5_S5_'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='1178' c='_ZN12GlobalObject17moduleLoaderFetchEPN3JSC14JSGlobalObjectEPNS0_14JSModuleLoaderENS0_7JSValueES5_S5_'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='3018' c='_ZL14runWithOptionsP12GlobalObjectR11CommandLineRb'/>
+<size>32</size>
+<use f='WebKit/Source/WebCore/bindings/js/ScriptController.h' l='182' c='_ZN7WebCore16ScriptController25setupModuleScriptHandlersERNS_20LoadableModuleScriptERN3JSC17JSInternalPromiseERNS_15DOMWrapperWorldE'/>
+<use f='WebKit/Source/WebCore/bindings/js/ScriptModuleLoader.h' l='61' c='_ZN7WebCore18ScriptModuleLoader5fetchEPN3JSC14JSGlobalObjectEPNS1_14JSModuleLoaderENS1_7JSValueES6_S6_'/>
+<use f='WebKit/Source/WebCore/bindings/js/ScriptModuleLoader.h' l='63' c='_ZN7WebCore18ScriptModuleLoader12importModuleEPN3JSC14JSGlobalObjectEPNS1_14JSModuleLoaderEPNS1_8JSStringENS1_7JSValueERKNS1_12SourceOriginE'/>
+<inh f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSPromise.h' l='33' c='JSC::JSPromise'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSInternalPromise.h' l='42' ll='58'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSInternalPromise.h' l='46' c='_ZN3JSC17JSInternalPromise6createERNS_2VMEPNS_9StructureE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSInternalPromise.h' l='47' c='_ZN3JSC17JSInternalPromise23createWithInitialValuesERNS_2VMEPNS_9StructureE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSInternalPromise.h' l='52' c='_ZN3JSC17JSInternalPromise4thenEPNS_14JSGlobalObjectEPNS_10JSFunctionES4_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSInternalPromise.h' l='54' c='_ZN3JSC17JSInternalPromise25rejectWithCaughtExceptionEPNS_14JSGlobalObjectERNS_10ThrowScopeE'/>
+<use f='WebKit/Source/WebCore/bindings/js/ScriptController.cpp' l='293' c='_ZN7WebCore16ScriptController25setupModuleScriptHandlersERNS_20LoadableModuleScriptERN3JSC17JSInternalPromiseERNS_15DOMWrapperWorldE'/>
+<use f='WebKit/Source/WebCore/bindings/js/ScriptModuleLoader.cpp' l='148' c='_ZN7WebCore18ScriptModuleLoader5fetchEPN3JSC14JSGlobalObjectEPNS1_14JSModuleLoaderENS1_7JSValueES6_S6_'/>
+<use f='WebKit/Source/WebCore/bindings/js/ScriptModuleLoader.cpp' l='257' c='_ZN7WebCoreL13rejectPromiseERNS_17JSDOMGlobalObjectENS_13ExceptionCodeEN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/bindings/js/ScriptModuleLoader.cpp' l='277' c='_ZN7WebCore18ScriptModuleLoader12importModuleEPN3JSC14JSGlobalObjectEPNS1_14JSModuleLoaderEPNS1_8JSStringENS1_7JSValueERKNS1_12SourceOriginE'/>
+<size>32</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSInternalPromise.h' l='34'>// JSInternalPromise is completely separated instance from the JSPromise.
+// Since its prototype and constructor are different from the exposed Promises&apos; ones,
+// all the user modification onto the exposed Promise does not have effect on JSInternalPromise.
+//
+// e.g.
+//     Replacing Promise.prototype.then with the user-customized one does not effect on JSInternalPromise.
+//
+// CAUTION: Must not leak the JSInternalPromise to the user space to keep its integrity.</doc>
+<fun r='_ZN3JSC17JSInternalPromise6createERNS_2VMEPNS_9StructureE'/>
+<fun r='_ZN3JSC17JSInternalPromise23createWithInitialValuesERNS_2VMEPNS_9StructureE'/>
+<fun r='_ZN3JSC17JSInternalPromise15createStructureERNS_2VMEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<smbr r='JSC::JSInternalPromise::s_info' t='const ::JSC::ClassInfo'/>
+<fun r='_ZN3JSC17JSInternalPromise4infoEv'/>
+<fun r='_ZN3JSC17JSInternalPromise4thenEPNS_14JSGlobalObjectEPNS_10JSFunctionES4_'/>
+<fun r='_ZN3JSC17JSInternalPromise25rejectWithCaughtExceptionEPNS_14JSGlobalObjectERNS_10ThrowScopeE'/>
+<fun r='_ZN3JSC17JSInternalPromiseC1ERNS_2VMEPNS_9StructureE'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSDOMGlobalObject.cpp' l='501' c='_ZN7WebCore17JSDOMGlobalObject17moduleLoaderFetchEPN3JSC14JSGlobalObjectEPNS1_14JSModuleLoaderENS1_7JSValueES6_S6_'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSDOMGlobalObject.cpp' l='508' c='_ZN7WebCore17JSDOMGlobalObject17moduleLoaderFetchEPN3JSC14JSGlobalObjectEPNS1_14JSModuleLoaderENS1_7JSValueES6_S6_'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSDOMGlobalObject.cpp' l='522' c='_ZN7WebCore17JSDOMGlobalObject24moduleLoaderImportModuleEPN3JSC14JSGlobalObjectEPNS1_14JSModuleLoaderEPNS1_8JSStringENS1_7JSValueERKNS1_12SourceOriginE'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSDOMGlobalObject.cpp' l='529' c='_ZN7WebCore17JSDOMGlobalObject24moduleLoaderImportModuleEPN3JSC14JSGlobalObjectEPNS1_14JSModuleLoaderEPNS1_8JSStringENS1_7JSValueERKNS1_12SourceOriginE'/>
+<size>32</size>

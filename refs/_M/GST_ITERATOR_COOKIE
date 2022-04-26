@@ -1,0 +1,12 @@
+<dec f='include/gstreamer-1.0/gst/gstiterator.h' l='178'/>
+<doc f='include/gstreamer-1.0/gst/gstiterator.h' l='167'>/**
+ * GST_ITERATOR_COOKIE:
+ * @it: the #GstIterator to get the cookie of
+ *
+ * Macro to get the cookie of a #GstIterator. The cookie of the
+ * iterator is the value of the master cookie when the iterator
+ * was created.
+ * Whenever the iterator is iterated, the value is compared to the
+ * value of the master cookie. If they are different, a concurrent
+ * modification happened to the iterator and a resync is needed.
+ */</doc>

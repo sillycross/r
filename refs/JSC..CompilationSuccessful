@@ -1,0 +1,28 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CompilationResult.h' l='52' type='2'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CompilationResult.h' l='47'>// The compilation succeeded and the code block now has JITCode for the newly
+    // compiled code. However, compilation success doesn&apos;t mean that the CodeBlock
+    // will execute yet; you typically have to install it first, unless you plan
+    // on invoking it manually (something that *could* be done for some kinds of
+    // OSR entry).</doc>
+<dec f='WebKit/Source/JavaScriptCore/runtime/CompilationResult.h' l='52' type='2'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTierUpCount.h' l='106' c='_ZN3JSC4Wasm11TierUpCount48setOptimizationThresholdBasedOnCompilationResultEjNS_17CompilationResultE'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/CompilationResult.h' l='47'>// The compilation succeeded and the code block now has JITCode for the newly
+    // compiled code. However, compilation success doesn&apos;t mean that the CodeBlock
+    // will execute yet; you typically have to install it first, unless you plan
+    // on invoking it manually (something that *could* be done for some kinds of
+    // OSR entry).</doc>
+<use f='WebKit/Source/JavaScriptCore/jit/BaselineJITPlan.cpp' l='61' c='_ZN3JSC15BaselineJITPlan8finalizeEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.cpp' l='1039' u='r' c='_ZN3JSC3JIT20finalizeOnMainThreadEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='2117' u='r' c='_ZN3JSC17operationOptimizeEPNS_2VMEj'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITToDFGDeferredCompilationCallback.cpp' l='62' u='r' c='_ZN3JSC35JITToDFGDeferredCompilationCallback22compilationDidCompleteEPNS_9CodeBlockES2_NS_17CompilationResultE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='4094' u='r' c='_ZN3JSC3DFGL12tierUpCommonERNS_2VMEPNS_9CallFrameENS_13BytecodeIndexEb'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPlan.cpp' l='584' u='r' c='_ZN3JSC3DFG4Plan8finalizeEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGToFTLDeferredCompilationCallback.cpp' l='72' u='r' c='_ZN3JSC3DFG32ToFTLDeferredCompilationCallback22compilationDidCompleteEPNS_9CodeBlockES3_NS_17CompilationResultE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGToFTLForOSREntryDeferredCompilationCallback.cpp' l='71' c='_ZN3JSC3DFG43ToFTLForOSREntryDeferredCompilationCallback22compilationDidCompleteEPNS_9CodeBlockES3_NS_17CompilationResultE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCode.cpp' l='169' c='_ZN3JSC3DFG7JITCode48setOptimizationThresholdBasedOnCompilationResultEPNS_9CodeBlockENS_17CompilationResultE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2717' u='r' c='_ZN3JSC9CodeBlock48setOptimizationThresholdBasedOnCompilationResultENS_17CompilationResultE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2727' c='_ZN3JSC9CodeBlock48setOptimizationThresholdBasedOnCompilationResultENS_17CompilationResultE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/DeferredCompilationCallback.cpp' l='41' c='_ZN3JSC27DeferredCompilationCallback22compilationDidCompleteEPNS_9CodeBlockES2_NS_17CompilationResultE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScriptExecutable.cpp' l='404' u='r' c='_ZN3JSCL8setupJITERNS_2VMEPNS_9CodeBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CompilationResult.cpp' l='42' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC17CompilationResultE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmTierUpCount.h' l='106' c='_ZN3JSC4Wasm11TierUpCount48setOptimizationThresholdBasedOnCompilationResultEjNS_17CompilationResultE'/>

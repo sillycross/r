@@ -1,0 +1,108 @@
+<use f='WebKit/bmalloc/Headers/bmalloc/Heap.h' l='135'/>
+<inh f='WebKit/bmalloc/Headers/bmalloc/StaticPerProcess.h' l='57' c='bmalloc::StaticPerProcess'/>
+<def f='WebKit/bmalloc/Headers/bmalloc/Scavenger.h' l='43' ll='123'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Scavenger.h' l='43'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Scavenger.h' l='87' c='_ZN7bmalloc9Scavenger16threadEntryPointEPS0_'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Scavenger.h' l='124'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Scavenger.h' l='124'/>
+<size>160</size>
+<fun r='_ZN7bmalloc9ScavengerC1ERKSt11scoped_lockIJNS_5MutexEEE'/>
+<fun r='_ZN7bmalloc9ScavengerD1Ev'/>
+<fun r='_ZN7bmalloc9Scavenger8scavengeEv'/>
+<fun r='_ZN7bmalloc9Scavenger7willRunEv'/>
+<fun r='_ZN7bmalloc9Scavenger3runEv'/>
+<fun r='_ZN7bmalloc9Scavenger11willRunSoonEv'/>
+<fun r='_ZN7bmalloc9Scavenger7runSoonEv'/>
+<fun r='_ZN7bmalloc9Scavenger29scheduleIfUnderMemoryPressureEm'/>
+<fun r='_ZN7bmalloc9Scavenger8scheduleEm'/>
+<fun r='_ZN7bmalloc9Scavenger14freeableMemoryEv'/>
+<fun r='_ZN7bmalloc9Scavenger9footprintEv'/>
+<fun r='_ZN7bmalloc9Scavenger14enableMiniModeEv'/>
+<fun r='_ZN7bmalloc9Scavenger7disableEv'/>
+<fun r='_ZN7bmalloc9Scavenger3runERKSt11scoped_lockIJNS_5MutexEEE'/>
+<fun r='_ZN7bmalloc9Scavenger7runSoonERKSt11scoped_lockIJNS_5MutexEEE'/>
+<fun r='_ZN7bmalloc9Scavenger29scheduleIfUnderMemoryPressureERKSt11scoped_lockIJNS_5MutexEEEm'/>
+<fun r='_ZN7bmalloc9Scavenger16threadEntryPointEPS0_'/>
+<fun r='_ZN7bmalloc9Scavenger13threadRunLoopEv'/>
+<fun r='_ZN7bmalloc9Scavenger15setSelfQOSClassEv'/>
+<fun r='_ZN7bmalloc9Scavenger13setThreadNameEPKc'/>
+<fun r='_ZN7bmalloc9Scavenger25timeSinceLastFullScavengeEv'/>
+<mbr r='bmalloc::Scavenger::m_state' o='0' t='std::atomic&lt;State&gt;'/>
+<mbr r='bmalloc::Scavenger::m_scavengerBytes' o='64' t='size_t'/>
+<mbr r='bmalloc::Scavenger::m_waitTime' o='128' t='std::chrono::milliseconds'/>
+<mbr r='bmalloc::Scavenger::m_isInMiniMode' o='192' t='bool'/>
+<mbr r='bmalloc::Scavenger::m_scavengingMutex' o='200' t='bmalloc::Mutex'/>
+<mbr r='bmalloc::Scavenger::m_condition' o='256' t='std::condition_variable_any'/>
+<mbr r='bmalloc::Scavenger::m_thread' o='768' t='std::thread'/>
+<mbr r='bmalloc::Scavenger::m_lastFullScavengeTime' o='832' t='std::chrono::steady_clock::time_point'/>
+<mbr r='bmalloc::Scavenger::s_newWaitMultiplier' o='896' t='const unsigned int'/>
+<mbr r='bmalloc::Scavenger::s_minWaitTimeMilliseconds' o='928' t='const unsigned int'/>
+<mbr r='bmalloc::Scavenger::s_maxWaitTimeMilliseconds' o='960' t='const unsigned int'/>
+<mbr r='bmalloc::Scavenger::m_deferredDecommits' o='1024' t='Vector&lt;bmalloc::DeferredDecommit&gt;'/>
+<mbr r='bmalloc::Scavenger::m_isEnabled' o='1216' t='bool'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/IsoSharedHeapInlines.h' l='65' c='_ZN7bmalloc13IsoSharedHeap12allocateSlowERKSt11scoped_lockIJNS_5MutexEEEb'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/IsoDirectoryInlines.h' l='53' c='_ZN7bmalloc12IsoDirectory17takeFirstEligibleERKSt11scoped_lockIJNS_5MutexEEE'/>
+<size>160</size>
+<use f='WebKit/Source/bmalloc/bmalloc/Heap.h' l='135'/>
+<inh f='WebKit/Source/bmalloc/bmalloc/StaticPerProcess.h' l='57' c='bmalloc::StaticPerProcess'/>
+<def f='WebKit/Source/bmalloc/bmalloc/Scavenger.h' l='43' ll='123'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Scavenger.h' l='43'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Scavenger.h' l='87' c='_ZN7bmalloc9Scavenger16threadEntryPointEPS0_'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Scavenger.h' l='124'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Scavenger.h' l='124'/>
+<size>160</size>
+<fun r='_ZN7bmalloc9ScavengerC1ERKSt11scoped_lockIJNS_5MutexEEE'/>
+<fun r='_ZN7bmalloc9ScavengerD1Ev'/>
+<fun r='_ZN7bmalloc9Scavenger8scavengeEv'/>
+<fun r='_ZN7bmalloc9Scavenger7willRunEv'/>
+<fun r='_ZN7bmalloc9Scavenger3runEv'/>
+<fun r='_ZN7bmalloc9Scavenger11willRunSoonEv'/>
+<fun r='_ZN7bmalloc9Scavenger7runSoonEv'/>
+<fun r='_ZN7bmalloc9Scavenger29scheduleIfUnderMemoryPressureEm'/>
+<fun r='_ZN7bmalloc9Scavenger8scheduleEm'/>
+<fun r='_ZN7bmalloc9Scavenger14freeableMemoryEv'/>
+<fun r='_ZN7bmalloc9Scavenger9footprintEv'/>
+<fun r='_ZN7bmalloc9Scavenger14enableMiniModeEv'/>
+<fun r='_ZN7bmalloc9Scavenger7disableEv'/>
+<fun r='_ZN7bmalloc9Scavenger3runERKSt11scoped_lockIJNS_5MutexEEE'/>
+<fun r='_ZN7bmalloc9Scavenger7runSoonERKSt11scoped_lockIJNS_5MutexEEE'/>
+<fun r='_ZN7bmalloc9Scavenger29scheduleIfUnderMemoryPressureERKSt11scoped_lockIJNS_5MutexEEEm'/>
+<fun r='_ZN7bmalloc9Scavenger16threadEntryPointEPS0_'/>
+<fun r='_ZN7bmalloc9Scavenger13threadRunLoopEv'/>
+<fun r='_ZN7bmalloc9Scavenger15setSelfQOSClassEv'/>
+<fun r='_ZN7bmalloc9Scavenger13setThreadNameEPKc'/>
+<fun r='_ZN7bmalloc9Scavenger25timeSinceLastFullScavengeEv'/>
+<mbr r='bmalloc::Scavenger::m_state' o='0' t='std::atomic&lt;State&gt;'/>
+<mbr r='bmalloc::Scavenger::m_scavengerBytes' o='64' t='size_t'/>
+<mbr r='bmalloc::Scavenger::m_waitTime' o='128' t='std::chrono::milliseconds'/>
+<mbr r='bmalloc::Scavenger::m_isInMiniMode' o='192' t='bool'/>
+<mbr r='bmalloc::Scavenger::m_scavengingMutex' o='200' t='bmalloc::Mutex'/>
+<mbr r='bmalloc::Scavenger::m_condition' o='256' t='std::condition_variable_any'/>
+<mbr r='bmalloc::Scavenger::m_thread' o='768' t='std::thread'/>
+<mbr r='bmalloc::Scavenger::m_lastFullScavengeTime' o='832' t='std::chrono::steady_clock::time_point'/>
+<mbr r='bmalloc::Scavenger::s_newWaitMultiplier' o='896' t='const unsigned int'/>
+<mbr r='bmalloc::Scavenger::s_minWaitTimeMilliseconds' o='928' t='const unsigned int'/>
+<mbr r='bmalloc::Scavenger::s_maxWaitTimeMilliseconds' o='960' t='const unsigned int'/>
+<mbr r='bmalloc::Scavenger::m_deferredDecommits' o='1024' t='Vector&lt;bmalloc::DeferredDecommit&gt;'/>
+<mbr r='bmalloc::Scavenger::m_isEnabled' o='1216' t='bool'/>
+<use f='WebKit/Source/bmalloc/bmalloc/IsoSharedHeapInlines.h' l='65' c='_ZN7bmalloc13IsoSharedHeap12allocateSlowERKSt11scoped_lockIJNS_5MutexEEEb'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Scavenger.cpp' l='73'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Scavenger.cpp' l='293' c='_ZN7bmalloc9Scavenger16threadEntryPointEPS0_'/>
+<size>160</size>
+<fun r='_ZN7bmalloc9ScavengerC1ERKSt11scoped_lockIJNS_5MutexEEE'/>
+<fun r='_ZN7bmalloc9Scavenger3runEv'/>
+<fun r='_ZN7bmalloc9Scavenger3runERKSt11scoped_lockIJNS_5MutexEEE'/>
+<fun r='_ZN7bmalloc9Scavenger7runSoonEv'/>
+<fun r='_ZN7bmalloc9Scavenger7runSoonERKSt11scoped_lockIJNS_5MutexEEE'/>
+<fun r='_ZN7bmalloc9Scavenger29scheduleIfUnderMemoryPressureEm'/>
+<fun r='_ZN7bmalloc9Scavenger29scheduleIfUnderMemoryPressureERKSt11scoped_lockIJNS_5MutexEEEm'/>
+<fun r='_ZN7bmalloc9Scavenger8scheduleEm'/>
+<fun r='_ZN7bmalloc9Scavenger25timeSinceLastFullScavengeEv'/>
+<fun r='_ZN7bmalloc9Scavenger14enableMiniModeEv'/>
+<fun r='_ZN7bmalloc9Scavenger8scavengeEv'/>
+<fun r='_ZN7bmalloc9Scavenger14freeableMemoryEv'/>
+<fun r='_ZN7bmalloc9Scavenger9footprintEv'/>
+<fun r='_ZN7bmalloc9Scavenger16threadEntryPointEPS0_'/>
+<fun r='_ZN7bmalloc9Scavenger13threadRunLoopEv'/>
+<fun r='_ZN7bmalloc9Scavenger13setThreadNameEPKc'/>
+<fun r='_ZN7bmalloc9Scavenger15setSelfQOSClassEv'/>

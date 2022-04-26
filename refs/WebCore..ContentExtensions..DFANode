@@ -1,0 +1,56 @@
+<use f='WebKit/Source/WebCore/contentextensions/DFABytecodeCompiler.h' l='83' c='_ZN7WebCore17ContentExtensions19DFABytecodeCompiler11transitionsERKNS0_7DFANodeE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFABytecodeCompiler.h' l='87' c='_ZN7WebCore17ContentExtensions19DFABytecodeCompiler30nodeTransitionsMaxBytecodeSizeERKNS0_7DFANodeE'/>
+<def f='WebKit/Source/WebCore/contentextensions/DFANode.h' l='47' ll='167'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFANode.h' l='169'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFA.h' l='50'/>
+<use f='WebKit/Source/WebCore/contentextensions/ContentExtensionCompiler.cpp' l='201' c='_ZN7WebCore17ContentExtensionsL24addUniversalActionsToDFAERNS0_3DFAEON3WTF7HashSetImNS3_11DefaultHashImEENS3_29UnsignedWithZeroKeyHashTraitsImEENS3_15HashTableTraitsEEE'/>
+<size>16</size>
+<doc f='WebKit/Source/WebCore/contentextensions/DFANode.h' l='45'>// A DFANode abstract the transition table out of a DFA state. If a state is accepting, the DFANode also have
+// the actions for that state.</doc>
+<fun r='_ZNK7WebCore17ContentExtensions7DFANode11transitionsERKNS0_3DFAE'/>
+<fun r='_ZN7WebCore17ContentExtensions7DFANode11transitionsERNS0_3DFAE'/>
+<fun r='_ZN7WebCore17ContentExtensions7DFANode4killERNS0_3DFAE'/>
+<fun r='_ZNK7WebCore17ContentExtensions7DFANode7actionsERKNS0_3DFAE'/>
+<fun r='_ZNK7WebCore17ContentExtensions7DFANode18containsTransitionEcRKNS0_3DFAE'/>
+<fun r='_ZNK7WebCore17ContentExtensions7DFANode8isKilledEv'/>
+<fun r='_ZNK7WebCore17ContentExtensions7DFANode10hasActionsEv'/>
+<fun r='_ZNK7WebCore17ContentExtensions7DFANode13actionsLengthEv'/>
+<fun r='_ZNK7WebCore17ContentExtensions7DFANode12actionsStartEv'/>
+<fun r='_ZNK7WebCore17ContentExtensions7DFANode24canUseFallbackTransitionERKNS0_3DFAE'/>
+<fun r='_ZNK7WebCore17ContentExtensions7DFANode18bestFallbackTargetERKNS0_3DFAE'/>
+<fun r='_ZN7WebCore17ContentExtensions7DFANode10setActionsEjt'/>
+<fun r='_ZN7WebCore17ContentExtensions7DFANode14setTransitionsEjt'/>
+<mbr r='WebCore::ContentExtensions::DFANode::m_actionsStart' o='0' t='uint32_t'/>
+<mbr r='WebCore::ContentExtensions::DFANode::m_transitionsStart' o='32' t='uint32_t'/>
+<mbr r='WebCore::ContentExtensions::DFANode::m_actionsLength' o='64' t='uint16_t'/>
+<mbr r='WebCore::ContentExtensions::DFANode::m_transitionsLength' o='80' t='uint8_t'/>
+<mbr r='WebCore::ContentExtensions::DFANode::m_flags' o='88' t='uint8_t'/>
+<mbr r='WebCore::ContentExtensions::DFANode::IsKilled' o='96' t='const uint8_t'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFA.cpp' l='41' c='_ZN7WebCore17ContentExtensions3DFA5emptyEv'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFA.cpp' l='51' c='_ZNK7WebCore17ContentExtensions3DFA10memoryUsedEv'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFA.cpp' l='62' c='_ZNK7WebCore17ContentExtensions3DFA9graphSizeEv'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFABytecodeCompiler.cpp' l='166' c='_ZN7WebCore17ContentExtensions19DFABytecodeCompiler11compileNodeEjb'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFABytecodeCompiler.cpp' l='191' c='_ZN7WebCore17ContentExtensions19DFABytecodeCompiler27compiledNodeMaxBytecodeSizeEj'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFABytecodeCompiler.cpp' l='229' c='_ZN7WebCore17ContentExtensions19DFABytecodeCompiler11transitionsERKNS0_7DFANodeE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFABytecodeCompiler.cpp' l='389' c='_ZN7WebCore17ContentExtensions19DFABytecodeCompiler30nodeTransitionsMaxBytecodeSizeERKNS0_7DFANodeE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFABytecodeCompiler.cpp' l='406' c='_ZN7WebCore17ContentExtensions19DFABytecodeCompiler22compileNodeTransitionsEj'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.cpp' l='92' c='_ZN7WebCore17ContentExtensions9DFAMerger5mergeEv'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.cpp' l='100' c='_ZN7WebCore17ContentExtensions9DFAMerger5mergeEv'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.cpp' l='116' c='_ZN7WebCore17ContentExtensions9DFAMerger5mergeEv'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.cpp' l='146' c='_ZN7WebCore17ContentExtensions9DFAMerger23getOrCreateCombinedNodeEm'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.cpp' l='156' c='_ZN7WebCore17ContentExtensions9DFAMerger23getOrCreateCombinedNodeEm'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.cpp' l='163' c='_ZN7WebCore17ContentExtensions9DFAMerger23getOrCreateCombinedNodeEm'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFAMinimizer.cpp' l='244' c='_ZN7WebCore17ContentExtensions12_GLOBAL__N_118FullGraphPartitionC1ERKNS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFAMinimizer.cpp' l='268' c='_ZN7WebCore17ContentExtensions12_GLOBAL__N_118FullGraphPartitionC1ERKNS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFAMinimizer.cpp' l='300' c='_ZN7WebCore17ContentExtensions12_GLOBAL__N_118FullGraphPartitionC1ERKNS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFAMinimizer.cpp' l='461' c='_ZN7WebCore17ContentExtensions12DFAMinimizer8minimizeERNS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFAMinimizer.cpp' l='493' c='_ZN7WebCore17ContentExtensions12DFAMinimizer8minimizeERNS0_3DFAE'/>
+<size>16</size>
+<fun r='_ZNK7WebCore17ContentExtensions7DFANode7actionsERKNS0_3DFAE'/>
+<fun r='_ZNK7WebCore17ContentExtensions7DFANode18containsTransitionEcRKNS0_3DFAE'/>
+<fun r='_ZN7WebCore17ContentExtensions7DFANode4killERNS0_3DFAE'/>
+<fun r='_ZNK7WebCore17ContentExtensions7DFANode24canUseFallbackTransitionERKNS0_3DFAE'/>
+<fun r='_ZNK7WebCore17ContentExtensions7DFANode18bestFallbackTargetERKNS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/NFAToDFA.cpp' l='246' c='_ZN7WebCore17ContentExtensions36NodeIdSetToUniqueNodeIdSetTranslator9translateERNS0_15UniqueNodeIdSetERKNS0_32NodeIdSetToUniqueNodeIdSetSourceEj'/>
+<use f='WebKit/Source/WebCore/contentextensions/NFAToDFA.cpp' l='359' c='_ZN7WebCore17ContentExtensions8NFAToDFA7convertEONS0_3NFAE'/>
+<size>16</size>

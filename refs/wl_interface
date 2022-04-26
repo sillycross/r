@@ -1,0 +1,114 @@
+<use f='include/wayland-util.h' l='167'/>
+<def f='include/wayland-util.h' l='216' ll='229'/>
+<use f='include/wayland-client-core.h' l='134' c='wl_proxy_create'/>
+<use f='include/wayland-client-core.h' l='145' c='wl_proxy_marshal_constructor'/>
+<use f='include/wayland-client-core.h' l='151' c='wl_proxy_marshal_constructor_versioned'/>
+<use f='include/wayland-client-core.h' l='158' c='wl_proxy_marshal_array_constructor'/>
+<use f='include/wayland-client-core.h' l='164' c='wl_proxy_marshal_array_constructor_versioned'/>
+<use f='include/wayland-client-core.h' l='238' c='wl_display_get_protocol_error'/>
+<use f='include/wayland-client-protocol.h' l='106'/>
+<use f='include/wayland-client-protocol.h' l='158'/>
+<use f='include/wayland-client-protocol.h' l='174'/>
+<use f='include/wayland-client-protocol.h' l='192'/>
+<use f='include/wayland-client-protocol.h' l='218'/>
+<use f='include/wayland-client-protocol.h' l='248'/>
+<use f='include/wayland-client-protocol.h' l='270'/>
+<use f='include/wayland-client-protocol.h' l='294'/>
+<use f='include/wayland-client-protocol.h' l='314'/>
+<use f='include/wayland-client-protocol.h' l='336'/>
+<use f='include/wayland-client-protocol.h' l='368'/>
+<use f='include/wayland-client-protocol.h' l='396'/>
+<use f='include/wayland-client-protocol.h' l='430'/>
+<use f='include/wayland-client-protocol.h' l='524'/>
+<use f='include/wayland-client-protocol.h' l='544'/>
+<use f='include/wayland-client-protocol.h' l='572'/>
+<use f='include/wayland-client-protocol.h' l='588'/>
+<use f='include/wayland-client-protocol.h' l='616'/>
+<use f='include/wayland-client-protocol.h' l='640'/>
+<use f='include/wayland-client-protocol.h' l='660'/>
+<use f='include/wayland-client-protocol.h' l='710'/>
+<use f='include/wayland-client-protocol.h' l='820'/>
+<use f='include/wayland-client-protocol.h' l='1095' c='_ZL16wl_registry_bindP11wl_registryjPK12wl_interfacej'/>
+<use f='include/wayland-server-core.h' l='245' c='wl_global_create'/>
+<use f='include/wayland-server-core.h' l='279' c='wl_global_get_interface'/>
+<use f='include/wayland-server-core.h' l='528' c='wl_resource_create'/>
+<use f='include/wayland-server-core.h' l='577' c='wl_resource_instance_of'/>
+<use f='include/wayland-server.h' l='59'/>
+<use f='include/wayland-server.h' l='79' c='wl_client_add_object'/>
+<use f='include/wayland-server.h' l='85' c='wl_client_new_object'/>
+<use f='include/wayland-server.h' l='90' c='wl_display_add_global'/>
+<use f='include/wayland-server-protocol.h' l='109'/>
+<use f='include/wayland-server-protocol.h' l='161'/>
+<use f='include/wayland-server-protocol.h' l='177'/>
+<use f='include/wayland-server-protocol.h' l='195'/>
+<use f='include/wayland-server-protocol.h' l='221'/>
+<use f='include/wayland-server-protocol.h' l='251'/>
+<use f='include/wayland-server-protocol.h' l='273'/>
+<use f='include/wayland-server-protocol.h' l='297'/>
+<use f='include/wayland-server-protocol.h' l='317'/>
+<use f='include/wayland-server-protocol.h' l='339'/>
+<use f='include/wayland-server-protocol.h' l='371'/>
+<use f='include/wayland-server-protocol.h' l='399'/>
+<use f='include/wayland-server-protocol.h' l='433'/>
+<use f='include/wayland-server-protocol.h' l='527'/>
+<use f='include/wayland-server-protocol.h' l='547'/>
+<use f='include/wayland-server-protocol.h' l='575'/>
+<use f='include/wayland-server-protocol.h' l='591'/>
+<use f='include/wayland-server-protocol.h' l='619'/>
+<use f='include/wayland-server-protocol.h' l='643'/>
+<use f='include/wayland-server-protocol.h' l='663'/>
+<use f='include/wayland-server-protocol.h' l='713'/>
+<use f='include/wayland-server-protocol.h' l='823'/>
+<size>40</size>
+<doc f='include/wayland-util.h' l='170'>/**
+ * Protocol object interface
+ *
+ * A wl_interface describes the API of a protocol object defined in the Wayland
+ * protocol specification. The protocol implementation uses a wl_interface
+ * within its marshalling machinery for encoding client requests.
+ *
+ * The `name` of a wl_interface is the name of the corresponding protocol
+ * interface, and `version` represents the version of the interface. The members
+ * `method_count` and `event_count` represent the number of `methods` (requests)
+ * and `events` in the respective wl_message members.
+ *
+ * For example, consider a protocol interface `foo`, marked as version `1`, with
+ * two requests and one event.
+ *
+ * \code
+ * &lt;interface name=&quot;foo&quot; version=&quot;1&quot;&gt;
+ *   &lt;request name=&quot;a&quot;&gt;&lt;/request&gt;
+ *   &lt;request name=&quot;b&quot;&gt;&lt;/request&gt;
+ *   &lt;event name=&quot;c&quot;&gt;&lt;/event&gt;
+ * &lt;/interface&gt;
+ * \endcode
+ *
+ * Given two wl_message arrays `foo_requests` and `foo_events`, a wl_interface
+ * for `foo` might be:
+ *
+ * \code
+ * struct wl_interface foo_interface = {
+ *         &quot;foo&quot;, 1,
+ *         2, foo_requests,
+ *         1, foo_events
+ * };
+ * \endcode
+ *
+ * \note The server side of the protocol may define interface &lt;em&gt;implementation
+ *       types&lt;/em&gt; that incorporate the term `interface` in their name. Take
+ *       care to not confuse these server-side `struct`s with a wl_interface
+ *       variable whose name also ends in `interface`. For example, while the
+ *       server may define a type `struct wl_foo_interface`, the client may
+ *       define a `struct wl_interface wl_foo_interface`.
+ *
+ * \sa wl_message
+ * \sa wl_proxy
+ * \sa &lt;a href=&quot;https://wayland.freedesktop.org/docs/html/ch04.html#sect-Protocol-Interfaces&quot;&gt;Interfaces&lt;/a&gt;
+ * \sa &lt;a href=&quot;https://wayland.freedesktop.org/docs/html/ch04.html#sect-Protocol-Versioning&quot;&gt;Versioning&lt;/a&gt;
+ */</doc>
+<mbr r='wl_interface::name' o='0' t='const char *'/>
+<mbr r='wl_interface::version' o='64' t='int'/>
+<mbr r='wl_interface::method_count' o='96' t='int'/>
+<mbr r='wl_interface::methods' o='128' t='const struct wl_message *'/>
+<mbr r='wl_interface::event_count' o='192' t='int'/>
+<mbr r='wl_interface::events' o='256' t='const struct wl_message *'/>

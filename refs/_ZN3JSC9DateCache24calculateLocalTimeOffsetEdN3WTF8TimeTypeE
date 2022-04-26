@@ -1,0 +1,13 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSDateMath.h' l='93' type='WTF::LocalTimeOffset JSC::DateCache::calculateLocalTimeOffset(double millisecondsFromEpoch, WTF::TimeType inputTimeType)'/>
+<dec f='WebKit/Source/JavaScriptCore/runtime/JSDateMath.h' l='93' type='WTF::LocalTimeOffset JSC::DateCache::calculateLocalTimeOffset(double millisecondsFromEpoch, WTF::TimeType inputTimeType)'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/JSDateMath.cpp' l='126' ll='171' type='WTF::LocalTimeOffset JSC::DateCache::calculateLocalTimeOffset(double millisecondsFromEpoch, WTF::TimeType inputTimeType)'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSDateMath.cpp' l='184' u='c' c='_ZN3JSC9DateCache15localTimeOffsetEdN3WTF8TimeTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSDateMath.cpp' l='203' u='c' c='_ZN3JSC9DateCache15localTimeOffsetEdN3WTF8TimeTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSDateMath.cpp' l='213' u='c' c='_ZN3JSC9DateCache15localTimeOffsetEdN3WTF8TimeTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSDateMath.cpp' l='240' u='c' c='_ZN3JSC9DateCache15localTimeOffsetEdN3WTF8TimeTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSDateMath.cpp' l='250' u='c' c='_ZN3JSC9DateCache15localTimeOffsetEdN3WTF8TimeTypeE'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSDateMath.cpp' l='121'>// Get the combined UTC + DST offset for the time passed in.
+//
+// NOTE: The implementation relies on the fact that no time zones have
+// more than one daylight savings offset change per month.
+// If this function is called with NaN it returns random value.</doc>

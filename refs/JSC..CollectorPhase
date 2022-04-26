@@ -1,0 +1,36 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CollectorPhase.h' l='39' ll='62'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CollectorPhase.h' l='64' c='_ZN3JSC22worldShouldBeSuspendedENS_14CollectorPhaseE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CollectorPhase.h' l='72' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC14CollectorPhaseE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='473' c='_ZN3JSC4Heap11changePhaseENS_11GCConductorENS_14CollectorPhaseE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='728'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='729'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='730'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CollectorPhase.h' l='30'>// We track collector phase in order to allow either the collector thread or the mutator thread to
+// jump in and do work. The collector and mutator trade the conn
+// (https://en.wikipedia.org/wiki/Conn_(nautical)) with each other based on who is available to do work,
+// and they use the phase to help each other know what to do once they take the conn.
+//
+// The collector relinquishes the conn whenever it stopTheMutator&apos;s and the mutator is running. Then the
+// collector thread goes to sleep.
+//
+// The mutator relinquishes the conn whenever it releaseAccess&apos;s. That wakes up the collector thread.</doc>
+<def f='WebKit/Source/JavaScriptCore/heap/CollectorPhase.h' l='39' ll='62'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CollectorPhase.h' l='64' c='_ZN3JSC22worldShouldBeSuspendedENS_14CollectorPhaseE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CollectorPhase.h' l='72' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC14CollectorPhaseE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='473' c='_ZN3JSC4Heap11changePhaseENS_11GCConductorENS_14CollectorPhaseE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='728'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='729'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='730'/>
+<doc f='WebKit/Source/JavaScriptCore/heap/CollectorPhase.h' l='30'>// We track collector phase in order to allow either the collector thread or the mutator thread to
+// jump in and do work. The collector and mutator trade the conn
+// (https://en.wikipedia.org/wiki/Conn_(nautical)) with each other based on who is available to do work,
+// and they use the phase to help each other know what to do once they take the conn.
+//
+// The collector relinquishes the conn whenever it stopTheMutator&apos;s and the mutator is running. Then the
+// collector thread goes to sleep.
+//
+// The mutator relinquishes the conn whenever it releaseAccess&apos;s. That wakes up the collector thread.</doc>
+<use f='WebKit/Source/JavaScriptCore/heap/CollectorPhase.cpp' l='33' c='_ZN3JSC22worldShouldBeSuspendedENS_14CollectorPhaseE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CollectorPhase.cpp' l='57' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC14CollectorPhaseE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='1158' c='_ZN3JSC5asIntENS_14CollectorPhaseE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='1571' c='_ZN3JSC4Heap11changePhaseENS_11GCConductorENS_14CollectorPhaseE'/>

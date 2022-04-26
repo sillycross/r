@@ -1,0 +1,20 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitDownload.cpp' l='498' ll='509' type='void webkit_download_set_destination(WebKitDownload * download, const gchar * uri)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitDownload.cpp' l='479'>/**
+ * webkit_download_set_destination:
+ * @download: a #WebKitDownload
+ * @uri: the destination URI
+ *
+ * Sets the URI to which the downloaded file will be written.
+ * This method should be called before the download transfer
+ * starts or it will not have any effect on the ongoing download
+ * operation. To set the destination using the filename suggested
+ * by the server connect to #WebKitDownload::decide-destination
+ * signal and call webkit_download_set_destination(). If you want to
+ * set a fixed destination URI that doesn&apos;t depend on the suggested
+ * filename you can connect to notify::response signal and call
+ * webkit_download_set_destination().
+ * If #WebKitDownload::decide-destination signal is not handled
+ * and destination URI is not set when the download transfer starts,
+ * the file will be saved with the filename suggested by the server in
+ * %G_USER_DIRECTORY_DOWNLOAD directory.
+ */</doc>

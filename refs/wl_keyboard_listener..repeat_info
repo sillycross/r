@@ -1,0 +1,22 @@
+<dec f='include/wayland-client-protocol.h' l='4778' type='void (*)(void *, struct wl_keyboard *, int32_t, int32_t)'/>
+<offset>320</offset>
+<doc f='include/wayland-client-protocol.h' l='4758'>/**
+	 * repeat rate and delay
+	 *
+	 * Informs the client about the keyboard&apos;s repeat rate and delay.
+	 *
+	 * This event is sent as soon as the wl_keyboard object has been
+	 * created, and is guaranteed to be received by the client before
+	 * any key press event.
+	 *
+	 * Negative values for either rate or delay are illegal. A rate of
+	 * zero will disable any repeating (regardless of the value of
+	 * delay).
+	 *
+	 * This event can be sent later on as well with a new value if
+	 * necessary, so clients should continue listening for the event
+	 * past the creation of wl_keyboard.
+	 * @param rate the rate of repeating keys in characters per second
+	 * @param delay delay in milliseconds since key down until repeating starts
+	 * @since 4
+	 */</doc>

@@ -1,0 +1,48 @@
+<def f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_types.h' l='152' ll='165'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_types.h' l='210'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_types.h' l='246'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='87' c='ud_insn_opr'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='89' c='ud_opr_is_sreg'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='91' c='ud_opr_is_gpr'/>
+<size>48</size>
+<doc f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_types.h' l='148'>/* -----------------------------------------------------------------------------
+ * struct ud_operand - Disassembled instruction Operand.
+ * -----------------------------------------------------------------------------
+ */</doc>
+<mbr r='ud_operand::type' o='0' t='enum ud_type'/>
+<mbr r='ud_operand::size' o='32' t='uint16_t'/>
+<mbr r='ud_operand::base' o='64' t='enum ud_type'/>
+<mbr r='ud_operand::index' o='96' t='enum ud_type'/>
+<mbr r='ud_operand::scale' o='128' t='uint8_t'/>
+<mbr r='ud_operand::offset' o='136' t='uint8_t'/>
+<mbr r='ud_operand::lval' o='192' t='union ud_lval'/>
+<mbr r='ud_operand::_legacy' o='256' t='uint64_t'/>
+<mbr r='ud_operand::_oprcode' o='320' t='uint8_t'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='216' c='ud_insn_opr'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='233' c='ud_opr_is_sreg'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='248' c='ud_opr_is_gpr'/>
+<size>48</size>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='385' c='decode_a'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='434' c='decode_reg'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='477' c='decode_imm'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='498' c='decode_mem_disp'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='531' c='decode_modrm_reg'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='548' c='decode_modrm_rm'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='689' c='decode_moffset'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='701' c='decode_vex_vvvv'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='715' c='decode_vex_immreg'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='734' c='decode_operand'/>
+<size>48</size>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn.h' l='36' c='ud_syn_rel_target'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn.h' l='46' c='ud_syn_print_imm'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn.h' l='47' c='ud_syn_print_mem_disp'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn-att.c' l='43' c='opr_cast'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn-att.c' l='57' c='gen_operand'/>
+<size>48</size>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn-intel.c' l='43' c='opr_cast'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn-intel.c' l='64' c='gen_operand'/>
+<size>48</size>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn.c' l='97' c='ud_syn_rel_target'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn.c' l='157' c='ud_syn_print_imm'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn.c' l='184' c='ud_syn_print_mem_disp'/>
+<size>48</size>

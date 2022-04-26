@@ -1,0 +1,18 @@
+<dec f='include/xcb/xproto.h' l='10805' type='xcb_alloc_color_cookie_t xcb_alloc_color(xcb_connection_t * c, xcb_colormap_t cmap, uint16_t red, uint16_t green, uint16_t blue)'/>
+<doc f='include/xcb/xproto.h' l='10787'>/**
+ * @brief Allocate a color
+ *
+ * @param c The connection
+ * @param cmap TODO
+ * @param red The red value of your color.
+ * @param green The green value of your color.
+ * @param blue The blue value of your color.
+ * @return A cookie
+ *
+ * Allocates a read-only colormap entry corresponding to the closest RGB value
+ * supported by the hardware. If you are using TrueColor, you can take a shortcut
+ * and directly calculate the color pixel value to avoid the round trip. But, for
+ * example, on 16-bit color setups (VNC), you can easily get the closest supported
+ * RGB value to the RGB value you are specifying.
+ *
+ */</doc>

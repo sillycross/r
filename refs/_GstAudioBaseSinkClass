@@ -1,0 +1,19 @@
+<use f='include/gstreamer-1.0/gst/audio/gstaudiobasesink.h' l='103'/>
+<def f='include/gstreamer-1.0/gst/audio/gstaudiobasesink.h' l='210' ll='221'/>
+<size>840</size>
+<doc f='include/gstreamer-1.0/gst/audio/gstaudiobasesink.h' l='198'>/**
+ * GstAudioBaseSinkClass:
+ * @parent_class: the parent class.
+ * @create_ringbuffer: create and return a #GstAudioRingBuffer to write to.
+ * @payload: payload data in a format suitable to write to the sink. If no
+ *           payloading is required, returns a reffed copy of the original
+ *           buffer, else returns the payloaded buffer with all other metadata
+ *           copied.
+ *
+ * #GstAudioBaseSink class. Override the vmethod to implement
+ * functionality.
+ */</doc>
+<mbr r='_GstAudioBaseSinkClass::parent_class' o='0' t='GstBaseSinkClass'/>
+<mbr r='_GstAudioBaseSinkClass::create_ringbuffer' o='6336' t='GstAudioRingBuffer *(*)(GstAudioBaseSink *)'/>
+<mbr r='_GstAudioBaseSinkClass::payload' o='6400' t='GstBuffer *(*)(GstAudioBaseSink *, GstBuffer *)'/>
+<mbr r='_GstAudioBaseSinkClass::_gst_reserved' o='6464' t='gpointer [4]'/>

@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='223' type='static bool WebCore::RenderLayerCompositor::clipsCompositingDescendants(const WebCore::RenderLayer &amp; )'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='222'>// Whether layer&apos;s backing needs a graphics layer to clip z-order children of the given layer.</doc>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='989' u='c' c='_ZN7WebCore18RenderLayerBacking19updateConfigurationEPKNS_11RenderLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='164' u='c' c='_ZN7WebCore21RenderLayerCompositor16CompositingState33updateWithDescendantStateAndLayerERKS1_RKNS_11RenderLayerEPS5_RKNS0_13OverlapExtentEb'/>
+<def f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='2999' ll='3002' type='static bool WebCore::RenderLayerCompositor::clipsCompositingDescendants(const WebCore::RenderLayer &amp; layer)'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='3340' u='c' c='_ZNK7WebCore21RenderLayerCompositor32computeIndirectCompositingReasonERKNS_11RenderLayerEbbb'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='2996'>// Return true if the given layer is a stacking context and has compositing child
+// layers that it needs to clip. In this case we insert a clipping GraphicsLayer
+// into the hierarchy between this layer and its children in the z-order hierarchy.</doc>

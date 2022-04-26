@@ -1,0 +1,137 @@
+<def f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='59'/>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='61' c='WTF::SimpleClassVectorTraits'/>
+<def f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='71'/>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='61' c='WTF::SimpleClassVectorTraits'/>
+<def f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='72'/>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='61' c='WTF::SimpleClassVectorTraits'/>
+<def f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='73'/>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='61' c='WTF::SimpleClassVectorTraits'/>
+<def f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='74'/>
+<use f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='74'/>
+<def f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='76' ll='88'/>
+<use f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='79'/>
+<use f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='80'/>
+<use f='WebKit/WTF/Headers/wtf/Vector.h' l='250' c='_ZN3WTF20VectorTypeOperations18initializeIfNonPODEPT_S2_'/>
+<use f='WebKit/WTF/Headers/wtf/Vector.h' l='250' c='_ZN3WTF20VectorTypeOperations18initializeIfNonPODEPT_S2_'/>
+<use f='WebKit/WTF/Headers/wtf/Vector.h' l='255' c='_ZN3WTF20VectorTypeOperations10initializeEPT_S2_'/>
+<use f='WebKit/WTF/Headers/wtf/Vector.h' l='255' c='_ZN3WTF20VectorTypeOperations10initializeEPT_S2_'/>
+<use f='WebKit/WTF/Headers/wtf/Vector.h' l='260' c='_ZN3WTF20VectorTypeOperations4moveEPT_S2_S2_'/>
+<use f='WebKit/WTF/Headers/wtf/Vector.h' l='265' c='_ZN3WTF20VectorTypeOperations15moveOverlappingEPT_S2_S2_'/>
+<use f='WebKit/WTF/Headers/wtf/Vector.h' l='270' c='_ZN3WTF20VectorTypeOperations17uninitializedCopyEPKT_S3_PS1_'/>
+<use f='WebKit/WTF/Headers/wtf/Vector.h' l='275' c='_ZN3WTF20VectorTypeOperations17uninitializedFillEPT_S2_RKS1_'/>
+<use f='WebKit/WTF/Headers/wtf/Vector.h' l='280' c='_ZN3WTF20VectorTypeOperations7compareEPKT_S3_m'/>
+<use f='WebKit/WTF/Headers/wtf/Vector.h' l='319' c='_ZNK3WTF16VectorBufferBase22shouldReallocateBufferEm'/>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='37' c='WTF::VectorTraitsBase'/>
+<def f='WebKit/WTF/Headers/wtf/text/WTFString.h' l='411' ll='414'/>
+<use f='WebKit/WTF/Headers/wtf/text/WTFString.h' l='411'/>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='61' c='WTF::SimpleClassVectorTraits'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Weak.h' l='97' ll='99'/>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='61' c='WTF::SimpleClassVectorTraits'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Strong.h' l='157' ll='159'/>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='61' c='WTF::SimpleClassVectorTraits'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Identifier.h' l='316'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Identifier.h' l='316'/>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='48' c='WTF::VectorTraitsBase'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Register.h' l='271'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Register.h' l='271'/>
+<size>1</size>
+<doc f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='68'>// We know smart pointers are simple enough that initializing to 0 and moving with memcpy
+    // (and then not destructing the original) will work.</doc>
+<smbr r='WTF::VectorTraits{pair{type-parameter-0-0,type-parameter-0-1}}::needsInitialization' t='const bool'/>
+<smbr r='WTF::VectorTraits{pair{type-parameter-0-0,type-parameter-0-1}}::canInitializeWithMemset' t='const bool'/>
+<smbr r='WTF::VectorTraits{pair{type-parameter-0-0,type-parameter-0-1}}::canMoveWithMemcpy' t='const bool'/>
+<smbr r='WTF::VectorTraits{pair{type-parameter-0-0,type-parameter-0-1}}::canCopyWithMemcpy' t='const bool'/>
+<smbr r='WTF::VectorTraits{pair{type-parameter-0-0,type-parameter-0-1}}::canFillWithMemset' t='const bool'/>
+<smbr r='WTF::VectorTraits{pair{type-parameter-0-0,type-parameter-0-1}}::canCompareWithMemcmp' t='const bool'/>
+<smbr r='WTF::VectorTraits{WTF::String}::canInitializeWithMemset' t='const bool'/>
+<smbr r='WTF::VectorTraits{WTF::String}::canMoveWithMemcpy' t='const bool'/>
+<smbr r='WTF::VectorTraits{Weak{type-parameter-0-0}}::canCompareWithMemcmp' t='const bool'/>
+<smbr r='WTF::VectorTraits{Strong{type-parameter-0-0,JSC::ShouldStrongDestructorGrabLock::No}}::canCompareWithMemcmp' t='const bool'/>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='37' c='WTF::VectorTraitsBase'/>
+<def f='WebKit/Source/WebCore/css/CSSProperty.h' l='114' ll='117'/>
+<use f='WebKit/Source/WebCore/css/CSSProperty.h' l='114'/>
+<size>1</size>
+<smbr r='WTF::VectorTraits{WebCore::CSSProperty}::canInitializeWithMemset' t='const bool'/>
+<smbr r='WTF::VectorTraits{WebCore::CSSProperty}::canMoveWithMemcpy' t='const bool'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Operands.h' l='154' c='_ZN3JSC8OperandsC1Emmm'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Operands.h' l='269' c='_ZN3JSC8Operands12ensureLocalsEmRKT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Operands.h' l='284' c='_ZN3JSC8Operands10ensureTmpsEmRKT_'/>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='61' c='WTF::SimpleClassVectorTraits'/>
+<def f='WebKit/Source/JavaScriptCore/heap/Weak.h' l='97' ll='99'/>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='61' c='WTF::SimpleClassVectorTraits'/>
+<def f='WebKit/Source/JavaScriptCore/heap/Strong.h' l='157' ll='159'/>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='61' c='WTF::SimpleClassVectorTraits'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/Identifier.h' l='316'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Identifier.h' l='316'/>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='48' c='WTF::VectorTraitsBase'/>
+<def f='WebKit/Source/JavaScriptCore/interpreter/Register.h' l='271'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/Register.h' l='271'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Operands.h' l='154' c='_ZN3JSC8OperandsC1Emmm'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Operands.h' l='269' c='_ZN3JSC8Operands12ensureLocalsEmRKT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Operands.h' l='284' c='_ZN3JSC8Operands10ensureTmpsEmRKT_'/>
+<size>1</size>
+<smbr r='WTF::VectorTraits{Weak{type-parameter-0-0}}::canCompareWithMemcmp' t='const bool'/>
+<smbr r='WTF::VectorTraits{Strong{type-parameter-0-0,JSC::ShouldStrongDestructorGrabLock::No}}::canCompareWithMemcmp' t='const bool'/>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='37' c='WTF::VectorTraitsBase'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='568' ll='571'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='569'/>
+<size>1</size>
+<smbr r='WTF::VectorTraits{JSC::DFG::AbstractValue}::canInitializeWithMemset' t='const bool'/>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='48' c='WTF::VectorTraitsBase'/>
+<def f='WebKit/Source/JavaScriptCore/bytecompiler/RegisterID.h' l='131' ll='134'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/RegisterID.h' l='131'/>
+<size>1</size>
+<smbr r='WTF::VectorTraits{JSC::RegisterID}::needsInitialization' t='const bool'/>
+<smbr r='WTF::VectorTraits{JSC::RegisterID}::canInitializeWithMemset' t='const bool'/>
+<def f='WebKit/Source/WTF/wtf/VectorTraits.h' l='59'/>
+<inh f='WebKit/Source/WTF/wtf/VectorTraits.h' l='61' c='WTF::SimpleClassVectorTraits'/>
+<def f='WebKit/Source/WTF/wtf/VectorTraits.h' l='71'/>
+<inh f='WebKit/Source/WTF/wtf/VectorTraits.h' l='61' c='WTF::SimpleClassVectorTraits'/>
+<def f='WebKit/Source/WTF/wtf/VectorTraits.h' l='72'/>
+<inh f='WebKit/Source/WTF/wtf/VectorTraits.h' l='61' c='WTF::SimpleClassVectorTraits'/>
+<def f='WebKit/Source/WTF/wtf/VectorTraits.h' l='73'/>
+<inh f='WebKit/Source/WTF/wtf/VectorTraits.h' l='61' c='WTF::SimpleClassVectorTraits'/>
+<def f='WebKit/Source/WTF/wtf/VectorTraits.h' l='74'/>
+<use f='WebKit/Source/WTF/wtf/VectorTraits.h' l='74'/>
+<def f='WebKit/Source/WTF/wtf/VectorTraits.h' l='76' ll='88'/>
+<use f='WebKit/Source/WTF/wtf/VectorTraits.h' l='79'/>
+<use f='WebKit/Source/WTF/wtf/VectorTraits.h' l='80'/>
+<use f='WebKit/Source/WTF/wtf/Vector.h' l='250' c='_ZN3WTF20VectorTypeOperations18initializeIfNonPODEPT_S2_'/>
+<use f='WebKit/Source/WTF/wtf/Vector.h' l='250' c='_ZN3WTF20VectorTypeOperations18initializeIfNonPODEPT_S2_'/>
+<use f='WebKit/Source/WTF/wtf/Vector.h' l='255' c='_ZN3WTF20VectorTypeOperations10initializeEPT_S2_'/>
+<use f='WebKit/Source/WTF/wtf/Vector.h' l='255' c='_ZN3WTF20VectorTypeOperations10initializeEPT_S2_'/>
+<use f='WebKit/Source/WTF/wtf/Vector.h' l='260' c='_ZN3WTF20VectorTypeOperations4moveEPT_S2_S2_'/>
+<use f='WebKit/Source/WTF/wtf/Vector.h' l='265' c='_ZN3WTF20VectorTypeOperations15moveOverlappingEPT_S2_S2_'/>
+<use f='WebKit/Source/WTF/wtf/Vector.h' l='270' c='_ZN3WTF20VectorTypeOperations17uninitializedCopyEPKT_S3_PS1_'/>
+<use f='WebKit/Source/WTF/wtf/Vector.h' l='275' c='_ZN3WTF20VectorTypeOperations17uninitializedFillEPT_S2_RKS1_'/>
+<use f='WebKit/Source/WTF/wtf/Vector.h' l='280' c='_ZN3WTF20VectorTypeOperations7compareEPKT_S3_m'/>
+<use f='WebKit/Source/WTF/wtf/Vector.h' l='319' c='_ZNK3WTF16VectorBufferBase22shouldReallocateBufferEm'/>
+<inh f='WebKit/Source/WTF/wtf/VectorTraits.h' l='37' c='WTF::VectorTraitsBase'/>
+<def f='WebKit/Source/WTF/wtf/text/WTFString.h' l='411' ll='414'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.h' l='411'/>
+<size>1</size>
+<doc f='WebKit/Source/WTF/wtf/VectorTraits.h' l='68'>// We know smart pointers are simple enough that initializing to 0 and moving with memcpy
+    // (and then not destructing the original) will work.</doc>
+<smbr r='WTF::VectorTraits{pair{type-parameter-0-0,type-parameter-0-1}}::needsInitialization' t='const bool'/>
+<smbr r='WTF::VectorTraits{pair{type-parameter-0-0,type-parameter-0-1}}::canInitializeWithMemset' t='const bool'/>
+<smbr r='WTF::VectorTraits{pair{type-parameter-0-0,type-parameter-0-1}}::canMoveWithMemcpy' t='const bool'/>
+<smbr r='WTF::VectorTraits{pair{type-parameter-0-0,type-parameter-0-1}}::canCopyWithMemcpy' t='const bool'/>
+<smbr r='WTF::VectorTraits{pair{type-parameter-0-0,type-parameter-0-1}}::canFillWithMemset' t='const bool'/>
+<smbr r='WTF::VectorTraits{pair{type-parameter-0-0,type-parameter-0-1}}::canCompareWithMemcmp' t='const bool'/>
+<smbr r='WTF::VectorTraits{WTF::String}::canInitializeWithMemset' t='const bool'/>
+<smbr r='WTF::VectorTraits{WTF::String}::canMoveWithMemcpy' t='const bool'/>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='61' c='WTF::SimpleClassVectorTraits'/>
+<def f='WebKit/Source/WebCore/style/RuleData.h' l='98'/>
+<use f='WebKit/Source/WebCore/style/RuleData.h' l='98'/>
+<size>1</size>
+<doc f='WebKit/Source/WebCore/style/RuleData.h' l='97'>// RuleData is simple enough that initializing to 0 and moving with memcpy will totally work.</doc>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='61' c='WTF::SimpleClassVectorTraits'/>
+<def f='WebKit/Source/WebCore/rendering/RenderGeometryMap.h' l='143'/>
+<use f='WebKit/Source/WebCore/rendering/RenderGeometryMap.h' l='143'/>
+<size>1</size>
+<doc f='WebKit/Source/WebCore/rendering/RenderGeometryMap.h' l='141'>// This is required for a struct with std::unique_ptr&lt;&gt;. We know RenderGeometryMapStep is simple enough that
+// initializing to 0 and moving with memcpy (and then not destructing the original) will work.</doc>
+<inh f='WebKit/WTF/Headers/wtf/VectorTraits.h' l='61' c='WTF::SimpleClassVectorTraits'/>
+<def f='WebKit/Source/WebCore/html/parser/HTMLConstructionSite.h' l='71'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLConstructionSite.h' l='71'/>
+<size>1</size>

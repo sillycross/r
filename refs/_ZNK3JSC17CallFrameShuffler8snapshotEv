@@ -1,0 +1,10 @@
+<def f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='100' ll='123' type='JSC::CallFrameShuffleData JSC::CallFrameShuffler::snapshot() const'/>
+<doc f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='92'>// You can only take a snapshot if the recovery has not started
+    // yet. The only operations that are valid before taking a
+    // snapshot are lockGPR(), acquireGPR() and releaseGPR().
+    //
+    // Locking status is *NOT* preserved by the snapshot: it only
+    // contains information about where the
+    // arguments/callee/callee-save registers are by taking into
+    // account any spilling that acquireGPR() could have done.</doc>
+<use f='WebKit/Source/JavaScriptCore/jit/Repatch.cpp' l='1644' u='c' c='_ZN3JSC19linkPolymorphicCallEPNS_14JSGlobalObjectEPNS_9CallFrameERNS_12CallLinkInfoENS_11CallVariantE'/>

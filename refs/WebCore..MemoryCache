@@ -1,0 +1,134 @@
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.h' l='64'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedImage.h' l='47'/>
+<def f='WebKit/Source/WebCore/loader/cache/MemoryCache.h' l='62' ll='213'/>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.h' l='63' c='_ZN7WebCore11MemoryCacheC1ERKS0_'/>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.h' l='63' c='_ZN7WebCore11MemoryCacheaSERKS0_'/>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.h' l='63' c='_ZN7WebCore11MemoryCacheaSERKS0_'/>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.h' l='64'/>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.h' l='92' c='_ZN7WebCore11MemoryCache9singletonEv'/>
+<size>384</size>
+<doc f='WebKit/Source/WebCore/loader/cache/MemoryCache.h' l='49'>// This cache holds subresources used by Web pages: images, scripts, stylesheets, etc.
+
+// The cache keeps a flexible but bounded window of dead resources that grows/shrinks 
+// depending on the live resource load. Here&apos;s an example of cache growth over time,
+// with a min dead resource capacity of 25% and a max dead resource capacity of 50%:
+
+//        |-----|                              Dead: -
+//        |----------|                         Live: +
+//      --|----------|                         Cache boundary: | (objects outside this mark have been evicted)
+//      --|----------++++++++++|
+// -------|-----+++++++++++++++|
+// -------|-----+++++++++++++++|+++++</doc>
+<fun r='_ZN7WebCore11MemoryCacheC1ERKS0_'/>
+<fun r='_ZN7WebCore11MemoryCache9singletonEv'/>
+<fun r='_ZN7WebCore11MemoryCache18resourceForRequestERKNS_15ResourceRequestEN3PAL9SessionIDE'/>
+<fun r='_ZN7WebCore11MemoryCache3addERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache6removeERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache30shouldRemoveFragmentIdentifierERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore11MemoryCache32removeFragmentIdentifierIfNeededERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore11MemoryCache21revalidationSucceededERNS_14CachedResourceERKNS_16ResourceResponseE'/>
+<fun r='_ZN7WebCore11MemoryCache18revalidationFailedERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache15forEachResourceERKN3WTF8FunctionIFvRNS_14CachedResourceEEEE'/>
+<fun r='_ZN7WebCore11MemoryCache22forEachSessionResourceEN3PAL9SessionIDERKN3WTF8FunctionIFvRNS_14CachedResourceEEEE'/>
+<fun r='_ZN7WebCore11MemoryCache30destroyDecodedDataForAllImagesEv'/>
+<fun r='_ZN7WebCore11MemoryCache13setCapacitiesEjjj'/>
+<fun r='_ZN7WebCore11MemoryCache11setDisabledEb'/>
+<fun r='_ZNK7WebCore11MemoryCache8disabledEv'/>
+<fun r='_ZN7WebCore11MemoryCache14evictResourcesEv'/>
+<fun r='_ZN7WebCore11MemoryCache14evictResourcesEN3PAL9SessionIDE'/>
+<fun r='_ZN7WebCore11MemoryCache5pruneEv'/>
+<fun r='_ZN7WebCore11MemoryCache9pruneSoonEv'/>
+<fun r='_ZNK7WebCore11MemoryCache4sizeEv'/>
+<fun r='_ZN7WebCore11MemoryCache34setDeadDecodedDataDeletionIntervalEN3WTF7SecondsE'/>
+<fun r='_ZNK7WebCore11MemoryCache31deadDecodedDataDeletionIntervalEv'/>
+<fun r='_ZN7WebCore11MemoryCache15insertInLRUListERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache17removeFromLRUListERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache10adjustSizeEbx'/>
+<fun r='_ZN7WebCore11MemoryCache32insertInLiveDecodedResourcesListERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache34removeFromLiveDecodedResourcesListERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache22addToLiveResourcesSizeERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache27removeFromLiveResourcesSizeERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache30removeRequestFromSessionCachesERNS_22ScriptExecutionContextERKNS_15ResourceRequestE'/>
+<fun r='_ZN7WebCore11MemoryCache13getStatisticsEv'/>
+<fun r='_ZN7WebCore11MemoryCache16resourceAccessedERNS_14CachedResourceE'/>
+<fun r='_ZNK7WebCore11MemoryCache26inLiveDecodedResourcesListERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache25removeResourcesWithOriginERNS_14SecurityOriginE'/>
+<fun r='_ZN7WebCore11MemoryCache26removeResourcesWithOriginsEN3PAL9SessionIDERKN3WTF7HashSetINS3_6RefPtrINS_14SecurityOriginENS3_12RawPtrTraitsIS6_EENS3_21Def1579755'/>
+<fun r='_ZN7WebCore11MemoryCache19getOriginsWithCacheERN3WTF7HashSetINS1_6RefPtrINS_14SecurityOriginENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EE1111990'/>
+<fun r='_ZNK7WebCore11MemoryCache16originsWithCacheEN3PAL9SessionIDE'/>
+<fun r='_ZN7WebCore11MemoryCache18pruneDeadResourcesEv'/>
+<fun r='_ZN7WebCore11MemoryCache18pruneLiveResourcesEb'/>
+<fun r='_ZN7WebCore11MemoryCache24pruneDeadResourcesToSizeEj'/>
+<fun r='_ZN7WebCore11MemoryCache24pruneLiveResourcesToSizeEjb'/>
+<fun r='_ZN7WebCore11MemoryCacheC1Ev'/>
+<fun r='_ZN7WebCore11MemoryCacheD1Ev'/>
+<fun r='_ZN7WebCore11MemoryCache10lruListForERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache9dumpStatsEv'/>
+<fun r='_ZNK7WebCore11MemoryCache12dumpLRUListsEb'/>
+<fun r='_ZNK7WebCore11MemoryCache12liveCapacityEv'/>
+<fun r='_ZNK7WebCore11MemoryCache12deadCapacityEv'/>
+<fun r='_ZNK7WebCore11MemoryCache12needsPruningEv'/>
+<fun r='_ZN7WebCore11MemoryCache22resourceForRequestImplERKNS_15ResourceRequestERN3WTF7HashMapISt4pairINS4_3URLENS4_6StringEEPNS_14CachedResourceENS4_11Defaul2131062'/>
+<fun r='_ZN7WebCore11MemoryCache24ensureSessionResourceMapEN3PAL9SessionIDE'/>
+<fun r='_ZNK7WebCore11MemoryCache18sessionResourceMapEN3PAL9SessionIDE'/>
+<mbr r='WebCore::MemoryCache::m_disabled' o='0' t='bool'/>
+<mbr r='WebCore::MemoryCache::m_inPruneResources' o='8' t='bool'/>
+<mbr r='WebCore::MemoryCache::m_capacity' o='32' t='unsigned int'/>
+<mbr r='WebCore::MemoryCache::m_minDeadCapacity' o='64' t='unsigned int'/>
+<mbr r='WebCore::MemoryCache::m_maxDeadCapacity' o='96' t='unsigned int'/>
+<mbr r='WebCore::MemoryCache::m_deadDecodedDataDeletionInterval' o='128' t='WTF::Seconds'/>
+<mbr r='WebCore::MemoryCache::m_liveSize' o='192' t='unsigned int'/>
+<mbr r='WebCore::MemoryCache::m_deadSize' o='224' t='unsigned int'/>
+<mbr r='WebCore::MemoryCache::m_allResources' o='256' t='Vector&lt;std::unique_ptr&lt;LRUList&gt;, 32&gt;'/>
+<mbr r='WebCore::MemoryCache::m_liveDecodedResources' o='2432' t='WebCore::MemoryCache::LRUList'/>
+<mbr r='WebCore::MemoryCache::m_sessionResources' o='2624' t='WebCore::MemoryCache::SessionCachedResourceMap'/>
+<mbr r='WebCore::MemoryCache::m_pruneTimer' o='2688' t='WebCore::Timer'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedFont.h' l='85'/>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.cpp' l='55' c='_ZN7WebCore11MemoryCache9singletonEv'/>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.cpp' l='58' c='_ZN7WebCore11MemoryCache9singletonEv'/>
+<size>384</size>
+<fun r='_ZN7WebCore11MemoryCache9singletonEv'/>
+<fun r='_ZN7WebCore11MemoryCacheC1Ev'/>
+<fun r='_ZNK7WebCore11MemoryCache18sessionResourceMapEN3PAL9SessionIDE'/>
+<fun r='_ZN7WebCore11MemoryCache24ensureSessionResourceMapEN3PAL9SessionIDE'/>
+<fun r='_ZN7WebCore11MemoryCache30shouldRemoveFragmentIdentifierERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore11MemoryCache32removeFragmentIdentifierIfNeededERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore11MemoryCache3addERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache21revalidationSucceededERNS_14CachedResourceERKNS_16ResourceResponseE'/>
+<fun r='_ZN7WebCore11MemoryCache18revalidationFailedERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache18resourceForRequestERKNS_15ResourceRequestEN3PAL9SessionIDE'/>
+<fun r='_ZN7WebCore11MemoryCache22resourceForRequestImplERKNS_15ResourceRequestERN3WTF7HashMapISt4pairINS4_3URLENS4_6StringEEPNS_14CachedResourceENS4_11Defaul2131062'/>
+<fun r='_ZNK7WebCore11MemoryCache12deadCapacityEv'/>
+<fun r='_ZNK7WebCore11MemoryCache12liveCapacityEv'/>
+<fun r='_ZN7WebCore11MemoryCache18pruneLiveResourcesEb'/>
+<fun r='_ZN7WebCore11MemoryCache15forEachResourceERKN3WTF8FunctionIFvRNS_14CachedResourceEEEE'/>
+<fun r='_ZN7WebCore11MemoryCache22forEachSessionResourceEN3PAL9SessionIDERKN3WTF8FunctionIFvRNS_14CachedResourceEEEE'/>
+<fun r='_ZN7WebCore11MemoryCache30destroyDecodedDataForAllImagesEv'/>
+<fun r='_ZN7WebCore11MemoryCache24pruneLiveResourcesToSizeEjb'/>
+<fun r='_ZN7WebCore11MemoryCache18pruneDeadResourcesEv'/>
+<fun r='_ZN7WebCore11MemoryCache24pruneDeadResourcesToSizeEj'/>
+<fun r='_ZN7WebCore11MemoryCache13setCapacitiesEjjj'/>
+<fun r='_ZN7WebCore11MemoryCache6removeERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache10lruListForERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache17removeFromLRUListERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache15insertInLRUListERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache16resourceAccessedERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache25removeResourcesWithOriginERNS_14SecurityOriginE'/>
+<fun r='_ZN7WebCore11MemoryCache26removeResourcesWithOriginsEN3PAL9SessionIDERKN3WTF7HashSetINS3_6RefPtrINS_14SecurityOriginENS3_12RawPtrTraitsIS6_EENS3_21Def1579755'/>
+<fun r='_ZN7WebCore11MemoryCache19getOriginsWithCacheERN3WTF7HashSetINS1_6RefPtrINS_14SecurityOriginENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EE1111990'/>
+<fun r='_ZNK7WebCore11MemoryCache16originsWithCacheEN3PAL9SessionIDE'/>
+<fun r='_ZN7WebCore11MemoryCache34removeFromLiveDecodedResourcesListERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache32insertInLiveDecodedResourcesListERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache22addToLiveResourcesSizeERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache27removeFromLiveResourcesSizeERNS_14CachedResourceE'/>
+<fun r='_ZN7WebCore11MemoryCache10adjustSizeEbx'/>
+<fun r='_ZN7WebCore11MemoryCache30removeRequestFromSessionCachesERNS_22ScriptExecutionContextERKNS_15ResourceRequestE'/>
+<fun r='_ZN7WebCore11MemoryCache13getStatisticsEv'/>
+<fun r='_ZN7WebCore11MemoryCache11setDisabledEb'/>
+<fun r='_ZN7WebCore11MemoryCache14evictResourcesEv'/>
+<fun r='_ZN7WebCore11MemoryCache14evictResourcesEN3PAL9SessionIDE'/>
+<fun r='_ZNK7WebCore11MemoryCache12needsPruningEv'/>
+<fun r='_ZN7WebCore11MemoryCache5pruneEv'/>
+<fun r='_ZN7WebCore11MemoryCache9pruneSoonEv'/>
+<fun r='_ZN7WebCore11MemoryCache9dumpStatsEv'/>
+<fun r='_ZNK7WebCore11MemoryCache12dumpLRUListsEb'/>

@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/WebCore/Modules/webaudio/ScriptProcessorNode.h' l='55' type='static Ref&lt;WebCore::ScriptProcessorNode&gt; WebCore::ScriptProcessorNode::create(WebCore::BaseAudioContext &amp; , size_t bufferSize, unsigned int numberOfInputChannels, unsigned int numberOfOutputChannels)'/>
+<doc f='WebKit/Source/WebCore/Modules/webaudio/ScriptProcessorNode.h' l='51'>// bufferSize must be one of the following values: 256, 512, 1024, 2048, 4096, 8192, 16384.
+    // This value controls how frequently the onaudioprocess event handler is called and how many sample-frames need to be processed each call.
+    // Lower numbers for bufferSize will result in a lower (better) latency. Higher numbers will be necessary to avoid audio breakup and glitches.
+    // The value chosen must carefully balance between latency and audio quality.</doc>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='373' u='c' c='_ZN7WebCore16BaseAudioContext21createScriptProcessorEmmm'/>
+<def f='WebKit/Source/WebCore/Modules/webaudio/ScriptProcessorNode.cpp' l='48' ll='51' type='static Ref&lt;WebCore::ScriptProcessorNode&gt; WebCore::ScriptProcessorNode::create(WebCore::BaseAudioContext &amp; context, size_t bufferSize, unsigned int numberOfInputChannels, unsigned int numberOfOutputChannels)'/>

@@ -1,0 +1,112 @@
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Types.h' l='102' c='_ZN2sh5TTypeC1ERKNS_11TPublicTypeE'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Types.h' l='455' ll='493'/>
+<size>136</size>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Types.h' l='446'>//
+// This is a workaround for a problem with the yacc stack,  It can&apos;t have
+// types that it thinks have non-trivial constructors.  It should
+// just be used while recognizing the grammar, not anything else.  Pointers
+// could be used, but also trying to avoid lots of memory management overhead.
+//
+// Not as bad as it looks, there is no actual assumption that the fields
+// match up or are name the same or anything like that.
+//</doc>
+<fun r='_ZN2sh11TPublicTypeC1Ev'/>
+<fun r='_ZN2sh11TPublicType10initializeERKNS_22TTypeSpecifierNonArrayENS_10TQualifierE'/>
+<fun r='_ZN2sh11TPublicType19initializeBasicTypeENS_10TBasicTypeE'/>
+<fun r='_ZNK2sh11TPublicType12getBasicTypeEv'/>
+<fun r='_ZN2sh11TPublicType12setBasicTypeENS_10TBasicTypeE'/>
+<fun r='_ZNK2sh11TPublicType14getPrimarySizeEv'/>
+<fun r='_ZNK2sh11TPublicType16getSecondarySizeEv'/>
+<fun r='_ZNK2sh11TPublicType10getUserDefEv'/>
+<fun r='_ZNK2sh11TPublicType7getLineEv'/>
+<fun r='_ZNK2sh11TPublicType17isStructSpecifierEv'/>
+<fun r='_ZNK2sh11TPublicType27isStructureContainingArraysEv'/>
+<fun r='_ZNK2sh11TPublicType25isStructureContainingTypeENS_10TBasicTypeE'/>
+<fun r='_ZN2sh11TPublicType13setArraySizesEPNS_7TVectorIjEE'/>
+<fun r='_ZNK2sh11TPublicType7isArrayEv'/>
+<fun r='_ZN2sh11TPublicType14clearArraynessEv'/>
+<fun r='_ZNK2sh11TPublicType11isAggregateEv'/>
+<mbr r='sh::TPublicType::typeSpecifierNonArray' o='0' t='sh::TTypeSpecifierNonArray'/>
+<mbr r='sh::TPublicType::layoutQualifier' o='320' t='sh::TLayoutQualifier'/>
+<mbr r='sh::TPublicType::memoryQualifier' o='832' t='sh::TMemoryQualifier'/>
+<mbr r='sh::TPublicType::qualifier' o='896' t='sh::TQualifier'/>
+<mbr r='sh::TPublicType::invariant' o='928' t='bool'/>
+<mbr r='sh::TPublicType::precise' o='936' t='bool'/>
+<mbr r='sh::TPublicType::precision' o='960' t='sh::TPrecision'/>
+<mbr r='sh::TPublicType::arraySizes' o='1024' t='const TVector&lt;unsigned int&gt; *'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='137' c='_ZN2sh13TParseContext29checkIsValidQualifierForArrayERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='138' c='_ZN2sh13TParseContext27checkArrayElementIsNotArrayERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='140' c='_ZN2sh13TParseContext23checkArrayOfArraysInOutERKNS_10TSourceLocERKNS_11TPublicTypeERKNS_5TTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='146' c='_ZN2sh13TParseContext17checkIsScalarBoolERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='150' c='_ZN2sh13TParseContext37checkDeclaratorLocationIsNotSpecifiedERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='175' c='_ZN2sh13TParseContext29nonEmptyDeclarationErrorCheckERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='190' c='_ZN2sh13TParseContext30checkInputOutputTypeIsValidES3ENS_10TQualifierERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='213' c='_ZN2sh13TParseContext23addConditionInitializerERKNS_11TPublicTypeERKNS_15ImmutableStringEPNS_12TIntermTypedERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='228' c='_ZN2sh13TParseContext21addFullySpecifiedTypeEPNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='229' c='_ZN2sh13TParseContext21addFullySpecifiedTypeERKNS_21TTypeQualifierBuilderERKNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='230' c='_ZN2sh13TParseContext21addFullySpecifiedTypeERKNS_21TTypeQualifierBuilderERKNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='232' c='_ZN2sh13TParseContext22parseSingleDeclarationERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='235' c='_ZN2sh13TParseContext27parseSingleArrayDeclarationERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES5_RKNS_7TVectorIjEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='240' c='_ZN2sh13TParseContext26parseSingleInitDeclarationERKNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES6_PNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='248' c='_ZN2sh13TParseContext31parseSingleArrayInitDeclarationERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES5_RKNS_7TVectorIjEES5_PNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='262' c='_ZN2sh13TParseContext15parseDeclaratorERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringEPNS_18TIntermDeclarationE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='266' c='_ZN2sh13TParseContext20parseArrayDeclaratorERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES5_RKNS_7TVectorIjEEPNS_18TIntermDeclarationE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='272' c='_ZN2sh13TParseContext19parseInitDeclaratorERKNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES6_PNS_12TIntermTypedEPNS_18TIntermDeclarationE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='280' c='_ZN2sh13TParseContext24parseArrayInitDeclaratorERKNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES6_RKNS_7TVectorIjEES6_PNS_12TIntermTypedE2142086'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='292' c='_ZN2sh13TParseContext30parseDefaultPrecisionQualifierENS_10TPrecisionERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='305' c='_ZN2sh13TParseContext19parseFunctionHeaderERKNS_11TPublicTypeERKNS_15ImmutableStringERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='310' c='_ZN2sh13TParseContext18addConstructorFuncERKNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='312' c='_ZN2sh13TParseContext24parseParameterDeclaratorERKNS_11TPublicTypeERKNS_15ImmutableStringERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='320' c='_ZN2sh13TParseContext29parseParameterArrayDeclaratorERKNS_15ImmutableStringERKNS_10TSourceLocERKNS_7TVectorIjEES6_PNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='346' c='_ZN2sh13TParseContext37addStructDeclaratorListWithQualifiersERKNS_21TTypeQualifierBuilderEPNS_11TPublicTypeEPKNS_7TVectorIPNS_11TDeclaratorEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='348' c='_ZN2sh13TParseContext23addStructDeclaratorListERKNS_11TPublicTypeEPKNS_7TVectorIPNS_11TDeclaratorEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='509' c='_ZN2sh13TParseContext36checkIsValidTypeAndQualifierForArrayERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='511' c='_ZN2sh13TParseContext32atomicCounterQualifierErrorCheckERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='606' c='_ZN2sh13TParseContext36setAtomicCounterBindingDefaultOffsetERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<size>136</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='81' c='_ZN2sh12_GLOBAL__N_128CanSetDefaultPrecisionOnTypeERKNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='925' c='_ZN2sh13TParseContext17checkIsScalarBoolERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='961' c='_ZN2sh13TParseContext37checkDeclaratorLocationIsNotSpecifiedERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='1065' c='_ZN2sh13TParseContext29checkIsValidQualifierForArrayERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='1081' c='_ZN2sh13TParseContext27checkArrayElementIsNotArrayERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='1095' c='_ZN2sh13TParseContext23checkArrayOfArraysInOutERKNS_10TSourceLocERKNS_11TPublicTypeERKNS_5TTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='1129' c='_ZN2sh13TParseContext36checkIsValidTypeAndQualifierForArrayERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='1472' c='_ZN2sh13TParseContext32atomicCounterQualifierErrorCheckERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='1507' c='_ZN2sh13TParseContext29nonEmptyDeclarationErrorCheckERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2187' c='_ZN2sh13TParseContext23addConditionInitializerERKNS_11TPublicTypeERKNS_15ImmutableStringEPNS_12TIntermTypedERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2315' c='_ZN2sh13TParseContext21addFullySpecifiedTypeEPNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2327' c='_ZN2sh13TParseContext21addFullySpecifiedTypeERKNS_21TTypeQualifierBuilderERKNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2328' c='_ZN2sh13TParseContext21addFullySpecifiedTypeERKNS_21TTypeQualifierBuilderERKNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2332' c='_ZN2sh13TParseContext21addFullySpecifiedTypeERKNS_21TTypeQualifierBuilderERKNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2401' c='_ZN2sh13TParseContext30checkInputOutputTypeIsValidES3ENS_10TQualifierERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2594' c='_ZN2sh13TParseContext22parseSingleDeclarationERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2678' c='_ZN2sh13TParseContext27parseSingleArrayDeclarationERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES5_RKNS_7TVectorIjEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2723' c='_ZN2sh13TParseContext26parseSingleInitDeclarationERKNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES6_PNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2752' c='_ZN2sh13TParseContext31parseSingleArrayInitDeclarationERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES5_RKNS_7TVectorIjEES5_PNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2845' c='_ZN2sh13TParseContext15parseDeclaratorERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringEPNS_18TIntermDeclarationE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2882' c='_ZN2sh13TParseContext20parseArrayDeclaratorERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES5_RKNS_7TVectorIjEEPNS_18TIntermDeclarationE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2925' c='_ZN2sh13TParseContext19parseInitDeclaratorERKNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES6_PNS_12TIntermTypedEPNS_18TIntermDeclarationE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2956' c='_ZN2sh13TParseContext24parseArrayInitDeclaratorERKNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES6_RKNS_7TVectorIjEES6_PNS_12TIntermTypedE2142086'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='3000' c='_ZN2sh13TParseContext36setAtomicCounterBindingDefaultOffsetERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='3014' c='_ZN2sh13TParseContext30parseDefaultPrecisionQualifierENS_10TPrecisionERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='3626' c='_ZN2sh13TParseContext19parseFunctionHeaderERKNS_11TPublicTypeERKNS_15ImmutableStringERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='3669' c='_ZN2sh13TParseContext18addConstructorFuncERKNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='3719' c='_ZN2sh13TParseContext24parseParameterDeclaratorERKNS_11TPublicTypeERKNS_15ImmutableStringERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='3731' c='_ZN2sh13TParseContext29parseParameterArrayDeclaratorERKNS_15ImmutableStringERKNS_10TSourceLocERKNS_7TVectorIjEES6_PNS_11TPublicTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='5008' c='_ZN2sh13TParseContext37addStructDeclaratorListWithQualifiersERKNS_21TTypeQualifierBuilderEPNS_11TPublicTypeEPKNS_7TVectorIPNS_11TDeclaratorEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='5025' c='_ZN2sh13TParseContext23addStructDeclaratorListERKNS_11TPublicTypeEPKNS_7TVectorIPNS_11TDeclaratorEEE'/>
+<size>136</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Types.cpp' l='162' c='_ZN2sh5TTypeC1ERKNS_11TPublicTypeE'/>
+<size>136</size>
+<fun r='_ZN2sh11TPublicType10initializeERKNS_22TTypeSpecifierNonArrayENS_10TQualifierE'/>
+<fun r='_ZN2sh11TPublicType19initializeBasicTypeENS_10TBasicTypeE'/>
+<fun r='_ZNK2sh11TPublicType27isStructureContainingArraysEv'/>
+<fun r='_ZNK2sh11TPublicType25isStructureContainingTypeENS_10TBasicTypeE'/>
+<fun r='_ZN2sh11TPublicType13setArraySizesEPNS_7TVectorIjEE'/>
+<fun r='_ZNK2sh11TPublicType7isArrayEv'/>
+<fun r='_ZN2sh11TPublicType14clearArraynessEv'/>
+<fun r='_ZNK2sh11TPublicType11isAggregateEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_tab_autogen.h' l='277'/>
+<size>136</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_tab_autogen.cpp' l='366'/>
+<size>136</size>

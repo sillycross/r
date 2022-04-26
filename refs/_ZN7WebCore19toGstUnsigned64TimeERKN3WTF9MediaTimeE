@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/WebCore/platform/graphics/gstreamer/GStreamerCommon.h' l='76' type='uint64_t WebCore::toGstUnsigned64Time(const WTF::MediaTime &amp; )'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/GStreamerCommon.h' l='83' u='c' c='_ZN7WebCore14toGstClockTimeERKN3WTF9MediaTimeE'/>
+<def f='WebKit/Source/WebCore/platform/graphics/gstreamer/GStreamerCommon.cpp' l='365' ll='371' type='uint64_t WebCore::toGstUnsigned64Time(const WTF::MediaTime &amp; mediaTime)'/>
+<doc f='WebKit/Source/WebCore/platform/graphics/gstreamer/GStreamerCommon.cpp' l='362'>// Convert a MediaTime in seconds to a GstClockTime. Note that we can get MediaTime objects with a time scale that isn&apos;t a GST_SECOND, since they can come to
+// us through the internal testing API, the DOM and internally. It would be nice to assert the format of the incoming time, but all the media APIs assume time
+// is passed around in fractional seconds, so we&apos;ll just have to assume the same.</doc>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='683' u='c' c='_ZNK7WebCore27MediaPlayerPrivateGStreamer8bufferedEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='684' u='c' c='_ZNK7WebCore27MediaPlayerPrivateGStreamer8bufferedEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='1977' u='c' c='_ZN7WebCore27MediaPlayerPrivateGStreamer19updateMaxTimeLoadedEd'/>

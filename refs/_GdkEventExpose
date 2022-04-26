@@ -1,0 +1,26 @@
+<use f='WebKit/WTF/Headers/wtf/glib/GTypedefs.h' l='47'/>
+<use f='include/gtk-3.0/gdk/gdkevents.h' l='125'/>
+<def f='include/gtk-3.0/gdk/gdkevents.h' l='620' ll='628'/>
+<size>56</size>
+<doc f='include/gtk-3.0/gdk/gdkevents.h' l='605'>/**
+ * GdkEventExpose:
+ * @type: the type of the event (%GDK_EXPOSE or %GDK_DAMAGE).
+ * @window: the window which received the event.
+ * @send_event: %TRUE if the event was sent explicitly.
+ * @area: bounding box of @region.
+ * @region: the region that needs to be redrawn.
+ * @count: the number of contiguous %GDK_EXPOSE events following this one.
+ *   The only use for this is “exposure compression”, i.e. handling all
+ *   contiguous %GDK_EXPOSE events in one go, though GDK performs some
+ *   exposure compression so this is not normally needed.
+ *
+ * Generated when all or part of a window becomes visible and needs to be
+ * redrawn.
+ */</doc>
+<mbr r='_GdkEventExpose::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventExpose::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventExpose::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventExpose::area' o='160' t='GdkRectangle'/>
+<mbr r='_GdkEventExpose::region' o='320' t='cairo_region_t *'/>
+<mbr r='_GdkEventExpose::count' o='384' t='gint'/>
+<use f='WebKit/Source/WTF/wtf/glib/GTypedefs.h' l='47'/>

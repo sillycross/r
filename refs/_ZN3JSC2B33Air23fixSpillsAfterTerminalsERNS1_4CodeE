@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/JavaScriptCore/b3/air/AirFixSpillsAfterTerminals.h' l='39' type='void JSC::B3::Air::fixSpillsAfterTerminals(JSC::B3::Air::Code &amp; )'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersAndStackByLinearScan.cpp' l='141' u='c' c='_ZN3JSC2B33Air12_GLOBAL__N_110LinearScan3runEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='1762' u='c' c='_ZN3JSC2B33Air12_GLOBAL__N_131GraphColoringRegisterAllocation3runEv'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/air/AirFixSpillsAfterTerminals.h' l='34'>// Because there may be terminals that produce values, the register allocator may
+// want to spill those terminals. It&apos;ll happen to spill it after
+// the terminal. If we left the graph in this state, it&apos;d be invalid
+// because a terminal must be the last instruction in a block.
+// We fix that here.</doc>
+<def f='WebKit/Source/JavaScriptCore/b3/air/AirFixSpillsAfterTerminals.cpp' l='37' ll='92' type='void JSC::B3::Air::fixSpillsAfterTerminals(JSC::B3::Air::Code &amp; code)'/>

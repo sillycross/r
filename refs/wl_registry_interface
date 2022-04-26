@@ -1,0 +1,58 @@
+<dec f='include/wayland-client-protocol.h' l='158' type='const struct wl_interface'/>
+<use f='include/wayland-client-protocol.h' l='987' u='a' c='_ZL23wl_display_get_registryP10wl_display'/>
+<dec f='include/wayland-server-protocol.h' l='161' type='const struct wl_interface'/>
+<def f='include/wayland-server-protocol.h' l='922' ll='937'/>
+<size>8</size>
+<doc f='include/wayland-client-protocol.h' l='134'>/**
+ * @defgroup iface_wl_registry The wl_registry interface
+ *
+ * The singleton global registry object.  The server has a number of
+ * global objects that are available to all clients.  These objects
+ * typically represent an actual object in the server (for example,
+ * an input device) or they are singleton objects that provide
+ * extension functionality.
+ *
+ * When a client creates a registry object, the registry object
+ * will emit a global event for each global currently in the
+ * registry.  Globals come and go as a result of device or
+ * monitor hotplugs, reconfiguration or other events, and the
+ * registry will send out global and global_remove events to
+ * keep the client up to date with the changes.  To mark the end
+ * of the initial burst of events, the client can use the
+ * wl_display.sync request immediately after calling
+ * wl_display.get_registry.
+ *
+ * A client can bind to a global object by using the bind
+ * request.  This creates a client-side handle that lets the object
+ * emit events to the client and lets the client invoke requests on
+ * the object.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='137'>/**
+ * @defgroup iface_wl_registry The wl_registry interface
+ *
+ * The singleton global registry object.  The server has a number of
+ * global objects that are available to all clients.  These objects
+ * typically represent an actual object in the server (for example,
+ * an input device) or they are singleton objects that provide
+ * extension functionality.
+ *
+ * When a client creates a registry object, the registry object
+ * will emit a global event for each global currently in the
+ * registry.  Globals come and go as a result of device or
+ * monitor hotplugs, reconfiguration or other events, and the
+ * registry will send out global and global_remove events to
+ * keep the client up to date with the changes.  To mark the end
+ * of the initial burst of events, the client can use the
+ * wl_display.sync request immediately after calling
+ * wl_display.get_registry.
+ *
+ * A client can bind to a global object by using the bind
+ * request.  This creates a client-side handle that lets the object
+ * emit events to the client and lets the client invoke requests on
+ * the object.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='918'>/**
+ * @ingroup iface_wl_registry
+ * @struct wl_registry_interface
+ */</doc>
+<mbr r='wl_registry_interface::bind' o='0' t='void (*)(struct wl_client *, struct wl_resource *, uint32_t, const char *, uint32_t, uint32_t)'/>

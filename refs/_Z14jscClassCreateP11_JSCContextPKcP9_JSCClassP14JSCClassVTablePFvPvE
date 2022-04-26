@@ -1,0 +1,15 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCClassPrivate.h' l='34' type='GRefPtr&lt;JSCClass&gt; jscClassCreate(JSCContext * , const char * , JSCClass * , JSCClassVTable * , GDestroyNotify )'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCClass.cpp' l='456' ll='495' type='GRefPtr&lt;JSCClass&gt; jscClassCreate(JSCContext * context, const char * name, JSCClass * parentClass, JSCClassVTable * vtable, GDestroyNotify destroyFunction)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCClass.cpp' l='443'>/**
+ * JSCClassVTable:
+ * @get_property: a #JSCClassGetPropertyFunction for getting a property.
+ * @set_property: a #JSCClassSetPropertyFunction for setting a property.
+ * @has_property: a #JSCClassHasPropertyFunction for querying a property.
+ * @delete_property: a #JSCClassDeletePropertyFunction for deleting a property.
+ * @enumerate_properties: a #JSCClassEnumeratePropertiesFunction for enumerating properties.
+ *
+ * Virtual table for a JSCClass. This can be optionally used when registering a #JSCClass in a #JSCContext
+ * to provide a custom implementation for the class. All virtual functions are optional and can be set to
+ * %NULL to fallback to the default implementation.
+ */</doc>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCContext.cpp' l='1092' u='c' c='_Z26jsc_context_register_classP11_JSCContextPKcP9_JSCClassP14JSCClassVTablePFvPvE'/>

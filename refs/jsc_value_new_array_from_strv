@@ -1,0 +1,12 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.h' l='134' type='JSCValue * jsc_value_new_array_from_strv(JSCContext * context, const char *const * strv)'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='561' ll='574' type='JSCValue * jsc_value_new_array_from_strv(JSCContext * context, const char *const * strv)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='551'>/**
+ * jsc_value_new_array_from_strv:
+ * @context: a #JSCContext
+ * @strv: (array zero-terminated=1) (element-type utf8): a %NULL-terminated array of strings
+ *
+ * Create a new #JSCValue referencing an array of strings with the items from @strv. If @array
+ * is %NULL or empty a new empty array will be created.
+ *
+ * Returns: (transfer full): a #JSCValue.
+ */</doc>

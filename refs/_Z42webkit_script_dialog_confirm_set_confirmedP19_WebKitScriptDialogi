@@ -1,0 +1,13 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitScriptDialog.cpp' l='118' ll='124' type='void webkit_script_dialog_confirm_set_confirmed(WebKitScriptDialog * dialog, gboolean confirmed)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitScriptDialog.cpp' l='106'>/**
+ * webkit_script_dialog_confirm_set_confirmed:
+ * @dialog: a #WebKitScriptDialog
+ * @confirmed: whether user confirmed the dialog
+ *
+ * This method is used for %WEBKIT_SCRIPT_DIALOG_CONFIRM and %WEBKIT_SCRIPT_DIALOG_BEFORE_UNLOAD_CONFIRM dialogs when
+ * #WebKitWebView::script-dialog signal is emitted to set whether the user
+ * confirmed the dialog or not. The default implementation of #WebKitWebView::script-dialog
+ * signal sets %TRUE when the OK or Stay buttons are clicked and %FALSE otherwise.
+ * It&apos;s an error to use this method with a #WebKitScriptDialog that is not of type
+ * %WEBKIT_SCRIPT_DIALOG_CONFIRM or %WEBKIT_SCRIPT_DIALOG_BEFORE_UNLOAD_CONFIRM
+ */</doc>

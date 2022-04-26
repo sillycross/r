@@ -1,0 +1,281 @@
+<inh f='WebKit/Source/WebCore/dom/EventTarget.h' l='124' c='WebCore::EventTargetWithInlineData'/>
+<inh f='WebKit/WTF/Headers/wtf/LoggerHelper.h' l='33' c='WTF::LoggerHelper'/>
+<def f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.h' l='52' ll='278'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.h' l='58' c='_ZN7WebCore9AudioNodeC1ERKS0_'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.h' l='58' c='_ZN7WebCore9AudioNodeaSERKS0_'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.h' l='58' c='_ZN7WebCore9AudioNodeaSERKS0_'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.h' l='59' c='_ZN7WebCore9AudioNode8bisoHeapEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.h' l='127' c='_ZN7WebCore9AudioNode7connectERS0_jj'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.h' l='132' c='_ZN7WebCore9AudioNode10disconnectERS0_'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.h' l='133' c='_ZN7WebCore9AudioNode10disconnectERS0_j'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.h' l='134' c='_ZN7WebCore9AudioNode10disconnectERS0_jj'/>
+<ovr f='WebKit/Source/WebCore/Modules/webaudio/AudioDestinationNode.h' l='36' c='WebCore::AudioDestinationNode'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioDestinationNode.h' l='36'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='156' c='_ZN7WebCore16BaseAudioContext15markForDeletionERNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='159' c='_ZN7WebCore16BaseAudioContext21addTailProcessingNodeERNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='160' c='_ZN7WebCore16BaseAudioContext24removeTailProcessingNodeERNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='164' c='_ZN7WebCore16BaseAudioContext20addAutomaticPullNodeERNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='165' c='_ZN7WebCore16BaseAudioContext23removeAutomaticPullNodeERNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='190' c='_ZN7WebCore16BaseAudioContext35addDeferredDecrementConnectionCountEPNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='202' c='_ZN7WebCore16BaseAudioContext27sourceNodeWillBeginPlaybackERNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='204' c='_ZN7WebCore16BaseAudioContext27sourceNodeDidFinishPlaybackERNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='284'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='290'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='294' c='_ZN7WebCore16BaseAudioContext18TailProcessingNodeC1ERNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='310' c='_ZNK7WebCore16BaseAudioContext18TailProcessingNodeptEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='312' c='_ZNK7WebCore16BaseAudioContext18TailProcessingNodeeqERKNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='314'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='324'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='332'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='333'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='335'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioContext.h' l='81' c='_ZN7WebCore12AudioContext27sourceNodeWillBeginPlaybackERNS_9AudioNodeE'/>
+<size>216</size>
+<doc f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.h' l='46'>// An AudioNode is the basic building block for handling audio within an AudioContext.
+// It may be an audio source, an intermediate processing module, or an audio destination.
+// Each AudioNode can have inputs and/or outputs. An AudioSourceNode has no inputs and a single output.
+// An AudioDestinationNode has one input and no outputs and represents the final destination to the audio hardware.
+// Most processing nodes such as filters will have one input and one output, although multiple inputs and outputs are possible.</doc>
+<fun r='_ZN7WebCore9AudioNodeC1ERKS0_'/>
+<fun r='_ZN7WebCore9AudioNode8bisoHeapEv'/>
+<fun r='_ZN7WebCore9AudioNodeC1ERNS_16BaseAudioContextENS0_8NodeTypeE'/>
+<fun r='_ZN7WebCore9AudioNodeD1Ev'/>
+<fun r='_ZN7WebCore9AudioNode7contextEv'/>
+<fun r='_ZNK7WebCore9AudioNode7contextEv'/>
+<fun r='_ZNK7WebCore9AudioNode8nodeTypeEv'/>
+<fun r='_ZN7WebCore9AudioNode3refEv'/>
+<fun r='_ZN7WebCore9AudioNode5derefEv'/>
+<fun r='_ZN7WebCore9AudioNode24incrementConnectionCountEv'/>
+<fun r='_ZN7WebCore9AudioNode24decrementConnectionCountEv'/>
+<fun r='_ZN7WebCore9AudioNode32decrementConnectionCountWithLockEv'/>
+<fun r='_ZN7WebCore9AudioNode7processEm'/>
+<fun r='_ZN7WebCore9AudioNode22processOnlyAudioParamsEm'/>
+<fun r='_ZN7WebCore9AudioNode10initializeEv'/>
+<fun r='_ZN7WebCore9AudioNode12uninitializeEv'/>
+<fun r='_ZNK7WebCore9AudioNode13isInitializedEv'/>
+<fun r='_ZNK7WebCore9AudioNode14numberOfInputsEv'/>
+<fun r='_ZNK7WebCore9AudioNode15numberOfOutputsEv'/>
+<fun r='_ZN7WebCore9AudioNode5inputEj'/>
+<fun r='_ZN7WebCore9AudioNode6outputEj'/>
+<fun r='_ZN7WebCore9AudioNode7connectERS0_jj'/>
+<fun r='_ZN7WebCore9AudioNode7connectERNS_10AudioParamEj'/>
+<fun r='_ZN7WebCore9AudioNode10disconnectEv'/>
+<fun r='_ZN7WebCore9AudioNode10disconnectEj'/>
+<fun r='_ZN7WebCore9AudioNode10disconnectERS0_'/>
+<fun r='_ZN7WebCore9AudioNode10disconnectERS0_j'/>
+<fun r='_ZN7WebCore9AudioNode10disconnectERS0_jj'/>
+<fun r='_ZN7WebCore9AudioNode10disconnectERNS_10AudioParamE'/>
+<fun r='_ZN7WebCore9AudioNode10disconnectERNS_10AudioParamEj'/>
+<fun r='_ZNK7WebCore9AudioNode10sampleRateEv'/>
+<fun r='_ZN7WebCore9AudioNode18processIfNecessaryEm'/>
+<fun r='_ZN7WebCore9AudioNode29checkNumberOfChannelsForInputEPNS_14AudioNodeInputE'/>
+<fun r='_ZNK7WebCore9AudioNode19isMarkedForDeletionEv'/>
+<fun r='_ZNK7WebCore9AudioNode8tailTimeEv'/>
+<fun r='_ZNK7WebCore9AudioNode11latencyTimeEv'/>
+<fun r='_ZNK7WebCore9AudioNode22requiresTailProcessingEv'/>
+<fun r='_ZNK7WebCore9AudioNode17propagatesSilenceEv'/>
+<fun r='_ZN7WebCore9AudioNode15inputsAreSilentEv'/>
+<fun r='_ZN7WebCore9AudioNode14silenceOutputsEv'/>
+<fun r='_ZN7WebCore9AudioNode24enableOutputsIfNecessaryEv'/>
+<fun r='_ZN7WebCore9AudioNode25disableOutputsIfNecessaryEv'/>
+<fun r='_ZN7WebCore9AudioNode14disableOutputsEv'/>
+<fun r='_ZNK7WebCore9AudioNode12channelCountEv'/>
+<fun r='_ZN7WebCore9AudioNode15setChannelCountEj'/>
+<fun r='_ZNK7WebCore9AudioNode16channelCountModeEv'/>
+<fun r='_ZN7WebCore9AudioNode19setChannelCountModeENS_16ChannelCountModeE'/>
+<fun r='_ZNK7WebCore9AudioNode21channelInterpretationEv'/>
+<fun r='_ZN7WebCore9AudioNode24setChannelInterpretationENS_21ChannelInterpretationE'/>
+<fun r='_ZNK7WebCore9AudioNode20isFinishedSourceNodeEv'/>
+<fun r='_ZN7WebCore9AudioNode23setIsFinishedSourceNodeEv'/>
+<fun r='_ZNK7WebCore9AudioNode16isTailProcessingEv'/>
+<fun r='_ZN7WebCore9AudioNode19setIsTailProcessingEb'/>
+<fun r='_ZN7WebCore9AudioNode8addInputEv'/>
+<fun r='_ZN7WebCore9AudioNode9addOutputEj'/>
+<fun r='_ZN7WebCore9AudioNode30markNodeForDeletionIfNecessaryEv'/>
+<fun r='_ZN7WebCore9AudioNode13derefWithLockEv'/>
+<fun r='_ZN7WebCore9AudioNode22handleAudioNodeOptionsERKNS_16AudioNodeOptionsERKNS0_23DefaultAudioNodeOptionsE'/>
+<fun r='_ZN7WebCore9AudioNode10pullInputsEm'/>
+<fun r='_ZN7WebCore9AudioNode23updateChannelsForInputsEv'/>
+<fun r='_ZNK7WebCore9AudioNode6loggerEv'/>
+<fun r='_ZNK7WebCore9AudioNode13logIdentifierEv'/>
+<fun r='_ZNK7WebCore9AudioNode12logClassNameEv'/>
+<fun r='_ZNK7WebCore9AudioNode10logChannelEv'/>
+<fun r='_ZN7WebCore9AudioNode28initializeDefaultNodeOptionsEjNS_16ChannelCountModeENS_21ChannelInterpretationE'/>
+<fun r='_ZN7WebCore9AudioNode16updatePullStatusEv'/>
+<fun r='_ZN7WebCore9AudioNode21toWeakOrStrongContextERNS_16BaseAudioContextENS0_8NodeTypeE'/>
+<fun r='_ZNK7WebCore9AudioNode20eventTargetInterfaceEv'/>
+<fun r='_ZNK7WebCore9AudioNode22scriptExecutionContextEv'/>
+<mbr r='WebCore::AudioNode::m_isInitialized' o='768' t='volatile bool'/>
+<mbr r='WebCore::AudioNode::m_nodeType' o='800' t='WebCore::AudioNode::NodeType'/>
+<mbr r='WebCore::AudioNode::m_context' o='832' t='WebCore::AudioNode::WeakOrStrongContext'/>
+<mbr r='WebCore::AudioNode::m_inputs' o='960' t='Vector&lt;std::unique_ptr&lt;AudioNodeInput&gt; &gt;'/>
+<mbr r='WebCore::AudioNode::m_outputs' o='1088' t='Vector&lt;std::unique_ptr&lt;AudioNodeOutput&gt; &gt;'/>
+<mbr r='WebCore::AudioNode::m_lastProcessingTime' o='1216' t='double'/>
+<mbr r='WebCore::AudioNode::m_lastNonSilentTime' o='1280' t='double'/>
+<mbr r='WebCore::AudioNode::m_normalRefCount' o='1344' t='std::atomic&lt;int&gt;'/>
+<mbr r='WebCore::AudioNode::m_connectionRefCount' o='1376' t='std::atomic&lt;int&gt;'/>
+<mbr r='WebCore::AudioNode::m_isMarkedForDeletion' o='1408' t='bool'/>
+<mbr r='WebCore::AudioNode::m_isDisabled' o='1416' t='bool'/>
+<mbr r='WebCore::AudioNode::m_isFinishedSourceNode' o='1424' t='bool'/>
+<mbr r='WebCore::AudioNode::m_isTailProcessing' o='1432' t='bool'/>
+<fun r='_ZN7WebCore9AudioNode14refEventTargetEv'/>
+<fun r='_ZN7WebCore9AudioNode16derefEventTargetEv'/>
+<mbr r='WebCore::AudioNode::m_logger' o='1472' t='Ref&lt;const WTF::Logger&gt;'/>
+<mbr r='WebCore::AudioNode::m_logIdentifier' o='1536' t='const void *'/>
+<mbr r='WebCore::AudioNode::m_channelCount' o='1600' t='unsigned int'/>
+<mbr r='WebCore::AudioNode::m_channelCountMode' o='1632' t='WebCore::ChannelCountMode'/>
+<mbr r='WebCore::AudioNode::m_channelInterpretation' o='1664' t='WebCore::ChannelInterpretation'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioNode.h' l='34'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioNode.h' l='35' c='_ZN7WebCore11JSAudioNode6createEPN3JSC9StructureEPNS_17JSDOMGlobalObjectEON3WTF3RefINS_9AudioNodeENS6_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioNode.h' l='44' c='_ZN7WebCore11JSAudioNode9toWrappedERN3JSC2VMENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioNode.h' l='62' c='_ZNK7WebCore11JSAudioNode7wrappedEv'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioNode.h' l='64' c='_ZNK7WebCore11JSAudioNode7wrappedEv'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioNode.h' l='67' c='_ZN7WebCore11JSAudioNodeC1EPN3JSC9StructureERNS_17JSDOMGlobalObjectEON3WTF3RefINS_9AudioNodeENS6_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioNode.h' l='72' c='_ZN7WebCore4toJSEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectERNS_9AudioNodeE'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioNode.h' l='73' c='_ZN7WebCore4toJSEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectEPNS_9AudioNodeE'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioNode.h' l='74' c='_ZN7WebCore16toJSNewlyCreatedEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectEON3WTF3RefINS_9AudioNodeENS5_12RawPtrTraitsIS7_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioNode.h' l='75' c='_ZN7WebCore16toJSNewlyCreatedEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectEON3WTF6RefPtrINS_9AudioNodeENS5_12RawPtrTraitsIS7_EENS5_21DefaultRefDerefTraitsIS7_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioNode.h' l='77'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioNode.h' l='79'/>
+<use f='WebKit/WebCore/DerivedSources/EventTargetFactory.cpp' l='49' c='_ZN7WebCore4toJSEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectERNS_11EventTargetE'/>
+<size>216</size>
+<ovr f='WebKit/Source/WebCore/Modules/webaudio/ScriptProcessorNode.h' l='48' c='WebCore::ScriptProcessorNode'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/ScriptProcessorNode.h' l='48'/>
+<size>216</size>
+<ovr f='WebKit/Source/WebCore/Modules/webaudio/StereoPannerNode.h' l='40' c='WebCore::StereoPannerNode'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/StereoPannerNode.h' l='40'/>
+<size>216</size>
+<ovr f='WebKit/Source/WebCore/Modules/webaudio/AudioBasicProcessorNode.h' l='37' c='WebCore::AudioBasicProcessorNode'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioBasicProcessorNode.h' l='37'/>
+<size>216</size>
+<ovr f='WebKit/Source/WebCore/Modules/webaudio/ChannelMergerNode.h' l='38' c='WebCore::ChannelMergerNode'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/ChannelMergerNode.h' l='38'/>
+<ovr f='WebKit/Source/WebCore/Modules/webaudio/ChannelSplitterNode.h' l='34' c='WebCore::ChannelSplitterNode'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/ChannelSplitterNode.h' l='34'/>
+<size>216</size>
+<ovr f='WebKit/Source/WebCore/Modules/webaudio/AudioScheduledSourceNode.h' l='36' c='WebCore::AudioScheduledSourceNode'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioScheduledSourceNode.h' l='36'/>
+<size>216</size>
+<ovr f='WebKit/Source/WebCore/Modules/webaudio/ConvolverNode.h' l='37' c='WebCore::ConvolverNode'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/ConvolverNode.h' l='37'/>
+<size>216</size>
+<ovr f='WebKit/Source/WebCore/Modules/webaudio/MediaElementAudioSourceNode.h' l='42' c='WebCore::MediaElementAudioSourceNode'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/MediaElementAudioSourceNode.h' l='42'/>
+<ovr f='WebKit/Source/WebCore/Modules/webaudio/AudioBasicInspectorNode.h' l='34' c='WebCore::AudioBasicInspectorNode'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioBasicInspectorNode.h' l='34'/>
+<ovr f='WebKit/Source/WebCore/Modules/webaudio/AudioWorkletNode.h' l='53' c='WebCore::AudioWorkletNode'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioWorkletNode.h' l='53'/>
+<ovr f='WebKit/Source/WebCore/Modules/webaudio/DynamicsCompressorNode.h' l='37' c='WebCore::DynamicsCompressorNode'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/DynamicsCompressorNode.h' l='37'/>
+<ovr f='WebKit/Source/WebCore/Modules/webaudio/GainNode.h' l='39' c='WebCore::GainNode'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/GainNode.h' l='39'/>
+<ovr f='WebKit/Source/WebCore/Modules/webaudio/PannerNode.h' l='54' c='WebCore::PannerNode'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/PannerNode.h' l='54'/>
+<size>216</size>
+<use f='WebKit/WebCore/DerivedSources/JSAudioNode.cpp' l='154' c='_ZN7WebCore11JSAudioNodeC1EPN3JSC9StructureERNS_17JSDOMGlobalObjectEON3WTF3RefINS_9AudioNodeENS6_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioNode.cpp' l='339' c='_ZN7WebCoreL41jsAudioNodePrototypeFunction_connect1BodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSAudioNodeE'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioNode.cpp' l='430' c='_ZN7WebCoreL44jsAudioNodePrototypeFunction_disconnect3BodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSAudioNodeE'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioNode.cpp' l='443' c='_ZN7WebCoreL44jsAudioNodePrototypeFunction_disconnect4BodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSAudioNodeE'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioNode.cpp' l='459' c='_ZN7WebCoreL44jsAudioNodePrototypeFunction_disconnect5BodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSAudioNodeE'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioNode.cpp' l='569' c='_ZN7WebCore11JSAudioNode9toWrappedERN3JSC2VMENS1_7JSValueE'/>
+<size>216</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeInput.h' l='45' c='_ZN7WebCore14AudioNodeInputC1EPNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeInput.h' l='52' c='_ZNK7WebCore14AudioNodeInput4nodeEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeInput.h' l='83'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeOutput.h' l='46' c='_ZN7WebCore15AudioNodeOutputC1EPNS_9AudioNodeEj'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeOutput.h' l='49' c='_ZNK7WebCore15AudioNodeOutput4nodeEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeOutput.h' l='94'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeOutput.h' l='143'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioBasicInspectorNode.cpp' l='40' c='_ZN7WebCore23AudioBasicInspectorNodeC1ERNS_16BaseAudioContextENS_9AudioNode8NodeTypeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioBasicProcessorNode.cpp' l='43' c='_ZN7WebCore23AudioBasicProcessorNodeC1ERNS_16BaseAudioContextENS_9AudioNode8NodeTypeE'/>
+<size>216</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioContext.cpp' l='287' c='_ZN7WebCore12AudioContext27sourceNodeWillBeginPlaybackERNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioDestinationNode.cpp' l='50' c='_ZN7WebCore20AudioDestinationNodeC1ERNS_16BaseAudioContextEf'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.cpp' l='47' c='_ZN7WebCore9AudioNode8bisoHeapEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.cpp' l='47' c='_ZN7WebCore9AudioNode8bisoHeapEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.cpp' l='47' c='_ZN7WebCore9AudioNodenwEm'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.cpp' l='181' c='_ZN7WebCore9AudioNode7connectERS0_jj'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.cpp' l='262' c='_ZN7WebCore9AudioNode10disconnectERS0_'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.cpp' l='286' c='_ZN7WebCore9AudioNode10disconnectERS0_j'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.cpp' l='311' c='_ZN7WebCore9AudioNode10disconnectERS0_jj'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.cpp' l='447' c='_ZNK7WebCore9AudioNode22scriptExecutionContextEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeInput.cpp' l='40' c='_ZN7WebCore14AudioNodeInputC1EPNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeOutput.cpp' l='40' c='_ZN7WebCore15AudioNodeOutputC1EPNS_9AudioNodeEj'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeOutput.cpp' l='102' c='_ZN7WebCore15AudioNodeOutput21propagateChannelCountEv'/>
+<size>216</size>
+<fun r='_ZN7WebCore9AudioNode8bisoHeapEv'/>
+<fun r='_ZN7WebCore9AudioNode21toWeakOrStrongContextERNS_16BaseAudioContextENS0_8NodeTypeE'/>
+<fun r='_ZN7WebCore9AudioNodeC1ERNS_16BaseAudioContextENS0_8NodeTypeE'/>
+<fun r='_ZN7WebCore9AudioNodeD1Ev'/>
+<fun r='_ZN7WebCore9AudioNode10initializeEv'/>
+<fun r='_ZN7WebCore9AudioNode12uninitializeEv'/>
+<fun r='_ZN7WebCore9AudioNode8addInputEv'/>
+<fun r='_ZN7WebCore9AudioNode9addOutputEj'/>
+<fun r='_ZN7WebCore9AudioNode5inputEj'/>
+<fun r='_ZN7WebCore9AudioNode6outputEj'/>
+<fun r='_ZN7WebCore9AudioNode7connectERS0_jj'/>
+<fun r='_ZN7WebCore9AudioNode7connectERNS_10AudioParamEj'/>
+<fun r='_ZN7WebCore9AudioNode10disconnectEv'/>
+<fun r='_ZN7WebCore9AudioNode10disconnectEj'/>
+<fun r='_ZN7WebCore9AudioNode10disconnectERS0_'/>
+<fun r='_ZN7WebCore9AudioNode10disconnectERS0_j'/>
+<fun r='_ZN7WebCore9AudioNode10disconnectERS0_jj'/>
+<fun r='_ZN7WebCore9AudioNode10disconnectERNS_10AudioParamE'/>
+<fun r='_ZN7WebCore9AudioNode10disconnectERNS_10AudioParamEj'/>
+<fun r='_ZNK7WebCore9AudioNode10sampleRateEv'/>
+<fun r='_ZN7WebCore9AudioNode15setChannelCountEj'/>
+<fun r='_ZN7WebCore9AudioNode19setChannelCountModeENS_16ChannelCountModeE'/>
+<fun r='_ZN7WebCore9AudioNode24setChannelInterpretationENS_21ChannelInterpretationE'/>
+<fun r='_ZN7WebCore9AudioNode23updateChannelsForInputsEv'/>
+<fun r='_ZN7WebCore9AudioNode28initializeDefaultNodeOptionsEjNS_16ChannelCountModeENS_21ChannelInterpretationE'/>
+<fun r='_ZNK7WebCore9AudioNode20eventTargetInterfaceEv'/>
+<fun r='_ZNK7WebCore9AudioNode22scriptExecutionContextEv'/>
+<fun r='_ZN7WebCore9AudioNode18processIfNecessaryEm'/>
+<fun r='_ZN7WebCore9AudioNode29checkNumberOfChannelsForInputEPNS_14AudioNodeInputE'/>
+<fun r='_ZNK7WebCore9AudioNode17propagatesSilenceEv'/>
+<fun r='_ZN7WebCore9AudioNode10pullInputsEm'/>
+<fun r='_ZN7WebCore9AudioNode15inputsAreSilentEv'/>
+<fun r='_ZN7WebCore9AudioNode14silenceOutputsEv'/>
+<fun r='_ZN7WebCore9AudioNode24enableOutputsIfNecessaryEv'/>
+<fun r='_ZN7WebCore9AudioNode25disableOutputsIfNecessaryEv'/>
+<fun r='_ZN7WebCore9AudioNode14disableOutputsEv'/>
+<fun r='_ZN7WebCore9AudioNode24incrementConnectionCountEv'/>
+<fun r='_ZN7WebCore9AudioNode24decrementConnectionCountEv'/>
+<fun r='_ZN7WebCore9AudioNode32decrementConnectionCountWithLockEv'/>
+<fun r='_ZN7WebCore9AudioNode30markNodeForDeletionIfNecessaryEv'/>
+<fun r='_ZN7WebCore9AudioNode3refEv'/>
+<fun r='_ZN7WebCore9AudioNode5derefEv'/>
+<fun r='_ZN7WebCore9AudioNode13derefWithLockEv'/>
+<fun r='_ZN7WebCore9AudioNode22handleAudioNodeOptionsERKNS_16AudioNodeOptionsERKNS0_23DefaultAudioNodeOptionsE'/>
+<fun r='_ZN7WebCore9AudioNode7contextEv'/>
+<fun r='_ZNK7WebCore9AudioNode7contextEv'/>
+<fun r='_ZNK7WebCore9AudioNode10logChannelEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioScheduledSourceNode.cpp' l='51' c='_ZN7WebCore24AudioScheduledSourceNodeC1ERNS_16BaseAudioContextENS_9AudioNode8NodeTypeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioWorkletNode.cpp' l='124' c='_ZN7WebCore16AudioWorkletNodeC1ERNS_16BaseAudioContextERKN3WTF6StringEONS_23AudioWorkletNodeOptionsEONS3_3RefINS_11MessagePortENS3_12RawPtrTraitsISA_EEEE'/>
+<size>216</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='530' c='_ZN7WebCore16BaseAudioContext35addDeferredDecrementConnectionCountEPNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='600' c='_ZN7WebCore16BaseAudioContext21addTailProcessingNodeERNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='615' c='_ZN7WebCore16BaseAudioContext24removeTailProcessingNodeERNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='686' c='_ZN7WebCore16BaseAudioContext15markForDeletionERNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='740' c='_ZN7WebCore16BaseAudioContext17deleteMarkedNodesEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='807' c='_ZN7WebCore16BaseAudioContext20addAutomaticPullNodeERNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='818' c='_ZN7WebCore16BaseAudioContext23removeAutomaticPullNodeERNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='912' c='_ZN7WebCore16BaseAudioContext27sourceNodeWillBeginPlaybackERNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='922' c='_ZN7WebCore16BaseAudioContext27sourceNodeDidFinishPlaybackERNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/ChannelMergerNode.cpp' l='59' c='_ZN7WebCore17ChannelMergerNodeC1ERNS_16BaseAudioContextEj'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/ChannelSplitterNode.cpp' l='55' c='_ZN7WebCore19ChannelSplitterNodeC1ERNS_16BaseAudioContextEj'/>
+<size>216</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/ConvolverNode.cpp' l='76' c='_ZN7WebCore13ConvolverNodeC1ERNS_16BaseAudioContextE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/DynamicsCompressorNode.cpp' l='58' c='_ZN7WebCore22DynamicsCompressorNodeC1ERNS_16BaseAudioContextERKNS_25DynamicsCompressorOptionsE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/GainNode.cpp' l='55' c='_ZN7WebCore8GainNodeC1ERNS_16BaseAudioContextE'/>
+<size>216</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/MediaElementAudioSourceNode.cpp' l='68' c='_ZN7WebCore27MediaElementAudioSourceNodeC1ERNS_16BaseAudioContextEON3WTF3RefINS_16HTMLMediaElementENS3_12RawPtrTraitsIS5_EEEE'/>
+<size>216</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/PannerNode.cpp' l='81' c='_ZN7WebCore10PannerNodeC1ERNS_16BaseAudioContextERKNS_13PannerOptionsE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/ScriptProcessorNode.cpp' l='54' c='_ZN7WebCore19ScriptProcessorNodeC1ERNS_16BaseAudioContextEmjj'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/StereoPannerNode.cpp' l='54' c='_ZN7WebCore16StereoPannerNodeC1ERNS_16BaseAudioContextEf'/>
+<size>216</size>
+<use f='WebKit/Source/WebCore/bindings/js/JSAudioNodeCustom.cpp' l='78' c='_ZN7WebCore16toJSNewlyCreatedEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectEON3WTF3RefINS_9AudioNodeENS5_12RawPtrTraitsIS7_EEEE'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSAudioNodeCustom.cpp' l='101' c='_ZN7WebCore16toJSNewlyCreatedEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectEON3WTF3RefINS_9AudioNodeENS5_12RawPtrTraitsIS7_EEEE'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSAudioNodeCustom.cpp' l='137' c='_ZN7WebCore4toJSEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectERNS_9AudioNodeE'/>
+<size>216</size>

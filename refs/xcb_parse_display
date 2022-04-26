@@ -1,0 +1,18 @@
+<dec f='include/xcb/xcb.h' l='548' type='int xcb_parse_display(const char * name, char ** host, int * display, int * screen)'/>
+<doc f='include/xcb/xcb.h' l='531'>/**
+ * @brief Parses a display string name in the form documented by X(7x).
+ * @param name The name of the display.
+ * @param host A pointer to a malloc&apos;d copy of the hostname.
+ * @param display A pointer to the display number.
+ * @param screen A pointer to the screen number.
+ * @return 0 on failure, non 0 otherwise.
+ *
+ * Parses the display string name @p display_name in the form
+ * documented by X(7x). Has no side effects on failure. If
+ * @p displayname is @c NULL or empty, it uses the environment
+ * variable DISPLAY. @p hostp is a pointer to a newly allocated string
+ * that contain the host name. @p displayp is set to the display
+ * number and @p screenp to the preferred screen number. @p screenp
+ * can be @c NULL. If @p displayname does not contain a screen number,
+ * it is set to @c 0.
+ */</doc>

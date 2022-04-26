@@ -1,0 +1,27 @@
+<use f='include/gstreamer-1.0/gst/gstpreset.h' l='41'/>
+<def f='include/gstreamer-1.0/gst/gstpreset.h' l='57' ll='78'/>
+<size>112</size>
+<doc f='include/gstreamer-1.0/gst/gstpreset.h' l='43'>/**
+ * GstPresetInterface:
+ * @parent: parent interface type.
+ * @get_preset_names: virtual method to get list of presets
+ * @get_property_names: virtual methods to get properties that are persistent
+ * @load_preset: virtual methods to load a preset into properties
+ * @save_preset: virtual methods to save properties into a preset
+ * @rename_preset: virtual methods to rename a preset
+ * @delete_preset: virtual methods to remove a preset
+ * @set_meta: virtual methods to set textual meta data to a preset
+ * @get_meta: virtual methods to get textual meta data from a preset
+ *
+ * #GstPreset interface.
+ */</doc>
+<mbr r='_GstPresetInterface::parent' o='0' t='GTypeInterface'/>
+<mbr r='_GstPresetInterface::get_preset_names' o='128' t='gchar **(*)(GstPreset *)'/>
+<mbr r='_GstPresetInterface::get_property_names' o='192' t='gchar **(*)(GstPreset *)'/>
+<mbr r='_GstPresetInterface::load_preset' o='256' t='gboolean (*)(GstPreset *, const gchar *)'/>
+<mbr r='_GstPresetInterface::save_preset' o='320' t='gboolean (*)(GstPreset *, const gchar *)'/>
+<mbr r='_GstPresetInterface::rename_preset' o='384' t='gboolean (*)(GstPreset *, const gchar *, const gchar *)'/>
+<mbr r='_GstPresetInterface::delete_preset' o='448' t='gboolean (*)(GstPreset *, const gchar *)'/>
+<mbr r='_GstPresetInterface::set_meta' o='512' t='gboolean (*)(GstPreset *, const gchar *, const gchar *, const gchar *)'/>
+<mbr r='_GstPresetInterface::get_meta' o='576' t='gboolean (*)(GstPreset *, const gchar *, const gchar *, gchar **)'/>
+<mbr r='_GstPresetInterface::_gst_reserved' o='640' t='gpointer [4]'/>

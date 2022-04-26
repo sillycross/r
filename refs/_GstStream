@@ -1,0 +1,26 @@
+<use f='include/gstreamer-1.0/gst/gststreams.h' l='66'/>
+<def f='include/gstreamer-1.0/gst/gststreams.h' l='89' ll='100'/>
+<size>136</size>
+<doc f='include/gstreamer-1.0/gst/gststreams.h' l='70'>/**
+ * GstStream:
+ * @stream_id: The Stream Identifier for this #GstStream
+ *
+ * A high-level object representing a single stream. It might be backed, or
+ * not, by an actual flow of data in a pipeline (#GstPad).
+ *
+ * A #GstStream does not care about data changes (such as decoding, encoding,
+ * parsing,...) as long as the underlying data flow corresponds to the same
+ * high-level flow (ex: a certain audio track).
+ *
+ * A #GstStream contains all the information pertinent to a stream, such as
+ * stream-id, tags, caps, type, ...
+ *
+ * Elements can subclass a #GstStream for internal usage (to contain information
+ * pertinent to streams of data).
+ *
+ * Since: 1.10
+ */</doc>
+<mbr r='_GstStream::object' o='0' t='GstObject'/>
+<mbr r='_GstStream::stream_id' o='704' t='const gchar *'/>
+<mbr r='_GstStream::priv' o='768' t='GstStreamPrivate *'/>
+<mbr r='_GstStream::_gst_reserved' o='832' t='gpointer [4]'/>

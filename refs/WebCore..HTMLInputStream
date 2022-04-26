@@ -1,0 +1,42 @@
+<def f='WebKit/Source/WebCore/html/parser/HTMLInputStream.h' l='50' ll='122'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLInputStream.h' l='51' c='_ZN7WebCore15HTMLInputStreamC1ERKS0_'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLInputStream.h' l='51' c='_ZN7WebCore15HTMLInputStreamaSERKS0_'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLInputStream.h' l='51' c='_ZN7WebCore15HTMLInputStreamaSERKS0_'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLInputStream.h' l='127' c='_ZN7WebCore20InsertionPointRecordC1ERNS_15HTMLInputStreamE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLInputStream.h' l='149'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLScriptRunnerHost.h' l='42' c='_ZN7WebCore20HTMLScriptRunnerHost11inputStreamEv'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLDocumentParser.h' l='97' c='_ZN7WebCore18HTMLDocumentParser11inputStreamEv'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLDocumentParser.h' l='129'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLDocumentParser.h' l='154' c='_ZN7WebCore18HTMLDocumentParser11inputStreamEv'/>
+<size>128</size>
+<doc f='WebKit/Source/WebCore/html/parser/HTMLInputStream.h' l='33'>// The InputStream is made up of a sequence of SegmentedStrings:
+//
+// [--current--][--next--][--next--] ... [--next--]
+//            /\                         (also called m_last)
+//            L_ current insertion point
+//
+// The current segmented string is stored in InputStream.  Each of the
+// afterInsertionPoint buffers are stored in InsertionPointRecords on the
+// stack.
+//
+// We remove characters from the &quot;current&quot; string in the InputStream.
+// document.write() will add characters at the current insertion point,
+// which appends them to the &quot;current&quot; string.
+//
+// m_last is a pointer to the last of the afterInsertionPoint strings.
+// The network adds data at the end of the InputStream, which appends
+// them to the &quot;last&quot; string.</doc>
+<fun r='_ZN7WebCore15HTMLInputStreamC1ERKS0_'/>
+<fun r='_ZN7WebCore15HTMLInputStreamC1Ev'/>
+<fun r='_ZN7WebCore15HTMLInputStream11appendToEndEONS_15SegmentedStringE'/>
+<fun r='_ZN7WebCore15HTMLInputStream29insertAtCurrentInsertionPointEONS_15SegmentedStringE'/>
+<fun r='_ZNK7WebCore15HTMLInputStream17hasInsertionPointEv'/>
+<fun r='_ZN7WebCore15HTMLInputStream13markEndOfFileEv'/>
+<fun r='_ZN7WebCore15HTMLInputStream28closeWithoutMarkingEndOfFileEv'/>
+<fun r='_ZNK7WebCore15HTMLInputStream17haveSeenEndOfFileEv'/>
+<fun r='_ZN7WebCore15HTMLInputStream7currentEv'/>
+<fun r='_ZNK7WebCore15HTMLInputStream7currentEv'/>
+<fun r='_ZN7WebCore15HTMLInputStream9splitIntoERNS_15SegmentedStringE'/>
+<fun r='_ZN7WebCore15HTMLInputStream9mergeFromERNS_15SegmentedStringE'/>
+<mbr r='WebCore::HTMLInputStream::m_first' o='0' t='WebCore::SegmentedString'/>
+<mbr r='WebCore::HTMLInputStream::m_last' o='960' t='WebCore::SegmentedString *'/>

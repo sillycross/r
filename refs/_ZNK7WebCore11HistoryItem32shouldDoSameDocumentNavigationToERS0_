@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebCore/history/HistoryItem.h' l='163' type='bool WebCore::HistoryItem::shouldDoSameDocumentNavigationTo(WebCore::HistoryItem &amp; otherItem) const'/>
+<def f='WebKit/Source/WebCore/history/HistoryItem.cpp' l='389' ll='402' type='bool WebCore::HistoryItem::shouldDoSameDocumentNavigationTo(WebCore::HistoryItem &amp; otherItem) const'/>
+<doc f='WebKit/Source/WebCore/history/HistoryItem.cpp' l='386'>// We do same-document navigation if going to a different item and if either of the following is true:
+// - The other item corresponds to the same document (for history entries created via pushState or fragment changes).
+// - The other item corresponds to the same set of documents, including frames (for history entries created via regular navigation)</doc>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='3853' u='c' c='_ZN7WebCore11FrameLoader8loadItemERNS_11HistoryItemEPS1_NS_13FrameLoadTypeENS_27ShouldTreatAsContinuingLoadE'/>
+<use f='WebKit/Source/WebCore/loader/HistoryController.cpp' l='287' u='c' c='_ZNK7WebCore11FrameLoader17HistoryController31shouldStopLoadingForHistoryItemERNS_11HistoryItemE'/>
+<use f='WebKit/Source/WebCore/loader/HistoryController.cpp' l='577' u='c' c='_ZN7WebCore11FrameLoader17HistoryController40recursiveUpdateForSameDocumentNavigationEv'/>

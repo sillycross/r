@@ -1,0 +1,88 @@
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.h' l='316' c='_ZN3JSC10AccessCase17generateWithGuardERNS_21AccessGenerationStateERNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.h' l='319' c='_ZN3JSC10AccessCase8generateERNS_21AccessGenerationStateE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.h' l='321' c='_ZN3JSC10AccessCase12generateImplERNS_21AccessGenerationStateE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/IntrinsicGetterAccessCase.h' l='43' c='_ZN3JSC25IntrinsicGetterAccessCase19emitIntrinsicGetterERNS_21AccessGenerationStateE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PolymorphicAccess.h' l='180'/>
+<def f='WebKit/Source/JavaScriptCore/bytecode/PolymorphicAccess.h' l='193' ll='291'/>
+<use f='WebKit/Source/JavaScriptCore/jit/IntrinsicEmitter.cpp' l='73' c='_ZN3JSC25IntrinsicGetterAccessCase19emitIntrinsicGetterERNS_21AccessGenerationStateE'/>
+<size>200</size>
+<fun r='_ZN3JSC21AccessGenerationStateC1ERNS_2VMEPNS_14JSGlobalObjectENS_8ECMAModeE'/>
+<mbr r='JSC::AccessGenerationState::m_vm' o='0' t='JSC::VM &amp;'/>
+<mbr r='JSC::AccessGenerationState::m_globalObject' o='64' t='JSC::JSGlobalObject *'/>
+<mbr r='JSC::AccessGenerationState::jit' o='128' t='JSC::CCallHelpers *'/>
+<mbr r='JSC::AccessGenerationState::allocator' o='192' t='JSC::ScratchRegisterAllocator *'/>
+<mbr r='JSC::AccessGenerationState::preservedReusedRegisterState' o='256' t='ScratchRegisterAllocator::PreservedState'/>
+<mbr r='JSC::AccessGenerationState::access' o='320' t='JSC::PolymorphicAccess *'/>
+<mbr r='JSC::AccessGenerationState::stubInfo' o='384' t='JSC::StructureStubInfo *'/>
+<mbr r='JSC::AccessGenerationState::success' o='448' t='MacroAssembler::JumpList'/>
+<mbr r='JSC::AccessGenerationState::failAndRepatch' o='640' t='MacroAssembler::JumpList'/>
+<mbr r='JSC::AccessGenerationState::failAndIgnore' o='832' t='MacroAssembler::JumpList'/>
+<mbr r='JSC::AccessGenerationState::baseGPR' o='1024' t='JSC::GPRReg'/>
+<mbr r='JSC::AccessGenerationState::u' o='1032' t='union (anonymous union at /home/lemon/WebKit/Source/JavaScriptCore/bytecode/PolymorphicAccess.h:217:5)'/>
+<mbr r='JSC::AccessGenerationState::valueRegs' o='1040' t='JSC::JSValueRegs'/>
+<mbr r='JSC::AccessGenerationState::scratchGPR' o='1048' t='JSC::GPRReg'/>
+<mbr r='JSC::AccessGenerationState::scratchFPR' o='1056' t='JSC::FPRReg'/>
+<mbr r='JSC::AccessGenerationState::m_ecmaMode' o='1064' t='JSC::ECMAMode'/>
+<mbr r='JSC::AccessGenerationState::watchpoints' o='1088' t='std::unique_ptr&lt;WatchpointsOnStructureStubInfo&gt;'/>
+<mbr r='JSC::AccessGenerationState::weakStructures' o='1152' t='Vector&lt;JSC::StructureID&gt;'/>
+<mbr r='JSC::AccessGenerationState::m_callLinkInfos' o='1280' t='Bag&lt;JSC::CallLinkInfo&gt;'/>
+<mbr r='JSC::AccessGenerationState::m_doesJSGetterSetterCalls' o='1344' t='bool'/>
+<mbr r='JSC::AccessGenerationState::m_doesCalls' o='1345' t='bool'/>
+<fun r='_ZN3JSC21AccessGenerationState17installWatchpointEPNS_9CodeBlockERKNS_23ObjectPropertyConditionE'/>
+<fun r='_ZN3JSC21AccessGenerationState14restoreScratchEv'/>
+<fun r='_ZN3JSC21AccessGenerationState7succeedEv'/>
+<fun r='_ZN3JSC21AccessGenerationState49calculateLiveRegistersForCallAndExceptionHandlingEv'/>
+<fun r='_ZN3JSC21AccessGenerationState35preserveLiveRegistersToStackForCallERKNS_11RegisterSetE'/>
+<fun r='_ZN3JSC21AccessGenerationState52preserveLiveRegistersToStackForCallWithoutExceptionsERKNS_11RegisterSetE'/>
+<fun r='_ZN3JSC21AccessGenerationState55restoreLiveRegistersFromStackForCallWithThrownExceptionERKNS0_10SpillStateE'/>
+<fun r='_ZN3JSC21AccessGenerationState36restoreLiveRegistersFromStackForCallERKNS0_10SpillStateERKNS_11RegisterSetE'/>
+<fun r='_ZN3JSC21AccessGenerationState20liveRegistersForCallEv'/>
+<fun r='_ZN3JSC21AccessGenerationState43callSiteIndexForExceptionHandlingOrOriginalEv'/>
+<fun r='_ZN3JSC21AccessGenerationState33callSiteIndexForExceptionHandlingEv'/>
+<fun r='_ZN3JSC21AccessGenerationState24originalExceptionHandlerEv'/>
+<fun r='_ZNK3JSC21AccessGenerationState34needsToRestoreRegistersIfExceptionEv'/>
+<fun r='_ZNK3JSC21AccessGenerationState21originalCallSiteIndexEv'/>
+<fun r='_ZN3JSC21AccessGenerationState28emitExplicitExceptionHandlerEv'/>
+<fun r='_ZN3JSC21AccessGenerationState30setSpillStateForJSGetterSetterERNS0_10SpillStateE'/>
+<fun r='_ZNK3JSC21AccessGenerationState27spillStateForJSGetterSetterEv'/>
+<fun r='_ZN3JSC21AccessGenerationState50liveRegistersToPreserveAtExceptionHandlingCallSiteEv'/>
+<mbr r='JSC::AccessGenerationState::m_liveRegistersToPreserveAtExceptionHandlingCallSite' o='1376' t='JSC::RegisterSet'/>
+<mbr r='JSC::AccessGenerationState::m_liveRegistersForCall' o='1408' t='JSC::RegisterSet'/>
+<mbr r='JSC::AccessGenerationState::m_callSiteIndex' o='1440' t='JSC::CallSiteIndex'/>
+<mbr r='JSC::AccessGenerationState::m_spillStateForJSGetterSetter' o='1472' t='JSC::AccessGenerationState::SpillState'/>
+<mbr r='JSC::AccessGenerationState::m_calculatedRegistersForCallAndExceptionHandling' o='1536' t='bool'/>
+<mbr r='JSC::AccessGenerationState::m_needsToRestoreRegistersIfException' o='1537' t='bool'/>
+<mbr r='JSC::AccessGenerationState::m_calculatedCallSiteIndex' o='1538' t='bool'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/GetterSetterAccessCase.h' l='54' c='_ZN3JSC22GetterSetterAccessCase16emitDOMJITGetterERNS_21AccessGenerationStateEPKNS_6DOMJIT12GetterSetterENS_12X86Registers10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ModuleNamespaceAccessCase.h' l='51' c='_ZN3JSC25ModuleNamespaceAccessCase4emitERNS_21AccessGenerationStateERNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListE'/>
+<size>200</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='795' c='_ZN3JSC10AccessCase17generateWithGuardERNS_21AccessGenerationStateERNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='1391' c='_ZN3JSC10AccessCase8generateERNS_21AccessGenerationStateE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='1402' c='_ZN3JSC10AccessCase12generateImplERNS_21AccessGenerationStateE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCaseSnippetParams.h' l='47' c='_ZN3JSC23AccessCaseSnippetParams21SlowPathCallGenerator8generateERNS_21AccessGenerationStateERKNS_11RegisterSetERNS_12CCallHelpersE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCaseSnippetParams.h' l='50' c='_ZN3JSC23AccessCaseSnippetParams17emitSlowPathCallsERNS_21AccessGenerationStateERKNS_11RegisterSetERNS_12CCallHelpersE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCaseSnippetParams.cpp' l='50' c='_ZN3JSC34SlowPathCallGeneratorWithArguments12generateImplERNS_21AccessGenerationStateERKNS_11RegisterSetERNS_12CCallHelpersESt16integer_sequenceImJXspT_EEE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCaseSnippetParams.cpp' l='87' c='_ZN3JSC34SlowPathCallGeneratorWithArguments8generateERNS_21AccessGenerationStateERKNS_11RegisterSetERNS_12CCallHelpersE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCaseSnippetParams.cpp' l='113' c='_ZN3JSC23AccessCaseSnippetParams17emitSlowPathCallsERNS_21AccessGenerationStateERKNS_11RegisterSetERNS_12CCallHelpersE'/>
+<size>200</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PolymorphicAccess.cpp' l='426' c='_ZN3JSC17PolymorphicAccess10regenerateERKNS_24GCSafeConcurrentJSLockerERNS_2VMEPNS_14JSGlobalObjectEPNS_9CodeBlockENS_8ECMAModeERNS_17StructureStubInfoE'/>
+<size>200</size>
+<fun r='_ZN3JSC21AccessGenerationState17installWatchpointEPNS_9CodeBlockERKNS_23ObjectPropertyConditionE'/>
+<fun r='_ZN3JSC21AccessGenerationState14restoreScratchEv'/>
+<fun r='_ZN3JSC21AccessGenerationState7succeedEv'/>
+<fun r='_ZN3JSC21AccessGenerationState20liveRegistersForCallEv'/>
+<fun r='_ZN3JSC21AccessGenerationState50liveRegistersToPreserveAtExceptionHandlingCallSiteEv'/>
+<fun r='_ZN3JSC21AccessGenerationState49calculateLiveRegistersForCallAndExceptionHandlingEv'/>
+<fun r='_ZN3JSC21AccessGenerationState35preserveLiveRegistersToStackForCallERKNS_11RegisterSetE'/>
+<fun r='_ZN3JSC21AccessGenerationState52preserveLiveRegistersToStackForCallWithoutExceptionsERKNS_11RegisterSetE'/>
+<fun r='_ZN3JSC21AccessGenerationState55restoreLiveRegistersFromStackForCallWithThrownExceptionERKNS0_10SpillStateE'/>
+<fun r='_ZN3JSC21AccessGenerationState36restoreLiveRegistersFromStackForCallERKNS0_10SpillStateERKNS_11RegisterSetE'/>
+<fun r='_ZN3JSC21AccessGenerationState43callSiteIndexForExceptionHandlingOrOriginalEv'/>
+<fun r='_ZN3JSC21AccessGenerationState33callSiteIndexForExceptionHandlingEv'/>
+<fun r='_ZN3JSC21AccessGenerationState24originalExceptionHandlerEv'/>
+<fun r='_ZNK3JSC21AccessGenerationState21originalCallSiteIndexEv'/>
+<fun r='_ZN3JSC21AccessGenerationState28emitExplicitExceptionHandlerEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/GetterSetterAccessCase.cpp' l='124' c='_ZN3JSC22GetterSetterAccessCase16emitDOMJITGetterERNS_21AccessGenerationStateEPKNS_6DOMJIT12GetterSetterENS_12X86Registers10RegisterIDE'/>
+<size>200</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ModuleNamespaceAccessCase.cpp' l='64' c='_ZN3JSC25ModuleNamespaceAccessCase4emitERNS_21AccessGenerationStateERNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListE'/>
+<size>200</size>

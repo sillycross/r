@@ -1,0 +1,10 @@
+<use f='WebKit/Source/JavaScriptCore/bytecode/StructureStubInfo.h' l='251' u='m' c='_ZN3JSC17StructureStubInfo15considerCachingERNS_2VMEPNS_9CodeBlockEPNS_9StructureENS_19CacheableIdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/StructureStubInfo.h' l='266' u='m' c='_ZN3JSC17StructureStubInfo23clearBufferedStructuresEv'/>
+<dec f='WebKit/Source/JavaScriptCore/bytecode/StructureStubInfo.h' l='340' type='HashSet&lt;JSC::StructureStubInfo::BufferedStructure, BufferedStructure::Hash, BufferedStructure::KeyTraits&gt;'/>
+<offset>256</offset>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/StructureStubInfo.h' l='336'>// Represents those structures that already have buffered AccessCases in the PolymorphicAccess.
+    // Note that it&apos;s always safe to clear this. If we clear it prematurely, then if we see the same
+    // structure again during this buffering countdown, we will create an AccessCase object for it.
+    // That&apos;s not so bad - we&apos;ll get rid of the redundant ones once we regenerate.</doc>
+<use f='WebKit/Source/JavaScriptCore/bytecode/StructureStubInfo.cpp' l='325' c='_ZN3JSC17StructureStubInfo18visitAggregateImplERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/StructureStubInfo.cpp' l='353' u='m' c='_ZN3JSC17StructureStubInfo19visitWeakReferencesERKNS_22ConcurrentJSLockerBaseEPNS_9CodeBlockE'/>

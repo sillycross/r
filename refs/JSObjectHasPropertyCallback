@@ -1,0 +1,34 @@
+<doc f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSObjectRef.h' l='112'>/*! 
+@typedef JSObjectHasPropertyCallback
+@abstract The callback invoked when determining whether an object has a property.
+@param ctx The execution context to use.
+@param object The JSObject to search for the property.
+@param propertyName A JSString containing the name of the property look up.
+@result true if object has the property, otherwise false.
+@discussion If you named your function HasProperty, you would declare it like this:
+
+bool HasProperty(JSContextRef ctx, JSObjectRef object, JSStringRef propertyName);
+
+If this function returns false, the hasProperty request forwards to object&apos;s statically declared properties, then its parent class chain (which includes the default object class), then its prototype chain.
+
+This callback enables optimization in cases where only a property&apos;s existence needs to be known, not its value, and computing its value would be expensive.
+
+If this callback is NULL, the getProperty callback will be used to service hasProperty requests.
+*/</doc>
+<doc f='WebKit/Source/JavaScriptCore/API/JSObjectRef.h' l='112'>/*! 
+@typedef JSObjectHasPropertyCallback
+@abstract The callback invoked when determining whether an object has a property.
+@param ctx The execution context to use.
+@param object The JSObject to search for the property.
+@param propertyName A JSString containing the name of the property look up.
+@result true if object has the property, otherwise false.
+@discussion If you named your function HasProperty, you would declare it like this:
+
+bool HasProperty(JSContextRef ctx, JSObjectRef object, JSStringRef propertyName);
+
+If this function returns false, the hasProperty request forwards to object&apos;s statically declared properties, then its parent class chain (which includes the default object class), then its prototype chain.
+
+This callback enables optimization in cases where only a property&apos;s existence needs to be known, not its value, and computing its value would be expensive.
+
+If this callback is NULL, the getProperty callback will be used to service hasProperty requests.
+*/</doc>

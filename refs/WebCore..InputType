@@ -1,0 +1,366 @@
+<use f='WebKit/Source/WebCore/html/HTMLInputElement.h' l='488'/>
+<inh f='WebKit/WTF/Headers/wtf/RefCounted.h' l='184' c='WTF::RefCounted'/>
+<def f='WebKit/Source/WebCore/html/InputType.h' l='72' ll='417'/>
+<use f='WebKit/Source/WebCore/html/InputType.h' l='72'/>
+<use f='WebKit/Source/WebCore/html/InputType.h' l='157' c='_ZN7WebCore9InputType6createERNS_16HTMLInputElementERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/html/InputType.h' l='158' c='_ZN7WebCore9InputType10createTextERNS_16HTMLInputElementE'/>
+<use f='WebKit/Source/WebCore/html/InputType.h' l='163' c='_ZN7WebCore9InputType23themeSupportsDataListUIEPS0_'/>
+<use f='WebKit/Source/WebCore/html/InputType.h' l='420' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<ovr f='WebKit/Source/WebCore/html/BaseClickableWithKeyInputType.h' l='38' c='WebCore::BaseClickableWithKeyInputType'/>
+<use f='WebKit/Source/WebCore/html/BaseClickableWithKeyInputType.h' l='38'/>
+<use f='WebKit/Source/WebCore/html/BaseClickableWithKeyInputType.h' l='42' c='_ZN7WebCore29BaseClickableWithKeyInputType16handleKeyupEventERNS_9InputTypeERNS_13KeyboardEventE'/>
+<use f='WebKit/Source/WebCore/html/BaseClickableWithKeyInputType.h' l='46' c='_ZN7WebCore29BaseClickableWithKeyInputTypeC1ENS_9InputType4TypeERNS_16HTMLInputElementE'/>
+<ovr f='WebKit/Source/WebCore/html/BaseCheckableInputType.h' l='38' c='WebCore::BaseCheckableInputType'/>
+<use f='WebKit/Source/WebCore/html/BaseCheckableInputType.h' l='38'/>
+<use f='WebKit/Source/WebCore/html/BaseCheckableInputType.h' l='40' c='_ZN7WebCore22BaseCheckableInputTypeC1ENS_9InputType4TypeERNS_16HTMLInputElementE'/>
+<use f='WebKit/Source/WebCore/html/BaseClickableWithKeyInputType.cpp' l='68' c='_ZN7WebCore29BaseClickableWithKeyInputType16handleKeyupEventERNS_9InputTypeERNS_13KeyboardEventE'/>
+<ovr f='WebKit/Source/WebCore/html/BaseDateAndTimeInputType.h' l='50' c='WebCore::BaseDateAndTimeInputType'/>
+<use f='WebKit/Source/WebCore/html/BaseDateAndTimeInputType.h' l='50'/>
+<use f='WebKit/Source/WebCore/html/BaseDateAndTimeInputType.h' l='64' c='_ZN7WebCore24BaseDateAndTimeInputTypeC1ENS_9InputType4TypeERNS_16HTMLInputElementE'/>
+<ovr f='WebKit/Source/WebCore/html/TextFieldInputType.h' l='48' c='WebCore::TextFieldInputType'/>
+<use f='WebKit/Source/WebCore/html/TextFieldInputType.h' l='48'/>
+<use f='WebKit/Source/WebCore/html/ButtonInputType.h' l='38' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<size>24</size>
+<doc f='WebKit/Source/WebCore/html/InputType.h' l='69'>// An InputType object represents the type-specific part of an HTMLInputElement.
+// Do not expose instances of InputType and classes derived from it to classes
+// other than HTMLInputElement.</doc>
+<smbr r='WebCore::InputType::textTypes' t='const OptionSet&lt;WebCore::InputType::Type&gt;'/>
+<smbr r='WebCore::InputType::textFieldTypes' t='const OptionSet&lt;WebCore::InputType::Type&gt;'/>
+<smbr r='WebCore::InputType::textButtonTypes' t='const OptionSet&lt;WebCore::InputType::Type&gt;'/>
+<smbr r='WebCore::InputType::checkableTypes' t='const OptionSet&lt;WebCore::InputType::Type&gt;'/>
+<smbr r='WebCore::InputType::steppableTypes' t='const OptionSet&lt;WebCore::InputType::Type&gt;'/>
+<smbr r='WebCore::InputType::nonValidatingTypes' t='const OptionSet&lt;WebCore::InputType::Type&gt;'/>
+<smbr r='WebCore::InputType::nonShadowRootTypes' t='const OptionSet&lt;WebCore::InputType::Type&gt;'/>
+<fun r='_ZN7WebCore9InputType6createERNS_16HTMLInputElementERKN3WTF10AtomStringE'/>
+<fun r='_ZN7WebCore9InputType10createTextERNS_16HTMLInputElementE'/>
+<fun r='_ZN7WebCore9InputTypeD1Ev'/>
+<fun r='_ZN7WebCore9InputType17detachFromElementEv'/>
+<fun r='_ZN7WebCore9InputType23themeSupportsDataListUIEPS0_'/>
+<fun r='_ZNK7WebCore9InputType15formControlTypeEv'/>
+<fun r='_ZNK7WebCore9InputType10isCheckboxEv'/>
+<fun r='_ZNK7WebCore9InputType14isColorControlEv'/>
+<fun r='_ZNK7WebCore9InputType11isDateFieldEv'/>
+<fun r='_ZNK7WebCore9InputType20isDateTimeLocalFieldEv'/>
+<fun r='_ZNK7WebCore9InputType12isEmailFieldEv'/>
+<fun r='_ZNK7WebCore9InputType12isFileUploadEv'/>
+<fun r='_ZNK7WebCore9InputType12isHiddenTypeEv'/>
+<fun r='_ZNK7WebCore9InputType13isImageButtonEv'/>
+<fun r='_ZNK7WebCore9InputType12isMonthFieldEv'/>
+<fun r='_ZNK7WebCore9InputType13isNumberFieldEv'/>
+<fun r='_ZNK7WebCore9InputType15isPasswordFieldEv'/>
+<fun r='_ZNK7WebCore9InputType13isRadioButtonEv'/>
+<fun r='_ZNK7WebCore9InputType14isRangeControlEv'/>
+<fun r='_ZNK7WebCore9InputType13isSearchFieldEv'/>
+<fun r='_ZNK7WebCore9InputType14isSubmitButtonEv'/>
+<fun r='_ZNK7WebCore9InputType16isTelephoneFieldEv'/>
+<fun r='_ZNK7WebCore9InputType11isTimeFieldEv'/>
+<fun r='_ZNK7WebCore9InputType10isURLFieldEv'/>
+<fun r='_ZNK7WebCore9InputType11isWeekFieldEv'/>
+<fun r='_ZNK7WebCore9InputType12isTextButtonEv'/>
+<fun r='_ZNK7WebCore9InputType11isTextFieldEv'/>
+<fun r='_ZNK7WebCore9InputType10isTextTypeEv'/>
+<fun r='_ZNK7WebCore9InputType11isCheckableEv'/>
+<fun r='_ZNK7WebCore9InputType11isSteppableEv'/>
+<fun r='_ZNK7WebCore9InputType18supportsValidationEv'/>
+<fun r='_ZNK7WebCore9InputType24canHaveTypeSpecificValueEv'/>
+<fun r='_ZNK7WebCore9InputType20isInteractiveContentEv'/>
+<fun r='_ZNK7WebCore9InputType13supportLabelsEv'/>
+<fun r='_ZNK7WebCore9InputType14isEnumeratableEv'/>
+<fun r='_ZNK7WebCore9InputType18needsShadowSubtreeEv'/>
+<fun r='_ZNK7WebCore9InputType36shouldSaveAndRestoreFormControlStateEv'/>
+<fun r='_ZNK7WebCore9InputType20saveFormControlStateEv'/>
+<fun r='_ZN7WebCore9InputType23restoreFormControlStateERKN3WTF6VectorINS1_6StringELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<fun r='_ZNK7WebCore9InputType20isFormDataAppendableEv'/>
+<fun r='_ZNK7WebCore9InputType14appendFormDataERNS_11DOMFormDataEb'/>
+<fun r='_ZN7WebCore9InputType20getTypeSpecificValueERN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType13fallbackValueEv'/>
+<fun r='_ZNK7WebCore9InputType12defaultValueEv'/>
+<fun r='_ZNK7WebCore9InputType11valueAsDateEv'/>
+<fun r='_ZNK7WebCore9InputType14setValueAsDateEd'/>
+<fun r='_ZNK7WebCore9InputType13valueAsDoubleEv'/>
+<fun r='_ZNK7WebCore9InputType16setValueAsDoubleEdNS_22TextFieldEventBehaviorE'/>
+<fun r='_ZNK7WebCore9InputType17setValueAsDecimalERKNS_7DecimalENS_22TextFieldEventBehaviorE'/>
+<fun r='_ZNK7WebCore9InputType17validationMessageEv'/>
+<fun r='_ZNK7WebCore9InputType15typeMismatchForERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType16supportsRequiredEv'/>
+<fun r='_ZNK7WebCore9InputType12valueMissingERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType11hasBadInputEv'/>
+<fun r='_ZNK7WebCore9InputType15patternMismatchERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType14rangeUnderflowERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType13rangeOverflowERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType9isInRangeERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType12isOutOfRangeERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType21defaultValueForStepUpEv'/>
+<fun r='_ZNK7WebCore9InputType7minimumEv'/>
+<fun r='_ZNK7WebCore9InputType7maximumEv'/>
+<fun r='_ZNK7WebCore9InputType27sizeShouldIncludeDecorationEiRi'/>
+<fun r='_ZNK7WebCore9InputType15decorationWidthEv'/>
+<fun r='_ZNK7WebCore9InputType12stepMismatchERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType19getAllowedValueStepEPNS_7DecimalE'/>
+<fun r='_ZNK7WebCore9InputType15createStepRangeENS_15AnyStepHandlingE'/>
+<fun r='_ZN7WebCore9InputType6stepUpEi'/>
+<fun r='_ZN7WebCore9InputType18stepUpFromRendererEi'/>
+<fun r='_ZNK7WebCore9InputType12badInputTextEv'/>
+<fun r='_ZNK7WebCore9InputType16typeMismatchTextEv'/>
+<fun r='_ZNK7WebCore9InputType16valueMissingTextEv'/>
+<fun r='_ZNK7WebCore9InputType17canSetStringValueEv'/>
+<fun r='_ZNK7WebCore9InputType13localizeValueERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType12visibleValueEv'/>
+<fun r='_ZNK7WebCore9InputType12isEmptyValueEv'/>
+<fun r='_ZNK7WebCore9InputType12typeMismatchEv'/>
+<fun r='_ZNK7WebCore9InputType13sanitizeValueERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore9InputType16handleClickEventERNS_10MouseEventE'/>
+<fun r='_ZN7WebCore9InputType20handleMouseDownEventERNS_10MouseEventE'/>
+<fun r='_ZN7WebCore9InputType17willDispatchClickERNS_22InputElementClickStateE'/>
+<fun r='_ZN7WebCore9InputType16didDispatchClickERNS_5EventERKNS_22InputElementClickStateE'/>
+<fun r='_ZN7WebCore9InputType22handleDOMActivateEventERNS_5EventE'/>
+<fun r='_ZN7WebCore9InputType18handleKeydownEventERNS_13KeyboardEventE'/>
+<fun r='_ZN7WebCore9InputType19handleKeypressEventERNS_13KeyboardEventE'/>
+<fun r='_ZN7WebCore9InputType16handleKeyupEventERNS_13KeyboardEventE'/>
+<fun r='_ZN7WebCore9InputType29handleBeforeTextInsertedEventERNS_23BeforeTextInsertedEventE'/>
+<fun r='_ZN7WebCore9InputType12forwardEventERNS_5EventE'/>
+<fun r='_ZN7WebCore9InputType16handleTouchEventERNS_10TouchEventE'/>
+<fun r='_ZN7WebCore9InputType22shouldSubmitImplicitlyERNS_5EventE'/>
+<fun r='_ZNK7WebCore9InputType19hasCustomFocusLogicEv'/>
+<fun r='_ZNK7WebCore9InputType19isKeyboardFocusableEPNS_13KeyboardEventE'/>
+<fun r='_ZNK7WebCore9InputType16isMouseFocusableEv'/>
+<fun r='_ZNK7WebCore9InputType20shouldUseInputMethodEv'/>
+<fun r='_ZN7WebCore9InputType16handleFocusEventEPNS_4NodeENS_14FocusDirectionE'/>
+<fun r='_ZN7WebCore9InputType15handleBlurEventEv'/>
+<fun r='_ZN7WebCore9InputType15accessKeyActionEb'/>
+<fun r='_ZN7WebCore9InputType27canBeSuccessfulSubmitButtonEv'/>
+<fun r='_ZN7WebCore9InputType17subtreeHasChangedEv'/>
+<fun r='_ZN7WebCore9InputType4blurEv'/>
+<fun r='_ZN7WebCore9InputType14elementDidBlurEv'/>
+<fun r='_ZNK7WebCore9InputType20hasTouchEventHandlerEv'/>
+<fun r='_ZN7WebCore9InputType55createShadowSubtreeAndUpdateInnerTextElementEditabilityENS_13ContainerNode11ChildChange6SourceEb'/>
+<fun r='_ZN7WebCore9InputType20destroyShadowSubtreeEv'/>
+<fun r='_ZNK7WebCore9InputType16containerElementEv'/>
+<fun r='_ZNK7WebCore9InputType17innerBlockElementEv'/>
+<fun r='_ZNK7WebCore9InputType16innerTextElementEv'/>
+<fun r='_ZNK7WebCore9InputType22innerSpinButtonElementEv'/>
+<fun r='_ZNK7WebCore9InputType24capsLockIndicatorElementEv'/>
+<fun r='_ZNK7WebCore9InputType21autoFillButtonElementEv'/>
+<fun r='_ZNK7WebCore9InputType20resultsButtonElementEv'/>
+<fun r='_ZNK7WebCore9InputType19cancelButtonElementEv'/>
+<fun r='_ZNK7WebCore9InputType18sliderThumbElementEv'/>
+<fun r='_ZNK7WebCore9InputType18sliderTrackElementEv'/>
+<fun r='_ZNK7WebCore9InputType18placeholderElementEv'/>
+<fun r='_ZNK7WebCore9InputType21dataListButtonElementEv'/>
+<fun r='_ZN7WebCore9InputType16rendererIsNeededEv'/>
+<fun r='_ZN7WebCore9InputType19createInputRendererEONS_11RenderStyleE'/>
+<fun r='_ZN7WebCore9InputType15addSearchResultEv'/>
+<fun r='_ZN7WebCore9InputType6attachEv'/>
+<fun r='_ZN7WebCore9InputType6detachEv'/>
+<fun r='_ZN7WebCore9InputType27shouldRespectAlignAttributeEv'/>
+<fun r='_ZN7WebCore9InputType5filesEv'/>
+<fun r='_ZN7WebCore9InputType8setFilesEON3WTF6RefPtrINS_8FileListENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<fun r='_ZNK7WebCore9InputType4iconEv'/>
+<fun r='_ZN7WebCore9InputType40shouldSendChangeEventAfterCheckedChangedEv'/>
+<fun r='_ZN7WebCore9InputType11canSetValueERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore9InputType32storesValueSeparateFromAttributeEv'/>
+<fun r='_ZN7WebCore9InputType8setValueERKN3WTF6StringEbNS_22TextFieldEventBehaviorE'/>
+<fun r='_ZN7WebCore9InputType31shouldResetOnDocumentActivationEv'/>
+<fun r='_ZN7WebCore9InputType26shouldRespectListAttributeEv'/>
+<fun r='_ZN7WebCore9InputType37shouldRespectHeightAndWidthAttributesEv'/>
+<fun r='_ZNK7WebCore9InputType19supportsPlaceholderEv'/>
+<fun r='_ZNK7WebCore9InputType16supportsReadOnlyEv'/>
+<fun r='_ZN7WebCore9InputType20updateInnerTextValueEv'/>
+<fun r='_ZN7WebCore9InputType21updatePlaceholderTextEv'/>
+<fun r='_ZN7WebCore9InputType16attributeChangedERKNS_13QualifiedNameE'/>
+<fun r='_ZN7WebCore9InputType20disabledStateChangedEv'/>
+<fun r='_ZN7WebCore9InputType20readOnlyStateChangedEv'/>
+<fun r='_ZN7WebCore9InputType20requiredStateChangedEv'/>
+<fun r='_ZN7WebCore9InputType27capsLockStateMayHaveChangedEv'/>
+<fun r='_ZN7WebCore9InputType20updateAutoFillButtonEv'/>
+<fun r='_ZNK7WebCore9InputType14defaultToolTipEv'/>
+<fun r='_ZNK7WebCore9InputType31matchesIndeterminatePseudoClassEv'/>
+<fun r='_ZNK7WebCore9InputType25shouldAppearIndeterminateEv'/>
+<fun r='_ZNK7WebCore9InputType24isPresentingAttachedViewEv'/>
+<fun r='_ZNK7WebCore9InputType20supportsSelectionAPIEv'/>
+<fun r='_ZNK7WebCore9InputType12valueAsColorEv'/>
+<fun r='_ZN7WebCore9InputType11selectColorEN3WTF10StringViewE'/>
+<fun r='_ZNK7WebCore9InputType15suggestedColorsEv'/>
+<fun r='_ZNK7WebCore9InputType30isFocusingWithDataListDropdownEv'/>
+<fun r='_ZNK7WebCore9InputType13parseToNumberERKN3WTF6StringERKNS_7DecimalE'/>
+<fun r='_ZNK7WebCore9InputType9serializeERKNS_7DecimalE'/>
+<fun r='_ZNK7WebCore9InputType6heightEv'/>
+<fun r='_ZNK7WebCore9InputType5widthEv'/>
+<fun r='_ZNK7WebCore9InputType9isInvalidERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType30dispatchSimulatedClickIfActiveERNS_13KeyboardEventE'/>
+<fun r='_ZN7WebCore9InputType22dataListMayHaveChangedEv'/>
+<fun r='_ZN7WebCore9InputType24findClosestTickMarkValueERKNS_7DecimalE'/>
+<fun r='_ZN7WebCore9InputType19receiveDroppedFilesERKNS_8DragDataE'/>
+<fun r='_ZNK7WebCore9InputType8dateTypeEv'/>
+<fun r='_ZNK7WebCore9InputType13displayStringEv'/>
+<fun r='_ZNK7WebCore9InputType21resultForDialogSubmitEv'/>
+<fun r='_ZN7WebCore9InputTypeC1ENS0_4TypeERNS_16HTMLInputElementE'/>
+<fun r='_ZNK7WebCore9InputType7elementEv'/>
+<fun r='_ZNK7WebCore9InputType6chromeEv'/>
+<fun r='_ZNK7WebCore9InputType18parseToNumberOrNaNERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore9InputType9applyStepEiNS_15AnyStepHandlingENS_22TextFieldEventBehaviorE'/>
+<mbr r='WebCore::InputType::m_type' o='96' t='const WebCore::InputType::Type'/>
+<mbr r='WebCore::InputType::m_element' o='128' t='WeakPtr&lt;WebCore::HTMLInputElement&gt;'/>
+<ovr f='WebKit/Source/WebCore/html/HiddenInputType.h' l='37' c='WebCore::HiddenInputType'/>
+<use f='WebKit/Source/WebCore/html/HiddenInputType.h' l='37'/>
+<use f='WebKit/Source/WebCore/html/HiddenInputType.h' l='38' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/HiddenInputType.h' l='40' c='_ZN7WebCore15HiddenInputTypeC1ERNS_16HTMLInputElementE'/>
+<use f='WebKit/Source/WebCore/html/ImageInputType.h' l='41' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/CheckboxInputType.h' l='38' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/ColorInputType.h' l='43' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/DateInputType.h' l='40' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/DateTimeLocalInputType.h' l='40' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/EmailInputType.h' l='38' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/FileInputType.h' l='48' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/MonthInputType.h' l='40' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/NumberInputType.h' l='39' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/PasswordInputType.h' l='38' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/RadioInputType.h' l='39' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<ovr f='WebKit/Source/WebCore/html/RangeInputType.h' l='40' c='WebCore::RangeInputType'/>
+<use f='WebKit/Source/WebCore/html/RangeInputType.h' l='40'/>
+<use f='WebKit/Source/WebCore/html/RangeInputType.h' l='41' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/ResetInputType.h' l='38' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/SearchInputType.h' l='42' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/SearchInputType.h' l='74' macro='1' c='_ZN3WTF14TypeCastTraitsIKN7WebCore15SearchInputTypeET_Lb0EE6isTypeERKNS1_9InputTypeE'/>
+<use f='WebKit/Source/WebCore/html/SubmitInputType.h' l='38' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/TelephoneInputType.h' l='38' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/TextInputType.h' l='38' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/TimeInputType.h' l='40' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/URLInputType.h' l='38' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/WeekInputType.h' l='40' c='_ZN7WebCore18isInvalidInputTypeERKNS_9InputTypeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/InputType.cpp' l='90'/>
+<use f='WebKit/Source/WebCore/html/InputType.cpp' l='93' c='_ZN7WebCoreL15createInputTypeERNS_16HTMLInputElementE'/>
+<use f='WebKit/Source/WebCore/html/InputType.cpp' l='147' c='_ZN7WebCore9InputType6createERNS_16HTMLInputElementERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/html/InputType.cpp' l='158' c='_ZN7WebCore9InputType10createTextERNS_16HTMLInputElementE'/>
+<use f='WebKit/Source/WebCore/html/InputType.cpp' l='165' c='_ZN7WebCore9InputType23themeSupportsDataListUIEPS0_'/>
+<size>24</size>
+<fun r='_ZN7WebCore9InputType6createERNS_16HTMLInputElementERKN3WTF10AtomStringE'/>
+<fun r='_ZN7WebCore9InputType10createTextERNS_16HTMLInputElementE'/>
+<fun r='_ZN7WebCore9InputTypeD1Ev'/>
+<fun r='_ZN7WebCore9InputType23themeSupportsDataListUIEPS0_'/>
+<fun r='_ZNK7WebCore9InputType36shouldSaveAndRestoreFormControlStateEv'/>
+<fun r='_ZNK7WebCore9InputType20saveFormControlStateEv'/>
+<fun r='_ZN7WebCore9InputType23restoreFormControlStateERKN3WTF6VectorINS1_6StringELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<fun r='_ZNK7WebCore9InputType20isFormDataAppendableEv'/>
+<fun r='_ZNK7WebCore9InputType14appendFormDataERNS_11DOMFormDataEb'/>
+<fun r='_ZNK7WebCore9InputType11valueAsDateEv'/>
+<fun r='_ZNK7WebCore9InputType14setValueAsDateEd'/>
+<fun r='_ZNK7WebCore9InputType13valueAsDoubleEv'/>
+<fun r='_ZNK7WebCore9InputType16setValueAsDoubleEdNS_22TextFieldEventBehaviorE'/>
+<fun r='_ZNK7WebCore9InputType17setValueAsDecimalERKNS_7DecimalENS_22TextFieldEventBehaviorE'/>
+<fun r='_ZNK7WebCore9InputType15typeMismatchForERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType12typeMismatchEv'/>
+<fun r='_ZNK7WebCore9InputType16supportsRequiredEv'/>
+<fun r='_ZNK7WebCore9InputType12valueMissingERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType11hasBadInputEv'/>
+<fun r='_ZNK7WebCore9InputType15patternMismatchERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType14rangeUnderflowERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType13rangeOverflowERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType9isInvalidERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType21defaultValueForStepUpEv'/>
+<fun r='_ZNK7WebCore9InputType7minimumEv'/>
+<fun r='_ZNK7WebCore9InputType7maximumEv'/>
+<fun r='_ZNK7WebCore9InputType27sizeShouldIncludeDecorationEiRi'/>
+<fun r='_ZNK7WebCore9InputType15decorationWidthEv'/>
+<fun r='_ZNK7WebCore9InputType9isInRangeERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType12isOutOfRangeERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType12stepMismatchERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType12badInputTextEv'/>
+<fun r='_ZNK7WebCore9InputType16typeMismatchTextEv'/>
+<fun r='_ZNK7WebCore9InputType16valueMissingTextEv'/>
+<fun r='_ZNK7WebCore9InputType17validationMessageEv'/>
+<fun r='_ZN7WebCore9InputType16handleClickEventERNS_10MouseEventE'/>
+<fun r='_ZN7WebCore9InputType20handleMouseDownEventERNS_10MouseEventE'/>
+<fun r='_ZN7WebCore9InputType22handleDOMActivateEventERNS_5EventE'/>
+<fun r='_ZN7WebCore9InputType18handleKeydownEventERNS_13KeyboardEventE'/>
+<fun r='_ZN7WebCore9InputType19handleKeypressEventERNS_13KeyboardEventE'/>
+<fun r='_ZN7WebCore9InputType16handleKeyupEventERNS_13KeyboardEventE'/>
+<fun r='_ZN7WebCore9InputType29handleBeforeTextInsertedEventERNS_23BeforeTextInsertedEventE'/>
+<fun r='_ZN7WebCore9InputType16handleTouchEventERNS_10TouchEventE'/>
+<fun r='_ZN7WebCore9InputType12forwardEventERNS_5EventE'/>
+<fun r='_ZN7WebCore9InputType22shouldSubmitImplicitlyERNS_5EventE'/>
+<fun r='_ZN7WebCore9InputType19createInputRendererEONS_11RenderStyleE'/>
+<fun r='_ZN7WebCore9InputType4blurEv'/>
+<fun r='_ZN7WebCore9InputType55createShadowSubtreeAndUpdateInnerTextElementEditabilityENS_13ContainerNode11ChildChange6SourceEb'/>
+<fun r='_ZN7WebCore9InputType20destroyShadowSubtreeEv'/>
+<fun r='_ZNK7WebCore9InputType13parseToNumberERKN3WTF6StringERKNS_7DecimalE'/>
+<fun r='_ZNK7WebCore9InputType18parseToNumberOrNaNERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType9serializeERKNS_7DecimalE'/>
+<fun r='_ZNK7WebCore9InputType8dateTypeEv'/>
+<fun r='_ZNK7WebCore9InputType30dispatchSimulatedClickIfActiveERNS_13KeyboardEventE'/>
+<fun r='_ZNK7WebCore9InputType6chromeEv'/>
+<fun r='_ZNK7WebCore9InputType17canSetStringValueEv'/>
+<fun r='_ZNK7WebCore9InputType19hasCustomFocusLogicEv'/>
+<fun r='_ZNK7WebCore9InputType19isKeyboardFocusableEPNS_13KeyboardEventE'/>
+<fun r='_ZNK7WebCore9InputType16isMouseFocusableEv'/>
+<fun r='_ZNK7WebCore9InputType20shouldUseInputMethodEv'/>
+<fun r='_ZN7WebCore9InputType16handleFocusEventEPNS_4NodeENS_14FocusDirectionE'/>
+<fun r='_ZN7WebCore9InputType15handleBlurEventEv'/>
+<fun r='_ZN7WebCore9InputType15accessKeyActionEb'/>
+<fun r='_ZN7WebCore9InputType15addSearchResultEv'/>
+<fun r='_ZN7WebCore9InputType6attachEv'/>
+<fun r='_ZN7WebCore9InputType6detachEv'/>
+<fun r='_ZN7WebCore9InputType27shouldRespectAlignAttributeEv'/>
+<fun r='_ZN7WebCore9InputType27canBeSuccessfulSubmitButtonEv'/>
+<fun r='_ZNK7WebCore9InputType18placeholderElementEv'/>
+<fun r='_ZN7WebCore9InputType16rendererIsNeededEv'/>
+<fun r='_ZN7WebCore9InputType5filesEv'/>
+<fun r='_ZN7WebCore9InputType8setFilesEON3WTF6RefPtrINS_8FileListENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore9InputType20getTypeSpecificValueERN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType13fallbackValueEv'/>
+<fun r='_ZNK7WebCore9InputType12defaultValueEv'/>
+<fun r='_ZN7WebCore9InputType40shouldSendChangeEventAfterCheckedChangedEv'/>
+<fun r='_ZN7WebCore9InputType32storesValueSeparateFromAttributeEv'/>
+<fun r='_ZN7WebCore9InputType8setValueERKN3WTF6StringEbNS_22TextFieldEventBehaviorE'/>
+<fun r='_ZN7WebCore9InputType11canSetValueERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore9InputType17willDispatchClickERNS_22InputElementClickStateE'/>
+<fun r='_ZN7WebCore9InputType16didDispatchClickERNS_5EventERKNS_22InputElementClickStateE'/>
+<fun r='_ZNK7WebCore9InputType13localizeValueERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore9InputType12visibleValueEv'/>
+<fun r='_ZNK7WebCore9InputType12isEmptyValueEv'/>
+<fun r='_ZNK7WebCore9InputType13sanitizeValueERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore9InputType19receiveDroppedFilesERKNS_8DragDataE'/>
+<fun r='_ZNK7WebCore9InputType4iconEv'/>
+<fun r='_ZNK7WebCore9InputType13displayStringEv'/>
+<fun r='_ZN7WebCore9InputType31shouldResetOnDocumentActivationEv'/>
+<fun r='_ZN7WebCore9InputType26shouldRespectListAttributeEv'/>
+<fun r='_ZNK7WebCore9InputType20isInteractiveContentEv'/>
+<fun r='_ZNK7WebCore9InputType13supportLabelsEv'/>
+<fun r='_ZNK7WebCore9InputType14isEnumeratableEv'/>
+<fun r='_ZN7WebCore9InputType37shouldRespectHeightAndWidthAttributesEv'/>
+<fun r='_ZNK7WebCore9InputType19supportsPlaceholderEv'/>
+<fun r='_ZNK7WebCore9InputType16supportsReadOnlyEv'/>
+<fun r='_ZN7WebCore9InputType20updateInnerTextValueEv'/>
+<fun r='_ZN7WebCore9InputType21updatePlaceholderTextEv'/>
+<fun r='_ZN7WebCore9InputType27capsLockStateMayHaveChangedEv'/>
+<fun r='_ZN7WebCore9InputType20updateAutoFillButtonEv'/>
+<fun r='_ZN7WebCore9InputType17subtreeHasChangedEv'/>
+<fun r='_ZNK7WebCore9InputType20hasTouchEventHandlerEv'/>
+<fun r='_ZNK7WebCore9InputType14defaultToolTipEv'/>
+<fun r='_ZN7WebCore9InputType22dataListMayHaveChangedEv'/>
+<fun r='_ZN7WebCore9InputType24findClosestTickMarkValueERKNS_7DecimalE'/>
+<fun r='_ZNK7WebCore9InputType31matchesIndeterminatePseudoClassEv'/>
+<fun r='_ZNK7WebCore9InputType25shouldAppearIndeterminateEv'/>
+<fun r='_ZNK7WebCore9InputType24isPresentingAttachedViewEv'/>
+<fun r='_ZNK7WebCore9InputType20supportsSelectionAPIEv'/>
+<fun r='_ZNK7WebCore9InputType6heightEv'/>
+<fun r='_ZNK7WebCore9InputType5widthEv'/>
+<fun r='_ZN7WebCore9InputType9applyStepEiNS_15AnyStepHandlingENS_22TextFieldEventBehaviorE'/>
+<fun r='_ZNK7WebCore9InputType19getAllowedValueStepEPNS_7DecimalE'/>
+<fun r='_ZNK7WebCore9InputType15createStepRangeENS_15AnyStepHandlingE'/>
+<fun r='_ZN7WebCore9InputType6stepUpEi'/>
+<fun r='_ZN7WebCore9InputType18stepUpFromRendererEi'/>
+<fun r='_ZNK7WebCore9InputType12valueAsColorEv'/>
+<fun r='_ZN7WebCore9InputType11selectColorEN3WTF10StringViewE'/>
+<fun r='_ZNK7WebCore9InputType15suggestedColorsEv'/>
+<fun r='_ZNK7WebCore9InputType16innerTextElementEv'/>
+<fun r='_ZNK7WebCore9InputType21resultForDialogSubmitEv'/>
+<use f='WebKit/Source/WebCore/html/RangeInputType.cpp' l='83' c='_ZN7WebCore14RangeInputTypeC1ERNS_16HTMLInputElementE'/>
+<size>24</size>
+<use f='WebKit/Source/WebCore/html/TextFieldInputType.cpp' l='76' c='_ZN7WebCore18TextFieldInputTypeC1ENS_9InputType4TypeERNS_16HTMLInputElementE'/>
+<size>24</size>
+<use f='WebKit/Source/WebCore/html/HTMLInputElement.cpp' l='164' c='_ZN7WebCore16HTMLInputElement55createShadowSubtreeAndUpdateInnerTextElementEditabilityEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLInputElement.cpp' l='691' c='_ZN7WebCore16HTMLInputElement15accessKeyActionEb'/>
+<use f='WebKit/Source/WebCore/html/HTMLInputElement.cpp' l='758' c='_ZN7WebCore16HTMLInputElement14parseAttributeERKNS_13QualifiedNameERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/html/HTMLInputElement.cpp' l='951' c='_ZN7WebCore16HTMLInputElement14appendFormDataERNS_11DOMFormDataEb'/>
+<size>24</size>

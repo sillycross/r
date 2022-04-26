@@ -1,0 +1,48 @@
+<dec f='include/sqlite3.h' l='9200'/>
+<doc f='include/sqlite3.h' l='9153'>/*
+** CAPI3REF: Prepared Statement Scan Status Opcodes
+** KEYWORDS: {scanstatus options}
+**
+** The following constants can be used for the T parameter to the
+** [sqlite3_stmt_scanstatus(S,X,T,V)] interface.  Each constant designates a
+** different metric for sqlite3_stmt_scanstatus() to return.
+**
+** When the value returned to V is a string, space to hold that string is
+** managed by the prepared statement S and will be automatically freed when
+** S is finalized.
+**
+** &lt;dl&gt;
+** [[SQLITE_SCANSTAT_NLOOP]] &lt;dt&gt;SQLITE_SCANSTAT_NLOOP&lt;/dt&gt;
+** &lt;dd&gt;^The [sqlite3_int64] variable pointed to by the V parameter will be
+** set to the total number of times that the X-th loop has run.&lt;/dd&gt;
+**
+** [[SQLITE_SCANSTAT_NVISIT]] &lt;dt&gt;SQLITE_SCANSTAT_NVISIT&lt;/dt&gt;
+** &lt;dd&gt;^The [sqlite3_int64] variable pointed to by the V parameter will be set
+** to the total number of rows examined by all iterations of the X-th loop.&lt;/dd&gt;
+**
+** [[SQLITE_SCANSTAT_EST]] &lt;dt&gt;SQLITE_SCANSTAT_EST&lt;/dt&gt;
+** &lt;dd&gt;^The &quot;double&quot; variable pointed to by the V parameter will be set to the
+** query planner&apos;s estimate for the average number of rows output from each
+** iteration of the X-th loop.  If the query planner&apos;s estimates was accurate,
+** then this value will approximate the quotient NVISIT/NLOOP and the
+** product of this value for all prior loops with the same SELECTID will
+** be the NLOOP value for the current loop.
+**
+** [[SQLITE_SCANSTAT_NAME]] &lt;dt&gt;SQLITE_SCANSTAT_NAME&lt;/dt&gt;
+** &lt;dd&gt;^The &quot;const char *&quot; variable pointed to by the V parameter will be set
+** to a zero-terminated UTF-8 string containing the name of the index or table
+** used for the X-th loop.
+**
+** [[SQLITE_SCANSTAT_EXPLAIN]] &lt;dt&gt;SQLITE_SCANSTAT_EXPLAIN&lt;/dt&gt;
+** &lt;dd&gt;^The &quot;const char *&quot; variable pointed to by the V parameter will be set
+** to a zero-terminated UTF-8 string containing the [EXPLAIN QUERY PLAN]
+** description for the X-th loop.
+**
+** [[SQLITE_SCANSTAT_SELECTID]] &lt;dt&gt;SQLITE_SCANSTAT_SELECT&lt;/dt&gt;
+** &lt;dd&gt;^The &quot;int&quot; variable pointed to by the V parameter will be set to the
+** &quot;select-id&quot; for the X-th loop.  The select-id identifies which query or
+** subquery the loop is part of.  The main query has a select-id of zero.
+** The select-id is the same value as is output in the first column
+** of an [EXPLAIN QUERY PLAN] query.
+** &lt;/dl&gt;
+*/</doc>

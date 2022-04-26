@@ -1,0 +1,49 @@
+<def f='WebKit/Source/WebCore/style/RuleFeature.h' l='71' ll='108'/>
+<use f='WebKit/Source/WebCore/style/RuleFeature.h' l='72' c='_ZN7WebCore5Style14RuleFeatureSet3addERKS1_'/>
+<use f='WebKit/Source/WebCore/style/RuleSet.h' l='118' c='_ZNK7WebCore5Style7RuleSet8featuresEv'/>
+<use f='WebKit/Source/WebCore/style/RuleSet.h' l='175'/>
+<use f='WebKit/Source/WebCore/style/StyleScopeRuleSets.h' l='62' c='_ZNK7WebCore5Style13ScopeRuleSets8featuresEv'/>
+<use f='WebKit/Source/WebCore/style/StyleScopeRuleSets.h' l='84' c='_ZN7WebCore5Style13ScopeRuleSets15mutableFeaturesEv'/>
+<use f='WebKit/Source/WebCore/style/StyleScopeRuleSets.h' l='98'/>
+<use f='WebKit/Source/WebCore/style/StyleScopeRuleSets.h' l='117' c='_ZNK7WebCore5Style13ScopeRuleSets8featuresEv'/>
+<use f='WebKit/Source/WebCore/style/StyleScopeRuleSets.h' l='125' c='_ZN7WebCore5Style13ScopeRuleSets15mutableFeaturesEv'/>
+<size>128</size>
+<fun r='_ZN7WebCore5Style14RuleFeatureSet3addERKS1_'/>
+<fun r='_ZN7WebCore5Style14RuleFeatureSet5clearEv'/>
+<fun r='_ZN7WebCore5Style14RuleFeatureSet11shrinkToFitEv'/>
+<fun r='_ZN7WebCore5Style14RuleFeatureSet15collectFeaturesERKNS0_8RuleDataE'/>
+<fun r='_ZN7WebCore5Style14RuleFeatureSet24registerContentAttributeERKN3WTF10AtomStringE'/>
+<mbr r='WebCore::Style::RuleFeatureSet::idsInRules' o='0' t='HashSet&lt;WTF::AtomString&gt;'/>
+<mbr r='WebCore::Style::RuleFeatureSet::idsMatchingAncestorsInRules' o='64' t='HashSet&lt;WTF::AtomString&gt;'/>
+<mbr r='WebCore::Style::RuleFeatureSet::attributeCanonicalLocalNamesInRules' o='128' t='HashSet&lt;WTF::AtomString&gt;'/>
+<mbr r='WebCore::Style::RuleFeatureSet::attributeLocalNamesInRules' o='192' t='HashSet&lt;WTF::AtomString&gt;'/>
+<mbr r='WebCore::Style::RuleFeatureSet::contentAttributeNamesInRules' o='256' t='HashSet&lt;WTF::AtomString&gt;'/>
+<mbr r='WebCore::Style::RuleFeatureSet::siblingRules' o='320' t='WebCore::Style::RuleFeatureVector'/>
+<mbr r='WebCore::Style::RuleFeatureSet::uncommonAttributeRules' o='448' t='WebCore::Style::RuleFeatureVector'/>
+<mbr r='WebCore::Style::RuleFeatureSet::classRules' o='576' t='HashMap&lt;WTF::AtomString, std::unique_ptr&lt;RuleFeatureVector&gt; &gt;'/>
+<mbr r='WebCore::Style::RuleFeatureSet::attributeRules' o='640' t='HashMap&lt;WTF::AtomString, std::unique_ptr&lt;Vector&lt;RuleFeatureWithInvalidationSelector&gt; &gt; &gt;'/>
+<mbr r='WebCore::Style::RuleFeatureSet::pseudoClassRules' o='704' t='HashMap&lt;CSSSelector::PseudoClassType, std::unique_ptr&lt;RuleFeatureVector&gt;, WTF::IntHash&lt;CSSSelector::PseudoClassType&gt;, WTF::StrongEnumHashTraits&lt;CSSSelector::PseudoClassType&gt; &gt;'/>
+<mbr r='WebCore::Style::RuleFeatureSet::classesAffectingHost' o='768' t='HashSet&lt;WTF::AtomString&gt;'/>
+<mbr r='WebCore::Style::RuleFeatureSet::attributesAffectingHost' o='832' t='HashSet&lt;WTF::AtomString&gt;'/>
+<mbr r='WebCore::Style::RuleFeatureSet::pseudoClassesAffectingHost' o='896' t='HashSet&lt;CSSSelector::PseudoClassType, WTF::IntHash&lt;CSSSelector::PseudoClassType&gt;, WTF::StrongEnumHashTraits&lt;CSSSelector::PseudoClassType&gt; &gt;'/>
+<mbr r='WebCore::Style::RuleFeatureSet::usesFirstLineRules' o='960' t='bool'/>
+<mbr r='WebCore::Style::RuleFeatureSet::usesFirstLetterRules' o='968' t='bool'/>
+<fun r='_ZN7WebCore5Style14RuleFeatureSet23computeNextMatchElementENS0_12MatchElementENS_11CSSSelector12RelationTypeE'/>
+<fun r='_ZN7WebCore5Style14RuleFeatureSet30computeSubSelectorMatchElementENS0_12MatchElementERKNS_11CSSSelectorE'/>
+<fun r='_ZN7WebCore5Style14RuleFeatureSet38recursivelyCollectFeaturesFromSelectorERNS1_16SelectorFeaturesERKNS_11CSSSelectorENS0_12MatchElementE'/>
+<use f='WebKit/Source/WebCore/style/AttributeChangeInvalidation.cpp' l='35' c='_ZN7WebCore5StyleL30mayBeAffectedByAttributeChangeERKNS0_14RuleFeatureSetEbRKNS_13QualifiedNameE'/>
+<use f='WebKit/Source/WebCore/style/AttributeChangeInvalidation.cpp' l='53' c='_ZN7WebCore5Style27AttributeChangeInvalidation15invalidateStyleERKNS_13QualifiedNameERKN3WTF10AtomStringES8_'/>
+<use f='WebKit/Source/WebCore/style/ClassChangeInvalidation.cpp' l='92' c='_ZN7WebCore5Style23ClassChangeInvalidation19computeInvalidationERKNS_16SpaceSplitStringES4_'/>
+<use f='WebKit/Source/WebCore/style/IdChangeInvalidation.cpp' l='43' c='_ZN7WebCore5Style20IdChangeInvalidation15invalidateStyleERKN3WTF10AtomStringE'/>
+<size>128</size>
+<use f='WebKit/Source/WebCore/style/PseudoClassChangeInvalidation.cpp' l='40' c='_ZN7WebCore5Style29PseudoClassChangeInvalidation19computeInvalidationENS_11CSSSelector15PseudoClassTypeENS0_17InvalidationScopeE'/>
+<use f='WebKit/Source/WebCore/style/RuleFeature.cpp' l='212' c='_ZN7WebCore5Style14RuleFeatureSet3addERKS1_'/>
+<size>128</size>
+<fun r='_ZN7WebCore5Style14RuleFeatureSet23computeNextMatchElementENS0_12MatchElementENS_11CSSSelector12RelationTypeE'/>
+<fun r='_ZN7WebCore5Style14RuleFeatureSet30computeSubSelectorMatchElementENS0_12MatchElementERKNS_11CSSSelectorE'/>
+<fun r='_ZN7WebCore5Style14RuleFeatureSet38recursivelyCollectFeaturesFromSelectorERNS1_16SelectorFeaturesERKNS_11CSSSelectorENS0_12MatchElementE'/>
+<fun r='_ZN7WebCore5Style14RuleFeatureSet15collectFeaturesERKNS0_8RuleDataE'/>
+<fun r='_ZN7WebCore5Style14RuleFeatureSet3addERKS1_'/>
+<fun r='_ZN7WebCore5Style14RuleFeatureSet24registerContentAttributeERKN3WTF10AtomStringE'/>
+<fun r='_ZN7WebCore5Style14RuleFeatureSet5clearEv'/>
+<fun r='_ZN7WebCore5Style14RuleFeatureSet11shrinkToFitEv'/>

@@ -1,0 +1,423 @@
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.h' l='155'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.h' l='487' c='_ZNK7WebCore11RenderLayer10compositorEv'/>
+<inh f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerClient.h' l='103' c='WebCore::GraphicsLayerClient'/>
+<inh f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerUpdater.h' l='36' c='WebCore::GraphicsLayerUpdaterClient'/>
+<def f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='152' ll='649'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='305' c='_ZN7WebCore21RenderLayerCompositor23frameContentsCompositorERNS_12RenderWidgetE'/>
+<size>216</size>
+<doc f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='145'>// RenderLayerCompositor manages the hierarchy of
+// composited RenderLayers. It determines which RenderLayers
+// become compositing, and creates and maintains a hierarchy of
+// GraphicsLayers based on the RenderLayer painting order.
+// 
+// There is one RenderLayerCompositor per RenderView.</doc>
+<fun r='_ZN7WebCore21RenderLayerCompositorC1ERNS_10RenderViewE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositorD1Ev'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor15usesCompositingEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor21enableCompositingModeEb'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor23inForcedCompositingModeEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor27hasContentCompositingLayersEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor25hasAcceleratedCompositingEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor21canRender3DTransformsEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor15willRecalcStyleEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor33didRecalcStyleWithNoPendingLayoutEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor19notifyFlushRequiredEPKNS_13GraphicsLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor24flushPendingLayerChangesEb'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor30didChangePlatformLayerForLayerERNS_11RenderLayerEPKNS_13GraphicsLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor20didChangeVisibleRectEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor23updateCompositingLayersENS_21CompositingUpdateTypeEPNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor30scheduleCompositingLayerUpdateEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor28cancelCompositingLayerUpdateEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor18updateEventRegionsEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor17clippedByAncestorERNS_11RenderLayerEPKS1_'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor27updateAncestorClippingStackERKNS_11RenderLayerEPS2_'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor30asyncScrollableContainerNodeIDERKNS_12RenderObjectE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor27clipsCompositingDescendantsERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor29needsContentsCompositingLayerERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor28fixedLayerIntersectsViewportERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor38supportsFixedRootBackgroundCompositingEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor29needsFixedRootBackgroundLayerERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor24fixedRootBackgroundLayerEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor22rootOrBodyStyleChangedERNS_13RenderElementEPKNS_11RenderStyleE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor40rootBackgroundColorOrTransparencyChangedEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor26repaintOnCompositingChangeERNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor27repaintInCompositedAncestorERNS_11RenderLayerERKNS_10LayoutRectE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor13layerWasAddedERNS_11RenderLayerES2_'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor18layerWillBeRemovedERNS_11RenderLayerES2_'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor17layerStyleChangedENS_15StyleDifferenceERNS_11RenderLayerEPKNS_11RenderStyleE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor20canCompositeClipPathERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor33enclosingNonStackingClippingLayerERKNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor23repaintCompositedLayersEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor23requiresOwnBackingStoreERKNS_11RenderLayerEPS2_RKNS_10LayoutRectES7_'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor15rootRenderLayerEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor17rootGraphicsLayerEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor20scrollContainerLayerEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor21scrolledContentsLayerEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor9clipLayerEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor17rootContentsLayerEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor16layerForClippingEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor19rootLayerAttachmentEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor25updateRootLayerAttachmentEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor23updateRootLayerPositionEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor13setIsInWindowEb'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor24clearBackingForAllLayersEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor33invalidateEventRegionForAllFramesEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor33invalidateEventRegionForAllLayersEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor21layerBecameCompositedERKNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor24layerBecameNonCompositedERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor27canAccelerateVideoRenderingERNS_11RenderVideoE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor12has3DContentEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor28isCompositedSubframeRendererERKNS_12RenderObjectE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor23frameContentsCompositorERNS_12RenderWidgetE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor24parentFrameContentLayersERNS_12RenderWidgetE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor26frameViewDidChangeLocationERKNS_8IntPointE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor22frameViewDidChangeSizeEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor18frameViewDidScrollEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor33frameViewDidAddOrRemoveScrollbarsEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor18frameViewDidLayoutEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor29rootLayerConfigurationChangedEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor19widgetDidChangeSizeERNS_12RenderWidgetE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor15layerTreeAsTextEj'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor25trackedRepaintRectsAsTextEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor15layerTreeAsTextEj'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor23platformLayerTreeAsTextERNS_7ElementEN3WTF9OptionSetINS_28PlatformLayerTreeAsTextFlagsEEE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor17deviceScaleFactorEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor34contentsScaleMultiplierForNewTilesEPKNS_13GraphicsLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor15pageScaleFactorEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor24zoomedOutPageScaleFactorEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor30didChangePlatformLayerForLayerEPKNS_13GraphicsLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor31notifyFlushBeforeDisplayRefreshEPKNS_13GraphicsLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor29layerTiledBackingUsageChangedEPKNS_13GraphicsLayerEb'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor25acceleratedDrawingEnabledEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor25displayListDrawingEnabledEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor30deviceOrPageScaleFactorChangedEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor21windowScreenDidChangeEj'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor27layerForHorizontalScrollbarEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor25layerForVerticalScrollbarEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor20layerForScrollCornerEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor39isViewportConstrainedFixedOrStickyLayerERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor31useCoordinatedScrollingForLayerERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor37computeCoordinatedPositioningForLayerERKNS_11RenderLayerEPS2_'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor45isLayerForIFrameWithScrollCoordinatedContentsERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor32scrollableAreaForScrollingNodeIDEm'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor33removeFromScrollCoordinatedLayersERNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor35willRemoveScrollingLayerWithBackingERNS_11RenderLayerERNS_18RenderLayerBackingE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor20didAddScrollingLayerERNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor24resetTrackedRepaintRectsEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor17setTracksRepaintsEb'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor28viewHasTransparentBackgroundEPNS_5ColorE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor69viewNeedsToInvalidateEventRegionOfEnclosingCompositingLayerForRepaintEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor32hasNonMainLayersWithTiledBackingEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor21reasonsForCompositingERKNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor15didPaintBackingEPNS_18RenderLayerBackingE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor27rootExtendedBackgroundColorEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor30updateRootContentLayerClippingEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor39updateScrollSnapPropertiesWithFrameViewERKNS_9FrameViewE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor25startTrackingLayerFlushesEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor15layerFlushCountEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor31startTrackingCompositingUpdatesEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor22compositingUpdateCountEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor23updateCompositingPolicyEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor13paintContentsEPKNS_13GraphicsLayerERNS_15GraphicsContextERKNS_9FloatRectEj'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor39customPositionForVisibleRectComputationEPKNS_13GraphicsLayerERNS_10FloatPointE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor18isTrackingRepaintsEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor15flushLayersSoonERNS_20GraphicsLayerUpdaterE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor28displayRefreshMonitorFactoryEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor32cacheAcceleratedCompositingFlagsEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor43cacheAcceleratedCompositingFlagsAfterLayoutEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor19needsToBeCompositedERKNS_11RenderLayerERNS0_23RequiresCompositingDataE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor24requiresCompositingLayerERKNS_11RenderLayerERNS0_23RequiresCompositingDataE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor15canBeCompositedERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor56needsCompositingUpdateForStyleChangeOnNonCompositedLayerERNS_11RenderLayerEPKNS_11RenderStyleE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor13updateBackingERNS_11RenderLayerERNS0_23RequiresCompositingDataEPNS0_19BackingSharingStateENS0_15BackingRequiredE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor27updateLayerCompositingStateERNS_11RenderLayerEPKS1_RNS0_23RequiresCompositingDataERNS0_19BackingSharingStateE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor42applyToCompositedLayerIncludingDescendantsERNS_11RenderLayerERKT_'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor21recursiveRepaintLayerERNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor38layerRepaintTargetsBackingSharingLayerERNS_11RenderLayerERNS0_19BackingSharingStateE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor13computeExtentERKNS_15LayerOverlapMapERKNS_11RenderLayerERNS0_13OverlapExtentE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor15addToOverlapMapERNS_15LayerOverlapMapERKNS_11RenderLayerERNS0_13OverlapExtentE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor35addDescendantsToOverlapMapRecursiveERNS_15LayerOverlapMapERKNS_11RenderLayerEPS4_'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor16updateOverlapMapERNS_15LayerOverlapMapERKNS_11RenderLayerERNS0_13OverlapExtentEbbb'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor13layerOverlapsERKNS_15LayerOverlapMapERKNS_11RenderLayerERNS0_13OverlapExtentE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor33updateCompositingLayersTimerFiredEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor30computeCompositingRequirementsEPNS_11RenderLayerERS1_RNS_15LayerOverlapMapERNS0_16CompositingStateERNS0_19BackingSharingStateERb'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor24traverseUnchangedSubtreeEPNS_11RenderLayerERS1_RNS_15LayerOverlapMapERNS0_16CompositingStateERNS0_19BackingSharingStateERb'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor25updateBackingAndHierarchyERNS_11RenderLayerERN3WTF6VectorINS3_3RefINS_13GraphicsLayerENS3_12RawPtrTraitsIS6_EEEELm15108328'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor38adjustOverflowScrollbarContainerLayersERNS_11RenderLayerERKN3WTF6VectorIPS1_Lm0ENS3_15CrashOnOverflowELm16ENS3_10F414421'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor17layerHas3DContentERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor27isRunningTransformAnimationERNS_22RenderLayerModelObjectE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor27appendDocumentOverlayLayersERN3WTF6VectorINS1_3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS4_EEEELm0ENS1_15CrashOnO11731469'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor36needsCompositingForContentOrOverlaysEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor23scheduleRenderingUpdateEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor15ensureRootLayerEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor16destroyRootLayerEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor15attachRootLayerENS0_19RootLayerAttachmentE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor15detachRootLayerEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor26rootLayerAttachmentChangedEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor28updateOverflowControlsLayersEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor25updateScrollLayerPositionEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor25updateScrollLayerClippingEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor20positionForClipLayerEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor32notifyIFramesOfCompositingChangeEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor27visibleRectForLayerFlushingEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor4pageEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor20graphicsLayerFactoryEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor20scrollingCoordinatorEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor31requiresCompositingForAnimationERNS_22RenderLayerModelObjectE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor31requiresCompositingForTransformERNS_22RenderLayerModelObjectE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor40requiresCompositingForBackfaceVisibilityERNS_22RenderLayerModelObjectE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor27requiresCompositingForVideoERNS_22RenderLayerModelObjectE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor28requiresCompositingForCanvasERNS_22RenderLayerModelObjectE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor29requiresCompositingForFiltersERNS_22RenderLayerModelObjectE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor32requiresCompositingForWillChangeERNS_22RenderLayerModelObjectE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor27requiresCompositingForModelERNS_22RenderLayerModelObjectE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor28requiresCompositingForPluginERNS_22RenderLayerModelObjectERNS0_23RequiresCompositingDataE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor27requiresCompositingForFrameERNS_22RenderLayerModelObjectERNS0_23RequiresCompositingDataE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor37requiresCompositingForScrollableFrameERNS0_23RequiresCompositingDataE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor30requiresCompositingForPositionERNS_22RenderLayerModelObjectERKNS_11RenderLayerERNS0_23RequiresCompositingDataE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor39requiresCompositingForOverflowScrollingERKNS_11RenderLayerERNS0_23RequiresCompositingDataE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor32computeIndirectCompositingReasonERKNS_11RenderLayerEbbb'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor49layerScrollBehahaviorRelativeToCompositedAncestorERKNS_11RenderLayerES3_'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor46styleChangeMayAffectIndirectCompositingReasonsERKNS_11RenderStyleES3_'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor19attachScrollingNodeERNS_11RenderLayerENS_17ScrollingNodeTypeERNS_18ScrollingTreeStateE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor23registerScrollingNodeIDERNS_20ScrollingCoordinatorEmNS_17ScrollingNodeTypeERNS_18ScrollingTreeStateE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor33coordinatedScrollingRolesForLayerERKNS_11RenderLayerEPS2_'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor32updateScrollCoordinationForLayerERNS_11RenderLayerEPKS1_RNS_18ScrollingTreeStateEN3WTF9OptionSetINS0_24ScrollingNodeChangeFlagsEEE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor45updateScrollingNodeForViewportConstrainedRoleERNS_11RenderLayerERNS_18ScrollingTreeStateEN3WTF9OptionSetINS0_24Scr9329017'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor35updateScrollingNodeForScrollingRoleERNS_11RenderLayerERNS_18ScrollingTreeStateEN3WTF9OptionSetINS0_24ScrollingNodeChangeFlagsEEE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor40updateScrollingNodeForScrollingProxyRoleERNS_11RenderLayerERNS_18ScrollingTreeStateEN3WTF9OptionSetINS0_24ScrollingNodeChangeFlagsEEE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor38updateScrollingNodeForFrameHostingRoleERNS_11RenderLayerERNS_18ScrollingTreeStateEN3WTF9OptionSetINS0_24ScrollingNodeChangeFlagsEEE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor37updateScrollingNodeForPositioningRoleERNS_11RenderLayerEPKS1_RNS_18ScrollingTreeStateEN3WTF9OptionSetINS0_24Scroll1577439'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor25updateScrollingNodeLayersEmRNS_11RenderLayerERNS_20ScrollingCoordinatorE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor28detachScrollCoordinatedLayerERNS_11RenderLayerEN3WTF9OptionSetINS_22ScrollCoordinationRoleEEE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor36detachScrollCoordinatedLayerWithRoleERNS_11RenderLayerERNS_20ScrollingCoordinatorENS_22ScrollCoordinationRoleE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor31updateSynchronousScrollingNodesEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor31computeFixedViewportConstraintsERNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor32computeStickyViewportConstraintsERNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor28parentRelativeScrollableRectERKNS_11RenderLayerEPS2_'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor28computeAncestorClippingStackERKNS_11RenderLayerEPS2_'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor19requiresScrollLayerENS0_19RootLayerAttachmentE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor32requiresHorizontalScrollbarLayerEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor30requiresVerticalScrollbarLayerEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor25requiresScrollCornerLayerEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor23hasCoordinatedScrollingEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor28isAsyncScrollableStickyLayerERKNS_11RenderLayerEPPS2_'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor31shouldCompositeOverflowControlsEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor24documentUsesTiledBackingEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor21isMainFrameCompositorEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor39updateCompositingForLayerTreeAsTextDumpEv'/>
+<mbr r='WebCore::RenderLayerCompositor::m_renderView' o='128' t='WebCore::RenderView &amp;'/>
+<mbr r='WebCore::RenderLayerCompositor::m_updateCompositingLayersTimer' o='192' t='WebCore::Timer'/>
+<mbr r='WebCore::RenderLayerCompositor::m_compositingTriggers' o='576' t='ChromeClient::CompositingTriggerFlags'/>
+<mbr r='WebCore::RenderLayerCompositor::m_hasAcceleratedCompositing' o='608' t='bool'/>
+<mbr r='WebCore::RenderLayerCompositor::m_compositingPolicy' o='616' t='WebCore::CompositingPolicy'/>
+<mbr r='WebCore::RenderLayerCompositor::m_showDebugBorders' o='624' t='bool'/>
+<mbr r='WebCore::RenderLayerCompositor::m_showRepaintCounter' o='632' t='bool'/>
+<mbr r='WebCore::RenderLayerCompositor::m_acceleratedDrawingEnabled' o='640' t='bool'/>
+<mbr r='WebCore::RenderLayerCompositor::m_displayListDrawingEnabled' o='648' t='bool'/>
+<mbr r='WebCore::RenderLayerCompositor::m_compositing' o='656' t='bool'/>
+<mbr r='WebCore::RenderLayerCompositor::m_flushingLayers' o='664' t='bool'/>
+<mbr r='WebCore::RenderLayerCompositor::m_shouldFlushOnReattach' o='672' t='bool'/>
+<mbr r='WebCore::RenderLayerCompositor::m_forceCompositingMode' o='680' t='bool'/>
+<mbr r='WebCore::RenderLayerCompositor::m_inPostLayoutUpdate' o='688' t='bool'/>
+<mbr r='WebCore::RenderLayerCompositor::m_isTrackingRepaints' o='696' t='bool'/>
+<mbr r='WebCore::RenderLayerCompositor::m_contentLayersCount' o='704' t='unsigned int'/>
+<mbr r='WebCore::RenderLayerCompositor::m_layersWithTiledBackingCount' o='736' t='unsigned int'/>
+<mbr r='WebCore::RenderLayerCompositor::m_layerFlushCount' o='768' t='unsigned int'/>
+<mbr r='WebCore::RenderLayerCompositor::m_compositingUpdateCount' o='800' t='unsigned int'/>
+<mbr r='WebCore::RenderLayerCompositor::m_rootLayerAttachment' o='832' t='WebCore::RenderLayerCompositor::RootLayerAttachment'/>
+<mbr r='WebCore::RenderLayerCompositor::m_rootContentsLayer' o='896' t='RefPtr&lt;WebCore::GraphicsLayer&gt;'/>
+<mbr r='WebCore::RenderLayerCompositor::m_clipLayer' o='960' t='RefPtr&lt;WebCore::GraphicsLayer&gt;'/>
+<mbr r='WebCore::RenderLayerCompositor::m_scrollContainerLayer' o='1024' t='RefPtr&lt;WebCore::GraphicsLayer&gt;'/>
+<mbr r='WebCore::RenderLayerCompositor::m_scrolledContentsLayer' o='1088' t='RefPtr&lt;WebCore::GraphicsLayer&gt;'/>
+<mbr r='WebCore::RenderLayerCompositor::m_overflowControlsHostLayer' o='1152' t='RefPtr&lt;WebCore::GraphicsLayer&gt;'/>
+<mbr r='WebCore::RenderLayerCompositor::m_layerForHorizontalScrollbar' o='1216' t='RefPtr&lt;WebCore::GraphicsLayer&gt;'/>
+<mbr r='WebCore::RenderLayerCompositor::m_layerForVerticalScrollbar' o='1280' t='RefPtr&lt;WebCore::GraphicsLayer&gt;'/>
+<mbr r='WebCore::RenderLayerCompositor::m_layerForScrollCorner' o='1344' t='RefPtr&lt;WebCore::GraphicsLayer&gt;'/>
+<mbr r='WebCore::RenderLayerCompositor::m_layerUpdater' o='1408' t='std::unique_ptr&lt;GraphicsLayerUpdater&gt;'/>
+<mbr r='WebCore::RenderLayerCompositor::m_viewBackgroundIsTransparent' o='1472' t='bool'/>
+<mbr r='WebCore::RenderLayerCompositor::m_viewBackgroundColor' o='1536' t='WebCore::Color'/>
+<mbr r='WebCore::RenderLayerCompositor::m_rootExtendedBackgroundColor' o='1600' t='WebCore::Color'/>
+<mbr r='WebCore::RenderLayerCompositor::m_scrollingNodeToLayerMap' o='1664' t='HashMap&lt;WebCore::ScrollingNodeID, WeakPtr&lt;WebCore::RenderLayer&gt; &gt;'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='307' c='_ZNK7WebCore18RenderLayerBacking10compositorEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderView.h' l='127' c='_ZN7WebCore10RenderView10compositorEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderView.h' l='250'/>
+<size>216</size>
+<use f='WebKit/Source/WebCore/rendering/RenderView.cpp' l='511' c='_ZN7WebCore10RenderView30repaintViewAndCompositedLayersEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderView.cpp' l='719' c='_ZN7WebCore10RenderView10compositorEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderView.cpp' l='722' c='_ZN7WebCore10RenderView10compositorEv'/>
+<size>216</size>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='821' c='_ZNK7WebCore11RenderLayer10compositorEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='2407' c='_ZN7WebCore21RenderLayerCompositor23frameContentsCompositorERNS_12RenderWidgetE'/>
+<size>216</size>
+<fun r='_ZN7WebCore21RenderLayerCompositorC1ERNS_10RenderViewE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositorD1Ev'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor21enableCompositingModeEb'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor32cacheAcceleratedCompositingFlagsEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor43cacheAcceleratedCompositingFlagsAfterLayoutEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor23updateCompositingPolicyEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor21canRender3DTransformsEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor15willRecalcStyleEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor33didRecalcStyleWithNoPendingLayoutEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor39customPositionForVisibleRectComputationEPKNS_13GraphicsLayerERNS_10FloatPointE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor19notifyFlushRequiredEPKNS_13GraphicsLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor23scheduleRenderingUpdateEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor27visibleRectForLayerFlushingEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor24flushPendingLayerChangesEb'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor30didChangePlatformLayerForLayerERNS_11RenderLayerEPKNS_13GraphicsLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor15didPaintBackingEPNS_18RenderLayerBackingE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor20didChangeVisibleRectEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor31notifyFlushBeforeDisplayRefreshEPKNS_13GraphicsLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor15flushLayersSoonERNS_20GraphicsLayerUpdaterE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor28displayRefreshMonitorFactoryEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor29layerTiledBackingUsageChangedEPKNS_13GraphicsLayerEb'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor30scheduleCompositingLayerUpdateEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor33updateCompositingLayersTimerFiredEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor28cancelCompositingLayerUpdateEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor42applyToCompositedLayerIncludingDescendantsERNS_11RenderLayerERKT_'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor18updateEventRegionsEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor23updateCompositingLayersENS_21CompositingUpdateTypeEPNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor30computeCompositingRequirementsEPNS_11RenderLayerERS1_RNS_15LayerOverlapMapERNS0_16CompositingStateERNS0_19BackingSharingStateERb'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor24traverseUnchangedSubtreeEPNS_11RenderLayerERS1_RNS_15LayerOverlapMapERNS0_16CompositingStateERNS0_19BackingSharingStateERb'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor25updateBackingAndHierarchyERNS_11RenderLayerERN3WTF6VectorINS3_3RefINS_13GraphicsLayerENS3_12RawPtrTraitsIS6_EEEELm15108328'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor38adjustOverflowScrollbarContainerLayersERNS_11RenderLayerERKN3WTF6VectorIPS1_Lm0ENS3_15CrashOnOverflowELm16ENS3_10F414421'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor27appendDocumentOverlayLayersERN3WTF6VectorINS1_3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS4_EEEELm0ENS1_15CrashOnO11731469'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor36needsCompositingForContentOrOverlaysEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor21layerBecameCompositedERKNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor24layerBecameNonCompositedERKNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor17layerStyleChangedENS_15StyleDifferenceERNS_11RenderLayerEPKNS_11RenderStyleE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor56needsCompositingUpdateForStyleChangeOnNonCompositedLayerERNS_11RenderLayerEPKNS_11RenderStyleE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor20canCompositeClipPathERKNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor30updateRootContentLayerClippingEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor13updateBackingERNS_11RenderLayerERNS0_23RequiresCompositingDataEPNS0_19BackingSharingStateENS0_15BackingRequiredE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor27updateLayerCompositingStateERNS_11RenderLayerEPKS1_RNS0_23RequiresCompositingDataERNS0_19BackingSharingStateE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor26repaintOnCompositingChangeERNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor27repaintInCompositedAncestorERNS_11RenderLayerERKNS_10LayoutRectE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor13layerWasAddedERNS_11RenderLayerES2_'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor18layerWillBeRemovedERNS_11RenderLayerES2_'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor33enclosingNonStackingClippingLayerERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor13computeExtentERKNS_15LayerOverlapMapERKNS_11RenderLayerERNS0_13OverlapExtentE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor15addToOverlapMapERNS_15LayerOverlapMapERKNS_11RenderLayerERNS0_13OverlapExtentE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor35addDescendantsToOverlapMapRecursiveERNS_15LayerOverlapMapERKNS_11RenderLayerEPS4_'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor16updateOverlapMapERNS_15LayerOverlapMapERKNS_11RenderLayerERNS0_13OverlapExtentEbbb'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor13layerOverlapsERKNS_15LayerOverlapMapERKNS_11RenderLayerERNS0_13OverlapExtentE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor27canAccelerateVideoRenderingERNS_11RenderVideoE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor26frameViewDidChangeLocationERKNS_8IntPointE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor22frameViewDidChangeSizeEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor19widgetDidChangeSizeERNS_12RenderWidgetE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor23hasCoordinatedScrollingEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor25updateScrollLayerPositionEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor25updateScrollLayerClippingEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor20positionForClipLayerEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor18frameViewDidScrollEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor33frameViewDidAddOrRemoveScrollbarsEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor18frameViewDidLayoutEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor29rootLayerConfigurationChangedEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor39updateCompositingForLayerTreeAsTextDumpEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor15layerTreeAsTextEj'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor23platformLayerTreeAsTextERNS_7ElementEN3WTF9OptionSetINS_28PlatformLayerTreeAsTextFlagsEEE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor23frameContentsCompositorERNS_12RenderWidgetE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor24parentFrameContentLayersERNS_12RenderWidgetE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor23repaintCompositedLayersEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor21recursiveRepaintLayerERNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor38layerRepaintTargetsBackingSharingLayerERNS_11RenderLayerERNS0_19BackingSharingStateE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor15rootRenderLayerEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor17rootGraphicsLayerEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor13setIsInWindowEb'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor33invalidateEventRegionForAllFramesEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor33invalidateEventRegionForAllLayersEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor24clearBackingForAllLayersEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor23updateRootLayerPositionEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor12has3DContentEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor19needsToBeCompositedERKNS_11RenderLayerERNS0_23RequiresCompositingDataE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor24requiresCompositingLayerERKNS_11RenderLayerERNS0_23RequiresCompositingDataE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor15canBeCompositedERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor23requiresOwnBackingStoreERKNS_11RenderLayerEPS2_RKNS_10LayoutRectES7_'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor21reasonsForCompositingERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor17clippedByAncestorERNS_11RenderLayerEPKS1_'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor27updateAncestorClippingStackERKNS_11RenderLayerEPS2_'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor28computeAncestorClippingStackERKNS_11RenderLayerEPS2_'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor30asyncScrollableContainerNodeIDERKNS_12RenderObjectE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor28isCompositedSubframeRendererERKNS_12RenderObjectE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor27clipsCompositingDescendantsERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor31requiresCompositingForAnimationERNS_22RenderLayerModelObjectE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor31requiresCompositingForTransformERNS_22RenderLayerModelObjectE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor40requiresCompositingForBackfaceVisibilityERNS_22RenderLayerModelObjectE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor27requiresCompositingForVideoERNS_22RenderLayerModelObjectE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor28requiresCompositingForCanvasERNS_22RenderLayerModelObjectE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor29requiresCompositingForFiltersERNS_22RenderLayerModelObjectE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor32requiresCompositingForWillChangeERNS_22RenderLayerModelObjectE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor27requiresCompositingForModelERNS_22RenderLayerModelObjectE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor28requiresCompositingForPluginERNS_22RenderLayerModelObjectERNS0_23RequiresCompositingDataE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor27requiresCompositingForFrameERNS_22RenderLayerModelObjectERNS0_23RequiresCompositingDataE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor37requiresCompositingForScrollableFrameERNS0_23RequiresCompositingDataE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor30requiresCompositingForPositionERNS_22RenderLayerModelObjectERKNS_11RenderLayerERNS0_23RequiresCompositingDataE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor39requiresCompositingForOverflowScrollingERKNS_11RenderLayerERNS0_23RequiresCompositingDataE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor32computeIndirectCompositingReasonERKNS_11RenderLayerEbbb'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor46styleChangeMayAffectIndirectCompositingReasonsERKNS_11RenderStyleES3_'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor28isAsyncScrollableStickyLayerERKNS_11RenderLayerEPPS2_'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor39isViewportConstrainedFixedOrStickyLayerERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor28fixedLayerIntersectsViewportERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor31useCoordinatedScrollingForLayerERKNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor49layerScrollBehahaviorRelativeToCompositedAncestorERKNS_11RenderLayerES3_'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor37computeCoordinatedPositioningForLayerERKNS_11RenderLayerEPS2_'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor45isLayerForIFrameWithScrollCoordinatedContentsERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor27isRunningTransformAnimationERNS_22RenderLayerModelObjectE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor29needsContentsCompositingLayerERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor19requiresScrollLayerENS0_19RootLayerAttachmentE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor13paintContentsEPKNS_13GraphicsLayerERNS_15GraphicsContextERKNS_9FloatRectEj'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor38supportsFixedRootBackgroundCompositingEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor29needsFixedRootBackgroundLayerERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor24fixedRootBackgroundLayerEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor24resetTrackedRepaintRectsEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor17deviceScaleFactorEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor15pageScaleFactorEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor24zoomedOutPageScaleFactorEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor34contentsScaleMultiplierForNewTilesEPKNS_13GraphicsLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor24documentUsesTiledBackingEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor21isMainFrameCompositorEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor31shouldCompositeOverflowControlsEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor32requiresHorizontalScrollbarLayerEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor30requiresVerticalScrollbarLayerEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor25requiresScrollCornerLayerEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor69viewNeedsToInvalidateEventRegionOfEnclosingCompositingLayerForRepaintEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor28viewHasTransparentBackgroundEPNS_5ColorE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor22rootOrBodyStyleChangedERNS_13RenderElementEPKNS_11RenderStyleE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor40rootBackgroundColorOrTransparencyChangedEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor28updateOverflowControlsLayersEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor15ensureRootLayerEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor16destroyRootLayerEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor15attachRootLayerENS0_19RootLayerAttachmentE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor15detachRootLayerEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor25updateRootLayerAttachmentEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor26rootLayerAttachmentChangedEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor32notifyIFramesOfCompositingChangeEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor17layerHas3DContentERKNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor30deviceOrPageScaleFactorChangedEv'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor33removeFromScrollCoordinatedLayersERNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor31computeFixedViewportConstraintsERNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor32computeStickyViewportConstraintsERNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor19attachScrollingNodeERNS_11RenderLayerENS_17ScrollingNodeTypeERNS_18ScrollingTreeStateE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor23registerScrollingNodeIDERNS_20ScrollingCoordinatorEmNS_17ScrollingNodeTypeERNS_18ScrollingTreeStateE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor36detachScrollCoordinatedLayerWithRoleERNS_11RenderLayerERNS_20ScrollingCoordinatorENS_22ScrollCoordinationRoleE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor28detachScrollCoordinatedLayerERNS_11RenderLayerEN3WTF9OptionSetINS_22ScrollCoordinationRoleEEE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor33coordinatedScrollingRolesForLayerERKNS_11RenderLayerEPS2_'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor32updateScrollCoordinationForLayerERNS_11RenderLayerEPKS1_RNS_18ScrollingTreeStateEN3WTF9OptionSetINS0_24ScrollingNodeChangeFlagsEEE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor45updateScrollingNodeForViewportConstrainedRoleERNS_11RenderLayerERNS_18ScrollingTreeStateEN3WTF9OptionSetINS0_24Scr9329017'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor28parentRelativeScrollableRectERKNS_11RenderLayerEPS2_'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor25updateScrollingNodeLayersEmRNS_11RenderLayerERNS_20ScrollingCoordinatorE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor35updateScrollingNodeForScrollingRoleERNS_11RenderLayerERNS_18ScrollingTreeStateEN3WTF9OptionSetINS0_24ScrollingNodeChangeFlagsEEE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor40updateScrollingNodeForScrollingProxyRoleERNS_11RenderLayerERNS_18ScrollingTreeStateEN3WTF9OptionSetINS0_24ScrollingNodeChangeFlagsEEE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor38updateScrollingNodeForFrameHostingRoleERNS_11RenderLayerERNS_18ScrollingTreeStateEN3WTF9OptionSetINS0_24ScrollingNodeChangeFlagsEEE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor37updateScrollingNodeForPositioningRoleERNS_11RenderLayerEPKS1_RNS_18ScrollingTreeStateEN3WTF9OptionSetINS0_24Scroll1577439'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor31updateSynchronousScrollingNodesEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor32scrollableAreaForScrollingNodeIDEm'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor35willRemoveScrollingLayerWithBackingERNS_11RenderLayerERNS_18RenderLayerBackingE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor20didAddScrollingLayerERNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore21RenderLayerCompositor21windowScreenDidChangeEj'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor20scrollingCoordinatorEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor20graphicsLayerFactoryEv'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor39updateScrollSnapPropertiesWithFrameViewERKNS_9FrameViewE'/>
+<fun r='_ZNK7WebCore21RenderLayerCompositor4pageEv'/>
+<use f='WebKit/Source/WebCore/page/FrameView.cpp' l='2418' c='_ZN7WebCore9FrameView27delegatesScrollingDidChangeEv'/>
+<size>216</size>

@@ -1,0 +1,112 @@
+<def f='WebKit/WTF/Headers/wtf/ConcurrentPtrHashSet.h' l='55' ll='180'/>
+<use f='WebKit/WTF/Headers/wtf/ConcurrentPtrHashSet.h' l='56' c='_ZN3WTF20ConcurrentPtrHashSetC1ERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/ConcurrentPtrHashSet.h' l='56' c='_ZN3WTF20ConcurrentPtrHashSetaSERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/ConcurrentPtrHashSet.h' l='56' c='_ZN3WTF20ConcurrentPtrHashSetaSERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='695'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractSlotVisitor.h' l='208' c='_ZN3JSC19AbstractSlotVisitorC1ERNS_4HeapEN3WTF7CStringERNS3_20ConcurrentPtrHashSetE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractSlotVisitor.h' l='227'/>
+<size>88</size>
+<doc f='WebKit/WTF/Headers/wtf/ConcurrentPtrHashSet.h' l='37'>// This is a concurrent hash-based set for pointers. It&apos;s optimized for:
+//
+// - High rate of contains() calls.
+// - High rate of add() calls that don&apos;t add anything new. add() calls that don&apos;t add anything (nop adds)
+//   don&apos;t mutate the table at all.
+// - Not too many threads. I doubt this scales beyond ~4. Though, it may actually scale better than that
+//   if the rate of nop adds is absurdly high.
+//
+// If we wanted this to scale better, the main change we&apos;d have to make is how this table determines when
+// to resize. Right now it&apos;s a shared counter. We lock;xadd this counter. One easy way to make that
+// scalable is to require each thread that works with the ConcurrentPtrHashSet to register itself first.
+// Then each thread would have some data structure that has a counter. We could institute the policy that
+// each thread simply increments its own load counter, in its own data structure. Then, if any search to
+// resolve a collision does more than N iterations, we can compute a combined load by summing the load
+// counters of all of the thread data structures.
+//
+// ConcurrentPtrHashSet&apos;s main user, the GC, sees a 98% nop add rate in Speedometer. That&apos;s why this
+// focuses so much on cases where the table does not change.</doc>
+<fun r='_ZN3WTF20ConcurrentPtrHashSetC1ERKS0_'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSetC1Ev'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSetD1Ev'/>
+<fun r='_ZNK3WTF20ConcurrentPtrHashSet8containsET_'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet3addET_'/>
+<fun r='_ZNK3WTF20ConcurrentPtrHashSet4sizeEv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet15deleteOldTablesEv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet5clearEv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet4hashEPv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet10initializeEv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet4castET_'/>
+<fun r='_ZNK3WTF20ConcurrentPtrHashSet12containsImplEPv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet7addImplEPv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet7addSlowEPNS0_5TableEjjjPv'/>
+<fun r='_ZNK3WTF20ConcurrentPtrHashSet16containsImplSlowEPv'/>
+<fun r='_ZNK3WTF20ConcurrentPtrHashSet8sizeSlowEv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet17resizeIfNecessaryEv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet12resizeAndAddEPv'/>
+<mbr r='WTF::ConcurrentPtrHashSet::m_allTables' o='0' t='Vector&lt;std::unique_ptr&lt;Table&gt;, 4&gt;'/>
+<mbr r='WTF::ConcurrentPtrHashSet::m_table' o='384' t='Atomic&lt;WTF::ConcurrentPtrHashSet::Table *&gt;'/>
+<mbr r='WTF::ConcurrentPtrHashSet::m_stubTable' o='448' t='WTF::ConcurrentPtrHashSet::Table'/>
+<mbr r='WTF::ConcurrentPtrHashSet::m_lock' o='640' t='WTF::Lock'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractSlotVisitorInlines.h' l='97' c='_ZN3JSC19AbstractSlotVisitorC1ERNS_4HeapEN3WTF7CStringERNS3_20ConcurrentPtrHashSetE'/>
+<size>88</size>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='695'/>
+<use f='WebKit/Source/JavaScriptCore/heap/AbstractSlotVisitor.h' l='208' c='_ZN3JSC19AbstractSlotVisitorC1ERNS_4HeapEN3WTF7CStringERNS3_20ConcurrentPtrHashSetE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/AbstractSlotVisitor.h' l='227'/>
+<use f='WebKit/Source/JavaScriptCore/heap/AbstractSlotVisitorInlines.h' l='97' c='_ZN3JSC19AbstractSlotVisitorC1ERNS_4HeapEN3WTF7CStringERNS3_20ConcurrentPtrHashSetE'/>
+<size>88</size>
+<use f='WebKit/Source/JavaScriptCore/heap/VerifierSlotVisitor.h' l='188'/>
+<size>88</size>
+<def f='WebKit/Source/WTF/wtf/ConcurrentPtrHashSet.h' l='55' ll='180'/>
+<use f='WebKit/Source/WTF/wtf/ConcurrentPtrHashSet.h' l='56' c='_ZN3WTF20ConcurrentPtrHashSetC1ERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/ConcurrentPtrHashSet.h' l='56' c='_ZN3WTF20ConcurrentPtrHashSetaSERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/ConcurrentPtrHashSet.h' l='56' c='_ZN3WTF20ConcurrentPtrHashSetaSERKS0_'/>
+<size>88</size>
+<doc f='WebKit/Source/WTF/wtf/ConcurrentPtrHashSet.h' l='37'>// This is a concurrent hash-based set for pointers. It&apos;s optimized for:
+//
+// - High rate of contains() calls.
+// - High rate of add() calls that don&apos;t add anything new. add() calls that don&apos;t add anything (nop adds)
+//   don&apos;t mutate the table at all.
+// - Not too many threads. I doubt this scales beyond ~4. Though, it may actually scale better than that
+//   if the rate of nop adds is absurdly high.
+//
+// If we wanted this to scale better, the main change we&apos;d have to make is how this table determines when
+// to resize. Right now it&apos;s a shared counter. We lock;xadd this counter. One easy way to make that
+// scalable is to require each thread that works with the ConcurrentPtrHashSet to register itself first.
+// Then each thread would have some data structure that has a counter. We could institute the policy that
+// each thread simply increments its own load counter, in its own data structure. Then, if any search to
+// resolve a collision does more than N iterations, we can compute a combined load by summing the load
+// counters of all of the thread data structures.
+//
+// ConcurrentPtrHashSet&apos;s main user, the GC, sees a 98% nop add rate in Speedometer. That&apos;s why this
+// focuses so much on cases where the table does not change.</doc>
+<fun r='_ZN3WTF20ConcurrentPtrHashSetC1ERKS0_'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSetC1Ev'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSetD1Ev'/>
+<fun r='_ZNK3WTF20ConcurrentPtrHashSet8containsET_'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet3addET_'/>
+<fun r='_ZNK3WTF20ConcurrentPtrHashSet4sizeEv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet15deleteOldTablesEv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet5clearEv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet4hashEPv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet10initializeEv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet4castET_'/>
+<fun r='_ZNK3WTF20ConcurrentPtrHashSet12containsImplEPv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet7addImplEPv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet7addSlowEPNS0_5TableEjjjPv'/>
+<fun r='_ZNK3WTF20ConcurrentPtrHashSet16containsImplSlowEPv'/>
+<fun r='_ZNK3WTF20ConcurrentPtrHashSet8sizeSlowEv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet17resizeIfNecessaryEv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet12resizeAndAddEPv'/>
+<mbr r='WTF::ConcurrentPtrHashSet::m_allTables' o='0' t='Vector&lt;std::unique_ptr&lt;Table&gt;, 4&gt;'/>
+<mbr r='WTF::ConcurrentPtrHashSet::m_table' o='384' t='Atomic&lt;WTF::ConcurrentPtrHashSet::Table *&gt;'/>
+<mbr r='WTF::ConcurrentPtrHashSet::m_stubTable' o='448' t='WTF::ConcurrentPtrHashSet::Table'/>
+<mbr r='WTF::ConcurrentPtrHashSet::m_lock' o='640' t='WTF::Lock'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSetC1Ev'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSetD1Ev'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet15deleteOldTablesEv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet5clearEv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet10initializeEv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet7addSlowEPNS0_5TableEjjjPv'/>
+<fun r='_ZNK3WTF20ConcurrentPtrHashSet16containsImplSlowEPv'/>
+<fun r='_ZNK3WTF20ConcurrentPtrHashSet8sizeSlowEv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet17resizeIfNecessaryEv'/>
+<fun r='_ZN3WTF20ConcurrentPtrHashSet12resizeAndAddEPv'/>

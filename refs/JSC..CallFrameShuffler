@@ -1,0 +1,114 @@
+<def f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='40' ll='801'/>
+<size>616</size>
+<fun r='_ZN3JSC17CallFrameShufflerC1ERNS_12CCallHelpersERKNS_20CallFrameShuffleDataE'/>
+<fun r='_ZNK3JSC17CallFrameShuffler4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZN3JSC17CallFrameShuffler7lockGPRENS_12X86Registers10RegisterIDE'/>
+<fun r='_ZN3JSC17CallFrameShuffler10acquireGPREv'/>
+<fun r='_ZN3JSC17CallFrameShuffler10releaseGPRENS_12X86Registers10RegisterIDE'/>
+<fun r='_ZN3JSC17CallFrameShuffler10restoreGPRENS_12X86Registers10RegisterIDE'/>
+<fun r='_ZNK3JSC17CallFrameShuffler8snapshotEv'/>
+<fun r='_ZN3JSC17CallFrameShuffler20setCalleeJSValueRegsENS_11JSValueRegsE'/>
+<fun r='_ZN3JSC17CallFrameShuffler18assumeCalleeIsCellEv'/>
+<fun r='_ZN3JSC17CallFrameShuffler18prepareForTailCallEv'/>
+<fun r='_ZN3JSC17CallFrameShuffler18prepareForSlowPathEv'/>
+<smbr r='JSC::CallFrameShuffler::verbose' t='const bool'/>
+<mbr r='JSC::CallFrameShuffler::m_jit' o='0' t='JSC::CCallHelpers &amp;'/>
+<fun r='_ZN3JSC17CallFrameShuffler10prepareAnyEv'/>
+<fun r='_ZN3JSC17CallFrameShuffler5spillERNS_14CachedRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler7emitBoxERNS_14CachedRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler6canBoxERNS_14CachedRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler9ensureBoxERNS_14CachedRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler8emitLoadERNS_14CachedRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler7canLoadERNS_14CachedRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler10ensureLoadERNS_14CachedRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler13canLoadAndBoxERNS_14CachedRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler9emitStoreERNS_14CachedRecoveryENS_22AbstractMacroAssemblerINS_12X86AssemblerEE7AddressE'/>
+<fun r='_ZN3JSC17CallFrameShuffler12emitDisplaceERNS_14CachedRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler14emitDeltaCheckEv'/>
+<mbr r='JSC::CallFrameShuffler::m_cachedRecoveries' o='64' t='Bag&lt;JSC::CachedRecovery&gt;'/>
+<fun r='_ZN3JSC17CallFrameShuffler14updateRecoveryERNS_14CachedRecoveryENS_13ValueRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler17getCachedRecoveryENS_13ValueRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler17setCachedRecoveryENS_13ValueRecoveryEPNS_14CachedRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler19clearCachedRecoveryENS_13ValueRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler17addCachedRecoveryENS_13ValueRecoveryE'/>
+<mbr r='JSC::CallFrameShuffler::m_oldFrame' o='128' t='Vector&lt;JSC::CachedRecovery *&gt;'/>
+<fun r='_ZNK3JSC17CallFrameShuffler9numLocalsEv'/>
+<fun r='_ZNK3JSC17CallFrameShuffler6getOldENS_15VirtualRegisterE'/>
+<fun r='_ZN3JSC17CallFrameShuffler6setOldENS_15VirtualRegisterEPNS_14CachedRecoveryE'/>
+<fun r='_ZNK3JSC17CallFrameShuffler8firstOldEv'/>
+<fun r='_ZNK3JSC17CallFrameShuffler7lastOldEv'/>
+<fun r='_ZNK3JSC17CallFrameShuffler10isValidOldENS_15VirtualRegisterE'/>
+<mbr r='JSC::CallFrameShuffler::m_didExtendFrame' o='256' t='bool'/>
+<fun r='_ZN3JSC17CallFrameShuffler19extendFrameIfNeededEv'/>
+<mbr r='JSC::CallFrameShuffler::m_newFrame' o='320' t='Vector&lt;JSC::CachedRecovery *&gt;'/>
+<fun r='_ZNK3JSC17CallFrameShuffler8argCountEv'/>
+<fun r='_ZNK3JSC17CallFrameShuffler6getNewENS_15VirtualRegisterE'/>
+<fun r='_ZN3JSC17CallFrameShuffler6setNewENS_15VirtualRegisterEPNS_14CachedRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler6addNewENS_15VirtualRegisterENS_13ValueRecoveryE'/>
+<fun r='_ZNK3JSC17CallFrameShuffler8firstNewEv'/>
+<fun r='_ZNK3JSC17CallFrameShuffler7lastNewEv'/>
+<fun r='_ZNK3JSC17CallFrameShuffler10isValidNewENS_15VirtualRegisterE'/>
+<mbr r='JSC::CallFrameShuffler::m_alignedOldFrameSize' o='448' t='int'/>
+<mbr r='JSC::CallFrameShuffler::m_alignedNewFrameSize' o='480' t='int'/>
+<mbr r='JSC::CallFrameShuffler::m_frameDelta' o='512' t='int'/>
+<fun r='_ZNK3JSC17CallFrameShuffler8newAsOldENS_15VirtualRegisterE'/>
+<mbr r='JSC::CallFrameShuffler::m_lockedRegisters' o='544' t='JSC::RegisterSet'/>
+<mbr r='JSC::CallFrameShuffler::m_registers' o='576' t='RegisterMap&lt;JSC::CachedRecovery *&gt;'/>
+<mbr r='JSC::CallFrameShuffler::m_numberTagRegister' o='2624' t='JSC::GPRReg'/>
+<fun r='_ZN3JSC17CallFrameShuffler27tryAcquireNumberTagRegisterEv'/>
+<mbr r='JSC::CallFrameShuffler::m_newRegisters' o='2688' t='RegisterMap&lt;JSC::CachedRecovery *&gt;'/>
+<fun r='_ZNK3JSC17CallFrameShuffler15getFreeRegisterERKT_'/>
+<fun r='_ZNK3JSC17CallFrameShuffler14getFreeTempGPREv'/>
+<fun r='_ZNK3JSC17CallFrameShuffler10getFreeGPREv'/>
+<fun r='_ZNK3JSC17CallFrameShuffler10getFreeFPREv'/>
+<fun r='_ZNK3JSC17CallFrameShuffler15hasFreeRegisterEv'/>
+<fun r='_ZN3JSC17CallFrameShuffler14ensureRegisterERKT_'/>
+<fun r='_ZN3JSC17CallFrameShuffler14ensureRegisterEv'/>
+<fun r='_ZN3JSC17CallFrameShuffler13ensureTempGPREv'/>
+<fun r='_ZN3JSC17CallFrameShuffler9ensureGPREv'/>
+<fun r='_ZN3JSC17CallFrameShuffler9ensureFPREv'/>
+<fun r='_ZNK3JSC17CallFrameShuffler6getNewENS_11JSValueRegsE'/>
+<fun r='_ZN3JSC17CallFrameShuffler6addNewENS_11JSValueRegsENS_13ValueRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler6addNewENS_12X86Registers13XMMRegisterIDENS_13ValueRecoveryE'/>
+<mbr r='JSC::CallFrameShuffler::m_oldFrameBase' o='4736' t='JSC::GPRReg'/>
+<mbr r='JSC::CallFrameShuffler::m_oldFrameOffset' o='4768' t='int'/>
+<fun r='_ZNK3JSC17CallFrameShuffler13addressForOldENS_15VirtualRegisterE'/>
+<mbr r='JSC::CallFrameShuffler::m_newFrameBase' o='4800' t='JSC::GPRReg'/>
+<mbr r='JSC::CallFrameShuffler::m_newFrameOffset' o='4832' t='int'/>
+<fun r='_ZNK3JSC17CallFrameShuffler11isUndecidedEv'/>
+<fun r='_ZNK3JSC17CallFrameShuffler10isSlowPathEv'/>
+<fun r='_ZNK3JSC17CallFrameShuffler13addressForNewENS_15VirtualRegisterE'/>
+<mbr r='JSC::CallFrameShuffler::m_dangerFrontier' o='4864' t='JSC::VirtualRegister'/>
+<fun r='_ZNK3JSC17CallFrameShuffler14dangerFrontierEv'/>
+<fun r='_ZNK3JSC17CallFrameShuffler11isDangerNewENS_15VirtualRegisterE'/>
+<fun r='_ZN3JSC17CallFrameShuffler20updateDangerFrontierEv'/>
+<fun r='_ZNK3JSC17CallFrameShuffler17hasOnlySafeWritesERNS_14CachedRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler9tryWritesERNS_14CachedRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler17performSafeWritesEv'/>
+<mbr r='JSC::CallFrameShuffler::m_numPassedArgs' o='4896' t='unsigned int'/>
+<fun r='_ZN3JSC17CallFrameShufflerC1ERNS_12CCallHelpersERKNS_20CallFrameShuffleDataE'/>
+<fun r='_ZNK3JSC17CallFrameShuffler4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZN3JSC17CallFrameShuffler17getCachedRecoveryENS_13ValueRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler17setCachedRecoveryENS_13ValueRecoveryEPNS_14CachedRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler5spillERNS_14CachedRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler14emitDeltaCheckEv'/>
+<fun r='_ZN3JSC17CallFrameShuffler19extendFrameIfNeededEv'/>
+<fun r='_ZN3JSC17CallFrameShuffler18prepareForSlowPathEv'/>
+<fun r='_ZN3JSC17CallFrameShuffler18prepareForTailCallEv'/>
+<fun r='_ZN3JSC17CallFrameShuffler9tryWritesERNS_14CachedRecoveryE'/>
+<fun r='_ZN3JSC17CallFrameShuffler17performSafeWritesEv'/>
+<fun r='_ZN3JSC17CallFrameShuffler10prepareAnyEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCall.cpp' l='193' c='_ZN3JSC3JIT15compileTailCallERKT_PNS_12CallLinkInfoEj'/>
+<size>616</size>
+<use f='WebKit/Source/JavaScriptCore/jit/Repatch.cpp' l='1561' c='_ZN3JSC19linkPolymorphicCallEPNS_14JSGlobalObjectEPNS_9CallFrameERNS_12CallLinkInfoENS_11CallVariantE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/Repatch.cpp' l='1564' c='_ZN3JSC19linkPolymorphicCallEPNS_14JSGlobalObjectEPNS_9CallFrameERNS_12CallLinkInfoENS_11CallVariantE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/Repatch.cpp' l='1644' c='_ZN3JSC19linkPolymorphicCallEPNS_14JSGlobalObjectEPNS_9CallFrameERNS_12CallLinkInfoENS_11CallVariantE'/>
+<size>616</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='858' c='_ZN3JSC3DFG14SpeculativeJIT8emitCallEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='902' c='_ZN3JSC3DFG14SpeculativeJIT8emitCallEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='916' c='_ZN3JSC3DFG14SpeculativeJIT8emitCallEPNS0_4NodeE'/>
+<size>616</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10026' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB328compileDirectCallOrConstructEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10181' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB315compileTailCallEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10186' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB315compileTailCallEv'/>
+<size>616</size>

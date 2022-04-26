@@ -1,0 +1,12 @@
+<dec f='WebKit/Source/JavaScriptCore/bytecode/PropertyCondition.h' l='265' type='bool JSC::PropertyCondition::isStillValid(JSC::Structure * , JSC::JSObject * base = nullptr) const'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/PropertyCondition.h' l='258'>// Checks if the condition is still valid right now for the given object and structure.
+    // May conservatively return false, if the object and structure alone don&apos;t guarantee the
+    // condition. This happens for an Absence condition on an object that may have impure
+    // properties. If the object is not supplied, then a &quot;true&quot; return indicates that checking if
+    // an object has the given structure guarantees the condition still holds. If an object is
+    // supplied, then you may need to use some other watchpoints on the object to guarantee the
+    // condition in addition to the structure check.</doc>
+<def f='WebKit/Source/JavaScriptCore/bytecode/PropertyCondition.cpp' l='289' ll='313' type='bool JSC::PropertyCondition::isStillValid(JSC::Structure * structure, JSC::JSObject * base = nullptr) const'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PropertyCondition.cpp' l='379' u='c' c='_ZNK3JSC17PropertyCondition11isWatchableEPNS_9StructureEPNS_8JSObjectENS0_18WatchabilityEffortE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ObjectPropertyCondition.cpp' l='86' u='c' c='_ZNK3JSC23ObjectPropertyCondition12isStillValidEPNS_9StructureE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ObjectPropertyCondition.cpp' l='99' u='c' c='_ZNK3JSC23ObjectPropertyCondition24structureEnsuresValidityEPNS_9StructureE'/>

@@ -1,0 +1,17 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='790' type='bool JSC::JSObject::putOwnDataProperty(JSC::VM &amp; , JSC::PropertyName , JSC::JSValue , JSC::PutPropertySlot &amp; )'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='785'>// putOwnDataProperty has &apos;put&apos; like semantics, however this method:
+    //  - assumes the object contains no own getter/setter properties.
+    //  - provides no special handling for __proto__
+    //  - does not walk the prototype chain (to check for accessors or non-writable properties).
+    // This is used by JSLexicalEnvironment.</doc>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObjectInlines.h' l='532' ll='536' type='bool JSC::JSObject::putOwnDataProperty(JSC::VM &amp; vm, JSC::PropertyName propertyName, JSC::JSValue value, JSC::PutPropertySlot &amp; slot)'/>
+<dec f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='790' type='bool JSC::JSObject::putOwnDataProperty(JSC::VM &amp; , JSC::PropertyName , JSC::JSValue , JSC::PutPropertySlot &amp; )'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/JSObjectInlines.h' l='532' ll='536' type='bool JSC::JSObject::putOwnDataProperty(JSC::VM &amp; vm, JSC::PropertyName propertyName, JSC::JSValue value, JSC::PutPropertySlot &amp; slot)'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='785'>// putOwnDataProperty has &apos;put&apos; like semantics, however this method:
+    //  - assumes the object contains no own getter/setter properties.
+    //  - provides no special handling for __proto__
+    //  - does not walk the prototype chain (to check for accessors or non-writable properties).
+    // This is used by JSLexicalEnvironment.</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/ObjectConstructorInlines.h' l='92' u='c' c='_ZN3JSC16objectAssignFastERNS_2VMEPNS_8JSObjectES3_RN3WTF6VectorINS4_6RefPtrINS4_17UniquedStringImplENS4_12RawPtrTraitsIS7_EENS4_21DefaultRefDerefTrai7250689'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='358' u='c' c='_ZN3JSC3DFG27operationObjectAssignObjectEPNS_14JSGlobalObjectEPNS_8JSObjectES4_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSLexicalEnvironment.cpp' l='126' u='c' c='_ZN3JSC20JSLexicalEnvironment3putEPNS_6JSCellEPNS_14JSGlobalObjectENS_12PropertyNameENS_7JSValueERNS_15PutPropertySlotE'/>

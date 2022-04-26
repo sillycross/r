@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/WebCore/dom/DocumentParser.h' l='56' type='void WebCore::DocumentParser::append(RefPtr&lt;WTF::StringImpl&gt; &amp;&amp; )'/>
+<doc f='WebKit/Source/WebCore/dom/DocumentParser.h' l='53'>// FIXME: append() should be private, but DocumentWriter::replaceDocument uses it for now.
+    // FIXME: This really should take a std::unique_ptr to signify that it expects to take
+    // ownership of the buffer. The parser expects the RefPtr to hold the only ref of the StringImpl.</doc>
+<ovr f='WebKit/Source/WebCore/dom/RawDataDocumentParser.h' l='58' c='_ZN7WebCore21RawDataDocumentParser6appendEON3WTF6RefPtrINS1_10StringImplENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='1552' u='c' c='_ZN7WebCore8Document10setContentERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentWriter.cpp' l='91' u='c' c='_ZN7WebCore14DocumentWriter49replaceDocumentWithResultOfExecutingJavascriptURLERKN3WTF6StringEPNS_8DocumentE'/>

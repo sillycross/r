@@ -1,0 +1,204 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VMTraps.h' l='147'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VMTraps.h' l='156' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VMTraps.h' l='166' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VMTraps.h' l='169' u='w'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VMTraps.h' l='48'>// The following are the type of VMTrap events / signals that can be fired.
+    // This list should be sorted in servicing priority order from highest to
+    // lowest.
+    //
+    // The currently imlemented events are (in highest to lowest priority):
+    //
+    //  NeedShellTimeoutCheck
+    //  - Only used by the jsc shell to check if we need to force a hard shutdown.
+    //  - This event may fire more than once before the jsc shell forces the
+    //    shutdown (see NeedWatchdogCheck&apos;s discussion of CPU time for why
+    //    this may be).
+    //
+    //  NeedTermination
+    //  - Used to request the termination of execution of the &quot;current&quot; stack.
+    //    Note: &quot;Termination&quot; here simply means we terminate whatever is currently
+    //    executing on the stack. It does not mean termination of the VM, and hence,
+    //    is not permanent. Permanent VM termination mechanisms (like stopping the
+    //    request to stop a woker thread) may use this Event to terminate the
+    //    &quot;current&quot; stack, but it needs to do some additional work to prevent
+    //    re-entry into the VM.
+    //
+    //  - The mechanism for achieving this stack termination is by throwing the
+    //    uncatchable TerminationException that piggy back on the VM&apos;s exception
+    //    handling machinery to the unwind stack. The TerminationException is
+    //    uncatchable in the sense that the VM will refuse to let JS code&apos;s
+    //    catch handlers catch the exception. C++ code in the VM (that calls into
+    //    JS) needs to do exception checks, and make sure to propagate the
+    //    exception if it is the TerminationException.
+    //
+    //  - Again, the termination request is not permanent. Once the VM unwinds out
+    //    of the &quot;current&quot; execution state on the stack, the client may choose to
+    //    clear the exception, and re-enter the VM to executing JS code again.
+    //    See NeedWatchdogCheck below on why the VM watchdog needs this ability
+    //    to re-enter the VM after terminating the current stack.
+    //
+    //  - Many clients enter the VM via APIs that return an uncaught exception
+    //    in a NakedPointer&lt;Exception&gt;&amp;. Those APIs would automatically clear
+    //    the uncaught TerminationException and return it via the
+    //    NakedPointer&lt;Exception&gt;&amp;. Hence, the VM is ready for re-entry upon
+    //    returning to the client.
+    //
+    //  - In the above notes, &quot;current&quot; (as in &quot;current&quot; stack) is in quotes because
+    //    NeedTermination needs to guarantee that the TerminationException has
+    //    been thrown in response to this event. If the event fires just before
+    //    the VM exits and the TerminationException was not thrown yet, then we&apos;ll
+    //    keep the NeedTermination trap bit set for the next VM entry. In this case,
+    //    the termination will actual happen on the next stack of execution.
+    //
+    //    This behavior is needed because some clients rely on seeing an uncaught
+    //    TerminationException to know that a termination has been requested.
+    //    Technically, there are better ways for the client to know about the
+    //    termination request (after all, the termination is initiated by the
+    //    client). However, this is how some current client code works. So, we need
+    //    to retain this behavior until we can change all the clients that rely on
+    //    it.
+    //
+    //  NeedWatchdogCheck
+    //  - Used to request a check as to whether the watchdog timer has expired.
+    //    Note: the watchdog timeout is logically measured in CPU time. However,
+    //    the real timer implementation (that fires this NeedWatchdogCheck event)
+    //    has to operate on wall clock time. Hence, NeedWatchdogCheck firing does not
+    //    necessarily mean that the watchdog timeout has expired, and we can expect
+    //    to see NeedWatchdogCheck firing more than once for a single watchdog
+    //    timeout.
+    //
+    //  - The watchdog mechanism has the option to request termination of the
+    //    the current execution stack on watchdog timeout (see
+    //    Watchdog::shouldTerminate()). If termination is requested, it will
+    //    be executed via the same mechanism as NeedTermination (see how the
+    //    NeedWatchdogCheck case can fall through to the NeedTermination case in
+    //    VMTraps::handleTraps()).
+    //
+    //  - The watchdog timing out is not permanent i.e. after terminating the
+    //    current stack, the client may choose to re-enter the VM to execute more
+    //    JS. For example, a client may use the watchdog to ensure that an untrusted
+    //    3rd party script (that it runs) does not get trapped in an infinite loop.
+    //    If so, the watchdog timeout can terminate that script. After terminating
+    //    that bad script, the client may choose to allow other 3rd party scripts
+    //    to execute, or even allow more tries on the current one that timed out.
+    //    Hence, the timeout and termination must not be permanent.
+    //
+    //    This is why termination via the NeedTermination event is not permanent,
+    //    but only terminates the &quot;current&quot; stack.
+    //
+    //  NeedDebuggerBreak
+    //  - Services asynchronous debugger break requests.
+    //
+    //  NeedExceptionHandling
+    //  - Unlike the other events (which are asynchronous to the mutator thread),
+    //    NeedExceptionHandling is set when the mutator thread throws a JS exception
+    //    and cleared when the exception is handled / caught.
+    //
+    //  - The reason why NeedExceptionHandling is a bit on VMTraps as well is so
+    //    that we can piggy back on all the RETURN_IF_EXCEPTION checks in C++ code
+    //    to service VMTraps as well. Having the NeedExceptionHandling event as
+    //    part of VMTraps allows RETURN_IF_EXCEPTION to optimally only do a single
+    //    check to determine if the VM possibly has a pending exception to handle,
+    //    as well as if there are asynchronous VMTraps events to handle.</doc>
+<dec f='WebKit/Source/JavaScriptCore/runtime/VMTraps.h' l='147'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VMTraps.h' l='156' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VMTraps.h' l='166' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VMTraps.h' l='169' u='w'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/VMTraps.h' l='48'>// The following are the type of VMTrap events / signals that can be fired.
+    // This list should be sorted in servicing priority order from highest to
+    // lowest.
+    //
+    // The currently imlemented events are (in highest to lowest priority):
+    //
+    //  NeedShellTimeoutCheck
+    //  - Only used by the jsc shell to check if we need to force a hard shutdown.
+    //  - This event may fire more than once before the jsc shell forces the
+    //    shutdown (see NeedWatchdogCheck&apos;s discussion of CPU time for why
+    //    this may be).
+    //
+    //  NeedTermination
+    //  - Used to request the termination of execution of the &quot;current&quot; stack.
+    //    Note: &quot;Termination&quot; here simply means we terminate whatever is currently
+    //    executing on the stack. It does not mean termination of the VM, and hence,
+    //    is not permanent. Permanent VM termination mechanisms (like stopping the
+    //    request to stop a woker thread) may use this Event to terminate the
+    //    &quot;current&quot; stack, but it needs to do some additional work to prevent
+    //    re-entry into the VM.
+    //
+    //  - The mechanism for achieving this stack termination is by throwing the
+    //    uncatchable TerminationException that piggy back on the VM&apos;s exception
+    //    handling machinery to the unwind stack. The TerminationException is
+    //    uncatchable in the sense that the VM will refuse to let JS code&apos;s
+    //    catch handlers catch the exception. C++ code in the VM (that calls into
+    //    JS) needs to do exception checks, and make sure to propagate the
+    //    exception if it is the TerminationException.
+    //
+    //  - Again, the termination request is not permanent. Once the VM unwinds out
+    //    of the &quot;current&quot; execution state on the stack, the client may choose to
+    //    clear the exception, and re-enter the VM to executing JS code again.
+    //    See NeedWatchdogCheck below on why the VM watchdog needs this ability
+    //    to re-enter the VM after terminating the current stack.
+    //
+    //  - Many clients enter the VM via APIs that return an uncaught exception
+    //    in a NakedPointer&lt;Exception&gt;&amp;. Those APIs would automatically clear
+    //    the uncaught TerminationException and return it via the
+    //    NakedPointer&lt;Exception&gt;&amp;. Hence, the VM is ready for re-entry upon
+    //    returning to the client.
+    //
+    //  - In the above notes, &quot;current&quot; (as in &quot;current&quot; stack) is in quotes because
+    //    NeedTermination needs to guarantee that the TerminationException has
+    //    been thrown in response to this event. If the event fires just before
+    //    the VM exits and the TerminationException was not thrown yet, then we&apos;ll
+    //    keep the NeedTermination trap bit set for the next VM entry. In this case,
+    //    the termination will actual happen on the next stack of execution.
+    //
+    //    This behavior is needed because some clients rely on seeing an uncaught
+    //    TerminationException to know that a termination has been requested.
+    //    Technically, there are better ways for the client to know about the
+    //    termination request (after all, the termination is initiated by the
+    //    client). However, this is how some current client code works. So, we need
+    //    to retain this behavior until we can change all the clients that rely on
+    //    it.
+    //
+    //  NeedWatchdogCheck
+    //  - Used to request a check as to whether the watchdog timer has expired.
+    //    Note: the watchdog timeout is logically measured in CPU time. However,
+    //    the real timer implementation (that fires this NeedWatchdogCheck event)
+    //    has to operate on wall clock time. Hence, NeedWatchdogCheck firing does not
+    //    necessarily mean that the watchdog timeout has expired, and we can expect
+    //    to see NeedWatchdogCheck firing more than once for a single watchdog
+    //    timeout.
+    //
+    //  - The watchdog mechanism has the option to request termination of the
+    //    the current execution stack on watchdog timeout (see
+    //    Watchdog::shouldTerminate()). If termination is requested, it will
+    //    be executed via the same mechanism as NeedTermination (see how the
+    //    NeedWatchdogCheck case can fall through to the NeedTermination case in
+    //    VMTraps::handleTraps()).
+    //
+    //  - The watchdog timing out is not permanent i.e. after terminating the
+    //    current stack, the client may choose to re-enter the VM to execute more
+    //    JS. For example, a client may use the watchdog to ensure that an untrusted
+    //    3rd party script (that it runs) does not get trapped in an infinite loop.
+    //    If so, the watchdog timeout can terminate that script. After terminating
+    //    that bad script, the client may choose to allow other 3rd party scripts
+    //    to execute, or even allow more tries on the current one that timed out.
+    //    Hence, the timeout and termination must not be permanent.
+    //
+    //    This is why termination via the NeedTermination event is not permanent,
+    //    but only terminates the &quot;current&quot; stack.
+    //
+    //  NeedDebuggerBreak
+    //  - Services asynchronous debugger break requests.
+    //
+    //  NeedExceptionHandling
+    //  - Unlike the other events (which are asynchronous to the mutator thread),
+    //    NeedExceptionHandling is set when the mutator thread throws a JS exception
+    //    and cleared when the exception is handled / caught.
+    //
+    //  - The reason why NeedExceptionHandling is a bit on VMTraps as well is so
+    //    that we can piggy back on all the RETURN_IF_EXCEPTION checks in C++ code
+    //    to service VMTraps as well. Having the NeedExceptionHandling event as
+    //    part of VMTraps allows RETURN_IF_EXCEPTION to optimally only do a single
+    //    check to determine if the VM possibly has a pending exception to handle,
+    //    as well as if there are asynchronous VMTraps events to handle.</doc>

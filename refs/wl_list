@@ -1,0 +1,80 @@
+<def f='include/wayland-util.h' l='288' ll='293'/>
+<use f='include/wayland-util.h' l='290'/>
+<use f='include/wayland-util.h' l='292'/>
+<use f='include/wayland-util.h' l='303' c='wl_list_init'/>
+<use f='include/wayland-util.h' l='319' c='wl_list_insert'/>
+<use f='include/wayland-util.h' l='319' c='wl_list_insert'/>
+<use f='include/wayland-util.h' l='331' c='wl_list_remove'/>
+<use f='include/wayland-util.h' l='345' c='wl_list_length'/>
+<use f='include/wayland-util.h' l='357' c='wl_list_empty'/>
+<use f='include/wayland-util.h' l='371' c='wl_list_insert_list'/>
+<use f='include/wayland-util.h' l='371' c='wl_list_insert_list'/>
+<use f='include/wayland-server-core.h' l='291' c='wl_display_get_client_list'/>
+<use f='include/wayland-server-core.h' l='294' c='wl_client_get_link'/>
+<use f='include/wayland-server-core.h' l='298' c='wl_client_from_link'/>
+<use f='include/wayland-server-core.h' l='398'/>
+<use f='include/wayland-server-core.h' l='416'/>
+<use f='include/wayland-server-core.h' l='550' c='wl_resource_get_link'/>
+<use f='include/wayland-server-core.h' l='554' c='wl_resource_from_link'/>
+<use f='include/wayland-server-core.h' l='557' c='wl_resource_find_for_client'/>
+<use f='include/wayland-server.h' l='67'/>
+<size>16</size>
+<doc f='include/wayland-util.h' l='231'>/** \class wl_list
+ *
+ * \brief Doubly-linked list
+ *
+ * On its own, an instance of `struct wl_list` represents the sentinel head of
+ * a doubly-linked list, and must be initialized using wl_list_init().
+ * When empty, the list head&apos;s `next` and `prev` members point to the list head
+ * itself, otherwise `next` references the first element in the list, and `prev`
+ * refers to the last element in the list.
+ *
+ * Use the `struct wl_list` type to represent both the list head and the links
+ * between elements within the list. Use wl_list_empty() to determine if the
+ * list is empty in O(1).
+ *
+ * All elements in the list must be of the same type. The element type must have
+ * a `struct wl_list` member, often named `link` by convention. Prior to
+ * insertion, there is no need to initialize an element&apos;s `link` - invoking
+ * wl_list_init() on an individual list element&apos;s `struct wl_list` member is
+ * unnecessary if the very next operation is wl_list_insert(). However, a
+ * common idiom is to initialize an element&apos;s `link` prior to removal - ensure
+ * safety by invoking wl_list_init() before wl_list_remove().
+ *
+ * Consider a list reference `struct wl_list foo_list`, an element type as
+ * `struct element`, and an element&apos;s link member as `struct wl_list link`.
+ *
+ * The following code initializes a list and adds three elements to it.
+ *
+ * \code
+ * struct wl_list foo_list;
+ *
+ * struct element {
+ *         int foo;
+ *         struct wl_list link;
+ * };
+ * struct element e1, e2, e3;
+ *
+ * wl_list_init(&amp;foo_list);
+ * wl_list_insert(&amp;foo_list, &amp;e1.link);   // e1 is the first element
+ * wl_list_insert(&amp;foo_list, &amp;e2.link);   // e2 is now the first element
+ * wl_list_insert(&amp;e2.link, &amp;e3.link); // insert e3 after e2
+ * \endcode
+ *
+ * The list now looks like &lt;em&gt;[e2, e3, e1]&lt;/em&gt;.
+ *
+ * The `wl_list` API provides some iterator macros. For example, to iterate
+ * a list in ascending order:
+ *
+ * \code
+ * struct element *e;
+ * wl_list_for_each(e, foo_list, link) {
+ *         do_something_with_element(e);
+ * }
+ * \endcode
+ *
+ * See the documentation of each iterator for details.
+ * \sa http://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/tree/include/linux/list.h
+ */</doc>
+<mbr r='wl_list::prev' o='0' t='struct wl_list *'/>
+<mbr r='wl_list::next' o='64' t='struct wl_list *'/>

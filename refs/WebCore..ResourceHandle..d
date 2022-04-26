@@ -1,0 +1,36 @@
+<dec f='WebKit/Source/WebCore/platform/network/ResourceHandle.h' l='271' type='std::unique_ptr&lt;ResourceHandleInternal&gt;'/>
+<offset>128</offset>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='81' u='w' c='_ZN7WebCore14ResourceHandleC1EPNS_17NetworkingContextERKNS_15ResourceRequestEPNS_20ResourceHandleClientEbbbON3WTF6RefPtrINS_14SecurityOriginENS8_12Raw10399747'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='101' u='m' c='_ZN7WebCore14ResourceHandle6createEPNS_17NetworkingContextERKNS_15ResourceRequestEPNS_20ResourceHandleClientEbbbON3WTF6RefPtrINS_14SecurityOriginENS8_5845183'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='112' u='m' c='_ZN7WebCore14ResourceHandle15scheduleFailureENS0_11FailureTypeE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='113' u='m' c='_ZN7WebCore14ResourceHandle15scheduleFailureENS0_11FailureTypeE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='121' u='m' c='_ZN7WebCore14ResourceHandle17failureTimerFiredEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='126' u='m' c='_ZN7WebCore14ResourceHandle17failureTimerFiredEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='130' u='m' c='_ZN7WebCore14ResourceHandle17failureTimerFiredEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='150' u='m' c='_ZNK7WebCore14ResourceHandle6clientEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='155' u='m' c='_ZN7WebCore14ResourceHandle11clearClientEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='166' u='m' c='_ZN7WebCore14ResourceHandle18didReceiveResponseEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='183' u='m' c='_ZN7WebCore14ResourceHandle12firstRequestEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='188' u='m' c='_ZNK7WebCore14ResourceHandle7contextEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='193' u='m' c='_ZNK7WebCore14ResourceHandle14lastHTTPMethodEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='198' u='m' c='_ZNK7WebCore14ResourceHandle26hasAuthenticationChallengeEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='206' u='m' c='_ZN7WebCore14ResourceHandle19clearAuthenticationEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='211' u='m' c='_ZNK7WebCore14ResourceHandle13failsTAOCheckEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='216' u='m' c='_ZN7WebCore14ResourceHandle8checkTAOERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='220' u='m' c='_ZN7WebCore14ResourceHandle8checkTAOERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='223' u='m' c='_ZN7WebCore14ResourceHandle8checkTAOERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='226' u='m' c='_ZN7WebCore14ResourceHandle8checkTAOERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='231' u='m' c='_ZNK7WebCore14ResourceHandle22hasCrossOriginRedirectEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='236' u='m' c='_ZN7WebCore14ResourceHandle31markAsHavingCrossOriginRedirectEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='241' u='m' c='_ZN7WebCore14ResourceHandle22incrementRedirectCountEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='246' u='m' c='_ZNK7WebCore14ResourceHandle13redirectCountEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='251' u='m' c='_ZNK7WebCore14ResourceHandle24startTimeBeforeRedirectsEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='256' u='m' c='_ZN7WebCore14ResourceHandle18networkLoadMetricsEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='261' u='m' c='_ZN7WebCore14ResourceHandle21setNetworkLoadMetricsEON3WTF3BoxINS_18NetworkLoadMetricsEEE'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='266' u='m' c='_ZNK7WebCore14ResourceHandle18shouldContentSniffEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='271' u='m' c='_ZNK7WebCore14ResourceHandle26shouldContentEncodingSniffEv'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='294' u='m' c='_ZN7WebCore14ResourceHandle16setDefersLoadingEb'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='298' u='m' c='_ZN7WebCore14ResourceHandle16setDefersLoadingEb'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='299' u='m' c='_ZN7WebCore14ResourceHandle16setDefersLoadingEb'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='300' u='m' c='_ZN7WebCore14ResourceHandle16setDefersLoadingEb'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='302' u='m' c='_ZN7WebCore14ResourceHandle16setDefersLoadingEb'/>

@@ -1,0 +1,59 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferView.h' l='57' ll='87'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferView.h' l='89' c='_ZN3JSC14hasArrayBufferENS_14TypedArrayModeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferView.h' l='158' c='_ZNK3JSC17JSArrayBufferView19ConstructionContext4modeEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferView.h' l='166'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferView.h' l='176' c='_ZNK3JSC17JSArrayBufferView4modeEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferView.h' l='223'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferView.h' l='232' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC14TypedArrayModeE'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferView.h' l='36'>// This class serves two purposes:
+//
+// 1) It provides those parts of JSGenericTypedArrayView that don&apos;t depend
+//    on template parameters.
+//
+// 2) It represents the DOM/WebCore-visible &quot;JSArrayBufferView&quot; type, which
+//    C++ code uses when it wants to pass around a view of an array buffer
+//    without concern for the actual type of the view.
+//
+// These two roles are quite different. (1) is just a matter of optimizing
+// compile and link times by having as much code and data as possible not
+// be subject to template specialization. (2) is *almost* a matter of
+// semantics; indeed at the very least it is a matter of obeying a contract
+// that we have with WebCore right now.
+//
+// One convenient thing that saves us from too much crazy is that
+// ArrayBufferView is not instantiable.
+
+// Typed array views have different modes depending on how big they are and
+// whether the user has done anything that requires a separate backing
+// buffer or the DOM-specified detaching capabilities.</doc>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGenericTypedArrayViewInlines.h' l='532' c='_ZN3JSC23JSGenericTypedArrayView17visitChildrenImplEPNS_6JSCellERT_'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.h' l='57' ll='87'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.h' l='89' c='_ZN3JSC14hasArrayBufferENS_14TypedArrayModeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.h' l='158' c='_ZNK3JSC17JSArrayBufferView19ConstructionContext4modeEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.h' l='166'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.h' l='176' c='_ZNK3JSC17JSArrayBufferView4modeEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.h' l='223'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.h' l='232' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC14TypedArrayModeE'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.h' l='36'>// This class serves two purposes:
+//
+// 1) It provides those parts of JSGenericTypedArrayView that don&apos;t depend
+//    on template parameters.
+//
+// 2) It represents the DOM/WebCore-visible &quot;JSArrayBufferView&quot; type, which
+//    C++ code uses when it wants to pass around a view of an array buffer
+//    without concern for the actual type of the view.
+//
+// These two roles are quite different. (1) is just a matter of optimizing
+// compile and link times by having as much code and data as possible not
+// be subject to template specialization. (2) is *almost* a matter of
+// semantics; indeed at the very least it is a matter of obeying a contract
+// that we have with WebCore right now.
+//
+// One convenient thing that saves us from too much crazy is that
+// ArrayBufferView is not instantiable.
+
+// Typed array views have different modes depending on how big they are and
+// whether the user has done anything that requires a separate backing
+// buffer or the DOM-specified detaching capabilities.</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGenericTypedArrayViewInlines.h' l='532' c='_ZN3JSC23JSGenericTypedArrayView17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.cpp' l='364' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC14TypedArrayModeE'/>

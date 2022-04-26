@@ -1,0 +1,34 @@
+<inh f='WebKit/WTF/Headers/wtf/ThreadSafeRefCounted.h' l='109' c='WTF::ThreadSafeRefCounted'/>
+<def f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExitHandle.h' l='42' ll='59'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExitHandle.h' l='42'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.h' l='97' c='_ZN3JSC3FTL17OSRExitDescriptor11emitOSRExitERNS0_5StateENS_8ExitKindERKNS_3DFG10NodeOriginERNS_12CCallHelpersERKNS_2B324StackmapGenerationParamsEjj'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.h' l='109' c='_ZN3JSC3FTL17OSRExitDescriptor16emitOSRExitLaterERNS0_5StateENS_8ExitKindERKNS_3DFG10NodeOriginERKNS_2B324StackmapGenerationParamsEjj'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.h' l='117' c='_ZN3JSC3FTL17OSRExitDescriptor20prepareOSRExitHandleERNS0_5StateENS_8ExitKindERKNS_3DFG10NodeOriginERKNS_2B324StackmapGenerationParamsEjj'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLExceptionTarget.h' l='55' c='_ZN3JSC3FTL15ExceptionTargetC1EbN3WTF3BoxINS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelEEENS2_6RefPtrINS0_13OSRExitHandleENS2_12RawPtrTraitsIS6818564'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLExceptionTarget.h' l='59'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLExceptionTarget.cpp' l='56' c='_ZN3JSC3FTL15ExceptionTarget5jumpsERNS_12CCallHelpersE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLExceptionTarget.cpp' l='66' c='_ZN3JSC3FTL15ExceptionTargetC1EbN3WTF3BoxINS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelEEENS2_6RefPtrINS0_13OSRExitHandleENS2_12RawPtrTraitsIS6818564'/>
+<size>24</size>
+<doc f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExitHandle.h' l='40'>// This is an object that stores some interesting data about an OSR exit. It&apos;s expected that you will
+// scrape this data from this object by the time compilation finishes.</doc>
+<fun r='_ZN3JSC3FTL13OSRExitHandleC1EjPNS0_7JITCodeE'/>
+<mbr r='JSC::FTL::OSRExitHandle::m_index' o='32' t='unsigned int'/>
+<mbr r='JSC::FTL::OSRExitHandle::m_jitCode' o='64' t='JSC::FTL::JITCode *'/>
+<mbr r='JSC::FTL::OSRExitHandle::label' o='128' t='CCallHelpers::Label'/>
+<fun r='_ZN3JSC3FTL13OSRExitHandle13emitExitThunkERNS0_5StateERNS_12CCallHelpersE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.cpp' l='58' c='_ZN3JSC3FTL17OSRExitDescriptor11emitOSRExitERNS0_5StateENS_8ExitKindERKNS_3DFG10NodeOriginERNS_12CCallHelpersERKNS_2B324StackmapGenerationParamsEjj'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.cpp' l='62' c='_ZN3JSC3FTL17OSRExitDescriptor11emitOSRExitERNS0_5StateENS_8ExitKindERKNS_3DFG10NodeOriginERNS_12CCallHelpersERKNS_2B324StackmapGenerationParamsEjj'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.cpp' l='68' c='_ZN3JSC3FTL17OSRExitDescriptor16emitOSRExitLaterERNS0_5StateENS_8ExitKindERKNS_3DFG10NodeOriginERKNS_2B324StackmapGenerationParamsEjj'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.cpp' l='72' c='_ZN3JSC3FTL17OSRExitDescriptor16emitOSRExitLaterERNS0_5StateENS_8ExitKindERKNS_3DFG10NodeOriginERKNS_2B324StackmapGenerationParamsEjj'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.cpp' l='81' c='_ZN3JSC3FTL17OSRExitDescriptor20prepareOSRExitHandleERNS0_5StateENS_8ExitKindERKNS_3DFG10NodeOriginERKNS_2B324StackmapGenerationParamsEjj'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.cpp' l='90' c='_ZN3JSC3FTL17OSRExitDescriptor20prepareOSRExitHandleERNS0_5StateENS_8ExitKindERKNS_3DFG10NodeOriginERKNS_2B324StackmapGenerationParamsEjj'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExitHandle.cpp' l='46' c='_ZN3JSC3FTL13OSRExitHandle13emitExitThunkERNS0_5StateERNS_12CCallHelpersE'/>
+<size>24</size>
+<fun r='_ZN3JSC3FTL13OSRExitHandle13emitExitThunkERNS0_5StateERNS_12CCallHelpersE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLPatchpointExceptionHandle.h' l='92' c='_ZN3JSC3FTL25PatchpointExceptionHandle12createHandleENS_8ExitKindERKNS_2B324StackmapGenerationParamsE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLPatchpointExceptionHandle.cpp' l='81' c='_ZN3JSC3FTL25PatchpointExceptionHandle29scheduleExitCreationForUnwindERKNS_2B324StackmapGenerationParamsENS_13CallSiteIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLPatchpointExceptionHandle.cpp' l='113' c='_ZN3JSC3FTL25PatchpointExceptionHandle12createHandleENS_8ExitKindERKNS_2B324StackmapGenerationParamsE'/>
+<size>24</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='11527' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB324compileInvalidationPointEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='14863' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB318compileCheckJSCastEv'/>
+<size>24</size>

@@ -1,0 +1,28 @@
+<dec f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSBase.h' l='140' type='void JSGarbageCollect(JSContextRef ctx)'/>
+<doc f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSBase.h' l='127'>/*!
+@function JSGarbageCollect
+@abstract Performs a JavaScript garbage collection.
+@param ctx The execution context to use.
+@discussion JavaScript values that are on the machine stack, in a register,
+ protected by JSValueProtect, set as the global object of an execution context,
+ or reachable from any such value will not be collected.
+
+ During JavaScript execution, you are not required to call this function; the
+ JavaScript engine will garbage collect as needed. JavaScript values created
+ within a context group are automatically destroyed when the last reference
+ to the context group is released.
+*/</doc>
+<def f='WebKit/Source/JavaScriptCore/API/JSBase.cpp' l='125' ll='140' type='void JSGarbageCollect(JSContextRef ctx)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/JSBase.h' l='127'>/*!
+@function JSGarbageCollect
+@abstract Performs a JavaScript garbage collection.
+@param ctx The execution context to use.
+@discussion JavaScript values that are on the machine stack, in a register,
+ protected by JSValueProtect, set as the global object of an execution context,
+ or reachable from any such value will not be collected.
+
+ During JavaScript execution, you are not required to call this function; the
+ JavaScript engine will garbage collect as needed. JavaScript values created
+ within a context group are automatically destroyed when the last reference
+ to the context group is released.
+*/</doc>

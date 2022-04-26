@@ -1,0 +1,12 @@
+<dec f='WebKit/Source/ThirdParty/ANGLE/src/common/PoolAlloc.h' l='202' type='void angle::PoolAllocator::lock()'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/common/PoolAlloc.cpp' l='320' ll='324' type='void angle::PoolAllocator::lock()'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/common/PoolAlloc.h' l='193'>//
+    // There is no deallocate.  The point of this class is that
+    // deallocation can be skipped by the user of it, as the model
+    // of use is to simultaneously deallocate everything at once
+    // by calling pop(), and to not have to solve memory leak problems.
+    //
+
+    // Catch unwanted allocations.
+    // TODO(jmadill): Remove this when we remove the global allocator.</doc>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='779' u='c' c='_ZN2sh9TCompiler19checkAndSimplifyASTEPNS_12TIntermBlockERKNS_13TParseContextEm'/>

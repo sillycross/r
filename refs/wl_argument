@@ -1,0 +1,28 @@
+<def f='include/wayland-util.h' l='683' ll='692'/>
+<use f='include/wayland-util.h' l='720'/>
+<use f='include/wayland-client-core.h' l='130' c='wl_proxy_marshal_array'/>
+<use f='include/wayland-client-core.h' l='157' c='wl_proxy_marshal_array_constructor'/>
+<use f='include/wayland-client-core.h' l='163' c='wl_proxy_marshal_array_constructor_versioned'/>
+<use f='include/wayland-server-core.h' l='505' c='wl_resource_post_event_array'/>
+<use f='include/wayland-server-core.h' l='513' c='wl_resource_queue_event_array'/>
+<use f='include/wayland-server-core.h' l='657'/>
+<size>8</size>
+<doc f='include/wayland-util.h' l='672'>/**
+ * Protocol message argument data types
+ *
+ * This union represents all of the argument types in the Wayland protocol wire
+ * format. The protocol implementation uses wl_argument within its marshalling
+ * machinery for dispatching messages between a client and a compositor.
+ *
+ * \sa wl_message
+ * \sa wl_interface
+ * \sa &lt;a href=&quot;https://wayland.freedesktop.org/docs/html/ch04.html#sect-Protocol-wire-Format&quot;&gt;Wire Format&lt;/a&gt;
+ */</doc>
+<mbr r='wl_argument::i' o='0' t='int32_t'/>
+<mbr r='wl_argument::u' o='0' t='uint32_t'/>
+<mbr r='wl_argument::f' o='0' t='wl_fixed_t'/>
+<mbr r='wl_argument::s' o='0' t='const char *'/>
+<mbr r='wl_argument::o' o='0' t='struct wl_object *'/>
+<mbr r='wl_argument::n' o='0' t='uint32_t'/>
+<mbr r='wl_argument::a' o='0' t='struct wl_array *'/>
+<mbr r='wl_argument::h' o='0' t='int32_t'/>

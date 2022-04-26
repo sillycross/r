@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderObject.h' l='544' type='WebCore::LayoutSize WebCore::RenderObject::offsetFromContainer(WebCore::RenderElement &amp; , const WebCore::LayoutPoint &amp; , bool * offsetDependsOnPoint = nullptr) const'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderObject.h' l='542'>// Return the offset from the container() renderer (excluding transforms). In multi-column layout,
+    // different offsets apply at different points, so return the offset that applies to the given point.</doc>
+<def f='WebKit/Source/WebCore/rendering/RenderObject.cpp' l='1421' ll='1433' type='WebCore::LayoutSize WebCore::RenderObject::offsetFromContainer(WebCore::RenderElement &amp; container, const WebCore::LayoutPoint &amp; , bool * offsetDependsOnPoint = nullptr) const'/>
+<use f='WebKit/Source/WebCore/rendering/RenderObject.cpp' l='1446' u='c' c='_ZNK7WebCore12RenderObject27offsetFromAncestorContainerERNS_13RenderElementE'/>
+<ovr f='WebKit/Source/WebCore/rendering/RenderBox.cpp' l='2315' c='_ZNK7WebCore9RenderBox19offsetFromContainerERNS_13RenderElementERKNS_11LayoutPointEPb'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBoxModelObject.cpp' l='2640' u='c' c='_ZNK7WebCore20RenderBoxModelObject23mapAbsoluteToLocalPointEjRNS_14TransformStateE'/>
+<ovr f='WebKit/Source/WebCore/rendering/RenderInline.cpp' l='980' c='_ZNK7WebCore12RenderInline19offsetFromContainerERNS_13RenderElementERKNS_11LayoutPointEPb'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='1188' u='c' c='_ZN7WebCore31localCaretRectInRendererForRectERNS_10LayoutRectEPNS_4NodeEPNS_12RenderObjectERPNS_11RenderBlockE'/>

@@ -1,0 +1,56 @@
+<def f='WebKit/WTF/Headers/wtf/text/StringHash.h' l='51' ll='94'/>
+<ovr f='WebKit/WTF/Headers/wtf/text/StringHash.h' l='221' c='WTF::DefaultHash'/>
+<ovr f='WebKit/WTF/Headers/wtf/text/StringHash.h' l='222' c='WTF::DefaultHash'/>
+<ovr f='WebKit/WTF/Headers/wtf/text/StringHash.h' l='223' c='WTF::DefaultHash'/>
+<ovr f='WebKit/WTF/Headers/wtf/text/StringHash.h' l='224' c='WTF::DefaultHash'/>
+<ovr f='WebKit/WTF/Headers/wtf/text/SymbolRegistry.h' l='58' c='WTF::DefaultHash'/>
+<size>1</size>
+<doc f='WebKit/WTF/Headers/wtf/text/StringHash.h' l='43'>// The hash() functions on StringHash and ASCIICaseInsensitiveHash do not support
+    // null strings. get(), contains(), and add() on HashMap&lt;String,..., StringHash&gt;
+    // cause a null-pointer dereference when passed null strings.
+
+    // FIXME: We should really figure out a way to put the computeHash function that&apos;s
+    // currently a member function of StringImpl into this file so we can be a little
+    // closer to having all the nearly-identical hash functions in one place.</doc>
+<fun r='_ZN3WTF10StringHash4hashEPNS_10StringImplE'/>
+<fun r='_ZN3WTF10StringHash5equalEPKNS_10StringImplES3_'/>
+<fun r='_ZN3WTF10StringHash4hashERKNS_6RefPtrINS_10StringImplENS_12RawPtrTraitsIS2_EENS_21DefaultRefDerefTraitsIS2_EEEE'/>
+<fun r='_ZN3WTF10StringHash4hashERKNS_6PackedIPNS_10StringImplEEE'/>
+<fun r='_ZN3WTF10StringHash5equalERKNS_6RefPtrINS_10StringImplENS_12RawPtrTraitsIS2_EENS_21DefaultRefDerefTraitsIS2_EEEES9_'/>
+<fun r='_ZN3WTF10StringHash5equalERKNS_6RefPtrINS_10StringImplENS_12RawPtrTraitsIS2_EENS_21DefaultRefDerefTraitsIS2_EEEEPKS2_'/>
+<fun r='_ZN3WTF10StringHash5equalEPKNS_10StringImplERKNS_6RefPtrIS1_NS_12RawPtrTraitsIS1_EENS_21DefaultRefDerefTraitsIS1_EEEE'/>
+<fun r='_ZN3WTF10StringHash5equalERKNS_6PackedIPNS_10StringImplEEES6_'/>
+<fun r='_ZN3WTF10StringHash5equalERKNS_6PackedIPNS_10StringImplEEEPKS2_'/>
+<fun r='_ZN3WTF10StringHash5equalEPKNS_10StringImplERKNS_6PackedIPS1_EE'/>
+<fun r='_ZN3WTF10StringHash4hashERKNS_6StringE'/>
+<fun r='_ZN3WTF10StringHash5equalERKNS_6StringES3_'/>
+<smbr r='WTF::StringHash::safeToCompareToEmptyOrDeleted' t='const bool'/>
+<smbr r='WTF::StringHash::hasHashInValue' t='const bool'/>
+<def f='WebKit/Source/WTF/wtf/text/StringHash.h' l='51' ll='94'/>
+<ovr f='WebKit/Source/WTF/wtf/text/StringHash.h' l='221' c='WTF::DefaultHash'/>
+<ovr f='WebKit/Source/WTF/wtf/text/StringHash.h' l='222' c='WTF::DefaultHash'/>
+<ovr f='WebKit/Source/WTF/wtf/text/StringHash.h' l='223' c='WTF::DefaultHash'/>
+<ovr f='WebKit/Source/WTF/wtf/text/StringHash.h' l='224' c='WTF::DefaultHash'/>
+<size>1</size>
+<doc f='WebKit/Source/WTF/wtf/text/StringHash.h' l='43'>// The hash() functions on StringHash and ASCIICaseInsensitiveHash do not support
+    // null strings. get(), contains(), and add() on HashMap&lt;String,..., StringHash&gt;
+    // cause a null-pointer dereference when passed null strings.
+
+    // FIXME: We should really figure out a way to put the computeHash function that&apos;s
+    // currently a member function of StringImpl into this file so we can be a little
+    // closer to having all the nearly-identical hash functions in one place.</doc>
+<fun r='_ZN3WTF10StringHash4hashEPNS_10StringImplE'/>
+<fun r='_ZN3WTF10StringHash5equalEPKNS_10StringImplES3_'/>
+<fun r='_ZN3WTF10StringHash4hashERKNS_6RefPtrINS_10StringImplENS_12RawPtrTraitsIS2_EENS_21DefaultRefDerefTraitsIS2_EEEE'/>
+<fun r='_ZN3WTF10StringHash4hashERKNS_6PackedIPNS_10StringImplEEE'/>
+<fun r='_ZN3WTF10StringHash5equalERKNS_6RefPtrINS_10StringImplENS_12RawPtrTraitsIS2_EENS_21DefaultRefDerefTraitsIS2_EEEES9_'/>
+<fun r='_ZN3WTF10StringHash5equalERKNS_6RefPtrINS_10StringImplENS_12RawPtrTraitsIS2_EENS_21DefaultRefDerefTraitsIS2_EEEEPKS2_'/>
+<fun r='_ZN3WTF10StringHash5equalEPKNS_10StringImplERKNS_6RefPtrIS1_NS_12RawPtrTraitsIS1_EENS_21DefaultRefDerefTraitsIS1_EEEE'/>
+<fun r='_ZN3WTF10StringHash5equalERKNS_6PackedIPNS_10StringImplEEES6_'/>
+<fun r='_ZN3WTF10StringHash5equalERKNS_6PackedIPNS_10StringImplEEEPKS2_'/>
+<fun r='_ZN3WTF10StringHash5equalEPKNS_10StringImplERKNS_6PackedIPS1_EE'/>
+<fun r='_ZN3WTF10StringHash4hashERKNS_6StringE'/>
+<fun r='_ZN3WTF10StringHash5equalERKNS_6StringES3_'/>
+<smbr r='WTF::StringHash::safeToCompareToEmptyOrDeleted' t='const bool'/>
+<smbr r='WTF::StringHash::hasHashInValue' t='const bool'/>
+<ovr f='WebKit/Source/WTF/wtf/text/SymbolRegistry.h' l='58' c='WTF::DefaultHash'/>

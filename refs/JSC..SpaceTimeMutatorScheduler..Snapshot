@@ -1,0 +1,29 @@
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.h' l='63'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.h' l='67' c='_ZN3JSC25SpaceTimeMutatorScheduler26bytesSinceBeginningOfCycleERKNS0_8SnapshotE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.h' l='69' c='_ZN3JSC25SpaceTimeMutatorScheduler16headroomFullnessERKNS0_8SnapshotE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.h' l='70' c='_ZN3JSC25SpaceTimeMutatorScheduler18mutatorUtilizationERKNS0_8SnapshotE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.h' l='71' c='_ZN3JSC25SpaceTimeMutatorScheduler20collectorUtilizationERKNS0_8SnapshotE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.h' l='72' c='_ZN3JSC25SpaceTimeMutatorScheduler15elapsedInPeriodERKNS0_8SnapshotE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.h' l='73' c='_ZN3JSC25SpaceTimeMutatorScheduler5phaseERKNS0_8SnapshotE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.h' l='74' c='_ZN3JSC25SpaceTimeMutatorScheduler15shouldBeResumedERKNS0_8SnapshotE'/>
+<def f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.cpp' l='37' ll='52'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.cpp' l='112' c='_ZN3JSC25SpaceTimeMutatorScheduler10timeToStopEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.cpp' l='129' c='_ZN3JSC25SpaceTimeMutatorScheduler12timeToResumeEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.cpp' l='142' c='_ZN3JSC25SpaceTimeMutatorScheduler3logEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.cpp' l='160' c='_ZN3JSC25SpaceTimeMutatorScheduler26bytesSinceBeginningOfCycleERKNS0_8SnapshotE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.cpp' l='170' c='_ZN3JSC25SpaceTimeMutatorScheduler16headroomFullnessERKNS0_8SnapshotE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.cpp' l='186' c='_ZN3JSC25SpaceTimeMutatorScheduler18mutatorUtilizationERKNS0_8SnapshotE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.cpp' l='200' c='_ZN3JSC25SpaceTimeMutatorScheduler20collectorUtilizationERKNS0_8SnapshotE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.cpp' l='205' c='_ZN3JSC25SpaceTimeMutatorScheduler15elapsedInPeriodERKNS0_8SnapshotE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.cpp' l='210' c='_ZN3JSC25SpaceTimeMutatorScheduler5phaseERKNS0_8SnapshotE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.cpp' l='215' c='_ZN3JSC25SpaceTimeMutatorScheduler15shouldBeResumedERKNS0_8SnapshotE'/>
+<size>16</size>
+<doc f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.cpp' l='33'>// The scheduler will often make decisions based on state that is in flux. It will be fine so
+// long as multiple uses of the same value all see the same value. We wouldn&apos;t get this for free,
+// since our need to modularize the calculation results in a tendency to access the same mutable
+// field in Heap multiple times, and to access the current time multiple times.</doc>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler8SnapshotC1ERS0_'/>
+<fun r='_ZNK3JSC25SpaceTimeMutatorScheduler8Snapshot3nowEv'/>
+<fun r='_ZNK3JSC25SpaceTimeMutatorScheduler8Snapshot23bytesAllocatedThisCycleEv'/>
+<mbr r='JSC::SpaceTimeMutatorScheduler::Snapshot::m_now' o='0' t='WTF::MonotonicTime'/>
+<mbr r='JSC::SpaceTimeMutatorScheduler::Snapshot::m_bytesAllocatedThisCycle' o='64' t='double'/>

@@ -1,0 +1,449 @@
+<use f='WebKit/Source/WebCore/platform/graphics/FontMetrics.h' l='132'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GlyphBuffer.h' l='58' c='_ZN7WebCore11GlyphBuffer5fontsEj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GlyphBuffer.h' l='63' c='_ZNK7WebCore11GlyphBuffer5fontsEj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GlyphBuffer.h' l='69' c='_ZNK7WebCore11GlyphBuffer6fontAtEj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GlyphBuffer.h' l='96' c='_ZN7WebCore11GlyphBuffer3addEtRKNS_4FontEfj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GlyphBuffer.h' l='102' c='_ZN7WebCore11GlyphBuffer3addEtRKNS_4FontENS_9FloatSizeEj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GlyphBuffer.h' l='120' c='_ZN7WebCore11GlyphBuffer8makeHoleEjjPKNS_4FontE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GlyphBuffer.h' l='124' c='_ZN7WebCore11GlyphBuffer8makeHoleEjjPKNS_4FontE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GlyphBuffer.h' l='218'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GlyphPage.h' l='45' c='_ZN7WebCore9GlyphDataC1EtPKNS_4FontE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GlyphPage.h' l='54'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GlyphPage.h' l='62' c='_ZN7WebCore9GlyphPage6createERKNS_4FontE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GlyphPage.h' l='111' c='_ZNK7WebCore9GlyphPage4fontEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GlyphPage.h' l='120' c='_ZN7WebCore9GlyphPageC1ERKNS_4FontE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GlyphPage.h' l='126'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opentype/OpenTypeMathData.h' l='128' c='_ZNK7WebCore16OpenTypeMathData15getMathConstantERKNS_4FontENS0_12MathConstantE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opentype/OpenTypeMathData.h' l='129' c='_ZNK7WebCore16OpenTypeMathData19getItalicCorrectionERKNS_4FontEt'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opentype/OpenTypeVerticalData.h' l='46' c='_ZNK7WebCore20OpenTypeVerticalData13advanceHeightEPKNS_4FontEt'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opentype/OpenTypeVerticalData.h' l='47' c='_ZNK7WebCore20OpenTypeVerticalData32getVerticalTranslationsForGlyphsEPKNS_4FontEPKtmPf'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opentype/OpenTypeVerticalData.h' l='48' c='_ZNK7WebCore20OpenTypeVerticalData28substituteWithVerticalGlyphsEPKNS_4FontEPNS_9GlyphPageE'/>
+<inh f='WebKit/WTF/Headers/wtf/RefCounted.h' l='184' c='WTF::RefCounted'/>
+<def f='WebKit/Source/WebCore/platform/graphics/Font.h' l='76' ll='361'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='76'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='84' c='_ZN7WebCore4Font6createERKNS_16FontPlatformDataENS0_6OriginENS0_12InterstitialENS0_10VisibilityENS0_19OrientationFallbackESt8optionalIN3WTF16ObjectIde5717661'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='86' c='_ZN7WebCore4Font6createERKNS_16FontPlatformDataENS0_6OriginEPNS_9FontCacheENS0_12InterstitialENS0_10VisibilityENS0_19OrientationFallbackESt8optionalIN10663664'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='88' c='_ZN7WebCore4Font6createEON3WTF3RefINS_12SharedBufferENS1_12RawPtrTraitsIS3_EEEENS0_6OriginEfbbPNS_9FontCacheE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='92' c='_ZN7WebCore4Font14systemFallbackEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='92' c='_ZN7WebCore4Font14systemFallbackEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='102' c='_ZNK7WebCore4Font13smallCapsFontERKNS_15FontDescriptionE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='103' c='_ZNK7WebCore4Font27noSynthesizableFeaturesFontEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='104' c='_ZNK7WebCore4Font16emphasisMarkFontERKNS_15FontDescriptionE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='105' c='_ZNK7WebCore4Font19brokenIdeographFontEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='109' c='_ZNK7WebCore4Font11variantFontERKNS_15FontDescriptionENS_11FontVariantE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='126' c='_ZNK7WebCore4Font11variantFontERKNS_15FontDescriptionENS_11FontVariantE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='131' c='_ZNK7WebCore4Font28verticalRightOrientationFontEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='132' c='_ZNK7WebCore4Font22uprightOrientationFontEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='133' c='_ZNK7WebCore4Font13invisibleFontEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='180' c='_ZNK7WebCore4Font30systemFallbackFontForCharacterEiRKNS_15FontDescriptionENS_17IsForPlatformFontERNS_9FontCacheE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='234' c='_ZNK7WebCore4Font38createFontWithoutSynthesizableFeaturesEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='235' c='_ZNK7WebCore4Font16createScaledFontERKNS_15FontDescriptionEf'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='236' c='_ZNK7WebCore4Font24platformCreateScaledFontERKNS_15FontDescriptionEf'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='306'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='307'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='308'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='309'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='310'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='311'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='312'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='414'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontRanges.h' l='64' c='_ZNK7WebCore10FontRanges5Range4fontENS_30ExternalResourceDownloadPolicyE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontRanges.h' l='74' c='_ZN7WebCore10FontRangesC1EON3WTF6RefPtrINS_4FontENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontRanges.h' l='89' c='_ZNK7WebCore10FontRanges16fontForCharacterEi'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontRanges.h' l='90' c='_ZNK7WebCore10FontRanges17fontForFirstRangeEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontSelector.h' l='43' c='_ZNK7WebCore12FontAccessor4fontENS_30ExternalResourceDownloadPolicyE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontSelector.h' l='52' c='_ZN7WebCore12FontSelector14fallbackFontAtERKNS_15FontDescriptionEm'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascadeFonts.h' l='72' c='_ZN7WebCore16FontCascadeFonts11primaryFontERKNS_22FontCascadeDescriptionE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascadeFonts.h' l='106'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascadeFonts.h' l='108'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascadeFonts.h' l='129' c='_ZN7WebCore16FontCascadeFonts11primaryFontERKNS_22FontCascadeDescriptionE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.h' l='119' c='_ZN7WebCore11FontCascade10drawGlyphsERNS_15GraphicsContextERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.h' l='124' c='_ZNK7WebCore11FontCascade16widthOfTextRangeERKNS_7TextRunEjjPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTableTraitsEEEPfSG_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.h' l='125' c='_ZNK7WebCore11FontCascade5widthERKNS_7TextRunEPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTableTraitsEEEPNS_13GlyphOverflowE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.h' l='129' c='_ZN7WebCore11FontCascade5widthERNS_10TextLayoutEjjPN3WTF7HashSetIPKNS_4FontENS3_11DefaultHashIS7_EENS3_10HashTraitsIS7_EENS3_15HashTableTraitsEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.h' l='160' c='_ZNK7WebCore11FontCascade8tabWidthERKNS_4FontERKNS_7TabSizeEf'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.h' l='169' c='_ZNK7WebCore11FontCascade11primaryFontEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.h' l='173' c='_ZNK7WebCore11FontCascade33fontForCombiningCharacterSequenceEPKDsm'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.h' l='218' c='_ZNK7WebCore11FontCascade23floatWidthForSimpleTextERKNS_7TextRunEPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTabl7274659'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.h' l='228' c='_ZNK7WebCore11FontCascade24floatWidthForComplexTextERKNS_7TextRunEPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTab14672171'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.h' l='332' c='_ZNK7WebCore11FontCascade11primaryFontEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.h' l='355' c='_ZNK7WebCore11FontCascade8tabWidthERKNS_4FontERKNS_7TabSizeEf'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsContext.h' l='472' c='_ZN7WebCore15GraphicsContext10drawGlyphsERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItems.h' l='954' c='_ZN7WebCore11DisplayList10DrawGlyphsC1ERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItems.h' l='957' c='_ZNK7WebCore11DisplayList10DrawGlyphs5applyERNS_15GraphicsContextERKNS_4FontE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItems.h' l='963' c='_ZN7WebCore11DisplayList10DrawGlyphs13computeBoundsERKNS_4FontE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayList.h' l='128' c='_ZN7WebCore11DisplayList11DisplayList9cacheFontERNS_4FontE'/>
+<size>960</size>
+<fun r='_ZN7WebCore4Font6createERKNS_16FontPlatformDataENS0_6OriginENS0_12InterstitialENS0_10VisibilityENS0_19OrientationFallbackESt8optionalIN3WTF16ObjectIde5717661'/>
+<fun r='_ZN7WebCore4Font6createERKNS_16FontPlatformDataENS0_6OriginEPNS_9FontCacheENS0_12InterstitialENS0_10VisibilityENS0_19OrientationFallbackESt8optionalIN10663664'/>
+<fun r='_ZN7WebCore4Font6createEON3WTF3RefINS_12SharedBufferENS1_12RawPtrTraitsIS3_EEEENS0_6OriginEfbbPNS_9FontCacheE'/>
+<fun r='_ZN7WebCore4FontD1Ev'/>
+<fun r='_ZN7WebCore4Font14systemFallbackEv'/>
+<fun r='_ZNK7WebCore4Font12platformDataEv'/>
+<fun r='_ZNK7WebCore4Font8mathDataEv'/>
+<fun r='_ZNK7WebCore4Font12verticalDataEv'/>
+<fun r='_ZNK7WebCore4Font27renderingResourceIdentifierEv'/>
+<fun r='_ZNK7WebCore4Font13smallCapsFontERKNS_15FontDescriptionE'/>
+<fun r='_ZNK7WebCore4Font27noSynthesizableFeaturesFontEv'/>
+<fun r='_ZNK7WebCore4Font16emphasisMarkFontERKNS_15FontDescriptionE'/>
+<fun r='_ZNK7WebCore4Font19brokenIdeographFontEv'/>
+<fun r='_ZNK7WebCore4Font31isProbablyOnlyUsedToRenderIconsEv'/>
+<fun r='_ZNK7WebCore4Font11variantFontERKNS_15FontDescriptionENS_11FontVariantE'/>
+<fun r='_ZNK7WebCore4Font40variantCapsSupportsCharacterForSynthesisENS_15FontVariantCapsEi'/>
+<fun r='_ZNK7WebCore4Font28verticalRightOrientationFontEv'/>
+<fun r='_ZNK7WebCore4Font22uprightOrientationFontEv'/>
+<fun r='_ZNK7WebCore4Font13invisibleFontEv'/>
+<fun r='_ZNK7WebCore4Font17hasVerticalGlyphsEv'/>
+<fun r='_ZNK7WebCore4Font25isTextOrientationFallbackEv'/>
+<fun r='_ZN7WebCore4Font11fontMetricsEv'/>
+<fun r='_ZNK7WebCore4Font11fontMetricsEv'/>
+<fun r='_ZNK7WebCore4Font11sizePerUnitEv'/>
+<fun r='_ZNK7WebCore4Font12maxCharWidthEv'/>
+<fun r='_ZN7WebCore4Font15setMaxCharWidthEf'/>
+<fun r='_ZNK7WebCore4Font12avgCharWidthEv'/>
+<fun r='_ZN7WebCore4Font15setAvgCharWidthEf'/>
+<fun r='_ZNK7WebCore4Font14boundsForGlyphEt'/>
+<fun r='_ZNK7WebCore4Font13widthForGlyphEt'/>
+<fun r='_ZNK7WebCore4Font12pathForGlyphEt'/>
+<fun r='_ZNK7WebCore4Font22platformBoundsForGlyphEt'/>
+<fun r='_ZNK7WebCore4Font21platformWidthForGlyphEt'/>
+<fun r='_ZNK7WebCore4Font20platformPathForGlyphEt'/>
+<fun r='_ZNK7WebCore4Font10spaceWidthEv'/>
+<fun r='_ZNK7WebCore4Font18adjustedSpaceWidthEv'/>
+<fun r='_ZN7WebCore4Font14setSpaceWidthsEf'/>
+<fun r='_ZNK7WebCore4Font19syntheticBoldOffsetEv'/>
+<fun r='_ZNK7WebCore4Font10spaceGlyphEv'/>
+<fun r='_ZN7WebCore4Font13setSpaceGlyphEt'/>
+<fun r='_ZNK7WebCore4Font19zeroWidthSpaceGlyphEv'/>
+<fun r='_ZN7WebCore4Font22setZeroWidthSpaceGlyphEt'/>
+<fun r='_ZNK7WebCore4Font21isZeroWidthSpaceGlyphEt'/>
+<fun r='_ZNK7WebCore4Font9zeroGlyphEv'/>
+<fun r='_ZN7WebCore4Font12setZeroGlyphEt'/>
+<fun r='_ZNK7WebCore4Font21glyphDataForCharacterEi'/>
+<fun r='_ZNK7WebCore4Font17glyphForCharacterEi'/>
+<fun r='_ZNK7WebCore4Font17supportsCodePointEi'/>
+<fun r='_ZNK7WebCore4Font25platformSupportsCodePointEiSt8optionalIiE'/>
+<fun r='_ZNK7WebCore4Font30systemFallbackFontForCharacterEiRKNS_15FontDescriptionENS_17IsForPlatformFontERNS_9FontCacheE'/>
+<fun r='_ZNK7WebCore4Font9glyphPageEj'/>
+<fun r='_ZN7WebCore4Font14determinePitchEv'/>
+<fun r='_ZNK7WebCore4Font5pitchEv'/>
+<fun r='_ZNK7WebCore4Font6originEv'/>
+<fun r='_ZNK7WebCore4Font14isInterstitialEv'/>
+<fun r='_ZNK7WebCore4Font10visibilityEv'/>
+<fun r='_ZNK7WebCore4Font18allowsAntialiasingEv'/>
+<fun r='_ZNK7WebCore4Font35canRenderCombiningCharacterSequenceEPKDsm'/>
+<fun r='_ZNK7WebCore4Font15applyTransformsERNS_11GlyphBufferEjjbbRKN3WTF10AtomStringENS3_10StringViewENS_13TextDirectionE'/>
+<fun r='_ZNK7WebCore4Font15findOTSVGGlyphsEPKtj'/>
+<fun r='_ZNK7WebCore4Font30hasAnyComplexColorFormatGlyphsEPKtj'/>
+<fun r='_ZN7WebCore4FontC1ERKNS_16FontPlatformDataENS0_6OriginENS0_12InterstitialENS0_10VisibilityENS0_19OrientationFallbackESt8optionalIN3WTF16ObjectIdentifi15653088'/>
+<fun r='_ZN7WebCore4Font12platformInitEv'/>
+<fun r='_ZN7WebCore4Font17platformGlyphInitEv'/>
+<fun r='_ZN7WebCore4Font21platformCharWidthInitEv'/>
+<fun r='_ZN7WebCore4Font15platformDestroyEv'/>
+<fun r='_ZN7WebCore4Font14initCharWidthsEv'/>
+<fun r='_ZNK7WebCore4Font38createFontWithoutSynthesizableFeaturesEv'/>
+<fun r='_ZNK7WebCore4Font16createScaledFontERKNS_15FontDescriptionEf'/>
+<fun r='_ZNK7WebCore4Font24platformCreateScaledFontERKNS_15FontDescriptionEf'/>
+<fun r='_ZN7WebCore4Font29removeFromSystemFallbackCacheEv'/>
+<fun r='_ZNK7WebCore4Font21ensureDerivedFontDataEv'/>
+<mbr r='WebCore::Font::m_fontMetrics' o='32' t='WebCore::FontMetrics'/>
+<mbr r='WebCore::Font::m_maxCharWidth' o='512' t='float'/>
+<mbr r='WebCore::Font::m_avgCharWidth' o='544' t='float'/>
+<mbr r='WebCore::Font::m_platformData' o='576' t='const WebCore::FontPlatformData'/>
+<mbr r='WebCore::Font::m_glyphPageZero' o='1024' t='RefPtr&lt;WebCore::GlyphPage&gt;'/>
+<mbr r='WebCore::Font::m_glyphPages' o='1088' t='HashMap&lt;unsigned int, RefPtr&lt;WebCore::GlyphPage&gt; &gt;'/>
+<mbr r='WebCore::Font::m_glyphToBoundsMap' o='1152' t='std::unique_ptr&lt;GlyphMetricsMap&lt;FloatRect&gt; &gt;'/>
+<mbr r='WebCore::Font::m_glyphToWidthMap' o='1216' t='GlyphMetricsMap&lt;float&gt;'/>
+<mbr r='WebCore::Font::m_glyphPathMap' o='1856' t='GlyphMetricsMap&lt;std::optional&lt;Path&gt; &gt;'/>
+<mbr r='WebCore::Font::m_codePointSupport' o='7104' t='WTF::BitVector'/>
+<mbr r='WebCore::Font::m_mathData' o='7168' t='RefPtr&lt;WebCore::OpenTypeMathData&gt;'/>
+<mbr r='WebCore::Font::m_verticalData' o='7232' t='RefPtr&lt;WebCore::OpenTypeVerticalData&gt;'/>
+<mbr r='WebCore::Font::m_renderingResourceIdentifier' o='7296' t='std::optional&lt;RenderingResourceIdentifier&gt;'/>
+<mbr r='WebCore::Font::m_derivedFontData' o='7424' t='std::unique_ptr&lt;DerivedFonts&gt;'/>
+<mbr r='WebCore::Font::m_spaceGlyph' o='7488' t='WebCore::Glyph'/>
+<mbr r='WebCore::Font::m_zeroGlyph' o='7504' t='WebCore::Glyph'/>
+<mbr r='WebCore::Font::m_zeroWidthSpaceGlyph' o='7520' t='WebCore::Glyph'/>
+<mbr r='WebCore::Font::m_origin' o='7536' t='WebCore::Font::Origin'/>
+<mbr r='WebCore::Font::m_visibility' o='7544' t='WebCore::Font::Visibility'/>
+<mbr r='WebCore::Font::m_spaceWidth' o='7552' t='float'/>
+<mbr r='WebCore::Font::m_adjustedSpaceWidth' o='7584' t='float'/>
+<mbr r='WebCore::Font::m_syntheticBoldOffset' o='7616' t='float'/>
+<mbr r='WebCore::Font::m_treatAsFixedPitch' o='7648' t='unsigned int'/>
+<mbr r='WebCore::Font::m_isInterstitial' o='7649' t='unsigned int'/>
+<mbr r='WebCore::Font::m_isTextOrientationFallback' o='7650' t='unsigned int'/>
+<mbr r='WebCore::Font::m_isBrokenIdeographFallback' o='7651' t='unsigned int'/>
+<mbr r='WebCore::Font::m_hasVerticalGlyphs' o='7652' t='unsigned int'/>
+<mbr r='WebCore::Font::m_isUsedInSystemFallbackCache' o='7653' t='unsigned int'/>
+<mbr r='WebCore::Font::m_allowsAntialiasing' o='7654' t='unsigned int'/>
+<fun r='_ZNK7WebCore4Font14boundsForGlyphEt'/>
+<fun r='_ZNK7WebCore4Font13widthForGlyphEt'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='419'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='420' c='_ZN3IPC13ArgumentCoderIN3WTF3RefIN7WebCore4FontENS1_12RawPtrTraitsIS4_EEEEvE6encodeERNS_7EncoderERKS7_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='421' c='_ZN3IPC13ArgumentCoderIN3WTF3RefIN7WebCore4FontENS1_12RawPtrTraitsIS4_EEEEvE6decodeERNS_7DecoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='422' c='_ZN3IPC13ArgumentCoderIN3WTF3RefIN7WebCore4FontENS1_12RawPtrTraitsIS4_EEEEvE18encodePlatformDataERNS_7EncoderERKS7_'/>
+<use f='WebKit/Source/WebCore/rendering/RenderText.h' l='93' c='_ZNK7WebCore10RenderText5widthEjjRKNS_11FontCascadeEfPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTableTraitsEEEPNS_13GlyphOverflowE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderText.h' l='94' c='_ZNK7WebCore10RenderText5widthEjjfbPN3WTF7HashSetIPKNS_4FontENS1_11DefaultHashIS5_EENS1_10HashTraitsIS5_EENS1_15HashTableTraitsEEEPNS_13GlyphOverflowE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderText.h' l='207' c='_ZN7WebCore10RenderText29computePreferredLogicalWidthsEfRN3WTF7HashSetIPKNS_4FontENS1_11DefaultHashIS5_EENS1_10HashTraitsIS5_EENS1_15HashTableTraitsEE2251601'/>
+<use f='WebKit/Source/WebCore/rendering/RenderText.h' l='213' c='_ZNK7WebCore10RenderText14widthFromCacheERKNS_11FontCascadeEjjfPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTableT3872265'/>
+<use f='WebKit/Source/WebCore/rendering/LegacyInlineFlowBox.h' l='38'/>
+<use f='WebKit/Source/WebCore/platform/graphics/NullGraphicsContext.h' l='110' c='_ZN7WebCore19NullGraphicsContext10drawGlyphsERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/platform/graphics/cairo/GraphicsContextCairo.h' l='72' c='_ZN7WebCore20GraphicsContextCairo10drawGlyphsERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<size>960</size>
+<use f='WebKit/Source/WebKit/Shared/soup/WebCoreArgumentCodersSoup.cpp' l='229' c='_ZN3IPC13ArgumentCoderIN3WTF3RefIN7WebCore4FontENS1_12RawPtrTraitsIS4_EEEEvE18encodePlatformDataERNS_7EncoderERKS7_'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/editing/Editor.h' l='525' c='_ZN7WebCore6Editor16fontForSelectionERb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCache.h' l='229' c='_ZN7WebCore9FontCache27systemFallbackForCharactersERKNS_15FontDescriptionEPKNS_4FontENS_17IsForPlatformFontENS0_17PreferColoredFontEPKDsj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCache.h' l='229' c='_ZN7WebCore9FontCache27systemFallbackForCharactersERKNS_15FontDescriptionEPKNS_4FontENS_17IsForPlatformFontENS0_17PreferColoredFontEPKDsj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCache.h' l='250' c='_ZN7WebCore9FontCache13fontForFamilyERKNS_15FontDescriptionERKN3WTF6StringEPKNS_18FontTaggedSettingsIiEENS_34FontSelectionSpecifiedCapabilitiesEb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCache.h' l='251' c='_ZN7WebCore9FontCache22lastResortFallbackFontERKNS_15FontDescriptionE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCache.h' l='252' c='_ZN7WebCore9FontCache19fontForPlatformDataERKNS_16FontPlatformDataE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCache.h' l='253' c='_ZN7WebCore9FontCache11similarFontERKNS_15FontDescriptionERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCache.h' l='336'/>
+<use f='WebKit/Source/WebCore/platform/graphics/cairo/FontCairoHarfbuzzNG.cpp' l='101' c='_ZNK7WebCore11FontCascade33fontForCombiningCharacterSequenceEPKDsm'/>
+<use f='WebKit/Source/WebCore/platform/graphics/cairo/FontCairoHarfbuzzNG.cpp' l='126' c='_ZNK7WebCore11FontCascade33fontForCombiningCharacterSequenceEPKDsm'/>
+<use f='WebKit/Source/WebCore/platform/graphics/cairo/FontCairoHarfbuzzNG.cpp' l='133' c='_ZNK7WebCore11FontCascade33fontForCombiningCharacterSequenceEPKDsm'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListDrawGlyphsRecorder.h' l='60' c='_ZN7WebCore11DisplayList18DrawGlyphsRecorder10drawGlyphsERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListDrawGlyphsRecorder.h' l='78' c='_ZN7WebCore11DisplayList18DrawGlyphsRecorder22prepareInternalContextERKNS_4FontENS_17FontSmoothingModeE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListDrawGlyphsRecorder.h' l='102'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListRecorder.h' l='72' c='_ZN7WebCore11DisplayList8Recorder8Delegate9cacheFontERNS_4FontE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListRecorder.h' l='122' c='_ZN7WebCore11DisplayList8Recorder10drawGlyphsERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListRecorder.h' l='124' c='_ZN7WebCore11DisplayList8Recorder34appendDrawGlyphsItemWithCachedFontERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListDrawGlyphsRecorderHarfBuzz.cpp' l='44' c='_ZN7WebCore11DisplayList18DrawGlyphsRecorder10drawGlyphsERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/platform/graphics/freetype/FontCacheFreeType.cpp' l='241' c='_ZN7WebCore9FontCache27systemFallbackForCharactersERKNS_15FontDescriptionEPKNS_4FontENS_17IsForPlatformFontENS0_17PreferColoredFontEPKDsj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/freetype/FontCacheFreeType.cpp' l='241' c='_ZN7WebCore9FontCache27systemFallbackForCharactersERKNS_15FontDescriptionEPKNS_4FontENS_17IsForPlatformFontENS0_17PreferColoredFontEPKDsj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/freetype/FontCacheFreeType.cpp' l='316' c='_ZN7WebCore9FontCache22lastResortFallbackFontERKNS_15FontDescriptionE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/freetype/FontCacheFreeType.cpp' l='320' c='_ZN7WebCore9FontCache22lastResortFallbackFontERKNS_15FontDescriptionE'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/platform/graphics/freetype/GlyphPageTreeNodeFreeType.cpp' l='47' c='_ZN7WebCore9GlyphPage4fillEPDsj'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/platform/graphics/freetype/SimpleFontDataFreeType.cpp' l='191' c='_ZNK7WebCore4Font24platformCreateScaledFontERKNS_15FontDescriptionEf'/>
+<size>960</size>
+<fun r='_ZN7WebCore4Font12platformInitEv'/>
+<fun r='_ZN7WebCore4Font21platformCharWidthInitEv'/>
+<fun r='_ZNK7WebCore4Font24platformCreateScaledFontERKNS_15FontDescriptionEf'/>
+<fun r='_ZN7WebCore4Font14determinePitchEv'/>
+<fun r='_ZNK7WebCore4Font40variantCapsSupportsCharacterForSynthesisENS_15FontVariantCapsEi'/>
+<fun r='_ZNK7WebCore4Font25platformSupportsCodePointEiSt8optionalIiE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='54' c='_ZN7WebCore21ComplexTextControllerC1ERKNS_11FontCascadeERKNS_7TextRunEbPN3WTF7HashSetIPKNS_4FontENS7_11DefaultHashISB_EENS7_10HashTraitsISB_EENS7_15HashTableTraitsEEEb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='60' c='_ZN7WebCore21ComplexTextController7advanceEjPNS_11GlyphBufferENS_19GlyphIterationStyleEPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTrai4476861'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='77' c='_ZN7WebCore21ComplexTextController14ComplexTextRun6createEPK7__CTRunRKNS_4FontEPKDsjjjj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='82' c='_ZN7WebCore21ComplexTextController14ComplexTextRun6createEP11hb_buffer_tRKNS_4FontEPKDsjjjj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='87' c='_ZN7WebCore21ComplexTextController14ComplexTextRun6createERKNS_4FontEPKDsjjjjb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='92' c='_ZN7WebCore21ComplexTextController14ComplexTextRun6createERKN3WTF6VectorINS_9FloatSizeELm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEERKNS3_INS_10F14659362'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='98' c='_ZNK7WebCore21ComplexTextController14ComplexTextRun4fontEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='144' c='_ZN7WebCore21ComplexTextController14ComplexTextRunC1EPK7__CTRunRKNS_4FontEPKDsjjjj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='145' c='_ZN7WebCore21ComplexTextController14ComplexTextRunC1EP11hb_buffer_tRKNS_4FontEPKDsjjjj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='146' c='_ZN7WebCore21ComplexTextController14ComplexTextRunC1ERKNS_4FontEPKDsjjjjb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='147' c='_ZN7WebCore21ComplexTextController14ComplexTextRunC1ERKN3WTF6VectorINS_9FloatSizeELm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEERKNS3_INS_10FloatP15142280'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='155'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='174' c='_ZN7WebCore21ComplexTextController35collectComplexTextRunsForCharactersEPKDsjjPKNS_4FontE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='210'/>
+<use f='WebKit/Source/WebCore/platform/graphics/harfbuzz/ComplexTextControllerHarfBuzz.cpp' l='69' c='_ZN7WebCoreL21harfBuzzFontFunctionsEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/harfbuzz/ComplexTextControllerHarfBuzz.cpp' l='75' c='_ZN7WebCoreL21harfBuzzFontFunctionsEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/harfbuzz/ComplexTextControllerHarfBuzz.cpp' l='94' c='_ZN7WebCoreL21harfBuzzFontFunctionsEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/harfbuzz/ComplexTextControllerHarfBuzz.cpp' l='112' c='_ZN7WebCoreL21harfBuzzFontFunctionsEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/harfbuzz/ComplexTextControllerHarfBuzz.cpp' l='133' c='_ZN7WebCore21ComplexTextController14ComplexTextRunC1EP11hb_buffer_tRKNS_4FontEPKDsjjjj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/harfbuzz/ComplexTextControllerHarfBuzz.cpp' l='486' c='_ZN7WebCore21ComplexTextController35collectComplexTextRunsForCharactersEPKDsjjPKNS_4FontE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/harfbuzz/ComplexTextControllerHarfBuzz.cpp' l='517' c='_ZN7WebCore21ComplexTextController35collectComplexTextRunsForCharactersEPKDsjjPKNS_4FontE'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/platform/graphics/nicosia/cairo/NicosiaCairoOperationRecorder.h' l='65' c='_ZN7Nicosia22CairoOperationRecorder10drawGlyphsERKN7WebCore4FontEPKtPKNS1_9FloatSizeEjRKNS1_10FloatPointENS1_17FontSmoothingModeE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/nicosia/cairo/NicosiaCairoOperationRecorder.cpp' l='501' c='_ZN7Nicosia22CairoOperationRecorder10drawGlyphsERKN7WebCore4FontEPKtPKNS1_9FloatSizeEjRKNS1_10FloatPointENS1_17FontSmoothingModeE'/>
+<size>960</size>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1121' c='_ZN3IPC13ArgumentCoderIN3WTF3RefIN7WebCore4FontENS1_12RawPtrTraitsIS4_EEEEvE6encodeERNS_7EncoderERKS7_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1133' c='_ZN3IPC13ArgumentCoderIN3WTF3RefIN7WebCore4FontENS1_12RawPtrTraitsIS4_EEEEvE6decodeERNS_7DecoderE'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/css/CSSFontFace.h' l='118' c='_ZN7WebCore11CSSFontFace4fontERKNS_15FontDescriptionEbbNS_30ExternalResourceDownloadPolicyE'/>
+<use f='WebKit/Source/WebCore/css/CSSFontSelector.h' l='65' c='_ZN7WebCore15CSSFontSelector14fallbackFontAtERKNS_15FontDescriptionEm'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/rendering/RenderCombineText.h' l='48' c='_ZNK7WebCore17RenderCombineText5widthEjjRKNS_11FontCascadeEfPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTableTrai5261939'/>
+<use f='WebKit/Source/WebCore/rendering/line/BreakingContext.h' l='64'/>
+<use f='WebKit/Source/WebCore/rendering/line/BreakingContext.h' l='75' c='_ZN7WebCore17WordTrailingSpace5widthERN3WTF7HashSetIPKNS_4FontENS1_11DefaultHashIS5_EENS1_10HashTraitsIS5_EENS1_15HashTableTraitsEEE'/>
+<use f='WebKit/Source/WebCore/rendering/line/BreakingContext.h' l='153' c='_ZN7WebCore15BreakingContext34computeAdditionalBetweenWordsWidthERNS_10RenderTextEPNS_10TextLayoutEDsRNS_17WordTrailingSpaceERN3WTF7HashSetIPKNS_4Font3671855'/>
+<use f='WebKit/Source/WebCore/rendering/line/BreakingContext.h' l='538' c='_ZN7WebCore18measureHyphenWidthERNS_10RenderTextERKNS_11FontCascadeEPN3WTF7HashSetIPKNS_4FontENS5_11DefaultHashIS9_EENS5_10HashTraitsIS9_EENS5_15HashTableTraitsEEE'/>
+<use f='WebKit/Source/WebCore/rendering/line/BreakingContext.h' l='544' c='_ZN7WebCore9textWidthERNS_10RenderTextEjjRKNS_11FontCascadeEfbbRN3WTF7HashSetIPKNS_4FontENS5_11DefaultHashIS9_EENS5_10HashTraitsIS9_EENS5_15HashTableT961059'/>
+<use f='WebKit/Source/WebCore/rendering/line/BreakingContext.h' l='634' c='_ZN7WebCore15BreakingContext34computeAdditionalBetweenWordsWidthERNS_10RenderTextEPNS_10TextLayoutEDsRNS_17WordTrailingSpaceERN3WTF7HashSetIPKNS_4Font3671855'/>
+<use f='WebKit/Source/WebCore/rendering/line/BreakingContext.h' l='730' c='_ZN7WebCore15BreakingContext10handleTextERN3WTF6VectorINS_15WordMeasurementELm64ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEERbRj'/>
+<use f='WebKit/Source/WebCore/rendering/RenderText.cpp' l='701' c='_ZNK7WebCore10RenderText14widthFromCacheERKNS_11FontCascadeEjjfPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTableT3872265'/>
+<use f='WebKit/Source/WebCore/rendering/RenderText.cpp' l='908' c='_ZN7WebCore10RenderText29computePreferredLogicalWidthsEf'/>
+<use f='WebKit/Source/WebCore/rendering/RenderText.cpp' l='922' c='_ZN7WebCoreL20maxWordFragmentWidthERNS_10RenderTextERKNS_11RenderStyleERKNS_11FontCascadeEN3WTF10StringViewEjjRjRNS8_7HashSetIPKNS_4FontENS8_11Default2557340'/>
+<use f='WebKit/Source/WebCore/rendering/RenderText.cpp' l='963' c='_ZN7WebCore10RenderText29computePreferredLogicalWidthsEfRN3WTF7HashSetIPKNS_4FontENS1_11DefaultHashIS5_EENS1_10HashTraitsIS5_EENS1_15HashTableTraitsEE2251601'/>
+<use f='WebKit/Source/WebCore/rendering/RenderText.cpp' l='1515' c='_ZNK7WebCore10RenderText5widthEjjfbPN3WTF7HashSetIPKNS_4FontENS1_11DefaultHashIS5_EENS1_10HashTraitsIS5_EENS1_15HashTableTraitsEEEPNS_13GlyphOverflowE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderText.cpp' l='1527' c='_ZNK7WebCore10RenderText5widthEjjRKNS_11FontCascadeEfPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTableTraitsEEEPNS_13GlyphOverflowE'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/platform/graphics/WidthIterator.h' l='44' c='_ZN7WebCore13WidthIteratorC1ERKNS_11FontCascadeERKNS_7TextRunEPN3WTF7HashSetIPKNS_4FontENS7_11DefaultHashISB_EENS7_10HashTraitsISB_EENS7_15HashTableTraitsEEEbb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/WidthIterator.h' l='66' c='_ZN7WebCore13WidthIterator19applyFontTransformsERNS_11GlyphBufferEjjRKNS_4FontEbRN3WTF6VectorINS_42OriginalAdvancesForCharacterTreatedAsSpaceELm64ENS62524897'/>
+<use f='WebKit/Source/WebCore/platform/graphics/WidthIterator.h' l='67' c='_ZN7WebCore13WidthIterator22commitCurrentFontRangeERNS_11GlyphBufferEjjRKNS_4FontES5_ifRN3WTF6VectorINS_42OriginalAdvancesForCharacterTreatedAsSpaceEL1719711'/>
+<use f='WebKit/Source/WebCore/platform/graphics/WidthIterator.h' l='67' c='_ZN7WebCore13WidthIterator22commitCurrentFontRangeERNS_11GlyphBufferEjjRKNS_4FontES5_ifRN3WTF6VectorINS_42OriginalAdvancesForCharacterTreatedAsSpaceEL1719711'/>
+<use f='WebKit/Source/WebCore/platform/graphics/WidthIterator.h' l='82'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/rendering/LegacyInlineFlowBox.cpp' l='474' c='_ZNK7WebCore19LegacyInlineFlowBox27requiresIdeographicBaselineERKN3WTF7HashMapIPKNS_19LegacyInlineTextBoxESt4pairINS1_6VectorIPKNS_4FontELm0ENS1_15Cra16207911'/>
+<use f='WebKit/Source/WebCore/rendering/LegacyInlineFlowBox.cpp' l='481' c='_ZNK7WebCore19LegacyInlineFlowBox27requiresIdeographicBaselineERKN3WTF7HashMapIPKNS_19LegacyInlineTextBoxESt4pairINS1_6VectorIPKNS_4FontELm0ENS1_15Cra16207911'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/rendering/LegacyLineLayout.cpp' l='469' c='_ZN7WebCoreL25setLogicalWidthForTextRunEPNS_19LegacyRootInlineBoxEPNS_7BidiRunERNS_10RenderTextEfRKNS_8LineInfoERN3WTF7HashMapIPKNS_19LegacyInlineText5859660'/>
+<use f='WebKit/Source/WebCore/rendering/LegacyLineLayout.cpp' l='541' c='_ZN7WebCoreL25setLogicalWidthForTextRunEPNS_19LegacyRootInlineBoxEPNS_7BidiRunERNS_10RenderTextEfRKNS_8LineInfoERN3WTF7HashMapIPKNS_19LegacyInlineText5859660'/>
+<use f='WebKit/Source/WebCore/rendering/LegacyLineLayout.cpp' l='553' c='_ZN7WebCoreL25setLogicalWidthForTextRunEPNS_19LegacyRootInlineBoxEPNS_7BidiRunERNS_10RenderTextEfRKNS_8LineInfoERN3WTF7HashMapIPKNS_19LegacyInlineText5859660'/>
+<use f='WebKit/Source/WebCore/rendering/LegacyRootInlineBox.cpp' l='804' c='_ZNK7WebCore19LegacyRootInlineBox22ascentAndDescentForBoxERNS_15LegacyInlineBoxERN3WTF7HashMapIPKNS_19LegacyInlineTextBoxESt4pairINS3_6VectorIPKNS_4Fo5893042'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/rendering/RenderCombineText.cpp' l='71' c='_ZNK7WebCore17RenderCombineText5widthEjjRKNS_11FontCascadeEfPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTableTrai5261939'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/loader/FontLoadRequest.h' l='54' c='_ZN7WebCore15FontLoadRequest10createFontERKNS_15FontDescriptionERKN3WTF10AtomStringEbbRKNS_18FontTaggedSettingsIiEENS_34FontSelectionSpecifiedCapabilitiesE'/>
+<use f='WebKit/Source/WebCore/css/CSSFontFaceSource.h' l='76' c='_ZN7WebCore17CSSFontFaceSource4fontERKNS_15FontDescriptionEbbRKNS_18FontTaggedSettingsIiEENS_34FontSelectionSpecifiedCapabilitiesE'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/loader/cache/CachedFont.h' l='59' c='_ZN7WebCore10CachedFont10createFontERKNS_15FontDescriptionERKN3WTF10AtomStringEbbRKNS_18FontTaggedSettingsIiEENS_34FontSelectionSpecifiedCapabilitiesE'/>
+<use f='WebKit/Source/WebCore/css/CSSFontFace.cpp' l='654' c='_ZN7WebCore11CSSFontFace4fontERKNS_15FontDescriptionEbbNS_30ExternalResourceDownloadPolicyE'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/loader/cache/CachedFontLoadRequest.h' l='59' c='_ZN7WebCore21CachedFontLoadRequest10createFontERKNS_15FontDescriptionERKN3WTF10AtomStringEbbRKNS_18FontTaggedSettingsIiEENS_34FontSelectionSpecifiedCapabilitiesE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedSVGFont.h' l='42' c='_ZN7WebCore13CachedSVGFont10createFontERKNS_15FontDescriptionERKN3WTF10AtomStringEbbRKNS_18FontTaggedSettingsIiEENS_34FontSelectionSpecifiedCapabilitiesE'/>
+<use f='WebKit/Source/WebCore/css/CSSFontFaceSource.cpp' l='196' c='_ZN7WebCore17CSSFontFaceSource4fontERKNS_15FontDescriptionEbbRKNS_18FontTaggedSettingsIiEENS_34FontSelectionSpecifiedCapabilitiesE'/>
+<use f='WebKit/Source/WebCore/css/CSSFontSelector.cpp' l='353' c='_ZN7WebCore15CSSFontSelector14fallbackFontAtERKNS_15FontDescriptionEm'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/css/CSSSegmentedFontFace.cpp' l='66' c='_ZNK7WebCore15CSSFontAccessor4fontENS_30ExternalResourceDownloadPolicyE'/>
+<use f='WebKit/Source/WebCore/css/CSSSegmentedFontFace.cpp' l='91'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/platform/graphics/BifurcatedGraphicsContext.h' l='127' c='_ZN7WebCore25BifurcatedGraphicsContext10drawGlyphsERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/BifurcatedGraphicsContext.cpp' l='351' c='_ZN7WebCore25BifurcatedGraphicsContext10drawGlyphsERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='61' c='_ZN7WebCore10TextLayout5widthEjjPN3WTF7HashSetIPKNS_4FontENS1_11DefaultHashIS5_EENS1_10HashTraitsIS5_EENS1_15HashTableTraitsEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='98' c='_ZN7WebCore11FontCascade5widthERNS_10TextLayoutEjjPN3WTF7HashSetIPKNS_4FontENS3_11DefaultHashIS7_EENS3_10HashTraitsIS7_EENS3_15HashTableTraitsEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='117' c='_ZN7WebCore21ComplexTextControllerC1ERKNS_11FontCascadeERKNS_7TextRunEbPN3WTF7HashSetIPKNS_4FontENS7_11DefaultHashISB_EENS7_10HashTraitsISB_EENS7_15HashTableTraitsEEEb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='329' c='_ZN7WebCoreL16shouldSynthesizeEbPKNS_4FontEiSt8optionalIiENS_15FontVariantCapsEb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='369' c='_ZN7WebCore21ComplexTextController22collectComplexTextRunsEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='370' c='_ZN7WebCore21ComplexTextController22collectComplexTextRunsEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='371' c='_ZN7WebCore21ComplexTextController22collectComplexTextRunsEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='372' c='_ZN7WebCore21ComplexTextController22collectComplexTextRunsEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='554' c='_ZN7WebCore21ComplexTextController7advanceEjPNS_11GlyphBufferENS_19GlyphIterationStyleEPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTrai4476861'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='688' c='_ZN7WebCore21ComplexTextController23adjustGlyphsAndAdvancesEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='819' c='_ZN7WebCore21ComplexTextController14ComplexTextRunC1ERKNS_4FontEPKDsjjjjb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='847' c='_ZN7WebCore21ComplexTextController14ComplexTextRunC1ERKN3WTF6VectorINS_9FloatSizeELm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEERKNS3_INS_10FloatP15142280'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.cpp' l='61' c='_ZN7WebCore4Font6createERKNS_16FontPlatformDataENS0_6OriginENS0_12InterstitialENS0_10VisibilityENS0_19OrientationFallbackESt8optionalIN3WTF16ObjectIde5717661'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.cpp' l='63' c='_ZN7WebCore4Font6createERKNS_16FontPlatformDataENS0_6OriginENS0_12InterstitialENS0_10VisibilityENS0_19OrientationFallbackESt8optionalIN3WTF16ObjectIde5717661'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.cpp' l='66' c='_ZN7WebCore4Font6createERKNS_16FontPlatformDataENS0_6OriginEPNS_9FontCacheENS0_12InterstitialENS0_10VisibilityENS0_19OrientationFallbackESt8optionalIN10663664'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.cpp' l='68' c='_ZN7WebCore4Font6createERKNS_16FontPlatformDataENS0_6OriginEPNS_9FontCacheENS0_12InterstitialENS0_10VisibilityENS0_19OrientationFallbackESt8optionalIN10663664'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.cpp' l='71' c='_ZN7WebCore4Font6createEON3WTF3RefINS_12SharedBufferENS1_12RawPtrTraitsIS3_EEEENS0_6OriginEfbbPNS_9FontCacheE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.cpp' l='182' c='_ZN7WebCoreL13fillGlyphPageERNS_9GlyphPageEPDsjRKNS_4FontE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.cpp' l='352' c='_ZN7WebCoreL22createAndFillGlyphPageEjRKNS_4FontE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.cpp' l='436' c='_ZNK7WebCore4Font28verticalRightOrientationFontEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.cpp' l='447' c='_ZNK7WebCore4Font22uprightOrientationFontEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.cpp' l='456' c='_ZNK7WebCore4Font13invisibleFontEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.cpp' l='465' c='_ZNK7WebCore4Font13smallCapsFontERKNS_15FontDescriptionE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.cpp' l='474' c='_ZNK7WebCore4Font27noSynthesizableFeaturesFontEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.cpp' l='487' c='_ZNK7WebCore4Font16emphasisMarkFontERKNS_15FontDescriptionE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.cpp' l='496' c='_ZNK7WebCore4Font19brokenIdeographFontEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.cpp' l='539' c='_ZNK7WebCore4Font16createScaledFontERKNS_15FontDescriptionEf'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.cpp' l='574'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.cpp' l='575'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.cpp' l='583' c='_ZNK7WebCore4Font30systemFallbackFontForCharacterEiRKNS_15FontDescriptionENS_17IsForPlatformFontERNS_9FontCacheE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCache.cpp' l='134'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCache.cpp' l='265' c='_ZN7WebCore9FontCache13fontForFamilyERKNS_15FontDescriptionERKN3WTF6StringEPKNS_18FontTaggedSettingsIiEENS_34FontSelectionSpecifiedCapabilitiesEb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCache.cpp' l='276' c='_ZN7WebCore9FontCache19fontForPlatformDataERKNS_16FontPlatformDataE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCache.cpp' l='320' c='_ZN7WebCore9FontCache21purgeInactiveFontDataEj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCache.cpp' l='506' c='_ZN7WebCore9FontCache11similarFontERKNS_15FontDescriptionERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='226' c='_ZNK7WebCore11FontCascade16widthOfTextRangeERKNS_7TextRunEjjPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTableTraitsEEEPfSG_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='268' c='_ZNK7WebCore11FontCascade5widthERKNS_7TextRunEPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTableTraitsEEEPNS_13GlyphOverflowE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='288' c='_ZNK7WebCore11FontCascade5widthERKNS_7TextRunEPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTableTraitsEEEPNS_13GlyphOverflowE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1210' c='_ZNK7WebCore11FontCascade18emphasisMarkAscentERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1224' c='_ZNK7WebCore11FontCascade19emphasisMarkDescentERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1238' c='_ZNK7WebCore11FontCascade18emphasisMarkHeightERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1321' c='_ZN7WebCore19shouldDrawIfLoadingERKNS_4FontENS_11FontCascade24CustomFontNotReadyActionE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1332' c='_ZNK7WebCore11FontCascade15drawGlyphBufferERNS_15GraphicsContextERKNS_11GlyphBufferERNS_10FloatPointENS0_24CustomFontNotReadyActionE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1339' c='_ZNK7WebCore11FontCascade15drawGlyphBufferERNS_15GraphicsContextERKNS_11GlyphBufferERNS_10FloatPointENS0_24CustomFontNotReadyActionE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1360' c='_ZN7WebCoreL21offsetToMiddleOfGlyphERKNS_4FontEt'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1382' c='_ZNK7WebCore11FontCascade17drawEmphasisMarksERNS_15GraphicsContextERKNS_11GlyphBufferERKN3WTF10AtomStringERKNS_10FloatPointE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1405' c='_ZNK7WebCore11FontCascade23floatWidthForSimpleTextERKNS_7TextRunEPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTabl7274659'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1422' c='_ZNK7WebCore11FontCascade24floatWidthForComplexTextERKNS_7TextRunEPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTab14672171'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1626'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascadeFonts.cpp' l='70'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascadeFonts.cpp' l='330' c='_ZN7WebCoreL20findBestFallbackFontERNS_16FontCascadeFontsERKNS_22FontCascadeDescriptionEi'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascadeFonts.cpp' l='349' c='_ZN7WebCore16FontCascadeFonts26glyphDataForSystemFallbackEiRKNS_22FontCascadeDescriptionENS_11FontVariantEb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascadeFonts.cpp' l='359' c='_ZN7WebCore16FontCascadeFonts26glyphDataForSystemFallbackEiRKNS_22FontCascadeDescriptionENS_11FontVariantEb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascadeFonts.cpp' l='443' c='_ZN7WebCore16FontCascadeFonts19glyphDataForVariantEiRKNS_22FontCascadeDescriptionENS_11FontVariantEj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascadeFonts.cpp' l='457' c='_ZN7WebCoreL23glyphPageFromFontRangesEjRKNS_10FontRangesE'/>
+<size>960</size>
+<fun r='_ZN7WebCore4Font6createERKNS_16FontPlatformDataENS0_6OriginENS0_12InterstitialENS0_10VisibilityENS0_19OrientationFallbackESt8optionalIN3WTF16ObjectIde5717661'/>
+<fun r='_ZN7WebCore4Font6createERKNS_16FontPlatformDataENS0_6OriginEPNS_9FontCacheENS0_12InterstitialENS0_10VisibilityENS0_19OrientationFallbackESt8optionalIN10663664'/>
+<fun r='_ZN7WebCore4Font6createEON3WTF3RefINS_12SharedBufferENS1_12RawPtrTraitsIS3_EEEENS0_6OriginEfbbPNS_9FontCacheE'/>
+<fun r='_ZN7WebCore4FontC1ERKNS_16FontPlatformDataENS0_6OriginENS0_12InterstitialENS0_10VisibilityENS0_19OrientationFallbackESt8optionalIN3WTF16ObjectIdentifi15653088'/>
+<fun r='_ZN7WebCore4Font14initCharWidthsEv'/>
+<fun r='_ZN7WebCore4Font17platformGlyphInitEv'/>
+<fun r='_ZN7WebCore4FontD1Ev'/>
+<fun r='_ZNK7WebCore4Font27renderingResourceIdentifierEv'/>
+<fun r='_ZNK7WebCore4Font9glyphPageEj'/>
+<fun r='_ZNK7WebCore4Font17glyphForCharacterEi'/>
+<fun r='_ZNK7WebCore4Font21glyphDataForCharacterEi'/>
+<fun r='_ZNK7WebCore4Font21ensureDerivedFontDataEv'/>
+<fun r='_ZNK7WebCore4Font28verticalRightOrientationFontEv'/>
+<fun r='_ZNK7WebCore4Font22uprightOrientationFontEv'/>
+<fun r='_ZNK7WebCore4Font13invisibleFontEv'/>
+<fun r='_ZNK7WebCore4Font13smallCapsFontERKNS_15FontDescriptionE'/>
+<fun r='_ZNK7WebCore4Font27noSynthesizableFeaturesFontEv'/>
+<fun r='_ZNK7WebCore4Font16emphasisMarkFontERKNS_15FontDescriptionE'/>
+<fun r='_ZNK7WebCore4Font19brokenIdeographFontEv'/>
+<fun r='_ZNK7WebCore4Font31isProbablyOnlyUsedToRenderIconsEv'/>
+<fun r='_ZNK7WebCore4Font8mathDataEv'/>
+<fun r='_ZNK7WebCore4Font16createScaledFontERKNS_15FontDescriptionEf'/>
+<fun r='_ZNK7WebCore4Font15applyTransformsERNS_11GlyphBufferEjjbbRKN3WTF10AtomStringENS3_10StringViewENS_13TextDirectionE'/>
+<fun r='_ZNK7WebCore4Font30systemFallbackFontForCharacterEiRKNS_15FontDescriptionENS_17IsForPlatformFontERNS_9FontCacheE'/>
+<fun r='_ZN7WebCore4Font29removeFromSystemFallbackCacheEv'/>
+<fun r='_ZNK7WebCore4Font17supportsCodePointEi'/>
+<fun r='_ZNK7WebCore4Font35canRenderCombiningCharacterSequenceEPKDsm'/>
+<fun r='_ZNK7WebCore4Font12pathForGlyphEt'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontRanges.cpp' l='36' c='_ZNK7WebCore10FontRanges5Range4fontENS_30ExternalResourceDownloadPolicyE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontRanges.cpp' l='45' c='_ZN7WebCore19TrivialFontAccessor6createEON3WTF3RefINS_4FontENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontRanges.cpp' l='51' c='_ZN7WebCore19TrivialFontAccessorC1EON3WTF6RefPtrINS_4FontENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontRanges.cpp' l='56' c='_ZNK7WebCore19TrivialFontAccessor4fontENS_30ExternalResourceDownloadPolicyE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontRanges.cpp' l='66'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontRanges.cpp' l='69' c='_ZN7WebCore10FontRangesC1EON3WTF6RefPtrINS_4FontENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontRanges.cpp' l='79' c='_ZNK7WebCore10FontRanges21glyphDataForCharacterEiNS_30ExternalResourceDownloadPolicyE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontRanges.cpp' l='111' c='_ZNK7WebCore10FontRanges16fontForCharacterEi'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontRanges.cpp' l='116' c='_ZNK7WebCore10FontRanges17fontForFirstRangeEv'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsContext.cpp' l='490' c='_ZN7WebCore15GraphicsContext10drawGlyphsERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/platform/graphics/WidthIterator.cpp' l='38' c='_ZN7WebCore13WidthIteratorC1ERKNS_11FontCascadeERKNS_7TextRunEPN3WTF7HashSetIPKNS_4FontENS7_11DefaultHashISB_EENS7_10HashTraitsISB_EENS7_15HashTableTraitsEEEbb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/WidthIterator.cpp' l='93' c='_ZN7WebCore13WidthIterator19applyFontTransformsERNS_11GlyphBufferEjjRKNS_4FontEbRN3WTF6VectorINS_42OriginalAdvancesForCharacterTreatedAsSpaceELm64ENS62524897'/>
+<use f='WebKit/Source/WebCore/platform/graphics/WidthIterator.cpp' l='189' c='_ZN7WebCore13WidthIterator22commitCurrentFontRangeERNS_11GlyphBufferEjjRKNS_4FontES5_ifRN3WTF6VectorINS_42OriginalAdvancesForCharacterTreatedAsSpaceEL1719711'/>
+<use f='WebKit/Source/WebCore/platform/graphics/WidthIterator.cpp' l='189' c='_ZN7WebCore13WidthIterator22commitCurrentFontRangeERNS_11GlyphBufferEjjRKNS_4FontES5_ifRN3WTF6VectorINS_42OriginalAdvancesForCharacterTreatedAsSpaceEL1719711'/>
+<use f='WebKit/Source/WebCore/platform/graphics/WidthIterator.cpp' l='222' c='_ZN7WebCore13WidthIterator15advanceInternalERT_RNS_11GlyphBufferE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/WidthIterator.cpp' l='223' c='_ZN7WebCore13WidthIterator15advanceInternalERT_RNS_11GlyphBufferE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/WidthIterator.cpp' l='257' c='_ZN7WebCore13WidthIterator15advanceInternalERT_RNS_11GlyphBufferE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/cairo/FontCairo.cpp' l='50' c='_ZN7WebCore11FontCascade10drawGlyphsERNS_15GraphicsContextERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/cairo/GraphicsContextCairo.cpp' l='412' c='_ZN7WebCore20GraphicsContextCairo10drawGlyphsERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<size>960</size>
+<fun r='_ZNK7WebCore4Font20platformPathForGlyphEt'/>
+<fun r='_ZNK7WebCore4Font22platformBoundsForGlyphEt'/>
+<fun r='_ZNK7WebCore4Font21platformWidthForGlyphEt'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItems.cpp' l='389' c='_ZN7WebCore11DisplayList10DrawGlyphsC1ERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItems.cpp' l='403' c='_ZNK7WebCore11DisplayList10DrawGlyphs5applyERNS_15GraphicsContextERKNS_4FontE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItems.cpp' l='408' c='_ZN7WebCore11DisplayList10DrawGlyphs13computeBoundsERKNS_4FontE'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListRecorder.cpp' l='188' c='_ZN7WebCore11DisplayList8Recorder10drawGlyphsERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListRecorder.cpp' l='193' c='_ZN7WebCore11DisplayList8Recorder34appendDrawGlyphsItemWithCachedFontERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListRecorder.cpp' l='196' c='_ZN7WebCore11DisplayList8Recorder34appendDrawGlyphsItemWithCachedFontERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListRecorder.cpp' l='197' c='_ZN7WebCore11DisplayList8Recorder34appendDrawGlyphsItemWithCachedFontERKNS_4FontEPKtPKNS_9FloatSizeEjRKNS_10FloatPointENS_17FontSmoothingModeE'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/platform/graphics/opentype/OpenTypeMathData.cpp' l='296' c='_ZNK7WebCore16OpenTypeMathData15getMathConstantERKNS_4FontENS0_12MathConstantE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opentype/OpenTypeMathData.cpp' l='326' c='_ZNK7WebCore16OpenTypeMathData19getItalicCorrectionERKNS_4FontEt'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/platform/graphics/opentype/OpenTypeVerticalData.cpp' l='495' c='_ZNK7WebCore20OpenTypeVerticalData13advanceHeightEPKNS_4FontEt'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opentype/OpenTypeVerticalData.cpp' l='508' c='_ZNK7WebCore20OpenTypeVerticalData32getVerticalTranslationsForGlyphsEPKNS_4FontEPKtmPf'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opentype/OpenTypeVerticalData.cpp' l='551' c='_ZNK7WebCore20OpenTypeVerticalData28substituteWithVerticalGlyphsEPKNS_4FontEPNS_9GlyphPageE'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorCSSAgent.cpp' l='573' c='_ZN7WebCoreL18buildObjectForFontERKNS_4FontE'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/loader/cache/CachedSVGFont.cpp' l='56' c='_ZN7WebCore13CachedSVGFont10createFontERKNS_15FontDescriptionERKN3WTF10AtomStringEbbRKNS_18FontTaggedSettingsIiEENS_34FontSelectionSpecifiedCapabilitiesE'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/loader/cache/CachedFont.cpp' l='112' c='_ZN7WebCore10CachedFont10createFontERKNS_15FontDescriptionERKN3WTF10AtomStringEbbRKNS_18FontTaggedSettingsIiEENS_34FontSelectionSpecifiedCapabilitiesE'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/editing/Editor.cpp' l='4309' c='_ZN7WebCore6Editor16fontForSelectionERb'/>
+<use f='WebKit/Source/WebCore/editing/Editor.cpp' l='4315' c='_ZN7WebCore6Editor16fontForSelectionERb'/>
+<use f='WebKit/Source/WebCore/editing/Editor.cpp' l='4321' c='_ZN7WebCore6Editor16fontForSelectionERb'/>
+<use f='WebKit/Source/WebCore/editing/Editor.cpp' l='4342' c='_ZN7WebCore6Editor16fontForSelectionERb'/>
+<use f='WebKit/Source/WebCore/editing/Editor.cpp' l='4349' c='_ZN7WebCore6Editor16fontForSelectionERb'/>
+<size>960</size>
+<use f='WebKit/Source/WebCore/workers/WorkerFontLoadRequest.h' l='57' c='_ZN7WebCore21WorkerFontLoadRequest10createFontERKNS_15FontDescriptionERKN3WTF10AtomStringEbbRKNS_18FontTaggedSettingsIiEENS_34FontSelectionSpecifiedCapabilitiesE'/>
+<use f='WebKit/Source/WebCore/workers/WorkerFontLoadRequest.cpp' l='91' c='_ZN7WebCore21WorkerFontLoadRequest10createFontERKNS_15FontDescriptionERKN3WTF10AtomStringEbbRKNS_18FontTaggedSettingsIiEENS_34FontSelectionSpecifiedCapabilitiesE'/>
+<size>960</size>

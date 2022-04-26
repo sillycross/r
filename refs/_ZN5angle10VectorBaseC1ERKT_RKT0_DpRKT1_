@@ -1,0 +1,12 @@
+<dec f='WebKit/Source/ThirdParty/ANGLE/src/common/vector_utils.h' l='48' type='void angle::VectorBase::VectorBase&lt;Dimension, Type&gt;(const Arg1 &amp; arg1, const Arg2 &amp; arg2, const Args &amp;... args)'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/common/vector_utils.h' l='210' ll='215' type='void angle::VectorBase::VectorBase&lt;Dimension, Type&gt;(const Arg1 &amp; arg1, const Arg2 &amp; arg2, const Args &amp;... args)'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/common/vector_utils.h' l='200'>// Ideally we would like to have only two constructors:
+//  - a scalar constructor that takes Type as a parameter
+//  - a compound constructor
+// However if we define the compound constructor for when it has a single arguments, then calling
+// Vector2(0.0) will be ambiguous. To solve this we take advantage of there being a single compound
+// constructor with a single argument, which is the copy constructor. We end up with three
+// constructors:
+//  - the scalar constructor
+//  - the copy constructor
+//  - the compound constructor for two or more arguments, hence the arg1, and arg2 here.</doc>

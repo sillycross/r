@@ -1,0 +1,15 @@
+<dec f='include/X11/Xmd.h' l='86'/>
+<doc f='include/X11/Xmd.h' l='72'>/*
+ * Definition of macro used to set constants for size of network structures;
+ * machines with preprocessors that can&apos;t handle all of the sz_ symbols
+ * can define this macro to be sizeof(x) if and only if their compiler doesn&apos;t
+ * pad out structures (esp. the xTextElt structure which contains only two
+ * one-byte fields).  Network structures should always define sz_symbols.
+ *
+ * The sz_ prefix is used instead of something more descriptive so that the
+ * symbols are no more than 32 characters long (which causes problems for some
+ * compilers and preprocessors).
+ *
+ * The extra indirection is to get macro arguments to expand correctly before
+ * the concatenation, rather than afterward.
+ */</doc>

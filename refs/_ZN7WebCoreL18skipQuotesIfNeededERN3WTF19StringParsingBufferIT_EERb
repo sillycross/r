@@ -1,0 +1,12 @@
+<def f='WebKit/Source/WebCore/loader/LinkHeader.cpp' l='202' ll='219' type='bool WebCore::skipQuotesIfNeeded(StringParsingBuffer&lt;CharacterType&gt; &amp; buffer, bool &amp; completeQuotes)'/>
+<doc f='WebKit/Source/WebCore/loader/LinkHeader.cpp' l='191'>// Before:
+//
+// &lt;cat.jpg&gt;; rel=&quot;preload&quot;; type=&quot;image/jpeg&quot;;
+//                ^                            ^
+//            position                        end
+//
+// After (if the parameter starts with a quote, otherwise the method returns false)
+//
+// &lt;cat.jpg&gt;; rel=&quot;preload&quot;; type=&quot;image/jpeg&quot;;
+//                         ^                   ^
+//                     position               end</doc>

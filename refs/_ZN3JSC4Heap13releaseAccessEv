@@ -1,0 +1,21 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='343' type='void JSC::Heap::releaseAccess()'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='337'>// Releases heap access. If the GC is blocking waiting to do bad things to the heap, it will be
+    // allowed to run now.
+    //
+    // Ordinarily, you should use the ReleaseHeapAccessScope to release and then reacquire heap
+    // access. You should do this anytime you&apos;re about do perform a blocking operation, like waiting
+    // on the ParkingLot.</doc>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapInlines.h' l='252' ll='257' type='void JSC::Heap::releaseAccess()'/>
+<dec f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='343' type='void JSC::Heap::releaseAccess()'/>
+<def f='WebKit/Source/JavaScriptCore/heap/HeapInlines.h' l='252' ll='257' type='void JSC::Heap::releaseAccess()'/>
+<doc f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='337'>// Releases heap access. If the GC is blocking waiting to do bad things to the heap, it will be
+    // allowed to run now.
+    //
+    // Ordinarily, you should use the ReleaseHeapAccessScope to release and then reacquire heap
+    // access. You should do this anytime you&apos;re about do perform a blocking operation, like waiting
+    // on the ParkingLot.</doc>
+<use f='WebKit/Source/JavaScriptCore/heap/ReleaseHeapAccessScope.h' l='45' u='c' c='_ZN3JSC22ReleaseHeapAccessScopeC1ERNS_4HeapE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/ReleaseHeapAccessScope.h' l='64' u='c' c='_ZN3JSC30ReleaseHeapAccessIfNeededScopeC1ERNS_4HeapE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSLock.cpp' l='230' u='c' c='_ZN3JSC6JSLock15willReleaseLockEv'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='2185' u='c' c='_ZL23functionFlashHeapAccessPN3JSC14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/WebCore/workers/WorkerOrWorkletScriptController.cpp' l='144' u='c' c='_ZN7WebCore31WorkerOrWorkletScriptController17releaseHeapAccessEv'/>

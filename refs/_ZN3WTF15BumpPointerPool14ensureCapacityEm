@@ -1,0 +1,11 @@
+<def f='WebKit/WTF/Headers/wtf/BumpPointerAllocator.h' l='47' ll='54' type='WTF::BumpPointerPool * WTF::BumpPointerPool::ensureCapacity(size_t size)'/>
+<doc f='WebKit/WTF/Headers/wtf/BumpPointerAllocator.h' l='39'>// ensureCapacity will check whether the current pool has capacity to
+    // allocate &apos;size&apos; bytes of memory  If it does not, it will attempt to
+    // allocate a new pool (which will be added to this one in a chain).
+    //
+    // If allocation fails (out of memory) this method will return null.
+    // If the return value is non-null, then callers should update any
+    // references they have to this current (possibly full) BumpPointerPool
+    // to instead point to the newly returned BumpPointerPool.</doc>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrInterpreter.cpp' l='95' u='c' c='_ZN3JSC4Yarr11Interpreter23allocDisjunctionContextEPNS0_15ByteDisjunctionE'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrInterpreter.cpp' l='152' u='c' c='_ZN3JSC4Yarr11Interpreter34allocParenthesesDisjunctionContextEPNS0_15ByteDisjunctionEPjRNS0_8ByteTermE'/>

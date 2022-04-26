@@ -1,0 +1,25 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.h' l='220' type='JSCValue * jsc_value_new_functionv(JSCContext * context, const char * name, GCallback callback, gpointer user_data, GDestroyNotify destroy_notify, GType return_type, guint n_parameters, GType * parameter_types)'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='1228' ll='1242' type='JSCValue * jsc_value_new_functionv(JSCContext * context, const char * name, GCallback callback, gpointer userData, GDestroyNotify destroyNotify, GType returnType, unsigned int parametersCount, GType * parameterTypes)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='1205'>/**
+ * jsc_value_new_functionv: (rename-to jsc_value_new_function)
+ * @context: a #JSCContext
+ * @name: (nullable): the function name or %NULL
+ * @callback: (scope async): a #GCallback.
+ * @user_data: (closure): user data to pass to @callback.
+ * @destroy_notify: (nullable): destroy notifier for @user_data
+ * @return_type: the #GType of the function return value, or %G_TYPE_NONE if the function is void.
+ * @n_parameters: the number of parameters
+ * @parameter_types: (nullable) (array length=n_parameters) (element-type GType): a list of #GType&lt;!-- --&gt;s, one for each parameter, or %NULL
+ *
+ * Create a function in @context. If @name is %NULL an anonymous function will be created.
+ * When the function is called by JavaScript or jsc_value_function_call(), @callback is called
+ * receiving the function parameters and then @user_data as last parameter. When the function is
+ * cleared in @context, @destroy_notify is called with @user_data as parameter.
+ *
+ * Note that the value returned by @callback must be fully transferred. In case of boxed types, you could use
+ * %G_TYPE_POINTER instead of the actual boxed #GType to ensure that the instance owned by #JSCClass is used.
+ * If you really want to return a new copy of the boxed type, use #JSC_TYPE_VALUE and return a #JSCValue created
+ * with jsc_value_new_object() that receives the copy as instance parameter.
+ *
+ * Returns: (transfer full): a #JSCValue.
+ */</doc>

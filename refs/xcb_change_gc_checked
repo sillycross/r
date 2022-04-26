@@ -1,0 +1,19 @@
+<dec f='include/xcb/xproto.h' l='9319' type='xcb_void_cookie_t xcb_change_gc_checked(xcb_connection_t * c, xcb_gcontext_t gc, uint32_t value_mask, const void * value_list)'/>
+<doc f='include/xcb/xproto.h' l='9300'>/**
+ * @brief change graphics context components
+ *
+ * @param c The connection
+ * @param gc The graphics context to change.
+ * @param value_mask A bitmask of #xcb_gc_t values.
+ * @param value_mask \n
+ * @param value_list Values for each of the components specified in the bitmask \a value_mask. The
+ * order has to correspond to the order of possible \a value_mask bits. See the
+ * example.
+ * @return A cookie
+ *
+ * Changes the components specified by \a value_mask for the specified graphics context.
+ *
+ * This form can be used only if the request will not cause
+ * a reply to be generated. Any returned error will be
+ * saved for handling by xcb_request_check().
+ */</doc>

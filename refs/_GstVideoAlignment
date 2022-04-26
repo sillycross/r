@@ -1,0 +1,20 @@
+<use f='include/gstreamer-1.0/gst/video/video.h' l='27'/>
+<def f='include/gstreamer-1.0/gst/video/video.h' l='53' ll='60'/>
+<size>32</size>
+<doc f='include/gstreamer-1.0/gst/video/video.h' l='41'>/**
+ * GstVideoAlignment:
+ * @padding_left: extra pixels on the left side
+ * @padding_right: extra pixels on the right side
+ * @padding_top: extra pixels on the top
+ * @padding_bottom: extra pixels on the bottom
+ * @stride_align: array with extra alignment requirements for the strides
+ *
+ * Extra alignment parameters for the memory of video buffers. This
+ * structure is usually used to configure the bufferpool if it supports the
+ * #GST_BUFFER_POOL_OPTION_VIDEO_ALIGNMENT.
+ */</doc>
+<mbr r='_GstVideoAlignment::padding_top' o='0' t='guint'/>
+<mbr r='_GstVideoAlignment::padding_bottom' o='32' t='guint'/>
+<mbr r='_GstVideoAlignment::padding_left' o='64' t='guint'/>
+<mbr r='_GstVideoAlignment::padding_right' o='96' t='guint'/>
+<mbr r='_GstVideoAlignment::stride_align' o='128' t='guint [4]'/>

@@ -1,0 +1,9 @@
+<use f='WebKit/Source/JavaScriptCore/runtime/CacheableIdentifier.h' l='63' u='r' c='_ZNK3JSC19CacheableIdentifier5isUidEv'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/CacheableIdentifier.h' l='108' type='const uintptr_t'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/CacheableIdentifier.h' l='103'>// CacheableIdentifier can either hold a cell pointer or a uid. To discern which
+    // it is holding, we tag the low bit if we have a uid. We choose to tag the uid
+    // instead of the cell because this keeps the bits of the cell pointer form
+    // unpolluted, and therefore, it can be scanned by our conservative GC to keep the
+    // cell alive when the CacheableIdentifier is on the stack.</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/CacheableIdentifierInlines.h' l='81' u='r' c='_ZNK3JSC19CacheableIdentifier3uidEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CacheableIdentifierInlines.h' l='126' u='r' c='_ZN3JSC19CacheableIdentifier10setUidBitsEPN3WTF17UniquedStringImplE'/>

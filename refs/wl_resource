@@ -1,0 +1,241 @@
+<use f='include/wayland-server-core.h' l='327' c='wl_client_get_object'/>
+<use f='include/wayland-server-core.h' l='342'/>
+<use f='include/wayland-server-core.h' l='481'/>
+<use f='include/wayland-server-core.h' l='500' c='wl_resource_post_event'/>
+<use f='include/wayland-server-core.h' l='504' c='wl_resource_post_event_array'/>
+<use f='include/wayland-server-core.h' l='508' c='wl_resource_queue_event'/>
+<use f='include/wayland-server-core.h' l='512' c='wl_resource_queue_event_array'/>
+<use f='include/wayland-server-core.h' l='517' c='wl_resource_post_error'/>
+<use f='include/wayland-server-core.h' l='521' c='wl_resource_post_no_memory'/>
+<use f='include/wayland-server-core.h' l='526' c='wl_resource_create'/>
+<use f='include/wayland-server-core.h' l='532' c='wl_resource_set_implementation'/>
+<use f='include/wayland-server-core.h' l='538' c='wl_resource_set_dispatcher'/>
+<use f='include/wayland-server-core.h' l='545' c='wl_resource_destroy'/>
+<use f='include/wayland-server-core.h' l='548' c='wl_resource_get_id'/>
+<use f='include/wayland-server-core.h' l='551' c='wl_resource_get_link'/>
+<use f='include/wayland-server-core.h' l='553' c='wl_resource_from_link'/>
+<use f='include/wayland-server-core.h' l='556' c='wl_resource_find_for_client'/>
+<use f='include/wayland-server-core.h' l='560' c='wl_resource_get_client'/>
+<use f='include/wayland-server-core.h' l='563' c='wl_resource_set_user_data'/>
+<use f='include/wayland-server-core.h' l='566' c='wl_resource_get_user_data'/>
+<use f='include/wayland-server-core.h' l='569' c='wl_resource_get_version'/>
+<use f='include/wayland-server-core.h' l='572' c='wl_resource_set_destructor'/>
+<use f='include/wayland-server-core.h' l='576' c='wl_resource_instance_of'/>
+<use f='include/wayland-server-core.h' l='580' c='wl_resource_get_class'/>
+<use f='include/wayland-server-core.h' l='583' c='wl_resource_add_destroy_listener'/>
+<use f='include/wayland-server-core.h' l='587' c='wl_resource_get_destroy_listener'/>
+<use f='include/wayland-server-core.h' l='604' c='wl_shm_buffer_get'/>
+<use f='include/wayland-server-core.h' l='653'/>
+<def f='include/wayland-server.h' l='64' ll='71'/>
+<use f='include/wayland-server.h' l='75' c='wl_client_add_resource'/>
+<use f='include/wayland-server.h' l='77' c='wl_client_add_object'/>
+<use f='include/wayland-server.h' l='83' c='wl_client_new_object'/>
+<use f='include/wayland-server-protocol.h' l='876'/>
+<use f='include/wayland-server-protocol.h' l='893'/>
+<use f='include/wayland-server-protocol.h' l='934'/>
+<use f='include/wayland-server-protocol.h' l='965' c='_ZL23wl_registry_send_globalP11wl_resourcejPKcj'/>
+<use f='include/wayland-server-protocol.h' l='977' c='_ZL30wl_registry_send_global_removeP11wl_resourcej'/>
+<use f='include/wayland-server-protocol.h' l='997' c='_ZL21wl_callback_send_doneP11wl_resourcej'/>
+<use f='include/wayland-server-protocol.h' l='1014'/>
+<use f='include/wayland-server-protocol.h' l='1023'/>
+<use f='include/wayland-server-protocol.h' l='1064'/>
+<use f='include/wayland-server-protocol.h' l='1080'/>
+<use f='include/wayland-server-protocol.h' l='1091'/>
+<use f='include/wayland-server-protocol.h' l='1541'/>
+<use f='include/wayland-server-protocol.h' l='1566' c='_ZL18wl_shm_send_formatP11wl_resourcej'/>
+<use f='include/wayland-server-protocol.h' l='1585'/>
+<use f='include/wayland-server-protocol.h' l='1606' c='_ZL22wl_buffer_send_releaseP11wl_resource'/>
+<use f='include/wayland-server-protocol.h' l='1659'/>
+<use f='include/wayland-server-protocol.h' l='1684'/>
+<use f='include/wayland-server-protocol.h' l='1693'/>
+<use f='include/wayland-server-protocol.h' l='1714'/>
+<use f='include/wayland-server-protocol.h' l='1755'/>
+<use f='include/wayland-server-protocol.h' l='1805' c='_ZL24wl_data_offer_send_offerP11wl_resourcePKc'/>
+<use f='include/wayland-server-protocol.h' l='1817' c='_ZL33wl_data_offer_send_source_actionsP11wl_resourcej'/>
+<use f='include/wayland-server-protocol.h' l='1829' c='_ZL25wl_data_offer_send_actionP11wl_resourcej'/>
+<use f='include/wayland-server-protocol.h' l='1862'/>
+<use f='include/wayland-server-protocol.h' l='1870'/>
+<use f='include/wayland-server-protocol.h' l='1891'/>
+<use f='include/wayland-server-protocol.h' l='1947' c='_ZL26wl_data_source_send_targetP11wl_resourcePKc'/>
+<use f='include/wayland-server-protocol.h' l='1960' c='_ZL24wl_data_source_send_sendP11wl_resourcePKci'/>
+<use f='include/wayland-server-protocol.h' l='1971' c='_ZL29wl_data_source_send_cancelledP11wl_resource'/>
+<use f='include/wayland-server-protocol.h' l='1982' c='_ZL38wl_data_source_send_dnd_drop_performedP11wl_resource'/>
+<use f='include/wayland-server-protocol.h' l='1993' c='_ZL32wl_data_source_send_dnd_finishedP11wl_resource'/>
+<use f='include/wayland-server-protocol.h' l='2005' c='_ZL26wl_data_source_send_actionP11wl_resourcej'/>
+<use f='include/wayland-server-protocol.h' l='2061'/>
+<use f='include/wayland-server-protocol.h' l='2062'/>
+<use f='include/wayland-server-protocol.h' l='2063'/>
+<use f='include/wayland-server-protocol.h' l='2064'/>
+<use f='include/wayland-server-protocol.h' l='2077'/>
+<use f='include/wayland-server-protocol.h' l='2078'/>
+<use f='include/wayland-server-protocol.h' l='2087'/>
+<use f='include/wayland-server-protocol.h' l='2142' c='_ZL30wl_data_device_send_data_offerP11wl_resourceS0_'/>
+<use f='include/wayland-server-protocol.h' l='2142' c='_ZL30wl_data_device_send_data_offerP11wl_resourceS0_'/>
+<use f='include/wayland-server-protocol.h' l='2158' c='_ZL25wl_data_device_send_enterP11wl_resourcejS0_iiS0_'/>
+<use f='include/wayland-server-protocol.h' l='2158' c='_ZL25wl_data_device_send_enterP11wl_resourcejS0_iiS0_'/>
+<use f='include/wayland-server-protocol.h' l='2158' c='_ZL25wl_data_device_send_enterP11wl_resourcejS0_iiS0_'/>
+<use f='include/wayland-server-protocol.h' l='2169' c='_ZL25wl_data_device_send_leaveP11wl_resource'/>
+<use f='include/wayland-server-protocol.h' l='2183' c='_ZL26wl_data_device_send_motionP11wl_resourcejii'/>
+<use f='include/wayland-server-protocol.h' l='2194' c='_ZL24wl_data_device_send_dropP11wl_resource'/>
+<use f='include/wayland-server-protocol.h' l='2206' c='_ZL29wl_data_device_send_selectionP11wl_resourceS0_'/>
+<use f='include/wayland-server-protocol.h' l='2206' c='_ZL29wl_data_device_send_selectionP11wl_resourceS0_'/>
+<use f='include/wayland-server-protocol.h' l='2273'/>
+<use f='include/wayland-server-protocol.h' l='2283'/>
+<use f='include/wayland-server-protocol.h' l='2285'/>
+<use f='include/wayland-server-protocol.h' l='2325'/>
+<use f='include/wayland-server-protocol.h' l='2327'/>
+<use f='include/wayland-server-protocol.h' l='2447'/>
+<use f='include/wayland-server-protocol.h' l='2461'/>
+<use f='include/wayland-server-protocol.h' l='2462'/>
+<use f='include/wayland-server-protocol.h' l='2477'/>
+<use f='include/wayland-server-protocol.h' l='2478'/>
+<use f='include/wayland-server-protocol.h' l='2489'/>
+<use f='include/wayland-server-protocol.h' l='2506'/>
+<use f='include/wayland-server-protocol.h' l='2507'/>
+<use f='include/wayland-server-protocol.h' l='2553'/>
+<use f='include/wayland-server-protocol.h' l='2556'/>
+<use f='include/wayland-server-protocol.h' l='2587'/>
+<use f='include/wayland-server-protocol.h' l='2588'/>
+<use f='include/wayland-server-protocol.h' l='2590'/>
+<use f='include/wayland-server-protocol.h' l='2618'/>
+<use f='include/wayland-server-protocol.h' l='2619'/>
+<use f='include/wayland-server-protocol.h' l='2633'/>
+<use f='include/wayland-server-protocol.h' l='2647'/>
+<use f='include/wayland-server-protocol.h' l='2716' c='_ZL26wl_shell_surface_send_pingP11wl_resourcej'/>
+<use f='include/wayland-server-protocol.h' l='2730' c='_ZL31wl_shell_surface_send_configureP11wl_resourcejii'/>
+<use f='include/wayland-server-protocol.h' l='2741' c='_ZL32wl_shell_surface_send_popup_doneP11wl_resource'/>
+<use f='include/wayland-server-protocol.h' l='2777'/>
+<use f='include/wayland-server-protocol.h' l='2833'/>
+<use f='include/wayland-server-protocol.h' l='2834'/>
+<use f='include/wayland-server-protocol.h' l='2869'/>
+<use f='include/wayland-server-protocol.h' l='2914'/>
+<use f='include/wayland-server-protocol.h' l='2947'/>
+<use f='include/wayland-server-protocol.h' l='2948'/>
+<use f='include/wayland-server-protocol.h' l='2977'/>
+<use f='include/wayland-server-protocol.h' l='2978'/>
+<use f='include/wayland-server-protocol.h' l='3001'/>
+<use f='include/wayland-server-protocol.h' l='3041'/>
+<use f='include/wayland-server-protocol.h' l='3076'/>
+<use f='include/wayland-server-protocol.h' l='3122'/>
+<use f='include/wayland-server-protocol.h' l='3189' c='_ZL21wl_surface_send_enterP11wl_resourceS0_'/>
+<use f='include/wayland-server-protocol.h' l='3189' c='_ZL21wl_surface_send_enterP11wl_resourceS0_'/>
+<use f='include/wayland-server-protocol.h' l='3201' c='_ZL21wl_surface_send_leaveP11wl_resourceS0_'/>
+<use f='include/wayland-server-protocol.h' l='3201' c='_ZL21wl_surface_send_leaveP11wl_resourceS0_'/>
+<use f='include/wayland-server-protocol.h' l='3249'/>
+<use f='include/wayland-server-protocol.h' l='3264'/>
+<use f='include/wayland-server-protocol.h' l='3279'/>
+<use f='include/wayland-server-protocol.h' l='3289'/>
+<use f='include/wayland-server-protocol.h' l='3328' c='_ZL25wl_seat_send_capabilitiesP11wl_resourcej'/>
+<use f='include/wayland-server-protocol.h' l='3340' c='_ZL17wl_seat_send_nameP11wl_resourcePKc'/>
+<use f='include/wayland-server-protocol.h' l='3489'/>
+<use f='include/wayland-server-protocol.h' l='3491'/>
+<use f='include/wayland-server-protocol.h' l='3505'/>
+<use f='include/wayland-server-protocol.h' l='3574' c='_ZL21wl_pointer_send_enterP11wl_resourcejS0_ii'/>
+<use f='include/wayland-server-protocol.h' l='3574' c='_ZL21wl_pointer_send_enterP11wl_resourcejS0_ii'/>
+<use f='include/wayland-server-protocol.h' l='3587' c='_ZL21wl_pointer_send_leaveP11wl_resourcejS0_'/>
+<use f='include/wayland-server-protocol.h' l='3587' c='_ZL21wl_pointer_send_leaveP11wl_resourcejS0_'/>
+<use f='include/wayland-server-protocol.h' l='3601' c='_ZL22wl_pointer_send_motionP11wl_resourcejii'/>
+<use f='include/wayland-server-protocol.h' l='3616' c='_ZL22wl_pointer_send_buttonP11wl_resourcejjjj'/>
+<use f='include/wayland-server-protocol.h' l='3630' c='_ZL20wl_pointer_send_axisP11wl_resourcejji'/>
+<use f='include/wayland-server-protocol.h' l='3641' c='_ZL21wl_pointer_send_frameP11wl_resource'/>
+<use f='include/wayland-server-protocol.h' l='3653' c='_ZL27wl_pointer_send_axis_sourceP11wl_resourcej'/>
+<use f='include/wayland-server-protocol.h' l='3666' c='_ZL25wl_pointer_send_axis_stopP11wl_resourcejj'/>
+<use f='include/wayland-server-protocol.h' l='3679' c='_ZL29wl_pointer_send_axis_discreteP11wl_resourceji'/>
+<use f='include/wayland-server-protocol.h' l='3737'/>
+<use f='include/wayland-server-protocol.h' l='3786' c='_ZL23wl_keyboard_send_keymapP11wl_resourcejij'/>
+<use f='include/wayland-server-protocol.h' l='3800' c='_ZL22wl_keyboard_send_enterP11wl_resourcejS0_P8wl_array'/>
+<use f='include/wayland-server-protocol.h' l='3800' c='_ZL22wl_keyboard_send_enterP11wl_resourcejS0_P8wl_array'/>
+<use f='include/wayland-server-protocol.h' l='3813' c='_ZL22wl_keyboard_send_leaveP11wl_resourcejS0_'/>
+<use f='include/wayland-server-protocol.h' l='3813' c='_ZL22wl_keyboard_send_leaveP11wl_resourcejS0_'/>
+<use f='include/wayland-server-protocol.h' l='3828' c='_ZL20wl_keyboard_send_keyP11wl_resourcejjjj'/>
+<use f='include/wayland-server-protocol.h' l='3844' c='_ZL26wl_keyboard_send_modifiersP11wl_resourcejjjjj'/>
+<use f='include/wayland-server-protocol.h' l='3857' c='_ZL28wl_keyboard_send_repeat_infoP11wl_resourceii'/>
+<use f='include/wayland-server-protocol.h' l='3874'/>
+<use f='include/wayland-server-protocol.h' l='3931' c='_ZL18wl_touch_send_downP11wl_resourcejjS0_iii'/>
+<use f='include/wayland-server-protocol.h' l='3931' c='_ZL18wl_touch_send_downP11wl_resourcejjS0_iii'/>
+<use f='include/wayland-server-protocol.h' l='3945' c='_ZL16wl_touch_send_upP11wl_resourcejji'/>
+<use f='include/wayland-server-protocol.h' l='3960' c='_ZL20wl_touch_send_motionP11wl_resourcejiii'/>
+<use f='include/wayland-server-protocol.h' l='3971' c='_ZL19wl_touch_send_frameP11wl_resource'/>
+<use f='include/wayland-server-protocol.h' l='3982' c='_ZL20wl_touch_send_cancelP11wl_resource'/>
+<use f='include/wayland-server-protocol.h' l='3996' c='_ZL19wl_touch_send_shapeP11wl_resourceiii'/>
+<use f='include/wayland-server-protocol.h' l='4009' c='_ZL25wl_touch_send_orientationP11wl_resourceii'/>
+<use f='include/wayland-server-protocol.h' l='4139'/>
+<use f='include/wayland-server-protocol.h' l='4183' c='_ZL23wl_output_send_geometryP11wl_resourceiiiiiPKcS2_i'/>
+<use f='include/wayland-server-protocol.h' l='4198' c='_ZL19wl_output_send_modeP11wl_resourcejiii'/>
+<use f='include/wayland-server-protocol.h' l='4209' c='_ZL19wl_output_send_doneP11wl_resource'/>
+<use f='include/wayland-server-protocol.h' l='4221' c='_ZL20wl_output_send_scaleP11wl_resourcei'/>
+<use f='include/wayland-server-protocol.h' l='4237'/>
+<use f='include/wayland-server-protocol.h' l='4248'/>
+<use f='include/wayland-server-protocol.h' l='4263'/>
+<use f='include/wayland-server-protocol.h' l='4307'/>
+<use f='include/wayland-server-protocol.h' l='4332'/>
+<use f='include/wayland-server-protocol.h' l='4334'/>
+<use f='include/wayland-server-protocol.h' l='4335'/>
+<use f='include/wayland-server-protocol.h' l='4374'/>
+<use f='include/wayland-server-protocol.h' l='4399'/>
+<use f='include/wayland-server-protocol.h' l='4423'/>
+<use f='include/wayland-server-protocol.h' l='4424'/>
+<use f='include/wayland-server-protocol.h' l='4433'/>
+<use f='include/wayland-server-protocol.h' l='4434'/>
+<use f='include/wayland-server-protocol.h' l='4453'/>
+<use f='include/wayland-server-protocol.h' l='4479'/>
+<size>80</size>
+<mbr r='wl_resource::object' o='0' t='struct wl_object'/>
+<mbr r='wl_resource::destroy' o='192' t='wl_resource_destroy_func_t'/>
+<mbr r='wl_resource::link' o='256' t='struct wl_list'/>
+<mbr r='wl_resource::destroy_signal' o='384' t='struct wl_signal'/>
+<mbr r='wl_resource::client' o='512' t='struct wl_client *'/>
+<mbr r='wl_resource::data' o='576' t='void *'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.h' l='56' c='_ZN6WebKit17WaylandCompositor6Buffer11getOrCreateEP11wl_resource'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.h' l='66' c='_ZN6WebKit17WaylandCompositor6BufferC1EP11wl_resource'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.h' l='69'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.h' l='80' c='_ZN6WebKit17WaylandCompositor7Surface12attachBufferEP11wl_resource'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.h' l='81' c='_ZN6WebKit17WaylandCompositor7Surface12requestFrameEP11wl_resource'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.h' l='97'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.h' l='98'/>
+<size>80</size>
+<use f='include/EGL/eglext.h' l='1387'/>
+<size>80</size>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='95' c='_ZN6WebKit17WaylandCompositor6Buffer11getOrCreateEP11wl_resource'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='105' c='_ZN6WebKit17WaylandCompositor6BufferC1EP11wl_resource'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='229' c='_ZN6WebKit17WaylandCompositor7Surface12attachBufferEP11wl_resource'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='240' c='_ZN6WebKit17WaylandCompositor7Surface12requestFrameEP11wl_resource'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='242' c='_ZN6WebKit17WaylandCompositor7Surface12requestFrameEP11wl_resource'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='311'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='316'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='316'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='330'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='332'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='338'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='344'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='344'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='346'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='346'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='348'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='356'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='358'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='361'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='311'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='316'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='316'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='330'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='332'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='338'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='344'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='344'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='346'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='346'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='348'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='356'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='358'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='361'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='367'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='369'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='371'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='379'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='367'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='369'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='371'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='379'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='512' c='_ZN6WebKit17WaylandCompositorC1Ev'/>
+<size>80</size>

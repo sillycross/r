@@ -1,0 +1,15 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitMemoryPressureSettings.cpp' l='155' ll='162' type='void webkit_memory_pressure_settings_set_conservative_threshold(WebKitMemoryPressureSettings * settings, gdouble value)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitMemoryPressureSettings.cpp' l='141'>/**
+ * webkit_memory_pressure_settings_set_conservative_threshold:
+ * @settings: a #WebKitMemoryPressureSettings
+ * @value: fraction of the memory limit where the conservative policy starts working.
+ *
+ * Sets @value as the fraction of the defined memory limit where the conservative
+ * policy starts working. This policy will try to reduce the memory footprint by
+ * releasing non critical memory.
+ *
+ * The threshold must be bigger than 0 and smaller than 1, and it must be smaller
+ * than the strict threshold defined in @settings. The default value is 0.33.
+ *
+ * Since: 2.34
+ */</doc>

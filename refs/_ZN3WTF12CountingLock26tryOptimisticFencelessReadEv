@@ -1,0 +1,64 @@
+<def f='WebKit/WTF/Headers/wtf/CountingLock.h' l='223' ll='229' type='InputAndValue&lt;WTF::CountingLock::LockType, WTF::CountingLock::Count&gt; WTF::CountingLock::tryOptimisticFencelessRead()'/>
+<use f='WebKit/WTF/Headers/wtf/CountingLock.h' l='240' u='c' c='_ZN3WTF12CountingLock24doOptimizedFencelessReadERKT_RKT0_'/>
+<doc f='WebKit/WTF/Headers/wtf/CountingLock.h' l='194'>// Example of how to use this:
+    //
+    //     int read()
+    //     {
+    //         auto result = m_lock.tryOptimisticFencelessRead();
+    //         if (CountingLock::Count count = result.value) {
+    //             Dependency fenceBefore = Dependency::fence(result.input);
+    //             auto* fencedThis = fenceBefore.consume(this);
+    //             int value = fencedThis-&gt;m_things;
+    //             if (m_lock.fencelessValidate(count, Dependency::fence(value)))
+    //                 return value; // success!
+    //         }
+    //         Locker locker { m_lock };
+    //         int value = m_things;
+    //         return value;
+    //     }
+    //
+    // Use this to create a read transaction using dependency chains only. You have to be careful to
+    // thread the dependency input (the `input` field that the returns) through a Dependency, and then
+    // thread that Dependency into every load (except for loads that are chasing pointers loaded from
+    // loads that already uses that dependency). Then, to validate the read transaction, you have to pass
+    // both the count and another Dependency that is based on whatever loads you used to produce the
+    // output.
+    //
+    // On non-ARM platforms, the Dependency objects don&apos;t do anything except for Dependency::fence, which
+    // is a load-load fence. The idiom above does the right thing on both ARM and TSO.
+    //
+    // WARNING: This can be hard to get right. Please only use this for very short critical sections that
+    // are known to be sufficiently perf-critical to justify the risk.</doc>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlockInlines.h' l='143' u='c' c='_ZN3JSC11MarkedBlock6Handle6isLiveEjjbPKNS_8HeapCellE'/>
+<def f='WebKit/Source/WTF/wtf/CountingLock.h' l='223' ll='229' type='InputAndValue&lt;WTF::CountingLock::LockType, WTF::CountingLock::Count&gt; WTF::CountingLock::tryOptimisticFencelessRead()'/>
+<use f='WebKit/Source/WTF/wtf/CountingLock.h' l='240' u='c' c='_ZN3WTF12CountingLock24doOptimizedFencelessReadERKT_RKT0_'/>
+<doc f='WebKit/Source/WTF/wtf/CountingLock.h' l='194'>// Example of how to use this:
+    //
+    //     int read()
+    //     {
+    //         auto result = m_lock.tryOptimisticFencelessRead();
+    //         if (CountingLock::Count count = result.value) {
+    //             Dependency fenceBefore = Dependency::fence(result.input);
+    //             auto* fencedThis = fenceBefore.consume(this);
+    //             int value = fencedThis-&gt;m_things;
+    //             if (m_lock.fencelessValidate(count, Dependency::fence(value)))
+    //                 return value; // success!
+    //         }
+    //         Locker locker { m_lock };
+    //         int value = m_things;
+    //         return value;
+    //     }
+    //
+    // Use this to create a read transaction using dependency chains only. You have to be careful to
+    // thread the dependency input (the `input` field that the returns) through a Dependency, and then
+    // thread that Dependency into every load (except for loads that are chasing pointers loaded from
+    // loads that already uses that dependency). Then, to validate the read transaction, you have to pass
+    // both the count and another Dependency that is based on whatever loads you used to produce the
+    // output.
+    //
+    // On non-ARM platforms, the Dependency objects don&apos;t do anything except for Dependency::fence, which
+    // is a load-load fence. The idiom above does the right thing on both ARM and TSO.
+    //
+    // WARNING: This can be hard to get right. Please only use this for very short critical sections that
+    // are known to be sufficiently perf-critical to justify the risk.</doc>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlockInlines.h' l='143' u='c' c='_ZN3JSC11MarkedBlock6Handle6isLiveEjjbPKNS_8HeapCellE'/>

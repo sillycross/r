@@ -1,0 +1,61 @@
+<def f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerPrinter.h' l='94' ll='99'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerPrinter.h' l='179'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerPrinter.h' l='180' c='_ZN3JSC7Printer7PrinterINS_12AllRegistersEEC1ES2_'/>
+<size>4</size>
+<doc f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerPrinter.h' l='37'>// What is MacroAssembler::print()?
+// ===============================
+// The MacroAsssembler::print() makes it easy to add print logging
+// from JIT compiled code, and can be used to print all types of values
+// at runtime e.g. CPU register values being operated on by the compiled
+// code.
+//
+// print() is built on top of MacroAsssembler::probe(), and hence
+// inserting logging in JIT compiled code will not perturb register values.
+// The only register value that is perturbed is the PC (program counter)
+// since there is now more compiled code to do the printing.
+//
+// How to use the MacroAssembler print()?
+// =====================================
+// 1. #include &quot;MacroAssemblerPrinter.h&quot; in the JIT file where you want to use print().
+//
+// 2. Add print() calls like these in your JIT code:
+//
+//      jit.print(&quot;Hello world\n&quot;); // Emits code to print the string.
+//
+//      CodeBlock* cb = ...;
+//      jit.print(cb, &quot;\n&quot;);             // Emits code to print the codeBlock value.
+//      jit.print(RawPointer(cb), &quot;\n&quot;); // Emits code to print the pointer value.
+//
+//      RegisterID regID = ...;
+//      jit.print(regID, &quot;\n&quot;);     // Emits code to print the register value (not the id).
+//
+//      // Emits code to print all registers. Unlike other items, this prints
+//      // multiple lines as follows:
+//      //     cpu {
+//      //         eax: 0x123456789
+//      //         ebx: 0x000000abc
+//      //         ...
+//      //     }
+//      unsigned indentation = 4;
+//      jit.print(AllRegisters(indentation));
+//
+//      jit.print(MemWord&lt;uint8_t&gt;(regID), &quot;\n&quot;);   // Emits code to print a byte pointed to by the register.
+//      jit.print(MemWord&lt;uint32_t&gt;(regID), &quot;\n&quot;);  // Emits code to print a 32-bit word pointed to by the register.
+//
+//      jit.print(MemWord&lt;uint8_t&gt;(Address(regID, 23), &quot;\n&quot;);     // Emits code to print a byte at the address.
+//      jit.print(MemWord&lt;intptr_t&gt;(AbsoluteAddress(&amp;cb), &quot;\n&quot;);  // Emits code to print an intptr_t sized word at the address.
+//
+//      jit.print(Memory(reg, 100), &quot;\n&quot;);              // Emits code to print a 100 bytes at the address pointed by the register.
+//      jit.print(Memory(Address(reg, 4), 100), &quot;\n&quot;);  // Emits code to print a 100 bytes at the address.
+//
+//      // Print multiple things at once. This incurs the probe overhead only once
+//      // to print all the items.
+//      jit.print(&quot;cb:&quot;, cb, &quot; regID:&quot;, regID, &quot; cpu:\n&quot;, AllRegisters());
+//
+//   The type of values that can be printed is determine by the availability of a
+//   specialized Printer template, or a setPrinter() function for the value type.
+//
+//   Note: print() does not automatically insert a &apos;\n&apos; at the end of the line.
+//   If you want a &apos;\n&apos;, you&apos;ll have to add it explicitly (as in the examples above).</doc>
+<fun r='_ZN3JSC12AllRegistersC1Ej'/>
+<mbr r='JSC::AllRegisters::charsToIndent' o='0' t='unsigned int'/>

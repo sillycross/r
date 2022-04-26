@@ -1,0 +1,78 @@
+<use f='include/gstreamer-1.0/gst/base/gstbasesrc.h' l='59'/>
+<def f='include/gstreamer-1.0/gst/base/gstbasesrc.h' l='171' ll='249'/>
+<size>800</size>
+<doc f='include/gstreamer-1.0/gst/base/gstbasesrc.h' l='117'>/**
+ * GstBaseSrcClass:
+ * @parent_class: Element parent class
+ * @get_caps: Called to get the caps to report
+ * @negotiate: Negotiated the caps with the peer.
+ * @fixate: Called during negotiation if caps need fixating. Implement instead of
+ *   setting a fixate function on the source pad.
+ * @set_caps: Notify subclass of changed output caps
+ * @decide_allocation: configure the allocation query
+ * @start: Start processing. Subclasses should open resources and prepare
+ *    to produce data. Implementation should call gst_base_src_start_complete()
+ *    when the operation completes, either from the current thread or any other
+ *    thread that finishes the start operation asynchronously.
+ * @stop: Stop processing. Subclasses should use this to close resources.
+ * @get_times: Given a buffer, return the start and stop time when it
+ *    should be pushed out. The base class will sync on the clock using
+ *    these times.
+ * @get_size: Return the total size of the resource, in the format set by
+ *     gst_base_src_set_format().
+ * @is_seekable: Check if the source can seek
+ * @prepare_seek_segment: Prepare the #GstSegment that will be passed to the
+ *   #GstBaseSrcClass.do_seek() vmethod for executing a seek
+ *   request. Sub-classes should override this if they support seeking in
+ *   formats other than the configured native format. By default, it tries to
+ *   convert the seek arguments to the configured native format and prepare a
+ *   segment in that format.
+ * @do_seek: Perform seeking on the resource to the indicated segment.
+ * @unlock: Unlock any pending access to the resource. Subclasses should unblock
+ *    any blocked function ASAP. In particular, any create() function in
+ *    progress should be unblocked and should return GST_FLOW_FLUSHING. Any
+ *    future #GstBaseSrcClass.create() function call should also return
+ *    GST_FLOW_FLUSHING until the #GstBaseSrcClass.unlock_stop() function has
+ *    been called.
+ * @unlock_stop: Clear the previous unlock request. Subclasses should clear any
+ *    state they set during #GstBaseSrcClass.unlock(), such as clearing command
+ *    queues.
+ * @query: Handle a requested query.
+ * @event: Override this to implement custom event handling.
+ * @create: Ask the subclass to create a buffer with offset and size.  When the
+ *   subclass returns GST_FLOW_OK, it MUST return a buffer of the requested size
+ *   unless fewer bytes are available because an EOS condition is near. No
+ *   buffer should be returned when the return value is different from
+ *   GST_FLOW_OK. A return value of GST_FLOW_EOS signifies that the end of
+ *   stream is reached. The default implementation will call
+ *   #GstBaseSrcClass.alloc() and then call #GstBaseSrcClass.fill().
+ * @alloc: Ask the subclass to allocate a buffer with for offset and size. The
+ *   default implementation will create a new buffer from the negotiated allocator.
+ * @fill: Ask the subclass to fill the buffer with data for offset and size. The
+ *   passed buffer is guaranteed to hold the requested amount of bytes.
+ *
+ * Subclasses can override any of the available virtual methods or not, as
+ * needed. At the minimum, the @create method should be overridden to produce
+ * buffers.
+ */</doc>
+<mbr r='_GstBaseSrcClass::parent_class' o='0' t='GstElementClass'/>
+<mbr r='_GstBaseSrcClass::get_caps' o='3904' t='GstCaps *(*)(GstBaseSrc *, GstCaps *)'/>
+<mbr r='_GstBaseSrcClass::negotiate' o='3968' t='gboolean (*)(GstBaseSrc *)'/>
+<mbr r='_GstBaseSrcClass::fixate' o='4032' t='GstCaps *(*)(GstBaseSrc *, GstCaps *)'/>
+<mbr r='_GstBaseSrcClass::set_caps' o='4096' t='gboolean (*)(GstBaseSrc *, GstCaps *)'/>
+<mbr r='_GstBaseSrcClass::decide_allocation' o='4160' t='gboolean (*)(GstBaseSrc *, GstQuery *)'/>
+<mbr r='_GstBaseSrcClass::start' o='4224' t='gboolean (*)(GstBaseSrc *)'/>
+<mbr r='_GstBaseSrcClass::stop' o='4288' t='gboolean (*)(GstBaseSrc *)'/>
+<mbr r='_GstBaseSrcClass::get_times' o='4352' t='void (*)(GstBaseSrc *, GstBuffer *, GstClockTime *, GstClockTime *)'/>
+<mbr r='_GstBaseSrcClass::get_size' o='4416' t='gboolean (*)(GstBaseSrc *, guint64 *)'/>
+<mbr r='_GstBaseSrcClass::is_seekable' o='4480' t='gboolean (*)(GstBaseSrc *)'/>
+<mbr r='_GstBaseSrcClass::prepare_seek_segment' o='4544' t='gboolean (*)(GstBaseSrc *, GstEvent *, GstSegment *)'/>
+<mbr r='_GstBaseSrcClass::do_seek' o='4608' t='gboolean (*)(GstBaseSrc *, GstSegment *)'/>
+<mbr r='_GstBaseSrcClass::unlock' o='4672' t='gboolean (*)(GstBaseSrc *)'/>
+<mbr r='_GstBaseSrcClass::unlock_stop' o='4736' t='gboolean (*)(GstBaseSrc *)'/>
+<mbr r='_GstBaseSrcClass::query' o='4800' t='gboolean (*)(GstBaseSrc *, GstQuery *)'/>
+<mbr r='_GstBaseSrcClass::event' o='4864' t='gboolean (*)(GstBaseSrc *, GstEvent *)'/>
+<mbr r='_GstBaseSrcClass::create' o='4928' t='GstFlowReturn (*)(GstBaseSrc *, guint64, guint, GstBuffer **)'/>
+<mbr r='_GstBaseSrcClass::alloc' o='4992' t='GstFlowReturn (*)(GstBaseSrc *, guint64, guint, GstBuffer **)'/>
+<mbr r='_GstBaseSrcClass::fill' o='5056' t='GstFlowReturn (*)(GstBaseSrc *, guint64, guint, GstBuffer *)'/>
+<mbr r='_GstBaseSrcClass::_gst_reserved' o='5120' t='gpointer [20]'/>

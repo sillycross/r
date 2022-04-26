@@ -1,0 +1,58 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='51' u='w' c='_ZN3JSC10CodeOriginC1Ev'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='60' u='w' c='_ZN3JSC10CodeOriginC1EN3WTF25HashTableDeletedValueTypeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='70' u='w' c='_ZN3JSC10CodeOriginC1ENS_13BytecodeIndexEPNS_15InlineCallFrameE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='90' u='w' c='_ZN3JSC10CodeOriginaSERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='92' u='w' c='_ZN3JSC10CodeOriginaSERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='92' u='r' c='_ZN3JSC10CodeOriginaSERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='102' u='w' c='_ZN3JSC10CodeOriginaSEOS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='102' u='a' c='_ZN3JSC10CodeOriginaSEOS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='112' u='w' c='_ZN3JSC10CodeOriginC1ERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='114' u='w' c='_ZN3JSC10CodeOriginC1ERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='114' u='r' c='_ZN3JSC10CodeOriginC1ERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='117' u='w' c='_ZN3JSC10CodeOriginC1EOS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='117' u='a' c='_ZN3JSC10CodeOriginC1EOS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='131' u='r' c='_ZNK3JSC10CodeOrigin5isSetEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='141' u='r' c='_ZNK3JSC10CodeOrigin23isHashTableDeletedValueEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='185' u='r' c='_ZNK3JSC10CodeOrigin13bytecodeIndexEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='196' u='r' c='_ZNK3JSC10CodeOrigin15inlineCallFrameEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='222' u='r' c='_ZNK3JSC10CodeOrigin11isOutOfLineEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='227' u='r' c='_ZNK3JSC10CodeOrigin19outOfLineCodeOriginEv'/>
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='265' type='uintptr_t'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='281' u='r' c='_ZNK3JSC10CodeOrigineqERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='281' u='r' c='_ZNK3JSC10CodeOrigineqERKS0_'/>
+<offset>0</offset>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeOrigin.h' l='259'>// The bottom bit indicates whether to look at an out-of-line implementation (because of a bytecode index which is too big for us to store).
+    // The next bit indicates whether this is an invalid bytecode (which depending on the InlineCallFrame* can either indicate an unset CodeOrigin,
+    // or a deletion marker for a hash table).
+    // The next bit is free
+    // The next 64-s_freeBitsAtTop-3 are the InlineCallFrame* or the OutOfLineCodeOrigin*
+    // Finally the last s_freeBitsAtTop are the bytecodeIndex if it is inline</doc>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='51' u='w' c='_ZN3JSC10CodeOriginC1Ev'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='60' u='w' c='_ZN3JSC10CodeOriginC1EN3WTF25HashTableDeletedValueTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='70' u='w' c='_ZN3JSC10CodeOriginC1ENS_13BytecodeIndexEPNS_15InlineCallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='90' u='w' c='_ZN3JSC10CodeOriginaSERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='92' u='w' c='_ZN3JSC10CodeOriginaSERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='92' u='r' c='_ZN3JSC10CodeOriginaSERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='102' u='w' c='_ZN3JSC10CodeOriginaSEOS0_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='102' u='a' c='_ZN3JSC10CodeOriginaSEOS0_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='112' u='w' c='_ZN3JSC10CodeOriginC1ERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='114' u='w' c='_ZN3JSC10CodeOriginC1ERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='114' u='r' c='_ZN3JSC10CodeOriginC1ERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='117' u='w' c='_ZN3JSC10CodeOriginC1EOS0_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='117' u='a' c='_ZN3JSC10CodeOriginC1EOS0_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='131' u='r' c='_ZNK3JSC10CodeOrigin5isSetEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='141' u='r' c='_ZNK3JSC10CodeOrigin23isHashTableDeletedValueEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='185' u='r' c='_ZNK3JSC10CodeOrigin13bytecodeIndexEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='196' u='r' c='_ZNK3JSC10CodeOrigin15inlineCallFrameEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='222' u='r' c='_ZNK3JSC10CodeOrigin11isOutOfLineEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='227' u='r' c='_ZNK3JSC10CodeOrigin19outOfLineCodeOriginEv'/>
+<dec f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='265' type='uintptr_t'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='281' u='r' c='_ZNK3JSC10CodeOrigineqERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='281' u='r' c='_ZNK3JSC10CodeOrigineqERKS0_'/>
+<offset>0</offset>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/CodeOrigin.h' l='259'>// The bottom bit indicates whether to look at an out-of-line implementation (because of a bytecode index which is too big for us to store).
+    // The next bit indicates whether this is an invalid bytecode (which depending on the InlineCallFrame* can either indicate an unset CodeOrigin,
+    // or a deletion marker for a hash table).
+    // The next bit is free
+    // The next 64-s_freeBitsAtTop-3 are the InlineCallFrame* or the OutOfLineCodeOrigin*
+    // Finally the last s_freeBitsAtTop are the bytecodeIndex if it is inline</doc>

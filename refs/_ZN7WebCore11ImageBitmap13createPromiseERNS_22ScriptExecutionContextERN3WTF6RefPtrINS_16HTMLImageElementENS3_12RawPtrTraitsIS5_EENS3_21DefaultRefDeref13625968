@@ -1,0 +1,44 @@
+<dec f='WebKit/Source/WebCore/html/ImageBitmap.h' l='119' type='static void WebCore::ImageBitmap::createPromise(WebCore::ScriptExecutionContext &amp; , RefPtr&lt;WebCore::HTMLImageElement&gt; &amp; , WebCore::ImageBitmapOptions &amp;&amp; , std::optional&lt;IntRect&gt; , WebCore::ImageBitmap::Promise &amp;&amp; )'/>
+<def f='WebKit/Source/WebCore/html/ImageBitmap.cpp' l='308' ll='399' type='static void WebCore::ImageBitmap::createPromise(WebCore::ScriptExecutionContext &amp; scriptExecutionContext, RefPtr&lt;WebCore::HTMLImageElement&gt; &amp; imageElement, WebCore::ImageBitmapOptions &amp;&amp; options, std::optional&lt;IntRect&gt; rect, ImageBitmap::Promise &amp;&amp; promise)'/>
+<doc f='WebKit/Source/WebCore/html/ImageBitmap.cpp' l='265'>// FIXME: More steps from https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#cropped-to-the-source-rectangle-with-formatting
+
+// 7. Place input on an infinite transparent black grid plane, positioned so that its
+//    top left corner is at the origin of the plane, with the x-coordinate increasing
+//    to the right, and the y-coordinate increasing down, and with each pixel in the
+//    input image data occupying a cell on the plane&apos;s grid.
+
+// 8. Let output be the rectangle on the plane denoted by sourceRectangle.
+
+// 9. Scale output to the size specified by outputWidth and outputHeight. The user
+//    agent should use the value of the resizeQuality option to guide the choice of
+//    scaling algorithm.
+
+// 10. If the value of the imageOrientation member of options is &quot;flipY&quot;, output must
+//     be flipped vertically, disregarding any image orientation metadata of the source
+//     (such as EXIF metadata), if any.
+
+// 11. If image is an img element or a Blob object, let val be the value of the
+//     colorSpaceConversion member of options, and then run these substeps:
+//
+//     1. If val is &quot;default&quot;, the color space conversion behavior is implementation-specific,
+//        and should be chosen according to the color space that the implementation uses for
+//        drawing images onto the canvas.
+//
+//     2. If val is &quot;none&quot;, output must be decoded without performing any color space
+//        conversions. This means that the image decoding algorithm must ignore color profile
+//        metadata embedded in the source data as well as the display device color profile.
+
+// 12. Let val be the value of premultiplyAlpha member of options, and then run these substeps:
+//
+//     1. If val is &quot;default&quot;, the alpha premultiplication behavior is implementation-specific,
+//        and should be chosen according to implementation deems optimal for drawing images
+//        onto the canvas.
+//
+//     2. If val is &quot;premultiply&quot;, the output that is not premultiplied by alpha must have its
+//        color components multiplied by alpha and that is premultiplied by alpha must be left
+//        untouched.
+//
+//     3. If val is &quot;none&quot;, the output that is not premultiplied by alpha must be left untouched
+//        and that is premultiplied by alpha must have its color components divided by alpha.
+
+// 13. Return output.</doc>

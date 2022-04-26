@@ -1,0 +1,36 @@
+<use f='include/gstreamer-1.0/gst/audio/gstaudioringbuffer.h' l='41'/>
+<def f='include/gstreamer-1.0/gst/audio/gstaudioringbuffer.h' l='241' ll='268'/>
+<size>312</size>
+<doc f='include/gstreamer-1.0/gst/audio/gstaudioringbuffer.h' l='222'>/**
+ * GstAudioRingBufferClass:
+ * @parent_class: parent class
+ * @open_device:  open the device, don&apos;t set any params or allocate anything
+ * @acquire: allocate the resources for the ringbuffer using the given spec
+ * @release: free resources of the ringbuffer
+ * @close_device: close the device
+ * @start: start processing of samples
+ * @pause: pause processing of samples
+ * @resume: resume processing of samples after pause
+ * @stop: stop processing of samples
+ * @delay: get number of frames queued in device
+ * @activate: activate the thread that starts pulling and monitoring the
+ * consumed segments in the device.
+ * @commit: write samples into the ringbuffer
+ * @clear_all: clear the entire ringbuffer.
+ *
+ * The vmethods that subclasses can override to implement the ringbuffer.
+ */</doc>
+<mbr r='_GstAudioRingBufferClass::parent_class' o='0' t='GstObjectClass'/>
+<mbr r='_GstAudioRingBufferClass::open_device' o='1472' t='gboolean (*)(GstAudioRingBuffer *)'/>
+<mbr r='_GstAudioRingBufferClass::acquire' o='1536' t='gboolean (*)(GstAudioRingBuffer *, GstAudioRingBufferSpec *)'/>
+<mbr r='_GstAudioRingBufferClass::release' o='1600' t='gboolean (*)(GstAudioRingBuffer *)'/>
+<mbr r='_GstAudioRingBufferClass::close_device' o='1664' t='gboolean (*)(GstAudioRingBuffer *)'/>
+<mbr r='_GstAudioRingBufferClass::start' o='1728' t='gboolean (*)(GstAudioRingBuffer *)'/>
+<mbr r='_GstAudioRingBufferClass::pause' o='1792' t='gboolean (*)(GstAudioRingBuffer *)'/>
+<mbr r='_GstAudioRingBufferClass::resume' o='1856' t='gboolean (*)(GstAudioRingBuffer *)'/>
+<mbr r='_GstAudioRingBufferClass::stop' o='1920' t='gboolean (*)(GstAudioRingBuffer *)'/>
+<mbr r='_GstAudioRingBufferClass::delay' o='1984' t='guint (*)(GstAudioRingBuffer *)'/>
+<mbr r='_GstAudioRingBufferClass::activate' o='2048' t='gboolean (*)(GstAudioRingBuffer *, gboolean)'/>
+<mbr r='_GstAudioRingBufferClass::commit' o='2112' t='guint (*)(GstAudioRingBuffer *, guint64 *, guint8 *, gint, gint, gint *)'/>
+<mbr r='_GstAudioRingBufferClass::clear_all' o='2176' t='void (*)(GstAudioRingBuffer *)'/>
+<mbr r='_GstAudioRingBufferClass::_gst_reserved' o='2240' t='gpointer [4]'/>

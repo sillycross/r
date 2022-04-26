@@ -1,0 +1,34 @@
+<dec f='include/unicode/utf16.h' l='308'/>
+<doc f='include/unicode/utf16.h' l='287'>/**
+ * Get a code point from a string at a code point boundary offset,
+ * and advance the offset to the next code point boundary.
+ * (Post-incrementing forward iteration.)
+ * &quot;Safe&quot; macro, handles unpaired surrogates and checks for string boundaries.
+ *
+ * The length can be negative for a NUL-terminated string.
+ *
+ * The offset may point to the lead surrogate unit
+ * for a supplementary code point, in which case the macro will read
+ * the following trail surrogate as well.
+ * If the offset points to a trail surrogate or
+ * to a single, unpaired lead surrogate, then c is set to that unpaired surrogate.
+ *
+ * @param s const UChar * string
+ * @param i string offset, must be i&lt;length
+ * @param length string length
+ * @param c output UChar32 variable
+ * @see U16_NEXT_UNSAFE
+ * @stable ICU 2.4
+ */</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/StringPrototype.cpp' l='1035' u='c'/>
+<use f='WebKit/Source/WTF/wtf/URLHelpers.cpp' l='348' u='c'/>
+<use f='WebKit/Source/WTF/wtf/unicode/UTF8Conversion.cpp' l='66' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='273' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='287' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='834' u='c'/>
+<use f='WebKit/Source/WebCore/platform/text/TextBoundaries.cpp' l='42' u='c'/>
+<use f='WebKit/Source/WebCore/accessibility/AXObjectCache.cpp' l='2683' u='c'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='5365' u='c'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='5370' u='c'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='5430' u='c'/>
+<use f='WebKit/Source/WebCore/editing/VisiblePosition.cpp' l='621' u='c'/>

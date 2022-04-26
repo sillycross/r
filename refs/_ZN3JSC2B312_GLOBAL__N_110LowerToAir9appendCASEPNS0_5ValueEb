@@ -1,0 +1,19 @@
+<def f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='2248' ll='2425' type='void JSC::B3::(anonymous namespace)::LowerToAir::appendCAS(JSC::B3::Value * atomicValue, bool invert)'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='3139' u='c' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='3590' u='c' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='4049' u='c' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='4059' u='c' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='4074' u='c' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='4146' u='c' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='2236'>// This can emit code for the following patterns:
+    // AtomicWeakCAS
+    // BitXor(AtomicWeakCAS, 1)
+    // AtomicStrongCAS
+    // Equal(AtomicStrongCAS, expected)
+    // NotEqual(AtomicStrongCAS, expected)
+    // Branch(AtomicWeakCAS)
+    // Branch(Equal(AtomicStrongCAS, expected))
+    // Branch(NotEqual(AtomicStrongCAS, expected))
+    //
+    // It assumes that atomicValue points to the CAS, and m_value points to the instruction being
+    // generated. It assumes that you&apos;ve consumed everything that needs to be consumed.</doc>

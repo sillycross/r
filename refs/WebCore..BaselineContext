@@ -1,0 +1,33 @@
+<use f='WebKit/Source/WebCore/rendering/GridBaselineAlignment.h' l='60'/>
+<def f='WebKit/Source/WebCore/rendering/GridBaselineAlignment.h' l='99' ll='119'/>
+<use f='WebKit/Source/WebCore/rendering/GridBaselineAlignment.h' l='173'/>
+<size>16</size>
+<doc f='WebKit/Source/WebCore/rendering/GridBaselineAlignment.h' l='82'>// https://drafts.csswg.org/css-align-3/#shared-alignment-context
+// Boxes share an alignment context along a particular axis when they are:
+//
+//  * table cells in the same row, along the table&apos;s row (inline) axis
+//  * table cells in the same column, along the table&apos;s column (block) axis
+//  * grid items in the same row, along the grid&apos;s row (inline) axis
+//  * grid items in the same column, along the grid&apos;s colum (block) axis
+//  * flex items in the same flex line, along the flex container&apos;s main axis
+//
+// https://drafts.csswg.org/css-align-3/#baseline-sharing-group
+// A Baseline alignment-context may handle several baseline-sharing groups. In order to create an instance, we
+// need to pass the required data to define the first baseline-sharing group; a Baseline Context must have at
+// least one baseline-sharing group.
+//
+// By adding new items to a Baseline Context, the baseline-sharing groups it handles are automatically updated,
+// if there is one that is compatible with such item. Otherwise, a new baseline-sharing group is created,
+// compatible with the new item.</doc>
+<fun r='_ZN7WebCore15BaselineContextC1ERKNS_9RenderBoxENS_12ItemPositionENS_10LayoutUnitES5_'/>
+<fun r='_ZNK7WebCore15BaselineContext11sharedGroupERKNS_9RenderBoxENS_12ItemPositionE'/>
+<fun r='_ZN7WebCore15BaselineContext17updateSharedGroupERKNS_9RenderBoxENS_12ItemPositionENS_10LayoutUnitES5_'/>
+<fun r='_ZN7WebCore15BaselineContext25findCompatibleSharedGroupERKNS_9RenderBoxENS_12ItemPositionE'/>
+<mbr r='WebCore::BaselineContext::m_sharedGroups' o='0' t='Vector&lt;WebCore::BaselineGroup&gt;'/>
+<use f='WebKit/Source/WebCore/rendering/GridBaselineAlignment.cpp' l='137' c='_ZN7WebCore21GridBaselineAlignment30updateBaselineAlignmentContextENS_12ItemPositionEjRKNS_9RenderBoxENS_8GridAxisE'/>
+<use f='WebKit/Source/WebCore/rendering/GridBaselineAlignment.cpp' l='221' c='_ZNK7WebCore15BaselineContext11sharedGroupERKNS_9RenderBoxENS_12ItemPositionE'/>
+<size>16</size>
+<fun r='_ZN7WebCore15BaselineContextC1ERKNS_9RenderBoxENS_12ItemPositionENS_10LayoutUnitES5_'/>
+<fun r='_ZNK7WebCore15BaselineContext11sharedGroupERKNS_9RenderBoxENS_12ItemPositionE'/>
+<fun r='_ZN7WebCore15BaselineContext17updateSharedGroupERKNS_9RenderBoxENS_12ItemPositionENS_10LayoutUnitES5_'/>
+<fun r='_ZN7WebCore15BaselineContext25findCompatibleSharedGroupERKNS_9RenderBoxENS_12ItemPositionE'/>

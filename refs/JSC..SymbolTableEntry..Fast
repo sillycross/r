@@ -1,0 +1,50 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='107' ll='165'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='246' c='_ZNK3JSC16SymbolTableEntry7getFastEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='248' c='_ZNK3JSC16SymbolTableEntry7getFastEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='251' c='_ZNK3JSC16SymbolTableEntry7getFastERb'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='253' c='_ZNK3JSC16SymbolTableEntry7getFastERb'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSSymbolTableObject.h' l='88' c='_ZN3JSC14symbolTableGetEPT_NS_12PropertyNameERNS_12PropertySlotE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSSymbolTableObject.h' l='159' c='_ZN3JSC14symbolTablePutEPT0_PNS_14JSGlobalObjectENS_12PropertyNameENS_7JSValueEbbRb'/>
+<size>8</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='103'>// Use the SymbolTableEntry::Fast class, either via implicit cast or by calling
+    // getFast(), when you (1) only care about isNull(), getIndex(), and isReadOnly(),
+    // and (2) you are in a hot path where you need to minimize the number of times
+    // that you branch on isFat() when getting the bits().</doc>
+<fun r='_ZN3JSC16SymbolTableEntry4FastC1Ev'/>
+<fun r='_ZN3JSC16SymbolTableEntry4FastC1ERKS0_'/>
+<fun r='_ZNK3JSC16SymbolTableEntry4Fast6isNullEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry4Fast9varOffsetEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry4Fast11scopeOffsetEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry4Fast10isReadOnlyEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry4Fast10isDontEnumEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry4Fast13getAttributesEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry4Fast5isFatEv'/>
+<mbr r='JSC::SymbolTableEntry::Fast::m_bits' o='0' t='intptr_t'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='107' ll='165'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='246' c='_ZNK3JSC16SymbolTableEntry7getFastEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='248' c='_ZNK3JSC16SymbolTableEntry7getFastEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='251' c='_ZNK3JSC16SymbolTableEntry7getFastERb'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='253' c='_ZNK3JSC16SymbolTableEntry7getFastERb'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSymbolTableObject.h' l='88' c='_ZN3JSC14symbolTableGetEPT_NS_12PropertyNameERNS_12PropertySlotE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSymbolTableObject.h' l='159' c='_ZN3JSC14symbolTablePutEPT0_PNS_14JSGlobalObjectENS_12PropertyNameENS_7JSValueEbbRb'/>
+<size>8</size>
+<doc f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='103'>// Use the SymbolTableEntry::Fast class, either via implicit cast or by calling
+    // getFast(), when you (1) only care about isNull(), getIndex(), and isReadOnly(),
+    // and (2) you are in a hot path where you need to minimize the number of times
+    // that you branch on isFat() when getting the bits().</doc>
+<fun r='_ZN3JSC16SymbolTableEntry4FastC1Ev'/>
+<fun r='_ZN3JSC16SymbolTableEntry4FastC1ERKS0_'/>
+<fun r='_ZNK3JSC16SymbolTableEntry4Fast6isNullEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry4Fast9varOffsetEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry4Fast11scopeOffsetEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry4Fast10isReadOnlyEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry4Fast10isDontEnumEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry4Fast13getAttributesEv'/>
+<fun r='_ZNK3JSC16SymbolTableEntry4Fast5isFatEv'/>
+<mbr r='JSC::SymbolTableEntry::Fast::m_bits' o='0' t='intptr_t'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='1579' c='_ZN3JSC14JSGlobalObject3putEPNS_6JSCellEPS0_NS_12PropertyNameENS_7JSValueERNS_15PutPropertySlotE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSLexicalEnvironment.cpp' l='58' c='_ZN3JSC20JSLexicalEnvironment11analyzeHeapEPNS_6JSCellERNS_12HeapAnalyzerE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSegmentedVariableObject.cpp' l='89' c='_ZN3JSC25JSSegmentedVariableObject11analyzeHeapEPNS_6JSCellERNS_12HeapAnalyzerE'/>
+<size>8</size>

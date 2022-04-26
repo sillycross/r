@@ -1,0 +1,95 @@
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGGenerationInfo.h' l='46' ll='448'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='299' c='_ZN3JSC3DFG14SpeculativeJIT3useEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='493' c='_ZN3JSC3DFG14SpeculativeJIT5spillENS_15VirtualRegisterE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='784' c='_ZN3JSC3DFG14SpeculativeJIT17strictInt32ResultENS_12X86Registers10RegisterIDEPNS0_4NodeENS_10DataFormatENS1_15UseChildrenModeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='811' c='_ZN3JSC3DFG14SpeculativeJIT11int52ResultENS_12X86Registers10RegisterIDEPNS0_4NodeENS_10DataFormatENS1_15UseChildrenModeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='837' c='_ZN3JSC3DFG14SpeculativeJIT10cellResultENS_12X86Registers10RegisterIDEPNS0_4NodeENS1_15UseChildrenModeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='866' c='_ZN3JSC3DFG14SpeculativeJIT13jsValueResultENS_12X86Registers10RegisterIDEPNS0_4NodeENS_10DataFormatENS1_15UseChildrenModeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='915' c='_ZN3JSC3DFG14SpeculativeJIT13storageResultENS_12X86Registers10RegisterIDEPNS0_4NodeENS1_15UseChildrenModeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='925' c='_ZN3JSC3DFG14SpeculativeJIT12doubleResultENS_12X86Registers13XMMRegisterIDEPNS0_4NodeENS1_15UseChildrenModeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='1768' c='_ZN3JSC3DFG14SpeculativeJIT33generationInfoFromVirtualRegisterENS_15VirtualRegisterE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='1773' c='_ZN3JSC3DFG14SpeculativeJIT14generationInfoEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='1778' c='_ZN3JSC3DFG14SpeculativeJIT14generationInfoENS0_4EdgeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='1794'/>
+<size>24</size>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGGenerationInfo.h' l='37'>// === GenerationInfo ===
+//
+// This class is used to track the current status of live values during code generation.
+// Can provide information as to whether a value is in machine registers, and if so which,
+// whether a value has been spilled to the RegisterFile, and if so may be able to provide
+// details of the format in memory (all values are spilled in a boxed form, but we may be
+// able to track the type of box), and tracks how many outstanding uses of a value remain,
+// so that we know when the value is dead and the machine registers associated with it
+// may be released.</doc>
+<fun r='_ZN3JSC3DFG14GenerationInfoC1Ev'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo12initConstantEPNS0_4NodeEj'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo7initGPREPNS0_4NodeEjNS_12X86Registers10RegisterIDENS_10DataFormatE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo9initInt32EPNS0_4NodeEjNS_12X86Registers10RegisterIDE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo9initInt52EPNS0_4NodeEjNS_12X86Registers10RegisterIDENS_10DataFormatE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo9initInt52EPNS0_4NodeEjNS_12X86Registers10RegisterIDE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo15initStrictInt52EPNS0_4NodeEjNS_12X86Registers10RegisterIDE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo11initJSValueEPNS0_4NodeEjNS_12X86Registers10RegisterIDENS_10DataFormatE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo8initCellEPNS0_4NodeEjNS_12X86Registers10RegisterIDE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo11initBooleanEPNS0_4NodeEjNS_12X86Registers10RegisterIDE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo10initDoubleEPNS0_4NodeEjNS_12X86Registers13XMMRegisterIDE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo11initStorageEPNS0_4NodeEjNS_12X86Registers10RegisterIDE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo4nodeEv'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo14noticeOSRBirthERNS0_19VariableEventStreamEPNS0_4NodeENS_15VirtualRegisterE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo3useERNS0_19VariableEventStreamE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo8useCountEv'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo14registerFormatEv'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo11spillFormatEv'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo8isFormatENS_10DataFormatE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo10isJSFormatENS_10DataFormatE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo9isJSInt32Ev'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo7isInt52Ev'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo13isStrictInt52Ev'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo10isJSDoubleEv'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo8isJSCellEv'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo11isJSBooleanEv'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo11isUnknownJSEv'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo3gprEv'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo3fprEv'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo11jsValueRegsEv'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo10needsSpillEv'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo5spillERNS0_19VariableEventStreamENS_15VirtualRegisterENS_10DataFormatE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo10setSpilledERNS0_19VariableEventStreamENS_15VirtualRegisterE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo11killSpilledEv'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo7fillGPRERNS0_19VariableEventStreamENS_12X86Registers10RegisterIDENS_10DataFormatE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo11fillJSValueERNS0_19VariableEventStreamENS_12X86Registers10RegisterIDENS_10DataFormatE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo9fillInt32ERNS0_19VariableEventStreamENS_12X86Registers10RegisterIDE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo9fillInt52ERNS0_19VariableEventStreamENS_12X86Registers10RegisterIDENS_10DataFormatE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo9fillInt52ERNS0_19VariableEventStreamENS_12X86Registers10RegisterIDE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo15fillStrictInt52ERNS0_19VariableEventStreamENS_12X86Registers10RegisterIDE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo11fillBooleanERNS0_19VariableEventStreamENS_12X86Registers10RegisterIDE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo10fillDoubleERNS0_19VariableEventStreamENS_12X86Registers13XMMRegisterIDE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo11fillStorageERNS0_19VariableEventStreamENS_12X86Registers10RegisterIDE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo5aliveEv'/>
+<fun r='_ZNK3JSC3DFG14GenerationInfo8recoveryENS_15VirtualRegisterE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo11appendBirthERNS0_19VariableEventStreamE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo10appendFillENS0_17VariableEventKindERNS0_19VariableEventStreamE'/>
+<fun r='_ZN3JSC3DFG14GenerationInfo11appendSpillENS0_17VariableEventKindERNS0_19VariableEventStreamENS_15VirtualRegisterE'/>
+<mbr r='JSC::DFG::GenerationInfo::m_node' o='0' t='JSC::DFG::Node *'/>
+<mbr r='JSC::DFG::GenerationInfo::m_useCount' o='64' t='uint32_t'/>
+<mbr r='JSC::DFG::GenerationInfo::m_registerFormat' o='96' t='JSC::DataFormat'/>
+<mbr r='JSC::DFG::GenerationInfo::m_spillFormat' o='104' t='JSC::DataFormat'/>
+<mbr r='JSC::DFG::GenerationInfo::m_canFill' o='112' t='bool'/>
+<mbr r='JSC::DFG::GenerationInfo::m_bornForOSR' o='120' t='bool'/>
+<mbr r='JSC::DFG::GenerationInfo::m_isConstant' o='128' t='bool'/>
+<mbr r='JSC::DFG::GenerationInfo::u' o='136' t='union (anonymous union at /home/lemon/WebKit/Source/JavaScriptCore/dfg/DFGGenerationInfo.h:438:5)'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='448' c='_ZN3JSC3DFG14SpeculativeJIT19clearGenerationInfoEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='455' c='_ZN3JSC3DFG14SpeculativeJIT20silentSavePlanForGPRENS_15VirtualRegisterENS_12X86Registers10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='605' c='_ZN3JSC3DFG14SpeculativeJIT20silentSavePlanForFPRENS_15VirtualRegisterENS_12X86Registers13XMMRegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='987' c='_ZN3JSC3DFG14SpeculativeJIT11fillStorageENS0_4EdgeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='1567' c='_ZN3JSC3DFG14SpeculativeJIT4dumpEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='2094' c='_ZN3JSC3DFG14SpeculativeJIT14noticeOSRBirthEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='2739' c='_ZN3JSC3DFG14SpeculativeJIT28checkGeneratedTypeForToInt32EPNS0_4NodeE'/>
+<size>24</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='77' c='_ZN3JSC3DFG14SpeculativeJIT11fillJSValueENS0_4EdgeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='751' c='_ZN3JSC3DFG14SpeculativeJIT8emitCallEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='958' c='_ZN3JSC3DFG14SpeculativeJIT26fillSpeculateInt32InternalENS0_4EdgeERNS_10DataFormatE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='1102' c='_ZN3JSC3DFG14SpeculativeJIT18fillSpeculateInt52ENS0_4EdgeENS_10DataFormatE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='1184' c='_ZN3JSC3DFG14SpeculativeJIT19fillSpeculateDoubleENS0_4EdgeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='1244' c='_ZN3JSC3DFG14SpeculativeJIT17fillSpeculateCellENS0_4EdgeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='1324' c='_ZN3JSC3DFG14SpeculativeJIT20fillSpeculateBooleanENS0_4EdgeE'/>
+<size>24</size>

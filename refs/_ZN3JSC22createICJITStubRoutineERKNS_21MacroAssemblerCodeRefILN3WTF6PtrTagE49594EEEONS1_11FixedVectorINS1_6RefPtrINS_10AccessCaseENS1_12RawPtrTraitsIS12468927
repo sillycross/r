@@ -1,0 +1,42 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCAwareJITStubRoutine.h' l='182' type='Ref&lt;JSC::PolymorphicAccessJITStubRoutine&gt; JSC::createICJITStubRoutine(const MacroAssemblerCodeRef&lt;JITStubRoutinePtrTag&gt; &amp; , FixedVector&lt;RefPtr&lt;JSC::AccessCase&gt; &gt; &amp;&amp; cases, FixedVector&lt;JSC::StructureID&gt; &amp;&amp; weakStructures, JSC::VM &amp; , const JSC::JSCell * owner, bool makesCalls, const Vector&lt;JSC::JSCell *&gt; &amp; , Bag&lt;JSC::CallLinkInfo&gt; &amp;&amp; callLinkInfos, JSC::CodeBlock * codeBlockForExceptionHandlers, JSC::DisposableCallSiteIndex exceptionHandlingCallSiteIndex)'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCAwareJITStubRoutine.h' l='162'>// Helper for easily creating a GC-aware JIT stub routine. For the varargs,
+// pass zero or more JSCell*&apos;s. This will either create a JITStubRoutine, a
+// GCAwareJITStubRoutine, or an ObjectMarkingGCAwareJITStubRoutine as
+// appropriate. Generally you only need to pass pointers that will be used
+// after the first call to C++ or JS.
+// 
+// Ref&lt;PolymorphicAccessJITStubRoutine&gt; createICJITStubRoutine(
+//    const MacroAssemblerCodeRef&lt;JITStubRoutinePtrTag&gt;&amp; code,
+//    VM&amp; vm,
+//    FixedVector&lt;RefPtr&lt;AccessCase&gt;&gt;&amp;&amp; cases,
+//    const JSCell* owner,
+//    bool makesCalls,
+//    ...);
+//
+// Note that we don&apos;t actually use C-style varargs because that leads to
+// strange type-related problems. For example it would preclude us from using
+// our custom of passing &apos;0&apos; as NULL pointer. Besides, when I did try to write
+// this function using varargs, I ended up with more code than this simple
+// way.</doc>
+<dec f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.h' l='182' type='Ref&lt;JSC::PolymorphicAccessJITStubRoutine&gt; JSC::createICJITStubRoutine(const MacroAssemblerCodeRef&lt;JITStubRoutinePtrTag&gt; &amp; , FixedVector&lt;RefPtr&lt;JSC::AccessCase&gt; &gt; &amp;&amp; cases, FixedVector&lt;JSC::StructureID&gt; &amp;&amp; weakStructures, JSC::VM &amp; , const JSC::JSCell * owner, bool makesCalls, const Vector&lt;JSC::JSCell *&gt; &amp; , Bag&lt;JSC::CallLinkInfo&gt; &amp;&amp; callLinkInfos, JSC::CodeBlock * codeBlockForExceptionHandlers, JSC::DisposableCallSiteIndex exceptionHandlingCallSiteIndex)'/>
+<doc f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.h' l='162'>// Helper for easily creating a GC-aware JIT stub routine. For the varargs,
+// pass zero or more JSCell*&apos;s. This will either create a JITStubRoutine, a
+// GCAwareJITStubRoutine, or an ObjectMarkingGCAwareJITStubRoutine as
+// appropriate. Generally you only need to pass pointers that will be used
+// after the first call to C++ or JS.
+// 
+// Ref&lt;PolymorphicAccessJITStubRoutine&gt; createICJITStubRoutine(
+//    const MacroAssemblerCodeRef&lt;JITStubRoutinePtrTag&gt;&amp; code,
+//    VM&amp; vm,
+//    FixedVector&lt;RefPtr&lt;AccessCase&gt;&gt;&amp;&amp; cases,
+//    const JSCell* owner,
+//    bool makesCalls,
+//    ...);
+//
+// Note that we don&apos;t actually use C-style varargs because that leads to
+// strange type-related problems. For example it would preclude us from using
+// our custom of passing &apos;0&apos; as NULL pointer. Besides, when I did try to write
+// this function using varargs, I ended up with more code than this simple
+// way.</doc>
+<def f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.cpp' l='184' ll='218' type='Ref&lt;JSC::PolymorphicAccessJITStubRoutine&gt; JSC::createICJITStubRoutine(const MacroAssemblerCodeRef&lt;JITStubRoutinePtrTag&gt; &amp; code, FixedVector&lt;RefPtr&lt;JSC::AccessCase&gt; &gt; &amp;&amp; cases, FixedVector&lt;JSC::StructureID&gt; &amp;&amp; weakStructures, JSC::VM &amp; vm, const JSC::JSCell * owner, bool makesCalls, const Vector&lt;JSC::JSCell *&gt; &amp; cells, Bag&lt;JSC::CallLinkInfo&gt; &amp;&amp; callLinkInfos, JSC::CodeBlock * codeBlockForExceptionHandlers, JSC::DisposableCallSiteIndex exceptionHandlerCallSiteIndex)'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PolymorphicAccess.cpp' l='845' u='c' c='_ZN3JSC17PolymorphicAccess10regenerateERKNS_24GCSafeConcurrentJSLockerERNS_2VMEPNS_14JSGlobalObjectEPNS_9CodeBlockENS_8ECMAModeERNS_17StructureStubInfoE'/>

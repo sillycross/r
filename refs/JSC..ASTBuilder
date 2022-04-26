@@ -1,0 +1,265 @@
+<def f='WebKit/Source/JavaScriptCore/parser/ASTBuilder.h' l='38' ll='1174'/>
+<use f='WebKit/Source/JavaScriptCore/parser/ASTBuilder.h' l='90' c='_ZN3JSC10ASTBuilder17BinaryExprContextC1ERS0_'/>
+<use f='WebKit/Source/JavaScriptCore/parser/ASTBuilder.h' l='93' c='_ZN3JSC10ASTBuilder16UnaryExprContextC1ERS0_'/>
+<use f='WebKit/Source/JavaScriptCore/parser/ASTBuilder.h' l='418' c='_ZN3JSC10ASTBuilder15createClassExprERKNS_15JSTokenLocationERKNS_15ParserClassInfoIS0_EEONS_19VariableEnvironmentES9_PNS_14ExpressionNodeESB_PNS_16Pro10464891'/>
+<use f='WebKit/Source/JavaScriptCore/parser/ASTBuilder.h' l='427' c='_ZN3JSC10ASTBuilder18createFunctionExprERKNS_15JSTokenLocationERKNS_18ParserFunctionInfoIS0_EE'/>
+<use f='WebKit/Source/JavaScriptCore/parser/ASTBuilder.h' l='435' c='_ZN3JSC10ASTBuilder27createGeneratorFunctionBodyERKNS_15JSTokenLocationERKNS_18ParserFunctionInfoIS0_EERKNS_10IdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/parser/ASTBuilder.h' l='443' c='_ZN3JSC10ASTBuilder23createAsyncFunctionBodyERKNS_15JSTokenLocationERKNS_18ParserFunctionInfoIS0_EENS_15SourceParseModeE'/>
+<use f='WebKit/Source/JavaScriptCore/parser/ASTBuilder.h' l='454' c='_ZN3JSC10ASTBuilder22createMethodDefinitionERKNS_15JSTokenLocationERKNS_18ParserFunctionInfoIS0_EE'/>
+<use f='WebKit/Source/JavaScriptCore/parser/ASTBuilder.h' l='477' c='_ZN3JSC10ASTBuilder23createArrowFunctionExprERKNS_15JSTokenLocationERKNS_18ParserFunctionInfoIS0_EE'/>
+<use f='WebKit/Source/JavaScriptCore/parser/ASTBuilder.h' l='492' c='_ZN3JSC10ASTBuilder28createGetterOrSetterPropertyERKNS_15JSTokenLocationENS_12PropertyNode4TypeEPKNS_10IdentifierERKNS_18ParserFunctionInfoIS0_EENS_15ClassElementTagE'/>
+<use f='WebKit/Source/JavaScriptCore/parser/ASTBuilder.h' l='503' c='_ZN3JSC10ASTBuilder28createGetterOrSetterPropertyERKNS_15JSTokenLocationENS_12PropertyNode4TypeEPNS_14ExpressionNodeERKNS_18ParserFunctionInfoIS0_EENS_15ClassElementTagE'/>
+<use f='WebKit/Source/JavaScriptCore/parser/ASTBuilder.h' l='513' c='_ZN3JSC10ASTBuilder28createGetterOrSetterPropertyERNS_2VMERNS_11ParserArenaERKNS_15JSTokenLocationENS_12PropertyNode4TypeEdRKNS_18ParserFunctionInfoIS5112435'/>
+<use f='WebKit/Source/JavaScriptCore/parser/ASTBuilder.h' l='571' c='_ZN3JSC10ASTBuilder23createFuncDeclStatementERKNS_15JSTokenLocationERKNS_18ParserFunctionInfoIS0_EE'/>
+<use f='WebKit/Source/JavaScriptCore/parser/Parser.cpp' l='225' c='_ZN3JSC6Parser10parseInnerERKNS_10IdentifierENS_14ParsingContextESt8optionalIiEPKN3WTF11FixedVectorINS_14JSTextPositionEEEPKNS7_7HashMapINS7_6RefPtrIN8352710'/>
+<use f='WebKit/Source/JavaScriptCore/parser/Parser.cpp' l='242' c='_ZN3JSC6Parser10parseInnerERKNS_10IdentifierENS_14ParsingContextESt8optionalIiEPKN3WTF11FixedVectorINS_14JSTextPositionEEEPKNS7_7HashMapINS7_6RefPtrIN8352710'/>
+<use f='WebKit/Source/JavaScriptCore/parser/Parser.cpp' l='2707' c='_ZN3JSCL11getMetadataERNS_18ParserFunctionInfoINS_10ASTBuilderEEE'/>
+<use f='WebKit/Source/JavaScriptCore/parser/Parser.cpp' l='3182' c='_ZN3JSC6Parser10parseClassERT_NS_24FunctionNameRequirementsERNS_15ParserClassInfoIS1_EE'/>
+<use f='WebKit/Source/JavaScriptCore/parser/Parser.cpp' l='5396' c='_ZN3JSC6Parser20parseUnaryExpressionERT_'/>
+<size>1224</size>
+<fun r='_ZN3JSC10ASTBuilderC1ERNS_2VMERNS_11ParserArenaEPNS_10SourceCodeE'/>
+<smbr r='JSC::ASTBuilder::CreatesAST' t='const bool'/>
+<smbr r='JSC::ASTBuilder::NeedsFreeVariableInfo' t='const bool'/>
+<smbr r='JSC::ASTBuilder::CanUseFunctionCache' t='const bool'/>
+<smbr r='JSC::ASTBuilder::DontBuildKeywords' t='const OptionSet&lt;JSC::LexerFlags&gt;'/>
+<smbr r='JSC::ASTBuilder::DontBuildStrings' t='const OptionSet&lt;JSC::LexerFlags&gt;'/>
+<fun r='_ZN3JSC10ASTBuilder14makeBinaryNodeERKNS_15JSTokenLocationEiSt4pairIPNS_14ExpressionNodeENS0_12BinaryOpInfoEES8_'/>
+<fun r='_ZN3JSC10ASTBuilder20makeFunctionCallNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeEbPNS_13ArgumentsNodeERKNS_14JSTextPositionESA_SA_mb'/>
+<fun r='_ZN3JSC10ASTBuilder20createSourceElementsEv'/>
+<fun r='_ZNK3JSC10ASTBuilder8featuresEv'/>
+<fun r='_ZNK3JSC10ASTBuilder12numConstantsEv'/>
+<fun r='_ZN3JSC10ASTBuilder14makeAssignNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeENS_8OperatorES5_bbRKNS_14JSTextPositionES9_S9_'/>
+<fun r='_ZN3JSC10ASTBuilder14makePrefixNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeENS_8OperatorERKNS_14JSTextPositionES9_S9_'/>
+<fun r='_ZN3JSC10ASTBuilder15makePostfixNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeENS_8OperatorERKNS_14JSTextPositionES9_S9_'/>
+<fun r='_ZN3JSC10ASTBuilder14makeTypeOfNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder14makeDeleteNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeERKNS_14JSTextPositionES8_S8_'/>
+<fun r='_ZN3JSC10ASTBuilder14makeNegateNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder18makeBitwiseNotNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder11makePowNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder12makeMultNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder11makeDivNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder11makeModNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder11makeAddNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder11makeSubNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder14makeBitXOrNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder14makeBitAndNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder13makeBitOrNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder16makeCoalesceNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_'/>
+<fun r='_ZN3JSC10ASTBuilder17makeLeftShiftNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder18makeRightShiftNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder19makeURightShiftNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder16createLogicalNotERKNS_15JSTokenLocationEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder15createUnaryPlusERKNS_15JSTokenLocationEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder10createVoidERKNS_15JSTokenLocationEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder14createThisExprERKNS_15JSTokenLocationE'/>
+<fun r='_ZN3JSC10ASTBuilder15createSuperExprERKNS_15JSTokenLocationE'/>
+<fun r='_ZN3JSC10ASTBuilder16createImportExprERKNS_15JSTokenLocationEPNS_14ExpressionNodeERKNS_14JSTextPositionES8_S8_'/>
+<fun r='_ZN3JSC10ASTBuilder19createNewTargetExprENS_15JSTokenLocationE'/>
+<fun r='_ZN3JSC10ASTBuilder20createImportMetaExprERKNS_15JSTokenLocationEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder14isMetaPropertyEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder11isNewTargetEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder12isImportMetaEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder13createResolveERKNS_15JSTokenLocationERKNS_10IdentifierERKNS_14JSTextPositionES9_'/>
+<fun r='_ZN3JSC10ASTBuilder27createPrivateIdentifierNodeERKNS_15JSTokenLocationERKNS_10IdentifierE'/>
+<fun r='_ZN3JSC10ASTBuilder19createObjectLiteralERKNS_15JSTokenLocationE'/>
+<fun r='_ZN3JSC10ASTBuilder19createObjectLiteralERKNS_15JSTokenLocationEPNS_16PropertyListNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder11createArrayERKNS_15JSTokenLocationEi'/>
+<fun r='_ZN3JSC10ASTBuilder11createArrayERKNS_15JSTokenLocationEPNS_11ElementNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder11createArrayERKNS_15JSTokenLocationEiPNS_11ElementNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder16createDoubleExprERKNS_15JSTokenLocationEd'/>
+<fun r='_ZN3JSC10ASTBuilder17createIntegerExprERKNS_15JSTokenLocationEd'/>
+<fun r='_ZN3JSC10ASTBuilder12createBigIntERKNS_15JSTokenLocationEPKNS_10IdentifierEh'/>
+<fun r='_ZN3JSC10ASTBuilder12createStringERKNS_15JSTokenLocationEPKNS_10IdentifierE'/>
+<fun r='_ZN3JSC10ASTBuilder13createBooleanERKNS_15JSTokenLocationEb'/>
+<fun r='_ZN3JSC10ASTBuilder10createNullERKNS_15JSTokenLocationE'/>
+<fun r='_ZN3JSC10ASTBuilder19createBracketAccessERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_bRKNS_14JSTextPositionES8_S8_'/>
+<fun r='_ZN3JSC10ASTBuilder15createDotAccessERKNS_15JSTokenLocationEPNS_14ExpressionNodeEPKNS_10IdentifierENS_7DotTypeERKNS_14JSTextPositionESC_SC_'/>
+<fun r='_ZN3JSC10ASTBuilder22createSpreadExpressionERKNS_15JSTokenLocationEPNS_14ExpressionNodeERKNS_14JSTextPositionES8_S8_'/>
+<fun r='_ZN3JSC10ASTBuilder28createObjectSpreadExpressionERKNS_15JSTokenLocationEPNS_14ExpressionNodeERKNS_14JSTextPositionES8_S8_'/>
+<fun r='_ZN3JSC10ASTBuilder20createTemplateStringERKNS_15JSTokenLocationEPKNS_10IdentifierES6_'/>
+<fun r='_ZN3JSC10ASTBuilder24createTemplateStringListEPNS_18TemplateStringNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder24createTemplateStringListEPNS_22TemplateStringListNodeEPNS_18TemplateStringNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder28createTemplateExpressionListEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder28createTemplateExpressionListEPNS_26TemplateExpressionListNodeEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder21createTemplateLiteralERKNS_15JSTokenLocationEPNS_22TemplateStringListNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder21createTemplateLiteralERKNS_15JSTokenLocationEPNS_22TemplateStringListNodeEPNS_26TemplateExpressionListNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder20createTaggedTemplateERKNS_15JSTokenLocationEPNS_14ExpressionNodeEPNS_19TemplateLiteralNodeERKNS_14JSTextPositionESA_SA_'/>
+<fun r='_ZN3JSC10ASTBuilder12createRegExpERKNS_15JSTokenLocationERKNS_10IdentifierES6_RKNS_14JSTextPositionE'/>
+<fun r='_ZN3JSC10ASTBuilder13createNewExprERKNS_15JSTokenLocationEPNS_14ExpressionNodeEPNS_13ArgumentsNodeERKNS_14JSTextPositionESA_SA_'/>
+<fun r='_ZN3JSC10ASTBuilder13createNewExprERKNS_15JSTokenLocationEPNS_14ExpressionNodeERKNS_14JSTextPositionES8_'/>
+<fun r='_ZN3JSC10ASTBuilder19createOptionalChainERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder21createConditionalExprERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_S5_'/>
+<fun r='_ZN3JSC10ASTBuilder19createAssignResolveERKNS_15JSTokenLocationERKNS_10IdentifierEPNS_14ExpressionNodeERKNS_14JSTextPositionESB_SB_NS_17AssignmentContextE'/>
+<fun r='_ZN3JSC10ASTBuilder11createYieldERKNS_15JSTokenLocationE'/>
+<fun r='_ZN3JSC10ASTBuilder11createYieldERKNS_15JSTokenLocationEPNS_14ExpressionNodeEbRKNS_14JSTextPositionES8_S8_'/>
+<fun r='_ZN3JSC10ASTBuilder11createAwaitERKNS_15JSTokenLocationEPNS_14ExpressionNodeERKNS_14JSTextPositionES8_S8_'/>
+<fun r='_ZN3JSC10ASTBuilder17createDefineFieldERKNS_15JSTokenLocationEPKNS_10IdentifierEPNS_14ExpressionNodeENS_15DefineFieldNode4TypeE'/>
+<fun r='_ZN3JSC10ASTBuilder15createClassExprERKNS_15JSTokenLocationERKNS_15ParserClassInfoIS0_EEONS_19VariableEnvironmentES9_PNS_14ExpressionNodeESB_PNS_16Pro10464891'/>
+<fun r='_ZN3JSC10ASTBuilder18createFunctionExprERKNS_15JSTokenLocationERKNS_18ParserFunctionInfoIS0_EE'/>
+<fun r='_ZN3JSC10ASTBuilder27createGeneratorFunctionBodyERKNS_15JSTokenLocationERKNS_18ParserFunctionInfoIS0_EERKNS_10IdentifierE'/>
+<fun r='_ZN3JSC10ASTBuilder23createAsyncFunctionBodyERKNS_15JSTokenLocationERKNS_18ParserFunctionInfoIS0_EENS_15SourceParseModeE'/>
+<fun r='_ZN3JSC10ASTBuilder22createMethodDefinitionERKNS_15JSTokenLocationERKNS_18ParserFunctionInfoIS0_EE'/>
+<fun r='_ZN3JSC10ASTBuilder22createFunctionMetadataERKNS_15JSTokenLocationES3_jjiiihNS_15ConstructorKindENS_12SuperBindingEjNS_15SourceParseModeEb'/>
+<fun r='_ZN3JSC10ASTBuilder23createArrowFunctionExprERKNS_15JSTokenLocationERKNS_18ParserFunctionInfoIS0_EE'/>
+<fun r='_ZN3JSC10ASTBuilder15createArgumentsEv'/>
+<fun r='_ZN3JSC10ASTBuilder15createArgumentsEPNS_16ArgumentListNodeEb'/>
+<fun r='_ZN3JSC10ASTBuilder19createArgumentsListERKNS_15JSTokenLocationEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder19createArgumentsListERKNS_15JSTokenLocationEPNS_16ArgumentListNodeEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder28createGetterOrSetterPropertyERKNS_15JSTokenLocationENS_12PropertyNode4TypeEPKNS_10IdentifierERKNS_18ParserFunctionInfoIS0_EENS_15ClassElementTagE'/>
+<fun r='_ZN3JSC10ASTBuilder28createGetterOrSetterPropertyERKNS_15JSTokenLocationENS_12PropertyNode4TypeEPNS_14ExpressionNodeERKNS_18ParserFunctionInfoIS0_EENS_15ClassElementTagE'/>
+<fun r='_ZN3JSC10ASTBuilder28createGetterOrSetterPropertyERNS_2VMERNS_11ParserArenaERKNS_15JSTokenLocationENS_12PropertyNode4TypeEdRKNS_18ParserFunctionInfoIS5112435'/>
+<fun r='_ZN3JSC10ASTBuilder14createPropertyEPKNS_10IdentifierEPNS_14ExpressionNodeENS_12PropertyNode4TypeENS_12SuperBindingENS_9InferNameENS_15ClassElementTagE'/>
+<fun r='_ZN3JSC10ASTBuilder14createPropertyEPNS_14ExpressionNodeENS_12PropertyNode4TypeENS_12SuperBindingENS_15ClassElementTagE'/>
+<fun r='_ZN3JSC10ASTBuilder14createPropertyERNS_2VMERNS_11ParserArenaEdPNS_14ExpressionNodeENS_12PropertyNode4TypeENS_12SuperBindingENS_15ClassElementTagE'/>
+<fun r='_ZN3JSC10ASTBuilder14createPropertyEPNS_14ExpressionNodeES2_NS_12PropertyNode4TypeENS_12SuperBindingENS_15ClassElementTagE'/>
+<fun r='_ZN3JSC10ASTBuilder14createPropertyEPKNS_10IdentifierEPNS_14ExpressionNodeES5_NS_12PropertyNode4TypeENS_12SuperBindingENS_15ClassElementTagE'/>
+<fun r='_ZN3JSC10ASTBuilder18createPropertyListERKNS_15JSTokenLocationEPNS_12PropertyNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder18createPropertyListERKNS_15JSTokenLocationEPNS_12PropertyNodeEPNS_16PropertyListNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder17createElementListEiPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder17createElementListEPNS_11ElementNodeEiPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder17createElementListEPNS_16ArgumentListNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder25createFormalParameterListEv'/>
+<fun r='_ZN3JSC10ASTBuilder15appendParameterEPNS_18FunctionParametersEPNS_24DestructuringPatternNodeEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder12createClauseEPNS_14ExpressionNodeEPNS_14SourceElementsE'/>
+<fun r='_ZN3JSC10ASTBuilder16createClauseListEPNS_14CaseClauseNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder16createClauseListEPNS_14ClauseListNodeEPNS_14CaseClauseNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder23createFuncDeclStatementERKNS_15JSTokenLocationERKNS_18ParserFunctionInfoIS0_EE'/>
+<fun r='_ZN3JSC10ASTBuilder24createClassDeclStatementERKNS_15JSTokenLocationEPNS_13ClassExprNodeERKNS_14JSTextPositionES8_jj'/>
+<fun r='_ZN3JSC10ASTBuilder20createBlockStatementERKNS_15JSTokenLocationEPNS_14SourceElementsEiiONS_19VariableEnvironmentEON3WTF6VectorIPNS_20FunctionMetadata15447147'/>
+<fun r='_ZN3JSC10ASTBuilder19createExprStatementERKNS_15JSTokenLocationEPNS_14ExpressionNodeERKNS_14JSTextPositionEi'/>
+<fun r='_ZN3JSC10ASTBuilder17createIfStatementERKNS_15JSTokenLocationEPNS_14ExpressionNodeEPNS_13StatementNodeES7_ii'/>
+<fun r='_ZN3JSC10ASTBuilder13createForLoopERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_S5_PNS_13StatementNodeEiiONS_19VariableEnvironmentE'/>
+<fun r='_ZN3JSC10ASTBuilder15createForInLoopERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_PNS_13StatementNodeES3_RKNS_14JSTextPositionESA_SA_iiONS_19VariableEnvironmentE'/>
+<fun r='_ZN3JSC10ASTBuilder15createForInLoopERKNS_15JSTokenLocationEPNS_24DestructuringPatternNodeEPNS_14ExpressionNodeEPNS_13StatementNodeES3_RKNS_14JSTextPo8011711'/>
+<fun r='_ZN3JSC10ASTBuilder15createForOfLoopEbRKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_PNS_13StatementNodeES3_RKNS_14JSTextPositionESA_SA_iiONS_19VariableEnvironmentE'/>
+<fun r='_ZN3JSC10ASTBuilder15createForOfLoopEbRKNS_15JSTokenLocationEPNS_24DestructuringPatternNodeEPNS_14ExpressionNodeEPNS_13StatementNodeES3_RKNS_14JSTextP14274322'/>
+<fun r='_ZN3JSC10ASTBuilder13isBindingNodeERKPNS_24DestructuringPatternNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder10isLocationERKPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder20isAssignmentLocationERKPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder17isPrivateLocationERKPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder15isObjectLiteralERKPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder14isArrayLiteralERKPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder22isObjectOrArrayLiteralERKPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder14isFunctionCallERKPNS_14ExpressionNodeE'/>
+<fun r='_ZNK3JSC10ASTBuilder23shouldSkipPauseLocationEPNS_13StatementNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder20createEmptyStatementERKNS_15JSTokenLocationE'/>
+<fun r='_ZN3JSC10ASTBuilder26createDeclarationStatementERKNS_15JSTokenLocationEPNS_14ExpressionNodeEii'/>
+<fun r='_ZN3JSC10ASTBuilder24createEmptyVarExpressionERKNS_15JSTokenLocationERKNS_10IdentifierE'/>
+<fun r='_ZN3JSC10ASTBuilder24createEmptyLetExpressionERKNS_15JSTokenLocationERKNS_10IdentifierE'/>
+<fun r='_ZN3JSC10ASTBuilder21createReturnStatementERKNS_15JSTokenLocationEPNS_14ExpressionNodeERKNS_14JSTextPositionES8_'/>
+<fun r='_ZN3JSC10ASTBuilder20createBreakStatementERKNS_15JSTokenLocationEPKNS_10IdentifierERKNS_14JSTextPositionES9_'/>
+<fun r='_ZN3JSC10ASTBuilder23createContinueStatementERKNS_15JSTokenLocationEPKNS_10IdentifierERKNS_14JSTextPositionES9_'/>
+<fun r='_ZN3JSC10ASTBuilder18createTryStatementERKNS_15JSTokenLocationEPNS_13StatementNodeEPNS_24DestructuringPatternNodeES5_S5_iiONS_19VariableEnvironmentE'/>
+<fun r='_ZN3JSC10ASTBuilder21createSwitchStatementERKNS_15JSTokenLocationEPNS_14ExpressionNodeEPNS_14ClauseListNodeEPNS_14CaseClauseNodeES7_iiONS_19VariableEn16293365'/>
+<fun r='_ZN3JSC10ASTBuilder20createWhileStatementERKNS_15JSTokenLocationEPNS_14ExpressionNodeEPNS_13StatementNodeEii'/>
+<fun r='_ZN3JSC10ASTBuilder22createDoWhileStatementERKNS_15JSTokenLocationEPNS_13StatementNodeEPNS_14ExpressionNodeEii'/>
+<fun r='_ZN3JSC10ASTBuilder20createLabelStatementERKNS_15JSTokenLocationEPKNS_10IdentifierEPNS_13StatementNodeERKNS_14JSTextPositionESB_'/>
+<fun r='_ZN3JSC10ASTBuilder19createWithStatementERKNS_15JSTokenLocationEPNS_14ExpressionNodeEPNS_13StatementNodeEjRKNS_14JSTextPositionEjj'/>
+<fun r='_ZN3JSC10ASTBuilder20createThrowStatementERKNS_15JSTokenLocationEPNS_14ExpressionNodeERKNS_14JSTextPositionES8_'/>
+<fun r='_ZN3JSC10ASTBuilder14createDebuggerERKNS_15JSTokenLocationEii'/>
+<fun r='_ZN3JSC10ASTBuilder16createModuleNameERKNS_15JSTokenLocationERKNS_10IdentifierE'/>
+<fun r='_ZN3JSC10ASTBuilder21createImportSpecifierERKNS_15JSTokenLocationERKNS_10IdentifierES6_'/>
+<fun r='_ZN3JSC10ASTBuilder25createImportSpecifierListEv'/>
+<fun r='_ZN3JSC10ASTBuilder21appendImportSpecifierEPNS_23ImportSpecifierListNodeEPNS_19ImportSpecifierNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder23createImportDeclarationERKNS_15JSTokenLocationEPNS_23ImportSpecifierListNodeEPNS_14ModuleNameNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder26createExportAllDeclarationERKNS_15JSTokenLocationEPNS_14ModuleNameNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder30createExportDefaultDeclarationERKNS_15JSTokenLocationEPNS_13StatementNodeERKNS_10IdentifierE'/>
+<fun r='_ZN3JSC10ASTBuilder28createExportLocalDeclarationERKNS_15JSTokenLocationEPNS_13StatementNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder28createExportNamedDeclarationERKNS_15JSTokenLocationEPNS_23ExportSpecifierListNodeEPNS_14ModuleNameNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder21createExportSpecifierERKNS_15JSTokenLocationERKNS_10IdentifierES6_'/>
+<fun r='_ZN3JSC10ASTBuilder25createExportSpecifierListEv'/>
+<fun r='_ZN3JSC10ASTBuilder21appendExportSpecifierEPNS_23ExportSpecifierListNodeEPNS_19ExportSpecifierNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder15appendStatementEPNS_14SourceElementsEPNS_13StatementNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder15createCommaExprERKNS_15JSTokenLocationEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder17appendToCommaExprERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_S5_'/>
+<fun r='_ZNK3JSC10ASTBuilder9evalCountEv'/>
+<fun r='_ZN3JSC10ASTBuilder26appendBinaryExpressionInfoERiPNS_14ExpressionNodeERKNS_14JSTextPositionES6_S6_b'/>
+<fun r='_ZN3JSC10ASTBuilder16operatorStackPopERi'/>
+<fun r='_ZN3JSC10ASTBuilder25operatorStackShouldReduceEi'/>
+<fun r='_ZN3JSC10ASTBuilder19getFromOperandStackEi'/>
+<fun r='_ZN3JSC10ASTBuilder20shrinkOperandStackByERii'/>
+<fun r='_ZN3JSC10ASTBuilder21appendBinaryOperationERKNS_15JSTokenLocationERiS4_RKSt4pairIPNS_14ExpressionNodeENS0_12BinaryOpInfoEESB_'/>
+<fun r='_ZN3JSC10ASTBuilder19operatorStackAppendERiii'/>
+<fun r='_ZN3JSC10ASTBuilder15popOperandStackERi'/>
+<fun r='_ZN3JSC10ASTBuilder16appendUnaryTokenERiiRKNS_14JSTextPositionE'/>
+<fun r='_ZN3JSC10ASTBuilder23unaryTokenStackLastTypeERi'/>
+<fun r='_ZN3JSC10ASTBuilder24unaryTokenStackLastStartERi'/>
+<fun r='_ZN3JSC10ASTBuilder25unaryTokenStackRemoveLastERi'/>
+<fun r='_ZNK3JSC10ASTBuilder20unaryTokenStackDepthEv'/>
+<fun r='_ZN3JSC10ASTBuilder23setUnaryTokenStackDepthEi'/>
+<fun r='_ZN3JSC10ASTBuilder21assignmentStackAppendERiPNS_14ExpressionNodeERKNS_14JSTextPositionES6_iNS_8OperatorE'/>
+<fun r='_ZN3JSC10ASTBuilder16createAssignmentERKNS_15JSTokenLocationERiPNS_14ExpressionNodeEiiRKNS_14JSTextPositionE'/>
+<fun r='_ZNK3JSC10ASTBuilder7getTypeERKPNS_12PropertyNodeE'/>
+<fun r='_ZNK3JSC10ASTBuilder23isUnderscoreProtoSetterERKPNS_12PropertyNodeE'/>
+<fun r='_ZNK3JSC10ASTBuilder9isResolveEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder29createDestructuringAssignmentERKNS_15JSTokenLocationEPNS_24DestructuringPatternNodeEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder18createArrayPatternERKNS_15JSTokenLocationE'/>
+<fun r='_ZN3JSC10ASTBuilder27appendArrayPatternSkipEntryEPNS_16ArrayPatternNodeERKNS_15JSTokenLocationE'/>
+<fun r='_ZN3JSC10ASTBuilder23appendArrayPatternEntryEPNS_16ArrayPatternNodeERKNS_15JSTokenLocationEPNS_24DestructuringPatternNodeEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder27appendArrayPatternRestEntryEPNS_16ArrayPatternNodeERKNS_15JSTokenLocationEPNS_24DestructuringPatternNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder18finishArrayPatternEPNS_16ArrayPatternNodeERKNS_14JSTextPositionES5_S5_'/>
+<fun r='_ZN3JSC10ASTBuilder19createObjectPatternERKNS_15JSTokenLocationE'/>
+<fun r='_ZN3JSC10ASTBuilder24appendObjectPatternEntryEPNS_17ObjectPatternNodeERKNS_15JSTokenLocationEbRKNS_10IdentifierEPNS_24DestructuringPatternNodeEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder24appendObjectPatternEntryERNS_2VMEPNS_17ObjectPatternNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeEPNS_24DestructuringPatternNodeES9_'/>
+<fun r='_ZN3JSC10ASTBuilder28appendObjectPatternRestEntryERNS_2VMEPNS_17ObjectPatternNodeERKNS_15JSTokenLocationEPNS_24DestructuringPatternNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder28setContainsObjectRestElementEPNS_17ObjectPatternNodeEb'/>
+<fun r='_ZN3JSC10ASTBuilder27setContainsComputedPropertyEPNS_17ObjectPatternNodeEb'/>
+<fun r='_ZN3JSC10ASTBuilder21createBindingLocationERKNS_15JSTokenLocationERKNS_10IdentifierERKNS_14JSTextPositionES9_NS_17AssignmentContextE'/>
+<fun r='_ZN3JSC10ASTBuilder19createRestParameterEPNS_24DestructuringPatternNodeEm'/>
+<fun r='_ZN3JSC10ASTBuilder23createAssignmentElementERKPNS_14ExpressionNodeERKNS_14JSTextPositionES7_'/>
+<fun r='_ZN3JSC10ASTBuilder12setEndOffsetEPNS_4NodeEi'/>
+<fun r='_ZN3JSC10ASTBuilder9endOffsetEPNS_4NodeE'/>
+<fun r='_ZN3JSC10ASTBuilder14setStartOffsetEPNS_14CaseClauseNodeEi'/>
+<fun r='_ZN3JSC10ASTBuilder14setStartOffsetEPNS_4NodeEi'/>
+<fun r='_ZN3JSC10ASTBuilder18breakpointLocationEPNS_4NodeE'/>
+<fun r='_ZN3JSC10ASTBuilder21propagateArgumentsUseEv'/>
+<fun r='_ZN3JSC10ASTBuilder20setExceptionLocationEPNS_23ThrowableExpressionDataERKNS_14JSTextPositionES5_S5_'/>
+<fun r='_ZN3JSC10ASTBuilder12incConstantsEv'/>
+<fun r='_ZN3JSC10ASTBuilder8usesThisEv'/>
+<fun r='_ZN3JSC10ASTBuilder17usesArrowFunctionEv'/>
+<fun r='_ZN3JSC10ASTBuilder13usesArgumentsEv'/>
+<fun r='_ZN3JSC10ASTBuilder8usesWithEv'/>
+<fun r='_ZN3JSC10ASTBuilder13usesSuperCallEv'/>
+<fun r='_ZN3JSC10ASTBuilder17usesSuperPropertyEv'/>
+<fun r='_ZN3JSC10ASTBuilder8usesEvalEv'/>
+<fun r='_ZN3JSC10ASTBuilder13usesNewTargetEv'/>
+<fun r='_ZN3JSC10ASTBuilder9usesAwaitEv'/>
+<fun r='_ZN3JSC10ASTBuilder23createIntegerLikeNumberERKNS_15JSTokenLocationEd'/>
+<fun r='_ZN3JSC10ASTBuilder22createDoubleLikeNumberERKNS_15JSTokenLocationEd'/>
+<fun r='_ZN3JSC10ASTBuilder20createBigIntWithSignERKNS_15JSTokenLocationERKNS_10IdentifierEhb'/>
+<fun r='_ZN3JSC10ASTBuilder31createNumberFromBinaryOperationERKNS_15JSTokenLocationEdRKNS_10NumberNodeES6_'/>
+<fun r='_ZN3JSC10ASTBuilder30createNumberFromUnaryOperationERKNS_15JSTokenLocationEdRKNS_10NumberNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder30createBigIntFromUnaryOperationERKNS_15JSTokenLocationEbRKNS_10BigIntNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder21tryInferNameInPatternEPNS_24DestructuringPatternNodeEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder35tryInferNameInPatternWithIdentifierERKNS_10IdentifierEPNS_14ExpressionNodeE'/>
+<mbr r='JSC::ASTBuilder::m_vm' o='0' t='JSC::VM &amp;'/>
+<mbr r='JSC::ASTBuilder::m_parserArena' o='64' t='JSC::ParserArena &amp;'/>
+<mbr r='JSC::ASTBuilder::m_sourceCode' o='128' t='JSC::SourceCode *'/>
+<mbr r='JSC::ASTBuilder::m_scope' o='192' t='JSC::ASTBuilder::Scope'/>
+<mbr r='JSC::ASTBuilder::m_binaryOperandStack' o='256' t='Vector&lt;JSC::ASTBuilder::BinaryOperand, 10, WTF::UnsafeVectorOverflow&gt;'/>
+<mbr r='JSC::ASTBuilder::m_assignmentInfoStack' o='4224' t='Vector&lt;JSC::ASTBuilder::AssignmentInfo, 10, WTF::UnsafeVectorOverflow&gt;'/>
+<mbr r='JSC::ASTBuilder::m_binaryOperatorStack' o='7552' t='Vector&lt;std::pair&lt;int, int&gt;, 10, WTF::UnsafeVectorOverflow&gt;'/>
+<mbr r='JSC::ASTBuilder::m_unaryTokenStack' o='8320' t='Vector&lt;std::pair&lt;int, JSTextPosition&gt;, 10, WTF::UnsafeVectorOverflow&gt;'/>
+<mbr r='JSC::ASTBuilder::m_evalCount' o='9728' t='int'/>
+<fun r='_ZN3JSC10ASTBuilder14makeTypeOfNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder14makeDeleteNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeERKNS_14JSTextPositionES8_S8_'/>
+<fun r='_ZN3JSC10ASTBuilder14makeNegateNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder18makeBitwiseNotNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeE'/>
+<fun r='_ZN3JSC10ASTBuilder11makePowNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder12makeMultNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder11makeDivNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder11makeModNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder11makeAddNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder11makeSubNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder17makeLeftShiftNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder18makeRightShiftNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder19makeURightShiftNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder13makeBitOrNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder14makeBitAndNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder14makeBitXOrNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_b'/>
+<fun r='_ZN3JSC10ASTBuilder16makeCoalesceNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_'/>
+<fun r='_ZN3JSC10ASTBuilder20makeFunctionCallNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeEbPNS_13ArgumentsNodeERKNS_14JSTextPositionESA_SA_mb'/>
+<fun r='_ZN3JSC10ASTBuilder14makeBinaryNodeERKNS_15JSTokenLocationEiSt4pairIPNS_14ExpressionNodeENS0_12BinaryOpInfoEES8_'/>
+<fun r='_ZN3JSC10ASTBuilder14makeAssignNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeENS_8OperatorES5_bbRKNS_14JSTextPositionES9_S9_'/>
+<fun r='_ZN3JSC10ASTBuilder14makePrefixNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeENS_8OperatorERKNS_14JSTextPositionES9_S9_'/>
+<fun r='_ZN3JSC10ASTBuilder15makePostfixNodeERKNS_15JSTokenLocationEPNS_14ExpressionNodeENS_8OperatorERKNS_14JSTextPositionES9_S9_'/>

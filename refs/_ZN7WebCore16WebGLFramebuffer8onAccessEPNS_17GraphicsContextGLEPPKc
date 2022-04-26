@@ -1,0 +1,14 @@
+<dec f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.h' l='100' type='bool WebCore::WebGLFramebuffer::onAccess(WebCore::GraphicsContextGL * , const char ** reason)'/>
+<doc f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.h' l='94'>// This should always be called before drawArray, drawElements, clear,
+    // readPixels, copyTexImage2D, copyTexSubImage2D if this framebuffer is
+    // currently bound.
+    // Return false if the framebuffer is incomplete; otherwise initialize
+    // the buffers if they haven&apos;t been initialized and
+    // needToInitializeAttachments is true.</doc>
+<def f='WebKit/Source/WebCore/html/canvas/WebGLFramebuffer.cpp' l='574' ll='579' type='bool WebCore::WebGLFramebuffer::onAccess(WebCore::GraphicsContextGL * context3d, const char ** reason)'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='1703' u='c' c='_ZN7WebCore25WebGLRenderingContextBase5clearEj'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='1912' u='c' c='_ZN7WebCore25WebGLRenderingContextBase17copyTexSubImage2DEjiiiiiii'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='2482' u='c' c='_ZN7WebCore25WebGLRenderingContextBase18validateDrawArraysEPKcjiii'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='2562' u='c' c='_ZN7WebCore25WebGLRenderingContextBase20validateDrawElementsEPKcjijxRji'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='4291' u='c' c='_ZN7WebCore25WebGLRenderingContextBase10readPixelsEiiiijjRN3JSC15ArrayBufferViewE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='5711' u='c' c='_ZN7WebCore25WebGLRenderingContextBase14copyTexImage2DEjijiiiii'/>

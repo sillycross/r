@@ -1,0 +1,33 @@
+<dec f='include/wayland-server-protocol.h' l='2868' type='void (*)(struct wl_client *, struct wl_resource *, int32_t, int32_t, int32_t, int32_t)'/>
+<offset>128</offset>
+<doc f='include/wayland-server-protocol.h' l='2837'>/**
+	 * mark part of the surface damaged
+	 *
+	 * This request is used to describe the regions where the pending
+	 * buffer is different from the current surface contents, and where
+	 * the surface therefore needs to be repainted. The compositor
+	 * ignores the parts of the damage that fall outside of the
+	 * surface.
+	 *
+	 * Damage is double-buffered state, see wl_surface.commit.
+	 *
+	 * The damage rectangle is specified in surface-local coordinates,
+	 * where x and y specify the upper left corner of the damage
+	 * rectangle.
+	 *
+	 * The initial value for pending damage is empty: no damage.
+	 * wl_surface.damage adds pending damage: the new pending damage is
+	 * the union of old pending damage and the given rectangle.
+	 *
+	 * wl_surface.commit assigns pending damage as the current damage,
+	 * and clears pending damage. The server will clear the current
+	 * damage as it repaints the surface.
+	 *
+	 * Note! New clients should not use this request. Instead damage
+	 * can be posted with wl_surface.damage_buffer which uses buffer
+	 * coordinates instead of surface coordinates.
+	 * @param x surface-local x coordinate
+	 * @param y surface-local y coordinate
+	 * @param width width of damage rectangle
+	 * @param height height of damage rectangle
+	 */</doc>

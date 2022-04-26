@@ -1,0 +1,50 @@
+<def f='WebKit/WTF/Headers/wtf/Lock.h' l='90' ll='94' type='void WTF::Lock::unlock()'/>
+<use f='WebKit/WTF/Headers/wtf/Lock.h' l='168' u='c' c='_ZN3WTF6LockerINS_4LockEED1Ev'/>
+<use f='WebKit/WTF/Headers/wtf/Lock.h' l='174' u='c' c='_ZN3WTF6LockerINS_4LockEE11unlockEarlyEv'/>
+<use f='WebKit/WTF/Headers/wtf/Lock.h' l='193' u='c' c='_ZN3WTF6LockerINS_4LockEE6unlockEv'/>
+<doc f='WebKit/WTF/Headers/wtf/Lock.h' l='82'>// Relinquish the lock. Either one of the threads that were waiting for the lock, or some other
+    // thread that happens to be running, will be able to grab the lock. This bit of unfairness is
+    // called barging, and we allow it because it maximizes throughput. However, we bound how unfair
+    // barging can get by ensuring that every once in a while, when there is a thread waiting on the
+    // lock, we hand the lock to that thread directly. Every time unlock() finds a thread waiting,
+    // we check if the last time that we did a fair unlock was more than roughly 1ms ago; if so, we
+    // unlock fairly. Fairness matters most for long critical sections, and this virtually
+    // guarantees that long critical sections always get a fair lock.</doc>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/StructureInlines.h' l='214' u='c' c='_ZN3JSC9Structure27forEachPropertyConcurrentlyERKT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/StructureInlines.h' l='227' u='c' c='_ZN3JSC9Structure27forEachPropertyConcurrentlyERKT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/StructureInlines.h' l='231' u='c' c='_ZN3JSC9Structure27forEachPropertyConcurrentlyERKT_'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/IndexedDB/WebIDBServer.cpp' l='143' u='c' c='_ZN6WebKit12WebIDBServer7suspendENS0_19SuspensionConditionE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/IndexedDB/WebIDBServer.cpp' l='158' u='c' c='_ZN6WebKit12WebIDBServer6resumeEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/StructureInlines.h' l='214' u='c' c='_ZN3JSC9Structure27forEachPropertyConcurrentlyERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/StructureInlines.h' l='227' u='c' c='_ZN3JSC9Structure27forEachPropertyConcurrentlyERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/StructureInlines.h' l='231' u='c' c='_ZN3JSC9Structure27forEachPropertyConcurrentlyERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/tools/VMInspector.cpp' l='70' u='c' c='_ZN3JSCL18ensureIsSafeToLockERN3WTF4LockE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITWorklist.cpp' l='123' u='c' c='_ZN3JSC11JITWorklist16resumeAllThreadsEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITWorklist.cpp' l='124' u='c' c='_ZN3JSC11JITWorklist16resumeAllThreadsEv'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrInterpreter.cpp' l='1678' u='c' c='_ZN3JSC4Yarr11Interpreter9interpretEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='2980' u='c' c='_ZN3JSC4Heap15allowCollectionEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSLock.cpp' l='51' u='c' c='_ZN3JSC12GlobalJSLockD1Ev'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSLock.cpp' l='196' u='c' c='_ZN3JSC6JSLock6unlockEl'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Structure.cpp' l='376' u='c' c='_ZN3JSC9Structure38findStructuresAndMapForMaterializationERN3WTF6VectorIPS0_Lm8ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEERS3_RPNS_13PropertyTableE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Structure.cpp' l='400' u='c' c='_ZN3JSC9Structure24materializePropertyTableERNS_2VMEb'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.cpp' l='1218' u='c' c='_ZN3JSC2VM32releaseRegExpPatternContexBufferEv'/>
+<def f='WebKit/Source/WTF/wtf/Lock.h' l='90' ll='94' type='void WTF::Lock::unlock()'/>
+<use f='WebKit/Source/WTF/wtf/Lock.h' l='168' u='c' c='_ZN3WTF6LockerINS_4LockEED1Ev'/>
+<use f='WebKit/Source/WTF/wtf/Lock.h' l='174' u='c' c='_ZN3WTF6LockerINS_4LockEE11unlockEarlyEv'/>
+<use f='WebKit/Source/WTF/wtf/Lock.h' l='193' u='c' c='_ZN3WTF6LockerINS_4LockEE6unlockEv'/>
+<doc f='WebKit/Source/WTF/wtf/Lock.h' l='82'>// Relinquish the lock. Either one of the threads that were waiting for the lock, or some other
+    // thread that happens to be running, will be able to grab the lock. This bit of unfairness is
+    // called barging, and we allow it because it maximizes throughput. However, we bound how unfair
+    // barging can get by ensuring that every once in a while, when there is a thread waiting on the
+    // lock, we hand the lock to that thread directly. Every time unlock() finds a thread waiting,
+    // we check if the last time that we did a fair unlock was more than roughly 1ms ago; if so, we
+    // unlock fairly. Fairness matters most for long critical sections, and this virtually
+    // guarantees that long critical sections always get a fair lock.</doc>
+<use f='WebKit/Source/WTF/wtf/ParallelJobsGeneric.cpp' l='92' u='c' c='_ZN3WTF19ParallelEnvironment13ThreadPrivate10tryLockForEPS0_'/>
+<use f='WebKit/Source/WTF/wtf/ParallelJobsGeneric.cpp' l='114' u='c' c='_ZN3WTF19ParallelEnvironment13ThreadPrivate10tryLockForEPS0_'/>
+<use f='WebKit/Source/WebCore/storage/StorageQuotaManager.cpp' l='57' u='c' c='_ZN7WebCore19StorageQuotaManager24requestSpaceOnMainThreadEmON3WTF17CompletionHandlerIFvNS0_8DecisionEEEE'/>
+<use f='WebKit/Source/WebCore/storage/StorageQuotaManager.cpp' l='61' u='c' c='_ZN7WebCore19StorageQuotaManager24requestSpaceOnMainThreadEmON3WTF17CompletionHandlerIFvNS0_8DecisionEEEE'/>
+<use f='WebKit/Source/WebCore/Modules/indexeddb/server/IDBServer.cpp' l='744' u='c' c='_ZN7WebCore9IDBServer9IDBServer12requestSpaceERKNS_12ClientOriginEm'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/OriginLock.cpp' l='56' u='c' c='_ZN7WebCore10OriginLock4lockEv'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/OriginLock.cpp' l='76' u='c' c='_ZN7WebCore10OriginLock6unlockEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='5113' u='c' c='_ZN7WebCore16HTMLMediaElement35mediaPlayerDidInitializeMediaEngineEv'/>

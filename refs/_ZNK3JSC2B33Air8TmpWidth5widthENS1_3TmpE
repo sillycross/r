@@ -1,0 +1,12 @@
+<def f='WebKit/Source/JavaScriptCore/b3/air/AirTmpWidth.h' l='54' ll='58' type='JSC::B3::Width JSC::B3::Air::TmpWidth::width(JSC::B3::Air::Tmp tmp) const'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='2004' u='c' c='_ZN3JSC2B33Air12_GLOBAL__N_131GraphColoringRegisterAllocation15addSpillAndFillERKT0_RN3WTF9BitVectorE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='2005' u='c' c='_ZN3JSC2B33Air12_GLOBAL__N_131GraphColoringRegisterAllocation15addSpillAndFillERKT0_RN3WTF9BitVectorE'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/air/AirTmpWidth.h' l='45'>// The width of a Tmp is the number of bits that you need to be able to track without some trivial
+    // recovery. A Tmp may have a &quot;subwidth&quot; (say, Width32 on a 64-bit system) if either of the following
+    // is true:
+    //
+    // - The high bits are never read.
+    // - The high bits are always zero.
+    //
+    // This doesn&apos;t tell you which of those properties holds, but you can query that using the other
+    // methods.</doc>

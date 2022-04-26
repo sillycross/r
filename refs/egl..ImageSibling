@@ -1,0 +1,33 @@
+<inh f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/FramebufferAttachment.h' l='193' c='gl::FramebufferAttachmentObject'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Image.h' l='41' ll='75'/>
+<ovr f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Image.h' l='79' c='egl::ExternalImageSibling'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Image.h' l='79'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Image.h' l='123' c='_ZN3egl10ImageStateC1EjPNS_12ImageSiblingERKNS_12AttributeMapE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Image.h' l='129'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Image.h' l='130'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Image.h' l='145' c='_ZN3egl5ImageC1EPN2rx14EGLImplFactoryEPKN2gl7ContextEjPNS_12ImageSiblingERKNS_12AttributeMapE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Image.h' l='171'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Image.h' l='175' c='_ZN3egl5Image16addTargetSiblingEPNS_12ImageSiblingE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Image.h' l='179' c='_ZN3egl5Image13orphanSiblingEPKN2gl7ContextEPNS_12ImageSiblingE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Image.h' l='181' c='_ZN3egl5Image14notifySiblingsEPKNS_12ImageSiblingEN5angle14SubjectMessageE'/>
+<ovr f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Renderbuffer.h' l='68' c='gl::Renderbuffer'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Renderbuffer.h' l='69'/>
+<ovr f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Texture.h' l='246' c='gl::Texture'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Texture.h' l='247'/>
+<size>168</size>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Image.h' l='38'>// Only currently Renderbuffers and Textures can be bound with images. This makes the relationship
+// explicit, and also ensures that an image sibling can determine if it&apos;s been initialized or not,
+// which is important for the robust resource init extension with Textures and EGLImages.</doc>
+<fun r='_ZN3egl12ImageSiblingC1Ev'/>
+<fun r='_ZN3egl12ImageSiblingD1Ev'/>
+<fun r='_ZNK3egl12ImageSibling16isEGLImageTargetEv'/>
+<fun r='_ZNK3egl12ImageSibling23sourceEGLImageInitStateEv'/>
+<fun r='_ZNK3egl12ImageSibling26setSourceEGLImageInitStateEN2gl9InitStateE'/>
+<fun r='_ZNK3egl12ImageSibling12isRenderableEPKN2gl7ContextEjRKNS1_10ImageIndexE'/>
+<fun r='_ZN3egl12ImageSibling14setTargetImageEPKN2gl7ContextEPNS_5ImageE'/>
+<fun r='_ZN3egl12ImageSibling12orphanImagesEPKN2gl7ContextE'/>
+<fun r='_ZN3egl12ImageSibling14notifySiblingsEN5angle14SubjectMessageE'/>
+<fun r='_ZN3egl12ImageSibling14addImageSourceEPNS_5ImageE'/>
+<fun r='_ZN3egl12ImageSibling17removeImageSourceEPNS_5ImageE'/>
+<mbr r='egl::ImageSibling::mSourcesOf' o='832' t='std::set&lt;Image *&gt;'/>
+<mbr r='egl::ImageSibling::mTargetOf' o='1216' t='BindingPointer&lt;egl::Image&gt;'/>

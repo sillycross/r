@@ -1,0 +1,22 @@
+<dec f='include/wayland-server-protocol.h' l='1658' type='void (*)(struct wl_client *, struct wl_resource *, uint32_t, const char *)'/>
+<offset>0</offset>
+<doc f='include/wayland-server-protocol.h' l='1638'>/**
+	 * accept one of the offered mime types
+	 *
+	 * Indicate that the client can accept the given mime type, or
+	 * NULL for not accepted.
+	 *
+	 * For objects of version 2 or older, this request is used by the
+	 * client to give feedback whether the client can receive the given
+	 * mime type, or NULL if none is accepted; the feedback does not
+	 * determine whether the drag-and-drop operation succeeds or not.
+	 *
+	 * For objects of version 3 or newer, this request determines the
+	 * final result of the drag-and-drop operation. If the end result
+	 * is that no mime types were accepted, the drag-and-drop operation
+	 * will be cancelled and the corresponding drag source will receive
+	 * wl_data_source.cancelled. Clients may still use this event in
+	 * conjunction with wl_data_source.action for feedback.
+	 * @param serial serial number of the accept request
+	 * @param mime_type mime type accepted by the client
+	 */</doc>

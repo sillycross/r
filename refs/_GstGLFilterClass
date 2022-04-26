@@ -1,0 +1,23 @@
+<use f='include/gstreamer-1.0/gst/gl/gstgl_fwd.h' l='94'/>
+<def f='include/gstreamer-1.0/gst/gl/gstglfilter.h' l='108' ll='123'/>
+<size>952</size>
+<doc f='include/gstreamer-1.0/gst/gl/gstglfilter.h' l='95'>/**
+ * GstGLFilterClass:
+ * @set_caps: mirror from #GstBaseTransform
+ * @filter: perform operations on the input and output buffers.  In general,
+ *          you should avoid using this method if at all possible. One valid
+ *          use-case for using this is keeping previous buffers for future calculations.
+ *          Note: If @filter exists, then @filter_texture is not run
+ * @filter_texture: given @in_tex, transform it into @out_tex.  Not used
+ *                  if @filter exists
+ * @init_fbo: perform initialization when the Framebuffer object is created
+ * @transform_internal_caps: Perform sub-class specific modifications of the
+ *   caps to be processed between upload on input and before download for output.
+ */</doc>
+<mbr r='_GstGLFilterClass::parent_class' o='0' t='GstGLBaseFilterClass'/>
+<mbr r='_GstGLFilterClass::set_caps' o='7040' t='gboolean (*)(GstGLFilter *, GstCaps *, GstCaps *)'/>
+<mbr r='_GstGLFilterClass::filter' o='7104' t='gboolean (*)(GstGLFilter *, GstBuffer *, GstBuffer *)'/>
+<mbr r='_GstGLFilterClass::filter_texture' o='7168' t='gboolean (*)(GstGLFilter *, GstGLMemory *, GstGLMemory *)'/>
+<mbr r='_GstGLFilterClass::init_fbo' o='7232' t='gboolean (*)(GstGLFilter *)'/>
+<mbr r='_GstGLFilterClass::transform_internal_caps' o='7296' t='GstCaps *(*)(GstGLFilter *, GstPadDirection, GstCaps *, GstCaps *)'/>
+<mbr r='_GstGLFilterClass::_padding' o='7360' t='gpointer [4]'/>

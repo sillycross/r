@@ -1,0 +1,33 @@
+<dec f='include/xcb/xproto.h' l='8740' type='xcb_query_text_extents_cookie_t xcb_query_text_extents(xcb_connection_t * c, xcb_fontable_t font, uint32_t string_len, const xcb_char2b_t * string)'/>
+<doc f='include/xcb/xproto.h' l='8707'>/**
+ * @brief get text extents
+ *
+ * @param c The connection
+ * @param font The \a font to calculate text extents in. You can also pass a graphics context.
+ * @param string_len The number of characters in \a string.
+ * @param string The text to get text extents for.
+ * @return A cookie
+ *
+ * Query text extents from the X11 server. This request returns the bounding box
+ * of the specified 16-bit character string in the specified \a font or the font
+ * contained in the specified graphics context.
+ * 
+ * `font_ascent` is set to the maximum of the ascent metrics of all characters in
+ * the string. `font_descent` is set to the maximum of the descent metrics.
+ * `overall_width` is set to the sum of the character-width metrics of all
+ * characters in the string. For each character in the string, let W be the sum of
+ * the character-width metrics of all characters preceding it in the string. Let L
+ * be the left-side-bearing metric of the character plus W. Let R be the
+ * right-side-bearing metric of the character plus W. The lbearing member is set
+ * to the minimum L of all characters in the string. The rbearing member is set to
+ * the maximum R.
+ * 
+ * For fonts defined with linear indexing rather than 2-byte matrix indexing, each
+ * `xcb_char2b_t` structure is interpreted as a 16-bit number with byte1 as the
+ * most significant byte. If the font has no defined default character, undefined
+ * characters in the string are taken to have all zero metrics.
+ * 
+ * Characters with all zero metrics are ignored. If the font has no defined
+ * default_char, the undefined characters in the string are also ignored.
+ *
+ */</doc>

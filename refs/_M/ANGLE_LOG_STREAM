@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/ThirdParty/ANGLE/src/common/debug.h' l='237'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/common/debug.h' l='229'>// We use the preprocessor&apos;s merging operator, &quot;##&quot;, so that, e.g.,
+// ANGLE_LOG(EVENT) becomes the token COMPACT_ANGLE_LOG_EVENT.  There&apos;s some funny
+// subtle difference between ostream member streaming functions (e.g.,
+// ostream::operator&lt;&lt;(int) and ostream non-member streaming functions
+// (e.g., ::operator&lt;&lt;(ostream&amp;, string&amp;): it turns out that it&apos;s
+// impossible to stream something like a string directly to an unnamed
+// ostream. We employ a neat hack by calling the stream() member
+// function of LogMessage which seems to avoid the problem.</doc>

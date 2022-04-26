@@ -1,0 +1,10 @@
+<dec f='WebKit/Source/WebCore/accessibility/AccessibilityObject.h' l='576' type='WebCore::PlainTextRange WebCore::AccessibilityObject::doAXRangeForPosition(const WebCore::IntPoint &amp; ) const'/>
+<inh f='WebKit/Source/WebCore/accessibility/AccessibilityObjectInterface.h' l='1311' c='_ZNK7WebCore12AXCoreObject20doAXRangeForPositionERKNS_8IntPointE'/>
+<def f='WebKit/Source/WebCore/accessibility/AccessibilityObject.cpp' l='1534' ll='1541' type='WebCore::PlainTextRange WebCore::AccessibilityObject::doAXRangeForPosition(const WebCore::IntPoint &amp; point) const'/>
+<doc f='WebKit/Source/WebCore/accessibility/AccessibilityObject.cpp' l='1528'>// The composed character range in the text associated with this accessibility object that
+// is specified by the given screen coordinates. This parameterized attribute returns the
+// complete range of characters (including surrogate pairs of multi-byte glyphs) at the given
+// screen coordinates.
+// NOTE: This varies from AppKit when the point is below the last line. AppKit returns an
+// an error in that case. We return textControl-&gt;text().length(), 1. Does this matter?</doc>
+<use f='WebKit/Source/WebCore/accessibility/atk/WebKitAccessibleInterfaceText.cpp' l='1083' u='c' c='_ZL36webkitAccessibleTextGetOffsetAtPointP8_AtkTextii12AtkCoordType'/>

@@ -1,0 +1,29 @@
+<def f='WebKit/Source/WebCore/rendering/TextDecorationPainter.cpp' l='85' ll='118' type='void WebCore::strokeWavyTextDecoration(WebCore::GraphicsContext &amp; context, const WebCore::FloatRect &amp; rect, float fontSize)'/>
+<use f='WebKit/Source/WebCore/rendering/TextDecorationPainter.cpp' l='224' u='c' c='_ZN7WebCore21TextDecorationPainter19paintTextDecorationERKNS_7TextRunERKNS_10FloatPointES6_'/>
+<doc f='WebKit/Source/WebCore/rendering/TextDecorationPainter.cpp' l='58'>/*
+ * Draw one cubic Bezier curve and repeat the same pattern long the the decoration&apos;s axis.
+ * The start point (p1), controlPoint1, controlPoint2 and end point (p2) of the Bezier curve
+ * form a diamond shape:
+ *
+ *                              step
+ *                         |-----------|
+ *
+ *                   controlPoint1
+ *                         +
+ *
+ *
+ *                  . .
+ *                .     .
+ *              .         .
+ * (x1, y1) p1 +           .            + p2 (x2, y2) - &lt;--- Decoration&apos;s axis
+ *                          .         .               |
+ *                            .     .                 |
+ *                              . .                   | controlPointDistance
+ *                                                    |
+ *                                                    |
+ *                         +                          -
+ *                   controlPoint2
+ *
+ *             |-----------|
+ *                 step
+ */</doc>

@@ -1,0 +1,25 @@
+<use f='include/gtk-3.0/gdk/gdkevents.h' l='147'/>
+<def f='include/gtk-3.0/gdk/gdkevents.h' l='1349' ll='1356'/>
+<size>32</size>
+<doc f='include/gtk-3.0/gdk/gdkevents.h' l='1333'>/**
+ * GdkEventPadGroupMode:
+ * @type: the type of the event (%GDK_PAD_GROUP_MODE).
+ * @window: the window which received the event.
+ * @send_event: %TRUE if the event was sent explicitly.
+ * @time: the time of the event in milliseconds.
+ * @group: the pad group that is switching mode. A %GDK_SOURCE_TABLET_PAD
+ *   device may have one or more groups containing a set of buttons/rings/strips
+ *   each.
+ * @mode: The new mode of @group. Different groups in a %GDK_SOURCE_TABLET_PAD
+ *   device may have different current modes.
+ *
+ * Generated during %GDK_SOURCE_TABLET_PAD mode switches in a group.
+ *
+ * Since: 3.22
+ */</doc>
+<mbr r='_GdkEventPadGroupMode::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventPadGroupMode::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventPadGroupMode::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventPadGroupMode::time' o='160' t='guint32'/>
+<mbr r='_GdkEventPadGroupMode::group' o='192' t='guint'/>
+<mbr r='_GdkEventPadGroupMode::mode' o='224' t='guint'/>

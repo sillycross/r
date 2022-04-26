@@ -1,0 +1,22 @@
+<use f='WebKit/Source/WebCore/worklets/WorkletGlobalScope.h' l='128'/>
+<inh f='WebKit/Source/WebCore/dom/messageports/MessagePortChannelProvider.h' l='38' c='WebCore::MessagePortChannelProvider'/>
+<def f='WebKit/Source/WebCore/dom/messageports/WorkerMessagePortChannelProvider.h' l='37' ll='57'/>
+<use f='WebKit/Source/WebCore/workers/WorkerGlobalScope.h' l='203'/>
+<size>40</size>
+<fun r='_ZN7WebCore32WorkerMessagePortChannelProviderC1ERNS_26WorkerOrWorkletGlobalScopeE'/>
+<fun r='_ZN7WebCore32WorkerMessagePortChannelProviderD1Ev'/>
+<fun r='_ZN7WebCore32WorkerMessagePortChannelProvider27createNewMessagePortChannelERKNS_21MessagePortIdentifierES3_'/>
+<fun r='_ZN7WebCore32WorkerMessagePortChannelProvider38entangleLocalPortInThisProcessToRemoteERKNS_21MessagePortIdentifierES3_'/>
+<fun r='_ZN7WebCore32WorkerMessagePortChannelProvider23messagePortDisentangledERKNS_21MessagePortIdentifierE'/>
+<fun r='_ZN7WebCore32WorkerMessagePortChannelProvider17messagePortClosedERKNS_21MessagePortIdentifierE'/>
+<fun r='_ZN7WebCore32WorkerMessagePortChannelProvider19postMessageToRemoteEONS_23MessageWithMessagePortsERKNS_21MessagePortIdentifierE'/>
+<fun r='_ZN7WebCore32WorkerMessagePortChannelProvider22takeAllMessagesForPortERKNS_21MessagePortIdentifierEON3WTF17CompletionHandlerIFvONS4_6VectorINS_23Messa14733125'/>
+<fun r='_ZN7WebCore32WorkerMessagePortChannelProvider26checkRemotePortForActivityERKNS_21MessagePortIdentifierEON3WTF17CompletionHandlerIFvNS_26MessagePortCha8754169'/>
+<mbr r='WebCore::WorkerMessagePortChannelProvider::m_scope' o='64' t='WebCore::WorkerOrWorkletGlobalScope &amp;'/>
+<mbr r='WebCore::WorkerMessagePortChannelProvider::m_lastCallbackIdentifier' o='128' t='uint64_t'/>
+<mbr r='WebCore::WorkerMessagePortChannelProvider::m_takeAllMessagesCallbacks' o='192' t='HashMap&lt;uint64_t, CompletionHandler&lt;void (Vector&lt;WebCore::MessageWithMessagePorts&gt; &amp;&amp;, Function&lt;void ()&gt; &amp;&amp;)&gt; &gt;'/>
+<mbr r='WebCore::WorkerMessagePortChannelProvider::m_activityCallbacks' o='256' t='HashMap&lt;uint64_t, CompletionHandler&lt;void (WebCore::MessagePortChannelProvider::HasActivity)&gt; &gt;'/>
+<use f='WebKit/Source/WebCore/worklets/WorkletGlobalScope.cpp' l='167' c='_ZN7WebCore18WorkletGlobalScope26messagePortChannelProviderEv'/>
+<size>40</size>
+<use f='WebKit/Source/WebCore/workers/WorkerGlobalScope.cpp' l='444' c='_ZN7WebCore17WorkerGlobalScope26messagePortChannelProviderEv'/>
+<size>40</size>

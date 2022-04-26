@@ -1,0 +1,15 @@
+<dec f='include/xcb/xproto.h' l='11736' type='xcb_list_extensions_reply_t * xcb_list_extensions_reply(xcb_connection_t * c, xcb_list_extensions_cookie_t cookie, xcb_generic_error_t ** e)'/>
+<doc f='include/xcb/xproto.h' l='11721'>/**
+ * Return the reply
+ * @param c      The connection
+ * @param cookie The cookie
+ * @param e      The xcb_generic_error_t supplied
+ *
+ * Returns the reply of the request asked by
+ *
+ * The parameter @p e supplied to this function must be NULL if
+ * xcb_list_extensions_unchecked(). is used.
+ * Otherwise, it stores the error if any.
+ *
+ * The returned value must be freed by the caller using free().
+ */</doc>

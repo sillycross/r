@@ -1,0 +1,17 @@
+<dec f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='391' type='int'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='395' u='r' c='_ZNK3JSC17CallFrameShuffler8newAsOldENS_15VirtualRegisterE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='45' u='w' c='_ZN3JSC17CallFrameShufflerC1ERNS_12CCallHelpersERKNS_20CallFrameShuffleDataE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='101' u='r' c='_ZNK3JSC17CallFrameShuffler4dumpERN3WTF11PrintStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='101' u='r' c='_ZNK3JSC17CallFrameShuffler4dumpERN3WTF11PrintStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='333' u='w' c='_ZN3JSC17CallFrameShuffler19extendFrameIfNeededEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='349' u='w' c='_ZN3JSC17CallFrameShuffler18prepareForSlowPathEv'/>
+<offset>512</offset>
+<doc f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='382'>// This is the distance, in slots, between the base of the new
+    // frame and the base of the old frame. It could be negative when
+    // preparing for a tail call to a function with smaller argument
+    // count.
+    //
+    // We will overwrite this appropriately for slow path calls, but
+    // we initialize it as if doing a fast path for the spills we
+    // could do while undecided (typically while calling acquireGPR()
+    // for a polymorphic call).</doc>

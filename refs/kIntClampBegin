@@ -1,0 +1,10 @@
+<def f='WebKit/Source/ThirdParty/ANGLE/src/third_party/compiler/ArrayBoundsClamper.cpp' l='39' type='const char *'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/third_party/compiler/ArrayBoundsClamper.cpp' l='109' u='r' c='_ZNK2sh18ArrayBoundsClamper32OutputClampingFunctionDefinitionERNS_13TInfoSinkBaseE'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/third_party/compiler/ArrayBoundsClamper.cpp' l='30'>// The built-in &apos;clamp&apos; instruction only accepts floats and returns a float.  I
+// iterated a few times with our driver team who examined the output from our
+// compiler - they said the multiple casts generates more code than a single
+// function call.  An inline ternary operator might have been better, but since
+// the index value might be an expression itself, we&apos;d have to make temporary
+// variables to avoid evaluating the expression multiple times.  And making
+// temporary variables was difficult because ANGLE would then need to make more
+// brutal changes to the expression tree.</doc>

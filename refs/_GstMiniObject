@@ -1,0 +1,24 @@
+<use f='include/gstreamer-1.0/gst/gstminiobject.h' l='37'/>
+<def f='include/gstreamer-1.0/gst/gstminiobject.h' l='203' ll='219'/>
+<size>64</size>
+<doc f='include/gstreamer-1.0/gst/gstminiobject.h' l='191'>/**
+ * GstMiniObject: (ref-func gst_mini_object_ref) (unref-func gst_mini_object_unref) (set-value-func g_value_set_boxed) (get-value-func g_value_get_boxed)
+ * @type: the GType of the object
+ * @refcount: atomic refcount
+ * @lockstate: atomic state of the locks
+ * @flags: extra flags.
+ * @copy: a copy function
+ * @dispose: a dispose function
+ * @free: the free function
+ *
+ * Base class for refcounted lightweight objects.
+ */</doc>
+<mbr r='_GstMiniObject::type' o='0' t='GType'/>
+<mbr r='_GstMiniObject::refcount' o='64' t='gint'/>
+<mbr r='_GstMiniObject::lockstate' o='96' t='gint'/>
+<mbr r='_GstMiniObject::flags' o='128' t='guint'/>
+<mbr r='_GstMiniObject::copy' o='192' t='GstMiniObjectCopyFunction'/>
+<mbr r='_GstMiniObject::dispose' o='256' t='GstMiniObjectDisposeFunction'/>
+<mbr r='_GstMiniObject::free' o='320' t='GstMiniObjectFreeFunction'/>
+<mbr r='_GstMiniObject::priv_uint' o='384' t='guint'/>
+<mbr r='_GstMiniObject::priv_pointer' o='448' t='gpointer'/>

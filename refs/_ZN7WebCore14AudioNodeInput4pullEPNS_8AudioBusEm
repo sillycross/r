@@ -1,0 +1,11 @@
+<dec f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeInput.h' l='69' type='WebCore::AudioBus * WebCore::AudioNodeInput::pull(WebCore::AudioBus * inPlaceBus, size_t framesToProcess)'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioBasicInspectorNode.cpp' l='52' u='c' c='_ZN7WebCore23AudioBasicInspectorNode10pullInputsEm'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioBasicProcessorNode.cpp' l='102' u='c' c='_ZN7WebCore23AudioBasicProcessorNode10pullInputsEm'/>
+<doc f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeInput.h' l='64'>// pull() processes all of the AudioNodes connected to us.
+    // In the case of multiple connections it sums the result into an internal summing bus.
+    // In the single connection case, it allows in-place processing where possible using inPlaceBus.
+    // It returns the bus which it rendered into, returning inPlaceBus if in-place processing was performed.
+    // Called from context&apos;s audio thread.</doc>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioDestinationNode.cpp' l='97' u='c' c='_ZN7WebCore20AudioDestinationNode13renderQuantumEPNS_8AudioBusEmRKNS_15AudioIOPositionE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.cpp' l='501' u='c' c='_ZN7WebCore9AudioNode10pullInputsEm'/>
+<def f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeInput.cpp' l='221' ll='246' type='WebCore::AudioBus * WebCore::AudioNodeInput::pull(WebCore::AudioBus * inPlaceBus, size_t framesToProcess)'/>

@@ -1,0 +1,70 @@
+<def f='WebKit/bmalloc/Headers/bmalloc/PerProcess.h' l='53' ll='61'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/PerProcess.h' l='60'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/PerProcess.h' l='71' c='_ZN7bmalloc17getPerProcessDataEjPKcmm'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/PerProcess.h' l='122'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/PerProcess.h' l='129'/>
+<size>48</size>
+<doc f='WebKit/bmalloc/Headers/bmalloc/PerProcess.h' l='34'>// Usage:
+//     Object* object = PerProcess&lt;Object&gt;::get();
+//     x = object-&gt;field-&gt;field;
+//
+// Object will be instantiated only once, even in the face of concurrency.
+//
+// NOTE: If you observe global side-effects of the Object constructor, be
+// sure to lock the Object mutex. For example:
+//
+// Object() : m_field(...) { globalFlag = true }
+//
+// Object* object = PerProcess&lt;Object&gt;::get();
+// x = object-&gt;m_field; // OK
+// if (globalFlag) { ... } // Undefined behavior.
+//
+// LockHolder lock(PerProcess&lt;Object&gt;::mutex());
+// Object* object = PerProcess&lt;Object&gt;::get(lock);
+// if (globalFlag) { ... } // OK.</doc>
+<mbr r='bmalloc::PerProcessData::disambiguator' o='0' t='const char *'/>
+<mbr r='bmalloc::PerProcessData::memory' o='64' t='void *'/>
+<mbr r='bmalloc::PerProcessData::size' o='128' t='size_t'/>
+<mbr r='bmalloc::PerProcessData::alignment' o='192' t='size_t'/>
+<mbr r='bmalloc::PerProcessData::mutex' o='256' t='bmalloc::Mutex'/>
+<mbr r='bmalloc::PerProcessData::isInitialized' o='272' t='bool'/>
+<mbr r='bmalloc::PerProcessData::next' o='320' t='bmalloc::PerProcessData *'/>
+<def f='WebKit/Source/bmalloc/bmalloc/PerProcess.h' l='53' ll='61'/>
+<use f='WebKit/Source/bmalloc/bmalloc/PerProcess.h' l='60'/>
+<use f='WebKit/Source/bmalloc/bmalloc/PerProcess.h' l='71' c='_ZN7bmalloc17getPerProcessDataEjPKcmm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/PerProcess.h' l='122'/>
+<use f='WebKit/Source/bmalloc/bmalloc/PerProcess.h' l='129'/>
+<size>48</size>
+<doc f='WebKit/Source/bmalloc/bmalloc/PerProcess.h' l='34'>// Usage:
+//     Object* object = PerProcess&lt;Object&gt;::get();
+//     x = object-&gt;field-&gt;field;
+//
+// Object will be instantiated only once, even in the face of concurrency.
+//
+// NOTE: If you observe global side-effects of the Object constructor, be
+// sure to lock the Object mutex. For example:
+//
+// Object() : m_field(...) { globalFlag = true }
+//
+// Object* object = PerProcess&lt;Object&gt;::get();
+// x = object-&gt;m_field; // OK
+// if (globalFlag) { ... } // Undefined behavior.
+//
+// LockHolder lock(PerProcess&lt;Object&gt;::mutex());
+// Object* object = PerProcess&lt;Object&gt;::get(lock);
+// if (globalFlag) { ... } // OK.</doc>
+<mbr r='bmalloc::PerProcessData::disambiguator' o='0' t='const char *'/>
+<mbr r='bmalloc::PerProcessData::memory' o='64' t='void *'/>
+<mbr r='bmalloc::PerProcessData::size' o='128' t='size_t'/>
+<mbr r='bmalloc::PerProcessData::alignment' o='192' t='size_t'/>
+<mbr r='bmalloc::PerProcessData::mutex' o='256' t='bmalloc::Mutex'/>
+<mbr r='bmalloc::PerProcessData::isInitialized' o='272' t='bool'/>
+<mbr r='bmalloc::PerProcessData::next' o='320' t='bmalloc::PerProcessData *'/>
+<use f='WebKit/Source/bmalloc/bmalloc/PerProcess.cpp' l='42'/>
+<use f='WebKit/Source/bmalloc/bmalloc/PerProcess.cpp' l='61' c='_ZN7bmalloc17getPerProcessDataEjPKcmm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/PerProcess.cpp' l='65' c='_ZN7bmalloc17getPerProcessDataEjPKcmm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/PerProcess.cpp' l='67' c='_ZN7bmalloc17getPerProcessDataEjPKcmm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/PerProcess.cpp' l='79' c='_ZN7bmalloc17getPerProcessDataEjPKcmm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/PerProcess.cpp' l='80' c='_ZN7bmalloc17getPerProcessDataEjPKcmm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/PerProcess.cpp' l='80' c='_ZN7bmalloc17getPerProcessDataEjPKcmm'/>
+<size>48</size>

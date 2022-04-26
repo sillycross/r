@@ -1,0 +1,46 @@
+<def f='WebKit/Source/WebCore/page/SpatialNavigation.h' l='92' ll='96'/>
+<use f='WebKit/Source/WebCore/page/SpatialNavigation.h' l='124'/>
+<doc f='WebKit/Source/WebCore/page/SpatialNavigation.h' l='49'>// Spatially speaking, two given elements in a web page can be:
+// 1) Fully aligned: There is a full intersection between the rects, either
+//    vertically or horizontally.
+//
+// * Horizontally       * Vertically
+//    _
+//   |_|                   _ _ _ _ _ _
+//   |_|...... _          |_|_|_|_|_|_|
+//   |_|      |_|         .       .
+//   |_|......|_|   OR    .       .
+//   |_|      |_|         .       .
+//   |_|......|_|          _ _ _ _
+//   |_|                  |_|_|_|_|
+//
+//
+// 2) Partially aligned: There is a partial intersection between the rects, either
+//    vertically or horizontally.
+//
+// * Horizontally       * Vertically
+//    _                   _ _ _ _ _
+//   |_|                 |_|_|_|_|_|
+//   |_|.... _      OR           . .
+//   |_|    |_|                  . .
+//   |_|....|_|                  ._._ _
+//          |_|                  |_|_|_|
+//          |_|
+//
+// 3) Or, otherwise, not aligned at all.
+//
+// * Horizontally       * Vertically
+//         _              _ _ _ _
+//        |_|            |_|_|_|_|
+//        |_|                    .
+//        |_|                     .
+//       .          OR             .
+//    _ .                           ._ _ _ _ _
+//   |_|                            |_|_|_|_|_|
+//   |_|
+//   |_|
+//
+// &quot;Totally Aligned&quot; elements are preferable candidates to move
+// focus to over &quot;Partially Aligned&quot; ones, that on its turns are
+// more preferable than &quot;Not Aligned&quot;.</doc>
+<use f='WebKit/Source/WebCore/page/SpatialNavigation.cpp' l='95' c='_ZN7WebCoreL17alignmentForRectsENS_14FocusDirectionERKNS_10LayoutRectES3_RKNS_10LayoutSizeE'/>

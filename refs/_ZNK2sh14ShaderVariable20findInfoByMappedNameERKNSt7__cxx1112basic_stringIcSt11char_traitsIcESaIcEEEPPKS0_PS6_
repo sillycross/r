@@ -1,0 +1,26 @@
+<dec f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='120' type='bool sh::ShaderVariable::findInfoByMappedName(const std::string &amp; mappedFullName, const sh::ShaderVariable ** leafVar, std::string * originalFullName) const'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='109'>// All of the shader&apos;s variables are described using nested data
+    // structures. This is needed in order to disambiguate similar looking
+    // types, such as two structs containing the same fields, but in
+    // different orders. &quot;findInfoByMappedName&quot; provides an easy query for
+    // users to dive into the data structure and fetch the unique variable
+    // instance corresponding to a dereferencing chain of the top-level
+    // variable.
+    // Given a mapped name like &apos;a[0].b.c[0]&apos;, return the ShaderVariable
+    // that defines &apos;c&apos; in |leafVar|, and the original name &apos;A[0].B.C[0]&apos;
+    // in |originalName|, based on the assumption that |this| defines &apos;a&apos;.
+    // If no match is found, return false.</doc>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderVars.cpp' l='218' ll='286' type='bool sh::ShaderVariable::findInfoByMappedName(const std::string &amp; mappedFullName, const sh::ShaderVariable ** leafVar, std::string * originalFullName) const'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderVars.cpp' l='276' u='c' c='_ZNK2sh14ShaderVariable20findInfoByMappedNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPPKS0_PS6_'/>
+<dec f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='120' type='bool sh::ShaderVariable::findInfoByMappedName(const std::string &amp; mappedFullName, const sh::ShaderVariable ** leafVar, std::string * originalFullName) const'/>
+<doc f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='109'>// All of the shader&apos;s variables are described using nested data
+    // structures. This is needed in order to disambiguate similar looking
+    // types, such as two structs containing the same fields, but in
+    // different orders. &quot;findInfoByMappedName&quot; provides an easy query for
+    // users to dive into the data structure and fetch the unique variable
+    // instance corresponding to a dereferencing chain of the top-level
+    // variable.
+    // Given a mapped name like &apos;a[0].b.c[0]&apos;, return the ShaderVariable
+    // that defines &apos;c&apos; in |leafVar|, and the original name &apos;A[0].B.C[0]&apos;
+    // in |originalName|, based on the assumption that |this| defines &apos;a&apos;.
+    // If no match is found, return false.</doc>

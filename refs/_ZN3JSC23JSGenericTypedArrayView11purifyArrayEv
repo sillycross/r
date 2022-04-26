@@ -1,0 +1,52 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGenericTypedArrayView.h' l='349' ll='354' type='void JSC::JSGenericTypedArrayView::purifyArray()'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGenericTypedArrayView.h' l='366' u='c' c='_ZN3JSC23JSGenericTypedArrayView9sortFloatEv'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGenericTypedArrayView.h' l='324'>// The ECMA 6 spec states that floating point Typed Arrays should have the following ordering:
+    //
+    // -Inifinity &lt; negative finite numbers &lt; -0.0 &lt; 0.0 &lt; positive finite numbers &lt; Infinity &lt; NaN
+    // Note: regardless of the sign or exact representation of a NaN it is greater than all other values.
+    //
+    // An interesting fact about IEEE 754 floating point numbers is that have an adjacent representation
+    // i.e. for any finite floating point x there does not exist a finite floating point y such that
+    // ((float) ((int) x + 1)) &gt; y &gt; x (where int represents a signed bit integer with the same number
+    // of bits as float). Thus, if we have an array of floating points if we view it as an
+    // array of signed bit integers it will sort in the format we desire. Note, denormal
+    // numbers fit this property as they are floating point numbers with a exponent field of all
+    // zeros so they will be closer to the signed zeros than any normalized number.
+    //
+    // All the processors we support, however, use twos complement. Fortunately, if you compare a signed
+    // bit number as if it were twos complement the result will be correct assuming both numbers are not
+    // negative. e.g.
+    //
+    //    - &lt;=&gt; - = reversed (-30 &gt; -20 = true)
+    //    + &lt;=&gt; + = ordered (30 &gt; 20 = true)
+    //    - &lt;=&gt; + = ordered (-30 &gt; 20 = false)
+    //    + &lt;=&gt; - = ordered (30 &gt; -20 = true)
+    //
+    // For NaN, we normalize the NaN to a peticular representation; the sign bit is 0, all exponential bits
+    // are 1 and only the MSB of the mantissa is 1. So, NaN is recognized as the largest integral numbers.</doc>
+<def f='WebKit/Source/JavaScriptCore/runtime/JSGenericTypedArrayView.h' l='349' ll='354' type='void JSC::JSGenericTypedArrayView::purifyArray()'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGenericTypedArrayView.h' l='366' u='c' c='_ZN3JSC23JSGenericTypedArrayView9sortFloatEv'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSGenericTypedArrayView.h' l='324'>// The ECMA 6 spec states that floating point Typed Arrays should have the following ordering:
+    //
+    // -Inifinity &lt; negative finite numbers &lt; -0.0 &lt; 0.0 &lt; positive finite numbers &lt; Infinity &lt; NaN
+    // Note: regardless of the sign or exact representation of a NaN it is greater than all other values.
+    //
+    // An interesting fact about IEEE 754 floating point numbers is that have an adjacent representation
+    // i.e. for any finite floating point x there does not exist a finite floating point y such that
+    // ((float) ((int) x + 1)) &gt; y &gt; x (where int represents a signed bit integer with the same number
+    // of bits as float). Thus, if we have an array of floating points if we view it as an
+    // array of signed bit integers it will sort in the format we desire. Note, denormal
+    // numbers fit this property as they are floating point numbers with a exponent field of all
+    // zeros so they will be closer to the signed zeros than any normalized number.
+    //
+    // All the processors we support, however, use twos complement. Fortunately, if you compare a signed
+    // bit number as if it were twos complement the result will be correct assuming both numbers are not
+    // negative. e.g.
+    //
+    //    - &lt;=&gt; - = reversed (-30 &gt; -20 = true)
+    //    + &lt;=&gt; + = ordered (30 &gt; 20 = true)
+    //    - &lt;=&gt; + = ordered (-30 &gt; 20 = false)
+    //    + &lt;=&gt; - = ordered (30 &gt; -20 = true)
+    //
+    // For NaN, we normalize the NaN to a peticular representation; the sign bit is 0, all exponential bits
+    // are 1 and only the MSB of the mantissa is 1. So, NaN is recognized as the largest integral numbers.</doc>

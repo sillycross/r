@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderTheme.h' l='127' type='void WebCore::RenderTheme::adjustRepaintRect(const WebCore::RenderObject &amp; , WebCore::FloatRect &amp; )'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderTheme.h' l='125'>// Some controls may spill out of their containers (e.g., the check on an OS X checkbox).  When these controls repaint,
+    // the theme needs to communicate this inflated rect to the engine so that it can invalidate the whole control.</doc>
+<def f='WebKit/Source/WebCore/rendering/RenderTheme.cpp' l='769' ll='778' type='void WebCore::RenderTheme::adjustRepaintRect(const WebCore::RenderObject &amp; renderer, WebCore::FloatRect &amp; rect)'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBlock.cpp' l='759' u='c' c='_ZN7WebCore11RenderBlock26addVisualOverflowFromThemeEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderFragmentedFlow.cpp' l='1056' u='c' c='_ZN7WebCore20RenderFragmentedFlow35addFragmentsVisualOverflowFromThemeEPKNS_11RenderBlockE'/>
+<use f='WebKit/Source/WebCore/accessibility/AccessibilityObject.cpp' l='790' u='c' c='_ZN7WebCore19AccessibilityObject19boundingBoxForQuadsEPNS_12RenderObjectERKN3WTF6VectorINS_9FloatQuadELm0ENS3_15CrashOnOverflowELm16ENS3_10FastMallocEEE'/>

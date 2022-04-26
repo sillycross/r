@@ -1,0 +1,73 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VM.h' l='1023'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.h' l='1023'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerOrigin.h' l='56' c='_ZN3JSC8Profiler6OriginC1ERNS0_8DatabaseEPNS_9CodeBlockENS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerOriginStack.h' l='50' c='_ZN3JSC8Profiler11OriginStackC1ERNS0_8DatabaseEPNS_9CodeBlockERKNS_10CodeOriginE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerCompilation.h' l='59' c='_ZN3JSC8Profiler11Compilation20addProfiledBytecodesERNS0_8DatabaseEPNS_9CodeBlockE'/>
+<def f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.h' l='41' ll='92'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.h' l='42' c='_ZN3JSC8Profiler8DatabaseC1ERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.h' l='42' c='_ZN3JSC8Profiler8DatabaseaSERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.h' l='42' c='_ZN3JSC8Profiler8DatabaseaSERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.h' l='78' c='_ZN3JSC8Profiler8Database25removeFirstAtExitDatabaseEv'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.h' l='90'/>
+<size>120</size>
+<fun r='_ZN3JSC8Profiler8DatabaseC1ERKS1_'/>
+<fun r='_ZN3JSC8Profiler8DatabaseC1ERNS_2VME'/>
+<fun r='_ZN3JSC8Profiler8DatabaseD1Ev'/>
+<fun r='_ZNK3JSC8Profiler8Database10databaseIDEv'/>
+<fun r='_ZN3JSC8Profiler8Database18ensureBytecodesForEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC8Profiler8Database17notifyDestructionEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC8Profiler8Database14addCompilationEPNS_9CodeBlockEON3WTF3RefINS0_11CompilationENS4_12RawPtrTraitsIS6_EEEE'/>
+<fun r='_ZNK3JSC8Profiler8Database4toJSEPNS_14JSGlobalObjectE'/>
+<fun r='_ZNK3JSC8Profiler8Database6toJSONEv'/>
+<fun r='_ZNK3JSC8Profiler8Database4saveEPKc'/>
+<fun r='_ZN3JSC8Profiler8Database20registerToSaveAtExitEPKc'/>
+<fun r='_ZN3JSC8Profiler8Database8logEventEPNS_9CodeBlockEPKcRKN3WTF7CStringE'/>
+<fun r='_ZN3JSC8Profiler8Database18ensureBytecodesForERKN3WTF14AbstractLockerEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC8Profiler8Database19addDatabaseToAtExitEv'/>
+<fun r='_ZN3JSC8Profiler8Database24removeDatabaseFromAtExitEv'/>
+<fun r='_ZNK3JSC8Profiler8Database17performAtExitSaveEv'/>
+<fun r='_ZN3JSC8Profiler8Database25removeFirstAtExitDatabaseEv'/>
+<fun r='_ZN3JSC8Profiler8Database14atExitCallbackEv'/>
+<mbr r='JSC::Profiler::Database::m_databaseID' o='0' t='int'/>
+<mbr r='JSC::Profiler::Database::m_vm' o='64' t='JSC::VM &amp;'/>
+<mbr r='JSC::Profiler::Database::m_bytecodes' o='128' t='SegmentedVector&lt;JSC::Profiler::Bytecodes&gt;'/>
+<mbr r='JSC::Profiler::Database::m_bytecodesMap' o='320' t='HashMap&lt;JSC::CodeBlock *, JSC::Profiler::Bytecodes *&gt;'/>
+<mbr r='JSC::Profiler::Database::m_compilations' o='384' t='Vector&lt;Ref&lt;JSC::Profiler::Compilation&gt; &gt;'/>
+<mbr r='JSC::Profiler::Database::m_compilationMap' o='512' t='HashMap&lt;JSC::CodeBlock *, Ref&lt;JSC::Profiler::Compilation&gt; &gt;'/>
+<mbr r='JSC::Profiler::Database::m_events' o='576' t='Vector&lt;JSC::Profiler::Event&gt;'/>
+<mbr r='JSC::Profiler::Database::m_shouldSaveAtExit' o='704' t='bool'/>
+<mbr r='JSC::Profiler::Database::m_atExitSaveFilename' o='768' t='WTF::CString'/>
+<mbr r='JSC::Profiler::Database::m_nextRegisteredDatabase' o='832' t='JSC::Profiler::Database *'/>
+<mbr r='JSC::Profiler::Database::m_lock' o='896' t='WTF::Lock'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExitCompiler.cpp' l='230' c='_ZN3JSC3FTLL11compileStubERNS_2VMEjPNS0_7JITCodeERNS0_7OSRExitEPNS_9CodeBlockE'/>
+<size>120</size>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerCompilation.cpp' l='49' c='_ZN3JSC8Profiler11Compilation20addProfiledBytecodesERNS0_8DatabaseEPNS_9CodeBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.cpp' l='41'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.cpp' l='196' c='_ZN3JSC8Profiler8Database24removeDatabaseFromAtExitEv'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.cpp' l='212' c='_ZN3JSC8Profiler8Database25removeFirstAtExitDatabaseEv'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.cpp' l='215' c='_ZN3JSC8Profiler8Database25removeFirstAtExitDatabaseEv'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.cpp' l='226' c='_ZN3JSC8Profiler8Database14atExitCallbackEv'/>
+<size>120</size>
+<fun r='_ZN3JSC8Profiler8DatabaseC1ERNS_2VME'/>
+<fun r='_ZN3JSC8Profiler8DatabaseD1Ev'/>
+<fun r='_ZN3JSC8Profiler8Database18ensureBytecodesForEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC8Profiler8Database18ensureBytecodesForERKN3WTF14AbstractLockerEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC8Profiler8Database17notifyDestructionEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC8Profiler8Database14addCompilationEPNS_9CodeBlockEON3WTF3RefINS0_11CompilationENS4_12RawPtrTraitsIS6_EEEE'/>
+<fun r='_ZNK3JSC8Profiler8Database4toJSEPNS_14JSGlobalObjectE'/>
+<fun r='_ZNK3JSC8Profiler8Database6toJSONEv'/>
+<fun r='_ZNK3JSC8Profiler8Database4saveEPKc'/>
+<fun r='_ZN3JSC8Profiler8Database20registerToSaveAtExitEPKc'/>
+<fun r='_ZN3JSC8Profiler8Database8logEventEPNS_9CodeBlockEPKcRKN3WTF7CStringE'/>
+<fun r='_ZN3JSC8Profiler8Database19addDatabaseToAtExitEv'/>
+<fun r='_ZN3JSC8Profiler8Database24removeDatabaseFromAtExitEv'/>
+<fun r='_ZNK3JSC8Profiler8Database17performAtExitSaveEv'/>
+<fun r='_ZN3JSC8Profiler8Database25removeFirstAtExitDatabaseEv'/>
+<fun r='_ZN3JSC8Profiler8Database14atExitCallbackEv'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerOrigin.cpp' l='36' c='_ZN3JSC8Profiler6OriginC1ERNS0_8DatabaseEPNS_9CodeBlockENS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerOriginStack.cpp' l='46' c='_ZN3JSC8Profiler11OriginStackC1ERNS0_8DatabaseEPNS_9CodeBlockERKNS_10CodeOriginE'/>
+<size>120</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.cpp' l='197' c='_ZN3JSC3DFG23operationCompileOSRExitEPNS_9CallFrameEPv'/>
+<size>120</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.cpp' l='507' c='_ZN3JSC2VMC1ENS0_6VMTypeENS_8HeapTypeEPN3WTF7RunLoopEPb'/>
+<size>120</size>

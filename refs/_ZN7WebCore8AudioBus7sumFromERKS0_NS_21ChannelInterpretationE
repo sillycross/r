@@ -1,0 +1,10 @@
+<dec f='WebKit/Source/WebCore/platform/audio/AudioBus.h' l='130' type='void WebCore::AudioBus::sumFrom(const WebCore::AudioBus &amp; sourceBus, WebCore::ChannelInterpretation  = ChannelInterpretation::Speakers)'/>
+<doc f='WebKit/Source/WebCore/platform/audio/AudioBus.h' l='128'>// Sums the samples from the source bus to this one.
+    // This is just a simple per-channel summing if the number of channels match, otherwise an up-mix or down-mix is done.</doc>
+<use f='WebKit/Source/WebCore/platform/audio/AudioBus.cpp' l='234' u='c' c='_ZN7WebCore8AudioBus8copyFromERKS0_NS_21ChannelInterpretationE'/>
+<def f='WebKit/Source/WebCore/platform/audio/AudioBus.cpp' l='237' ll='263' type='void WebCore::AudioBus::sumFrom(const WebCore::AudioBus &amp; sourceBus, WebCore::ChannelInterpretation channelInterpretation = ChannelInterpretation::Speakers)'/>
+<use f='WebKit/Source/WebCore/platform/audio/Reverb.cpp' l='205' u='c' c='_ZN7WebCore6Reverb7processEPKNS_8AudioBusEPS1_m'/>
+<use f='WebKit/Source/WebCore/platform/audio/Reverb.cpp' l='223' u='c' c='_ZN7WebCore6Reverb7processEPKNS_8AudioBusEPS1_m'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeInput.cpp' l='217' u='c' c='_ZN7WebCore14AudioNodeInput17sumAllConnectionsEPNS_8AudioBusEm'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioParam.cpp' l='324' u='c' c='_ZN7WebCore10AudioParam20calculateFinalValuesEPfjb'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/RealtimeAnalyser.cpp' l='94' u='c' c='_ZN7WebCore16RealtimeAnalyser10writeInputEPNS_8AudioBusEm'/>

@@ -1,0 +1,15 @@
+<def f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='3394' ll='3501' type='void JSC::Yarr::YarrGenerator::opCompileParenthesesSubpattern(JSC::Yarr::PatternTerm * term)'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='3570' u='c' c='_ZN3JSC4Yarr13YarrGenerator20opCompileAlternativeEPNS0_18PatternAlternativeE'/>
+<doc f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='3381'>// Compilation methods:
+    // ====================
+
+    // opCompileParenthesesSubpattern
+    // Emits ops for a subpattern (set of parentheses). These consist
+    // of a set of alternatives wrapped in an outer set of nodes for
+    // the parentheses.
+    // Supported types of parentheses are &apos;Once&apos; (quantityMaxCount == 1),
+    // &apos;Terminal&apos; (non-capturing parentheses quantified as greedy
+    // and infinite), and 0 based greedy / non-greedy quantified parentheses.
+    // Alternatives will use the &apos;Simple&apos; set of ops if either the
+    // subpattern is terminal (in which case we will never need to
+    // backtrack), or if the subpattern only contains one alternative.</doc>

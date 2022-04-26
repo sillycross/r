@@ -1,0 +1,33 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebResource.cpp' l='317' ll='322' type='const char * webkit_web_resource_get_uri(WebKitWebResource * resource)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebResource.cpp' l='285'>/**
+ * webkit_web_resource_get_uri:
+ * @resource: a #WebKitWebResource
+ *
+ * Returns the current active URI of @resource. The active URI might change during
+ * a load operation:
+ *
+ * &lt;orderedlist&gt;
+ * &lt;listitem&gt;&lt;para&gt;
+ *   When the resource load starts, the active URI is the requested URI
+ * &lt;/para&gt;&lt;/listitem&gt;
+ * &lt;listitem&gt;&lt;para&gt;
+ *   When the initial request is sent to the server, #WebKitWebResource::sent-request
+ *   signal is emitted without a redirected response, the active URI is the URI of
+ *   the request sent to the server.
+ * &lt;/para&gt;&lt;/listitem&gt;
+ * &lt;listitem&gt;&lt;para&gt;
+ *   In case of a server redirection, #WebKitWebResource::sent-request signal
+ *   is emitted again with a redirected response, the active URI is the URI the request
+ *   was redirected to.
+ * &lt;/para&gt;&lt;/listitem&gt;
+ * &lt;listitem&gt;&lt;para&gt;
+ *   When the response is received from the server, the active URI is the final
+ *   one and it will not change again.
+ * &lt;/para&gt;&lt;/listitem&gt;
+ * &lt;/orderedlist&gt;
+ *
+ * You can monitor the active URI by connecting to the notify::uri
+ * signal of @resource.
+ *
+ * Returns: the current active URI of @resource
+ */</doc>

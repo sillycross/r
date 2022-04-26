@@ -1,0 +1,57 @@
+<use f='include/gstreamer-1.0/gst/gstpad.h' l='29'/>
+<def f='include/gstreamer-1.0/gst/gstpad.h' l='730' ll='806'/>
+<size>520</size>
+<doc f='include/gstreamer-1.0/gst/gstpad.h' l='721'>/**
+ * GstPad:
+ * @element_private: private data owned by the parent element
+ * @padtemplate: padtemplate for this pad
+ * @direction: the direction of the pad, cannot change after creating
+ *             the pad.
+ *
+ * The #GstPad structure. Use the functions to update the variables.
+ */</doc>
+<mbr r='_GstPad::object' o='0' t='GstObject'/>
+<mbr r='_GstPad::element_private' o='704' t='gpointer'/>
+<mbr r='_GstPad::padtemplate' o='768' t='GstPadTemplate *'/>
+<mbr r='_GstPad::direction' o='832' t='GstPadDirection'/>
+<mbr r='_GstPad::stream_rec_lock' o='896' t='GRecMutex'/>
+<mbr r='_GstPad::task' o='1024' t='GstTask *'/>
+<mbr r='_GstPad::block_cond' o='1088' t='GCond'/>
+<mbr r='_GstPad::probes' o='1216' t='GHookList'/>
+<mbr r='_GstPad::mode' o='1664' t='GstPadMode'/>
+<mbr r='_GstPad::activatefunc' o='1728' t='GstPadActivateFunction'/>
+<mbr r='_GstPad::activatedata' o='1792' t='gpointer'/>
+<mbr r='_GstPad::activatenotify' o='1856' t='GDestroyNotify'/>
+<mbr r='_GstPad::activatemodefunc' o='1920' t='GstPadActivateModeFunction'/>
+<mbr r='_GstPad::activatemodedata' o='1984' t='gpointer'/>
+<mbr r='_GstPad::activatemodenotify' o='2048' t='GDestroyNotify'/>
+<mbr r='_GstPad::peer' o='2112' t='GstPad *'/>
+<mbr r='_GstPad::linkfunc' o='2176' t='GstPadLinkFunction'/>
+<mbr r='_GstPad::linkdata' o='2240' t='gpointer'/>
+<mbr r='_GstPad::linknotify' o='2304' t='GDestroyNotify'/>
+<mbr r='_GstPad::unlinkfunc' o='2368' t='GstPadUnlinkFunction'/>
+<mbr r='_GstPad::unlinkdata' o='2432' t='gpointer'/>
+<mbr r='_GstPad::unlinknotify' o='2496' t='GDestroyNotify'/>
+<mbr r='_GstPad::chainfunc' o='2560' t='GstPadChainFunction'/>
+<mbr r='_GstPad::chaindata' o='2624' t='gpointer'/>
+<mbr r='_GstPad::chainnotify' o='2688' t='GDestroyNotify'/>
+<mbr r='_GstPad::chainlistfunc' o='2752' t='GstPadChainListFunction'/>
+<mbr r='_GstPad::chainlistdata' o='2816' t='gpointer'/>
+<mbr r='_GstPad::chainlistnotify' o='2880' t='GDestroyNotify'/>
+<mbr r='_GstPad::getrangefunc' o='2944' t='GstPadGetRangeFunction'/>
+<mbr r='_GstPad::getrangedata' o='3008' t='gpointer'/>
+<mbr r='_GstPad::getrangenotify' o='3072' t='GDestroyNotify'/>
+<mbr r='_GstPad::eventfunc' o='3136' t='GstPadEventFunction'/>
+<mbr r='_GstPad::eventdata' o='3200' t='gpointer'/>
+<mbr r='_GstPad::eventnotify' o='3264' t='GDestroyNotify'/>
+<mbr r='_GstPad::offset' o='3328' t='gint64'/>
+<mbr r='_GstPad::queryfunc' o='3392' t='GstPadQueryFunction'/>
+<mbr r='_GstPad::querydata' o='3456' t='gpointer'/>
+<mbr r='_GstPad::querynotify' o='3520' t='GDestroyNotify'/>
+<mbr r='_GstPad::iterintlinkfunc' o='3584' t='GstPadIterIntLinkFunction'/>
+<mbr r='_GstPad::iterintlinkdata' o='3648' t='gpointer'/>
+<mbr r='_GstPad::iterintlinknotify' o='3712' t='GDestroyNotify'/>
+<mbr r='_GstPad::num_probes' o='3776' t='gint'/>
+<mbr r='_GstPad::num_blocked' o='3808' t='gint'/>
+<mbr r='_GstPad::priv' o='3840' t='GstPadPrivate *'/>
+<mbr r='_GstPad::ABI' o='3904' t='union (anonymous union at /usr/include/gstreamer-1.0/gst/gstpad.h:799:3)'/>

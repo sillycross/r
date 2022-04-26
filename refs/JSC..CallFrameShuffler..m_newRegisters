@@ -1,0 +1,32 @@
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='79' u='m' c='_ZN3JSC17CallFrameShuffler10restoreGPRENS_12X86Registers10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='89' u='m' c='_ZN3JSC17CallFrameShuffler10restoreGPRENS_12X86Registers10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='112' u='m' c='_ZNK3JSC17CallFrameShuffler8snapshotEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='112' u='m' c='_ZNK3JSC17CallFrameShuffler8snapshotEv'/>
+<dec f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='431' type='RegisterMap&lt;JSC::CachedRecovery *&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='445' u='m' c='_ZNK3JSC17CallFrameShuffler15getFreeRegisterERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='465' u='m' c='_ZNK3JSC17CallFrameShuffler14getFreeTempGPREv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='465' u='m' c='_ZNK3JSC17CallFrameShuffler14getFreeTempGPREv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='513' u='m' c='_ZN3JSC17CallFrameShuffler14ensureRegisterERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='513' u='m' c='_ZN3JSC17CallFrameShuffler14ensureRegisterERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='577' u='m' c='_ZN3JSC17CallFrameShuffler13ensureTempGPREv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='630' u='m' c='_ZNK3JSC17CallFrameShuffler6getNewENS_11JSValueRegsE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='647' u='m' c='_ZN3JSC17CallFrameShuffler6addNewENS_11JSValueRegsENS_13ValueRecoveryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='648' u='m' c='_ZN3JSC17CallFrameShuffler6addNewENS_11JSValueRegsENS_13ValueRecoveryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='669' u='m' c='_ZN3JSC17CallFrameShuffler6addNewENS_12X86Registers13XMMRegisterIDENS_13ValueRecoveryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='173' u='m' c='_ZNK3JSC17CallFrameShuffler4dumpERN3WTF11PrintStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='173' u='m' c='_ZNK3JSC17CallFrameShuffler4dumpERN3WTF11PrintStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='702' u='m' c='_ZN3JSC17CallFrameShuffler10prepareAnyEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='711' u='m' c='_ZN3JSC17CallFrameShuffler10prepareAnyEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='711' u='m' c='_ZN3JSC17CallFrameShuffler10prepareAnyEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='761' u='m' c='_ZN3JSC17CallFrameShuffler10prepareAnyEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='761' u='m' c='_ZN3JSC17CallFrameShuffler10prepareAnyEv'/>
+<offset>2688</offset>
+<doc f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='422'>// This stores, for each register, information about the recovery
+    // for the value that should eventually go into that register. The
+    // only registers that have a target recovery will be callee-save
+    // registers, as well as possibly one JSValueRegs for holding the
+    // callee.
+    //
+    // Once the correct value has been put into the registers, and
+    // contrary to what we do with m_newFrame, we keep the entry in
+    // m_newRegisters to simplify spilling.</doc>

@@ -1,0 +1,8 @@
+<def f='WebKit/Source/JavaScriptCore/bytecode/ObjectPropertyCondition.h' l='193' ll='198' type='bool JSC::ObjectPropertyCondition::isCompatibleWith(const JSC::ObjectPropertyCondition &amp; other) const'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/ObjectPropertyCondition.h' l='187'>// Two conditions are compatible if they are identical or if they speak of different uids or
+    // different objects. If false is returned, you have to decide how to resolve the conflict -
+    // for example if there is a Presence and an Equivalence then in some cases you&apos;ll want the
+    // more general of the two while in other cases you&apos;ll want the more specific of the two. This
+    // will also return false for contradictions, like Presence and Absence on the same
+    // object/uid. By convention, invalid conditions aren&apos;t compatible with anything.</doc>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ObjectPropertyConditionSet.cpp' l='117' u='c' c='_ZNK3JSC26ObjectPropertyConditionSet10mergedWithERKS0_'/>

@@ -1,0 +1,29 @@
+<inh f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermTraverse.h' l='34' c='sh::TIntermTraverser'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VersionGLSL.h' l='47' ll='72'/>
+<size>160</size>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VersionGLSL.h' l='32'>// Traverses the intermediate tree to return the minimum GLSL version
+// required to legally access all built-in features used in the shader.
+// GLSL 1.1 which is mandated by OpenGL 2.0 provides:
+//   - #version and #extension to declare version and extensions.
+//   - built-in functions refract, exp, and log.
+//   - updated step() to compare x &lt; edge instead of x &lt;= edge.
+// GLSL 1.2 which is mandated by OpenGL 2.1 provides:
+//   - many changes to reduce differences when compared to the ES specification.
+//   - invariant keyword and its support.
+//   - c++ style name hiding rules.
+//   - built-in variable gl_PointCoord for fragment shaders.
+//   - matrix constructors taking matrix as argument.
+//   - array as &quot;out&quot; function parameters
+//
+// TODO: ES3 equivalent versions of GLSL</doc>
+<fun r='_ZN2sh12TVersionGLSLC1EjRK7TPragma14ShShaderOutput'/>
+<fun r='_ZNK2sh12TVersionGLSL10getVersionEv'/>
+<fun r='_ZN2sh12TVersionGLSL11visitSymbolEPNS_13TIntermSymbolE'/>
+<fun r='_ZN2sh12TVersionGLSL14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh12TVersionGLSL31visitGlobalQualifierDeclarationENS_5VisitEPNS_33TIntermGlobalQualifierDeclarationE'/>
+<fun r='_ZN2sh12TVersionGLSL22visitFunctionPrototypeEPNS_24TIntermFunctionPrototypeE'/>
+<fun r='_ZN2sh12TVersionGLSL16visitDeclarationENS_5VisitEPNS_18TIntermDeclarationE'/>
+<fun r='_ZN2sh12TVersionGLSL22ensureVersionIsAtLeastEi'/>
+<mbr r='sh::TVersionGLSL::mVersion' o='1216' t='int'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/TranslatorGLSL.cpp' l='243' c='_ZN2sh14TranslatorGLSL12writeVersionEPNS_11TIntermNodeE'/>
+<size>160</size>

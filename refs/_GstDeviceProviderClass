@@ -1,0 +1,26 @@
+<use f='include/gstreamer-1.0/gst/gstdeviceprovider.h' l='32'/>
+<def f='include/gstreamer-1.0/gst/gstdeviceprovider.h' l='85' ll='100'/>
+<size>256</size>
+<doc f='include/gstreamer-1.0/gst/gstdeviceprovider.h' l='68'>/**
+ * GstDeviceProviderClass:
+ * @parent_class: the parent #GstObjectClass structure
+ * @factory: a pointer to the #GstDeviceProviderFactory that creates this
+ *  provider
+ * @probe: Returns a list of devices that are currently available.
+ *  This should never block.
+ * @start: Starts monitoring for new devices. Only subclasses that can know
+ *  that devices have been added or remove need to implement this method.
+ * @stop: Stops monitoring for new devices. Only subclasses that implement
+ *  the start() method need to implement this method.
+ *
+ * The structure of the base #GstDeviceProviderClass
+ *
+ * Since: 1.4
+ */</doc>
+<mbr r='_GstDeviceProviderClass::parent_class' o='0' t='GstObjectClass'/>
+<mbr r='_GstDeviceProviderClass::factory' o='1472' t='GstDeviceProviderFactory *'/>
+<mbr r='_GstDeviceProviderClass::probe' o='1536' t='GList *(*)(GstDeviceProvider *)'/>
+<mbr r='_GstDeviceProviderClass::start' o='1600' t='gboolean (*)(GstDeviceProvider *)'/>
+<mbr r='_GstDeviceProviderClass::stop' o='1664' t='void (*)(GstDeviceProvider *)'/>
+<mbr r='_GstDeviceProviderClass::metadata' o='1728' t='gpointer'/>
+<mbr r='_GstDeviceProviderClass::_gst_reserved' o='1792' t='gpointer [4]'/>

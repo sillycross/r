@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebCore/editing/FrameSelection.h' l='298' type='void WebCore::FrameSelection::selectFrameElementInParentIfFullySelected()'/>
+<use f='WebKit/Source/WebCore/editing/FrameSelection.cpp' l='418' u='c' c='_ZN7WebCore14FrameSelection37setSelectionWithoutUpdatingAppearanceERKNS_16VisibleSelectionEN3WTF9OptionSetINS0_18SetSelectionOptionEEENS0_19CursorAlig13464436'/>
+<def f='WebKit/Source/WebCore/editing/FrameSelection.cpp' l='1928' ll='1979' type='void WebCore::FrameSelection::selectFrameElementInParentIfFullySelected()'/>
+<doc f='WebKit/Source/WebCore/editing/FrameSelection.cpp' l='1923'>// Workaround for the fact that it&apos;s hard to delete a frame.
+// Call this after doing user-triggered selections to make it easy to delete the frame you entirely selected.
+// Can&apos;t do this implicitly as part of every setSelection call because in some contexts it might not be good
+// for the focus to move to another frame. So instead we call it from places where we are selecting with the
+// mouse or the keyboard after setting the selection.</doc>

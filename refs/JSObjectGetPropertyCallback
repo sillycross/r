@@ -1,0 +1,28 @@
+<doc f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSObjectRef.h' l='132'>/*! 
+@typedef JSObjectGetPropertyCallback
+@abstract The callback invoked when getting a property&apos;s value.
+@param ctx The execution context to use.
+@param object The JSObject to search for the property.
+@param propertyName A JSString containing the name of the property to get.
+@param exception A pointer to a JSValueRef in which to return an exception, if any.
+@result The property&apos;s value if object has the property, otherwise NULL.
+@discussion If you named your function GetProperty, you would declare it like this:
+
+JSValueRef GetProperty(JSContextRef ctx, JSObjectRef object, JSStringRef propertyName, JSValueRef* exception);
+
+If this function returns NULL, the get request forwards to object&apos;s statically declared properties, then its parent class chain (which includes the default object class), then its prototype chain.
+*/</doc>
+<doc f='WebKit/Source/JavaScriptCore/API/JSObjectRef.h' l='132'>/*! 
+@typedef JSObjectGetPropertyCallback
+@abstract The callback invoked when getting a property&apos;s value.
+@param ctx The execution context to use.
+@param object The JSObject to search for the property.
+@param propertyName A JSString containing the name of the property to get.
+@param exception A pointer to a JSValueRef in which to return an exception, if any.
+@result The property&apos;s value if object has the property, otherwise NULL.
+@discussion If you named your function GetProperty, you would declare it like this:
+
+JSValueRef GetProperty(JSContextRef ctx, JSObjectRef object, JSStringRef propertyName, JSValueRef* exception);
+
+If this function returns NULL, the get request forwards to object&apos;s statically declared properties, then its parent class chain (which includes the default object class), then its prototype chain.
+*/</doc>

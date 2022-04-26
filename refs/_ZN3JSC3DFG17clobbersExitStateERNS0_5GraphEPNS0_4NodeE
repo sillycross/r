@@ -1,0 +1,32 @@
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGClobbersExitState.h' l='61' type='bool JSC::DFG::clobbersExitState(JSC::DFG::Graph &amp; , JSC::DFG::Node * )'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGNodeOrigin.h' l='104' u='c' c='_ZNK3JSC3DFG10NodeOrigin17forInsertingAfterERNS0_5GraphEPNS0_4NodeE'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGClobbersExitState.h' l='35'>// A conservative approximation of whether the node will perform the kind of effect that would prevent
+// subsequent nodes from exiting to this node&apos;s exit origin. Exiting after an effect to that effect&apos;s
+// exit origin would cause the effect to execute a second time. Two kinds of such effects can exist:
+//
+// Observable heap or stack effect: If we perform such an effect and then exit to the same origin, that
+// effect will be executed a second time, which is incorrect.
+//
+// OSR exit state update: This doesn&apos;t do any observable side-effect, but it tells OSR exit that it
+// should recover some value as if an effect had happened. For example, a MovHint will tell OSR exit
+// that some bytecode variable now has a new value. If we exit to the exit origin of a MovHint after we
+// &quot;execute&quot; the MovHint, then the bytecode state will look as if we had already executed that bytecode
+// instruction. This could cause issues for example for bytecode like:
+//
+//     op_add r1, r1, r2
+//
+// which will get lowered to something like:
+//
+//     a: ArithAdd(...)
+//     b: MovHint(@a, r1)
+//
+// If we exit to the op_add after executing the MovHint, then r1 will already contain the result of the
+// add. Then after exit we&apos;ll do the add again, and r1 will have the wrong value. Because of object
+// allocation elimination and PutStack sinking, we can also have other OSR exit updates, like
+// KillStack, PutHint, among others. They don&apos;t do anything so long as we stay in optimized code, but
+// they tell OSR exit how to reconstitute state.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='2071' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_128ObjectAllocationSinkingPhase16promoteLocalHeapEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='216' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_18Validate8validateEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='778' u='c' c='_ZN3JSC3DFG14ByteCodeParser10addToGraphEPNS0_4NodeE'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGClobbersExitState.cpp' l='37' ll='122' type='bool JSC::DFG::clobbersExitState(JSC::DFG::Graph &amp; graph, JSC::DFG::Node * node)'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='416' u='c' c='_ZN3JSC3DFG5Graph4dumpERN3WTF11PrintStreamEPKcPNS0_4NodeEPNS_11DumpContextE'/>

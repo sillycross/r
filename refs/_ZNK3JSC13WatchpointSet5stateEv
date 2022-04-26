@@ -1,0 +1,30 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Watchpoint.h' l='203' ll='207' type='JSC::WatchpointState JSC::WatchpointSet::state() const'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Watchpoint.h' l='217' u='c' c='_ZNK3JSC13WatchpointSet12isStillValidEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Watchpoint.h' l='257' u='c' c='_ZN3JSC13WatchpointSet5touchERNS_2VMERKNS_10FireDetailE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Watchpoint.h' l='270' u='c' c='_ZN3JSC13WatchpointSet10invalidateERNS_2VMERKNS_10FireDetailE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Watchpoint.h' l='358' u='c' c='_ZNK3JSC19InlineWatchpointSet5stateEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Watchpoint.h' l='540' u='c' c='_ZN3JSC22DeferredWatchpointFire7fireAllEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InferredValue.h' l='218' u='c' c='_ZN3JSC13InferredValue26InferredValueWatchpointSet15notifyWriteSlowERNS_2VMEPNS_6JSCellEPT_RKNS_10FireDetailE'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Watchpoint.h' l='198'>// It is safe to call this from another thread. It may return an old
+    // state. Guarantees that if *first* read the state() of the thing being
+    // watched and it returned IsWatched and *second* you actually read its
+    // value then it&apos;s safe to assume that if the state being watched changes
+    // then also the watchpoint state() will change to IsInvalidated.</doc>
+<def f='WebKit/Source/JavaScriptCore/bytecode/Watchpoint.h' l='203' ll='207' type='JSC::WatchpointState JSC::WatchpointSet::state() const'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Watchpoint.h' l='217' u='c' c='_ZNK3JSC13WatchpointSet12isStillValidEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Watchpoint.h' l='257' u='c' c='_ZN3JSC13WatchpointSet5touchERNS_2VMERKNS_10FireDetailE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Watchpoint.h' l='270' u='c' c='_ZN3JSC13WatchpointSet10invalidateERNS_2VMERKNS_10FireDetailE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Watchpoint.h' l='358' u='c' c='_ZNK3JSC19InlineWatchpointSet5stateEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Watchpoint.h' l='540' u='c' c='_ZN3JSC22DeferredWatchpointFire7fireAllEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/InferredValue.h' l='218' u='c' c='_ZN3JSC13InferredValue26InferredValueWatchpointSet15notifyWriteSlowERNS_2VMEPNS_6JSCellEPT_RKNS_10FireDetailE'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/Watchpoint.h' l='198'>// It is safe to call this from another thread. It may return an old
+    // state. Guarantees that if *first* read the state() of the thing being
+    // watched and it returned IsWatched and *second* you actually read its
+    // value then it&apos;s safe to assume that if the state being watched changes
+    // then also the watchpoint state() will change to IsInvalidated.</doc>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.cpp' l='108' u='c' c='_ZN3JSC3JIT15emitNotifyWriteEPNS_13WatchpointSetE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='7839' u='c' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='8018' u='c' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='8034' u='c' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1375' u='c' c='_ZN3JSC3DFG5Graph24tryGetConstantClosureVarENS_7JSValueENS_11ScopeOffsetE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSScope.cpp' l='177' u='c' c='_ZN3JSCL14abstractAccessEPNS_14JSGlobalObjectEPNS_7JSScopeERKNS_10IdentifierENS_8GetOrPutEmRbRNS_9ResolveOpENS_18InitializationModeE'/>

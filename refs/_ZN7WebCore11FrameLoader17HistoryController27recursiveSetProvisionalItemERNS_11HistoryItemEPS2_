@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebCore/loader/HistoryController.h' l='100' type='void WebCore::FrameLoader::HistoryController::recursiveSetProvisionalItem(WebCore::HistoryItem &amp; , WebCore::HistoryItem * )'/>
+<use f='WebKit/Source/WebCore/loader/HistoryController.cpp' l='326' u='c' c='_ZN7WebCore11FrameLoader17HistoryController8goToItemERNS_11HistoryItemENS_13FrameLoadTypeENS_27ShouldTreatAsContinuingLoadE'/>
+<def f='WebKit/Source/WebCore/loader/HistoryController.cpp' l='731' ll='749' type='void WebCore::FrameLoader::HistoryController::recursiveSetProvisionalItem(WebCore::HistoryItem &amp; item, WebCore::HistoryItem * fromItem)'/>
+<use f='WebKit/Source/WebCore/loader/HistoryController.cpp' l='747' u='c' c='_ZN7WebCore11FrameLoader17HistoryController27recursiveSetProvisionalItemERNS_11HistoryItemEPS2_'/>
+<doc f='WebKit/Source/WebCore/loader/HistoryController.cpp' l='727'>// The general idea here is to traverse the frame tree and the item tree in parallel,
+// tracking whether each frame already has the content the item requests.  If there is
+// a match, we set the provisional item and recurse.  Otherwise we will reload that
+// frame and all its kids in recursiveGoToItem.</doc>

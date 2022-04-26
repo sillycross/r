@@ -1,0 +1,17 @@
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGMayExit.h' l='49' type='0'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGMayExit.h' l='40'>// The node does not exit at all. This means that it&apos;s legal to eliminate the first store in a
+    // program like:
+    //
+    // global = 1 // first store
+    // DoesNotExit(); // let&apos;s assume that this also doesn&apos;t read &quot;global&quot;
+    // global = 2 // second store
+    //
+    // It&apos;s legal to eliminate the first one since nobody will see it; the second store is always
+    // executed right after.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPhantomInsertionPhase.cpp' l='118' u='r' c='_ZN3JSC3DFG12_GLOBAL__N_121PhantomInsertionPhase11handleBlockEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGStoreBarrierClusteringPhase.cpp' l='102' u='r' c='_ZN3JSC3DFG12_GLOBAL__N_127StoreBarrierClusteringPhase7doBlockEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGVarargsForwardingPhase.cpp' l='320' u='r' c='_ZN3JSC3DFG12_GLOBAL__N_122VarargsForwardingPhase15handleCandidateEPNS0_10BasicBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='414' u='r' c='_ZN3JSC3DFG5Graph4dumpERN3WTF11PrintStreamEPKcPNS0_4NodeEPNS_11DumpContextE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGMayExit.cpp' l='43' u='r' c='_ZN3JSC3DFG12_GLOBAL__N_111mayExitImplERNS0_5GraphEPNS0_4NodeERT_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGMayExit.cpp' l='217' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC3DFG8ExitModeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='2273' u='r' c='_ZN3JSC3DFG14SpeculativeJIT19compileCurrentBlockEv'/>

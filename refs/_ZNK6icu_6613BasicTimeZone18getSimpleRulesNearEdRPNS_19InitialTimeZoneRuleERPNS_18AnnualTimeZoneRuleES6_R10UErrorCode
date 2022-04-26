@@ -1,0 +1,27 @@
+<dec f='include/unicode/basictz.h' l='152' type='void icu_66::BasicTimeZone::getSimpleRulesNear(UDate date, icu_66::InitialTimeZoneRule *&amp; initial, icu_66::AnnualTimeZoneRule *&amp; std, icu_66::AnnualTimeZoneRule *&amp; dst, UErrorCode &amp; status) const'/>
+<doc f='include/unicode/basictz.h' l='126'>/**
+     * Gets the set of time zone rules valid at the specified time.  Some known external time zone
+     * implementations are not capable to handle historic time zone rule changes.  Also some
+     * implementations can only handle certain type of rule definitions.
+     * If this time zone does not use any daylight saving time within about 1 year from the specified
+     * time, only the &lt;code&gt;InitialTimeZone&lt;/code&gt; is returned.  Otherwise, the rule for standard
+     * time and daylight saving time transitions are returned in addition to the
+     * &lt;code&gt;InitialTimeZoneRule&lt;/code&gt;.  The standard and daylight saving time transition rules are
+     * represented by &lt;code&gt;AnnualTimeZoneRule&lt;/code&gt; with &lt;code&gt;DateTimeRule::DOW&lt;/code&gt; for its date
+     * rule and &lt;code&gt;DateTimeRule::WALL_TIME&lt;/code&gt; for its time rule.  Because daylight saving time
+     * rule is changing time to time in many time zones and also mapping a transition time rule to
+     * different type is lossy transformation, the set of rules returned by this method may be valid
+     * for short period of time.
+     * The time zone rule objects returned by this method is owned by the caller, so the caller is
+     * responsible for deleting them after use.
+     * @param date      The date used for extracting time zone rules.
+     * @param initial   Receives the &lt;code&gt;InitialTimeZone&lt;/code&gt;, always not NULL.
+     * @param std       Receives the &lt;code&gt;AnnualTimeZoneRule&lt;/code&gt; for standard time transitions.
+     *                  When this time time zone does not observe daylight saving times around the
+     *                  specified date, NULL is set.
+     * @param dst       Receives the &lt;code&gt;AnnualTimeZoneRule&lt;/code&gt; for daylight saving time
+     *                  transitions.  When this time zone does not observer daylight saving times
+     *                  around the specified date, NULL is set.
+     * @param status    Receives error status code.
+     * @stable ICU 3.8
+     */</doc>

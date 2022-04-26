@@ -1,0 +1,29 @@
+<def f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='135' type='void WebCore::ComplexTextController::ComplexTextRun::growInitialAdvanceHorizontally(float delta)'/>
+<doc f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='108'>/*
+         * This is the format of the information CoreText gives us about each run:
+         *
+         *                                        -----&gt;X (Paint glyph position)   X (Paint glyph position)   X (Paint glyph position)
+         *                                       /     7                          7                          7
+         *                                      /     /                          /                          /
+         *                   (Initial advance) /     / (Glyph origin)           / (Glyph origin)           / (Glyph origin)
+         *                  -------------------     /                          /                          /
+         *                 /                       /                          /                          /
+         *                X                       X--------------------------X--------------------------X--------------------------X
+         * (text position ^)                             (base advance)             (base advance)             (base advance)
+         *
+         *
+         *
+         *
+         *
+         * And here is the output we transform this into (for each run):
+         *
+         *                                        -----&gt;X-------------------------&gt;X-------------------------&gt;X
+         *                                       /            (Paint advance)            (Paint advance)       \
+         *                                      /                                                               \
+         *                   (Initial advance) /                                                                 \ (Paint advance)
+         *                  -------------------                                                                   ----------------
+         *                 /                                                                                                      \
+         *                X--------------------------------------------------X--------------------------X--------------------------X
+         * (text position ^)                (layout advance)                       (layout advance)           (layout advance)
+         */</doc>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='766' u='c' c='_ZN7WebCore21ComplexTextController23adjustGlyphsAndAdvancesEv'/>

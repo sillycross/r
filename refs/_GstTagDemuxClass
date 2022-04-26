@@ -1,0 +1,36 @@
+<use f='include/gstreamer-1.0/gst/tag/gsttagdemux.h' l='36'/>
+<def f='include/gstreamer-1.0/gst/tag/gsttagdemux.h' l='95' ll='129'/>
+<size>552</size>
+<doc f='include/gstreamer-1.0/gst/tag/gsttagdemux.h' l='69'>/**
+ * GstTagDemuxClass:
+ * @parent_class: the parent class.
+ * @min_start_size: minimum size required to identify a tag at the start and
+ * determine its total size. Set to 0 if not interested in start tags.
+ * Subclasses should set this in their class_init function.
+ * @min_end_size: minimum size required to identify a tag at the end and
+ * determine its total size. Set to 0 if not interested in end tags.
+ * Subclasses should set this in their class_init function.
+ * @identify_tag: identify tag and determine the size required to parse the
+ * tag. Buffer may be larger than the specified minimum size.
+ * Subclassed MUST override this vfunc in their class_init function.
+ * @parse_tag: parse the tag. Buffer will be exactly of the size determined by
+ * the identify_tag vfunc before. The parse_tag vfunc may change the size
+ * stored in *tag_size and return GST_TAG_DEMUX_RESULT_AGAIN to request a
+ * larger or smaller buffer. It is also permitted to adjust the tag_size to a
+ * smaller value and then return GST_TAG_DEMUX_RESULT_OK in one go.
+ * Subclassed MUST override the parse_tag vfunc in their class_init function.
+ * @merge_tags: merge start and end tags. Subclasses may want to override this
+ * vfunc to allow prioritising of start or end tag according to user
+ * preference.  Note that both start_tags and end_tags may be NULL. By default
+ * start tags are prefered over end tags.
+ *
+ * The #GstTagDemuxClass structure.  See documentation at beginning of section
+ * for details about what subclasses need to override and do.
+ */</doc>
+<mbr r='_GstTagDemuxClass::parent_class' o='0' t='GstElementClass'/>
+<mbr r='_GstTagDemuxClass::min_start_size' o='3904' t='guint'/>
+<mbr r='_GstTagDemuxClass::min_end_size' o='3936' t='guint'/>
+<mbr r='_GstTagDemuxClass::identify_tag' o='3968' t='gboolean (*)(GstTagDemux *, GstBuffer *, gboolean, guint *)'/>
+<mbr r='_GstTagDemuxClass::parse_tag' o='4032' t='GstTagDemuxResult (*)(GstTagDemux *, GstBuffer *, gboolean, guint *, GstTagList **)'/>
+<mbr r='_GstTagDemuxClass::merge_tags' o='4096' t='GstTagList *(*)(GstTagDemux *, const GstTagList *, const GstTagList *)'/>
+<mbr r='_GstTagDemuxClass::reserved' o='4160' t='gpointer [4]'/>

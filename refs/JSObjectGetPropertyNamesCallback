@@ -1,0 +1,28 @@
+<doc f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSObjectRef.h' l='184'>/*! 
+@typedef JSObjectGetPropertyNamesCallback
+@abstract The callback invoked when collecting the names of an object&apos;s properties.
+@param ctx The execution context to use.
+@param object The JSObject whose property names are being collected.
+@param propertyNames A JavaScript property name accumulator in which to accumulate the names of object&apos;s properties.
+@discussion If you named your function GetPropertyNames, you would declare it like this:
+
+void GetPropertyNames(JSContextRef ctx, JSObjectRef object, JSPropertyNameAccumulatorRef propertyNames);
+
+Property name accumulators are used by JSObjectCopyPropertyNames and JavaScript for...in loops. 
+
+Use JSPropertyNameAccumulatorAddName to add property names to accumulator. A class&apos;s getPropertyNames callback only needs to provide the names of properties that the class vends through a custom getProperty or setProperty callback. Other properties, including statically declared properties, properties vended by other classes, and properties belonging to object&apos;s prototype, are added independently.
+*/</doc>
+<doc f='WebKit/Source/JavaScriptCore/API/JSObjectRef.h' l='184'>/*! 
+@typedef JSObjectGetPropertyNamesCallback
+@abstract The callback invoked when collecting the names of an object&apos;s properties.
+@param ctx The execution context to use.
+@param object The JSObject whose property names are being collected.
+@param propertyNames A JavaScript property name accumulator in which to accumulate the names of object&apos;s properties.
+@discussion If you named your function GetPropertyNames, you would declare it like this:
+
+void GetPropertyNames(JSContextRef ctx, JSObjectRef object, JSPropertyNameAccumulatorRef propertyNames);
+
+Property name accumulators are used by JSObjectCopyPropertyNames and JavaScript for...in loops. 
+
+Use JSPropertyNameAccumulatorAddName to add property names to accumulator. A class&apos;s getPropertyNames callback only needs to provide the names of properties that the class vends through a custom getProperty or setProperty callback. Other properties, including statically declared properties, properties vended by other classes, and properties belonging to object&apos;s prototype, are added independently.
+*/</doc>

@@ -1,0 +1,9 @@
+<dec f='include/xcb/xproto.h' l='2404' type='6'/>
+<doc f='include/xcb/xproto.h' l='2395'>/**&lt; For ReplayKeyboard, if the keyboard is actively grabbed by the client and is
+frozen as the result of an event having been sent to the client (either from
+the activation of a GrabKey or from a previous AllowEvents with mode
+SyncKeyboard but not from a GrabKeyboard), then the keyboard grab is released
+and that event is completely reprocessed, this time ignoring any passive grabs
+at or above (towards the root) the grab-window of the grab just released. The
+request has no effect if the keyboard is not grabbed by the client or if the
+keyboard is not frozen as the result of an event. */</doc>

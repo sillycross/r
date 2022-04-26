@@ -1,0 +1,14 @@
+<inh f='WebKit/Source/WebCore/platform/ScrollableArea.h' l='274' c='_ZNK7WebCore14ScrollableArea11visibleSizeEv'/>
+<def f='WebKit/Source/WebCore/platform/ScrollView.h' l='181' type='WebCore::IntSize WebCore::ScrollView::visibleSize() const'/>
+<doc f='WebKit/Source/WebCore/platform/ScrollView.h' l='175'>// The visible content rect has a location that is the scrolled offset of the document. The width and height are the unobscured viewport
+    // width and height. By default the scrollbars themselves are excluded from this rectangle, but an optional boolean argument allows them
+    // to be included.
+    // In the situation the client is responsible for the scrolling (ie. with a tiled backing store) it is possible to use
+    // the setFixedVisibleContentRect instead for the mainframe, though this must be updated manually, e.g just before resuming the page
+    // which usually will happen when panning, pinching and rotation ends, or when scale or position are changed manually.</doc>
+<use f='WebKit/Source/WebCore/page/FrameView.cpp' l='1992' u='c' c='_ZNK7WebCore9FrameView29unscaledMaximumScrollPositionEv'/>
+<use f='WebKit/Source/WebCore/page/FrameView.cpp' l='2815' u='c' c='_ZNK7WebCore9FrameView20computeScrollabilityEv'/>
+<use f='WebKit/Source/WebCore/page/FrameView.cpp' l='5585' u='c' c='_ZN7WebCore9FrameView20updateScrollbarStepsEv'/>
+<use f='WebKit/Source/WebCore/html/ImageDocument.cpp' l='301' u='c' c='_ZN7WebCore13ImageDocument5scaleEv'/>
+<use f='WebKit/Source/WebCore/html/ImageDocument.cpp' l='349' u='c' c='_ZN7WebCore13ImageDocument17imageFitsInWindowEv'/>
+<use f='WebKit/Source/WebCore/html/ImageDocument.cpp' l='407' u='c' c='_ZN7WebCore13ImageDocument12imageClickedEii'/>

@@ -1,0 +1,14 @@
+<dec f='WebKit/Source/WebCore/platform/audio/FFTConvolver.h' l='51' type='void WebCore::FFTConvolver::process(WebCore::FFTFrame * fftKernel, const float * sourceP, float * destP, size_t framesToProcess)'/>
+<def f='WebKit/Source/WebCore/platform/audio/FFTConvolver.cpp' l='47' ll='107' type='void WebCore::FFTConvolver::process(WebCore::FFTFrame * fftKernel, const float * sourceP, float * destP, size_t framesToProcess)'/>
+<doc f='WebKit/Source/WebCore/platform/audio/FFTConvolver.h' l='44'>// For now, with multiple calls to Process(), framesToProcess MUST add up EXACTLY to fftSize / 2
+    //
+    // FIXME: Later, we can do more sophisticated buffering to relax this requirement...
+    //
+    // The input to output latency is equal to fftSize / 2
+    //
+    // Processing in-place is allowed...</doc>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFPanner.cpp' l='271' u='c' c='_ZN7WebCore10HRTFPanner3panEddPKNS_8AudioBusEPS1_m'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFPanner.cpp' l='272' u='c' c='_ZN7WebCore10HRTFPanner3panEddPKNS_8AudioBusEPS1_m'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFPanner.cpp' l='276' u='c' c='_ZN7WebCore10HRTFPanner3panEddPKNS_8AudioBusEPS1_m'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFPanner.cpp' l='277' u='c' c='_ZN7WebCore10HRTFPanner3panEddPKNS_8AudioBusEPS1_m'/>
+<use f='WebKit/Source/WebCore/platform/audio/ReverbConvolverStage.cpp' l='158' u='c' c='_ZN7WebCore20ReverbConvolverStage7processEPKfm'/>

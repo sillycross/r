@@ -1,0 +1,15 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Debugger.h' l='232' type='void JSC::Debugger::reportException(JSC::JSGlobalObject * , JSC::Exception * ) const'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Debugger.h' l='229'>// NOTE: Currently all exceptions are reported at the API boundary through reportAPIException.
+    // Until a time comes where an exception can be caused outside of the API (e.g. setTimeout
+    // or some other async operation in a pure JSContext) we can ignore exceptions reported here.</doc>
+<def f='WebKit/Source/JavaScriptCore/debugger/Debugger.h' l='232' type='void JSC::Debugger::reportException(JSC::JSGlobalObject * , JSC::Exception * ) const'/>
+<doc f='WebKit/Source/JavaScriptCore/debugger/Debugger.h' l='229'>// NOTE: Currently all exceptions are reported at the API boundary through reportAPIException.
+    // Until a time comes where an exception can be caused outside of the API (e.g. setTimeout
+    // or some other async operation in a pure JSContext) we can ignore exceptions reported here.</doc>
+<use f='WebKit/Source/JavaScriptCore/debugger/Debugger.cpp' l='627' u='c' c='_ZN3JSC8Debugger27evaluateBreakpointConditionERNS_10BreakpointEPNS_14JSGlobalObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/debugger/Debugger.cpp' l='659' u='c' c='_ZN3JSC8Debugger25evaluateBreakpointActionsERNS_10BreakpointEPNS_14JSGlobalObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/debugger/Debugger.cpp' l='675' u='c' c='_ZN3JSC8Debugger25evaluateBreakpointActionsERNS_10BreakpointEPNS_14JSGlobalObjectE'/>
+<ovr f='WebKit/Source/WebCore/inspector/PageDebugger.cpp' l='141' c='_ZNK7WebCore12PageDebugger15reportExceptionEPN3JSC14JSGlobalObjectEPNS1_9ExceptionE'/>
+<use f='WebKit/Source/WebCore/inspector/PageDebugger.cpp' l='143' u='c' c='_ZNK7WebCore12PageDebugger15reportExceptionEPN3JSC14JSGlobalObjectEPNS1_9ExceptionE'/>
+<ovr f='WebKit/Source/WebCore/inspector/WorkerDebugger.cpp' l='88' c='_ZNK7WebCore14WorkerDebugger15reportExceptionEPN3JSC14JSGlobalObjectEPNS1_9ExceptionE'/>
+<use f='WebKit/Source/WebCore/inspector/WorkerDebugger.cpp' l='90' u='c' c='_ZNK7WebCore14WorkerDebugger15reportExceptionEPN3JSC14JSGlobalObjectEPNS1_9ExceptionE'/>

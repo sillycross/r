@@ -1,0 +1,59 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='429'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='429'/>
+<inh f='WebKit/Source/JavaScriptCore/heap/MutatorScheduler.h' l='34' c='JSC::MutatorScheduler'/>
+<def f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.h' l='41' ll='83'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='321' c='_ZN3JSC4HeapC1ERNS_2VMENS_8HeapTypeE'/>
+<size>56</size>
+<doc f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.h' l='35'>// The JSC concurrent GC sometimes stops the world in order to stay ahead of it. These deliberate,
+// synthetic pauses ensure that the GC won&apos;t have to do one huge pause in order to catch up to the
+// retreating wavefront. The scheduler is called &quot;space-time&quot; because it links the amount of time
+// that the world is paused for to the amount of space that the world allocated since the GC cycle
+// began.</doc>
+<fun r='_ZN3JSC25SpaceTimeMutatorSchedulerC1ERNS_4HeapE'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorSchedulerD1Ev'/>
+<fun r='_ZNK3JSC25SpaceTimeMutatorScheduler5stateEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler15beginCollectionEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler7didStopEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler10willResumeEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler21didExecuteConstraintsEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler10timeToStopEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler12timeToResumeEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler3logEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler13endCollectionEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler27bytesAllocatedThisCycleImplEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler26bytesSinceBeginningOfCycleERKNS0_8SnapshotE'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler11maxHeadroomEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler16headroomFullnessERKNS0_8SnapshotE'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler18mutatorUtilizationERKNS0_8SnapshotE'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler20collectorUtilizationERKNS0_8SnapshotE'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler15elapsedInPeriodERKNS0_8SnapshotE'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler5phaseERKNS0_8SnapshotE'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler15shouldBeResumedERKNS0_8SnapshotE'/>
+<mbr r='JSC::SpaceTimeMutatorScheduler::m_heap' o='64' t='JSC::Heap &amp;'/>
+<mbr r='JSC::SpaceTimeMutatorScheduler::m_period' o='128' t='WTF::Seconds'/>
+<mbr r='JSC::SpaceTimeMutatorScheduler::m_state' o='192' t='JSC::MutatorScheduler::State'/>
+<mbr r='JSC::SpaceTimeMutatorScheduler::m_bytesAllocatedThisCycleAtTheBeginning' o='256' t='double'/>
+<mbr r='JSC::SpaceTimeMutatorScheduler::m_bytesAllocatedThisCycleAtTheEnd' o='320' t='double'/>
+<mbr r='JSC::SpaceTimeMutatorScheduler::m_startTime' o='384' t='WTF::MonotonicTime'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SpaceTimeMutatorScheduler.cpp' l='39' c='_ZN3JSC25SpaceTimeMutatorScheduler8SnapshotC1ERS0_'/>
+<size>56</size>
+<fun r='_ZN3JSC25SpaceTimeMutatorSchedulerC1ERNS_4HeapE'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorSchedulerD1Ev'/>
+<fun r='_ZNK3JSC25SpaceTimeMutatorScheduler5stateEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler15beginCollectionEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler7didStopEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler10willResumeEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler21didExecuteConstraintsEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler10timeToStopEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler12timeToResumeEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler3logEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler13endCollectionEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler27bytesAllocatedThisCycleImplEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler26bytesSinceBeginningOfCycleERKNS0_8SnapshotE'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler11maxHeadroomEv'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler16headroomFullnessERKNS0_8SnapshotE'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler18mutatorUtilizationERKNS0_8SnapshotE'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler20collectorUtilizationERKNS0_8SnapshotE'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler15elapsedInPeriodERKNS0_8SnapshotE'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler5phaseERKNS0_8SnapshotE'/>
+<fun r='_ZN3JSC25SpaceTimeMutatorScheduler15shouldBeResumedERKNS0_8SnapshotE'/>

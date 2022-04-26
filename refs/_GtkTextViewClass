@@ -1,0 +1,58 @@
+<use f='include/gtk-3.0/gtk/gtktextview.h' l='115'/>
+<def f='include/gtk-3.0/gtk/gtktextview.h' l='162' ll='203'/>
+<size>1120</size>
+<doc f='include/gtk-3.0/gtk/gtktextview.h' l='126'>/**
+ * GtkTextViewClass:
+ * @parent_class: The object class structure needs to be the first
+ * @populate_popup: The class handler for the #GtkTextView::populate-popup
+ *   signal.
+ * @move_cursor: The class handler for the #GtkTextView::move-cursor
+ *   keybinding signal.
+ * @set_anchor: The class handler for the #GtkTextView::set-anchor
+ *   keybinding signal.
+ * @insert_at_cursor: The class handler for the #GtkTextView::insert-at-cursor
+ *   keybinding signal.
+ * @delete_from_cursor: The class handler for the #GtkTextView::delete-from-cursor
+ *   keybinding signal.
+ * @backspace: The class handler for the #GtkTextView::backspace
+ *   keybinding signal.
+ * @cut_clipboard: The class handler for the #GtkTextView::cut-clipboard
+ *   keybinding signal
+ * @copy_clipboard: The class handler for the #GtkTextview::copy-clipboard
+ *   keybinding signal.
+ * @paste_clipboard: The class handler for the #GtkTextView::paste-clipboard
+ *   keybinding signal.
+ * @toggle_overwrite: The class handler for the #GtkTextView::toggle-overwrite
+ *   keybinding signal.
+ * @create_buffer: The create_buffer vfunc is called to create a #GtkTextBuffer
+ *   for the text view. The default implementation is to just call
+ *   gtk_text_buffer_new(). Since: 3.10
+ * @draw_layer: The draw_layer vfunc is called before and after the text
+ *   view is drawing its own text. Applications can override this vfunc
+ *   in a subclass to draw customized content underneath or above the
+ *   text. In the %GTK_TEXT_VIEW_LAYER_BELOW_TEXT and %GTK_TEXT_VIEW_LAYER_ABOVE_TEXT
+ *   the drawing is done in the buffer coordinate space, but the older (deprecated)
+ *   layers %GTK_TEXT_VIEW_LAYER_BELOW and %GTK_TEXT_VIEW_LAYER_ABOVE work in viewport
+ *   coordinates, which makes them unnecessarily hard to use. Since: 3.14
+ * @extend_selection: The class handler for the #GtkTextView::extend-selection
+ *   signal. Since 3.16
+ */</doc>
+<mbr r='_GtkTextViewClass::parent_class' o='0' t='GtkContainerClass'/>
+<mbr r='_GtkTextViewClass::populate_popup' o='7808' t='void (*)(GtkTextView *, GtkWidget *)'/>
+<mbr r='_GtkTextViewClass::move_cursor' o='7872' t='void (*)(GtkTextView *, GtkMovementStep, gint, gboolean)'/>
+<mbr r='_GtkTextViewClass::set_anchor' o='7936' t='void (*)(GtkTextView *)'/>
+<mbr r='_GtkTextViewClass::insert_at_cursor' o='8000' t='void (*)(GtkTextView *, const gchar *)'/>
+<mbr r='_GtkTextViewClass::delete_from_cursor' o='8064' t='void (*)(GtkTextView *, GtkDeleteType, gint)'/>
+<mbr r='_GtkTextViewClass::backspace' o='8128' t='void (*)(GtkTextView *)'/>
+<mbr r='_GtkTextViewClass::cut_clipboard' o='8192' t='void (*)(GtkTextView *)'/>
+<mbr r='_GtkTextViewClass::copy_clipboard' o='8256' t='void (*)(GtkTextView *)'/>
+<mbr r='_GtkTextViewClass::paste_clipboard' o='8320' t='void (*)(GtkTextView *)'/>
+<mbr r='_GtkTextViewClass::toggle_overwrite' o='8384' t='void (*)(GtkTextView *)'/>
+<mbr r='_GtkTextViewClass::create_buffer' o='8448' t='GtkTextBuffer *(*)(GtkTextView *)'/>
+<mbr r='_GtkTextViewClass::draw_layer' o='8512' t='void (*)(GtkTextView *, GtkTextViewLayer, cairo_t *)'/>
+<mbr r='_GtkTextViewClass::extend_selection' o='8576' t='gboolean (*)(GtkTextView *, GtkTextExtendSelection, const GtkTextIter *, GtkTextIter *, GtkTextIter *)'/>
+<mbr r='_GtkTextViewClass::insert_emoji' o='8640' t='void (*)(GtkTextView *)'/>
+<mbr r='_GtkTextViewClass::_gtk_reserved1' o='8704' t='void (*)()'/>
+<mbr r='_GtkTextViewClass::_gtk_reserved2' o='8768' t='void (*)()'/>
+<mbr r='_GtkTextViewClass::_gtk_reserved3' o='8832' t='void (*)()'/>
+<mbr r='_GtkTextViewClass::_gtk_reserved4' o='8896' t='void (*)()'/>

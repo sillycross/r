@@ -1,0 +1,8 @@
+<dec f='include/xcb/xproto.h' l='3160' type='1048576'/>
+<doc f='include/xcb/xproto.h' l='3152'>/**&lt; The clip-mask restricts writes to the destination drawable. Only pixels where the clip-mask has
+bits set to 1 are drawn. Pixels are not drawn outside the area covered by the clip-mask or where
+the clip-mask has bits set to 0. The clip-mask affects all graphics requests, but it does not clip
+sources. The clip-mask origin is interpreted relative to the origin of whatever destination drawable is specified in a graphics request. If a pixmap is specified as the clip-mask, it must have
+depth 1 and have the same root as the gcontext (or a Match error results). If clip-mask is None,
+then pixels are always drawn, regardless of the clip origin. The clip-mask can also be set with the
+SetClipRectangles request. */</doc>

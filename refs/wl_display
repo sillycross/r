@@ -1,0 +1,124 @@
+<use f='include/wayland-client-core.h' l='207' c='wl_display_connect'/>
+<use f='include/wayland-client-core.h' l='210' c='wl_display_connect_to_fd'/>
+<use f='include/wayland-client-core.h' l='214' c='wl_display_disconnect'/>
+<use f='include/wayland-client-core.h' l='217' c='wl_display_get_fd'/>
+<use f='include/wayland-client-core.h' l='220' c='wl_display_dispatch'/>
+<use f='include/wayland-client-core.h' l='223' c='wl_display_dispatch_queue'/>
+<use f='include/wayland-client-core.h' l='227' c='wl_display_dispatch_queue_pending'/>
+<use f='include/wayland-client-core.h' l='231' c='wl_display_dispatch_pending'/>
+<use f='include/wayland-client-core.h' l='234' c='wl_display_get_error'/>
+<use f='include/wayland-client-core.h' l='237' c='wl_display_get_protocol_error'/>
+<use f='include/wayland-client-core.h' l='242' c='wl_display_flush'/>
+<use f='include/wayland-client-core.h' l='245' c='wl_display_roundtrip_queue'/>
+<use f='include/wayland-client-core.h' l='249' c='wl_display_roundtrip'/>
+<use f='include/wayland-client-core.h' l='252' c='wl_display_create_queue'/>
+<use f='include/wayland-client-core.h' l='255' c='wl_display_prepare_read_queue'/>
+<use f='include/wayland-client-core.h' l='259' c='wl_display_prepare_read'/>
+<use f='include/wayland-client-core.h' l='262' c='wl_display_cancel_read'/>
+<use f='include/wayland-client-core.h' l='265' c='wl_display_read_events'/>
+<use f='include/wayland-client-protocol.h' l='871'/>
+<use f='include/wayland-client-protocol.h' l='886'/>
+<use f='include/wayland-client-protocol.h' l='894' c='_ZL23wl_display_add_listenerP10wl_displayPK19wl_display_listenerPv'/>
+<use f='include/wayland-client-protocol.h' l='924' c='_ZL24wl_display_set_user_dataP10wl_displayPv'/>
+<use f='include/wayland-client-protocol.h' l='931' c='_ZL24wl_display_get_user_dataP10wl_display'/>
+<use f='include/wayland-client-protocol.h' l='937' c='_ZL22wl_display_get_versionP10wl_display'/>
+<use f='include/wayland-client-protocol.h' l='958' c='_ZL15wl_display_syncP10wl_display'/>
+<use f='include/wayland-client-protocol.h' l='982' c='_ZL23wl_display_get_registryP10wl_display'/>
+<use f='include/wayland-server-core.h' l='190' c='wl_display_create'/>
+<use f='include/wayland-server-core.h' l='194' c='wl_display_destroy'/>
+<use f='include/wayland-server-core.h' l='197' c='wl_display_get_event_loop'/>
+<use f='include/wayland-server-core.h' l='200' c='wl_display_add_socket'/>
+<use f='include/wayland-server-core.h' l='203' c='wl_display_add_socket_auto'/>
+<use f='include/wayland-server-core.h' l='206' c='wl_display_add_socket_fd'/>
+<use f='include/wayland-server-core.h' l='209' c='wl_display_terminate'/>
+<use f='include/wayland-server-core.h' l='212' c='wl_display_run'/>
+<use f='include/wayland-server-core.h' l='215' c='wl_display_flush_clients'/>
+<use f='include/wayland-server-core.h' l='218' c='wl_display_destroy_clients'/>
+<use f='include/wayland-server-core.h' l='226' c='wl_display_get_serial'/>
+<use f='include/wayland-server-core.h' l='229' c='wl_display_next_serial'/>
+<use f='include/wayland-server-core.h' l='232' c='wl_display_add_destroy_listener'/>
+<use f='include/wayland-server-core.h' l='236' c='wl_display_add_client_created_listener'/>
+<use f='include/wayland-server-core.h' l='240' c='wl_display_get_destroy_listener'/>
+<use f='include/wayland-server-core.h' l='244' c='wl_global_create'/>
+<use f='include/wayland-server-core.h' l='275' c='wl_display_set_global_filter'/>
+<use f='include/wayland-server-core.h' l='289' c='wl_client_create'/>
+<use f='include/wayland-server-core.h' l='292' c='wl_display_get_client_list'/>
+<use f='include/wayland-server-core.h' l='523' c='wl_client_get_display'/>
+<use f='include/wayland-server-core.h' l='634' c='wl_display_init_shm'/>
+<use f='include/wayland-server-core.h' l='637' c='wl_display_add_shm_format'/>
+<use f='include/wayland-server-core.h' l='665' c='wl_display_add_protocol_logger'/>
+<use f='include/wayland-server.h' l='89' c='wl_display_add_global'/>
+<use f='include/wayland-server.h' l='95' c='wl_display_remove_global'/>
+<doc f='include/wayland-client-core.h' l='55'>/** \class wl_display
+ *
+ * \brief Represents a connection to the compositor and acts as a proxy to
+ * the wl_display singleton object.
+ *
+ * A wl_display object represents a client connection to a Wayland
+ * compositor. It is created with either \ref wl_display_connect() or
+ * \ref wl_display_connect_to_fd(). A connection is terminated using
+ * \ref wl_display_disconnect().
+ *
+ * A wl_display is also used as the \ref wl_proxy for the wl_display
+ * singleton object on the compositor side.
+ *
+ * A wl_display object handles all the data sent from and to the
+ * compositor. When a \ref wl_proxy marshals a request, it will write its wire
+ * representation to the display&apos;s write buffer. The data is sent to the
+ * compositor when the client calls \ref wl_display_flush().
+ *
+ * Incoming data is handled in two steps: queueing and dispatching. In the
+ * queue step, the data coming from the display fd is interpreted and
+ * added to a queue. On the dispatch step, the handler for the incoming
+ * event set by the client on the corresponding \ref wl_proxy is called.
+ *
+ * A wl_display has at least one event queue, called the &lt;em&gt;default
+ * queue&lt;/em&gt;. Clients can create additional event queues with \ref
+ * wl_display_create_queue() and assign \ref wl_proxy&apos;s to it. Events
+ * occurring in a particular proxy are always queued in its assigned queue.
+ * A client can ensure that a certain assumption, such as holding a lock
+ * or running from a given thread, is true when a proxy event handler is
+ * called by assigning that proxy to an event queue and making sure that
+ * this queue is only dispatched when the assumption holds.
+ *
+ * The default queue is dispatched by calling \ref wl_display_dispatch().
+ * This will dispatch any events queued on the default queue and attempt
+ * to read from the display fd if it&apos;s empty. Events read are then queued
+ * on the appropriate queues according to the proxy assignment.
+ *
+ * A user created queue is dispatched with \ref wl_display_dispatch_queue().
+ * This function behaves exactly the same as wl_display_dispatch()
+ * but it dispatches given queue instead of the default queue.
+ *
+ * A real world example of event queue usage is Mesa&apos;s implementation of
+ * eglSwapBuffers() for the Wayland platform. This function might need
+ * to block until a frame callback is received, but dispatching the default
+ * queue could cause an event handler on the client to start drawing
+ * again. This problem is solved using another event queue, so that only
+ * the events handled by the EGL code are dispatched during the block.
+ *
+ * This creates a problem where a thread dispatches a non-default
+ * queue, reading all the data from the display fd. If the application
+ * would call \em poll(2) after that it would block, even though there
+ * might be events queued on the default queue. Those events should be
+ * dispatched with \ref wl_display_dispatch_pending() or \ref
+ * wl_display_dispatch_queue_pending() before flushing and blocking.
+ */</doc>
+<use f='WebKit/Source/WebCore/platform/graphics/wayland/PlatformDisplayWayland.h' l='40' c='_ZN7WebCore22PlatformDisplayWayland6createEP10wl_display'/>
+<use f='WebKit/Source/WebCore/platform/graphics/wayland/PlatformDisplayWayland.h' l='44' c='_ZNK7WebCore22PlatformDisplayWayland6nativeEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/wayland/PlatformDisplayWayland.h' l='54' c='_ZN7WebCore22PlatformDisplayWaylandC1EP10wl_displayNS_15PlatformDisplay18NativeDisplayOwnedE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/wayland/PlatformDisplayWayland.h' l='60'/>
+<use f='WebKit/Source/WebKit/WebProcess/gtk/WaylandCompositorDisplay.h' l='46' c='_ZN6WebKit24WaylandCompositorDisplayC1EP10wl_display'/>
+<use f='WebKit/Source/WebKit/WebProcess/gtk/WaylandCompositorDisplay.cpp' l='45' c='_ZN6WebKit24WaylandCompositorDisplay6createERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebKit/WebProcess/gtk/WaylandCompositorDisplay.cpp' l='65' c='_ZN6WebKit24WaylandCompositorDisplayC1EP10wl_display'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.h' l='122' c='_ZN6WebKit17WaylandCompositor14DisplayDeleterclEP10wl_display'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.h' l='124'/>
+<use f='include/gtk-3.0/gdk/wayland/gdkwaylanddisplay.h' l='49' c='gdk_wayland_display_get_wl_display'/>
+<use f='include/EGL/eglext.h' l='1385'/>
+<use f='include/EGL/eglext.h' l='1386'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='449'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='483' c='_ZN6WebKitL23createWaylandLoopSourceEP10wl_display'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='498' c='_ZN6WebKit17WaylandCompositorC1Ev'/>
+<use f='WebKit/Source/WebCore/platform/graphics/wayland/PlatformDisplayWayland.cpp' l='55' c='_ZN7WebCore22PlatformDisplayWayland6createEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/wayland/PlatformDisplayWayland.cpp' l='64' c='_ZN7WebCore22PlatformDisplayWayland6createEP10wl_display'/>
+<use f='WebKit/Source/WebCore/platform/graphics/wayland/PlatformDisplayWayland.cpp' l='71' c='_ZN7WebCore22PlatformDisplayWaylandC1EP10wl_displayNS_15PlatformDisplay18NativeDisplayOwnedE'/>

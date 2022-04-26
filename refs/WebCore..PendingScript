@@ -1,0 +1,86 @@
+<use f='WebKit/Source/WebCore/dom/ScriptElement.h' l='55' c='_ZN7WebCore13ScriptElement20executePendingScriptERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/dom/PendingScriptClient.h' l='36' c='_ZN7WebCore19PendingScriptClient14notifyFinishedERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/xml/parser/XMLDocumentParser.h' l='103' c='_ZN7WebCore17XMLDocumentParser14notifyFinishedERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/xml/parser/XMLDocumentParser.h' l='178'/>
+<inh f='WebKit/WTF/Headers/wtf/RefCounted.h' l='184' c='WTF::RefCounted'/>
+<inh f='WebKit/Source/WebCore/dom/LoadableScriptClient.h' l='32' c='WebCore::LoadableScriptClient'/>
+<def f='WebKit/Source/WebCore/dom/PendingScript.h' l='42' ll='78'/>
+<use f='WebKit/Source/WebCore/dom/PendingScript.h' l='42'/>
+<use f='WebKit/Source/WebCore/dom/PendingScript.h' l='44' c='_ZN7WebCore13PendingScript6createERNS_13ScriptElementERNS_14LoadableScriptE'/>
+<use f='WebKit/Source/WebCore/dom/PendingScript.h' l='45' c='_ZN7WebCore13PendingScript6createERNS_13ScriptElementEN3WTF12TextPositionE'/>
+<use f='WebKit/Source/WebCore/xml/parser/XMLDocumentParser.cpp' l='231' c='_ZN7WebCore17XMLDocumentParser14notifyFinishedERNS_13PendingScriptE'/>
+<size>48</size>
+<doc f='WebKit/Source/WebCore/dom/PendingScript.h' l='40'>// A container for scripts which may be loaded and executed.
+// This can hold LoadableScript and non external inline script.</doc>
+<fun r='_ZN7WebCore13PendingScript6createERNS_13ScriptElementERNS_14LoadableScriptE'/>
+<fun r='_ZN7WebCore13PendingScript6createERNS_13ScriptElementEN3WTF12TextPositionE'/>
+<fun r='_ZN7WebCore13PendingScriptD1Ev'/>
+<fun r='_ZNK7WebCore13PendingScript16startingPositionEv'/>
+<fun r='_ZN7WebCore13PendingScript19setStartingPositionERKN3WTF12TextPositionE'/>
+<fun r='_ZNK7WebCore13PendingScript15watchingForLoadEv'/>
+<fun r='_ZN7WebCore13PendingScript7elementEv'/>
+<fun r='_ZNK7WebCore13PendingScript7elementEv'/>
+<fun r='_ZNK7WebCore13PendingScript14loadableScriptEv'/>
+<fun r='_ZNK7WebCore13PendingScript12needsLoadingEv'/>
+<fun r='_ZNK7WebCore13PendingScript8isLoadedEv'/>
+<fun r='_ZNK7WebCore13PendingScript5errorEv'/>
+<fun r='_ZN7WebCore13PendingScript14notifyFinishedERNS_14LoadableScriptE'/>
+<fun r='_ZN7WebCore13PendingScript9setClientERNS_19PendingScriptClientE'/>
+<fun r='_ZN7WebCore13PendingScript11clearClientEv'/>
+<fun r='_ZN7WebCore13PendingScriptC1ERNS_13ScriptElementERNS_14LoadableScriptE'/>
+<fun r='_ZN7WebCore13PendingScriptC1ERNS_13ScriptElementEN3WTF12TextPositionE'/>
+<fun r='_ZN7WebCore13PendingScript20notifyClientFinishedEv'/>
+<mbr r='WebCore::PendingScript::m_element' o='128' t='Ref&lt;WebCore::ScriptElement&gt;'/>
+<mbr r='WebCore::PendingScript::m_startingPosition' o='192' t='WTF::TextPosition'/>
+<mbr r='WebCore::PendingScript::m_loadableScript' o='256' t='RefPtr&lt;WebCore::LoadableScript&gt;'/>
+<mbr r='WebCore::PendingScript::m_client' o='320' t='WebCore::PendingScriptClient *'/>
+<fun r='_ZNK7WebCore13PendingScript14loadableScriptEv'/>
+<use f='WebKit/Source/WebCore/dom/ScriptRunner.h' l='61' c='_ZN7WebCore12ScriptRunner14notifyFinishedERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/dom/ScriptRunner.h' l='64'/>
+<use f='WebKit/Source/WebCore/dom/ScriptRunner.h' l='65'/>
+<use f='WebKit/Source/WebCore/dom/ScriptRunner.h' l='66'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLScriptRunnerHost.h' l='38' c='_ZN7WebCore20HTMLScriptRunnerHost12watchForLoadERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLScriptRunnerHost.h' l='40' c='_ZN7WebCore20HTMLScriptRunnerHost19stopWatchingForLoadERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLDocumentParser.h' l='95' c='_ZN7WebCore18HTMLDocumentParser12watchForLoadERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLDocumentParser.h' l='96' c='_ZN7WebCore18HTMLDocumentParser19stopWatchingForLoadERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLDocumentParser.h' l='102' c='_ZN7WebCore18HTMLDocumentParser14notifyFinishedERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLScriptRunner.h' l='52' c='_ZN7WebCore16HTMLScriptRunner28executeScriptsWaitingForLoadERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLScriptRunner.h' l='63' c='_ZN7WebCore16HTMLScriptRunner36executePendingScriptAndDispatchEventERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLScriptRunner.h' l='71' c='_ZN7WebCore16HTMLScriptRunner12watchForLoadERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLScriptRunner.h' l='72' c='_ZN7WebCore16HTMLScriptRunner19stopWatchingForLoadERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLScriptRunner.h' l='73' c='_ZN7WebCore16HTMLScriptRunner20isPendingScriptReadyERKNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLScriptRunner.h' l='77'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLScriptRunner.h' l='78'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLDocumentParser.cpp' l='557' c='_ZN7WebCore18HTMLDocumentParser12watchForLoadERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLDocumentParser.cpp' l='566' c='_ZN7WebCore18HTMLDocumentParser19stopWatchingForLoadERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLDocumentParser.cpp' l='578' c='_ZN7WebCore18HTMLDocumentParser14notifyFinishedERNS_13PendingScriptE'/>
+<size>48</size>
+<use f='WebKit/Source/WebCore/html/parser/HTMLScriptRunner.cpp' l='91' c='_ZN7WebCore16HTMLScriptRunner20isPendingScriptReadyERKNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLScriptRunner.cpp' l='103' c='_ZN7WebCore16HTMLScriptRunner36executePendingScriptAndDispatchEventERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLScriptRunner.cpp' l='119' c='_ZN7WebCore16HTMLScriptRunner12watchForLoadERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLScriptRunner.cpp' l='125' c='_ZN7WebCore16HTMLScriptRunner19stopWatchingForLoadERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLScriptRunner.cpp' l='168' c='_ZN7WebCore16HTMLScriptRunner28executeScriptsWaitingForLoadERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLScriptRunner.cpp' l='206' c='_ZN7WebCoreL20requestPendingScriptERNS_13ScriptElementE'/>
+<size>48</size>
+<use f='WebKit/Source/WebCore/dom/PendingScript.cpp' l='35' c='_ZN7WebCore13PendingScript6createERNS_13ScriptElementERNS_14LoadableScriptE'/>
+<use f='WebKit/Source/WebCore/dom/PendingScript.cpp' l='37' c='_ZN7WebCore13PendingScript6createERNS_13ScriptElementERNS_14LoadableScriptE'/>
+<use f='WebKit/Source/WebCore/dom/PendingScript.cpp' l='42' c='_ZN7WebCore13PendingScript6createERNS_13ScriptElementEN3WTF12TextPositionE'/>
+<use f='WebKit/Source/WebCore/dom/PendingScript.cpp' l='44' c='_ZN7WebCore13PendingScript6createERNS_13ScriptElementEN3WTF12TextPositionE'/>
+<use f='WebKit/Source/WebCore/dom/PendingScript.cpp' l='67' c='_ZN7WebCore13PendingScript20notifyClientFinishedEv'/>
+<size>48</size>
+<fun r='_ZN7WebCore13PendingScript6createERNS_13ScriptElementERNS_14LoadableScriptE'/>
+<fun r='_ZN7WebCore13PendingScript6createERNS_13ScriptElementEN3WTF12TextPositionE'/>
+<fun r='_ZN7WebCore13PendingScriptC1ERNS_13ScriptElementEN3WTF12TextPositionE'/>
+<fun r='_ZN7WebCore13PendingScriptC1ERNS_13ScriptElementERNS_14LoadableScriptE'/>
+<fun r='_ZN7WebCore13PendingScriptD1Ev'/>
+<fun r='_ZN7WebCore13PendingScript20notifyClientFinishedEv'/>
+<fun r='_ZN7WebCore13PendingScript14notifyFinishedERNS_14LoadableScriptE'/>
+<fun r='_ZNK7WebCore13PendingScript8isLoadedEv'/>
+<fun r='_ZNK7WebCore13PendingScript5errorEv'/>
+<fun r='_ZN7WebCore13PendingScript9setClientERNS_19PendingScriptClientE'/>
+<fun r='_ZN7WebCore13PendingScript11clearClientEv'/>
+<use f='WebKit/Source/WebCore/dom/ScriptElement.cpp' l='452' c='_ZN7WebCore13ScriptElement20executePendingScriptERNS_13PendingScriptE'/>
+<size>48</size>
+<use f='WebKit/Source/WebCore/dom/ScriptRunner.cpp' l='95' c='_ZN7WebCore12ScriptRunner14notifyFinishedERNS_13PendingScriptE'/>
+<use f='WebKit/Source/WebCore/dom/ScriptRunner.cpp' l='111' c='_ZN7WebCore12ScriptRunner10timerFiredEv'/>
+<size>48</size>

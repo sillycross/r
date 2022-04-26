@@ -1,0 +1,156 @@
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.h' l='88' c='_ZN2sh11TIntermNode18getAsConstantUnionEv'/>
+<inh f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.h' l='296' c='sh::TIntermExpression'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.h' l='319' ll='393'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.h' l='328' c='_ZNK2sh20TIntermConstantUnion8deepCopyEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.h' l='356' c='_ZN2sh20TIntermConstantUnion18getAsConstantUnionEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.h' l='392' c='_ZN2sh20TIntermConstantUnionC1ERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermTraverse.h' l='45' c='_ZN2sh16TIntermTraverser18visitConstantUnionEPNS_20TIntermConstantUnionE'/>
+<size>176</size>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.h' l='313'>// Constant folded node.
+// Note that nodes may be constant folded and not be constant expressions with the EvqConst
+// qualifier. This happens for example when the following expression is processed:
+// &quot;true ? 1.0 : non_constant&quot;
+// Other nodes than TIntermConstantUnion may also be constant expressions.
+//</doc>
+<fun r='_ZN2sh20TIntermConstantUnionC1EPKNS_14TConstantUnionERKNS_5TTypeE'/>
+<fun r='_ZNK2sh20TIntermConstantUnion8deepCopyEv'/>
+<fun r='_ZNK2sh20TIntermConstantUnion16hasConstantValueEv'/>
+<fun r='_ZNK2sh20TIntermConstantUnion16getConstantValueEv'/>
+<fun r='_ZNK2sh20TIntermConstantUnion14hasSideEffectsEv'/>
+<fun r='_ZNK2sh20TIntermConstantUnion9getIConstEm'/>
+<fun r='_ZNK2sh20TIntermConstantUnion9getUConstEm'/>
+<fun r='_ZNK2sh20TIntermConstantUnion9getFConstEm'/>
+<fun r='_ZNK2sh20TIntermConstantUnion9getBConstEm'/>
+<fun r='_ZNK2sh20TIntermConstantUnion6isZeroEm'/>
+<fun r='_ZN2sh20TIntermConstantUnion18getAsConstantUnionEv'/>
+<fun r='_ZN2sh20TIntermConstantUnion8traverseEPNS_16TIntermTraverserE'/>
+<fun r='_ZN2sh20TIntermConstantUnion5visitENS_5VisitEPNS_16TIntermTraverserE'/>
+<fun r='_ZNK2sh20TIntermConstantUnion13getChildCountEv'/>
+<fun r='_ZNK2sh20TIntermConstantUnion12getChildNodeEm'/>
+<fun r='_ZN2sh20TIntermConstantUnion16replaceChildNodeEPNS_11TIntermNodeES2_'/>
+<fun r='_ZN2sh20TIntermConstantUnion25foldUnaryNonComponentWiseE9TOperator'/>
+<fun r='_ZN2sh20TIntermConstantUnion22foldUnaryComponentWiseE9TOperatorPNS_12TDiagnosticsE'/>
+<fun r='_ZN2sh20TIntermConstantUnion10FoldBinaryE9TOperatorPKNS_14TConstantUnionERKNS_5TTypeES4_S7_PNS_12TDiagnosticsERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh20TIntermConstantUnion12FoldIndexingERKNS_5TTypeEPKNS_14TConstantUnionEi'/>
+<fun r='_ZN2sh20TIntermConstantUnion20FoldAggregateBuiltInEPNS_16TIntermAggregateEPNS_12TDiagnosticsE'/>
+<fun r='_ZN2sh20TIntermConstantUnion15IsFloatDivisionENS_10TBasicTypeES1_'/>
+<mbr r='sh::TIntermConstantUnion::mUnionArrayPointer' o='1344' t='const sh::TConstantUnion *'/>
+<fun r='_ZNK2sh20TIntermConstantUnion18foldFloatTypeUnaryERKNS_14TConstantUnionEPFffEPS1_'/>
+<fun r='_ZN2sh20TIntermConstantUnionC1ERKS0_'/>
+<fun r='_ZN2sh20TIntermConstantUnion8traverseEPNS_16TIntermTraverserE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='946' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='99' c='_ZN2sh13TParseContext16addScalarLiteralEPKNS_14TConstantUnionERKNS_10TSourceLocE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.cpp' l='104' c='_ZN2sh12_GLOBAL__N_116CreateFoldedNodeEPKNS_14TConstantUnionEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.cpp' l='1051' c='_ZN2sh20TIntermConstantUnionC1ERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.cpp' l='1842' c='_ZN2sh14TIntermSwizzle4foldEPNS_12TDiagnosticsE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.cpp' l='2007' c='_ZN2sh12TIntermUnary4foldEPNS_12TDiagnosticsE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.cpp' l='3163' c='_ZN2sh20TIntermConstantUnion20FoldAggregateBuiltInEPNS_16TIntermAggregateEPNS_12TDiagnosticsE'/>
+<size>176</size>
+<fun r='_ZNK2sh20TIntermConstantUnion13getChildCountEv'/>
+<fun r='_ZNK2sh20TIntermConstantUnion12getChildNodeEm'/>
+<fun r='_ZN2sh20TIntermConstantUnionC1ERKS0_'/>
+<fun r='_ZNK2sh20TIntermConstantUnion16hasConstantValueEv'/>
+<fun r='_ZNK2sh20TIntermConstantUnion16getConstantValueEv'/>
+<fun r='_ZN2sh20TIntermConstantUnion12FoldIndexingERKNS_5TTypeEPKNS_14TConstantUnionEi'/>
+<fun r='_ZN2sh20TIntermConstantUnion10FoldBinaryE9TOperatorPKNS_14TConstantUnionERKNS_5TTypeES4_S7_PNS_12TDiagnosticsERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh20TIntermConstantUnion25foldUnaryNonComponentWiseE9TOperator'/>
+<fun r='_ZN2sh20TIntermConstantUnion22foldUnaryComponentWiseE9TOperatorPNS_12TDiagnosticsE'/>
+<fun r='_ZNK2sh20TIntermConstantUnion18foldFloatTypeUnaryERKNS_14TConstantUnionEPFffEPS1_'/>
+<fun r='_ZN2sh20TIntermConstantUnion20FoldAggregateBuiltInEPNS_16TIntermAggregateEPNS_12TDiagnosticsE'/>
+<fun r='_ZN2sh20TIntermConstantUnion15IsFloatDivisionENS_10TBasicTypeES1_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/OutputGLSLBase.h' l='59' c='_ZN2sh15TOutputGLSLBase18visitConstantUnionEPNS_20TIntermConstantUnionE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/OutputGLSLBase.cpp' l='529' c='_ZN2sh15TOutputGLSLBase18visitConstantUnionEPNS_20TIntermConstantUnionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/OutputGLSLBase.cpp' l='669' c='_ZN2sh15TOutputGLSLBase11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/OutputGLSLBase.cpp' l='682' c='_ZN2sh15TOutputGLSLBase11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/OutputTree.cpp' l='40' c='_ZN2sh12_GLOBAL__N_116TOutputTraverser18visitConstantUnionEPNS_20TIntermConstantUnionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/OutputTree.cpp' l='276' c='_ZN2sh12_GLOBAL__N_116TOutputTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/OutputTree.cpp' l='571' c='_ZN2sh12_GLOBAL__N_116TOutputTraverser18visitConstantUnionEPNS_20TIntermConstantUnionE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.h' l='26' c='_ZN2sh15CreateFloatNodeEf'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.h' l='27' c='_ZN2sh15CreateIndexNodeEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.h' l='28' c='_ZN2sh14CreateUIntNodeEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.h' l='29' c='_ZN2sh14CreateBoolNodeEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='1009' c='_ZN2sh13TParseContext21checkIsValidArraySizeERKNS_10TSourceLocEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='1974' c='_ZN2sh13TParseContext16addScalarLiteralEPKNS_14TConstantUnionERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='1977' c='_ZN2sh13TParseContext16addScalarLiteralEPKNS_14TConstantUnionERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='1977' c='_ZN2sh13TParseContext16addScalarLiteralEPKNS_14TConstantUnionERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2042' c='_ZN2sh13TParseContext23parseVariableIdentifierERKNS_10TSourceLocERKNS_15ImmutableStringEPKNS_7TSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2060' c='_ZN2sh13TParseContext23parseVariableIdentifierERKNS_10TSourceLocERKNS_15ImmutableStringEPKNS_7TSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='4163' c='_ZN2sh13TParseContext18addIndexExpressionEPNS_12TIntermTypedERKNS_10TSourceLocES2_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='4314' c='_ZN2sh13TParseContext18addIndexExpressionEPNS_12TIntermTypedERKNS_10TSourceLocES2_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='5171' c='_ZN2sh13TParseContext7addCaseEPNS_12TIntermTypedERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='5862' c='_ZN2sh13TParseContext18checkTextureGatherEPNS_16TIntermAggregateE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='5956' c='_ZN2sh13TParseContext18checkTextureOffsetEPNS_16TIntermAggregateE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateAST.cpp' l='26' c='_ZN2sh12_GLOBAL__N_111ValidateAST18visitConstantUnionEPNS_20TIntermConstantUnionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateAST.cpp' l='134' c='_ZN2sh12_GLOBAL__N_111ValidateAST18visitConstantUnionEPNS_20TIntermConstantUnionE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateGlobalInitializer.cpp' l='27' c='_ZN2sh12_GLOBAL__N_134ValidateGlobalInitializerTraverser18visitConstantUnionEPNS_20TIntermConstantUnionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateGlobalInitializer.cpp' l='80' c='_ZN2sh12_GLOBAL__N_134ValidateGlobalInitializerTraverser18visitConstantUnionEPNS_20TIntermConstantUnionE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateSwitch.cpp' l='29' c='_ZN2sh12_GLOBAL__N_114ValidateSwitch18visitConstantUnionEPNS_20TIntermConstantUnionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateSwitch.cpp' l='96' c='_ZN2sh12_GLOBAL__N_114ValidateSwitch18visitConstantUnionEPNS_20TIntermConstantUnionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateSwitch.cpp' l='201' c='_ZN2sh12_GLOBAL__N_114ValidateSwitch9visitCaseENS_5VisitEPNS_11TIntermCaseE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ClampFragDepth.cpp' l='37' c='_ZN2sh14ClampFragDepthEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ClampFragDepth.cpp' l='38' c='_ZN2sh14ClampFragDepthEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ClampPointSize.cpp' l='35' c='_ZN2sh14ClampPointSizeEPNS_9TCompilerEPNS_12TIntermBlockEfPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ClampPointSize.cpp' l='36' c='_ZN2sh14ClampPointSizeEPNS_9TCompilerEPNS_12TIntermBlockEfPNS_12TSymbolTableE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='44' c='_ZN2sh12_GLOBAL__N_129InitializeViewIDAndInstanceIDEPKNS_9TVariableES3_jRKNS_12TSymbolTableEPNS_7TVectorIPNS_11TIntermNodeEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='45' c='_ZN2sh12_GLOBAL__N_129InitializeViewIDAndInstanceIDEPKNS_9TVariableES3_jRKNS_12TSymbolTableEPNS_7TVectorIPNS_11TIntermNodeEEE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ExpandIntegerPowExpressions.cpp' l='81' c='_ZN2sh12_GLOBAL__N_19Traverser14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ExpandIntegerPowExpressions.cpp' l='135' c='_ZN2sh12_GLOBAL__N_19Traverser14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ExpandIntegerPowExpressions.cpp' l='135' c='_ZN2sh12_GLOBAL__N_19Traverser14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='115' c='_ZN2sh12_GLOBAL__N_123AddArrayZeroInitForLoopEPKNS_12TIntermTypedEbPNS_7TVectorIPNS_11TIntermNodeEEEPNS_12TSymbolTableE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RecordConstantPrecision.cpp' l='34' c='_ZN2sh12_GLOBAL__N_132RecordConstantPrecisionTraverser18visitConstantUnionEPNS_20TIntermConstantUnionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RecordConstantPrecision.cpp' l='123' c='_ZN2sh12_GLOBAL__N_132RecordConstantPrecisionTraverser18visitConstantUnionEPNS_20TIntermConstantUnionE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveArrayLengthMethod.cpp' l='62' c='_ZN2sh12_GLOBAL__N_126RemoveArrayLengthTraverser10visitUnaryENS_5VisitEPNS_12TIntermUnaryE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='73' c='_ZN2sh12_GLOBAL__N_121CreateIntConstantNodeEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='77' c='_ZN2sh12_GLOBAL__N_121CreateIntConstantNodeEi'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='53' c='_ZN2sh12_GLOBAL__N_118CreateUIntConstantEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='60' c='_ZN2sh12_GLOBAL__N_118CreateUIntConstantEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='98' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='99' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='100' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='459' c='_ZN2sh12_GLOBAL__N_130RewriteAtomicCountersTraverser29convertFunctionArgumentHelperERKNS_7TVectorIjEEPNS_12TIntermTypedEjPj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='558' c='_ZN2sh12_GLOBAL__N_130RewriteAtomicCountersTraverser23convertFunctionArgumentEPNS_11TIntermNodeEPPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='559' c='_ZN2sh12_GLOBAL__N_130RewriteAtomicCountersTraverser23convertFunctionArgumentEPNS_11TIntermNodeEPPNS_12TIntermTypedE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='204' c='_ZN2sh12_GLOBAL__N_116IsConvertedFieldEPNS_12TIntermTypedERKSt13unordered_mapIPKNS_6TFieldEbSt4hashIS6_ESt8equal_toIS6_ESaISt4pairIKS6_bEEE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteUnaryMinusOperatorInt.cpp' l='94' c='_ZN2sh12_GLOBAL__N_19Traverser10visitUnaryENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteUnaryMinusOperatorInt.cpp' l='95' c='_ZN2sh12_GLOBAL__N_19Traverser10visitUnaryENS_5VisitEPNS_12TIntermUnaryE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='85' c='_ZN2sh14CreateZeroNodeERKNS_5TTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='85' c='_ZN2sh14CreateZeroNodeERKNS_5TTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='116' c='_ZN2sh15CreateFloatNodeEf'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='122' c='_ZN2sh15CreateFloatNodeEf'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='125' c='_ZN2sh15CreateIndexNodeEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='131' c='_ZN2sh15CreateIndexNodeEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='134' c='_ZN2sh14CreateUIntNodeEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='140' c='_ZN2sh14CreateUIntNodeEj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='143' c='_ZN2sh14CreateBoolNodeEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='149' c='_ZN2sh14CreateBoolNodeEb'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/AsNode.h' l='50'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/AsNode.h' l='52' c='_ZN2sh4priv6AsNodeINS_20TIntermConstantUnionEE4execEPNS_11TIntermNodeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/NodeType.h' l='56' c='_ZN2sh11GetNodeType18visitConstantUnionEPNS_20TIntermConstantUnionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermRebuild.h' l='215' c='_ZN2sh14TIntermRebuild21visitConstantUnionPreERNS_20TIntermConstantUnionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermRebuild.h' l='234' c='_ZN2sh14TIntermRebuild22visitConstantUnionPostERNS_20TIntermConstantUnionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermRebuild.cpp' l='849' c='_ZN2sh14TIntermRebuild21visitConstantUnionPreERNS_20TIntermConstantUnionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermRebuild.cpp' l='942' c='_ZN2sh14TIntermRebuild22visitConstantUnionPostERNS_20TIntermConstantUnionE'/>
+<size>176</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='251' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<size>176</size>

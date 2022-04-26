@@ -1,0 +1,5 @@
+<dec f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='209' type='static IPC::Connection * IPC::Connection::connection(IPC::Connection::UniqueID )'/>
+<def f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='321' ll='325' type='static IPC::Connection * IPC::Connection::connection(IPC::Connection::UniqueID uniqueID)'/>
+<doc f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='318'>// WTF_IGNORES_THREAD_SAFETY_ANALYSIS because this function accesses connectionMap() without locking.
+// It is safe because this function is only called on the main thread and Connection objects are only
+// constructed / destroyed on the main thread.</doc>

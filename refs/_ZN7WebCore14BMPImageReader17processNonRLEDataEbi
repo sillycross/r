@@ -1,0 +1,18 @@
+<dec f='WebKit/Source/WebCore/platform/image-decoders/bmp/BMPImageReader.h' l='180' type='WebCore::BMPImageReader::ProcessingResult WebCore::BMPImageReader::processNonRLEData(bool inRLE, int numPixels)'/>
+<doc f='WebKit/Source/WebCore/platform/image-decoders/bmp/BMPImageReader.h' l='167'>// Processes a set of non-RLE-compressed pixels. Two cases:
+    //   * inRLE = true: the data is inside an RLE-encoded bitmap. Tries to
+    //     process |numPixels| pixels on the current row.
+    //   * inRLE = false: the data is inside a non-RLE-encoded bitmap.
+    //     |numPixels| is ignored. Expects |m_coord| to point at the
+    //     beginning of the next row to be decoded. Tries to process as
+    //     many complete rows as possible. Returns InsufficientData if
+    //     there wasn&apos;t enough data to decode the whole image.
+    //
+    // This function returns a ProcessingResult instead of a bool so that it
+    // can avoid calling m_parent-&gt;setFailed(), which could lead to memory
+    // corruption since that will delete |this| but some callers still want
+    // to access member variables after this returns.</doc>
+<use f='WebKit/Source/WebCore/platform/image-decoders/bmp/BMPImageReader.cpp' l='94' u='c' c='_ZN7WebCore14BMPImageReader9decodeBMPEb'/>
+<use f='WebKit/Source/WebCore/platform/image-decoders/bmp/BMPImageReader.cpp' l='114' u='c' c='_ZN7WebCore14BMPImageReader9decodeBMPEb'/>
+<use f='WebKit/Source/WebCore/platform/image-decoders/bmp/BMPImageReader.cpp' l='580' u='c' c='_ZN7WebCore14BMPImageReader14processRLEDataEv'/>
+<def f='WebKit/Source/WebCore/platform/image-decoders/bmp/BMPImageReader.cpp' l='626' ll='726' type='BMPImageReader::ProcessingResult WebCore::BMPImageReader::processNonRLEData(bool inRLE, int numPixels)'/>

@@ -1,0 +1,16 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.h' l='246' type='JSCValue * jsc_value_function_callv(JSCValue * value, guint n_parameters, JSCValue ** parameters)'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='1339' ll='1363' type='JSCValue * jsc_value_function_callv(JSCValue * value, unsigned int parametersCount, JSCValue ** parameters)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='1325'>/**
+ * jsc_value_function_callv: (rename-to jsc_value_function_call)
+ * @value: a #JSCValue
+ * @n_parameters: the number of parameters
+ * @parameters: (nullable) (array length=n_parameters) (element-type JSCValue): the #JSCValue&lt;!-- --&gt;s to pass as parameters to the function, or %NULL
+ *
+ * Call function referenced by @value, passing the given @parameters. If @n_parameters
+ * is 0 no parameters will be passed to the function.
+ *
+ * This function always returns a #JSCValue, in case of void functions a #JSCValue referencing
+ * &lt;function&gt;undefined&lt;/function&gt; is returned
+ *
+ * Returns: (transfer full): a #JSCValue with the return value of the function.
+ */</doc>

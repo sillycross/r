@@ -1,0 +1,98 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/BlockDirectory.h' l='143'/>
+<inh f='WebKit/WTF/Headers/wtf/SentinelLinkedList.h' l='46' c='WTF::BasicRawSentinelNode'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoCellSet.h' l='43' ll='87'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoCellSet.h' l='43'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoSubspace.h' l='62'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoSubspace.h' l='72'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoSubspace.h' l='72'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VM.h' l='633'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VM.h' l='634'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VM.h' l='653'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VM.h' l='662' c='_ZN3JSC2VM11SpaceAndSet6setForERNS_8SubspaceE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VM.h' l='664' c='_ZN3JSC2VM11SpaceAndSet6setForERNS_8SubspaceE'/>
+<size>80</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoCellSet.h' l='40'>// Create a set of cells that are in an IsoSubspace. This allows concurrent O(1) set insertion and
+// removal. Each such set should be thought of as a 0.8% increase in object size for objects in that
+// IsoSubspace (it&apos;s like adding 1 bit every 16 bytes, or 1 bit every 128 bits).</doc>
+<fun r='_ZN3JSC10IsoCellSetC1ERNS_11IsoSubspaceE'/>
+<fun r='_ZN3JSC10IsoCellSetD1Ev'/>
+<fun r='_ZN3JSC10IsoCellSet3addEPNS_8HeapCellE'/>
+<fun r='_ZN3JSC10IsoCellSet6removeEPNS_8HeapCellE'/>
+<fun r='_ZNK3JSC10IsoCellSet8containsEPNS_8HeapCellE'/>
+<fun r='_ZN3JSC10IsoCellSet33parallelNotEmptyMarkedBlockSourceEv'/>
+<fun r='_ZN3JSC10IsoCellSet17forEachMarkedCellERKT_'/>
+<fun r='_ZN3JSC10IsoCellSet27forEachMarkedCellInParallelERKT0_'/>
+<fun r='_ZN3JSC10IsoCellSet15forEachLiveCellERKT_'/>
+<fun r='_ZN3JSC10IsoCellSet7addSlowEj'/>
+<fun r='_ZN3JSC10IsoCellSet13didResizeBitsEj'/>
+<fun r='_ZN3JSC10IsoCellSet14didRemoveBlockEj'/>
+<fun r='_ZN3JSC10IsoCellSet15sweepToFreeListEPNS_11MarkedBlock6HandleE'/>
+<fun r='_ZN3JSC10IsoCellSet18clearLowerTierCellEj'/>
+<mbr r='JSC::IsoCellSet::m_lowerTierBits' o='96' t='Bitmap&lt;MarkedBlock::maxNumberOfLowerTierCells&gt;'/>
+<mbr r='JSC::IsoCellSet::m_subspace' o='128' t='JSC::IsoSubspace &amp;'/>
+<mbr r='JSC::IsoCellSet::m_blocksWithBits' o='192' t='WTF::FastBitVector'/>
+<mbr r='JSC::IsoCellSet::m_bits' o='320' t='ConcurrentVector&lt;std::unique_ptr&lt;Bitmap&lt;MarkedBlock::atomsPerBlock&gt; &gt; &gt;'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ScriptExecutable.h' l='94' c='_ZN3JSC16ScriptExecutable9clearCodeERNS_10IsoCellSetE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoSubspaceInlines.h' l='42' c='_ZN3JSC11IsoSubspace18clearIsoCellSetBitEPNS_17PreciseAllocationE'/>
+<size>80</size>
+<use f='WebKit/Source/JavaScriptCore/heap/BlockDirectory.h' l='143'/>
+<inh f='WebKit/WTF/Headers/wtf/SentinelLinkedList.h' l='46' c='WTF::BasicRawSentinelNode'/>
+<def f='WebKit/Source/JavaScriptCore/heap/IsoCellSet.h' l='43' ll='87'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoCellSet.h' l='43'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.h' l='62'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.h' l='72'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.h' l='72'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.h' l='633'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.h' l='634'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.h' l='653'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.h' l='662' c='_ZN3JSC2VM11SpaceAndSet6setForERNS_8SubspaceE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.h' l='664' c='_ZN3JSC2VM11SpaceAndSet6setForERNS_8SubspaceE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScriptExecutable.h' l='94' c='_ZN3JSC16ScriptExecutable9clearCodeERNS_10IsoCellSetE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspaceInlines.h' l='42' c='_ZN3JSC11IsoSubspace18clearIsoCellSetBitEPNS_17PreciseAllocationE'/>
+<size>80</size>
+<doc f='WebKit/Source/JavaScriptCore/heap/IsoCellSet.h' l='40'>// Create a set of cells that are in an IsoSubspace. This allows concurrent O(1) set insertion and
+// removal. Each such set should be thought of as a 0.8% increase in object size for objects in that
+// IsoSubspace (it&apos;s like adding 1 bit every 16 bytes, or 1 bit every 128 bits).</doc>
+<fun r='_ZN3JSC10IsoCellSetC1ERNS_11IsoSubspaceE'/>
+<fun r='_ZN3JSC10IsoCellSetD1Ev'/>
+<fun r='_ZN3JSC10IsoCellSet3addEPNS_8HeapCellE'/>
+<fun r='_ZN3JSC10IsoCellSet6removeEPNS_8HeapCellE'/>
+<fun r='_ZNK3JSC10IsoCellSet8containsEPNS_8HeapCellE'/>
+<fun r='_ZN3JSC10IsoCellSet33parallelNotEmptyMarkedBlockSourceEv'/>
+<fun r='_ZN3JSC10IsoCellSet17forEachMarkedCellERKT_'/>
+<fun r='_ZN3JSC10IsoCellSet27forEachMarkedCellInParallelERKT0_'/>
+<fun r='_ZN3JSC10IsoCellSet15forEachLiveCellERKT_'/>
+<fun r='_ZN3JSC10IsoCellSet7addSlowEj'/>
+<fun r='_ZN3JSC10IsoCellSet13didResizeBitsEj'/>
+<fun r='_ZN3JSC10IsoCellSet14didRemoveBlockEj'/>
+<fun r='_ZN3JSC10IsoCellSet15sweepToFreeListEPNS_11MarkedBlock6HandleE'/>
+<fun r='_ZN3JSC10IsoCellSet18clearLowerTierCellEj'/>
+<mbr r='JSC::IsoCellSet::m_lowerTierBits' o='96' t='Bitmap&lt;MarkedBlock::maxNumberOfLowerTierCells&gt;'/>
+<mbr r='JSC::IsoCellSet::m_subspace' o='128' t='JSC::IsoSubspace &amp;'/>
+<mbr r='JSC::IsoCellSet::m_blocksWithBits' o='192' t='WTF::FastBitVector'/>
+<mbr r='JSC::IsoCellSet::m_bits' o='320' t='ConcurrentVector&lt;std::unique_ptr&lt;Bitmap&lt;MarkedBlock::atomsPerBlock&gt; &gt; &gt;'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoCellSetInlines.h' l='99' c='_ZZN3JSC10IsoCellSet27forEachMarkedCellInParallelERKT0_EN4TaskC1ERS0_S3_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoCellSetInlines.h' l='135' c='_ZN3JSC10IsoCellSet27forEachMarkedCellInParallelERKT0_'/>
+<size>80</size>
+<fun r='_ZN3JSC10IsoCellSet3addEPNS_8HeapCellE'/>
+<fun r='_ZN3JSC10IsoCellSet6removeEPNS_8HeapCellE'/>
+<fun r='_ZNK3JSC10IsoCellSet8containsEPNS_8HeapCellE'/>
+<fun r='_ZN3JSC10IsoCellSet17forEachMarkedCellERKT_'/>
+<fun r='_ZN3JSC10IsoCellSet27forEachMarkedCellInParallelERKT0_'/>
+<fun r='_ZN3JSC10IsoCellSet15forEachLiveCellERKT_'/>
+<fun r='_ZN3JSC10IsoCellSet18clearLowerTierCellEj'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoCellSet.cpp' l='52' c='_ZZN3JSC10IsoCellSet33parallelNotEmptyMarkedBlockSourceEvEN4TaskC1ERS0_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoCellSet.cpp' l='73' c='_ZN3JSC10IsoCellSet33parallelNotEmptyMarkedBlockSourceEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.cpp' l='72' c='_ZN3JSC11IsoSubspace13didResizeBitsEj'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.cpp' l='80' c='_ZN3JSC11IsoSubspace14didRemoveBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.cpp' l='88' c='_ZN3JSC11IsoSubspace26didBeginSweepingToFreeListEPNS_11MarkedBlock6HandleE'/>
+<size>80</size>
+<fun r='_ZN3JSC10IsoCellSetC1ERNS_11IsoSubspaceE'/>
+<fun r='_ZN3JSC10IsoCellSetD1Ev'/>
+<fun r='_ZN3JSC10IsoCellSet33parallelNotEmptyMarkedBlockSourceEv'/>
+<fun r='_ZN3JSC10IsoCellSet7addSlowEj'/>
+<fun r='_ZN3JSC10IsoCellSet13didResizeBitsEj'/>
+<fun r='_ZN3JSC10IsoCellSet14didRemoveBlockEj'/>
+<fun r='_ZN3JSC10IsoCellSet15sweepToFreeListEPNS_11MarkedBlock6HandleE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScriptExecutable.cpp' l='73' c='_ZN3JSC16ScriptExecutable9clearCodeERNS_10IsoCellSetE'/>
+<size>80</size>

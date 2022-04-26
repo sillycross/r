@@ -1,0 +1,30 @@
+<use f='include/pango-1.0/pango/pango-fontmap.h' l='54'/>
+<def f='include/pango-1.0/pango/pango-fontmap.h' l='95' ll='122'/>
+<size>200</size>
+<doc f='include/pango-1.0/pango/pango-fontmap.h' l='77'>/**
+ * PangoFontMapClass:
+ * @parent_class: parent #GObjectClass.
+ * @load_font: a function to load a font with a given description. See
+ * pango_font_map_load_font().
+ * @list_families: A function to list available font families. See
+ * pango_font_map_list_families().
+ * @load_fontset: a function to load a fontset with a given given description
+ * suitable for a particular language. See pango_font_map_load_fontset().
+ * @shape_engine_type: the type of rendering-system-dependent engines that
+ * can handle fonts of this fonts loaded with this fontmap.
+ * @get_serial: a function to get the serial number of the fontmap.
+ * See pango_font_map_get_serial().
+ * @changed: See pango_font_map_changed()
+ *
+ * The #PangoFontMapClass structure holds the virtual functions for
+ * a particular #PangoFontMap implementation.
+ */</doc>
+<mbr r='_PangoFontMapClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_PangoFontMapClass::load_font' o='1088' t='PangoFont *(*)(PangoFontMap *, PangoContext *, const PangoFontDescription *)'/>
+<mbr r='_PangoFontMapClass::list_families' o='1152' t='void (*)(PangoFontMap *, PangoFontFamily ***, int *)'/>
+<mbr r='_PangoFontMapClass::load_fontset' o='1216' t='PangoFontset *(*)(PangoFontMap *, PangoContext *, const PangoFontDescription *, PangoLanguage *)'/>
+<mbr r='_PangoFontMapClass::shape_engine_type' o='1280' t='const char *'/>
+<mbr r='_PangoFontMapClass::get_serial' o='1344' t='guint (*)(PangoFontMap *)'/>
+<mbr r='_PangoFontMapClass::changed' o='1408' t='void (*)(PangoFontMap *)'/>
+<mbr r='_PangoFontMapClass::_pango_reserved1' o='1472' t='void (*)()'/>
+<mbr r='_PangoFontMapClass::_pango_reserved2' o='1536' t='void (*)()'/>

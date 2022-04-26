@@ -1,0 +1,56 @@
+<def f='WebKit/Source/JavaScriptCore/jit/BinarySwitch.h' l='61' ll='138'/>
+<size>112</size>
+<doc f='WebKit/Source/JavaScriptCore/jit/BinarySwitch.h' l='36'>// The BinarySwitch class makes it easy to emit a switch statement over either
+// 32-bit integers or pointers, where the switch uses a tree of branches
+// rather than a jump table. This makes it particularly useful if the case
+// values are too far apart to make a jump table practical, or if there are
+// sufficiently few cases that the total cost of log(numCases) branches is
+// less than the cost of an indirected jump.
+//
+// In an effort to simplify the logic of emitting code for each case, this
+// uses an iterator style, rather than a functor callback style. This makes
+// sense because even the iterator implementation found herein is relatively
+// simple, whereas the code it&apos;s used from is usually quite complex - one
+// example being the trie-of-trees string switch implementation, where the
+// code emitted for each case involves recursing to emit code for a sub-trie.
+//
+// Use this like so:
+//
+// BinarySwitch switch(valueReg, casesVector, BinarySwitch::Int32);
+// while (switch.advance(jit)) {
+//     int value = switch.caseValue();
+//     unsigned index = switch.caseIndex(); // index into casesVector, above
+//     ... // generate code for this case
+//     ... = jit.jump(); // you have to jump out yourself; falling through causes undefined behavior
+// }
+// switch.fallThrough().link(&amp;jit);</doc>
+<fun r='_ZN3JSC12BinarySwitchC1ENS_12X86Registers10RegisterIDERKN3WTF6VectorIlLm0ENS3_15CrashOnOverflowELm16ENS3_10FastMallocEEENS0_4TypeE'/>
+<fun r='_ZN3JSC12BinarySwitchD1Ev'/>
+<fun r='_ZNK3JSC12BinarySwitch9caseIndexEv'/>
+<fun r='_ZNK3JSC12BinarySwitch9caseValueEv'/>
+<fun r='_ZN3JSC12BinarySwitch7advanceERNS_14MacroAssemblerE'/>
+<fun r='_ZN3JSC12BinarySwitch11fallThroughEv'/>
+<fun r='_ZN3JSC12BinarySwitch5buildEjbj'/>
+<mbr r='JSC::BinarySwitch::m_type' o='0' t='JSC::BinarySwitch::Type'/>
+<mbr r='JSC::BinarySwitch::m_value' o='32' t='JSC::GPRReg'/>
+<mbr r='JSC::BinarySwitch::m_cases' o='64' t='Vector&lt;JSC::BinarySwitch::Case&gt;'/>
+<mbr r='JSC::BinarySwitch::m_weakRandom' o='192' t='WTF::WeakRandom'/>
+<mbr r='JSC::BinarySwitch::m_branches' o='384' t='Vector&lt;JSC::BinarySwitch::BranchCode&gt;'/>
+<mbr r='JSC::BinarySwitch::m_index' o='512' t='unsigned int'/>
+<mbr r='JSC::BinarySwitch::m_caseIndex' o='544' t='unsigned int'/>
+<mbr r='JSC::BinarySwitch::m_jumpStack' o='576' t='Vector&lt;MacroAssembler::Jump&gt;'/>
+<mbr r='JSC::BinarySwitch::m_fallThrough' o='704' t='MacroAssembler::JumpList'/>
+<fun r='_ZN3JSC12BinarySwitchC1ENS_12X86Registers10RegisterIDERKN3WTF6VectorIlLm0ENS3_15CrashOnOverflowELm16ENS3_10FastMallocEEENS0_4TypeE'/>
+<fun r='_ZN3JSC12BinarySwitchD1Ev'/>
+<fun r='_ZN3JSC12BinarySwitch7advanceERNS_14MacroAssemblerE'/>
+<fun r='_ZN3JSC12BinarySwitch5buildEjbj'/>
+<use f='WebKit/Source/JavaScriptCore/jit/Repatch.cpp' l='1617' c='_ZN3JSC19linkPolymorphicCallEPNS_14JSGlobalObjectEPNS_9CallFrameERNS_12CallLinkInfoENS_11CallVariantE'/>
+<size>112</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PolymorphicAccess.cpp' l='723' c='_ZN3JSC17PolymorphicAccess10regenerateERKNS_24GCSafeConcurrentJSLockerERNS_2VMEPNS_14JSGlobalObjectEPNS_9CodeBlockENS_8ECMAModeERNS_17StructureStubInfoE'/>
+<size>112</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='12282' c='_ZN3JSC3DFG14SpeculativeJIT29emitBinarySwitchStringRecurseEPNS0_10SwitchDataERKN3WTF6VectorINS1_16StringSwitchCaseELm0ENS4_15CrashOnOverflowELm16ENS4_12422708'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='12382' c='_ZN3JSC3DFG14SpeculativeJIT16emitSwitchStringEPNS0_4NodeEPNS0_10SwitchDataE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='13612' c='_ZN3JSC3DFG14SpeculativeJIT21compileMatchStructureEPNS0_4NodeE'/>
+<size>112</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='3075' c='_ZN3JSC4Wasm14AirIRGenerator9addSwitchENS0_8TypedTmpERKN3WTF6VectorIPNS1_11ControlDataELm0ENS3_15CrashOnOverflowELm16ENS3_10FastMallocEEERS5_RKNS4_INS16684932'/>
+<size>112</size>

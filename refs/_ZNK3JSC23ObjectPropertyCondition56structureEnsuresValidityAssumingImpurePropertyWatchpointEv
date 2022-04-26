@@ -1,0 +1,12 @@
+<dec f='WebKit/Source/JavaScriptCore/bytecode/ObjectPropertyCondition.h' l='207' type='bool JSC::ObjectPropertyCondition::structureEnsuresValidityAssumingImpurePropertyWatchpoint() const'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/ObjectPropertyCondition.h' l='200'>// These validity-checking methods can optionally take a Struture* instead of loading the
+    // Structure* from the object. If you&apos;re in the concurrent JIT, then you must use the forms
+    // that take an explicit Structure* because you want the compiler to optimize for the same
+    // structure that you validated (i.e. avoid a TOCTOU race).
+    
+    // Checks if the object&apos;s structure claims that the property won&apos;t be intercepted. Validity
+    // does not require watchpoints on the object.</doc>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='594' u='c' c='_ZNK3JSC10AccessCase17couldStillSucceedEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='1431' u='c' c='_ZN3JSC10AccessCase12generateImplERNS_21AccessGenerationStateE'/>
+<def f='WebKit/Source/JavaScriptCore/bytecode/ObjectPropertyCondition.cpp' l='49' ll='55' type='bool JSC::ObjectPropertyCondition::structureEnsuresValidityAssumingImpurePropertyWatchpoint() const'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ObjectPropertyConditionSet.cpp' l='145' u='c' c='_ZNK3JSC26ObjectPropertyConditionSet56structuresEnsureValidityAssumingImpurePropertyWatchpointEv'/>

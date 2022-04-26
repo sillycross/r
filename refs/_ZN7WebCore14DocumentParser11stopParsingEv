@@ -1,0 +1,13 @@
+<dec f='WebKit/Source/WebCore/dom/DocumentParser.h' l='84' type='void WebCore::DocumentParser::stopParsing()'/>
+<doc f='WebKit/Source/WebCore/dom/DocumentParser.h' l='80'>// stopParsing() is used when a load is canceled/stopped.
+    // stopParsing() is currently different from detach(), but shouldn&apos;t be.
+    // It should NOT be ok to call any methods on DocumentParser after either
+    // detach() or stopParsing() but right now only detach() will ASSERT.</doc>
+<use f='WebKit/Source/WebCore/xml/parser/XMLDocumentParserLibxml2.cpp' l='1345' u='c' c='_ZN7WebCore17XMLDocumentParser5doEndEv'/>
+<ovr f='WebKit/Source/WebCore/xml/parser/XMLDocumentParserLibxml2.cpp' l='1390' c='_ZN7WebCore17XMLDocumentParser11stopParsingEv'/>
+<use f='WebKit/Source/WebCore/xml/parser/XMLDocumentParserLibxml2.cpp' l='1395' u='c' c='_ZN7WebCore17XMLDocumentParser11stopParsingEv'/>
+<ovr f='WebKit/Source/WebCore/html/parser/HTMLDocumentParser.cpp' l='118' c='_ZN7WebCore18HTMLDocumentParser11stopParsingEv'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLDocumentParser.cpp' l='120' u='c' c='_ZN7WebCore18HTMLDocumentParser11stopParsingEv'/>
+<def f='WebKit/Source/WebCore/dom/DocumentParser.cpp' l='60' ll='63' type='void WebCore::DocumentParser::stopParsing()'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='522' u='c' c='_ZN7WebCore11FrameLoader11stopLoadingENS_17UnloadEventPolicyE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='553' u='c' c='_ZN7WebCore11FrameLoader4stopEv'/>

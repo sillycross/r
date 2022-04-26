@@ -1,0 +1,12 @@
+<dec f='include/xcb/xcb.h' l='309' type='xcb_generic_event_t * xcb_poll_for_event(xcb_connection_t * c)'/>
+<doc f='include/xcb/xcb.h' l='298'>/**
+ * @brief Returns the next event or error from the server.
+ * @param c The connection to the X server.
+ * @return The next event from the server.
+ *
+ * Returns the next event or error from the server, if one is
+ * available, or returns @c NULL otherwise. If no event is available, that
+ * might be because an I/O error like connection close occurred while
+ * attempting to read the next event, in which case the connection is
+ * shut down when this function returns.
+ */</doc>

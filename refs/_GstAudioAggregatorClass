@@ -1,0 +1,17 @@
+<use f='include/gstreamer-1.0/gst/audio/gstaudioaggregator.h' l='38'/>
+<def f='include/gstreamer-1.0/gst/audio/gstaudioaggregator.h' l='200' ll='212'/>
+<size>968</size>
+<doc f='include/gstreamer-1.0/gst/audio/gstaudioaggregator.h' l='190'>/**
+ * GstAudioAggregatorClass:
+ * @create_output_buffer: Create a new output buffer contains num_frames frames.
+ * @aggregate_one_buffer: Aggregates one input buffer to the output
+ *  buffer.  The in_offset and out_offset are in &quot;frames&quot;, which is
+ *  the size of a sample times the number of channels. Returns TRUE if
+ *  any non-silence was added to the buffer
+ *
+ * Since: 1.14
+ */</doc>
+<mbr r='_GstAudioAggregatorClass::parent_class' o='0' t='GstAggregatorClass'/>
+<mbr r='_GstAudioAggregatorClass::create_output_buffer' o='6336' t='GstBuffer *(*)(GstAudioAggregator *, guint)'/>
+<mbr r='_GstAudioAggregatorClass::aggregate_one_buffer' o='6400' t='gboolean (*)(GstAudioAggregator *, GstAudioAggregatorPad *, GstBuffer *, guint, GstBuffer *, guint, guint)'/>
+<mbr r='_GstAudioAggregatorClass::_gst_reserved' o='6464' t='gpointer [20]'/>

@@ -1,0 +1,18 @@
+<dec f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='688' type='JSC::GPRReg'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='693' u='r' c='_ZNK3JSC17CallFrameShuffler13addressForOldENS_15VirtualRegisterE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='377' u='w' c='_ZN3JSC17CallFrameShuffler18prepareForTailCallEv'/>
+<offset>4736</offset>
+<doc f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='674'>// m_oldFrameBase is the register relative to which we access
+    // slots in the old call frame, with an additional offset of
+    // m_oldFrameOffset.
+    //
+    //  - For an actual tail call, m_oldFrameBase is the stack
+    //    pointer, and m_oldFrameOffset is the number of locals of the
+    //    tail caller&apos;s frame. We use such stack pointer-based
+    //    addressing because it allows us to load the tail caller&apos;s
+    //    caller&apos;s frame pointer in the frame pointer register
+    //    immediately instead of awkwardly keeping it around on the
+    //    stack.
+    //
+    //  - For a slow path call, m_oldFrameBase is just the frame
+    //    pointer, and m_oldFrameOffset is 0.</doc>

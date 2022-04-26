@@ -1,0 +1,19 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='899' type='bool JSC::JSObject::attemptToInterceptPutByIndexOnHoleForPrototype(JSC::JSGlobalObject * , JSC::JSValue thisValue, unsigned int propertyName, JSC::JSValue , bool shouldThrow, bool &amp; putResult)'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='892'>// The receiver is the prototype in this case. The following:
+    //
+    // asObject(foo-&gt;structure()-&gt;storedPrototype())-&gt;attemptToInterceptPutByIndexOnHoleForPrototype(...)
+    //
+    // is equivalent to:
+    //
+    // foo-&gt;attemptToInterceptPutByIndexOnHole(...);</doc>
+<dec f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='899' type='bool JSC::JSObject::attemptToInterceptPutByIndexOnHoleForPrototype(JSC::JSGlobalObject * , JSC::JSValue thisValue, unsigned int propertyName, JSC::JSValue , bool shouldThrow, bool &amp; putResult)'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='892'>// The receiver is the prototype in this case. The following:
+    //
+    // asObject(foo-&gt;structure()-&gt;storedPrototype())-&gt;attemptToInterceptPutByIndexOnHoleForPrototype(...)
+    //
+    // is equivalent to:
+    //
+    // foo-&gt;attemptToInterceptPutByIndexOnHole(...);</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCJSValue.cpp' l='249' u='c' c='_ZN3JSC7JSValue21putToPrimitiveByIndexEPNS_14JSGlobalObjectEjS0_b'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='2876' ll='2911' type='bool JSC::JSObject::attemptToInterceptPutByIndexOnHoleForPrototype(JSC::JSGlobalObject * globalObject, JSC::JSValue thisValue, unsigned int i, JSC::JSValue value, bool shouldThrow, bool &amp; putResult)'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='2923' u='c' c='_ZN3JSC8JSObject34attemptToInterceptPutByIndexOnHoleEPNS_14JSGlobalObjectEjNS_7JSValueEbRb'/>

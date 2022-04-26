@@ -1,0 +1,15 @@
+<def f='WebKit/Source/JavaScriptCore/b3/B3Kind.h' l='92' ll='101' type='bool JSC::B3::Kind::hasIsChill() const'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/B3Kind.h' l='78'>// Chill bit. This applies to division-based arithmetic ops, which may trap on some
+    // platforms or exhibit bizarre behavior when passed certain inputs. The non-chill
+    // version will behave as unpredictably as it wants. For example, it&apos;s legal to
+    // constant-fold Div(x, 0) to any value or to replace it with any effectful operation.
+    // But when it&apos;s chill, that means that the semantics when it would have trapped are
+    // the JS semantics. For example, Div&lt;Chill&gt;(@a, @b) means:
+    //
+    //     ((a | 0) / (b | 0)) | 0
+    //
+    // And Mod&lt;Chill&gt;(a, b) means:
+    //
+    //     ((a | 0) % (b | 0)) | 0
+    //
+    // Note that Div&lt;Chill&gt; matches exactly how ARM handles integer division.</doc>

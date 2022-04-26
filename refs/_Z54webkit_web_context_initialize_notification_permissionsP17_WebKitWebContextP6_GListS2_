@@ -1,0 +1,25 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1762' ll='1772' type='void webkit_web_context_initialize_notification_permissions(WebKitWebContext * context, GList * allowedOrigins, GList * disallowedOrigins)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1738'>/**
+ * webkit_web_context_initialize_notification_permissions:
+ * @context: the #WebKitWebContext
+ * @allowed_origins: (element-type WebKitSecurityOrigin): a #GList of security origins
+ * @disallowed_origins: (element-type WebKitSecurityOrigin): a #GList of security origins
+ *
+ * Sets initial desktop notification permissions for the @context.
+ * @allowed_origins and @disallowed_origins must each be #GList of
+ * #WebKitSecurityOrigin objects representing origins that will,
+ * respectively, either always or never have permission to show desktop
+ * notifications. No #WebKitNotificationPermissionRequest will ever be
+ * generated for any of the security origins represented in
+ * @allowed_origins or @disallowed_origins. This function is necessary
+ * because some webpages proactively check whether they have permission
+ * to display notifications without ever creating a permission request.
+ *
+ * This function only affects web processes that have not already been
+ * created. The best time to call it is when handling
+ * #WebKitWebContext::initialize-notification-permissions so as to
+ * ensure that new web processes receive the most recent set of
+ * permissions.
+ *
+ * Since: 2.16
+ */</doc>

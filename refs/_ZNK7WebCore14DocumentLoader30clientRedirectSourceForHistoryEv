@@ -1,0 +1,10 @@
+<def f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='275' type='WTF::String WebCore::DocumentLoader::clientRedirectSourceForHistory() const'/>
+<doc f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='270'>// These accessors accommodate WebCore&apos;s somewhat fickle custom of creating history
+    // items for redirects, but only sometimes. For &quot;source&quot; and &quot;destination&quot;,
+    // these accessors return the URL that would have been used if a history
+    // item were created. This allows WebKit to link history items reflecting
+    // redirects into a chain from start to finish.</doc>
+<doc f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='275'>// null if no client redirect occurred.</doc>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='1011' u='c' c='_ZN6WebKit20WebFrameLoaderClient39dispatchDecidePolicyForNavigationActionERKN7WebCore16NavigationActionERKNS1_15ResourceRequestERKNS1_16ResourceRespon314531'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='1237' u='c' c='_ZN6WebKit20WebFrameLoaderClient32updateGlobalHistoryRedirectLinksEv'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='1480' u='c' c='_ZN7WebCore11FrameLoader24loadWithNavigationActionERKNS_15ResourceRequestEONS_16NavigationActionENS_13FrameLoadTypeEON3WTF6RefPtrINS_9FormStateENS7_129580964'/>

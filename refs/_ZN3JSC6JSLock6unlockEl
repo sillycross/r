@@ -1,0 +1,8 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSLock.h' l='133' type='void JSC::JSLock::unlock(intptr_t unlockCount)'/>
+<dec f='WebKit/Source/JavaScriptCore/runtime/JSLock.h' l='133' type='void JSC::JSLock::unlock(intptr_t unlockCount)'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSLock.cpp' l='177' u='c' c='_ZN3JSC6JSLock6unlockEv'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/JSLock.cpp' l='182' ll='198' type='void JSC::JSLock::unlock(intptr_t unlockCount)'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSLock.cpp' l='264' u='c' c='_ZN3JSC6JSLock12dropAllLocksEPNS0_12DropAllLocksE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSLock.cpp' l='279' u='c' c='_ZN3JSC6JSLock12grabAllLocksEPNS0_12DropAllLocksEj'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSLock.cpp' l='180'>// Use WTF_IGNORES_THREAD_SAFETY_ANALYSIS because this function conditionally unlocks m_lock, which
+// is not supported by analysis.</doc>

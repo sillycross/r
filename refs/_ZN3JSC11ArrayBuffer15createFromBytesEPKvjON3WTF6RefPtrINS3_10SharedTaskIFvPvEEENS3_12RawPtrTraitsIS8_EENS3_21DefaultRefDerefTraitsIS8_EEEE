@@ -1,0 +1,13 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ArrayBuffer.h' l='118' type='static Ref&lt;JSC::ArrayBuffer&gt; JSC::ArrayBuffer::createFromBytes(const void * data, unsigned int byteLength, JSC::ArrayBufferDestructorFunction &amp;&amp; )'/>
+<dec f='WebKit/Source/JavaScriptCore/runtime/ArrayBuffer.h' l='118' type='static Ref&lt;JSC::ArrayBuffer&gt; JSC::ArrayBuffer::createFromBytes(const void * data, unsigned int byteLength, JSC::ArrayBufferDestructorFunction &amp;&amp; )'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssemblyMemory.cpp' l='94' u='c' c='_ZN3JSC19JSWebAssemblyMemory6bufferEPNS_14JSGlobalObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSTypedArray.cpp' l='196' u='c' c='JSObjectMakeTypedArrayWithBytesNoCopy'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSTypedArray.cpp' l='332' u='c' c='JSObjectMakeArrayBufferWithBytesNoCopy'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ArrayBuffer.cpp' l='214' u='c' c='_ZN3JSC11ArrayBuffer13createAdoptedEPKvj'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/ArrayBuffer.cpp' l='223' ll='230' type='static Ref&lt;JSC::ArrayBuffer&gt; JSC::ArrayBuffer::createFromBytes(const void * data, unsigned int byteLength, JSC::ArrayBufferDestructorFunction &amp;&amp; destructor)'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/ArrayBuffer.cpp' l='217'>// FIXME: We cannot use this except if the memory comes from the cage.
+// Currently this is only used from:
+// - The C API. We could support that by either having the system switch to a mode where typed arrays are no
+//   longer caged, or we could introduce a new set of typed array types that are uncaged and get accessed
+//   differently.
+// - WebAssembly. Wasm should allocate from the cage.</doc>

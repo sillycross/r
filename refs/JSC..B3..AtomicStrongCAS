@@ -1,0 +1,45 @@
+<dec f='WebKit/Source/JavaScriptCore/b3/B3Opcode.h' l='232' type='65'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Opcode.h' l='478' c='_ZN3JSC2B36isAtomENS0_6OpcodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Opcode.h' l='495' c='_ZN3JSC2B311isAtomicCASENS0_6OpcodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Kind.h' l='130' c='_ZNK3JSC2B34Kind8hasTrapsEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.h' l='470' c='_ZN3JSC2B35Value18adjacencyListSpaceENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueInlines.h' l='158' c='_ZNK3JSC2B35Value19adjacencyListOffsetEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueInlines.h' l='158' c='_ZNK3JSC2B35Value9cloneImplEv'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/B3Opcode.h' l='212'>// Atomic compare and swap that returns the old value. Does not have the nondeterminism of WeakCAS.
+    // This is a bit more code and a bit slower in some cases, though not by a lot. Imagine that this
+    // opcode is as if you did this atomically:
+    //
+    // template&lt;typename T&gt;
+    // T AtomicStrongCAS(T expectedValue, T newValue, T* ptr)
+    // {
+    //     T oldValue = *ptr;
+    //     if (oldValue == expectedValue)
+    //         *ptr = newValue;
+    //     return oldValue
+    // }
+    //
+    // AtomicStrongCAS sign-extends its result for subwidth operations.
+    //
+    // Note that AtomicWeakCAS and AtomicStrongCAS sort of have this kind of equivalence:
+    //
+    // AtomicWeakCAS(@exp, @new, @ptr) == Equal(AtomicStrongCAS(@exp, @new, @ptr), @exp)
+    //
+    // Assuming that the WeakCAS does not spuriously fail, of course.</doc>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOutput.cpp' l='728' u='r' c='_ZN3JSC3FTL6Output15atomicStrongCASEPNS_2B35ValueES4_NS0_12TypedPointerENS2_5WidthE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='1688' u='r' c='_ZN3JSC4Wasm13B3IRGenerator25emitAtomicCompareExchangeENS0_15ExtAtomicOpTypeENS0_4TypeEPNS_2B35ValueES6_S6_j'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='1744' u='r' c='_ZN3JSC4Wasm13B3IRGenerator25emitAtomicCompareExchangeENS0_15ExtAtomicOpTypeENS0_4TypeEPNS_2B35ValueES6_S6_j'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3AtomicValue.cpp' l='72' c='_ZN3JSC2B311AtomicValueC1ENS1_14AtomicValueCASENS0_4KindENS0_6OriginENS0_5WidthEPNS0_5ValueES7_S7_iN3WTF5RangeIjEESA_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3MemoryValueInlines.h' l='67' c='_ZNK3JSC2B311MemoryValue11accessWidthEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerMacros.cpp' l='244' c='_ZN3JSC2B312_GLOBAL__N_111LowerMacros19processCurrentBlockEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerMacros.cpp' l='264' u='r' c='_ZN3JSC2B312_GLOBAL__N_111LowerMacros19processCurrentBlockEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='2255' u='r' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir9appendCASEPNS0_5ValueEb'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='2256' u='r' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir9appendCASEPNS0_5ValueEb'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='3582' u='r' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='4052' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='4068' u='r' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='4145' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Opcode.cpp' l='297' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC2B36OpcodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ReduceStrength.cpp' l='2534' u='r' c='_ZN3JSC2B312_GLOBAL__N_114ReduceStrength24shouldSwapBinaryOperandsEPNS0_5ValueE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ReduceStrength.cpp' l='2540' u='r' c='_ZN3JSC2B312_GLOBAL__N_114ReduceStrength24shouldSwapBinaryOperandsEPNS0_5ValueE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Validate.cpp' l='401' c='_ZN3JSC2B312_GLOBAL__N_19Validater3runEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='614' c='_ZNK3JSC2B35Value7effectsEv'/>

@@ -1,0 +1,17 @@
+<dec f='include/wayland-client-protocol.h' l='1029' type='void (*)(void *, struct wl_registry *, uint32_t)'/>
+<offset>64</offset>
+<doc f='include/wayland-client-protocol.h' l='1014'>/**
+	 * announce removal of global object
+	 *
+	 * Notify the client of removed global objects.
+	 *
+	 * This event notifies the client that the global identified by
+	 * name is no longer available. If the client bound to the global
+	 * using the bind request, the client should now destroy that
+	 * object.
+	 *
+	 * The object remains valid and requests to the object will be
+	 * ignored until the client destroys it, to avoid races between the
+	 * global going away and a client sending a request to it.
+	 * @param name numeric name of the global object
+	 */</doc>

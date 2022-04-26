@@ -1,0 +1,6 @@
+<dec f='WebKit/Source/WebCore/platform/FileStream.h' l='46' type='long long WebCore::FileStream::getSize(const WTF::String &amp; path, std::optional&lt;WallTime&gt; expectedModificationTime)'/>
+<def f='WebKit/Source/WebCore/platform/FileStream.cpp' l='50' ll='67' type='long long WebCore::FileStream::getSize(const WTF::String &amp; path, std::optional&lt;WallTime&gt; expectedModificationTime)'/>
+<doc f='WebKit/Source/WebCore/platform/FileStream.h' l='44'>// Gets the size of a file. Also validates if the file has been changed or not if the expected modification time is provided, i.e. non-zero.
+    // Returns total number of bytes if successful. -1 otherwise.</doc>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='256' u='c' c='_ZN7WebCore18BlobResourceHandle14getSizeForNextEv'/>
+<use f='WebKit/Source/WebCore/fileapi/AsyncFileStream.cpp' l='144' u='c' c='_ZN7WebCore15AsyncFileStream7getSizeERKN3WTF6StringESt8optionalINS1_8WallTimeEE'/>

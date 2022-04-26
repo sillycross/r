@@ -1,0 +1,30 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InferredValue.h' l='49' ll='55' type='JSCellType * JSC::InferredValue::inferredValue()'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InferredValue.h' l='258' u='c' c='_ZN3JSC13InferredValue15notifyWriteSlowERNS_2VMEPNS_6JSCellEPT_RKNS_10FireDetailE'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InferredValue.h' l='38'>// For the purpose of deciding whether or not to watch this variable, you only need
+    // to inspect inferredValue(). If this returns something other than the empty
+    // value, then it means that at all future safepoints, this watchpoint set will be
+    // in one of these states:
+    //
+    //    IsWatched: in this case, the variable&apos;s value must still be the
+    //        inferredValue.
+    //
+    //    IsInvalidated: in this case the variable&apos;s value may be anything but you&apos;ll
+    //        either notice that it&apos;s invalidated and not install the watchpoint, or
+    //        you will have been notified that the watchpoint was fired.</doc>
+<def f='WebKit/Source/JavaScriptCore/runtime/InferredValue.h' l='49' ll='55' type='JSCellType * JSC::InferredValue::inferredValue()'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/InferredValue.h' l='258' u='c' c='_ZN3JSC13InferredValue15notifyWriteSlowERNS_2VMEPNS_6JSCellEPT_RKNS_10FireDetailE'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/InferredValue.h' l='38'>// For the purpose of deciding whether or not to watch this variable, you only need
+    // to inspect inferredValue(). If this returns something other than the empty
+    // value, then it means that at all future safepoints, this watchpoint set will be
+    // in one of these states:
+    //
+    //    IsWatched: in this case, the variable&apos;s value must still be the
+    //        inferredValue.
+    //
+    //    IsInvalidated: in this case the variable&apos;s value may be anything but you&apos;ll
+    //        either notice that it&apos;s invalidated and not install the watchpoint, or
+    //        you will have been notified that the watchpoint was fired.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreterInlines.h' l='3279' u='c' c='_ZN3JSC3DFG19AbstractInterpreter14executeEffectsEjPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='372' u='c' c='_ZN3JSC3DFG14ByteCodeParser3getENS_7OperandE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='7731' u='c' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/InferredValueInlines.h' l='35' u='c' c='_ZN3JSC13InferredValue23finalizeUnconditionallyERNS_2VME'/>

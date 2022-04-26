@@ -1,0 +1,6 @@
+<def f='WebKit/WTF/Headers/wtf/DataMutex.h' l='112' ll='117' type='void WTF::DataMutexLocker::runUnlocked(const Function&lt;void ()&gt; &amp; callback)'/>
+<doc f='WebKit/WTF/Headers/wtf/DataMutex.h' l='109'>// Used to avoid excessive brace scoping when only small parts of the code need to be run unlocked.
+    // Please be mindful that accessing the wrapped data from the callback is unsafe and will fail on assertions.
+    // It&apos;s helpful to use a minimal lambda capture to be conscious of what data you&apos;re having access to in these sections.</doc>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='470' u='c' c='_ZL18webKitWebSrcCreateP11_GstPushSrcPP10_GstBuffer'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='505' u='c' c='_ZL18webKitWebSrcCreateP11_GstPushSrcPP10_GstBuffer'/>

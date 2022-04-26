@@ -1,0 +1,18 @@
+<def f='WebKit/Source/WebCore/rendering/mathml/RenderMathMLBlock.h' l='60' type='WebCore::RenderMathMLOperator * WebCore::RenderMathMLBlock::unembellishedOperator() const'/>
+<doc f='WebKit/Source/WebCore/rendering/mathml/RenderMathMLBlock.h' l='53'>// MathML defines an &quot;embellished operator&quot; as roughly an &lt;mo&gt; that may have subscripts,
+    // superscripts, underscripts, overscripts, or a denominator (as in d/dx, where &quot;d&quot; is some
+    // differential operator). The padding, precedence, and stretchiness of the base &lt;mo&gt; should
+    // apply to the embellished operator as a whole. unembellishedOperator() checks for being an
+    // embellished operator, and omits any embellishments.
+    // FIXME: We don&apos;t yet handle all the cases in the MathML spec. See
+    // https://bugs.webkit.org/show_bug.cgi?id=78617.</doc>
+<ovr f='WebKit/Source/WebCore/rendering/mathml/RenderMathMLOperator.h' l='83' c='_ZNK7WebCore20RenderMathMLOperator21unembellishedOperatorEv'/>
+<ovr f='WebKit/Source/WebCore/rendering/mathml/RenderMathMLFraction.cpp' l='169' c='_ZNK7WebCore20RenderMathMLFraction21unembellishedOperatorEv'/>
+<use f='WebKit/Source/WebCore/rendering/mathml/RenderMathMLFraction.cpp' l='174' u='c' c='_ZNK7WebCore20RenderMathMLFraction21unembellishedOperatorEv'/>
+<use f='WebKit/Source/WebCore/rendering/mathml/RenderMathMLRow.cpp' l='67' u='c' c='_ZN7WebCoreL26toVerticalStretchyOperatorEPNS_9RenderBoxE'/>
+<ovr f='WebKit/Source/WebCore/rendering/mathml/RenderMathMLScripts.cpp' l='62' c='_ZNK7WebCore19RenderMathMLScripts21unembellishedOperatorEv'/>
+<use f='WebKit/Source/WebCore/rendering/mathml/RenderMathMLScripts.cpp' l='67' u='c' c='_ZNK7WebCore19RenderMathMLScripts21unembellishedOperatorEv'/>
+<use f='WebKit/Source/WebCore/rendering/mathml/RenderMathMLScripts.cpp' l='168' u='c' c='_ZN7WebCore19RenderMathMLScripts16italicCorrectionERKNS0_17ReferenceChildrenE'/>
+<use f='WebKit/Source/WebCore/rendering/mathml/RenderMathMLUnderOver.cpp' l='58' u='c' c='_ZN7WebCoreL26horizontalStretchyOperatorERKNS_9RenderBoxE'/>
+<use f='WebKit/Source/WebCore/rendering/mathml/RenderMathMLUnderOver.cpp' l='225' u='c' c='_ZNK7WebCore21RenderMathMLUnderOver9hasAccentEb'/>
+<use f='WebKit/Source/WebCore/rendering/mathml/RenderMathMLUnderOver.cpp' l='257' u='c' c='_ZNK7WebCore21RenderMathMLUnderOver18verticalParametersEv'/>

@@ -1,0 +1,29 @@
+<use f='include/gstreamer-1.0/gst/gststreamcollection.h' l='40'/>
+<def f='include/gstreamer-1.0/gst/gststreamcollection.h' l='69' ll='77'/>
+<size>136</size>
+<doc f='include/gstreamer-1.0/gst/gststreamcollection.h' l='47'>/**
+ * GstStreamCollection:
+ *
+ * A collection of #GstStream that are available.
+ *
+ * A #GstStreamCollection will be provided by elements that can make those
+ * streams available. Applications can use the collection to show the user
+ * what streams are available by using %gst_stream_collection_get_stream()
+ *
+ * Once posted, a #GstStreamCollection is immutable. Updates are made by sending
+ * a new #GstStreamCollection message, which may or may not share some of
+ * the #GstStream objects from the collection it replaces. The receiver can check
+ * the sender of a stream collection message to know which collection is
+ * obsoleted.
+ *
+ * Several elements in a pipeline can provide #GstStreamCollection.
+ *
+ * Applications can activate streams from a collection by using the
+ * #GST_EVENT_SELECT_STREAMS event on a pipeline, bin or element.
+ *
+ * Since: 1.10
+ */</doc>
+<mbr r='_GstStreamCollection::object' o='0' t='GstObject'/>
+<mbr r='_GstStreamCollection::upstream_id' o='704' t='gchar *'/>
+<mbr r='_GstStreamCollection::priv' o='768' t='GstStreamCollectionPrivate *'/>
+<mbr r='_GstStreamCollection::_gst_reserved' o='832' t='gpointer [4]'/>

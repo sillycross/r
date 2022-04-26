@@ -1,0 +1,6 @@
+<def f='WebKit/Source/WebCore/editing/InsertParagraphSeparatorCommand.cpp' l='49' ll='60' type='WebCore::Element * WebCore::highestVisuallyEquivalentDivBelowRoot(WebCore::Element * startBlock)'/>
+<use f='WebKit/Source/WebCore/editing/InsertParagraphSeparatorCommand.cpp' l='244' u='c' c='_ZN7WebCore31InsertParagraphSeparatorCommand7doApplyEv'/>
+<doc f='WebKit/Source/WebCore/editing/InsertParagraphSeparatorCommand.cpp' l='45'>// When inserting a new line, we want to avoid nesting empty divs if we can.  Otherwise, when
+// pasting, it&apos;s easy to have each new line be a div deeper than the previous.  E.g., in the case
+// below, we want to insert at ^ instead of |.
+// &lt;div&gt;foo&lt;div&gt;bar&lt;/div&gt;|&lt;/div&gt;^</doc>

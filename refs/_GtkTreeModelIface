@@ -1,0 +1,53 @@
+<use f='include/gtk-3.0/gtk/gtktreemodel.h' l='43'/>
+<def f='include/gtk-3.0/gtk/gtktreemodel.h' l='130' ll='191'/>
+<size>176</size>
+<doc f='include/gtk-3.0/gtk/gtktreemodel.h' l='101'>/**
+ * GtkTreeModelIface:
+ * @row_changed: Signal emitted when a row in the model has changed.
+ * @row_inserted: Signal emitted when a new row has been inserted in
+ *    the model.
+ * @row_has_child_toggled: Signal emitted when a row has gotten the
+ *    first child row or lost its last child row.
+ * @row_deleted: Signal emitted when a row has been deleted.
+ * @rows_reordered: Signal emitted when the children of a node in the
+ *    GtkTreeModel have been reordered.
+ * @get_flags: Get #GtkTreeModelFlags supported by this interface.
+ * @get_n_columns: Get the number of columns supported by the model.
+ * @get_column_type: Get the type of the column.
+ * @get_iter: Sets iter to a valid iterator pointing to path.
+ * @get_path: Gets a newly-created #GtkTreePath referenced by iter.
+ * @get_value: Initializes and sets value to that at column.
+ * @iter_next: Sets iter to point to the node following it at the
+ *    current level.
+ * @iter_previous: Sets iter to point to the previous node at the
+ *    current level.
+ * @iter_children: Sets iter to point to the first child of parent.
+ * @iter_has_child: %TRUE if iter has children, %FALSE otherwise.
+ * @iter_n_children: Gets the number of children that iter has.
+ * @iter_nth_child: Sets iter to be the child of parent, using the
+ *    given index.
+ * @iter_parent: Sets iter to be the parent of child.
+ * @ref_node: Lets the tree ref the node.
+ * @unref_node: Lets the tree unref the node.
+ */</doc>
+<mbr r='_GtkTreeModelIface::g_iface' o='0' t='GTypeInterface'/>
+<mbr r='_GtkTreeModelIface::row_changed' o='128' t='void (*)(GtkTreeModel *, GtkTreePath *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::row_inserted' o='192' t='void (*)(GtkTreeModel *, GtkTreePath *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::row_has_child_toggled' o='256' t='void (*)(GtkTreeModel *, GtkTreePath *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::row_deleted' o='320' t='void (*)(GtkTreeModel *, GtkTreePath *)'/>
+<mbr r='_GtkTreeModelIface::rows_reordered' o='384' t='void (*)(GtkTreeModel *, GtkTreePath *, GtkTreeIter *, gint *)'/>
+<mbr r='_GtkTreeModelIface::get_flags' o='448' t='GtkTreeModelFlags (*)(GtkTreeModel *)'/>
+<mbr r='_GtkTreeModelIface::get_n_columns' o='512' t='gint (*)(GtkTreeModel *)'/>
+<mbr r='_GtkTreeModelIface::get_column_type' o='576' t='GType (*)(GtkTreeModel *, gint)'/>
+<mbr r='_GtkTreeModelIface::get_iter' o='640' t='gboolean (*)(GtkTreeModel *, GtkTreeIter *, GtkTreePath *)'/>
+<mbr r='_GtkTreeModelIface::get_path' o='704' t='GtkTreePath *(*)(GtkTreeModel *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::get_value' o='768' t='void (*)(GtkTreeModel *, GtkTreeIter *, gint, GValue *)'/>
+<mbr r='_GtkTreeModelIface::iter_next' o='832' t='gboolean (*)(GtkTreeModel *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::iter_previous' o='896' t='gboolean (*)(GtkTreeModel *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::iter_children' o='960' t='gboolean (*)(GtkTreeModel *, GtkTreeIter *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::iter_has_child' o='1024' t='gboolean (*)(GtkTreeModel *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::iter_n_children' o='1088' t='gint (*)(GtkTreeModel *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::iter_nth_child' o='1152' t='gboolean (*)(GtkTreeModel *, GtkTreeIter *, GtkTreeIter *, gint)'/>
+<mbr r='_GtkTreeModelIface::iter_parent' o='1216' t='gboolean (*)(GtkTreeModel *, GtkTreeIter *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::ref_node' o='1280' t='void (*)(GtkTreeModel *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::unref_node' o='1344' t='void (*)(GtkTreeModel *, GtkTreeIter *)'/>

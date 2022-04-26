@@ -1,0 +1,32 @@
+<def f='include/wayland-client-protocol.h' l='2709' ll='2714' type='void wl_data_device_start_drag(struct wl_data_device * wl_data_device, struct wl_data_source * source, struct wl_surface * origin, struct wl_surface * icon, uint32_t serial)'/>
+<doc f='include/wayland-client-protocol.h' l='2678'>/**
+ * @ingroup iface_wl_data_device
+ *
+ * This request asks the compositor to start a drag-and-drop
+ * operation on behalf of the client.
+ *
+ * The source argument is the data source that provides the data
+ * for the eventual data transfer. If source is NULL, enter, leave
+ * and motion events are sent only to the client that initiated the
+ * drag and the client is expected to handle the data passing
+ * internally.
+ *
+ * The origin surface is the surface where the drag originates and
+ * the client must have an active implicit grab that matches the
+ * serial.
+ *
+ * The icon surface is an optional (can be NULL) surface that
+ * provides an icon to be moved around with the cursor.  Initially,
+ * the top-left corner of the icon surface is placed at the cursor
+ * hotspot, but subsequent wl_surface.attach request can move the
+ * relative position. Attach requests must be confirmed with
+ * wl_surface.commit as usual. The icon surface is given the role of
+ * a drag-and-drop icon. If the icon surface already has another role,
+ * it raises a protocol error.
+ *
+ * The current and pending input regions of the icon wl_surface are
+ * cleared, and wl_surface.set_input_region is ignored until the
+ * wl_surface is no longer used as the icon surface. When the use
+ * as an icon ends, the current and pending input regions become
+ * undefined, and the wl_surface is unmapped.
+ */</doc>

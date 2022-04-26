@@ -1,0 +1,16 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DFGExitProfile.h' l='180' type='static bool JSC::DFG::ExitProfile::add(JSC::CodeBlock * , const JSC::DFG::FrequentExitSite &amp; )'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DFGExitProfile.h' l='174'>// Add a new frequent exit site. Return true if this is a new one, or false
+    // if we already knew about it. This is an O(n) operation, because it errs
+    // on the side of keeping the data structure compact. Also, this will only
+    // be called a fixed number of times per recompilation. Recompilation is
+    // rare to begin with, and implies doing O(n) operations on the CodeBlock
+    // anyway.</doc>
+<dec f='WebKit/Source/JavaScriptCore/bytecode/DFGExitProfile.h' l='180' type='static bool JSC::DFG::ExitProfile::add(JSC::CodeBlock * , const JSC::DFG::FrequentExitSite &amp; )'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/DFGExitProfile.h' l='174'>// Add a new frequent exit site. Return true if this is a new one, or false
+    // if we already knew about it. This is an O(n) operation, because it errs
+    // on the side of keeping the data structure compact. Also, this will only
+    // be called a fixed number of times per recompilation. Recompilation is
+    // rare to begin with, and implies doing O(n) operations on the CodeBlock
+    // anyway.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExitBase.cpp' l='52' u='c' c='_ZN3JSC3DFG11OSRExitBase36considerAddingAsFrequentExitSiteSlowEPNS_9CodeBlockENS_14ExitingJITTypeE'/>
+<def f='WebKit/Source/JavaScriptCore/bytecode/DFGExitProfile.cpp' l='44' ll='75' type='static bool JSC::DFG::ExitProfile::add(JSC::CodeBlock * owner, const JSC::DFG::FrequentExitSite &amp; site)'/>

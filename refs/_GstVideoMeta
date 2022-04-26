@@ -1,0 +1,34 @@
+<use f='include/gstreamer-1.0/gst/video/gstvideometa.h' l='32'/>
+<def f='include/gstreamer-1.0/gst/video/gstvideometa.h' l='59' ll='77'/>
+<size>112</size>
+<doc f='include/gstreamer-1.0/gst/video/gstvideometa.h' l='40'>/**
+ * GstVideoMeta:
+ * @meta: parent #GstMeta
+ * @buffer: the buffer this metadata belongs to
+ * @flags: additional video flags
+ * @format: the video format
+ * @id: identifier of the frame
+ * @width: the video width
+ * @height: the video height
+ * @n_planes: the number of planes in the image
+ * @offset: array of offsets for the planes. This field might not always be
+ *          valid, it is used by the default implementation of @map.
+ * @stride: array of strides for the planes. This field might not always be
+ *          valid, it is used by the default implementation of @map.
+ * @map: map the memory of a plane
+ * @unmap: unmap the memory of a plane
+ *
+ * Extra buffer metadata describing image properties
+ */</doc>
+<mbr r='_GstVideoMeta::meta' o='0' t='GstMeta'/>
+<mbr r='_GstVideoMeta::buffer' o='128' t='GstBuffer *'/>
+<mbr r='_GstVideoMeta::flags' o='192' t='GstVideoFrameFlags'/>
+<mbr r='_GstVideoMeta::format' o='224' t='GstVideoFormat'/>
+<mbr r='_GstVideoMeta::id' o='256' t='gint'/>
+<mbr r='_GstVideoMeta::width' o='288' t='guint'/>
+<mbr r='_GstVideoMeta::height' o='320' t='guint'/>
+<mbr r='_GstVideoMeta::n_planes' o='352' t='guint'/>
+<mbr r='_GstVideoMeta::offset' o='384' t='gsize [4]'/>
+<mbr r='_GstVideoMeta::stride' o='640' t='gint [4]'/>
+<mbr r='_GstVideoMeta::map' o='768' t='gboolean (*)(GstVideoMeta *, guint, GstMapInfo *, gpointer *, gint *, GstMapFlags)'/>
+<mbr r='_GstVideoMeta::unmap' o='832' t='gboolean (*)(GstVideoMeta *, guint, GstMapInfo *)'/>

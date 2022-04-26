@@ -1,0 +1,23 @@
+<use f='include/gtk-3.0/gdk/gdkkeys.h' l='38'/>
+<def f='include/gtk-3.0/gdk/gdkkeys.h' l='57' ll='62'/>
+<size>12</size>
+<doc f='include/gtk-3.0/gdk/gdkkeys.h' l='40'>/**
+ * GdkKeymapKey:
+ * @keycode: the hardware keycode. This is an identifying number for a
+ *   physical key.
+ * @group: indicates movement in a horizontal direction. Usually groups are used
+ *   for two different languages. In group 0, a key might have two English
+ *   characters, and in group 1 it might have two Hebrew characters. The Hebrew
+ *   characters will be printed on the key next to the English characters.
+ * @level: indicates which symbol on the key will be used, in a vertical direction.
+ *   So on a standard US keyboard, the key with the number “1” on it also has the
+ *   exclamation point (&quot;!&quot;) character on it. The level indicates whether to use
+ *   the “1” or the “!” symbol. The letter keys are considered to have a lowercase
+ *   letter at level 0, and an uppercase letter at level 1, though only the
+ *   uppercase letter is printed.
+ *
+ * A #GdkKeymapKey is a hardware key that can be mapped to a keyval.
+ */</doc>
+<mbr r='_GdkKeymapKey::keycode' o='0' t='guint'/>
+<mbr r='_GdkKeymapKey::group' o='32' t='gint'/>
+<mbr r='_GdkKeymapKey::level' o='64' t='gint'/>

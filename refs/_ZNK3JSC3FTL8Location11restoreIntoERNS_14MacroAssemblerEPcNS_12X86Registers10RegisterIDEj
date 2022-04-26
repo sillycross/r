@@ -1,0 +1,11 @@
+<dec f='WebKit/Source/JavaScriptCore/ftl/FTLLocation.h' l='178' type='void JSC::FTL::Location::restoreInto(JSC::MacroAssembler &amp; , char * savedRegisters, JSC::GPRReg result, unsigned int numFramesToPop = 0) const'/>
+<def f='WebKit/Source/JavaScriptCore/ftl/FTLLocation.cpp' l='94' ll='157' type='void JSC::FTL::Location::restoreInto(JSC::MacroAssembler &amp; jit, char * savedRegisters, JSC::GPRReg result, unsigned int numFramesToPop = 0) const'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExitCompiler.cpp' l='119' u='c' c='_ZN3JSC3FTLL15compileRecoveryERNS_12CCallHelpersERKNS0_9ExitValueERKN3WTF11FixedVectorINS_2B38ValueRepEEEPcRKNS6_7HashMapIPNS0_29ExitTimeObjectMateria10178757'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExitCompiler.cpp' l='249' u='c' c='_ZN3JSC3FTLL11compileStubERNS_2VMEjPNS0_7JITCodeERNS0_7OSRExitEPNS_9CodeBlockE'/>
+<doc f='WebKit/Source/JavaScriptCore/ftl/FTLLocation.h' l='171'>// Assuming that all registers are saved to the savedRegisters buffer according
+    // to FTLSaveRestore convention, this loads the value into the given register.
+    // The code that this generates isn&apos;t exactly super fast. This assumes that FP
+    // and SP contain the same values that they would have contained in the original
+    // frame, or that you&apos;ve done one or more canonically formed calls (i.e. can
+    // restore the FP by following the call frame linked list numFramesToPop times,
+    // and SP can be recovered by popping FP numFramesToPop-1 times and adding 16).</doc>

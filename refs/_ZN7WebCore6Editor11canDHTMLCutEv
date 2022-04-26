@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/WebCore/editing/Editor.h' l='184' type='bool WebCore::Editor::canDHTMLCut()'/>
+<use f='WebKit/Source/WebCore/page/ContextMenuController.cpp' l='1257' u='c' c='_ZNK7WebCore21ContextMenuController21checkOrEnableIfNeededERNS_15ContextMenuItemE'/>
+<def f='WebKit/Source/WebCore/editing/Editor.cpp' l='463' ll='469' type='bool WebCore::Editor::canDHTMLCut()'/>
+<use f='WebKit/Source/WebCore/editing/EditorCommand.cpp' l='1324' u='c' c='_ZN7WebCoreL10enabledCutERNS_5FrameEPNS_5EventENS_19EditorCommandSourceE'/>
+<use f='WebKit/Source/WebCore/editing/EditorCommand.cpp' l='1327' u='c' c='_ZN7WebCoreL10enabledCutERNS_5FrameEPNS_5EventENS_19EditorCommandSourceE'/>
+<doc f='WebKit/Source/WebCore/editing/Editor.cpp' l='458'>// WinIE uses onbeforecut and onbeforepaste to enables the cut and paste menu items.  They
+// also send onbeforecopy, apparently for symmetry, but it doesn&apos;t affect the menu items.
+// We need to use onbeforecopy as a real menu enabler because we allow elements that are not
+// normally selectable to implement copy/paste (like divs, or a document body).</doc>

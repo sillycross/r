@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/WebCore/platform/audio/VectorMath.h' l='73' type='void WebCore::VectorMath::interpolate(const float * inputVector1, float * inputVector2, float interpolationFactor, float * outputVector, size_t numberOfElementsToProcess)'/>
+<doc f='WebKit/Source/WebCore/platform/audio/VectorMath.h' l='69'>// Calculates the linear interpolation between the supplied single-precision vectors
+// for (n = 0; n &lt; numberOfElementsToProcess; ++n)
+//     outputVector[n] = inputVector1[n] + interpolationFactor * (inputVector2[n] - inputVector1[n]);
+// NOTE: Internal implementation may modify inputVector2.</doc>
+<def f='WebKit/Source/WebCore/platform/audio/VectorMath.cpp' l='539' ll='550' type='void WebCore::VectorMath::interpolate(const float * inputVector1, float * inputVector2, float interpolationFactor, float * outputVector, size_t numberOfElementsToProcess)'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/DelayDSPKernel.cpp' l='199' u='c' c='_ZN7WebCore14DelayDSPKernel12processKRateEPKfPfm'/>

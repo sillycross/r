@@ -1,0 +1,29 @@
+<use f='include/gtk-3.0/gdk/gdkevents.h' l='146'/>
+<def f='include/gtk-3.0/gdk/gdkevents.h' l='1322' ll='1331'/>
+<size>48</size>
+<doc f='include/gtk-3.0/gdk/gdkevents.h' l='1304'>/**
+ * GdkEventPadAxis:
+ * @type: the type of the event (%GDK_PAD_RING or %GDK_PAD_STRIP).
+ * @window: the window which received the event.
+ * @send_event: %TRUE if the event was sent explicitly.
+ * @time: the time of the event in milliseconds.
+ * @group: the pad group the ring/strip belongs to. A %GDK_SOURCE_TABLET_PAD
+ *   device may have one or more groups containing a set of buttons/rings/strips
+ *   each.
+ * @index: number of strip/ring that was interacted. This number is 0-indexed.
+ * @mode: The current mode of @group. Different groups in a %GDK_SOURCE_TABLET_PAD
+ *   device may have different current modes.
+ * @value: The current value for the given axis.
+ *
+ * Generated during %GDK_SOURCE_TABLET_PAD interaction with tactile sensors.
+ *
+ * Since: 3.22
+ */</doc>
+<mbr r='_GdkEventPadAxis::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventPadAxis::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventPadAxis::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventPadAxis::time' o='160' t='guint32'/>
+<mbr r='_GdkEventPadAxis::group' o='192' t='guint'/>
+<mbr r='_GdkEventPadAxis::index' o='224' t='guint'/>
+<mbr r='_GdkEventPadAxis::mode' o='256' t='guint'/>
+<mbr r='_GdkEventPadAxis::value' o='320' t='gdouble'/>

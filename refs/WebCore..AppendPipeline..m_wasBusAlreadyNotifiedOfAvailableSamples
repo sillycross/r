@@ -1,0 +1,10 @@
+<dec f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.h' l='132' type='std::atomic_flag'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.cpp' l='106' u='w' c='_ZN7WebCore14AppendPipelineC1ERNS_28SourceBufferPrivateGStreamerERNS_30MediaPlayerPrivateGStreamerMSEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.cpp' l='641' u='m' c='_ZN7WebCore14AppendPipeline41handleAppsinkNewSampleFromStreamingThreadEP11_GstElement'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.cpp' l='644' u='m' c='_ZN7WebCore14AppendPipeline41handleAppsinkNewSampleFromStreamingThreadEP11_GstElement'/>
+<offset>896</offset>
+<doc f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.h' l='127'>// Used to avoid unnecessary notifications per sample.
+    // It is read and written from the streaming thread and written from the main thread.
+    // The main thread must set it to false before actually pulling samples.
+    // This strategy ensures that at any time, there are at most two notifications in the bus
+    // queue, instead of it growing unbounded.</doc>

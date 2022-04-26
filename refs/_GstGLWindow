@@ -1,0 +1,27 @@
+<use f='include/gstreamer-1.0/gst/gl/gstgl_fwd.h' l='38'/>
+<def f='include/gstreamer-1.0/gst/gl/gstglwindow.h' l='95' ll='125'/>
+<size>248</size>
+<doc f='include/gstreamer-1.0/gst/gl/gstglwindow.h' l='89'>/**
+ * GstGLWindow:
+ *
+ * #GstGLWindow is an opaque struct and should only be accessed through the
+ * provided api.
+ */</doc>
+<mbr r='_GstGLWindow::parent' o='0' t='GstObject'/>
+<mbr r='_GstGLWindow::lock' o='704' t='GMutex'/>
+<mbr r='_GstGLWindow::display' o='768' t='GstGLDisplay *'/>
+<mbr r='_GstGLWindow::context_ref' o='832' t='GWeakRef'/>
+<mbr r='_GstGLWindow::is_drawing' o='896' t='gboolean'/>
+<mbr r='_GstGLWindow::draw' o='960' t='GstGLWindowCB'/>
+<mbr r='_GstGLWindow::draw_data' o='1024' t='gpointer'/>
+<mbr r='_GstGLWindow::draw_notify' o='1088' t='GDestroyNotify'/>
+<mbr r='_GstGLWindow::close' o='1152' t='GstGLWindowCB'/>
+<mbr r='_GstGLWindow::close_data' o='1216' t='gpointer'/>
+<mbr r='_GstGLWindow::close_notify' o='1280' t='GDestroyNotify'/>
+<mbr r='_GstGLWindow::resize' o='1344' t='GstGLWindowResizeCB'/>
+<mbr r='_GstGLWindow::resize_data' o='1408' t='gpointer'/>
+<mbr r='_GstGLWindow::resize_notify' o='1472' t='GDestroyNotify'/>
+<mbr r='_GstGLWindow::queue_resize' o='1536' t='gboolean'/>
+<mbr r='_GstGLWindow::main_context' o='1600' t='GMainContext *'/>
+<mbr r='_GstGLWindow::priv' o='1664' t='GstGLWindowPrivate *'/>
+<mbr r='_GstGLWindow::_reserved' o='1728' t='gpointer [4]'/>

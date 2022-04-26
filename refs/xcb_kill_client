@@ -1,0 +1,15 @@
+<dec f='include/xcb/xproto.h' l='12373' type='xcb_void_cookie_t xcb_kill_client(xcb_connection_t * c, uint32_t resource)'/>
+<doc f='include/xcb/xproto.h' l='12358'>/**
+ * @brief kills a client
+ *
+ * @param c The connection
+ * @param resource Any resource belonging to the client (for example a Window), used to identify
+ * the client connection.
+ * \n
+ * The special value of `XCB_KILL_ALL_TEMPORARY`, the resources of all clients
+ * that have terminated in `RetainTemporary` (TODO) are destroyed.
+ * @return A cookie
+ *
+ * Forces a close down of the client that created the specified \a resource.
+ *
+ */</doc>

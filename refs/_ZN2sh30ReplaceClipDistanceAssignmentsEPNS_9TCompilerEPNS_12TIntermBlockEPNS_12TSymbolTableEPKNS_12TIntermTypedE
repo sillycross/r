@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.h' l='29' type='bool sh::ReplaceClipDistanceAssignments(sh::TCompiler * compiler, sh::TIntermBlock * root, sh::TSymbolTable * symbolTable, const sh::TIntermTyped * clipDistanceEnableFlags)'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='162' ll='310' type='bool sh::ReplaceClipDistanceAssignments(sh::TCompiler * compiler, sh::TIntermBlock * root, sh::TSymbolTable * symbolTable, const sh::TIntermTyped * clipDistanceEnableFlags)'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.h' l='23'>// Replace every gl_ClipDistance assignment with assignment to &quot;ANGLEClipDistance&quot;,
+// then at the end of shader re-assign the values of this global variable to gl_ClipDistance.
+// This to solve some complex usages such as user passing gl_ClipDistance as output reference
+// to a function.
+// Furthermore, at the end shader, some disabled gl_ClipDistance[i] can be skipped from the
+// assignment.</doc>

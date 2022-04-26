@@ -1,0 +1,29 @@
+<dec f='WebKit/Source/JavaScriptCore/inspector/remote/RemoteInspector.h' l='255' type='WTF::Lock'/>
+<offset>0</offset>
+<doc f='WebKit/Source/JavaScriptCore/inspector/remote/RemoteInspector.h' l='251'>// Targets can be registered from any thread at any time.
+    // Any target can send messages over the XPC connection.
+    // So lock access to all maps and state as they can change
+    // from any thread.</doc>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/RemoteInspector.cpp' l='63' u='a' c='_ZN9Inspector15RemoteInspector14registerTargetEPNS_24RemoteControllableTargetE'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/RemoteInspector.cpp' l='86' u='a' c='_ZN9Inspector15RemoteInspector16unregisterTargetEPNS_24RemoteControllableTargetE'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/RemoteInspector.cpp' l='108' u='a' c='_ZN9Inspector15RemoteInspector12updateTargetEPNS_24RemoteControllableTargetE'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/RemoteInspector.cpp' l='149' u='a' c='_ZN9Inspector15RemoteInspector24updateClientCapabilitiesEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/RemoteInspector.cpp' l='169' u='a' c='_ZN9Inspector15RemoteInspector9setClientEPNS0_6ClientE'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/RemoteInspector.cpp' l='180' u='a' c='_ZN9Inspector15RemoteInspector11setupFailedEj'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/RemoteInspector.cpp' l='194' u='a' c='_ZN9Inspector15RemoteInspector14setupCompletedEj'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/RemoteInspector.cpp' l='214' u='a' c='_ZN9Inspector15RemoteInspector4stopEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='59' u='a' c='_ZN9Inspector15RemoteInspector5startEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='145' u='a' c='_ZN9Inspector15RemoteInspector15setupConnectionEON3WTF3RefINS1_16SocketConnectionENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='214' u='a' c='_ZN9Inspector15RemoteInspector16pushListingsSoonEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='232' u='a' c='_ZN9Inspector15RemoteInspector19sendMessageToRemoteEjRKN3WTF6StringE'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='241' u='a' c='_ZN9Inspector15RemoteInspector28receivedGetTargetListMessageEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='254' u='a' c='_ZN9Inspector15RemoteInspector19receivedDataMessageEjPKc'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='266' u='a' c='_ZN9Inspector15RemoteInspector20receivedCloseMessageEj'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='283' u='a' c='_ZN9Inspector15RemoteInspector5setupEj'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='296' u='a' c='_ZN9Inspector15RemoteInspector5setupEj'/>
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/RemoteInspector.h' l='255' type='WTF::Lock'/>
+<offset>0</offset>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/RemoteInspector.h' l='251'>// Targets can be registered from any thread at any time.
+    // Any target can send messages over the XPC connection.
+    // So lock access to all maps and state as they can change
+    // from any thread.</doc>

@@ -1,0 +1,20 @@
+<def f='include/wayland-client-protocol.h' l='5711' ll='5716' type='void wl_subsurface_place_above(struct wl_subsurface * wl_subsurface, struct wl_surface * sibling)'/>
+<doc f='include/wayland-client-protocol.h' l='5692'>/**
+ * @ingroup iface_wl_subsurface
+ *
+ * This sub-surface is taken from the stack, and put back just
+ * above the reference surface, changing the z-order of the sub-surfaces.
+ * The reference surface must be one of the sibling surfaces, or the
+ * parent surface. Using any other surface, including this sub-surface,
+ * will cause a protocol error.
+ *
+ * The z-order is double-buffered. Requests are handled in order and
+ * applied immediately to a pending state. The final pending state is
+ * copied to the active state the next time the state of the parent
+ * surface is applied. When this happens depends on whether the parent
+ * surface is in synchronized mode or not. See wl_subsurface.set_sync and
+ * wl_subsurface.set_desync for details.
+ *
+ * A new sub-surface is initially added as the top-most in the stack
+ * of its siblings and parent.
+ */</doc>

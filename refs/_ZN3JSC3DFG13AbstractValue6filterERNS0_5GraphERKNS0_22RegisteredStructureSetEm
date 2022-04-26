@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='337' type='JSC::DFG::FiltrationResult JSC::DFG::AbstractValue::filter(JSC::DFG::Graph &amp; , const JSC::DFG::RegisteredStructureSet &amp; , JSC::SpeculatedType admittedTypes = SpecNone)'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='332'>// Filters the value using the given structure set. If the admittedTypes argument is not passed, this
+    // implicitly filters by the types implied by the structure set, which are usually a subset of
+    // SpecCell. Hence, after this call, the value will no longer have any non-cell members. But, you can
+    // use admittedTypes to preserve some non-cell types. Note that it&apos;s wrong for admittedTypes to overlap
+    // with SpecCell.</doc>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='230' ll='256' type='JSC::DFG::FiltrationResult JSC::DFG::AbstractValue::filter(JSC::DFG::Graph &amp; graph, const JSC::DFG::RegisteredStructureSet &amp; other, JSC::SpeculatedType admittedTypes = SpecNone)'/>

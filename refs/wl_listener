@@ -1,0 +1,73 @@
+<use f='include/wayland-server-core.h' l='180'/>
+<use f='include/wayland-server-core.h' l='184' c='wl_event_loop_add_destroy_listener'/>
+<use f='include/wayland-server-core.h' l='186' c='wl_event_loop_get_destroy_listener'/>
+<use f='include/wayland-server-core.h' l='233' c='wl_display_add_destroy_listener'/>
+<use f='include/wayland-server-core.h' l='237' c='wl_display_add_client_created_listener'/>
+<use f='include/wayland-server-core.h' l='239' c='wl_display_get_destroy_listener'/>
+<use f='include/wayland-server-core.h' l='321' c='wl_client_add_destroy_listener'/>
+<use f='include/wayland-server-core.h' l='323' c='wl_client_get_destroy_listener'/>
+<use f='include/wayland-server-core.h' l='339' c='wl_client_add_resource_created_listener'/>
+<def f='include/wayland-server-core.h' l='397' ll='400'/>
+<use f='include/wayland-server-core.h' l='439' c='_ZL13wl_signal_addP9wl_signalP11wl_listener'/>
+<use f='include/wayland-server-core.h' l='453' c='_ZL13wl_signal_getP9wl_signalPFvP11wl_listenerPvE'/>
+<use f='include/wayland-server-core.h' l='456' c='_ZL13wl_signal_getP9wl_signalPFvP11wl_listenerPvE'/>
+<use f='include/wayland-server-core.h' l='475' c='_ZL14wl_signal_emitP9wl_signalPv'/>
+<use f='include/wayland-server-core.h' l='475' c='_ZL14wl_signal_emitP9wl_signalPv'/>
+<use f='include/wayland-server-core.h' l='584' c='wl_resource_add_destroy_listener'/>
+<use f='include/wayland-server-core.h' l='586' c='wl_resource_get_destroy_listener'/>
+<size>24</size>
+<doc f='include/wayland-server-core.h' l='350'>/** \class wl_listener
+ *
+ * \brief A single listener for Wayland signals
+ *
+ * wl_listener provides the means to listen for wl_signal notifications. Many
+ * Wayland objects use wl_listener for notification of significant events like
+ * object destruction.
+ *
+ * Clients should create wl_listener objects manually and can register them as
+ * listeners to signals using #wl_signal_add, assuming the signal is
+ * directly accessible. For opaque structs like wl_event_loop, adding a
+ * listener should be done through provided accessor methods. A listener can
+ * only listen to one signal at a time.
+ *
+ * \code
+ * struct wl_listener your_listener;
+ *
+ * your_listener.notify = your_callback_method;
+ *
+ * // Direct access
+ * wl_signal_add(&amp;some_object-&gt;destroy_signal, &amp;your_listener);
+ *
+ * // Accessor access
+ * wl_event_loop *loop = ...;
+ * wl_event_loop_add_destroy_listener(loop, &amp;your_listener);
+ * \endcode
+ *
+ * If the listener is part of a larger struct, #wl_container_of can be used
+ * to retrieve a pointer to it:
+ *
+ * \code
+ * void your_listener(struct wl_listener *listener, void *data)
+ * {
+ * 	struct your_data *data;
+ *
+ * 	your_data = wl_container_of(listener, data, your_member_name);
+ * }
+ * \endcode
+ *
+ * If you need to remove a listener from a signal, use wl_list_remove().
+ *
+ * \code
+ * wl_list_remove(&amp;your_listener.link);
+ * \endcode
+ *
+ * \sa wl_signal
+ */</doc>
+<mbr r='wl_listener::link' o='0' t='struct wl_list'/>
+<mbr r='wl_listener::notify' o='128' t='wl_notify_func_t'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.h' l='67' c='_ZN6WebKit17WaylandCompositor6Buffer23destroyListenerCallbackEP11wl_listenerPv'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.h' l='70'/>
+<size>24</size>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='97' c='_ZN6WebKit17WaylandCompositor6Buffer11getOrCreateEP11wl_resource'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='118' c='_ZN6WebKit17WaylandCompositor6Buffer23destroyListenerCallbackEP11wl_listenerPv'/>
+<size>24</size>

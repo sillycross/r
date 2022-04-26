@@ -1,0 +1,12 @@
+<def f='WebKit/Source/WebCore/loader/LinkHeader.cpp' l='122' ll='134' type='bool WebCore::parseParameterDelimiter(StringParsingBuffer&lt;CharacterType&gt; &amp; buffer, bool &amp; isValid)'/>
+<doc f='WebKit/Source/WebCore/loader/LinkHeader.cpp' l='111'>// Before:
+//
+// &lt;cat.jpg&gt;; rel=preload
+//          ^            ^
+//          position     end
+//
+// After (if successful: otherwise the method returns false, and modifies the isValid boolean accordingly)
+//
+// &lt;cat.jpg&gt;; rel=preload
+//            ^          ^
+//            position  end</doc>

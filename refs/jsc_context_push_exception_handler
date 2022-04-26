@@ -1,0 +1,18 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCContext.h' l='124' type='void jsc_context_push_exception_handler(JSCContext * context, JSCExceptionHandler handler, gpointer user_data, GDestroyNotify destroy_notify)'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCContext.cpp' l='769' ll='775' type='void jsc_context_push_exception_handler(JSCContext * context, JSCExceptionHandler handler, gpointer userData, GDestroyNotify destroyNotify)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCContext.cpp' l='753'>/**
+ * jsc_context_push_exception_handler:
+ * @context: a #JSCContext
+ * @handler: a #JSCExceptionHandler
+ * @user_data: (closure): user data to pass to @handler
+ * @destroy_notify: (nullable): destroy notifier for @user_data
+ *
+ * Push an exception handler in @context. Whenever a JavaScript exception happens in
+ * the #JSCContext, the given @handler will be called. The default #JSCExceptionHandler
+ * simply calls jsc_context_throw_exception() to throw the exception to the #JSCContext.
+ * If you don&apos;t want to catch the exception, but only get notified about it, call
+ * jsc_context_throw_exception() in @handler like the default one does.
+ * The last exception handler pushed is the only one used by the #JSCContext, use
+ * jsc_context_pop_exception_handler() to remove it and set the previous one. When @handler
+ * is removed from the context, @destroy_notify i called with @user_data as parameter.
+ */</doc>

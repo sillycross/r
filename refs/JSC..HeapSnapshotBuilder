@@ -1,0 +1,68 @@
+<inh f='WebKit/Source/JavaScriptCore/heap/HeapAnalyzer.h' l='36' c='JSC::HeapAnalyzer'/>
+<def f='WebKit/Source/JavaScriptCore/heap/HeapSnapshotBuilder.h' l='105' ll='161'/>
+<use f='WebKit/Source/JavaScriptCore/heap/HeapSnapshot.h' l='51'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/agents/InspectorHeapAgent.cpp' l='104' c='_ZN9Inspector18InspectorHeapAgent8snapshotEv'/>
+<size>96</size>
+<fun r='_ZN3JSC19HeapSnapshotBuilderC1ERNS_12HeapProfilerENS0_12SnapshotTypeE'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilderD1Ev'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder34resetNextAvailableObjectIdentifierEv'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder13buildSnapshotEv'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder11analyzeNodeEPNS_6JSCellE'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder11analyzeEdgeEPNS_6JSCellES2_NS_14RootMarkReasonE'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder23analyzePropertyNameEdgeEPNS_6JSCellES2_PN3WTF17UniquedStringImplE'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder23analyzeVariableNameEdgeEPNS_6JSCellES2_PN3WTF17UniquedStringImplE'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder16analyzeIndexEdgeEPNS_6JSCellES2_j'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder38setOpaqueRootReachabilityReasonForCellEPNS_6JSCellEPKc'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder23setWrappedObjectForCellEPNS_6JSCellEPv'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder15setLabelForCellEPNS_6JSCellERKN3WTF6StringE'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder4jsonEv'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder4jsonEN3WTF8FunctionIFbRKNS_16HeapSnapshotNodeEEEE'/>
+<smbr r='JSC::HeapSnapshotBuilder::nextAvailableObjectIdentifier' t='JSC::NodeIdentifier'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder23getNextObjectIdentifierEv'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder30previousSnapshotHasNodeForCellEPNS_6JSCellERj'/>
+<fun r='_ZNK3JSC19HeapSnapshotBuilder18descriptionForCellEPNS_6JSCellE'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_profiler' o='64' t='JSC::HeapProfiler &amp;'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_buildingNodeMutex' o='128' t='WTF::Lock'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_snapshot' o='192' t='std::unique_ptr&lt;HeapSnapshot&gt;'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_buildingEdgeMutex' o='256' t='WTF::Lock'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_edges' o='320' t='Vector&lt;JSC::HeapSnapshotEdge&gt;'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_rootData' o='448' t='HashMap&lt;JSC::JSCell *, JSC::HeapSnapshotBuilder::RootData&gt;'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_wrappedObjectPointers' o='512' t='HashMap&lt;JSC::JSCell *, void *&gt;'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_cellLabels' o='576' t='HashMap&lt;JSC::JSCell *, WTF::String&gt;'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_appendedCells' o='640' t='HashSet&lt;JSC::JSCell *&gt;'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_snapshotType' o='704' t='JSC::HeapSnapshotBuilder::SnapshotType'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='2545' c='_ZL28functionGenerateHeapSnapshotPN3JSC14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='2564' c='_ZL42functionGenerateHeapSnapshotForGCDebuggingPN3JSC14JSGlobalObjectEPNS_9CallFrameE'/>
+<size>96</size>
+<inh f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapAnalyzer.h' l='36' c='JSC::HeapAnalyzer'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapSnapshotBuilder.h' l='105' ll='161'/>
+<use f='WebKit/Source/WebCore/bindings/js/GCController.cpp' l='159' c='_ZN7WebCore12GCController8dumpHeapEv'/>
+<size>96</size>
+<fun r='_ZN3JSC19HeapSnapshotBuilderC1ERNS_12HeapProfilerENS0_12SnapshotTypeE'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilderD1Ev'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder34resetNextAvailableObjectIdentifierEv'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder13buildSnapshotEv'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder11analyzeNodeEPNS_6JSCellE'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder11analyzeEdgeEPNS_6JSCellES2_NS_14RootMarkReasonE'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder23analyzePropertyNameEdgeEPNS_6JSCellES2_PN3WTF17UniquedStringImplE'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder23analyzeVariableNameEdgeEPNS_6JSCellES2_PN3WTF17UniquedStringImplE'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder16analyzeIndexEdgeEPNS_6JSCellES2_j'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder38setOpaqueRootReachabilityReasonForCellEPNS_6JSCellEPKc'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder23setWrappedObjectForCellEPNS_6JSCellEPv'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder15setLabelForCellEPNS_6JSCellERKN3WTF6StringE'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder4jsonEv'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder4jsonEN3WTF8FunctionIFbRKNS_16HeapSnapshotNodeEEEE'/>
+<smbr r='JSC::HeapSnapshotBuilder::nextAvailableObjectIdentifier' t='JSC::NodeIdentifier'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder23getNextObjectIdentifierEv'/>
+<fun r='_ZN3JSC19HeapSnapshotBuilder30previousSnapshotHasNodeForCellEPNS_6JSCellERj'/>
+<fun r='_ZNK3JSC19HeapSnapshotBuilder18descriptionForCellEPNS_6JSCellE'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_profiler' o='64' t='JSC::HeapProfiler &amp;'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_buildingNodeMutex' o='128' t='WTF::Lock'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_snapshot' o='192' t='std::unique_ptr&lt;HeapSnapshot&gt;'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_buildingEdgeMutex' o='256' t='WTF::Lock'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_edges' o='320' t='Vector&lt;JSC::HeapSnapshotEdge&gt;'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_rootData' o='448' t='HashMap&lt;JSC::JSCell *, JSC::HeapSnapshotBuilder::RootData&gt;'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_wrappedObjectPointers' o='512' t='HashMap&lt;JSC::JSCell *, void *&gt;'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_cellLabels' o='576' t='HashMap&lt;JSC::JSCell *, WTF::String&gt;'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_appendedCells' o='640' t='HashSet&lt;JSC::JSCell *&gt;'/>
+<mbr r='JSC::HeapSnapshotBuilder::m_snapshotType' o='704' t='JSC::HeapSnapshotBuilder::SnapshotType'/>

@@ -1,0 +1,18 @@
+<def f='include/gstreamer-1.0/gst/gstquery.h' l='350' ll='355' type='gboolean gst_query_take(GstQuery ** old_query, GstQuery * new_query)'/>
+<doc f='include/gstreamer-1.0/gst/gstquery.h' l='333'>/**
+ * gst_query_take:
+ * @old_query: (inout) (transfer full) (nullable): pointer to a
+ *     pointer to a #GstQuery to be stolen.
+ * @new_query: (allow-none) (transfer full): pointer to a #GstQuery that will
+ *     replace the query pointed to by @old_query.
+ *
+ * Modifies a pointer to a #GstQuery to point to a different #GstQuery. This
+ * function is similar to gst_query_replace() except that it takes ownership of
+ * @new_query.
+ *
+ * Either @new_query or the #GstQuery pointed to by @old_query may be %NULL.
+ *
+ * Returns: %TRUE if @new_query was different from @old_query
+ *
+ * Since: 1.16
+ */</doc>

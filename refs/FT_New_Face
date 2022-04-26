@@ -1,0 +1,32 @@
+<dec f='include/freetype2/freetype/freetype.h' l='2169' type='FT_Error FT_New_Face(FT_Library library, const char * filepathname, FT_Long face_index, FT_Face * aface)'/>
+<doc f='include/freetype2/freetype/freetype.h' l='2137'>/**************************************************************************
+   *
+   * @function:
+   *   FT_New_Face
+   *
+   * @description:
+   *   Call @FT_Open_Face to open a font by its pathname.
+   *
+   * @inout:
+   *   library ::
+   *     A handle to the library resource.
+   *
+   * @input:
+   *   pathname ::
+   *     A path to the font file.
+   *
+   *   face_index ::
+   *     See @FT_Open_Face for a detailed description of this parameter.
+   *
+   * @output:
+   *   aface ::
+   *     A handle to a new face object.  If `face_index` is greater than or
+   *     equal to zero, it must be non-`NULL`.
+   *
+   * @return:
+   *   FreeType error code.  0~means success.
+   *
+   * @note:
+   *   Use @FT_Done_Face to destroy the created @FT_Face object (along with
+   *   its slot and sizes).
+   */</doc>

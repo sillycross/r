@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/JavaScriptCore/jit/CachedRecovery.h' l='116' type='bool JSC::CachedRecovery::loadsIntoFPR() const'/>
+<def f='WebKit/Source/JavaScriptCore/jit/CachedRecovery.cpp' l='35' ll='48' type='bool JSC::CachedRecovery::loadsIntoFPR() const'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='241' u='c' c='_ZN3JSC17CallFrameShuffler10ensureLoadERNS_14CachedRecoveryE'/>
+<doc f='WebKit/Source/JavaScriptCore/jit/CachedRecovery.cpp' l='33'>// We prefer loading doubles and undetermined JSValues into FPRs
+// because it would otherwise use up GPRs.  Two in JSVALUE32_64.</doc>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler64.cpp' l='188' u='c' c='_ZN3JSC17CallFrameShuffler8emitLoadERNS_14CachedRecoveryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler64.cpp' l='229' u='c' c='_ZN3JSC17CallFrameShuffler7canLoadERNS_14CachedRecoveryE'/>

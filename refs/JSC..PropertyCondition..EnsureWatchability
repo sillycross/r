@@ -1,0 +1,14 @@
+<dec f='WebKit/Source/JavaScriptCore/bytecode/PropertyCondition.h' l='288' type='1'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/PropertyCondition.h' l='284'>// Do what it takes to ensure that the property can be watched, if doing so has no
+        // user-observable effect. For now this just means that we will ensure that a property
+        // replacement watchpoint is enabled if it hadn&apos;t been enabled already. Do not use this
+        // from JIT threads, since the act of enabling watchpoints is not thread-safe.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAdaptiveStructureWatchpoint.cpp' l='71' u='r' c='_ZN3JSC3DFG27AdaptiveStructureWatchpoint12fireInternalERNS_2VMERKNS_10FireDetailE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='591' u='r' c='_ZNK3JSC10AccessCase17couldStillSucceedEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='1423' u='r' c='_ZN3JSC10AccessCase12generateImplERNS_21AccessGenerationStateE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AdaptiveInferredPropertyValueWatchpointBase.cpp' l='71' u='r' c='_ZN3JSC43AdaptiveInferredPropertyValueWatchpointBase4fireERNS_2VMERKNS_10FireDetailE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PropertyCondition.cpp' l='336' c='_ZNK3JSC17PropertyCondition20isWatchableWhenValidEPNS_9StructureENS0_18WatchabilityEffortE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/StructureStubClearingWatchpoint.cpp' l='42' u='r' c='_ZN3JSC50StructureTransitionStructureStubClearingWatchpoint12fireInternalERNS_2VMERKNS_10FireDetailE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/LLIntPrototypeLoadAdaptiveStructureWatchpoint.cpp' l='71' u='r' c='_ZN3JSC45LLIntPrototypeLoadAdaptiveStructureWatchpoint12fireInternalERNS_2VMERKNS_10FireDetailE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='660' u='r' c='_ZN3JSCL23setupAdaptiveWatchpointEPNS_14JSGlobalObjectEPNS_8JSObjectERKNS_10IdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CachedSpecialPropertyAdaptiveStructureWatchpoint.cpp' l='55' u='r' c='_ZN3JSC48CachedSpecialPropertyAdaptiveStructureWatchpoint12fireInternalERNS_2VMERKNS_10FireDetailE'/>

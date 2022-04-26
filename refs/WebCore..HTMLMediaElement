@@ -1,0 +1,1319 @@
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.h' l='155' c='_ZNK7WebCore13HitTestResult12mediaElementEv'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='1109' c='_ZN7WebCore8Document20registerMediaElementERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='1110' c='_ZN7WebCore8Document22unregisterMediaElementERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='1122' c='_ZN7WebCore8Document45registerForCaptionPreferencesChangedCallbacksERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='1123' c='_ZN7WebCore8Document47unregisterForCaptionPreferencesChangedCallbacksERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='1125' c='_ZN7WebCore8Document31setMediaElementShowingTextTrackERKNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='1528' c='_ZN7WebCore8Document19forEachMediaElementERKN3WTF8FunctionIFvRNS_16HTMLMediaElementEEEE'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='1879'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='1883'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='1884'/>
+<use f='WebKit/Source/WebCore/page/Page.h' l='850' c='_ZN7WebCore4Page19forEachMediaElementERKN3WTF8FunctionIFvRNS_16HTMLMediaElementEEEE'/>
+<use f='WebKit/Source/WebCore/page/ChromeClient.h' l='410' c='_ZN7WebCore12ChromeClient28setUpPlaybackControlsManagerERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/track/TrackBase.h' l='54' c='_ZN7WebCore9TrackBase15setMediaElementEN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEE'/>
+<use f='WebKit/Source/WebCore/html/track/TrackBase.h' l='55' c='_ZN7WebCore9TrackBase12mediaElementEv'/>
+<use f='WebKit/Source/WebCore/html/track/TrackBase.h' l='88'/>
+<use f='WebKit/Source/WebCore/html/track/AudioTrack.h' l='70' c='_ZN7WebCore10AudioTrack15setMediaElementEN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEE'/>
+<use f='WebKit/Source/WebCore/page/CaptionUserPreferences.h' l='59' c='_ZNK7WebCore22CaptionUserPreferences23textTrackSelectionScoreEPNS_9TextTrackEPNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/MediaElementSession.h' l='64' c='_ZN7WebCore19MediaElementSessionC1ERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/MediaElementSession.h' l='145' c='_ZNK7WebCore19MediaElementSession7elementEv'/>
+<use f='WebKit/Source/WebCore/html/MediaElementSession.h' l='210'/>
+<use f='WebKit/Source/WebCore/html/track/VideoTrack.h' l='76' c='_ZN7WebCore10VideoTrack15setMediaElementEN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEE'/>
+<inh f='WebKit/Source/WebCore/html/HTMLElement.h' l='47' c='WebCore::HTMLElement'/>
+<inh f='WebKit/Source/WebCore/dom/ActiveDOMObject.h' l='52' c='WebCore::ActiveDOMObject'/>
+<inh f='WebKit/Source/WebCore/html/MediaControllerInterface.h' l='37' c='WebCore::MediaControllerInterface'/>
+<inh f='WebKit/Source/WebCore/platform/audio/PlatformMediaSession.h' l='235' c='WebCore::PlatformMediaSessionClient'/>
+<inh f='WebKit/Source/WebCore/page/MediaCanStartListener.h' l='34' c='WebCore::MediaCanStartListener'/>
+<inh f='WebKit/Source/WebCore/platform/graphics/MediaPlayer.h' l='142' c='WebCore::MediaPlayerClient'/>
+<inh f='WebKit/Source/WebCore/page/MediaProducer.h' l='34' c='WebCore::MediaProducer'/>
+<inh f='WebKit/Source/WebCore/dom/VisibilityChangeClient.h' l='30' c='WebCore::VisibilityChangeClient'/>
+<inh f='WebKit/Source/WebCore/html/track/AudioTrack.h' l='38' c='WebCore::AudioTrackClient'/>
+<inh f='WebKit/Source/WebCore/html/track/TextTrack.h' l='44' c='WebCore::TextTrackClient'/>
+<inh f='WebKit/Source/WebCore/html/track/VideoTrack.h' l='39' c='WebCore::VideoTrackClient'/>
+<inh f='WebKit/WTF/Headers/wtf/LoggerHelper.h' l='33' c='WTF::LoggerHelper'/>
+<inh f='WebKit/WTF/Headers/wtf/WeakPtr.h' l='218' c='WTF::CanMakeWeakPtr'/>
+<def f='WebKit/Source/WebCore/html/HTMLMediaElement.h' l='118' ll='1199'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.h' l='139'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.h' l='141' c='_ZN7WebCore16HTMLMediaElement8bisoHeapEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.h' l='154' c='_ZN7WebCore16HTMLMediaElement16allMediaElementsEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.h' l='156' c='_ZN7WebCore16HTMLMediaElement33bestMediaElementForRemoteControlsENS_19MediaElementSession23PlaybackControlsPurposeEPKNS_8DocumentE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.h' l='1213'/>
+<ovr f='WebKit/Source/WebCore/html/HTMLAudioElement.h' l='37' c='WebCore::HTMLAudioElement'/>
+<use f='WebKit/Source/WebCore/html/HTMLAudioElement.h' l='37'/>
+<use f='WebKit/Source/WebCore/html/HTMLAudioElement.h' l='52' c='_ZN3WTF14TypeCastTraitsIKN7WebCore16HTMLAudioElementET_Lb0EE6isTypeERKNS1_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/HTMLAudioElement.h' l='53' c='_ZN3WTF14TypeCastTraitsIKN7WebCore16HTMLAudioElementET_Lb0EE6isTypeERKNS1_7ElementE'/>
+<use f='WebKit/Source/WebCore/html/HTMLAudioElement.h' l='53' c='_ZN3WTF14TypeCastTraitsIKN7WebCore16HTMLAudioElementET_Lb0EE6isTypeERKNS1_7ElementE'/>
+<use f='WebKit/Source/WebCore/html/HTMLAudioElement.h' l='54' c='_ZN3WTF14TypeCastTraitsIKN7WebCore16HTMLAudioElementET_Lb0EE6isTypeERKNS1_4NodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLAudioElement.h' l='54' c='_ZN3WTF14TypeCastTraitsIKN7WebCore16HTMLAudioElementET_Lb0EE6isTypeERKNS1_4NodeE'/>
+<size>1328</size>
+<fun r='_ZN7WebCore16HTMLMediaElement8bisoHeapEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement6playerEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement28supportsAcceleratedRenderingEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement7isVideoEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement8hasVideoEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement8hasAudioEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement11hasRendererEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16allMediaElementsEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement33bestMediaElementForRemoteControlsENS_19MediaElementSession23PlaybackControlsPurposeEPKNS_8DocumentE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement6rewindEd'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16returnToRealtimeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement18supportsFullscreenEj'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement16supportsScanningEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement16canSaveMediaDataEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement17doesHaveAttributeERKN3WTF10AtomStringEPS2_'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement13platformLayerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18isVideoLayerInlineEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement37setPreparedToReturnVideoLayerToInlineEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement28waitForPreparedForInlineThenEON3WTF8FunctionIFvvEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement40scheduleCheckPlaybackTargetCompatabilityEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement32checkPlaybackTargetCompatibilityEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement34scheduleResolvePendingPlayPromisesEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement33scheduleRejectPendingPlayPromisesEON3WTF3RefINS_12DOMExceptionENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25rejectPendingPlayPromisesEON3WTF6VectorINS_18DOMPromiseDeferredIvEELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEEON3216593'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26resolvePendingPlayPromisesEON3WTF6VectorINS_18DOMPromiseDeferredIvEELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26scheduleNotifyAboutPlayingEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18notifyAboutPlayingEON3WTF6VectorINS_18DOMPromiseDeferredIvEELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement13movieLoadTypeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement16inActiveDocumentEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement27mediaSessionGroupIdentifierEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement5errorEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement10currentSrcEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement9srcObjectEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12setSrcObjectEOSt8optionalIN3WTF7VariantIJNS2_6RefPtrINS_11MediaSourceENS2_12RawPtrTraitsIS5_EENS2_21DefaultRefDerefTrai15258441'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14setCrossOriginERKN3WTF10AtomStringE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement11crossOriginEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement12networkStateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement7preloadEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement10setPreloadERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement8bufferedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement4loadEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement11canPlayTypeERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement10readyStateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement7seekingEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement11currentTimeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14setCurrentTimeEd'/>
+<fun r='_ZN7WebCore16HTMLMediaElement27setCurrentTimeWithToleranceEddd'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement22currentTimeForBindingsEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25setCurrentTimeForBindingsEd'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement12getStartDateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement8durationEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement6pausedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement19defaultPlaybackRateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22setDefaultPlaybackRateEd'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement12playbackRateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15setPlaybackRateEd'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement16currentMediaTimeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14setCurrentTimeERKN3WTF9MediaTimeE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement17durationMediaTimeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement8fastSeekERKN3WTF9MediaTimeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18updatePlaybackRateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement20webkitPreservesPitchEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23setWebkitPreservesPitchEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement6playedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement8seekableEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement34seekableTimeRangesLastModifiedTimeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement18liveUpdateIntervalEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement5endedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement8autoplayEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement13isAutoplayingEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement4loopEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement7setLoopEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement4playEONS_18DOMPromiseDeferredIvEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement4playEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement5pauseEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement8fastSeekEd'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement18minFastReverseRateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement18maxFastForwardRateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18setBufferingPolicyENS_16MediaPlayerEnums15BufferingPolicyE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement15bufferingPolicyEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement27purgeBufferedDataIfPossibleEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement23webkitHasClosedCaptionsEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement27webkitClosedCaptionsVisibleEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement30setWebkitClosedCaptionsVisibleEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement15elementIsHiddenEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17detachMediaSourceEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26incrementDroppedFrameCountEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement23maximumSourceBufferSizeERKNS_12SourceBufferE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement8controlsEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement11setControlsEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement6volumeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement9setVolumeEd'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement5mutedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement8setMutedEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15togglePlayStateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14beginScrubbingEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12endScrubbingEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13beginScanningENS_24MediaControllerInterface13ScanDirectionE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement11endScanningEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12nextScanRateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement7canPlayEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement13percentLoadedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement26shouldForceControlsDisplayEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12addTextTrackERKN3WTF6StringES4_S4_'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17ensureAudioTracksEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16ensureTextTracksEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17ensureVideoTracksEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement11audioTracksEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement10textTracksEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement11videoTracksEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement19currentlyActiveCuesEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13addAudioTrackEON3WTF3RefINS_10AudioTrackENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12addTextTrackEON3WTF3RefINS_9TextTrackENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13addVideoTrackEON3WTF3RefINS_10VideoTrackENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16removeAudioTrackEON3WTF3RefINS_10AudioTrackENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15removeTextTrackEON3WTF3RefINS_9TextTrackENS1_12RawPtrTraitsIS3_EEEEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16removeVideoTrackEON3WTF3RefINS_10VideoTrackENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement28forgetResourceSpecificTracksEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25closeCaptionTracksChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement35notifyMediaPlayerOfTextTrackChangesEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15didAddTextTrackERNS_16HTMLTrackElementE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18didRemoveTextTrackERNS_16HTMLTrackElementE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement27mediaPlayerDidAddAudioTrackERNS_17AudioTrackPrivateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26mediaPlayerDidAddTextTrackERNS_22InbandTextTrackPrivateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement27mediaPlayerDidAddVideoTrackERNS_17VideoTrackPrivateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement30mediaPlayerDidRemoveAudioTrackERNS_17AudioTrackPrivateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement29mediaPlayerDidRemoveTextTrackERNS_22InbandTextTrackPrivateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement30mediaPlayerDidRemoveVideoTrackERNS_17VideoTrackPrivateE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement34configureTextTrackGroupForLanguageERKNS0_10TrackGroupE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement27scheduleConfigureTextTracksEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19configureTextTracksEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23configureTextTrackGroupERKNS0_10TrackGroupE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement20setSelectedTextTrackEPNS_9TextTrackE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement24audioTrackEnabledChangedERNS_10AudioTrackE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement20textTrackKindChangedERNS_9TextTrackE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement20textTrackModeChangedERNS_9TextTrackE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16textTrackAddCuesERNS_9TextTrackERKNS_16TextTrackCueListE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19textTrackRemoveCuesERNS_9TextTrackERKNS_16TextTrackCueListE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15textTrackAddCueERNS_9TextTrackERNS_12TextTrackCueE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18textTrackRemoveCueERNS_9TextTrackERNS_12TextTrackCueE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25videoTrackSelectedChangedERNS_10VideoTrackE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement31requiresTextTrackRepresentationEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26setTextTrackRepresentationEPNS_23TextTrackRepresentationE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19syncTextTrackBoundsEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25captionPreferencesChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26textTrackReadyStateChangedEPNS_9TextTrackE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement42updateTextTrackRepresentationImageIfNeededEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16addEventListenerERKN3WTF10AtomStringEONS1_3RefINS_13EventListenerENS1_12RawPtrTraitsIS6_EEEERKNS_23AddEventListenerOptionsE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19removeEventListenerERKN3WTF10AtomStringERNS_13EventListenerERKNS_20EventListenerOptionsE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement33isPlayingToWirelessPlaybackTargetEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement28setIsPlayingToWirelessTargetEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement37webkitCurrentPlaybackTargetIsWirelessEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement24setPlayingOnSecondScreenEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement23isPlayingOnSecondScreenEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement25isPlayingToExternalTargetEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement23hasSingleSecurityOriginEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement22didPassCORSAccessCheckEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement16wouldTaintOriginERKNS_14SecurityOriginE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement12isFullscreenEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement20isStandardFullscreenEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement29toggleStandardFullscreenStateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement14fullscreenModeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15enterFullscreenEj'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15enterFullscreenEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14exitFullscreenEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement32prepareForVideoFullscreenStandbyEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25setVideoFullscreenStandbyEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement17hasClosedCaptionsEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement21closedCaptionsVisibleEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement24setClosedCaptionsVisibleEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16sourceWasRemovedERNS_17HTMLSourceElementE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14sourceWasAddedERNS_17HTMLSourceElementE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22setMediaCacheDirectoryERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19mediaCacheDirectoryEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19originsInMediaCacheERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15clearMediaCacheERKN3WTF6StringENS1_8WallTimeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25clearMediaCacheForOriginsERKN3WTF6StringERKNS1_7HashSetINS_18SecurityOriginDataENS1_11DefaultHashIS6_EENS1_10HashTraits1714461'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17resetMediaEnginesEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement9isPlayingEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15audioSourceNodeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18setAudioSourceNodeEPNS_27MediaElementAudioSourceNodeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19audioSourceProviderEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15isSafeToLoadURLERKN3WTF3URLENS_21HTMLMediaElementEnums16InvalidURLActionE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement10mediaGroupEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13setMediaGroupERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement10controllerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13setControllerEON3WTF6RefPtrINS_15MediaControllerENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement21controllerForBindingsEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement24setControllerForBindingsEPNS_15MediaControllerE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25enteredOrExitedFullscreenEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement8fileSizeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18mediaLoadingFailedENS_16MediaPlayerEnums12NetworkStateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25mediaLoadingFailedFatallyENS_16MediaPlayerEnums12NetworkStateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23getVideoPlaybackQualityEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement12preloadValueEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement12mediaSessionEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22pageScaleFactorChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement35userInterfaceLayoutDirectionChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement29getCurrentMediaControlsStatusEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement56setMediaControlsMaximumRightContainerButtonCountOverrideEm'/>
+<fun r='_ZN7WebCore16HTMLMediaElement33setMediaControlsHidePlaybackRatesEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17mediaControlsHostEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement16isDisablingSleepEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement15maxBufferedTimeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement10mediaStateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17layoutSizeChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19visibilityDidChangeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement40allowsMediaDocumentInlinePlaybackChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16updateShouldPlayEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement8rendererEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25resetPlaybackSessionStateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement19isVisibleInViewportEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement27hasEverNotifiedAboutPlayingEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23setShouldDelayLoadEventEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement15hasEverHadAudioEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement15hasEverHadVideoEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement19playbackStartedTimeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement50isTemporarilyAllowingInlinePlaybackAfterFullscreenEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26isVisibleInViewportChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement28updateRateChangeRestrictionsEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement33lastMediaResourceLoaderForTestingEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement15supportsSeekingEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement6loggerEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement13logIdentifierEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement12logClassNameEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement10logChannelEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement7willLogE11WTFLogLevel'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement11isSuspendedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26didBecomeFullscreenElementEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18willExitFullscreenEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement29didStopBeingFullscreenElementEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13scheduleEventEON3WTF3RefINS_5EventENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement29privateBrowsingStateDidChangeEN3PAL9SessionIDE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement20mediaVolumeDidChangeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement27applicationWillResignActiveEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26applicationDidBecomeActiveEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement21mediaUniqueIdentifierEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement17mediaSessionTitleEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement27sourceApplicationIdentifierEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement36setOverridePreferredDynamicRangeModeENS_16DynamicRangeModeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement28setPreferredDynamicRangeModeENS_16DynamicRangeModeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement30didReceiveRemoteControlCommandENS_20PlatformMediaSession24RemoteControlCommandTypeERKNS1_21RemoteCommandArgumentE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13dispatchEventERNS_5EventE'/>
+<fun r='_ZN7WebCore16HTMLMediaElementC1ERKNS_13QualifiedNameERNS_8DocumentEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElementD1Ev'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14parseAttributeERKNS_13QualifiedNameERKN3WTF10AtomStringE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement21finishParsingChildrenEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement14isURLAttributeERKNS_9AttributeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19willAttachRenderersEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18didAttachRenderersEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19willDetachRenderersEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18didDetachRenderersEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement20didMoveToNewDocumentERNS_8DocumentES2_'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement14isMediaElementEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement21createElementRendererEONS_11RenderStyleERKNS_18RenderTreePositionE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement22documentSecurityOriginEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement19audioOutputDeviceIdEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement27audioOutputDeviceIdOverrideEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement36mediaControlsDependOnPageScaleFactorEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement39setMediaControlsDependOnPageScaleFactorEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement46updateMediaControlsAfterPresentationModeChangeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13scheduleEventERKN3WTF10AtomStringE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15scheduleEventOnERT_ON3WTF3RefINS_5EventENS3_12RawPtrTraitsIS5_EEEE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement14showPosterFlagEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17setShowPosterFlagEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement30setChangingVideoFullscreenModeEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement29isChangingVideoFullscreenModeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17createMediaPlayerEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement13supportsFocusEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement16isMouseFocusableEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16rendererIsNeededERKNS_11RenderStyleE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement25childShouldCreateRendererERKNS_4NodeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22didFinishInsertingNodeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14didRecalcStyleENS_5Style6ChangeE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement20isInteractiveContentEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17setFullscreenModeEj'/>
+<fun r='_ZN7WebCore16HTMLMediaElement27willBecomeFullscreenElementEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement30willStopBeingFullscreenElementEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement19activeDOMObjectNameEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement7suspendENS_19ReasonForSuspensionE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement6resumeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement4stopEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement25virtualHasPendingActivityEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement32stopWithoutDestroyingMediaPlayerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16contextDestroyedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22visibilityStateChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13setReadyStateENS_16MediaPlayerEnums10ReadyStateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15setNetworkStateENS_16MediaPlayerEnums12NetworkStateE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement21effectivePlaybackRateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement21requestedPlaybackRateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement30mediaPlayerNetworkStateChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement28mediaPlayerReadyStateChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22mediaPlayerTimeChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement24mediaPlayerVolumeChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22mediaPlayerMuteChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26mediaPlayerDurationChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22mediaPlayerRateChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement31mediaPlayerPlaybackStateChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement31mediaPlayerResourceNotSupportedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18mediaPlayerRepaintEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22mediaPlayerSizeChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement36mediaPlayerRenderingCanBeAcceleratedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement31mediaPlayerRenderingModeChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement40mediaPlayerAcceleratedCompositingEnabledEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement24mediaPlayerEngineUpdatedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement36mediaPlayerWillInitializeMediaEngineEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement35mediaPlayerDidInitializeMediaEngineEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement42mediaPlayerReloadAndResumePlaybackIfNeededEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement31mediaPlayerQueueTaskOnEventLoopEON3WTF8FunctionIFvvEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement29scheduleMediaEngineWasUpdatedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement21mediaEngineWasUpdatedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement32mediaPlayerCharacteristicChangedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement19mediaPlayerReferrerEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement20mediaPlayerUserAgentEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement23mediaPlayerIsFullscreenEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement32mediaPlayerIsFullscreenPermittedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement18mediaPlayerIsVideoEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement25mediaPlayerContentBoxRectEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement24mediaPlayerContentsScaleEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement46mediaPlayerPlatformVolumeConfigurationRequiredEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement20mediaPlayerIsLoopingEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement31mediaPlayerCachedResourceLoaderEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement31mediaPlayerCreateResourceLoaderEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement35mediaPlayerShouldUsePersistentCacheEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement30mediaPlayerMediaCacheDirectoryEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement37mediaPlayerActiveSourceBuffersChangedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement38mediaPlayerSourceApplicationIdentifierEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement40mediaPlayerPreferredAudioCharacteristicsEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement20mediaPlayerElementIdEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement29mediaPlayerEngineFailedToLoadEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement32mediaPlayerRequestedPlaybackRateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement25mediaPlayerFullscreenModeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement35mediaPlayerIsVideoFullscreenStandbyEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement29mediaPlayerShouldDisableSleepEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement37mediaPlayerShouldCheckHardwareSupportEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement41mediaContentTypesRequiringHardwareSupportEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement36mediaPlayerBufferedTimeRangesChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement28requestInstallMissingPluginsERKN3WTF6StringES4_RNS_47MediaPlayerRequestInstallMissingPluginsCallbackE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23pendingActionTimerFiredEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23progressEventTimerFiredEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26playbackProgressTimerFiredEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14scanTimerFiredEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement8seekTaskEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26startPlaybackProgressTimerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23startProgressEventTimerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18stopPeriodicTimersEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18cancelPendingTasksEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15closeTaskQueuesEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement4seekERKN3WTF9MediaTimeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12seekInternalERKN3WTF9MediaTimeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17seekWithToleranceERKN3WTF9MediaTimeES4_S4_b'/>
+<fun r='_ZN7WebCore16HTMLMediaElement10finishSeekEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12clearSeekingEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14addPlayedRangeERKN3WTF9MediaTimeES4_'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23scheduleTimeupdateEventEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19scheduleResizeEventEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement32scheduleResizeEventIfSizeChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19selectMediaResourceEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12loadResourceERKN3WTF3URLERNS_11ContentTypeERKNS1_6StringE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23scheduleNextSourceChildEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19loadNextSourceChildEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17userCancelledLoadEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16clearMediaPlayerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement24havePotentialSourceChildEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13noneSupportedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement31cancelPendingEventsAndCallbacksEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19waitForSourceChangeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13prepareToPlayEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement21selectNextSourceChildEPNS_11ContentTypeEPN3WTF6StringENS_21HTMLMediaElementEnums16InvalidURLActionE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement32ignoreTrackDisplayUpdateRequestsEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement39beginIgnoringTrackDisplayUpdateRequestsEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement37endIgnoringTrackDisplayUpdateRequestsEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25updateActiveTextTrackCuesERKN3WTF9MediaTimeE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement24showingTrackWithSameKindEPNS_16HTMLTrackElementE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement42markCaptionAndSubtitleTracksAsUnconfiguredENS0_15ReconfigureModeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18captionDisplayModeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement18textTracksAreReadyEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25configureTextTrackDisplayENS_21HTMLMediaElementEnums28TextTrackVisibilityCheckTypeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22updateTextTrackDisplayEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12playInternalEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13pauseInternalEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14prepareForLoadEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19allowVideoRenderingEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement29processingMediaPlayerCallbackEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement34beginProcessingMediaPlayerCallbackEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement32endProcessingMediaPlayerCallbackEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23scheduleUpdatePlayStateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15updatePlayStateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12updateVolumeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement10setPlayingEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement18potentiallyPlayingEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement13endedPlaybackEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement18stoppedDueToErrorsEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement24pausedForUserInteractionEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement21couldPlayIfEnoughDataEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement36dispatchPlayPauseEventsIfNeedsQuirksEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement31canTransitionFromAutoplayToPlayEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement29setAutoplayEventPlaybackStateENS0_26AutoplayEventPlaybackStateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement28userDidInterfereWithAutoplayEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19handleAutoplayEventENS_13AutoplayEventE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement15minTimeSeekableEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement15maxTimeSeekableEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17setPausedInternalEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement34pauseAndUpdatePlayStateImmediatelyEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23setPlaybackRateInternalEd'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13mediaCanStartERNS_8DocumentE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement20invalidateCachedTimeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement17refreshCachedTimeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22configureMediaControlsEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23prepareMediaFragmentURIEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement21applyMediaFragmentURIEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement35changeNetworkStateFromLoadingToIdleEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement47removeBehaviorRestrictionsAfterFirstUserGestureEj'/>
+<fun r='_ZN7WebCore16HTMLMediaElement21updateMediaControllerEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement9isBlockedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement26isBlockedOnMediaControllerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13setCurrentSrcERKN3WTF3URLE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement13hasCurrentSrcEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement12isLiveStreamEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement20updateSleepDisablingEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement18shouldDisableSleepEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25didAddUserAgentShadowRootERNS_10ShadowRootE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19ensureIsolatedWorldEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement33ensureMediaControlsInjectedScriptEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement9mediaTypeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement16presentationTypeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement11displayTypeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15suspendPlaybackEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17resumeAutoplayingEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17mayResumePlaybackEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement31canReceiveRemoteControlCommandsEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement43shouldOverrideBackgroundPlaybackRestrictionENS_20PlatformMediaSession16InterruptionTypeE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement42shouldOverrideBackgroundLoadingRestrictionEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement15canProduceAudioEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement20hasMediaStreamSourceEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25processIsSuspendedChangedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement36shouldOverridePauseDuringRouteChangeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23pageMutedStateDidChangeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement29processingUserGestureForMediaEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement14effectiveMutedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement15effectiveVolumeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement20registerWithDocumentERNS_8DocumentE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22unregisterWithDocumentERNS_8DocumentE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22initializeMediaSessionEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22updateCaptionContainerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement29ensureMediaControlsShadowRootEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14setupAndCallJSERKN3WTF8FunctionIFbRNS_17JSDOMGlobalObjectERN3JSC14JSGlobalObjectERNS_16ScriptControllerERNS_15DOMWrapperWorldEEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement32isVideoTooSmallForInlinePlaybackEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement20updateShouldAutoplayEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22pauseAfterDetachedTaskEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement29updatePlaybackControlsManagerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement37schedulePlaybackControlsManagerUpdateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement53playbackControlsManagerBehaviorRestrictionsTimerFiredEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14updateRendererEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement31updatePageScaleFactorJSPropertyEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement51updateUsesLTRUserInterfaceLayoutDirectionJSPropertyEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23setControllerJSPropertyEPKcN3JSC7JSValueE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement39addBehaviorRestrictionsOnEndIfNecessaryEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement28handleSeekToPlaybackPositionEd'/>
+<fun r='_ZN7WebCore16HTMLMediaElement37seekToPlaybackPositionEndedTimerFiredEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19setInActiveDocumentEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement21checkForAudioAndVideoEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement13hasLiveSourceEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement10playPlayerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement11pausePlayerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement24mediaPlayerLogIdentifierEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17mediaPlayerLoggerEv'/>
+<mbr r='WebCore::HTMLMediaElement::m_progressEventTimer' o='1984' t='WebCore::Timer'/>
+<mbr r='WebCore::HTMLMediaElement::m_playbackProgressTimer' o='2368' t='WebCore::Timer'/>
+<mbr r='WebCore::HTMLMediaElement::m_scanTimer' o='2752' t='WebCore::Timer'/>
+<mbr r='WebCore::HTMLMediaElement::m_playbackControlsManagerBehaviorRestrictionsTimer' o='3136' t='WebCore::Timer'/>
+<mbr r='WebCore::HTMLMediaElement::m_seekToPlaybackPositionEndedTimer' o='3520' t='WebCore::Timer'/>
+<mbr r='WebCore::HTMLMediaElement::m_configureTextTracksTaskCancellationGroup' o='3904' t='WTF::TaskCancellationGroup'/>
+<mbr r='WebCore::HTMLMediaElement::m_checkPlaybackTargetCompatibilityTaskCancellationGroup' o='4032' t='WTF::TaskCancellationGroup'/>
+<mbr r='WebCore::HTMLMediaElement::m_updateMediaStateTaskCancellationGroup' o='4160' t='WTF::TaskCancellationGroup'/>
+<mbr r='WebCore::HTMLMediaElement::m_mediaEngineUpdatedTaskCancellationGroup' o='4288' t='WTF::TaskCancellationGroup'/>
+<mbr r='WebCore::HTMLMediaElement::m_updatePlayStateTaskCancellationGroup' o='4416' t='WTF::TaskCancellationGroup'/>
+<mbr r='WebCore::HTMLMediaElement::m_resumeTaskCancellationGroup' o='4544' t='WTF::TaskCancellationGroup'/>
+<mbr r='WebCore::HTMLMediaElement::m_seekTaskCancellationGroup' o='4672' t='WTF::TaskCancellationGroup'/>
+<mbr r='WebCore::HTMLMediaElement::m_playbackControlsManagerBehaviorRestrictionsTaskCancellationGroup' o='4800' t='WTF::TaskCancellationGroup'/>
+<mbr r='WebCore::HTMLMediaElement::m_bufferedTimeRangesChangedTaskCancellationGroup' o='4928' t='WTF::TaskCancellationGroup'/>
+<mbr r='WebCore::HTMLMediaElement::m_resourceSelectionTaskCancellationGroup' o='5056' t='WTF::TaskCancellationGroup'/>
+<mbr r='WebCore::HTMLMediaElement::m_playedTimeRanges' o='5184' t='RefPtr&lt;WebCore::TimeRanges&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_asyncEventsCancellationGroup' o='5248' t='WTF::TaskCancellationGroup'/>
+<mbr r='WebCore::HTMLMediaElement::m_pendingPlayPromises' o='5376' t='WebCore::HTMLMediaElement::PlayPromiseVector'/>
+<mbr r='WebCore::HTMLMediaElement::m_requestedPlaybackRate' o='5504' t='double'/>
+<mbr r='WebCore::HTMLMediaElement::m_reportedPlaybackRate' o='5568' t='double'/>
+<mbr r='WebCore::HTMLMediaElement::m_defaultPlaybackRate' o='5632' t='double'/>
+<mbr r='WebCore::HTMLMediaElement::m_webkitPreservesPitch' o='5696' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_networkState' o='5728' t='WebCore::HTMLMediaElementEnums::NetworkState'/>
+<mbr r='WebCore::HTMLMediaElement::m_readyState' o='5760' t='WebCore::HTMLMediaElementEnums::ReadyState'/>
+<mbr r='WebCore::HTMLMediaElement::m_readyStateMaximum' o='5792' t='WebCore::HTMLMediaElementEnums::ReadyState'/>
+<mbr r='WebCore::HTMLMediaElement::m_currentSrc' o='5824' t='WTF::URL'/>
+<mbr r='WebCore::HTMLMediaElement::m_currentIdentifier' o='6144' t='WebCore::MediaUniqueIdentifier'/>
+<mbr r='WebCore::HTMLMediaElement::m_error' o='6208' t='RefPtr&lt;WebCore::MediaError&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_pendingSeek' o='6272' t='std::unique_ptr&lt;PendingSeek&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_pendingSeekType' o='6336' t='WebCore::HTMLMediaElementEnums::SeekType'/>
+<mbr r='WebCore::HTMLMediaElement::m_volume' o='6400' t='double'/>
+<mbr r='WebCore::HTMLMediaElement::m_volumeInitialized' o='6464' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_lastSeekTime' o='6528' t='WTF::MediaTime'/>
+<mbr r='WebCore::HTMLMediaElement::m_previousProgressTime' o='6656' t='WTF::MonotonicTime'/>
+<mbr r='WebCore::HTMLMediaElement::m_playbackStartedTime' o='6720' t='double'/>
+<mbr r='WebCore::HTMLMediaElement::m_clockTimeAtLastUpdateEvent' o='6784' t='WTF::MonotonicTime'/>
+<mbr r='WebCore::HTMLMediaElement::m_lastTimeUpdateEventMovieTime' o='6848' t='WTF::MediaTime'/>
+<mbr r='WebCore::HTMLMediaElement::m_loadState' o='6976' t='WebCore::HTMLMediaElement::LoadState'/>
+<mbr r='WebCore::HTMLMediaElement::m_currentSourceNode' o='7040' t='RefPtr&lt;WebCore::HTMLSourceElement&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_nextChildNodeToConsider' o='7104' t='RefPtr&lt;WebCore::HTMLSourceElement&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_videoFullscreenMode' o='7168' t='WebCore::MediaPlayerEnums::VideoFullscreenMode'/>
+<mbr r='WebCore::HTMLMediaElement::m_videoFullscreenStandby' o='7200' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_preparedForInline' o='7208' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_preparedForInlineCompletionHandler' o='7232' t='WTF::Function&lt;void ()&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_temporarilyAllowingInlinePlaybackAfterFullscreen' o='7296' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_player' o='7360' t='RefPtr&lt;WebCore::MediaPlayer&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_cachedSupportsAcceleratedRendering' o='7424' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_preload' o='7432' t='MediaPlayer::Preload'/>
+<mbr r='WebCore::HTMLMediaElement::m_processingMediaPlayerCallback' o='7456' t='int'/>
+<mbr r='WebCore::HTMLMediaElement::m_mediaSource' o='7488' t='RefPtr&lt;WebCore::MediaSource&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_droppedVideoFrames' o='7552' t='unsigned int'/>
+<mbr r='WebCore::HTMLMediaElement::m_cachedTime' o='7616' t='WTF::MediaTime'/>
+<mbr r='WebCore::HTMLMediaElement::m_clockTimeAtLastCachedTimeUpdate' o='7744' t='WTF::MonotonicTime'/>
+<mbr r='WebCore::HTMLMediaElement::m_minimumClockTimeToUpdateCachedTime' o='7808' t='WTF::MonotonicTime'/>
+<mbr r='WebCore::HTMLMediaElement::m_fragmentStartTime' o='7872' t='WTF::MediaTime'/>
+<mbr r='WebCore::HTMLMediaElement::m_fragmentEndTime' o='8000' t='WTF::MediaTime'/>
+<mbr r='WebCore::HTMLMediaElement::m_pendingActionFlags' o='8128' t='WebCore::HTMLMediaElement::PendingActionFlags'/>
+<mbr r='WebCore::HTMLMediaElement::m_actionAfterScan' o='8160' t='WebCore::HTMLMediaElement::ActionAfterScanType'/>
+<mbr r='WebCore::HTMLMediaElement::m_scanType' o='8192' t='WebCore::HTMLMediaElement::ScanType'/>
+<mbr r='WebCore::HTMLMediaElement::m_scanDirection' o='8224' t='WebCore::MediaControllerInterface::ScanDirection'/>
+<mbr r='WebCore::HTMLMediaElement::m_bufferingPolicy' o='8256' t='WebCore::MediaPlayerEnums::BufferingPolicy'/>
+<mbr r='WebCore::HTMLMediaElement::m_firstTimePlaying' o='8264' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_playing' o='8265' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_isWaitingUntilMediaCanStart' o='8266' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_shouldDelayLoadEvent' o='8267' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_haveFiredLoadedData' o='8268' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_inActiveDocument' o='8269' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_autoplaying' o='8270' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_muted' o='8271' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_explicitlyMuted' o='8272' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_initiallyMuted' o='8273' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_paused' o='8274' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_seeking' o='8275' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_seekRequested' o='8276' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_sentStalledEvent' o='8277' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_sentEndEvent' o='8278' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_pausedInternal' o='8279' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_closedCaptionsVisible' o='8280' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_webkitLegacyClosedCaptionOverride' o='8281' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_completelyLoaded' o='8282' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_havePreparedToPlay' o='8283' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_parsingInProgress' o='8284' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_elementIsHidden' o='8285' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_elementWasRemovedFromDOM' o='8286' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_creatingControls' o='8287' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_receivedLayoutSizeChanged' o='8288' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_hasEverNotifiedAboutPlaying' o='8289' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_hasEverHadAudio' o='8290' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_hasEverHadVideo' o='8291' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_mediaControlsDependOnPageScaleFactor' o='8292' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_haveSetUpCaptionContainer' o='8293' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_isScrubbingRemotely' o='8294' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_waitingToEnterFullscreen' o='8295' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_changingVideoFullscreenMode' o='8296' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_showPoster' o='8297' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_tracksAreReady' o='8298' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_haveVisibleTextTrack' o='8299' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_processingPreferenceChange' o='8300' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_shouldAudioPlaybackRequireUserGesture' o='8301' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_shouldVideoPlaybackRequireUserGesture' o='8302' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_autoplayEventPlaybackState' o='8320' t='WebCore::HTMLMediaElement::AutoplayEventPlaybackState'/>
+<mbr r='WebCore::HTMLMediaElement::m_subtitleTrackLanguage' o='8384' t='WTF::String'/>
+<mbr r='WebCore::HTMLMediaElement::m_lastTextTrackUpdateTime' o='8448' t='WTF::MediaTime'/>
+<mbr r='WebCore::HTMLMediaElement::m_captionDisplayMode' o='8576' t='std::optional&lt;CaptionUserPreferences::CaptionDisplayMode&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_audioTracks' o='8640' t='RefPtr&lt;WebCore::AudioTrackList&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_textTracks' o='8704' t='RefPtr&lt;WebCore::TextTrackList&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_videoTracks' o='8768' t='RefPtr&lt;WebCore::VideoTrackList&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_textTracksWhenResourceSelectionBegan' o='8832' t='Vector&lt;RefPtr&lt;WebCore::TextTrack&gt; &gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_cueData' o='8960' t='std::unique_ptr&lt;CueData&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_ignoreTrackDisplayUpdate' o='9024' t='int'/>
+<mbr r='WebCore::HTMLMediaElement::m_requireCaptionPreferencesChangedCallbacks' o='9056' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_audioSourceNode' o='9088' t='WebCore::MediaElementAudioSourceNode *'/>
+<mbr r='WebCore::HTMLMediaElement::m_mediaGroup' o='9152' t='WTF::String'/>
+<mbr r='WebCore::HTMLMediaElement::m_mediaController' o='9216' t='RefPtr&lt;WebCore::MediaController&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_sleepDisabler' o='9280' t='std::unique_ptr&lt;SleepDisabler&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_lastMediaResourceLoaderForTesting' o='9344' t='WeakPtr&lt;const WebCore::MediaResourceLoader&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_overrideDynamicRangeMode' o='9408' t='std::optional&lt;DynamicRangeMode&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_blob' o='9472' t='RefPtr&lt;WebCore::Blob&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_blobURLForReading' o='9536' t='WTF::URL'/>
+<mbr r='WebCore::HTMLMediaElement::m_mediaProvider' o='9856' t='WebCore::MediaProvider'/>
+<mbr r='WebCore::HTMLMediaElement::m_mediaSession' o='10048' t='std::unique_ptr&lt;MediaElementSession&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_reportedExtraMemoryCost' o='10112' t='size_t'/>
+<mbr r='WebCore::HTMLMediaElement::m_logger' o='10176' t='RefPtr&lt;WTF::Logger&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_logIdentifier' o='10240' t='const void *'/>
+<mbr r='WebCore::HTMLMediaElement::m_mediaControlsHost' o='10304' t='RefPtr&lt;WebCore::MediaControlsHost&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_isolatedWorld' o='10368' t='RefPtr&lt;WebCore::DOMWrapperWorld&gt;'/>
+<mbr r='WebCore::HTMLMediaElement::m_isPlayingToWirelessTarget' o='10432' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_playingOnSecondScreen' o='10440' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_removedBehaviorRestrictionsAfterFirstUserGesture' o='10448' t='bool'/>
+<mbr r='WebCore::HTMLMediaElement::m_audioOutputPersistentDeviceId' o='10496' t='WTF::String'/>
+<mbr r='WebCore::HTMLMediaElement::m_id' o='10560' t='WTF::String'/>
+<ovr f='WebKit/Source/WebCore/html/HTMLVideoElement.h' l='45' c='WebCore::HTMLVideoElement'/>
+<use f='WebKit/Source/WebCore/html/HTMLVideoElement.h' l='45'/>
+<use f='WebKit/Source/WebCore/html/HTMLVideoElement.h' l='155' c='_ZN3WTF14TypeCastTraitsIKN7WebCore16HTMLVideoElementET_Lb0EE6isTypeERKNS1_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/HTMLVideoElement.h' l='156' c='_ZN3WTF14TypeCastTraitsIKN7WebCore16HTMLVideoElementET_Lb0EE6isTypeERKNS1_7ElementE'/>
+<use f='WebKit/Source/WebCore/html/HTMLVideoElement.h' l='156' c='_ZN3WTF14TypeCastTraitsIKN7WebCore16HTMLVideoElementET_Lb0EE6isTypeERKNS1_7ElementE'/>
+<use f='WebKit/Source/WebCore/html/HTMLVideoElement.h' l='157' c='_ZN3WTF14TypeCastTraitsIKN7WebCore16HTMLVideoElementET_Lb0EE6isTypeERKNS1_4NodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLVideoElement.h' l='157' c='_ZN3WTF14TypeCastTraitsIKN7WebCore16HTMLVideoElementET_Lb0EE6isTypeERKNS1_4NodeE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/InjectedBundleHitTestResult.cpp' l='122' c='_ZNK6WebKit27InjectedBundleHitTestResult9mediaTypeEv'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/Modules/mediasource/MediaSource.h' l='84' c='_ZN7WebCore11MediaSource15attachToElementERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/Modules/mediasource/MediaSource.h' l='85' c='_ZN7WebCore11MediaSource17detachFromElementERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/Modules/mediasource/MediaSource.h' l='104' c='_ZNK7WebCore11MediaSource12mediaElementEv'/>
+<use f='WebKit/Source/WebCore/Modules/mediasource/MediaSource.h' l='172'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioContext.h' l='71' c='_ZN7WebCore12AudioContext24createMediaElementSourceERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='652' c='_ZN7WebCore9Internals20mediaResponseSourcesERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='653' c='_ZN7WebCore9Internals26mediaResponseContentRangesERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='654' c='_ZN7WebCore9Internals25simulateAudioInterruptionERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='655' c='_ZN7WebCore9Internals29mediaElementHasCharacteristicERNS_16HTMLMediaElementERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='656' c='_ZN7WebCore9Internals23beginSimulatedHDCPErrorERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='657' c='_ZN7WebCore9Internals21endSimulatedHDCPErrorERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='659' c='_ZN7WebCore9Internals23elementShouldBufferDataERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='660' c='_ZN7WebCore9Internals22elementBufferingPolicyERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='661' c='_ZN7WebCore9Internals19privatePlayerVolumeERKNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='662' c='_ZN7WebCore9Internals18privatePlayerMutedERKNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='663' c='_ZN7WebCore9Internals20isMediaElementHiddenERKNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='665' c='_ZN7WebCore9Internals36setOverridePreferredDynamicRangeModeERNS_16HTMLMediaElementERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='710' c='_ZN7WebCore9Internals27setMediaElementRestrictionsERNS_16HTMLMediaElementEN3WTF10StringViewE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='713' c='_ZNK7WebCore9Internals29elementIsBlockingDisplaySleepERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='757' c='_ZN7WebCore9Internals39getCurrentMediaControlsStatusForElementERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='758' c='_ZN7WebCore9Internals56setMediaControlsMaximumRightContainerButtonCountOverrideERNS_16HTMLMediaElementEm'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='759' c='_ZN7WebCore9Internals33setMediaControlsHidePlaybackRatesERNS_16HTMLMediaElementEb'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='960' c='_ZNK7WebCore9Internals15mediaUsageStateERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='966' c='_ZN7WebCore9Internals33bestMediaElementForRemoteControlsENS_19MediaElementSession23PlaybackControlsPurposeE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.h' l='969' c='_ZN7WebCore9Internals17mediaSessionStateERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='3895' c='_ZN7WebCore9Internals20mediaResponseSourcesERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='3907' c='_ZN7WebCore9Internals26mediaResponseContentRangesERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='3919' c='_ZN7WebCore9Internals25simulateAudioInterruptionERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='3928' c='_ZN7WebCore9Internals29mediaElementHasCharacteristicERNS_16HTMLMediaElementERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='3940' c='_ZN7WebCore9Internals23beginSimulatedHDCPErrorERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='3946' c='_ZN7WebCore9Internals21endSimulatedHDCPErrorERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='3952' c='_ZN7WebCore9Internals23elementShouldBufferDataERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='3957' c='_ZN7WebCore9Internals22elementBufferingPolicyERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='3974' c='_ZN7WebCore9Internals36setOverridePreferredDynamicRangeModeERNS_16HTMLMediaElementERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='4329' c='_ZN7WebCore9Internals27setMediaElementRestrictionsERNS_16HTMLMediaElementEN3WTF10StringViewE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='4416' c='_ZNK7WebCore9Internals29elementIsBlockingDisplaySleepERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='4480' c='_ZN7WebCore9Internals33bestMediaElementForRemoteControlsENS_19MediaElementSession23PlaybackControlsPurposeE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='4485' c='_ZN7WebCore9Internals17mediaSessionStateERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='4491' c='_ZNK7WebCore9Internals15mediaUsageStateERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='4850' c='_ZN7WebCore9Internals39getCurrentMediaControlsStatusForElementERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='4855' c='_ZN7WebCore9Internals56setMediaControlsMaximumRightContainerButtonCountOverrideERNS_16HTMLMediaElementEm'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='4860' c='_ZN7WebCore9Internals33setMediaControlsHidePlaybackRatesERNS_16HTMLMediaElementEb'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='5015' c='_ZN7WebCore9Internals19privatePlayerVolumeERKNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='5020' c='_ZN7WebCore9Internals18privatePlayerMutedERKNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='5029' c='_ZN7WebCore9Internals20isMediaElementHiddenERKNS_16HTMLMediaElementE'/>
+<size>1328</size>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLMediaElement.h' l='36'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLMediaElement.h' l='37' c='_ZN7WebCore18JSHTMLMediaElement6createEPN3JSC9StructureEPNS_17JSDOMGlobalObjectEON3WTF3RefINS_16HTMLMediaElementENS6_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLMediaElement.h' l='46' c='_ZN7WebCore18JSHTMLMediaElement9toWrappedERN3JSC2VMENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLMediaElement.h' l='64' c='_ZNK7WebCore18JSHTMLMediaElement7wrappedEv'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLMediaElement.h' l='66' c='_ZNK7WebCore18JSHTMLMediaElement7wrappedEv'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLMediaElement.h' l='69' c='_ZN7WebCore18JSHTMLMediaElementC1EPN3JSC9StructureERNS_17JSDOMGlobalObjectEON3WTF3RefINS_16HTMLMediaElementENS6_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLMediaElement.h' l='80' c='_ZN7WebCore12wrapperOwnerERNS_15DOMWrapperWorldEPNS_16HTMLMediaElementE'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLMediaElement.h' l='86' c='_ZN7WebCore10wrapperKeyEPNS_16HTMLMediaElementE'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLMediaElement.h' l='92'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLMediaElement.h' l='94'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='9483' c='_ZN7WebCoreL53jsInternalsPrototypeFunction_mediaResponseSourcesBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='9506' c='_ZN7WebCoreL59jsInternalsPrototypeFunction_mediaResponseContentRangesBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='9529' c='_ZN7WebCoreL58jsInternalsPrototypeFunction_simulateAudioInterruptionBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='9552' c='_ZN7WebCoreL62jsInternalsPrototypeFunction_mediaElementHasCharacteristicBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='9578' c='_ZN7WebCoreL56jsInternalsPrototypeFunction_beginSimulatedHDCPErrorBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='9601' c='_ZN7WebCoreL54jsInternalsPrototypeFunction_endSimulatedHDCPErrorBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='9624' c='_ZN7WebCoreL56jsInternalsPrototypeFunction_elementShouldBufferDataBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='9647' c='_ZN7WebCoreL55jsInternalsPrototypeFunction_elementBufferingPolicyBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='9670' c='_ZN7WebCoreL52jsInternalsPrototypeFunction_privatePlayerVolumeBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='9693' c='_ZN7WebCoreL51jsInternalsPrototypeFunction_privatePlayerMutedBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='9716' c='_ZN7WebCoreL53jsInternalsPrototypeFunction_isMediaElementHiddenBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='9739' c='_ZN7WebCoreL69jsInternalsPrototypeFunction_setOverridePreferredDynamicRangeModeBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='10531' c='_ZN7WebCoreL60jsInternalsPrototypeFunction_setMediaElementRestrictionsBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='10953' c='_ZN7WebCoreL62jsInternalsPrototypeFunction_elementIsBlockingDisplaySleepBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='11222' c='_ZN7WebCoreL72jsInternalsPrototypeFunction_getCurrentMediaControlsStatusForElementBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='11245' c='_ZN7WebCoreL89jsInternalsPrototypeFunction_setMediaControlsMaximumRightContainerButtonCountOverrideBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='11271' c='_ZN7WebCoreL66jsInternalsPrototypeFunction_setMediaControlsHidePlaybackRatesBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='13186' c='_ZN7WebCoreL66jsInternalsPrototypeFunction_bestMediaElementForRemoteControlsBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='13207' c='_ZN7WebCoreL50jsInternalsPrototypeFunction_mediaSessionStateBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSInternals.cpp' l='13230' c='_ZN7WebCoreL48jsInternalsPrototypeFunction_mediaUsageStateBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSInternalsE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/rendering/RenderMedia.h' l='38' c='_ZN7WebCore11RenderMediaC1ERNS_16HTMLMediaElementEONS_11RenderStyleE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderMedia.h' l='39' c='_ZN7WebCore11RenderMediaC1ERNS_16HTMLMediaElementEONS_11RenderStyleERKNS_7IntSizeE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderMedia.h' l='42' c='_ZNK7WebCore11RenderMedia12mediaElementEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderMedia.h' l='42' c='_ZNK7WebCore11RenderMedia12mediaElementEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderMedia.cpp' l='40' c='_ZN7WebCore11RenderMediaC1ERNS_16HTMLMediaElementEONS_11RenderStyleE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderMedia.cpp' l='46' c='_ZN7WebCore11RenderMediaC1ERNS_16HTMLMediaElementEONS_11RenderStyleERKNS_7IntSizeE'/>
+<size>1328</size>
+<fun r='_ZNK7WebCore16HTMLMediaElement8rendererEv'/>
+<use f='WebKit/Source/WebCore/html/shadow/MediaControlTextTrackContainerElement.h' l='54' c='_ZN7WebCore37MediaControlTextTrackContainerElement6createERNS_8DocumentERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/shadow/MediaControlTextTrackContainerElement.h' l='66' c='_ZN7WebCore37MediaControlTextTrackContainerElementC1ERNS_8DocumentERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/shadow/MediaControlTextTrackContainerElement.h' l='99'/>
+<use f='WebKit/Source/WebCore/rendering/RenderThemeAdwaita.cpp' l='643' c='_ZN7WebCoreL18parentMediaElementEPKNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderThemeAdwaita.cpp' l='650' c='_ZN7WebCoreL18parentMediaElementEPKNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderThemeAdwaita.cpp' l='652' c='_ZN7WebCoreL18parentMediaElementEPKNS_4NodeE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='407' c='_ZNK7WebCore13HitTestResult16absoluteMediaURLEv'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='418' c='_ZNK7WebCore13HitTestResult23mediaSupportsFullscreenEv'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='426' c='_ZNK7WebCore13HitTestResult12mediaElementEv'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='434' c='_ZNK7WebCore13HitTestResult12mediaElementEv'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='435' c='_ZNK7WebCore13HitTestResult12mediaElementEv'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='443' c='_ZNK7WebCore13HitTestResult26toggleMediaControlsDisplayEv'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='451' c='_ZNK7WebCore13HitTestResult23toggleMediaLoopPlaybackEv'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='459' c='_ZNK7WebCore13HitTestResult19mediaIsInFullscreenEv'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='468' c='_ZNK7WebCore13HitTestResult26toggleMediaFullscreenStateEv'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='480' c='_ZNK7WebCore13HitTestResult23enterFullscreenForVideoEv'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='494' c='_ZNK7WebCore13HitTestResult20mediaControlsEnabledEv'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='503' c='_ZNK7WebCore13HitTestResult16mediaLoopEnabledEv'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='512' c='_ZNK7WebCore13HitTestResult12mediaPlayingEv'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='521' c='_ZNK7WebCore13HitTestResult20toggleMediaPlayStateEv'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='529' c='_ZNK7WebCore13HitTestResult13mediaHasAudioEv'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='538' c='_ZNK7WebCore13HitTestResult12mediaIsVideoEv'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='547' c='_ZNK7WebCore13HitTestResult10mediaMutedEv'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='556' c='_ZNK7WebCore13HitTestResult20toggleMediaMuteStateEv'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestResult.cpp' l='564' c='_ZNK7WebCore13HitTestResult19isDownloadableMediaEv'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='1061' c='_ZN7WebCore18RenderLayerBacking19updateConfigurationEPKNS_11RenderLayerE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/style/UserAgentStyle.cpp' l='172' c='_ZN7WebCore5Style14UserAgentStyle34ensureDefaultStyleSheetsForElementERKNS_7ElementE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/html/track/TrackListBase.h' l='60' c='_ZNK7WebCore13TrackListBase12mediaElementEv'/>
+<use f='WebKit/Source/WebCore/html/track/TrackListBase.h' l='69' c='_ZN7WebCore13TrackListBaseC1EN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEEPNS_22ScriptExecutionContextE'/>
+<use f='WebKit/Source/WebCore/html/track/TrackListBase.h' l='83'/>
+<use f='WebKit/Source/WebCore/html/track/AudioTrackList.h' l='38' c='_ZN7WebCore14AudioTrackList6createEN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEEPNS_22ScriptExecutionContextE'/>
+<use f='WebKit/Source/WebCore/html/track/AudioTrackList.h' l='56' c='_ZN7WebCore14AudioTrackListC1EN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEEPNS_22ScriptExecutionContextE'/>
+<use f='WebKit/Source/WebCore/html/MediaController.h' l='87' c='_ZN7WebCore15MediaController21bringElementUpToSpeedERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/MediaController.h' l='100' c='_ZN7WebCore15MediaController15addMediaElementERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/MediaController.h' l='101' c='_ZN7WebCore15MediaController18removeMediaElementERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/MediaController.h' l='102' c='_ZNK7WebCore15MediaController20containsMediaElementERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/MediaController.h' l='133'/>
+<use f='WebKit/Source/WebCore/html/MediaController.h' l='136'/>
+<use f='WebKit/Source/WebCore/html/track/TextTrackList.h' l='39' c='_ZN7WebCore13TextTrackList6createEN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEEPNS_22ScriptExecutionContextE'/>
+<use f='WebKit/Source/WebCore/html/track/TextTrackList.h' l='65' c='_ZN7WebCore13TextTrackListC1EN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEEPNS_22ScriptExecutionContextE'/>
+<use f='WebKit/Source/WebCore/html/track/VideoTrackList.h' l='38' c='_ZN7WebCore14VideoTrackList6createEN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEEPNS_22ScriptExecutionContextE'/>
+<use f='WebKit/Source/WebCore/html/track/VideoTrackList.h' l='57' c='_ZN7WebCore14VideoTrackListC1EN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEEPNS_22ScriptExecutionContextE'/>
+<use f='WebKit/Source/WebCore/html/HTMLTrackElement.h' l='62' c='_ZNK7WebCore16HTMLTrackElement12mediaElementEv'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/MediaElementAudioSourceNode.h' l='49' c='_ZN7WebCore27MediaElementAudioSourceNode12mediaElementEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/MediaElementAudioSourceNode.h' l='60' c='_ZN7WebCore27MediaElementAudioSourceNodeC1ERNS_16BaseAudioContextEON3WTF3RefINS_16HTMLMediaElementENS3_12RawPtrTraitsIS5_EEEE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/MediaElementAudioSourceNode.h' l='72'/>
+<size>1328</size>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLMediaElement.cpp' l='467' c='_ZN7WebCore18JSHTMLMediaElementC1EPN3JSC9StructureERNS_17JSDOMGlobalObjectEON3WTF3RefINS_16HTMLMediaElementENS6_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLMediaElement.cpp' l='1684' c='_ZN7WebCore18JSHTMLMediaElement9toWrappedERN3JSC2VMENS1_7JSValueE'/>
+<size>1328</size>
+<use f='WebKit/WebCore/DerivedSources/JSAudioContext.cpp' l='331' c='_ZN7WebCoreL60jsAudioContextPrototypeFunction_createMediaElementSourceBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_14JSAudioContextE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/Modules/mediacontrols/MediaControlsHost.h' l='51' c='_ZN7WebCore17MediaControlsHost6createERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/Modules/mediacontrols/MediaControlsHost.h' l='104' c='_ZN7WebCore17MediaControlsHostC1ERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/Modules/mediacontrols/MediaControlsHost.h' l='106'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/MediaElementAudioSourceOptions.h' l='34'/>
+<use f='WebKit/WebCore/DerivedSources/JSMediaElementAudioSourceNode.cpp' l='201' c='_ZN7WebCoreL48jsMediaElementAudioSourceNode_mediaElementGetterERN3JSC14JSGlobalObjectERNS_29JSMediaElementAudioSourceNodeE'/>
+<use f='WebKit/WebCore/DerivedSources/JSMediaElementAudioSourceOptions.cpp' l='56' c='_ZN7WebCore17convertDictionaryERN3JSC14JSGlobalObjectENS0_7JSValueE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/Modules/mediacontrols/MediaControlsHost.cpp' l='100' c='_ZN7WebCore17MediaControlsHost6createERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/Modules/mediacontrols/MediaControlsHost.cpp' l='105' c='_ZN7WebCore17MediaControlsHostC1ERNS_16HTMLMediaElementE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/Modules/mediasource/MediaSource.cpp' l='934' c='_ZN7WebCore11MediaSource17detachFromElementERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/Modules/mediasource/MediaSource.cpp' l='974' c='_ZN7WebCore11MediaSource15attachToElementERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/track/InbandTextTrack.h' l='52' c='_ZN7WebCore15InbandTextTrack15setMediaElementEN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioContext.cpp' l='524' c='_ZN7WebCore12AudioContext24createMediaElementSourceERNS_16HTMLMediaElementE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/MediaElementAudioSourceNode.cpp' l='67' c='_ZN7WebCore27MediaElementAudioSourceNodeC1ERNS_16BaseAudioContextEON3WTF3RefINS_16HTMLMediaElementENS3_12RawPtrTraitsIS5_EEEE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/page/CaptionUserPreferences.cpp' l='294' c='_ZNK7WebCore22CaptionUserPreferences23textTrackSelectionScoreEPNS_9TextTrackEPNS_16HTMLMediaElementE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/page/Page.cpp' l='1096' c='_ZN7WebCore4Page14setMediaVolumeEf'/>
+<use f='WebKit/Source/WebCore/page/Page.cpp' l='1154' c='_ZN7WebCore4Page18setPageScaleFactorEfRKNS_8IntPointEb'/>
+<use f='WebKit/Source/WebCore/page/Page.cpp' l='1252' c='_ZN7WebCore4Page31setUserInterfaceLayoutDirectionENS_28UserInterfaceLayoutDirectionE'/>
+<use f='WebKit/Source/WebCore/page/Page.cpp' l='1263' c='_ZN7WebCore4Page40updateMediaElementRateChangeRestrictionsEv'/>
+<use f='WebKit/Source/WebCore/page/Page.cpp' l='3115' c='_ZN7WebCore4Page36setAllowsMediaDocumentInlinePlaybackEb'/>
+<use f='WebKit/Source/WebCore/page/Page.cpp' l='3350' c='_ZN7WebCore4Page19forEachMediaElementERKN3WTF8FunctionIFvRNS_16HTMLMediaElementEEEE'/>
+<use f='WebKit/Source/WebCore/page/Page.cpp' l='3373' c='_ZN7WebCore4Page27applicationWillResignActiveEv'/>
+<use f='WebKit/Source/WebCore/page/Page.cpp' l='3392' c='_ZN7WebCore4Page26applicationDidBecomeActiveEv'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorDOMAgent.h' l='286'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorDOMAgent.cpp' l='2385' c='_ZN7WebCore17InspectorDOMAgent23addEventListenersToNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorDOMAgent.cpp' l='2389' c='_ZN7WebCore17InspectorDOMAgent23addEventListenersToNodeERNS_4NodeE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='199' c='_ZN7WebCore16HTMLMediaElement8bisoHeapEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='199' c='_ZN7WebCore16HTMLMediaElement8bisoHeapEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='199' c='_ZN7WebCore16HTMLMediaElementnwEm'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='290' c='_ZN7WebCore23TrackDisplayUpdateScopeC1ERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='301'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='319' c='_ZN7WebCore16HTMLMediaElement16allMediaElementsEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='321' c='_ZN7WebCore16HTMLMediaElement16allMediaElementsEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='339' c='_ZN7WebCoreL33mediaElementSessionInfoForSessionERKNS_19MediaElementSessionENS0_23PlaybackControlsPurposeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='586' c='_ZN7WebCore16HTMLMediaElement33bestMediaElementForRemoteControlsENS_19MediaElementSession23PlaybackControlsPurposeEPKNS_8DocumentE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='788' c='_ZN7WebCore16HTMLMediaElement22didFinishInsertingNodeEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='955' c='_ZN7WebCore16HTMLMediaElement18notifyAboutPlayingEON3WTF6VectorINS_18DOMPromiseDeferredIvEELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='1090' c='_ZN7WebCore16HTMLMediaElement4loadEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='1981' c='_ZN7WebCoreL23isAllowedToLoadMediaURLERNS_16HTMLMediaElementERKN3WTF3URLEb'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='4291' c='_ZN7WebCoreL17controllerJSValueERN3JSC14JSGlobalObjectERNS_17JSDOMGlobalObjectERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='4484' c='_ZN7WebCore16HTMLMediaElement27scheduleConfigureTextTracksEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='5032' c='_ZN7WebCore16HTMLMediaElement29scheduleMediaEngineWasUpdatedEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='5325' c='_ZN7WebCore16HTMLMediaElement23scheduleUpdatePlayStateEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='5678' c='_ZN7WebCore16HTMLMediaElement4stopEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='5695' c='_ZN7WebCore16HTMLMediaElement7suspendENS_19ReasonForSuspensionE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='6132' c='_ZN7WebCore16HTMLMediaElement14exitFullscreenEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='6658' c='_ZN7WebCore16HTMLMediaElement42markCaptionAndSubtitleTracksAsUnconfiguredENS0_15ReconfigureModeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='6762' c='_ZN7WebCore16HTMLMediaElement13setMediaGroupERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='8205' c='_ZNK7WebCore16HTMLMediaElement12mediaSessionEv'/>
+<size>1328</size>
+<fun r='_ZN7WebCore16HTMLMediaElement8bisoHeapEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16allMediaElementsEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElementC1ERKNS_13QualifiedNameERNS_8DocumentEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22initializeMediaSessionEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElementD1Ev'/>
+<fun r='_ZN7WebCore16HTMLMediaElement33bestMediaElementForRemoteControlsENS_19MediaElementSession23PlaybackControlsPurposeEPKNS_8DocumentE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement20registerWithDocumentERNS_8DocumentE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22unregisterWithDocumentERNS_8DocumentE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement20didMoveToNewDocumentERNS_8DocumentES2_'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement13supportsFocusEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement16isMouseFocusableEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement20isInteractiveContentEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14parseAttributeERKNS_13QualifiedNameERKN3WTF10AtomStringE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement21finishParsingChildrenEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16rendererIsNeededERKNS_11RenderStyleE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement21createElementRendererEONS_11RenderStyleERKNS_18RenderTreePositionE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement25childShouldCreateRendererERKNS_4NodeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22didFinishInsertingNodeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22pauseAfterDetachedTaskEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19willAttachRenderersEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14updateRendererEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18didAttachRenderersEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19willDetachRenderersEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18didDetachRenderersEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14didRecalcStyleENS_5Style6ChangeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23scheduleNextSourceChildEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement37mediaPlayerActiveSourceBuffersChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13scheduleEventERKN3WTF10AtomStringE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13scheduleEventEON3WTF3RefINS_5EventENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement34scheduleResolvePendingPlayPromisesEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement33scheduleRejectPendingPlayPromisesEON3WTF3RefINS_12DOMExceptionENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25rejectPendingPlayPromisesEON3WTF6VectorINS_18DOMPromiseDeferredIvEELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEEON3216593'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26resolvePendingPlayPromisesEON3WTF6VectorINS_18DOMPromiseDeferredIvEELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26scheduleNotifyAboutPlayingEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18notifyAboutPlayingEON3WTF6VectorINS_18DOMPromiseDeferredIvEELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement27hasEverNotifiedAboutPlayingEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement40scheduleCheckPlaybackTargetCompatabilityEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement32checkPlaybackTargetCompatibilityEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement5errorEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12setSrcObjectEOSt8optionalIN3WTF7VariantIJNS2_6RefPtrINS_11MediaSourceENS2_12RawPtrTraitsIS5_EENS2_21DefaultRefDerefTrai15258441'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14setCrossOriginERKN3WTF10AtomStringE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement11crossOriginEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement12networkStateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement11canPlayTypeERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement12getStartDateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement4loadEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14prepareForLoadEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement42mediaPlayerReloadAndResumePlaybackIfNeededEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19selectMediaResourceEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19loadNextSourceChildEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12loadResourceERKN3WTF3URLERNS_11ContentTypeERKNS1_6StringE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement32ignoreTrackDisplayUpdateRequestsEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25updateActiveTextTrackCuesERKN3WTF9MediaTimeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement24audioTrackEnabledChangedERNS_10AudioTrackE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement20textTrackModeChangedERNS_9TextTrackE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25videoTrackSelectedChangedERNS_10VideoTrackE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement20textTrackKindChangedERNS_9TextTrackE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement39beginIgnoringTrackDisplayUpdateRequestsEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement37endIgnoringTrackDisplayUpdateRequestsEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16textTrackAddCuesERNS_9TextTrackERKNS_16TextTrackCueListE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19textTrackRemoveCuesERNS_9TextTrackERKNS_16TextTrackCueListE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15textTrackAddCueERNS_9TextTrackERNS_12TextTrackCueE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18textTrackRemoveCueERNS_9TextTrackERNS_12TextTrackCueE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement19currentlyActiveCuesEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15isSafeToLoadURLERKN3WTF3URLENS_21HTMLMediaElementEnums16InvalidURLActionE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23startProgressEventTimerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19waitForSourceChangeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13noneSupportedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25mediaLoadingFailedFatallyENS_16MediaPlayerEnums12NetworkStateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement31cancelPendingEventsAndCallbacksEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement30mediaPlayerNetworkStateChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18mediaLoadingFailedENS_16MediaPlayerEnums12NetworkStateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15setNetworkStateENS_16MediaPlayerEnums12NetworkStateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement35changeNetworkStateFromLoadingToIdleEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement28mediaPlayerReadyStateChangedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement31canTransitionFromAutoplayToPlayEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement36dispatchPlayPauseEventsIfNeedsQuirksEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13setReadyStateENS_16MediaPlayerEnums10ReadyStateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23progressEventTimerFiredEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement6rewindEd'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16returnToRealtimeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14addPlayedRangeERKN3WTF9MediaTimeES4_'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement16supportsScanningEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13prepareToPlayEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement8fastSeekEd'/>
+<fun r='_ZN7WebCore16HTMLMediaElement8fastSeekERKN3WTF9MediaTimeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement4seekERKN3WTF9MediaTimeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12seekInternalERKN3WTF9MediaTimeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17seekWithToleranceERKN3WTF9MediaTimeES4_S4_b'/>
+<fun r='_ZN7WebCore16HTMLMediaElement8seekTaskEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12clearSeekingEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement10finishSeekEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement10readyStateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement13movieLoadTypeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement27mediaSessionGroupIdentifierEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement8hasAudioEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement7seekingEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement17refreshCachedTimeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement20invalidateCachedTimeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement11currentTimeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement16currentMediaTimeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14setCurrentTimeEd'/>
+<fun r='_ZN7WebCore16HTMLMediaElement27setCurrentTimeWithToleranceEddd'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14setCurrentTimeERKN3WTF9MediaTimeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25setCurrentTimeForBindingsEd'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement8durationEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement17durationMediaTimeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement6pausedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement19defaultPlaybackRateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22setDefaultPlaybackRateEd'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement21effectivePlaybackRateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement21requestedPlaybackRateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement12playbackRateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15setPlaybackRateEd'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18updatePlaybackRateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement20webkitPreservesPitchEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23setWebkitPreservesPitchEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement5endedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement8autoplayEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement7preloadEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement10setPreloadERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement4playEONS_18DOMPromiseDeferredIvEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement4playEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12playInternalEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement5pauseEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13pauseInternalEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17detachMediaSourceEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement4loopEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement7setLoopEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement8controlsEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement11setControlsEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement6volumeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement9setVolumeEd'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement5mutedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement8setMutedEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15togglePlayStateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14beginScrubbingEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12endScrubbingEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13beginScanningENS_24MediaControllerInterface13ScanDirectionE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement11endScanningEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12nextScanRateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14scanTimerFiredEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26startPlaybackProgressTimerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26playbackProgressTimerFiredEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23scheduleTimeupdateEventEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement7canPlayEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement13percentLoadedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement27mediaPlayerDidAddAudioTrackERNS_17AudioTrackPrivateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26mediaPlayerDidAddTextTrackERNS_22InbandTextTrackPrivateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement27mediaPlayerDidAddVideoTrackERNS_17VideoTrackPrivateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement30mediaPlayerDidRemoveAudioTrackERNS_17AudioTrackPrivateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement29mediaPlayerDidRemoveTextTrackERNS_22InbandTextTrackPrivateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement30mediaPlayerDidRemoveVideoTrackERNS_17VideoTrackPrivateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13addAudioTrackEON3WTF3RefINS_10AudioTrackENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12addTextTrackEON3WTF3RefINS_9TextTrackENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13addVideoTrackEON3WTF3RefINS_10VideoTrackENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16removeAudioTrackEON3WTF3RefINS_10AudioTrackENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15removeTextTrackEON3WTF3RefINS_9TextTrackENS1_12RawPtrTraitsIS3_EEEEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16removeVideoTrackEON3WTF3RefINS_10VideoTrackENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement28forgetResourceSpecificTracksEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12addTextTrackERKN3WTF6StringES4_S4_'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17ensureAudioTracksEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16ensureTextTracksEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17ensureVideoTracksEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15didAddTextTrackERNS_16HTMLTrackElementE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18didRemoveTextTrackERNS_16HTMLTrackElementE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23configureTextTrackGroupERKNS0_10TrackGroupE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement29ensureMediaControlsShadowRootEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14setupAndCallJSERKN3WTF8FunctionIFbRNS_17JSDOMGlobalObjectERN3JSC14JSGlobalObjectERNS_16ScriptControllerERNS_15DOMWrapperWorldEEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22updateCaptionContainerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17layoutSizeChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19visibilityDidChangeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement20setSelectedTextTrackEPNS_9TextTrackE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement27scheduleConfigureTextTracksEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19configureTextTracksEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement24havePotentialSourceChildEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement21selectNextSourceChildEPNS_11ContentTypeEPN3WTF6StringENS_21HTMLMediaElementEnums16InvalidURLActionE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14sourceWasAddedERNS_17HTMLSourceElementE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16sourceWasRemovedERNS_17HTMLSourceElementE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22mediaPlayerTimeChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement39addBehaviorRestrictionsOnEndIfNecessaryEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement28handleSeekToPlaybackPositionEd'/>
+<fun r='_ZN7WebCore16HTMLMediaElement37seekToPlaybackPositionEndedTimerFiredEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement24mediaPlayerVolumeChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22mediaPlayerMuteChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26mediaPlayerDurationChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22mediaPlayerRateChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement31mediaPlayerPlaybackStateChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement31mediaPlayerResourceNotSupportedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18mediaPlayerRepaintEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22mediaPlayerSizeChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement36mediaPlayerRenderingCanBeAcceleratedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement31mediaPlayerRenderingModeChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement40mediaPlayerAcceleratedCompositingEnabledEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement29scheduleMediaEngineWasUpdatedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement21mediaEngineWasUpdatedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement24mediaPlayerEngineUpdatedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement36mediaPlayerWillInitializeMediaEngineEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement35mediaPlayerDidInitializeMediaEngineEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement32mediaPlayerCharacteristicChangedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement8bufferedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement15maxBufferedTimeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement6playedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement8seekableEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement34seekableTimeRangesLastModifiedTimeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement18liveUpdateIntervalEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement18potentiallyPlayingEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement21couldPlayIfEnoughDataEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement13endedPlaybackEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement18stoppedDueToErrorsEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement24pausedForUserInteractionEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement15minTimeSeekableEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement15maxTimeSeekableEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement12updateVolumeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23scheduleUpdatePlayStateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15updatePlayStateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement10playPlayerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement11pausePlayerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement21checkForAudioAndVideoEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement10setPlayingEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17setPausedInternalEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement34pauseAndUpdatePlayStateImmediatelyEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18stopPeriodicTimersEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18cancelPendingTasksEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17userCancelledLoadEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16clearMediaPlayerEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement19activeDOMObjectNameEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement32stopWithoutDestroyingMediaPlayerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15closeTaskQueuesEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16contextDestroyedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement4stopEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement7suspendENS_19ReasonForSuspensionE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement6resumeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement13hasLiveSourceEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement25virtualHasPendingActivityEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement20mediaVolumeDidChangeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22visibilityStateChangedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement31requiresTextTrackRepresentationEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26setTextTrackRepresentationEPNS_23TextTrackRepresentationE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19syncTextTrackBoundsEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13dispatchEventERNS_5EventE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16addEventListenerERKN3WTF10AtomStringEONS1_3RefINS_13EventListenerENS1_12RawPtrTraitsIS6_EEEERKNS_23AddEventListenerOptionsE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19removeEventListenerERKN3WTF10AtomStringERNS_13EventListenerERKNS_20EventListenerOptionsE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement37webkitCurrentPlaybackTargetIsWirelessEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement24setPlayingOnSecondScreenEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement18minFastReverseRateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement18maxFastForwardRateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement12isFullscreenEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement20isStandardFullscreenEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement29toggleStandardFullscreenStateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15enterFullscreenEj'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15enterFullscreenEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement14exitFullscreenEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement32prepareForVideoFullscreenStandbyEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25setVideoFullscreenStandbyEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement27willBecomeFullscreenElementEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26didBecomeFullscreenElementEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement30willStopBeingFullscreenElementEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement29didStopBeingFullscreenElementEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement13platformLayerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement37setPreparedToReturnVideoLayerToInlineEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement28waitForPreparedForInlineThenEON3WTF8FunctionIFvvEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18isVideoLayerInlineEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement17hasClosedCaptionsEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement21closedCaptionsVisibleEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement18textTracksAreReadyEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26textTrackReadyStateChangedEPNS_9TextTrackE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25configureTextTrackDisplayENS_21HTMLMediaElementEnums28TextTrackVisibilityCheckTypeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22updateTextTrackDisplayEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement42updateTextTrackRepresentationImageIfNeededEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement24setClosedCaptionsVisibleEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement30setWebkitClosedCaptionsVisibleEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement27webkitClosedCaptionsVisibleEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement23webkitHasClosedCaptionsEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13mediaCanStartERNS_8DocumentE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement14isURLAttributeERKNS_9AttributeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23setShouldDelayLoadEventEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22setMediaCacheDirectoryERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19mediaCacheDirectoryEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19originsInMediaCacheERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15clearMediaCacheERKN3WTF6StringENS1_8WallTimeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25clearMediaCacheForOriginsERKN3WTF6StringERKNS1_7HashSetINS_18SecurityOriginDataENS1_11DefaultHashIS6_EENS1_10HashTraits1714461'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17resetMediaEnginesEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement29privateBrowsingStateDidChangeEN3PAL9SessionIDE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement26shouldForceControlsDisplayEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22configureMediaControlsEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25captionPreferencesChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18captionDisplayModeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement42markCaptionAndSubtitleTracksAsUnconfiguredENS0_15ReconfigureModeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17createMediaPlayerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18setAudioSourceNodeEPNS_27MediaElementAudioSourceNodeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19audioSourceProviderEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement10mediaGroupEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13setMediaGroupERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement10controllerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13setControllerEON3WTF6RefPtrINS_15MediaControllerENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement24setControllerForBindingsEPNS_15MediaControllerE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement21updateMediaControllerEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement9isBlockedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement26isBlockedOnMediaControllerEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23prepareMediaFragmentURIEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement21applyMediaFragmentURIEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement20updateSleepDisablingEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement18shouldDisableSleepEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement19mediaPlayerReferrerEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement20mediaPlayerUserAgentEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement23mediaPlayerIsFullscreenEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement32mediaPlayerIsFullscreenPermittedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement18mediaPlayerIsVideoEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement25mediaPlayerContentBoxRectEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement24mediaPlayerContentsScaleEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement46mediaPlayerPlatformVolumeConfigurationRequiredEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement20mediaPlayerIsLoopingEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement31mediaPlayerCachedResourceLoaderEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement31mediaPlayerCreateResourceLoaderEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement33lastMediaResourceLoaderForTestingEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement35mediaPlayerShouldUsePersistentCacheEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement30mediaPlayerMediaCacheDirectoryEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement27sourceApplicationIdentifierEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement28setPreferredDynamicRangeModeENS_16DynamicRangeModeE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement36setOverridePreferredDynamicRangeModeENS_16DynamicRangeModeE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement40mediaPlayerPreferredAudioCharacteristicsEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement29mediaPlayerEngineFailedToLoadEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement32mediaPlayerRequestedPlaybackRateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement41mediaContentTypesRequiringHardwareSupportEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement37mediaPlayerShouldCheckHardwareSupportEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement36mediaPlayerBufferedTimeRangesChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement28requestInstallMissingPluginsERKN3WTF6StringES4_RNS_47MediaPlayerRequestInstallMissingPluginsCallbackE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement47removeBehaviorRestrictionsAfterFirstUserGestureEj'/>
+<fun r='_ZN7WebCore16HTMLMediaElement28updateRateChangeRestrictionsEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23getVideoPlaybackQualityEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19ensureIsolatedWorldEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement33ensureMediaControlsInjectedScriptEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement31updatePageScaleFactorJSPropertyEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement51updateUsesLTRUserInterfaceLayoutDirectionJSPropertyEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23setControllerJSPropertyEPKcN3JSC7JSValueE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25didAddUserAgentShadowRootERNS_10ShadowRootE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement39setMediaControlsDependOnPageScaleFactorEb'/>
+<fun r='_ZN7WebCore16HTMLMediaElement46updateMediaControlsAfterPresentationModeChangeEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement22pageScaleFactorChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement35userInterfaceLayoutDirectionChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement29getCurrentMediaControlsStatusEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement56setMediaControlsMaximumRightContainerButtonCountOverrideEm'/>
+<fun r='_ZN7WebCore16HTMLMediaElement33setMediaControlsHidePlaybackRatesEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement8fileSizeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement9mediaTypeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement16presentationTypeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement11displayTypeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement15canProduceAudioEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement11isSuspendedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement23maximumSourceBufferSizeERKNS_12SourceBufferE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15suspendPlaybackEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17resumeAutoplayingEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17mayResumePlaybackEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement17mediaSessionTitleEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement13setCurrentSrcERKN3WTF3URLE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement21mediaUniqueIdentifierEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement30didReceiveRemoteControlCommandENS_20PlatformMediaSession24RemoteControlCommandTypeERKNS1_21RemoteCommandArgumentE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement15supportsSeekingEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement43shouldOverrideBackgroundPlaybackRestrictionENS_20PlatformMediaSession16InterruptionTypeE'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement29processingUserGestureForMediaEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25processIsSuspendedChangedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement36shouldOverridePauseDuringRouteChangeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement10mediaStateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19handleAutoplayEventENS_13AutoplayEventE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement28userDidInterfereWithAutoplayEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement29setAutoplayEventPlaybackStateENS0_26AutoplayEventPlaybackStateE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement23pageMutedStateDidChangeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement15effectiveVolumeEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement14effectiveMutedEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement17doesHaveAttributeERKN3WTF10AtomStringEPS2_'/>
+<fun r='_ZN7WebCore16HTMLMediaElement18setBufferingPolicyENS_16MediaPlayerEnums15BufferingPolicyE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement27purgeBufferedDataIfPossibleEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement16canSaveMediaDataEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement40allowsMediaDocumentInlinePlaybackChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement32isVideoTooSmallForInlinePlaybackEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26isVisibleInViewportChangedEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement20updateShouldAutoplayEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement16updateShouldPlayEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement25resetPlaybackSessionStateEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement19isVisibleInViewportEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement37schedulePlaybackControlsManagerUpdateEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement53playbackControlsManagerBehaviorRestrictionsTimerFiredEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement42shouldOverrideBackgroundLoadingRestrictionEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17setFullscreenModeEj'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement10logChannelEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement7willLogE11WTFLogLevel'/>
+<fun r='_ZN7WebCore16HTMLMediaElement27applicationWillResignActiveEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement26applicationDidBecomeActiveEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement19setInActiveDocumentEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement15bufferingPolicyEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement20hasMediaStreamSourceEv'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement22documentSecurityOriginEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement17setShowPosterFlagEb'/>
+<fun r='_ZNK7WebCore16HTMLMediaElement12mediaSessionEv'/>
+<fun r='_ZN7WebCore16HTMLMediaElement31mediaPlayerQueueTaskOnEventLoopEON3WTF8FunctionIFvvEEE'/>
+<fun r='_ZN7WebCore16HTMLMediaElement15scheduleEventOnERT_ON3WTF3RefINS_5EventENS3_12RawPtrTraitsIS5_EEEE'/>
+<use f='WebKit/Source/WebCore/html/HTMLSourceElement.cpp' l='80' c='_ZN7WebCore17HTMLSourceElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLSourceElement.cpp' l='81' c='_ZN7WebCore17HTMLSourceElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLSourceElement.cpp' l='108' c='_ZN7WebCore17HTMLSourceElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLSourceElement.cpp' l='109' c='_ZN7WebCore17HTMLSourceElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/html/HTMLTrackElement.cpp' l='88' c='_ZN7WebCore16HTMLTrackElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLTrackElement.cpp' l='89' c='_ZN7WebCore16HTMLTrackElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLTrackElement.cpp' l='100' c='_ZN7WebCore16HTMLTrackElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLTrackElement.cpp' l='101' c='_ZN7WebCore16HTMLTrackElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLTrackElement.cpp' l='335' c='_ZNK7WebCore16HTMLTrackElement12mediaElementEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLTrackElement.cpp' l='338' c='_ZNK7WebCore16HTMLTrackElement12mediaElementEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLTrackElement.cpp' l='340' c='_ZNK7WebCore16HTMLTrackElement12mediaElementEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLVideoElement.cpp' l='67' c='_ZN7WebCore16HTMLVideoElementC1ERKNS_13QualifiedNameERNS_8DocumentEb'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/html/MediaController.cpp' l='68' c='_ZN7WebCore15MediaController15addMediaElementERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/MediaController.cpp' l='76' c='_ZN7WebCore15MediaController18removeMediaElementERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/MediaController.cpp' l='82' c='_ZNK7WebCore15MediaController20containsMediaElementERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/MediaController.cpp' l='478' c='_ZN7WebCore15MediaController21bringElementUpToSpeedERNS_16HTMLMediaElementE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/html/MediaDocument.cpp' l='81'/>
+<use f='WebKit/Source/WebCore/html/MediaElementSession.cpp' l='76' c='_ZN7WebCoreL30isElementRectMostlyInMainFrameERKNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/MediaElementSession.cpp' l='77' c='_ZN7WebCoreL34isElementLargeEnoughForMainContentERKNS_16HTMLMediaElementENS_30MediaSessionMainContentPurposeE'/>
+<use f='WebKit/Source/WebCore/html/MediaElementSession.cpp' l='78' c='_ZN7WebCoreL41isElementMainContentForPurposesOfAutoplayERKNS_16HTMLMediaElementEb'/>
+<use f='WebKit/Source/WebCore/html/MediaElementSession.cpp' l='114' c='_ZN7WebCoreL43pageExplicitlyAllowsElementToAutoplayInlineERKNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/MediaElementSession.cpp' l='161' c='_ZN7WebCore19MediaElementSessionC1ERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/MediaElementSession.cpp' l='925' c='_ZN7WebCoreL41isElementMainContentForPurposesOfAutoplayERKNS_16HTMLMediaElementEb'/>
+<use f='WebKit/Source/WebCore/html/MediaElementSession.cpp' l='978' c='_ZN7WebCoreL30isElementRectMostlyInMainFrameERKNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/MediaElementSession.cpp' l='1002' c='_ZN7WebCoreL33isElementLargeRelativeToMainFrameERKNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/MediaElementSession.cpp' l='1023' c='_ZN7WebCoreL34isElementLargeEnoughForMainContentERKNS_16HTMLMediaElementENS_30MediaSessionMainContentPurposeE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/html/shadow/MediaControlTextTrackContainerElement.cpp' l='68' c='_ZN7WebCore37MediaControlTextTrackContainerElement6createERNS_8DocumentERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/html/shadow/MediaControlTextTrackContainerElement.cpp' l='77' c='_ZN7WebCore37MediaControlTextTrackContainerElementC1ERNS_8DocumentERNS_16HTMLMediaElementE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/html/track/AudioTrack.cpp' l='198' c='_ZN7WebCore10AudioTrack15setMediaElementEN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEE'/>
+<use f='WebKit/Source/WebCore/html/track/AudioTrackList.cpp' l='37' c='_ZN7WebCore14AudioTrackListC1EN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEEPNS_22ScriptExecutionContextE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/html/track/InbandTextTrack.cpp' l='200' c='_ZN7WebCore15InbandTextTrack15setMediaElementEN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEE'/>
+<use f='WebKit/Source/WebCore/html/track/TextTrackList.cpp' l='42' c='_ZN7WebCore13TextTrackListC1EN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEEPNS_22ScriptExecutionContextE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/html/track/TrackBase.cpp' l='85' c='_ZN7WebCore9TrackBase15setMediaElementEN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEE'/>
+<use f='WebKit/Source/WebCore/html/track/TrackListBase.cpp' l='42' c='_ZN7WebCore13TrackListBaseC1EN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEEPNS_22ScriptExecutionContextE'/>
+<use f='WebKit/Source/WebCore/html/track/VideoTrack.cpp' l='245' c='_ZN7WebCore10VideoTrack15setMediaElementEN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/html/track/VideoTrackList.cpp' l='37' c='_ZN7WebCore14VideoTrackListC1EN3WTF7WeakPtrINS_16HTMLMediaElementENS1_12EmptyCounterEEEPNS_22ScriptExecutionContextE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/html/HTMLAudioElement.cpp' l='42' c='_ZN7WebCore16HTMLAudioElementC1ERKNS_13QualifiedNameERNS_8DocumentEb'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/accessibility/AXObjectCache.cpp' l='532' c='_ZN7WebCoreL13isSimpleImageERKNS_12RenderObjectE'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/dom/FullscreenManager.cpp' l='593' c='_ZN7WebCore17FullscreenManager36dispatchFullscreenChangeOrErrorEventERN3WTF5DequeINS1_6RefPtrINS_4NodeENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTr15556125'/>
+<use f='WebKit/Source/WebCore/dom/FullscreenManager.cpp' l='594' c='_ZN7WebCore17FullscreenManager36dispatchFullscreenChangeOrErrorEventERN3WTF5DequeINS1_6RefPtrINS_4NodeENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTr15556125'/>
+<size>1328</size>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='1874' c='_ZN7WebCore8Document20registerMediaElementERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='1879' c='_ZN7WebCore8Document22unregisterMediaElementERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='1884' c='_ZN7WebCore8Document19forEachMediaElementERKN3WTF8FunctionIFvRNS_16HTMLMediaElementEEEE'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='5687' c='_ZN7WebCore8Document29privateBrowsingStateDidChangeEN3PAL9SessionIDE'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='5695' c='_ZN7WebCore8Document45registerForCaptionPreferencesChangedCallbacksERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='5703' c='_ZN7WebCore8Document47unregisterForCaptionPreferencesChangedCallbacksERNS_16HTMLMediaElementE'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='5711' c='_ZN7WebCore8Document25captionPreferencesChangedEv'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='5716' c='_ZN7WebCore8Document31setMediaElementShowingTextTrackERKNS_16HTMLMediaElementE'/>
+<size>1328</size>

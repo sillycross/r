@@ -1,0 +1,30 @@
+<def f='WebKit/Source/WebCore/rendering/GridBaselineAlignment.h' l='143' ll='179'/>
+<use f='WebKit/Source/WebCore/rendering/GridTrackSizingAlgorithm.h' l='229'/>
+<size>24</size>
+<doc f='WebKit/Source/WebCore/rendering/GridBaselineAlignment.h' l='133'>// This is the class that implements the Baseline Alignment logic, using internally the BaselineContext and
+// BaselineGroupd classes (described above).
+//
+// The first phase is to collect the items that will participate in baseline alignment together. During this
+// phase the required baseline-sharing groups will be created for each Baseline alignment-context shared by
+// the items participating in the baseline alignment.
+//
+// Additionally, the baseline-sharing groups&apos; offsets, max-ascend and max-descent will be computed and stored.
+// This class also computes the baseline offset for a particular item, based on the max-ascent for its associated
+// baseline-sharing group.</doc>
+<fun r='_ZN7WebCore21GridBaselineAlignment30updateBaselineAlignmentContextENS_12ItemPositionEjRKNS_9RenderBoxENS_8GridAxisE'/>
+<fun r='_ZNK7WebCore21GridBaselineAlignment22baselineOffsetForChildENS_12ItemPositionEjRKNS_9RenderBoxENS_8GridAxisE'/>
+<fun r='_ZN7WebCore21GridBaselineAlignment12setBlockFlowENS_11WritingModeE'/>
+<fun r='_ZN7WebCore21GridBaselineAlignment5clearENS_8GridAxisE'/>
+<fun r='_ZNK7WebCore21GridBaselineAlignment21baselineGroupForChildENS_12ItemPositionEjRKNS_9RenderBoxENS_8GridAxisE'/>
+<fun r='_ZNK7WebCore21GridBaselineAlignment18marginOverForChildERKNS_9RenderBoxENS_8GridAxisE'/>
+<fun r='_ZNK7WebCore21GridBaselineAlignment19marginUnderForChildERKNS_9RenderBoxENS_8GridAxisE'/>
+<fun r='_ZNK7WebCore21GridBaselineAlignment21logicalAscentForChildERKNS_9RenderBoxENS_8GridAxisE'/>
+<fun r='_ZNK7WebCore21GridBaselineAlignment14ascentForChildERKNS_9RenderBoxENS_8GridAxisE'/>
+<fun r='_ZNK7WebCore21GridBaselineAlignment15descentForChildERKNS_9RenderBoxENS_10LayoutUnitENS_8GridAxisE'/>
+<fun r='_ZNK7WebCore21GridBaselineAlignment25isDescentBaselineForChildERKNS_9RenderBoxENS_8GridAxisE'/>
+<fun r='_ZNK7WebCore21GridBaselineAlignment24isHorizontalBaselineAxisENS_8GridAxisE'/>
+<fun r='_ZNK7WebCore21GridBaselineAlignment28isOrthogonalChildForBaselineERKNS_9RenderBoxE'/>
+<fun r='_ZNK7WebCore21GridBaselineAlignment32isParallelToBaselineAxisForChildERKNS_9RenderBoxENS_8GridAxisE'/>
+<mbr r='WebCore::GridBaselineAlignment::m_blockFlow' o='0' t='WebCore::WritingMode'/>
+<mbr r='WebCore::GridBaselineAlignment::m_rowAxisAlignmentContext' o='64' t='WebCore::GridBaselineAlignment::BaselineContextsMap'/>
+<mbr r='WebCore::GridBaselineAlignment::m_colAxisAlignmentContext' o='128' t='WebCore::GridBaselineAlignment::BaselineContextsMap'/>

@@ -1,0 +1,69 @@
+<use f='WebKit/Source/WebKit/UIProcess/API/C/WKAPICast.h' l='141'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/C/WKAPICast.h' l='141'/>
+<inh f='WebKit/Source/WebKit/Shared/API/APIObject.h' l='265' c='API::ObjectImpl'/>
+<def f='WebKit/Source/WebKit/UIProcess/API/APINavigationAction.h' l='38' ll='111'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APINavigationAction.h' l='40' c='_ZN3API16NavigationAction6createEDpOT_'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APINavigationAction.h' l='42' c='_ZN3API16NavigationAction6createEDpOT_'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APINavigationAction.h' l='91' c='_ZN3API16NavigationActionC1EON6WebKit20NavigationActionDataEPNS_9FrameInfoES5_St8optionalIN3WTF6StringEEON7WebCore15ResourceRequestERKNS7_3URLEbONS7_615428458'/>
+<size>600</size>
+<fun r='_ZN3API16NavigationAction6createEDpOT_'/>
+<fun r='_ZNK3API16NavigationAction11sourceFrameEv'/>
+<fun r='_ZNK3API16NavigationAction11targetFrameEv'/>
+<fun r='_ZNK3API16NavigationAction15targetFrameNameEv'/>
+<fun r='_ZNK3API16NavigationAction7requestEv'/>
+<fun r='_ZNK3API16NavigationAction11originalURLEv'/>
+<fun r='_ZNK3API16NavigationAction14navigationTypeEv'/>
+<fun r='_ZNK3API16NavigationAction9modifiersEv'/>
+<fun r='_ZNK3API16NavigationAction11mouseButtonEv'/>
+<fun r='_ZNK3API16NavigationAction18syntheticClickTypeEv'/>
+<fun r='_ZNK3API16NavigationAction34clickLocationInRootViewCoordinatesEv'/>
+<fun r='_ZNK3API16NavigationAction16canHandleRequestEv'/>
+<fun r='_ZNK3API16NavigationAction25shouldOpenExternalSchemesEv'/>
+<fun r='_ZNK3API16NavigationAction18shouldOpenAppLinksEv'/>
+<fun r='_ZNK3API16NavigationAction21shouldPerformDownloadEv'/>
+<fun r='_ZNK3API16NavigationAction10isRedirectEv'/>
+<fun r='_ZNK3API16NavigationAction28shouldOpenExternalURLsPolicyEv'/>
+<fun r='_ZNK3API16NavigationAction23isProcessingUserGestureEv'/>
+<fun r='_ZNK3API16NavigationAction19userInitiatedActionEv'/>
+<fun r='_ZNK3API16NavigationAction19mainFrameNavigationEv'/>
+<fun r='_ZNK3API16NavigationAction4dataEv'/>
+<fun r='_ZN3API16NavigationActionC1EON6WebKit20NavigationActionDataEPNS_9FrameInfoES5_St8optionalIN3WTF6StringEEON7WebCore15ResourceRequestERKNS7_3URLEbONS7_63405568'/>
+<fun r='_ZN3API16NavigationActionC1EON6WebKit20NavigationActionDataEPNS_9FrameInfoES5_St8optionalIN3WTF6StringEEON7WebCore15ResourceRequestERKNS7_3URLEbONS7_615428458'/>
+<mbr r='API::NavigationAction::m_sourceFrame' o='128' t='RefPtr&lt;API::FrameInfo&gt;'/>
+<mbr r='API::NavigationAction::m_targetFrame' o='192' t='RefPtr&lt;API::FrameInfo&gt;'/>
+<mbr r='API::NavigationAction::m_targetFrameName' o='256' t='std::optional&lt;WTF::String&gt;'/>
+<mbr r='API::NavigationAction::m_request' o='384' t='WebCore::ResourceRequest'/>
+<mbr r='API::NavigationAction::m_originalURL' o='1856' t='WTF::URL'/>
+<mbr r='API::NavigationAction::m_shouldOpenAppLinks' o='2176' t='bool'/>
+<mbr r='API::NavigationAction::m_userInitiatedAction' o='2240' t='RefPtr&lt;API::UserInitiatedAction&gt;'/>
+<mbr r='API::NavigationAction::m_navigationActionData' o='2304' t='WebKit::NavigationActionData'/>
+<mbr r='API::NavigationAction::m_mainFrameNavigation' o='4736' t='RefPtr&lt;API::Navigation&gt;'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APINavigationClient.h' l='104' c='_ZN3API16NavigationClient33navigationActionDidBecomeDownloadERN6WebKit12WebPageProxyERNS_16NavigationActionERNS1_13DownloadProxyE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APINavigationClient.h' l='126' c='_ZN3API16NavigationClient31decidePolicyForNavigationActionERN6WebKit12WebPageProxyEON3WTF3RefINS_16NavigationActionENS4_12RawPtrTraitsIS6_EEEEONS5_INS7851454'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APIPolicyClient.h' l='53' c='_ZN3API12PolicyClient31decidePolicyForNavigationActionERN6WebKit12WebPageProxyEPNS1_13WebFrameProxyEON3WTF3RefINS_16NavigationActionENS6_12RawPtrTrait8969133'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APIPolicyClient.h' l='57' c='_ZN3API12PolicyClient30decidePolicyForNewWindowActionERN6WebKit12WebPageProxyERNS1_13WebFrameProxyEON3WTF3RefINS_16NavigationActionENS6_12RawPtrTraits3370642'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APIUIClient.h' l='82' c='_ZN3API8UIClient13createNewPageERN6WebKit12WebPageProxyEON7WebCore14WindowFeaturesEON3WTF3RefINS_16NavigationActionENS7_12RawPtrTraitsIS9_EEEEONS7_17C15823244'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/C/WKPage.cpp' l='1327' c='_ZZ25WKPageSetPagePolicyClientEN12PolicyClient31decidePolicyForNavigationActionERN6WebKit12WebPageProxyEPNS0_13WebFrameProxyEON3WTF3RefIN3API16Navigat1818224'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/C/WKPage.cpp' l='1345' c='_ZZ25WKPageSetPagePolicyClientEN12PolicyClient30decidePolicyForNewWindowActionERN6WebKit12WebPageProxyERNS0_13WebFrameProxyEON3WTF3RefIN3API16Navigati10328493'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/C/WKPage.cpp' l='1587' c='_ZZ21WKPageSetPageUIClientEN8UIClient13createNewPageERN6WebKit12WebPageProxyEON7WebCore14WindowFeaturesEON3WTF3RefIN3API16NavigationActionENS6_12RawPt7979590'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/C/WKPage.cpp' l='2233' c='_ZZ29WKPageSetPageNavigationClientEN16NavigationClient31decidePolicyForNavigationActionERN6WebKit12WebPageProxyEON3WTF3RefIN3API16NavigationActionENS313006409'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/C/WKPage.cpp' l='2360' c='_ZZ29WKPageSetPageNavigationClientEN16NavigationClient33navigationActionDidBecomeDownloadERN6WebKit12WebPageProxyERN3API16NavigationActionERNS0_13DownloadProxyE'/>
+<size>600</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='3400' c='_ZN6WebKit12WebPageProxy32receivedNavigationPolicyDecisionEN7WebCore12PolicyActionEPN3API10NavigationEON3WTF3RefINS3_16NavigationActionENS6_12RawPtrTr5935571'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='3504' c='_ZN6WebKit12WebPageProxy22receivedPolicyDecisionEN7WebCore12PolicyActionEPN3API10NavigationEON3WTF6RefPtrINS3_15WebsitePoliciesENS6_12RawPtrTraitsIS8_1341385'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='3528' c='_ZN6WebKit12WebPageProxy22receivedPolicyDecisionEN7WebCore12PolicyActionEPN3API10NavigationEON3WTF6RefPtrINS3_15WebsitePoliciesENS6_12RawPtrTraitsIS8_1341385'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='5746'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='5747' c='_ZN6WebKitL18trySOAuthorizationEON3WTF3RefIN3API16NavigationActionENS0_12RawPtrTraitsIS3_EEEERNS_12WebPageProxyEONS0_17CompletionHandlerIFvONS0_6RefPt12878039'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='5796' c='_ZN6WebKit12WebPageProxy13createNewPageEONS_13FrameInfoDataEN3WTF16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEEON7WebCore15ResourceRequestEONS713695018'/>
+<size>600</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitNavigationActionPrivate.h' l='27' c='_ZN23_WebKitNavigationActionC1EON3WTF3RefIN3API16NavigationActionENS0_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitNavigationActionPrivate.h' l='37'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitNavigationActionPrivate.h' l='41' c='_Z28webkitNavigationActionCreateON3WTF3RefIN3API16NavigationActionENS_12RawPtrTraitsIS2_EEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitNavigationAction.cpp' l='31' c='_Z28webkitNavigationActionCreateON3WTF3RefIN3API16NavigationActionENS_12RawPtrTraitsIS2_EEEE'/>
+<size>600</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitNavigationClient.cpp' l='140' c='_ZN16NavigationClient31decidePolicyForNavigationActionERN6WebKit12WebPageProxyEON3WTF3RefIN3API16NavigationActionENS3_12RawPtrTraitsIS6_EEEEONS4_INS0_8039123'/>
+<size>600</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitNavigationPolicyDecision.cpp' l='311' c='_Z36webkitNavigationPolicyDecisionCreateON3WTF3RefIN3API16NavigationActionENS_12RawPtrTraitsIS2_EEEEONS0_IN6WebKit27WebFramePolicyListenerProxyENS3_IS8_EEEE'/>
+<size>600</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUIClient.cpp' l='68' c='_ZN8UIClient13createNewPageERN6WebKit12WebPageProxyEON7WebCore14WindowFeaturesEON3WTF3RefIN3API16NavigationActionENS6_12RawPtrTraitsIS9_EEEEONS6_17Com6911233'/>
+<size>600</size>

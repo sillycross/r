@@ -1,0 +1,18 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1453' ll='1464' type='void webkit_web_context_set_spell_checking_languages(WebKitWebContext * context, const gchar *const * languages)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1436'>/**
+ * webkit_web_context_set_spell_checking_languages:
+ * @context: a #WebKitWebContext
+ * @languages: (array zero-terminated=1) (transfer none): a %NULL-terminated list of spell checking languages
+ *
+ * Set the list of spell checking languages to be used for spell
+ * checking.
+ *
+ * The locale string typically is in the form lang_COUNTRY, where lang
+ * is an ISO-639 language code, and COUNTRY is an ISO-3166 country code.
+ * For instance, sv_FI for Swedish as written in Finland or pt_BR
+ * for Portuguese as written in Brazil.
+ *
+ * You need to call this function with a valid list of languages at
+ * least once in order to properly enable the spell checking feature
+ * in WebKit.
+ */</doc>

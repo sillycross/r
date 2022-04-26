@@ -1,0 +1,59 @@
+<def f='WebKit/Source/JavaScriptCore/bytecode/ComplexGetStatus.h' l='70' ll='107'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ComplexGetStatus.h' l='84' c='_ZN3JSC16ComplexGetStatus4skipEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ComplexGetStatus.h' l='86' c='_ZN3JSC16ComplexGetStatus4skipEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ComplexGetStatus.h' l='89' c='_ZN3JSC16ComplexGetStatus13takesSlowPathEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ComplexGetStatus.h' l='91' c='_ZN3JSC16ComplexGetStatus13takesSlowPathEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ComplexGetStatus.h' l='96' c='_ZN3JSC16ComplexGetStatus10computeForEPNS_9StructureERKNS_26ObjectPropertyConditionSetEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PutByIdStatus.cpp' l='200' c='_ZN3JSC13PutByIdStatus18computeForStubInfoERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoEPN3WTF17UniquedStringImplENS_14CallLinkStatus12ExitSiteDataE'/>
+<size>16</size>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/ComplexGetStatus.h' l='36'>// This class is useful for figuring out how to inline a cached get-like access. We
+// say &quot;get-like&quot; because this is appropriate for loading the GetterSetter object in
+// a put_by_id that hits a setter. Notably, this doesn&apos;t figure out how to call
+// accessors, or even whether they should be called. What it gives us, is a way of
+// determining how to load the value from the requested property (identified by a
+// StringImpl* uid) from an object of the given structure in the given CodeBlock,
+// assuming that such an access had already been cached by Repatch (and so Repatch had
+// already done a bunch of safety checks). This doesn&apos;t reexecute any checks that
+// Repatch would have executed, and for prototype chain accesses, it doesn&apos;t ask the
+// objects in the prototype chain whether their getOwnPropertySlot would attempt to
+// intercept the access - so this really is only appropriate if you already know that
+// one of the JITOperations had OK&apos;d this for caching and that Repatch concurred.
+//
+// The typical use pattern is something like:
+//
+//     ComplexGetStatus status = ComplexGetStatus::computeFor(...);
+//     switch (status.kind()) {
+//     case ComplexGetStatus::ShouldSkip:
+//         // Handle the case where this kind of access is possibly safe but wouldn&apos;t
+//         // pass the required safety checks. For example, if an IC gives us a list of
+//         // accesses and one of them is ShouldSkip, then we should pretend as if it
+//         // wasn&apos;t even there.
+//         break;
+//     case ComplexGetStatus::TakesSlowPath:
+//         // This kind of access is not safe to inline. Bail out of any attempst to
+//         // inline.
+//         break;
+//     case ComplexGetStatus::Inlineable:
+//         // The good stuff goes here. If it&apos;s Inlineable then the other properties of
+//         // the &apos;status&apos; object will tell you everything you need to know about how
+//         // to execute the get-like operation.
+//         break;
+//     }</doc>
+<fun r='_ZN3JSC16ComplexGetStatusC1Ev'/>
+<fun r='_ZN3JSC16ComplexGetStatus4skipEv'/>
+<fun r='_ZN3JSC16ComplexGetStatus13takesSlowPathEv'/>
+<fun r='_ZN3JSC16ComplexGetStatus10computeForEPNS_9StructureERKNS_26ObjectPropertyConditionSetEPN3WTF17UniquedStringImplE'/>
+<fun r='_ZNK3JSC16ComplexGetStatus4kindEv'/>
+<fun r='_ZNK3JSC16ComplexGetStatus6offsetEv'/>
+<fun r='_ZNK3JSC16ComplexGetStatus12conditionSetEv'/>
+<mbr r='JSC::ComplexGetStatus::m_kind' o='0' t='JSC::ComplexGetStatus::Kind'/>
+<mbr r='JSC::ComplexGetStatus::m_offset' o='32' t='JSC::PropertyOffset'/>
+<mbr r='JSC::ComplexGetStatus::m_conditionSet' o='64' t='JSC::ObjectPropertyConditionSet'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ComplexGetStatus.cpp' l='33' c='_ZN3JSC16ComplexGetStatus10computeForEPNS_9StructureERKNS_26ObjectPropertyConditionSetEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ComplexGetStatus.cpp' l='47' c='_ZN3JSC16ComplexGetStatus10computeForEPNS_9StructureERKNS_26ObjectPropertyConditionSetEPN3WTF17UniquedStringImplE'/>
+<size>16</size>
+<fun r='_ZN3JSC16ComplexGetStatus10computeForEPNS_9StructureERKNS_26ObjectPropertyConditionSetEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/GetByStatus.cpp' l='274' c='_ZN3JSC11GetByStatus41computeForStubInfoWithoutExitSiteFeedbackERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoENS_14CallLinkStatus12ExitSiteDataE'/>
+<size>16</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InByStatus.cpp' l='183' c='_ZN3JSC10InByStatus41computeForStubInfoWithoutExitSiteFeedbackERKNS_18ConcurrentJSLockerERNS_2VMEPNS_17StructureStubInfoE'/>
+<size>16</size>

@@ -1,0 +1,13 @@
+<dec f='include/xcb/xproto.h' l='3108' type='2048'/>
+<doc f='include/xcb/xproto.h' l='3095'>/**&lt; The tile/stipple represents an infinite two-dimensional plane with the tile/stipple replicated in all
+dimensions. When that plane is superimposed on the drawable for use in a graphics operation,
+the upper-left corner of some instance of the tile/stipple is at the coordinates within the drawable
+specified by the tile/stipple origin. The tile/stipple and clip origins are interpreted relative to the
+origin of whatever destination drawable is specified in a graphics request.
+The tile pixmap must have the same root and depth as the gcontext (or a Match error results).
+The stipple pixmap must have depth one and must have the same root as the gcontext (or a
+Match error results). For fill-style Stippled (but not fill-style
+OpaqueStippled), the stipple pattern is tiled in a single plane and acts as an
+additional clip mask to be ANDed with the clip-mask.
+Any size pixmap can be used for tiling or stippling, although some sizes may be faster to use than
+others. */</doc>

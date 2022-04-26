@@ -1,0 +1,52 @@
+<use f='include/gstreamer-1.0/gst/gstelement.h' l='33'/>
+<def f='include/gstreamer-1.0/gst/gstelement.h' l='686' ll='744'/>
+<size>488</size>
+<doc f='include/gstreamer-1.0/gst/gstelement.h' l='660'>/**
+ * GstElementClass:
+ * @parent_class: the parent class structure
+ * @metadata: metadata for elements of this class
+ * @elementfactory: the #GstElementFactory that creates these elements
+ * @padtemplates: a #GList of #GstPadTemplate
+ * @numpadtemplates: the number of padtemplates
+ * @pad_templ_cookie: changed whenever the padtemplates change
+ * @request_new_pad: called when a new pad is requested
+ * @release_pad: called when a request pad is to be released
+ * @get_state: get the state of the element
+ * @set_state: set a new state on the element
+ * @change_state: called by @set_state to perform an incremental state change
+ * @set_bus: set a #GstBus on the element
+ * @provide_clock: gets the #GstClock provided by the element
+ * @set_clock: set the #GstClock on the element
+ * @send_event: send a #GstEvent to the element
+ * @query: perform a #GstQuery on the element
+ * @state_changed: called immediately after a new state was set.
+ * @post_message: called when a message is posted on the element. Chain up to
+ *                the parent class&apos; handler to have it posted on the bus.
+ * @set_context: set a #GstContext on the element
+ *
+ * GStreamer element class. Override the vmethods to implement the element
+ * functionality.
+ */</doc>
+<mbr r='_GstElementClass::parent_class' o='0' t='GstObjectClass'/>
+<mbr r='_GstElementClass::metadata' o='1472' t='gpointer'/>
+<mbr r='_GstElementClass::elementfactory' o='1536' t='GstElementFactory *'/>
+<mbr r='_GstElementClass::padtemplates' o='1600' t='GList *'/>
+<mbr r='_GstElementClass::numpadtemplates' o='1664' t='gint'/>
+<mbr r='_GstElementClass::pad_templ_cookie' o='1696' t='guint32'/>
+<mbr r='_GstElementClass::pad_added' o='1728' t='void (*)(GstElement *, GstPad *)'/>
+<mbr r='_GstElementClass::pad_removed' o='1792' t='void (*)(GstElement *, GstPad *)'/>
+<mbr r='_GstElementClass::no_more_pads' o='1856' t='void (*)(GstElement *)'/>
+<mbr r='_GstElementClass::request_new_pad' o='1920' t='GstPad *(*)(GstElement *, GstPadTemplate *, const gchar *, const GstCaps *)'/>
+<mbr r='_GstElementClass::release_pad' o='1984' t='void (*)(GstElement *, GstPad *)'/>
+<mbr r='_GstElementClass::get_state' o='2048' t='GstStateChangeReturn (*)(GstElement *, GstState *, GstState *, GstClockTime)'/>
+<mbr r='_GstElementClass::set_state' o='2112' t='GstStateChangeReturn (*)(GstElement *, GstState)'/>
+<mbr r='_GstElementClass::change_state' o='2176' t='GstStateChangeReturn (*)(GstElement *, GstStateChange)'/>
+<mbr r='_GstElementClass::state_changed' o='2240' t='void (*)(GstElement *, GstState, GstState, GstState)'/>
+<mbr r='_GstElementClass::set_bus' o='2304' t='void (*)(GstElement *, GstBus *)'/>
+<mbr r='_GstElementClass::provide_clock' o='2368' t='GstClock *(*)(GstElement *)'/>
+<mbr r='_GstElementClass::set_clock' o='2432' t='gboolean (*)(GstElement *, GstClock *)'/>
+<mbr r='_GstElementClass::send_event' o='2496' t='gboolean (*)(GstElement *, GstEvent *)'/>
+<mbr r='_GstElementClass::query' o='2560' t='gboolean (*)(GstElement *, GstQuery *)'/>
+<mbr r='_GstElementClass::post_message' o='2624' t='gboolean (*)(GstElement *, GstMessage *)'/>
+<mbr r='_GstElementClass::set_context' o='2688' t='void (*)(GstElement *, GstContext *)'/>
+<mbr r='_GstElementClass::_gst_reserved' o='2752' t='gpointer [18]'/>

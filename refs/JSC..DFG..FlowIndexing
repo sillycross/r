@@ -1,0 +1,30 @@
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.h' l='1197'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGFlowIndexing.h' l='38' ll='108'/>
+<size>48</size>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGFlowIndexing.h' l='35'>// This is a mapping from nodes to unique, dense indices that can be used for creating fast
+// Node-keyed maps. The special part is that it also allocated indices for the shadow values of Phi
+// nodes, which is needed for any flow-sensitive analysis.</doc>
+<fun r='_ZN3JSC3DFG12FlowIndexingC1ERNS0_5GraphE'/>
+<fun r='_ZN3JSC3DFG12FlowIndexingD1Ev'/>
+<fun r='_ZN3JSC3DFG12FlowIndexing9recomputeEv'/>
+<fun r='_ZNK3JSC3DFG12FlowIndexing5graphEv'/>
+<fun r='_ZNK3JSC3DFG12FlowIndexing10numIndicesEv'/>
+<fun r='_ZNK3JSC3DFG12FlowIndexing5indexEj'/>
+<fun r='_ZNK3JSC3DFG12FlowIndexing5indexEPNS0_4NodeE'/>
+<fun r='_ZNK3JSC3DFG12FlowIndexing11shadowIndexEj'/>
+<fun r='_ZNK3JSC3DFG12FlowIndexing11shadowIndexEPNS0_4NodeE'/>
+<fun r='_ZNK3JSC3DFG12FlowIndexing5indexEjNS0_18NodeFlowProjection4KindE'/>
+<fun r='_ZNK3JSC3DFG12FlowIndexing5indexEPNS0_4NodeENS0_18NodeFlowProjection4KindE'/>
+<fun r='_ZNK3JSC3DFG12FlowIndexing5indexENS0_18NodeFlowProjectionE'/>
+<fun r='_ZNK3JSC3DFG12FlowIndexing14nodeProjectionEj'/>
+<mbr r='JSC::DFG::FlowIndexing::m_graph' o='0' t='JSC::DFG::Graph &amp;'/>
+<mbr r='JSC::DFG::FlowIndexing::m_numIndices' o='64' t='unsigned int'/>
+<mbr r='JSC::DFG::FlowIndexing::m_nodeIndexToShadowIndex' o='128' t='Vector&lt;unsigned int, 0, WTF::UnsafeVectorOverflow&gt;'/>
+<mbr r='JSC::DFG::FlowIndexing::m_shadowIndexToNodeIndex' o='256' t='Vector&lt;unsigned int, 0, WTF::UnsafeVectorOverflow&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='89' c='_ZN3JSC3DFG5GraphC1ERNS_2VMERNS0_4PlanE'/>
+<size>48</size>
+<fun r='_ZN3JSC3DFG12FlowIndexingC1ERNS0_5GraphE'/>
+<fun r='_ZN3JSC3DFG12FlowIndexingD1Ev'/>
+<fun r='_ZN3JSC3DFG12FlowIndexing9recomputeEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGLivenessAnalysisPhase.cpp' l='182'/>
+<size>48</size>

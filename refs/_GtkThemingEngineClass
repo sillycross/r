@@ -1,0 +1,47 @@
+<use f='include/gtk-3.0/gtk/deprecated/gtkthemingengine.h' l='44'/>
+<def f='include/gtk-3.0/gtk/deprecated/gtkthemingengine.h' l='77' ll='188'/>
+<size>384</size>
+<doc f='include/gtk-3.0/gtk/deprecated/gtkthemingengine.h' l='52'>/**
+ * GtkThemingEngineClass:
+ * @parent_class: The parent class.
+ * @render_line: Renders a line between two points.
+ * @render_background: Renders the background area of a widget region.
+ * @render_frame: Renders the frame around a widget area.
+ * @render_frame_gap: Renders the frame around a widget area with a gap in it.
+ * @render_extension: Renders a extension to a box, usually a notebook tab.
+ * @render_check: Renders a checkmark, as in #GtkCheckButton.
+ * @render_option: Renders an option, as in #GtkRadioButton.
+ * @render_arrow: Renders an arrow pointing to a certain direction.
+ * @render_expander: Renders an element what will expose/expand part of
+ *                   the UI, as in #GtkExpander.
+ * @render_focus: Renders the focus indicator.
+ * @render_layout: Renders a #PangoLayout
+ * @render_slider: Renders a slider control, as in #GtkScale.
+ * @render_handle: Renders a handle to drag UI elements, as in #GtkPaned.
+ * @render_activity: Renders an area displaying activity, such as in #GtkSpinner,
+ *                   or #GtkProgressBar.
+ * @render_icon_pixbuf: Renders an icon as a #GdkPixbuf.
+ * @render_icon: Renders an icon given as a #GdkPixbuf.
+ * @render_icon_surface: Renders an icon given as a #cairo_surface_t.
+ *
+ * Base class for theming engines.
+ */</doc>
+<mbr r='_GtkThemingEngineClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_GtkThemingEngineClass::render_line' o='1088' t='void (*)(GtkThemingEngine *, cairo_t *, gdouble, gdouble, gdouble, gdouble)'/>
+<mbr r='_GtkThemingEngineClass::render_background' o='1152' t='void (*)(GtkThemingEngine *, cairo_t *, gdouble, gdouble, gdouble, gdouble)'/>
+<mbr r='_GtkThemingEngineClass::render_frame' o='1216' t='void (*)(GtkThemingEngine *, cairo_t *, gdouble, gdouble, gdouble, gdouble)'/>
+<mbr r='_GtkThemingEngineClass::render_frame_gap' o='1280' t='void (*)(GtkThemingEngine *, cairo_t *, gdouble, gdouble, gdouble, gdouble, GtkPositionType, gdouble, gdouble)'/>
+<mbr r='_GtkThemingEngineClass::render_extension' o='1344' t='void (*)(GtkThemingEngine *, cairo_t *, gdouble, gdouble, gdouble, gdouble, GtkPositionType)'/>
+<mbr r='_GtkThemingEngineClass::render_check' o='1408' t='void (*)(GtkThemingEngine *, cairo_t *, gdouble, gdouble, gdouble, gdouble)'/>
+<mbr r='_GtkThemingEngineClass::render_option' o='1472' t='void (*)(GtkThemingEngine *, cairo_t *, gdouble, gdouble, gdouble, gdouble)'/>
+<mbr r='_GtkThemingEngineClass::render_arrow' o='1536' t='void (*)(GtkThemingEngine *, cairo_t *, gdouble, gdouble, gdouble, gdouble)'/>
+<mbr r='_GtkThemingEngineClass::render_expander' o='1600' t='void (*)(GtkThemingEngine *, cairo_t *, gdouble, gdouble, gdouble, gdouble)'/>
+<mbr r='_GtkThemingEngineClass::render_focus' o='1664' t='void (*)(GtkThemingEngine *, cairo_t *, gdouble, gdouble, gdouble, gdouble)'/>
+<mbr r='_GtkThemingEngineClass::render_layout' o='1728' t='void (*)(GtkThemingEngine *, cairo_t *, gdouble, gdouble, PangoLayout *)'/>
+<mbr r='_GtkThemingEngineClass::render_slider' o='1792' t='void (*)(GtkThemingEngine *, cairo_t *, gdouble, gdouble, gdouble, gdouble, GtkOrientation)'/>
+<mbr r='_GtkThemingEngineClass::render_handle' o='1856' t='void (*)(GtkThemingEngine *, cairo_t *, gdouble, gdouble, gdouble, gdouble)'/>
+<mbr r='_GtkThemingEngineClass::render_activity' o='1920' t='void (*)(GtkThemingEngine *, cairo_t *, gdouble, gdouble, gdouble, gdouble)'/>
+<mbr r='_GtkThemingEngineClass::render_icon_pixbuf' o='1984' t='GdkPixbuf *(*)(GtkThemingEngine *, const GtkIconSource *, GtkIconSize)'/>
+<mbr r='_GtkThemingEngineClass::render_icon' o='2048' t='void (*)(GtkThemingEngine *, cairo_t *, GdkPixbuf *, gdouble, gdouble)'/>
+<mbr r='_GtkThemingEngineClass::render_icon_surface' o='2112' t='void (*)(GtkThemingEngine *, cairo_t *, cairo_surface_t *, gdouble, gdouble)'/>
+<mbr r='_GtkThemingEngineClass::padding' o='2176' t='gpointer [14]'/>

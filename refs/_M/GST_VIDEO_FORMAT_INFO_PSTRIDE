@@ -1,0 +1,15 @@
+<dec f='include/gstreamer-1.0/gst/video/video-format.h' l='465'/>
+<doc f='include/gstreamer-1.0/gst/video/video-format.h' l='451'>/**
+ * GST_VIDEO_FORMAT_INFO_PSTRIDE:
+ * @info: a #GstVideoFormatInfo
+ * @c: the component index
+ *
+ * pixel stride for the given component. This is the amount of bytes to the
+ * pixel immediately to the right, so basically bytes from one pixel to the
+ * next. When bits &lt; 8, the stride is expressed in bits.
+ *
+ * Examples: for 24-bit RGB, the pixel stride would be 3 bytes, while it
+ * would be 4 bytes for RGBx or ARGB, and 8 bytes for ARGB64 or AYUV64.
+ * For planar formats such as I420 the pixel stride is usually 1. For
+ * YUY2 it would be 2 bytes.
+ */</doc>

@@ -1,0 +1,12 @@
+<dec f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.h' l='48' type='bool sh::InitializeVariables(sh::TCompiler * compiler, sh::TIntermBlock * root, const sh::InitVariableList &amp; vars, sh::TSymbolTable * symbolTable, int shaderVersion, const sh::TExtensionBehavior &amp; extensionBehavior, bool canUseLoopsToInitialize, bool highPrecisionSupported)'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='1405' u='c' c='_ZN2sh9TCompiler20initializeGLPositionEPNS_12TIntermBlockE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='1448' u='c' c='_ZN2sh9TCompiler25initializeOutputVariablesEPNS_12TIntermBlockE'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.h' l='40'>// This function can initialize all the types that CreateInitCode is able to initialize. All
+// variables must be globals which can be found in the symbol table. For now it is used for the
+// following two scenarios:
+//   1. Initializing gl_Position;
+//   2. Initializing output variables referred to in the shader source.
+// Note: The type of each lvalue in an initializer is retrieved from the symbol table. gl_FragData
+// requires special handling because the number of indices which can be initialized is determined by
+// enabled extensions.</doc>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='301' ll='315' type='bool sh::InitializeVariables(sh::TCompiler * compiler, sh::TIntermBlock * root, const sh::InitVariableList &amp; vars, sh::TSymbolTable * symbolTable, int shaderVersion, const sh::TExtensionBehavior &amp; extensionBehavior, bool canUseLoopsToInitialize, bool highPrecisionSupported)'/>

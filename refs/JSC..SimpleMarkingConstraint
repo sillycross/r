@@ -1,0 +1,17 @@
+<inh f='WebKit/Source/JavaScriptCore/heap/MarkingConstraint.h' l='44' c='JSC::MarkingConstraint'/>
+<def f='WebKit/Source/JavaScriptCore/heap/SimpleMarkingConstraint.h' l='36' ll='62'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SimpleMarkingConstraint.h' l='50' c='_ZN3JSC23SimpleMarkingConstraintC1EN3WTF7CStringES2_ONS_29MarkingConstraintExecutorPairENS_20ConstraintVolatilityENS_21ConstraintParallelismE'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSMarkingConstraintPrivate.cpp' l='73' c='JSContextGroupAddMarkingConstraint'/>
+<size>56</size>
+<doc f='WebKit/Source/JavaScriptCore/heap/SimpleMarkingConstraint.h' l='33'>// This allows for an informal way to define constraints. Just pass a lambda to the constructor. The only
+// downside is that this makes it hard for constraints to override any functions in MarkingConstraint
+// other than executeImpl. In those cases, just subclass MarkingConstraint.</doc>
+<fun r='_ZN3JSC23SimpleMarkingConstraintC1EN3WTF7CStringES2_ONS_29MarkingConstraintExecutorPairENS_20ConstraintVolatilityENS_21ConstraintConcurrencyENS_21ConstraintParallelismE'/>
+<fun r='_ZN3JSC23SimpleMarkingConstraintC1EN3WTF7CStringES2_ONS_29MarkingConstraintExecutorPairENS_20ConstraintVolatilityENS_21ConstraintParallelismE'/>
+<fun r='_ZN3JSC23SimpleMarkingConstraintD1Ev'/>
+<fun r='_ZN3JSC23SimpleMarkingConstraint15executeImplImplERT_'/>
+<fun r='_ZN3JSC23SimpleMarkingConstraint11executeImplERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC23SimpleMarkingConstraint11executeImplERNS_11SlotVisitorE'/>
+<mbr r='JSC::SimpleMarkingConstraint::m_executors' o='320' t='JSC::MarkingConstraintExecutorPair'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraintSet.cpp' l='68' c='_ZN3JSC20MarkingConstraintSet3addEN3WTF7CStringES2_ONS_29MarkingConstraintExecutorPairENS_20ConstraintVolatilityENS_21ConstraintConcurrencyENS_21ConstraintParallelismE'/>
+<size>56</size>

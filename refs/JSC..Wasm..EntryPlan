@@ -1,0 +1,52 @@
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCodeBlock.h' l='152'/>
+<inh f='WebKit/Source/JavaScriptCore/wasm/WasmPlan.h' l='49' c='JSC::Wasm::Plan'/>
+<inh f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='43' c='JSC::Wasm::StreamingParserClient'/>
+<def f='WebKit/Source/JavaScriptCore/wasm/WasmEntryPlan.h' l='44' ll='128'/>
+<ovr f='WebKit/Source/JavaScriptCore/wasm/WasmBBQPlan.h' l='51' c='JSC::Wasm::BBQPlan'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmBBQPlan.h' l='51'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmBBQPlan.h' l='53'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmBBQPlan.cpp' l='51' c='_ZN3JSC4Wasm7BBQPlanC1EPNS0_7ContextEN3WTF3RefINS0_17ModuleInformationENS4_12RawPtrTraitsIS6_EEEEjPNS0_9CodeBlockEONS4_6RefPtrINS4_10SharedTaskIFvRNS04087437'/>
+<ovr f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntPlan.h' l='45' c='JSC::Wasm::LLIntPlan'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntPlan.h' l='45'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntPlan.h' l='46'/>
+<size>360</size>
+<fun r='_ZN3JSC4Wasm9EntryPlanC1EPNS0_7ContextEN3WTF3RefINS0_17ModuleInformationENS4_12RawPtrTraitsIS6_EEEENS0_12CompilerModeEONS4_6RefPtrINS4_10SharedTaskIFv8023084'/>
+<fun r='_ZN3JSC4Wasm9EntryPlanC1EPNS0_7ContextEON3WTF6VectorIhLm0ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEENS0_12CompilerModeEONS4_6RefPtrINS4_10SharedTa8051407'/>
+<fun r='_ZN3JSC4Wasm9EntryPlanD1Ev'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan7prepareEv'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan16compileFunctionsENS0_4Plan17CompilationEffortE'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan21takeModuleInformationEv'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan23takeWasmToWasmExitStubsEv'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan23takeWasmToWasmCallsitesEv'/>
+<fun r='_ZNK3JSC4Wasm9EntryPlan13multiThreadedEv'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan22parseAndValidateModuleEPKhm'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan11stateStringENS1_5StateE'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan11moveToStateENS1_5StateE'/>
+<fun r='_ZNK3JSC4Wasm9EntryPlan10isCompleteEv'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan8completeEv'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan11prepareImplEv'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan15compileFunctionEj'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan22didCompleteCompilationEv'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan18tryReserveCapacityERN3WTF6VectorIT_Lm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEEmPKc'/>
+<mbr r='JSC::Wasm::EntryPlan::m_source' o='640' t='Vector&lt;uint8_t&gt;'/>
+<mbr r='JSC::Wasm::EntryPlan::m_wasmToWasmExitStubs' o='768' t='Vector&lt;MacroAssemblerCodeRef&lt;WasmEntryPtrTag&gt; &gt;'/>
+<mbr r='JSC::Wasm::EntryPlan::m_exportedFunctionIndices' o='896' t='HashSet&lt;uint32_t, DefaultHash&lt;uint32_t&gt;, WTF::UnsignedWithZeroKeyHashTraits&lt;uint32_t&gt; &gt;'/>
+<mbr r='JSC::Wasm::EntryPlan::m_unlinkedWasmToWasmCalls' o='960' t='Vector&lt;Vector&lt;JSC::Wasm::UnlinkedWasmToWasmCall&gt; &gt;'/>
+<mbr r='JSC::Wasm::EntryPlan::m_streamingParser' o='1088' t='JSC::Wasm::StreamingParser'/>
+<mbr r='JSC::Wasm::EntryPlan::m_state' o='2752' t='JSC::Wasm::EntryPlan::State'/>
+<mbr r='JSC::Wasm::EntryPlan::m_compilerMode' o='2760' t='const JSC::Wasm::CompilerMode'/>
+<mbr r='JSC::Wasm::EntryPlan::m_numberOfActiveThreads' o='2768' t='uint8_t'/>
+<mbr r='JSC::Wasm::EntryPlan::m_currentIndex' o='2784' t='uint32_t'/>
+<mbr r='JSC::Wasm::EntryPlan::m_numberOfFunctions' o='2816' t='uint32_t'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmEntryPlan.cpp' l='167' c='_ZN3JSC4Wasm9EntryPlan17ThreadCountHolderC1ERS1_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmEntryPlan.cpp' l='183'/>
+<size>360</size>
+<fun r='_ZN3JSC4Wasm9EntryPlanC1EPNS0_7ContextEN3WTF3RefINS0_17ModuleInformationENS4_12RawPtrTraitsIS6_EEEENS0_12CompilerModeEONS4_6RefPtrINS4_10SharedTaskIFv8023084'/>
+<fun r='_ZN3JSC4Wasm9EntryPlanC1EPNS0_7ContextEON3WTF6VectorIhLm0ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEENS0_12CompilerModeEONS4_6RefPtrINS4_10SharedTa8051407'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan11stateStringENS1_5StateE'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan11moveToStateENS1_5StateE'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan22parseAndValidateModuleEPKhm'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan7prepareEv'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan16compileFunctionsENS0_4Plan17CompilationEffortE'/>
+<fun r='_ZN3JSC4Wasm9EntryPlan8completeEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmCodeBlock.h' l='152'/>

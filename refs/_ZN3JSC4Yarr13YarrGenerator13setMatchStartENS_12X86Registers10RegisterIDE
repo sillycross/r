@@ -1,0 +1,18 @@
+<def f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='721' ll='728' type='void JSC::Yarr::YarrGenerator::setMatchStart(JSC::AbstractMacroAssembler&lt;JSC::X86Assembler&gt;::RegisterID reg)'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='2010' u='c' c='_ZN3JSC4Yarr13YarrGenerator24generateDotStarEnclosureEm'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='2038' u='c' c='_ZN3JSC4Yarr13YarrGenerator24generateDotStarEnclosureEm'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='2821' u='c' c='_ZN3JSC4Yarr13YarrGenerator9backtrackEv'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='2828' u='c' c='_ZN3JSC4Yarr13YarrGenerator9backtrackEv'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='2915' u='c' c='_ZN3JSC4Yarr13YarrGenerator9backtrackEv'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='2940' u='c' c='_ZN3JSC4Yarr13YarrGenerator9backtrackEv'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='2944' u='c' c='_ZN3JSC4Yarr13YarrGenerator9backtrackEv'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='3906' u='c' c='_ZN3JSC4Yarr13YarrGenerator7compileEv'/>
+<doc f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='712'>// We use one of three different strategies to track the start of the current match,
+    // while matching.
+    // 1) If the pattern has a fixed size, do nothing! - we calculate the value lazily
+    //    at the end of matching. This is irrespective of m_compileMode, and in this case
+    //    these methods should never be called.
+    // 2) If we&apos;re compiling JITCompileMode::IncludeSubpatterns, &apos;output&apos; contains a pointer to an output
+    //    vector, store the match start in the output vector.
+    // 3) If we&apos;re compiling MatchOnly, &apos;output&apos; is unused, store the match start directly
+    //    in this register.</doc>

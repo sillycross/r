@@ -1,0 +1,23 @@
+<dec f='WebKit/WTF/Headers/wtf/AutomaticThread.h' l='112' type='void WTF::AutomaticThread::~AutomaticThread()'/>
+<doc f='WebKit/WTF/Headers/wtf/AutomaticThread.h' l='102'>// Note that if you drop all of your references to an AutomaticThread then as soon as there is a
+    // timeout during which it doesn&apos;t get woken up, it will simply die on its own. This is a
+    // permanent kind of death where the AutomaticThread object goes away, rather than the temporary
+    // kind of death where AutomaticThread lives but its underlying thread dies. All you have to do
+    // to prevent permanent death is keep a ref to AutomaticThread. At time of writing, every user of
+    // AutomaticThread keeps a ref to it and does join() as part of the shutdown process, so only the
+    // temporary kind of automatic death happens in practice. We keep the permanent death feature
+    // because it leads to an easy-to-understand reference counting discipline (AutomaticThread holds
+    // strong ref to AutomaticThreadCondition and the underlying thread holds a strong ref to
+    // AutomaticThread).</doc>
+<dec f='WebKit/Source/WTF/wtf/AutomaticThread.h' l='112' type='void WTF::AutomaticThread::~AutomaticThread()'/>
+<def f='WebKit/Source/WTF/wtf/AutomaticThread.cpp' l='123' ll='132' type='void WTF::AutomaticThread::~AutomaticThread()'/>
+<doc f='WebKit/Source/WTF/wtf/AutomaticThread.h' l='102'>// Note that if you drop all of your references to an AutomaticThread then as soon as there is a
+    // timeout during which it doesn&apos;t get woken up, it will simply die on its own. This is a
+    // permanent kind of death where the AutomaticThread object goes away, rather than the temporary
+    // kind of death where AutomaticThread lives but its underlying thread dies. All you have to do
+    // to prevent permanent death is keep a ref to AutomaticThread. At time of writing, every user of
+    // AutomaticThread keeps a ref to it and does join() as part of the shutdown process, so only the
+    // temporary kind of automatic death happens in practice. We keep the permanent death feature
+    // because it leads to an easy-to-understand reference counting discipline (AutomaticThread holds
+    // strong ref to AutomaticThreadCondition and the underlying thread holds a strong ref to
+    // AutomaticThread).</doc>

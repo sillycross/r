@@ -1,0 +1,32 @@
+<dec f='include/wayland-server-protocol.h' l='2946' type='void (*)(struct wl_client *, struct wl_resource *, struct wl_resource *)'/>
+<offset>256</offset>
+<doc f='include/wayland-server-protocol.h' l='2916'>/**
+	 * set opaque region
+	 *
+	 * This request sets the region of the surface that contains
+	 * opaque content.
+	 *
+	 * The opaque region is an optimization hint for the compositor
+	 * that lets it optimize the redrawing of content behind opaque
+	 * regions. Setting an opaque region is not required for correct
+	 * behaviour, but marking transparent content as opaque will result
+	 * in repaint artifacts.
+	 *
+	 * The opaque region is specified in surface-local coordinates.
+	 *
+	 * The compositor ignores the parts of the opaque region that fall
+	 * outside of the surface.
+	 *
+	 * Opaque region is double-buffered state, see wl_surface.commit.
+	 *
+	 * wl_surface.set_opaque_region changes the pending opaque region.
+	 * wl_surface.commit copies the pending region to the current
+	 * region. Otherwise, the pending and current regions are never
+	 * changed.
+	 *
+	 * The initial value for an opaque region is empty. Setting the
+	 * pending opaque region has copy semantics, and the wl_region
+	 * object can be destroyed immediately. A NULL wl_region causes the
+	 * pending opaque region to be set to empty.
+	 * @param region opaque region of the surface
+	 */</doc>

@@ -1,0 +1,10 @@
+<dec f='include/xcb/xproto.h' l='1448' type='16384'/>
+<doc f='include/xcb/xproto.h' l='1438'>/**&lt; The colormap specifies the colormap that best reflects the true colors of the window. Servers
+capable of supporting multiple hardware colormaps may use this information, and window man-
+agers may use it for InstallColormap requests. The colormap must have the same visual type
+and root as the window (or a Match error results). If CopyFromParent is specified, the parent&apos;s
+colormap is copied (subsequent changes to the parent&apos;s colormap attribute do not affect the child).
+However, the window must have the same visual type as the parent (or a Match error results),
+and the parent must not have a colormap of None (or a Match error results). For an explanation
+of None, see FreeColormap request. The colormap is copied by sharing the colormap object
+between the child and the parent, not by making a complete copy of the colormap contents. */</doc>

@@ -1,0 +1,109 @@
+<def f='WebKit/WTF/Headers/wtf/CountingLock.h' l='57' ll='265'/>
+<use f='WebKit/WTF/Headers/wtf/CountingLock.h' l='58' c='_ZN3WTF12CountingLockC1ERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/CountingLock.h' l='58' c='_ZN3WTF12CountingLockaSERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/CountingLock.h' l='58' c='_ZN3WTF12CountingLockaSERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/CountingLock.h' l='122'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='265'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='380' c='_ZN3JSC11MarkedBlock4lockEv'/>
+<size>4</size>
+<doc f='WebKit/WTF/Headers/wtf/CountingLock.h' l='33'>// This is mostly just a word-sized WTF::Lock. It supports basically everything that lock supports. But as
+// a bonus, it atomically counts lock() calls and allows you to perform an optimistic read transaction by
+// comparing the count before and after the transaction. If at the start of the transaction the lock is
+// not held and the count remains the same throughout the transaction, then you know that nobody could
+// have modified your data structure while you ran. You can even use this to optimistically read pointers
+// that could become dangling under concurrent writes, if you just revalidate the count every time you&apos;re
+// about to do something dangerous.
+//
+// This is largely inspired by StampedLock from Java:
+// https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/CountingLock.html
+//
+// This is simplified a lot compared to StampedLock. Unlike StampedLock, it uses an exclusive lock as a
+// fallback. There is no way to acquire a CountingLock for read. The only read access is via optimistic
+// read transactions.
+//
+// CountingLock provides two ways of doing optimistic reads:
+//
+// - The easy way, where CountingLock does all of the fencing for you. That fencing is free on x86 but
+//   somewhat expensive on ARM.
+// - The hard way, where you do fencing yourself using Dependency. This allows you to be fenceless on both
+//   x86 and ARM.
+//
+// The latter is important for us because some GC paths are known to be sensitive to fences on ARM.</doc>
+<fun r='_ZN3WTF12CountingLockC1ERKS0_'/>
+<smbr r='WTF::CountingLock::isHeldBit' t='const WTF::CountingLock::LockType'/>
+<smbr r='WTF::CountingLock::hasParkedBit' t='const WTF::CountingLock::LockType'/>
+<smbr r='WTF::CountingLock::mask' t='const WTF::CountingLock::LockType'/>
+<smbr r='WTF::CountingLock::shift' t='const WTF::CountingLock::LockType'/>
+<smbr r='WTF::CountingLock::countUnit' t='const WTF::CountingLock::LockType'/>
+<fun r='_ZN3WTF12CountingLockC1Ev'/>
+<fun r='_ZN3WTF12CountingLock7tryLockEv'/>
+<fun r='_ZN3WTF12CountingLock4lockEv'/>
+<fun r='_ZN3WTF12CountingLock6unlockEv'/>
+<fun r='_ZNK3WTF12CountingLock6isHeldEv'/>
+<fun r='_ZNK3WTF12CountingLock8isLockedEv'/>
+<fun r='_ZN3WTF12CountingLock17tryOptimisticReadEv'/>
+<fun r='_ZN3WTF12CountingLock8validateENS0_5CountE'/>
+<fun r='_ZN3WTF12CountingLock15doOptimizedReadERKT_'/>
+<fun r='_ZN3WTF12CountingLock26tryOptimisticFencelessReadEv'/>
+<fun r='_ZN3WTF12CountingLock17fencelessValidateENS0_5CountENS_10DependencyE'/>
+<fun r='_ZN3WTF12CountingLock24doOptimizedFencelessReadERKT_RKT0_'/>
+<fun r='_ZN3WTF12CountingLock8lockSlowEv'/>
+<fun r='_ZN3WTF12CountingLock10unlockSlowEv'/>
+<fun r='_ZN3WTF12CountingLock8getCountEj'/>
+<mbr r='WTF::CountingLock::m_word' o='0' t='Atomic&lt;WTF::CountingLock::LockType&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='265'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='380' c='_ZN3JSC11MarkedBlock4lockEv'/>
+<size>4</size>
+<def f='WebKit/Source/WTF/wtf/CountingLock.h' l='57' ll='265'/>
+<use f='WebKit/Source/WTF/wtf/CountingLock.h' l='58' c='_ZN3WTF12CountingLockC1ERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/CountingLock.h' l='58' c='_ZN3WTF12CountingLockaSERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/CountingLock.h' l='58' c='_ZN3WTF12CountingLockaSERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/CountingLock.h' l='122'/>
+<size>4</size>
+<doc f='WebKit/Source/WTF/wtf/CountingLock.h' l='33'>// This is mostly just a word-sized WTF::Lock. It supports basically everything that lock supports. But as
+// a bonus, it atomically counts lock() calls and allows you to perform an optimistic read transaction by
+// comparing the count before and after the transaction. If at the start of the transaction the lock is
+// not held and the count remains the same throughout the transaction, then you know that nobody could
+// have modified your data structure while you ran. You can even use this to optimistically read pointers
+// that could become dangling under concurrent writes, if you just revalidate the count every time you&apos;re
+// about to do something dangerous.
+//
+// This is largely inspired by StampedLock from Java:
+// https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/CountingLock.html
+//
+// This is simplified a lot compared to StampedLock. Unlike StampedLock, it uses an exclusive lock as a
+// fallback. There is no way to acquire a CountingLock for read. The only read access is via optimistic
+// read transactions.
+//
+// CountingLock provides two ways of doing optimistic reads:
+//
+// - The easy way, where CountingLock does all of the fencing for you. That fencing is free on x86 but
+//   somewhat expensive on ARM.
+// - The hard way, where you do fencing yourself using Dependency. This allows you to be fenceless on both
+//   x86 and ARM.
+//
+// The latter is important for us because some GC paths are known to be sensitive to fences on ARM.</doc>
+<fun r='_ZN3WTF12CountingLockC1ERKS0_'/>
+<smbr r='WTF::CountingLock::isHeldBit' t='const WTF::CountingLock::LockType'/>
+<smbr r='WTF::CountingLock::hasParkedBit' t='const WTF::CountingLock::LockType'/>
+<smbr r='WTF::CountingLock::mask' t='const WTF::CountingLock::LockType'/>
+<smbr r='WTF::CountingLock::shift' t='const WTF::CountingLock::LockType'/>
+<smbr r='WTF::CountingLock::countUnit' t='const WTF::CountingLock::LockType'/>
+<fun r='_ZN3WTF12CountingLockC1Ev'/>
+<fun r='_ZN3WTF12CountingLock7tryLockEv'/>
+<fun r='_ZN3WTF12CountingLock4lockEv'/>
+<fun r='_ZN3WTF12CountingLock6unlockEv'/>
+<fun r='_ZNK3WTF12CountingLock6isHeldEv'/>
+<fun r='_ZNK3WTF12CountingLock8isLockedEv'/>
+<fun r='_ZN3WTF12CountingLock17tryOptimisticReadEv'/>
+<fun r='_ZN3WTF12CountingLock8validateENS0_5CountE'/>
+<fun r='_ZN3WTF12CountingLock15doOptimizedReadERKT_'/>
+<fun r='_ZN3WTF12CountingLock26tryOptimisticFencelessReadEv'/>
+<fun r='_ZN3WTF12CountingLock17fencelessValidateENS0_5CountENS_10DependencyE'/>
+<fun r='_ZN3WTF12CountingLock24doOptimizedFencelessReadERKT_RKT0_'/>
+<fun r='_ZN3WTF12CountingLock8lockSlowEv'/>
+<fun r='_ZN3WTF12CountingLock10unlockSlowEv'/>
+<fun r='_ZN3WTF12CountingLock8getCountEj'/>
+<mbr r='WTF::CountingLock::m_word' o='0' t='Atomic&lt;WTF::CountingLock::LockType&gt;'/>
+<fun r='_ZN3WTF12CountingLock8lockSlowEv'/>
+<fun r='_ZN3WTF12CountingLock10unlockSlowEv'/>

@@ -1,0 +1,7 @@
+<dec f='include/gcrypt.h' l='1653' type='gcry_error_t gcry_prime_generate(gcry_mpi_t * prime, unsigned int prime_bits, unsigned int factor_bits, gcry_mpi_t ** factors, gcry_prime_check_func_t cb_func, void * cb_arg, gcry_random_level_t random_level, unsigned int flags)'/>
+<doc f='include/gcrypt.h' l='1647'>/* Generate a new prime number of PRIME_BITS bits and store it in
+   PRIME.  If FACTOR_BITS is non-zero, one of the prime factors of
+   (prime - 1) / 2 must be FACTOR_BITS bits long.  If FACTORS is
+   non-zero, allocate a new, NULL-terminated array holding the prime
+   factors and store it in FACTORS.  FLAGS might be used to influence
+   the prime number generation process.  */</doc>

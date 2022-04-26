@@ -1,0 +1,41 @@
+<use f='include/gtk-3.0/gtk/gtkcontainer.h' l='47'/>
+<def f='include/gtk-3.0/gtk/gtkcontainer.h' l='75' ll='122'/>
+<size>976</size>
+<doc f='include/gtk-3.0/gtk/gtkcontainer.h' l='57'>/**
+ * GtkContainerClass:
+ * @parent_class: The parent class.
+ * @add: Signal emitted when a widget is added to container.
+ * @remove: Signal emitted when a widget is removed from container.
+ * @check_resize: Signal emitted when a size recalculation is needed.
+ * @forall: Invokes callback on each child of container. The callback handler
+ *    may remove the child.
+ * @set_focus_child: Sets the focused child of container.
+ * @child_type: Returns the type of the children supported by the container.
+ * @composite_name: Gets a widget’s composite name. Deprecated: 3.10.
+ * @set_child_property: Set a property on a child of container.
+ * @get_child_property: Get a property from a child of container.
+ * @get_path_for_child: Get path representing entire widget hierarchy
+ *    from the toplevel down to and including @child.
+ *
+ * Base class for containers.
+ */</doc>
+<mbr r='_GtkContainerClass::parent_class' o='0' t='GtkWidgetClass'/>
+<mbr r='_GtkContainerClass::add' o='6592' t='void (*)(GtkContainer *, GtkWidget *)'/>
+<mbr r='_GtkContainerClass::remove' o='6656' t='void (*)(GtkContainer *, GtkWidget *)'/>
+<mbr r='_GtkContainerClass::check_resize' o='6720' t='void (*)(GtkContainer *)'/>
+<mbr r='_GtkContainerClass::forall' o='6784' t='void (*)(GtkContainer *, gboolean, GtkCallback, gpointer)'/>
+<mbr r='_GtkContainerClass::set_focus_child' o='6848' t='void (*)(GtkContainer *, GtkWidget *)'/>
+<mbr r='_GtkContainerClass::child_type' o='6912' t='GType (*)(GtkContainer *)'/>
+<mbr r='_GtkContainerClass::composite_name' o='6976' t='gchar *(*)(GtkContainer *, GtkWidget *)'/>
+<mbr r='_GtkContainerClass::set_child_property' o='7040' t='void (*)(GtkContainer *, GtkWidget *, guint, const GValue *, GParamSpec *)'/>
+<mbr r='_GtkContainerClass::get_child_property' o='7104' t='void (*)(GtkContainer *, GtkWidget *, guint, GValue *, GParamSpec *)'/>
+<mbr r='_GtkContainerClass::get_path_for_child' o='7168' t='GtkWidgetPath *(*)(GtkContainer *, GtkWidget *)'/>
+<mbr r='_GtkContainerClass::_handle_border_width' o='7232' t='unsigned int'/>
+<mbr r='_GtkContainerClass::_gtk_reserved1' o='7296' t='void (*)()'/>
+<mbr r='_GtkContainerClass::_gtk_reserved2' o='7360' t='void (*)()'/>
+<mbr r='_GtkContainerClass::_gtk_reserved3' o='7424' t='void (*)()'/>
+<mbr r='_GtkContainerClass::_gtk_reserved4' o='7488' t='void (*)()'/>
+<mbr r='_GtkContainerClass::_gtk_reserved5' o='7552' t='void (*)()'/>
+<mbr r='_GtkContainerClass::_gtk_reserved6' o='7616' t='void (*)()'/>
+<mbr r='_GtkContainerClass::_gtk_reserved7' o='7680' t='void (*)()'/>
+<mbr r='_GtkContainerClass::_gtk_reserved8' o='7744' t='void (*)()'/>

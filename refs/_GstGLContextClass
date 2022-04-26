@@ -1,0 +1,28 @@
+<use f='include/gstreamer-1.0/gst/gl/gstgl_fwd.h' l='35'/>
+<def f='include/gstreamer-1.0/gst/gl/gstglcontext.h' l='120' ll='139'/>
+<size>312</size>
+<doc f='include/gstreamer-1.0/gst/gl/gstglcontext.h' l='109'>/**
+ * GstGLContextClass:
+ * @get_gl_context: get the backing platform specific OpenGL context
+ * @get_gl_api: get the available OpenGL api&apos;s that this context can work with
+ * @get_proc_address: get an function pointer to an OpenGL function
+ * @activate: call eglMakeCurrent or similar
+ * @choose_format: choose a format for the framebuffer
+ * @create_context: create the OpenGL context
+ * @destroy_context: destroy the OpenGL context
+ * @swap_buffers: swap the default framebuffer&apos;s front/back buffers
+ */</doc>
+<mbr r='_GstGLContextClass::parent_class' o='0' t='GstObjectClass'/>
+<mbr r='_GstGLContextClass::get_current_context' o='1472' t='guintptr (*)()'/>
+<mbr r='_GstGLContextClass::get_gl_context' o='1536' t='guintptr (*)(GstGLContext *)'/>
+<mbr r='_GstGLContextClass::get_gl_api' o='1600' t='GstGLAPI (*)(GstGLContext *)'/>
+<mbr r='_GstGLContextClass::get_gl_platform' o='1664' t='GstGLPlatform (*)(GstGLContext *)'/>
+<mbr r='_GstGLContextClass::get_proc_address' o='1728' t='gpointer (*)(GstGLAPI, const gchar *)'/>
+<mbr r='_GstGLContextClass::activate' o='1792' t='gboolean (*)(GstGLContext *, gboolean)'/>
+<mbr r='_GstGLContextClass::choose_format' o='1856' t='gboolean (*)(GstGLContext *, GError **)'/>
+<mbr r='_GstGLContextClass::create_context' o='1920' t='gboolean (*)(GstGLContext *, GstGLAPI, GstGLContext *, GError **)'/>
+<mbr r='_GstGLContextClass::destroy_context' o='1984' t='void (*)(GstGLContext *)'/>
+<mbr r='_GstGLContextClass::swap_buffers' o='2048' t='void (*)(GstGLContext *)'/>
+<mbr r='_GstGLContextClass::check_feature' o='2112' t='gboolean (*)(GstGLContext *, const gchar *)'/>
+<mbr r='_GstGLContextClass::get_gl_platform_version' o='2176' t='void (*)(GstGLContext *, gint *, gint *)'/>
+<mbr r='_GstGLContextClass::_reserved' o='2240' t='gpointer [4]'/>

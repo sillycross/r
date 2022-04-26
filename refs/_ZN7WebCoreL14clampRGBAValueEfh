@@ -1,0 +1,58 @@
+<def f='WebKit/Source/WebCore/platform/graphics/filters/FEConvolveMatrix.cpp' l='179' ll='186' type='unsigned char WebCore::clampRGBAValue(float channel, unsigned char max = 255)'/>
+<use f='WebKit/Source/WebCore/platform/graphics/filters/FEConvolveMatrix.cpp' l='191' u='c' c='_ZN7WebCore20setDestinationPixelsERKN3JSC21GenericTypedArrayViewINS0_19Uint8ClampedAdaptorEEERS3_RiPfff'/>
+<use f='WebKit/Source/WebCore/platform/graphics/filters/FEConvolveMatrix.cpp' l='193' u='c' c='_ZN7WebCore20setDestinationPixelsERKN3JSC21GenericTypedArrayViewINS0_19Uint8ClampedAdaptorEEERS3_RiPfff'/>
+<doc f='WebKit/Source/WebCore/platform/graphics/filters/FEConvolveMatrix.cpp' l='123'>/*
+   -----------------------------------
+      ConvolveMatrix implementation
+   -----------------------------------
+
+   The image rectangle is split in the following way:
+
+      +---------------------+
+      |          A          |
+      +---------------------+
+      |   |             |   |
+      | B |      C      | D |
+      |   |             |   |
+      +---------------------+
+      |          E          |
+      +---------------------+
+
+   Where region C contains those pixels, whose values
+   can be calculated without crossing the edge of the rectangle.
+
+   Example:
+      Image size: width: 10, height: 10
+
+      Order (kernel matrix size): width: 3, height 4
+      Target: x:1, y:3
+
+      The following figure shows the target inside the kernel matrix:
+
+        ...
+        ...
+        ...
+        .X.
+
+   The regions in this case are the following:
+      Note: (x1, y1) top-left and (x2, y2) is the bottom-right corner
+      Note: row x2 and column y2 is not part of the region
+            only those (x, y) pixels, where x1 &lt;= x &lt; x2 and y1 &lt;= y &lt; y2
+
+      Region A: x1: 0, y1: 0, x2: 10, y2: 3
+      Region B: x1: 0, y1: 3, x2: 1, y2: 10
+      Region C: x1: 1, y1: 3, x2: 9, y2: 10
+      Region D: x1: 9, y1: 3, x2: 10, y2: 10
+      Region E: x1: 0, y1: 10, x2: 10, y2: 10 (empty region)
+
+   Since region C (often) contains most of the pixels, we implemented
+   a fast algoritm to calculate these values, called fastSetInteriorPixels.
+   For other regions, fastSetOuterPixels is used, which calls getPixelValue,
+   to handle pixels outside of the image. In a rare situations, when
+   kernel matrix is bigger than the image, all pixels are calculated by this
+   function.
+
+   Although these two functions have lot in common, I decided not to make
+   common a template for them, since there are key differences as well,
+   and would make it really hard to understand.
+*/</doc>

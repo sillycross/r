@@ -1,0 +1,20 @@
+<def f='WebKit/Source/JavaScriptCore/bytecode/GetterSetterAccessCase.h' l='47' type='JSC::CallLinkInfo * JSC::GetterSetterAccessCase::callLinkInfo() const'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/GetterSetterAccessCase.h' l='40'>// This can return null if it hasn&apos;t been generated yet. That&apos;s
+    // actually somewhat likely because of how we do buffering of new cases.
+    // CallLinkInfo&apos;s ownership is held both by generated code via GCAwareJITStubRoutine and PolymorphicAccess.
+    // The ownership relation is PolymorphicAccess -&gt; GCAwareJITStubRoutine -&gt; CallLinkInfo.
+    // PolymorphicAccess can be destroyed while GCAwareJITStubRoutine is alive if we are destroying PolymorphicAccess
+    // while we are executing GCAwareJITStubRoutine. It is not possible that GetterSetterAccessCase is alive while
+    // GCAwareJITStubRoutine is destroyed.</doc>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='453' u='c' c='_ZNK3JSC10AccessCase20forEachDependentCellERNS_2VMERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='454' u='c' c='_ZNK3JSC10AccessCase20forEachDependentCellERNS_2VMERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='749' u='c' c='_ZNK3JSC10AccessCase9visitWeakERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='750' u='c' c='_ZNK3JSC10AccessCase9visitWeakERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='1633' u='c' c='_ZN3JSC10AccessCase12generateImplERNS_21AccessGenerationStateE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='1710' u='c' c='_ZN3JSC10AccessCase12generateImplERNS_21AccessGenerationStateE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='1725' u='c' c='_ZN3JSC10AccessCase12generateImplERNS_21AccessGenerationStateE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='1744' u='c' c='_ZN3JSC10AccessCase12generateImplERNS_21AccessGenerationStateE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PutByIdStatus.cpp' l='213' u='c' c='_ZN3JSC13PutByIdStatus18computeForStubInfoERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoEPN3WTF17UniquedStringImplENS_14CallLinkStatus12ExitSiteDataE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/GetByStatus.cpp' l='303' u='c' c='_ZN3JSC11GetByStatus41computeForStubInfoWithoutExitSiteFeedbackERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoENS_14CallLinkStatus12ExitSiteDataE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/GetterSetterAccessCase.cpp' l='119' u='c' c='_ZNK3JSC22GetterSetterAccessCase8dumpImplERN3WTF11PrintStreamERNS1_12CommaPrinterE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/GetterSetterAccessCase.cpp' l='120' u='c' c='_ZNK3JSC22GetterSetterAccessCase8dumpImplERN3WTF11PrintStreamERNS1_12CommaPrinterE'/>

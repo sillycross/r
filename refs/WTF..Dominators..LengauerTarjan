@@ -1,0 +1,28 @@
+<use f='WebKit/WTF/Headers/wtf/Dominators.h' l='50' c='_ZN3WTF10DominatorsC1ERT_b'/>
+<def f='WebKit/WTF/Headers/wtf/Dominators.h' l='312' ll='505'/>
+<doc f='WebKit/WTF/Headers/wtf/Dominators.h' l='297'>// This implements Lengauer and Tarjan&apos;s &quot;A Fast Algorithm for Finding Dominators in a Flowgraph&quot;
+    // (TOPLAS 1979). It uses the &quot;simple&quot; implementation of LINK and EVAL, which yields an O(n log n)
+    // solution. The full paper is linked below; this code attempts to closely follow the algorithm as
+    // it is presented in the paper; in particular sections 3 and 4 as well as appendix B.
+    // https://www.cs.princeton.edu/courses/archive/fall03/cs528/handouts/a%20fast%20algorithm%20for%20finding.pdf
+    //
+    // This code is very subtle. The Lengauer-Tarjan algorithm is incredibly deep to begin with. The
+    // goal of this code is to follow the code in the paper, however our implementation must deviate
+    // from the paper when it comes to recursion. The authors had used recursion to implement DFS, and
+    // also to implement the &quot;simple&quot; EVAL. We convert both of those into worklist-based solutions.
+    // Finally, once the algorithm gives us immediate dominators, we implement dominance tests by
+    // walking the dominator tree and computing pre and post numbers. We then use the range inclusion
+    // check trick that was first discovered by Paul F. Dietz in 1982 in &quot;Maintaining order in a linked
+    // list&quot; (see http://dl.acm.org/citation.cfm?id=802184).</doc>
+<fun r='_ZN3WTF10Dominators14LengauerTarjanC1ERT_'/>
+<fun r='_ZN3WTF10Dominators14LengauerTarjan7computeEv'/>
+<fun r='_ZN3WTF10Dominators14LengauerTarjan18immediateDominatorENT_4NodeE'/>
+<fun r='_ZN3WTF10Dominators14LengauerTarjan29computeDepthFirstPreNumberingEv'/>
+<fun r='_ZN3WTF10Dominators14LengauerTarjan51computeSemiDominatorsAndImplicitImmediateDominatorsEv'/>
+<fun r='_ZN3WTF10Dominators14LengauerTarjan34computeExplicitImmediateDominatorsEv'/>
+<fun r='_ZN3WTF10Dominators14LengauerTarjan4linkENT_4NodeES3_'/>
+<fun r='_ZN3WTF10Dominators14LengauerTarjan4evalENT_4NodeE'/>
+<fun r='_ZN3WTF10Dominators14LengauerTarjan8compressENT_4NodeE'/>
+<mbr r='WTF::Dominators::LengauerTarjan::m_graph' t='Graph &amp;'/>
+<mbr r='WTF::Dominators::LengauerTarjan::m_data' t='typename Graph::Map&lt;WTF::Dominators::LengauerTarjan::BlockData&gt;'/>
+<mbr r='WTF::Dominators::LengauerTarjan::m_blockByPreNumber' t='Vector&lt;typename Graph::Node&gt;'/>

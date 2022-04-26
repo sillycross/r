@@ -1,0 +1,14 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitResponsePolicyDecision.cpp' l='126' ll='132' type='WebKitURIRequest * webkit_response_policy_decision_get_request(WebKitResponsePolicyDecision * decision)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitResponsePolicyDecision.cpp' l='113'>/**
+ * webkit_response_policy_decision_get_request:
+ * @decision: a #WebKitResponsePolicyDecision
+ *
+ * Return the #WebKitURIRequest associated with the response decision.
+ * Modifications to the returned object are &lt;emphasis&gt;not&lt;/emphasis&gt; taken
+ * into account when the request is sent over the network, and is intended
+ * only to aid in evaluating whether a response decision should be taken or
+ * not. To modify requests before they are sent over the network the
+ * #WebKitPage::send-request signal can be used instead.
+ *
+ * Returns: (transfer none): The URI request that is associated with this policy decision.
+ */</doc>

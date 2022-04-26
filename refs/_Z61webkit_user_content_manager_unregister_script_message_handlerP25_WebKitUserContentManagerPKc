@@ -1,0 +1,17 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUserContentManager.cpp' l='312' ll='317' type='void webkit_user_content_manager_unregister_script_message_handler(WebKitUserContentManager * manager, const char * name)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUserContentManager.cpp' l='296'>/**
+ * webkit_user_content_manager_unregister_script_message_handler:
+ * @manager: A #WebKitUserContentManager
+ * @name: Name of the script message channel
+ *
+ * Unregisters a previously registered message handler.
+ *
+ * Note that this does *not* disconnect handlers for the
+ * #WebKitUserContentManager::script-message-received signal;
+ * they will be kept connected, but the signal will not be emitted
+ * unless the handler name is registered again.
+ *
+ * See also webkit_user_content_manager_register_script_message_handler().
+ *
+ * Since: 2.8
+ */</doc>

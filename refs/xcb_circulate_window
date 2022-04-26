@@ -1,0 +1,17 @@
+<dec f='include/xcb/xproto.h' l='6537' type='xcb_void_cookie_t xcb_circulate_window(xcb_connection_t * c, uint8_t direction, xcb_window_t window)'/>
+<doc f='include/xcb/xproto.h' l='6520'>/**
+ * @brief Change window stacking order
+ *
+ * @param c The connection
+ * @param direction A bitmask of #xcb_circulate_t values.
+ * @param direction \n
+ * @param window The window to raise/lower (depending on \a direction).
+ * @return A cookie
+ *
+ * If \a direction is `XCB_CIRCULATE_RAISE_LOWEST`, the lowest mapped child (if
+ * any) will be raised to the top of the stack.
+ * 
+ * If \a direction is `XCB_CIRCULATE_LOWER_HIGHEST`, the highest mapped child will
+ * be lowered to the bottom of the stack.
+ *
+ */</doc>

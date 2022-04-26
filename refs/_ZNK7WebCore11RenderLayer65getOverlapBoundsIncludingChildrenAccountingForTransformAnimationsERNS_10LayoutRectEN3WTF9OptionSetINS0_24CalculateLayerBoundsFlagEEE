@@ -1,0 +1,6 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderLayer.h' l='703' type='bool WebCore::RenderLayer::getOverlapBoundsIncludingChildrenAccountingForTransformAnimations(WebCore::LayoutRect &amp; , OptionSet&lt;WebCore::RenderLayer::CalculateLayerBoundsFlag&gt; additionalFlags = {}) const'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderLayer.h' l='701'>// Takes transform animations into account, returning true if they could be cheaply computed.
+    // Unlike overlapBounds, these bounds include descendant layers.</doc>
+<def f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4788' ll='4804' type='bool WebCore::RenderLayer::getOverlapBoundsIncludingChildrenAccountingForTransformAnimations(WebCore::LayoutRect &amp; bounds, OptionSet&lt;WebCore::RenderLayer::CalculateLayerBoundsFlag&gt; additionalFlags = {}) const'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='1315' u='c' c='_ZN7WebCore18RenderLayerBacking14updateGeometryEPKNS_11RenderLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='1996' u='c' c='_ZNK7WebCore21RenderLayerCompositor13computeExtentERKNS_15LayerOverlapMapERKNS_11RenderLayerERNS0_13OverlapExtentE'/>

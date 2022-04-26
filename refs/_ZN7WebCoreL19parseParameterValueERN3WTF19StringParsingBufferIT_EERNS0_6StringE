@@ -1,0 +1,12 @@
+<def f='WebKit/Source/WebCore/loader/LinkHeader.cpp' l='232' ll='253' type='bool WebCore::parseParameterValue(StringParsingBuffer&lt;CharacterType&gt; &amp; buffer, WTF::String &amp; value)'/>
+<doc f='WebKit/Source/WebCore/loader/LinkHeader.cpp' l='221'>// Before:
+//
+// &lt;cat.jpg&gt;; rel=preload; foo=bar
+//                ^               ^
+//            position            end
+//
+// After (if successful: otherwise the method returns false)
+//
+// &lt;cat.jpg&gt;; rel=preload; foo=bar
+//                       ^        ^
+//                   position     end</doc>

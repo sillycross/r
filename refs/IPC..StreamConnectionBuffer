@@ -1,0 +1,83 @@
+<def f='WebKit/Source/WebKit/Platform/IPC/StreamConnectionBuffer.h' l='70' ll='133'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamConnectionBuffer.h' l='73' c='_ZN3IPC22StreamConnectionBufferC1EOS0_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamConnectionBuffer.h' l='75' c='_ZN3IPC22StreamConnectionBufferaSEOS0_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamConnectionBuffer.h' l='75' c='_ZN3IPC22StreamConnectionBufferaSEOS0_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamConnectionBuffer.h' l='116' c='_ZN3IPC22StreamConnectionBuffer6decodeERNS_7DecoderE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamClientConnection.h' l='54' c='_ZN3IPC22StreamClientConnection12streamBufferEv'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamClientConnection.h' l='104'/>
+<size>24</size>
+<doc f='WebKit/Source/WebKit/Platform/IPC/StreamConnectionBuffer.h' l='35'>// StreamConnectionBuffer is a shared &quot;bi-partite&quot; circular buffer supporting variable length messages, specific data
+// alignment with mandated minimum size. StreamClientConnection and StreamServerConnection use StreamConnectionBuffer to
+// communicate.
+//
+// The &quot;bi-partite&quot; is here to mean that writes and reads to the buffer must be continuous.
+//
+// The caller (client or server) &quot;acquires&quot; some amount of buffer data. The data pointer location depends on the amount
+// of data being acquired. The buffer returns all the available capacity -- this may be less than acquired.
+//
+// The caller &quot;releases&quot; the some amount of data, at least the amount acquired but potentially more.
+//
+// Both the client and the server must release the same amount of data at the same step of the acquire/release sequence.
+// Suppose the client releases first 8 and then 166 bytes. Upon the first acquire, the server must also release 8 bytes
+// and then upon the second acquire 166 bytes. Due to how alignment and minimum length affect the position at which the
+// memory can be referred to, the server cannot &quot;read two times simultaneously&quot; and release 174 bytes.
+//
+// The buffer also supports synchronous replies via &quot;releaseAll/acquireAll&quot; call pattern. The communication protocol can
+// establish cases where the client transfers ownership of the data to the server. In these cases the server will
+// acknowledge the read with &quot;releaseAll&quot; operation. The client will then read the reply via &quot;acquireAll&quot; operation. The
+// reply will be written to the beginning of the buffer. This mandates that in-place data references in the buffer
+// cannot be used simultaneously for message data and the reply data. In current IPC implementation, the message
+// processing uses the in-place data references, while the reply data is first constructed to allocated memory and then
+// copied to the message buffer.
+//
+// The circular buffer has following implementation:
+// * The client owns the data between [clientOffset, serverOffset[. When clientOffset == serverOffset, the client owns
+//   all the data.
+// * The server owns the data between [serverOffset, clientOffset[.
+// * The exception to the above is when communication protocol can contain messages that denote that the server will own
+//   all the data.
+// * The buffer can hold maximum of size - 1 values. The last value is reserved for indicating that the buffer is full.
+//   FIXME: Maybe would be simpler implementation if it would use the &quot;wrap&quot; flag instead of the hole as the indicator.
+//   This would move the alignedSpan implementation to the StreamConnectionBuffer.
+// * All atomic variable loads are untrusted, so they&apos;re clamped. Violations are not reported, though.
+// See SharedDisplayListHandle.</doc>
+<fun r='_ZN3IPC22StreamConnectionBufferC1Em'/>
+<fun r='_ZN3IPC22StreamConnectionBufferC1EOS0_'/>
+<fun r='_ZN3IPC22StreamConnectionBufferD1Ev'/>
+<fun r='_ZN3IPC22StreamConnectionBufferaSEOS0_'/>
+<fun r='_ZNK3IPC22StreamConnectionBuffer10wrapOffsetEm'/>
+<fun r='_ZNK3IPC22StreamConnectionBuffer11alignOffsetEmm'/>
+<fun r='_ZN3IPC22StreamConnectionBuffer12clientOffsetEv'/>
+<fun r='_ZN3IPC22StreamConnectionBuffer12serverOffsetEv'/>
+<fun r='_ZNK3IPC22StreamConnectionBuffer4dataEv'/>
+<fun r='_ZNK3IPC22StreamConnectionBuffer8dataSizeEv'/>
+<fun r='_ZN3IPC22StreamConnectionBuffer19clientWaitSemaphoreEv'/>
+<fun r='_ZN3IPC22StreamConnectionBuffer11maximumSizeEv'/>
+<fun r='_ZNK3IPC22StreamConnectionBuffer6encodeERNS_7EncoderE'/>
+<fun r='_ZN3IPC22StreamConnectionBuffer6decodeERNS_7DecoderE'/>
+<fun r='_ZN3IPC22StreamConnectionBufferC1EON3WTF3RefIN6WebKit12SharedMemoryENS1_12RawPtrTraitsIS4_EEEEmONS_9SemaphoreE'/>
+<fun r='_ZNK3IPC22StreamConnectionBuffer6headerEv'/>
+<fun r='_ZN3IPC22StreamConnectionBuffer10headerSizeEv'/>
+<mbr r='IPC::StreamConnectionBuffer::m_dataSize' o='0' t='size_t'/>
+<mbr r='IPC::StreamConnectionBuffer::m_sharedMemory' o='64' t='Ref&lt;WebKit::SharedMemory&gt;'/>
+<mbr r='IPC::StreamConnectionBuffer::m_clientWaitSemaphore' o='128' t='IPC::Semaphore'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamConnectionBuffer.cpp' l='56' c='_ZN3IPC22StreamConnectionBufferC1EOS0_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamConnectionBuffer.cpp' l='60' c='_ZN3IPC22StreamConnectionBufferaSEOS0_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamConnectionBuffer.cpp' l='60' c='_ZN3IPC22StreamConnectionBufferaSEOS0_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamConnectionBuffer.cpp' l='80' c='_ZN3IPC22StreamConnectionBuffer6decodeERNS_7DecoderE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamConnectionBuffer.cpp' l='98' c='_ZN3IPC22StreamConnectionBuffer6decodeERNS_7DecoderE'/>
+<size>24</size>
+<fun r='_ZN3IPC22StreamConnectionBufferC1Em'/>
+<fun r='_ZN3IPC22StreamConnectionBufferC1EON3WTF3RefIN6WebKit12SharedMemoryENS1_12RawPtrTraitsIS4_EEEEmONS_9SemaphoreE'/>
+<fun r='_ZN3IPC22StreamConnectionBufferC1EOS0_'/>
+<fun r='_ZN3IPC22StreamConnectionBufferD1Ev'/>
+<fun r='_ZN3IPC22StreamConnectionBufferaSEOS0_'/>
+<fun r='_ZNK3IPC22StreamConnectionBuffer6encodeERNS_7EncoderE'/>
+<fun r='_ZN3IPC22StreamConnectionBuffer6decodeERNS_7DecoderE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamServerConnection.h' l='59' c='_ZN3IPC26StreamServerConnectionBaseC1ERNS_10ConnectionEONS_22StreamConnectionBufferERNS_25StreamConnectionWorkQueueE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamServerConnection.h' l='94'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamServerConnection.h' l='137' c='_ZN3IPC22StreamServerConnection6createERNS_10ConnectionEONS_22StreamConnectionBufferERNS_25StreamConnectionWorkQueueE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamServerConnection.h' l='151' c='_ZN3IPC22StreamServerConnectionC1ERNS_10ConnectionEONS_22StreamConnectionBufferERNS_25StreamConnectionWorkQueueE'/>
+<size>24</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamServerConnection.cpp' l='34' c='_ZN3IPC26StreamServerConnectionBaseC1ERNS_10ConnectionEONS_22StreamConnectionBufferERNS_25StreamConnectionWorkQueueE'/>
+<size>24</size>

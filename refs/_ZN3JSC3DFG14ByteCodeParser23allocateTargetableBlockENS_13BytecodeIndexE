@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='172' type='JSC::DFG::BasicBlock * JSC::DFG::ByteCodeParser::allocateTargetableBlock(JSC::BytecodeIndex )'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='1265' ll='1276' type='JSC::DFG::BasicBlock * JSC::DFG::ByteCodeParser::allocateTargetableBlock(JSC::BytecodeIndex bytecodeIndex)'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='8747' u='c' c='_ZN3JSC3DFG14ByteCodeParser14parseCodeBlockEv'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='167'>// Blocks can either be targetable (i.e. in the m_blockLinkingTargets of one InlineStackEntry) with a well-defined bytecodeBegin,
+    // or they can be untargetable, with bytecodeBegin==UINT_MAX, to be managed manually and not by the linkBlock machinery.
+    // This is used most notably when doing polyvariant inlining (it requires a fair bit of control-flow with no bytecode analog).
+    // It is also used when doing an early return from an inlined callee: it is easier to fix the bytecode index later on if needed
+    // than to move the right index all the way to the treatment of op_ret.</doc>

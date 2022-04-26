@@ -1,0 +1,28 @@
+<def f='include/unicode/unumberformatter.h' l='193' ll='266'/>
+<use f='include/unicode/unumberformatter.h' l='193'/>
+<doc f='include/unicode/unumberformatter.h' l='167'>/**
+ * An enum declaring the strategy for when and how to display grouping separators (i.e., the
+ * separator, often a comma or period, after every 2-3 powers of ten). The choices are several
+ * pre-built strategies for different use cases that employ locale data whenever possible. Example
+ * outputs for 1234 and 1234567 in &lt;em&gt;en-IN&lt;/em&gt;:
+ *
+ * &lt;ul&gt;
+ * &lt;li&gt;OFF: 1234 and 12345
+ * &lt;li&gt;MIN2: 1234 and 12,34,567
+ * &lt;li&gt;AUTO: 1,234 and 12,34,567
+ * &lt;li&gt;ON_ALIGNED: 1,234 and 12,34,567
+ * &lt;li&gt;THOUSANDS: 1,234 and 1,234,567
+ * &lt;/ul&gt;
+ *
+ * &lt;p&gt;
+ * The default is AUTO, which displays grouping separators unless the locale data says that grouping
+ * is not customary. To force grouping for all numbers greater than 1000 consistently across locales,
+ * use ON_ALIGNED. On the other hand, to display grouping less frequently than the default, use MIN2
+ * or OFF. See the docs of each option for details.
+ *
+ * &lt;p&gt;
+ * Note: This enum specifies the strategy for grouping sizes. To set which character to use as the
+ * grouping separator, use the &quot;symbols&quot; setter.
+ *
+ * @stable ICU 63
+ */</doc>

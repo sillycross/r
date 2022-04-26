@@ -1,0 +1,17 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1095' ll='1104' type='const gchar * webkit_web_context_get_favicon_database_directory(WebKitWebContext * context)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1079'>/**
+ * webkit_web_context_get_favicon_database_directory:
+ * @context: a #WebKitWebContext
+ *
+ * Get the directory path being used to store the favicons database
+ * for @context, or %NULL if
+ * webkit_web_context_set_favicon_database_directory() hasn&apos;t been
+ * called yet.
+ *
+ * This function will always return the same path after having called
+ * webkit_web_context_set_favicon_database_directory() for the first
+ * time.
+ *
+ * Returns: (transfer none): the path of the directory of the favicons
+ * database associated with @context, or %NULL.
+ */</doc>

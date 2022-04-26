@@ -1,0 +1,15 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.h' l='125' type='JSCValue * jsc_value_new_array(JSCContext * context, GType first_item_type)'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='472' ll='523' type='JSCValue * jsc_value_new_array(JSCContext * context, GType firstItemType)'/>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='541' u='c' c='jsc_value_new_array_from_garray'/>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='567' u='c' c='jsc_value_new_array_from_strv'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='461'>/**
+ * jsc_value_new_array: (skip)
+ * @context: a #JSCContext
+ * @first_item_type: #GType of first item, or %G_TYPE_NONE
+ * @...: value of the first item, followed optionally by more type/value pairs, followed by %G_TYPE_NONE.
+ *
+ * Create a new #JSCValue referencing an array with the given items. If @first_item_type
+ * is %G_TYPE_NONE an empty array is created.
+ *
+ * Returns: (transfer full): a #JSCValue.
+ */</doc>

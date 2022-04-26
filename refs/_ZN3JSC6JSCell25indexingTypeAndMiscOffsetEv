@@ -1,0 +1,24 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSCell.h' l='228' ll='231' type='static ptrdiff_t JSC::JSCell::indexingTypeAndMiscOffset()'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSCell.h' l='225'>// DO NOT store to this field. Always use a CAS loop, since some bits are flipped using CAS
+    // from other threads due to the internal lock. One exception: you don&apos;t need the CAS if the
+    // object has not escaped yet.</doc>
+<def f='WebKit/Source/JavaScriptCore/runtime/JSCell.h' l='228' ll='231' type='static ptrdiff_t JSC::JSCell::indexingTypeAndMiscOffset()'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSCell.h' l='225'>// DO NOT store to this field. Always use a CAS loop, since some bits are flipped using CAS
+    // from other threads due to the internal lock. One exception: you don&apos;t need the CAS if the
+    // object has not escaped yet.</doc>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLAbstractHeapRepository.cpp' l='56' macro='1' u='c' c='_ZN3JSC3FTL22AbstractHeapRepositoryC1Ev'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLAbstractHeapRepository.cpp' l='56' macro='1' u='c' c='_ZN3JSC3FTL22AbstractHeapRepositoryC1Ev'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExitCompiler.cpp' l='275' u='c' c='_ZN3JSC3FTLL11compileStubERNS_2VMEjPNS0_7JITCodeERNS0_7OSRExitEPNS_9CodeBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/AssemblyHelpers.cpp' l='327' u='c' c='_ZN3JSC15AssemblyHelpers30emitStoreStructureWithTypeInfoERS0_NS_22AbstractMacroAssemblerINS_12X86AssemblerEE13TrustedImmPtrENS_12X86Registers10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITInlines.h' l='372' u='c' c='_ZN3JSC3JIT30emitArrayProfilingSiteWithCellENS_12X86Registers10RegisterIDES2_PNS_12ArrayProfileE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.cpp' l='401' u='c' c='_ZN3JSC3DFG7OSRExit11compileExitERNS_12CCallHelpersERNS_2VMERKS1_RKNS_8OperandsINS_13ValueRecoveryEN3WTF6VectorIS9_Lm0ENSA_20UnsafeVectorOverflowELm166472174'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='893' u='c' c='_ZN3JSC10AccessCase17generateWithGuardERNS_21AccessGenerationStateERNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='1199' u='c' c='_ZN3JSC10AccessCase17generateWithGuardERNS_21AccessGenerationStateERNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InlineAccess.cpp' l='77' u='c' c='_ZN3JSC12InlineAccess22dumpCacheSizesAndCrashEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InlineAccess.cpp' l='304' u='c' c='_ZN3JSC12InlineAccess19generateArrayLengthERNS_17StructureStubInfoEPNS_7JSArrayE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArrayifySlowPathGenerator.h' l='127' u='c' c='_ZN3JSC3DFG25ArrayifySlowPathGenerator16generateInternalEPNS0_14SpeculativeJITE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='902' u='c' c='_ZN3JSC3DFG14SpeculativeJIT10checkArrayEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='957' u='c' c='_ZN3JSC3DFG14SpeculativeJIT8arrayifyEPNS0_4NodeENS_12X86Registers10RegisterIDES5_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='9027' u='c' c='_ZN3JSC3DFG14SpeculativeJIT13compileSpreadEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='9054' u='c' c='_ZN3JSC3DFG14SpeculativeJIT13compileSpreadEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='9525' u='c' c='_ZN3JSC3DFG14SpeculativeJIT17compileArraySliceEPNS0_4NodeE'/>

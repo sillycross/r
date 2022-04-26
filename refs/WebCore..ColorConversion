@@ -1,0 +1,84 @@
+<use f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='60' c='_ZN7WebCore12convertColorERKT0_'/>
+<def f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='86' ll='88'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='86'/>
+<def f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='89' ll='91'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='89'/>
+<def f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='94' ll='96'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='94'/>
+<def f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='97' ll='99'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='97'/>
+<def f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='102' ll='104'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='102'/>
+<def f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='105' ll='107'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='105'/>
+<def f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='110' ll='112'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='110'/>
+<def f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='113' ll='115'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='113'/>
+<def f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='119' ll='124'/>
+<def f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='153' ll='320'/>
+<size>1</size>
+<doc f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='85'>// MARK: HSLA</doc>
+<doc f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='93'>// MARK: HWBA</doc>
+<doc f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='101'>// MARK: LCHA</doc>
+<doc f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='109'>// MARK: Lab</doc>
+<doc f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='117'>// Identity conversion.</doc>
+<doc f='WebKit/Source/WebCore/platform/graphics/ColorConversion.h' l='127'>// Main conversion.
+
+//                ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┼ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┐
+//                 Matrix Conversions    ┌───────────┐│┌───────────┐
+//                │                      │ XYZ (D50) │││ XYZ (D65) │                                                                                                                      │
+//                                       └─────▲─────┘│└─────▲─────┘
+//                │                            │      │      │                                                                                                                            │
+//       ┌─────────────────────────┬───────────┘      │      └───────────┬───────────────────────────────┬───────────────────────────────┬───────────────────────────────┐
+//       │        │                │                  │                  │                               │                               │                               │                │
+//       │                         │                  │                  │                               │                               │                               │
+//       │        │                │                  │                  │                               │                               │                               │                │
+//       │          ProPhotoRGB───────────────────┐   │   SRGB──────────────────────────┐ DisplayP3─────────────────────┐ A98RGB────────────────────────┐ Rec2020───────────────────────┐
+//       │        │ │┌────────┐ ┌────────────────┐│   │   │┌────────┐ ┌────────────────┐│ │┌────────┐ ┌────────────────┐│ │┌────────┐ ┌────────────────┐│ │┌────────┐ ┌────────────────┐│ │
+//       │          ││ Linear │ │ LinearExtended ││   │   ││ Linear │ │ LinearExtended ││ ││ Linear │ │ LinearExtended ││ ││ Linear │ │ LinearExtended ││ ││ Linear │ │ LinearExtended ││
+//       │        │ │└────────┘ └────────────────┘│   │   │└────────┘ └────────────────┘│ │└────────┘ └────────────────┘│ │└────────┘ └────────────────┘│ │└────────┘ └────────────────┘│ │
+//       │         ─│─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│─ ─│─ ─│─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│─│─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│─│─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│─│─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│─
+// ┌───────────┐    │┌────────┐ ┌────────────────┐│   │   │┌────────┐ ┌────────────────┐│ │┌────────┐ ┌────────────────┐│ │┌────────┐ ┌────────────────┐│ │┌────────┐ ┌────────────────┐│
+// │    Lab    │    ││ Gamma  │ │ GammaExtended  ││   │   ││ Gamma  │ │ GammaExtended  ││ ││ Gamma  │ │ GammaExtended  ││ ││ Gamma  │ │ GammaExtended  ││ ││ Gamma  │ │ GammaExtended  ││
+// └─────▲─────┘    │└────────┘ └────────────────┘│   │   │└────▲───┘ └────────────────┘│ │└────────┘ └────────────────┘│ │└────────┘ └────────────────┘│ │└────────┘ └────────────────┘│
+//       │          └─────────────────────────────┘   │   └─────┼───────────────────────┘ └─────────────────────────────┘ └─────────────────────────────┘ └─────────────────────────────┘
+//       │                                            │      ┌──┴──────────┐
+//       │                                            │      │             │
+// ┌───────────┐                                      │┌───────────┐ ┌───────────┐
+// │    LCH    │                                      ││    HSL    │ │    HWB    │
+// └───────────┘                                      │└───────────┘ └───────────┘</doc>
+<fun r='_ZN7WebCore15ColorConversionINS_19BoundedGammaEncodedIfNS_15SRGBADescriptorEEENS_4HSLAIfEEvE7convertERKS5_'/>
+<fun r='_ZN7WebCore15ColorConversionINS_4HSLAIfEENS_19BoundedGammaEncodedIfNS_15SRGBADescriptorEEEvE7convertERKS5_'/>
+<fun r='_ZN7WebCore15ColorConversionINS_19BoundedGammaEncodedIfNS_15SRGBADescriptorEEENS_4HWBAIfEEvE7convertERKS5_'/>
+<fun r='_ZN7WebCore15ColorConversionINS_4HWBAIfEENS_19BoundedGammaEncodedIfNS_15SRGBADescriptorEEEvE7convertERKS5_'/>
+<fun r='_ZN7WebCore15ColorConversionINS_3LabIfEENS_4LCHAIfEEvE7convertERKS4_'/>
+<fun r='_ZN7WebCore15ColorConversionINS_4LCHAIfEENS_3LabIfEEvE7convertERKS4_'/>
+<fun r='_ZN7WebCore15ColorConversionINS_4XYZAIfLNS_10WhitePointE0EEENS_3LabIfEEvE7convertERKS5_'/>
+<fun r='_ZN7WebCore15ColorConversionINS_3LabIfEENS_4XYZAIfLNS_10WhitePointE0EEEvE7convertERKS5_'/>
+<fun r='_ZN7WebCore15ColorConversionIT_S1_vE7convertERKS1_'/>
+<fun r='_ZN7WebCore15ColorConversion7convertERKT0_'/>
+<fun r='_ZN7WebCore15ColorConversion23handleToFloatConversionERKT0_'/>
+<fun r='_ZN7WebCore15ColorConversion22handleToByteConversionERKT0_'/>
+<fun r='_ZN7WebCore15ColorConversion15toLinearEncodedERKT_'/>
+<fun r='_ZN7WebCore15ColorConversion14toGammaEncodedERKT_'/>
+<fun r='_ZN7WebCore15ColorConversion10toExtendedERKT_'/>
+<fun r='_ZN7WebCore15ColorConversion9toBoundedERKT_'/>
+<fun r='_ZN7WebCore15ColorConversion25handleRGBFamilyConversionERKT0_'/>
+<fun r='_ZN7WebCore15ColorConversion22handleMatrixConversionERKT0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ColorConversion.cpp' l='67' c='_ZN7WebCore15ColorConversionINS_4HSLAIfEENS_19BoundedGammaEncodedIfNS_15SRGBADescriptorEEEvE7convertERKS5_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ColorConversion.cpp' l='85' c='_ZN7WebCore15ColorConversionINS_19BoundedGammaEncodedIfNS_15SRGBADescriptorEEENS_4HSLAIfEEvE7convertERKS5_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ColorConversion.cpp' l='132' c='_ZN7WebCore15ColorConversionINS_4HWBAIfEENS_19BoundedGammaEncodedIfNS_15SRGBADescriptorEEEvE7convertERKS5_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ColorConversion.cpp' l='142' c='_ZN7WebCore15ColorConversionINS_19BoundedGammaEncodedIfNS_15SRGBADescriptorEEENS_4HWBAIfEEvE7convertERKS5_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ColorConversion.cpp' l='196' c='_ZN7WebCore15ColorConversionINS_4XYZAIfLNS_10WhitePointE0EEENS_3LabIfEEvE7convertERKS5_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ColorConversion.cpp' l='226' c='_ZN7WebCore15ColorConversionINS_3LabIfEENS_4XYZAIfLNS_10WhitePointE0EEEvE7convertERKS5_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ColorConversion.cpp' l='250' c='_ZN7WebCore15ColorConversionINS_4LCHAIfEENS_3LabIfEEvE7convertERKS4_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ColorConversion.cpp' l='263' c='_ZN7WebCore15ColorConversionINS_3LabIfEENS_4LCHAIfEEvE7convertERKS4_'/>
+<fun r='_ZN7WebCore15ColorConversionINS_4HSLAIfEENS_19BoundedGammaEncodedIfNS_15SRGBADescriptorEEEvE7convertERKS5_'/>
+<fun r='_ZN7WebCore15ColorConversionINS_19BoundedGammaEncodedIfNS_15SRGBADescriptorEEENS_4HSLAIfEEvE7convertERKS5_'/>
+<fun r='_ZN7WebCore15ColorConversionINS_4HWBAIfEENS_19BoundedGammaEncodedIfNS_15SRGBADescriptorEEEvE7convertERKS5_'/>
+<fun r='_ZN7WebCore15ColorConversionINS_19BoundedGammaEncodedIfNS_15SRGBADescriptorEEENS_4HWBAIfEEvE7convertERKS5_'/>
+<fun r='_ZN7WebCore15ColorConversionINS_4XYZAIfLNS_10WhitePointE0EEENS_3LabIfEEvE7convertERKS5_'/>
+<fun r='_ZN7WebCore15ColorConversionINS_3LabIfEENS_4XYZAIfLNS_10WhitePointE0EEEvE7convertERKS5_'/>
+<fun r='_ZN7WebCore15ColorConversionINS_4LCHAIfEENS_3LabIfEEvE7convertERKS4_'/>
+<fun r='_ZN7WebCore15ColorConversionINS_3LabIfEENS_4LCHAIfEEvE7convertERKS4_'/>

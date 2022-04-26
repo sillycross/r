@@ -1,0 +1,31 @@
+<dec f='include/xcb/xproto.h' l='8295' type='xcb_void_cookie_t xcb_warp_pointer_checked(xcb_connection_t * c, xcb_window_t src_window, xcb_window_t dst_window, int16_t src_x, int16_t src_y, uint16_t src_width, uint16_t src_height, int16_t dst_x, int16_t dst_y)'/>
+<doc f='include/xcb/xproto.h' l='8264'>/**
+ * @brief move mouse pointer
+ *
+ * @param c The connection
+ * @param src_window If \a src_window is not `XCB_NONE` (TODO), the move will only take place if the
+ * pointer is inside \a src_window and within the rectangle specified by (\a src_x,
+ * \a src_y, \a src_width, \a src_height). The rectangle coordinates are relative to
+ * \a src_window.
+ * @param dst_window If \a dst_window is not `XCB_NONE` (TODO), the pointer will be moved to the
+ * offsets (\a dst_x, \a dst_y) relative to \a dst_window. If \a dst_window is
+ * `XCB_NONE` (TODO), the pointer will be moved by the offsets (\a dst_x, \a dst_y)
+ * relative to the current position of the pointer.
+ * @return A cookie
+ *
+ * Moves the mouse pointer to the specified position.
+ * 
+ * If \a src_window is not `XCB_NONE` (TODO), the move will only take place if the
+ * pointer is inside \a src_window and within the rectangle specified by (\a src_x,
+ * \a src_y, \a src_width, \a src_height). The rectangle coordinates are relative to
+ * \a src_window.
+ * 
+ * If \a dst_window is not `XCB_NONE` (TODO), the pointer will be moved to the
+ * offsets (\a dst_x, \a dst_y) relative to \a dst_window. If \a dst_window is
+ * `XCB_NONE` (TODO), the pointer will be moved by the offsets (\a dst_x, \a dst_y)
+ * relative to the current position of the pointer.
+ *
+ * This form can be used only if the request will not cause
+ * a reply to be generated. Any returned error will be
+ * saved for handling by xcb_request_check().
+ */</doc>

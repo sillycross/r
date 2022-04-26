@@ -1,0 +1,29 @@
+<use f='include/gtk-3.0/gdk/gdkevents.h' l='137'/>
+<def f='include/gtk-3.0/gdk/gdkevents.h' l='1062' ll='1072'/>
+<size>56</size>
+<doc f='include/gtk-3.0/gdk/gdkevents.h' l='1044'>/**
+ * GdkEventOwnerChange:
+ * @type: the type of the event (%GDK_OWNER_CHANGE).
+ * @window: the window which received the event
+ * @send_event: %TRUE if the event was sent explicitly.
+ * @owner: the new owner of the selection, or %NULL if there is none
+ * @reason: the reason for the ownership change as a #GdkOwnerChange value
+ * @selection: the atom identifying the selection
+ * @time: the timestamp of the event
+ * @selection_time: the time at which the selection ownership was taken
+ *   over
+ *
+ * Generated when the owner of a selection changes. On X11, this
+ * information is only available if the X server supports the XFIXES
+ * extension.
+ *
+ * Since: 2.6
+ */</doc>
+<mbr r='_GdkEventOwnerChange::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventOwnerChange::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventOwnerChange::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventOwnerChange::owner' o='192' t='GdkWindow *'/>
+<mbr r='_GdkEventOwnerChange::reason' o='256' t='GdkOwnerChange'/>
+<mbr r='_GdkEventOwnerChange::selection' o='320' t='GdkAtom'/>
+<mbr r='_GdkEventOwnerChange::time' o='384' t='guint32'/>
+<mbr r='_GdkEventOwnerChange::selection_time' o='416' t='guint32'/>

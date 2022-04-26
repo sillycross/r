@@ -1,0 +1,10 @@
+<def f='WebKit/Source/WebCore/loader/ResourceLoadInfo.h' l='78' type='const uint64_t'/>
+<doc f='WebKit/Source/WebCore/loader/ResourceLoadInfo.h' l='71'>// The first 32 bits of a uint64_t action are used for the action location.
+// The next 16 bits are used for the flags (ResourceType and LoadType).
+// The next bit is used to mark actions that are from a rule with an if-domain.
+//     Actions from rules with unless-domain conditions are distinguished from
+//     rules with if-domain conditions by not having this bit set.
+//     Actions from rules with no conditions are put in the DFA without conditions.
+// The values -1 and -2 are used for removed and empty values in HashTables.</doc>
+<use f='WebKit/Source/WebCore/contentextensions/DFABytecodeCompiler.cpp' l='75' u='r' c='_ZN7WebCore17ContentExtensionsL24appendActionBytecodeSizeEm'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFABytecodeCompiler.cpp' l='83' u='r' c='_ZN7WebCore17ContentExtensions19DFABytecodeCompiler16emitAppendActionEm'/>

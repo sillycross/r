@@ -1,0 +1,6 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='149' type='void JSC::Heap::lastChanceToFinalize()'/>
+<dec f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='149' type='void JSC::Heap::lastChanceToFinalize()'/>
+<def f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='388' ll='472' type='void JSC::Heap::lastChanceToFinalize()'/>
+<doc f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='386'>// The VM is being destroyed and the collector will never run again.
+// Run all pending finalizers now because we won&apos;t get another chance.</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.cpp' l='634' u='c' c='_ZN3JSC2VMD1Ev'/>

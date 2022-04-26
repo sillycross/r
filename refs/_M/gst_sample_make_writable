@@ -1,0 +1,27 @@
+<dec f='include/gstreamer-1.0/gst/gstsample.h' l='155'/>
+<doc f='include/gstreamer-1.0/gst/gstsample.h' l='129'>/**
+ * gst_sample_make_writable:
+ * @sample: (transfer full): A #GstSample
+ *
+ * Returns a writable copy of @sample. If the source sample is
+ * already writable, this will simply return the same sample.
+ *
+ * Use this function to ensure that a sample can be safely modified before
+ * making changes to it, for example before calling gst_sample_set_buffer()
+ *
+ * If the reference count of the source sample @sample is exactly one, the caller
+ * is the sole owner and this function will return the sample object unchanged.
+ *
+ * If there is more than one reference on the object, a copy will be made using
+ * gst_sample_copy(). The passed-in @sample will be unreffed in that case, and the
+ * caller will now own a reference to the new returned sample object.
+ *
+ * In short, this function unrefs the sample in the argument and refs the sample
+ * that it returns. Don&apos;t access the argument after calling this function unless
+ * you have an additional reference to it.
+ *
+ * Returns: (transfer full): a writable sample which may or may not be the
+ *     same as @sample
+ *
+ * Since: 1.16
+ */</doc>

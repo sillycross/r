@@ -1,0 +1,18 @@
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCContext.cpp' l='947' ll='1016' type='JSCCheckSyntaxResult jsc_context_check_syntax(JSCContext * context, const char * code, gssize length, JSCCheckSyntaxMode mode, const char * uri, unsigned int lineNumber, JSCException ** exception)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCContext.cpp' l='930'>/**
+ * jsc_context_check_syntax:
+ * @context: a #JSCContext
+ * @code: a JavaScript script to check
+ * @length: length of @code, or -1 if @code is a nul-terminated string
+ * @mode: a #JSCCheckSyntaxMode
+ * @uri: the source URI
+ * @line_number: the starting line number
+ * @exception: (out) (optional) (transfer full): return location for a #JSCException, or %NULL to ignore
+ *
+ * Check the given @code in @context for syntax errors. The @line_number is the starting line number in @uri;
+ * the value is one-based so the first line is 1. @uri and @line_number are only used to fill the @exception.
+ * In case of errors @exception will be set to a new #JSCException with the details. You can pass %NULL to
+ * @exception to ignore the error details.
+ *
+ * Returns: a #JSCCheckSyntaxResult
+ */</doc>

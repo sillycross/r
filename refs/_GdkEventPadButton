@@ -1,0 +1,26 @@
+<use f='include/gtk-3.0/gdk/gdkevents.h' l='145'/>
+<def f='include/gtk-3.0/gdk/gdkevents.h' l='1294' ll='1302'/>
+<size>40</size>
+<doc f='include/gtk-3.0/gdk/gdkevents.h' l='1278'>/**
+ * GdkEventPadButton:
+ * @type: the type of the event (%GDK_PAD_BUTTON_PRESS or %GDK_PAD_BUTTON_RELEASE).
+ * @window: the window which received the event.
+ * @send_event: %TRUE if the event was sent explicitly.
+ * @time: the time of the event in milliseconds.
+ * @group: the pad group the button belongs to. A %GDK_SOURCE_TABLET_PAD device
+ *   may have one or more groups containing a set of buttons/rings/strips each.
+ * @button: The pad button that was pressed.
+ * @mode: The current mode of @group. Different groups in a %GDK_SOURCE_TABLET_PAD
+ *   device may have different current modes.
+ *
+ * Generated during %GDK_SOURCE_TABLET_PAD button presses and releases.
+ *
+ * Since: 3.22
+ */</doc>
+<mbr r='_GdkEventPadButton::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventPadButton::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventPadButton::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventPadButton::time' o='160' t='guint32'/>
+<mbr r='_GdkEventPadButton::group' o='192' t='guint'/>
+<mbr r='_GdkEventPadButton::button' o='224' t='guint'/>
+<mbr r='_GdkEventPadButton::mode' o='256' t='guint'/>

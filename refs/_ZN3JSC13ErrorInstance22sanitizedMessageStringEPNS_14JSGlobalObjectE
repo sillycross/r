@@ -1,0 +1,8 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ErrorInstance.h' l='84' type='WTF::String JSC::ErrorInstance::sanitizedMessageString(JSC::JSGlobalObject * )'/>
+<dec f='WebKit/Source/JavaScriptCore/runtime/ErrorInstance.h' l='84' type='WTF::String JSC::ErrorInstance::sanitizedMessageString(JSC::JSGlobalObject * )'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/ErrorInstance.cpp' l='150' ll='166' type='WTF::String JSC::ErrorInstance::sanitizedMessageString(JSC::JSGlobalObject * globalObject)'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ErrorInstance.cpp' l='208' u='c' c='_ZN3JSC13ErrorInstance17sanitizedToStringEPNS_14JSGlobalObjectE'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/ErrorInstance.cpp' l='147'>// Based on ErrorPrototype&apos;s errorProtoFuncToString(), but is modified to
+// have no observable side effects to the user (i.e. does not call proxies,
+// and getters).</doc>
+<use f='WebKit/Source/WebCore/bindings/js/JSDOMExceptionHandling.cpp' l='61' u='c' c='_ZN7WebCore31retrieveErrorMessageWithoutNameERN3JSC14JSGlobalObjectERNS0_2VMENS0_7JSValueERNS0_10CatchScopeE'/>

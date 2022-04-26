@@ -1,0 +1,19 @@
+<dec f='WebKit/Source/WTF/wtf/dtoa/fixed-dtoa.h' l='52' type='bool WTF::double_conversion::FastFixedDtoa(double v, int fractional_count, BufferReference&lt;char&gt; buffer, int * length, int * decimal_point)'/>
+<use f='WebKit/Source/WTF/wtf/dtoa/double-conversion.cc' l='406' u='c' c='_ZN3WTF17double_conversion23DoubleToStringConverter13DoubleToAsciiEdNS1_8DtoaModeEiPciPbPiS5_'/>
+<doc f='WebKit/Source/WTF/wtf/dtoa/fixed-dtoa.h' l='36'>// Produces digits necessary to print a given number with
+// &apos;fractional_count&apos; digits after the decimal point.
+// The buffer must be big enough to hold the result plus one terminating null
+// character.
+//
+// The produced digits might be too short in which case the caller has to fill
+// the gaps with &apos;0&apos;s.
+// Example: FastFixedDtoa(0.001, 5, ...) is allowed to return buffer = &quot;1&quot;, and
+// decimal_point = -2.
+// Halfway cases are rounded towards +/-Infinity (away from 0). The call
+// FastFixedDtoa(0.15, 2, ...) thus returns buffer = &quot;2&quot;, decimal_point = 0.
+// The returned buffer may contain digits that would be truncated from the
+// shortest representation of the input.
+//
+// This method only works for some parameters. If it can&apos;t handle the input it
+// returns false. The output is null-terminated when the function succeeds.</doc>
+<def f='WebKit/Source/WTF/wtf/dtoa/fixed-dtoa.cc' l='313' ll='406' type='bool WTF::double_conversion::FastFixedDtoa(double v, int fractional_count, BufferReference&lt;char&gt; buffer, int * length, int * decimal_point)'/>

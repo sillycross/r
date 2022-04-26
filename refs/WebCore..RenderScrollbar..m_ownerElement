@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderScrollbar.h' l='86' type='RefPtr&lt;WebCore::Element&gt;'/>
+<offset>1600</offset>
+<doc f='WebKit/Source/WebCore/rendering/RenderScrollbar.h' l='82'>// This Scrollbar(Widget) may outlive the DOM which created it (during tear down),
+    // so we keep a reference to the Element which caused this custom scrollbar creation.
+    // This will not create a reference cycle as the Widget tree is owned by our containing
+    // FrameView which this Element pointer can in no way keep alive. See webkit bug 80610.</doc>
+<use f='WebKit/Source/WebCore/rendering/RenderScrollbar.cpp' l='46' u='w' c='_ZN7WebCore15RenderScrollbarC1ERNS_14ScrollableAreaENS_20ScrollbarOrientationEPNS_7ElementEPNS_5FrameE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderScrollbar.cpp' l='78' u='m' c='_ZNK7WebCore15RenderScrollbar14owningRendererEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderScrollbar.cpp' l='79' u='m' c='_ZNK7WebCore15RenderScrollbar14owningRendererEv'/>

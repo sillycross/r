@@ -1,0 +1,36 @@
+<doc f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSObjectRef.h' l='242'>/*! 
+@typedef JSObjectHasInstanceCallback
+@abstract hasInstance The callback invoked when an object is used as the target of an &apos;instanceof&apos; expression.
+@param ctx The execution context to use.
+@param constructor The JSObject that is the target of the &apos;instanceof&apos; expression.
+@param possibleInstance The JSValue being tested to determine if it is an instance of constructor.
+@param exception A pointer to a JSValueRef in which to return an exception, if any.
+@result true if possibleInstance is an instance of constructor, otherwise false.
+@discussion If you named your function HasInstance, you would declare it like this:
+
+bool HasInstance(JSContextRef ctx, JSObjectRef constructor, JSValueRef possibleInstance, JSValueRef* exception);
+
+If your callback were invoked by the JavaScript expression &apos;someValue instanceof myObject&apos;, constructor would be set to myObject and possibleInstance would be set to someValue.
+
+If this callback is NULL, &apos;instanceof&apos; expressions that target your object will return false.
+
+Standard JavaScript practice calls for objects that implement the callAsConstructor callback to implement the hasInstance callback as well.
+*/</doc>
+<doc f='WebKit/Source/JavaScriptCore/API/JSObjectRef.h' l='242'>/*! 
+@typedef JSObjectHasInstanceCallback
+@abstract hasInstance The callback invoked when an object is used as the target of an &apos;instanceof&apos; expression.
+@param ctx The execution context to use.
+@param constructor The JSObject that is the target of the &apos;instanceof&apos; expression.
+@param possibleInstance The JSValue being tested to determine if it is an instance of constructor.
+@param exception A pointer to a JSValueRef in which to return an exception, if any.
+@result true if possibleInstance is an instance of constructor, otherwise false.
+@discussion If you named your function HasInstance, you would declare it like this:
+
+bool HasInstance(JSContextRef ctx, JSObjectRef constructor, JSValueRef possibleInstance, JSValueRef* exception);
+
+If your callback were invoked by the JavaScript expression &apos;someValue instanceof myObject&apos;, constructor would be set to myObject and possibleInstance would be set to someValue.
+
+If this callback is NULL, &apos;instanceof&apos; expressions that target your object will return false.
+
+Standard JavaScript practice calls for objects that implement the callAsConstructor callback to implement the hasInstance callback as well.
+*/</doc>

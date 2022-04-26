@@ -1,0 +1,33 @@
+<dec f='include/wayland-client-protocol.h' l='294' type='const struct wl_interface'/>
+<dec f='include/wayland-server-protocol.h' l='297' type='const struct wl_interface'/>
+<def f='include/wayland-server-protocol.h' l='1637' ll='1758'/>
+<size>40</size>
+<doc f='include/wayland-client-protocol.h' l='284'>/**
+ * @defgroup iface_wl_data_offer The wl_data_offer interface
+ *
+ * A wl_data_offer represents a piece of data offered for transfer
+ * by another client (the source client).  It is used by the
+ * copy-and-paste and drag-and-drop mechanisms.  The offer
+ * describes the different mime types that the data can be
+ * converted to and provides the mechanism for transferring the
+ * data directly from the source client.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='287'>/**
+ * @defgroup iface_wl_data_offer The wl_data_offer interface
+ *
+ * A wl_data_offer represents a piece of data offered for transfer
+ * by another client (the source client).  It is used by the
+ * copy-and-paste and drag-and-drop mechanisms.  The offer
+ * describes the different mime types that the data can be
+ * converted to and provides the mechanism for transferring the
+ * data directly from the source client.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='1633'>/**
+ * @ingroup iface_wl_data_offer
+ * @struct wl_data_offer_interface
+ */</doc>
+<mbr r='wl_data_offer_interface::accept' o='0' t='void (*)(struct wl_client *, struct wl_resource *, uint32_t, const char *)'/>
+<mbr r='wl_data_offer_interface::receive' o='64' t='void (*)(struct wl_client *, struct wl_resource *, const char *, int32_t)'/>
+<mbr r='wl_data_offer_interface::destroy' o='128' t='void (*)(struct wl_client *, struct wl_resource *)'/>
+<mbr r='wl_data_offer_interface::finish' o='192' t='void (*)(struct wl_client *, struct wl_resource *)'/>
+<mbr r='wl_data_offer_interface::set_actions' o='256' t='void (*)(struct wl_client *, struct wl_resource *, uint32_t, uint32_t)'/>

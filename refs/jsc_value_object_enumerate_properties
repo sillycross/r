@@ -1,0 +1,12 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.h' l='179' type='gchar ** jsc_value_object_enumerate_properties(JSCValue * value)'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='831' ll='863' type='char ** jsc_value_object_enumerate_properties(JSCValue * value)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='821'>/**
+ * jsc_value_object_enumerate_properties:
+ * @value: a #JSCValue
+ *
+ * Get the list of property names of @value. Only properties defined with %JSC_VALUE_PROPERTY_ENUMERABLE
+ * flag will be collected.
+ *
+ * Returns: (array zero-terminated=1) (transfer full) (nullable): a %NULL-terminated array of strings containing the
+ *    property names, or %NULL if @value doesn&apos;t have enumerable properties.  Use g_strfreev() to free.
+ */</doc>

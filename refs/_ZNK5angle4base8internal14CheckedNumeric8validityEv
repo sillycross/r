@@ -1,0 +1,9 @@
+<use f='WebKit/Source/ThirdParty/ANGLE/src/common/third_party/base/anglebase/numerics/safe_math.h' l='90' u='c' c='_ZNK5angle4base8internal14CheckedNumeric7IsValidEv'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/common/third_party/base/anglebase/numerics/safe_math.h' l='129' type='angle::base::internal::RangeConstraint angle::base::internal::CheckedNumeric::validity() const'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/common/third_party/base/anglebase/numerics/safe_math.h' l='122'>// validity() - DO NOT USE THIS IN EXTERNAL CODE - It is public right now for
+    // tests and to avoid a big matrix of friend operator overloads. But the
+    // values it returns are likely to change in the future.
+    // Returns: current validity state (i.e. valid, overflow, underflow, nan).
+    // TODO(jschuh): crbug.com/332611 Figure out and implement semantics for
+    // saturation/wrapping so we can expose this state consistently and implement
+    // saturated arithmetic.</doc>

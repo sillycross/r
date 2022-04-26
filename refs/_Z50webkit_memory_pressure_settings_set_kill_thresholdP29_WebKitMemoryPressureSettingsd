@@ -1,0 +1,16 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitMemoryPressureSettings.cpp' l='234' ll='241' type='void webkit_memory_pressure_settings_set_kill_threshold(WebKitMemoryPressureSettings * settings, gdouble value)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitMemoryPressureSettings.cpp' l='219'>/**
+ * webkit_memory_pressure_settings_set_kill_threshold:
+ * @settings: a #WebKitMemoryPressureSettings
+ * @value: fraction of the memory limit where the process will be killed because
+ *   of excessive memory usage.
+ *
+ * Sets @value as the fraction of the defined memory limit where the process will be
+ * killed.
+ *
+ * The threshold must be a value bigger or equal to 0. A value of 0 means that the process
+ * is never killed. If the threshold is not 0, then it must be bigger than the strict threshold
+ * defined in @settings. The threshold can also have values bigger than 1. The default value is 0.
+ *
+ * Since: 2.34
+ */</doc>

@@ -1,0 +1,14 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitInputMethodContext.cpp' l='472' ll='486' type='void webkit_input_method_context_notify_surrounding(WebKitInputMethodContext * context, const char * text, int length, unsigned int cursorIndex, unsigned int selectionIndex)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitInputMethodContext.cpp' l='459'>/**
+ * webkit_input_method_context_notify_surrounding:
+ * @context: a #WebKitInputMethodContext
+ * @text: text surrounding the insertion point
+ * @length: the length of @text, or -1 if @text is nul-terminated
+ * @cursor_index: the byte index of the insertion cursor within @text.
+ * @selection_index: the byte index of the selection cursor within @text.
+ *
+ * Notify @context that the context surrounding the cursor has changed.
+ * If there&apos;s no selection @selection_index is the same as @cursor_index.
+ *
+ * Since: 2.28
+ */</doc>

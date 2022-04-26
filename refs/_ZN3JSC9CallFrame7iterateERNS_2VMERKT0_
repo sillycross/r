@@ -1,0 +1,26 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CallFrame.h' l='274' ll='280' type='void JSC::CallFrame::iterate(JSC::VM &amp; vm, const Functor &amp; functor)'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CallFrame.h' l='269'>// CallFrame::iterate() expects a Functor that implements the following method:
+        //     StackVisitor::Status operator()(StackVisitor&amp;) const;
+        // FIXME: This method is improper. We rely on the fact that we can call it with a null
+        // receiver. We should always be using StackVisitor directly.
+        // It&apos;s only valid to call this from a non-wasm top frame.</doc>
+<def f='WebKit/Source/JavaScriptCore/interpreter/CallFrame.h' l='274' ll='280' type='void JSC::CallFrame::iterate(JSC::VM &amp; vm, const Functor &amp; functor)'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='2309' u='c' c='_ZN3JSCL17functionLLintTrueEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='2322' u='c' c='_ZN3JSCL23functionBaselineJITTrueEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<doc f='WebKit/Source/JavaScriptCore/interpreter/CallFrame.h' l='269'>// CallFrame::iterate() expects a Functor that implements the following method:
+        //     StackVisitor::Status operator()(StackVisitor&amp;) const;
+        // FIXME: This method is improper. We rely on the fact that we can call it with a null
+        // receiver. We should always be using StackVisitor directly.
+        // It&apos;s only valid to call this from a non-wasm top frame.</doc>
+<use f='WebKit/Source/JavaScriptCore/tools/VMInspector.cpp' l='340' u='c' c='_ZN3JSC11VMInspector13dumpCallFrameEPNS_2VMEPNS_9CallFrameEj'/>
+<use f='WebKit/Source/JavaScriptCore/tools/VMInspector.cpp' l='461' u='c' c='_ZN3JSC11VMInspector9dumpStackEPNS_2VMEPNS_9CallFrameEj'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/ScriptCallStackFactory.cpp' l='93' u='c' c='_ZN9Inspector21createScriptCallStackEPN3JSC14JSGlobalObjectEm'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/ScriptCallStackFactory.cpp' l='111' u='c' c='_ZN9Inspector31createScriptCallStackForConsoleEPN3JSC14JSGlobalObjectEm'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/ScriptCallStackFactory.cpp' l='115' u='c' c='_ZN9Inspector31createScriptCallStackForConsoleEPN3JSC14JSGlobalObjectEm'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSContextRef.cpp' l='329' u='c' c='JSContextCreateBacktrace'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2409' u='c' c='_ZN3JSC9CodeBlock18noticeIncomingCallEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FunctionPrototype.cpp' l='148' u='c' c='_ZN3JSCL17retrieveArgumentsERNS_2VMEPNS_9CallFrameEPNS_10JSFunctionE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FunctionPrototype.cpp' l='212' u='c' c='_ZN3JSCL22retrieveCallerFunctionERNS_2VMEPNS_9CallFrameEPNS_10JSFunctionE'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='1372' u='c' c='_ZL16functionJSCStackPN3JSC14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='2382' u='c' c='_ZN7WebCore9Internals14parserMetaDataEN3JSC7JSValueE'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSDOMWindowBase.cpp' l='314' u='c' c='_ZN7WebCore19responsibleDocumentERN3JSC2VMERNS0_9CallFrameE'/>

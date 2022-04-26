@@ -1,0 +1,23 @@
+<def f='include/wayland-client-protocol.h' l='3361' ll='3366' type='void wl_shell_surface_set_maximized(struct wl_shell_surface * wl_shell_surface, struct wl_output * output)'/>
+<doc f='include/wayland-client-protocol.h' l='3339'>/**
+ * @ingroup iface_wl_shell_surface
+ *
+ * Map the surface as a maximized surface.
+ *
+ * If an output parameter is given then the surface will be
+ * maximized on that output. If the client does not specify the
+ * output then the compositor will apply its policy - usually
+ * choosing the output on which the surface has the biggest surface
+ * area.
+ *
+ * The compositor will reply with a configure event telling
+ * the expected new surface size. The operation is completed
+ * on the next buffer attach to this surface.
+ *
+ * A maximized surface typically fills the entire output it is
+ * bound to, except for desktop elements such as panels. This is
+ * the main difference between a maximized shell surface and a
+ * fullscreen shell surface.
+ *
+ * The details depend on the compositor implementation.
+ */</doc>

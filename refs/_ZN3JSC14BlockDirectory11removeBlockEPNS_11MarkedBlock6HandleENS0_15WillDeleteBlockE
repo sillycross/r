@@ -1,0 +1,7 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/BlockDirectory.h' l='92' type='void JSC::BlockDirectory::removeBlock(MarkedBlock::Handle * , JSC::BlockDirectory::WillDeleteBlock  = WillDeleteBlock::No)'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/BlockDirectory.h' l='91'>// If WillDeleteBlock::Yes is passed then the block will be left in an invalid state. We do this, however, to avoid potentially paging in / decompressing old blocks to update their handle just before freeing them.</doc>
+<dec f='WebKit/Source/JavaScriptCore/heap/BlockDirectory.h' l='92' type='void JSC::BlockDirectory::removeBlock(MarkedBlock::Handle * , JSC::BlockDirectory::WillDeleteBlock  = WillDeleteBlock::No)'/>
+<doc f='WebKit/Source/JavaScriptCore/heap/BlockDirectory.h' l='91'>// If WillDeleteBlock::Yes is passed then the block will be left in an invalid state. We do this, however, to avoid potentially paging in / decompressing old blocks to update their handle just before freeing them.</doc>
+<def f='WebKit/Source/JavaScriptCore/heap/BlockDirectory.cpp' l='161' ll='179' type='void JSC::BlockDirectory::removeBlock(MarkedBlock::Handle * block, JSC::BlockDirectory::WillDeleteBlock willDelete = WillDeleteBlock::No)'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.cpp' l='79' u='c' c='_ZN3JSC11MarkedBlock6HandleD1Ev'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.cpp' l='317' u='c' c='_ZN3JSC11MarkedBlock6Handle19removeFromDirectoryEv'/>

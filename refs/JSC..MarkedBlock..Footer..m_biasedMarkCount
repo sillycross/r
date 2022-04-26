@@ -1,0 +1,20 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='271' type='int16_t'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='658' u='r' c='_ZNK3JSC11MarkedBlock12hasAnyMarkedEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='664' u='r' c='_ZN3JSC11MarkedBlock10noteMarkedEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='666' u='w' c='_ZN3JSC11MarkedBlock10noteMarkedEv'/>
+<offset>224</offset>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='267'>// The actual mark count can be computed by doing: m_biasedMarkCount - m_markCountBias. Note
+        // that this count is racy. It will accurately detect whether or not exactly zero things were
+        // marked, but if N things got marked, then this may report anything in the range [1, N] (or
+        // before unbiased, it would be [1 + m_markCountBias, N + m_markCountBias].)</doc>
+<dec f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='271' type='int16_t'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='658' u='r' c='_ZNK3JSC11MarkedBlock12hasAnyMarkedEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='664' u='r' c='_ZN3JSC11MarkedBlock10noteMarkedEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='666' u='w' c='_ZN3JSC11MarkedBlock10noteMarkedEv'/>
+<offset>224</offset>
+<doc f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='267'>// The actual mark count can be computed by doing: m_biasedMarkCount - m_markCountBias. Note
+        // that this count is racy. It will accurately detect whether or not exactly zero things were
+        // marked, but if N things got marked, then this may report anything in the range [1, N] (or
+        // before unbiased, it would be [1 + m_markCountBias, N + m_markCountBias].)</doc>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.cpp' l='303' u='w' c='_ZN3JSC11MarkedBlock17clearHasAnyMarkedEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.cpp' l='347' u='w' c='_ZN3JSC11MarkedBlock6Handle17didAddToDirectoryEPNS_14BlockDirectoryEj'/>

@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderBlock.h' l='362' type='void WebCore::RenderBlock::beginUpdateScrollInfoAfterLayoutTransaction()'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderBlock.h' l='359'>// Delay updating scrollbars until endAndCommitUpdateScrollInfoAfterLayoutTransaction() is called. These functions are used
+    // when a flexbox is laying out its descendants. If multiple calls are made to beginUpdateScrollInfoAfterLayoutTransaction()
+    // then endAndCommitUpdateScrollInfoAfterLayoutTransaction() will do nothing until it is called the same number of times.</doc>
+<def f='WebKit/Source/WebCore/rendering/RenderBlock.cpp' l='526' ll='533' type='void WebCore::RenderBlock::beginUpdateScrollInfoAfterLayoutTransaction()'/>
+<use f='WebKit/Source/WebCore/rendering/RenderDeprecatedFlexibleBox.cpp' l='408' u='c' c='_ZN7WebCore27RenderDeprecatedFlexibleBox19layoutHorizontalBoxEb'/>
+<use f='WebKit/Source/WebCore/rendering/RenderDeprecatedFlexibleBox.cpp' l='706' u='c' c='_ZN7WebCore27RenderDeprecatedFlexibleBox17layoutVerticalBoxEb'/>
+<use f='WebKit/Source/WebCore/rendering/RenderFlexibleBox.cpp' l='368' u='c' c='_ZN7WebCore17RenderFlexibleBox11layoutBlockEbNS_10LayoutUnitE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderGrid.cpp' l='194' u='c' c='_ZN7WebCore10RenderGrid11layoutBlockEbNS_10LayoutUnitE'/>

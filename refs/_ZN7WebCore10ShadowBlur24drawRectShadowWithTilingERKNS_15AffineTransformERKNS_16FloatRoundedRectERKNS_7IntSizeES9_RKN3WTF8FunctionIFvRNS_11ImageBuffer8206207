@@ -1,0 +1,34 @@
+<dec f='WebKit/Source/WebCore/platform/graphics/ShadowBlur.h' l='113' type='void WebCore::ShadowBlur::drawRectShadowWithTiling(const WebCore::AffineTransform &amp; , const WebCore::FloatRoundedRect &amp; shadowedRect, const WebCore::IntSize &amp; shadowTemplateSize, const WebCore::IntSize &amp; blurredEdgeSize, const WebCore::ShadowBlur::DrawImageCallback &amp; , const WebCore::ShadowBlur::FillRectCallback &amp; , const WebCore::ShadowBlur::LayerImageProperties &amp; )'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ShadowBlur.cpp' l='573' u='c' c='_ZN7WebCore10ShadowBlur14drawRectShadowERKNS_15AffineTransformERKNS_7IntRectERKNS_16FloatRoundedRectERKN3WTF8FunctionIFvRNS_11ImageBufferERKNS_10Float10042556'/>
+<def f='WebKit/Source/WebCore/platform/graphics/ShadowBlur.cpp' l='695' ll='715' type='void WebCore::ShadowBlur::drawRectShadowWithTiling(const WebCore::AffineTransform &amp; transform, const WebCore::FloatRoundedRect &amp; shadowedRect, const WebCore::IntSize &amp; templateSize, const WebCore::IntSize &amp; edgeSize, const WebCore::ShadowBlur::DrawImageCallback &amp; drawImage, const WebCore::ShadowBlur::FillRectCallback &amp; fillRect, const WebCore::ShadowBlur::LayerImageProperties &amp; layerImageProperties)'/>
+<doc f='WebKit/Source/WebCore/platform/graphics/ShadowBlur.cpp' l='663'>/*
+  These functions use tiling to improve the performance of the shadow
+  drawing of rounded rectangles. The code basically does the following
+  steps:
+
+     1. Calculate the size of the shadow template, a rectangle that
+     contains all the necessary tiles to draw the complete shadow.
+
+     2. If that size is smaller than the real rectangle render the new
+     template rectangle and its shadow in a new surface, in other case
+     render the shadow of the real rectangle in the destination
+     surface.
+
+     3. Calculate the sizes and positions of the tiles and their
+     destinations and use drawPattern to render the final shadow. The
+     code divides the rendering in 8 tiles:
+
+        1 | 2 | 3
+       -----------
+        4 |   | 5
+       -----------
+        6 | 7 | 8
+
+     The corners are directly copied from the template rectangle to the
+     real one and the side tiles are 1 pixel width, we use them as
+     tiles to cover the destination side. The corner tiles are bigger
+     than just the side of the rounded corner, we need to increase it
+     because the modifications caused by the corner over the blur
+     effect. We fill the central or outer part with solid color to complete
+     the shadow.
+ */</doc>

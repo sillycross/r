@@ -1,0 +1,51 @@
+<use f='include/gtk-3.0/gdk/gdkevents.h' l='129'/>
+<def f='include/gtk-3.0/gdk/gdkevents.h' l='801' ll='815'/>
+<size>96</size>
+<doc f='include/gtk-3.0/gdk/gdkevents.h' l='766'>/**
+ * GdkEventTouch:
+ * @type: the type of the event (%GDK_TOUCH_BEGIN, %GDK_TOUCH_UPDATE,
+ *   %GDK_TOUCH_END, %GDK_TOUCH_CANCEL)
+ * @window: the window which received the event
+ * @send_event: %TRUE if the event was sent explicitly.
+ * @time: the time of the event in milliseconds.
+ * @x: the x coordinate of the pointer relative to the window
+ * @y: the y coordinate of the pointer relative to the window
+ * @axes: @x, @y translated to the axes of @device, or %NULL if @device is
+ *   the mouse
+ * @state: (type GdkModifierType): a bit-mask representing the state of
+ *   the modifier keys (e.g. Control, Shift and Alt) and the pointer
+ *   buttons. See #GdkModifierType
+ * @sequence: the event sequence that the event belongs to
+ * @emulating_pointer: whether the event should be used for emulating
+ *   pointer event
+ * @device: the master device that the event originated from. Use
+ * gdk_event_get_source_device() to get the slave device.
+ * @x_root: the x coordinate of the pointer relative to the root of the
+ *   screen
+ * @y_root: the y coordinate of the pointer relative to the root of the
+ *   screen
+ *
+ * Used for touch events.
+ * @type field will be one of %GDK_TOUCH_BEGIN, %GDK_TOUCH_UPDATE,
+ * %GDK_TOUCH_END or %GDK_TOUCH_CANCEL.
+ *
+ * Touch events are grouped into sequences by means of the @sequence
+ * field, which can also be obtained with gdk_event_get_event_sequence().
+ * Each sequence begins with a %GDK_TOUCH_BEGIN event, followed by
+ * any number of %GDK_TOUCH_UPDATE events, and ends with a %GDK_TOUCH_END
+ * (or %GDK_TOUCH_CANCEL) event. With multitouch devices, there may be
+ * several active sequences at the same time.
+ */</doc>
+<mbr r='_GdkEventTouch::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventTouch::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventTouch::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventTouch::time' o='160' t='guint32'/>
+<mbr r='_GdkEventTouch::x' o='192' t='gdouble'/>
+<mbr r='_GdkEventTouch::y' o='256' t='gdouble'/>
+<mbr r='_GdkEventTouch::axes' o='320' t='gdouble *'/>
+<mbr r='_GdkEventTouch::state' o='384' t='guint'/>
+<mbr r='_GdkEventTouch::sequence' o='448' t='GdkEventSequence *'/>
+<mbr r='_GdkEventTouch::emulating_pointer' o='512' t='gboolean'/>
+<mbr r='_GdkEventTouch::device' o='576' t='GdkDevice *'/>
+<mbr r='_GdkEventTouch::x_root' o='640' t='gdouble'/>
+<mbr r='_GdkEventTouch::y_root' o='704' t='gdouble'/>

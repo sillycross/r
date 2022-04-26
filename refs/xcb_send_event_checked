@@ -1,0 +1,38 @@
+<dec f='include/xcb/xproto.h' l='7248' type='xcb_void_cookie_t xcb_send_event_checked(xcb_connection_t * c, uint8_t propagate, xcb_window_t destination, uint32_t event_mask, const char * event)'/>
+<doc f='include/xcb/xproto.h' l='7210'>/**
+ * @brief send an event
+ *
+ * @param c The connection
+ * @param propagate If \a propagate is true and no clients have selected any event on \a destination,
+ * the destination is replaced with the closest ancestor of \a destination for
+ * which some client has selected a type in \a event_mask and for which no
+ * intervening window has that type in its do-not-propagate-mask. If no such
+ * window exists or if the window is an ancestor of the focus window and
+ * `InputFocus` was originally specified as the destination, the event is not sent
+ * to any clients. Otherwise, the event is reported to every client selecting on
+ * the final destination any of the types specified in \a event_mask.
+ * @param destination The window to send this event to. Every client which selects any event within
+ * \a event_mask on \a destination will get the event.
+ * \n
+ * The special value `XCB_SEND_EVENT_DEST_POINTER_WINDOW` refers to the window
+ * that contains the mouse pointer.
+ * \n
+ * The special value `XCB_SEND_EVENT_DEST_ITEM_FOCUS` refers to the window which
+ * has the keyboard focus.
+ * @param event_mask Event_mask for determining which clients should receive the specified event.
+ * See \a destination and \a propagate.
+ * @param event The event to send to the specified \a destination.
+ * @return A cookie
+ *
+ * Identifies the \a destination window, determines which clients should receive
+ * the specified event and ignores any active grabs.
+ * 
+ * The \a event must be one of the core events or an event defined by an extension,
+ * so that the X server can correctly byte-swap the contents as necessary. The
+ * contents of \a event are otherwise unaltered and unchecked except for the
+ * `send_event` field which is forced to &apos;true&apos;.
+ *
+ * This form can be used only if the request will not cause
+ * a reply to be generated. Any returned error will be
+ * saved for handling by xcb_request_check().
+ */</doc>

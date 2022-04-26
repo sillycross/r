@@ -1,0 +1,37 @@
+<use f='WebKit/Source/WebCore/platform/MediaStrategy.h' l='42' c='_ZN7WebCore13MediaStrategy22createAudioDestinationERNS_15AudioIOCallbackERKN3WTF6StringEjjf'/>
+<use f='WebKit/Source/WebKit/WebProcess/GPU/media/WebMediaStrategy.h' l='42' c='_ZN6WebKit16WebMediaStrategy22createAudioDestinationERN7WebCore15AudioIOCallbackERKN3WTF6StringEjjf'/>
+<inh f='WebKit/WTF/Headers/wtf/ThreadSafeRefCounted.h' l='109' c='WTF::ThreadSafeRefCounted'/>
+<def f='WebKit/Source/WebCore/platform/audio/AudioDestination.h' l='46' ll='82'/>
+<use f='WebKit/Source/WebCore/platform/audio/AudioDestination.h' l='46'/>
+<use f='WebKit/Source/WebCore/platform/audio/AudioDestination.h' l='51' c='_ZN7WebCore16AudioDestination6createERNS_15AudioIOCallbackERKN3WTF6StringEjjf'/>
+<use f='WebKit/Source/WebKit/WebProcess/GPU/media/WebMediaStrategy.cpp' l='49' c='_ZN6WebKit16WebMediaStrategy22createAudioDestinationERN7WebCore15AudioIOCallbackERKN3WTF6StringEjjf'/>
+<size>24</size>
+<doc f='WebKit/Source/WebCore/platform/audio/AudioDestination.h' l='42'>// AudioDestination is an abstraction for audio hardware I/O.
+// The audio hardware periodically calls the AudioIOCallback render() method asking it to render/output the next render quantum of audio.
+// It optionally will pass in local/live audio input when it calls render().</doc>
+<fun r='_ZN7WebCore16AudioDestination6createERNS_15AudioIOCallbackERKN3WTF6StringEjjf'/>
+<fun r='_ZN7WebCore16AudioDestinationD1Ev'/>
+<fun r='_ZN7WebCore16AudioDestination13clearCallbackEv'/>
+<fun r='_ZN7WebCore16AudioDestination5startEON3WTF8FunctionIFvONS2_IFvvEEEEEEONS1_17CompletionHandlerIFvbEEE'/>
+<fun r='_ZN7WebCore16AudioDestination4stopEON3WTF17CompletionHandlerIFvbEEE'/>
+<fun r='_ZN7WebCore16AudioDestination9isPlayingEv'/>
+<fun r='_ZNK7WebCore16AudioDestination10sampleRateEv'/>
+<fun r='_ZN7WebCore16AudioDestination18hardwareSampleRateEv'/>
+<fun r='_ZNK7WebCore16AudioDestination15framesPerBufferEv'/>
+<fun r='_ZN7WebCore16AudioDestination15maxChannelCountEv'/>
+<fun r='_ZN7WebCore16AudioDestination18callRenderCallbackEPNS_8AudioBusES2_mRKNS_15AudioIOPositionE'/>
+<fun r='_ZN7WebCore16AudioDestinationC1ERNS_15AudioIOCallbackE'/>
+<mbr r='WebCore::AudioDestination::m_callbackLock' o='96' t='WTF::Lock'/>
+<mbr r='WebCore::AudioDestination::m_callback' o='128' t='WebCore::AudioIOCallback *'/>
+<fun r='_ZN7WebCore16AudioDestinationC1ERNS_15AudioIOCallbackE'/>
+<fun r='_ZN7WebCore16AudioDestination13clearCallbackEv'/>
+<fun r='_ZN7WebCore16AudioDestination18callRenderCallbackEPNS_8AudioBusES2_mRKNS_15AudioIOPositionE'/>
+<ovr f='WebKit/Source/WebCore/platform/audio/gstreamer/AudioDestinationGStreamer.h' l='29' c='WebCore::AudioDestinationGStreamer'/>
+<use f='WebKit/Source/WebCore/platform/audio/gstreamer/AudioDestinationGStreamer.h' l='29'/>
+<use f='WebKit/Source/WebCore/platform/audio/gstreamer/AudioDestinationGStreamer.cpp' l='101' c='_ZN7WebCore16AudioDestination6createERNS_15AudioIOCallbackERKN3WTF6StringEjjf'/>
+<use f='WebKit/Source/WebCore/platform/audio/gstreamer/AudioDestinationGStreamer.cpp' l='124' c='_ZN7WebCore25AudioDestinationGStreamerC1ERNS_15AudioIOCallbackEmf'/>
+<size>24</size>
+<fun r='_ZN7WebCore16AudioDestination6createERNS_15AudioIOCallbackERKN3WTF6StringEjjf'/>
+<fun r='_ZN7WebCore16AudioDestination18hardwareSampleRateEv'/>
+<fun r='_ZN7WebCore16AudioDestination15maxChannelCountEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/DefaultAudioDestinationNode.h' l='81'/>

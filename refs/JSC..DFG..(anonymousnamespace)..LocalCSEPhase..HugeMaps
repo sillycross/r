@@ -1,0 +1,16 @@
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='466' ll='505'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='660'/>
+<size>32</size>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='461'>// This is used only for huge basic blocks. Our usual CSE is quadratic complexity for # of DFG nodes in a basic block.
+    // HugeMaps model results conservatively to avoid an O(N^2) algorithm. In particular, we clear all the slots of the specified heap kind
+    // in ImpureMap instead of iterating slots and removing a matched slot. This change makes the complexity O(N).
+    // FIXME: We can make LargeMap O(N) without introducing conservative behavior if we track clobbering by hierarchical epochs.
+    // https://bugs.webkit.org/show_bug.cgi?id=200014</doc>
+<fun r='_ZN3JSC3DFG12_GLOBAL__N_113LocalCSEPhase8HugeMapsC1Ev'/>
+<fun r='_ZN3JSC3DFG12_GLOBAL__N_113LocalCSEPhase8HugeMaps5clearEv'/>
+<fun r='_ZN3JSC3DFG12_GLOBAL__N_113LocalCSEPhase8HugeMaps5writeENS0_12AbstractHeapE'/>
+<fun r='_ZN3JSC3DFG12_GLOBAL__N_113LocalCSEPhase8HugeMaps7addPureENS0_9PureValueEPNS0_4NodeE'/>
+<fun r='_ZN3JSC3DFG12_GLOBAL__N_113LocalCSEPhase8HugeMaps15findReplacementENS0_12HeapLocationE'/>
+<fun r='_ZN3JSC3DFG12_GLOBAL__N_113LocalCSEPhase8HugeMaps9addImpureERKNS0_12HeapLocationERKNS0_8LazyNodeE'/>
+<mbr r='JSC::DFG::(anonymousnamespace)::LocalCSEPhase::HugeMaps::m_pureMap' o='0' t='HashMap&lt;JSC::DFG::PureValue, JSC::DFG::Node *&gt;'/>
+<mbr r='JSC::DFG::(anonymousnamespace)::LocalCSEPhase::HugeMaps::m_impureMap' o='64' t='JSC::DFG::(anonymous namespace)::ImpureMap'/>

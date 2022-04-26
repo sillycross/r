@@ -1,0 +1,27 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DOMJITCallDOMGetterSnippet.h' l='46' type='bool'/>
+<offset>128</offset>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DOMJITCallDOMGetterSnippet.h' l='42'>// To look up DOMWrapper cache, GlobalObject is required.
+    // FIXME: Later, we will extend this snippet to represent the result type by DOMJIT::Signature.
+    // And after that, we will automatically pass a global object when the result type includes a DOM wrapper thing.
+    // https://bugs.webkit.org/show_bug.cgi?id=162980</doc>
+<dec f='WebKit/Source/JavaScriptCore/domjit/DOMJITCallDOMGetterSnippet.h' l='46' type='bool'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='1027' u='w' c='_ZN12_GLOBAL__N_112DOMJITGetter15DOMJITAttribute13callDOMGetterEv'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='1133' u='w' c='_ZN12_GLOBAL__N_121DOMJITGetterNoEffects15DOMJITAttribute13callDOMGetterEv'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='1235' u='w' c='_ZN12_GLOBAL__N_119DOMJITGetterComplex15DOMJITAttribute13callDOMGetterEv'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='1500' u='w' c='_ZN12_GLOBAL__N_124DOMJITGetterBaseJSObject15DOMJITAttribute13callDOMGetterEv'/>
+<offset>128</offset>
+<doc f='WebKit/Source/JavaScriptCore/domjit/DOMJITCallDOMGetterSnippet.h' l='42'>// To look up DOMWrapper cache, GlobalObject is required.
+    // FIXME: Later, we will extend this snippet to represent the result type by DOMJIT::Signature.
+    // And after that, we will automatically pass a global object when the result type includes a DOM wrapper thing.
+    // https://bugs.webkit.org/show_bug.cgi?id=162980</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='3962' u='r' c='_ZN3JSC3DFG14ByteCodeParser18handleDOMJITGetterENS_7OperandERKNS_12GetByVariantEPNS0_4NodeEjm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGFixupPhase.cpp' l='2682' u='r' c='_ZN3JSC3DFG10FixupPhase9fixupNodeEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/GetterSetterAccessCase.cpp' l='157' u='r' c='_ZN3JSC22GetterSetterAccessCase16emitDOMJITGetterERNS_21AccessGenerationStateEPKNS_6DOMJIT12GetterSetterENS_12X86Registers10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/GetterSetterAccessCase.cpp' l='164' u='r' c='_ZN3JSC22GetterSetterAccessCase16emitDOMJITGetterERNS_21AccessGenerationStateEPKNS_6DOMJIT12GetterSetterENS_12X86Registers10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/GetterSetterAccessCase.cpp' l='172' u='r' c='_ZN3JSC22GetterSetterAccessCase16emitDOMJITGetterERNS_21AccessGenerationStateEPKNS_6DOMJIT12GetterSetterENS_12X86Registers10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/GetterSetterAccessCase.cpp' l='206' u='r' c='_ZN3JSC22GetterSetterAccessCase16emitDOMJITGetterERNS_21AccessGenerationStateEPKNS_6DOMJIT12GetterSetterENS_12X86Registers10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='10633' u='r' c='_ZN3JSC3DFG14SpeculativeJIT20compileCallDOMGetterEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='14965' u='r' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB320compileCallDOMGetterEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='14973' u='r' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB320compileCallDOMGetterEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='14996' u='r' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB320compileCallDOMGetterEv'/>
+<use f='WebKit/Source/WebCore/domjit/JSNodeDOMJIT.cpp' l='122' u='w' c='_ZN7WebCore28compileNodeNodeTypeAttributeEv'/>

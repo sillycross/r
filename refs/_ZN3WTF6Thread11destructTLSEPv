@@ -1,0 +1,14 @@
+<dec f='WebKit/WTF/Headers/wtf/Threading.h' l='319' type='static void WTF::Thread::destructTLS(void * data)'/>
+<doc f='WebKit/WTF/Headers/wtf/Threading.h' l='314'>// This thread-specific destructor is called 2 times when thread terminates:
+    // - first, when all the other thread-specific destructors are called, it simply remembers it was &apos;destroyed once&apos;
+    // and (1) re-sets itself into the thread-specific slot or (2) constructs thread local value to call it again later.
+    // - second, after all thread-specific destructors were invoked, it gets called again - this time, we deref the
+    // Thread in the TLS, completing the cleanup.</doc>
+<dec f='WebKit/Source/WTF/wtf/Threading.h' l='319' type='static void WTF::Thread::destructTLS(void * data)'/>
+<doc f='WebKit/Source/WTF/wtf/Threading.h' l='314'>// This thread-specific destructor is called 2 times when thread terminates:
+    // - first, when all the other thread-specific destructors are called, it simply remembers it was &apos;destroyed once&apos;
+    // and (1) re-sets itself into the thread-specific slot or (2) constructs thread local value to call it again later.
+    // - second, after all thread-specific destructors were invoked, it gets called again - this time, we deref the
+    // Thread in the TLS, completing the cleanup.</doc>
+<use f='WebKit/Source/WTF/wtf/posix/ThreadingPOSIX.cpp' l='504' u='r' c='_ZN3WTF6Thread16initializeTLSKeyEv'/>
+<def f='WebKit/Source/WTF/wtf/posix/ThreadingPOSIX.cpp' l='522' ll='542' type='static void WTF::Thread::destructTLS(void * data)'/>

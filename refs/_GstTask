@@ -1,0 +1,26 @@
+<use f='include/gstreamer-1.0/gst/gsttask.h' l='49'/>
+<def f='include/gstreamer-1.0/gst/gsttask.h' l='134' ll='155'/>
+<size>200</size>
+<doc f='include/gstreamer-1.0/gst/gsttask.h' l='122'>/**
+ * GstTask:
+ * @state: the state of the task
+ * @cond: used to pause/resume the task
+ * @lock: The lock taken when iterating the task function
+ * @func: the function executed by this task
+ * @user_data: user_data passed to the task function
+ * @notify: GDestroyNotify for @user_data
+ * @running: a flag indicating that the task is running
+ *
+ * The #GstTask object.
+ */</doc>
+<mbr r='_GstTask::object' o='0' t='GstObject'/>
+<mbr r='_GstTask::state' o='704' t='GstTaskState'/>
+<mbr r='_GstTask::cond' o='768' t='GCond'/>
+<mbr r='_GstTask::lock' o='896' t='GRecMutex *'/>
+<mbr r='_GstTask::func' o='960' t='GstTaskFunction'/>
+<mbr r='_GstTask::user_data' o='1024' t='gpointer'/>
+<mbr r='_GstTask::notify' o='1088' t='GDestroyNotify'/>
+<mbr r='_GstTask::running' o='1152' t='gboolean'/>
+<mbr r='_GstTask::thread' o='1216' t='GThread *'/>
+<mbr r='_GstTask::priv' o='1280' t='GstTaskPrivate *'/>
+<mbr r='_GstTask::_gst_reserved' o='1344' t='gpointer [4]'/>

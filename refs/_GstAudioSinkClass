@@ -1,0 +1,28 @@
+<use f='include/gstreamer-1.0/gst/audio/gstaudiosink.h' l='43'/>
+<def f='include/gstreamer-1.0/gst/audio/gstaudiosink.h' l='76' ll='98'/>
+<size>928</size>
+<doc f='include/gstreamer-1.0/gst/audio/gstaudiosink.h' l='60'>/**
+ * GstAudioSinkClass:
+ * @parent_class: the parent class structure.
+ * @open: Open the device. No configuration needs to be done at this point.
+ *        This function is also used to check if the device is available.
+ * @prepare: Prepare the device to operate with the specified parameters.
+ * @unprepare: Undo operations done in prepare.
+ * @close: Close the device.
+ * @write: Write data to the device.
+ * @delay: Return how many frames are still in the device. This is used to
+ *         drive the synchronisation.
+ * @reset: Returns as quickly as possible from a write and flush any pending
+ *         samples from the device.
+ *
+ * #GstAudioSink class. Override the vmethods to implement functionality.
+ */</doc>
+<mbr r='_GstAudioSinkClass::parent_class' o='0' t='GstAudioBaseSinkClass'/>
+<mbr r='_GstAudioSinkClass::open' o='6720' t='gboolean (*)(GstAudioSink *)'/>
+<mbr r='_GstAudioSinkClass::prepare' o='6784' t='gboolean (*)(GstAudioSink *, GstAudioRingBufferSpec *)'/>
+<mbr r='_GstAudioSinkClass::unprepare' o='6848' t='gboolean (*)(GstAudioSink *)'/>
+<mbr r='_GstAudioSinkClass::close' o='6912' t='gboolean (*)(GstAudioSink *)'/>
+<mbr r='_GstAudioSinkClass::write' o='6976' t='gint (*)(GstAudioSink *, gpointer, guint)'/>
+<mbr r='_GstAudioSinkClass::delay' o='7040' t='guint (*)(GstAudioSink *)'/>
+<mbr r='_GstAudioSinkClass::reset' o='7104' t='void (*)(GstAudioSink *)'/>
+<mbr r='_GstAudioSinkClass::_gst_reserved' o='7168' t='gpointer [4]'/>

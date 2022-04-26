@@ -1,0 +1,12 @@
+<dec f='WebKit/Source/WebCore/css/CSSComputedStyleDeclaration.h' l='139' type='RefPtr&lt;WebCore::CSSValue&gt; WebCore::CSSComputedStyleDeclaration::getPropertyCSSValue(WebCore::CSSPropertyID , WebCore::EUpdateLayout  = UpdateLayout) const'/>
+<def f='WebKit/Source/WebCore/css/CSSComputedStyleDeclaration.cpp' l='2236' ll='2239' type='RefPtr&lt;WebCore::CSSValue&gt; WebCore::CSSComputedStyleDeclaration::getPropertyCSSValue(WebCore::CSSPropertyID propertyID, WebCore::EUpdateLayout updateLayout = UpdateLayout) const'/>
+<use f='WebKit/Source/WebCore/css/CSSComputedStyleDeclaration.cpp' l='4078' u='c' c='_ZNK7WebCore27CSSComputedStyleDeclaration16getPropertyValueENS_13CSSPropertyIDE'/>
+<use f='WebKit/Source/WebCore/css/CSSComputedStyleDeclaration.cpp' l='4243' u='c' c='_ZN7WebCore27CSSComputedStyleDeclaration19getPropertyCSSValueERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/css/CSSComputedStyleDeclaration.cpp' l='4288' u='c' c='_ZN7WebCore27CSSComputedStyleDeclaration27getPropertyCSSValueInternalENS_13CSSPropertyIDE'/>
+<doc f='WebKit/Source/WebCore/css/CSSComputedStyleDeclaration.cpp' l='2229'>// In CSS 2.1 the returned object should actually contain the &quot;used values&quot;
+// rather then the &quot;computed values&quot; (despite the name saying otherwise).
+//
+// See;
+// http://www.w3.org/TR/CSS21/cascade.html#used-value
+// http://www.w3.org/TR/DOM-Level-2-Style/css.html#CSS-CSSStyleDeclaration
+// https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle#Notes</doc>

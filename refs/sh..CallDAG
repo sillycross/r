@@ -1,0 +1,40 @@
+<inh f='WebKit/Source/ThirdParty/ANGLE/src/common/angleutils.h' l='43' c='angle::NonCopyable'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CallDAG.h' l='36' ll='73'/>
+<size>72</size>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CallDAG.h' l='21'>// The translator needs to analyze the the graph of the function calls
+// to run checks and analyses; since in GLSL recursion is not allowed
+// that graph is a DAG.
+// This class is used to precompute that function call DAG so that it
+// can be reused by multiple analyses.
+//
+// It stores a vector of function records, with one record per defined function.
+// Records are accessed by index but a function symbol id can be converted
+// to the index of the corresponding record. The records contain the AST node
+// of the function definition and the indices of the function&apos;s callees.
+//
+// In addition, records are in reverse topological order: a function F being
+// called by a function G will have index index(F) &lt; index(G), that way
+// depth-first analysis becomes analysis in the order of indices.</doc>
+<fun r='_ZN2sh7CallDAGC1Ev'/>
+<fun r='_ZN2sh7CallDAGD1Ev'/>
+<fun r='_ZN2sh7CallDAG4initEPNS_11TIntermNodeEPNS_12TDiagnosticsE'/>
+<fun r='_ZNK2sh7CallDAG9findIndexERKNS_15TSymbolUniqueIdE'/>
+<fun r='_ZNK2sh7CallDAG18getRecordFromIndexEm'/>
+<fun r='_ZNK2sh7CallDAG4sizeEv'/>
+<fun r='_ZN2sh7CallDAG5clearEv'/>
+<smbr r='sh::CallDAG::InvalidIndex' t='const size_t'/>
+<mbr r='sh::CallDAG::mRecords' o='0' t='std::vector&lt;Record&gt;'/>
+<mbr r='sh::CallDAG::mFunctionIdToIndex' o='192' t='std::map&lt;int, int&gt;'/>
+<fun r='_ZN2sh7CallDAGC1Ev'/>
+<fun r='_ZN2sh7CallDAGD1Ev'/>
+<smbr r='sh::CallDAG::InvalidIndex' t='const size_t'/>
+<fun r='_ZNK2sh7CallDAG9findIndexERKNS_15TSymbolUniqueIdE'/>
+<fun r='_ZNK2sh7CallDAG18getRecordFromIndexEm'/>
+<fun r='_ZNK2sh7CallDAG4sizeEv'/>
+<fun r='_ZN2sh7CallDAG5clearEv'/>
+<fun r='_ZN2sh7CallDAG4initEPNS_11TIntermNodeEPNS_12TDiagnosticsE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='265'/>
+<size>72</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='1319' c='_ZN2sh9TCompiler15UnusedPredicateC1EPKNS_7CallDAGEPKSt6vectorINS0_16FunctionMetadataESaIS6_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='1356'/>
+<size>72</size>

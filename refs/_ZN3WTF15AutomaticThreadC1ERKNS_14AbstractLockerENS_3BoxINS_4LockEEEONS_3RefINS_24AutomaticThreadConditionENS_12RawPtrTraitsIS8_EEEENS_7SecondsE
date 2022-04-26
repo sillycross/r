@@ -1,0 +1,12 @@
+<dec f='WebKit/WTF/Headers/wtf/AutomaticThread.h' l='134' type='void WTF::AutomaticThread::AutomaticThread(const WTF::AbstractLocker &amp; , Box&lt;WTF::Lock&gt; , Ref&lt;WTF::AutomaticThreadCondition&gt; &amp;&amp; , WTF::Seconds timeout = 10_s)'/>
+<doc f='WebKit/WTF/Headers/wtf/AutomaticThread.h' l='132'>// This logically creates the thread, but in reality the thread won&apos;t be created until someone
+    // calls AutomaticThreadCondition::notifyOne() or notifyAll().</doc>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmWorklist.cpp' l='66' u='c' c='_ZN3JSC4Wasm8Worklist6ThreadC1ERKN3WTF14AbstractLockerERS1_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='234' u='c' c='_ZN3JSC4Heap10HeapThreadC1ERKN3WTF14AbstractLockerERS0_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VMTraps.cpp' l='191' u='c' c='_ZN3JSC7VMTraps12SignalSenderC1ERKN3WTF14AbstractLockerERNS_2VME'/>
+<dec f='WebKit/Source/WTF/wtf/AutomaticThread.h' l='134' type='void WTF::AutomaticThread::AutomaticThread(const WTF::AbstractLocker &amp; , Box&lt;WTF::Lock&gt; , Ref&lt;WTF::AutomaticThreadCondition&gt; &amp;&amp; , WTF::Seconds timeout = 10_s)'/>
+<def f='WebKit/Source/WTF/wtf/AutomaticThread.cpp' l='107' ll='110' type='void WTF::AutomaticThread::AutomaticThread(const WTF::AbstractLocker &amp; locker, Box&lt;WTF::Lock&gt; lock, Ref&lt;WTF::AutomaticThreadCondition&gt; &amp;&amp; condition, WTF::Seconds timeout = 10_s)'/>
+<doc f='WebKit/Source/WTF/wtf/AutomaticThread.h' l='132'>// This logically creates the thread, but in reality the thread won&apos;t be created until someone
+    // calls AutomaticThreadCondition::notifyOne() or notifyAll().</doc>
+<use f='WebKit/Source/WTF/wtf/ParallelHelperPool.cpp' l='174' u='c' c='_ZN3WTF18ParallelHelperPool6ThreadC1ERKNS_14AbstractLockerERS0_'/>
+<use f='WebKit/Source/WTF/wtf/WorkerPool.cpp' l='36' u='c' c='_ZN3WTF10WorkerPool6WorkerC1ERKNS_14AbstractLockerERS0_NS_3BoxINS_4LockEEEONS_3RefINS_24AutomaticThreadConditionENS_12RawPtrTraitsISA_EEEENS_7SecondsE'/>

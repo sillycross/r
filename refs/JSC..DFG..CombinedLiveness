@@ -1,0 +1,16 @@
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGCombinedLiveness.h' l='43' ll='50'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGForAllKills.h' l='176' c='_ZN3JSC3DFG18forAllKillsInBlockERNS0_5GraphERKNS0_16CombinedLivenessEPNS0_10BasicBlockERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArgumentsEliminationPhase.cpp' l='486' c='_ZN3JSC3DFG12_GLOBAL__N_125ArgumentsEliminationPhase32eliminateCandidatesThatInterfereEv'/>
+<size>32</size>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGCombinedLiveness.h' l='38'>// WARNING: This currently does not reason about the liveness of shadow values. The execution
+// semantics of DFG SSA are that an Upsilon stores to the shadow value of a Phi, and the Phi loads
+// from that shadow value. Hence, the shadow values are like variables, and have liveness. The normal
+// liveness analysis will tell you about the liveness of shadow values. It&apos;s OK to ignore shadow
+// values if you treat Upsilon as an opaque escape, and all of the clients of CombinedLiveness do so.</doc>
+<fun r='_ZN3JSC3DFG16CombinedLivenessC1Ev'/>
+<fun r='_ZN3JSC3DFG16CombinedLivenessC1ERNS0_5GraphE'/>
+<mbr r='JSC::DFG::CombinedLiveness::liveAtHead' o='0' t='BlockMap&lt;JSC::DFG::NodeSet&gt;'/>
+<mbr r='JSC::DFG::CombinedLiveness::liveAtTail' o='128' t='BlockMap&lt;JSC::DFG::NodeSet&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='832' c='_ZN3JSC3DFG12_GLOBAL__N_128ObjectAllocationSinkingPhase14performSinkingEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='2656'/>
+<size>32</size>

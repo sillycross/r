@@ -1,0 +1,157 @@
+<def f='WebKit/WTF/Headers/wtf/Condition.h' l='43' ll='220'/>
+<use f='WebKit/WTF/Headers/wtf/Condition.h' l='44' c='_ZN3WTF9ConditionC1ERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/Condition.h' l='44' c='_ZN3WTF9ConditionaSERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/Condition.h' l='44' c='_ZN3WTF9ConditionaSERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/Condition.h' l='222'/>
+<use f='WebKit/WTF/Headers/wtf/AutomaticThread.h' l='96'/>
+<use f='WebKit/WTF/Headers/wtf/AutomaticThread.h' l='193'/>
+<use f='WebKit/WTF/Headers/wtf/AutomaticThread.h' l='194'/>
+<use f='WebKit/WTF/Headers/wtf/ParallelHelperPool.h' l='90'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='717'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='763'/>
+<size>1</size>
+<doc f='WebKit/WTF/Headers/wtf/Condition.h' l='35'>// This is a condition variable that is suitable for use with any lock-like object, including
+// our own WTF::Lock. It features standard wait()/notifyOne()/notifyAll() methods in addition to
+// a variety of wait-with-timeout methods. This includes methods that use WTF&apos;s own notion of
+// time, like wall-clock time (i.e. WallTime) and monotonic time (i.e. MonotonicTime). This is
+// a very efficient condition variable. It only requires one byte of memory. notifyOne() and
+// notifyAll() require just a load and branch for the fast case where no thread is waiting.
+// This condition variable, when used with WTF::Lock, can outperform a system condition variable
+// and lock by up to 58x.</doc>
+<fun r='_ZN3WTF9ConditionC1ERKS0_'/>
+<fun r='_ZN3WTF9ConditionC1Ev'/>
+<fun r='_ZN3WTF9Condition9waitUntilERT_RKNS_24TimeWithDynamicClockTypeE'/>
+<fun r='_ZN3WTF9Condition9waitUntilERNS_4LockERKNS_24TimeWithDynamicClockTypeE'/>
+<fun r='_ZN3WTF9Condition9waitUntilERT_RKNS_24TimeWithDynamicClockTypeERKT0_'/>
+<fun r='_ZN3WTF9Condition9waitUntilERNS_4LockERKNS_24TimeWithDynamicClockTypeERKT_'/>
+<fun r='_ZN3WTF9Condition7waitForERT_NS_7SecondsERKT0_'/>
+<fun r='_ZN3WTF9Condition7waitForERNS_4LockENS_7SecondsERKT_'/>
+<fun r='_ZN3WTF9Condition7waitForERT_NS_7SecondsE'/>
+<fun r='_ZN3WTF9Condition7waitForERNS_4LockENS_7SecondsE'/>
+<fun r='_ZN3WTF9Condition4waitERT_'/>
+<fun r='_ZN3WTF9Condition4waitERNS_4LockE'/>
+<fun r='_ZN3WTF9Condition4waitERT_RKT0_'/>
+<fun r='_ZN3WTF9Condition4waitERNS_4LockERKT_'/>
+<fun r='_ZN3WTF9Condition9notifyOneEv'/>
+<fun r='_ZN3WTF9Condition9notifyAllEv'/>
+<fun r='_ZN3WTF9Condition18waitUntilUncheckedERT_RKNS_24TimeWithDynamicClockTypeE'/>
+<fun r='_ZN3WTF9Condition18waitUntilUncheckedERT_RKNS_24TimeWithDynamicClockTypeERKT0_'/>
+<mbr r='WTF::Condition::m_hasWaiters' o='0' t='Atomic&lt;bool&gt;'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='421'/>
+<size>1</size>
+<use f='WebKit/WTF/Headers/wtf/SynchronizedFixedQueue.h' l='123'/>
+<size>1</size>
+<use f='WebKit/WTF/Headers/wtf/CrossThreadQueue.h' l='56'/>
+<size>1</size>
+<use f='WebKit/WTF/Headers/wtf/MessageQueue.h' l='82'/>
+<use f='WebKit/WTF/Headers/wtf/threads/BinarySemaphore.h' l='57'/>
+<size>1</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/WebResourceLoadStatisticsStore.cpp' l='63'/>
+<size>1</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheStorage.cpp' l='166'/>
+<size>1</size>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='717'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='763'/>
+<size>1</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmPlan.h' l='98'/>
+<size>1</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmWorklist.cpp' l='131'/>
+<size>1</size>
+<use f='WebKit/Source/JavaScriptCore/jit/ICStats.h' l='214'/>
+<size>1</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JITWorklist.h' l='125'/>
+<size>1</size>
+<use f='WebKit/Source/JavaScriptCore/disassembler/Disassembler.cpp' l='113'/>
+<size>1</size>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraintSolver.h' l='99'/>
+<size>1</size>
+<use f='WebKit/WTF/Headers/wtf/ReadWriteLock.h' l='65'/>
+<size>1</size>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='262'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='1968' c='_ZL24functionDollarAgentStartPN3JSC14JSGlobalObjectEPNS_9CallFrameE'/>
+<size>1</size>
+<def f='WebKit/Source/WTF/wtf/Condition.h' l='43' ll='220'/>
+<use f='WebKit/Source/WTF/wtf/Condition.h' l='44' c='_ZN3WTF9ConditionC1ERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/Condition.h' l='44' c='_ZN3WTF9ConditionaSERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/Condition.h' l='44' c='_ZN3WTF9ConditionaSERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/Condition.h' l='222'/>
+<use f='WebKit/Source/WTF/wtf/AutomaticThread.h' l='96'/>
+<use f='WebKit/Source/WTF/wtf/AutomaticThread.h' l='193'/>
+<use f='WebKit/Source/WTF/wtf/AutomaticThread.h' l='194'/>
+<size>1</size>
+<doc f='WebKit/Source/WTF/wtf/Condition.h' l='35'>// This is a condition variable that is suitable for use with any lock-like object, including
+// our own WTF::Lock. It features standard wait()/notifyOne()/notifyAll() methods in addition to
+// a variety of wait-with-timeout methods. This includes methods that use WTF&apos;s own notion of
+// time, like wall-clock time (i.e. WallTime) and monotonic time (i.e. MonotonicTime). This is
+// a very efficient condition variable. It only requires one byte of memory. notifyOne() and
+// notifyAll() require just a load and branch for the fast case where no thread is waiting.
+// This condition variable, when used with WTF::Lock, can outperform a system condition variable
+// and lock by up to 58x.</doc>
+<fun r='_ZN3WTF9ConditionC1ERKS0_'/>
+<fun r='_ZN3WTF9ConditionC1Ev'/>
+<fun r='_ZN3WTF9Condition9waitUntilERT_RKNS_24TimeWithDynamicClockTypeE'/>
+<fun r='_ZN3WTF9Condition9waitUntilERNS_4LockERKNS_24TimeWithDynamicClockTypeE'/>
+<fun r='_ZN3WTF9Condition9waitUntilERT_RKNS_24TimeWithDynamicClockTypeERKT0_'/>
+<fun r='_ZN3WTF9Condition9waitUntilERNS_4LockERKNS_24TimeWithDynamicClockTypeERKT_'/>
+<fun r='_ZN3WTF9Condition7waitForERT_NS_7SecondsERKT0_'/>
+<fun r='_ZN3WTF9Condition7waitForERNS_4LockENS_7SecondsERKT_'/>
+<fun r='_ZN3WTF9Condition7waitForERT_NS_7SecondsE'/>
+<fun r='_ZN3WTF9Condition7waitForERNS_4LockENS_7SecondsE'/>
+<fun r='_ZN3WTF9Condition4waitERT_'/>
+<fun r='_ZN3WTF9Condition4waitERNS_4LockE'/>
+<fun r='_ZN3WTF9Condition4waitERT_RKT0_'/>
+<fun r='_ZN3WTF9Condition4waitERNS_4LockERKT_'/>
+<fun r='_ZN3WTF9Condition9notifyOneEv'/>
+<fun r='_ZN3WTF9Condition9notifyAllEv'/>
+<fun r='_ZN3WTF9Condition18waitUntilUncheckedERT_RKNS_24TimeWithDynamicClockTypeE'/>
+<fun r='_ZN3WTF9Condition18waitUntilUncheckedERT_RKNS_24TimeWithDynamicClockTypeERKT0_'/>
+<mbr r='WTF::Condition::m_hasWaiters' o='0' t='Atomic&lt;bool&gt;'/>
+<use f='WebKit/Source/WTF/wtf/CrossThreadQueue.h' l='56'/>
+<size>1</size>
+<use f='WebKit/Source/WTF/wtf/threads/BinarySemaphore.h' l='57'/>
+<size>1</size>
+<use f='WebKit/Source/WTF/wtf/ParallelHelperPool.h' l='90'/>
+<size>1</size>
+<use f='WebKit/Source/WTF/wtf/ParallelJobsGeneric.h' l='69'/>
+<size>1</size>
+<use f='WebKit/Source/WTF/wtf/ReadWriteLock.h' l='65'/>
+<size>1</size>
+<use f='WebKit/Source/WTF/wtf/Seconds.cpp' l='88' c='_ZN3WTF5sleepENS_7SecondsE'/>
+<size>1</size>
+<use f='WebKit/Source/WTF/wtf/TimeWithDynamicClockType.cpp' l='127' c='_ZN3WTF5sleepERKNS_24TimeWithDynamicClockTypeE'/>
+<size>1</size>
+<use f='WebKit/Source/WTF/wtf/WorkQueue.cpp' l='134' c='_ZN3WTF9WorkQueue15concurrentApplyEmONS_8FunctionIFvmEEE'/>
+<use f='WebKit/Source/WTF/wtf/WorkQueue.cpp' l='152' c='_ZN3WTF9WorkQueue15concurrentApplyEmONS_8FunctionIFvmEEE'/>
+<size>1</size>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MainThreadNotifier.h' l='72' c='_ZN7WebCore18MainThreadNotifier13notifyAndWaitET_OT_'/>
+<size>1</size>
+<use f='WebKit/Source/WebCore/platform/audio/gstreamer/WebKitWebAudioSourceGStreamer.cpp' l='89'/>
+<size>1</size>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='502'/>
+<size>1</size>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/TextureMapperPlatformLayerProxy.h' l='90'/>
+<size>1</size>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/ImageDecoderGStreamer.h' l='119'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/ImageDecoderGStreamer.h' l='137'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/ImageDecoderGStreamer.h' l='140'/>
+<size>1</size>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='142'/>
+<size>1</size>
+<use f='WebKit/Source/WebCore/platform/AbortableTaskQueue.h' l='237'/>
+<size>1</size>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/WebKitMediaSourceGStreamer.cpp' l='187'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/WebKitMediaSourceGStreamer.cpp' l='188'/>
+<size>1</size>
+<use f='WebKit/Source/WebCore/platform/graphics/nicosia/NicosiaBuffer.h' l='74'/>
+<size>1</size>
+<use f='WebKit/Source/WebCore/platform/audio/ReverbConvolver.h' l='92'/>
+<size>1</size>
+<use f='WebKit/WTF/Headers/wtf/ParallelJobsGeneric.h' l='69'/>
+<size>1</size>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseTask.h' l='62'/>
+<size>1</size>
+<use f='WebKit/Source/WebCore/page/ResourceUsageThread.h' l='83'/>
+<size>1</size>
+<use f='WebKit/Source/WebCore/page/scrolling/ThreadedScrollingTree.h' l='107'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ThreadedScrollingTree.h' l='110'/>
+<size>1</size>

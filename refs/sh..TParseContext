@@ -1,0 +1,494 @@
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='245' c='_ZN2sh9TCompiler14setASTMetadataERKNS_13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='248' c='_ZN2sh9TCompiler18checkShaderVersionEPNS_13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='252' c='_ZN2sh9TCompiler19checkAndSimplifyASTEPNS_12TIntermBlockERKNS_13TParseContextEm'/>
+<inh f='WebKit/Source/ThirdParty/ANGLE/src/common/angleutils.h' l='43' c='angle::NonCopyable'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='33' ll='682'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='687' c='_ZN2sh14PaParseStringsEmPKPKcPKiPNS_13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='387' c='_ZN2sh9TCompiler15compileTreeImplEPKPKcmm'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='426' c='_ZN2sh9TCompiler18checkShaderVersionEPNS_13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='470' c='_ZN2sh9TCompiler14setASTMetadataERKNS_13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='520' c='_ZN2sh9TCompiler19checkAndSimplifyASTEPNS_12TIntermBlockERKNS_13TParseContextEm'/>
+<size>352</size>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='29'>//
+// The following are extra variables needed during parsing, grouped together so
+// they can be passed to the parser without needing a global.
+//</doc>
+<fun r='_ZN2sh13TParseContextC1ERNS_12TSymbolTableERSt3mapINS_10TExtensionENS_9TBehaviorESt4lessIS4_ESaISt4pairIKS4_S5_EEEj12ShShaderSpecmbPNS_12TDiagnosticsE11727258'/>
+<fun r='_ZN2sh13TParseContextD1Ev'/>
+<fun r='_ZN2sh13TParseContext30anyMultiviewExtensionAvailableEv'/>
+<fun r='_ZNK2sh13TParseContext15getPreprocessorEv'/>
+<fun r='_ZN2sh13TParseContext15getPreprocessorEv'/>
+<fun r='_ZNK2sh13TParseContext10getScannerEv'/>
+<fun r='_ZN2sh13TParseContext10setScannerEPv'/>
+<fun r='_ZNK2sh13TParseContext16getShaderVersionEv'/>
+<fun r='_ZNK2sh13TParseContext13getShaderTypeEv'/>
+<fun r='_ZNK2sh13TParseContext13getShaderSpecEv'/>
+<fun r='_ZNK2sh13TParseContext9numErrorsEv'/>
+<fun r='_ZN2sh13TParseContext5errorERKNS_10TSourceLocEPKcS5_'/>
+<fun r='_ZN2sh13TParseContext5errorERKNS_10TSourceLocEPKcRKNS_15ImmutableStringE'/>
+<fun r='_ZN2sh13TParseContext7warningERKNS_10TSourceLocEPKcS5_'/>
+<fun r='_ZN2sh13TParseContext15outOfRangeErrorEbRKNS_10TSourceLocEPKcS5_'/>
+<fun r='_ZNK2sh13TParseContext11getTreeRootEv'/>
+<fun r='_ZN2sh13TParseContext11setTreeRootEPNS_12TIntermBlockE'/>
+<fun r='_ZNK2sh13TParseContext24getFragmentPrecisionHighEv'/>
+<fun r='_ZN2sh13TParseContext31setFragmentPrecisionHighOnESSL1Eb'/>
+<fun r='_ZNK2sh13TParseContext29isEarlyFragmentTestsSpecifiedEv'/>
+<fun r='_ZN2sh13TParseContext19setLoopNestingLevelEi'/>
+<fun r='_ZN2sh13TParseContext20incrLoopNestingLevelEv'/>
+<fun r='_ZN2sh13TParseContext20decrLoopNestingLevelEv'/>
+<fun r='_ZN2sh13TParseContext22incrSwitchNestingLevelEv'/>
+<fun r='_ZN2sh13TParseContext22decrSwitchNestingLevelEv'/>
+<fun r='_ZNK2sh13TParseContext32isComputeShaderLocalSizeDeclaredEv'/>
+<fun r='_ZNK2sh13TParseContext25getComputeShaderLocalSizeEv'/>
+<fun r='_ZNK2sh13TParseContext11getNumViewsEv'/>
+<fun r='_ZN2sh13TParseContext24enterFunctionDeclarationEv'/>
+<fun r='_ZN2sh13TParseContext23exitFunctionDeclarationEv'/>
+<fun r='_ZNK2sh13TParseContext17declaringFunctionEv'/>
+<fun r='_ZN2sh13TParseContext16addScalarLiteralEPKNS_14TConstantUnionERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext16getNamedVariableERKNS_10TSourceLocERKNS_15ImmutableStringEPKNS_7TSymbolE'/>
+<fun r='_ZN2sh13TParseContext23parseVariableIdentifierERKNS_10TSourceLocERKNS_15ImmutableStringEPKNS_7TSymbolE'/>
+<fun r='_ZN2sh13TParseContext17parseVectorFieldsERKNS_10TSourceLocERKNS_15ImmutableStringEiPNS_7TVectorIiEE'/>
+<fun r='_ZN2sh13TParseContext11assignErrorERKNS_10TSourceLocEPKcRKNS_5TTypeES8_'/>
+<fun r='_ZN2sh13TParseContext12unaryOpErrorERKNS_10TSourceLocEPKcRKNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext13binaryOpErrorERKNS_10TSourceLocEPKcRKNS_5TTypeES8_'/>
+<fun r='_ZN2sh13TParseContext18checkIsNotReservedERKNS_10TSourceLocERKNS_15ImmutableStringE'/>
+<fun r='_ZN2sh13TParseContext23checkPrecisionSpecifiedERKNS_10TSourceLocENS_10TPrecisionENS_10TBasicTypeE'/>
+<fun r='_ZN2sh13TParseContext16checkCanBeLValueERKNS_10TSourceLocEPKcPNS_12TIntermTypedE'/>
+<fun r='_ZN2sh13TParseContext12checkIsConstEPNS_12TIntermTypedE'/>
+<fun r='_ZN2sh13TParseContext20checkIsScalarIntegerEPNS_12TIntermTypedEPKc'/>
+<fun r='_ZN2sh13TParseContext20checkIsAtGlobalLevelERKNS_10TSourceLocEPKc'/>
+<fun r='_ZN2sh13TParseContext25checkConstructorArgumentsERKNS_10TSourceLocERKNS_7TVectorIPNS_11TIntermNodeEEERKNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext21checkIsValidArraySizeERKNS_10TSourceLocEPNS_12TIntermTypedE'/>
+<fun r='_ZN2sh13TParseContext29checkIsValidQualifierForArrayERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<fun r='_ZN2sh13TParseContext27checkArrayElementIsNotArrayERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<fun r='_ZN2sh13TParseContext23checkArrayOfArraysInOutERKNS_10TSourceLocERKNS_11TPublicTypeERKNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext14checkIsNonVoidERKNS_10TSourceLocERKNS_15ImmutableStringERKNS_10TBasicTypeE'/>
+<fun r='_ZN2sh13TParseContext17checkIsScalarBoolERKNS_10TSourceLocEPKNS_12TIntermTypedE'/>
+<fun r='_ZN2sh13TParseContext17checkIsScalarBoolERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<fun r='_ZN2sh13TParseContext20checkIsNotOpaqueTypeERKNS_10TSourceLocERKNS_22TTypeSpecifierNonArrayEPKc'/>
+<fun r='_ZN2sh13TParseContext37checkDeclaratorLocationIsNotSpecifiedERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<fun r='_ZN2sh13TParseContext27checkLocationIsNotSpecifiedERKNS_10TSourceLocERKNS_16TLayoutQualifierE'/>
+<fun r='_ZN2sh13TParseContext34checkStd430IsForShaderStorageBlockERKNS_10TSourceLocERKNS_19TLayoutBlockStorageERKNS_10TQualifierE'/>
+<fun r='_ZN2sh13TParseContext30checkIsParameterQualifierValidERKNS_10TSourceLocERKNS_21TTypeQualifierBuilderEPNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext26checkCanUseOneOfExtensionsERKNS_10TSourceLocERKSt5arrayINS_10TExtensionEXT_EE'/>
+<fun r='_ZN2sh13TParseContext20checkCanUseExtensionERKNS_10TSourceLocENS_10TExtensionE'/>
+<fun r='_ZN2sh13TParseContext30declarationQualifierErrorCheckENS_10TQualifierERKNS_16TLayoutQualifierERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext29nonEmptyDeclarationErrorCheckERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext26emptyDeclarationErrorCheckERKNS_5TTypeERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext29checkLayoutQualifierSupportedERKNS_10TSourceLocERKNS_15ImmutableStringEi'/>
+<fun r='_ZN2sh13TParseContext32checkWorkGroupSizeIsNotSpecifiedERKNS_10TSourceLocERKNS_16TLayoutQualifierE'/>
+<fun r='_ZN2sh13TParseContext34functionCallRValueLValueErrorCheckEPKNS_9TFunctionEPNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh13TParseContext31checkInvariantVariableQualifierEbNS_10TQualifierERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext30checkInputOutputTypeIsValidES3ENS_10TQualifierERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext39checkLocalVariableConstStorageQualifierERKNS_21TQualifierWrapperBaseE'/>
+<fun r='_ZNK2sh13TParseContext6pragmaEv'/>
+<fun r='_ZNK2sh13TParseContext17extensionBehaviorEv'/>
+<fun r='_ZNK2sh13TParseContext18isExtensionEnabledENS_10TExtensionE'/>
+<fun r='_ZN2sh13TParseContext24handleExtensionDirectiveERKNS_10TSourceLocEPKcS5_'/>
+<fun r='_ZN2sh13TParseContext21handlePragmaDirectiveERKNS_10TSourceLocEPKcS5_b'/>
+<fun r='_ZN2sh13TParseContext18executeInitializerERKNS_10TSourceLocERKNS_15ImmutableStringEPNS_5TTypeEPNS_12TIntermTypedEPPNS_13TIntermBinaryE'/>
+<fun r='_ZN2sh13TParseContext23addConditionInitializerERKNS_11TPublicTypeERKNS_15ImmutableStringEPNS_12TIntermTypedERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext7addLoopENS_9TLoopTypeEPNS_11TIntermNodeES3_PNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext9addIfElseEPNS_12TIntermTypedENS_15TIntermNodePairERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext21addFullySpecifiedTypeEPNS_11TPublicTypeE'/>
+<fun r='_ZN2sh13TParseContext21addFullySpecifiedTypeERKNS_21TTypeQualifierBuilderERKNS_11TPublicTypeE'/>
+<fun r='_ZN2sh13TParseContext22parseSingleDeclarationERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringE'/>
+<fun r='_ZN2sh13TParseContext27parseSingleArrayDeclarationERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES5_RKNS_7TVectorIjEE'/>
+<fun r='_ZN2sh13TParseContext26parseSingleInitDeclarationERKNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES6_PNS_12TIntermTypedE'/>
+<fun r='_ZN2sh13TParseContext31parseSingleArrayInitDeclarationERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES5_RKNS_7TVectorIjEES5_PNS_12TIntermTypedE'/>
+<fun r='_ZN2sh13TParseContext31parseGlobalQualifierDeclarationERKNS_21TTypeQualifierBuilderERKNS_10TSourceLocERKNS_15ImmutableStringEPKNS_7TSymbolE'/>
+<fun r='_ZN2sh13TParseContext15parseDeclaratorERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringEPNS_18TIntermDeclarationE'/>
+<fun r='_ZN2sh13TParseContext20parseArrayDeclaratorERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES5_RKNS_7TVectorIjEEPNS_18TIntermDeclarationE'/>
+<fun r='_ZN2sh13TParseContext19parseInitDeclaratorERKNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES6_PNS_12TIntermTypedEPNS_18TIntermDeclarationE'/>
+<fun r='_ZN2sh13TParseContext24parseArrayInitDeclaratorERKNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES6_RKNS_7TVectorIjEES6_PNS_12TIntermTypedE2142086'/>
+<fun r='_ZN2sh13TParseContext17addEmptyStatementERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext30parseDefaultPrecisionQualifierENS_10TPrecisionERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext26parseGlobalLayoutQualifierERKNS_21TTypeQualifierBuilderE'/>
+<fun r='_ZN2sh13TParseContext31addFunctionPrototypeDeclarationERKNS_9TFunctionERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext21addFunctionDefinitionEPNS_24TIntermFunctionPrototypeEPNS_12TIntermBlockERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext29parseFunctionDefinitionHeaderERKNS_10TSourceLocEPKNS_9TFunctionEPPNS_24TIntermFunctionPrototypeE'/>
+<fun r='_ZN2sh13TParseContext23parseFunctionDeclaratorERKNS_10TSourceLocEPNS_9TFunctionE'/>
+<fun r='_ZN2sh13TParseContext19parseFunctionHeaderERKNS_11TPublicTypeERKNS_15ImmutableStringERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext21addNonConstructorFuncERKNS_15ImmutableStringEPKNS_7TSymbolE'/>
+<fun r='_ZN2sh13TParseContext18addConstructorFuncERKNS_11TPublicTypeE'/>
+<fun r='_ZN2sh13TParseContext24parseParameterDeclaratorERKNS_11TPublicTypeERKNS_15ImmutableStringERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext29parseParameterArrayDeclaratorERKNS_15ImmutableStringERKNS_10TSourceLocERKNS_7TVectorIjEES6_PNS_11TPublicTypeE'/>
+<fun r='_ZN2sh13TParseContext18addIndexExpressionEPNS_12TIntermTypedERKNS_10TSourceLocES2_'/>
+<fun r='_ZN2sh13TParseContext27addFieldSelectionExpressionEPNS_12TIntermTypedERKNS_10TSourceLocERKNS_15ImmutableStringES5_'/>
+<fun r='_ZN2sh13TParseContext21parseStructDeclaratorERKNS_15ImmutableStringERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext26parseStructArrayDeclaratorERKNS_15ImmutableStringERKNS_10TSourceLocEPKNS_7TVectorIjEE'/>
+<fun r='_ZN2sh13TParseContext34checkDoesNotHaveDuplicateFieldNameEN9__gnu_cxx17__normal_iteratorIPKPNS_6TFieldESt6vectorIS4_14pool_allocatorIS4_EEEESB_RKNS_157835982'/>
+<fun r='_ZN2sh13TParseContext18addStructFieldListEPNS_7TVectorIPNS_6TFieldEEERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext23combineStructFieldListsEPNS_7TVectorIPNS_6TFieldEEEPKS4_RKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext37addStructDeclaratorListWithQualifiersERKNS_21TTypeQualifierBuilderEPNS_11TPublicTypeEPKNS_7TVectorIPNS_11TDeclaratorEEE'/>
+<fun r='_ZN2sh13TParseContext23addStructDeclaratorListERKNS_11TPublicTypeEPKNS_7TVectorIPNS_11TDeclaratorEEE'/>
+<fun r='_ZN2sh13TParseContext12addStructureERKNS_10TSourceLocES3_RKNS_15ImmutableStringEPNS_7TVectorIPNS_6TFieldEEE'/>
+<fun r='_ZN2sh13TParseContext17addInterfaceBlockERKNS_21TTypeQualifierBuilderERKNS_10TSourceLocERKNS_15ImmutableStringEPNS_7TVectorIPNS_6TFieldEEES9_S6_PNS_12TIntermTypedES6_'/>
+<fun r='_ZN2sh13TParseContext14parseLocalSizeERKNS_15ImmutableStringERKNS_10TSourceLocEiS6_RKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEmPNS_13WorkGroupSizeE'/>
+<fun r='_ZN2sh13TParseContext13parseNumViewsEiRKNS_10TSourceLocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPi'/>
+<fun r='_ZN2sh13TParseContext16parseInvocationsEiRKNS_10TSourceLocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPi'/>
+<fun r='_ZN2sh13TParseContext16parseMaxVerticesEiRKNS_10TSourceLocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPi'/>
+<fun r='_ZN2sh13TParseContext25parseIndexLayoutQualifierEiRKNS_10TSourceLocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPi'/>
+<fun r='_ZN2sh13TParseContext20parseLayoutQualifierERKNS_15ImmutableStringERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext20parseLayoutQualifierERKNS_15ImmutableStringERKNS_10TSourceLocEiS6_'/>
+<fun r='_ZN2sh13TParseContext26createTypeQualifierBuilderERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext27parseGlobalStorageQualifierENS_10TQualifierERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext21parseVaryingQualifierERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext16parseInQualifierERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext17parseOutQualifierERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext19parseInOutQualifierERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext20joinLayoutQualifiersENS_16TLayoutQualifierES1_RKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext22enterStructDeclarationERKNS_10TSourceLocERKNS_15ImmutableStringE'/>
+<fun r='_ZN2sh13TParseContext21exitStructDeclarationEv'/>
+<fun r='_ZN2sh13TParseContext30checkIsBelowStructNestingLimitERKNS_10TSourceLocERKNS_6TFieldE'/>
+<fun r='_ZN2sh13TParseContext9addSwitchEPNS_12TIntermTypedEPNS_12TIntermBlockERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext7addCaseEPNS_12TIntermTypedERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext10addDefaultERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext12addUnaryMathE9TOperatorPNS_12TIntermTypedERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext18addUnaryMathLValueE9TOperatorPNS_12TIntermTypedERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext13addBinaryMathE9TOperatorPNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext26addBinaryMathBooleanResultE9TOperatorPNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext9addAssignE9TOperatorPNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext8addCommaEPNS_12TIntermTypedES2_RKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext9addBranchE9TOperatorRKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext9addBranchE9TOperatorPNS_12TIntermTypedERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext15appendStatementEPNS_12TIntermBlockEPNS_11TIntermNodeE'/>
+<fun r='_ZN2sh13TParseContext18checkTextureGatherEPNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh13TParseContext18checkTextureOffsetEPNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh13TParseContext41checkImageMemoryAccessForBuiltinFunctionsEPNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh13TParseContext45checkImageMemoryAccessForUserDefinedFunctionsEPKNS_9TFunctionEPKNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh13TParseContext33checkAtomicMemoryBuiltinFunctionsEPNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh13TParseContext20checkInterpolationFSEPNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh13TParseContext23addFunctionCallOrMethodEPNS_15TFunctionLookupERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext19addTernarySelectionEPNS_12TIntermTypedES2_S2_RKNS_10TSourceLocE'/>
+<fun r='_ZNK2sh13TParseContext28getGeometryShaderMaxVerticesEv'/>
+<fun r='_ZNK2sh13TParseContext28getGeometryShaderInvocationsEv'/>
+<fun r='_ZNK2sh13TParseContext35getGeometryShaderInputPrimitiveTypeEv'/>
+<fun r='_ZNK2sh13TParseContext36getGeometryShaderOutputPrimitiveTypeEv'/>
+<fun r='_ZNK2sh13TParseContext13getOutputTypeEv'/>
+<mbr r='sh::TParseContext::symbolTable' o='0' t='sh::TSymbolTable &amp;'/>
+<smbr r='sh::TParseContext::kAtomicCounterSize' t='const size_t'/>
+<smbr r='sh::TParseContext::kAtomicCounterArrayStride' t='const size_t'/>
+<fun r='_ZN2sh13TParseContext22markStaticReadIfSymbolEPNS_11TIntermNodeE'/>
+<fun r='_ZN2sh13TParseContext18checkIndexLessThanEbRKNS_10TSourceLocEiiPKc'/>
+<fun r='_ZN2sh13TParseContext15declareVariableERKNS_10TSourceLocERKNS_15ImmutableStringEPKNS_5TTypeEPPNS_9TVariableE'/>
+<fun r='_ZN2sh13TParseContext36checkCanBeDeclaredWithoutInitializerERKNS_10TSourceLocERKNS_15ImmutableStringEPNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext24parseParameterDeclaratorEPNS_5TTypeERKNS_15ImmutableStringERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext36checkIsValidTypeAndQualifierForArrayERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<fun r='_ZN2sh13TParseContext32atomicCounterQualifierErrorCheckERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext36isMultiplicationTypeCombinationValidE9TOperatorRKNS_5TTypeES4_'/>
+<fun r='_ZN2sh13TParseContext32checkOutParameterIsNotOpaqueTypeERKNS_10TSourceLocENS_10TQualifierERKNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext33checkInternalFormatIsNotSpecifiedERKNS_10TSourceLocENS_26TLayoutImageInternalFormatE'/>
+<fun r='_ZN2sh13TParseContext34checkMemoryQualifierIsNotSpecifiedERKNS_16TMemoryQualifierERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext38checkAtomicCounterOffsetDoesNotOverlapEbRKNS_10TSourceLocEPNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext33checkAtomicCounterOffsetAlignmentERKNS_10TSourceLocERKNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext24checkIndexIsNotSpecifiedERKNS_10TSourceLocEi'/>
+<fun r='_ZN2sh13TParseContext19checkBindingIsValidERKNS_10TSourceLocERKNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext26checkBindingIsNotSpecifiedERKNS_10TSourceLocEi'/>
+<fun r='_ZN2sh13TParseContext25checkOffsetIsNotSpecifiedERKNS_10TSourceLocEi'/>
+<fun r='_ZN2sh13TParseContext24checkImageBindingIsValidERKNS_10TSourceLocEii'/>
+<fun r='_ZN2sh13TParseContext26checkSamplerBindingIsValidERKNS_10TSourceLocEii'/>
+<fun r='_ZN2sh13TParseContext24checkBlockBindingIsValidERKNS_10TSourceLocERKNS_10TQualifierEii'/>
+<fun r='_ZN2sh13TParseContext32checkAtomicCounterBindingIsValidERKNS_10TSourceLocEi'/>
+<fun r='_ZN2sh13TParseContext27checkUniformLocationInRangeERKNS_10TSourceLocEiRKNS_16TLayoutQualifierE'/>
+<fun r='_ZN2sh13TParseContext29checkAttributeLocationInRangeERKNS_10TSourceLocEiRKNS_16TLayoutQualifierE'/>
+<fun r='_ZN2sh13TParseContext22checkYuvIsNotSpecifiedERKNS_10TSourceLocEb'/>
+<fun r='_ZN2sh13TParseContext37checkEarlyFragmentTestsIsNotSpecifiedERKNS_10TSourceLocEb'/>
+<fun r='_ZN2sh13TParseContext50checkUnsizedArrayConstructorArgumentDimensionalityERKNS_7TVectorIPNS_11TIntermNodeEEENS_5TTypeERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext24checkSingleTextureOffsetERKNS_10TSourceLocEPKNS_14TConstantUnionEmii'/>
+<fun r='_ZN2sh13TParseContext39checkGeometryShaderInputAndSetArraySizeERKNS_10TSourceLocERKNS_15ImmutableStringEPNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext22checkIsNotUnsizedArrayERKNS_10TSourceLocEPKcRKNS_15ImmutableStringEPNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext21addBinaryMathInternalE9TOperatorPNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext15createUnaryMathE9TOperatorPNS_12TIntermTypedERKNS_10TSourceLocEPKNS_9TFunctionE'/>
+<fun r='_ZN2sh13TParseContext9addMethodEPNS_15TFunctionLookupERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext14addConstructorEPNS_15TFunctionLookupERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext29addNonConstructorFunctionCallEPNS_15TFunctionLookupERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext24expressionOrFoldedResultEPNS_12TIntermTypedE'/>
+<fun r='_ZN2sh13TParseContext19binaryOpCommonCheckE9TOperatorPNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext31createPrototypeNodeFromFunctionERKNS_9TFunctionERKNS_10TSourceLocEb'/>
+<fun r='_ZN2sh13TParseContext36setAtomicCounterBindingDefaultOffsetERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext38checkPrimitiveTypeMatchesTypeQualifierERKNS_14TTypeQualifierE'/>
+<fun r='_ZN2sh13TParseContext39parseGeometryShaderInputLayoutQualifierERKNS_14TTypeQualifierE'/>
+<fun r='_ZN2sh13TParseContext40parseGeometryShaderOutputLayoutQualifierERKNS_14TTypeQualifierE'/>
+<fun r='_ZN2sh13TParseContext31setGeometryShaderInputArraySizeEjRKNS_10TSourceLocE'/>
+<mbr r='sh::TParseContext::mDeferredNonEmptyDeclarationErrorCheck' o='64' t='bool'/>
+<mbr r='sh::TParseContext::mShaderType' o='96' t='sh::GLenum'/>
+<mbr r='sh::TParseContext::mShaderSpec' o='128' t='ShShaderSpec'/>
+<mbr r='sh::TParseContext::mCompileOptions' o='192' t='ShCompileOptions'/>
+<mbr r='sh::TParseContext::mShaderVersion' o='256' t='int'/>
+<mbr r='sh::TParseContext::mTreeRoot' o='320' t='sh::TIntermBlock *'/>
+<mbr r='sh::TParseContext::mLoopNestingLevel' o='384' t='int'/>
+<mbr r='sh::TParseContext::mStructNestingLevel' o='416' t='int'/>
+<mbr r='sh::TParseContext::mSwitchNestingLevel' o='448' t='int'/>
+<mbr r='sh::TParseContext::mCurrentFunctionType' o='512' t='const sh::TType *'/>
+<mbr r='sh::TParseContext::mFunctionReturnsValue' o='576' t='bool'/>
+<mbr r='sh::TParseContext::mChecksPrecisionErrors' o='584' t='bool'/>
+<mbr r='sh::TParseContext::mFragmentPrecisionHighOnESSL1' o='592' t='bool'/>
+<mbr r='sh::TParseContext::mEarlyFragmentTestsSpecified' o='600' t='bool'/>
+<mbr r='sh::TParseContext::mDefaultUniformMatrixPacking' o='608' t='sh::TLayoutMatrixPacking'/>
+<mbr r='sh::TParseContext::mDefaultUniformBlockStorage' o='640' t='sh::TLayoutBlockStorage'/>
+<mbr r='sh::TParseContext::mDefaultBufferMatrixPacking' o='672' t='sh::TLayoutMatrixPacking'/>
+<mbr r='sh::TParseContext::mDefaultBufferBlockStorage' o='704' t='sh::TLayoutBlockStorage'/>
+<mbr r='sh::TParseContext::mHashErrMsg' o='768' t='sh::TString'/>
+<mbr r='sh::TParseContext::mDiagnostics' o='1024' t='sh::TDiagnostics *'/>
+<mbr r='sh::TParseContext::mDirectiveHandler' o='1088' t='sh::TDirectiveHandler'/>
+<mbr r='sh::TParseContext::mPreprocessor' o='1472' t='angle::pp::Preprocessor'/>
+<mbr r='sh::TParseContext::mScanner' o='1536' t='void *'/>
+<mbr r='sh::TParseContext::mMinProgramTexelOffset' o='1600' t='int'/>
+<mbr r='sh::TParseContext::mMaxProgramTexelOffset' o='1632' t='int'/>
+<mbr r='sh::TParseContext::mMinProgramTextureGatherOffset' o='1664' t='int'/>
+<mbr r='sh::TParseContext::mMaxProgramTextureGatherOffset' o='1696' t='int'/>
+<mbr r='sh::TParseContext::mComputeShaderLocalSizeDeclared' o='1728' t='bool'/>
+<mbr r='sh::TParseContext::mComputeShaderLocalSize' o='1760' t='sh::WorkGroupSize'/>
+<mbr r='sh::TParseContext::mNumViews' o='1856' t='int'/>
+<mbr r='sh::TParseContext::mMaxNumViews' o='1888' t='int'/>
+<mbr r='sh::TParseContext::mMaxImageUnits' o='1920' t='int'/>
+<mbr r='sh::TParseContext::mMaxCombinedTextureImageUnits' o='1952' t='int'/>
+<mbr r='sh::TParseContext::mMaxUniformLocations' o='1984' t='int'/>
+<mbr r='sh::TParseContext::mMaxUniformBufferBindings' o='2016' t='int'/>
+<mbr r='sh::TParseContext::mMaxVertexAttribs' o='2048' t='int'/>
+<mbr r='sh::TParseContext::mMaxAtomicCounterBindings' o='2080' t='int'/>
+<mbr r='sh::TParseContext::mMaxShaderStorageBufferBindings' o='2112' t='int'/>
+<mbr r='sh::TParseContext::mDeclaringFunction' o='2144' t='bool'/>
+<mbr r='sh::TParseContext::mAtomicCounterBindingStates' o='2176' t='std::map&lt;int, AtomicCounterBindingState&gt;'/>
+<mbr r='sh::TParseContext::mGeometryShaderInputPrimitiveType' o='2560' t='sh::TLayoutPrimitiveType'/>
+<mbr r='sh::TParseContext::mGeometryShaderOutputPrimitiveType' o='2592' t='sh::TLayoutPrimitiveType'/>
+<mbr r='sh::TParseContext::mGeometryShaderInvocations' o='2624' t='int'/>
+<mbr r='sh::TParseContext::mGeometryShaderMaxVertices' o='2656' t='int'/>
+<mbr r='sh::TParseContext::mMaxGeometryShaderInvocations' o='2688' t='int'/>
+<mbr r='sh::TParseContext::mMaxGeometryShaderMaxVertices' o='2720' t='int'/>
+<mbr r='sh::TParseContext::mFunctionBodyNewScope' o='2752' t='bool'/>
+<mbr r='sh::TParseContext::mOutputType' o='2784' t='ShShaderOutput'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang.h' l='15' c='_Z18glslang_initializePN2sh13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang.h' l='16' c='_Z16glslang_finalizePN2sh13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang.h' l='21' c='_Z12glslang_scanmPKPKcPKiPN2sh13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang.h' l='22' c='_Z13glslang_parsePN2sh13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='6414' c='_ZN2sh14PaParseStringsEmPKPKcPKiPNS_13TParseContextE'/>
+<size>352</size>
+<fun r='_ZN2sh13TParseContextC1ERNS_12TSymbolTableERSt3mapINS_10TExtensionENS_9TBehaviorESt4lessIS4_ESaISt4pairIKS4_S5_EEEj12ShShaderSpecmbPNS_12TDiagnosticsE11727258'/>
+<fun r='_ZN2sh13TParseContextD1Ev'/>
+<fun r='_ZN2sh13TParseContext30anyMultiviewExtensionAvailableEv'/>
+<fun r='_ZN2sh13TParseContext17parseVectorFieldsERKNS_10TSourceLocERKNS_15ImmutableStringEiPNS_7TVectorIiEE'/>
+<fun r='_ZN2sh13TParseContext5errorERKNS_10TSourceLocEPKcS5_'/>
+<fun r='_ZN2sh13TParseContext5errorERKNS_10TSourceLocEPKcRKNS_15ImmutableStringE'/>
+<fun r='_ZN2sh13TParseContext7warningERKNS_10TSourceLocEPKcS5_'/>
+<fun r='_ZN2sh13TParseContext15outOfRangeErrorEbRKNS_10TSourceLocEPKcS5_'/>
+<fun r='_ZN2sh13TParseContext11assignErrorERKNS_10TSourceLocEPKcRKNS_5TTypeES8_'/>
+<fun r='_ZN2sh13TParseContext12unaryOpErrorERKNS_10TSourceLocEPKcRKNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext13binaryOpErrorERKNS_10TSourceLocEPKcRKNS_5TTypeES8_'/>
+<fun r='_ZN2sh13TParseContext23checkPrecisionSpecifiedERKNS_10TSourceLocENS_10TPrecisionENS_10TBasicTypeE'/>
+<fun r='_ZN2sh13TParseContext22markStaticReadIfSymbolEPNS_11TIntermNodeE'/>
+<fun r='_ZN2sh13TParseContext16checkCanBeLValueERKNS_10TSourceLocEPKcPNS_12TIntermTypedE'/>
+<fun r='_ZN2sh13TParseContext12checkIsConstEPNS_12TIntermTypedE'/>
+<fun r='_ZN2sh13TParseContext20checkIsScalarIntegerEPNS_12TIntermTypedEPKc'/>
+<fun r='_ZN2sh13TParseContext20checkIsAtGlobalLevelERKNS_10TSourceLocEPKc'/>
+<fun r='_ZN2sh13TParseContext18checkIsNotReservedERKNS_10TSourceLocERKNS_15ImmutableStringE'/>
+<fun r='_ZN2sh13TParseContext25checkConstructorArgumentsERKNS_10TSourceLocERKNS_7TVectorIPNS_11TIntermNodeEEERKNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext14checkIsNonVoidERKNS_10TSourceLocERKNS_15ImmutableStringERKNS_10TBasicTypeE'/>
+<fun r='_ZN2sh13TParseContext17checkIsScalarBoolERKNS_10TSourceLocEPKNS_12TIntermTypedE'/>
+<fun r='_ZN2sh13TParseContext17checkIsScalarBoolERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<fun r='_ZN2sh13TParseContext20checkIsNotOpaqueTypeERKNS_10TSourceLocERKNS_22TTypeSpecifierNonArrayEPKc'/>
+<fun r='_ZN2sh13TParseContext37checkDeclaratorLocationIsNotSpecifiedERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<fun r='_ZN2sh13TParseContext27checkLocationIsNotSpecifiedERKNS_10TSourceLocERKNS_16TLayoutQualifierE'/>
+<fun r='_ZN2sh13TParseContext34checkStd430IsForShaderStorageBlockERKNS_10TSourceLocERKNS_19TLayoutBlockStorageERKNS_10TQualifierE'/>
+<fun r='_ZN2sh13TParseContext32checkOutParameterIsNotOpaqueTypeERKNS_10TSourceLocENS_10TQualifierERKNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext21checkIsValidArraySizeERKNS_10TSourceLocEPNS_12TIntermTypedE'/>
+<fun r='_ZN2sh13TParseContext29checkIsValidQualifierForArrayERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<fun r='_ZN2sh13TParseContext27checkArrayElementIsNotArrayERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<fun r='_ZN2sh13TParseContext23checkArrayOfArraysInOutERKNS_10TSourceLocERKNS_11TPublicTypeERKNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext36checkIsValidTypeAndQualifierForArrayERKNS_10TSourceLocERKNS_11TPublicTypeE'/>
+<fun r='_ZN2sh13TParseContext36checkCanBeDeclaredWithoutInitializerERKNS_10TSourceLocERKNS_15ImmutableStringEPNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext15declareVariableERKNS_10TSourceLocERKNS_15ImmutableStringEPKNS_5TTypeEPPNS_9TVariableE'/>
+<fun r='_ZN2sh13TParseContext30checkIsParameterQualifierValidERKNS_10TSourceLocERKNS_21TTypeQualifierBuilderEPNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext26checkCanUseOneOfExtensionsERKNS_10TSourceLocERKSt5arrayINS_10TExtensionEXT_EE'/>
+<fun r='_ZN2sh13TParseContext20checkCanUseExtensionERKNS_10TSourceLocENS_10TExtensionE'/>
+<fun r='_ZN2sh13TParseContext30declarationQualifierErrorCheckENS_10TQualifierERKNS_16TLayoutQualifierERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext32atomicCounterQualifierErrorCheckERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext26emptyDeclarationErrorCheckERKNS_5TTypeERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext29nonEmptyDeclarationErrorCheckERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext19checkBindingIsValidERKNS_10TSourceLocERKNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext29checkLayoutQualifierSupportedERKNS_10TSourceLocERKNS_15ImmutableStringEi'/>
+<fun r='_ZN2sh13TParseContext32checkWorkGroupSizeIsNotSpecifiedERKNS_10TSourceLocERKNS_16TLayoutQualifierE'/>
+<fun r='_ZN2sh13TParseContext33checkInternalFormatIsNotSpecifiedERKNS_10TSourceLocENS_26TLayoutImageInternalFormatE'/>
+<fun r='_ZN2sh13TParseContext24checkIndexIsNotSpecifiedERKNS_10TSourceLocEi'/>
+<fun r='_ZN2sh13TParseContext26checkBindingIsNotSpecifiedERKNS_10TSourceLocEi'/>
+<fun r='_ZN2sh13TParseContext25checkOffsetIsNotSpecifiedERKNS_10TSourceLocEi'/>
+<fun r='_ZN2sh13TParseContext24checkImageBindingIsValidERKNS_10TSourceLocEii'/>
+<fun r='_ZN2sh13TParseContext26checkSamplerBindingIsValidERKNS_10TSourceLocEii'/>
+<fun r='_ZN2sh13TParseContext24checkBlockBindingIsValidERKNS_10TSourceLocERKNS_10TQualifierEii'/>
+<fun r='_ZN2sh13TParseContext32checkAtomicCounterBindingIsValidERKNS_10TSourceLocEi'/>
+<fun r='_ZN2sh13TParseContext27checkUniformLocationInRangeERKNS_10TSourceLocEiRKNS_16TLayoutQualifierE'/>
+<fun r='_ZN2sh13TParseContext29checkAttributeLocationInRangeERKNS_10TSourceLocEiRKNS_16TLayoutQualifierE'/>
+<fun r='_ZN2sh13TParseContext22checkYuvIsNotSpecifiedERKNS_10TSourceLocEb'/>
+<fun r='_ZN2sh13TParseContext37checkEarlyFragmentTestsIsNotSpecifiedERKNS_10TSourceLocEb'/>
+<fun r='_ZN2sh13TParseContext34functionCallRValueLValueErrorCheckEPKNS_9TFunctionEPNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh13TParseContext31checkInvariantVariableQualifierEbNS_10TQualifierERKNS_10TSourceLocE'/>
+<fun r='_ZNK2sh13TParseContext18isExtensionEnabledENS_10TExtensionE'/>
+<fun r='_ZN2sh13TParseContext24handleExtensionDirectiveERKNS_10TSourceLocEPKcS5_'/>
+<fun r='_ZN2sh13TParseContext21handlePragmaDirectiveERKNS_10TSourceLocEPKcS5_b'/>
+<fun r='_ZNK2sh13TParseContext25getComputeShaderLocalSizeEv'/>
+<fun r='_ZN2sh13TParseContext16addScalarLiteralEPKNS_14TConstantUnionERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext16getNamedVariableERKNS_10TSourceLocERKNS_15ImmutableStringEPKNS_7TSymbolE'/>
+<fun r='_ZN2sh13TParseContext23parseVariableIdentifierERKNS_10TSourceLocERKNS_15ImmutableStringEPKNS_7TSymbolE'/>
+<fun r='_ZN2sh13TParseContext18executeInitializerERKNS_10TSourceLocERKNS_15ImmutableStringEPNS_5TTypeEPNS_12TIntermTypedEPPNS_13TIntermBinaryE'/>
+<fun r='_ZN2sh13TParseContext23addConditionInitializerERKNS_11TPublicTypeERKNS_15ImmutableStringEPNS_12TIntermTypedERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext7addLoopENS_9TLoopTypeEPNS_11TIntermNodeES3_PNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext9addIfElseEPNS_12TIntermTypedENS_15TIntermNodePairERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext21addFullySpecifiedTypeEPNS_11TPublicTypeE'/>
+<fun r='_ZN2sh13TParseContext21addFullySpecifiedTypeERKNS_21TTypeQualifierBuilderERKNS_11TPublicTypeE'/>
+<fun r='_ZN2sh13TParseContext30checkInputOutputTypeIsValidES3ENS_10TQualifierERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext39checkLocalVariableConstStorageQualifierERKNS_21TQualifierWrapperBaseE'/>
+<fun r='_ZN2sh13TParseContext34checkMemoryQualifierIsNotSpecifiedERKNS_16TMemoryQualifierERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext38checkAtomicCounterOffsetDoesNotOverlapEbRKNS_10TSourceLocEPNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext33checkAtomicCounterOffsetAlignmentERKNS_10TSourceLocERKNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext39checkGeometryShaderInputAndSetArraySizeERKNS_10TSourceLocERKNS_15ImmutableStringEPNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext22parseSingleDeclarationERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringE'/>
+<fun r='_ZN2sh13TParseContext27parseSingleArrayDeclarationERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES5_RKNS_7TVectorIjEE'/>
+<fun r='_ZN2sh13TParseContext26parseSingleInitDeclarationERKNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES6_PNS_12TIntermTypedE'/>
+<fun r='_ZN2sh13TParseContext31parseSingleArrayInitDeclarationERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES5_RKNS_7TVectorIjEES5_PNS_12TIntermTypedE'/>
+<fun r='_ZN2sh13TParseContext31parseGlobalQualifierDeclarationERKNS_21TTypeQualifierBuilderERKNS_10TSourceLocERKNS_15ImmutableStringEPKNS_7TSymbolE'/>
+<fun r='_ZN2sh13TParseContext15parseDeclaratorERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringEPNS_18TIntermDeclarationE'/>
+<fun r='_ZN2sh13TParseContext20parseArrayDeclaratorERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES5_RKNS_7TVectorIjEEPNS_18TIntermDeclarationE'/>
+<fun r='_ZN2sh13TParseContext19parseInitDeclaratorERKNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES6_PNS_12TIntermTypedEPNS_18TIntermDeclarationE'/>
+<fun r='_ZN2sh13TParseContext24parseArrayInitDeclaratorERKNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES6_RKNS_7TVectorIjEES6_PNS_12TIntermTypedE2142086'/>
+<fun r='_ZN2sh13TParseContext17addEmptyStatementERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext36setAtomicCounterBindingDefaultOffsetERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext30parseDefaultPrecisionQualifierENS_10TPrecisionERKNS_11TPublicTypeERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext38checkPrimitiveTypeMatchesTypeQualifierERKNS_14TTypeQualifierE'/>
+<fun r='_ZN2sh13TParseContext31setGeometryShaderInputArraySizeEjRKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext39parseGeometryShaderInputLayoutQualifierERKNS_14TTypeQualifierE'/>
+<fun r='_ZN2sh13TParseContext40parseGeometryShaderOutputLayoutQualifierERKNS_14TTypeQualifierE'/>
+<fun r='_ZN2sh13TParseContext26parseGlobalLayoutQualifierERKNS_21TTypeQualifierBuilderE'/>
+<fun r='_ZN2sh13TParseContext31createPrototypeNodeFromFunctionERKNS_9TFunctionERKNS_10TSourceLocEb'/>
+<fun r='_ZN2sh13TParseContext31addFunctionPrototypeDeclarationERKNS_9TFunctionERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext21addFunctionDefinitionEPNS_24TIntermFunctionPrototypeEPNS_12TIntermBlockERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext29parseFunctionDefinitionHeaderERKNS_10TSourceLocEPKNS_9TFunctionEPPNS_24TIntermFunctionPrototypeE'/>
+<fun r='_ZN2sh13TParseContext23parseFunctionDeclaratorERKNS_10TSourceLocEPNS_9TFunctionE'/>
+<fun r='_ZN2sh13TParseContext19parseFunctionHeaderERKNS_11TPublicTypeERKNS_15ImmutableStringERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext21addNonConstructorFuncERKNS_15ImmutableStringEPKNS_7TSymbolE'/>
+<fun r='_ZN2sh13TParseContext18addConstructorFuncERKNS_11TPublicTypeE'/>
+<fun r='_ZN2sh13TParseContext22checkIsNotUnsizedArrayERKNS_10TSourceLocEPKcRKNS_15ImmutableStringEPNS_5TTypeE'/>
+<fun r='_ZN2sh13TParseContext24parseParameterDeclaratorEPNS_5TTypeERKNS_15ImmutableStringERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext24parseParameterDeclaratorERKNS_11TPublicTypeERKNS_15ImmutableStringERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext29parseParameterArrayDeclaratorERKNS_15ImmutableStringERKNS_10TSourceLocERKNS_7TVectorIjEES6_PNS_11TPublicTypeE'/>
+<fun r='_ZN2sh13TParseContext50checkUnsizedArrayConstructorArgumentDimensionalityERKNS_7TVectorIPNS_11TIntermNodeEEENS_5TTypeERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext14addConstructorEPNS_15TFunctionLookupERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext17addInterfaceBlockERKNS_21TTypeQualifierBuilderERKNS_10TSourceLocERKNS_15ImmutableStringEPNS_7TVectorIPNS_6TFieldEEES9_S6_PNS_12TIntermTypedES6_'/>
+<fun r='_ZN2sh13TParseContext22enterStructDeclarationERKNS_10TSourceLocERKNS_15ImmutableStringE'/>
+<fun r='_ZN2sh13TParseContext21exitStructDeclarationEv'/>
+<fun r='_ZN2sh13TParseContext30checkIsBelowStructNestingLimitERKNS_10TSourceLocERKNS_6TFieldE'/>
+<fun r='_ZN2sh13TParseContext18addIndexExpressionEPNS_12TIntermTypedERKNS_10TSourceLocES2_'/>
+<fun r='_ZN2sh13TParseContext18checkIndexLessThanEbRKNS_10TSourceLocEiiPKc'/>
+<fun r='_ZN2sh13TParseContext27addFieldSelectionExpressionEPNS_12TIntermTypedERKNS_10TSourceLocERKNS_15ImmutableStringES5_'/>
+<fun r='_ZN2sh13TParseContext20parseLayoutQualifierERKNS_15ImmutableStringERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext14parseLocalSizeERKNS_15ImmutableStringERKNS_10TSourceLocEiS6_RKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEmPNS_13WorkGroupSizeE'/>
+<fun r='_ZN2sh13TParseContext13parseNumViewsEiRKNS_10TSourceLocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPi'/>
+<fun r='_ZN2sh13TParseContext16parseInvocationsEiRKNS_10TSourceLocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPi'/>
+<fun r='_ZN2sh13TParseContext16parseMaxVerticesEiRKNS_10TSourceLocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPi'/>
+<fun r='_ZN2sh13TParseContext25parseIndexLayoutQualifierEiRKNS_10TSourceLocERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPi'/>
+<fun r='_ZN2sh13TParseContext20parseLayoutQualifierERKNS_15ImmutableStringERKNS_10TSourceLocEiS6_'/>
+<fun r='_ZN2sh13TParseContext26createTypeQualifierBuilderERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext27parseGlobalStorageQualifierENS_10TQualifierERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext21parseVaryingQualifierERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext16parseInQualifierERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext17parseOutQualifierERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext19parseInOutQualifierERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext20joinLayoutQualifiersENS_16TLayoutQualifierES1_RKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext21parseStructDeclaratorERKNS_15ImmutableStringERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext26parseStructArrayDeclaratorERKNS_15ImmutableStringERKNS_10TSourceLocEPKNS_7TVectorIjEE'/>
+<fun r='_ZN2sh13TParseContext34checkDoesNotHaveDuplicateFieldNameEN9__gnu_cxx17__normal_iteratorIPKPNS_6TFieldESt6vectorIS4_14pool_allocatorIS4_EEEESB_RKNS_157835982'/>
+<fun r='_ZN2sh13TParseContext18addStructFieldListEPNS_7TVectorIPNS_6TFieldEEERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext23combineStructFieldListsEPNS_7TVectorIPNS_6TFieldEEEPKS4_RKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext37addStructDeclaratorListWithQualifiersERKNS_21TTypeQualifierBuilderEPNS_11TPublicTypeEPKNS_7TVectorIPNS_11TDeclaratorEEE'/>
+<fun r='_ZN2sh13TParseContext23addStructDeclaratorListERKNS_11TPublicTypeEPKNS_7TVectorIPNS_11TDeclaratorEEE'/>
+<fun r='_ZN2sh13TParseContext12addStructureERKNS_10TSourceLocES3_RKNS_15ImmutableStringEPNS_7TVectorIPNS_6TFieldEEE'/>
+<fun r='_ZN2sh13TParseContext9addSwitchEPNS_12TIntermTypedEPNS_12TIntermBlockERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext7addCaseEPNS_12TIntermTypedERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext10addDefaultERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext15createUnaryMathE9TOperatorPNS_12TIntermTypedERKNS_10TSourceLocEPKNS_9TFunctionE'/>
+<fun r='_ZN2sh13TParseContext12addUnaryMathE9TOperatorPNS_12TIntermTypedERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext18addUnaryMathLValueE9TOperatorPNS_12TIntermTypedERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext24expressionOrFoldedResultEPNS_12TIntermTypedE'/>
+<fun r='_ZN2sh13TParseContext19binaryOpCommonCheckE9TOperatorPNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext36isMultiplicationTypeCombinationValidE9TOperatorRKNS_5TTypeES4_'/>
+<fun r='_ZN2sh13TParseContext21addBinaryMathInternalE9TOperatorPNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext13addBinaryMathE9TOperatorPNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext26addBinaryMathBooleanResultE9TOperatorPNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext9addAssignE9TOperatorPNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext8addCommaEPNS_12TIntermTypedES2_RKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext9addBranchE9TOperatorRKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext9addBranchE9TOperatorPNS_12TIntermTypedERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext15appendStatementEPNS_12TIntermBlockEPNS_11TIntermNodeE'/>
+<fun r='_ZN2sh13TParseContext18checkTextureGatherEPNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh13TParseContext18checkTextureOffsetEPNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh13TParseContext24checkSingleTextureOffsetERKNS_10TSourceLocEPKNS_14TConstantUnionEmii'/>
+<fun r='_ZN2sh13TParseContext20checkInterpolationFSEPNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh13TParseContext33checkAtomicMemoryBuiltinFunctionsEPNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh13TParseContext41checkImageMemoryAccessForBuiltinFunctionsEPNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh13TParseContext45checkImageMemoryAccessForUserDefinedFunctionsEPKNS_9TFunctionEPKNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh13TParseContext23addFunctionCallOrMethodEPNS_15TFunctionLookupERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext9addMethodEPNS_15TFunctionLookupERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext29addNonConstructorFunctionCallEPNS_15TFunctionLookupERKNS_10TSourceLocE'/>
+<fun r='_ZN2sh13TParseContext19addTernarySelectionEPNS_12TIntermTypedES2_S2_RKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_tab_autogen.h' l='312' c='_Z7yyparsePN2sh13TParseContextEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='924' c='_ZL31is_extension_enabled_or_is_corePN2sh13TParseContextEiNS_10TExtensionEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='936' c='_ZL24ES2_reserved_ES3_keywordPN2sh13TParseContextEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='937' c='_ZL24ES2_keyword_ES3_reservedPN2sh13TParseContextEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='938' c='_ZL11ES3_keywordPN2sh13TParseContextEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='939' c='_ZL26ES3_reserved_ES3_1_keywordPN2sh13TParseContextEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='940' c='_ZL26ES2_reserved_ES3_1_keywordPN2sh13TParseContextEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='941' c='_ZL13ES3_1_keywordPN2sh13TParseContextEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='942' c='_ZL38ES2_reserved_ES2_extension_ES3_keywordPN2sh13TParseContextENS_10TExtensionEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='945' c='_ZL13ES3_extensionPN2sh13TParseContextENS_10TExtensionEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='946' c='_ZL42ES3_reserved_ES3_1_extension_ES3_2_keywordPN2sh13TParseContextENS_10TExtensionEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='949' c='_ZL26ES3_reserved_ES3_extensionPN2sh13TParseContextENS_10TExtensionEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='950' c='_ZL40ES3_reserved_ES3_extension_ES3_1_keywordPN2sh13TParseContextENS_10TExtensionEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='953' c='_ZL40ES3_reserved_ES3_extension_ES3_2_keywordPN2sh13TParseContextENS_10TExtensionEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='956' c='_ZL44ES3_1_reserved_ES3_1_extension_ES3_2_keywordPN2sh13TParseContextENS_10TExtensionEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='959' c='_ZL46ES3_1_reserved_ES3_1_extension_ES3_2_keyword_2PN2sh13TParseContextENS_10TExtensionES2_ii'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='964' c='_ZL52ES3_and_3_1_reserved_ES3_1_extension_ES3_2_keyword_2PN2sh13TParseContextENS_10TExtensionES2_ii'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='969' c='_ZL29WEBGL_video_texture_extensionPN2sh13TParseContextEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='970' c='_ZL13uint_constantPN2sh13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='971' c='_ZL12int_constantPN2sh13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='973' c='_ZL17floatsuffix_checkPN2sh13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='974' c='_ZL26yuvcscstandardext_constantPN2sh13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='979'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='979' c='_Z16yylex_init_extraPN2sh13TParseContextEPPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='979' c='_Z11yyget_extraPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='979' c='_Z11yyset_extraPN2sh13TParseContextEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='1249' c='_Z5yylexP7YYSTYPEPN2sh10TSourceLocEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='979' c='_Z11yyget_extraPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='979' c='_Z11yyset_extraPN2sh13TParseContextEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='979' c='_Z16yylex_init_extraPN2sh13TParseContextEPPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3346' c='_ZL31is_extension_enabled_or_is_corePN2sh13TParseContextEiNS_10TExtensionEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3360' c='_ZL24ES2_reserved_ES3_keywordPN2sh13TParseContextEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3372' c='_ZL24ES2_keyword_ES3_reservedPN2sh13TParseContextEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3384' c='_ZL26ES3_reserved_ES3_1_keywordPN2sh13TParseContextEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3402' c='_ZL11ES3_keywordPN2sh13TParseContextEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3417' c='_ZL26ES2_reserved_ES3_1_keywordPN2sh13TParseContextEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3429' c='_ZL13ES3_1_keywordPN2sh13TParseContextEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3445' c='_ZL29WEBGL_video_texture_extensionPN2sh13TParseContextEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3461' c='_ZL38ES2_reserved_ES2_extension_ES3_keywordPN2sh13TParseContextENS_10TExtensionEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3475' c='_ZL13ES3_extensionPN2sh13TParseContextENS_10TExtensionEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3491' c='_ZL42ES3_reserved_ES3_1_extension_ES3_2_keywordPN2sh13TParseContextENS_10TExtensionEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3514' c='_ZL26ES3_reserved_ES3_extensionPN2sh13TParseContextENS_10TExtensionEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3535' c='_ZL40ES3_reserved_ES3_extension_ES3_1_keywordPN2sh13TParseContextENS_10TExtensionEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3557' c='_ZL40ES3_reserved_ES3_extension_ES3_2_keywordPN2sh13TParseContextENS_10TExtensionEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3579' c='_ZL44ES3_1_reserved_ES3_1_extension_ES3_2_keywordPN2sh13TParseContextENS_10TExtensionEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3602' c='_ZL46ES3_1_reserved_ES3_1_extension_ES3_2_keyword_2PN2sh13TParseContextENS_10TExtensionES2_ii'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3631' c='_ZL52ES3_and_3_1_reserved_ES3_1_extension_ES3_2_keyword_2PN2sh13TParseContextENS_10TExtensionES2_ii'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3660' c='_ZL13uint_constantPN2sh13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3676' c='_ZL17floatsuffix_checkPN2sh13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3694' c='_Z7yyerrorPN2sh10TSourceLocEPNS_13TParseContextEPvPKc'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3699' c='_ZL12int_constantPN2sh13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3724' c='_ZL26yuvcscstandardext_constantPN2sh13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3742' c='_Z18glslang_initializePN2sh13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3752' c='_Z16glslang_finalizePN2sh13TParseContextE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_lex_autogen.cpp' l='3767' c='_Z12glslang_scanmPKPKcPKiPN2sh13TParseContextE'/>
+<size>352</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_tab_autogen.cpp' l='401' c='_Z7yyparsePN2sh13TParseContextEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_tab_autogen.cpp' l='408' c='_Z7yyerrorPN2sh10TSourceLocEPNS_13TParseContextEPvPKc'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_tab_autogen.cpp' l='2076' c='_ZL10yydestructPKciP7YYSTYPEPN2sh10TSourceLocEPNS3_13TParseContextEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_tab_autogen.cpp' l='2096' c='_Z7yyparsePN2sh13TParseContextEPv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/glslang_tab_autogen.cpp' l='5612' c='_Z13glslang_parsePN2sh13TParseContextE'/>
+<size>352</size>

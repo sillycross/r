@@ -1,0 +1,34 @@
+<dec f='include/wayland-client-protocol.h' l='218' type='const struct wl_interface'/>
+<use f='include/wayland-client-protocol.h' l='1830' u='a' c='_ZL18wl_shm_create_poolP6wl_shmii'/>
+<dec f='include/wayland-server-protocol.h' l='221' type='const struct wl_interface'/>
+<def f='include/wayland-server-protocol.h' l='1041' ll='1093'/>
+<size>24</size>
+<doc f='include/wayland-client-protocol.h' l='207'>/**
+ * @defgroup iface_wl_shm_pool The wl_shm_pool interface
+ *
+ * The wl_shm_pool object encapsulates a piece of memory shared
+ * between the compositor and client.  Through the wl_shm_pool
+ * object, the client can allocate shared memory wl_buffer objects.
+ * All objects created through the same pool share the same
+ * underlying mapped memory. Reusing the mapped memory avoids the
+ * setup/teardown overhead and is useful when interactively resizing
+ * a surface or for many small buffers.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='210'>/**
+ * @defgroup iface_wl_shm_pool The wl_shm_pool interface
+ *
+ * The wl_shm_pool object encapsulates a piece of memory shared
+ * between the compositor and client.  Through the wl_shm_pool
+ * object, the client can allocate shared memory wl_buffer objects.
+ * All objects created through the same pool share the same
+ * underlying mapped memory. Reusing the mapped memory avoids the
+ * setup/teardown overhead and is useful when interactively resizing
+ * a surface or for many small buffers.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='1037'>/**
+ * @ingroup iface_wl_shm_pool
+ * @struct wl_shm_pool_interface
+ */</doc>
+<mbr r='wl_shm_pool_interface::create_buffer' o='0' t='void (*)(struct wl_client *, struct wl_resource *, uint32_t, int32_t, int32_t, int32_t, int32_t, uint32_t)'/>
+<mbr r='wl_shm_pool_interface::destroy' o='64' t='void (*)(struct wl_client *, struct wl_resource *)'/>
+<mbr r='wl_shm_pool_interface::resize' o='128' t='void (*)(struct wl_client *, struct wl_resource *, int32_t)'/>

@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebCore/rendering/style/GridPosition.h' l='69' type='void WebCore::GridPosition::setSpanPosition(int position, const WTF::String &amp; namedGridLine)'/>
+<def f='WebKit/Source/WebCore/rendering/style/GridPosition.cpp' l='57' ll='62' type='void WebCore::GridPosition::setSpanPosition(int position, const WTF::String &amp; namedGridLine)'/>
+<use f='WebKit/Source/WebCore/rendering/style/GridPositionsResolver.cpp' l='168' u='c' c='_ZN7WebCoreL28adjustGridPositionsFromStyleERKNS_9RenderBoxENS_24GridTrackSizingDirectionERNS_12GridPositionES5_'/>
+<use f='WebKit/Source/WebCore/rendering/style/GridPositionsResolver.cpp' l='170' u='c' c='_ZN7WebCoreL28adjustGridPositionsFromStyleERKNS_9RenderBoxENS_24GridTrackSizingDirectionERNS_12GridPositionES5_'/>
+<use f='WebKit/Source/WebCore/style/StyleBuilderConverter.h' l='1090' u='c' c='_ZN7WebCore5Style16BuilderConverter18createGridPositionERKNS_8CSSValueERNS_12GridPositionE'/>
+<doc f='WebKit/Source/WebCore/rendering/style/GridPosition.cpp' l='54'>// &apos;span&apos; values cannot be negative, yet we reuse the &lt;integer&gt; position which can
+// be. This means that we have to convert the span position to an integer, losing
+// some precision here. It shouldn&apos;t be an issue in practice though.</doc>

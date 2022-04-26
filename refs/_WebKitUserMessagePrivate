@@ -1,0 +1,20 @@
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitUserMessage.h' l='43'/>
+<def f='WebKit/Source/WebKit/Shared/API/glib/WebKitUserMessage.cpp' l='54' ll='57'/>
+<size>48</size>
+<doc f='WebKit/Source/WebKit/Shared/API/glib/WebKitUserMessage.cpp' l='39'>/**
+ * SECTION: WebKitUserMessage
+ * @Short_description: A user message
+ * @Title: WebKitUserMessage
+ * @See_also: #WebKitWebContext, #WebKitWebView, #WebKitWebExtension, #WebKitWebPage
+ *
+ * A WebKitUserMessage is a message that can be used for the communication between the UI process
+ * and web extensions. A WebKitUserMessage always has a name, and it can also include parameters and
+ * UNIX file descriptors. Messages can be sent from a #WebKitWebContext to all #WebKitWebExtension&lt;!-- --&gt;s,
+ * from a #WebKitWebExtension to its corresponding #WebKitWebContext, and from a #WebKitWebView to its
+ * corresponding #WebKitWebPage (and vice versa). One to one messages can be replied to directly with
+ * webkit_user_message_send_reply().
+ *
+ * Since: 2.28
+ */</doc>
+<mbr r='_WebKitUserMessagePrivate::message' o='0' t='WebKit::UserMessage'/>
+<mbr r='_WebKitUserMessagePrivate::replyHandler' o='320' t='CompletionHandler&lt;void (WebKit::UserMessage &amp;&amp;)&gt;'/>

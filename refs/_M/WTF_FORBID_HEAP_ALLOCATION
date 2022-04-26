@@ -1,0 +1,65 @@
+<dec f='WebKit/WTF/Headers/wtf/ForbidHeapAllocation.h' l='37'/>
+<use f='WebKit/WTF/Headers/wtf/Locker.h' l='146' u='c'/>
+<use f='WebKit/WTF/Headers/wtf/NeverDestroyed.h' l='61' u='c'/>
+<use f='WebKit/WTF/Headers/wtf/NeverDestroyed.h' l='114' u='c'/>
+<use f='WebKit/WTF/Headers/wtf/ScopedLambda.h' l='47' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Options.h' l='80' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSCJSValue.h' l='701' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DisallowVMEntry.h' l='41' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DisallowScope.h' l='36' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DeferGC.h' l='37' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DeferGC.h' l='58' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DeferGC.h' l='77' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PropertySlot.h' l='99' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ArgList.h' l='34' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSString.h' l='381' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DeferTermination.h' l='37' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSPromise.h' l='91' u='c'/>
+<doc f='WebKit/WTF/Headers/wtf/ForbidHeapAllocation.h' l='28'>// We do not delete &quot;delete&quot; operators to allow classes to have a virtual destructor. The following code raises a compile error like &quot;error: attempt to use a deleted function&quot;.
+//
+//     class A {
+//     public:
+//         virtual ~A();
+//         void operator delete(void*) = delete;
+//         void operator delete[](void*) = delete;
+//     };
+//</doc>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCDeferralContext.h' l='37' u='c'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSExecState.h' l='44' u='c'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSExecState.h' l='164' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCJSValue.h' l='701' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Options.h' l='80' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DisallowScope.h' l='36' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/heap/DeferGC.h' l='37' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/heap/DeferGC.h' l='58' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/heap/DeferGC.h' l='77' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DisallowVMEntry.h' l='41' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/PropertySlot.h' l='99' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ArgList.h' l='34' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSString.h' l='381' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DeferTermination.h' l='37' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSPromise.h' l='91' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/heap/GCDeferralContext.h' l='37' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/ProtoCallFrame.h' l='36' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOpcodeOrigin.h' l='38' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrMatchingContextHolder.h' l='43' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/API/MarkedJSValueRefArray.h' l='40' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSONObject.cpp' l='82' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSONObject.cpp' l='600' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/CachedCall.h' l='40' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CachedTypes.cpp' l='76' u='c'/>
+<dec f='WebKit/Source/WTF/wtf/ForbidHeapAllocation.h' l='37'/>
+<use f='WebKit/Source/WTF/wtf/Locker.h' l='146' u='c'/>
+<use f='WebKit/Source/WTF/wtf/NeverDestroyed.h' l='61' u='c'/>
+<use f='WebKit/Source/WTF/wtf/NeverDestroyed.h' l='114' u='c'/>
+<doc f='WebKit/Source/WTF/wtf/ForbidHeapAllocation.h' l='28'>// We do not delete &quot;delete&quot; operators to allow classes to have a virtual destructor. The following code raises a compile error like &quot;error: attempt to use a deleted function&quot;.
+//
+//     class A {
+//     public:
+//         virtual ~A();
+//         void operator delete(void*) = delete;
+//         void operator delete[](void*) = delete;
+//     };
+//</doc>
+<use f='WebKit/Source/WTF/wtf/ScopedLambda.h' l='47' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/BifurcatedGraphicsContext.h' l='38' u='c'/>

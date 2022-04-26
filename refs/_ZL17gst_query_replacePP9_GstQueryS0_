@@ -1,0 +1,17 @@
+<def f='include/gstreamer-1.0/gst/gstquery.h' l='327' ll='331' type='gboolean gst_query_replace(GstQuery ** old_query, GstQuery * new_query)'/>
+<doc f='include/gstreamer-1.0/gst/gstquery.h' l='311'>/**
+ * gst_query_replace:
+ * @old_query: (inout) (transfer full) (nullable): pointer to a pointer to a
+ *     #GstQuery to be replaced.
+ * @new_query: (allow-none) (transfer none): pointer to a #GstQuery that will
+ *     replace the query pointed to by @old_query.
+ *
+ * Modifies a pointer to a #GstQuery to point to a different #GstQuery. The
+ * modification is done atomically (so this is useful for ensuring thread safety
+ * in some cases), and the reference counts are updated appropriately (the old
+ * query is unreffed, the new one is reffed).
+ *
+ * Either @new_query or the #GstQuery pointed to by @old_query may be %NULL.
+ *
+ * Returns: %TRUE if @new_query was different from @old_query
+ */</doc>

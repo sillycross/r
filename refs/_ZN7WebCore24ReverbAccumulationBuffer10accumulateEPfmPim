@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/WebCore/platform/audio/ReverbAccumulationBuffer.h' l='51' type='int WebCore::ReverbAccumulationBuffer::accumulate(float * source, size_t numberOfFrames, int * readIndex, size_t delayFrames)'/>
+<def f='WebKit/Source/WebCore/platform/audio/ReverbAccumulationBuffer.cpp' l='79' ll='106' type='int WebCore::ReverbAccumulationBuffer::accumulate(float * source, size_t numberOfFrames, int * readIndex, size_t delayFrames)'/>
+<use f='WebKit/Source/WebCore/platform/audio/ReverbConvolverStage.cpp' l='163' u='c' c='_ZN7WebCore20ReverbConvolverStage7processEPKfm'/>
+<doc f='WebKit/Source/WebCore/platform/audio/ReverbAccumulationBuffer.h' l='47'>// Each ReverbConvolverStage will accumulate its output at the appropriate delay from the read position.
+    // We need to pass in and update readIndex here, since each ReverbConvolverStage may be running in
+    // a different thread than the realtime thread calling ReadAndClear() and maintaining m_readIndex
+    // Returns the writeIndex where the accumulation took place</doc>

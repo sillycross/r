@@ -1,0 +1,33 @@
+<dec f='include/wayland-client-protocol.h' l='4417' type='void (*)(void *, struct wl_pointer *, uint32_t)'/>
+<offset>384</offset>
+<doc f='include/wayland-client-protocol.h' l='4386'>/**
+	 * axis source event
+	 *
+	 * Source information for scroll and other axes.
+	 *
+	 * This event does not occur on its own. It is sent before a
+	 * wl_pointer.frame event and carries the source information for
+	 * all events within that frame.
+	 *
+	 * The source specifies how this event was generated. If the source
+	 * is wl_pointer.axis_source.finger, a wl_pointer.axis_stop event
+	 * will be sent when the user lifts the finger off the device.
+	 *
+	 * If the source is wl_pointer.axis_source.wheel,
+	 * wl_pointer.axis_source.wheel_tilt or
+	 * wl_pointer.axis_source.continuous, a wl_pointer.axis_stop event
+	 * may or may not be sent. Whether a compositor sends an axis_stop
+	 * event for these sources is hardware-specific and
+	 * implementation-dependent; clients must not rely on receiving an
+	 * axis_stop event for these scroll sources and should treat scroll
+	 * sequences from these scroll sources as unterminated by default.
+	 *
+	 * This event is optional. If the source is unknown for a
+	 * particular axis event sequence, no event is sent. Only one
+	 * wl_pointer.axis_source event is permitted per frame.
+	 *
+	 * The order of wl_pointer.axis_discrete and wl_pointer.axis_source
+	 * is not guaranteed.
+	 * @param axis_source source of the axis event
+	 * @since 5
+	 */</doc>

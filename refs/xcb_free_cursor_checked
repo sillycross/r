@@ -1,0 +1,15 @@
+<dec f='include/xcb/xproto.h' l='11503' type='xcb_void_cookie_t xcb_free_cursor_checked(xcb_connection_t * c, xcb_cursor_t cursor)'/>
+<doc f='include/xcb/xproto.h' l='11488'>/**
+ * @brief Deletes a cursor
+ *
+ * @param c The connection
+ * @param cursor The cursor to destroy.
+ * @return A cookie
+ *
+ * Deletes the association between the cursor resource ID and the specified
+ * cursor. The cursor is freed when no other resource references it.
+ *
+ * This form can be used only if the request will not cause
+ * a reply to be generated. Any returned error will be
+ * saved for handling by xcb_request_check().
+ */</doc>

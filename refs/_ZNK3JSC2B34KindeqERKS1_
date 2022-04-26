@@ -1,0 +1,29 @@
+<def f='WebKit/Source/JavaScriptCore/b3/B3Kind.h' l='160' ll='165' type='bool JSC::B3::Kind::operator==(const JSC::B3::Kind &amp; other) const'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Kind.h' l='169' u='c' c='_ZNK3JSC2B34KindneERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Kind.h' l='190' u='c' c='_ZNK3JSC2B34Kind23isHashTableDeletedValueEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Kind.h' l='221' u='c' c='_ZN3JSC2B38KindHash5equalERKNS0_4KindES4_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueKey.h' l='100' u='c' c='_ZNK3JSC2B38ValueKeyeqERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3CCallValue.h' l='37' u='c' c='_ZN3JSC2B310CCallValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3SwitchValue.h' l='38' u='c' c='_ZN3JSC2B311SwitchValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3FenceValue.h' l='37' u='c' c='_ZN3JSC2B310FenceValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3PatchpointValue.h' l='40' u='c' c='_ZN3JSC2B315PatchpointValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ArgumentRegValue.h' l='37' u='c' c='_ZN3JSC2B316ArgumentRegValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3BottomTupleValue.h' l='36' u='c' c='_ZN3JSC2B316BottomTupleValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Const32Value.h' l='36' u='c' c='_ZN3JSC2B312Const32Value7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Const64Value.h' l='36' u='c' c='_ZN3JSC2B312Const64Value7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ConstDoubleValue.h' l='36' u='c' c='_ZN3JSC2B316ConstDoubleValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ConstFloatValue.h' l='36' u='c' c='_ZN3JSC2B315ConstFloatValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ExtractValue.h' l='36' u='c' c='_ZN3JSC2B312ExtractValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3UpsilonValue.h' l='36' u='c' c='_ZN3JSC2B312UpsilonValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3SlotBaseValue.h' l='43' u='c' c='_ZN3JSC2B313SlotBaseValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3VariableValue.h' l='38' u='c' c='_ZN3JSC2B313VariableValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3VariableValue.h' l='38' u='c' c='_ZN3JSC2B313VariableValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3WasmAddressValue.h' l='37' u='c' c='_ZN3JSC2B316WasmAddressValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3WasmBoundsCheckValue.h' l='37' u='c' c='_ZN3JSC2B320WasmBoundsCheckValue7acceptsENS0_4KindE'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/B3Kind.h' l='152'>// Rules for adding new properties:
+    // - Put the accessors here.
+    // - hasBlah() should check if the opcode allows for your property.
+    // - blah() returns a default value if !hasBlah()
+    // - setBlah() asserts if !hasBlah()
+    // - Try not to increase the size of Kind too much. But it wouldn&apos;t be the end of the
+    //   world if it bloated to 64 bits.</doc>

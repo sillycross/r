@@ -1,0 +1,122 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/BlockDirectoryBits.h' l='61' ll='227'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/BlockDirectory.h' l='157'/>
+<size>24</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/BlockDirectoryBits.h' l='47'>// FIXME: We defined canAllocateButNotEmpty and empty to be exclusive:
+//
+//     canAllocateButNotEmpty &amp; empty == 0
+//
+// Instead of calling it canAllocate and making it inclusive:
+//
+//     canAllocate &amp; empty == empty
+//
+// The latter is probably better. I&apos;ll leave it to a future bug to fix that, since breathing on
+// this code leads to regressions for days, and it&apos;s not clear that making this change would
+// improve perf since it would not change the collector&apos;s behavior, and either way the directory
+// has to look at both bitvectors.
+// https://bugs.webkit.org/show_bug.cgi?id=162121</doc>
+<smbr r='JSC::BlockDirectoryBits::bitsPerSegment' t='const unsigned int'/>
+<smbr r='JSC::BlockDirectoryBits::segmentShift' t='const unsigned int'/>
+<smbr r='JSC::BlockDirectoryBits::indexMask' t='const unsigned int'/>
+<smbr r='JSC::BlockDirectoryBits::numberOfBlockDirectoryBitKinds' t='const unsigned int'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits6isLiveEm'/>
+<fun r='_ZN3JSC18BlockDirectoryBits9setIsLiveEmb'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits4liveEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits4liveEv'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits7isEmptyEm'/>
+<fun r='_ZN3JSC18BlockDirectoryBits10setIsEmptyEmb'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits5emptyEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits5emptyEv'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits11isAllocatedEm'/>
+<fun r='_ZN3JSC18BlockDirectoryBits14setIsAllocatedEmb'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits9allocatedEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits9allocatedEv'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits24isCanAllocateButNotEmptyEm'/>
+<fun r='_ZN3JSC18BlockDirectoryBits27setIsCanAllocateButNotEmptyEmb'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits22canAllocateButNotEmptyEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits22canAllocateButNotEmptyEv'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits14isDestructibleEm'/>
+<fun r='_ZN3JSC18BlockDirectoryBits17setIsDestructibleEmb'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits12destructibleEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits12destructibleEv'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits6isEdenEm'/>
+<fun r='_ZN3JSC18BlockDirectoryBits9setIsEdenEmb'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits4edenEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits4edenEv'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits9isUnsweptEm'/>
+<fun r='_ZN3JSC18BlockDirectoryBits12setIsUnsweptEmb'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits7unsweptEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits7unsweptEv'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits17isMarkingNotEmptyEm'/>
+<fun r='_ZN3JSC18BlockDirectoryBits20setIsMarkingNotEmptyEmb'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits15markingNotEmptyEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits15markingNotEmptyEv'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits16isMarkingRetiredEm'/>
+<fun r='_ZN3JSC18BlockDirectoryBits19setIsMarkingRetiredEmb'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits14markingRetiredEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits14markingRetiredEv'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits7numBitsEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits6resizeEj'/>
+<fun r='_ZN3JSC18BlockDirectoryBits14forEachSegmentERKT_'/>
+<mbr r='JSC::BlockDirectoryBits::m_segments' o='0' t='Vector&lt;JSC::BlockDirectoryBits::Segment, 0, WTF::CrashOnOverflow, 2&gt;'/>
+<mbr r='JSC::BlockDirectoryBits::m_numBits' o='128' t='unsigned int'/>
+<def f='WebKit/Source/JavaScriptCore/heap/BlockDirectoryBits.h' l='61' ll='227'/>
+<use f='WebKit/Source/JavaScriptCore/heap/BlockDirectory.h' l='157'/>
+<size>24</size>
+<doc f='WebKit/Source/JavaScriptCore/heap/BlockDirectoryBits.h' l='47'>// FIXME: We defined canAllocateButNotEmpty and empty to be exclusive:
+//
+//     canAllocateButNotEmpty &amp; empty == 0
+//
+// Instead of calling it canAllocate and making it inclusive:
+//
+//     canAllocate &amp; empty == empty
+//
+// The latter is probably better. I&apos;ll leave it to a future bug to fix that, since breathing on
+// this code leads to regressions for days, and it&apos;s not clear that making this change would
+// improve perf since it would not change the collector&apos;s behavior, and either way the directory
+// has to look at both bitvectors.
+// https://bugs.webkit.org/show_bug.cgi?id=162121</doc>
+<smbr r='JSC::BlockDirectoryBits::bitsPerSegment' t='const unsigned int'/>
+<smbr r='JSC::BlockDirectoryBits::segmentShift' t='const unsigned int'/>
+<smbr r='JSC::BlockDirectoryBits::indexMask' t='const unsigned int'/>
+<smbr r='JSC::BlockDirectoryBits::numberOfBlockDirectoryBitKinds' t='const unsigned int'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits6isLiveEm'/>
+<fun r='_ZN3JSC18BlockDirectoryBits9setIsLiveEmb'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits4liveEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits4liveEv'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits7isEmptyEm'/>
+<fun r='_ZN3JSC18BlockDirectoryBits10setIsEmptyEmb'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits5emptyEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits5emptyEv'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits11isAllocatedEm'/>
+<fun r='_ZN3JSC18BlockDirectoryBits14setIsAllocatedEmb'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits9allocatedEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits9allocatedEv'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits24isCanAllocateButNotEmptyEm'/>
+<fun r='_ZN3JSC18BlockDirectoryBits27setIsCanAllocateButNotEmptyEmb'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits22canAllocateButNotEmptyEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits22canAllocateButNotEmptyEv'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits14isDestructibleEm'/>
+<fun r='_ZN3JSC18BlockDirectoryBits17setIsDestructibleEmb'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits12destructibleEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits12destructibleEv'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits6isEdenEm'/>
+<fun r='_ZN3JSC18BlockDirectoryBits9setIsEdenEmb'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits4edenEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits4edenEv'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits9isUnsweptEm'/>
+<fun r='_ZN3JSC18BlockDirectoryBits12setIsUnsweptEmb'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits7unsweptEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits7unsweptEv'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits17isMarkingNotEmptyEm'/>
+<fun r='_ZN3JSC18BlockDirectoryBits20setIsMarkingNotEmptyEmb'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits15markingNotEmptyEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits15markingNotEmptyEv'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits16isMarkingRetiredEm'/>
+<fun r='_ZN3JSC18BlockDirectoryBits19setIsMarkingRetiredEmb'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits14markingRetiredEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits14markingRetiredEv'/>
+<fun r='_ZNK3JSC18BlockDirectoryBits7numBitsEv'/>
+<fun r='_ZN3JSC18BlockDirectoryBits6resizeEj'/>
+<fun r='_ZN3JSC18BlockDirectoryBits14forEachSegmentERKT_'/>
+<mbr r='JSC::BlockDirectoryBits::m_segments' o='0' t='Vector&lt;JSC::BlockDirectoryBits::Segment, 0, WTF::CrashOnOverflow, 2&gt;'/>
+<mbr r='JSC::BlockDirectoryBits::m_numBits' o='128' t='unsigned int'/>

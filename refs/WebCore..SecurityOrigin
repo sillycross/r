@@ -1,0 +1,624 @@
+<use f='WebKit/Source/WebCore/page/SecurityOriginData.h' l='58' c='_ZNK7WebCore18SecurityOriginData14securityOriginEv'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='767'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='768' c='_ZN3IPC13ArgumentCoderIN3WTF6RefPtrIN7WebCore14SecurityOriginENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEEvE6encodeERNS_7EncoderERKS9_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='769' c='_ZN3IPC13ArgumentCoderIN3WTF6RefPtrIN7WebCore14SecurityOriginENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEEvE6decodeERNS_7DecoderE'/>
+<use f='WebKit/Source/WebCore/html/CanvasBase.h' l='85' c='_ZNK7WebCore10CanvasBase14securityOriginEv'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.h' l='57' c='_ZN7WebCore29updateRequestForAccessControlERNS_15ResourceRequestERNS_14SecurityOriginENS_23StoredCredentialsPolicyE'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.h' l='59' c='_ZN7WebCore35createAccessControlPreflightRequestERKNS_15ResourceRequestERNS_14SecurityOriginERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.h' l='84' c='_ZN7WebCore24passesAccessControlCheckERKNS_16ResourceResponseENS_23StoredCredentialsPolicyERKNS_14SecurityOriginEPKNS_37CrossOriginAccessControlCheckDisablerE'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.h' l='85' c='_ZN7WebCore25validatePreflightResponseEN3PAL9SessionIDERKNS_15ResourceRequestERKNS_16ResourceResponseENS_23StoredCredentialsPolicyERKNS_14SecurityOrig10797570'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.h' l='87' c='_ZN7WebCore33validateCrossOriginResourcePolicyERKNS_14SecurityOriginERKN3WTF3URLERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/dom/SecurityContext.h' l='85' c='_ZNK7WebCore15SecurityContext14securityOriginEv'/>
+<use f='WebKit/Source/WebCore/dom/ScriptExecutionContext.h' l='136' c='_ZNK7WebCore22ScriptExecutionContext9topOriginEv'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='1352' c='_ZNK7WebCore8Document14securityOriginEv'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='1353' c='_ZNK7WebCore8Document9topOriginEv'/>
+<inh f='WebKit/WTF/Headers/wtf/ThreadSafeRefCounted.h' l='109' c='WTF::ThreadSafeRefCounted'/>
+<def f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='39' ll='248'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='39'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='47' c='_ZN7WebCore14SecurityOrigin6createERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='48' c='_ZN7WebCore14SecurityOrigin12createUniqueEv'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='50' c='_ZN7WebCore14SecurityOrigin16createFromStringERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='51' c='_ZN7WebCore14SecurityOrigin6createERKN3WTF6StringES4_St8optionalItE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='57' c='_ZN7WebCore14SecurityOrigin33createNonLocalWithAllowedFilePathERKN3WTF3URLERKNS1_6StringE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='74' c='_ZNK7WebCore14SecurityOrigin12isolatedCopyEv'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='100' c='_ZNK7WebCore14SecurityOrigin18isSameOriginDomainERKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='110' c='_ZNK7WebCore14SecurityOrigin18canReceiveDragDataERKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='148' c='_ZNK7WebCore14SecurityOrigin17canAccessDatabaseEPKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='149' c='_ZNK7WebCore14SecurityOrigin23canAccessSessionStorageERKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='150' c='_ZNK7WebCore14SecurityOrigin21canAccessLocalStorageEPKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='151' c='_ZNK7WebCore14SecurityOrigin22canAccessPluginStorageERKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='152' c='_ZNK7WebCore14SecurityOrigin25canAccessApplicationCacheERKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='197' c='_ZNK7WebCore14SecurityOrigin5equalEPKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='201' c='_ZNK7WebCore14SecurityOrigin20isSameSchemeHostPortERKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='205' c='_ZNK7WebCore14SecurityOrigin14isSameOriginAsERKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='219' c='_ZN7WebCore14SecurityOrigin6decodeERT_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='224' c='_ZN7WebCore14SecurityOriginC1EPKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='227' c='_ZNK7WebCore14SecurityOrigin15passesFileCheckERKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='234' c='_ZNK7WebCore14SecurityOrigin16canAccessStorageEPKS0_NS0_25ShouldAllowFromThirdPartyE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='253' c='_ZN7WebCore22serializedOriginsMatchERKNS_14SecurityOriginES2_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='253' c='_ZN7WebCore22serializedOriginsMatchERKNS_14SecurityOriginES2_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='254' c='_ZN7WebCore22serializedOriginsMatchEPKNS_14SecurityOriginES2_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='254' c='_ZN7WebCore22serializedOriginsMatchEPKNS_14SecurityOriginES2_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='272' c='_ZN7WebCore14SecurityOrigin6decodeERT_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.h' l='279' c='_ZN7WebCore14SecurityOrigin6decodeERT_'/>
+<size>64</size>
+<fun r='_ZN7WebCore14SecurityOrigin6createERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore14SecurityOrigin12createUniqueEv'/>
+<fun r='_ZN7WebCore14SecurityOrigin16createFromStringERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore14SecurityOrigin6createERKN3WTF6StringES4_St8optionalItE'/>
+<fun r='_ZN7WebCore14SecurityOrigin33createNonLocalWithAllowedFilePathERKN3WTF3URLERKNS1_6StringE'/>
+<fun r='_ZN7WebCore14SecurityOrigin17shouldUseInnerURLERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore14SecurityOrigin15extractInnerURLERKN3WTF3URLE'/>
+<fun r='_ZNK7WebCore14SecurityOrigin12isolatedCopyEv'/>
+<fun r='_ZN7WebCore14SecurityOrigin16setDomainFromDOMERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore14SecurityOrigin17domainWasSetInDOMEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin8protocolEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin4hostEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin6domainEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin4portEv'/>
+<fun r='_ZN7WebCore14SecurityOrigin16shouldIgnoreHostERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore14SecurityOrigin8isSecureERKN3WTF3URLE'/>
+<fun r='_ZNK7WebCore14SecurityOrigin18isSameOriginDomainERKS0_'/>
+<fun r='_ZNK7WebCore14SecurityOrigin10canRequestERKN3WTF3URLE'/>
+<fun r='_ZNK7WebCore14SecurityOrigin18canReceiveDragDataERKS0_'/>
+<fun r='_ZNK7WebCore14SecurityOrigin10canDisplayERKN3WTF3URLE'/>
+<fun r='_ZNK7WebCore14SecurityOrigin21canLoadLocalResourcesEv'/>
+<fun r='_ZN7WebCore14SecurityOrigin23grantLoadLocalResourcesEv'/>
+<fun r='_ZN7WebCore14SecurityOrigin20grantUniversalAccessEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin18hasUniversalAccessEv'/>
+<fun r='_ZN7WebCore14SecurityOrigin24setStorageBlockingPolicyENS_21StorageBlockingPolicyE'/>
+<fun r='_ZN7WebCore14SecurityOrigin35grantStorageAccessFromFileURLsQuirkEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin35needsStorageAccessFromFileURLsQuirkEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin23domainForCachePartitionEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin17canAccessDatabaseEPKS0_'/>
+<fun r='_ZNK7WebCore14SecurityOrigin23canAccessSessionStorageERKS0_'/>
+<fun r='_ZNK7WebCore14SecurityOrigin21canAccessLocalStorageEPKS0_'/>
+<fun r='_ZNK7WebCore14SecurityOrigin22canAccessPluginStorageERKS0_'/>
+<fun r='_ZNK7WebCore14SecurityOrigin25canAccessApplicationCacheERKS0_'/>
+<fun r='_ZNK7WebCore14SecurityOrigin16canAccessCookiesEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin21canRequestGeolocationEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin20canShowNotificationsEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin7isLocalEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin8isUniqueEv'/>
+<fun r='_ZN7WebCore14SecurityOrigin29setEnforcesFilePathSeparationEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin26enforcesFilePathSeparationEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin8toStringEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin11toRawStringEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin5equalEPKS0_'/>
+<fun r='_ZNK7WebCore14SecurityOrigin20isSameSchemeHostPortERKS0_'/>
+<fun r='_ZNK7WebCore14SecurityOrigin14isSameOriginAsERKS0_'/>
+<fun r='_ZNK7WebCore14SecurityOrigin33isMatchingRegistrableDomainSuffixERKN3WTF6StringEb'/>
+<fun r='_ZNK7WebCore14SecurityOrigin24isPotentiallyTrustworthyEv'/>
+<fun r='_ZN7WebCore14SecurityOrigin27setIsPotentiallyTrustworthyEb'/>
+<fun r='_ZN7WebCore14SecurityOrigin30isLocalHostOrLoopbackIPAddressEN3WTF10StringViewE'/>
+<fun r='_ZNK7WebCore14SecurityOrigin4dataEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin6encodeERT_'/>
+<fun r='_ZN7WebCore14SecurityOrigin6decodeERT_'/>
+<fun r='_ZN7WebCore14SecurityOriginC1Ev'/>
+<fun r='_ZN7WebCore14SecurityOriginC1ERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore14SecurityOriginC1EPKS0_'/>
+<fun r='_ZNK7WebCore14SecurityOrigin15passesFileCheckERKS0_'/>
+<fun r='_ZNK7WebCore14SecurityOrigin12isHTTPFamilyEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin16canAccessStorageEPKS0_NS0_25ShouldAllowFromThirdPartyE'/>
+<mbr r='WebCore::SecurityOrigin::m_data' o='64' t='WebCore::SecurityOriginData'/>
+<mbr r='WebCore::SecurityOrigin::m_domain' o='256' t='WTF::String'/>
+<mbr r='WebCore::SecurityOrigin::m_filePath' o='320' t='WTF::String'/>
+<mbr r='WebCore::SecurityOrigin::m_isUnique' o='384' t='bool'/>
+<mbr r='WebCore::SecurityOrigin::m_universalAccess' o='392' t='bool'/>
+<mbr r='WebCore::SecurityOrigin::m_domainWasSetInDOM' o='400' t='bool'/>
+<mbr r='WebCore::SecurityOrigin::m_canLoadLocalResources' o='408' t='bool'/>
+<mbr r='WebCore::SecurityOrigin::m_storageBlockingPolicy' o='416' t='WebCore::StorageBlockingPolicy'/>
+<mbr r='WebCore::SecurityOrigin::m_enforcesFilePathSeparation' o='424' t='bool'/>
+<mbr r='WebCore::SecurityOrigin::m_needsStorageAccessFromFileURLsQuirk' o='432' t='bool'/>
+<mbr r='WebCore::SecurityOrigin::m_isPotentiallyTrustworthy' o='440' t='std::optional&lt;bool&gt;'/>
+<mbr r='WebCore::SecurityOrigin::m_isLocal' o='456' t='bool'/>
+<fun r='_ZNK7WebCore14SecurityOrigin6encodeERT_'/>
+<fun r='_ZN7WebCore14SecurityOrigin6decodeERT_'/>
+<use f='WebKit/Source/WebKit/Shared/API/APISecurityOrigin.h' l='46' c='_ZN3API14SecurityOrigin6createERKN7WebCore14SecurityOriginE'/>
+<use f='WebKit/Source/WebKit/Shared/API/c/WKSharedAPICast.h' l='221' c='_ZN6WebKit11toCopiedAPIEPN7WebCore14SecurityOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.h' l='71' c='_ZNK7WebCore16NavigationAction9Requester14securityOriginEv'/>
+<use f='WebKit/Source/WebCore/loader/NavigationAction.h' l='75'/>
+<use f='WebKit/Source/WebCore/css/StyleSheetContents.h' l='69' c='_ZN7WebCore18StyleSheetContents21parseAuthorStyleSheetEPKNS_19CachedCSSStyleSheetEPKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoaderClient.h' l='236' c='_ZN7WebCore17FrameLoaderClient21didRunInsecureContentERNS_14SecurityOriginERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.h' l='164' c='_ZN6WebKit20WebFrameLoaderClient21didRunInsecureContentERN7WebCore14SecurityOriginERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.h' l='230' c='_ZNK7WebCore14CachedResource6originEv'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.h' l='365'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.h' l='98' c='_ZN7WebCore14ResourceHandle6createEPNS_17NetworkingContextERKNS_15ResourceRequestEPNS_20ResourceHandleClientEbbbON3WTF6RefPtrINS_14SecurityOriginENS8_5845183'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.h' l='99' c='_ZN7WebCore14ResourceHandle25loadResourceSynchronouslyEPNS_17NetworkingContextERKNS_15ResourceRequestENS_23StoredCredentialsPolicyEPNS_14SecurityOrigi8894014'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.h' l='212' c='_ZN7WebCore14ResourceHandleC1EPNS_17NetworkingContextERKNS_15ResourceRequestEPNS_20ResourceHandleClientEbbbON3WTF6RefPtrINS_14SecurityOriginENS8_12Raw10399747'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.h' l='228' c='_ZN7WebCore14ResourceHandle33platformLoadResourceSynchronouslyEPNS_17NetworkingContextERKNS_15ResourceRequestENS_23StoredCredentialsPolicyEPNS_14Secur1644635'/>
+<size>64</size>
+<use f='WebKit/Source/WebKit/Shared/Databases/IndexedDB/IDBUtilities.h' l='39' c='_ZN6WebKit24uniqueDatabaseIdentifierERKN3WTF6StringERKN7WebCore14SecurityOriginES7_'/>
+<use f='WebKit/Source/WebKit/Shared/Databases/IndexedDB/IDBUtilities.h' l='39' c='_ZN6WebKit24uniqueDatabaseIdentifierERKN3WTF6StringERKN7WebCore14SecurityOriginES7_'/>
+<use f='WebKit/Source/WebKit/Shared/Databases/IndexedDB/IDBUtilities.cpp' l='35' c='_ZN6WebKit24uniqueDatabaseIdentifierERKN3WTF6StringERKN7WebCore14SecurityOriginES7_'/>
+<use f='WebKit/Source/WebKit/Shared/Databases/IndexedDB/IDBUtilities.cpp' l='35' c='_ZN6WebKit24uniqueDatabaseIdentifierERKN3WTF6StringERKN7WebCore14SecurityOriginES7_'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/loader/cache/CachedImage.h' l='89' c='_ZN7WebCore11CachedImage13isOriginCleanEPNS_14SecurityOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/page/SecurityOriginHash.h' l='38' c='_ZN7WebCore18SecurityOriginHash4hashEPNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOriginHash.h' l='47' c='_ZN7WebCore18SecurityOriginHash4hashERKN3WTF6RefPtrINS_14SecurityOriginENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOriginHash.h' l='52' c='_ZN7WebCore18SecurityOriginHash5equalEPNS_14SecurityOriginES2_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOriginHash.h' l='52' c='_ZN7WebCore18SecurityOriginHash5equalEPNS_14SecurityOriginES2_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOriginHash.h' l='58' c='_ZN7WebCore18SecurityOriginHash5equalEPNS_14SecurityOriginERKN3WTF6RefPtrIS1_NS3_12RawPtrTraitsIS1_EENS3_21DefaultRefDerefTraitsIS1_EEEE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOriginHash.h' l='58' c='_ZN7WebCore18SecurityOriginHash5equalEPNS_14SecurityOriginERKN3WTF6RefPtrIS1_NS3_12RawPtrTraitsIS1_EENS3_21DefaultRefDerefTraitsIS1_EEEE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOriginHash.h' l='62' c='_ZN7WebCore18SecurityOriginHash5equalERKN3WTF6RefPtrINS_14SecurityOriginENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEEPS3_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOriginHash.h' l='62' c='_ZN7WebCore18SecurityOriginHash5equalERKN3WTF6RefPtrINS_14SecurityOriginENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEEPS3_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOriginHash.h' l='66' c='_ZN7WebCore18SecurityOriginHash5equalERKN3WTF6RefPtrINS_14SecurityOriginENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEESA_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOriginHash.h' l='66' c='_ZN7WebCore18SecurityOriginHash5equalERKN3WTF6RefPtrINS_14SecurityOriginENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEESA_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOriginHash.h' l='79'/>
+<size>64</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadParameters.h' l='50'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadParameters.h' l='51'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebStorage/StorageAreaMap.h' l='52' c='_ZN6WebKit14StorageAreaMapC1ERNS_20StorageNamespaceImplEON3WTF3RefIN7WebCore14SecurityOriginENS3_12RawPtrTraitsIS6_EEEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebStorage/StorageAreaMap.h' l='68' c='_ZNK6WebKit14StorageAreaMap14securityOriginEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebStorage/StorageAreaMap.h' l='96'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebProcess.cpp' l='1414' c='_ZN6WebKit10WebProcess27deleteWebsiteDataForOriginsEN3WTF9OptionSetINS_15WebsiteDataTypeEEERKNS1_6VectorIN7WebCore18SecurityOriginDataELm0ENS1_15Crash12153246'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheStorage.h' l='67' c='_ZN7WebCore23ApplicationCacheStorage23calculateQuotaForOriginERKNS_14SecurityOriginERl'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheStorage.h' l='68' c='_ZN7WebCore23ApplicationCacheStorage45calculateRemainingSizeForOriginExcludingCacheERKNS_14SecurityOriginEPNS_16ApplicationCacheERl'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheStorage.h' l='69' c='_ZN7WebCore23ApplicationCacheStorage26storeUpdatedQuotaForOriginEPKNS_14SecurityOriginEl'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheStorage.h' l='122' c='_ZN7WebCore23ApplicationCacheStorage18ensureOriginRecordEPKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/MediaPlayer.h' l='533' c='_ZNK7WebCore11MediaPlayer16wouldTaintOriginERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/page/ChromeClient.h' l='268' c='_ZN7WebCore12ChromeClient34reachedApplicationCacheOriginQuotaERNS_14SecurityOriginEl'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/page/DOMWindow.h' l='244' c='_ZNK7WebCore9DOMWindow14securityOriginEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.h' l='430' c='_ZNK7WebCore16HTMLMediaElement16wouldTaintOriginERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/html/HTMLCanvasElement.h' l='123' c='_ZNK7WebCore17HTMLCanvasElement14securityOriginEv'/>
+<size>64</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoadParameters.h' l='61'/>
+<use f='WebKit/Source/WebCore/page/csp/ContentSecurityPolicy.h' l='102' c='_ZNK7WebCore21ContentSecurityPolicy19allowFrameAncestorsERKN3WTF6VectorINS1_6RefPtrINS_14SecurityOriginENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefT16535675'/>
+<use f='WebKit/Source/WebCore/page/csp/ContentSecurityPolicy.h' l='176' c='_ZN7WebCore21ContentSecurityPolicy16updateSourceSelfERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.h' l='55' c='_ZN7WebCore17SubresourceLoader6originEv'/>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.h' l='133'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='399' c='_ZN6WebKit17WebLoaderStrategy30scheduleLoadFromNetworkProcessERN7WebCore14ResourceLoaderERKNS1_15ResourceRequestERKNS_17WebResourceLoader18TrackingPar6290377'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/workers/service/SWClientConnection.h' l='82' c='_ZN7WebCore18SWClientConnection27registerServiceWorkerClientERKNS_14SecurityOriginERKNS_23ServiceWorkerClientDataERKSt8optionalIN3WTF16ObjectIdentifie8700783'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebSWClientConnection.h' l='76' c='_ZN6WebKit21WebSWClientConnection27registerServiceWorkerClientERKN7WebCore14SecurityOriginERKNS1_23ServiceWorkerClientDataERKSt8optionalIN3WTF16Object2357274'/>
+<use f='WebKit/Source/WebKit/WebProcess/Storage/WebSWClientConnection.cpp' l='113' c='_ZN6WebKit21WebSWClientConnection27registerServiceWorkerClientERKN7WebCore14SecurityOriginERKNS1_23ServiceWorkerClientDataERKSt8optionalIN3WTF16Object2357274'/>
+<use f='WebKit/Source/WebCore/loader/EmptyFrameLoaderClient.h' l='172' c='_ZN7WebCore22EmptyFrameLoaderClient21didRunInsecureContentERNS_14SecurityOriginERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/workers/WorkerThread.h' l='96' c='_ZN7WebCore12WorkerThreadC1ERKNS_16WorkerParametersERKNS_12ScriptBufferERNS_17WorkerLoaderProxyERNS_19WorkerDebuggerProxyERNS_20WorkerReportingProxyEN2089272'/>
+<use f='WebKit/Source/WebCore/workers/WorkerThread.h' l='99' c='_ZN7WebCore12WorkerThread23createWorkerGlobalScopeERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS6_EEEESA_'/>
+<use f='WebKit/Source/WebCore/workers/WorkerThread.h' l='99' c='_ZN7WebCore12WorkerThread23createWorkerGlobalScopeERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS6_EEEESA_'/>
+<use f='WebKit/Source/WebCore/workers/service/context/ServiceWorkerThread.h' l='78' c='_ZN7WebCore19ServiceWorkerThread23createWorkerGlobalScopeERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS6_EEEESA_'/>
+<use f='WebKit/Source/WebCore/workers/service/context/ServiceWorkerThread.h' l='78' c='_ZN7WebCore19ServiceWorkerThread23createWorkerGlobalScopeERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS6_EEEESA_'/>
+<size>64</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebChromeClient.h' l='150' c='_ZN6WebKit15WebChromeClient34reachedApplicationCacheOriginQuotaERN7WebCore14SecurityOriginEl'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebChromeClient.cpp' l='786' c='_ZN6WebKit15WebChromeClient34reachedApplicationCacheOriginQuotaERN7WebCore14SecurityOriginEl'/>
+<size>64</size>
+<use f='WebKit/Source/WebKit/UIProcess/MediaKeySystemPermissionRequestProxy.h' l='44' c='_ZN6WebKit36MediaKeySystemPermissionRequestProxy6createERNS_43MediaKeySystemPermissionRequestManagerProxyEmN3WTF16ObjectIdentifierIN7WebCore19FrameIde9274961'/>
+<use f='WebKit/Source/WebKit/UIProcess/MediaKeySystemPermissionRequestProxy.h' l='58' c='_ZN6WebKit36MediaKeySystemPermissionRequestProxy30topLevelDocumentSecurityOriginEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/MediaKeySystemPermissionRequestProxy.h' l='59' c='_ZNK6WebKit36MediaKeySystemPermissionRequestProxy30topLevelDocumentSecurityOriginEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/MediaKeySystemPermissionRequestProxy.h' l='66' c='_ZN6WebKit36MediaKeySystemPermissionRequestProxyC1ERNS_43MediaKeySystemPermissionRequestManagerProxyEmN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifi6214438'/>
+<use f='WebKit/Source/WebKit/UIProcess/MediaKeySystemPermissionRequestProxy.h' l='72'/>
+<use f='WebKit/Source/WebKit/UIProcess/MediaKeySystemPermissionRequestManagerProxy.h' l='54' c='_ZN6WebKit43MediaKeySystemPermissionRequestManagerProxy21createRequestForFrameEmN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS1_3RefINS313931434'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='1901' c='_ZN6WebKit12WebPageProxy46requestUserMediaPermissionForSpeechRecognitionEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEERKNS3_14SecurityOrig14516650'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='1901' c='_ZN6WebKit12WebPageProxy46requestUserMediaPermissionForSpeechRecognitionEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEERKNS3_14SecurityOrig14516650'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='1271' c='_ZN6WebKit20WebFrameLoaderClient21didRunInsecureContentERN7WebCore14SecurityOriginERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/Modules/geolocation/Geolocation.h' l='94' c='_ZNK7WebCore11Geolocation14securityOriginEv'/>
+<size>64</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebStorage/StorageAreaMap.cpp' l='52' c='_ZN6WebKit14StorageAreaMapC1ERNS_20StorageNamespaceImplEON3WTF3RefIN7WebCore14SecurityOriginENS3_12RawPtrTraitsIS6_EEEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebStorage/StorageAreaMap.cpp' l='279' c='_ZN6WebKitL25framesForEventDispatchingERiRN7WebCore14SecurityOriginENS1_11StorageTypeERKSt8optionalIN3WTF16ObjectIdentifierINS_29StorageAreaImplIdentifierTypeEEEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebStorage/StorageNamespaceImpl.h' l='49' c='_ZN6WebKit20StorageNamespaceImpl36createTransientLocalStorageNamespaceEN3WTF16ObjectIdentifierINS_30StorageNamespaceIdentifierTypeEEERN7WebCore14SecurityOriginEm'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebStorage/StorageNamespaceImpl.h' l='57' c='_ZNK6WebKit20StorageNamespaceImpl14topLevelOriginEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebStorage/StorageNamespaceImpl.h' l='66' c='_ZN6WebKit20StorageNamespaceImplC1EN7WebCore11StorageTypeEN3WTF16ObjectIdentifierINS_30StorageNamespaceIdentifierTypeEEERKSt8optionalINS4_INS1_18PageI9825802'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebStorage/StorageNamespaceImpl.h' l='79'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebStorage/StorageNamespaceImpl.cpp' l='65' c='_ZN6WebKit20StorageNamespaceImpl36createTransientLocalStorageNamespaceEN3WTF16ObjectIdentifierINS_30StorageNamespaceIdentifierTypeEEERN7WebCore14SecurityOriginEm'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebStorage/StorageNamespaceImpl.cpp' l='70' c='_ZN6WebKit20StorageNamespaceImplC1EN7WebCore11StorageTypeEN3WTF16ObjectIdentifierINS_30StorageNamespaceIdentifierTypeEEERKSt8optionalINS4_INS1_18PageI9825802'/>
+<use f='WebKit/Source/WebCore/storage/StorageNamespaceProvider.h' l='61' c='_ZN7WebCore24StorageNamespaceProvider30transientLocalStorageNamespaceERNS_14SecurityOriginEN3PAL9SessionIDE'/>
+<use f='WebKit/Source/WebCore/storage/StorageNamespaceProvider.h' l='64' c='_ZN7WebCore24StorageNamespaceProvider36createTransientLocalStorageNamespaceERNS_14SecurityOriginEjN3PAL9SessionIDE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebStorage/WebStorageNamespaceProvider.h' l='45' c='_ZN6WebKit27WebStorageNamespaceProvider36createTransientLocalStorageNamespaceERN7WebCore14SecurityOriginEjN3PAL9SessionIDE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebStorage/WebStorageNamespaceProvider.cpp' l='80' c='_ZN6WebKit27WebStorageNamespaceProvider36createTransientLocalStorageNamespaceERN7WebCore14SecurityOriginEjN3PAL9SessionIDE'/>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.h' l='153'/>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.h' l='154' c='_ZN7WebCore11MemoryCache25removeResourcesWithOriginERNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.h' l='155' c='_ZN7WebCore11MemoryCache26removeResourcesWithOriginsEN3PAL9SessionIDERKN3WTF7HashSetINS3_6RefPtrINS_14SecurityOriginENS3_12RawPtrTraitsIS6_EENS3_21Def1579755'/>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.h' l='157' c='_ZNK7WebCore11MemoryCache16originsWithCacheEN3PAL9SessionIDE'/>
+<size>64</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadChecker.h' l='63' c='_ZN6WebKit18NetworkLoadCheckerC1ERNS_14NetworkProcessEPNS_21NetworkResourceLoaderEPNS_21NetworkSchemeRegistryEON7WebCore12FetchOptionsEN3PAL9SessionID12452421'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadChecker.h' l='63' c='_ZN6WebKit18NetworkLoadCheckerC1ERNS_14NetworkProcessEPNS_21NetworkResourceLoaderEPNS_21NetworkSchemeRegistryEON7WebCore12FetchOptionsEN3PAL9SessionID12452421'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadChecker.h' l='139'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadChecker.h' l='140'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkCORSPreflightChecker.h' l='52'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkCORSPreflightChecker.h' l='53'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadChecker.cpp' l='48' c='_ZN6WebKitL12isSameOriginERKN3WTF3URLEPKN7WebCore14SecurityOriginE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadChecker.cpp' l='53' c='_ZN6WebKit18NetworkLoadCheckerC1ERNS_14NetworkProcessEPNS_21NetworkResourceLoaderEPNS_21NetworkSchemeRegistryEON7WebCore12FetchOptionsEN3PAL9SessionID12452421'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoadChecker.cpp' l='53' c='_ZN6WebKit18NetworkLoadCheckerC1ERNS_14NetworkProcessEPNS_21NetworkResourceLoaderEPNS_21NetworkSchemeRegistryEON7WebCore12FetchOptionsEN3PAL9SessionID12452421'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.cpp' l='1639' c='_ZN6WebKitL21clearDiskCacheEntriesEPNS_12NetworkCache5CacheERKN3WTF6VectorIN7WebCore18SecurityOriginDataELm0ENS3_15CrashOnOverflowELm16ENS3_10FastMall16067531'/>
+<size>64</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkDataTaskSoup.h' l='209'/>
+<use f='WebKit/Source/WebCore/platform/network/TimingAllowOrigin.h' l='33' c='_ZN7WebCore28passesTimingAllowOriginCheckERKNS_16ResourceResponseERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkDataTaskSoup.cpp' l='491' c='_ZN6WebKit19NetworkDataTaskSoup14didSendRequestEON3WTF7GRefPtrI13_GInputStreamEE'/>
+<size>64</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/APIUIClient.h' l='128' c='_ZN3API8UIClient34reachedApplicationCacheOriginQuotaEPN6WebKit12WebPageProxyERKN7WebCore14SecurityOriginEmmON3WTF8FunctionIFvyEEE'/>
+<size>64</size>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionCheckProxy.h' l='45' c='_ZN6WebKit29UserMediaPermissionCheckProxy6createEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS1_17CompletionHandlerIFvNS0_14PermissionI15608548'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionCheckProxy.h' l='45' c='_ZN6WebKit29UserMediaPermissionCheckProxy6createEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS1_17CompletionHandlerIFvNS0_14PermissionI15608548'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionCheckProxy.h' l='55' c='_ZN6WebKit29UserMediaPermissionCheckProxy31userMediaDocumentSecurityOriginEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionCheckProxy.h' l='56' c='_ZN6WebKit29UserMediaPermissionCheckProxy30topLevelDocumentSecurityOriginEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionCheckProxy.h' l='59' c='_ZN6WebKit29UserMediaPermissionCheckProxyC1EN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS1_17CompletionHandlerIFvNS0_14PermissionInfoEE6131412'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionCheckProxy.h' l='59' c='_ZN6WebKit29UserMediaPermissionCheckProxyC1EN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS1_17CompletionHandlerIFvNS0_14PermissionInfoEE6131412'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionCheckProxy.h' l='66'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionCheckProxy.h' l='67'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestProxy.h' l='40' c='_ZN6WebKit31UserMediaPermissionRequestProxy6createERNS_38UserMediaPermissionRequestManagerProxyEmN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTyp1499433'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestProxy.h' l='40' c='_ZN6WebKit31UserMediaPermissionRequestProxy6createERNS_38UserMediaPermissionRequestManagerProxyEmN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTyp1499433'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestProxy.h' l='74' c='_ZN6WebKit31UserMediaPermissionRequestProxy30topLevelDocumentSecurityOriginEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestProxy.h' l='75' c='_ZN6WebKit31UserMediaPermissionRequestProxy31userMediaDocumentSecurityOriginEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestProxy.h' l='76' c='_ZNK6WebKit31UserMediaPermissionRequestProxy30topLevelDocumentSecurityOriginEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestProxy.h' l='77' c='_ZNK6WebKit31UserMediaPermissionRequestProxy31userMediaDocumentSecurityOriginEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestProxy.h' l='96' c='_ZN6WebKit31UserMediaPermissionRequestProxyC1ERNS_38UserMediaPermissionRequestManagerProxyEmN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEES10293706'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestProxy.h' l='96' c='_ZN6WebKit31UserMediaPermissionRequestProxyC1ERNS_38UserMediaPermissionRequestManagerProxyEmN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEES10293706'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestProxy.h' l='102'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestProxy.h' l='103'/>
+<size>64</size>
+<use f='WebKit/Source/WebKit/UIProcess/MediaKeySystemPermissionRequestManagerProxy.cpp' l='112' c='_ZN6WebKit43MediaKeySystemPermissionRequestManagerProxy21createRequestForFrameEmN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS1_3RefINS313931434'/>
+<use f='WebKit/Source/WebKit/UIProcess/MediaKeySystemPermissionRequestProxy.cpp' l='37' c='_ZN6WebKit36MediaKeySystemPermissionRequestProxyC1ERNS_43MediaKeySystemPermissionRequestManagerProxyEmN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifi6214438'/>
+<size>64</size>
+<use f='WebKit/Source/WebKit/UIProcess/DeviceIdHashSaltStorage.h' l='44' c='_ZN6WebKit23DeviceIdHashSaltStorage25deviceIdHashSaltForOriginERKN7WebCore14SecurityOriginES4_ON3WTF17CompletionHandlerIFvONS5_6StringEEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/DeviceIdHashSaltStorage.h' l='44' c='_ZN6WebKit23DeviceIdHashSaltStorage25deviceIdHashSaltForOriginERKN7WebCore14SecurityOriginES4_ON3WTF17CompletionHandlerIFvONS5_6StringEEEE'/>
+<size>64</size>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestManagerProxy.h' l='72' c='_ZN6WebKit38UserMediaPermissionRequestManagerProxy34requestUserMediaPermissionForFrameEmN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS1_12064622'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestManagerProxy.h' l='72' c='_ZN6WebKit38UserMediaPermissionRequestManagerProxy34requestUserMediaPermissionForFrameEmN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS1_12064622'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestManagerProxy.h' l='80' c='_ZN6WebKit38UserMediaPermissionRequestManagerProxy29enumerateMediaDevicesForFrameEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS1_3RefIN8463394'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestManagerProxy.h' l='80' c='_ZN6WebKit38UserMediaPermissionRequestManagerProxy29enumerateMediaDevicesForFrameEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS1_3RefIN8463394'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestManagerProxy.h' l='100' c='_ZN6WebKit38UserMediaPermissionRequestManagerProxy44checkUserMediaPermissionForSpeechRecognitionEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTyp9405569'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestManagerProxy.h' l='100' c='_ZN6WebKit38UserMediaPermissionRequestManagerProxy44checkUserMediaPermissionForSpeechRecognitionEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTyp9405569'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestManagerProxy.h' l='104'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestManagerProxy.h' l='105'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestManagerProxy.h' l='119' c='_ZN6WebKit38UserMediaPermissionRequestManagerProxy23createPermissionRequestEmN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEES5_ONS1_3RefINS311065768'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestManagerProxy.h' l='119' c='_ZN6WebKit38UserMediaPermissionRequestManagerProxy23createPermissionRequestEmN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEES5_ONS1_3RefINS311065768'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionCheckProxy.cpp' l='36' c='_ZN6WebKit29UserMediaPermissionCheckProxyC1EN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS1_17CompletionHandlerIFvNS0_14PermissionInfoEE6131412'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionCheckProxy.cpp' l='36' c='_ZN6WebKit29UserMediaPermissionCheckProxyC1EN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS1_17CompletionHandlerIFvNS0_14PermissionInfoEE6131412'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestManagerProxy.cpp' l='446' c='_ZN6WebKit38UserMediaPermissionRequestManagerProxy34requestUserMediaPermissionForFrameEmN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS1_12064622'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestManagerProxy.cpp' l='446' c='_ZN6WebKit38UserMediaPermissionRequestManagerProxy34requestUserMediaPermissionForFrameEmN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS1_12064622'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestManagerProxy.cpp' l='782' c='_ZN6WebKit38UserMediaPermissionRequestManagerProxy29enumerateMediaDevicesForFrameEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS1_3RefIN8463394'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestManagerProxy.cpp' l='782' c='_ZN6WebKit38UserMediaPermissionRequestManagerProxy29enumerateMediaDevicesForFrameEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEEONS1_3RefIN8463394'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestProxy.cpp' l='34' c='_ZN6WebKit31UserMediaPermissionRequestProxyC1ERNS_38UserMediaPermissionRequestManagerProxyEmN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEES10293706'/>
+<use f='WebKit/Source/WebKit/UIProcess/UserMediaPermissionRequestProxy.cpp' l='34' c='_ZN6WebKit31UserMediaPermissionRequestProxyC1ERNS_38UserMediaPermissionRequestManagerProxyEmN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEES10293706'/>
+<size>64</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='8388' c='_ZN6WebKit12WebPageProxy34reachedApplicationCacheOriginQuotaERKN3WTF6StringEmmOi'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='10684' c='_ZN6WebKit12WebPageProxy46requestUserMediaPermissionForSpeechRecognitionEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEERKNS3_14SecurityOrig14516650'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='10684' c='_ZN6WebKit12WebPageProxy46requestUserMediaPermissionForSpeechRecognitionEN3WTF16ObjectIdentifierIN7WebCore19FrameIdentifierTypeEEERKNS3_14SecurityOrig14516650'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/platform/graphics/MediaPlayerPrivate.h' l='206' c='_ZNK7WebCore27MediaPlayerPrivateInterface16wouldTaintOriginERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='178' c='_ZNK7WebCore27MediaPlayerPrivateGStreamer16wouldTaintOriginERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.h' l='553'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.h' l='58' c='webKitSrcWouldTaintOrigin'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='823' c='_ZNK7WebCore27MediaPlayerPrivateGStreamer23hasSingleSecurityOriginEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='824' c='_ZNK7WebCore27MediaPlayerPrivateGStreamer23hasSingleSecurityOriginEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='828' c='_ZNK7WebCore27MediaPlayerPrivateGStreamer16wouldTaintOriginERKNS_14SecurityOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='63' c='_ZNK29CachedResourceStreamingClient15securityOriginsEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='89'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='1177' c='webKitSrcWouldTaintOrigin'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='216' c='_ZNK7WebCore16BaseAudioContext6originEv'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResourceRequest.h' l='46' c='_ZN7WebCore20isRequestCrossOriginEPNS_14SecurityOriginERKN3WTF3URLERKNS_21ResourceLoaderOptionsE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResourceRequest.h' l='97' c='_ZN7WebCore21CachedResourceRequest9setOriginEON3WTF3RefINS_14SecurityOriginENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResourceRequest.h' l='98' c='_ZN7WebCore21CachedResourceRequest13releaseOriginEv'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResourceRequest.h' l='99' c='_ZNK7WebCore21CachedResourceRequest6originEv'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResourceRequest.h' l='120'/>
+<use f='WebKit/Source/WebCore/bindings/js/ScriptController.h' l='113' c='_ZN7WebCore16ScriptController20executeJavaScriptURLERKN3WTF3URLENS1_6RefPtrINS_14SecurityOriginENS1_12RawPtrTraitsIS6_EENS1_21DefaultRefDerefTraitsIS61086204'/>
+<use f='WebKit/Source/WebCore/bindings/js/ScriptController.h' l='160' c='_ZN7WebCore16ScriptController23collectIsolatedContextsERN3WTF6VectorISt4pairIPN3JSC14JSGlobalObjectEPNS_14SecurityOriginEELm0ENS1_15CrashOnOverflowELm8138158'/>
+<use f='WebKit/Source/WebCore/worklets/WorkletGlobalScope.h' l='79' c='_ZNK7WebCore18WorkletGlobalScope9topOriginEv'/>
+<use f='WebKit/Source/WebCore/worklets/WorkletGlobalScope.h' l='122'/>
+<use f='WebKit/Source/WebCore/fileapi/BlobURL.h' l='50' c='_ZN7WebCore7BlobURL15createPublicURLEPNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/xml/XMLHttpRequest.h' l='160' c='_ZNK7WebCore14XMLHttpRequest14securityOriginEv'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/workers/WorkerGlobalScope.h' l='113' c='_ZNK7WebCore17WorkerGlobalScope9topOriginEv'/>
+<use f='WebKit/Source/WebCore/workers/WorkerGlobalScope.h' l='145' c='_ZN7WebCore17WorkerGlobalScopeC1ENS_16WorkerThreadTypeERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS5_12RawPtrTraitsIS7_EEEERNS_12WorkerTh11103912'/>
+<use f='WebKit/Source/WebCore/workers/WorkerGlobalScope.h' l='145' c='_ZN7WebCore17WorkerGlobalScopeC1ENS_16WorkerThreadTypeERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS5_12RawPtrTraitsIS7_EEEERNS_12WorkerTh11103912'/>
+<use f='WebKit/Source/WebCore/workers/WorkerGlobalScope.h' l='190'/>
+<use f='WebKit/Source/WebCore/workers/service/ServiceWorkerGlobalScope.h' l='48' c='_ZN7WebCore24ServiceWorkerGlobalScope6createEONS_24ServiceWorkerContextDataERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS6_12RawPtrTraitsI14219469'/>
+<use f='WebKit/Source/WebCore/workers/service/ServiceWorkerGlobalScope.h' l='48' c='_ZN7WebCore24ServiceWorkerGlobalScope6createEONS_24ServiceWorkerContextDataERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS6_12RawPtrTraitsI14219469'/>
+<use f='WebKit/Source/WebCore/workers/service/ServiceWorkerGlobalScope.h' l='80' c='_ZN7WebCore24ServiceWorkerGlobalScopeC1EONS_24ServiceWorkerContextDataERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS6_12RawPtrTraitsIS8_EE5769615'/>
+<use f='WebKit/Source/WebCore/workers/service/ServiceWorkerGlobalScope.h' l='80' c='_ZN7WebCore24ServiceWorkerGlobalScopeC1EONS_24ServiceWorkerContextDataERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS6_12RawPtrTraitsIS8_EE5769615'/>
+<size>64</size>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2924' c='_ZN3IPC13ArgumentCoderIN3WTF6RefPtrIN7WebCore14SecurityOriginENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEEvE6encodeERNS_7EncoderERKS9_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2929' c='_ZN3IPC13ArgumentCoderIN3WTF6RefPtrIN7WebCore14SecurityOriginENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEEvE6decodeERNS_7DecoderE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/loader/FrameLoadRequest.h' l='42' c='_ZN7WebCore16FrameLoadRequestC1ERNS_8DocumentERNS_14SecurityOriginEONS_15ResourceRequestERKN3WTF6StringENS_20InitiatedByMainFrameERKNS7_10AtomStringER16216793'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoadRequest.h' l='53' c='_ZNK7WebCore16FrameLoadRequest23requesterSecurityOriginEv'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoadRequest.h' l='109'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/Database.h' l='151'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/Database.h' l='152'/>
+<use f='WebKit/Source/WebCore/loader/DocumentThreadableLoader.h' l='50' c='_ZN7WebCore24DocumentThreadableLoader25loadResourceSynchronouslyERNS_8DocumentEONS_15ResourceRequestERNS_22ThreadableLoaderClientERKNS_23ThreadableLoa14909230'/>
+<use f='WebKit/Source/WebCore/loader/DocumentThreadableLoader.h' l='54' c='_ZN7WebCore24DocumentThreadableLoader6createERNS_8DocumentERNS_22ThreadableLoaderClientEONS_15ResourceRequestERKNS_23ThreadableLoaderOptionsEON3WTF6Re1590095'/>
+<use f='WebKit/Source/WebCore/loader/DocumentThreadableLoader.h' l='81' c='_ZN7WebCore24DocumentThreadableLoaderC1ERNS_8DocumentERNS_22ThreadableLoaderClientENS0_16BlockingBehaviorEONS_15ResourceRequestERKNS_23ThreadableLoade14766505'/>
+<use f='WebKit/Source/WebCore/loader/DocumentThreadableLoader.h' l='108' c='_ZNK7WebCore24DocumentThreadableLoader14securityOriginEv'/>
+<use f='WebKit/Source/WebCore/loader/DocumentThreadableLoader.h' l='130'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='277' c='_ZN7WebCore24InspectorInstrumentation26didDispatchDOMStorageEventERNS_4PageERKN3WTF6StringES6_S6_NS_11StorageTypeEPNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='484' c='_ZN7WebCore24InspectorInstrumentation30didDispatchDOMStorageEventImplERNS_19InstrumentingAgentsERKN3WTF6StringES6_S6_NS_11StorageTypeEPNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='1326' c='_ZN7WebCore24InspectorInstrumentation26didDispatchDOMStorageEventERNS_4PageERKN3WTF6StringES6_S6_NS_11StorageTypeEPNS_14SecurityOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/css/StyleSheetContents.cpp' l='320' c='_ZN7WebCore18StyleSheetContents21parseAuthorStyleSheetEPKNS_19CachedCSSStyleSheetEPKNS_14SecurityOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/workers/DedicatedWorkerGlobalScope.h' l='64' c='_ZN7WebCore26DedicatedWorkerGlobalScope6createERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS6_EEEERNS_21DedicatedWorkerT11256485'/>
+<use f='WebKit/Source/WebCore/workers/DedicatedWorkerGlobalScope.h' l='64' c='_ZN7WebCore26DedicatedWorkerGlobalScope6createERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS6_EEEERNS_21DedicatedWorkerT11256485'/>
+<use f='WebKit/Source/WebCore/workers/DedicatedWorkerGlobalScope.h' l='87' c='_ZN7WebCore26DedicatedWorkerGlobalScopeC1ERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS6_EEEERNS_21DedicatedWorkerThread10195097'/>
+<use f='WebKit/Source/WebCore/workers/DedicatedWorkerGlobalScope.h' l='87' c='_ZN7WebCore26DedicatedWorkerGlobalScopeC1ERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS6_EEEERNS_21DedicatedWorkerThread10195097'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.h' l='44' c='_ZN7WebCore14ResourceTiming15fromMemoryCacheERKN3WTF3URLERKNS1_6StringERKNS_18ResourceLoadTimingERKNS_16ResourceResponseERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.h' l='45' c='_ZN7WebCore14ResourceTiming8fromLoadERNS_14CachedResourceERKN3WTF3URLERKNS3_6StringERKNS_18ResourceLoadTimingERKNS_18NetworkLoadMetricsERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.h' l='46' c='_ZN7WebCore14ResourceTiming19fromSynchronousLoadERKN3WTF3URLERKNS1_6StringERKNS_18ResourceLoadTimingERKNS_18NetworkLoadMetricsERKNS_16ResourceResponse2354542'/>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.h' l='58' c='_ZN7WebCore14ResourceTimingC1ERKN3WTF3URLERKNS1_6StringERKNS_18ResourceLoadTimingERKNS_18NetworkLoadMetricsERKNS_16ResourceResponseERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.h' l='59' c='_ZN7WebCore14ResourceTimingC1ERKN3WTF3URLERKNS1_6StringERKNS_18ResourceLoadTimingERKNS_16ResourceResponseERKNS_14SecurityOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/page/PerformanceNavigationTiming.h' l='72' c='_ZN7WebCore27PerformanceNavigationTimingC1EN3WTF13MonotonicTimeERNS_14CachedResourceERKNS_18DocumentLoadTimingERKNS_18NetworkLoadMetricsERKNS_19Docume6421496'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/platform/graphics/MediaPlayer.cpp' l='1172' c='_ZNK7WebCore11MediaPlayer16wouldTaintOriginERKNS_14SecurityOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/fileapi/ThreadableBlobRegistry.h' l='45' c='_ZN7WebCore22ThreadableBlobRegistry15registerBlobURLEPNS_14SecurityOriginERKN3WTF3URLES6_'/>
+<use f='WebKit/Source/WebCore/fileapi/ThreadableBlobRegistry.h' l='54' c='_ZN7WebCore22ThreadableBlobRegistry15getCachedOriginERKN3WTF3URLE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandleInternal.h' l='68' c='_ZN7WebCore22ResourceHandleInternalC1EPNS_14ResourceHandleEPNS_17NetworkingContextERKNS_15ResourceRequestEPNS_20ResourceHandleClientEbbbON3WTF6RefPtrI12771700'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandleInternal.h' l='151'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='80' c='_ZN7WebCore14ResourceHandleC1EPNS_17NetworkingContextERKNS_15ResourceRequestEPNS_20ResourceHandleClientEbbbON3WTF6RefPtrINS_14SecurityOriginENS8_12Raw10399747'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='94' c='_ZN7WebCore14ResourceHandle6createEPNS_17NetworkingContextERKNS_15ResourceRequestEPNS_20ResourceHandleClientEbbbON3WTF6RefPtrINS_14SecurityOriginENS8_5845183'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='138' c='_ZN7WebCore14ResourceHandle25loadResourceSynchronouslyEPNS_17NetworkingContextERKNS_15ResourceRequestENS_23StoredCredentialsPolicyEPNS_14SecurityOrigi8894014'/>
+<use f='WebKit/Source/WebCore/platform/network/ResourceHandle.cpp' l='219' c='_ZN7WebCore14ResourceHandle8checkTAOERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/page/SecurityPolicy.h' l='54' c='_ZN7WebCore14SecurityPolicy20generateOriginHeaderENS_14ReferrerPolicyERKN3WTF3URLERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/page/SecurityPolicy.h' l='71' c='_ZN7WebCore14SecurityPolicy29addOriginAccessAllowlistEntryERKNS_14SecurityOriginERKN3WTF6StringES7_b'/>
+<use f='WebKit/Source/WebCore/page/SecurityPolicy.h' l='72' c='_ZN7WebCore14SecurityPolicy32removeOriginAccessAllowlistEntryERKNS_14SecurityOriginERKN3WTF6StringES7_b'/>
+<use f='WebKit/Source/WebCore/page/SecurityPolicy.h' l='75' c='_ZN7WebCore14SecurityPolicy15isAccessAllowedERKNS_14SecurityOriginES3_RKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/page/SecurityPolicy.h' l='75' c='_ZN7WebCore14SecurityPolicy15isAccessAllowedERKNS_14SecurityOriginES3_RKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/page/SecurityPolicy.h' l='76' c='_ZN7WebCore14SecurityPolicy15isAccessAllowedERKNS_14SecurityOriginERKN3WTF3URLE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/platform/network/TimingAllowOrigin.cpp' l='35' c='_ZN7WebCore28passesTimingAllowOriginCheckERKNS_16ResourceResponseERKNS_14SecurityOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/storage/StorageNamespaceProvider.cpp' l='75' c='_ZN7WebCore24StorageNamespaceProvider30transientLocalStorageNamespaceERNS_14SecurityOriginEN3PAL9SessionIDE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/dom/SecurityOriginPolicy.h' l='37' c='_ZN7WebCore20SecurityOriginPolicy6createEON3WTF3RefINS_14SecurityOriginENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/dom/SecurityOriginPolicy.h' l='41' c='_ZN7WebCore20SecurityOriginPolicy6originEv'/>
+<use f='WebKit/Source/WebCore/dom/SecurityOriginPolicy.h' l='44' c='_ZN7WebCore20SecurityOriginPolicyC1EON3WTF3RefINS_14SecurityOriginENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/dom/SecurityOriginPolicy.h' l='46'/>
+<use f='WebKit/Source/WebCore/xml/XMLHttpRequest.cpp' l='142' c='_ZNK7WebCore14XMLHttpRequest14securityOriginEv'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/dom/WindowEventLoop.h' l='45' c='_ZN7WebCore15WindowEventLoop26eventLoopForSecurityOriginERKNS_14SecurityOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='867' c='_ZNK7WebCore16BaseAudioContext6originEv'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseManager.h' l='67' c='_ZN7WebCore15DatabaseManager19fullPathForDatabaseERNS_14SecurityOriginERKN3WTF6StringEb'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseManager.h' l='69' c='_ZN7WebCore15DatabaseManager23detailsForNameAndOriginERKN3WTF6StringERNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseManager.cpp' l='48' c='_ZN7WebCore15DatabaseManager16ProposedDatabaseC1ERS0_RNS_14SecurityOriginERKN3WTF6StringES8_m'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseManager.cpp' l='51' c='_ZN7WebCore15DatabaseManager16ProposedDatabase6originEv'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseManager.cpp' l='56'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseManager.cpp' l='60' c='_ZN7WebCore15DatabaseManager16ProposedDatabaseC1ERS0_RNS_14SecurityOriginERKN3WTF6StringES8_m'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseManager.cpp' l='241' c='_ZN7WebCore15DatabaseManager19fullPathForDatabaseERNS_14SecurityOriginERKN3WTF6StringEb'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseManager.cpp' l='253' c='_ZN7WebCore15DatabaseManager23detailsForNameAndOriginERKN3WTF6StringERNS_14SecurityOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/loader/MixedContentChecker.h' l='57' c='_ZN7WebCore19MixedContentChecker25canDisplayInsecureContentERNS_5FrameERNS_14SecurityOriginENS0_11ContentTypeERKN3WTF3URLENS0_28AlwaysDisplayInNonStrictModeE'/>
+<use f='WebKit/Source/WebCore/loader/MixedContentChecker.h' l='58' c='_ZN7WebCore19MixedContentChecker21canRunInsecureContentERNS_5FrameERNS_14SecurityOriginERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/loader/MixedContentChecker.h' l='59' c='_ZN7WebCore19MixedContentChecker24checkFormForMixedContentERNS_5FrameERNS_14SecurityOriginERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/loader/MixedContentChecker.h' l='60' c='_ZN7WebCore19MixedContentChecker14isMixedContentERNS_14SecurityOriginERKN3WTF3URLE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/Modules/geolocation/Geolocation.cpp' l='153' c='_ZNK7WebCore11Geolocation14securityOriginEv'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/dom/EmptyScriptExecutionContext.h' l='66' c='_ZNK7WebCore27EmptyScriptExecutionContext9topOriginEv'/>
+<use f='WebKit/Source/WebCore/dom/EmptyScriptExecutionContext.h' l='119'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/bindings/js/ScriptController.cpp' l='464' c='_ZN7WebCore16ScriptController23collectIsolatedContextsERN3WTF6VectorISt4pairIPN3JSC14JSGlobalObjectEPNS_14SecurityOriginEELm0ENS1_15CrashOnOverflowELm8138158'/>
+<use f='WebKit/Source/WebCore/bindings/js/ScriptController.cpp' l='811' c='_ZN7WebCore16ScriptController20executeJavaScriptURLERKN3WTF3URLENS1_6RefPtrINS_14SecurityOriginENS1_12RawPtrTraitsIS6_EENS1_21DefaultRefDerefTraitsIS61086204'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/page/OriginAccessEntry.h' l='53' c='_ZNK7WebCore17OriginAccessEntry13matchesOriginERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='87' c='_ZN7WebCoreL15getCachedOriginERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='200' c='_ZN7WebCore14SecurityOriginC1EPKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='216' c='_ZN7WebCore14SecurityOrigin6createERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='218' c='_ZN7WebCore14SecurityOrigin6createERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='222' c='_ZN7WebCore14SecurityOrigin6createERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='225' c='_ZN7WebCore14SecurityOrigin6createERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='227' c='_ZN7WebCore14SecurityOrigin6createERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='230' c='_ZN7WebCore14SecurityOrigin12createUniqueEv'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='232' c='_ZN7WebCore14SecurityOrigin12createUniqueEv'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='232' c='_ZN7WebCore14SecurityOrigin12createUniqueEv'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='237' c='_ZN7WebCore14SecurityOrigin33createNonLocalWithAllowedFilePathERKN3WTF3URLERKNS1_6StringE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='245' c='_ZNK7WebCore14SecurityOrigin12isolatedCopyEv'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='247' c='_ZNK7WebCore14SecurityOrigin12isolatedCopyEv'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='269' c='_ZNK7WebCore14SecurityOrigin18isSameOriginDomainERKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='317' c='_ZNK7WebCore14SecurityOrigin15passesFileCheckERKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='335' c='_ZNK7WebCore14SecurityOrigin10canRequestERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='351' c='_ZNK7WebCore14SecurityOrigin18canReceiveDragDataERKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='418' c='_ZNK7WebCore14SecurityOrigin16canAccessStorageEPKS0_NS0_25ShouldAllowFromThirdPartyE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='457' c='_ZNK7WebCore14SecurityOrigin14isSameOriginAsERKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='549' c='_ZN7WebCoreL18areOriginsMatchingERKNS_14SecurityOriginES2_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='549' c='_ZN7WebCoreL18areOriginsMatchingERKNS_14SecurityOriginES2_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='569' c='_ZN7WebCore22serializedOriginsMatchERKNS_14SecurityOriginES2_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='569' c='_ZN7WebCore22serializedOriginsMatchERKNS_14SecurityOriginES2_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='578' c='_ZN7WebCore22serializedOriginsMatchEPKNS_14SecurityOriginES2_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='578' c='_ZN7WebCore22serializedOriginsMatchEPKNS_14SecurityOriginES2_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='586' c='_ZN7WebCore14SecurityOrigin16createFromStringERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='591' c='_ZN7WebCore14SecurityOrigin6createERKN3WTF6StringES4_St8optionalItE'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='600' c='_ZNK7WebCore14SecurityOrigin5equalEPKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='617' c='_ZNK7WebCore14SecurityOrigin20isSameSchemeHostPortERKS0_'/>
+<use f='WebKit/Source/WebCore/page/SecurityOriginData.cpp' l='64' c='_ZNK7WebCore18SecurityOriginData14securityOriginEv'/>
+<use f='WebKit/Source/WebCore/page/SecurityPolicy.cpp' l='145' c='_ZN7WebCore14SecurityPolicy20generateOriginHeaderENS_14ReferrerPolicyERKN3WTF3URLERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/page/SecurityPolicy.cpp' l='205' c='_ZN7WebCore14SecurityPolicy15isAccessAllowedERKNS_14SecurityOriginES3_RKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/page/SecurityPolicy.cpp' l='205' c='_ZN7WebCore14SecurityPolicy15isAccessAllowedERKNS_14SecurityOriginES3_RKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/page/SecurityPolicy.cpp' l='225' c='_ZN7WebCore14SecurityPolicy15isAccessAllowedERKNS_14SecurityOriginERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/page/SecurityPolicy.cpp' l='230' c='_ZN7WebCore14SecurityPolicy29addOriginAccessAllowlistEntryERKNS_14SecurityOriginERKN3WTF6StringES7_b'/>
+<use f='WebKit/Source/WebCore/page/SecurityPolicy.cpp' l='241' c='_ZN7WebCore14SecurityPolicy32removeOriginAccessAllowlistEntryERKNS_14SecurityOriginERKN3WTF6StringES7_b'/>
+<size>64</size>
+<fun r='_ZN7WebCore14SecurityOrigin16shouldIgnoreHostERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore14SecurityOrigin17shouldUseInnerURLERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore14SecurityOrigin15extractInnerURLERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore14SecurityOriginC1ERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore14SecurityOriginC1Ev'/>
+<fun r='_ZN7WebCore14SecurityOriginC1EPKS0_'/>
+<fun r='_ZN7WebCore14SecurityOrigin6createERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore14SecurityOrigin12createUniqueEv'/>
+<fun r='_ZN7WebCore14SecurityOrigin33createNonLocalWithAllowedFilePathERKN3WTF3URLERKNS1_6StringE'/>
+<fun r='_ZNK7WebCore14SecurityOrigin12isolatedCopyEv'/>
+<fun r='_ZN7WebCore14SecurityOrigin16setDomainFromDOMERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore14SecurityOrigin8isSecureERKN3WTF3URLE'/>
+<fun r='_ZNK7WebCore14SecurityOrigin18isSameOriginDomainERKS0_'/>
+<fun r='_ZNK7WebCore14SecurityOrigin15passesFileCheckERKS0_'/>
+<fun r='_ZNK7WebCore14SecurityOrigin10canRequestERKN3WTF3URLE'/>
+<fun r='_ZNK7WebCore14SecurityOrigin18canReceiveDragDataERKS0_'/>
+<fun r='_ZNK7WebCore14SecurityOrigin10canDisplayERKN3WTF3URLE'/>
+<fun r='_ZNK7WebCore14SecurityOrigin16canAccessStorageEPKS0_NS0_25ShouldAllowFromThirdPartyE'/>
+<fun r='_ZNK7WebCore14SecurityOrigin20canShowNotificationsEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin14isSameOriginAsERKS0_'/>
+<fun r='_ZNK7WebCore14SecurityOrigin33isMatchingRegistrableDomainSuffixERKN3WTF6StringEb'/>
+<fun r='_ZNK7WebCore14SecurityOrigin24isPotentiallyTrustworthyEv'/>
+<fun r='_ZN7WebCore14SecurityOrigin23grantLoadLocalResourcesEv'/>
+<fun r='_ZN7WebCore14SecurityOrigin20grantUniversalAccessEv'/>
+<fun r='_ZN7WebCore14SecurityOrigin35grantStorageAccessFromFileURLsQuirkEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin23domainForCachePartitionEv'/>
+<fun r='_ZN7WebCore14SecurityOrigin29setEnforcesFilePathSeparationEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin8toStringEv'/>
+<fun r='_ZNK7WebCore14SecurityOrigin11toRawStringEv'/>
+<fun r='_ZN7WebCore14SecurityOrigin16createFromStringERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore14SecurityOrigin6createERKN3WTF6StringES4_St8optionalItE'/>
+<fun r='_ZNK7WebCore14SecurityOrigin5equalEPKS0_'/>
+<fun r='_ZNK7WebCore14SecurityOrigin20isSameSchemeHostPortERKS0_'/>
+<fun r='_ZN7WebCore14SecurityOrigin30isLocalHostOrLoopbackIPAddressEN3WTF10StringViewE'/>
+<use f='WebKit/Source/WebCore/page/csp/ContentSecurityPolicyDirectiveList.h' l='65' c='_ZNK7WebCore34ContentSecurityPolicyDirectiveList40violatedDirectiveForFrameAncestorOriginsERKN3WTF6VectorINS1_6RefPtrINS_14SecurityOriginENS1_12RawPtr10085054'/>
+<use f='WebKit/Source/WebCore/page/csp/ContentSecurityPolicy.cpp' l='216' c='_ZN7WebCore21ContentSecurityPolicy16updateSourceSelfERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/page/csp/ContentSecurityPolicy.cpp' l='494' c='_ZNK7WebCore21ContentSecurityPolicy19allowFrameAncestorsERKN3WTF6VectorINS1_6RefPtrINS_14SecurityOriginENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefT16535675'/>
+<use f='WebKit/Source/WebCore/page/csp/ContentSecurityPolicyDirectiveList.cpp' l='78' c='_ZN7WebCoreL13urlFromOriginERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/page/csp/ContentSecurityPolicyDirectiveList.cpp' l='96' c='_ZN7WebCoreL19checkFrameAncestorsEPNS_40ContentSecurityPolicySourceListDirectiveERKN3WTF6VectorINS2_6RefPtrINS_14SecurityOriginENS2_12RawPtrTraitsIS5_14374045'/>
+<use f='WebKit/Source/WebCore/page/csp/ContentSecurityPolicyDirectiveList.cpp' l='260' c='_ZNK7WebCore34ContentSecurityPolicyDirectiveList40violatedDirectiveForFrameAncestorOriginsERKN3WTF6VectorINS1_6RefPtrINS_14SecurityOriginENS1_12RawPtr10085054'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/loader/NavigationScheduler.h' l='58' c='_ZN7WebCore19NavigationScheduler22scheduleLocationChangeERNS_8DocumentERNS_14SecurityOriginERKN3WTF3URLERKNS5_6StringENS_11LockHistoryENS_19LockBackFo6696214'/>
+<use f='WebKit/Source/WebCore/page/DOMWindow.cpp' l='878' c='_ZN7WebCore9DOMWindow11postMessageERN3JSC14JSGlobalObjectERS0_NS1_7JSValueEONS_24WindowPostMessageOptionsE'/>
+<use f='WebKit/Source/WebCore/page/DOMWindow.cpp' l='1514' c='_ZNK7WebCore9DOMWindow14securityOriginEv'/>
+<use f='WebKit/Source/WebCore/page/DOMWindow.cpp' l='2421' c='_ZN7WebCore9DOMWindow29crossDomainAccessErrorMessageERKS0_NS_19IncludeTargetOriginE'/>
+<use f='WebKit/Source/WebCore/page/DOMWindow.cpp' l='2422' c='_ZN7WebCore9DOMWindow29crossDomainAccessErrorMessageERKS0_NS_19IncludeTargetOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/page/OriginAccessEntry.cpp' l='48' c='_ZNK7WebCore17OriginAccessEntry13matchesOriginERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.h' l='133' c='_ZN7WebCore17EmptyChromeClient34reachedApplicationCacheOriginQuotaERNS_14SecurityOriginEl'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/page/PerformanceNavigationTiming.cpp' l='53' c='_ZN7WebCore27PerformanceNavigationTimingC1EN3WTF13MonotonicTimeERNS_14CachedResourceERKNS_18DocumentLoadTimingERKNS_18NetworkLoadMetricsERKNS_19Docume6421496'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorDOMStorageAgent.h' l='68' c='_ZN7WebCore24InspectorDOMStorageAgent26didDispatchDOMStorageEventERKN3WTF6StringES4_S4_NS_11StorageTypeEPNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorDOMStorageAgent.h' l='72' c='_ZN7WebCore24InspectorDOMStorageAgent9storageIdEPNS_14SecurityOriginEb'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/inspector/agents/page/PageRuntimeAgent.h' l='71' c='_ZN7WebCore16PageRuntimeAgent20notifyContextCreatedERKN3WTF6StringEPN3JSC14JSGlobalObjectERKNS_15DOMWrapperWorldEPNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.cpp' l='1000' c='_ZN7WebCore24InspectorInstrumentation30didDispatchDOMStorageEventImplERNS_19InstrumentingAgentsERKN3WTF6StringES6_S6_NS_11StorageTypeEPNS_14SecurityOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorDOMStorageAgent.cpp' l='169' c='_ZN7WebCore24InspectorDOMStorageAgent9storageIdERNS_7StorageE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorDOMStorageAgent.cpp' l='174' c='_ZN7WebCore24InspectorDOMStorageAgent9storageIdEPNS_14SecurityOriginEb'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorDOMStorageAgent.cpp' l='182' c='_ZN7WebCore24InspectorDOMStorageAgent26didDispatchDOMStorageEventERKN3WTF6StringES4_S4_NS_11StorageTypeEPNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorIndexedDBAgent.cpp' l='83' c='_ZN7WebCore12_GLOBAL__N_122ExecutableWithDatabase5startEPNS_10IDBFactoryEPNS_14SecurityOriginERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorIndexedDBAgent.cpp' l='136' c='_ZN7WebCore12_GLOBAL__N_122ExecutableWithDatabase5startEPNS_10IDBFactoryEPNS_14SecurityOriginERKN3WTF6StringE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/inspector/agents/page/PageRuntimeAgent.cpp' l='174' c='_ZN7WebCore16PageRuntimeAgent20notifyContextCreatedERKN3WTF6StringEPN3JSC14JSGlobalObjectERKNS_15DOMWrapperWorldEPNS_14SecurityOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/html/ImageBitmap.cpp' l='151' c='_ZN7WebCoreL12taintsOriginEPNS_14SecurityOriginERNS_16HTMLVideoElementE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/html/HTMLCanvasElement.cpp' l='858' c='_ZNK7WebCore17HTMLCanvasElement14securityOriginEv'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/dom/SecurityContext.cpp' l='48' c='_ZNK7WebCore15SecurityContext14securityOriginEv'/>
+<use f='WebKit/Source/WebCore/dom/SecurityOriginPolicy.cpp' l='33' c='_ZN7WebCore20SecurityOriginPolicy6createEON3WTF3RefINS_14SecurityOriginENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/dom/SecurityOriginPolicy.cpp' l='38' c='_ZN7WebCore20SecurityOriginPolicyC1EON3WTF3RefINS_14SecurityOriginENS1_12RawPtrTraitsIS3_EEEE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/dom/WindowEventLoop.cpp' l='48' c='_ZN7WebCoreL29agentClusterKeyOrNullIfUniqueERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/dom/WindowEventLoop.cpp' l='65' c='_ZN7WebCore15WindowEventLoop26eventLoopForSecurityOriginERKNS_14SecurityOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='486' c='_ZN7WebCoreL17canAccessAncestorERKNS_14SecurityOriginEPNS_5FrameE'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='500' c='_ZN7WebCoreL17canAccessAncestorERKNS_14SecurityOriginEPNS_5FrameE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.cpp' l='75' c='_ZN7WebCore29updateRequestForAccessControlERNS_15ResourceRequestERNS_14SecurityOriginENS_23StoredCredentialsPolicyE'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.cpp' l='82' c='_ZN7WebCore35createAccessControlPreflightRequestERKNS_15ResourceRequestERNS_14SecurityOriginERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.cpp' l='231' c='_ZN7WebCore24passesAccessControlCheckERKNS_16ResourceResponseENS_23StoredCredentialsPolicyERKNS_14SecurityOriginEPKNS_37CrossOriginAccessControlCheckDisablerE'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.cpp' l='260' c='_ZN7WebCore25validatePreflightResponseEN3PAL9SessionIDERKNS_15ResourceRequestERKNS_16ResourceResponseENS_23StoredCredentialsPolicyERKNS_14SecurityOrig10797570'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.cpp' l='283' c='_ZN7WebCoreL41shouldCrossOriginResourcePolicyCancelLoadERKNS_14SecurityOriginERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/CrossOriginAccessControl.cpp' l='307' c='_ZN7WebCore33validateCrossOriginResourcePolicyERKNS_14SecurityOriginERKN3WTF3URLERKNS_16ResourceResponseE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResourceRequest.cpp' l='258' c='_ZN7WebCore20isRequestCrossOriginEPNS_14SecurityOriginERKN3WTF3URLERKNS_21ResourceLoaderOptionsE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.cpp' l='487' c='_ZN7WebCore11MemoryCache25removeResourcesWithOriginERNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.cpp' l='510' c='_ZN7WebCore11MemoryCache26removeResourcesWithOriginsEN3PAL9SessionIDERKN3WTF7HashSetINS3_6RefPtrINS_14SecurityOriginENS3_12RawPtrTraitsIS6_EENS3_21Def1579755'/>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.cpp' l='551' c='_ZNK7WebCore11MemoryCache16originsWithCacheEN3PAL9SessionIDE'/>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.cpp' l='553' c='_ZNK7WebCore11MemoryCache16originsWithCacheEN3PAL9SessionIDE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='643' c='_ZN7WebCore14DocumentLoader15willSendRequestEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentThreadableLoader.cpp' l='73' c='_ZN7WebCore24DocumentThreadableLoader25loadResourceSynchronouslyERNS_8DocumentEONS_15ResourceRequestERNS_22ThreadableLoaderClientERKNS_23ThreadableLoa14909230'/>
+<use f='WebKit/Source/WebCore/loader/DocumentThreadableLoader.cpp' l='86' c='_ZN7WebCore24DocumentThreadableLoader6createERNS_8DocumentERNS_22ThreadableLoaderClientEONS_15ResourceRequestERKNS_23ThreadableLoaderOptionsEON3WTF6Re1590095'/>
+<use f='WebKit/Source/WebCore/loader/DocumentThreadableLoader.cpp' l='118' c='_ZN7WebCore24DocumentThreadableLoaderC1ERNS_8DocumentERNS_22ThreadableLoaderClientENS0_16BlockingBehaviorEONS_15ResourceRequestERKNS_23ThreadableLoade14766505'/>
+<use f='WebKit/Source/WebCore/loader/DocumentThreadableLoader.cpp' l='700' c='_ZNK7WebCore24DocumentThreadableLoader14securityOriginEv'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='500' c='_ZN7WebCore29EmptyStorageNamespaceProvider36createTransientLocalStorageNamespaceERNS_14SecurityOriginEjN3PAL9SessionIDE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='1035' c='_ZN7WebCore22EmptyFrameLoaderClient21didRunInsecureContentERNS_14SecurityOriginERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='1149' c='_ZN7WebCore29EmptyStorageNamespaceProvider36createTransientLocalStorageNamespaceERNS_14SecurityOriginEjN3PAL9SessionIDE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/loader/FrameLoadRequest.cpp' l='40' c='_ZN7WebCore16FrameLoadRequestC1ERNS_8DocumentERNS_14SecurityOriginEONS_15ResourceRequestERKN3WTF6StringENS_20InitiatedByMainFrameERKNS7_10AtomStringER16216793'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoadRequest.cpp' l='69' c='_ZNK7WebCore16FrameLoadRequest23requesterSecurityOriginEv'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='2026' c='_ZN7WebCore11FrameLoader21commitProvisionalLoadEv'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/loader/MixedContentChecker.cpp' l='46' c='_ZN7WebCore19MixedContentChecker14isMixedContentERNS_14SecurityOriginERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/loader/MixedContentChecker.cpp' l='62' c='_ZN7WebCore19MixedContentChecker25canDisplayInsecureContentERNS_5FrameERNS_14SecurityOriginENS0_11ContentTypeERKN3WTF3URLENS0_28AlwaysDisplayInNonStrictModeE'/>
+<use f='WebKit/Source/WebCore/loader/MixedContentChecker.cpp' l='85' c='_ZN7WebCore19MixedContentChecker21canRunInsecureContentERNS_5FrameERNS_14SecurityOriginERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/loader/MixedContentChecker.cpp' l='104' c='_ZN7WebCore19MixedContentChecker24checkFormForMixedContentERNS_5FrameERNS_14SecurityOriginERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/loader/NavigationScheduler.cpp' l='121' c='_ZN7WebCore22ScheduledURLNavigationC1ERNS_8DocumentEdPNS_14SecurityOriginERKN3WTF3URLERKNS5_6StringENS_11LockHistoryENS_19LockBackForwardListEbb'/>
+<use f='WebKit/Source/WebCore/loader/NavigationScheduler.cpp' l='156' c='_ZNK7WebCore22ScheduledURLNavigation14securityOriginEv'/>
+<use f='WebKit/Source/WebCore/loader/NavigationScheduler.cpp' l='162'/>
+<use f='WebKit/Source/WebCore/loader/NavigationScheduler.cpp' l='170' c='_ZN7WebCore17ScheduledRedirectC1ERNS_8DocumentEdPNS_14SecurityOriginERKN3WTF3URLENS_11LockHistoryENS_19LockBackForwardListE'/>
+<use f='WebKit/Source/WebCore/loader/NavigationScheduler.cpp' l='201' c='_ZN7WebCore23ScheduledLocationChangeC1ERNS_8DocumentEPNS_14SecurityOriginERKN3WTF3URLERKNS5_6StringENS_11LockHistoryENS_19LockBackForwardListEbONS5_1712085348'/>
+<use f='WebKit/Source/WebCore/loader/NavigationScheduler.cpp' l='235' c='_ZN7WebCore16ScheduledRefreshC1ERNS_8DocumentEPNS_14SecurityOriginERKN3WTF3URLERKNS5_6StringE'/>
+<use f='WebKit/Source/WebCore/loader/NavigationScheduler.cpp' l='444' c='_ZN7WebCore19NavigationScheduler22scheduleLocationChangeERNS_8DocumentERNS_14SecurityOriginERKN3WTF3URLERKNS5_6StringENS_11LockHistoryENS_19LockBackFo6696214'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='245' c='_ZN7WebCore14ResourceLoader5startEv'/>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.cpp' l='38' c='_ZN7WebCore14ResourceTiming15fromMemoryCacheERKN3WTF3URLERKNS1_6StringERKNS_18ResourceLoadTimingERKNS_16ResourceResponseERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.cpp' l='43' c='_ZN7WebCore14ResourceTiming8fromLoadERNS_14CachedResourceERKN3WTF3URLERKNS3_6StringERKNS_18ResourceLoadTimingERKNS_18NetworkLoadMetricsERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.cpp' l='48' c='_ZN7WebCore14ResourceTiming19fromSynchronousLoadERKN3WTF3URLERKNS1_6StringERKNS_18ResourceLoadTimingERKNS_18NetworkLoadMetricsERKNS_16ResourceResponse2354542'/>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.cpp' l='53' c='_ZN7WebCore14ResourceTimingC1ERKN3WTF3URLERKNS1_6StringERKNS_18ResourceLoadTimingERKNS_16ResourceResponseERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceTiming.cpp' l='61' c='_ZN7WebCore14ResourceTimingC1ERKN3WTF3URLERKNS1_6StringERKNS_18ResourceLoadTimingERKNS_18NetworkLoadMetricsERKNS_16ResourceResponseERKNS_14SecurityOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.cpp' l='894' c='_ZN7WebCore17SubresourceLoader20reportResourceTimingERKNS_18NetworkLoadMetricsE'/>
+<use f='WebKit/Source/WebCore/loader/WorkerThreadableLoader.cpp' l='97' c='_ZN7WebCore17LoaderTaskOptionsC1ERKNS_23ThreadableLoaderOptionsERKN3WTF6StringEONS4_3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS9_EEEE'/>
+<use f='WebKit/Source/WebCore/loader/WorkerThreadableLoader.cpp' l='100'/>
+<use f='WebKit/Source/WebCore/loader/WorkerThreadableLoader.cpp' l='103' c='_ZN7WebCore17LoaderTaskOptionsC1ERKNS_23ThreadableLoaderOptionsERKN3WTF6StringEONS4_3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS9_EEEE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheGroup.h' l='69' c='_ZNK7WebCore21ApplicationCacheGroup6originEv'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheGroup.h' l='132'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheStorage.cpp' l='413' c='_ZN7WebCore23ApplicationCacheStorage23calculateQuotaForOriginERKNS_14SecurityOriginERl'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheStorage.cpp' l='464' c='_ZN7WebCore23ApplicationCacheStorage45calculateRemainingSizeForOriginExcludingCacheERKNS_14SecurityOriginEPNS_16ApplicationCacheERl'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheStorage.cpp' l='515' c='_ZN7WebCore23ApplicationCacheStorage26storeUpdatedQuotaForOriginEPKNS_14SecurityOriginEl'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheStorage.cpp' l='942' c='_ZN7WebCore23ApplicationCacheStorage18ensureOriginRecordEPKNS_14SecurityOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/loader/cache/CachedImage.cpp' l='716' c='_ZN7WebCore11CachedImage13isOriginCleanEPNS_14SecurityOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/fileapi/BlobURL.cpp' l='46' c='_ZN7WebCore7BlobURL15createPublicURLEPNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/fileapi/BlobURL.cpp' l='57' c='_ZN7WebCoreL9blobOwnerERKNS_14SecurityOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/fileapi/ThreadableBlobRegistry.cpp' l='54'/>
+<use f='WebKit/Source/WebCore/fileapi/ThreadableBlobRegistry.cpp' l='102' c='_ZN7WebCore22ThreadableBlobRegistry15registerBlobURLEPNS_14SecurityOriginERKN3WTF3URLES6_'/>
+<use f='WebKit/Source/WebCore/fileapi/ThreadableBlobRegistry.cpp' l='167' c='_ZN7WebCore22ThreadableBlobRegistry15getCachedOriginERKN3WTF3URLE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/workers/DedicatedWorkerThread.h' l='54' c='_ZN7WebCore21DedicatedWorkerThread23createWorkerGlobalScopeERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS6_EEEESA_'/>
+<use f='WebKit/Source/WebCore/workers/DedicatedWorkerThread.h' l='54' c='_ZN7WebCore21DedicatedWorkerThread23createWorkerGlobalScopeERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS6_EEEESA_'/>
+<use f='WebKit/Source/WebCore/workers/DedicatedWorkerThread.h' l='58' c='_ZN7WebCore21DedicatedWorkerThreadC1ERKNS_16WorkerParametersERKNS_12ScriptBufferERNS_17WorkerLoaderProxyERNS_19WorkerDebuggerProxyERNS_17WorkerObjectP6502884'/>
+<use f='WebKit/Source/WebCore/workers/DedicatedWorkerGlobalScope.cpp' l='55' c='_ZN7WebCore26DedicatedWorkerGlobalScope6createERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS6_EEEERNS_21DedicatedWorkerT11256485'/>
+<use f='WebKit/Source/WebCore/workers/DedicatedWorkerGlobalScope.cpp' l='55' c='_ZN7WebCore26DedicatedWorkerGlobalScope6createERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS6_EEEERNS_21DedicatedWorkerT11256485'/>
+<use f='WebKit/Source/WebCore/workers/DedicatedWorkerGlobalScope.cpp' l='63' c='_ZN7WebCore26DedicatedWorkerGlobalScopeC1ERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS6_EEEERNS_21DedicatedWorkerThread10195097'/>
+<use f='WebKit/Source/WebCore/workers/DedicatedWorkerGlobalScope.cpp' l='63' c='_ZN7WebCore26DedicatedWorkerGlobalScopeC1ERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS6_EEEERNS_21DedicatedWorkerThread10195097'/>
+<use f='WebKit/Source/WebCore/workers/DedicatedWorkerThread.cpp' l='41' c='_ZN7WebCore21DedicatedWorkerThreadC1ERKNS_16WorkerParametersERKNS_12ScriptBufferERNS_17WorkerLoaderProxyERNS_19WorkerDebuggerProxyERNS_17WorkerObjectP6502884'/>
+<use f='WebKit/Source/WebCore/workers/DedicatedWorkerThread.cpp' l='49' c='_ZN7WebCore21DedicatedWorkerThread23createWorkerGlobalScopeERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS6_EEEESA_'/>
+<use f='WebKit/Source/WebCore/workers/DedicatedWorkerThread.cpp' l='49' c='_ZN7WebCore21DedicatedWorkerThread23createWorkerGlobalScopeERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS6_EEEESA_'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/workers/service/WorkerSWClientConnection.h' l='54' c='_ZN7WebCore24WorkerSWClientConnection27registerServiceWorkerClientERKNS_14SecurityOriginERKNS_23ServiceWorkerClientDataERKSt8optionalIN3WTF16ObjectIde1355451'/>
+<use f='WebKit/Source/WebCore/workers/WorkerGlobalScope.cpp' l='77' c='_ZN7WebCore17WorkerGlobalScopeC1ENS_16WorkerThreadTypeERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS5_12RawPtrTraitsIS7_EEEERNS_12WorkerTh11103912'/>
+<use f='WebKit/Source/WebCore/workers/WorkerGlobalScope.cpp' l='77' c='_ZN7WebCore17WorkerGlobalScopeC1ENS_16WorkerThreadTypeERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS5_12RawPtrTraitsIS7_EEEERNS_12WorkerTh11103912'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/workers/WorkerThread.cpp' l='69' c='_ZN7WebCore23WorkerThreadStartupDataC1ERKNS_16WorkerParametersERKNS_12ScriptBufferENS_21WorkerThreadStartModeERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/workers/WorkerThread.cpp' l='72'/>
+<use f='WebKit/Source/WebCore/workers/WorkerThread.cpp' l='75'/>
+<use f='WebKit/Source/WebCore/workers/WorkerThread.cpp' l='78' c='_ZN7WebCore23WorkerThreadStartupDataC1ERKNS_16WorkerParametersERKNS_12ScriptBufferENS_21WorkerThreadStartModeERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/workers/WorkerThread.cpp' l='87' c='_ZN7WebCore12WorkerThreadC1ERKNS_16WorkerParametersERKNS_12ScriptBufferERNS_17WorkerLoaderProxyERNS_19WorkerDebuggerProxyERNS_20WorkerReportingProxyEN2089272'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/workers/service/ServiceWorkerGlobalScope.cpp' l='47' c='_ZN7WebCore24ServiceWorkerGlobalScope6createEONS_24ServiceWorkerContextDataERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS6_12RawPtrTraitsI14219469'/>
+<use f='WebKit/Source/WebCore/workers/service/ServiceWorkerGlobalScope.cpp' l='47' c='_ZN7WebCore24ServiceWorkerGlobalScope6createEONS_24ServiceWorkerContextDataERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS6_12RawPtrTraitsI14219469'/>
+<use f='WebKit/Source/WebCore/workers/service/ServiceWorkerGlobalScope.cpp' l='54' c='_ZN7WebCore24ServiceWorkerGlobalScopeC1EONS_24ServiceWorkerContextDataERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS6_12RawPtrTraitsIS8_EE5769615'/>
+<use f='WebKit/Source/WebCore/workers/service/ServiceWorkerGlobalScope.cpp' l='54' c='_ZN7WebCore24ServiceWorkerGlobalScopeC1EONS_24ServiceWorkerContextDataERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS6_12RawPtrTraitsIS8_EE5769615'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/workers/service/WorkerSWClientConnection.cpp' l='158' c='_ZN7WebCore24WorkerSWClientConnection27registerServiceWorkerClientERKNS_14SecurityOriginERKNS_23ServiceWorkerClientDataERKSt8optionalIN3WTF16ObjectIde1355451'/>
+<use f='WebKit/Source/WebCore/workers/service/context/ServiceWorkerThread.cpp' l='91' c='_ZN7WebCore19ServiceWorkerThread23createWorkerGlobalScopeERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS6_EEEESA_'/>
+<use f='WebKit/Source/WebCore/workers/service/context/ServiceWorkerThread.cpp' l='91' c='_ZN7WebCore19ServiceWorkerThread23createWorkerGlobalScopeERKNS_16WorkerParametersEON3WTF3RefINS_14SecurityOriginENS4_12RawPtrTraitsIS6_EEEESA_'/>
+<use f='WebKit/Source/WebCore/workers/service/context/ServiceWorkerThreadProxy.cpp' l='53' c='_ZN7WebCoreL12topOriginURLERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/workers/service/server/RegistrationDatabase.h' l='75' c='_ZN7WebCore20RegistrationDatabase13doClearOriginERKNS_14SecurityOriginE'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/workers/service/server/SWServer.cpp' l='441' c='_ZN7WebCoreL9originURLERKNS_14SecurityOriginE'/>
+<size>64</size>

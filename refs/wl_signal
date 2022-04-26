@@ -1,0 +1,21 @@
+<def f='include/wayland-server-core.h' l='415' ll='417'/>
+<use f='include/wayland-server-core.h' l='426' c='_ZL14wl_signal_initP9wl_signal'/>
+<use f='include/wayland-server-core.h' l='439' c='_ZL13wl_signal_addP9wl_signalP11wl_listener'/>
+<use f='include/wayland-server-core.h' l='454' c='_ZL13wl_signal_getP9wl_signalPFvP11wl_listenerPvE'/>
+<use f='include/wayland-server-core.h' l='473' c='_ZL14wl_signal_emitP9wl_signalPv'/>
+<use f='include/wayland-server.h' l='68'/>
+<size>16</size>
+<doc f='include/wayland-server-core.h' l='402'>/** \class wl_signal
+ *
+ * \brief A source of a type of observable event
+ *
+ * Signals are recognized points where significant events can be observed.
+ * Compositors as well as the server can provide signals. Observers are
+ * wl_listener&apos;s that are added through #wl_signal_add. Signals are emitted
+ * using #wl_signal_emit, which will invoke all listeners until that
+ * listener is removed by wl_list_remove() (or whenever the signal is
+ * destroyed).
+ *
+ * \sa wl_listener for more information on using wl_signal
+ */</doc>
+<mbr r='wl_signal::listener_list' o='0' t='struct wl_list'/>

@@ -1,0 +1,22 @@
+<def f='WebKit/Source/ThirdParty/ANGLE/src/common/third_party/base/anglebase/numerics/safe_conversions_impl.h' l='189' ll='193'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/common/third_party/base/anglebase/numerics/safe_conversions_impl.h' l='197' ll='209'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/common/third_party/base/anglebase/numerics/safe_conversions_impl.h' l='212' ll='223'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/common/third_party/base/anglebase/numerics/safe_conversions_impl.h' l='226' ll='240'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/common/third_party/base/anglebase/numerics/safe_conversions_impl.h' l='244' ll='258'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/common/third_party/base/anglebase/numerics/safe_conversions_impl.h' l='265' c='_ZN5angle4base8internal26DstRangeRelationToSrcRangeET0_'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/common/third_party/base/anglebase/numerics/safe_conversions_impl.h' l='184'>// The following templates are for ranges that must be verified at runtime. We
+// split it into checks based on signedness to avoid confusing casts and
+// compiler warnings on signed an unsigned comparisons.
+
+// Dst range is statically determined to contain Src: Nothing to check.</doc>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/common/third_party/base/anglebase/numerics/safe_conversions_impl.h' l='195'>// Signed to signed narrowing: Both the upper and lower boundaries may be
+// exceeded.</doc>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/common/third_party/base/anglebase/numerics/safe_conversions_impl.h' l='211'>// Unsigned to unsigned narrowing: Only the upper boundary can be exceeded.</doc>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/common/third_party/base/anglebase/numerics/safe_conversions_impl.h' l='225'>// Unsigned to signed: The upper boundary may be exceeded.</doc>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/common/third_party/base/anglebase/numerics/safe_conversions_impl.h' l='242'>// Signed to unsigned: The upper boundary may be exceeded for a narrower Dst,
+// and any negative value exceeds the lower boundary.</doc>
+<fun r='_ZN5angle4base8internal30DstRangeRelationToSrcRangeImplIT_T0_XT1_EXT2_ELNS1_26NumericRangeRepresentationE1EE5CheckES4_'/>
+<fun r='_ZN5angle4base8internal30DstRangeRelationToSrcRangeImplIT_T0_LNS1_21IntegerRepresentationE1ELS5_1ELNS1_26NumericRangeRepresentationE0EE5CheckES4_'/>
+<fun r='_ZN5angle4base8internal30DstRangeRelationToSrcRangeImplIT_T0_LNS1_21IntegerRepresentationE0ELS5_0ELNS1_26NumericRangeRepresentationE0EE5CheckES4_'/>
+<fun r='_ZN5angle4base8internal30DstRangeRelationToSrcRangeImplIT_T0_LNS1_21IntegerRepresentationE1ELS5_0ELNS1_26NumericRangeRepresentationE0EE5CheckES4_'/>
+<fun r='_ZN5angle4base8internal30DstRangeRelationToSrcRangeImplIT_T0_LNS1_21IntegerRepresentationE0ELS5_1ELNS1_26NumericRangeRepresentationE0EE5CheckES4_'/>

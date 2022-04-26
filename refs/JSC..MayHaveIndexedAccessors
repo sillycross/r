@@ -1,0 +1,69 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IndexingType.h' l='90' type='const JSC::IndexingType'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IndexingType.h' l='234' u='r'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IndexingType.h' l='235' u='r'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/StructureTransitionTable.h' l='108' u='r' c='_ZN3JSC15newIndexingTypeEhNS_14TransitionKindE'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IndexingType.h' l='86'>// Additional flags for tracking the history of the type. These are usually
+// masked off unless you ask for them directly.
+// FIXME: We only seem to use MayHaveIndexedAccessors for checking if the prototype chain may intercept indexed properties. We should probably be able to compute that same information via (indexingShape != SlowPutArrayStorageShape || classInfo().getOwnPropertySlotByIndex != JSObject::getOwnPropertySlotByIndex || globalObject().isHavingABadTime()) since we will already get the structure in order to do the prototype chain walk.
+// See: https://bugs.webkit.org/show_bug.cgi?id=209757</doc>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ProxyObject.h' l='59' u='r' c='_ZN3JSC11ProxyObject15createStructureERNS_2VMEPNS_14JSGlobalObjectENS_7JSValueEb'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/StructureInlines.h' l='91' u='r' c='_ZNK3JSC9Structure27mayInterceptIndexedAccessesEv'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/IndexingType.h' l='90' type='const JSC::IndexingType'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IndexingType.h' l='234' u='r'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IndexingType.h' l='235' u='r'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/StructureTransitionTable.h' l='108' u='r' c='_ZN3JSC15newIndexingTypeEhNS_14TransitionKindE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ProxyObject.h' l='59' u='r' c='_ZN3JSC11ProxyObject15createStructureERNS_2VMEPNS_14JSGlobalObjectENS_7JSValueEb'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/StructureInlines.h' l='91' u='r' c='_ZNK3JSC9Structure27mayInterceptIndexedAccessesEv'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/IndexingType.h' l='86'>// Additional flags for tracking the history of the type. These are usually
+// masked off unless you ask for them directly.
+// FIXME: We only seem to use MayHaveIndexedAccessors for checking if the prototype chain may intercept indexed properties. We should probably be able to compute that same information via (indexingShape != SlowPutArrayStorageShape || classInfo().getOwnPropertySlotByIndex != JSObject::getOwnPropertySlotByIndex || globalObject().isHavingABadTime()) since we will already get the structure in order to do the prototype chain walk.
+// See: https://bugs.webkit.org/show_bug.cgi?id=209757</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/IndexingType.cpp' l='132' u='r' c='_ZN3JSC16dumpIndexingTypeERN3WTF11PrintStreamEh'/>
+<use f='WebKit/WebCore/DerivedSources/JSCSSStyleDeclaration.h' l='51' u='r' c='_ZN7WebCore21JSCSSStyleDeclaration15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDOMRectList.h' l='51' u='r' c='_ZN7WebCore13JSDOMRectList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDOMWindow.h' l='61' u='r' c='_ZN7WebCore11JSDOMWindow15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLSelectElement.h' l='54' u='r' c='_ZN7WebCore19JSHTMLSelectElement15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSNodeList.h' l='52' u='r' c='_ZN7WebCore10JSNodeList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSTouchList.h' l='53' u='r' c='_ZN7WebCore11JSTouchList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioTrackList.h' l='54' u='r' c='_ZN7WebCore16JSAudioTrackList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSSourceBufferList.h' l='54' u='r' c='_ZN7WebCore18JSSourceBufferList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSTextTrackList.h' l='54' u='r' c='_ZN7WebCore15JSTextTrackList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSVideoTrackList.h' l='54' u='r' c='_ZN7WebCore16JSVideoTrackList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSSVGNumberList.h' l='55' u='r' c='_ZN7WebCore15JSSVGNumberList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSSVGPathSegList.h' l='55' u='r' c='_ZN7WebCore16JSSVGPathSegList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSSVGStringList.h' l='55' u='r' c='_ZN7WebCore15JSSVGStringList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSSVGPointList.h' l='55' u='r' c='_ZN7WebCore14JSSVGPointList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSSVGTransformList.h' l='55' u='r' c='_ZN7WebCore18JSSVGTransformList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSStyleSheetList.h' l='51' u='r' c='_ZN7WebCore16JSStyleSheetList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSCSSRuleList.h' l='51' u='r' c='_ZN7WebCore13JSCSSRuleList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSMediaList.h' l='51' u='r' c='_ZN7WebCore11JSMediaList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSCSSKeyframesRule.h' l='50' u='r' c='_ZN7WebCore18JSCSSKeyframesRule15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSSpeechRecognitionResultList.h' l='51' u='r' c='_ZN7WebCore29JSSpeechRecognitionResultList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSSpeechRecognitionResult.h' l='51' u='r' c='_ZN7WebCore25JSSpeechRecognitionResult15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSStorage.h' l='56' u='r' c='_ZN7WebCore9JSStorage15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSTextTrackCueList.h' l='53' u='r' c='_ZN7WebCore18JSTextTrackCueList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSVTTRegionList.h' l='53' u='r' c='_ZN7WebCore15JSVTTRegionList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSUserMessageHandlersNamespace.h' l='53' u='r' c='_ZN7WebCore30JSUserMessageHandlersNamespace15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDOMStringList.h' l='51' u='r' c='_ZN7WebCore15JSDOMStringList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSFileList.h' l='51' u='r' c='_ZN7WebCore10JSFileList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLFormElement.h' l='51' u='r' c='_ZN7WebCore17JSHTMLFormElement15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLDocument.h' l='50' u='r' c='_ZN7WebCore14JSHTMLDocument15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDOMPlugin.h' l='51' u='r' c='_ZN7WebCore11JSDOMPlugin15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDOMMimeTypeArray.h' l='51' u='r' c='_ZN7WebCore18JSDOMMimeTypeArray15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDOMPluginArray.h' l='51' u='r' c='_ZN7WebCore16JSDOMPluginArray15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDOMStringMap.h' l='56' u='r' c='_ZN7WebCore14JSDOMStringMap15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDOMTokenList.h' l='51' u='r' c='_ZN7WebCore14JSDOMTokenList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDataTransferItemList.h' l='51' u='r' c='_ZN7WebCore22JSDataTransferItemList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDeprecatedCSSOMValueList.h' l='50' u='r' c='_ZN7WebCore26JSDeprecatedCSSOMValueList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLAllCollection.h' l='55' u='r' c='_ZN7WebCore19JSHTMLAllCollection15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLCollection.h' l='52' u='r' c='_ZN7WebCore16JSHTMLCollection15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLEmbedElement.h' l='54' u='r' c='_ZN7WebCore18JSHTMLEmbedElement15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLFormControlsCollection.h' l='51' u='r' c='_ZN7WebCore28JSHTMLFormControlsCollection15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLFrameSetElement.h' l='50' u='r' c='_ZN7WebCore21JSHTMLFrameSetElement15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLObjectElement.h' l='54' u='r' c='_ZN7WebCore19JSHTMLObjectElement15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSHTMLOptionsCollection.h' l='55' u='r' c='_ZN7WebCore23JSHTMLOptionsCollection15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSLocation.h' l='58' u='r' c='_ZN7WebCore10JSLocation15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSNamedNodeMap.h' l='51' u='r' c='_ZN7WebCore14JSNamedNodeMap15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSSVGLengthList.h' l='55' u='r' c='_ZN7WebCore15JSSVGLengthList15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/WebCore/DerivedSources/JSRemoteDOMWindow.h' l='58' u='r' c='_ZN7WebCore17JSRemoteDOMWindow15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSDOMWindowProperties.h' l='57' u='r' c='_ZN7WebCore21JSDOMWindowProperties15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>

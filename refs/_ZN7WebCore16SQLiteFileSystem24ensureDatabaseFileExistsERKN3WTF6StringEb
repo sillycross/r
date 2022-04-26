@@ -1,0 +1,15 @@
+<dec f='WebKit/Source/WebCore/platform/sql/SQLiteFileSystem.h' l='71' type='static bool WebCore::SQLiteFileSystem::ensureDatabaseFileExists(const WTF::String &amp; fileName, bool checkPathOnly)'/>
+<doc f='WebKit/Source/WebCore/platform/sql/SQLiteFileSystem.h' l='59'>// If &apos;checkPathOnly&apos; is false, then this method only checks if the given file exists.
+    // If &apos;checkPathOnly&apos; is true, then this method makes sure all directories on the
+    // given path exist by creating the missing ones, and does not check if the file
+    // itself exists.
+    //
+    // Sometimes we expect a DB file to exist; other times, we&apos;re OK with creating a new
+    // DB file, but we want to make sure that the directory in which we want to put the
+    // new DB file exists. This method covers both cases.
+    //
+    // fileName - The file name.
+    // checkPathOnly - If true, we only make sure that the given directory exists.
+    //                 If false, we only check if the file exists.</doc>
+<def f='WebKit/Source/WebCore/platform/sql/SQLiteFileSystem.cpp' l='62' ll='73' type='static bool WebCore::SQLiteFileSystem::ensureDatabaseFileExists(const WTF::String &amp; fileName, bool checkPathOnly)'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseTracker.cpp' l='119' u='c' c='_ZN7WebCore15DatabaseTracker19openTrackerDatabaseENS0_21TrackerCreationActionE'/>

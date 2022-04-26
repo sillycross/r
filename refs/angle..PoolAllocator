@@ -1,0 +1,64 @@
+<inh f='WebKit/Source/ThirdParty/ANGLE/src/common/angleutils.h' l='43' c='angle::NonCopyable'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/common/PoolAlloc.h' l='123' ll='277'/>
+<size>104</size>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/common/PoolAlloc.h' l='109'>//
+// There are several stacks.  One is to track the pushing and popping
+// of the user, and not yet implemented.  The others are simply a
+// repositories of free pages or used pages.
+//
+// Page stacks are linked together with a simple header at the beginning
+// of each allocation obtained from the underlying OS.  Multi-page allocations
+// are returned to the OS.  Individual page allocations are kept for future
+// re-use.
+//
+// The &quot;page size&quot; used is not, nor must it match, the underlying OS
+// page size.  But, having it be about that size or equal to a set of
+// pages is likely most optimal.
+//</doc>
+<smbr r='angle::PoolAllocator::kDefaultAlignment' t='const int'/>
+<fun r='_ZN5angle13PoolAllocatorC1Eii'/>
+<fun r='_ZN5angle13PoolAllocatorD1Ev'/>
+<fun r='_ZN5angle13PoolAllocator10initializeEii'/>
+<fun r='_ZN5angle13PoolAllocator4pushEv'/>
+<fun r='_ZN5angle13PoolAllocator3popEv'/>
+<fun r='_ZN5angle13PoolAllocator6popAllEv'/>
+<fun r='_ZN5angle13PoolAllocator8allocateEm'/>
+<fun r='_ZN5angle13PoolAllocator12fastAllocateEm'/>
+<fun r='_ZN5angle13PoolAllocator4lockEv'/>
+<fun r='_ZN5angle13PoolAllocator6unlockEv'/>
+<mbr r='angle::PoolAllocator::mAlignment' o='0' t='size_t'/>
+<mbr r='angle::PoolAllocator::mAlignmentMask' o='64' t='size_t'/>
+<fun r='_ZN5angle13PoolAllocator15allocateNewPageEmm'/>
+<fun r='_ZN5angle13PoolAllocator20initializeAllocationEPNS0_6HeaderEPhm'/>
+<mbr r='angle::PoolAllocator::mPageSize' o='128' t='size_t'/>
+<mbr r='angle::PoolAllocator::mHeaderSkip' o='192' t='size_t'/>
+<mbr r='angle::PoolAllocator::mCurrentPageOffset' o='256' t='size_t'/>
+<mbr r='angle::PoolAllocator::mFreeList' o='320' t='angle::PoolAllocator::Header *'/>
+<mbr r='angle::PoolAllocator::mInUseList' o='384' t='angle::PoolAllocator::Header *'/>
+<mbr r='angle::PoolAllocator::mStack' o='448' t='angle::PoolAllocator::AllocStack'/>
+<mbr r='angle::PoolAllocator::mNumCalls' o='640' t='int'/>
+<mbr r='angle::PoolAllocator::mTotalBytes' o='704' t='size_t'/>
+<mbr r='angle::PoolAllocator::mLocked' o='768' t='bool'/>
+<fun r='_ZN5angle13PoolAllocatorC1Eii'/>
+<fun r='_ZN5angle13PoolAllocator10initializeEii'/>
+<fun r='_ZN5angle13PoolAllocatorD1Ev'/>
+<fun r='_ZN5angle13PoolAllocator4pushEv'/>
+<fun r='_ZN5angle13PoolAllocator3popEv'/>
+<fun r='_ZN5angle13PoolAllocator6popAllEv'/>
+<fun r='_ZN5angle13PoolAllocator8allocateEm'/>
+<fun r='_ZN5angle13PoolAllocator15allocateNewPageEmm'/>
+<fun r='_ZN5angle13PoolAllocator4lockEv'/>
+<fun r='_ZN5angle13PoolAllocator6unlockEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/PoolAlloc.h' l='29' c='_Z22GetGlobalPoolAllocatorv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/PoolAlloc.h' l='30' c='_Z22SetGlobalPoolAllocatorPN5angle13PoolAllocatorE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/PoolAlloc.h' l='99' c='_ZNK14pool_allocator12getAllocatorEv'/>
+<size>104</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='76'/>
+<size>104</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='175' c='_ZN2sh12_GLOBAL__N_120TScopedPoolAllocatorC1EPN5angle13PoolAllocatorE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='187'/>
+<size>104</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/PoolAlloc.cpp' l='30' c='_Z22GetGlobalPoolAllocatorv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/PoolAlloc.cpp' l='33' c='_Z22GetGlobalPoolAllocatorv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/PoolAlloc.cpp' l='36' c='_Z22SetGlobalPoolAllocatorPN5angle13PoolAllocatorE'/>
+<size>104</size>

@@ -1,0 +1,40 @@
+<dec f='include/wayland-server-protocol.h' l='3040' type='void (*)(struct wl_client *, struct wl_resource *, int32_t)'/>
+<offset>448</offset>
+<doc f='include/wayland-server-protocol.h' l='3002'>/**
+	 * sets the buffer transformation
+	 *
+	 * This request sets an optional transformation on how the
+	 * compositor interprets the contents of the buffer attached to the
+	 * surface. The accepted values for the transform parameter are the
+	 * values for wl_output.transform.
+	 *
+	 * Buffer transform is double-buffered state, see
+	 * wl_surface.commit.
+	 *
+	 * A newly created surface has its buffer transformation set to
+	 * normal.
+	 *
+	 * wl_surface.set_buffer_transform changes the pending buffer
+	 * transformation. wl_surface.commit copies the pending buffer
+	 * transformation to the current one. Otherwise, the pending and
+	 * current values are never changed.
+	 *
+	 * The purpose of this request is to allow clients to render
+	 * content according to the output transform, thus permitting the
+	 * compositor to use certain optimizations even if the display is
+	 * rotated. Using hardware overlays and scanning out a client
+	 * buffer for fullscreen surfaces are examples of such
+	 * optimizations. Those optimizations are highly dependent on the
+	 * compositor implementation, so the use of this request should be
+	 * considered on a case-by-case basis.
+	 *
+	 * Note that if the transform value includes 90 or 270 degree
+	 * rotation, the width of the buffer will become the surface height
+	 * and the height of the buffer will become the surface width.
+	 *
+	 * If transform is not one of the values from the
+	 * wl_output.transform enum the invalid_transform protocol error is
+	 * raised.
+	 * @param transform transform for interpreting buffer contents
+	 * @since 2
+	 */</doc>

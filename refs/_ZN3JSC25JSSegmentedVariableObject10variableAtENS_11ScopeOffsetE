@@ -1,0 +1,16 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSSegmentedVariableObject.h' l='71' type='WriteBarrier&lt;JSC::Unknown&gt; &amp; JSC::JSSegmentedVariableObject::variableAt(JSC::ScopeOffset offset)'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSSegmentedVariableObject.h' l='67'>// This is not thread-safe, since m_variables is a segmented vector, and its spine can resize with
+    // malloc/free if new variables - unrelated to the one you are accessing - are added. You can get
+    // around this by grabbing m_lock, or finding some other way to get to the variable pointer (global
+    // variable access bytecode instructions will have a direct pointer already).</doc>
+<def f='WebKit/Source/JavaScriptCore/runtime/JSSegmentedVariableObject.h' l='71' type='WriteBarrier&lt;JSC::Unknown&gt; &amp; JSC::JSSegmentedVariableObject::variableAt(JSC::ScopeOffset offset)'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSSegmentedVariableObject.h' l='67'>// This is not thread-safe, since m_variables is a segmented vector, and its spine can resize with
+    // malloc/free if new variables - unrelated to the one you are accessing - are added. You can get
+    // around this by grabbing m_lock, or finding some other way to get to the variable pointer (global
+    // variable access bytecode instructions will have a direct pointer already).</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPathsInlines.h' l='66' u='c' c='_ZN3JSC15CommonSlowPaths24tryCachePutToScopeGlobalEPNS_14JSGlobalObjectEPNS_9CodeBlockERNS_12OpPutToScopeEPNS_8JSObjectERNS_15PutPropertySlotERKNS_10IdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPathsInlines.h' l='128' u='c' c='_ZN3JSC15CommonSlowPaths26tryCacheGetFromScopeGlobalEPNS_14JSGlobalObjectEPNS_9CodeBlockERNS_2VMERNS_14OpGetFromScopeEPNS_8JSObjectERNS_12PropertySlotERKNS_10IdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='2265' u='c' c='_ZN3JSC14JSGlobalObject16addStaticGlobalsEPNS0_18GlobalPropertyInfoEi'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSScope.cpp' l='129' u='c' c='_ZN3JSCL14abstractAccessEPNS_14JSGlobalObjectEPNS_7JSScopeERKNS_10IdentifierENS_8GetOrPutEmRbRNS_9ResolveOpENS_18InitializationModeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSScope.cpp' l='153' u='c' c='_ZN3JSCL14abstractAccessEPNS_14JSGlobalObjectEPNS_7JSScopeERKNS_10IdentifierENS_8GetOrPutEmRbRNS_9ResolveOpENS_18InitializationModeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSegmentedVariableObject.cpp' l='95' u='c' c='_ZN3JSC25JSSegmentedVariableObject11analyzeHeapEPNS_6JSCellERNS_12HeapAnalyzerE'/>

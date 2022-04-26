@@ -1,0 +1,33 @@
+<def f='WebKit/Source/WebCore/dom/Document.h' l='975' type='const WTF::URL &amp; WebCore::Document::firstPartyForCookies() const'/>
+<doc f='WebKit/Source/WebCore/dom/Document.h' l='965'>// The firstPartyForCookies is used to compute whether this document
+    // appears in a &quot;third-party&quot; context for the purpose of third-party
+    // cookie blocking.  The document is in a third-party context if the
+    // cookieURL and the firstPartyForCookies are from different hosts.
+    //
+    // Note: Some ports (including possibly Apple&apos;s) only consider the
+    //       document in a third-party context if the cookieURL and the
+    //       firstPartyForCookies have a different registry-controlled
+    //       domain.
+    //</doc>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='774' u='c' c='_ZN6WebKit17WebLoaderStrategy12preconnectToEON7WebCore15ResourceRequestERNS_7WebPageERNS_8WebFrameENS1_23StoredCredentialsPolicyEON3WTF8FunctionIFvRKN9641632'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebCookieJar.cpp' l='134' u='c' c='_ZNK6WebKit12WebCookieJar7cookiesERN7WebCore8DocumentERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebCookieJar.cpp' l='143' u='c' c='_ZNK6WebKit12WebCookieJar7cookiesERN7WebCore8DocumentERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebCookieJar.cpp' l='144' u='c' c='_ZNK6WebKit12WebCookieJar7cookiesERN7WebCore8DocumentERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebCookieJar.cpp' l='162' u='c' c='_ZN6WebKit12WebCookieJar10setCookiesERN7WebCore8DocumentERKN3WTF3URLERKNS4_6StringE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebCookieJar.cpp' l='170' u='c' c='_ZN6WebKit12WebCookieJar10setCookiesERN7WebCore8DocumentERKN3WTF3URLERKNS4_6StringE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebCookieJar.cpp' l='171' u='c' c='_ZN6WebKit12WebCookieJar10setCookiesERN7WebCore8DocumentERKN3WTF3URLERKNS4_6StringE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebCookieJar.cpp' l='209' u='c' c='_ZNK6WebKit12WebCookieJar14cookiesEnabledERKN7WebCore8DocumentE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebCookieJar.cpp' l='237' u='c' c='_ZNK6WebKit12WebCookieJar13getRawCookiesERKN7WebCore8DocumentERKN3WTF3URLERNS5_6VectorINS1_6CookieELm0ENS5_15CrashOnOverflowELm16ENS5_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/xml/XSLTProcessor.cpp' l='91' u='c' c='_ZN7WebCore13XSLTProcessor24createDocumentFromSourceERKN3WTF6StringES4_S4_PNS_4NodeEPNS_5FrameE'/>
+<use f='WebKit/Source/WebCore/Modules/websockets/ThreadableWebSocketChannel.cpp' l='123' u='c' c='_ZN7WebCore26ThreadableWebSocketChannel23webSocketConnectRequestERNS_8DocumentERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/loader/CookieJar.cpp' l='90' u='c' c='_ZNK7WebCore9CookieJar7cookiesERNS_8DocumentERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/loader/CookieJar.cpp' l='111' u='c' c='_ZN7WebCore9CookieJar29cookieRequestHeaderFieldProxyERKNS_8DocumentERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/loader/CookieJar.cpp' l='111' u='c' c='_ZN7WebCore9CookieJar29cookieRequestHeaderFieldProxyERKNS_8DocumentERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/loader/CookieJar.cpp' l='124' u='c' c='_ZN7WebCore9CookieJar10setCookiesERNS_8DocumentERKN3WTF3URLERKNS3_6StringE'/>
+<use f='WebKit/Source/WebCore/loader/CookieJar.cpp' l='158' u='c' c='_ZNK7WebCore9CookieJar29cookieRequestHeaderFieldValueERNS_8DocumentERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/loader/CookieJar.cpp' l='174' u='c' c='_ZNK7WebCore9CookieJar13getRawCookiesERKNS_8DocumentERKN3WTF3URLERNS4_6VectorINS_6CookieELm0ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='1076' u='c' c='_ZN7WebCore11FrameLoader26updateFirstPartyForCookiesEv'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='2625' u='c' c='_ZN7WebCore11FrameLoader32setOriginalURLForDownloadRequestERNS_15ResourceRequestE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='2629' u='c' c='_ZN7WebCore11FrameLoader32setOriginalURLForDownloadRequestERNS_15ResourceRequestE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='2899' u='c' c='_ZN7WebCore11FrameLoader30updateRequestAndAddExtraFieldsERNS_15ResourceRequestENS_14IsMainResourceENS_13FrameLoadTypeENS_29ShouldUpdateAppInitiatedValueE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='166' u='c' c='_ZN7WebCore14ResourceLoader4initEONS_15ResourceRequestEON3WTF17CompletionHandlerIFvbEEE'/>

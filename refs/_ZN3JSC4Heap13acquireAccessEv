@@ -1,0 +1,28 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='335' type='void JSC::Heap::acquireAccess()'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='327'>// If the mutator does not currently have heap access, this function will acquire it. If the GC
+    // is currently using the lack of heap access to do dangerous things to the heap then this
+    // function will block, waiting for the GC to finish. It&apos;s not valid to call this if the mutator
+    // already has heap access. The mutator is required to precisely track whether or not it has
+    // heap access.
+    //
+    // It&apos;s totally fine to acquireAccess() upon VM instantiation and keep it that way. This is how
+    // WebCore uses us. For most other clients, JSLock does acquireAccess()/releaseAccess() for you.</doc>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapInlines.h' l='237' ll='245' type='void JSC::Heap::acquireAccess()'/>
+<dec f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='335' type='void JSC::Heap::acquireAccess()'/>
+<def f='WebKit/Source/JavaScriptCore/heap/HeapInlines.h' l='237' ll='245' type='void JSC::Heap::acquireAccess()'/>
+<doc f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='327'>// If the mutator does not currently have heap access, this function will acquire it. If the GC
+    // is currently using the lack of heap access to do dangerous things to the heap then this
+    // function will block, waiting for the GC to finish. It&apos;s not valid to call this if the mutator
+    // already has heap access. The mutator is required to precisely track whether or not it has
+    // heap access.
+    //
+    // It&apos;s totally fine to acquireAccess() upon VM instantiation and keep it that way. This is how
+    // WebCore uses us. For most other clients, JSLock does acquireAccess()/releaseAccess() for you.</doc>
+<use f='WebKit/Source/JavaScriptCore/heap/ReleaseHeapAccessScope.h' l='50' u='c' c='_ZN3JSC22ReleaseHeapAccessScopeD1Ev'/>
+<use f='WebKit/Source/JavaScriptCore/heap/ReleaseHeapAccessScope.h' l='70' u='c' c='_ZN3JSC30ReleaseHeapAccessIfNeededScopeD1Ev'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSLock.cpp' l='147' u='c' c='_ZN3JSC6JSLock14didAcquireLockEv'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='2188' u='c' c='_ZL23functionFlashHeapAccessPN3JSC14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/WebCore/bindings/js/CommonVM.cpp' l='68' u='c' c='_ZN7WebCore12commonVMSlowEv'/>
+<use f='WebKit/Source/WebCore/bindings/js/IDBBindingUtilities.cpp' l='562' u='c' c='_ZN7WebCore23IDBSerializationContext12initializeVMEv'/>
+<use f='WebKit/Source/WebCore/workers/WorkerOrWorkletScriptController.cpp' l='71' u='c' c='_ZN7WebCore31WorkerOrWorkletScriptControllerC1ENS_16WorkerThreadTypeEON3WTF3RefIN3JSC2VMENS2_12RawPtrTraitsIS5_EEEEPNS_26WorkerOrWorkletGlobalScopeE'/>
+<use f='WebKit/Source/WebCore/workers/WorkerOrWorkletScriptController.cpp' l='149' u='c' c='_ZN7WebCore31WorkerOrWorkletScriptController17acquireHeapAccessEv'/>

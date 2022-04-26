@@ -1,0 +1,24 @@
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.h' l='59' u='c' c='_ZN3JSC3DFG22StructureAbstractValueC1ERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.h' l='77' u='c' c='_ZN3JSC3DFG22StructureAbstractValueaSERKS1_'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.h' l='125' type='bool JSC::DFG::StructureAbstractValue::isClobbered() const'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.h' l='130' u='c' c='_ZNK3JSC3DFG22StructureAbstractValue8isFiniteEv'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.h' l='116'>// A clobbered abstract value means that the set currently contains the m_set set of
+    // structures plus TOP, except that the &quot;plus TOP&quot; will go away at the next invalidation
+    // point. Note that it&apos;s tempting to think of this as &quot;the set of structures in m_set plus
+    // the set of structures transition-reachable from m_set&quot; - but this isn&apos;t really correct,
+    // since if we add an unwatchable structure after clobbering, the two definitions are not
+    // equivalent. If we do this, the new unwatchable structure will be added to m_set.
+    // Invalidation points do not try to &quot;clip&quot; the set of transition-reachable structures from
+    // m_set by looking at reachability as this would mean that the new set is TOP. Instead they
+    // literally assume that the set is just m_set rather than m_set plus TOP.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.cpp' l='169' u='c' c='_ZN3JSC3DFG22StructureAbstractValue9mergeSlowERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.cpp' l='169' u='c' c='_ZN3JSC3DFG22StructureAbstractValue9mergeSlowERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.cpp' l='197' u='c' c='_ZN3JSC3DFG22StructureAbstractValue6filterERKNS0_22RegisteredStructureSetE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.cpp' l='228' u='c' c='_ZN3JSC3DFG22StructureAbstractValue6filterERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.cpp' l='232' u='c' c='_ZN3JSC3DFG22StructureAbstractValue6filterERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.cpp' l='303' u='c' c='_ZNK3JSC3DFG22StructureAbstractValue10isSubsetOfERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.cpp' l='303' u='c' c='_ZNK3JSC3DFG22StructureAbstractValue10isSubsetOfERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.cpp' l='308' u='c' c='_ZNK3JSC3DFG22StructureAbstractValue10isSubsetOfERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.cpp' l='373' u='c' c='_ZNK3JSC3DFG22StructureAbstractValue10equalsSlowERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.cpp' l='373' u='c' c='_ZNK3JSC3DFG22StructureAbstractValue10equalsSlowERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGStructureAbstractValue.cpp' l='378' u='c' c='_ZNK3JSC3DFG22StructureAbstractValue13dumpInContextERN3WTF11PrintStreamEPNS_11DumpContextE'/>

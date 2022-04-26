@@ -1,0 +1,62 @@
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.h' l='1004' c='_ZN7WebCore11RenderLayer12hitTestLayerEPS0_S1_RKNS_14HitTestRequestERNS_13HitTestResultERKNS_10LayoutRectERKNS_15HitTestLocationEbPKNS_24HitTestingTransformStateEPd'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.h' l='1006' c='_ZN7WebCore11RenderLayer31hitTestLayerByApplyingTransformEPS0_S1_RKNS_14HitTestRequestERNS_13HitTestResultERKNS_10LayoutRectERKNS_15HitTestLocationEPK5503104'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.h' l='1010' c='_ZN7WebCore11RenderLayer11hitTestListENS0_9LayerListEPS0_RKNS_14HitTestRequestERNS_13HitTestResultERKNS_10LayoutRectERKNS_15HitTestLocationEPKNS_24Hit13804349'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.h' l='1011' c='_ZN7WebCore11RenderLayer11hitTestListENS0_9LayerListEPS0_RKNS_14HitTestRequestERNS_13HitTestResultERKNS_10LayoutRectERKNS_15HitTestLocationEPKNS_24Hit13804349'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.h' l='1013' c='_ZNK7WebCore11RenderLayer25createLocalTransformStateEPS0_S1_RKNS_10LayoutRectERKNS_15HitTestLocationEPKNS_24HitTestingTransformStateERKNS_10LayoutSizeE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.h' l='1015' c='_ZNK7WebCore11RenderLayer25createLocalTransformStateEPS0_S1_RKNS_10LayoutRectERKNS_15HitTestLocationEPKNS_24HitTestingTransformStateERKNS_10LayoutSizeE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.h' l='1021' c='_ZN7WebCore11RenderLayer34hitTestTransformedLayerInFragmentsEPS0_S1_RKNS_14HitTestRequestERNS_13HitTestResultERKNS_10LayoutRectERKNS_15HitTestLocation10563861'/>
+<inh f='WebKit/WTF/Headers/wtf/RefCounted.h' l='184' c='WTF::RefCounted'/>
+<def f='WebKit/Source/WebCore/rendering/HitTestingTransformState.h' l='41' ll='89'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestingTransformState.h' l='41'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestingTransformState.h' l='43' c='_ZN7WebCore24HitTestingTransformState6createERKNS_10FloatPointERKNS_9FloatQuadES6_'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestingTransformState.h' l='45' c='_ZN7WebCore24HitTestingTransformState6createERKNS_10FloatPointERKNS_9FloatQuadES6_'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestingTransformState.h' l='48' c='_ZN7WebCore24HitTestingTransformState6createERKS0_'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestingTransformState.h' l='48' c='_ZN7WebCore24HitTestingTransformState6createERKS0_'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestingTransformState.h' l='50' c='_ZN7WebCore24HitTestingTransformState6createERKS0_'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestingTransformState.h' l='78' c='_ZN7WebCore24HitTestingTransformStateC1ERKS0_'/>
+<use f='WebKit/Source/WebCore/rendering/HitTestingTransformState.h' l='79' c='_ZN7WebCore24HitTestingTransformStateC1ERKS0_'/>
+<size>224</size>
+<doc f='WebKit/Source/WebCore/rendering/HitTestingTransformState.h' l='37'>// FIXME: Now that TransformState lazily creates its TransformationMatrix it takes up less space.
+// So there&apos;s really no need for a ref counted version. So This class should be removed and replaced
+// with TransformState. There are some minor differences (like the way translate() works slightly
+// differently than move()) so care has to be taken when this is done.</doc>
+<fun r='_ZN7WebCore24HitTestingTransformState6createERKNS_10FloatPointERKNS_9FloatQuadES6_'/>
+<fun r='_ZN7WebCore24HitTestingTransformState6createERKS0_'/>
+<fun r='_ZN7WebCore24HitTestingTransformState9translateEiiNS0_21TransformAccumulationE'/>
+<fun r='_ZN7WebCore24HitTestingTransformState14applyTransformERKNS_20TransformationMatrixENS0_21TransformAccumulationE'/>
+<fun r='_ZNK7WebCore24HitTestingTransformState11mappedPointEv'/>
+<fun r='_ZNK7WebCore24HitTestingTransformState10mappedQuadEv'/>
+<fun r='_ZNK7WebCore24HitTestingTransformState10mappedAreaEv'/>
+<fun r='_ZNK7WebCore24HitTestingTransformState18boundsOfMappedAreaEv'/>
+<fun r='_ZN7WebCore24HitTestingTransformState7flattenEv'/>
+<mbr r='WebCore::HitTestingTransformState::m_lastPlanarPoint' o='32' t='WebCore::FloatPoint'/>
+<mbr r='WebCore::HitTestingTransformState::m_lastPlanarQuad' o='96' t='WebCore::FloatQuad'/>
+<mbr r='WebCore::HitTestingTransformState::m_lastPlanarArea' o='352' t='WebCore::FloatQuad'/>
+<mbr r='WebCore::HitTestingTransformState::m_accumulatedTransform' o='640' t='WebCore::TransformationMatrix'/>
+<mbr r='WebCore::HitTestingTransformState::m_accumulatingTransform' o='1664' t='bool'/>
+<fun r='_ZN7WebCore24HitTestingTransformStateC1ERKNS_10FloatPointERKNS_9FloatQuadES6_'/>
+<fun r='_ZN7WebCore24HitTestingTransformStateC1ERKS0_'/>
+<fun r='_ZN7WebCore24HitTestingTransformState20flattenWithTransformERKNS_20TransformationMatrixE'/>
+<fun r='_ZN7WebCore24HitTestingTransformState9translateEiiNS0_21TransformAccumulationE'/>
+<fun r='_ZN7WebCore24HitTestingTransformState14applyTransformERKNS_20TransformationMatrixENS0_21TransformAccumulationE'/>
+<fun r='_ZN7WebCore24HitTestingTransformState7flattenEv'/>
+<fun r='_ZN7WebCore24HitTestingTransformState20flattenWithTransformERKNS_20TransformationMatrixE'/>
+<fun r='_ZNK7WebCore24HitTestingTransformState11mappedPointEv'/>
+<fun r='_ZNK7WebCore24HitTestingTransformState10mappedQuadEv'/>
+<fun r='_ZNK7WebCore24HitTestingTransformState10mappedAreaEv'/>
+<fun r='_ZNK7WebCore24HitTestingTransformState18boundsOfMappedAreaEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='3960' c='_ZN7WebCoreL14computeZOffsetERKNS_24HitTestingTransformStateE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='3974' c='_ZNK7WebCore11RenderLayer25createLocalTransformStateEPS0_S1_RKNS_10LayoutRectERKNS_15HitTestLocationEPKNS_24HitTestingTransformStateERKNS_10LayoutSizeE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='3976' c='_ZNK7WebCore11RenderLayer25createLocalTransformStateEPS0_S1_RKNS_10LayoutRectERKNS_15HitTestLocationEPKNS_24HitTestingTransformStateERKNS_10LayoutSizeE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='3979' c='_ZNK7WebCore11RenderLayer25createLocalTransformStateEPS0_S1_RKNS_10LayoutRectERKNS_15HitTestLocationEPKNS_24HitTestingTransformStateERKNS_10LayoutSizeE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4006' c='_ZN7WebCoreL14isHitCandidateEPKNS_11RenderLayerEbPdPKNS_24HitTestingTransformStateE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4040' c='_ZN7WebCore11RenderLayer12hitTestLayerEPS0_S1_RKNS_14HitTestRequestERNS_13HitTestResultERKNS_10LayoutRectERKNS_15HitTestLocationEbPKNS_24HitTestingTransformStateEPd'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4069' c='_ZN7WebCore11RenderLayer12hitTestLayerEPS0_S1_RKNS_14HitTestRequestERNS_13HitTestResultERKNS_10LayoutRectERKNS_15HitTestLocationEbPKNS_24HitTestingTransformStateEPd'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4073' c='_ZN7WebCore11RenderLayer12hitTestLayerEPS0_S1_RKNS_14HitTestRequestERNS_13HitTestResultERKNS_10LayoutRectERKNS_15HitTestLocationEbPKNS_24HitTestingTransformStateEPd'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4087' c='_ZN7WebCore11RenderLayer12hitTestLayerEPS0_S1_RKNS_14HitTestRequestERNS_13HitTestResultERKNS_10LayoutRectERKNS_15HitTestLocationEbPKNS_24HitTestingTransformStateEPd'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4223' c='_ZN7WebCore11RenderLayer34hitTestTransformedLayerInFragmentsEPS0_S1_RKNS_14HitTestRequestERNS_13HitTestResultERKNS_10LayoutRectERKNS_15HitTestLocation10563861'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4262' c='_ZN7WebCore11RenderLayer31hitTestLayerByApplyingTransformEPS0_S1_RKNS_14HitTestRequestERNS_13HitTestResultERKNS_10LayoutRectERKNS_15HitTestLocationEPK5503104'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4266' c='_ZN7WebCore11RenderLayer31hitTestLayerByApplyingTransformEPS0_S1_RKNS_14HitTestRequestERNS_13HitTestResultERKNS_10LayoutRectERKNS_15HitTestLocationEPK5503104'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4320' c='_ZN7WebCore11RenderLayer11hitTestListENS0_9LayerListEPS0_RKNS_14HitTestRequestERNS_13HitTestResultERKNS_10LayoutRectERKNS_15HitTestLocationEPKNS_24Hit13804349'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4322' c='_ZN7WebCore11RenderLayer11hitTestListENS0_9LayerListEPS0_RKNS_14HitTestRequestERNS_13HitTestResultERKNS_10LayoutRectERKNS_15HitTestLocationEPKNS_24Hit13804349'/>
+<size>224</size>

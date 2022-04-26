@@ -1,0 +1,11 @@
+<dec f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseTracker.h' l='72' type='ExceptionOr&lt;void&gt; WebCore::DatabaseTracker::retryCanEstablishDatabase(WebCore::DatabaseContext &amp; , const WTF::String &amp; name, uint64_t estimatedSize)'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseManager.cpp' l='165' u='c' c='_ZN7WebCore15DatabaseManager24tryToOpenDatabaseBackendERNS_8DocumentERKN3WTF6StringES6_S6_jbNS0_11OpenAttemptE'/>
+<def f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseTracker.cpp' l='208' ll='229' type='ExceptionOr&lt;void&gt; WebCore::DatabaseTracker::retryCanEstablishDatabase(WebCore::DatabaseContext &amp; context, const WTF::String &amp; name, uint64_t estimatedSize)'/>
+<doc f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseTracker.cpp' l='200'>// Note: a thought about performance: hasAdequateQuotaForOrigin() was also
+// called in canEstablishDatabase(), and hence, we&apos;re repeating some work within
+// hasAdequateQuotaForOrigin(). However, retryCanEstablishDatabase() should only
+// be called in the rare even if canEstablishDatabase() fails. Since it is rare,
+// we should not bother optimizing it. It is more beneficial to keep
+// hasAdequateQuotaForOrigin() simple and correct (i.e. bug free), and just
+// re-use it. Also note that the path for opening a database involves IO, and
+// hence should not be a performance critical path anyway. </doc>

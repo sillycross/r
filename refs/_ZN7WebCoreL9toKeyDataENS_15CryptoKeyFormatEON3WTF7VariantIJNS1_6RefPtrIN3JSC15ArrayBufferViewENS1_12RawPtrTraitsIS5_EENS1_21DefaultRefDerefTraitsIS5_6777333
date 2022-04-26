@@ -1,0 +1,6 @@
+<def f='WebKit/Source/WebCore/crypto/SubtleCrypto.cpp' l='449' ll='478' type='std::optional&lt;KeyData&gt; WebCore::toKeyData(SubtleCrypto::KeyFormat format, SubtleCrypto::KeyDataVariant &amp;&amp; keyDataVariant, Ref&lt;WebCore::DeferredPromise&gt; &amp; promise)'/>
+<use f='WebKit/Source/WebCore/crypto/SubtleCrypto.cpp' l='885' u='c' c='_ZN7WebCore12SubtleCrypto9importKeyERN3JSC14JSGlobalObjectENS_15CryptoKeyFormatEON3WTF7VariantIJNS5_6RefPtrINS1_15ArrayBufferViewENS5_12RawPtrTraitsIS6685382'/>
+<doc f='WebKit/Source/WebCore/crypto/SubtleCrypto.cpp' l='445'>// FIXME: This returns an std::optional&lt;KeyData&gt; and takes a promise, rather than returning an
+// ExceptionOr&lt;KeyData&gt; and letting the caller handle the promise, to work around an issue where
+// Variant types (which KeyData is) in ExceptionOr&lt;&gt; cause compile issues on some platforms. This
+// should be resolved by adopting a standards compliant std::variant (see https://webkit.org/b/175583)</doc>

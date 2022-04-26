@@ -1,0 +1,975 @@
+<use f='WebKit/WTF/Headers/wtf/text/StringImpl.h' l='306' c='_ZN3WTF10StringImpl17utf8ForCharactersEPKhj'/>
+<use f='WebKit/WTF/Headers/wtf/text/StringImpl.h' l='307' c='_ZN3WTF10StringImpl17utf8ForCharactersEPKDsjNS_14ConversionModeE'/>
+<use f='WebKit/WTF/Headers/wtf/text/StringImpl.h' l='309' c='_ZNK3WTF10StringImpl18tryGetUtf8ForRangeEjjNS_14ConversionModeE'/>
+<use f='WebKit/WTF/Headers/wtf/text/StringImpl.h' l='310' c='_ZNK3WTF10StringImpl10tryGetUtf8ENS_14ConversionModeE'/>
+<use f='WebKit/WTF/Headers/wtf/text/StringImpl.h' l='311' c='_ZNK3WTF10StringImpl4utf8ENS_14ConversionModeE'/>
+<use f='WebKit/WTF/Headers/wtf/text/WTFString.h' l='138' c='_ZNK3WTF6String5asciiEv'/>
+<use f='WebKit/WTF/Headers/wtf/text/WTFString.h' l='139' c='_ZNK3WTF6String6latin1Ev'/>
+<use f='WebKit/WTF/Headers/wtf/text/WTFString.h' l='141' c='_ZNK3WTF6String4utf8ENS_14ConversionModeE'/>
+<use f='WebKit/WTF/Headers/wtf/text/WTFString.h' l='142' c='_ZNK3WTF6String4utf8Ev'/>
+<use f='WebKit/WTF/Headers/wtf/text/WTFString.h' l='144' c='_ZNK3WTF6String10tryGetUtf8ENS_14ConversionModeE'/>
+<use f='WebKit/WTF/Headers/wtf/text/WTFString.h' l='145' c='_ZNK3WTF6String10tryGetUtf8Ev'/>
+<use f='WebKit/WTF/Headers/wtf/text/WTFString.h' l='314' c='_ZN3WTF6String8fromUTF8ERKNS_7CStringE'/>
+<use f='WebKit/WTF/Headers/wtf/text/CString.h' l='47'/>
+<def f='WebKit/WTF/Headers/wtf/text/CString.h' l='59' ll='113'/>
+<use f='WebKit/WTF/Headers/wtf/text/CString.h' l='65' c='_ZN3WTF7CStringC1EPKhm'/>
+<use f='WebKit/WTF/Headers/wtf/text/CString.h' l='67' c='_ZN3WTF7CString16newUninitializedEmRPc'/>
+<use f='WebKit/WTF/Headers/wtf/text/CString.h' l='115' c='_ZN3WTFeqERKNS_7CStringES2_'/>
+<use f='WebKit/WTF/Headers/wtf/text/CString.h' l='115' c='_ZN3WTFeqERKNS_7CStringES2_'/>
+<use f='WebKit/WTF/Headers/wtf/text/CString.h' l='116' c='_ZN3WTFneERKNS_7CStringES2_'/>
+<use f='WebKit/WTF/Headers/wtf/text/CString.h' l='116' c='_ZN3WTFneERKNS_7CStringES2_'/>
+<use f='WebKit/WTF/Headers/wtf/text/CString.h' l='117' c='_ZN3WTFeqERKNS_7CStringEPKc'/>
+<use f='WebKit/WTF/Headers/wtf/text/CString.h' l='118' c='_ZN3WTFneERKNS_7CStringEPKc'/>
+<use f='WebKit/WTF/Headers/wtf/text/CString.h' l='119' c='_ZN3WTFltERKNS_7CStringES2_'/>
+<use f='WebKit/WTF/Headers/wtf/text/CString.h' l='119' c='_ZN3WTFltERKNS_7CStringES2_'/>
+<use f='WebKit/WTF/Headers/wtf/text/CString.h' l='122' c='_ZN3WTF11CStringHash4hashERKNS_7CStringE'/>
+<use f='WebKit/WTF/Headers/wtf/text/CString.h' l='123' c='_ZN3WTF11CStringHash5equalERKNS_7CStringES3_'/>
+<use f='WebKit/WTF/Headers/wtf/text/CString.h' l='123' c='_ZN3WTF11CStringHash5equalERKNS_7CStringES3_'/>
+<use f='WebKit/WTF/Headers/wtf/text/CString.h' l='128'/>
+<use f='WebKit/WTF/Headers/wtf/text/CString.h' l='131'/>
+<use f='WebKit/WTF/Headers/wtf/text/StringView.h' l='116' c='_ZNK3WTF10StringView10tryGetUtf8ENS_14ConversionModeE'/>
+<use f='WebKit/WTF/Headers/wtf/text/StringView.h' l='117' c='_ZNK3WTF10StringView4utf8ENS_14ConversionModeE'/>
+<use f='WebKit/WTF/Headers/wtf/PrintStream.h' l='98' c='_ZN3WTF13printInternalERNS_11PrintStreamERKNS_7CStringE'/>
+<use f='WebKit/WTF/Headers/wtf/PrintStream.h' l='105' c='_ZN3WTF13printInternalERNS_11PrintStreamERNS_7CStringE'/>
+<use f='WebKit/WTF/Headers/wtf/PrintStream.h' l='105' c='_ZN3WTF13printInternalERNS_11PrintStreamERNS_7CStringE'/>
+<use f='WebKit/WTF/Headers/wtf/FileSystem.h' l='127' c='_ZN3WTF14FileSystemImpl15getFileDeviceIdERKNS_7CStringE'/>
+<use f='WebKit/WTF/Headers/wtf/FileSystem.h' l='142' c='_ZN3WTF14FileSystemImpl24fileSystemRepresentationERKNS_6StringE'/>
+<use f='WebKit/WTF/Headers/wtf/ParallelHelperPool.h' l='69' c='_ZN3WTF18ParallelHelperPoolC1EONS_7CStringE'/>
+<use f='WebKit/WTF/Headers/wtf/ParallelHelperPool.h' l='96'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractSlotVisitor.h' l='208' c='_ZN3JSC19AbstractSlotVisitorC1ERNS_4HeapEN3WTF7CStringERNS3_20ConcurrentPtrHashSetE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractSlotVisitor.h' l='223'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SlotVisitor.h' l='88' c='_ZN3JSC11SlotVisitorC1ERNS_4HeapEN3WTF7CStringE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Subspace.h' l='47' c='_ZN3JSC8SubspaceC1EN3WTF7CStringERNS_4HeapE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Subspace.h' l='119'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CompleteSubspace.h' l='34' c='_ZN3JSC16CompleteSubspaceC1EN3WTF7CStringERNS_4HeapEPNS_12HeapCellTypeEPNS_22AlignedMemoryAllocatorE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoSubspace.h' l='40' c='_ZN3JSC11IsoSubspaceC1EN3WTF7CStringERNS_4HeapEPNS_12HeapCellTypeEmh'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssemblerCodeRef.h' l='424' c='_ZN3JSC25MacroAssemblerCodeRefBase11disassemblyENS_21MacroAssemblerCodePtrILN3WTF6PtrTagE3123EEEm'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssemblerCodeRef.h' l='504' c='_ZNK3JSC21MacroAssemblerCodeRef11disassemblyEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Identifier.h' l='98' c='_ZNK3JSC10Identifier5asciiEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Identifier.h' l='99' c='_ZNK3JSC10Identifier4utf8Ev'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Structure.h' l='672' c='_ZNK3JSC9Structure9dumpBriefERN3WTF11PrintStreamERKNS1_7CStringE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmNameSection.h' l='50' c='_ZN3JSC4Wasm11NameSection7setHashERKSt8optionalIN3WTF7CStringEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ExceptionScope.h' l='103' c='_ZN3JSC14ExceptionScope26unexpectedExceptionMessageEv'/>
+<use f='WebKit/WTF/Headers/wtf/StringPrintStream.h' l='43' c='_ZN3WTF17StringPrintStream9toCStringEv'/>
+<use f='WebKit/WTF/Headers/wtf/StringPrintStream.h' l='61' c='_ZN3WTF9toCStringEDpRKT_'/>
+<use f='WebKit/WTF/Headers/wtf/StringHashDumpContext.h' l='41' c='_ZN3WTF21StringHashDumpContext5getIDEPKT_'/>
+<use f='WebKit/WTF/Headers/wtf/StringHashDumpContext.h' l='48' c='_ZN3WTF21StringHashDumpContext5getIDEPKT_'/>
+<use f='WebKit/WTF/Headers/wtf/StringHashDumpContext.h' l='51' c='_ZN3WTF21StringHashDumpContext5getIDEPKT_'/>
+<use f='WebKit/WTF/Headers/wtf/StringHashDumpContext.h' l='51' c='_ZN3WTF21StringHashDumpContext5getIDEPKT_'/>
+<use f='WebKit/WTF/Headers/wtf/StringHashDumpContext.h' l='66' c='_ZN3WTF21StringHashDumpContext5briefEPKT_'/>
+<use f='WebKit/WTF/Headers/wtf/StringHashDumpContext.h' l='81' c='_ZNK3WTF21StringHashDumpContext4dumpERNS_11PrintStreamEPKc'/>
+<use f='WebKit/WTF/Headers/wtf/StringHashDumpContext.h' l='96' c='_ZNK3WTF21StringHashDumpContext4dumpERNS_11PrintStreamEPKc'/>
+<use f='WebKit/WTF/Headers/wtf/StringHashDumpContext.h' l='105' c='_ZN3WTF21StringHashDumpContext5briefEPKT_RKNS_7CStringE'/>
+<use f='WebKit/WTF/Headers/wtf/StringHashDumpContext.h' l='105' c='_ZN3WTF21StringHashDumpContext5briefEPKT_RKNS_7CStringE'/>
+<use f='WebKit/WTF/Headers/wtf/StringHashDumpContext.h' l='112'/>
+<use f='WebKit/WTF/Headers/wtf/StringHashDumpContext.h' l='113'/>
+<size>8</size>
+<doc f='WebKit/WTF/Headers/wtf/text/CString.h' l='57'>// A container for a null-terminated char array supporting copy-on-write
+// assignment.  The contained char array may be null.</doc>
+<fun r='_ZN3WTF7CStringC1Ev'/>
+<fun r='_ZN3WTF7CStringC1EPKc'/>
+<fun r='_ZN3WTF7CStringC1EPKcm'/>
+<fun r='_ZN3WTF7CStringC1EPKhm'/>
+<fun r='_ZN3WTF7CStringC1EPNS_13CStringBufferE'/>
+<fun r='_ZN3WTF7CString16newUninitializedEmRPc'/>
+<fun r='_ZN3WTF7CStringC1ENS_25HashTableDeletedValueTypeE'/>
+<fun r='_ZNK3WTF7CString4dataEv'/>
+<fun r='_ZNK3WTF7CString14dataAsUInt8PtrEv'/>
+<fun r='_ZNK3WTF7CString5bytesEv'/>
+<fun r='_ZNK3WTF7CString27bytesInludingNullTerminatorEv'/>
+<fun r='_ZN3WTF7CString11mutableDataEv'/>
+<fun r='_ZNK3WTF7CString6lengthEv'/>
+<fun r='_ZNK3WTF7CString6isNullEv'/>
+<fun r='_ZNK3WTF7CString27isSafeToSendToAnotherThreadEv'/>
+<fun r='_ZNK3WTF7CString6bufferEv'/>
+<fun r='_ZNK3WTF7CString23isHashTableDeletedValueEv'/>
+<fun r='_ZNK3WTF7CString4hashEv'/>
+<fun r='_ZN3WTF7CString4growEm'/>
+<fun r='_ZN3WTF7CString18copyBufferIfNeededEv'/>
+<fun r='_ZN3WTF7CString4initEPKcm'/>
+<mbr r='WTF::CString::m_buffer' o='0' t='RefPtr&lt;WTF::CStringBuffer&gt;'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StringReference.h' l='64' c='_ZNK3IPC15StringReference8toStringEv'/>
+<use f='WebKit/WTF/Headers/wtf/SHA1.h' l='55' c='_ZN3WTF4SHA18addBytesERKNS_7CStringE'/>
+<use f='WebKit/WTF/Headers/wtf/SHA1.h' l='74' c='_ZN3WTF4SHA19hexDigestERKSt5arrayIhLm20EE'/>
+<use f='WebKit/WTF/Headers/wtf/SHA1.h' l='77' c='_ZN3WTF4SHA116computeHexDigestEv'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='734'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='735' c='_ZN3IPC13ArgumentCoderIN3WTF7CStringEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='736' c='_ZN3IPC13ArgumentCoderIN3WTF7CStringEvE6decodeERNS_7DecoderERS2_'/>
+<use f='WebKit/Source/WebKit/Platform/unix/SharedMemoryUnix.cpp' l='148' c='_ZN6WebKitL18createSharedMemoryEv'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/network/FormData.h' l='195' c='_ZN7WebCore8FormData6createERKN3WTF7CStringE'/>
+<use f='WebKit/WTF/Headers/wtf/persistence/PersistentCoders.h' l='296'/>
+<use f='WebKit/WTF/Headers/wtf/persistence/PersistentCoders.h' l='297' c='_ZN3WTF11Persistence5CoderINS_7CStringEE6encodeERNS0_7EncoderERKS2_'/>
+<use f='WebKit/WTF/Headers/wtf/persistence/PersistentCoders.h' l='298' c='_ZN3WTF11Persistence5CoderINS_7CStringEE6decodeERNS0_7DecoderE'/>
+<use f='WebKit/Source/WebCore/platform/network/soup/ResourceResponse.h' l='45' c='_ZN7WebCore16ResourceResponseC1EP12_SoupMessageRKN3WTF7CStringE'/>
+<use f='WebKit/Source/WebCore/platform/network/soup/ResourceResponse.h' l='45' c='_ZN7WebCore16ResourceResponseC1EP12_SoupMessageRKN3WTF7CStringE'/>
+<size>8</size>
+<use f='WebKit/WTF/Headers/wtf/text/Base64.h' l='76' c='_ZN3WTF20base64EncodeToVectorERKNS_7CStringENS_18Base64EncodePolicyENS_15Base64EncodeMapE'/>
+<use f='WebKit/WTF/Headers/wtf/text/Base64.h' l='82' c='_ZN3WTF20base64EncodeToStringERKNS_7CStringENS_18Base64EncodePolicyENS_15Base64EncodeMapE'/>
+<use f='WebKit/WTF/Headers/wtf/text/Base64.h' l='98' c='_ZN3WTF23base64URLEncodeToVectorERKNS_7CStringE'/>
+<use f='WebKit/WTF/Headers/wtf/text/Base64.h' l='104' c='_ZN3WTF23base64URLEncodeToStringERKNS_7CStringE'/>
+<use f='WebKit/WTF/Headers/wtf/text/Base64.h' l='118' c='_ZN3WTF13base64EncodedERKNS_7CStringENS_18Base64EncodePolicyENS_15Base64EncodeMapE'/>
+<use f='WebKit/WTF/Headers/wtf/text/Base64.h' l='123' c='_ZN3WTF16base64URLEncodedERKNS_7CStringE'/>
+<use f='WebKit/WTF/Headers/wtf/text/Base64.h' l='137' c='_ZN3WTF20base64EncodeToVectorERKNS_7CStringENS_18Base64EncodePolicyENS_15Base64EncodeMapE'/>
+<use f='WebKit/WTF/Headers/wtf/text/Base64.h' l='157' c='_ZN3WTF20base64EncodeToStringERKNS_7CStringENS_18Base64EncodePolicyENS_15Base64EncodeMapE'/>
+<use f='WebKit/WTF/Headers/wtf/text/Base64.h' l='202' c='_ZN3WTF23base64URLEncodeToVectorERKNS_7CStringE'/>
+<use f='WebKit/WTF/Headers/wtf/text/Base64.h' l='227' c='_ZN3WTF23base64URLEncodeToStringERKNS_7CStringE'/>
+<use f='WebKit/WTF/Headers/wtf/text/Base64.h' l='315' c='_ZN3WTF13base64EncodedERKNS_7CStringENS_18Base64EncodePolicyENS_15Base64EncodeMapE'/>
+<use f='WebKit/WTF/Headers/wtf/text/Base64.h' l='335' c='_ZN3WTF16base64URLEncodedERKNS_7CStringE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFABytecodeInterpreter.h' l='50' c='_ZN7WebCore17ContentExtensions22DFABytecodeInterpreter9interpretERKN3WTF7CStringEt'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFABytecodeInterpreter.h' l='51' c='_ZN7WebCore17ContentExtensions22DFABytecodeInterpreter23interpretWithConditionsERKN3WTF7CStringEtRKNS2_7HashSetImNS2_11DefaultHashImEENS2_29UnsignedWi6637621'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/Shared/glib/ArgumentCodersGLib.cpp' l='39' c='_ZN3IPC13ArgumentCoderIN3WTF7GRefPtrI9_GVariantEEvE6encodeERNS_7EncoderES4_'/>
+<use f='WebKit/Source/WebKit/Shared/glib/ArgumentCodersGLib.cpp' l='43' c='_ZN3IPC13ArgumentCoderIN3WTF7GRefPtrI9_GVariantEEvE6encodeERNS_7EncoderES4_'/>
+<use f='WebKit/Source/WebKit/Shared/glib/ArgumentCodersGLib.cpp' l='49' c='_ZN3IPC13ArgumentCoderIN3WTF7GRefPtrI9_GVariantEEvE6decodeERNS_7DecoderE'/>
+<size>8</size>
+<use f='WebKit/WTF/Headers/wtf/glib/GLibUtilities.h' l='27' c='_Z24getCurrentExecutablePathv'/>
+<use f='WebKit/WTF/Headers/wtf/glib/GLibUtilities.h' l='28' c='_Z24getCurrentExecutableNamev'/>
+<use f='WebKit/WTF/Headers/wtf/glib/GLibUtilities.h' l='29' c='_Z12enumToStringmj'/>
+<use f='WebKit/Source/WebKit/Shared/glib/UserMessage.h' l='51' c='_ZN6WebKit11UserMessageC1ERKN3WTF7CStringEj'/>
+<use f='WebKit/Source/WebKit/Shared/glib/UserMessage.h' l='62'/>
+<size>8</size>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ArrayProfile.h' l='231' c='_ZN3JSC12ArrayProfile16briefDescriptionERKNS_18ConcurrentJSLockerEPNS_9CodeBlockE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ArrayProfile.h' l='232' c='_ZN3JSC12ArrayProfile31briefDescriptionWithoutUpdatingERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/UnlinkedSourceCode.h' l='95' c='_ZNK3JSC18UnlinkedSourceCode6toUTF8Ev'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ValueProfile.h' l='95' c='_ZN3JSC16ValueProfileBase16briefDescriptionERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Printer.h' l='160' c='_ZN3JSC7Printer10setPrinterERNS0_11PrintRecordEON3WTF7CStringE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='149' c='_ZNK3JSC9CodeBlock12inferredNameEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='153' c='_ZNK3JSC9CodeBlock22hashAsStringIfPossibleEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='154' c='_ZNK3JSC9CodeBlock18sourceCodeForToolsEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='155' c='_ZNK3JSC9CodeBlock19sourceCodeOnOneLineEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractSlotVisitorInlines.h' l='97' c='_ZN3JSC19AbstractSlotVisitorC1ERNS_4HeapEN3WTF7CStringERNS3_20ConcurrentPtrHashSetE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InlineCallFrame.h' l='215' c='_ZNK3JSC15InlineCallFrame12inferredNameEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InlineCallFrame.h' l='217' c='_ZNK3JSC15InlineCallFrame22hashAsStringIfPossibleEv'/>
+<use f='WebKit/Source/WebCore/platform/network/soup/SoupNetworkProxySettings.h' l='65'/>
+<use f='WebKit/Source/WebCore/platform/network/soup/SoupNetworkProxySettings.h' l='67'/>
+<use f='WebKit/Source/WebCore/platform/network/soup/SoupNetworkProxySettings.h' l='67'/>
+<use f='WebKit/Source/WebKit/Shared/soup/WebCoreArgumentCodersSoup.cpp' l='137' c='_ZN3IPC13ArgumentCoderIN7WebCore24SoupNetworkProxySettingsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/soup/WebCoreArgumentCodersSoup.cpp' l='160' c='_ZN3IPC13ArgumentCoderIN7WebCore24SoupNetworkProxySettingsEvE6decodeERNS_7DecoderERS2_'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/Shared/WebMemorySampler.cpp' l='180' c='_ZN6WebKit16WebMemorySampler30appendCurrentMemoryUsageToFileERP14_GFileIOStream'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/APIProcessPoolConfiguration.h' l='87' c='_ZN3API24ProcessPoolConfiguration32additionalReadAccessAllowedPathsEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APIProcessPoolConfiguration.h' l='88' c='_ZN3API24ProcessPoolConfiguration35setAdditionalReadAccessAllowedPathsEON3WTF6VectorINS1_7CStringELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APIProcessPoolConfiguration.h' l='167'/>
+<use f='WebKit/Source/WebKit/UIProcess/Launcher/ProcessLauncher.h' l='92'/>
+<use f='WebKit/Source/WebKit/UIProcess/Launcher/ProcessLauncher.h' l='95'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.h' l='472' c='_ZN6WebKit14WebProcessPool14addSandboxPathERKN3WTF7CStringENS_17SandboxPermissionE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.h' l='473' c='_ZNK6WebKit14WebProcessPool12sandboxPathsEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.h' l='766'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/fileapi/NetworkSendQueue.h' l='50'/>
+<use f='WebKit/Source/WebCore/fileapi/NetworkSendQueue.h' l='57' c='_ZN7WebCore16NetworkSendQueue7enqueueEON3WTF7CStringE'/>
+<use f='WebKit/Source/WebCore/fileapi/NetworkSendQueue.h' l='66'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/sql/SQLiteDatabase.h' l='195'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/API/gtk/DOM/GObjectEventListener.h' l='73'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/network/SocketStreamHandle.h' l='57' c='_ZN7WebCore18SocketStreamHandle13sendHandshakeEON3WTF7CStringEOSt8optionalINS_29CookieRequestHeaderFieldProxyEENS1_8FunctionIFvbbEEE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/network/soup/SoupNetworkSession.h' l='64' c='_ZN7WebCore18SoupNetworkSession25setInitialAcceptLanguagesERKN3WTF7CStringE'/>
+<use f='WebKit/Source/WebCore/platform/network/soup/SoupNetworkSession.h' l='65' c='_ZN7WebCore18SoupNetworkSession18setAcceptLanguagesERKN3WTF7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/WebKitDirectoryInputStream.h' l='55' c='_Z29webkitDirectoryInputStreamNewON3WTF7GRefPtrI16_GFileEnumeratorEEONS_7CStringE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/WebKitDirectoryInputStream.cpp' l='36'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/WebKitDirectoryInputStream.cpp' l='182' c='_Z29webkitDirectoryInputStreamNewON3WTF7GRefPtrI16_GFileEnumeratorEEONS_7CStringE'/>
+<use f='WebKit/Source/WebCore/Modules/websockets/WebSocketHandshake.h' l='66' c='_ZNK7WebCore18WebSocketHandshake22clientHandshakeMessageEv'/>
+<use f='WebKit/Source/WebCore/Modules/websockets/WebSocketChannel.h' l='162'/>
+<use f='WebKit/Source/WebCore/Modules/websockets/WebSocketChannel.h' l='166' c='_ZN7WebCore16WebSocketChannel16enqueueTextFrameERKN3WTF7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.cpp' l='133' c='_ZN6WebKit12NetworkCache5CacheC1ERNS_14NetworkProcessERKN3WTF6StringEONS4_3RefINS0_7StorageENS4_12RawPtrTraitsIS9_EEEENS4_9OptionSetINS0_11CacheOptionEEEN3PAL9SessionIDE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.cpp' l='623' c='_ZN6WebKit12NetworkCache5Cache18dumpContentsToFileEv'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/glib/DNSCache.h' l='46' c='_ZN6WebKit8DNSCache6lookupERKN3WTF7CStringENS0_4TypeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/glib/DNSCache.h' l='47' c='_ZN6WebKit8DNSCache6updateERKN3WTF7CStringEONS1_6VectorINS1_7GRefPtrI13_GInetAddressEELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEENS0_4TypeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/glib/DNSCache.h' l='56'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/glib/DNSCache.cpp' l='65' c='_ZN6WebKit8DNSCache6lookupERKN3WTF7CStringENS0_4TypeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/glib/DNSCache.cpp' l='82' c='_ZN6WebKit8DNSCache6updateERKN3WTF7CStringEONS1_6VectorINS1_7GRefPtrI13_GInetAddressEELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEENS0_4TypeE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/glib/DNSCache.cpp' l='110' c='_ZN6WebKit8DNSCache19pruneResponsesInMapERN3WTF7HashMapINS1_7CStringENS0_14CachedResponseENS1_11DefaultHashIS3_EENS1_10HashTraitsIS3_EENS7_IS4_EENS1_15HashTableTraitsEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/glib/DNSCache.cpp' l='111' c='_ZN6WebKit8DNSCache19pruneResponsesInMapERN3WTF7HashMapINS1_7CStringENS0_14CachedResponseENS1_11DefaultHashIS3_EENS1_10HashTraitsIS3_EENS7_IS4_EENS1_15HashTableTraitsEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/glib/DNSCache.cpp' l='111' c='_ZN6WebKit8DNSCache19pruneResponsesInMapERN3WTF7HashMapINS1_7CStringENS0_14CachedResponseENS1_11DefaultHashIS3_EENS1_10HashTraitsIS3_EENS7_IS4_EENS1_15HashTableTraitsEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/glib/WebKitCachedResolver.cpp' l='69'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkDataTaskSoup.h' l='94' c='_ZN6WebKit19NetworkDataTaskSoup15didSniffContentEON3WTF7CStringE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkDataTaskSoup.h' l='200'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkDataTaskSoup.cpp' l='626' c='_ZN6WebKit19NetworkDataTaskSoup15didSniffContentEON3WTF7CStringE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkDataTaskSoup.cpp' l='1332' c='_ZN6WebKit19NetworkDataTaskSoup8downloadEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkDataTaskSoup.cpp' l='1414' c='_ZN6WebKit19NetworkDataTaskSoup17didFinishDownloadEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkProcessSoup.cpp' l='52' c='_ZN6WebKitL20buildAcceptLanguagesERKN3WTF6VectorINS0_6StringELm0ENS0_15CrashOnOverflowELm16ENS0_10FastMallocEEE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/Automation/gtk/WebAutomationSessionGtk.cpp' l='322' c='_ZN6WebKit20WebAutomationSession27platformSimulateKeySequenceERNS_12WebPageProxyERKN3WTF6StringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/RemoteWebInspectorUIProxy.h' l='108' c='_ZN6WebKit25RemoteWebInspectorUIProxy17updateWindowTitleERKN3WTF7CStringE'/>
+<size>8</size>
+<use f='WebKit/WTF/Headers/wtf/glib/SocketConnection.h' l='38'/>
+<use f='WebKit/WTF/Headers/wtf/glib/SocketConnection.h' l='38'/>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/glib/RemoteInspectorClient.h' l='60'/>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/glib/RemoteInspectorClient.h' l='61'/>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/glib/RemoteInspectorClient.h' l='62'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/RemoteInspectorUtils.h' l='38' c='_ZN9Inspector19backendCommandsHashEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/glib/RemoteInspectorClient.cpp' l='74' c='_ZN6WebKit20RemoteInspectorProxy13setTargetNameERKN3WTF7CStringE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/glib/RemoteInspectorClient.cpp' l='113' c='_ZN6WebKit21RemoteInspectorClient15messageHandlersEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/glib/RemoteInspectorClient.cpp' l='119' c='_ZN6WebKit21RemoteInspectorClient15messageHandlersEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/glib/RemoteInspectorClient.cpp' l='127' c='_ZN6WebKit21RemoteInspectorClient15messageHandlersEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/glib/RemoteInspectorClient.cpp' l='148' c='_ZN6WebKit21RemoteInspectorClient15messageHandlersEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/glib/RemoteInspectorClient.cpp' l='113' c='_ZN6WebKit21RemoteInspectorClient15messageHandlersEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/glib/RemoteInspectorClient.cpp' l='119' c='_ZN6WebKit21RemoteInspectorClient15messageHandlersEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/glib/RemoteInspectorClient.cpp' l='127' c='_ZN6WebKit21RemoteInspectorClient15messageHandlersEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/glib/RemoteInspectorClient.cpp' l='148' c='_ZN6WebKit21RemoteInspectorClient15messageHandlersEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/gtk/RemoteWebInspectorUIProxyGtk.cpp' l='43' c='_ZN6WebKit25RemoteWebInspectorUIProxy17updateWindowTitleERKN3WTF7CStringE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/gtk/RemoteWebInspectorUIProxyGtk.cpp' l='143' c='_ZN6WebKit25RemoteWebInspectorUIProxy12platformSaveERKN3WTF6StringES4_bb'/>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/gtk/WebInspectorUIProxyGtk.cpp' l='542' c='_ZN6WebKit19WebInspectorUIProxy12platformSaveERKN3WTF6StringES4_bb'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/geoclue/GeoclueGeolocationProvider.h' l='47'/>
+<use f='WebKit/Source/WebKit/UIProcess/geoclue/GeoclueGeolocationProvider.h' l='62' c='_ZN6WebKit26GeoclueGeolocationProvider7didFailEN3WTF7CStringE'/>
+<use f='WebKit/Source/WebKit/UIProcess/geoclue/GeoclueGeolocationProvider.cpp' l='302' c='_ZN6WebKit26GeoclueGeolocationProvider7didFailEN3WTF7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/gstreamer/InstallMissingMediaPluginsPermissionRequest.cpp' l='52' c='_ZN6WebKit43InstallMissingMediaPluginsPermissionRequest5allowEOSt10unique_ptrI25_GstInstallPluginsContextN3WTF11GPtrDeleterIS2_EEE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.h' l='59' c='_ZN6WebKit22CGroupMemoryController23setMemoryControllerPathEN3WTF7CStringE'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.h' l='70'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='174' c='_ZN6WebKit13getCgroupFileEN3WTF7CStringES1_S1_'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='174' c='_ZN6WebKit13getCgroupFileEN3WTF7CStringES1_S1_'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='174' c='_ZN6WebKit13getCgroupFileEN3WTF7CStringES1_S1_'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='205' c='_ZN6WebKitL23getCgroupControllerPathEP8_IO_FILEPKc'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='208' c='_ZN6WebKitL23getCgroupControllerPathEP8_IO_FILEPKc'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='210' c='_ZN6WebKitL23getCgroupControllerPathEP8_IO_FILEPKc'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='218' c='_ZN6WebKitL23getCgroupControllerPathEP8_IO_FILEPKc'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='222' c='_ZN6WebKitL23getCgroupControllerPathEP8_IO_FILEPKc'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='226' c='_ZN6WebKitL23getCgroupControllerPathEP8_IO_FILEPKc'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='229' c='_ZN6WebKitL23getCgroupControllerPathEP8_IO_FILEPKc'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='234' c='_ZN6WebKitL23getCgroupControllerPathEP8_IO_FILEPKc'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='239' c='_ZN6WebKitL23getCgroupControllerPathEP8_IO_FILEPKc'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='244' c='_ZN6WebKitL23getCgroupControllerPathEP8_IO_FILEPKc'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='371' c='_ZN6WebKit21MemoryPressureMonitor5startEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='392' c='_ZN6WebKit22CGroupMemoryController23setMemoryControllerPathEN3WTF7CStringE'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='400' c='_ZN6WebKit22CGroupMemoryController23setMemoryControllerPathEN3WTF7CStringE'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='401' c='_ZN6WebKit22CGroupMemoryController23setMemoryControllerPathEN3WTF7CStringE'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='402' c='_ZN6WebKit22CGroupMemoryController23setMemoryControllerPathEN3WTF7CStringE'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='403' c='_ZN6WebKit22CGroupMemoryController23setMemoryControllerPathEN3WTF7CStringE'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='405' c='_ZN6WebKit22CGroupMemoryController23setMemoryControllerPathEN3WTF7CStringE'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='406' c='_ZN6WebKit22CGroupMemoryController23setMemoryControllerPathEN3WTF7CStringE'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='407' c='_ZN6WebKit22CGroupMemoryController23setMemoryControllerPathEN3WTF7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/heap/AbstractSlotVisitor.h' l='208' c='_ZN3JSC19AbstractSlotVisitorC1ERNS_4HeapEN3WTF7CStringERNS3_20ConcurrentPtrHashSetE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/AbstractSlotVisitor.h' l='223'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SlotVisitor.h' l='88' c='_ZN3JSC11SlotVisitorC1ERNS_4HeapEN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Subspace.h' l='47' c='_ZN3JSC8SubspaceC1EN3WTF7CStringERNS_4HeapE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Subspace.h' l='119'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.h' l='34' c='_ZN3JSC16CompleteSubspaceC1EN3WTF7CStringERNS_4HeapEPNS_12HeapCellTypeEPNS_22AlignedMemoryAllocatorE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.h' l='40' c='_ZN3JSC11IsoSubspaceC1EN3WTF7CStringERNS_4HeapEPNS_12HeapCellTypeEmh'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerCodeRef.h' l='424' c='_ZN3JSC25MacroAssemblerCodeRefBase11disassemblyENS_21MacroAssemblerCodePtrILN3WTF6PtrTagE3123EEEm'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerCodeRef.h' l='504' c='_ZNK3JSC21MacroAssemblerCodeRef11disassemblyEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Identifier.h' l='98' c='_ZNK3JSC10Identifier5asciiEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Identifier.h' l='99' c='_ZNK3JSC10Identifier4utf8Ev'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Structure.h' l='672' c='_ZNK3JSC9Structure9dumpBriefERN3WTF11PrintStreamERKNS1_7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ArrayProfile.h' l='231' c='_ZN3JSC12ArrayProfile16briefDescriptionERKNS_18ConcurrentJSLockerEPNS_9CodeBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ArrayProfile.h' l='232' c='_ZN3JSC12ArrayProfile31briefDescriptionWithoutUpdatingERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmNameSection.h' l='50' c='_ZN3JSC4Wasm11NameSection7setHashERKSt8optionalIN3WTF7CStringEE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ExceptionScope.h' l='103' c='_ZN3JSC14ExceptionScope26unexpectedExceptionMessageEv'/>
+<use f='WebKit/Source/JavaScriptCore/parser/UnlinkedSourceCode.h' l='95' c='_ZNK3JSC18UnlinkedSourceCode6toUTF8Ev'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ValueProfile.h' l='95' c='_ZN3JSC16ValueProfileBase16briefDescriptionERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/Printer.h' l='160' c='_ZN3JSC7Printer10setPrinterERNS0_11PrintRecordEON3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='149' c='_ZNK3JSC9CodeBlock12inferredNameEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='153' c='_ZNK3JSC9CodeBlock22hashAsStringIfPossibleEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='154' c='_ZNK3JSC9CodeBlock18sourceCodeForToolsEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='155' c='_ZNK3JSC9CodeBlock19sourceCodeOnOneLineEv'/>
+<use f='WebKit/Source/JavaScriptCore/tools/FunctionOverrides.cpp' l='231' c='_ZN3JSCL11parseClauseEPKcmP8_IO_FILES1_Pcm'/>
+<use f='WebKit/Source/JavaScriptCore/heap/AbstractSlotVisitorInlines.h' l='97' c='_ZN3JSC19AbstractSlotVisitorC1ERNS_4HeapEN3WTF7CStringERNS3_20ConcurrentPtrHashSetE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeDumper.h' l='69' c='_ZNK3JSC18BytecodeDumperBase12registerNameENS_15VirtualRegisterE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeDumper.h' l='99' c='_ZNK3JSC14BytecodeDumper12registerNameENS_15VirtualRegisterE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeDumper.h' l='103' c='_ZNK3JSC14BytecodeDumper12constantNameENS_15VirtualRegisterE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeDumper.h' l='143' c='_ZNK3JSC4Wasm14BytecodeDumper12constantNameENS_15VirtualRegisterE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeDumper.h' l='144' c='_ZNK3JSC4Wasm14BytecodeDumper14formatConstantENS0_4TypeEm'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InlineCallFrame.h' l='215' c='_ZNK3JSC15InlineCallFrame12inferredNameEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InlineCallFrame.h' l='217' c='_ZNK3JSC15InlineCallFrame22hashAsStringIfPossibleEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCompilation.h' l='54' c='_ZNK3JSC11Compilation11disassemblyEv'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/tools/VMInspector.cpp' l='351' c='_ZN3JSC11VMInspector13dumpRegistersEPNS_9CallFrameE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLAbstractHeap.h' l='164'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirSpecial.h' l='53' c='_ZNK3JSC2B33Air7Special4nameEv'/>
+<use f='WebKit/WTF/Headers/wtf/ListDump.h' l='109' c='_ZN3WTF14sortedListDumpERKT_RKT0_PKc'/>
+<use f='WebKit/WTF/Headers/wtf/ListDump.h' l='122' c='_ZN3WTF14sortedListDumpERKT_PKc'/>
+<use f='WebKit/WTF/Headers/wtf/ListDump.h' l='134' c='_ZN3WTF13sortedMapDumpERKT_RKT0_PKcS7_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGNode.h' l='3359' c='_ZN3JSC3DFG12nodeListDumpERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGNode.h' l='3365' c='_ZN3JSC3DFG11nodeMapDumpERKT_PNS_11DumpContextE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGNode.h' l='3381' c='_ZN3JSC3DFG21nodeValuePairListDumpERKT_PNS_11DumpContextE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerCompiledBytecode.h' l='38' c='_ZN3JSC8Profiler16CompiledBytecodeC1ERKNS0_11OriginStackERKN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerCompiledBytecode.h' l='42' c='_ZNK3JSC8Profiler16CompiledBytecode11descriptionEv'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerCompiledBytecode.h' l='48'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerBytecode.h' l='44' c='_ZN3JSC8Profiler8BytecodeC1EjNS_8OpcodeIDERKN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerBytecode.h' l='53' c='_ZNK3JSC8Profiler8Bytecode11descriptionEv'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerBytecode.h' l='59'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerBytecodeSequence.h' l='55'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerBytecodes.h' l='42' c='_ZNK3JSC8Profiler9Bytecodes12inferredNameEv'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerBytecodes.h' l='43' c='_ZNK3JSC8Profiler9Bytecodes10sourceCodeEv'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerBytecodes.h' l='53'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerBytecodes.h' l='54'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerCompilation.h' l='71' c='_ZN3JSC8Profiler11Compilation14addDescriptionERKNS0_11OriginStackERKN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerCompilation.h' l='95'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerEvent.h' l='44' c='_ZN3JSC8Profiler5EventC1EN3WTF8WallTimeEPNS0_9BytecodesEPNS0_11CompilationEPKcRKNS2_7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerEvent.h' l='62' c='_ZNK3JSC8Profiler5Event6detailEv'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerEvent.h' l='72'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.h' l='70' c='_ZN3JSC8Profiler8Database8logEventEPNS_9CodeBlockEPKcRKN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.h' l='89'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirPhaseScope.h' l='48'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/disassembler/Disassembler.h' l='55' c='_ZN3JSC25disassembleAsynchronouslyERKN3WTF7CStringERKNS_21MacroAssemblerCodeRefILNS0_6PtrTagE3123EEEmPKc'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLogRegisterPressure.cpp' l='50' c='_ZN3JSC2B33Air19logRegisterPressureERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLogRegisterPressure.cpp' l='71' c='_ZN3JSC2B33Air19logRegisterPressureERNS1_4CodeE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirSpecial.cpp' l='46' c='_ZNK3JSC2B33Air7Special4nameEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirValidate.cpp' l='129' c='_ZN3JSC2B33Air12_GLOBAL__N_19Validater4failEPKciS5_S5_N3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirValidate.cpp' l='131' c='_ZN3JSC2B33Air12_GLOBAL__N_19Validater4failEPKciS5_S5_N3WTF7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/b3/B3PhaseScope.h' l='48'/>
+<size>8</size>
+<use f='WebKit/WTF/Headers/wtf/SingleRootGraph.h' l='254' c='_ZNK3WTF15SingleRootGraph4dumpENS_19SingleRootGraphNodeIT_EE'/>
+<use f='WebKit/WTF/Headers/wtf/BackwardsGraph.h' l='146' c='_ZNK3WTF14BackwardsGraph4dumpENS_19SingleRootGraphNodeIT_EE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Validate.cpp' l='658' c='_ZN3JSC2B312_GLOBAL__N_19Validater4failEPKciS4_S4_N3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Validate.cpp' l='660' c='_ZN3JSC2B312_GLOBAL__N_19Validater4failEPKciS4_S4_N3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='203' c='_ZNK3JSC2B35Value8deepDumpEPKNS0_9ProcedureERN3WTF11PrintStreamE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerBytecodeSequence.cpp' l='41' c='_ZN3JSC8Profiler16BytecodeSequenceC1EPNS_9CodeBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerCompilation.cpp' l='71' c='_ZN3JSC8Profiler11Compilation14addDescriptionERKNS0_11OriginStackERKN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerCompilation.cpp' l='105' c='_ZN3JSC8Profiler11Compilation17setJettisonReasonENS0_14JettisonReasonEPKNS_10FireDetailE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerCompiledBytecode.cpp' l='34' c='_ZN3JSC8Profiler16CompiledBytecodeC1ERKNS0_11OriginStackERKN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.cpp' l='174' c='_ZN3JSC8Profiler8Database8logEventEPNS_9CodeBlockEPKcRKN3WTF7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='72'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='267' c='_ZN3JSC3JIT16compileTimeStatsEv'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.cpp' l='1105' c='_ZN3JSC3JIT16compileTimeStatsEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.cpp' l='1107' c='_ZN3JSC3JIT16compileTimeStatsEv'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPlan.cpp' l='152' c='_ZN3JSC7JITPlan15compileInThreadEPNS_17JITWorklistThreadE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.h' l='79' c='_ZN3JSC3DFG12Disassembler8DumpedOpC1ENS_10CodeOriginEN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.h' l='86'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/disassembler/Disassembler.cpp' l='134' c='_ZN3JSC25disassembleAsynchronouslyERKN3WTF7CStringERKNS_21MacroAssemblerCodeRefILNS0_6PtrTagE3123EEEmPKc'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='87'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='102' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='108' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='114' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='122' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='131' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='102' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='108' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='114' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='122' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='131' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorUtils.h' l='38' c='_ZN9Inspector19backendCommandsHashEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorServer.cpp' l='100' c='_ZN9Inspector21RemoteInspectorServer15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorServer.cpp' l='106' c='_ZN9Inspector21RemoteInspectorServer15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorServer.cpp' l='112' c='_ZN9Inspector21RemoteInspectorServer15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorServer.cpp' l='121' c='_ZN9Inspector21RemoteInspectorServer15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorServer.cpp' l='129' c='_ZN9Inspector21RemoteInspectorServer15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorServer.cpp' l='137' c='_ZN9Inspector21RemoteInspectorServer15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorServer.cpp' l='146' c='_ZN9Inspector21RemoteInspectorServer15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorServer.cpp' l='155' c='_ZN9Inspector21RemoteInspectorServer15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorServer.cpp' l='100' c='_ZN9Inspector21RemoteInspectorServer15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorServer.cpp' l='106' c='_ZN9Inspector21RemoteInspectorServer15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorServer.cpp' l='112' c='_ZN9Inspector21RemoteInspectorServer15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorServer.cpp' l='121' c='_ZN9Inspector21RemoteInspectorServer15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorServer.cpp' l='129' c='_ZN9Inspector21RemoteInspectorServer15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorServer.cpp' l='137' c='_ZN9Inspector21RemoteInspectorServer15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorServer.cpp' l='146' c='_ZN9Inspector21RemoteInspectorServer15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorServer.cpp' l='155' c='_ZN9Inspector21RemoteInspectorServer15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorUtils.cpp' l='68' c='_ZN9Inspector19backendCommandsHashEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorUtils.cpp' l='70' c='_ZN9Inspector19backendCommandsHashEv'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/parser/UnlinkedSourceCode.cpp' l='33' c='_ZNK3JSC18UnlinkedSourceCode6toUTF8Ev'/>
+<use f='WebKit/Source/JavaScriptCore/parser/UnlinkedSourceCode.cpp' l='36' c='_ZNK3JSC18UnlinkedSourceCode6toUTF8Ev'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPhase.h' l='76'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGNodeFlags.cpp' l='123' c='_ZN3JSC3DFG13dumpNodeFlagsERN3WTF11PrintStreamEj'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.h' l='36' c='_ZN3JSC3DFG8validateERNS0_5GraphENS0_13GraphDumpModeEN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.h' l='36' c='_ZN3JSC3DFG8validateERNS0_5GraphENS0_13GraphDumpModeEN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='834' c='_ZN3JSC3DFG12_GLOBAL__N_128ObjectAllocationSinkingPhase14performSinkingEv'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='45' c='_ZN3JSC3DFG12_GLOBAL__N_18ValidateC1ERNS0_5GraphENS0_13GraphDumpModeEN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='469'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='1060' c='_ZN3JSC3DFG8validateERNS0_5GraphENS0_13GraphDumpModeEN3WTF7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1571' c='_ZN3JSC3DFGL22logDFGAssertionFailureERNS0_5GraphERKN3WTF7CStringEPKciS8_S8_'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/assembler/PerfLog.h' l='40' c='_ZN3JSC7PerfLog3logEON3WTF7CStringEPKhm'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/LinkBuffer.cpp' l='109' c='_ZN3JSC10LinkBuffer31finalizeCodeWithDisassemblyImplEbPKcz'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerCodeRef.cpp' l='58' c='_ZN3JSC25MacroAssemblerCodeRefBase11disassemblyENS_21MacroAssemblerCodePtrILN3WTF6PtrTagE3123EEEm'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerCodeRef.cpp' l='62' c='_ZN3JSC25MacroAssemblerCodeRefBase11disassemblyENS_21MacroAssemblerCodePtrILN3WTF6PtrTagE3123EEEm'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/PerfLog.cpp' l='183' c='_ZN3JSC7PerfLog3logEON3WTF7CStringEPKhm'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/Printer.cpp' l='53' c='_ZN3JSC7Printer10setPrinterERNS0_11PrintRecordEON3WTF7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraint.h' l='49' c='_ZN3JSC17MarkingConstraintC1EN3WTF7CStringES2_NS_20ConstraintVolatilityENS_21ConstraintConcurrencyENS_21ConstraintParallelismE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraint.h' l='49' c='_ZN3JSC17MarkingConstraintC1EN3WTF7CStringES2_NS_20ConstraintVolatilityENS_21ConstraintConcurrencyENS_21ConstraintParallelismE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraint.h' l='93'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraint.h' l='94'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SimpleMarkingConstraint.h' l='39' c='_ZN3JSC23SimpleMarkingConstraintC1EN3WTF7CStringES2_ONS_29MarkingConstraintExecutorPairENS_20ConstraintVolatilityENS_21ConstraintConcurrencyENS_21ConstraintParallelismE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SimpleMarkingConstraint.h' l='39' c='_ZN3JSC23SimpleMarkingConstraintC1EN3WTF7CStringES2_ONS_29MarkingConstraintExecutorPairENS_20ConstraintVolatilityENS_21ConstraintConcurrencyENS_21ConstraintParallelismE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SimpleMarkingConstraint.h' l='46' c='_ZN3JSC23SimpleMarkingConstraintC1EN3WTF7CStringES2_ONS_29MarkingConstraintExecutorPairENS_20ConstraintVolatilityENS_21ConstraintParallelismE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SimpleMarkingConstraint.h' l='46' c='_ZN3JSC23SimpleMarkingConstraintC1EN3WTF7CStringES2_ONS_29MarkingConstraintExecutorPairENS_20ConstraintVolatilityENS_21ConstraintParallelismE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.cpp' l='38' c='_ZN3JSC16CompleteSubspaceC1EN3WTF7CStringERNS_4HeapEPNS_12HeapCellTypeEPNS_22AlignedMemoryAllocatorE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraintSet.h' l='48' c='_ZN3JSC20MarkingConstraintSet3addEN3WTF7CStringES2_ONS_29MarkingConstraintExecutorPairENS_20ConstraintVolatilityENS_21ConstraintConcurrencyENS_21ConstraintParallelismE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraintSet.h' l='49' c='_ZN3JSC20MarkingConstraintSet3addEN3WTF7CStringES2_ONS_29MarkingConstraintExecutorPairENS_20ConstraintVolatilityENS_21ConstraintConcurrencyENS_21ConstraintParallelismE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraintSet.h' l='56' c='_ZN3JSC20MarkingConstraintSet3addEN3WTF7CStringES2_ONS_29MarkingConstraintExecutorPairENS_20ConstraintVolatilityENS_21ConstraintParallelismE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraintSet.h' l='56' c='_ZN3JSC20MarkingConstraintSet3addEN3WTF7CStringES2_ONS_29MarkingConstraintExecutorPairENS_20ConstraintVolatilityENS_21ConstraintParallelismE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoAlignedMemoryAllocator.h' l='39' c='_ZN3JSC25IsoAlignedMemoryAllocatorC1EN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoAlignedMemoryAllocator.cpp' l='32' c='_ZN3JSC25IsoAlignedMemoryAllocatorC1EN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.cpp' l='36' c='_ZN3JSC11IsoSubspaceC1EN3WTF7CStringERNS_4HeapEPNS_12HeapCellTypeEmh'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspacePerVM.h' l='44' c='_ZN3JSC16IsoSubspacePerVM18SubspaceParametersC1EN3WTF7CStringEPNS_12HeapCellTypeEm'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspacePerVM.h' l='51'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspacePerVM.cpp' l='36' c='_ZN3JSC16IsoSubspacePerVM23AutoremovingIsoSubspaceC1ERS0_N3WTF7CStringERNS_4HeapEPNS_12HeapCellTypeEm'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraint.cpp' l='36' c='_ZN3JSC17MarkingConstraintC1EN3WTF7CStringES2_NS_20ConstraintVolatilityENS_21ConstraintConcurrencyENS_21ConstraintParallelismE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraint.cpp' l='36' c='_ZN3JSC17MarkingConstraintC1EN3WTF7CStringES2_NS_20ConstraintVolatilityENS_21ConstraintConcurrencyENS_21ConstraintParallelismE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraintSet.cpp' l='66' c='_ZN3JSC20MarkingConstraintSet3addEN3WTF7CStringES2_ONS_29MarkingConstraintExecutorPairENS_20ConstraintVolatilityENS_21ConstraintConcurrencyENS_21ConstraintParallelismE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraintSet.cpp' l='66' c='_ZN3JSC20MarkingConstraintSet3addEN3WTF7CStringES2_ONS_29MarkingConstraintExecutorPairENS_20ConstraintVolatilityENS_21ConstraintConcurrencyENS_21ConstraintParallelismE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/heap/SimpleMarkingConstraint.cpp' l='32' c='_ZN3JSC23SimpleMarkingConstraintC1EN3WTF7CStringES2_ONS_29MarkingConstraintExecutorPairENS_20ConstraintVolatilityENS_21ConstraintConcurrencyENS_21ConstraintParallelismE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SimpleMarkingConstraint.cpp' l='32' c='_ZN3JSC23SimpleMarkingConstraintC1EN3WTF7CStringES2_ONS_29MarkingConstraintExecutorPairENS_20ConstraintVolatilityENS_21ConstraintConcurrencyENS_21ConstraintParallelismE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SlotVisitor.cpp' l='79' c='_ZN3JSC11SlotVisitorC1ERNS_4HeapEN3WTF7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/heap/Subspace.cpp' l='37' c='_ZN3JSC8SubspaceC1EN3WTF7CStringERNS_4HeapE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ArrayProfile.cpp' l='166' c='_ZN3JSC12ArrayProfile16briefDescriptionERKNS_18ConcurrentJSLockerEPNS_9CodeBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ArrayProfile.cpp' l='172' c='_ZN3JSC12ArrayProfile31briefDescriptionWithoutUpdatingERKNS_18ConcurrentJSLockerE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ReduceWhitespace.h' l='33' c='_ZN3JSC16reduceWhitespaceERKN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ReduceWhitespace.h' l='33' c='_ZN3JSC16reduceWhitespaceERKN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ReduceWhitespace.cpp' l='34' c='_ZN3JSC16reduceWhitespaceERKN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ReduceWhitespace.cpp' l='34' c='_ZN3JSC16reduceWhitespaceERKN3WTF7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeDumper.cpp' l='72' c='_ZNK3JSC14BytecodeDumper12registerNameENS_15VirtualRegisterE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeDumper.cpp' l='87' c='_ZNK3JSC14BytecodeDumper12constantNameENS_15VirtualRegisterE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeDumper.cpp' l='386' c='_ZNK3JSC4Wasm14BytecodeDumper12constantNameENS_15VirtualRegisterE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeDumper.cpp' l='393' c='_ZNK3JSC4Wasm14BytecodeDumper14formatConstantENS0_4TypeEm'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='104' c='_ZNK3JSC9CodeBlock12inferredNameEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='117' c='_ZNK3JSC9CodeBlock12inferredNameEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='140' c='_ZNK3JSC9CodeBlock18sourceCodeForToolsEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='158' c='_ZNK3JSC9CodeBlock19sourceCodeOnOneLineEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='163' c='_ZNK3JSC9CodeBlock22hashAsStringIfPossibleEv'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InlineCallFrame.cpp' l='51' c='_ZNK3JSC15InlineCallFrame22hashAsStringIfPossibleEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InlineCallFrame.cpp' l='56' c='_ZNK3JSC15InlineCallFrame12inferredNameEv'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlCache.h' l='41' c='_ZN3JSC9IntlCache22getBestDateTimePatternERKN3WTF7CStringEPKDsjR10UErrorCode'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlCache.h' l='44' c='_ZN3JSC9IntlCache25getSharedPatternGeneratorERKN3WTF7CStringER10UErrorCode'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlCache.h' l='53' c='_ZN3JSC9IntlCache27cacheSharedPatternGeneratorERKN3WTF7CStringER10UErrorCode'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlCache.h' l='56'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlCache.cpp' l='33' c='_ZN3JSC9IntlCache27cacheSharedPatternGeneratorERKN3WTF7CStringER10UErrorCode'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlCache.cpp' l='43' c='_ZN3JSC9IntlCache22getBestDateTimePatternERKN3WTF7CStringEPKDsjR10UErrorCode'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlObject.h' l='101' c='_ZN3JSC46localeIDBufferForLanguageTagWithNullTerminatorERKN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlCollator.cpp' l='231' c='_ZN3JSC12IntlCollator18initializeCollatorEPNS_14JSGlobalObjectENS_7JSValueES3_'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlDisplayNames.h' l='87'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlDisplayNames.cpp' l='210' c='_ZNK3JSC16IntlDisplayNames2ofEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlLocale.h' l='79'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlLocale.cpp' l='76' c='_ZN3JSC15LocaleIDBuilder11toCanonicalEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlLocale.cpp' l='94' c='_ZN3JSC15LocaleIDBuilder11toCanonicalEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlLocale.cpp' l='100' c='_ZN3JSC15LocaleIDBuilder11toCanonicalEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlLocale.cpp' l='103' c='_ZN3JSC15LocaleIDBuilder11toCanonicalEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlNumberFormat.cpp' l='373' c='_ZN3JSC16IntlNumberFormat22initializeNumberFormatEPNS_14JSGlobalObjectENS_7JSValueES3_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlObject.cpp' l='249' c='_ZN3JSC46localeIDBufferForLanguageTagWithNullTerminatorERKN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlObject.cpp' l='629' c='_ZN3JSCL23canonicalizeLanguageTagERKN3WTF7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlRelativeTimeFormat.cpp' l='118' c='_ZN3JSC22IntlRelativeTimeFormat28initializeRelativeTimeFormatEPNS_14JSGlobalObjectENS_7JSValueES3_'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/Structure.cpp' l='1373' c='_ZNK3JSC9Structure9dumpBriefERN3WTF11PrintStreamERKNS1_7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCClass.cpp' l='60'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='189' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB35lowerEv'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='1233' c='_ZL25cStringFromViewWithStringPN3JSC14JSGlobalObjectERNS_10ThrowScopeERN3WTF30StringViewWithUnderlyingStringE'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='1235' c='_ZL25cStringFromViewWithStringPN3JSC14JSGlobalObjectERNS_10ThrowScopeERN3WTF30StringViewWithUnderlyingStringE'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='2882' c='_ZL13dumpExceptionP12GlobalObjectN3JSC7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='3144' c='_ZL14runInteractiveP12GlobalObject'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='3151' c='_ZL14runInteractiveP12GlobalObject'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='3498' c='_Z6runJSCRK11CommandLinebRKT_'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='3502' c='_Z6runJSCRK11CommandLinebRKT_'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlDateTimeFormat.cpp' l='589' c='_ZN3JSC18IntlDateTimeFormat24initializeDateTimeFormatEPNS_14JSGlobalObjectENS_7JSValueES3_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlDateTimeFormat.cpp' l='1373' c='_ZN3JSC18IntlDateTimeFormat35createDateIntervalFormatIfNecessaryEPNS_14JSGlobalObjectE'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/text/StringImpl.h' l='306' c='_ZN3WTF10StringImpl17utf8ForCharactersEPKhj'/>
+<use f='WebKit/Source/WTF/wtf/text/StringImpl.h' l='307' c='_ZN3WTF10StringImpl17utf8ForCharactersEPKDsjNS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/StringImpl.h' l='309' c='_ZNK3WTF10StringImpl18tryGetUtf8ForRangeEjjNS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/StringImpl.h' l='310' c='_ZNK3WTF10StringImpl10tryGetUtf8ENS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/StringImpl.h' l='311' c='_ZNK3WTF10StringImpl4utf8ENS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.h' l='138' c='_ZNK3WTF6String5asciiEv'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.h' l='139' c='_ZNK3WTF6String6latin1Ev'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.h' l='141' c='_ZNK3WTF6String4utf8ENS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.h' l='142' c='_ZNK3WTF6String4utf8Ev'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.h' l='144' c='_ZNK3WTF6String10tryGetUtf8ENS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.h' l='145' c='_ZNK3WTF6String10tryGetUtf8Ev'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.h' l='314' c='_ZN3WTF6String8fromUTF8ERKNS_7CStringE'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.h' l='47'/>
+<def f='WebKit/Source/WTF/wtf/text/CString.h' l='59' ll='113'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.h' l='65' c='_ZN3WTF7CStringC1EPKhm'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.h' l='67' c='_ZN3WTF7CString16newUninitializedEmRPc'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.h' l='115' c='_ZN3WTFeqERKNS_7CStringES2_'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.h' l='115' c='_ZN3WTFeqERKNS_7CStringES2_'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.h' l='116' c='_ZN3WTFneERKNS_7CStringES2_'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.h' l='116' c='_ZN3WTFneERKNS_7CStringES2_'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.h' l='117' c='_ZN3WTFeqERKNS_7CStringEPKc'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.h' l='118' c='_ZN3WTFneERKNS_7CStringEPKc'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.h' l='119' c='_ZN3WTFltERKNS_7CStringES2_'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.h' l='119' c='_ZN3WTFltERKNS_7CStringES2_'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.h' l='122' c='_ZN3WTF11CStringHash4hashERKNS_7CStringE'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.h' l='123' c='_ZN3WTF11CStringHash5equalERKNS_7CStringES3_'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.h' l='123' c='_ZN3WTF11CStringHash5equalERKNS_7CStringES3_'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.h' l='128'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.h' l='131'/>
+<use f='WebKit/Source/WTF/wtf/text/StringView.h' l='116' c='_ZNK3WTF10StringView10tryGetUtf8ENS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/StringView.h' l='117' c='_ZNK3WTF10StringView4utf8ENS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/PrintStream.h' l='98' c='_ZN3WTF13printInternalERNS_11PrintStreamERKNS_7CStringE'/>
+<use f='WebKit/Source/WTF/wtf/PrintStream.h' l='105' c='_ZN3WTF13printInternalERNS_11PrintStreamERNS_7CStringE'/>
+<use f='WebKit/Source/WTF/wtf/PrintStream.h' l='105' c='_ZN3WTF13printInternalERNS_11PrintStreamERNS_7CStringE'/>
+<use f='WebKit/Source/WTF/wtf/StringPrintStream.h' l='43' c='_ZN3WTF17StringPrintStream9toCStringEv'/>
+<use f='WebKit/Source/WTF/wtf/StringPrintStream.h' l='61' c='_ZN3WTF9toCStringEDpRKT_'/>
+<size>8</size>
+<doc f='WebKit/Source/WTF/wtf/text/CString.h' l='57'>// A container for a null-terminated char array supporting copy-on-write
+// assignment.  The contained char array may be null.</doc>
+<fun r='_ZN3WTF7CStringC1Ev'/>
+<fun r='_ZN3WTF7CStringC1EPKc'/>
+<fun r='_ZN3WTF7CStringC1EPKcm'/>
+<fun r='_ZN3WTF7CStringC1EPKhm'/>
+<fun r='_ZN3WTF7CStringC1EPNS_13CStringBufferE'/>
+<fun r='_ZN3WTF7CString16newUninitializedEmRPc'/>
+<fun r='_ZN3WTF7CStringC1ENS_25HashTableDeletedValueTypeE'/>
+<fun r='_ZNK3WTF7CString4dataEv'/>
+<fun r='_ZNK3WTF7CString14dataAsUInt8PtrEv'/>
+<fun r='_ZNK3WTF7CString5bytesEv'/>
+<fun r='_ZNK3WTF7CString27bytesInludingNullTerminatorEv'/>
+<fun r='_ZN3WTF7CString11mutableDataEv'/>
+<fun r='_ZNK3WTF7CString6lengthEv'/>
+<fun r='_ZNK3WTF7CString6isNullEv'/>
+<fun r='_ZNK3WTF7CString27isSafeToSendToAnotherThreadEv'/>
+<fun r='_ZNK3WTF7CString6bufferEv'/>
+<fun r='_ZNK3WTF7CString23isHashTableDeletedValueEv'/>
+<fun r='_ZNK3WTF7CString4hashEv'/>
+<fun r='_ZN3WTF7CString4growEm'/>
+<fun r='_ZN3WTF7CString18copyBufferIfNeededEv'/>
+<fun r='_ZN3WTF7CString4initEPKcm'/>
+<mbr r='WTF::CString::m_buffer' o='0' t='RefPtr&lt;WTF::CStringBuffer&gt;'/>
+<use f='WebKit/Source/WTF/wtf/FileSystem.h' l='127' c='_ZN3WTF14FileSystemImpl15getFileDeviceIdERKNS_7CStringE'/>
+<use f='WebKit/Source/WTF/wtf/FileSystem.h' l='142' c='_ZN3WTF14FileSystemImpl24fileSystemRepresentationERKNS_6StringE'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/ParallelHelperPool.h' l='69' c='_ZN3WTF18ParallelHelperPoolC1EONS_7CStringE'/>
+<use f='WebKit/Source/WTF/wtf/ParallelHelperPool.h' l='96'/>
+<use f='WebKit/Source/WTF/wtf/ParallelHelperPool.cpp' l='124' c='_ZN3WTF18ParallelHelperPoolC1EONS_7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/PrintStream.cpp' l='75' c='_ZN3WTFL26printExpectedCStringHelperERNS_11PrintStreamEPKcNSt12experimental15fundamentals_v38expectedINS_7CStringENS_19UTF8ConversionErrorEEE'/>
+<use f='WebKit/Source/WTF/wtf/PrintStream.cpp' l='97' c='_ZN3WTF13printInternalERNS_11PrintStreamERKNS_7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/SHA1.h' l='55' c='_ZN3WTF4SHA18addBytesERKNS_7CStringE'/>
+<use f='WebKit/Source/WTF/wtf/SHA1.h' l='74' c='_ZN3WTF4SHA19hexDigestERKSt5arrayIhLm20EE'/>
+<use f='WebKit/Source/WTF/wtf/SHA1.h' l='77' c='_ZN3WTF4SHA116computeHexDigestEv'/>
+<use f='WebKit/Source/WTF/wtf/SHA1.cpp' l='205' c='_ZN3WTF4SHA19hexDigestERKSt5arrayIhLm20EE'/>
+<use f='WebKit/Source/WTF/wtf/SHA1.cpp' l='208' c='_ZN3WTF4SHA19hexDigestERKSt5arrayIhLm20EE'/>
+<use f='WebKit/Source/WTF/wtf/SHA1.cpp' l='217' c='_ZN3WTF4SHA116computeHexDigestEv'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/StringPrintStream.cpp' l='86' c='_ZN3WTF17StringPrintStream9toCStringEv'/>
+<use f='WebKit/Source/WTF/wtf/StringPrintStream.cpp' l='89' c='_ZN3WTF17StringPrintStream9toCStringEv'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/URL.cpp' l='534' c='_ZN3WTFL23percentEncodeCharactersERKT_PFbDsE'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/URLHelpers.h' l='40' c='_ZN3WTF10URLHelpers14userVisibleURLERKNS_7CStringE'/>
+<use f='WebKit/Source/WTF/wtf/URLHelpers.cpp' l='822' c='_ZN3WTF10URLHelpers14userVisibleURLERKNS_7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/glib/GLibUtilities.h' l='27' c='_Z24getCurrentExecutablePathv'/>
+<use f='WebKit/Source/WTF/wtf/glib/GLibUtilities.h' l='28' c='_Z24getCurrentExecutableNamev'/>
+<use f='WebKit/Source/WTF/wtf/glib/GLibUtilities.h' l='29' c='_Z12enumToStringmj'/>
+<use f='WebKit/Source/WTF/wtf/glib/FileSystemGlib.cpp' l='73' c='_ZN3WTF14FileSystemImpl24fileSystemRepresentationERKNS_6StringE'/>
+<use f='WebKit/Source/WTF/wtf/glib/FileSystemGlib.cpp' l='78' c='_ZN3WTF14FileSystemImpl24fileSystemRepresentationERKNS_6StringE'/>
+<use f='WebKit/Source/WTF/wtf/glib/FileSystemGlib.cpp' l='80' c='_ZN3WTF14FileSystemImpl24fileSystemRepresentationERKNS_6StringE'/>
+<use f='WebKit/Source/WTF/wtf/glib/FileSystemGlib.cpp' l='96' c='_ZN3WTF14FileSystemImpl24fileSystemRepresentationERKNS_6StringE'/>
+<use f='WebKit/Source/WTF/wtf/glib/FileSystemGlib.cpp' l='99' c='_ZN3WTF14FileSystemImpl19validRepresentationERKNS_7CStringE'/>
+<use f='WebKit/Source/WTF/wtf/glib/FileSystemGlib.cpp' l='239' c='_ZN3WTF14FileSystemImpl15getFileDeviceIdERKNS_7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/glib/GLibUtilities.cpp' l='35' c='_Z24getCurrentExecutablePathv'/>
+<use f='WebKit/Source/WTF/wtf/glib/GLibUtilities.cpp' l='40' c='_Z24getCurrentExecutablePathv'/>
+<use f='WebKit/Source/WTF/wtf/glib/GLibUtilities.cpp' l='41' c='_Z24getCurrentExecutablePathv'/>
+<use f='WebKit/Source/WTF/wtf/glib/GLibUtilities.cpp' l='70' c='_Z24getCurrentExecutableNamev'/>
+<use f='WebKit/Source/WTF/wtf/glib/GLibUtilities.cpp' l='81' c='_Z12enumToStringmj'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/glib/SocketConnection.h' l='38'/>
+<use f='WebKit/Source/WTF/wtf/glib/SocketConnection.h' l='38'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/persistence/PersistentCoders.h' l='296'/>
+<use f='WebKit/Source/WTF/wtf/persistence/PersistentCoders.h' l='297' c='_ZN3WTF11Persistence5CoderINS_7CStringEE6encodeERNS0_7EncoderERKS2_'/>
+<use f='WebKit/Source/WTF/wtf/persistence/PersistentCoders.h' l='298' c='_ZN3WTF11Persistence5CoderINS_7CStringEE6decodeERNS0_7DecoderE'/>
+<use f='WebKit/Source/WTF/wtf/persistence/PersistentCoders.cpp' l='50' c='_ZN3WTF11Persistence5CoderINS_7CStringEE6encodeERNS0_7EncoderERKS2_'/>
+<use f='WebKit/Source/WTF/wtf/persistence/PersistentCoders.cpp' l='63' c='_ZN3WTF11Persistence5CoderINS_7CStringEE6decodeERNS0_7DecoderE'/>
+<use f='WebKit/Source/WTF/wtf/persistence/PersistentCoders.cpp' l='72' c='_ZN3WTF11Persistence5CoderINS_7CStringEE6decodeERNS0_7DecoderE'/>
+<use f='WebKit/Source/WTF/wtf/persistence/PersistentCoders.cpp' l='80' c='_ZN3WTF11Persistence5CoderINS_7CStringEE6decodeERNS0_7DecoderE'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/text/Base64.h' l='76' c='_ZN3WTF20base64EncodeToVectorERKNS_7CStringENS_18Base64EncodePolicyENS_15Base64EncodeMapE'/>
+<use f='WebKit/Source/WTF/wtf/text/Base64.h' l='82' c='_ZN3WTF20base64EncodeToStringERKNS_7CStringENS_18Base64EncodePolicyENS_15Base64EncodeMapE'/>
+<use f='WebKit/Source/WTF/wtf/text/Base64.h' l='98' c='_ZN3WTF23base64URLEncodeToVectorERKNS_7CStringE'/>
+<use f='WebKit/Source/WTF/wtf/text/Base64.h' l='104' c='_ZN3WTF23base64URLEncodeToStringERKNS_7CStringE'/>
+<use f='WebKit/Source/WTF/wtf/text/Base64.h' l='118' c='_ZN3WTF13base64EncodedERKNS_7CStringENS_18Base64EncodePolicyENS_15Base64EncodeMapE'/>
+<use f='WebKit/Source/WTF/wtf/text/Base64.h' l='123' c='_ZN3WTF16base64URLEncodedERKNS_7CStringE'/>
+<use f='WebKit/Source/WTF/wtf/text/Base64.h' l='137' c='_ZN3WTF20base64EncodeToVectorERKNS_7CStringENS_18Base64EncodePolicyENS_15Base64EncodeMapE'/>
+<use f='WebKit/Source/WTF/wtf/text/Base64.h' l='157' c='_ZN3WTF20base64EncodeToStringERKNS_7CStringENS_18Base64EncodePolicyENS_15Base64EncodeMapE'/>
+<use f='WebKit/Source/WTF/wtf/text/Base64.h' l='202' c='_ZN3WTF23base64URLEncodeToVectorERKNS_7CStringE'/>
+<use f='WebKit/Source/WTF/wtf/text/Base64.h' l='227' c='_ZN3WTF23base64URLEncodeToStringERKNS_7CStringE'/>
+<use f='WebKit/Source/WTF/wtf/text/Base64.h' l='315' c='_ZN3WTF13base64EncodedERKNS_7CStringENS_18Base64EncodePolicyENS_15Base64EncodeMapE'/>
+<use f='WebKit/Source/WTF/wtf/text/Base64.h' l='335' c='_ZN3WTF16base64URLEncodedERKNS_7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/text/CString.cpp' l='82' c='_ZN3WTF7CString16newUninitializedEmRPc'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.cpp' l='84' c='_ZN3WTF7CString16newUninitializedEmRPc'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.cpp' l='117' c='_ZN3WTFeqERKNS_7CStringES2_'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.cpp' l='117' c='_ZN3WTFeqERKNS_7CStringES2_'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.cpp' l='126' c='_ZN3WTFeqERKNS_7CStringEPKc'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.cpp' l='145' c='_ZN3WTFltERKNS_7CStringES2_'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.cpp' l='145' c='_ZN3WTFltERKNS_7CStringES2_'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.cpp' l='154' c='_ZN3WTF11CStringHash5equalERKNS_7CStringES3_'/>
+<use f='WebKit/Source/WTF/wtf/text/CString.cpp' l='154' c='_ZN3WTF11CStringHash5equalERKNS_7CStringES3_'/>
+<size>8</size>
+<fun r='_ZN3WTF7CStringC1EPKc'/>
+<fun r='_ZN3WTF7CStringC1EPKcm'/>
+<fun r='_ZN3WTF7CString4initEPKcm'/>
+<fun r='_ZN3WTF7CString11mutableDataEv'/>
+<fun r='_ZN3WTF7CString16newUninitializedEmRPc'/>
+<fun r='_ZN3WTF7CString18copyBufferIfNeededEv'/>
+<fun r='_ZNK3WTF7CString27isSafeToSendToAnotherThreadEv'/>
+<fun r='_ZN3WTF7CString4growEm'/>
+<fun r='_ZNK3WTF7CString4hashEv'/>
+<use f='WebKit/Source/WTF/wtf/text/StringImpl.cpp' l='1708' c='_ZN3WTF10StringImpl17utf8ForCharactersEPKhj'/>
+<use f='WebKit/Source/WTF/wtf/text/StringImpl.cpp' l='1711' c='_ZN3WTF10StringImpl17utf8ForCharactersEPKhj'/>
+<use f='WebKit/Source/WTF/wtf/text/StringImpl.cpp' l='1719' c='_ZN3WTF10StringImpl17utf8ForCharactersEPKhj'/>
+<use f='WebKit/Source/WTF/wtf/text/StringImpl.cpp' l='1722' c='_ZN3WTF10StringImpl17utf8ForCharactersEPKDsjNS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/StringImpl.cpp' l='1725' c='_ZN3WTF10StringImpl17utf8ForCharactersEPKDsjNS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/StringImpl.cpp' l='1733' c='_ZN3WTF10StringImpl17utf8ForCharactersEPKDsjNS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/StringImpl.cpp' l='1736' c='_ZNK3WTF10StringImpl18tryGetUtf8ForRangeEjjNS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/StringImpl.cpp' l='1742' c='_ZNK3WTF10StringImpl18tryGetUtf8ForRangeEjjNS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/StringImpl.cpp' l='1770' c='_ZNK3WTF10StringImpl18tryGetUtf8ForRangeEjjNS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/StringImpl.cpp' l='1773' c='_ZNK3WTF10StringImpl10tryGetUtf8ENS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/StringImpl.cpp' l='1778' c='_ZNK3WTF10StringImpl4utf8ENS_14ConversionModeE'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/text/StringView.cpp' l='91' c='_ZNK3WTF10StringView10tryGetUtf8ENS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/StringView.cpp' l='94' c='_ZNK3WTF10StringView10tryGetUtf8ENS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/StringView.cpp' l='100' c='_ZNK3WTF10StringView4utf8ENS_14ConversionModeE'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.cpp' l='614' c='_ZNK3WTF6String5asciiEv'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.cpp' l='629' c='_ZNK3WTF6String5asciiEv'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.cpp' l='642' c='_ZNK3WTF6String5asciiEv'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.cpp' l='652' c='_ZNK3WTF6String6latin1Ev'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.cpp' l='660' c='_ZNK3WTF6String6latin1Ev'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.cpp' l='663' c='_ZNK3WTF6String6latin1Ev'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.cpp' l='668' c='_ZNK3WTF6String6latin1Ev'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.cpp' l='678' c='_ZNK3WTF6String10tryGetUtf8ENS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.cpp' l='680' c='_ZNK3WTF6String10tryGetUtf8ENS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.cpp' l='683' c='_ZNK3WTF6String10tryGetUtf8Ev'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.cpp' l='688' c='_ZNK3WTF6String4utf8ENS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.cpp' l='690' c='_ZNK3WTF6String4utf8ENS_14ConversionModeE'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.cpp' l='695' c='_ZNK3WTF6String4utf8Ev'/>
+<use f='WebKit/Source/WTF/wtf/text/WTFString.cpp' l='772' c='_ZN3WTF6String8fromUTF8ERKNS_7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/PAL/pal/system/glib/SleepDisablerGLib.h' l='59'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/accessibility/atk/WebKitAccessible.h' l='86' c='_Z41webkitAccessibleCacheAndReturnAtkPropertyP17_WebKitAccessible17AtkCachedPropertyON3WTF7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='1787' c='_ZN7WebCore27MediaPlayerPrivateGStreamer13handleMessageEP11_GstMessage'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='1892' c='_ZN7WebCore27MediaPlayerPrivateGStreamer13handleMessageEP11_GstMessage'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='98'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='116'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='284' c='_ZL17webkitWebSrcResetP12WebKitWebSrcRN3WTF15DataMutexLockerIN19WebKitWebSrcPrivate16StreamingMembersEEE9ResetType'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='899' c='_ZL18webKitWebSrcSetUriP14_GstURIHandlerPKcPP7_GError'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.cpp' l='343' c='_ZN7WebCore14AppendPipeline24handleStateChangeMessageEP11_GstMessage'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.cpp' l='346' c='_ZN7WebCore14AppendPipeline24handleStateChangeMessageEP11_GstMessage'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/graphics/opengl/GraphicsContextGLOpenGL.h' l='98'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/graphics/opengl/GraphicsContextGLOpenGLCommon.cpp' l='94' c='_ZN7WebCoreL17nameHashForShaderEPKcm'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opengl/GraphicsContextGLOpenGLCommon.cpp' l='94' c='_ZN7WebCoreL17nameHashForShaderEPKcm'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opengl/GraphicsContextGLOpenGLCommon.cpp' l='561' c='_ZN7WebCore23GraphicsContextGLOpenGL13compileShaderEj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opengl/GraphicsContextGLOpenGLCommon.cpp' l='611' c='_ZN7WebCore23GraphicsContextGLOpenGL19compileShaderDirectEj'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/TextureMapperGL.cpp' l='270' c='_ZN7WebCore15TextureMapperGL10drawNumberEiRKNS_5ColorERKNS_10FloatPointERKNS_20TransformationMatrixE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/TextureMapperShaderProgram.cpp' l='648' c='_ZN7WebCore26TextureMapperShaderProgramC1ERKN3WTF6StringES4_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/TextureMapperShaderProgram.cpp' l='657' c='_ZN7WebCore26TextureMapperShaderProgramC1ERKN3WTF6StringES4_'/>
+<size>8</size>
+<use f='WebKit/WTF/Headers/wtf/URLHelpers.h' l='40' c='_ZN3WTF10URLHelpers14userVisibleURLERKNS_7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebDriver/HTTPServer.h' l='60'/>
+<size>8</size>
+<use f='WebKit/Source/WebDriver/SessionHost.h' l='79'/>
+<size>8</size>
+<use f='WebKit/Source/WebDriver/glib/SessionHostGlib.cpp' l='50' c='_ZN9WebDriver11SessionHost15messageHandlersEv'/>
+<use f='WebKit/Source/WebDriver/glib/SessionHostGlib.cpp' l='56' c='_ZN9WebDriver11SessionHost15messageHandlersEv'/>
+<use f='WebKit/Source/WebDriver/glib/SessionHostGlib.cpp' l='62' c='_ZN9WebDriver11SessionHost15messageHandlersEv'/>
+<use f='WebKit/Source/WebDriver/glib/SessionHostGlib.cpp' l='83' c='_ZN9WebDriver11SessionHost15messageHandlersEv'/>
+<use f='WebKit/Source/WebDriver/glib/SessionHostGlib.cpp' l='50' c='_ZN9WebDriver11SessionHost15messageHandlersEv'/>
+<use f='WebKit/Source/WebDriver/glib/SessionHostGlib.cpp' l='56' c='_ZN9WebDriver11SessionHost15messageHandlersEv'/>
+<use f='WebKit/Source/WebDriver/glib/SessionHostGlib.cpp' l='62' c='_ZN9WebDriver11SessionHost15messageHandlersEv'/>
+<use f='WebKit/Source/WebDriver/glib/SessionHostGlib.cpp' l='83' c='_ZN9WebDriver11SessionHost15messageHandlersEv'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.cpp' l='75' c='_ZN3IPC13ArgumentCoderIN3WTF7CStringEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.cpp' l='88' c='_ZN3IPC13ArgumentCoderIN3WTF7CStringEvE6decodeERNS_7DecoderERS2_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.cpp' l='96' c='_ZN3IPC13ArgumentCoderIN3WTF7CStringEvE6decodeERNS_7DecoderERS2_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.cpp' l='105' c='_ZN3IPC13ArgumentCoderIN3WTF7CStringEvE6decodeERNS_7DecoderERS2_'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/StringReference.cpp' l='38' c='_ZNK3IPC15StringReference8toStringEv'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StringReference.cpp' l='40' c='_ZNK3IPC15StringReference8toStringEv'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/Shared/API/glib/WebKitHitTestResult.cpp' l='71'/>
+<use f='WebKit/Source/WebKit/Shared/API/glib/WebKitHitTestResult.cpp' l='72'/>
+<use f='WebKit/Source/WebKit/Shared/API/glib/WebKitHitTestResult.cpp' l='73'/>
+<use f='WebKit/Source/WebKit/Shared/API/glib/WebKitHitTestResult.cpp' l='74'/>
+<use f='WebKit/Source/WebKit/Shared/API/glib/WebKitHitTestResult.cpp' l='75'/>
+<use f='WebKit/Source/WebKit/Shared/API/glib/WebKitHitTestResult.cpp' l='257' c='_ZL22stringIsEqualToCStringRKN3WTF6StringERKNS_7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebViewPrivate.h' l='59' c='_Z31webkitWebViewRunJavaScriptAlertPiRKN3WTF7CStringEONS0_8FunctionIFvvEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebViewPrivate.h' l='60' c='_Z33webkitWebViewRunJavaScriptConfirmPiRKN3WTF7CStringEONS0_8FunctionIFvbEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebViewPrivate.h' l='61' c='_Z32webkitWebViewRunJavaScriptPromptPiRKN3WTF7CStringES3_ONS0_8FunctionIFvRKNS0_6StringEEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebViewPrivate.h' l='61' c='_Z32webkitWebViewRunJavaScriptPromptPiRKN3WTF7CStringES3_ONS0_8FunctionIFvRKNS0_6StringEEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebViewPrivate.h' l='62' c='_Z45webkitWebViewRunJavaScriptBeforeUnloadConfirmPiRKN3WTF7CStringEONS0_8FunctionIFvbEEE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitApplicationInfo.cpp' l='26'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitAuthenticationRequest.cpp' l='71'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitAuthenticationRequest.cpp' l='72'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitAutomationSession.cpp' l='65'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitBackForwardListItem.cpp' l='45'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitBackForwardListItem.cpp' l='46'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitBackForwardListItem.cpp' l='47'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitContextMenuClient.cpp' l='42' c='_ZN17ContextMenuClient30getContextMenuFromProposedMenuERN6WebKit12WebPageProxyEON3WTF6VectorINS3_3RefINS0_18WebContextMenuItemENS3_12RawPtrTraitsIS6_E10837424'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitCredential.cpp' l='36'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitCredential.cpp' l='37'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitDownloadPrivate.h' l='35' c='_Z52webkitDownloadDecideDestinationWithSuggestedFilenameP15_WebKitDownloadRKN3WTF7CStringERb'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitDownload.cpp' l='86'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitDownload.cpp' l='421' c='_Z52webkitDownloadDecideDestinationWithSuggestedFilenameP15_WebKitDownloadRKN3WTF7CStringERb'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitFaviconDatabase.cpp' l='185' c='_Z39webkitFaviconDatabaseGetFaviconInternalP22_WebKitFaviconDatabasePKcbP13_GCancellablePFvP8_GObjectP13_GAsyncResultPvES9_'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitFileChooserRequest.cpp' l='365' c='_Z46webkit_file_chooser_request_get_selected_filesP25_WebKitFileChooserRequest'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitFindController.cpp' l='75'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitGeolocationManager.cpp' l='257' c='_ZL29webkitGeolocationManagerStartP25_WebKitGeolocationManager'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitInjectedBundleClient.cpp' l='159' c='_ZN26WebKitInjectedBundleClient35didReceiveMessageFromInjectedBundleERN6WebKit14WebProcessPoolERKN3WTF6StringEPN3API6ObjectE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitInstallMissingMediaPluginsPermissionRequest.cpp' l='62'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitMediaKeySystemPermissionRequest.cpp' l='52'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitNavigationPolicyDecision.cpp' l='54'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitNotification.cpp' l='54'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitNotification.cpp' l='55'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitNotification.cpp' l='56'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitNotificationProvider.h' l='52' c='_ZN6WebKit26WebKitNotificationProvider42withdrawAnyPreviousNotificationMatchingTagERKN3WTF7CStringE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitNotificationProvider.cpp' l='100' c='_ZN6WebKit26WebKitNotificationProvider42withdrawAnyPreviousNotificationMatchingTagERKN3WTF7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitScriptDialogPrivate.h' l='27' c='_ZN19_WebKitScriptDialogC1EjRKN3WTF7CStringES3_ONS0_8FunctionIFvbRKNS0_6StringEEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitScriptDialogPrivate.h' l='27' c='_ZN19_WebKitScriptDialogC1EjRKN3WTF7CStringES3_ONS0_8FunctionIFvbRKNS0_6StringEEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitScriptDialogPrivate.h' l='36'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitScriptDialogPrivate.h' l='37'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitScriptDialogPrivate.h' l='40'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitScriptDialogPrivate.h' l='55' c='_Z24webkitScriptDialogCreatejRKN3WTF7CStringES2_ONS_8FunctionIFvbRKNS_6StringEEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitScriptDialogPrivate.h' l='55' c='_Z24webkitScriptDialogCreatejRKN3WTF7CStringES2_ONS_8FunctionIFvbRKNS_6StringEEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitScriptDialog.cpp' l='27' c='_Z24webkitScriptDialogCreatejRKN3WTF7CStringES2_ONS_8FunctionIFvbRKNS_6StringEEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitScriptDialog.cpp' l='27' c='_Z24webkitScriptDialogCreatejRKN3WTF7CStringES2_ONS_8FunctionIFvbRKNS_6StringEEEE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSecurityOrigin.cpp' l='51'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSecurityOrigin.cpp' l='52'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSecurityOrigin.cpp' l='259' c='_Z32webkit_security_origin_to_stringP21_WebKitSecurityOrigin'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSettings.cpp' l='73'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSettings.cpp' l='74'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSettings.cpp' l='75'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSettings.cpp' l='76'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSettings.cpp' l='77'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSettings.cpp' l='78'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSettings.cpp' l='79'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSettings.cpp' l='80'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSettings.cpp' l='81'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSettings.cpp' l='82'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSettings.cpp' l='3083' c='_Z30webkit_settings_set_user_agentP15_WebKitSettingsPKc'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSettings.cpp' l='3105' c='_Z55webkit_settings_set_user_agent_with_application_detailsP15_WebKitSettingsPKcS2_'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitURISchemeRequest.cpp' l='63'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitURISchemeRequest.cpp' l='64'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitURISchemeRequest.cpp' l='65'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitURISchemeRequest.cpp' l='72'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUserContent.cpp' l='43' c='_Z18webkitContentWorldPKc'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUserContent.cpp' l='332'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='227'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='232'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='235'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1304' c='_ZL13pathIsBlockedPKc'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebResource.cpp' l='73'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebResource.cpp' l='228' c='_ZL26webkitWebResourceUpdateURIP18_WebKitWebResourceRKN3WTF7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebView.cpp' l='271'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebView.cpp' l='272'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebView.cpp' l='273'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebView.cpp' l='309'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebView.cpp' l='2509' c='_Z31webkitWebViewRunJavaScriptAlertPiRKN3WTF7CStringEONS0_8FunctionIFvvEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebView.cpp' l='2521' c='_Z33webkitWebViewRunJavaScriptConfirmPiRKN3WTF7CStringEONS0_8FunctionIFvbEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebView.cpp' l='2533' c='_Z32webkitWebViewRunJavaScriptPromptPiRKN3WTF7CStringES3_ONS0_8FunctionIFvRKNS0_6StringEEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebView.cpp' l='2533' c='_Z32webkitWebViewRunJavaScriptPromptPiRKN3WTF7CStringES3_ONS0_8FunctionIFvRKNS0_6StringEEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebView.cpp' l='2545' c='_Z45webkitWebViewRunJavaScriptBeforeUnloadConfirmPiRKN3WTF7CStringEONS0_8FunctionIFvbEEE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebsiteData.cpp' l='60'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebsiteDataManager.cpp' l='1187'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebsiteDataManager.cpp' l='1311'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/DragSourceGtk3.cpp' l='55' c='_ZN6WebKit10DragSourceC1EP10_GtkWidget'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/DragSourceGtk3.cpp' l='60' c='_ZN6WebKit10DragSourceC1EP10_GtkWidget'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/DragSourceGtk3.cpp' l='65' c='_ZN6WebKit10DragSourceC1EP10_GtkWidget'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitInputMethodContextImplGtk.cpp' l='31'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitPrintCustomWidget.cpp' l='60'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitWebInspector.cpp' l='89'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitWebInspector.cpp' l='318' c='_ZN21WebKitInspectorClient19inspectedURLChangedERN6WebKit19WebInspectorUIProxyERKN3WTF6StringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitWebViewBase.cpp' l='272'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/Launcher/glib/FlatpakLauncher.cpp' l='45' c='_ZN6WebKit12flatpakSpawnEP20_GSubprocessLauncherRKNS_15ProcessLauncher13LaunchOptionsEPPciPP7_GError'/>
+<use f='WebKit/Source/WebKit/UIProcess/Launcher/glib/FlatpakLauncher.cpp' l='52' c='_ZN6WebKit12flatpakSpawnEP20_GSubprocessLauncherRKNS_15ProcessLauncher13LaunchOptionsEPPciPP7_GError'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/Launcher/glib/ProcessLauncherGLib.cpp' l='107' c='_ZN6WebKit15ProcessLauncher13launchProcessEv'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/ClipboardGtk3.cpp' l='193' c='_ZN6WebKit9Clipboard5writeEON7WebCore13SelectionDataE'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/ClipboardGtk3.cpp' l='208' c='_ZN6WebKit9Clipboard5writeEON7WebCore13SelectionDataE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/API/glib/WebKitConsoleMessagePrivate.h' l='49'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/API/glib/WebKitConsoleMessagePrivate.h' l='51'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/API/glib/WebKitExtensionManager.cpp' l='59' c='_ZN6WebKitL13parseUserDataEPN3API6ObjectERN3WTF6StringERNS3_7GRefPtrI9_GVariantEE'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/API/glib/WebKitFrame.cpp' l='42'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/API/glib/WebKitScriptWorld.cpp' l='53'/>
+<size>8</size>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/API/glib/WebKitWebPage.cpp' l='90'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/API/glib/WebKitWebPage.cpp' l='147' c='_ZL19webkitWebPageSetURIP14_WebKitWebPageRKN3WTF7CStringE'/>
+<use f='WebKit/Source/WebKit/WebProcess/InjectedBundle/API/glib/WebKitWebPage.cpp' l='170' c='_ZN16PageLoaderClient20getDocumentLoaderURLEPN7WebCore14DocumentLoaderE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/glib/SharedBufferGlib.cpp' l='55' c='_ZN7WebCore12SharedBuffer21createFromReadingFileERKN3WTF6StringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/network/FormDataBuilder.h' l='35' c='_ZN7WebCore15FormDataBuilder20beginMultiPartHeaderERN3WTF6VectorIcLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEERKNS1_7CStringERKNS2_IhLm0ES3_Lm16ES4_EE'/>
+<use f='WebKit/Source/WebCore/platform/network/FormDataBuilder.h' l='36' c='_ZN7WebCore15FormDataBuilder28addBoundaryToMultiPartHeaderERN3WTF6VectorIcLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEERKNS1_7CStringEb'/>
+<use f='WebKit/Source/WebCore/platform/network/FormDataBuilder.h' l='38' c='_ZN7WebCore15FormDataBuilder31addContentTypeToMultiPartHeaderERN3WTF6VectorIcLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEERKNS1_7CStringE'/>
+<use f='WebKit/Source/WebCore/platform/network/FormDataBuilder.h' l='43' c='_ZN7WebCore15FormDataBuilder22encodeStringAsFormDataERN3WTF6VectorIcLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEERKNS1_7CStringE'/>
+<use f='WebKit/Source/WebCore/platform/network/FormData.cpp' l='70' c='_ZN7WebCore8FormData6createERKN3WTF7CStringE'/>
+<use f='WebKit/Source/WebCore/platform/network/FormDataBuilder.cpp' l='51' c='_ZN7WebCore15FormDataBuilderL6appendERN3WTF6VectorIcLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEERKNS1_7CStringE'/>
+<use f='WebKit/Source/WebCore/platform/network/FormDataBuilder.cpp' l='154' c='_ZN7WebCore15FormDataBuilder20beginMultiPartHeaderERN3WTF6VectorIcLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEERKNS1_7CStringERKNS2_IhLm0ES3_Lm16ES4_EE'/>
+<use f='WebKit/Source/WebCore/platform/network/FormDataBuilder.cpp' l='165' c='_ZN7WebCore15FormDataBuilder28addBoundaryToMultiPartHeaderERN3WTF6VectorIcLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEERKNS1_7CStringEb'/>
+<use f='WebKit/Source/WebCore/platform/network/FormDataBuilder.cpp' l='183' c='_ZN7WebCore15FormDataBuilder31addContentTypeToMultiPartHeaderERN3WTF6VectorIcLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEERKNS1_7CStringE'/>
+<use f='WebKit/Source/WebCore/platform/network/FormDataBuilder.cpp' l='212' c='_ZN7WebCore15FormDataBuilder22encodeStringAsFormDataERN3WTF6VectorIcLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEERKNS1_7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/network/SocketStreamHandle.cpp' l='60' c='_ZN7WebCore18SocketStreamHandle13sendHandshakeEON3WTF7CStringEOSt8optionalINS_29CookieRequestHeaderFieldProxyEENS1_8FunctionIFvbbEEE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/network/soup/NetworkStorageSessionSoup.cpp' l='237' c='_ZN7WebCore21NetworkStorageSession33saveCredentialToPersistentStorageERKNS_15ProtectionSpaceERKNS_10CredentialE'/>
+<use f='WebKit/Source/WebCore/platform/network/soup/NetworkStorageSessionSoup.cpp' l='428' c='_ZNK7WebCore21NetworkStorageSession12deleteCookieERKN3WTF3URLERKNS1_6StringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/soup/PublicSuffixSoup.cpp' l='56' c='_ZN7WebCore28topPrivatelyControlledDomainERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/platform/sql/SQLiteDatabase.cpp' l='249' c='_ZN7WebCore14SQLiteDatabase5closeENS0_19ShouldSetErrorStateE'/>
+<use f='WebKit/Source/WebCore/platform/sql/SQLiteDatabase.cpp' l='696' c='_ZN7WebCore14SQLiteDatabase20prepareStatementSlowERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/platform/sql/SQLiteDatabase.cpp' l='717' c='_ZN7WebCore14SQLiteDatabase24prepareHeapStatementSlowERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/platform/sql/SQLiteFileSystem.cpp' l='137' c='_ZN7WebCore16SQLiteFileSystem22computeHashForFileNameERKN3WTF6StringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/text/LocaleICU.h' l='80'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/text/enchant/TextCheckerEnchant.cpp' l='66' c='_ZN7WebCore18TextCheckerEnchant19checkSpellingOfWordERKN3WTF6StringEiiRiS5_'/>
+<use f='WebKit/Source/WebCore/platform/text/enchant/TextCheckerEnchant.cpp' l='140' c='_ZN7WebCore18TextCheckerEnchant28updateSpellCheckingLanguagesERKN3WTF6VectorINS1_6StringELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/text/enchant/TextCheckerEnchant.cpp' l='148' c='_ZN7WebCore18TextCheckerEnchant28updateSpellCheckingLanguagesERKN3WTF6VectorINS1_6StringELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/text/enchant/TextCheckerEnchant.cpp' l='154' c='_ZN7WebCore18TextCheckerEnchant28updateSpellCheckingLanguagesERKN3WTF6VectorINS1_6StringELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/text/hyphen/HyphenationLibHyphen.cpp' l='197' c='_ZN7WebCore21HyphenationDictionary6createERKN3WTF7CStringE'/>
+<use f='WebKit/Source/WebCore/platform/text/hyphen/HyphenationLibHyphen.cpp' l='208' c='_ZN7WebCore21HyphenationDictionaryC1ERKN3WTF7CStringE'/>
+<use f='WebKit/Source/WebCore/platform/text/hyphen/HyphenationLibHyphen.cpp' l='257' c='_ZN7WebCoreL18countLeadingSpacesERKN3WTF7CStringERiS4_'/>
+<use f='WebKit/Source/WebCore/platform/text/hyphen/HyphenationLibHyphen.cpp' l='281' c='_ZN7WebCore18lastHyphenLocationEN3WTF10StringViewEmRKNS0_10AtomStringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/xml/parser/XMLDocumentParser.h' l='50' c='_ZN7WebCore16XMLParserContext18createMemoryParserEP14_xmlSAXHandlerPvRKN3WTF7CStringE'/>
+<use f='WebKit/Source/WebCore/xml/parser/XMLDocumentParser.h' l='136' c='_ZN7WebCore17XMLDocumentParser23initializeParserContextERKN3WTF7CStringE'/>
+<use f='WebKit/Source/WebCore/xml/parser/XMLDocumentParser.h' l='136' c='_ZN7WebCore17XMLDocumentParser23initializeParserContextERKN3WTF7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/xml/parser/XMLDocumentParserLibxml2.cpp' l='1276' c='_ZN7WebCore17XMLDocumentParser23initializeParserContextERKN3WTF7CStringE'/>
+<use f='WebKit/Source/WebCore/xml/parser/XMLDocumentParserLibxml2.cpp' l='1434' c='_ZN7WebCore17XMLDocumentParser20appendFragmentSourceERKN3WTF6StringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/crypto/SubtleCrypto.cpp' l='1024' c='_ZN7WebCore12SubtleCrypto7wrapKeyERN3JSC14JSGlobalObjectENS_15CryptoKeyFormatERNS_9CryptoKeyES6_ON3WTF7VariantIJNS1_6StrongINS1_8JSObjectELNS1_30Shoul15228531'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/Modules/fetch/FetchBodyConsumer.cpp' l='188' c='_ZN7WebCore17FetchBodyConsumer15packageFormDataEPNS_22ScriptExecutionContextERKN3WTF6StringEPKhm'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/Modules/websockets/WebSocket.cpp' l='418' c='_ZN7WebCore9WebSocket5closeESt8optionalItERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/Modules/websockets/WebSocketChannel.cpp' l='145' c='_ZN7WebCore16WebSocketChannel4sendERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/Modules/websockets/WebSocketChannel.cpp' l='705' c='_ZN7WebCore16WebSocketChannel16enqueueTextFrameERKN3WTF7CStringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/Modules/websockets/WebSocketExtensionDispatcher.cpp' l='100' c='_ZN7WebCore28WebSocketExtensionDispatcher18processHeaderValueERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/Modules/websockets/WebSocketHandshake.cpp' l='107' c='_ZN7WebCore18WebSocketHandshake26getExpectedWebSocketAcceptERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/Modules/websockets/WebSocketHandshake.cpp' l='166' c='_ZNK7WebCore18WebSocketHandshake22clientHandshakeMessageEv'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/contentextensions/DFABytecodeInterpreter.cpp' l='174' c='_ZN7WebCore17ContentExtensions22DFABytecodeInterpreter23interpretWithConditionsERKN3WTF7CStringEtRKNS2_7HashSetImNS2_11DefaultHashImEENS2_29UnsignedWi6637621'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFABytecodeInterpreter.cpp' l='183' c='_ZN7WebCore17ContentExtensions22DFABytecodeInterpreter9interpretERKN3WTF7CStringEt'/>
+<size>8</size>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkingConstraint.h' l='49' c='_ZN3JSC17MarkingConstraintC1EN3WTF7CStringES2_NS_20ConstraintVolatilityENS_21ConstraintConcurrencyENS_21ConstraintParallelismE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkingConstraint.h' l='49' c='_ZN3JSC17MarkingConstraintC1EN3WTF7CStringES2_NS_20ConstraintVolatilityENS_21ConstraintConcurrencyENS_21ConstraintParallelismE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkingConstraint.h' l='93'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkingConstraint.h' l='94'/>
+<use f='WebKit/Source/WebCore/bindings/js/GCController.cpp' l='165' c='_ZN7WebCore12GCController8dumpHeapEv'/>
+<size>8</size>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITCompilation.h' l='54' c='_ZNK3JSC11Compilation11disassemblyEv'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/page/PageSerializer.cpp' l='193' c='_ZN7WebCore14PageSerializer14serializeFrameEPNS_5FrameE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/inspector/DOMPatchSupport.cpp' l='399' c='_ZN7WebCoreL15addStringToSHA1ERN3WTF4SHA1ERKNS0_6StringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/accessibility/atk/AXObjectCacheAtk.cpp' l='332' c='_ZN7WebCore13AXObjectCache34nodeTextChangePlatformNotificationEPNS_19AccessibilityObjectENS_12AXTextChangeEjRKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/accessibility/atk/WebKitAccessible.cpp' l='81'/>
+<use f='WebKit/Source/WebCore/accessibility/atk/WebKitAccessible.cpp' l='82'/>
+<use f='WebKit/Source/WebCore/accessibility/atk/WebKitAccessible.cpp' l='85'/>
+<use f='WebKit/Source/WebCore/accessibility/atk/WebKitAccessible.cpp' l='86'/>
+<use f='WebKit/Source/WebCore/accessibility/atk/WebKitAccessible.cpp' l='89'/>
+<use f='WebKit/Source/WebCore/accessibility/atk/WebKitAccessible.cpp' l='90'/>
+<use f='WebKit/Source/WebCore/accessibility/atk/WebKitAccessible.cpp' l='91'/>
+<use f='WebKit/Source/WebCore/accessibility/atk/WebKitAccessible.cpp' l='92'/>
+<use f='WebKit/Source/WebCore/accessibility/atk/WebKitAccessible.cpp' l='95'/>
+<use f='WebKit/Source/WebCore/accessibility/atk/WebKitAccessible.cpp' l='1338' c='_Z41webkitAccessibleCacheAndReturnAtkPropertyP17_WebKitAccessible17AtkCachedPropertyON3WTF7CStringE'/>
+<use f='WebKit/Source/WebCore/accessibility/atk/WebKitAccessible.cpp' l='1343' c='_Z41webkitAccessibleCacheAndReturnAtkPropertyP17_WebKitAccessible17AtkCachedPropertyON3WTF7CStringE'/>
+<use f='WebKit/Source/WebCore/accessibility/atk/WebKitAccessibleHyperlink.cpp' l='48'/>
+<use f='WebKit/Source/WebCore/accessibility/atk/WebKitAccessibleHyperlink.cpp' l='49'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/dom/TextEncoder.cpp' l='42' c='_ZNK7WebCore11TextEncoder6encodeEON3WTF6StringE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='1418' c='_ZN7WebCore11FrameLoader27defaultSubstituteDataForURLERKN3WTF3URLE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/loader/archive/mhtml/MHTMLArchive.cpp' l='164' c='_ZN7WebCore12MHTMLArchive17generateMHTMLDataEPNS_4PageE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/fileapi/NetworkSendQueue.cpp' l='44' c='_ZN7WebCore16NetworkSendQueue7enqueueEON3WTF7CStringE'/>
+<use f='WebKit/Source/WebCore/fileapi/NetworkSendQueue.cpp' l='93' c='_ZN7WebCore16NetworkSendQueue15processMessagesEv'/>
+<size>8</size>

@@ -1,0 +1,28 @@
+<use f='include/gstreamer-1.0/gst/gstmemory.h' l='41'/>
+<def f='include/gstreamer-1.0/gst/gstallocator.h' l='111' ll='132'/>
+<size>176</size>
+<doc f='include/gstreamer-1.0/gst/gstallocator.h' l='97'>/**
+ * GstAllocator:
+ * @mem_map: the implementation of the GstMemoryMapFunction
+ * @mem_unmap: the implementation of the GstMemoryUnmapFunction
+ * @mem_copy: the implementation of the GstMemoryCopyFunction
+ * @mem_share: the implementation of the GstMemoryShareFunction
+ * @mem_is_span: the implementation of the GstMemoryIsSpanFunction
+ * @mem_map_full: the implementation of the GstMemoryMapFullFunction.
+ *      Will be used instead of @mem_map if present. (Since: 1.6)
+ * @mem_unmap_full: the implementation of the GstMemoryUnmapFullFunction.
+ *      Will be used instead of @mem_unmap if present. (Since: 1.6)
+ *
+ * The #GstAllocator is used to create new memory.
+ */</doc>
+<mbr r='_GstAllocator::object' o='0' t='GstObject'/>
+<mbr r='_GstAllocator::mem_type' o='704' t='const gchar *'/>
+<mbr r='_GstAllocator::mem_map' o='768' t='GstMemoryMapFunction'/>
+<mbr r='_GstAllocator::mem_unmap' o='832' t='GstMemoryUnmapFunction'/>
+<mbr r='_GstAllocator::mem_copy' o='896' t='GstMemoryCopyFunction'/>
+<mbr r='_GstAllocator::mem_share' o='960' t='GstMemoryShareFunction'/>
+<mbr r='_GstAllocator::mem_is_span' o='1024' t='GstMemoryIsSpanFunction'/>
+<mbr r='_GstAllocator::mem_map_full' o='1088' t='GstMemoryMapFullFunction'/>
+<mbr r='_GstAllocator::mem_unmap_full' o='1152' t='GstMemoryUnmapFullFunction'/>
+<mbr r='_GstAllocator::_gst_reserved' o='1216' t='gpointer [2]'/>
+<mbr r='_GstAllocator::priv' o='1344' t='GstAllocatorPrivate *'/>

@@ -1,0 +1,135 @@
+<use f='WebKit/Source/WebCore/animation/DocumentTimelinesController.h' l='48' c='_ZN7WebCore27DocumentTimelinesController11addTimelineERNS_16DocumentTimelineE'/>
+<use f='WebKit/Source/WebCore/animation/DocumentTimelinesController.h' l='49' c='_ZN7WebCore27DocumentTimelinesController14removeTimelineERNS_16DocumentTimelineE'/>
+<use f='WebKit/Source/WebCore/animation/DocumentTimelinesController.h' l='69'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='1502' c='_ZN7WebCore8Document8timelineEv'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='1503' c='_ZNK7WebCore8Document16existingTimelineEv'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='2150'/>
+<use f='WebKit/Source/WebCore/rendering/RenderObject.h' l='707' c='_ZNK7WebCore12RenderObject16documentTimelineEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderObject.h' l='976' c='_ZNK7WebCore12RenderObject16documentTimelineEv'/>
+<inh f='WebKit/Source/WebCore/animation/AnimationTimeline.h' l='39' c='WebCore::AnimationTimeline'/>
+<def f='WebKit/Source/WebCore/animation/DocumentTimeline.h' l='41' ll='106'/>
+<use f='WebKit/Source/WebCore/animation/DocumentTimeline.h' l='44' c='_ZN7WebCore16DocumentTimeline6createERNS_8DocumentE'/>
+<use f='WebKit/Source/WebCore/animation/DocumentTimeline.h' l='45' c='_ZN7WebCore16DocumentTimeline6createERNS_8DocumentEONS_23DocumentTimelineOptionsE'/>
+<use f='WebKit/Source/WebCore/animation/DocumentTimeline.h' l='110'/>
+<size>168</size>
+<fun r='_ZN7WebCore16DocumentTimeline6createERNS_8DocumentE'/>
+<fun r='_ZN7WebCore16DocumentTimeline6createERNS_8DocumentEONS_23DocumentTimelineOptionsE'/>
+<fun r='_ZN7WebCore16DocumentTimelineD1Ev'/>
+<fun r='_ZNK7WebCore16DocumentTimeline18isDocumentTimelineEv'/>
+<fun r='_ZNK7WebCore16DocumentTimeline8documentEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline11currentTimeEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline24animationTimingDidChangeERNS_12WebAnimationE'/>
+<fun r='_ZN7WebCore16DocumentTimeline15removeAnimationERNS_12WebAnimationE'/>
+<fun r='_ZN7WebCore16DocumentTimeline21transitionDidCompleteEN3WTF6RefPtrINS_13CSSTransitionENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<fun r='_ZNK7WebCore16DocumentTimeline24computeExtentOfAnimationERNS_13RenderElementERNS_10LayoutRectE'/>
+<fun r='_ZN7WebCore16DocumentTimeline24animatedStyleForRendererERNS_13RenderElementE'/>
+<fun r='_ZNK7WebCore16DocumentTimeline28isRunningAnimationOnRendererERNS_13RenderElementENS_13CSSPropertyIDE'/>
+<fun r='_ZNK7WebCore16DocumentTimeline39isRunningAcceleratedAnimationOnRendererERNS_13RenderElementENS_13CSSPropertyIDE'/>
+<fun r='_ZN7WebCore16DocumentTimeline41animationAcceleratedRunningStateDidChangeERNS_12WebAnimationE'/>
+<fun r='_ZNK7WebCore16DocumentTimeline45runningAnimationsForRendererAreAllAcceleratedERKNS_20RenderBoxModelObjectE'/>
+<fun r='_ZN7WebCore16DocumentTimeline18detachFromDocumentEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline21enqueueAnimationEventERNS_18AnimationEventBaseE'/>
+<fun r='_ZN7WebCore16DocumentTimeline41documentWillUpdateAnimationsAndSendEventsEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline24removeReplacedAnimationsEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline40prepareForPendingAnimationEventsDispatchEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline40documentDidUpdateAnimationsAndSendEventsEv'/>
+<fun r='_ZNK7WebCore16DocumentTimeline17animationIntervalEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline17suspendAnimationsEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline16resumeAnimationsEv'/>
+<fun r='_ZNK7WebCore16DocumentTimeline22animationsAreSuspendedEv'/>
+<fun r='_ZNK7WebCore16DocumentTimeline34numberOfActiveAnimationsForTestingEv'/>
+<fun r='_ZNK7WebCore16DocumentTimeline31acceleratedAnimationsForElementERNS_7ElementE'/>
+<fun r='_ZNK7WebCore16DocumentTimeline48numberOfAnimationTimelineInvalidationsForTestingEv'/>
+<fun r='_ZN7WebCore16DocumentTimelineC1ERNS_8DocumentEN3WTF7SecondsE'/>
+<fun r='_ZNK7WebCore16DocumentTimeline10controllerEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline33applyPendingAcceleratedAnimationsEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline32scheduleInvalidationTaskIfNeededEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline27scheduleAnimationResolutionEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline22clearTickScheduleTimerEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline37internalUpdateAnimationsAndSendEventsEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline16scheduleNextTickEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline21animationCanBeRemovedERNS_12WebAnimationE'/>
+<fun r='_ZNK7WebCore16DocumentTimeline61shouldRunUpdateAnimationsAndSendEventsIgnoringSuspensionStateEv'/>
+<mbr r='WebCore::DocumentTimeline::m_tickScheduleTimer' o='576' t='WebCore::Timer'/>
+<mbr r='WebCore::DocumentTimeline::m_acceleratedAnimationsPendingRunningStateChange' o='960' t='HashSet&lt;RefPtr&lt;WebCore::WebAnimation&gt; &gt;'/>
+<mbr r='WebCore::DocumentTimeline::m_pendingAnimationEvents' o='1024' t='WebCore::AnimationEvents'/>
+<mbr r='WebCore::DocumentTimeline::m_document' o='1152' t='WeakPtr&lt;WebCore::Document&gt;'/>
+<mbr r='WebCore::DocumentTimeline::m_originTime' o='1216' t='WTF::Seconds'/>
+<mbr r='WebCore::DocumentTimeline::m_numberOfAnimationTimelineInvalidationsForTesting' o='1280' t='unsigned int'/>
+<mbr r='WebCore::DocumentTimeline::m_animationResolutionScheduled' o='1312' t='bool'/>
+<mbr r='WebCore::DocumentTimeline::m_shouldScheduleAnimationResolutionForNewPendingEvents' o='1320' t='bool'/>
+<use f='WebKit/WebCore/DerivedSources/JSDocumentTimeline.h' l='32'/>
+<use f='WebKit/WebCore/DerivedSources/JSDocumentTimeline.h' l='33' c='_ZN7WebCore18JSDocumentTimeline6createEPN3JSC9StructureEPNS_17JSDOMGlobalObjectEON3WTF3RefINS_16DocumentTimelineENS6_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDocumentTimeline.h' l='59' c='_ZNK7WebCore18JSDocumentTimeline7wrappedEv'/>
+<use f='WebKit/WebCore/DerivedSources/JSDocumentTimeline.h' l='61' c='_ZNK7WebCore18JSDocumentTimeline7wrappedEv'/>
+<use f='WebKit/WebCore/DerivedSources/JSDocumentTimeline.h' l='64' c='_ZN7WebCore18JSDocumentTimelineC1EPN3JSC9StructureERNS_17JSDOMGlobalObjectEON3WTF3RefINS_16DocumentTimelineENS6_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDocumentTimeline.h' l='69' c='_ZN7WebCore4toJSEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectERNS_16DocumentTimelineE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDocumentTimeline.h' l='70' c='_ZN7WebCore4toJSEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectEPNS_16DocumentTimelineE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDocumentTimeline.h' l='71' c='_ZN7WebCore16toJSNewlyCreatedEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectEON3WTF3RefINS_16DocumentTimelineENS5_12RawPtrTraitsIS7_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDocumentTimeline.h' l='72' c='_ZN7WebCore16toJSNewlyCreatedEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectEON3WTF6RefPtrINS_16DocumentTimelineENS5_12RawPtrTraitsIS7_EENS5_21Default11695148'/>
+<use f='WebKit/WebCore/DerivedSources/JSDocumentTimeline.h' l='74'/>
+<use f='WebKit/WebCore/DerivedSources/JSDocumentTimeline.h' l='76'/>
+<size>168</size>
+<use f='WebKit/WebCore/DerivedSources/JSDocument.cpp' l='1503' c='_ZN7WebCoreL25jsDocument_timelineGetterERN3JSC14JSGlobalObjectERNS_10JSDocumentE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDocumentTimeline.cpp' l='104' c='_ZN7WebCore16JSDOMConstructor9constructEPN3JSC14JSGlobalObjectEPNS1_9CallFrameE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDocumentTimeline.cpp' l='107' c='_ZN7WebCore16JSDOMConstructor9constructEPN3JSC14JSGlobalObjectEPNS1_9CallFrameE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDocumentTimeline.cpp' l='145' c='_ZN7WebCore18JSDocumentTimelineC1EPN3JSC9StructureERNS_17JSDOMGlobalObjectEON3WTF3RefINS_16DocumentTimelineENS6_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDocumentTimeline.cpp' l='225' c='_ZN7WebCore16toJSNewlyCreatedEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectEON3WTF3RefINS_16DocumentTimelineENS5_12RawPtrTraitsIS7_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDocumentTimeline.cpp' l='246' c='_ZN7WebCore16toJSNewlyCreatedEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectEON3WTF3RefINS_16DocumentTimelineENS5_12RawPtrTraitsIS7_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDocumentTimeline.cpp' l='249' c='_ZN7WebCore4toJSEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectERNS_16DocumentTimelineE'/>
+<size>168</size>
+<use f='WebKit/Source/WebCore/bindings/js/JSAnimationTimelineCustom.cpp' l='42' c='_ZN7WebCore16toJSNewlyCreatedEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectEON3WTF3RefINS_17AnimationTimelineENS5_12RawPtrTraitsIS7_EEEE'/>
+<size>168</size>
+<use f='WebKit/Source/WebCore/animation/DocumentTimeline.cpp' l='48' c='_ZN7WebCore16DocumentTimeline6createERNS_8DocumentE'/>
+<use f='WebKit/Source/WebCore/animation/DocumentTimeline.cpp' l='50' c='_ZN7WebCore16DocumentTimeline6createERNS_8DocumentE'/>
+<use f='WebKit/Source/WebCore/animation/DocumentTimeline.cpp' l='53' c='_ZN7WebCore16DocumentTimeline6createERNS_8DocumentEONS_23DocumentTimelineOptionsE'/>
+<use f='WebKit/Source/WebCore/animation/DocumentTimeline.cpp' l='55' c='_ZN7WebCore16DocumentTimeline6createERNS_8DocumentEONS_23DocumentTimelineOptionsE'/>
+<use f='WebKit/Source/WebCore/animation/DocumentTimeline.cpp' l='83' c='_ZN7WebCore16DocumentTimeline18detachFromDocumentEv'/>
+<use f='WebKit/Source/WebCore/animation/DocumentTimelinesController.cpp' l='56' c='_ZN7WebCore27DocumentTimelinesController11addTimelineERNS_16DocumentTimelineE'/>
+<use f='WebKit/Source/WebCore/animation/DocumentTimelinesController.cpp' l='66' c='_ZN7WebCore27DocumentTimelinesController14removeTimelineERNS_16DocumentTimelineE'/>
+<use f='WebKit/Source/WebCore/animation/DocumentTimelinesController.cpp' l='86' c='_ZN7WebCore27DocumentTimelinesController29updateAnimationsAndSendEventsEN3WTF7SecondsE'/>
+<use f='WebKit/Source/WebCore/animation/DocumentTimelinesController.cpp' l='97' c='_ZN7WebCore27DocumentTimelinesController29updateAnimationsAndSendEventsEN3WTF7SecondsE'/>
+<use f='WebKit/Source/WebCore/animation/DocumentTimelinesController.cpp' l='171' c='_ZN7WebCore27DocumentTimelinesController29updateAnimationsAndSendEventsEN3WTF7SecondsE'/>
+<use f='WebKit/Source/WebCore/animation/WebAnimation.cpp' l='256' c='_ZN7WebCore12WebAnimation11setTimelineEON3WTF6RefPtrINS_17AnimationTimelineENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/animation/WebAnimation.cpp' l='256' c='_ZN7WebCore12WebAnimation11setTimelineEON3WTF6RefPtrINS_17AnimationTimelineENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/animation/WebAnimation.cpp' l='688' c='_ZN7WebCore12WebAnimation21enqueueAnimationEventEON3WTF3RefINS_18AnimationEventBaseENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/animation/WebAnimation.cpp' l='694' c='_ZN7WebCore12WebAnimation21enqueueAnimationEventEON3WTF3RefINS_18AnimationEventBaseENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/animation/WebAnimation.cpp' l='1253' c='_ZN7WebCore12WebAnimation25acceleratedStateDidChangeEv'/>
+<use f='WebKit/Source/WebCore/animation/WebAnimation.cpp' l='1254' c='_ZN7WebCore12WebAnimation25acceleratedStateDidChangeEv'/>
+<size>168</size>
+<fun r='_ZN7WebCore16DocumentTimeline6createERNS_8DocumentE'/>
+<fun r='_ZN7WebCore16DocumentTimeline6createERNS_8DocumentEONS_23DocumentTimelineOptionsE'/>
+<fun r='_ZN7WebCore16DocumentTimelineC1ERNS_8DocumentEN3WTF7SecondsE'/>
+<fun r='_ZN7WebCore16DocumentTimelineD1Ev'/>
+<fun r='_ZNK7WebCore16DocumentTimeline10controllerEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline18detachFromDocumentEv'/>
+<fun r='_ZNK7WebCore16DocumentTimeline17animationIntervalEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline17suspendAnimationsEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline16resumeAnimationsEv'/>
+<fun r='_ZNK7WebCore16DocumentTimeline22animationsAreSuspendedEv'/>
+<fun r='_ZNK7WebCore16DocumentTimeline34numberOfActiveAnimationsForTestingEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline11currentTimeEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline24animationTimingDidChangeERNS_12WebAnimationE'/>
+<fun r='_ZN7WebCore16DocumentTimeline15removeAnimationERNS_12WebAnimationE'/>
+<fun r='_ZN7WebCore16DocumentTimeline27scheduleAnimationResolutionEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline22clearTickScheduleTimerEv'/>
+<fun r='_ZNK7WebCore16DocumentTimeline61shouldRunUpdateAnimationsAndSendEventsIgnoringSuspensionStateEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline41documentWillUpdateAnimationsAndSendEventsEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline40documentDidUpdateAnimationsAndSendEventsEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline21animationCanBeRemovedERNS_12WebAnimationE'/>
+<fun r='_ZN7WebCore16DocumentTimeline24removeReplacedAnimationsEv'/>
+<fun r='_ZN7WebCore16DocumentTimeline21transitionDidCompleteEN3WTF6RefPtrINS_13CSSTransitionENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore16DocumentTimeline16scheduleNextTickEv'/>
+<fun r='_ZNK7WebCore16DocumentTimeline24computeExtentOfAnimationERNS_13RenderElementERNS_10LayoutRectE'/>
+<fun r='_ZNK7WebCore16DocumentTimeline28isRunningAnimationOnRendererERNS_13RenderElementENS_13CSSPropertyIDE'/>
+<fun r='_ZNK7WebCore16DocumentTimeline39isRunningAcceleratedAnimationOnRendererERNS_13RenderElementENS_13CSSPropertyIDE'/>
+<fun r='_ZN7WebCore16DocumentTimeline24animatedStyleForRendererERNS_13RenderElementE'/>
+<fun r='_ZN7WebCore16DocumentTimeline41animationAcceleratedRunningStateDidChangeERNS_12WebAnimationE'/>
+<fun r='_ZN7WebCore16DocumentTimeline33applyPendingAcceleratedAnimationsEv'/>
+<fun r='_ZNK7WebCore16DocumentTimeline45runningAnimationsForRendererAreAllAcceleratedERKNS_20RenderBoxModelObjectE'/>
+<fun r='_ZN7WebCore16DocumentTimeline21enqueueAnimationEventERNS_18AnimationEventBaseE'/>
+<fun r='_ZN7WebCore16DocumentTimeline40prepareForPendingAnimationEventsDispatchEv'/>
+<fun r='_ZNK7WebCore16DocumentTimeline31acceleratedAnimationsForElementERNS_7ElementE'/>
+<fun r='_ZNK7WebCore16DocumentTimeline48numberOfAnimationTimelineInvalidationsForTestingEv'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='8368' c='_ZN7WebCore8Document8timelineEv'/>
+<size>168</size>

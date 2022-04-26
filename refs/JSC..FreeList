@@ -1,0 +1,112 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FreeList.h' l='62' ll='105'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FreeList.h' l='85' c='_ZN3JSC8FreeList21offsetOfScrambledHeadEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FreeList.h' l='86' c='_ZN3JSC8FreeList14offsetOfSecretEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FreeList.h' l='87' c='_ZN3JSC8FreeList18offsetOfPayloadEndEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FreeList.h' l='88' c='_ZN3JSC8FreeList17offsetOfRemainingEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FreeList.h' l='89' c='_ZN3JSC8FreeList20offsetOfOriginalSizeEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FreeList.h' l='90' c='_ZN3JSC8FreeList16offsetOfCellSizeEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='144' c='_ZN3JSC11MarkedBlock6Handle5sweepEPNS_8FreeListE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='148' c='_ZN3JSC11MarkedBlock6Handle30finishSweepKnowingHeapCellTypeEPNS_8FreeListERKT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='158' c='_ZN3JSC11MarkedBlock6Handle14stopAllocatingERKNS_8FreeListE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='159' c='_ZN3JSC11MarkedBlock6Handle16resumeAllocatingERNS_8FreeListE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='224' c='_ZN3JSC11MarkedBlock6Handle16specializedSweepEPNS_8FreeListENS1_9EmptyModeENS1_9SweepModeENS1_20SweepDestructionModeENS1_12ScribbleModeENS1_18NewlyAll14979193'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/LocalAllocator.h' l='72'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Subspace.h' l='57' c='_ZN3JSC8Subspace11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<size>40</size>
+<fun r='_ZN3JSC8FreeListC1Ej'/>
+<fun r='_ZN3JSC8FreeListD1Ev'/>
+<fun r='_ZN3JSC8FreeList5clearEv'/>
+<fun r='_ZN3JSC8FreeList14initializeListEPNS_8FreeCellEmj'/>
+<fun r='_ZN3JSC8FreeList14initializeBumpEPcj'/>
+<fun r='_ZNK3JSC8FreeList18allocationWillFailEv'/>
+<fun r='_ZNK3JSC8FreeList21allocationWillSucceedEv'/>
+<fun r='_ZN3JSC8FreeList8allocateERKT_'/>
+<fun r='_ZNK3JSC8FreeList8containsEPNS_8HeapCellE'/>
+<fun r='_ZNK3JSC8FreeList7forEachERKT_'/>
+<fun r='_ZNK3JSC8FreeList12originalSizeEv'/>
+<fun r='_ZN3JSC8FreeList21offsetOfScrambledHeadEv'/>
+<fun r='_ZN3JSC8FreeList14offsetOfSecretEv'/>
+<fun r='_ZN3JSC8FreeList18offsetOfPayloadEndEv'/>
+<fun r='_ZN3JSC8FreeList17offsetOfRemainingEv'/>
+<fun r='_ZN3JSC8FreeList20offsetOfOriginalSizeEv'/>
+<fun r='_ZN3JSC8FreeList16offsetOfCellSizeEv'/>
+<fun r='_ZNK3JSC8FreeList4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZNK3JSC8FreeList8cellSizeEv'/>
+<fun r='_ZNK3JSC8FreeList4headEv'/>
+<mbr r='JSC::FreeList::m_scrambledHead' o='0' t='uintptr_t'/>
+<mbr r='JSC::FreeList::m_secret' o='64' t='uintptr_t'/>
+<mbr r='JSC::FreeList::m_payloadEnd' o='128' t='char *'/>
+<mbr r='JSC::FreeList::m_remaining' o='192' t='unsigned int'/>
+<mbr r='JSC::FreeList::m_originalSize' o='224' t='unsigned int'/>
+<mbr r='JSC::FreeList::m_cellSize' o='256' t='unsigned int'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='144' c='_ZN3JSC11MarkedBlock6Handle5sweepEPNS_8FreeListE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='148' c='_ZN3JSC11MarkedBlock6Handle30finishSweepKnowingHeapCellTypeEPNS_8FreeListERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='158' c='_ZN3JSC11MarkedBlock6Handle14stopAllocatingERKNS_8FreeListE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='159' c='_ZN3JSC11MarkedBlock6Handle16resumeAllocatingERNS_8FreeListE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='224' c='_ZN3JSC11MarkedBlock6Handle16specializedSweepEPNS_8FreeListENS1_9EmptyModeENS1_9SweepModeENS1_20SweepDestructionModeENS1_12ScribbleModeENS1_18NewlyAll14979193'/>
+<def f='WebKit/Source/JavaScriptCore/heap/FreeList.h' l='62' ll='105'/>
+<use f='WebKit/Source/JavaScriptCore/heap/FreeList.h' l='85' c='_ZN3JSC8FreeList21offsetOfScrambledHeadEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/FreeList.h' l='86' c='_ZN3JSC8FreeList14offsetOfSecretEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/FreeList.h' l='87' c='_ZN3JSC8FreeList18offsetOfPayloadEndEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/FreeList.h' l='88' c='_ZN3JSC8FreeList17offsetOfRemainingEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/FreeList.h' l='89' c='_ZN3JSC8FreeList20offsetOfOriginalSizeEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/FreeList.h' l='90' c='_ZN3JSC8FreeList16offsetOfCellSizeEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/LocalAllocator.h' l='72'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Subspace.h' l='57' c='_ZN3JSC8Subspace11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlockInlines.h' l='233' c='_ZN3JSC11MarkedBlock6Handle16specializedSweepEPNS_8FreeListENS1_9EmptyModeENS1_9SweepModeENS1_20SweepDestructionModeENS1_12ScribbleModeENS1_18NewlyAll14979193'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlockInlines.h' l='367' c='_ZN3JSC11MarkedBlock6Handle30finishSweepKnowingHeapCellTypeEPNS_8FreeListERKT_'/>
+<size>40</size>
+<fun r='_ZN3JSC8FreeListC1Ej'/>
+<fun r='_ZN3JSC8FreeListD1Ev'/>
+<fun r='_ZN3JSC8FreeList5clearEv'/>
+<fun r='_ZN3JSC8FreeList14initializeListEPNS_8FreeCellEmj'/>
+<fun r='_ZN3JSC8FreeList14initializeBumpEPcj'/>
+<fun r='_ZNK3JSC8FreeList18allocationWillFailEv'/>
+<fun r='_ZNK3JSC8FreeList21allocationWillSucceedEv'/>
+<fun r='_ZN3JSC8FreeList8allocateERKT_'/>
+<fun r='_ZNK3JSC8FreeList8containsEPNS_8HeapCellE'/>
+<fun r='_ZNK3JSC8FreeList7forEachERKT_'/>
+<fun r='_ZNK3JSC8FreeList12originalSizeEv'/>
+<fun r='_ZN3JSC8FreeList21offsetOfScrambledHeadEv'/>
+<fun r='_ZN3JSC8FreeList14offsetOfSecretEv'/>
+<fun r='_ZN3JSC8FreeList18offsetOfPayloadEndEv'/>
+<fun r='_ZN3JSC8FreeList17offsetOfRemainingEv'/>
+<fun r='_ZN3JSC8FreeList20offsetOfOriginalSizeEv'/>
+<fun r='_ZN3JSC8FreeList16offsetOfCellSizeEv'/>
+<fun r='_ZNK3JSC8FreeList4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZNK3JSC8FreeList8cellSizeEv'/>
+<fun r='_ZNK3JSC8FreeList4headEv'/>
+<mbr r='JSC::FreeList::m_scrambledHead' o='0' t='uintptr_t'/>
+<mbr r='JSC::FreeList::m_secret' o='64' t='uintptr_t'/>
+<mbr r='JSC::FreeList::m_payloadEnd' o='128' t='char *'/>
+<mbr r='JSC::FreeList::m_remaining' o='192' t='unsigned int'/>
+<mbr r='JSC::FreeList::m_originalSize' o='224' t='unsigned int'/>
+<mbr r='JSC::FreeList::m_cellSize' o='256' t='unsigned int'/>
+<fun r='_ZN3JSC8FreeList8allocateERKT_'/>
+<fun r='_ZNK3JSC8FreeList7forEachERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/HeapCellType.h' l='43' c='_ZN3JSC12HeapCellType11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<size>40</size>
+<use f='WebKit/Source/JavaScriptCore/heap/HeapCellType.cpp' l='59' c='_ZN3JSC12HeapCellType11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<size>40</size>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoHeapCellType.h' l='47' c='_ZN3JSC15IsoHeapCellType11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoHeapCellType.cpp' l='42' c='_ZN3JSC15IsoHeapCellType11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<size>40</size>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.cpp' l='115' c='_ZN3JSC11MarkedBlock6Handle14stopAllocatingERKNS_8FreeListE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.cpp' l='173' c='_ZN3JSC11MarkedBlock6Handle16resumeAllocatingERNS_8FreeListE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.cpp' l='383' c='_ZN3JSC11MarkedBlock6Handle5sweepEPNS_8FreeListE'/>
+<size>40</size>
+<use f='WebKit/Source/JavaScriptCore/heap/Subspace.cpp' l='58' c='_ZN3JSC8Subspace11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<size>40</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSDestructibleObjectHeapCellType.h' l='37' c='_ZN3JSC32JSDestructibleObjectHeapCellType11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSDestructibleObjectHeapCellType.cpp' l='51' c='_ZN3JSC32JSDestructibleObjectHeapCellType11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<size>40</size>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoInlinedHeapCellType.h' l='48' c='_ZN3JSC22IsoInlinedHeapCellType11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<size>40</size>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapCellType.h' l='43' c='_ZN3JSC12HeapCellType11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSDestructibleObjectHeapCellType.h' l='37' c='_ZN3JSC32JSDestructibleObjectHeapCellType11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<size>40</size>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlockInlines.h' l='233' c='_ZN3JSC11MarkedBlock6Handle16specializedSweepEPNS_8FreeListENS1_9EmptyModeENS1_9SweepModeENS1_20SweepDestructionModeENS1_12ScribbleModeENS1_18NewlyAll14979193'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlockInlines.h' l='367' c='_ZN3JSC11MarkedBlock6Handle30finishSweepKnowingHeapCellTypeEPNS_8FreeListERKT_'/>
+<size>40</size>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoHeapCellType.h' l='47' c='_ZN3JSC15IsoHeapCellType11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<size>40</size>

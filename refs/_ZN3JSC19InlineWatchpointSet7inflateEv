@@ -1,0 +1,12 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Watchpoint.h' l='476' ll='481' type='JSC::WatchpointSet * JSC::InlineWatchpointSet::inflate()'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Watchpoint.h' l='472'>// We expose this because sometimes a client knows its about to start
+    // watching this InlineWatchpointSet, hence it&apos;ll become inflated regardless.
+    // Such clients may find it useful to have a WatchpointSet* pointer, for example,
+    // if they collect a Vector of WatchpointSet*.</doc>
+<def f='WebKit/Source/JavaScriptCore/bytecode/Watchpoint.h' l='476' ll='481' type='JSC::WatchpointSet * JSC::InlineWatchpointSet::inflate()'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/Watchpoint.h' l='472'>// We expose this because sometimes a client knows its about to start
+    // watching this InlineWatchpointSet, hence it&apos;ll become inflated regardless.
+    // Such clients may find it useful to have a WatchpointSet* pointer, for example,
+    // if they collect a Vector of WatchpointSet*.</doc>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='226' u='c' c='_ZN3JSC10AccessCase6commitERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Watchpoint.cpp' l='173' u='c' c='_ZN3JSC19InlineWatchpointSet3addEPNS_10WatchpointE'/>

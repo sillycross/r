@@ -1,0 +1,355 @@
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/SymbolUniqueId.h' l='31'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/SymbolUniqueId.h' l='32' c='_ZN2sh15TSymbolUniqueIdC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Types.h' l='343' c='_ZNK2sh5TType20createSamplerSymbolsERKNS_15ImmutableStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcE14pool_allocatorIcEEEPNS_7TVectorIPKNS_9TVar14788992'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Symbol.h' l='28' c='_ZN2sh7TSymbolC1EPNS_12TSymbolTableERKNS_15ImmutableStringENS_10SymbolTypeENS_11SymbolClassENS_10TExtensionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Symbol.h' l='83' c='_ZN2sh9TVariableC1EPNS_12TSymbolTableERKNS_15ImmutableStringEPKNS_5TTypeENS_10SymbolTypeENS_10TExtensionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Symbol.h' l='115' c='_ZN2sh10TStructureC1EPNS_12TSymbolTableERKNS_15ImmutableStringEPKNS_7TVectorIPNS_6TFieldEEENS_10SymbolTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Symbol.h' l='125' c='_ZNK2sh10TStructure20createSamplerSymbolsEPKcRKNSt7__cxx1112basic_stringIcSt11char_traitsIcE14pool_allocatorIcEEEPNS_7TVectorIPKNS_9TVariableEEEPNS_4T982438'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Symbol.h' l='131'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Symbol.h' l='152' c='_ZN2sh15TInterfaceBlockC1EPNS_12TSymbolTableERKNS_15ImmutableStringEPKNS_7TVectorIPNS_6TFieldEEERKNS_16TLayoutQualifierENS_10SymbolTypeENS_10TExtensionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Symbol.h' l='163'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Symbol.h' l='182' c='_ZN2sh10TParameter14createVariableEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Symbol.h' l='201' c='_ZN2sh9TFunctionC1EPNS_12TSymbolTableERKNS_15ImmutableStringENS_10SymbolTypeEPKNS_5TTypeEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermTraverse.h' l='41' c='_ZN2sh16TIntermTraverserC1EbbbPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermTraverse.h' l='231'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermTraverse.h' l='303' c='_ZN2sh24TLValueTrackingTraverserC1EbbbPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/BuiltinsWorkaroundGLSL.h' l='19' c='_ZN2sh24ShaderBuiltinsWorkaroundEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEm'/>
+<inh f='WebKit/Source/ThirdParty/ANGLE/src/common/angleutils.h' l='43' c='angle::NonCopyable'/>
+<inh f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/SymbolTable_autogen.h' l='18' c='sh::TSymbolTableBase'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/SymbolTable.h' l='210' ll='344'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/BuiltinsWorkaroundGLSL.cpp' l='26' c='_ZN2sh12_GLOBAL__N_123TBuiltinsWorkaroundGLSLC1EPNS_12TSymbolTableEm'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/BuiltinsWorkaroundGLSL.cpp' l='40' c='_ZN2sh12_GLOBAL__N_123TBuiltinsWorkaroundGLSLC1EPNS_12TSymbolTableEm'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/BuiltinsWorkaroundGLSL.cpp' l='99' c='_ZN2sh24ShaderBuiltinsWorkaroundEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEm'/>
+<size>960</size>
+<fun r='_ZN2sh12TSymbolTableC1Ev'/>
+<fun r='_ZN2sh12TSymbolTableD1Ev'/>
+<fun r='_ZNK2sh12TSymbolTable7isEmptyEv'/>
+<fun r='_ZNK2sh12TSymbolTable13atGlobalLevelEv'/>
+<fun r='_ZN2sh12TSymbolTable4pushEv'/>
+<fun r='_ZN2sh12TSymbolTable3popEv'/>
+<fun r='_ZN2sh12TSymbolTable7declareEPNS_7TSymbolE'/>
+<fun r='_ZN2sh12TSymbolTable15declareInternalEPNS_7TSymbolE'/>
+<fun r='_ZN2sh12TSymbolTable26declareUserDefinedFunctionEPNS_9TFunctionEb'/>
+<fun r='_ZNK2sh12TSymbolTable35markFunctionHasPrototypeDeclarationERKNS_15ImmutableStringEPb'/>
+<fun r='_ZNK2sh12TSymbolTable39setFunctionParameterNamesFromDefinitionEPKNS_9TFunctionEPb'/>
+<fun r='_ZN2sh12TSymbolTable16setGlInArraySizeEj'/>
+<fun r='_ZNK2sh12TSymbolTable28getGlInVariableWithArraySizeEv'/>
+<fun r='_ZNK2sh12TSymbolTable11gl_FragDataEv'/>
+<fun r='_ZNK2sh12TSymbolTable23gl_SecondaryFragDataEXTEv'/>
+<fun r='_ZN2sh12TSymbolTable14markStaticReadERKNS_9TVariableE'/>
+<fun r='_ZN2sh12TSymbolTable15markStaticWriteERKNS_9TVariableE'/>
+<fun r='_ZNK2sh12TSymbolTable16isStaticallyUsedERKNS_9TVariableE'/>
+<fun r='_ZNK2sh12TSymbolTable4findERKNS_15ImmutableStringEi'/>
+<fun r='_ZNK2sh12TSymbolTable15findUserDefinedERKNS_15ImmutableStringE'/>
+<fun r='_ZNK2sh12TSymbolTable23findUserDefinedFunctionERKNS_15ImmutableStringE'/>
+<fun r='_ZNK2sh12TSymbolTable10findGlobalERKNS_15ImmutableStringE'/>
+<fun r='_ZNK2sh12TSymbolTable24findGlobalWithConversionERKSt6vectorINS_15ImmutableStringESaIS2_EE'/>
+<fun r='_ZNK2sh12TSymbolTable11findBuiltInERKNS_15ImmutableStringEi'/>
+<fun r='_ZNK2sh12TSymbolTable25findBuiltInWithConversionERKSt6vectorINS_15ImmutableStringESaIS2_EEi'/>
+<fun r='_ZN2sh12TSymbolTable19setDefaultPrecisionENS_10TBasicTypeENS_10TPrecisionE'/>
+<fun r='_ZNK2sh12TSymbolTable19getDefaultPrecisionENS_10TBasicTypeE'/>
+<fun r='_ZN2sh12TSymbolTable19addInvariantVaryingERKNS_9TVariableE'/>
+<fun r='_ZNK2sh12TSymbolTable18isVaryingInvariantERKNS_9TVariableE'/>
+<fun r='_ZN2sh12TSymbolTable18setGlobalInvariantEb'/>
+<fun r='_ZN2sh12TSymbolTable12nextUniqueIdEv'/>
+<fun r='_ZNK2sh12TSymbolTable22isUnmangledBuiltInNameERKNS_15ImmutableStringEiRKSt3mapINS_10TExtensionENS_9TBehaviorESt4lessIS5_ESaISt4pairIKS5_S6_EEE'/>
+<fun r='_ZN2sh12TSymbolTable18initializeBuiltInsEj12ShShaderSpecRK18ShBuiltInResources'/>
+<fun r='_ZN2sh12TSymbolTable23clearCompilationResultsEv'/>
+<fun r='_ZN2sh12TSymbolTable17nextUniqueIdValueEv'/>
+<fun r='_ZN2sh12TSymbolTable27initSamplerDefaultPrecisionENS_10TBasicTypeE'/>
+<fun r='_ZN2sh12TSymbolTable26initializeBuiltInVariablesEj12ShShaderSpecRK18ShBuiltInResources'/>
+<fun r='_ZN2sh12TSymbolTable27getOrCreateVariableMetadataERKNS_9TVariableE'/>
+<mbr r='sh::TSymbolTable::mTable' o='3456' t='std::vector&lt;std::unique_ptr&lt;TSymbolTableLevel&gt; &gt;'/>
+<mbr r='sh::TSymbolTable::mPrecisionStack' o='3648' t='std::vector&lt;std::unique_ptr&lt;PrecisionStackLevel&gt; &gt;'/>
+<mbr r='sh::TSymbolTable::mGlobalInvariant' o='3840' t='bool'/>
+<mbr r='sh::TSymbolTable::mUniqueIdCounter' o='3872' t='int'/>
+<smbr r='sh::TSymbolTable::kLastBuiltInId' t='const int'/>
+<mbr r='sh::TSymbolTable::mShaderType' o='3904' t='sh::GLenum'/>
+<mbr r='sh::TSymbolTable::mShaderSpec' o='3936' t='ShShaderSpec'/>
+<mbr r='sh::TSymbolTable::mResources' o='3968' t='ShBuiltInResources'/>
+<mbr r='sh::TSymbolTable::mVariableMetadata' o='7232' t='std::map&lt;int, VariableMetadata&gt;'/>
+<mbr r='sh::TSymbolTable::mGlInVariableWithArraySize' o='7616' t='sh::TVariable *'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='132' c='_ZN2sh9TCompiler14getSymbolTableEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='273'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.h' l='32' c='_ZN2sh16CollectVariablesEPNS_12TIntermBlockEPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcmEPNS_115761621'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='117' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverserC1EPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcm10328784'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='235' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverserC1EPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcm10328784'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='1010' c='_ZN2sh16CollectVariablesEPNS_12TIntermBlockEPSt6vectorINS_14ShaderVariableESaIS3_EES6_S6_S6_S6_S6_PS2_INS_14InterfaceBlockESaIS7_EESA_SA_PFmPKcmEPNS_115761621'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='36' c='_ZN2sh13TParseContextC1ERNS_12TSymbolTableERSt3mapINS_10TExtensionENS_9TBehaviorESt4lessIS4_ESaISt4pairIKS4_S5_EEEj12ShShaderSpecmbPNS_12TDiagnosticsE11727258'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='472'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateLimitations.h' l='21' c='_ZN2sh19ValidateLimitationsEPNS_11TIntermNodeEjPNS_12TSymbolTableEPNS_12TDiagnosticsE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ClampFragDepth.h' l='25' c='_ZN2sh14ClampFragDepthEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ClampPointSize.h' l='24' c='_ZN2sh14ClampPointSizeEPNS_9TCompilerEPNS_12TIntermBlockEfPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.h' l='47' c='_ZN2sh43DeclareAndInitBuiltinsForInstancedMultiviewEPNS_9TCompilerEPNS_12TIntermBlockEjjm14ShShaderOutputPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeferGlobalInitializers.h' l='33' c='_ZN2sh23DeferGlobalInitializersEPNS_9TCompilerEPNS_12TIntermBlockEbbbPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateGLFragColorBroadcast.h' l='31' c='_ZN2sh27EmulateGLFragColorBroadcastEPNS_9TCompilerEPNS_12TIntermBlockEiPSt6vectorINS_14ShaderVariableESaIS5_EEPNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateMultiDrawShaderBuiltins.h' l='34' c='_ZN2sh15EmulateGLDrawIDEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPSt6vectorINS_14ShaderVariableESaIS7_EEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateMultiDrawShaderBuiltins.h' l='40' c='_ZN2sh31EmulateGLBaseVertexBaseInstanceEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPSt6vectorINS_14ShaderVariableESaIS7_EEbb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulatePrecision.h' l='27' c='_ZN2sh16EmulatePrecisionC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.h' l='30' c='_ZN2sh14CreateInitCodeEPKNS_12TIntermTypedEbbPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.h' l='38' c='_ZN2sh29InitializeUninitializedLocalsEPNS_9TCompilerEPNS_12TIntermBlockEibbPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.h' l='51' c='_ZN2sh19InitializeVariablesEPNS_9TCompilerEPNS_12TIntermBlockERKSt6vectorINS_14ShaderVariableESaIS5_EEPNS_12TSymbolTableEiRKSt3mapINS_10TExtensionENS_4717556'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/PruneNoOps.h' l='27' c='_ZN2sh10PruneNoOpsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RegenerateStructNames.h' l='21' c='_ZN2sh21RegenerateStructNamesC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.h' l='31' c='_ZN2sh44RemoveDynamicIndexingOfNonSSBOVectorOrMatrixEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableEPNS_22PerformanceDiagnosticsE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.h' l='37' c='_ZN2sh37RemoveDynamicIndexingOfSwizzledVectorEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableEPNS_22PerformanceDiagnosticsE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemovePow.h' l='22' c='_ZN2sh9RemovePowEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveUnreferencedVariables.h' l='25' c='_ZN2sh27RemoveUnreferencedVariablesEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDoWhile.h' l='24' c='_ZN2sh14RewriteDoWhileEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ScalarizeVecAndMatConstructorArgs.h' l='27' c='_ZN2sh33ScalarizeVecAndMatConstructorArgsEPNS_9TCompilerEPNS_12TIntermBlockEjbPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/SimplifyLoopConditions.h' l='24' c='_ZN2sh22SimplifyLoopConditionsEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/SimplifyLoopConditions.h' l='29' c='_ZN2sh22SimplifyLoopConditionsEPNS_9TCompilerEPNS_11TIntermNodeEjPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/SplitSequenceOperator.h' l='26' c='_ZN2sh21SplitSequenceOperatorEPNS_9TCompilerEPNS_11TIntermNodeEiPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/UseInterfaceBlockFields.h' l='29' c='_ZN2sh23UseInterfaceBlockFieldsEPNS_9TCompilerEPNS_12TIntermBlockERKSt6vectorINS_14InterfaceBlockESaIS5_EERKNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.h' l='26' c='_ZN2sh31VectorizeVectorScalarArithmeticEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceShadowingVariables.h' l='23' c='_ZN2sh25ReplaceShadowingVariablesEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='193' c='_ZN2sh12_GLOBAL__N_123TScopedSymbolTableLevelC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='205'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='232' c='_ZN2sh12_GLOBAL__N_128ValidateFragColorAndFragDataEjiRKNS_12TSymbolTableEPNS_12TDiagnosticsE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/OutputGLSLBase.h' l='26' c='_ZN2sh15TOutputGLSLBaseC1ERNS_13TInfoSinkBaseE28ShArrayIndexClampingStrategyPFmPKcmERSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESE_St46911232'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/OutputESSL.h' l='22' c='_ZN2sh11TOutputESSLC1ERNS_13TInfoSinkBaseE28ShArrayIndexClampingStrategyPFmPKcmERSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESE_St4less9163366'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/OutputESSL.cpp' l='16' c='_ZN2sh11TOutputESSLC1ERNS_13TInfoSinkBaseE28ShArrayIndexClampingStrategyPFmPKcmERSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESE_St4less9163366'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/OutputGLSL.h' l='22' c='_ZN2sh11TOutputGLSLC1ERNS_13TInfoSinkBaseE28ShArrayIndexClampingStrategyPFmPKcmERSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESE_St4less154755'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/OutputGLSL.cpp' l='18' c='_ZN2sh11TOutputGLSLC1ERNS_13TInfoSinkBaseE28ShArrayIndexClampingStrategyPFmPKcmERSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESE_St4less154755'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/OutputGLSLBase.cpp' l='88' c='_ZN2sh15TOutputGLSLBaseC1ERNS_13TInfoSinkBaseE28ShArrayIndexClampingStrategyPFmPKcmERSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESE_St46911232'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.h' l='31' c='_ZN2sh18CreateTempVariableEPNS_12TSymbolTableEPKNS_5TTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.h' l='32' c='_ZN2sh18CreateTempVariableEPNS_12TSymbolTableEPKNS_5TTypeENS_10TQualifierE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.h' l='40' c='_ZN2sh19DeclareTempVariableEPNS_12TSymbolTableEPKNS_5TTypeENS_10TQualifierEPPNS_18TIntermDeclarationE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.h' l='44' c='_ZN2sh19DeclareTempVariableEPNS_12TSymbolTableEPNS_12TIntermTypedENS_10TQualifierEPPNS_18TIntermDeclarationE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.h' l='50' c='_ZN2sh16DeclareStructureEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_7TVectorIPNS_6TFieldEEENS_10TQualifierERKNS_16TMemoryQualifierEjRKNS_15ImmutableStringEPSE_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.h' l='58' c='_ZN2sh21DeclareInterfaceBlockEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_7TVectorIPNS_6TFieldEEENS_10TQualifierERKNS_16TMemoryQualifierEjRKNS_15ImmutableStringESF_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.h' l='73' c='_ZN2sh23ReferenceGlobalVariableERKNS_15ImmutableStringERKNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.h' l='78' c='_ZN2sh24ReferenceBuiltInVariableERKNS_15ImmutableStringERKNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.h' l='83' c='_ZN2sh29CreateBuiltInFunctionCallNodeEPKcPNS_7TVectorIPNS_11TIntermNodeEEERKNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='185' c='_ZN2sh13TParseContextC1ERNS_12TSymbolTableERSt3mapINS_10TExtensionENS_9TBehaviorESt4lessIS4_ESaISt4pairIKS4_S5_EEEj12ShShaderSpecmbPNS_12TDiagnosticsE11727258'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Symbol.cpp' l='34' c='_ZN2sh7TSymbolC1EPNS_12TSymbolTableERKNS_15ImmutableStringENS_10SymbolTypeENS_11SymbolClassENS_10TExtensionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Symbol.cpp' l='78' c='_ZN2sh9TVariableC1EPNS_12TSymbolTableERKNS_15ImmutableStringEPKNS_5TTypeENS_10SymbolTypeENS_10TExtensionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Symbol.cpp' l='91' c='_ZN2sh10TStructureC1EPNS_12TSymbolTableERKNS_15ImmutableStringEPKNS_7TVectorIPNS_6TFieldEEENS_10SymbolTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Symbol.cpp' l='110' c='_ZNK2sh10TStructure20createSamplerSymbolsEPKcRKNSt7__cxx1112basic_stringIcSt11char_traitsIcE14pool_allocatorIcEEEPNS_7TVectorIPKNS_9TVariableEEEPNS_4T982438'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Symbol.cpp' l='134' c='_ZN2sh15TInterfaceBlockC1EPNS_12TSymbolTableERKNS_15ImmutableStringEPKNS_7TVectorIPNS_6TFieldEEERKNS_16TLayoutQualifierENS_10SymbolTypeENS_10TExtensionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Symbol.cpp' l='158' c='_ZN2sh9TFunctionC1EPNS_12TSymbolTableERKNS_15ImmutableStringENS_10SymbolTypeEPKNS_5TTypeEb'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/SymbolUniqueId.cpp' l='15' c='_ZN2sh15TSymbolUniqueIdC1EPNS_12TSymbolTableE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RecordConstantPrecision.h' l='30' c='_ZN2sh23RecordConstantPrecisionEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.h' l='22' c='_ZN2sh23RewriteRowMajorMatricesEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteTexelFetchOffset.h' l='29' c='_ZN2sh23RewriteTexelFetchOffsetEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEi'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Types.cpp' l='717' c='_ZNK2sh5TType20createSamplerSymbolsERKNS_15ImmutableStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcE14pool_allocatorIcEEEPNS_7TVectorIPKNS_9TVar14788992'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateLimitations.cpp' l='73' c='_ZN2sh12_GLOBAL__N_128ValidateLimitationsTraverserC1EjPNS_12TSymbolTableEPNS_12TDiagnosticsE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateLimitations.cpp' l='105' c='_ZN2sh12_GLOBAL__N_128ValidateLimitationsTraverserC1EjPNS_12TSymbolTableEPNS_12TDiagnosticsE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateLimitations.cpp' l='434' c='_ZN2sh19ValidateLimitationsEPNS_11TIntermNodeEjPNS_12TSymbolTableEPNS_12TDiagnosticsE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/RunAtTheEndOfShader.h' l='25' c='_ZN2sh19RunAtTheEndOfShaderEPNS_9TCompilerEPNS_12TIntermBlockEPNS_11TIntermNodeEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ClampFragDepth.cpp' l='23' c='_ZN2sh14ClampFragDepthEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ClampPointSize.cpp' l='23' c='_ZN2sh14ClampPointSizeEPNS_9TCompilerEPNS_12TIntermBlockEfPNS_12TSymbolTableE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceVariable.h' l='121' c='_ZN2sh27RetypeOpaqueVariablesHelper24convertFunctionPrototypeEPNS_12TSymbolTableEPKNS_9TFunctionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='38' c='_ZN2sh12_GLOBAL__N_129InitializeViewIDAndInstanceIDEPKNS_9TVariableES3_jRKNS_12TSymbolTableEPNS_7TVectorIPNS_11TIntermNodeEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='83' c='_ZN2sh12_GLOBAL__N_129SelectViewIndexInVertexShaderEPKNS_9TVariableES3_PNS_7TVectorIPNS_11TIntermNodeEEERKNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='132' c='_ZN2sh43DeclareAndInitBuiltinsForInstancedMultiviewEPNS_9TCompilerEPNS_12TIntermBlockEjjm14ShShaderOutputPNS_12TSymbolTableE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeferGlobalInitializers.cpp' l='43' c='_ZN2sh12_GLOBAL__N_123GetDeferredInitializersEPNS_18TIntermDeclarationEbbbPNS_7TVectorIPNS_11TIntermNodeEEEPSt6vectorIPKNS_9TVariableESaISB_EEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeferGlobalInitializers.cpp' l='105' c='_ZN2sh12_GLOBAL__N_120InsertInitCallToMainEPNS_12TIntermBlockEPNS_7TVectorIPNS_11TIntermNodeEEEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeferGlobalInitializers.cpp' l='135' c='_ZN2sh23DeferGlobalInitializersEPNS_9TCompilerEPNS_12TIntermBlockEbbbPNS_12TSymbolTableE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateGLFragColorBroadcast.cpp' l='33' c='_ZN2sh12_GLOBAL__N_129GLFragColorBroadcastTraverserC1EiPNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateGLFragColorBroadcast.cpp' l='109' c='_ZN2sh27EmulateGLFragColorBroadcastEPNS_9TCompilerEPNS_12TIntermBlockEiPSt6vectorINS_14ShaderVariableESaIS5_EEPNS_12TSymbolTableEi'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateMultiDrawShaderBuiltins.cpp' l='122' c='_ZN2sh15EmulateGLDrawIDEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPSt6vectorINS_14ShaderVariableESaIS7_EEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateMultiDrawShaderBuiltins.cpp' l='166' c='_ZN2sh31EmulateGLBaseVertexBaseInstanceEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPSt6vectorINS_14ShaderVariableESaIS7_EEbb'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulatePrecision.cpp' l='477' c='_ZN2sh16EmulatePrecisionC1EPNS_12TSymbolTableE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ExpandIntegerPowExpressions.h' l='30' c='_ZN2sh27ExpandIntegerPowExpressionsEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ExpandIntegerPowExpressions.cpp' l='28' c='_ZN2sh12_GLOBAL__N_19Traverser5ApplyEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ExpandIntegerPowExpressions.cpp' l='31' c='_ZN2sh12_GLOBAL__N_19TraverserC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ExpandIntegerPowExpressions.cpp' l='39' c='_ZN2sh12_GLOBAL__N_19Traverser5ApplyEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ExpandIntegerPowExpressions.cpp' l='58' c='_ZN2sh12_GLOBAL__N_19TraverserC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ExpandIntegerPowExpressions.cpp' l='147' c='_ZN2sh27ExpandIntegerPowExpressionsEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/FlagSamplersWithTexelFetch.h' l='27' c='_ZN2sh25FlagSamplersForTexelFetchEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPSt6vectorINS_14ShaderVariableESaIS7_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/FlagSamplersWithTexelFetch.cpp' l='34' c='_ZN2sh12_GLOBAL__N_135FlagSamplersWithTexelFetchTraverserC1EPNS_12TSymbolTableEPSt6vectorINS_14ShaderVariableESaIS5_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/FlagSamplersWithTexelFetch.cpp' l='87' c='_ZN2sh25FlagSamplersForTexelFetchEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPSt6vectorINS_14ShaderVariableESaIS7_EE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='29' c='_ZN2sh12_GLOBAL__N_124AddArrayZeroInitSequenceEPKNS_12TIntermTypedEbbPNS_7TVectorIPNS_11TIntermNodeEEEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='35' c='_ZN2sh12_GLOBAL__N_125AddStructZeroInitSequenceEPKNS_12TIntermTypedEbbPNS_7TVectorIPNS_11TIntermNodeEEEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='47' c='_ZN2sh12_GLOBAL__N_119AddZeroInitSequenceEPKNS_12TIntermTypedEbbPNS_7TVectorIPNS_11TIntermNodeEEEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='70' c='_ZN2sh12_GLOBAL__N_125AddStructZeroInitSequenceEPKNS_12TIntermTypedEbbPNS_7TVectorIPNS_11TIntermNodeEEEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='90' c='_ZN2sh12_GLOBAL__N_129AddArrayZeroInitStatementListEPKNS_12TIntermTypedEbbPNS_7TVectorIPNS_11TIntermNodeEEEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='104' c='_ZN2sh12_GLOBAL__N_123AddArrayZeroInitForLoopEPKNS_12TIntermTypedEbPNS_7TVectorIPNS_11TIntermNodeEEEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='137' c='_ZN2sh12_GLOBAL__N_124AddArrayZeroInitSequenceEPKNS_12TIntermTypedEbbPNS_7TVectorIPNS_11TIntermNodeEEEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='166' c='_ZN2sh12_GLOBAL__N_114InsertInitCodeEPNS_9TCompilerEPNS_7TVectorIPNS_11TIntermNodeEEERKSt6vectorINS_14ShaderVariableESaIS9_EEPNS_12TSymbolTableEiRKSt311843920'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='212' c='_ZN2sh12_GLOBAL__N_125InitializeLocalsTraverserC1EiPNS_12TSymbolTableEbb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='280' c='_ZN2sh14CreateInitCodeEPKNS_12TIntermTypedEbbPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='293' c='_ZN2sh29InitializeUninitializedLocalsEPNS_9TCompilerEPNS_12TIntermBlockEibbPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='304' c='_ZN2sh19InitializeVariablesEPNS_9TCompilerEPNS_12TIntermBlockERKSt6vectorINS_14ShaderVariableESaIS5_EEPNS_12TSymbolTableEiRKSt3mapINS_10TExtensionENS_4717556'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/NameEmbeddedUniformStructs.h' l='28' c='_ZN2sh26NameEmbeddedStructUniformsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/NameEmbeddedUniformStructs.cpp' l='23' c='_ZN2sh12_GLOBAL__N_19TraverserC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/NameEmbeddedUniformStructs.cpp' l='95' c='_ZN2sh26NameEmbeddedStructUniformsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/NameNamelessUniformBuffers.h' l='29' c='_ZN2sh26NameNamelessUniformBuffersEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/NameNamelessUniformBuffers.cpp' l='25' c='_ZN2sh12_GLOBAL__N_135NameUniformBufferVariablesTraverserC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/NameNamelessUniformBuffers.cpp' l='121' c='_ZN2sh26NameNamelessUniformBuffersEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/PruneNoOps.cpp' l='45' c='_ZN2sh12_GLOBAL__N_119PruneNoOpsTraverser5applyEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/PruneNoOps.cpp' l='48' c='_ZN2sh12_GLOBAL__N_119PruneNoOpsTraverserC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/PruneNoOps.cpp' l='54' c='_ZN2sh12_GLOBAL__N_119PruneNoOpsTraverser5applyEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/PruneNoOps.cpp' l='61' c='_ZN2sh12_GLOBAL__N_119PruneNoOpsTraverserC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/PruneNoOps.cpp' l='163' c='_ZN2sh10PruneNoOpsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RecordConstantPrecision.cpp' l='32' c='_ZN2sh12_GLOBAL__N_132RecordConstantPrecisionTraverserC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RecordConstantPrecision.cpp' l='46' c='_ZN2sh12_GLOBAL__N_132RecordConstantPrecisionTraverserC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RecordConstantPrecision.cpp' l='154' c='_ZN2sh23RecordConstantPrecisionEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='164' c='_ZN2sh12_GLOBAL__N_126GetIndexFunctionDefinitionERKNS_5TTypeEbRKNS_9TFunctionEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='267' c='_ZN2sh12_GLOBAL__N_130RemoveDynamicIndexingTraverserC1EOSt8functionIFbPNS_13TIntermBinaryEEEPNS_12TSymbolTableEPNS_22PerformanceDiagnosticsE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='299' c='_ZN2sh12_GLOBAL__N_130RemoveDynamicIndexingTraverserC1EOSt8functionIFbPNS_13TIntermBinaryEEEPNS_12TSymbolTableEPNS_22PerformanceDiagnosticsE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='534' c='_ZN2sh12_GLOBAL__N_123RemoveDynamicIndexingIfEOSt8functionIFbPNS_13TIntermBinaryEEEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableEPNS_22PerformanceDiagnosticsE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='561' c='_ZN2sh44RemoveDynamicIndexingOfNonSSBOVectorOrMatrixEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableEPNS_22PerformanceDiagnosticsE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='573' c='_ZN2sh37RemoveDynamicIndexingOfSwizzledVectorEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableEPNS_22PerformanceDiagnosticsE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemovePow.cpp' l='38' c='_ZN2sh12_GLOBAL__N_118RemovePowTraverserC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemovePow.cpp' l='49' c='_ZN2sh12_GLOBAL__N_118RemovePowTraverserC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemovePow.cpp' l='89' c='_ZN2sh9RemovePowEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveUnreferencedVariables.cpp' l='127' c='_ZN2sh12_GLOBAL__N_136RemoveUnreferencedVariablesTraverserC1EPSt13unordered_mapIijSt4hashIiESt8equal_toIiESaISt4pairIKijEEESC_PNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveUnreferencedVariables.cpp' l='150' c='_ZN2sh12_GLOBAL__N_136RemoveUnreferencedVariablesTraverserC1EPSt13unordered_mapIijSt4hashIiESt8equal_toIiESaISt4pairIKijEEESC_PNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveUnreferencedVariables.cpp' l='361' c='_ZN2sh27RemoveUnreferencedVariablesEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.h' l='24' c='_ZN2sh21RewriteAtomicCountersEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='28' c='_ZN2sh12_GLOBAL__N_128DeclareAtomicCountersBuffersEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='148' c='_ZN2sh12_GLOBAL__N_130RewriteAtomicCountersTraverserC1EPNS_12TSymbolTableEPKNS_9TVariableEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='656' c='_ZN2sh21RewriteAtomicCountersEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicFunctionExpressions.h' l='38' c='_ZN2sh32RewriteAtomicFunctionExpressionsEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicFunctionExpressions.cpp' l='47' c='_ZN2sh12_GLOBAL__N_141RewriteAtomicFunctionExpressionsTraverserC1EPNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicFunctionExpressions.cpp' l='66' c='_ZN2sh12_GLOBAL__N_141RewriteAtomicFunctionExpressionsTraverserC1EPNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicFunctionExpressions.cpp' l='176' c='_ZN2sh32RewriteAtomicFunctionExpressionsEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.h' l='25' c='_ZN2sh31RewriteCubeMapSamplersAs2DArrayEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='73' c='_ZN2sh12_GLOBAL__N_125TransformDerivativeXMajorEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_12TIntermTypedES6_S6_S6_S6_S6_S6_S6_S6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='124' c='_ZN2sh12_GLOBAL__N_125TransformDerivativeYMajorEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_12TIntermTypedES6_S6_S6_S6_S6_S6_S6_S6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='175' c='_ZN2sh12_GLOBAL__N_125TransformDerivativeZMajorEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_12TIntermTypedES6_S6_S6_S6_S6_S6_S6_S6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='210' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverserC1EPNS_12TSymbolTableEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='995' c='_ZN2sh31RewriteCubeMapSamplersAs2DArrayEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEb'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.h' l='30' c='_ZN2sh11RewriteDfdyEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEiPNS_13TIntermBinaryEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='28' c='_ZN2sh12_GLOBAL__N_19Traverser5ApplyEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEPNS_13TIntermBinaryEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='33' c='_ZN2sh12_GLOBAL__N_19TraverserC1EPNS_13TIntermBinaryEPNS_12TIntermTypedEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='43' c='_ZN2sh12_GLOBAL__N_19TraverserC1EPNS_13TIntermBinaryEPNS_12TIntermTypedEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='52' c='_ZN2sh12_GLOBAL__N_19Traverser5ApplyEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEPNS_13TIntermBinaryEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='56' c='_ZN2sh12_GLOBAL__N_19Traverser5ApplyEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEPNS_13TIntermBinaryEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='56' c='_ZN2sh12_GLOBAL__N_19Traverser5ApplyEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEPNS_13TIntermBinaryEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='185' c='_ZN2sh11RewriteDfdyEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEiPNS_13TIntermBinaryEPNS_12TIntermTypedE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDoWhile.cpp' l='50' c='_ZN2sh12_GLOBAL__N_115DoWhileRewriterC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDoWhile.cpp' l='138' c='_ZN2sh14RewriteDoWhileEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteExpressionsWithShaderStorageBlock.h' l='34' c='_ZN2sh40RewriteExpressionsWithShaderStorageBlockEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteExpressionsWithShaderStorageBlock.cpp' l='117' c='_ZN2sh12_GLOBAL__N_149RewriteExpressionsWithShaderStorageBlockTraverserC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteExpressionsWithShaderStorageBlock.cpp' l='133' c='_ZN2sh12_GLOBAL__N_149RewriteExpressionsWithShaderStorageBlockTraverserC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteExpressionsWithShaderStorageBlock.cpp' l='402' c='_ZN2sh40RewriteExpressionsWithShaderStorageBlockEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteInterpolateAtOffset.cpp' l='28' c='_ZN2sh12_GLOBAL__N_19Traverser5ApplyEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEPNS_13TIntermBinaryEPNS_12TIntermTypedEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteInterpolateAtOffset.cpp' l='36' c='_ZN2sh12_GLOBAL__N_19TraverserC1EPNS_13TIntermBinaryEPNS_12TIntermTypedEPNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteInterpolateAtOffset.cpp' l='42'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteInterpolateAtOffset.cpp' l='48' c='_ZN2sh12_GLOBAL__N_19TraverserC1EPNS_13TIntermBinaryEPNS_12TIntermTypedEPNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteInterpolateAtOffset.cpp' l='60' c='_ZN2sh12_GLOBAL__N_19Traverser5ApplyEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEPNS_13TIntermBinaryEPNS_12TIntermTypedEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteInterpolateAtOffset.cpp' l='65' c='_ZN2sh12_GLOBAL__N_19Traverser5ApplyEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEPNS_13TIntermBinaryEPNS_12TIntermTypedEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteInterpolateAtOffset.cpp' l='65' c='_ZN2sh12_GLOBAL__N_19Traverser5ApplyEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEPNS_13TIntermBinaryEPNS_12TIntermTypedEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteInterpolateAtOffset.cpp' l='125' c='_ZN2sh26RewriteInterpolateAtOffsetEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEiPNS_13TIntermBinaryEPNS_12TIntermTypedE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='106' c='_ZN2sh12_GLOBAL__N_118CopyToTempVariableEPNS_12TSymbolTableEPNS_12TIntermTypedEPNS_7TVectorIPNS_11TIntermNodeEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='122' c='_ZN2sh12_GLOBAL__N_119CreateTransposeCallEPNS_12TSymbolTableEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='128' c='_ZN2sh12_GLOBAL__N_18GetIndexEPNS_12TSymbolTableEPNS_11TIntermNodeEPNS_7TVectorIS4_EES7_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='162' c='_ZN2sh12_GLOBAL__N_118ReplicateIndexNodeEPNS_12TSymbolTableEPNS_11TIntermNodeEPNS_12TIntermTypedEPNS_7TVectorIS4_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='245' c='_ZN2sh12_GLOBAL__N_120TransformArrayHelper17accumulateForReadEPNS_12TSymbolTableEPNS_12TIntermTypedEPNS_7TVectorIPNS_11TIntermNodeEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='415' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverserC1EPNS_9TCompilerEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='540' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverserC1EPNS_12TSymbolTableEPS1_PSt13unordered_mapIPKNS_9TVariableEPS6_St4hashIS8_ESt8equal_toIS8_ESaI4598150'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1585' c='_ZN2sh23RewriteRowMajorMatricesEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.h' l='34' c='_ZN2sh21RewriteStructSamplersEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.h' l='38' c='_ZN2sh24RewriteStructSamplersOldEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='22' c='_ZN2sh12_GLOBAL__N_129GetStructSamplerParameterTypeEPNS_12TSymbolTableERKNS_9TVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='40' c='_ZN2sh12_GLOBAL__N_123ReplaceTypeOfSymbolNodeEPNS_13TIntermSymbolEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='52' c='_ZN2sh12_GLOBAL__N_128ReplaceTypeOfTypedStructNodeEPNS_12TIntermTypedEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='200' c='_ZN2sh12_GLOBAL__N_129GenerateFunctionFromArgumentsEPKNS_9TFunctionEPKNS_7TVectorIPNS_11TIntermNodeEEEPNS_12TSymbolTableEPSt3mapINS_15ImmutableStringE13238984'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='310' c='_ZN2sh12_GLOBAL__N_19TraverserC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='845' c='_ZN2sh12_GLOBAL__N_19Traverser34CreateStructSamplerFunctionVisitorC1EPNS_12TSymbolTableEPNS0_17VariableExtraDataE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='909'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='925' c='_ZN2sh12_GLOBAL__N_19Traverser26GetSamplerArgumentsVisitorC1EPNS_12TSymbolTableEPKNS_7TVectorIPNS_11TIntermNodeEEEPNS0_17VariableExtraDataE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='1003'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='1031' c='_ZN2sh12_GLOBAL__N_121MonomorphizeTraverserC1EPNS_9TCompilerEPNS_12TSymbolTableEPSt3mapINS_15ImmutableStringESt13unordered_mapISt6vectorImSaImEEPNS_9T9470229'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='1142' c='_ZN2sh12_GLOBAL__N_121MonomorphizeTraverser25ReplaceVariablesTraverserC1EPNS_12TSymbolTableEPSt13unordered_mapIPKNS_9TVariableES8_St4hashIS8_ESt8equal9749955'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='1166' c='_ZN2sh12_GLOBAL__N_121MonomorphizeTraverser33CollectNewInstantiationsTraverserC1EPNS_12TSymbolTableEPSt3mapINS_15ImmutableStringESt13unordered_mapISt611118246'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='1208' c='_ZN2sh21RewriteStructSamplersEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPi'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplersOld.cpp' l='20' c='_ZN2sh12_GLOBAL__N_129GetStructSamplerParameterTypeEPNS_12TSymbolTableERKNS_9TVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplersOld.cpp' l='38' c='_ZN2sh12_GLOBAL__N_123ReplaceTypeOfSymbolNodeEPNS_13TIntermSymbolEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplersOld.cpp' l='50' c='_ZN2sh12_GLOBAL__N_128ReplaceTypeOfTypedStructNodeEPNS_12TIntermTypedEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplersOld.cpp' l='90' c='_ZN2sh12_GLOBAL__N_19TraverserC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplersOld.cpp' l='577' c='_ZN2sh12_GLOBAL__N_19Traverser34CreateStructSamplerFunctionVisitorC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplersOld.cpp' l='622'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplersOld.cpp' l='637' c='_ZN2sh12_GLOBAL__N_19Traverser26GetSamplerArgumentsVisitorC1EPNS_12TSymbolTableEPKNS_7TVectorIPNS_11TIntermNodeEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplersOld.cpp' l='673'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplersOld.cpp' l='693' c='_ZN2sh24RewriteStructSamplersOldEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPi'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteTexelFetchOffset.cpp' l='27' c='_ZN2sh12_GLOBAL__N_19Traverser5ApplyEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteTexelFetchOffset.cpp' l='31' c='_ZN2sh12_GLOBAL__N_19TraverserC1ERKNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteTexelFetchOffset.cpp' l='35'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteTexelFetchOffset.cpp' l='40' c='_ZN2sh12_GLOBAL__N_19TraverserC1ERKNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteTexelFetchOffset.cpp' l='47' c='_ZN2sh12_GLOBAL__N_19Traverser5ApplyEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteTexelFetchOffset.cpp' l='158' c='_ZN2sh23RewriteTexelFetchOffsetEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEi'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ScalarizeVecAndMatConstructorArgs.cpp' l='46' c='_ZN2sh12_GLOBAL__N_122ScalarizeArgsTraverserC1EjbPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ScalarizeVecAndMatConstructorArgs.cpp' l='222' c='_ZN2sh33ScalarizeVecAndMatConstructorArgsEPNS_9TCompilerEPNS_12TIntermBlockEjbPNS_12TSymbolTableE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/SimplifyLoopConditions.cpp' l='35' c='_ZN2sh12_GLOBAL__N_131SimplifyLoopConditionsTraverserC1EPKNS_24IntermNodePatternMatcherEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/SimplifyLoopConditions.cpp' l='61' c='_ZN2sh12_GLOBAL__N_131SimplifyLoopConditionsTraverserC1EPKNS_24IntermNodePatternMatcherEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/SimplifyLoopConditions.cpp' l='473' c='_ZN2sh22SimplifyLoopConditionsEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/SimplifyLoopConditions.cpp' l='483' c='_ZN2sh22SimplifyLoopConditionsEPNS_9TCompilerEPNS_11TIntermNodeEjPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/SplitSequenceOperator.cpp' l='26' c='_ZN2sh12_GLOBAL__N_130SplitSequenceOperatorTraverserC1EjPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/SplitSequenceOperator.cpp' l='46' c='_ZN2sh12_GLOBAL__N_130SplitSequenceOperatorTraverserC1EjPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/SplitSequenceOperator.cpp' l='153' c='_ZN2sh21SplitSequenceOperatorEPNS_9TCompilerEPNS_11TIntermNodeEiPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/UseInterfaceBlockFields.cpp' l='45' c='_ZN2sh12_GLOBAL__N_121AddFieldUseStatementsERKNS_14ShaderVariableEPNS_7TVectorIPNS_11TIntermNodeEEERKNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/UseInterfaceBlockFields.cpp' l='64' c='_ZN2sh12_GLOBAL__N_113InsertUseCodeEPNS_7TVectorIPNS_11TIntermNodeEEERKSt6vectorINS_14InterfaceBlockESaIS7_EERKNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/UseInterfaceBlockFields.cpp' l='100' c='_ZN2sh23UseInterfaceBlockFieldsEPNS_9TCompilerEPNS_12TIntermBlockERKSt6vectorINS_14InterfaceBlockESaIS5_EERKNS_12TSymbolTableE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.cpp' l='29' c='_ZN2sh12_GLOBAL__N_140VectorizeVectorScalarArithmeticTraverserC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.cpp' l='278' c='_ZN2sh31VectorizeVectorScalarArithmeticEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='22' c='_ZN2sh12_GLOBAL__N_121LookUpBuiltInFunctionEPKcPKNS_7TVectorIPNS_11TIntermNodeEEERKNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='152' c='_ZN2sh18CreateTempVariableEPNS_12TSymbolTableEPKNS_5TTypeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='160' c='_ZN2sh18CreateTempVariableEPNS_12TSymbolTableEPKNS_5TTypeENS_10TQualifierE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='206' c='_ZN2sh19DeclareTempVariableEPNS_12TSymbolTableEPKNS_5TTypeENS_10TQualifierEPPNS_18TIntermDeclarationE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='216' c='_ZN2sh19DeclareTempVariableEPNS_12TSymbolTableEPNS_12TIntermTypedENS_10TQualifierEPPNS_18TIntermDeclarationE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='229' c='_ZN2sh16DeclareStructureEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_7TVectorIPNS_6TFieldEEENS_10TQualifierERKNS_16TMemoryQualifierEjRKNS_15ImmutableStringEPSE_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='272' c='_ZN2sh21DeclareInterfaceBlockEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_7TVectorIPNS_6TFieldEEENS_10TQualifierERKNS_16TMemoryQualifierEjRKNS_15ImmutableStringESF_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='323' c='_ZN2sh23ReferenceGlobalVariableERKNS_15ImmutableStringERKNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='331' c='_ZN2sh24ReferenceBuiltInVariableERKNS_15ImmutableStringERKNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='342' c='_ZN2sh29CreateBuiltInFunctionCallNodeEPKcPNS_7TVectorIPNS_11TIntermNodeEEERKNS_12TSymbolTableEi'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermRebuild.h' l='316'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermTraverse.cpp' l='213' c='_ZN2sh16TIntermTraverserC1EbbbPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermTraverse.cpp' l='583' c='_ZN2sh24TLValueTrackingTraverserC1EbbbPNS_12TSymbolTableE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceArrayOfMatrixVarying.h' l='25' c='_ZN2sh27ReplaceArrayOfMatrixVaryingEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_9TVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceArrayOfMatrixVarying.h' l='30' c='_ZN2sh28ReplaceArrayOfMatrixVaryingsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceArrayOfMatrixVarying.cpp' l='80' c='_ZN2sh27ReplaceArrayOfMatrixVaryingEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_9TVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceArrayOfMatrixVarying.cpp' l='163' c='_ZN2sh28ReplaceArrayOfMatrixVaryingsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.h' l='31' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='164' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceShadowingVariables.cpp' l='47' c='_ZN2sh12_GLOBAL__N_134ReplaceShadowingVariablesTraverserC1EPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceShadowingVariables.cpp' l='131' c='_ZN2sh25ReplaceShadowingVariablesEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<size>960</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceVariable.cpp' l='68' c='_ZN2sh27RetypeOpaqueVariablesHelper24convertFunctionPrototypeEPNS_12TSymbolTableEPKNS_9TFunctionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/RunAtTheEndOfShader.cpp' l='70' c='_ZN2sh12_GLOBAL__N_117WrapMainAndAppendEPNS_12TIntermBlockEPNS_25TIntermFunctionDefinitionEPNS_11TIntermNodeEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/RunAtTheEndOfShader.cpp' l='108' c='_ZN2sh19RunAtTheEndOfShaderEPNS_9TCompilerEPNS_12TIntermBlockEPNS_11TIntermNodeEPNS_12TSymbolTableE'/>
+<size>960</size>

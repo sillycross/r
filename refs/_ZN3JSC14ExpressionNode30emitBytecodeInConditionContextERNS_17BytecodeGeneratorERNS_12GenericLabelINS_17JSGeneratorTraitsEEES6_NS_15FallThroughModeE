@@ -1,0 +1,32 @@
+<dec f='WebKit/Source/JavaScriptCore/parser/Nodes.h' l='218' type='void JSC::ExpressionNode::emitBytecodeInConditionContext(JSC::BytecodeGenerator &amp; , JSC::Label &amp; , JSC::Label &amp; , JSC::FallThroughMode )'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='617' u='c' c='_ZN3JSC17BytecodeGenerator26emitNodeInConditionContextEPNS_14ExpressionNodeERNS_12GenericLabelINS_17JSGeneratorTraitsEEES6_NS_15FallThroughModeE'/>
+<def f='WebKit/Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp' l='78' ll='85' type='void JSC::ExpressionNode::emitBytecodeInConditionContext(JSC::BytecodeGenerator &amp; generator, JSC::Label &amp; trueTarget, JSC::Label &amp; falseTarget, JSC::FallThroughMode fallThroughMode)'/>
+<ovr f='WebKit/Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp' l='100' c='_ZN3JSC12ConstantNode30emitBytecodeInConditionContextERNS_17BytecodeGeneratorERNS_12GenericLabelINS_17JSGeneratorTraitsEEES6_NS_15FallThroughModeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp' l='113' u='c' c='_ZN3JSC12ConstantNode30emitBytecodeInConditionContextERNS_17BytecodeGeneratorERNS_12GenericLabelINS_17JSGeneratorTraitsEEES6_NS_15FallThroughModeE'/>
+<ovr f='WebKit/Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp' l='2825' c='_ZN3JSC14LogicalNotNode30emitBytecodeInConditionContextERNS_17BytecodeGeneratorERNS_12GenericLabelINS_17JSGeneratorTraitsEEES6_NS_15FallThroughModeE'/>
+<ovr f='WebKit/Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp' l='2954' c='_ZN3JSC12BinaryOpNode30emitBytecodeInConditionContextERNS_17BytecodeGeneratorERNS_12GenericLabelINS_17JSGeneratorTraitsEEES6_NS_15FallThroughModeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp' l='2966' u='c' c='_ZN3JSC12BinaryOpNode30emitBytecodeInConditionContextERNS_17BytecodeGeneratorERNS_12GenericLabelINS_17JSGeneratorTraitsEEES6_NS_15FallThroughModeE'/>
+<ovr f='WebKit/Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp' l='3262' c='_ZN3JSC13LogicalOpNode30emitBytecodeInConditionContextERNS_17BytecodeGeneratorERNS_12GenericLabelINS_17JSGeneratorTraitsEEES6_NS_15FallThroughModeE'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp' l='54'>/*
+    Details of the emitBytecode function.
+
+    Return value: The register holding the production&apos;s value.
+             dst: An optional parameter specifying the most efficient destination at
+                  which to store the production&apos;s value.
+                  If dst is null, you may return whatever VirtualRegister you want. Otherwise you have to return dst.
+
+    The dst argument provides for a crude form of copy propagation. For example,
+
+        x = 1
+
+    becomes
+
+        load r[x], 1
+
+    instead of 
+
+        load r0, 1
+        mov r[x], r0
+
+    because the assignment node, &quot;x =&quot;, passes r[x] as dst to the number node, &quot;1&quot;.
+*/</doc>

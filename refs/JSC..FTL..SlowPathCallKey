@@ -1,0 +1,60 @@
+<def f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCallKey.h' l='45' ll='110'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCallKey.h' l='69' c='_ZN3JSC3FTL15SlowPathCallKey14withCallTargetENS_11FunctionPtrILN3WTF6PtrTagE1EEE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCallKey.h' l='71' c='_ZN3JSC3FTL15SlowPathCallKey14withCallTargetENS_11FunctionPtrILN3WTF6PtrTagE1EEE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCallKey.h' l='92' c='_ZNK3JSC3FTL15SlowPathCallKeyeqERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCallKey.h' l='113' c='_ZN3JSC3FTL19SlowPathCallKeyHash4hashERKNS0_15SlowPathCallKeyE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCallKey.h' l='114' c='_ZN3JSC3FTL19SlowPathCallKeyHash5equalERKNS0_15SlowPathCallKeyES4_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCallKey.h' l='114' c='_ZN3JSC3FTL19SlowPathCallKeyHash5equalERKNS0_15SlowPathCallKeyES4_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCallKey.h' l='123'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCallKey.h' l='126'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.h' l='43' c='_ZN3JSC3FTL26slowPathCallThunkGeneratorERNS_2VMERKNS0_15SlowPathCallKeyE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.h' l='82' c='_ZN3JSC3FTL6Thunks20getSlowPathCallThunkERNS_2VMERKNS0_15SlowPathCallKeyE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.h' l='88' c='_ZN3JSC3FTL6Thunks23keyForSlowPathCallThunkENS_21MacroAssemblerCodePtrILN3WTF6PtrTagE26129EEE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.h' l='96'/>
+<size>40</size>
+<doc f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCallKey.h' l='35'>// This is used for creating some sanity in slow-path calls out of the FTL&apos;s inline
+// caches. The idea is that we don&apos;t want all of the register save/restore stuff to
+// be generated at each IC site. Instead, the IC slow path call site will just save
+// the registers needed for the arguments. It will arrange for there to be enough
+// space on top of stack to save the remaining registers and the return PC. Then it
+// will call a shared thunk that will save the remaining registers. That thunk needs
+// to know the stack offset at which things get saved along with the call target.
+
+// Note that the offset is *not including* the return PC that would be pushed on X86.</doc>
+<fun r='_ZN3JSC3FTL15SlowPathCallKeyC1Ev'/>
+<fun r='_ZN3JSC3FTL15SlowPathCallKeyC1ERKNS_11RegisterSetENS_11FunctionPtrILN3WTF6PtrTagE1EEES4_li'/>
+<fun r='_ZNK3JSC3FTL15SlowPathCallKey13usedRegistersEv'/>
+<fun r='_ZNK3JSC3FTL15SlowPathCallKey10callTargetEv'/>
+<fun r='_ZNK3JSC3FTL15SlowPathCallKey17argumentRegistersEv'/>
+<fun r='_ZNK3JSC3FTL15SlowPathCallKey6offsetEv'/>
+<fun r='_ZNK3JSC3FTL15SlowPathCallKey14indirectOffsetEv'/>
+<fun r='_ZN3JSC3FTL15SlowPathCallKey14withCallTargetENS_11FunctionPtrILN3WTF6PtrTagE1EEE'/>
+<fun r='_ZNK3JSC3FTL15SlowPathCallKey4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZN3JSC3FTL15SlowPathCallKeyC1ENS1_13EmptyValueTagE'/>
+<fun r='_ZN3JSC3FTL15SlowPathCallKeyC1ENS1_15DeletedValueTagE'/>
+<fun r='_ZNK3JSC3FTL15SlowPathCallKey12isEmptyValueEv'/>
+<fun r='_ZNK3JSC3FTL15SlowPathCallKey14isDeletedValueEv'/>
+<fun r='_ZNK3JSC3FTL15SlowPathCallKeyeqERKS1_'/>
+<fun r='_ZNK3JSC3FTL15SlowPathCallKey4hashEv'/>
+<mbr r='JSC::FTL::SlowPathCallKey::m_usedRegisters' o='0' t='JSC::HashableRegisterSet'/>
+<mbr r='JSC::FTL::SlowPathCallKey::m_callTarget' o='64' t='FunctionPtr&lt;OperationPtrTag&gt;'/>
+<mbr r='JSC::FTL::SlowPathCallKey::m_argumentRegisters' o='128' t='JSC::RegisterSet'/>
+<mbr r='JSC::FTL::SlowPathCallKey::m_offset' o='192' t='ptrdiff_t'/>
+<mbr r='JSC::FTL::SlowPathCallKey::m_indirectOffset' o='256' t='int32_t'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCall.h' l='40' c='_ZN3JSC3FTL12SlowPathCallC1ENS_22AbstractMacroAssemblerINS_12X86AssemblerEE4CallERKNS0_15SlowPathCallKeyE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCall.h' l='47' c='_ZNK3JSC3FTL12SlowPathCall3keyEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCall.h' l='51'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCall.h' l='66' c='_ZNK3JSC3FTL19SlowPathCallContext13keyWithTargetENS_11FunctionPtrILN3WTF6PtrTagE1EEE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCall.h' l='67' c='_ZNK3JSC3FTL19SlowPathCallContext13keyWithTargetENS_22AbstractMacroAssemblerINS_12X86AssemblerEE7AddressE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCall.cpp' l='117' c='_ZNK3JSC3FTL19SlowPathCallContext13keyWithTargetENS_11FunctionPtrILN3WTF6PtrTagE1EEE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCall.cpp' l='119' c='_ZNK3JSC3FTL19SlowPathCallContext13keyWithTargetENS_11FunctionPtrILN3WTF6PtrTagE1EEE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCall.cpp' l='122' c='_ZNK3JSC3FTL19SlowPathCallContext13keyWithTargetENS_22AbstractMacroAssemblerINS_12X86AssemblerEE7AddressE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCall.cpp' l='124' c='_ZNK3JSC3FTL19SlowPathCallContext13keyWithTargetENS_22AbstractMacroAssemblerINS_12X86AssemblerEE7AddressE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCall.cpp' l='129' c='_ZN3JSC3FTL19SlowPathCallContext8makeCallERNS_2VMENS_11FunctionPtrILN3WTF6PtrTagE1EEE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSlowPathCall.cpp' l='145' c='_ZN3JSC3FTL19SlowPathCallContext8makeCallERNS_2VMENS_22AbstractMacroAssemblerINS_12X86AssemblerEE7AddressE'/>
+<size>40</size>
+<fun r='_ZNK3JSC3FTL15SlowPathCallKey4dumpERN3WTF11PrintStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.cpp' l='168' c='_ZN3JSC3FTL26slowPathCallThunkGeneratorERNS_2VMERKNS0_15SlowPathCallKeyE'/>
+<size>40</size>
+<use f='WebKit/Source/JavaScriptCore/jit/Repatch.cpp' l='100' c='_ZN3JSC24ftlThunkAwareRepatchCallEPNS_9CodeBlockENS_16CodeLocationCallILN3WTF6PtrTagE26432EEENS_11FunctionPtrILS4_1EEE'/>
+<size>40</size>

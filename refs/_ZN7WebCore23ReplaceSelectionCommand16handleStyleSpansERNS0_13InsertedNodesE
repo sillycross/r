@@ -1,0 +1,11 @@
+<dec f='WebKit/Source/WebCore/editing/ReplaceSelectionCommand.h' l='110' type='void WebCore::ReplaceSelectionCommand::handleStyleSpans(WebCore::ReplaceSelectionCommand::InsertedNodes &amp; )'/>
+<def f='WebKit/Source/WebCore/editing/ReplaceSelectionCommand.cpp' l='931' ll='978' type='void WebCore::ReplaceSelectionCommand::handleStyleSpans(WebCore::ReplaceSelectionCommand::InsertedNodes &amp; insertedNodes)'/>
+<use f='WebKit/Source/WebCore/editing/ReplaceSelectionCommand.cpp' l='1326' u='c' c='_ZN7WebCore23ReplaceSelectionCommand7doApplyEv'/>
+<doc f='WebKit/Source/WebCore/editing/ReplaceSelectionCommand.cpp' l='923'>// At copy time, WebKit wraps copied content in a span that contains the source document&apos;s 
+// default styles.  If the copied Range inherits any other styles from its ancestors, we put 
+// those styles on a second span.
+// This function removes redundant styles from those spans, and removes the spans if all their 
+// styles are redundant. 
+// We should remove the Apple-style-span class when we&apos;re done, see &lt;rdar://problem/5685600&gt;.
+// We should remove styles from spans that are overridden by all of their children, either here
+// or at copy time.</doc>

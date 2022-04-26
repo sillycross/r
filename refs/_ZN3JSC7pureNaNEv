@@ -1,0 +1,177 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PureNaN.h' l='66' ll='76' type='double JSC::pureNaN()'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PureNaN.h' l='78' u='c' c='_ZN3JSC9purifyNaNEd'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ArrayConventions.h' l='149' macro='1' u='c' c='_ZN3JSC10clearArrayEPdj'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DateInstanceCache.h' l='45' macro='1' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DateInstanceCache.h' l='45' macro='1' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DateInstanceCache.h' l='47' macro='1' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DateInstanceCache.h' l='47' macro='1' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DateInstanceCache.h' l='64' macro='1' u='c' c='_ZN3JSC17DateInstanceCache5resetEv'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PureNaN.h' l='33'>// NaN (not-a-number) double values are central to how JavaScriptCore encodes JavaScript
+// values (JSValues).  All values, including integers and non-numeric values, are always
+// encoded using the IEEE 754 binary double format.  Non-double values are encoded using
+// a NaN with the sign bit set.  The 51-bit payload is then used for encoding the actual
+// value - be it an integer or a pointer to an object, or something else. But we only
+// make use of the low 49 bits and the top 15 bits being all set to 1 is the indicator
+// that a value is not a double. Top 15 bits being set to 1 also indicate a signed
+// signaling NaN with some additional NaN payload bits.
+//
+// Our use of NaN encoding means that we have to be careful with how we use NaNs for
+// ordinary doubles. For example, it would be wrong to ever use a NaN that has the top
+// 15 bits set, as that would look like a non-double value to JSC.
+//
+// We can trust that on all of the hardware/OS combinations that we care about,
+// NaN-producing math operations never produce a NaN that looks like a tagged value. But
+// if we&apos;re ever in a situation where we worry about it, we can use purifyNaN() to get a
+// NaN that doesn&apos;t look like a tagged non-double value. The JavaScript language doesn&apos;t
+// distinguish between different flavors of NaN and there is no way to detect what kind
+// of NaN you have - hence so long as all double NaNs are purified then our tagging
+// scheme remains sound.
+//
+// It&apos;s worth noting that there are cases, like sin(), that will almost produce a NaN
+// that breaks us. sin(-inf) returns 0xfff8000000000000. This doesn&apos;t break us because
+// not all of the top 15 bits are set. But it&apos;s very close. Hence our assumptions about
+// NaN are just about the most aggressive assumptions we could possibly make without
+// having to call purifyNaN() in surprising places.
+//
+// For naming purposes, we say that a NaN is &quot;pure&quot; if it is safe to tag, in the sense
+// that doing so would result in a tagged value that would pass the &quot;are you a double&quot;
+// test. We say that a NaN is &quot;impure&quot; if attempting to tag it would result in a value
+// that would look like something other than a double.
+
+// Returns some kind of pure NaN.</doc>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSCJSValueInlines.h' l='140' macro='1' u='c' c='_ZN3JSC5jsNaNEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayInlines.h' l='103' macro='1' u='c' c='_ZN3JSC8toLengthEPNS_14JSGlobalObjectEPNS_8JSObjectE'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/PureNaN.h' l='66' ll='76' type='double JSC::pureNaN()'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/PureNaN.h' l='78' u='c' c='_ZN3JSC9purifyNaNEd'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ArrayConventions.h' l='149' macro='1' u='c' c='_ZN3JSC10clearArrayEPdj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DateInstanceCache.h' l='45' macro='1' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DateInstanceCache.h' l='45' macro='1' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DateInstanceCache.h' l='47' macro='1' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DateInstanceCache.h' l='47' macro='1' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DateInstanceCache.h' l='64' macro='1' u='c' c='_ZN3JSC17DateInstanceCache5resetEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCJSValueInlines.h' l='140' macro='1' u='c' c='_ZN3JSC5jsNaNEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayInlines.h' l='103' macro='1' u='c' c='_ZN3JSC8toLengthEPNS_14JSGlobalObjectEPNS_8JSObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='3465' macro='1' u='c' c='_ZN3JSCL31functionDeltaBetweenButterfliesEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='3469' macro='1' u='c' c='_ZN3JSCL31functionDeltaBetweenButterfliesEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='3471' macro='1' u='c' c='_ZN3JSCL31functionDeltaBetweenButterfliesEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/PureNaN.h' l='33'>// NaN (not-a-number) double values are central to how JavaScriptCore encodes JavaScript
+// values (JSValues).  All values, including integers and non-numeric values, are always
+// encoded using the IEEE 754 binary double format.  Non-double values are encoded using
+// a NaN with the sign bit set.  The 51-bit payload is then used for encoding the actual
+// value - be it an integer or a pointer to an object, or something else. But we only
+// make use of the low 49 bits and the top 15 bits being all set to 1 is the indicator
+// that a value is not a double. Top 15 bits being set to 1 also indicate a signed
+// signaling NaN with some additional NaN payload bits.
+//
+// Our use of NaN encoding means that we have to be careful with how we use NaNs for
+// ordinary doubles. For example, it would be wrong to ever use a NaN that has the top
+// 15 bits set, as that would look like a non-double value to JSC.
+//
+// We can trust that on all of the hardware/OS combinations that we care about,
+// NaN-producing math operations never produce a NaN that looks like a tagged value. But
+// if we&apos;re ever in a situation where we worry about it, we can use purifyNaN() to get a
+// NaN that doesn&apos;t look like a tagged non-double value. The JavaScript language doesn&apos;t
+// distinguish between different flavors of NaN and there is no way to detect what kind
+// of NaN you have - hence so long as all double NaNs are purified then our tagging
+// scheme remains sound.
+//
+// It&apos;s worth noting that there are cases, like sin(), that will almost produce a NaN
+// that breaks us. sin(-inf) returns 0xfff8000000000000. This doesn&apos;t break us because
+// not all of the top 15 bits are set. But it&apos;s very close. Hence our assumptions about
+// NaN are just about the most aggressive assumptions we could possibly make without
+// having to call purifyNaN() in surprising places.
+//
+// For naming purposes, we say that a NaN is &quot;pure&quot; if it is safe to tag, in the sense
+// that doing so would result in a tagged value that would pass the &quot;are you a double&quot;
+// test. We say that a NaN is &quot;impure&quot; if attempting to tag it would result in a value
+// that would look like something other than a double.
+
+// Returns some kind of pure NaN.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGNode.h' l='145' macro='1' u='c' c='_ZN3JSC3DFG12BranchTargetC1Ev'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGNode.h' l='151' macro='1' u='c' c='_ZN3JSC3DFG12BranchTargetC1EPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DateInstance.h' l='91' macro='1' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DateInstance.h' l='91' macro='1' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSToWasm.cpp' l='60' u='c' c='_ZN3JSC4Wasm16marshallJSResultERNS_12CCallHelpersERKNS0_9SignatureERKNS0_15CallInformationERKNS_20RegisterAtOffsetListE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3GenericBlockInsertionSet.h' l='56' macro='1' u='c' c='_ZN3JSC2B324GenericBlockInsertionSet6insertEjd'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3GenericBlockInsertionSet.h' l='67' macro='1' u='c' c='_ZN3JSC2B324GenericBlockInsertionSet12insertBeforeEPT_d'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3GenericBlockInsertionSet.h' l='73' macro='1' u='c' c='_ZN3JSC2B324GenericBlockInsertionSet11insertAfterEPT_d'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3BlockInsertionSet.h' l='70' macro='1' u='c' c='_ZN3JSC2B317BlockInsertionSet12splitForwardEPNS0_10BasicBlockERjPNS0_12InsertionSetEd'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3BlockInsertionSet.h' l='70' macro='1' u='c' c='_ZN3JSC2B317BlockInsertionSet12splitForwardEPNS0_10BasicBlockERjPNS0_12InsertionSetEd'/>
+<use f='WebKit/Source/JavaScriptCore/jit/AssemblyHelpers.cpp' l='85' macro='1' u='c' c='_ZN3JSC15AssemblyHelpers9purifyNaNENS_12X86Registers13XMMRegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ParseInt.h' l='155' macro='1' u='c' c='_ZN3JSCL8parseIntEN3WTF10StringViewEPKT_i'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ParseInt.h' l='178' macro='1' u='c' c='_ZN3JSCL8parseIntEN3WTF10StringViewEPKT_i'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGInsertionSet.h' l='105' macro='1' u='c' c='_ZN3JSC3DFG12InsertionSet26insertBottomConstantForUseEmNS0_10NodeOriginENS0_7UseKindE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='640' macro='1' u='c' c='_ZN3JSC3DFG17operationArithAbsEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='666' macro='1' u='c' c='_ZN3JSC3DFG20operationArithFRoundEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG17operationArithSinEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG18operationArithSinhEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG17operationArithCosEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG18operationArithCoshEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG17operationArithTanEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG18operationArithTanhEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG18operationArithASinEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG19operationArithASinhEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG18operationArithACosEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG19operationArithACoshEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG18operationArithATanEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG19operationArithATanhEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG17operationArithLogEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG19operationArithLog10EPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG18operationArithLog2EPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG18operationArithCbrtEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG17operationArithExpEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG19operationArithExpm1EPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='682' macro='1' u='c' c='_ZN3JSC3DFG19operationArithLog1pEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='694' macro='1' u='c' c='_ZN3JSC3DFG18operationArithSqrtEPNS_14JSGlobalObjectEl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreterInlines.h' l='2245' macro='1' u='c' c='_ZN3JSC3DFG19AbstractInterpreter14executeEffectsEjPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='118' macro='1' u='c' c='_ZN3JSC3DFG14ByteCodeParserC1ERNS0_5GraphE'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSValueRef.cpp' l='442' macro='1' u='c' c='JSValueToNumber'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSValueRef.cpp' l='453' macro='1' u='c' c='JSValueToNumber'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='70' macro='1' u='c' c='_ZN3JSC7JSArray32tryCreateUninitializedRestrictedERNS_25ObjectInitializationScopeEPNS_17GCDeferralContextEPNS_9StructureEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='118' macro='1' u='c' c='_ZN3JSC7JSArray26eagerlyInitializeButterflyERNS_25ObjectInitializationScopeEPS0_j'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='528' macro='1' u='c' c='_ZN3JSC7JSArray12appendMemcpyEPNS_14JSGlobalObjectERNS_2VMEjPS0_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='600' macro='1' u='c' c='_ZN3JSC7JSArray9setLengthEPNS_14JSGlobalObjectEjb'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='664' macro='1' u='c' c='_ZN3JSC7JSArray3popEPNS_14JSGlobalObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='945' macro='1' u='c' c='_ZN3JSC7JSArray29shiftCountWithAnyIndexingTypeEPNS_14JSGlobalObjectERjj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCJSValue.cpp' l='75' macro='1' u='c' c='_ZNK3JSC7JSValue16toNumberSlowCaseEPNS_14JSGlobalObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCJSValue.cpp' l='87' macro='1' u='c' c='_ZNK3JSC7JSValue21toNumberFromPrimitiveEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ArrayConventions.cpp' l='42' macro='1' u='c' c='_ZN3JSC16clearArrayMemsetEPdj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ArrayPrototype.cpp' l='1535' macro='1' u='c' c='_ZN3JSC12clearElementERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObjectFunctions.cpp' l='359' macro='1' u='c' c='_ZN3JSCL19jsStrDecimalLiteralERPKT_S2_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObjectFunctions.cpp' l='396' macro='1' u='c' c='_ZN3JSCL8toDoubleEPKT_j'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObjectFunctions.cpp' l='412' macro='1' u='c' c='_ZN3JSC10jsToNumberEN3WTF10StringViewE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObjectFunctions.cpp' l='428' macro='1' u='c' c='_ZN3JSCL10parseFloatEN3WTF10StringViewE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObjectFunctions.cpp' l='443' macro='1' u='c' c='_ZN3JSCL10parseFloatEN3WTF10StringViewE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObjectFunctions.cpp' l='459' macro='1' u='c' c='_ZN3JSCL10parseFloatEN3WTF10StringViewE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='1181' macro='1' u='c' c='_ZN3JSC8JSObject19createInitialDoubleERNS_2VMEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='1263' macro='1' u='c' c='_ZN3JSC8JSObject24convertUndecidedToDoubleERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='1342' macro='1' u='c' c='_ZN3JSC8JSObject20convertInt32ToDoubleERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='2189' macro='1' u='c' c='_ZN3JSC8JSObject21deletePropertyByIndexEPNS_6JSCellEPNS_14JSGlobalObjectEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='3558' macro='1' u='c' c='_ZN3JSC8JSObject16ensureLengthSlowERNS_2VMEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/MathCommon.cpp' l='416' macro='1' u='c' c='_ZN3JSC16operationMathPowEdd'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/MathCommon.cpp' l='419' macro='1' u='c' c='_ZN3JSC16operationMathPowEdd'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/MathObject.cpp' l='232' macro='1' u='c' c='_ZN3JSCL16mathProtoFuncMaxEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/MathObject.cpp' l='249' macro='1' u='c' c='_ZN3JSC16mathProtoFuncMinEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DateConstructor.cpp' l='85' macro='1' u='c' c='_ZN3JSCL26millisecondsFromComponentsEPNS_14JSGlobalObjectERKNS_7ArgListEN3WTF8TimeTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DatePrototype.cpp' l='678' macro='1' u='c' c='_ZN3JSCL23setNewValueFromTimeArgsEPNS_14JSGlobalObjectEPNS_9CallFrameEiN3WTF8TimeTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DatePrototype.cpp' l='695' macro='1' u='c' c='_ZN3JSCL23setNewValueFromTimeArgsEPNS_14JSGlobalObjectEPNS_9CallFrameEiN3WTF8TimeTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DatePrototype.cpp' l='717' macro='1' u='c' c='_ZN3JSCL23setNewValueFromDateArgsEPNS_14JSGlobalObjectEPNS_9CallFrameEiN3WTF8TimeTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DatePrototype.cpp' l='740' macro='1' u='c' c='_ZN3JSCL23setNewValueFromDateArgsEPNS_14JSGlobalObjectEPNS_9CallFrameEiN3WTF8TimeTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DatePrototype.cpp' l='832' macro='1' u='c' c='_ZN3JSCL20dateProtoFuncSetYearEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DatePrototype.cpp' l='854' macro='1' u='c' c='_ZN3JSCL20dateProtoFuncSetYearEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='157' macro='1' u='c' c='_ZN3JSC3DFG14SpeculativeJIT21emitAllocateRawObjectENS_12X86Registers10RegisterIDENS0_19RegisteredStructureES3_jj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='3077' macro='1' u='c' c='_ZN3JSC3DFG14SpeculativeJIT16compileDoubleRepEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='14911' macro='1' u='c' c='_ZN3JSC3DFG14SpeculativeJIT31compileAllocateNewArrayWithSizeEPNS_14JSGlobalObjectENS_12X86Registers10RegisterIDES5_hb'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='2986' macro='1' u='c' c='_ZN3JSC3DFG14SpeculativeJIT7compileEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='3713' macro='1' u='c' c='_ZN3JSC3DFG14SpeculativeJIT7compileEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='1902' macro='1' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB316compileDoubleRepEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='1966' macro='1' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB315compileValueRepEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='2966' macro='1' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB320compileArithMinOrMaxEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='3175' macro='1' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB315compileArithPowEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='5135' macro='1' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB315compileGetByValEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='6590' macro='1' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB315compileArrayPopEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='14143' macro='1' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB323initializeArrayElementsEPNS_2B35ValueES5_S5_S5_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='14151' macro='1' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB323initializeArrayElementsEPNS_2B35ValueES5_S5_S5_'/>
+<use f='WebKit/Source/WebCore/testing/TypeConversions.h' l='152' u='c' c='_ZNK7WebCore15TypeConversions29testPureNaNUnrestrictedDoubleEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DateInstance.h' l='91' macro='1' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DateInstance.h' l='91' macro='1' u='c'/>

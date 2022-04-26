@@ -1,0 +1,27 @@
+<use f='include/gstreamer-1.0/gst/audio/gstaudiometa.h' l='30'/>
+<def f='include/gstreamer-1.0/gst/audio/gstaudiometa.h' l='50' ll='57'/>
+<size>48</size>
+<doc f='include/gstreamer-1.0/gst/audio/gstaudiometa.h' l='32'>/**
+ * GstAudioDownmixMeta:
+ * @meta: parent #GstMeta
+ * @from_position: the channel positions of the source
+ * @to_position: the channel positions of the destination
+ * @from_channels: the number of channels of the source
+ * @to_channels: the number of channels of the destination
+ * @matrix: the matrix coefficients.
+ *
+ * Extra buffer metadata describing audio downmixing matrix. This metadata is
+ * attached to audio buffers and contains a matrix to downmix the buffer number
+ * of channels to @channels.
+ *
+ * @matrix is an two-dimensional array of @to_channels times @from_channels
+ * coefficients, i.e. the i-th output channels is constructed by multiplicating
+ * the input channels with the coefficients in @matrix[i] and taking the sum
+ * of the results.
+ */</doc>
+<mbr r='_GstAudioDownmixMeta::meta' o='0' t='GstMeta'/>
+<mbr r='_GstAudioDownmixMeta::from_position' o='128' t='GstAudioChannelPosition *'/>
+<mbr r='_GstAudioDownmixMeta::to_position' o='192' t='GstAudioChannelPosition *'/>
+<mbr r='_GstAudioDownmixMeta::from_channels' o='256' t='gint'/>
+<mbr r='_GstAudioDownmixMeta::to_channels' o='288' t='gint'/>
+<mbr r='_GstAudioDownmixMeta::matrix' o='320' t='gfloat **'/>

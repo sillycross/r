@@ -1,0 +1,15 @@
+<dec f='WebKit/Source/WebCore/platform/graphics/FontSelectionAlgorithm.h' l='391' type='std::optional&lt;Value&gt;'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontSelectionAlgorithm.h' l='395' u='r' c='_ZNK7WebCore20FontSelectionRequest4tiedEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontDescription.h' l='48' u='r' c='_ZNK7WebCore15FontDescription6italicEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontDescription.h' l='103' u='w' c='_ZN7WebCore15FontDescription9setItalicESt8optionalINS_18FontSelectionValueEE'/>
+<offset>32</offset>
+<doc f='WebKit/Source/WebCore/platform/graphics/FontSelectionAlgorithm.h' l='385'>// FIXME: We are using an optional here to be able to distinguish between an explicit
+    // or implicit slope (for &quot;italic&quot; and &quot;oblique&quot;) and the &quot;normal&quot; value which has no
+    // slope. The &quot;italic&quot; and &quot;oblique&quot; values can be distinguished by looking at the
+    // &quot;fontStyleAxis&quot; on the FontDescription. We should come up with a tri-state member
+    // so that it&apos;s a lot clearer whether we&apos;re dealing with a &quot;normal&quot;, &quot;italic&quot; or explicit
+    // &quot;oblique&quot; font style. See webkit.org/b/187774.</doc>
+<use f='WebKit/Source/WebCore/css/CSSFontFaceSet.cpp' l='455' u='r' c='_ZN7WebCore14CSSFontFaceSet8fontFaceENS_20FontSelectionRequestERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/css/CSSFontFaceSet.cpp' l='465' u='r' c='_ZN7WebCore14CSSFontFaceSet8fontFaceENS_20FontSelectionRequestERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/css/CSSSegmentedFontFace.cpp' l='126' u='r' c='_ZN7WebCore20CSSSegmentedFontFace10fontRangesERKNS_15FontDescriptionE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontSelectionAlgorithm.cpp' l='69' u='m' c='_ZNK7WebCore22FontSelectionAlgorithm13styleDistanceENS_25FontSelectionCapabilitiesE'/>

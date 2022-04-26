@@ -1,0 +1,13 @@
+<def f='WebKit/WTF/Headers/wtf/Lock.h' l='101' ll='105' type='void WTF::Lock::unlockFairly()'/>
+<doc f='WebKit/WTF/Headers/wtf/Lock.h' l='96'>// This is like unlock() but it guarantees that we unlock the lock fairly. For short critical
+    // sections, this is much slower than unlock(). For long critical sections, unlock() will learn
+    // to be fair anyway. However, if you plan to relock the lock right after unlocking and you want
+    // to ensure that some other thread runs in the meantime, this is probably the function you
+    // want.</doc>
+<use f='WebKit/Source/JavaScriptCore/jit/JITSafepoint.cpp' l='83' u='c' c='_ZN3JSC9Safepoint5beginEv'/>
+<def f='WebKit/Source/WTF/wtf/Lock.h' l='101' ll='105' type='void WTF::Lock::unlockFairly()'/>
+<doc f='WebKit/Source/WTF/wtf/Lock.h' l='96'>// This is like unlock() but it guarantees that we unlock the lock fairly. For short critical
+    // sections, this is much slower than unlock(). For long critical sections, unlock() will learn
+    // to be fair anyway. However, if you plan to relock the lock right after unlocking and you want
+    // to ensure that some other thread runs in the meantime, this is probably the function you
+    // want.</doc>

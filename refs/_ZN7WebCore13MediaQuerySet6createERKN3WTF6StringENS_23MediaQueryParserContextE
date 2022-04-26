@@ -1,0 +1,45 @@
+<dec f='WebKit/Source/WebCore/css/MediaList.h' l='47' type='static Ref&lt;WebCore::MediaQuerySet&gt; WebCore::MediaQuerySet::create(const WTF::String &amp; mediaString, WebCore::MediaQueryParserContext  = WebCore::MediaQueryParserContext())'/>
+<def f='WebKit/Source/WebCore/css/MediaList.cpp' l='64' ll='74' type='static Ref&lt;WebCore::MediaQuerySet&gt; WebCore::MediaQuerySet::create(const WTF::String &amp; mediaString, WebCore::MediaQueryParserContext context = WebCore::MediaQueryParserContext())'/>
+<use f='WebKit/Source/WebCore/css/MediaList.cpp' l='88' u='c' c='_ZN7WebCore13MediaQuerySet3setERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/css/MediaList.cpp' l='98' u='c' c='_ZN7WebCore13MediaQuerySet3addERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/css/MediaList.cpp' l='120' u='c' c='_ZN7WebCore13MediaQuerySet6removeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/css/MediaQueryEvaluator.cpp' l='935' u='c' c='_ZN7WebCore19MediaQueryEvaluator21mediaAttributeMatchesERNS_8DocumentERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/css/MediaQueryMatcher.cpp' l='102' u='c' c='_ZN7WebCore17MediaQueryMatcher10matchMediaERKN3WTF6StringE'/>
+<doc f='WebKit/Source/WebCore/css/MediaList.cpp' l='36'>/* MediaList is used to store 3 types of media related entities which mean the same:
+ * Media Queries, Media Types and Media Descriptors.
+ * Currently MediaList always tries to parse media queries and if parsing fails,
+ * tries to fallback to Media Descriptors if m_fallbackToDescriptor flag is set.
+ * Slight problem with syntax error handling:
+ * CSS 2.1 Spec (http://www.w3.org/TR/CSS21/media.html)
+ * specifies that failing media type parsing is a syntax error
+ * CSS 3 Media Queries Spec (http://www.w3.org/TR/css3-mediaqueries/)
+ * specifies that failing media query is a syntax error
+ * HTML 4.01 spec (http://www.w3.org/TR/REC-html40/present/styles.html#adef-media)
+ * specifies that Media Descriptors should be parsed with forward-compatible syntax
+ * DOM Level 2 Style Sheet spec (http://www.w3.org/TR/DOM-Level-2-Style/)
+ * talks about MediaList.mediaText and refers
+ *   -  to Media Descriptors of HTML 4.0 in context of StyleSheet
+ *   -  to Media Types of CSS 2.0 in context of CSSMediaRule and CSSImportRule
+ *
+ * These facts create situation where same (illegal) media specification may result in
+ * different parses depending on whether it is media attr of style element or part of
+ * css @media rule.
+ * &lt;style media=&quot;screen and resolution &gt; 40dpi&quot;&gt; ..&lt;/style&gt; will be enabled on screen devices where as
+ * @media screen and resolution &gt; 40dpi {..} will not.
+ * This gets more counter-intuitive in JavaScript:
+ * document.styleSheets[0].media.mediaText = &quot;screen and resolution &gt; 40dpi&quot; will be ok and
+ * enabled, while
+ * document.styleSheets[0].cssRules[0].media.mediaText = &quot;screen and resolution &gt; 40dpi&quot; will
+ * throw SyntaxError exception.
+ */</doc>
+<use f='WebKit/Source/WebCore/css/StyleMedia.cpp' l='71' u='c' c='_ZNK7WebCore10StyleMedia11matchMediumERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/css/StyleRuleImport.cpp' l='51' u='c' c='_ZN7WebCore15StyleRuleImportC1ERKN3WTF6StringEONS1_3RefINS_13MediaQuerySetENS1_12RawPtrTraitsIS6_EEEE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMetaElement.cpp' l='69' u='c' c='_ZN7WebCore15HTMLMetaElement21mediaAttributeMatchesEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLSourceElement.cpp' l='202' u='c' c='_ZNK7WebCore17HTMLSourceElement20parsedMediaAttributeERNS_8DocumentE'/>
+<use f='WebKit/Source/WebCore/html/HTMLStyleElement.cpp' l='85' u='c' c='_ZN7WebCore16HTMLStyleElement14parseAttributeERKNS_13QualifiedNameERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLPreloadScanner.cpp' l='238' u='c' c='_ZN7WebCore19TokenPreloadScanner15StartTagScanner16processAttributeERKN3WTF10AtomStringERKNS2_6StringERKNS2_6VectorIbLm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/html/HTMLLinkElement.cpp' l='313' u='c' c='_ZN7WebCore15HTMLLinkElement7processEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLLinkElement.cpp' l='422' u='c' c='_ZN7WebCore15HTMLLinkElement20initializeStyleSheetEON3WTF3RefINS_18StyleSheetContentsENS1_12RawPtrTraitsIS3_EEEERKNS_19CachedCSSStyleSheetENS_23MediaQueryParserContextE'/>
+<use f='WebKit/Source/WebCore/dom/InlineStyleSheetOwner.cpp' l='175' u='c' c='_ZN7WebCore21InlineStyleSheetOwner11createSheetERNS_7ElementERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/dom/ProcessingInstruction.cpp' l='225' u='c' c='_ZN7WebCore21ProcessingInstruction16setCSSStyleSheetERKN3WTF6StringERKNS1_3URLES4_PKNS_19CachedCSSStyleSheetE'/>
+<use f='WebKit/Source/WebCore/dom/DOMImplementation.cpp' l='116' u='c' c='_ZN7WebCore17DOMImplementation19createCSSStyleSheetERKN3WTF6StringES4_'/>

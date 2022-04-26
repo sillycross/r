@@ -1,0 +1,22 @@
+<use f='include/gstreamer-1.0/gst/gstbufferpool.h' l='64'/>
+<def f='include/gstreamer-1.0/gst/gstbufferpool.h' l='80' ll='88'/>
+<size>64</size>
+<doc f='include/gstreamer-1.0/gst/gstbufferpool.h' l='66'>/**
+ * GstBufferPoolAcquireParams:
+ * @format: the format of @start and @stop
+ * @start: the start position
+ * @stop: the stop position
+ * @flags: additional flags
+ *
+ * Parameters passed to the gst_buffer_pool_acquire_buffer() function to control the
+ * allocation of the buffer.
+ *
+ * The default implementation ignores the @start and @stop members but other
+ * implementations can use this extra information to decide what buffer to
+ * return.
+ */</doc>
+<mbr r='_GstBufferPoolAcquireParams::format' o='0' t='GstFormat'/>
+<mbr r='_GstBufferPoolAcquireParams::start' o='64' t='gint64'/>
+<mbr r='_GstBufferPoolAcquireParams::stop' o='128' t='gint64'/>
+<mbr r='_GstBufferPoolAcquireParams::flags' o='192' t='GstBufferPoolAcquireFlags'/>
+<mbr r='_GstBufferPoolAcquireParams::_gst_reserved' o='256' t='gpointer [4]'/>

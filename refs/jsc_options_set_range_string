@@ -1,0 +1,16 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCOptions.h' l='80' type='gboolean jsc_options_set_range_string(const char * option, const char * value)'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCOptions.cpp' l='494' ll='504' type='gboolean jsc_options_set_range_string(const char * option, const char * value)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCOptions.cpp' l='480'>/**
+ * jsc_options_set_range_string:
+ * @option: the option identifier
+ * @value: the value to set
+ *
+ * Set @option as a range string. The string must be in the
+ * format &lt;emphasis&gt;[!]&amp;lt;low&amp;gt;[:&amp;lt;high&amp;gt;]&lt;/emphasis&gt; where low and high are #guint values.
+ * Values between low and high (both included) will be considered in
+ * the range, unless &lt;emphasis&gt;!&lt;/emphasis&gt; is used to invert the range.
+ *
+ * Returns: %TRUE if option was correctly set or %FALSE otherwise.
+ *
+ * Since: 2.24
+ */</doc>

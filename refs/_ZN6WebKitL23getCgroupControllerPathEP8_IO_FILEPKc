@@ -1,0 +1,22 @@
+<def f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='205' ll='245' type='WTF::CString WebKit::getCgroupControllerPath(FILE * cgroupControllerFile, const char * controllerName)'/>
+<use f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='371' u='c' c='_ZN6WebKit21MemoryPressureMonitor5startEv'/>
+<doc f='WebKit/Source/WebKit/UIProcess/linux/MemoryPressureMonitor.cpp' l='185'>// This file describes control groups to which the process with
+// the corresponding PID belongs. The displayed information differs
+// for cgroups version 1 and version 2 hierarchies.
+//
+// Example:
+//
+// $ cat /proc/self/cgroup
+// 12:hugetlb:/
+// 11:rdma:/
+// 10:net_cls,net_prio:/
+// 9:devices:/user.slice
+// 8:memory:/user.slice
+// 7:freezer:/user/psaavedra/0
+// 6:pids:/user.slice/user-1000.slice/user@1000.service
+// 5:blkio:/user.slice
+// 4:perf_event:/
+// 3:cpu,cpuacct:/user.slice
+// 2:cpuset:/
+// 1:name=systemd:/user.slice/user-1000.slice/user@1000.service/gnome-terminal-server.service
+// 0::/user.slice/user-1000.slice/user@1000.service/gnome-terminal-server.service</doc>

@@ -1,0 +1,40 @@
+<def f='WebKit/WTF/Headers/wtf/CountingLock.h' l='145' ll='160' type='WTF::CountingLock::Count WTF::CountingLock::tryOptimisticRead()'/>
+<use f='WebKit/WTF/Headers/wtf/CountingLock.h' l='182' u='c' c='_ZN3WTF12CountingLock15doOptimizedReadERKT_'/>
+<doc f='WebKit/WTF/Headers/wtf/CountingLock.h' l='127'>// Example of how to use this:
+    //
+    //     int read()
+    //     {
+    //         if (CountingLock::Count count = m_lock.tryOptimisticRead()) {
+    //             int value = m_things;
+    //             if (m_lock.validate(count))
+    //                 return value; // success!
+    //         }
+    //         Locker locker { m_lock };
+    //         int value = m_things;
+    //         return value;
+    //     }
+    //
+    // If tryOptimisitcRead() runs when the lock is not held, this thread will run a critical section
+    // without ever writing to memory. However, on ARM, this requires fencing. We use a load-acquire for
+    // tryOptimisticRead(). We have no choice but to use the more expensive `dmb ish` in validate(). If
+    // you want to avoid that, you could try to use tryOptimisticFencelessRead().</doc>
+<def f='WebKit/Source/WTF/wtf/CountingLock.h' l='145' ll='160' type='WTF::CountingLock::Count WTF::CountingLock::tryOptimisticRead()'/>
+<use f='WebKit/Source/WTF/wtf/CountingLock.h' l='182' u='c' c='_ZN3WTF12CountingLock15doOptimizedReadERKT_'/>
+<doc f='WebKit/Source/WTF/wtf/CountingLock.h' l='127'>// Example of how to use this:
+    //
+    //     int read()
+    //     {
+    //         if (CountingLock::Count count = m_lock.tryOptimisticRead()) {
+    //             int value = m_things;
+    //             if (m_lock.validate(count))
+    //                 return value; // success!
+    //         }
+    //         Locker locker { m_lock };
+    //         int value = m_things;
+    //         return value;
+    //     }
+    //
+    // If tryOptimisitcRead() runs when the lock is not held, this thread will run a critical section
+    // without ever writing to memory. However, on ARM, this requires fencing. We use a load-acquire for
+    // tryOptimisticRead(). We have no choice but to use the more expensive `dmb ish` in validate(). If
+    // you want to avoid that, you could try to use tryOptimisticFencelessRead().</doc>

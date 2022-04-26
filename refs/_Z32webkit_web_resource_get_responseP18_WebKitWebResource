@@ -1,0 +1,13 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebResource.cpp' l='336' ll='341' type='int * webkit_web_resource_get_response(WebKitWebResource * resource)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebResource.cpp' l='324'>/**
+ * webkit_web_resource_get_response:
+ * @resource: a #WebKitWebResource
+ *
+ * Retrieves the #WebKitURIResponse of the resource load operation.
+ * This method returns %NULL if called before the response
+ * is received from the server. You can connect to notify::response
+ * signal to be notified when the response is received.
+ *
+ * Returns: (transfer none): the #WebKitURIResponse, or %NULL if
+ *     the response hasn&apos;t been received yet.
+ */</doc>

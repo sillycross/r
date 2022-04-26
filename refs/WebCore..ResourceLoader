@@ -1,0 +1,299 @@
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='91'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='230' c='_ZN7WebCore14DocumentLoader19scheduleArchiveLoadERNS_14ResourceLoaderERKNS_15ResourceRequestE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='233' c='_ZN7WebCore14DocumentLoader30scheduleSubstituteResourceLoadERNS_14ResourceLoaderERNS_18SubstituteResourceE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='234' c='_ZN7WebCore14DocumentLoader26scheduleCannotShowURLErrorERNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='253' c='_ZN7WebCore14DocumentLoader27cancelPendingSubstituteLoadEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='340' c='_ZN7WebCore14DocumentLoader20addSubresourceLoaderEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='341' c='_ZN7WebCore14DocumentLoader23removeSubresourceLoaderENS_18LoadCompletionTypeEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='342' c='_ZN7WebCore14DocumentLoader21addPlugInStreamLoaderERNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='343' c='_ZN7WebCore14DocumentLoader24removePlugInStreamLoaderERNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='345' c='_ZN7WebCore14DocumentLoader39subresourceLoaderFinishedLoadingOnePartEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='581'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebResourceLoader.h' l='64' c='_ZN6WebKit17WebResourceLoader6createEON3WTF3RefIN7WebCore14ResourceLoaderENS1_12RawPtrTraitsIS4_EEEERKNS0_18TrackingParametersE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebResourceLoader.h' l='70' c='_ZNK6WebKit17WebResourceLoader14resourceLoaderEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebResourceLoader.h' l='75' c='_ZN6WebKit17WebResourceLoaderC1EON3WTF3RefIN7WebCore14ResourceLoaderENS1_12RawPtrTraitsIS4_EEEERKNS0_18TrackingParametersE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebResourceLoader.h' l='97'/>
+<use f='WebKit/Source/WebCore/loader/LoaderStrategy.h' l='65' c='_ZN7WebCore14LoaderStrategy6removeEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/LoaderStrategy.h' l='66' c='_ZN7WebCore14LoaderStrategy16setDefersLoadingERNS_14ResourceLoaderEb'/>
+<use f='WebKit/Source/WebCore/loader/LoaderStrategy.h' l='67' c='_ZN7WebCore14LoaderStrategy27crossOriginRedirectReceivedEPNS_14ResourceLoaderERKN3WTF3URLE'/>
+<inh f='WebKit/WTF/Headers/wtf/WeakPtr.h' l='218' c='WTF::CanMakeWeakPtr'/>
+<inh f='WebKit/WTF/Headers/wtf/RefCounted.h' l='184' c='WTF::RefCounted'/>
+<inh f='WebKit/Source/WebCore/platform/network/ResourceHandleClient.h' l='61' c='WebCore::ResourceHandleClient'/>
+<def f='WebKit/Source/WebCore/loader/ResourceLoader.h' l='59' ll='253'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.h' l='59'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.h' l='59'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.h' l='59' c='_ZN6WebKit17WebLoaderStrategy6removeEPN7WebCore14ResourceLoaderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.h' l='60' c='_ZN6WebKit17WebLoaderStrategy16setDefersLoadingERN7WebCore14ResourceLoaderEb'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.h' l='61' c='_ZN6WebKit17WebLoaderStrategy27crossOriginRedirectReceivedEPN7WebCore14ResourceLoaderERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.h' l='86' c='_ZN6WebKit17WebLoaderStrategy30scheduleLoadFromNetworkProcessERN7WebCore14ResourceLoaderERKNS1_15ResourceRequestERKNS_17WebResourceLoader18TrackingPar6290377'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.h' l='95' c='_ZN6WebKit17WebLoaderStrategy12scheduleLoadERN7WebCore14ResourceLoaderEPNS1_14CachedResourceEb'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.h' l='96' c='_ZN6WebKit17WebLoaderStrategy28scheduleInternallyFailedLoadERN7WebCore14ResourceLoaderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.h' l='98' c='_ZN6WebKit17WebLoaderStrategy14startLocalLoadERN7WebCore14ResourceLoaderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.h' l='99' c='_ZN6WebKit17WebLoaderStrategy31tryLoadingUsingURLSchemeHandlerERN7WebCore14ResourceLoaderERKNS_17WebResourceLoader18TrackingParametersE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.h' l='128'/>
+<size>992</size>
+<fun r='_ZN7WebCore14ResourceLoaderD1Ev'/>
+<fun r='_ZN7WebCore14ResourceLoader6cancelEv'/>
+<fun r='_ZN7WebCore14ResourceLoader4initEONS_15ResourceRequestEON3WTF17CompletionHandlerIFvbEEE'/>
+<fun r='_ZN7WebCore14ResourceLoader22deliverResponseAndDataERKNS_16ResourceResponseEON3WTF6RefPtrINS_12SharedBufferENS4_12RawPtrTraitsIS6_EENS4_21DefaultRefDerefTraitsIS6_EEEE'/>
+<fun r='_ZNK7WebCore14ResourceLoader11frameLoaderEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader14documentLoaderEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader15originalRequestEv'/>
+<fun r='_ZN7WebCore14ResourceLoader5startEv'/>
+<fun r='_ZN7WebCore14ResourceLoader6cancelERKNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore14ResourceLoader14cancelledErrorEv'/>
+<fun r='_ZN7WebCore14ResourceLoader12blockedErrorEv'/>
+<fun r='_ZN7WebCore14ResourceLoader28blockedByContentBlockerErrorEv'/>
+<fun r='_ZN7WebCore14ResourceLoader18cannotShowURLErrorEv'/>
+<fun r='_ZN7WebCore14ResourceLoader16setDefersLoadingEb'/>
+<fun r='_ZNK7WebCore14ResourceLoader13defersLoadingEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader10identifierEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader33wasAuthenticationChallengeBlockedEv'/>
+<fun r='_ZN7WebCore14ResourceLoader16releaseResourcesEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader8responseEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader12resourceDataEv'/>
+<fun r='_ZN7WebCore14ResourceLoader17clearResourceDataEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader19isSubresourceLoaderEv'/>
+<fun r='_ZN7WebCore14ResourceLoader15willSendRequestEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<fun r='_ZN7WebCore14ResourceLoader11didSendDataEyy'/>
+<fun r='_ZN7WebCore14ResourceLoader18didReceiveResponseERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<fun r='_ZN7WebCore14ResourceLoader14didReceiveDataEPKhjxNS_15DataPayloadTypeE'/>
+<fun r='_ZN7WebCore14ResourceLoader16didReceiveBufferEON3WTF3RefINS_12SharedBufferENS1_12RawPtrTraitsIS3_EEEExNS_15DataPayloadTypeE'/>
+<fun r='_ZN7WebCore14ResourceLoader16didFinishLoadingERKNS_18NetworkLoadMetricsE'/>
+<fun r='_ZN7WebCore14ResourceLoader7didFailERKNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore14ResourceLoader31didBlockAuthenticationChallengeEv'/>
+<fun r='_ZN7WebCore14ResourceLoader26shouldUseCredentialStorageEv'/>
+<fun r='_ZN7WebCore14ResourceLoader20receivedCancellationERKNS_23AuthenticationChallengeE'/>
+<fun r='_ZNK7WebCore14ResourceLoader3urlEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader6handleEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader31shouldSendResourceLoadCallbacksEv'/>
+<fun r='_ZN7WebCore14ResourceLoader21setSendCallbackPolicyENS_18SendCallbackPolicyE'/>
+<fun r='_ZNK7WebCore14ResourceLoader18shouldSniffContentEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader26shouldSniffContentEncodingEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader32isAllowedToAskUserForCredentialsEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader28shouldIncludeCertificateInfoEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader14cachedResourceEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader20reachedTerminalStateEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader7requestEv'/>
+<fun r='_ZN7WebCore14ResourceLoader10setRequestEONS_15ResourceRequestE'/>
+<fun r='_ZN7WebCore14ResourceLoader22setDataBufferingPolicyENS_19DataBufferingPolicyE'/>
+<fun r='_ZN7WebCore14ResourceLoader30willSwitchToSubstituteResourceEv'/>
+<fun r='_ZN7WebCore14ResourceLoader10loadTimingEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader5frameEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader7optionsEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader15deferredRequestEv'/>
+<fun r='_ZN7WebCore14ResourceLoader19takeDeferredRequestEv'/>
+<fun r='_ZN7WebCore14ResourceLoaderC1ERNS_5FrameENS_21ResourceLoaderOptionsE'/>
+<fun r='_ZN7WebCore14ResourceLoader23didFinishLoadingOnePartERKNS_18NetworkLoadMetricsE'/>
+<fun r='_ZN7WebCore14ResourceLoader15cleanupForErrorERKNS_13ResourceErrorE'/>
+<fun r='_ZNK7WebCore14ResourceLoader12wasCancelledEv'/>
+<fun r='_ZN7WebCore14ResourceLoader22didReceiveDataOrBufferEPKhjON3WTF6RefPtrINS_12SharedBufferENS3_12RawPtrTraitsIS5_EENS3_21DefaultRefDerefTraitsIS5_EEEExNS_15DataPayloadTypeE'/>
+<fun r='_ZN7WebCore14ResourceLoader17setReferrerPolicyENS_14ReferrerPolicyE'/>
+<fun r='_ZNK7WebCore14ResourceLoader14referrerPolicyEv'/>
+<fun r='_ZN7WebCore14ResourceLoader23willSendRequestInternalEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<mbr r='WebCore::ResourceLoader::m_handle' o='192' t='RefPtr&lt;WebCore::ResourceHandle&gt;'/>
+<mbr r='WebCore::ResourceLoader::m_frame' o='256' t='RefPtr&lt;WebCore::Frame&gt;'/>
+<mbr r='WebCore::ResourceLoader::m_documentLoader' o='320' t='RefPtr&lt;WebCore::DocumentLoader&gt;'/>
+<mbr r='WebCore::ResourceLoader::m_response' o='384' t='WebCore::ResourceResponse'/>
+<mbr r='WebCore::ResourceLoader::m_loadTiming' o='2496' t='WebCore::ResourceLoadTiming'/>
+<mbr r='WebCore::ResourceLoader::m_canCrossOriginRequestsAskUserForCredentials' o='2624' t='bool'/>
+<fun r='_ZN7WebCore14ResourceLoader10willCancelERKNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore14ResourceLoader9didCancelERKNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore14ResourceLoader15addDataOrBufferEPKhjPNS_12SharedBufferENS_15DataPayloadTypeE'/>
+<fun r='_ZN7WebCore14ResourceLoader11loadDataURLEv'/>
+<fun r='_ZN7WebCore14ResourceLoader17finishNetworkLoadEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader38shouldAllowResourceToAskForCredentialsEv'/>
+<fun r='_ZN7WebCore14ResourceLoader11didSendDataEPNS_14ResourceHandleEyy'/>
+<fun r='_ZN7WebCore14ResourceLoader23didReceiveResponseAsyncEPNS_14ResourceHandleEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<fun r='_ZN7WebCore14ResourceLoader20willSendRequestAsyncEPNS_14ResourceHandleEONS_15ResourceRequestEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<fun r='_ZN7WebCore14ResourceLoader14didReceiveDataEPNS_14ResourceHandleEPKhji'/>
+<fun r='_ZN7WebCore14ResourceLoader16didReceiveBufferEPNS_14ResourceHandleEON3WTF3RefINS_12SharedBufferENS3_12RawPtrTraitsIS5_EEEEi'/>
+<fun r='_ZN7WebCore14ResourceLoader16didFinishLoadingEPNS_14ResourceHandleERKNS_18NetworkLoadMetricsE'/>
+<fun r='_ZN7WebCore14ResourceLoader7didFailEPNS_14ResourceHandleERKNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore14ResourceLoader10wasBlockedEPNS_14ResourceHandleE'/>
+<fun r='_ZN7WebCore14ResourceLoader13cannotShowURLEPNS_14ResourceHandleE'/>
+<fun r='_ZN7WebCore14ResourceLoader26shouldUseCredentialStorageEPNS_14ResourceHandleE'/>
+<fun r='_ZN7WebCore14ResourceLoader33didReceiveAuthenticationChallengeEPNS_14ResourceHandleERKNS_23AuthenticationChallengeE'/>
+<fun r='_ZN7WebCore14ResourceLoader20receivedCancellationEPNS_14ResourceHandleERKNS_23AuthenticationChallengeE'/>
+<fun r='_ZN7WebCore14ResourceLoader13loadGResourceEv'/>
+<mbr r='WebCore::ResourceLoader::m_request' o='2688' t='WebCore::ResourceRequest'/>
+<mbr r='WebCore::ResourceLoader::m_originalRequest' o='4160' t='WebCore::ResourceRequest'/>
+<mbr r='WebCore::ResourceLoader::m_resourceData' o='5632' t='RefPtr&lt;WebCore::SharedBuffer&gt;'/>
+<mbr r='WebCore::ResourceLoader::m_identifier' o='5696' t='unsigned long'/>
+<mbr r='WebCore::ResourceLoader::m_reachedTerminalState' o='5760' t='bool'/>
+<mbr r='WebCore::ResourceLoader::m_notifiedLoadComplete' o='5768' t='bool'/>
+<mbr r='WebCore::ResourceLoader::m_cancellationStatus' o='5792' t='WebCore::ResourceLoader::CancellationStatus'/>
+<mbr r='WebCore::ResourceLoader::m_defersLoading' o='5824' t='bool'/>
+<mbr r='WebCore::ResourceLoader::m_wasAuthenticationChallengeBlocked' o='5832' t='bool'/>
+<mbr r='WebCore::ResourceLoader::m_deferredRequest' o='5888' t='WebCore::ResourceRequest'/>
+<mbr r='WebCore::ResourceLoader::m_options' o='7360' t='WebCore::ResourceLoaderOptions'/>
+<mbr r='WebCore::ResourceLoader::m_resourceType' o='7872' t='OptionSet&lt;ContentExtensions::ResourceType&gt;'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.h' l='52' c='_ZN7WebCore20ResourceLoadNotifier33didReceiveAuthenticationChallengeEPNS_14ResourceLoaderERKNS_23AuthenticationChallengeE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.h' l='55' c='_ZN7WebCore20ResourceLoadNotifier15willSendRequestEPNS_14ResourceLoaderERNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.h' l='56' c='_ZN7WebCore20ResourceLoadNotifier18didReceiveResponseEPNS_14ResourceLoaderERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.h' l='57' c='_ZN7WebCore20ResourceLoadNotifier14didReceiveDataEPNS_14ResourceLoaderEPKhii'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.h' l='58' c='_ZN7WebCore20ResourceLoadNotifier13didFinishLoadEPNS_14ResourceLoaderERKNS_18NetworkLoadMetricsE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.h' l='59' c='_ZN7WebCore20ResourceLoadNotifier13didFailToLoadEPNS_14ResourceLoaderERKNS_13ResourceErrorE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.h' l='63' c='_ZN7WebCore20ResourceLoadNotifier26dispatchDidReceiveResponseEPNS_14DocumentLoaderEmRKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.h' l='65' c='_ZN7WebCore20ResourceLoadNotifier24dispatchDidFinishLoadingEPNS_14DocumentLoaderEmRKNS_18NetworkLoadMetricsEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebURLSchemeTaskProxy.h' l='45' c='_ZN6WebKit21WebURLSchemeTaskProxy6createERNS_24WebURLSchemeHandlerProxyERN7WebCore14ResourceLoaderERNS_8WebFrameE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebURLSchemeTaskProxy.h' l='63' c='_ZN6WebKit21WebURLSchemeTaskProxyC1ERNS_24WebURLSchemeHandlerProxyERN7WebCore14ResourceLoaderERNS_8WebFrameE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebURLSchemeTaskProxy.h' l='70'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebURLSchemeHandlerProxy.h' l='52' c='_ZN6WebKit24WebURLSchemeHandlerProxy12startNewTaskERN7WebCore14ResourceLoaderERNS_8WebFrameE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.h' l='102' c='_ZN7WebCore20ApplicationCacheHost17maybeLoadResourceERNS_14ResourceLoaderERKNS_15ResourceRequestERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.h' l='103' c='_ZN7WebCore20ApplicationCacheHost28maybeLoadFallbackForRedirectEPNS_14ResourceLoaderERNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.h' l='104' c='_ZN7WebCore20ApplicationCacheHost28maybeLoadFallbackForResponseEPNS_14ResourceLoaderERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.h' l='105' c='_ZN7WebCore20ApplicationCacheHost25maybeLoadFallbackForErrorEPNS_14ResourceLoaderERKNS_13ResourceErrorE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.h' l='144' c='_ZN7WebCore20ApplicationCacheHost48scheduleLoadFallbackResourceFromApplicationCacheEPNS_14ResourceLoaderEPNS_16ApplicationCacheE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentationWebKit.h' l='45' c='_ZN7WebCore30InspectorInstrumentationWebKit16interceptRequestERNS_14ResourceLoaderEON3WTF8FunctionIFvRKNS_15ResourceRequestEEEE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentationWebKit.h' l='51' c='_ZN7WebCore30InspectorInstrumentationWebKit24interceptRequestInternalERNS_14ResourceLoaderEON3WTF8FunctionIFvRKNS_15ResourceRequestEEEE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentationWebKit.h' l='73' c='_ZN7WebCore30InspectorInstrumentationWebKit16interceptRequestERNS_14ResourceLoaderEON3WTF8FunctionIFvRKNS_15ResourceRequestEEEE'/>
+<ovr f='WebKit/Source/WebCore/loader/NetscapePlugInStreamLoader.h' l='53' c='WebCore::NetscapePlugInStreamLoader'/>
+<use f='WebKit/Source/WebCore/loader/NetscapePlugInStreamLoader.h' l='53'/>
+<ovr f='WebKit/Source/WebCore/loader/SubresourceLoader.h' l='44' c='WebCore::SubresourceLoader'/>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.h' l='44'/>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.h' l='143' c='_ZN3WTF14TypeCastTraitsIKN7WebCore17SubresourceLoaderET_Lb0EE6isTypeERKNS1_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='171' c='_ZN6WebKit17WebLoaderStrategy12scheduleLoadERN7WebCore14ResourceLoaderEPNS1_14CachedResourceEb'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='250' c='_ZN6WebKit17WebLoaderStrategy31tryLoadingUsingURLSchemeHandlerERN7WebCore14ResourceLoaderERKNS_17WebResourceLoader18TrackingParametersE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='291' c='_ZN6WebKit17WebLoaderStrategy30scheduleLoadFromNetworkProcessERN7WebCore14ResourceLoaderERKNS1_15ResourceRequestERKNS_17WebResourceLoader18TrackingPar6290377'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='420' c='_ZN6WebKit17WebLoaderStrategy28scheduleInternallyFailedLoadERN7WebCore14ResourceLoaderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='432' c='_ZN6WebKit17WebLoaderStrategy14startLocalLoadERN7WebCore14ResourceLoaderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='449' c='_ZN6WebKit17WebLoaderStrategy6removeEPN7WebCore14ResourceLoaderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='483' c='_ZN6WebKit17WebLoaderStrategy16setDefersLoadingERN7WebCore14ResourceLoaderEb'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='487' c='_ZN6WebKit17WebLoaderStrategy27crossOriginRedirectReceivedEPN7WebCore14ResourceLoaderERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebResourceLoader.cpp' l='62' c='_ZN6WebKit17WebResourceLoader6createEON3WTF3RefIN7WebCore14ResourceLoaderENS1_12RawPtrTraitsIS4_EEEERKNS0_18TrackingParametersE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebResourceLoader.cpp' l='67' c='_ZN6WebKit17WebResourceLoaderC1EON3WTF3RefIN7WebCore14ResourceLoaderENS1_12RawPtrTraitsIS4_EEEERKNS0_18TrackingParametersE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebResourceLoader.cpp' l='174' c='_ZN6WebKit17WebResourceLoader18didReceiveResponseERKN7WebCore16ResourceResponseEb'/>
+<size>992</size>
+<use f='WebKit/Source/WebCore/loader/SubstituteResource.h' l='42' c='_ZN7WebCore18SubstituteResource7deliverERNS_14ResourceLoaderE'/>
+<size>992</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebURLSchemeHandlerProxy.cpp' l='57' c='_ZN6WebKit24WebURLSchemeHandlerProxy12startNewTaskERN7WebCore14ResourceLoaderERNS_8WebFrameE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebURLSchemeTaskProxy.cpp' l='67' c='_ZN6WebKit21WebURLSchemeTaskProxyC1ERNS_24WebURLSchemeHandlerProxyERN7WebCore14ResourceLoaderERNS_8WebFrameE'/>
+<size>992</size>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='199' c='_ZN7WebCore24InspectorInstrumentation26didReceiveResourceResponseERNS_5FrameEmPNS_14DocumentLoaderERKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='202' c='_ZN7WebCore24InspectorInstrumentation16didFinishLoadingEPNS_5FrameEPNS_14DocumentLoaderEmRKNS_18NetworkLoadMetricsEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='243' c='_ZN7WebCore24InspectorInstrumentation16interceptRequestERNS_14ResourceLoaderEON3WTF8FunctionIFvRKNS_15ResourceRequestEEEE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='427' c='_ZN7WebCore24InspectorInstrumentation30didReceiveResourceResponseImplERNS_19InstrumentingAgentsEmPNS_14DocumentLoaderERKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='430' c='_ZN7WebCore24InspectorInstrumentation20didFinishLoadingImplERNS_19InstrumentingAgentsEmPNS_14DocumentLoaderERKNS_18NetworkLoadMetricsEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='455' c='_ZN7WebCore24InspectorInstrumentation20interceptRequestImplERNS_19InstrumentingAgentsERNS_14ResourceLoaderEON3WTF8FunctionIFvRKNS_15ResourceRequestEEEE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='1087' c='_ZN7WebCore24InspectorInstrumentation26didReceiveResourceResponseERNS_5FrameEmPNS_14DocumentLoaderERKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='1118' c='_ZN7WebCore24InspectorInstrumentation16didFinishLoadingEPNS_5FrameEPNS_14DocumentLoaderEmRKNS_18NetworkLoadMetricsEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.h' l='1305' c='_ZN7WebCore24InspectorInstrumentation16interceptRequestERNS_14ResourceLoaderEON3WTF8FunctionIFvRKNS_15ResourceRequestEEEE'/>
+<size>992</size>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='103' c='_ZN7WebCore21InspectorNetworkAgent18didReceiveResponseEmPNS_14DocumentLoaderERKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='105' c='_ZN7WebCore21InspectorNetworkAgent16didFinishLoadingEmPNS_14DocumentLoaderERKNS_18NetworkLoadMetricsEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='127' c='_ZN7WebCore21InspectorNetworkAgent16interceptRequestERNS_14ResourceLoaderEON3WTF8FunctionIFvRKNS_15ResourceRequestEEEE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='152' c='_ZN7WebCore21InspectorNetworkAgent20buildObjectForTimingERKNS_18NetworkLoadMetricsERNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='154' c='_ZN7WebCore21InspectorNetworkAgent30buildObjectForResourceResponseERKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='163' c='_ZN7WebCore21InspectorNetworkAgent23PendingInterceptRequestC1EN3WTF6RefPtrINS_14ResourceLoaderENS2_12RawPtrTraitsIS4_EENS2_21DefaultRefDerefTraitsIS4_14554069'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.h' l='180'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.cpp' l='604' c='_ZN7WebCore24InspectorInstrumentation30didReceiveResourceResponseImplERNS_19InstrumentingAgentsEmPNS_14DocumentLoaderERKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.cpp' l='627' c='_ZN7WebCore24InspectorInstrumentation20didFinishLoadingImplERNS_19InstrumentingAgentsEmPNS_14DocumentLoaderERKNS_18NetworkLoadMetricsEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentation.cpp' l='852' c='_ZN7WebCore24InspectorInstrumentation20interceptRequestImplERNS_19InstrumentingAgentsERNS_14ResourceLoaderEON3WTF8FunctionIFvRKNS_15ResourceRequestEEEE'/>
+<size>992</size>
+<use f='WebKit/Source/WebCore/inspector/InspectorInstrumentationWebKit.cpp' l='43' c='_ZN7WebCore30InspectorInstrumentationWebKit24interceptRequestInternalERNS_14ResourceLoaderEON3WTF8FunctionIFvRKNS_15ResourceRequestEEEE'/>
+<size>992</size>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='216' c='_ZN7WebCore21InspectorNetworkAgent20buildObjectForTimingERKNS_18NetworkLoadMetricsERNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='340' c='_ZN7WebCore21InspectorNetworkAgent30buildObjectForResourceResponseERKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='501' c='_ZN7WebCore21InspectorNetworkAgent18didReceiveResponseEmPNS_14DocumentLoaderERKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='598' c='_ZN7WebCore21InspectorNetworkAgent16didFinishLoadingEmPNS_14DocumentLoaderERKNS_18NetworkLoadMetricsEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='1127' c='_ZN7WebCore21InspectorNetworkAgent16interceptRequestERNS_14ResourceLoaderEON3WTF8FunctionIFvRKNS_15ResourceRequestEEEE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorNetworkAgent.cpp' l='1268' c='_ZN7WebCore21InspectorNetworkAgent28interceptRequestWithResponseERKN3WTF6StringES4_bS4_iS4_ONS1_3RefINS1_8JSONImpl6ObjectENS1_12RawPtrTraitsIS7_EEEE'/>
+<size>992</size>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheResource.h' l='63' c='_ZN7WebCore24ApplicationCacheResource7deliverERNS_14ResourceLoaderE'/>
+<size>992</size>
+<use f='WebKit/Source/WebCore/loader/soup/ResourceLoaderSoup.cpp' l='44' c='_ZN7WebCore14ResourceLoader13loadGResourceEv'/>
+<use f='WebKit/Source/WebCore/loader/soup/ResourceLoaderSoup.cpp' l='46' c='_ZN7WebCore14ResourceLoader13loadGResourceEv'/>
+<use f='WebKit/Source/WebCore/loader/soup/ResourceLoaderSoup.cpp' l='46' c='_ZN7WebCore14ResourceLoader13loadGResourceEv'/>
+<size>992</size>
+<fun r='_ZN7WebCore14ResourceLoader13loadGResourceEv'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='1054' c='_ZN7WebCore14DocumentLoader26continueAfterContentPolicyENS_12PolicyActionE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='1069' c='_ZN7WebCore14DocumentLoader26continueAfterContentPolicyENS_12PolicyActionE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='1084' c='_ZN7WebCore14DocumentLoader26continueAfterContentPolicyENS_12PolicyActionE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='1675' c='_ZN7WebCore14DocumentLoader27cancelPendingSubstituteLoadEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='1686' c='_ZN7WebCore14DocumentLoader19scheduleArchiveLoadERNS_14ResourceLoaderERKNS_15ResourceRequestE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='1710' c='_ZN7WebCore14DocumentLoader30scheduleSubstituteResourceLoadERNS_14ResourceLoaderERNS_18SubstituteResourceE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='1719' c='_ZN7WebCore14DocumentLoader26scheduleCannotShowURLErrorERNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='1824' c='_ZN7WebCore14DocumentLoader20addSubresourceLoaderEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='1863' c='_ZN7WebCore14DocumentLoader23removeSubresourceLoaderENS_18LoadCompletionTypeEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='1874' c='_ZN7WebCore14DocumentLoader21addPlugInStreamLoaderERNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='1882' c='_ZN7WebCore14DocumentLoader24removePlugInStreamLoaderERNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='2141' c='_ZN7WebCore14DocumentLoader39subresourceLoaderFinishedLoadingOnePartEPNS_14ResourceLoaderE'/>
+<size>992</size>
+<use f='WebKit/Source/WebCore/loader/NetscapePlugInStreamLoader.cpp' l='47' c='_ZN7WebCore26NetscapePlugInStreamLoaderC1ERNS_5FrameERNS_32NetscapePlugInStreamLoaderClientE'/>
+<size>992</size>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.cpp' l='54' c='_ZN7WebCore20ResourceLoadNotifier33didReceiveAuthenticationChallengeEPNS_14ResourceLoaderERKNS_23AuthenticationChallengeE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.cpp' l='64' c='_ZN7WebCore20ResourceLoadNotifier15willSendRequestEPNS_14ResourceLoaderERNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.cpp' l='71' c='_ZN7WebCore20ResourceLoadNotifier18didReceiveResponseEPNS_14ResourceLoaderERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.cpp' l='81' c='_ZN7WebCore20ResourceLoadNotifier14didReceiveDataEPNS_14ResourceLoaderEPKhii'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.cpp' l='89' c='_ZN7WebCore20ResourceLoadNotifier13didFinishLoadEPNS_14ResourceLoaderERKNS_18NetworkLoadMetricsE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.cpp' l='97' c='_ZN7WebCore20ResourceLoadNotifier13didFailToLoadEPNS_14ResourceLoaderERKNS_13ResourceErrorE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.cpp' l='155' c='_ZN7WebCore20ResourceLoadNotifier26dispatchDidReceiveResponseEPNS_14DocumentLoaderEmRKNS_16ResourceResponseEPNS_14ResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoadNotifier.cpp' l='173' c='_ZN7WebCore20ResourceLoadNotifier24dispatchDidFinishLoadingEPNS_14DocumentLoaderEmRKNS_18NetworkLoadMetricsEPNS_14ResourceLoaderE'/>
+<size>992</size>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='108' c='_ZN7WebCore14ResourceLoader16releaseResourcesEv'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='366' c='_ZN7WebCore14ResourceLoader23willSendRequestInternalEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='521' c='_ZN7WebCore14ResourceLoader18didReceiveResponseERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='566' c='_ZN7WebCore14ResourceLoader22didReceiveDataOrBufferEPKhjON3WTF6RefPtrINS_12SharedBufferENS3_12RawPtrTraitsIS5_EENS3_21DefaultRefDerefTraitsIS5_EEEExNS_15DataPayloadTypeE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='617' c='_ZN7WebCore14ResourceLoader7didFailERKNS_13ResourceErrorE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='647' c='_ZN7WebCore14ResourceLoader6cancelERKNS_13ResourceErrorE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='777' c='_ZN7WebCore14ResourceLoader26shouldUseCredentialStorageEv'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='806' c='_ZN7WebCore14ResourceLoader33didReceiveAuthenticationChallengeEPNS_14ResourceHandleERKNS_23AuthenticationChallengeE'/>
+<size>992</size>
+<fun r='_ZN7WebCore14ResourceLoaderC1ERNS_5FrameENS_21ResourceLoaderOptionsE'/>
+<fun r='_ZN7WebCore14ResourceLoaderD1Ev'/>
+<fun r='_ZN7WebCore14ResourceLoader17finishNetworkLoadEv'/>
+<fun r='_ZN7WebCore14ResourceLoader16releaseResourcesEv'/>
+<fun r='_ZN7WebCore14ResourceLoader4initEONS_15ResourceRequestEON3WTF17CompletionHandlerIFvbEEE'/>
+<fun r='_ZN7WebCore14ResourceLoader22deliverResponseAndDataERKNS_16ResourceResponseEON3WTF6RefPtrINS_12SharedBufferENS4_12RawPtrTraitsIS6_EENS4_21DefaultRefDerefTraitsIS6_EEEE'/>
+<fun r='_ZN7WebCore14ResourceLoader5startEv'/>
+<fun r='_ZN7WebCore14ResourceLoader16setDefersLoadingEb'/>
+<fun r='_ZNK7WebCore14ResourceLoader11frameLoaderEv'/>
+<fun r='_ZN7WebCore14ResourceLoader11loadDataURLEv'/>
+<fun r='_ZN7WebCore14ResourceLoader22setDataBufferingPolicyENS_19DataBufferingPolicyE'/>
+<fun r='_ZN7WebCore14ResourceLoader30willSwitchToSubstituteResourceEv'/>
+<fun r='_ZN7WebCore14ResourceLoader15addDataOrBufferEPKhjPNS_12SharedBufferENS_15DataPayloadTypeE'/>
+<fun r='_ZN7WebCore14ResourceLoader17clearResourceDataEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader19isSubresourceLoaderEv'/>
+<fun r='_ZN7WebCore14ResourceLoader23willSendRequestInternalEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<fun r='_ZN7WebCore14ResourceLoader15willSendRequestEONS_15ResourceRequestERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvS2_EEE'/>
+<fun r='_ZN7WebCore14ResourceLoader11didSendDataEyy'/>
+<fun r='_ZNK7WebCore14ResourceLoader38shouldAllowResourceToAskForCredentialsEv'/>
+<fun r='_ZN7WebCore14ResourceLoader31didBlockAuthenticationChallengeEv'/>
+<fun r='_ZN7WebCore14ResourceLoader18didReceiveResponseERKNS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<fun r='_ZN7WebCore14ResourceLoader14didReceiveDataEPKhjxNS_15DataPayloadTypeE'/>
+<fun r='_ZN7WebCore14ResourceLoader16didReceiveBufferEON3WTF3RefINS_12SharedBufferENS1_12RawPtrTraitsIS3_EEEExNS_15DataPayloadTypeE'/>
+<fun r='_ZN7WebCore14ResourceLoader22didReceiveDataOrBufferEPKhjON3WTF6RefPtrINS_12SharedBufferENS3_12RawPtrTraitsIS5_EENS3_21DefaultRefDerefTraitsIS5_EEEExNS_15DataPayloadTypeE'/>
+<fun r='_ZN7WebCore14ResourceLoader16didFinishLoadingERKNS_18NetworkLoadMetricsE'/>
+<fun r='_ZN7WebCore14ResourceLoader23didFinishLoadingOnePartERKNS_18NetworkLoadMetricsE'/>
+<fun r='_ZN7WebCore14ResourceLoader7didFailERKNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore14ResourceLoader15cleanupForErrorERKNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore14ResourceLoader6cancelEv'/>
+<fun r='_ZN7WebCore14ResourceLoader6cancelERKNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore14ResourceLoader14cancelledErrorEv'/>
+<fun r='_ZN7WebCore14ResourceLoader12blockedErrorEv'/>
+<fun r='_ZN7WebCore14ResourceLoader28blockedByContentBlockerErrorEv'/>
+<fun r='_ZN7WebCore14ResourceLoader18cannotShowURLErrorEv'/>
+<fun r='_ZN7WebCore14ResourceLoader20willSendRequestAsyncEPNS_14ResourceHandleEONS_15ResourceRequestEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvS4_EEE'/>
+<fun r='_ZN7WebCore14ResourceLoader11didSendDataEPNS_14ResourceHandleEyy'/>
+<fun r='_ZN7WebCore14ResourceLoader23didReceiveResponseAsyncEPNS_14ResourceHandleEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<fun r='_ZN7WebCore14ResourceLoader14didReceiveDataEPNS_14ResourceHandleEPKhji'/>
+<fun r='_ZN7WebCore14ResourceLoader16didReceiveBufferEPNS_14ResourceHandleEON3WTF3RefINS_12SharedBufferENS3_12RawPtrTraitsIS5_EEEEi'/>
+<fun r='_ZN7WebCore14ResourceLoader16didFinishLoadingEPNS_14ResourceHandleERKNS_18NetworkLoadMetricsE'/>
+<fun r='_ZN7WebCore14ResourceLoader7didFailEPNS_14ResourceHandleERKNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore14ResourceLoader10wasBlockedEPNS_14ResourceHandleE'/>
+<fun r='_ZN7WebCore14ResourceLoader13cannotShowURLEPNS_14ResourceHandleE'/>
+<fun r='_ZN7WebCore14ResourceLoader26shouldUseCredentialStorageEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader32isAllowedToAskUserForCredentialsEv'/>
+<fun r='_ZNK7WebCore14ResourceLoader28shouldIncludeCertificateInfoEv'/>
+<fun r='_ZN7WebCore14ResourceLoader33didReceiveAuthenticationChallengeEPNS_14ResourceHandleERKNS_23AuthenticationChallengeE'/>
+<fun r='_ZN7WebCore14ResourceLoader20receivedCancellationERKNS_23AuthenticationChallengeE'/>
+<use f='WebKit/Source/WebCore/loader/SubresourceLoader.cpp' l='99' c='_ZN7WebCore17SubresourceLoaderC1ERNS_5FrameERNS_14CachedResourceERKNS_21ResourceLoaderOptionsE'/>
+<size>992</size>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.cpp' l='181' c='_ZN7WebCore20ApplicationCacheHost17maybeLoadResourceERNS_14ResourceLoaderERKNS_15ResourceRequestERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.cpp' l='208' c='_ZN7WebCore20ApplicationCacheHost28maybeLoadFallbackForRedirectEPNS_14ResourceLoaderERNS_15ResourceRequestERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.cpp' l='220' c='_ZN7WebCore20ApplicationCacheHost28maybeLoadFallbackForResponseEPNS_14ResourceLoaderERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.cpp' l='232' c='_ZN7WebCore20ApplicationCacheHost25maybeLoadFallbackForErrorEPNS_14ResourceLoaderERKNS_13ResourceErrorE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheHost.cpp' l='468' c='_ZN7WebCore20ApplicationCacheHost48scheduleLoadFallbackResourceFromApplicationCacheEPNS_14ResourceLoaderEPNS_16ApplicationCacheE'/>
+<use f='WebKit/Source/WebCore/loader/appcache/ApplicationCacheResource.cpp' l='52' c='_ZN7WebCore24ApplicationCacheResource7deliverERNS_14ResourceLoaderE'/>
+<size>992</size>

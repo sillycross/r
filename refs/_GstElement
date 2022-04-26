@@ -1,0 +1,57 @@
+<use f='include/gstreamer-1.0/gst/gstelement.h' l='32'/>
+<def f='include/gstreamer-1.0/gst/gstelement.h' l='620' ll='658'/>
+<size>264</size>
+<doc f='include/gstreamer-1.0/gst/gstelement.h' l='588'>/**
+ * GstElement:
+ * @state_lock: Used to serialize execution of gst_element_set_state()
+ * @state_cond: Used to signal completion of a state change
+ * @state_cookie: Used to detect concurrent execution of
+ * gst_element_set_state() and gst_element_get_state()
+ * @target_state: the target state of an element as set by the application
+ * @current_state: the current state of an element
+ * @next_state: the next state of an element, can be #GST_STATE_VOID_PENDING if
+ * the element is in the correct state.
+ * @pending_state: the final state the element should go to, can be
+ * #GST_STATE_VOID_PENDING if the element is in the correct state
+ * @last_return: the last return value of an element state change
+ * @bus: the bus of the element. This bus is provided to the element by the
+ * parent element or the application. A #GstPipeline has a bus of its own.
+ * @clock: the clock of the element. This clock is usually provided to the
+ * element by the toplevel #GstPipeline.
+ * @base_time: the time of the clock right before the element is set to
+ * PLAYING. Subtracting @base_time from the current clock time in the PLAYING
+ * state will yield the running_time against the clock.
+ * @start_time: the running_time of the last PAUSED state
+ * @numpads: number of pads of the element, includes both source and sink pads.
+ * @pads: (element-type Gst.Pad): list of pads
+ * @numsrcpads: number of source pads of the element.
+ * @srcpads: (element-type Gst.Pad): list of source pads
+ * @numsinkpads: number of sink pads of the element.
+ * @sinkpads: (element-type Gst.Pad): list of sink pads
+ * @pads_cookie: updated whenever the a pad is added or removed
+ * @contexts: (element-type Gst.Context): list of contexts
+ *
+ * GStreamer element abstract base class.
+ */</doc>
+<mbr r='_GstElement::object' o='0' t='GstObject'/>
+<mbr r='_GstElement::state_lock' o='704' t='GRecMutex'/>
+<mbr r='_GstElement::state_cond' o='832' t='GCond'/>
+<mbr r='_GstElement::state_cookie' o='960' t='guint32'/>
+<mbr r='_GstElement::target_state' o='992' t='GstState'/>
+<mbr r='_GstElement::current_state' o='1024' t='GstState'/>
+<mbr r='_GstElement::next_state' o='1056' t='GstState'/>
+<mbr r='_GstElement::pending_state' o='1088' t='GstState'/>
+<mbr r='_GstElement::last_return' o='1120' t='GstStateChangeReturn'/>
+<mbr r='_GstElement::bus' o='1152' t='GstBus *'/>
+<mbr r='_GstElement::clock' o='1216' t='GstClock *'/>
+<mbr r='_GstElement::base_time' o='1280' t='GstClockTimeDiff'/>
+<mbr r='_GstElement::start_time' o='1344' t='GstClockTime'/>
+<mbr r='_GstElement::numpads' o='1408' t='guint16'/>
+<mbr r='_GstElement::pads' o='1472' t='GList *'/>
+<mbr r='_GstElement::numsrcpads' o='1536' t='guint16'/>
+<mbr r='_GstElement::srcpads' o='1600' t='GList *'/>
+<mbr r='_GstElement::numsinkpads' o='1664' t='guint16'/>
+<mbr r='_GstElement::sinkpads' o='1728' t='GList *'/>
+<mbr r='_GstElement::pads_cookie' o='1792' t='guint32'/>
+<mbr r='_GstElement::contexts' o='1856' t='GList *'/>
+<mbr r='_GstElement::_gst_reserved' o='1920' t='gpointer [3]'/>

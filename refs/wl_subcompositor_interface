@@ -1,0 +1,56 @@
+<dec f='include/wayland-client-protocol.h' l='710' type='const struct wl_interface'/>
+<dec f='include/wayland-server-protocol.h' l='713' type='const struct wl_interface'/>
+<def f='include/wayland-server-protocol.h' l='4298' ll='4336'/>
+<size>16</size>
+<doc f='include/wayland-client-protocol.h' l='687'>/**
+ * @defgroup iface_wl_subcompositor The wl_subcompositor interface
+ *
+ * The global interface exposing sub-surface compositing capabilities.
+ * A wl_surface, that has sub-surfaces associated, is called the
+ * parent surface. Sub-surfaces can be arbitrarily nested and create
+ * a tree of sub-surfaces.
+ *
+ * The root surface in a tree of sub-surfaces is the main
+ * surface. The main surface cannot be a sub-surface, because
+ * sub-surfaces must always have a parent.
+ *
+ * A main surface with its sub-surfaces forms a (compound) window.
+ * For window management purposes, this set of wl_surface objects is
+ * to be considered as a single window, and it should also behave as
+ * such.
+ *
+ * The aim of sub-surfaces is to offload some of the compositing work
+ * within a window from clients to the compositor. A prime example is
+ * a video player with decorations and video in separate wl_surface
+ * objects. This should allow the compositor to pass YUV video buffer
+ * processing to dedicated overlay hardware when possible.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='690'>/**
+ * @defgroup iface_wl_subcompositor The wl_subcompositor interface
+ *
+ * The global interface exposing sub-surface compositing capabilities.
+ * A wl_surface, that has sub-surfaces associated, is called the
+ * parent surface. Sub-surfaces can be arbitrarily nested and create
+ * a tree of sub-surfaces.
+ *
+ * The root surface in a tree of sub-surfaces is the main
+ * surface. The main surface cannot be a sub-surface, because
+ * sub-surfaces must always have a parent.
+ *
+ * A main surface with its sub-surfaces forms a (compound) window.
+ * For window management purposes, this set of wl_surface objects is
+ * to be considered as a single window, and it should also behave as
+ * such.
+ *
+ * The aim of sub-surfaces is to offload some of the compositing work
+ * within a window from clients to the compositor. A prime example is
+ * a video player with decorations and video in separate wl_surface
+ * objects. This should allow the compositor to pass YUV video buffer
+ * processing to dedicated overlay hardware when possible.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='4294'>/**
+ * @ingroup iface_wl_subcompositor
+ * @struct wl_subcompositor_interface
+ */</doc>
+<mbr r='wl_subcompositor_interface::destroy' o='0' t='void (*)(struct wl_client *, struct wl_resource *)'/>
+<mbr r='wl_subcompositor_interface::get_subsurface' o='64' t='void (*)(struct wl_client *, struct wl_resource *, uint32_t, struct wl_resource *, struct wl_resource *)'/>

@@ -1,0 +1,69 @@
+<use f='WebKit/Source/WebCore/contentextensions/DFABytecodeCompiler.h' l='42' c='_ZN7WebCore17ContentExtensions19DFABytecodeCompilerC1ERKNS0_3DFAERN3WTF6VectorIhLm0ENS5_15CrashOnOverflowELm16ENS5_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFABytecodeCompiler.h' l='102'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFANode.h' l='50'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFANode.h' l='77'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFANode.h' l='85' c='_ZNK7WebCore17ContentExtensions7DFANode11transitionsERKNS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFANode.h' l='91'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFANode.h' l='119'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFANode.h' l='127' c='_ZN7WebCore17ContentExtensions7DFANode11transitionsERNS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFANode.h' l='133' c='_ZN7WebCore17ContentExtensions7DFANode4killERNS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFANode.h' l='134' c='_ZNK7WebCore17ContentExtensions7DFANode7actionsERKNS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFANode.h' l='135' c='_ZNK7WebCore17ContentExtensions7DFANode18containsTransitionEcRKNS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFANode.h' l='142' c='_ZNK7WebCore17ContentExtensions7DFANode24canUseFallbackTransitionERKNS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFANode.h' l='143' c='_ZNK7WebCore17ContentExtensions7DFANode18bestFallbackTargetERKNS0_3DFAE'/>
+<def f='WebKit/Source/WebCore/contentextensions/DFA.h' l='39' ll='55'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFA.h' l='40' c='_ZN7WebCore17ContentExtensions3DFA5emptyEv'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.h' l='40' c='_ZN7WebCore17ContentExtensions11DFACombiner6addDFAEONS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.h' l='41' c='_ZN7WebCore17ContentExtensions11DFACombiner11combineDFAsEjRKN3WTF8FunctionIFvONS0_3DFAEEEE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.h' l='44'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.h' l='47' c='_ZN7WebCore17ContentExtensions11DFACombiner6addDFAEONS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/NFAToDFA.h' l='41' c='_ZN7WebCore17ContentExtensions8NFAToDFA7convertEONS0_3NFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/ContentExtensionCompiler.cpp' l='196' c='_ZN7WebCore17ContentExtensionsL24addUniversalActionsToDFAERNS0_3DFAEON3WTF7HashSetImNS3_11DefaultHashImEENS3_29UnsignedWithZeroKeyHashTraitsImEENS3_15HashTableTraitsEEE'/>
+<use f='WebKit/Source/WebCore/contentextensions/ContentExtensionCompiler.cpp' l='223' c='_ZN7WebCore17ContentExtensionsL17compileToBytecodeEONS0_18CombinedURLFiltersEON3WTF7HashSetImNS3_11DefaultHashImEENS3_29UnsignedWithZeroKeyHashTraitsI16113778'/>
+<use f='WebKit/Source/WebCore/contentextensions/ContentExtensionCompiler.cpp' l='268' c='_ZN7WebCore17ContentExtensionsL17compileToBytecodeEONS0_18CombinedURLFiltersEON3WTF7HashSetImNS3_11DefaultHashImEENS3_29UnsignedWithZeroKeyHashTraitsI16113778'/>
+<use f='WebKit/Source/WebCore/contentextensions/ContentExtensionCompiler.cpp' l='279' c='_ZN7WebCore17ContentExtensionsL17compileToBytecodeEONS0_18CombinedURLFiltersEON3WTF7HashSetImNS3_11DefaultHashImEENS3_29UnsignedWithZeroKeyHashTraitsI16113778'/>
+<size>72</size>
+<doc f='WebKit/Source/WebCore/contentextensions/DFA.h' l='38'>// The DFA abstract a partial DFA graph in a compact form.</doc>
+<fun r='_ZN7WebCore17ContentExtensions3DFA5emptyEv'/>
+<fun r='_ZN7WebCore17ContentExtensions3DFA8minimizeEv'/>
+<fun r='_ZNK7WebCore17ContentExtensions3DFA9graphSizeEv'/>
+<fun r='_ZNK7WebCore17ContentExtensions3DFA10memoryUsedEv'/>
+<mbr r='WebCore::ContentExtensions::DFA::nodes' o='0' t='Vector&lt;WebCore::ContentExtensions::DFANode, 0, ContentExtensionsOverflowHandler&gt;'/>
+<mbr r='WebCore::ContentExtensions::DFA::actions' o='128' t='Vector&lt;uint64_t, 0, ContentExtensionsOverflowHandler&gt;'/>
+<mbr r='WebCore::ContentExtensions::DFA::transitionRanges' o='256' t='Vector&lt;WebCore::ContentExtensions::CharRange, 0, ContentExtensionsOverflowHandler&gt;'/>
+<mbr r='WebCore::ContentExtensions::DFA::transitionDestinations' o='384' t='Vector&lt;uint32_t, 0, ContentExtensionsOverflowHandler&gt;'/>
+<mbr r='WebCore::ContentExtensions::DFA::root' o='512' t='unsigned int'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFAMinimizer.h' l='37' c='_ZN7WebCore17ContentExtensions12DFAMinimizer8minimizeERNS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFA.cpp' l='38' c='_ZN7WebCore17ContentExtensions3DFA5emptyEv'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFA.cpp' l='40' c='_ZN7WebCore17ContentExtensions3DFA5emptyEv'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFA.cpp' l='47' c='_ZNK7WebCore17ContentExtensions3DFA10memoryUsedEv'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.cpp' l='70' c='_ZN7WebCore17ContentExtensions9DFAMergerC1ERKNS0_3DFAES4_'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.cpp' l='70' c='_ZN7WebCore17ContentExtensions9DFAMergerC1ERKNS0_3DFAES4_'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.cpp' l='76' c='_ZN7WebCore17ContentExtensions9DFAMerger5mergeEv'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.cpp' l='180'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.cpp' l='181'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.cpp' l='182'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.cpp' l='187' c='_ZN7WebCore17ContentExtensions11DFACombiner11combineDFAsEjRKN3WTF8FunctionIFvONS0_3DFAEEEE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.cpp' l='205' c='_ZN7WebCore17ContentExtensions11DFACombiner11combineDFAsEjRKN3WTF8FunctionIFvONS0_3DFAEEEE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.cpp' l='206' c='_ZN7WebCore17ContentExtensions11DFACombiner11combineDFAsEjRKN3WTF8FunctionIFvONS0_3DFAEEEE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFACombiner.cpp' l='208' c='_ZN7WebCore17ContentExtensions11DFACombiner11combineDFAsEjRKN3WTF8FunctionIFvONS0_3DFAEEEE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFAMinimizer.cpp' l='238' c='_ZN7WebCore17ContentExtensions12_GLOBAL__N_118FullGraphPartitionC1ERKNS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFAMinimizer.cpp' l='398' c='_ZN7WebCore17ContentExtensions12_GLOBAL__N_19ActionKeyC1EPKNS0_3DFAEjt'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFAMinimizer.cpp' l='414'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFAMinimizer.cpp' l='452' c='_ZN7WebCore17ContentExtensions12DFAMinimizer8minimizeERNS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFANode.cpp' l='38' c='_ZNK7WebCore17ContentExtensions7DFANode7actionsERKNS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFANode.cpp' l='48' c='_ZNK7WebCore17ContentExtensions7DFANode18containsTransitionEcRKNS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFANode.cpp' l='60' c='_ZN7WebCore17ContentExtensions7DFANode4killERNS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFANode.cpp' l='79' c='_ZNK7WebCore17ContentExtensions7DFANode24canUseFallbackTransitionERKNS0_3DFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/DFANode.cpp' l='110' c='_ZNK7WebCore17ContentExtensions7DFANode18bestFallbackTargetERKNS0_3DFAE'/>
+<size>72</size>
+<fun r='_ZN7WebCore17ContentExtensions3DFA5emptyEv'/>
+<fun r='_ZNK7WebCore17ContentExtensions3DFA10memoryUsedEv'/>
+<fun r='_ZN7WebCore17ContentExtensions3DFA8minimizeEv'/>
+<fun r='_ZNK7WebCore17ContentExtensions3DFA9graphSizeEv'/>
+<use f='WebKit/Source/WebCore/contentextensions/NFAToDFA.cpp' l='216' c='_ZN7WebCore17ContentExtensions32NodeIdSetToUniqueNodeIdSetSourceC1ERNS0_3DFAERKNS0_13SerializedNFAERKN3WTF7HashSetIjNS7_11DefaultHashIjEENS7_29Unsigne9400603'/>
+<use f='WebKit/Source/WebCore/contentextensions/NFAToDFA.cpp' l='227'/>
+<use f='WebKit/Source/WebCore/contentextensions/NFAToDFA.cpp' l='314' c='_ZN7WebCore17ContentExtensionsL18getOrCreateDFANodeERKN3WTF7HashSetIjNS1_11DefaultHashIjEENS1_29UnsignedWithZeroKeyHashTraitsIjEENS1_15HashTableTraits149109'/>
+<use f='WebKit/Source/WebCore/contentextensions/NFAToDFA.cpp' l='324' c='_ZN7WebCore17ContentExtensions8NFAToDFA7convertEONS0_3NFAE'/>
+<use f='WebKit/Source/WebCore/contentextensions/NFAToDFA.cpp' l='331' c='_ZN7WebCore17ContentExtensions8NFAToDFA7convertEONS0_3NFAE'/>
+<size>72</size>

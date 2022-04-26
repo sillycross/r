@@ -1,0 +1,24 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitFaviconDatabase.cpp' l='218' ll='224' type='void webkit_favicon_database_get_favicon(WebKitFaviconDatabase * database, const gchar * pageURI, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer userData)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitFaviconDatabase.cpp' l='195'>/**
+ * webkit_favicon_database_get_favicon:
+ * @database: a #WebKitFaviconDatabase
+ * @page_uri: URI of the page for which we want to retrieve the favicon
+ * @cancellable: (allow-none): A #GCancellable or %NULL.
+ * @callback: (scope async): A #GAsyncReadyCallback to call when the request is
+ *            satisfied or %NULL if you don&apos;t care about the result.
+ * @user_data: (closure): The data to pass to @callback.
+ *
+ * Asynchronously obtains a #cairo_surface_t of the favicon for the
+ * given page URI. It returns the cached icon if it&apos;s in the database
+ * asynchronously waiting for the icon to be read from the database.
+ *
+ * This is an asynchronous method. When the operation is finished, callback will
+ * be invoked. You can then call webkit_favicon_database_get_favicon_finish()
+ * to get the result of the operation.
+ *
+ * You must call webkit_web_context_set_favicon_database_directory() for
+ * the #WebKitWebContext associated with this #WebKitFaviconDatabase
+ * before attempting to use this function; otherwise,
+ * webkit_favicon_database_get_favicon_finish() will return
+ * %WEBKIT_FAVICON_DATABASE_ERROR_NOT_INITIALIZED.
+ */</doc>

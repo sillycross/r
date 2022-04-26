@@ -1,0 +1,25 @@
+<def f='include/wayland-util.h' l='519' ll='526'/>
+<use f='include/wayland-util.h' l='536' c='wl_array_init'/>
+<use f='include/wayland-util.h' l='548' c='wl_array_release'/>
+<use f='include/wayland-util.h' l='562' c='wl_array_add'/>
+<use f='include/wayland-util.h' l='575' c='wl_array_copy'/>
+<use f='include/wayland-util.h' l='575' c='wl_array_copy'/>
+<use f='include/wayland-util.h' l='690'/>
+<use f='include/wayland-client-protocol.h' l='4708'/>
+<use f='include/wayland-server-protocol.h' l='3800' c='_ZL22wl_keyboard_send_enterP11wl_resourcejS0_P8wl_array'/>
+<size>24</size>
+<doc f='include/wayland-util.h' l='507'>/**
+ * \class wl_array
+ *
+ * Dynamic array
+ *
+ * A wl_array is a dynamic array that can only grow until released. It is
+ * intended for relatively small allocations whose size is variable or not known
+ * in advance. While construction of a wl_array does not require all elements to
+ * be of the same size, wl_array_for_each() does require all elements to have
+ * the same type and size.
+ *
+ */</doc>
+<mbr r='wl_array::size' o='0' t='size_t'/>
+<mbr r='wl_array::alloc' o='64' t='size_t'/>
+<mbr r='wl_array::data' o='128' t='void *'/>

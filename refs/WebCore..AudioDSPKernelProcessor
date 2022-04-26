@@ -1,0 +1,42 @@
+<inh f='WebKit/Source/WebCore/platform/audio/AudioProcessor.h' l='42' c='WebCore::AudioProcessor'/>
+<def f='WebKit/Source/WebCore/platform/audio/AudioDSPKernelProcessor.h' l='48' ll='73'/>
+<use f='WebKit/Source/WebCore/platform/audio/AudioDSPKernel.h' l='44' c='_ZN7WebCore14AudioDSPKernelC1EPNS_23AudioDSPKernelProcessorE'/>
+<use f='WebKit/Source/WebCore/platform/audio/AudioDSPKernel.h' l='69' c='_ZN7WebCore14AudioDSPKernel9processorEv'/>
+<use f='WebKit/Source/WebCore/platform/audio/AudioDSPKernel.h' l='70' c='_ZNK7WebCore14AudioDSPKernel9processorEv'/>
+<use f='WebKit/Source/WebCore/platform/audio/AudioDSPKernel.h' l='77'/>
+<ovr f='WebKit/Source/WebCore/Modules/webaudio/WaveShaperProcessor.h' l='39' c='WebCore::WaveShaperProcessor'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/WaveShaperProcessor.h' l='39'/>
+<size>48</size>
+<doc f='WebKit/Source/WebCore/platform/audio/AudioDSPKernelProcessor.h' l='44'>// AudioDSPKernelProcessor processes one input -&gt; one output (N channels each)
+// It uses one AudioDSPKernel object per channel to do the processing, thus there is no cross-channel processing.
+// Despite this limitation it turns out to be a very common and useful type of processor.</doc>
+<fun r='_ZN7WebCore23AudioDSPKernelProcessorC1Efj'/>
+<fun r='_ZN7WebCore23AudioDSPKernelProcessor12createKernelEv'/>
+<fun r='_ZN7WebCore23AudioDSPKernelProcessor10initializeEv'/>
+<fun r='_ZN7WebCore23AudioDSPKernelProcessor12uninitializeEv'/>
+<fun r='_ZN7WebCore23AudioDSPKernelProcessor7processEPKNS_8AudioBusEPS1_m'/>
+<fun r='_ZN7WebCore23AudioDSPKernelProcessor22processOnlyAudioParamsEm'/>
+<fun r='_ZN7WebCore23AudioDSPKernelProcessor5resetEv'/>
+<fun r='_ZN7WebCore23AudioDSPKernelProcessor19setNumberOfChannelsEj'/>
+<fun r='_ZNK7WebCore23AudioDSPKernelProcessor16numberOfChannelsEv'/>
+<fun r='_ZNK7WebCore23AudioDSPKernelProcessor8tailTimeEv'/>
+<fun r='_ZNK7WebCore23AudioDSPKernelProcessor11latencyTimeEv'/>
+<fun r='_ZNK7WebCore23AudioDSPKernelProcessor22requiresTailProcessingEv'/>
+<mbr r='WebCore::AudioDSPKernelProcessor::m_kernels' o='192' t='Vector&lt;std::unique_ptr&lt;AudioDSPKernel&gt; &gt;'/>
+<mbr r='WebCore::AudioDSPKernelProcessor::m_hasJustReset' o='320' t='bool'/>
+<ovr f='WebKit/Source/WebCore/Modules/webaudio/BiquadProcessor.h' l='40' c='WebCore::BiquadProcessor'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BiquadProcessor.h' l='40'/>
+<ovr f='WebKit/Source/WebCore/Modules/webaudio/IIRProcessor.h' l='35' c='WebCore::IIRProcessor'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/IIRProcessor.h' l='35'/>
+<size>48</size>
+<ovr f='WebKit/Source/WebCore/Modules/webaudio/DelayProcessor.h' l='36' c='WebCore::DelayProcessor'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/DelayProcessor.h' l='36'/>
+<size>48</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BiquadProcessor.cpp' l='37' c='_ZN7WebCore15BiquadProcessorC1ERNS_16BaseAudioContextEfmb'/>
+<size>48</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/DelayProcessor.cpp' l='36' c='_ZN7WebCore14DelayProcessorC1ERNS_16BaseAudioContextEfjd'/>
+<size>48</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/IIRProcessor.cpp' l='36' c='_ZN7WebCore12IIRProcessorC1EfjRKN3WTF6VectorIdLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEES7_b'/>
+<size>48</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/WaveShaperProcessor.cpp' l='36' c='_ZN7WebCore19WaveShaperProcessorC1Efm'/>
+<size>48</size>

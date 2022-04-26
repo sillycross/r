@@ -1,0 +1,33 @@
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreter.h' l='149' type='bool JSC::DFG::AbstractInterpreter::execute(unsigned int indexInBlock)'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreter.h' l='137'>// Abstractly executes the given node. The new abstract state is stored into an
+    // abstract stack stored in *this. Loads of local variables (that span
+    // basic blocks) interrogate the basic block&apos;s notion of the state at the head.
+    // Stores to local variables are handled in endBasicBlock(). This returns true
+    // if execution should continue past this node. Notably, it will return true
+    // for block terminals, so long as those terminals are not Return or Unreachable.
+    //
+    // This is guaranteed to be equivalent to doing:
+    //
+    // state.startExecuting()
+    // state.executeEdges(node);
+    // result = state.executeEffects(index);</doc>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreterInlines.h' l='4679' ll='4687' type='bool JSC::DFG::AbstractInterpreter::execute(unsigned int indexInBlock)'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCFAPhase.cpp' l='232' u='c' c='_ZN3JSC3DFG8CFAPhase15performBlockCFAEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='94' u='c' c='_ZN3JSC3DFG20ConstantFoldingPhase3runEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='189' u='c' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='201' u='c' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='211' u='c' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='223' u='c' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='233' u='c' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='256' u='c' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='271' u='c' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='291' u='c' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='427' u='c' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='471' u='c' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='499' u='c' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='541' u='c' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='571' u='c' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='610' u='c' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='968' u='c' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='983' u='c' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='1100' u='c' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>

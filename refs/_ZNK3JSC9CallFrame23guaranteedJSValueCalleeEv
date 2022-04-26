@@ -1,0 +1,21 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CallFrame.h' l='116' type='JSC::JSValue JSC::CallFrame::guaranteedJSValueCallee() const'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CallFrame.h' l='109'>// This function should only be called in very specific circumstances
+        // when you&apos;ve guaranteed the callee can&apos;t be a Wasm callee, and can
+        // be an arbitrary JSValue. This function should basically never be used.
+        // Its only use right now is when we are making a call, and we&apos;re not
+        // yet sure if the callee is a cell. In general, a JS callee is guaranteed
+        // to be a cell, however, there is a brief window where we need to check
+        // to see if it&apos;s a cell, and if it&apos;s not, we throw an exception.</doc>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CallFrameInlines.h' l='48' ll='52' type='JSC::JSValue JSC::CallFrame::guaranteedJSValueCallee() const'/>
+<dec f='WebKit/Source/JavaScriptCore/interpreter/CallFrame.h' l='116' type='JSC::JSValue JSC::CallFrame::guaranteedJSValueCallee() const'/>
+<def f='WebKit/Source/JavaScriptCore/interpreter/CallFrameInlines.h' l='48' ll='52' type='JSC::JSValue JSC::CallFrame::guaranteedJSValueCallee() const'/>
+<doc f='WebKit/Source/JavaScriptCore/interpreter/CallFrame.h' l='109'>// This function should only be called in very specific circumstances
+        // when you&apos;ve guaranteed the callee can&apos;t be a Wasm callee, and can
+        // be an arbitrary JSValue. This function should basically never be used.
+        // Its only use right now is when we are making a call, and we&apos;re not
+        // yet sure if the callee is a cell. In general, a JS callee is guaranteed
+        // to be a cell, however, there is a brief window where we need to check
+        // to see if it&apos;s a cell, and if it&apos;s not, we throw an exception.</doc>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='1458' u='c' c='_ZN3JSC17operationCallEvalEPNS_14JSGlobalObjectEPNS_9CallFrameENS_8ECMAModeE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='1538' u='c' c='_ZN3JSC17operationLinkCallEPNS_9CallFrameEPNS_14JSGlobalObjectEPNS_12CallLinkInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='1610' u='c' c='_ZN3JSC22virtualForWithFunctionEPNS_14JSGlobalObjectEPNS_9CallFrameEPNS_12CallLinkInfoERPNS_6JSCellE'/>

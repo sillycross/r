@@ -1,0 +1,27 @@
+<dec f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSBase.h' l='113' type='JSValueRef JSEvaluateScript(JSContextRef ctx, JSStringRef script, JSObjectRef thisObject, JSStringRef sourceURL, int startingLineNumber, JSValueRef * exception)'/>
+<doc f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSBase.h' l='102'>/*!
+@function JSEvaluateScript
+@abstract Evaluates a string of JavaScript.
+@param ctx The execution context to use.
+@param script A JSString containing the script to evaluate.
+@param thisObject The object to use as &quot;this,&quot; or NULL to use the global object as &quot;this.&quot;
+@param sourceURL A JSString containing a URL for the script&apos;s source file. This is used by debuggers and when reporting exceptions. Pass NULL if you do not care to include source file information.
+@param startingLineNumber An integer value specifying the script&apos;s starting line number in the file located at sourceURL. This is only used when reporting exceptions. The value is one-based, so the first line is line 1 and invalid values are clamped to 1.
+@param exception A pointer to a JSValueRef in which to store an exception, if any. Pass NULL if you do not care to store an exception.
+@result The JSValue that results from evaluating script, or NULL if an exception is thrown.
+*/</doc>
+<def f='WebKit/Source/JavaScriptCore/API/JSBase.cpp' l='76' ll='92' type='JSValueRef JSEvaluateScript(JSContextRef ctx, JSStringRef script, JSObjectRef thisObject, JSStringRef sourceURLString, int startingLineNumber, JSValueRef * exception)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/JSBase.h' l='102'>/*!
+@function JSEvaluateScript
+@abstract Evaluates a string of JavaScript.
+@param ctx The execution context to use.
+@param script A JSString containing the script to evaluate.
+@param thisObject The object to use as &quot;this,&quot; or NULL to use the global object as &quot;this.&quot;
+@param sourceURL A JSString containing a URL for the script&apos;s source file. This is used by debuggers and when reporting exceptions. Pass NULL if you do not care to include source file information.
+@param startingLineNumber An integer value specifying the script&apos;s starting line number in the file located at sourceURL. This is only used when reporting exceptions. The value is one-based, so the first line is line 1 and invalid values are clamped to 1.
+@param exception A pointer to a JSValueRef in which to store an exception, if any. Pass NULL if you do not care to store an exception.
+@result The JSValue that results from evaluating script, or NULL if an exception is thrown.
+*/</doc>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCContext.cpp' l='838' u='c' c='_ZL23evaluateScriptInContextP15OpaqueJSContextON3WTF6StringEPKcjPPK13OpaqueJSValue'/>
+<use f='WebKit/Source/WebKit/WebProcess/Automation/WebAutomationSessionProxy.cpp' l='180' u='c' c='_ZN6WebKitL8evaluateEPK15OpaqueJSContextP13OpaqueJSValueS4_mPKPKS3_PS6_'/>
+<use f='WebKit/Source/WebKit/WebProcess/Automation/WebAutomationSessionProxy.cpp' l='265' u='c' c='_ZN6WebKit25WebAutomationSessionProxy20scriptObjectForFrameERNS_8WebFrameE'/>

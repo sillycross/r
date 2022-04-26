@@ -1,0 +1,16 @@
+<dec f='include/wayland-util.h' l='500'/>
+<doc f='include/wayland-util.h' l='485'>/**
+ * Iterates backwards over a list, safe against removal of the list element.
+ *
+ * \note Only removal of the current element, \p pos, is safe. Removing
+ *       any other element during traversal may lead to a loop malfunction.
+ *
+ * \sa wl_list_for_each()
+ *
+ * \param pos Cursor that each list element will be assigned to
+ * \param tmp Temporary pointer of the same type as \p pos
+ * \param head Head of the list to iterate over
+ * \param member Name of the link member within the element struct
+ *
+ * \relates wl_list
+ */</doc>

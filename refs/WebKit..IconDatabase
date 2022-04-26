@@ -1,0 +1,72 @@
+<inh f='WebKit/WTF/Headers/wtf/ThreadSafeRefCounted.h' l='109' c='WTF::ThreadSafeRefCounted'/>
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/IconDatabase.h' l='33' ll='90'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/IconDatabase.h' l='33'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/IconDatabase.h' l='37' c='_ZN6WebKit12IconDatabase6createERKN3WTF6StringENS0_18AllowDatabaseWriteE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/IconDatabase.h' l='39' c='_ZN6WebKit12IconDatabase6createERKN3WTF6StringENS0_18AllowDatabaseWriteE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/IconDatabase.h' l='88'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/IconDatabase.h' l='89'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/IconDatabase.cpp' l='91' c='_ZN6WebKit12IconDatabaseC1ERKN3WTF6StringENS0_18AllowDatabaseWriteE'/>
+<size>256</size>
+<fun r='_ZN6WebKit12IconDatabase6createERKN3WTF6StringENS0_18AllowDatabaseWriteE'/>
+<fun r='_ZN6WebKit12IconDatabaseD1Ev'/>
+<fun r='_ZN6WebKit12IconDatabase10invalidateEv'/>
+<fun r='_ZN6WebKit12IconDatabase33checkIconURLAndSetPageURLIfNeededERKN3WTF6StringES4_NS0_18AllowDatabaseWriteEONS1_17CompletionHandlerIFvbbEEE'/>
+<fun r='_ZN6WebKit12IconDatabase18loadIconForPageURLERKN3WTF6StringENS0_18AllowDatabaseWriteEONS1_17CompletionHandlerIFvONS1_6RefPtrI14_cairo_surfaceNS1_12Raw15378774'/>
+<fun r='_ZN6WebKit12IconDatabase17iconURLForPageURLERKN3WTF6StringE'/>
+<fun r='_ZN6WebKit12IconDatabase17setIconForPageURLERKN3WTF6StringEPKhmS4_NS0_18AllowDatabaseWriteEONS1_17CompletionHandlerIFvbEEE'/>
+<fun r='_ZN6WebKit12IconDatabase5clearEON3WTF17CompletionHandlerIFvvEEE'/>
+<fun r='_ZN6WebKit12IconDatabaseC1ERKN3WTF6StringENS0_18AllowDatabaseWriteE'/>
+<fun r='_ZN6WebKit12IconDatabase20createTablesIfNeededEv'/>
+<fun r='_ZN6WebKit12IconDatabase27populatePageURLToIconURLMapEv'/>
+<fun r='_ZN6WebKit12IconDatabase15pruneTimerFiredEv'/>
+<fun r='_ZN6WebKit12IconDatabase15startPruneTimerEv'/>
+<fun r='_ZN6WebKit12IconDatabase15clearStatementsEv'/>
+<fun r='_ZN6WebKit12IconDatabase26clearLoadedIconsTimerFiredEv'/>
+<fun r='_ZN6WebKit12IconDatabase26startClearLoadedIconsTimerEv'/>
+<fun r='_ZN6WebKit12IconDatabase16iconIDForIconURLERKN3WTF6StringERb'/>
+<fun r='_ZN6WebKit12IconDatabase19setIconIDForPageURLElRKN3WTF6StringE'/>
+<fun r='_ZN6WebKit12IconDatabase8iconDataEl'/>
+<fun r='_ZN6WebKit12IconDatabase7addIconERKN3WTF6StringERKNS1_6VectorIhLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<fun r='_ZN6WebKit12IconDatabase19updateIconTimestampEll'/>
+<fun r='_ZN6WebKit12IconDatabase10deleteIconEl'/>
+<mbr r='WebKit::IconDatabase::m_workQueue' o='64' t='Ref&lt;WTF::WorkQueue&gt;'/>
+<mbr r='WebKit::IconDatabase::m_allowDatabaseWrite' o='128' t='WebKit::IconDatabase::AllowDatabaseWrite'/>
+<mbr r='WebKit::IconDatabase::m_db' o='192' t='WebCore::SQLiteDatabase'/>
+<mbr r='WebKit::IconDatabase::m_pageURLToIconURLMap' o='704' t='HashMap&lt;WTF::String, WTF::String&gt;'/>
+<mbr r='WebKit::IconDatabase::m_pageURLToIconURLMapLock' o='768' t='WTF::Lock'/>
+<mbr r='WebKit::IconDatabase::m_loadedIcons' o='832' t='HashMap&lt;WTF::String, std::pair&lt;WebCore::PlatformImagePtr, MonotonicTime&gt; &gt;'/>
+<mbr r='WebKit::IconDatabase::m_loadedIconsLock' o='896' t='WTF::Lock'/>
+<mbr r='WebKit::IconDatabase::m_iconIDForIconURLStatement' o='960' t='std::unique_ptr&lt;WebCore::SQLiteStatement&gt;'/>
+<mbr r='WebKit::IconDatabase::m_setIconIDForPageURLStatement' o='1024' t='std::unique_ptr&lt;WebCore::SQLiteStatement&gt;'/>
+<mbr r='WebKit::IconDatabase::m_iconDataStatement' o='1088' t='std::unique_ptr&lt;WebCore::SQLiteStatement&gt;'/>
+<mbr r='WebKit::IconDatabase::m_addIconStatement' o='1152' t='std::unique_ptr&lt;WebCore::SQLiteStatement&gt;'/>
+<mbr r='WebKit::IconDatabase::m_addIconDataStatement' o='1216' t='std::unique_ptr&lt;WebCore::SQLiteStatement&gt;'/>
+<mbr r='WebKit::IconDatabase::m_updateIconTimestampStatement' o='1280' t='std::unique_ptr&lt;WebCore::SQLiteStatement&gt;'/>
+<mbr r='WebKit::IconDatabase::m_deletePageURLsForIconStatement' o='1344' t='std::unique_ptr&lt;WebCore::SQLiteStatement&gt;'/>
+<mbr r='WebKit::IconDatabase::m_deleteIconDataStatement' o='1408' t='std::unique_ptr&lt;WebCore::SQLiteStatement&gt;'/>
+<mbr r='WebKit::IconDatabase::m_deleteIconStatement' o='1472' t='std::unique_ptr&lt;WebCore::SQLiteStatement&gt;'/>
+<mbr r='WebKit::IconDatabase::m_pruneIconsStatement' o='1536' t='std::unique_ptr&lt;WebCore::SQLiteStatement&gt;'/>
+<mbr r='WebKit::IconDatabase::m_pruneTimer' o='1600' t='std::unique_ptr&lt;RunLoop::Timer&lt;IconDatabase&gt; &gt;'/>
+<mbr r='WebKit::IconDatabase::m_clearLoadedIconsTimer' o='1664' t='RunLoop::Timer&lt;IconDatabase&gt;'/>
+<fun r='_ZN6WebKit12IconDatabaseC1ERKN3WTF6StringENS0_18AllowDatabaseWriteE'/>
+<fun r='_ZN6WebKit12IconDatabaseD1Ev'/>
+<fun r='_ZN6WebKit12IconDatabase20createTablesIfNeededEv'/>
+<fun r='_ZN6WebKit12IconDatabase27populatePageURLToIconURLMapEv'/>
+<fun r='_ZN6WebKit12IconDatabase15clearStatementsEv'/>
+<fun r='_ZN6WebKit12IconDatabase15pruneTimerFiredEv'/>
+<fun r='_ZN6WebKit12IconDatabase15startPruneTimerEv'/>
+<fun r='_ZN6WebKit12IconDatabase26clearLoadedIconsTimerFiredEv'/>
+<fun r='_ZN6WebKit12IconDatabase26startClearLoadedIconsTimerEv'/>
+<fun r='_ZN6WebKit12IconDatabase16iconIDForIconURLERKN3WTF6StringERb'/>
+<fun r='_ZN6WebKit12IconDatabase19setIconIDForPageURLElRKN3WTF6StringE'/>
+<fun r='_ZN6WebKit12IconDatabase8iconDataEl'/>
+<fun r='_ZN6WebKit12IconDatabase7addIconERKN3WTF6StringERKNS1_6VectorIhLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<fun r='_ZN6WebKit12IconDatabase19updateIconTimestampEll'/>
+<fun r='_ZN6WebKit12IconDatabase10deleteIconEl'/>
+<fun r='_ZN6WebKit12IconDatabase33checkIconURLAndSetPageURLIfNeededERKN3WTF6StringES4_NS0_18AllowDatabaseWriteEONS1_17CompletionHandlerIFvbbEEE'/>
+<fun r='_ZN6WebKit12IconDatabase18loadIconForPageURLERKN3WTF6StringENS0_18AllowDatabaseWriteEONS1_17CompletionHandlerIFvONS1_6RefPtrI14_cairo_surfaceNS1_12Raw15378774'/>
+<fun r='_ZN6WebKit12IconDatabase17iconURLForPageURLERKN3WTF6StringE'/>
+<fun r='_ZN6WebKit12IconDatabase17setIconForPageURLERKN3WTF6StringEPKhmS4_NS0_18AllowDatabaseWriteEONS1_17CompletionHandlerIFvbEEE'/>
+<fun r='_ZN6WebKit12IconDatabase5clearEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitFaviconDatabase.cpp' l='72'/>
+<size>256</size>

@@ -1,0 +1,21 @@
+<dec f='include/wayland-server-protocol.h' l='1890' type='void (*)(struct wl_client *, struct wl_resource *, uint32_t)'/>
+<offset>128</offset>
+<doc f='include/wayland-server-protocol.h' l='1871'>/**
+	 * set the available drag-and-drop actions
+	 *
+	 * Sets the actions that the source side client supports for this
+	 * operation. This request may trigger wl_data_source.action and
+	 * wl_data_offer.action events if the compositor needs to change
+	 * the selected action.
+	 *
+	 * The dnd_actions argument must contain only values expressed in
+	 * the wl_data_device_manager.dnd_actions enum, otherwise it will
+	 * result in a protocol error.
+	 *
+	 * This request must be made once only, and can only be made on
+	 * sources used in drag-and-drop, so it must be performed before
+	 * wl_data_device.start_drag. Attempting to use the source other
+	 * than for drag-and-drop will raise a protocol error.
+	 * @param dnd_actions actions supported by the data source
+	 * @since 3
+	 */</doc>

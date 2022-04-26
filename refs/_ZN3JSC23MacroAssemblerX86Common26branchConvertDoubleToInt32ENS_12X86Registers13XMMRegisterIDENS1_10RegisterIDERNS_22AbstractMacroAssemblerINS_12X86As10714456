@@ -1,0 +1,19 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssemblerX86Common.h' l='2030' ll='2052' type='void JSC::MacroAssemblerX86Common::branchConvertDoubleToInt32(JSC::AbstractMacroAssembler&lt;JSC::X86Assembler&gt;::FPRegisterID src, JSC::AbstractMacroAssembler&lt;JSC::X86Assembler&gt;::RegisterID dest, JSC::AbstractMacroAssembler&lt;JSC::X86Assembler&gt;::JumpList &amp; failureCases, JSC::AbstractMacroAssembler&lt;JSC::X86Assembler&gt;::FPRegisterID fpTemp, bool negZeroCheck = true)'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssemblerX86Common.h' l='2026'>// Convert &apos;src&apos; to an integer, and places the resulting &apos;dest&apos;.
+    // If the result is not representable as a 32 bit value, branch.
+    // May also branch for some values that are representable in 32 bits
+    // (specifically, in this case, 0).</doc>
+<def f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerX86Common.h' l='2030' ll='2052' type='void JSC::MacroAssemblerX86Common::branchConvertDoubleToInt32(JSC::AbstractMacroAssembler&lt;JSC::X86Assembler&gt;::FPRegisterID src, JSC::AbstractMacroAssembler&lt;JSC::X86Assembler&gt;::RegisterID dest, JSC::AbstractMacroAssembler&lt;JSC::X86Assembler&gt;::JumpList &amp; failureCases, JSC::AbstractMacroAssembler&lt;JSC::X86Assembler&gt;::FPRegisterID fpTemp, bool negZeroCheck = true)'/>
+<doc f='WebKit/Source/JavaScriptCore/assembler/MacroAssemblerX86Common.h' l='2026'>// Convert &apos;src&apos; to an integer, and places the resulting &apos;dest&apos;.
+    // If the result is not representable as a 32 bit value, branch.
+    // May also branch for some values that are representable in 32 bits
+    // (specifically, in this case, 0).</doc>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDivGenerator.cpp' l='116' u='c' c='_ZN3JSC15JITDivGenerator16generateFastPathERNS_12CCallHelpersE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1063' u='c' c='_ZN3JSC19floorThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1083' u='c' c='_ZN3JSC19floorThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1108' u='c' c='_ZN3JSC18ceilThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1131' u='c' c='_ZN3JSC19truncThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1170' u='c' c='_ZN3JSC19roundThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='2993' u='c' c='_ZN3JSC3DFG14SpeculativeJIT20compileDoubleAsInt32EPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='6582' u='c' c='_ZN3JSC3DFG14SpeculativeJIT20compileArithRoundingEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='6983' u='c' c='_ZN3JSC3DFG14SpeculativeJIT15compileArithPowEPNS0_4NodeE'/>

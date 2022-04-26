@@ -1,0 +1,12 @@
+<def f='WebKit/Source/WebCore/css/parser/CSSPropertyParserHelpers.cpp' l='2619' ll='2668' type='std::optional&lt;PositionCoordinates&gt; WebCore::CSSPropertyParserHelpers::backgroundPositionFromThreeValues(const std::array&lt;CSSPrimitiveValue *, 5&gt; &amp; values)'/>
+<use f='WebKit/Source/WebCore/css/parser/CSSPropertyParserHelpers.cpp' l='2748' u='c' c='_ZN7WebCore24CSSPropertyParserHelpers26consumePositionCoordinatesERNS_19CSSParserTokenRangeENS_13CSSParserModeENS0_13UnitlessQuirkENS0_14PositionSyntaxE'/>
+<doc f='WebKit/Source/WebCore/css/parser/CSSPropertyParserHelpers.cpp' l='2609'>// https://drafts.csswg.org/css-backgrounds-3/#propdef-background-position
+// background-position has special parsing rules, allowing a 3-value syntax:
+// &lt;bg-position&gt; =  [ left | center | right | top | bottom | &lt;length-percentage&gt; ]
+// |
+//   [ left | center | right | &lt;length-percentage&gt; ]
+//   [ top | center | bottom | &lt;length-percentage&gt; ]
+// |
+//   [ center | [ left | right ] &lt;length-percentage&gt;? ] &amp;&amp;
+//   [ center | [ top | bottom ] &lt;length-percentage&gt;? ]
+//</doc>

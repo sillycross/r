@@ -1,0 +1,18 @@
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGPromotedHeapLocation.h' l='48' ll='70'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPromotedHeapLocation.h' l='75' c='_ZN3JSC3DFG26PromotedLocationDescriptorC1ENS0_20PromotedLocationKindEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPromotedHeapLocation.h' l='91' c='_ZNK3JSC3DFG26PromotedLocationDescriptor4kindEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPromotedHeapLocation.h' l='135'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPromotedHeapLocation.h' l='148' c='_ZN3JSC3DFG20PromotedHeapLocationC1ENS0_20PromotedLocationKindEPNS0_4NodeEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPromotedHeapLocation.h' l='156' c='_ZN3JSC3DFG20PromotedHeapLocationC1ENS0_20PromotedLocationKindENS0_4EdgeEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPromotedHeapLocation.h' l='177' c='_ZNK3JSC3DFG20PromotedHeapLocation4kindEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPromotedHeapLocation.h' l='215' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC3DFG20PromotedLocationKindE'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGPromotedHeapLocation.h' l='39'>// Promoted locations are like heap locations but are meant to be more precise. A heap location is
+// applicable to CSE scenarios, where it makes sense to speak of a location very abstractly. A
+// promoted heap location is for cases where we speak of a specific object and the compiler knows
+// this object&apos;s identity - for example, the object allocation has been eliminated and we turned the
+// fields into local variables. Because these two cases have subtly different needs, we use subtly
+// different structures. One of the really significant differences is that promoted locations can be
+// spoken of using either a descriptor which does not refer to any Node*&apos;s or with a heap location,
+// which is a descriptor with a Node* base.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGNode.cpp' l='335' c='_ZN3JSC3DFG4Node26promotedLocationDescriptorEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPromotedHeapLocation.cpp' l='59' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC3DFG20PromotedLocationKindE'/>

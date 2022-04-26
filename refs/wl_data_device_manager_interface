@@ -1,0 +1,38 @@
+<dec f='include/wayland-client-protocol.h' l='368' type='const struct wl_interface'/>
+<dec f='include/wayland-server-protocol.h' l='371' type='const struct wl_interface'/>
+<def f='include/wayland-server-protocol.h' l='2265' ll='2286'/>
+<size>16</size>
+<doc f='include/wayland-client-protocol.h' l='354'>/**
+ * @defgroup iface_wl_data_device_manager The wl_data_device_manager interface
+ *
+ * The wl_data_device_manager is a singleton global object that
+ * provides access to inter-client data transfer mechanisms such as
+ * copy-and-paste and drag-and-drop.  These mechanisms are tied to
+ * a wl_seat and this interface lets a client get a wl_data_device
+ * corresponding to a wl_seat.
+ *
+ * Depending on the version bound, the objects created from the bound
+ * wl_data_device_manager object will have different requirements for
+ * functioning properly. See wl_data_source.set_actions,
+ * wl_data_offer.accept and wl_data_offer.finish for details.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='357'>/**
+ * @defgroup iface_wl_data_device_manager The wl_data_device_manager interface
+ *
+ * The wl_data_device_manager is a singleton global object that
+ * provides access to inter-client data transfer mechanisms such as
+ * copy-and-paste and drag-and-drop.  These mechanisms are tied to
+ * a wl_seat and this interface lets a client get a wl_data_device
+ * corresponding to a wl_seat.
+ *
+ * Depending on the version bound, the objects created from the bound
+ * wl_data_device_manager object will have different requirements for
+ * functioning properly. See wl_data_source.set_actions,
+ * wl_data_offer.accept and wl_data_offer.finish for details.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='2261'>/**
+ * @ingroup iface_wl_data_device_manager
+ * @struct wl_data_device_manager_interface
+ */</doc>
+<mbr r='wl_data_device_manager_interface::create_data_source' o='0' t='void (*)(struct wl_client *, struct wl_resource *, uint32_t)'/>
+<mbr r='wl_data_device_manager_interface::get_data_device' o='64' t='void (*)(struct wl_client *, struct wl_resource *, uint32_t, struct wl_resource *)'/>

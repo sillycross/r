@@ -1,0 +1,55 @@
+<inh f='WebKit/Source/WebCore/loader/ThreadableLoaderClient.h' l='39' c='WebCore::ThreadableLoaderClient'/>
+<def f='WebKit/Source/WebCore/loader/WorkerThreadableLoader.h' l='92' ll='128'/>
+<use f='WebKit/Source/WebCore/loader/WorkerThreadableLoader.h' l='136'/>
+<use f='WebKit/Source/WebCore/loader/WorkerThreadableLoader.cpp' l='59' c='_ZN7WebCore22WorkerThreadableLoaderC1ERNS_26WorkerOrWorkletGlobalScopeERNS_22ThreadableLoaderClientERKN3WTF6StringEONS_15ResourceRequestERKNS_23Thread13255484'/>
+<use f='WebKit/Source/WebCore/loader/WorkerThreadableLoader.cpp' l='161' c='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge7destroyEv'/>
+<size>272</size>
+<doc f='WebKit/Source/WebCore/loader/WorkerThreadableLoader.h' l='74'>// Creates a loader on the main thread and bridges communication between
+        // the main thread and the worker context&apos;s thread where WorkerThreadableLoader runs.
+        //
+        // Regarding the bridge and lifetimes of items used in callbacks, there are a few cases:
+        //
+        // all cases. All tasks posted from the worker context&apos;s thread are ok because
+        //    the last task posted always is &quot;mainThreadDestroy&quot;, so MainThreadBridge is
+        //    around for all tasks that use it on the main thread.
+        //
+        // case 1. worker.terminate is called.
+        //    In this case, no more tasks are posted from the worker object&apos;s thread to the worker
+        //    context&apos;s thread -- WorkerOrWorkletGlobalScopeProxy implementation enforces this.
+        //
+        // case 2. xhr gets aborted and the worker context continues running.
+        //    The ThreadableLoaderClientWrapper has the underlying client cleared, so no more calls
+        //    go through it.  All tasks posted from the worker object&apos;s thread to the worker context&apos;s
+        //    thread contain the RefPtr&lt;ThreadableLoaderClientWrapper&gt; object, so the
+        //    ThreadableLoaderClientWrapper instance is there until all tasks are executed.</doc>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridgeC1ERNS_29ThreadableLoaderClientWrapperERNS_17WorkerLoaderProxyERKN3WTF6StringEONS_15ResourceReque10732898'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge6cancelEv'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge7destroyEv'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge13computeIsDoneEv'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge18clearClientWrapperEv'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge11didSendDataEyy'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge14didReceiveDataEPKhi'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge16didFinishLoadingEm'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge7didFailERKNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge15didFinishTimingERKNS_14ResourceTimingE'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge12notifyIsDoneEb'/>
+<mbr r='WebCore::WorkerThreadableLoader::MainThreadBridge::m_mainThreadLoader' o='64' t='RefPtr&lt;WebCore::DocumentThreadableLoader&gt;'/>
+<mbr r='WebCore::WorkerThreadableLoader::MainThreadBridge::m_loadingFinished' o='128' t='bool'/>
+<mbr r='WebCore::WorkerThreadableLoader::MainThreadBridge::m_workerClientWrapper' o='192' t='RefPtr&lt;WebCore::ThreadableLoaderClientWrapper&gt;'/>
+<mbr r='WebCore::WorkerThreadableLoader::MainThreadBridge::m_loaderProxy' o='256' t='WebCore::WorkerLoaderProxy &amp;'/>
+<mbr r='WebCore::WorkerThreadableLoader::MainThreadBridge::m_taskMode' o='320' t='WTF::String'/>
+<mbr r='WebCore::WorkerThreadableLoader::MainThreadBridge::m_workerRequestIdentifier' o='384' t='unsigned long'/>
+<mbr r='WebCore::WorkerThreadableLoader::MainThreadBridge::m_networkLoadMetrics' o='448' t='WebCore::NetworkLoadMetrics'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridgeC1ERNS_29ThreadableLoaderClientWrapperERNS_17WorkerLoaderProxyERKN3WTF6StringEONS_15ResourceReque10732898'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge7destroyEv'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge6cancelEv'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge13computeIsDoneEv'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge12notifyIsDoneEb'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge18clearClientWrapperEv'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge11didSendDataEyy'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge18didReceiveResponseEmRKNS_16ResourceResponseE'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge14didReceiveDataEPKhi'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge16didFinishLoadingEm'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge7didFailERKNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore22WorkerThreadableLoader16MainThreadBridge15didFinishTimingERKNS_14ResourceTimingE'/>

@@ -1,0 +1,10 @@
+<dec f='WebKit/Source/JavaScriptCore/wasm/WasmOperations.h' l='62' type='JSC::JSArray * JSC::Wasm::operationAllocateResultsArray(JSC::CallFrame * , Wasm::Instance * , const JSC::Wasm::Signature * , JSC::IndexingType , JSC::JSValue * )'/>
+<def f='WebKit/Source/JavaScriptCore/wasm/WasmOperations.cpp' l='590' ll='619' macro='1' type='JSC::JSArray * JSC::Wasm::operationAllocateResultsArray(JSC::CallFrame * callFrame, Wasm::Instance * instance, const JSC::Wasm::Signature * signature, JSC::IndexingType indexingType, JSC::JSValue * stackPointerFromCallee)'/>
+<doc f='WebKit/Source/JavaScriptCore/wasm/WasmOperations.cpp' l='587'>// FIXME: It would be much easier to inline this when we have a global GC, which could probably mean we could avoid
+// spilling the results onto the stack.
+// Saved result registers should be placed on the stack just above the last stack result.</doc>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSToWasm.cpp' l='80' c='_ZN3JSC4Wasm16marshallJSResultERNS_12CCallHelpersERKNS0_9SignatureERKNS0_15CallInformationERKNS_20RegisterAtOffsetListE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSToWasm.cpp' l='140' c='_ZN3JSC4Wasm16marshallJSResultERNS_12CCallHelpersERKNS0_9SignatureERKNS0_15CallInformationERKNS_20RegisterAtOffsetListE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSToWasm.cpp' l='164' c='_ZN3JSC4Wasm16marshallJSResultERNS_12CCallHelpersERKNS0_9SignatureERKNS0_15CallInformationERKNS_20RegisterAtOffsetListE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSToWasm.cpp' l='168' u='m' c='_ZN3JSC4Wasm16marshallJSResultERNS_12CCallHelpersERKNS0_9SignatureERKNS0_15CallInformationERKNS_20RegisterAtOffsetListE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSToWasm.cpp' l='169' u='r' c='_ZN3JSC4Wasm16marshallJSResultERNS_12CCallHelpersERKNS0_9SignatureERKNS0_15CallInformationERKNS_20RegisterAtOffsetListE'/>

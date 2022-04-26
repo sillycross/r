@@ -1,0 +1,148 @@
+<def f='WebKit/bmalloc/Headers/bmalloc/Vector.h' l='40' ll='86'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Vector.h' l='89' c='_ZN7bmalloc6VectorC1Ev'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Vector.h' l='97' c='_ZN7bmalloc6VectorC1EONS_6VectorIT_EE'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Vector.h' l='108' c='_ZN7bmalloc6VectorD1Ev'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Vector.h' l='115' c='_ZN7bmalloc6VectorixEm'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Vector.h' l='122' c='_ZN7bmalloc6Vector4pushERKT_'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Vector.h' l='130' c='_ZN7bmalloc6Vector3popEv'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Vector.h' l='139' c='_ZN7bmalloc6Vector3popEm'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Vector.h' l='147' c='_ZN7bmalloc6Vector6insertEPT_RKS1_'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Vector.h' l='159' c='_ZN7bmalloc6Vector6removeEPT_'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Vector.h' l='173' c='_ZN7bmalloc6Vector4growEm'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Vector.h' l='181' c='_ZN7bmalloc6Vector6shrinkEm'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Vector.h' l='190' c='_ZN7bmalloc6Vector6resizeEm'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Vector.h' l='199' c='_ZN7bmalloc6Vector16reallocateBufferEm'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Vector.h' l='215' c='_ZN7bmalloc6Vector14shrinkCapacityEv'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Vector.h' l='222' c='_ZN7bmalloc6Vector12growCapacityEv'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Vector.h' l='229' c='_ZN7bmalloc6Vector11shrinkToFitEv'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/LargeMap.h' l='42' c='_ZN7bmalloc8LargeMap6rangesEv'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/LargeMap.h' l='49'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Map.h' l='107'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Scavenger.h' l='121'/>
+<fun r='_ZN7bmalloc6VectorC1Ev'/>
+<fun r='_ZN7bmalloc6VectorC1EONS_6VectorIT_EE'/>
+<fun r='_ZN7bmalloc6VectorD1Ev'/>
+<fun r='_ZN7bmalloc6Vector5beginEv'/>
+<fun r='_ZN7bmalloc6Vector3endEv'/>
+<fun r='_ZN7bmalloc6Vector4sizeEv'/>
+<fun r='_ZN7bmalloc6Vector8capacityEv'/>
+<fun r='_ZN7bmalloc6VectorixEm'/>
+<fun r='_ZN7bmalloc6Vector4lastEv'/>
+<fun r='_ZN7bmalloc6Vector4pushERKT_'/>
+<fun r='_ZN7bmalloc6Vector3popEv'/>
+<fun r='_ZN7bmalloc6Vector3popEm'/>
+<fun r='_ZN7bmalloc6Vector3popEPKT_'/>
+<fun r='_ZN7bmalloc6Vector6insertEPT_RKS1_'/>
+<fun r='_ZN7bmalloc6Vector6removeEPT_'/>
+<fun r='_ZN7bmalloc6Vector4growEm'/>
+<fun r='_ZN7bmalloc6Vector6shrinkEm'/>
+<fun r='_ZN7bmalloc6Vector6resizeEm'/>
+<fun r='_ZN7bmalloc6Vector11shrinkToFitEv'/>
+<smbr r='bmalloc::Vector::growFactor' t='const size_t'/>
+<smbr r='bmalloc::Vector::shrinkFactor' t='const size_t'/>
+<fun r='_ZN7bmalloc6Vector15initialCapacityEv'/>
+<fun r='_ZN7bmalloc6Vector12growCapacityEv'/>
+<fun r='_ZN7bmalloc6Vector14shrinkCapacityEv'/>
+<fun r='_ZN7bmalloc6Vector16reallocateBufferEm'/>
+<mbr r='bmalloc::Vector::m_buffer' t='T *'/>
+<mbr r='bmalloc::Vector::m_size' t='size_t'/>
+<mbr r='bmalloc::Vector::m_capacity' t='size_t'/>
+<fun r='_ZN7bmalloc6VectorC1Ev'/>
+<fun r='_ZN7bmalloc6VectorC1EONS_6VectorIT_EE'/>
+<fun r='_ZN7bmalloc6VectorD1Ev'/>
+<fun r='_ZN7bmalloc6VectorixEm'/>
+<fun r='_ZN7bmalloc6Vector4pushERKT_'/>
+<fun r='_ZN7bmalloc6Vector3popEv'/>
+<fun r='_ZN7bmalloc6Vector3popEm'/>
+<fun r='_ZN7bmalloc6Vector6insertEPT_RKS1_'/>
+<fun r='_ZN7bmalloc6Vector6removeEPT_'/>
+<fun r='_ZN7bmalloc6Vector4growEm'/>
+<fun r='_ZN7bmalloc6Vector6shrinkEm'/>
+<fun r='_ZN7bmalloc6Vector6resizeEm'/>
+<fun r='_ZN7bmalloc6Vector16reallocateBufferEm'/>
+<fun r='_ZN7bmalloc6Vector14shrinkCapacityEv'/>
+<fun r='_ZN7bmalloc6Vector12growCapacityEv'/>
+<fun r='_ZN7bmalloc6Vector11shrinkToFitEv'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/IsoDirectory.h' l='78' c='_ZN7bmalloc12IsoDirectory8scavengeERKSt11scoped_lockIJNS_5MutexEEERNS_6VectorINS_16DeferredDecommitEEE'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/IsoDirectory.h' l='84' c='_ZN7bmalloc12IsoDirectory12scavengePageERKSt11scoped_lockIJNS_5MutexEEEmRNS_6VectorINS_16DeferredDecommitEEE'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/IsoHeapImpl.h' l='51' c='_ZN7bmalloc15IsoHeapImplBase8scavengeERNS_6VectorINS_16DeferredDecommitEEE'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/IsoHeapImpl.h' l='54' c='_ZN7bmalloc15IsoHeapImplBase16finishScavengingERNS_6VectorINS_16DeferredDecommitEEE'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/IsoHeapImpl.h' l='111' c='_ZN7bmalloc11IsoHeapImpl8scavengeERNS_6VectorINS_16DeferredDecommitEEE'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/IsoHeapImplInlines.h' l='119' c='_ZN7bmalloc11IsoHeapImpl8scavengeERNS_6VectorINS_16DeferredDecommitEEE'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/IsoDirectoryInlines.h' l='129' c='_ZN7bmalloc12IsoDirectory12scavengePageERKSt11scoped_lockIJNS_5MutexEEEmRNS_6VectorINS_16DeferredDecommitEEE'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/IsoDirectoryInlines.h' l='138' c='_ZN7bmalloc12IsoDirectory8scavengeERKSt11scoped_lockIJNS_5MutexEEERNS_6VectorINS_16DeferredDecommitEEE'/>
+<def f='WebKit/Source/bmalloc/bmalloc/Vector.h' l='40' ll='86'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Vector.h' l='89' c='_ZN7bmalloc6VectorC1Ev'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Vector.h' l='97' c='_ZN7bmalloc6VectorC1EONS_6VectorIT_EE'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Vector.h' l='108' c='_ZN7bmalloc6VectorD1Ev'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Vector.h' l='115' c='_ZN7bmalloc6VectorixEm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Vector.h' l='122' c='_ZN7bmalloc6Vector4pushERKT_'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Vector.h' l='130' c='_ZN7bmalloc6Vector3popEv'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Vector.h' l='139' c='_ZN7bmalloc6Vector3popEm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Vector.h' l='147' c='_ZN7bmalloc6Vector6insertEPT_RKS1_'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Vector.h' l='159' c='_ZN7bmalloc6Vector6removeEPT_'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Vector.h' l='173' c='_ZN7bmalloc6Vector4growEm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Vector.h' l='181' c='_ZN7bmalloc6Vector6shrinkEm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Vector.h' l='190' c='_ZN7bmalloc6Vector6resizeEm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Vector.h' l='199' c='_ZN7bmalloc6Vector16reallocateBufferEm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Vector.h' l='215' c='_ZN7bmalloc6Vector14shrinkCapacityEv'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Vector.h' l='222' c='_ZN7bmalloc6Vector12growCapacityEv'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Vector.h' l='229' c='_ZN7bmalloc6Vector11shrinkToFitEv'/>
+<use f='WebKit/Source/bmalloc/bmalloc/LargeMap.h' l='42' c='_ZN7bmalloc8LargeMap6rangesEv'/>
+<use f='WebKit/Source/bmalloc/bmalloc/LargeMap.h' l='49'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Map.h' l='107'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Scavenger.h' l='121'/>
+<use f='WebKit/Source/bmalloc/bmalloc/IsoDirectory.h' l='78' c='_ZN7bmalloc12IsoDirectory8scavengeERKSt11scoped_lockIJNS_5MutexEEERNS_6VectorINS_16DeferredDecommitEEE'/>
+<use f='WebKit/Source/bmalloc/bmalloc/IsoDirectory.h' l='84' c='_ZN7bmalloc12IsoDirectory12scavengePageERKSt11scoped_lockIJNS_5MutexEEEmRNS_6VectorINS_16DeferredDecommitEEE'/>
+<use f='WebKit/Source/bmalloc/bmalloc/IsoHeapImpl.h' l='51' c='_ZN7bmalloc15IsoHeapImplBase8scavengeERNS_6VectorINS_16DeferredDecommitEEE'/>
+<use f='WebKit/Source/bmalloc/bmalloc/IsoHeapImpl.h' l='54' c='_ZN7bmalloc15IsoHeapImplBase16finishScavengingERNS_6VectorINS_16DeferredDecommitEEE'/>
+<use f='WebKit/Source/bmalloc/bmalloc/IsoHeapImpl.h' l='111' c='_ZN7bmalloc11IsoHeapImpl8scavengeERNS_6VectorINS_16DeferredDecommitEEE'/>
+<fun r='_ZN7bmalloc6VectorC1Ev'/>
+<fun r='_ZN7bmalloc6VectorC1EONS_6VectorIT_EE'/>
+<fun r='_ZN7bmalloc6VectorD1Ev'/>
+<fun r='_ZN7bmalloc6Vector5beginEv'/>
+<fun r='_ZN7bmalloc6Vector3endEv'/>
+<fun r='_ZN7bmalloc6Vector4sizeEv'/>
+<fun r='_ZN7bmalloc6Vector8capacityEv'/>
+<fun r='_ZN7bmalloc6VectorixEm'/>
+<fun r='_ZN7bmalloc6Vector4lastEv'/>
+<fun r='_ZN7bmalloc6Vector4pushERKT_'/>
+<fun r='_ZN7bmalloc6Vector3popEv'/>
+<fun r='_ZN7bmalloc6Vector3popEm'/>
+<fun r='_ZN7bmalloc6Vector3popEPKT_'/>
+<fun r='_ZN7bmalloc6Vector6insertEPT_RKS1_'/>
+<fun r='_ZN7bmalloc6Vector6removeEPT_'/>
+<fun r='_ZN7bmalloc6Vector4growEm'/>
+<fun r='_ZN7bmalloc6Vector6shrinkEm'/>
+<fun r='_ZN7bmalloc6Vector6resizeEm'/>
+<fun r='_ZN7bmalloc6Vector11shrinkToFitEv'/>
+<smbr r='bmalloc::Vector::growFactor' t='const size_t'/>
+<smbr r='bmalloc::Vector::shrinkFactor' t='const size_t'/>
+<fun r='_ZN7bmalloc6Vector15initialCapacityEv'/>
+<fun r='_ZN7bmalloc6Vector12growCapacityEv'/>
+<fun r='_ZN7bmalloc6Vector14shrinkCapacityEv'/>
+<fun r='_ZN7bmalloc6Vector16reallocateBufferEm'/>
+<mbr r='bmalloc::Vector::m_buffer' t='T *'/>
+<mbr r='bmalloc::Vector::m_size' t='size_t'/>
+<mbr r='bmalloc::Vector::m_capacity' t='size_t'/>
+<fun r='_ZN7bmalloc6VectorC1Ev'/>
+<fun r='_ZN7bmalloc6VectorC1EONS_6VectorIT_EE'/>
+<fun r='_ZN7bmalloc6VectorD1Ev'/>
+<fun r='_ZN7bmalloc6VectorixEm'/>
+<fun r='_ZN7bmalloc6Vector4pushERKT_'/>
+<fun r='_ZN7bmalloc6Vector3popEv'/>
+<fun r='_ZN7bmalloc6Vector3popEm'/>
+<fun r='_ZN7bmalloc6Vector6insertEPT_RKS1_'/>
+<fun r='_ZN7bmalloc6Vector6removeEPT_'/>
+<fun r='_ZN7bmalloc6Vector4growEm'/>
+<fun r='_ZN7bmalloc6Vector6shrinkEm'/>
+<fun r='_ZN7bmalloc6Vector6resizeEm'/>
+<fun r='_ZN7bmalloc6Vector16reallocateBufferEm'/>
+<fun r='_ZN7bmalloc6Vector14shrinkCapacityEv'/>
+<fun r='_ZN7bmalloc6Vector12growCapacityEv'/>
+<fun r='_ZN7bmalloc6Vector11shrinkToFitEv'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Gigacage.cpp' l='77'/>
+<use f='WebKit/Source/bmalloc/bmalloc/HeapConstants.h' l='59'/>
+<use f='WebKit/Source/bmalloc/bmalloc/IsoHeapImpl.cpp' l='50' c='_ZN7bmalloc15IsoHeapImplBase11scavengeNowEv'/>
+<use f='WebKit/Source/bmalloc/bmalloc/IsoHeapImpl.cpp' l='55' c='_ZN7bmalloc15IsoHeapImplBase16finishScavengingERNS_6VectorINS_16DeferredDecommitEEE'/>
+<use f='WebKit/Source/bmalloc/bmalloc/IsoHeapImplInlines.h' l='119' c='_ZN7bmalloc11IsoHeapImpl8scavengeERNS_6VectorINS_16DeferredDecommitEEE'/>

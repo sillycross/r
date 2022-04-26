@@ -1,0 +1,42 @@
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExitBase.h' l='41' ll='89'/>
+<ovr f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.h' l='122' c='JSC::FTL::OSRExit'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.h' l='122'/>
+<size>32</size>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExitBase.h' l='38'>// Provides for the OSR exit profiling functionality that is common between the DFG
+// and the FTL.</doc>
+<fun r='_ZN3JSC3DFG11OSRExitBaseC1ENS_8ExitKindENS_10CodeOriginES3_bj'/>
+<mbr r='JSC::DFG::OSRExitBase::m_count' o='0' t='uint32_t'/>
+<mbr r='JSC::DFG::OSRExitBase::m_kind' o='32' t='JSC::ExitKind'/>
+<mbr r='JSC::DFG::OSRExitBase::m_wasHoisted' o='40' t='bool'/>
+<mbr r='JSC::DFG::OSRExitBase::m_codeOrigin' o='64' t='JSC::CodeOrigin'/>
+<mbr r='JSC::DFG::OSRExitBase::m_codeOriginForExitProfile' o='128' t='JSC::CodeOrigin'/>
+<mbr r='JSC::DFG::OSRExitBase::m_exceptionHandlerCallSiteIndex' o='192' t='JSC::CallSiteIndex'/>
+<mbr r='JSC::DFG::OSRExitBase::m_dfgNodeIndex' o='224' t='uint32_t'/>
+<fun r='_ZNK3JSC3DFG11OSRExitBase18isExceptionHandlerEv'/>
+<fun r='_ZNK3JSC3DFG11OSRExitBase22isGenericUnwindHandlerEv'/>
+<fun r='_ZNK3JSC3DFG11OSRExitBase28isExitingToCheckpointHandlerEv'/>
+<fun r='_ZN3JSC3DFG11OSRExitBase32considerAddingAsFrequentExitSiteEPNS_9CodeBlockENS_14ExitingJITTypeE'/>
+<fun r='_ZN3JSC3DFG11OSRExitBase36considerAddingAsFrequentExitSiteSlowEPNS_9CodeBlockENS_14ExitingJITTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.h' l='109' c='_ZN3JSC3DFG12OSRExitStateC1ERNS0_11OSRExitBaseEPNS_9CodeBlockES5_RNS_8OperandsINS_13ValueRecoveryEN3WTF6VectorIS7_Lm0ENS8_20UnsafeVectorOverflowELm16E16034775'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.h' l='124'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.h' l='143' c='_ZN3JSC3DFG36operationMaterializeOSRExitSideStateEPNS_2VMEPKNS0_11OSRExitBaseEPl'/>
+<ovr f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.h' l='149' c='JSC::DFG::OSRExit'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.h' l='149'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.cpp' l='96' c='_ZN3JSC3FTL7OSRExitC1EPNS0_17OSRExitDescriptorENS_8ExitKindENS_10CodeOriginES5_bjON3WTF11FixedVectorINS_2B38ValueRepEEE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.h' l='339' c='_ZN3JSC3DFG33operationTriggerReoptimizationNowEPNS_9CodeBlockES2_PNS0_11OSRExitBaseE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExitCompilerCommon.h' l='39' c='_ZN3JSC3DFG16handleExitCountsERNS_2VMERNS_12CCallHelpersERKNS0_11OSRExitBaseE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExitCompilerCommon.h' l='40' c='_ZN3JSC3DFG22reifyInlinedCallFramesERNS_12CCallHelpersERKNS0_11OSRExitBaseE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExitCompilerCommon.h' l='41' c='_ZN3JSC3DFG21adjustAndJumpToTargetERNS_2VMERNS_12CCallHelpersERKNS0_11OSRExitBaseE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.cpp' l='51' c='_ZN3JSC3DFG7OSRExitC1ENS_8ExitKindENS_13JSValueSourceENS_28MethodOfGettingAValueProfileEPNS0_14SpeculativeJITEjj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.cpp' l='225' c='_ZN3JSC3DFG36operationMaterializeOSRExitSideStateEPNS_2VMEPKNS0_11OSRExitBaseEPl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.cpp' l='227' c='_ZN3JSC3DFG36operationMaterializeOSRExitSideStateEPNS_2VMEPKNS0_11OSRExitBaseEPl'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExitCompilerCommon.cpp' l='41' c='_ZN3JSC3DFG16handleExitCountsERNS_2VMERNS_12CCallHelpersERKNS0_11OSRExitBaseE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExitCompilerCommon.cpp' l='262' c='_ZN3JSC3DFG22reifyInlinedCallFramesERNS_12CCallHelpersERKNS0_11OSRExitBaseE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExitCompilerCommon.cpp' l='367' c='_ZN3JSC3DFG21adjustAndJumpToTargetERNS_2VMERNS_12CCallHelpersERKNS0_11OSRExitBaseE'/>
+<size>32</size>
+<fun r='_ZN3JSC3DFG11OSRExitBase36considerAddingAsFrequentExitSiteSlowEPNS_9CodeBlockENS_14ExitingJITTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='3730' c='_ZN3JSC3DFG33operationTriggerReoptimizationNowEPNS_9CodeBlockES2_PNS0_11OSRExitBaseE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2615' c='_ZN3JSC9CodeBlock46updateOSRExitCounterAndCheckIfNeedToReoptimizeERNS_3DFG12OSRExitStateE'/>
+<size>32</size>

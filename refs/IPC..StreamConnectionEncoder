@@ -1,0 +1,29 @@
+<def f='WebKit/Source/WebKit/Platform/IPC/StreamConnectionEncoder.h' l='40' ll='94'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamConnectionEncoder.h' l='72' c='_ZN3IPC23StreamConnectionEncoderlsEOT_'/>
+<size>24</size>
+<doc f='WebKit/Source/WebKit/Platform/IPC/StreamConnectionEncoder.h' l='36'>// IPC encoder which:
+//  - Encodes to a caller buffer with fixed size, does not resize, stops when size runs out
+//  - Does not initialize alignment gaps
+//</doc>
+<smbr r='IPC::StreamConnectionEncoder::minimumMessageSize' t='const size_t'/>
+<smbr r='IPC::StreamConnectionEncoder::messageAlignment' t='const size_t'/>
+<smbr r='IPC::StreamConnectionEncoder::isIPCEncoder' t='const bool'/>
+<fun r='_ZN3IPC23StreamConnectionEncoderC1ENS_11MessageNameEPhm'/>
+<fun r='_ZN3IPC23StreamConnectionEncoderD1Ev'/>
+<fun r='_ZN3IPC23StreamConnectionEncoder21encodeFixedLengthDataEPKhmm'/>
+<fun r='_ZN3IPC23StreamConnectionEncoderlsEOT_'/>
+<fun r='_ZNK3IPC23StreamConnectionEncoder4sizeEv'/>
+<fun r='_ZNK3IPC23StreamConnectionEncoder7isValidEv'/>
+<fun r='_ZNK3IPC23StreamConnectionEncodercvbEv'/>
+<fun r='_ZN3IPC23StreamConnectionEncoder7reserveEmm'/>
+<mbr r='IPC::StreamConnectionEncoder::m_buffer' o='0' t='uint8_t *'/>
+<mbr r='IPC::StreamConnectionEncoder::m_bufferCapacity' o='64' t='size_t'/>
+<mbr r='IPC::StreamConnectionEncoder::m_encodedSize' o='128' t='size_t'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamClientConnection.h' l='130' c='_ZN3IPC22StreamClientConnection13trySendStreamERT_RNS0_4SpanE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamClientConnection.h' l='168' c='_ZN3IPC22StreamClientConnection17trySendSyncStreamERT_RNS1_5ReplyENS_7TimeoutERNS0_4SpanE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamClientConnection.h' l='207' c='_ZN3IPC22StreamClientConnection28trySendDestinationIDIfNeededEmNS_7TimeoutE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamClientConnection.h' l='221' c='_ZN3IPC22StreamClientConnection29sendProcessOutOfStreamMessageEONS0_4SpanE'/>
+<size>24</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamServerConnection.h' l='111' c='_ZN3IPC26StreamServerConnectionBase13sendSyncReplyEN3WTF16ObjectIdentifierINS_10Connection17SyncRequestIDTypeEEEDpOT0_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamServerConnection.h' l='115' c='_ZN3IPC26StreamServerConnectionBase13sendSyncReplyEN3WTF16ObjectIdentifierINS_10Connection17SyncRequestIDTypeEEEDpOT0_'/>
+<size>24</size>

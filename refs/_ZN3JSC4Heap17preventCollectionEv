@@ -1,0 +1,20 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='379' type='void JSC::Heap::preventCollection()'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='372'>// This is a much stronger kind of stopping of the collector, and it may require waiting for a
+    // while. This is meant to be a legacy API for clients of collectAllGarbage that expect that there
+    // is no GC before or after that function call. After calling this, you are free to start GCs
+    // yourself but you can be sure that none are running.
+    //
+    // This both prevents new collections from being started asynchronously and waits for any
+    // outstanding collections to complete.</doc>
+<dec f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='379' type='void JSC::Heap::preventCollection()'/>
+<doc f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='372'>// This is a much stronger kind of stopping of the collector, and it may require waiting for a
+    // while. This is meant to be a legacy API for clients of collectAllGarbage that expect that there
+    // is no GC before or after that function call. After calling this, you are free to start GCs
+    // yourself but you can be sure that none are running.
+    //
+    // This both prevents new collections from being started asynchronously and waits for any
+    // outstanding collections to complete.</doc>
+<use f='WebKit/Source/JavaScriptCore/heap/PreventCollectionScope.h' l='37' u='c' c='_ZN3JSC22PreventCollectionScopeC1ERNS_4HeapE'/>
+<def f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='2954' ll='2971' type='void JSC::Heap::preventCollection()'/>
+<doc f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='2952'>// Use WTF_IGNORES_THREAD_SAFETY_ANALYSIS because this function conditionally locks m_collectContinuouslyLock,
+// which is not supported by analysis.</doc>

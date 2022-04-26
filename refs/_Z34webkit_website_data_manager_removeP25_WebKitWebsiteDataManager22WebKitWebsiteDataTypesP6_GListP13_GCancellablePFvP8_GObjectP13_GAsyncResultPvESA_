@@ -1,0 +1,18 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebsiteDataManager.cpp' l='1079' ll='1105' type='void webkit_website_data_manager_remove(WebKitWebsiteDataManager * manager, WebKitWebsiteDataTypes types, GList * websiteData, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer userData)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebsiteDataManager.cpp' l='1062'>/**
+ * webkit_website_data_manager_remove:
+ * @manager: a #WebKitWebsiteDataManager
+ * @types: #WebKitWebsiteDataTypes
+ * @website_data: (element-type WebKitWebsiteData): a #GList of #WebKitWebsiteData
+ * @cancellable: (allow-none): a #GCancellable or %NULL to ignore
+ * @callback: (scope async): a #GAsyncReadyCallback to call when the request is satisfied
+ * @user_data: (closure): the data to pass to callback function
+ *
+ * Asynchronously removes the website data of the for the given @types for websites in the given @website_data list.
+ * Use webkit_website_data_manager_clear() if you want to remove the website data for all sites.
+ *
+ * When the operation is finished, @callback will be called. You can then call
+ * webkit_website_data_manager_remove_finish() to get the result of the operation.
+ *
+ * Since: 2.16
+ */</doc>

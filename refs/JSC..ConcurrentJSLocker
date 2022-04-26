@@ -1,0 +1,426 @@
+<inh f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ConcurrentJSLock.h' l='39' c='JSC::ConcurrentJSLockerBase'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ConcurrentJSLock.h' l='97' ll='129'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='1379' c='_ZNK3JSC8JSObject21getDirectConcurrentlyEPNS_9StructureEi'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/TypeSet.h' l='100' c='_ZNK3JSC7TypeSet12structureSetERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='478' c='_ZN3JSC11SymbolTable4findERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='488' c='_ZN3JSC11SymbolTable3getERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='495' c='_ZN3JSC11SymbolTable3getEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='499' c='_ZN3JSC11SymbolTable9inlineGetERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='506' c='_ZN3JSC11SymbolTable9inlineGetEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='510' c='_ZN3JSC11SymbolTable5beginERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='515' c='_ZN3JSC11SymbolTable3endERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='525' c='_ZNK3JSC11SymbolTable4sizeERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='532' c='_ZNK3JSC11SymbolTable4sizeEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='571' c='_ZN3JSC11SymbolTable19takeNextScopeOffsetERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='580' c='_ZN3JSC11SymbolTable19takeNextScopeOffsetEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='585' c='_ZN3JSC11SymbolTable3addERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplEOT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='596' c='_ZN3JSC11SymbolTable3addEPN3WTF17UniquedStringImplEOT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='619' c='_ZN3JSC11SymbolTable3setERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplEOT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='629' c='_ZN3JSC11SymbolTable3setEPN3WTF17UniquedStringImplEOT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='633' c='_ZN3JSC11SymbolTable8containsERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='640' c='_ZN3JSC11SymbolTable8containsEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='698' c='_ZN3JSC11SymbolTable12localToEntryERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='699' c='_ZN3JSC11SymbolTable8entryForERKNS_18ConcurrentJSLockerENS_11ScopeOffsetE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='701' c='_ZN3JSC11SymbolTable19uniqueIDForVariableERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplERNS_2VME'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='702' c='_ZN3JSC11SymbolTable17uniqueIDForOffsetERKNS_18ConcurrentJSLockerENS_9VarOffsetERNS_2VME'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='703' c='_ZN3JSC11SymbolTable22globalTypeSetForOffsetERKNS_18ConcurrentJSLockerENS_9VarOffsetERNS_2VME'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='704' c='_ZN3JSC11SymbolTable24globalTypeSetForVariableERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplERNS_2VME'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='724' c='_ZN3JSC11SymbolTable23prepareForTypeProfilingERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSSymbolTableObject.h' l='84' c='_ZN3JSC14symbolTableGetEPT_NS_12PropertyNameERNS_12PropertySlotE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSSymbolTableObject.h' l='105' c='_ZN3JSC14symbolTableGetEPT_NS_12PropertyNameERNS_16SymbolTableEntryERNS_18PropertyDescriptorE'/>
+<size>32</size>
+<fun r='_ZN3JSC18ConcurrentJSLockerC1ERN3WTF4LockE'/>
+<fun r='_ZN3JSC18ConcurrentJSLockerC1EPN3WTF4LockE'/>
+<fun r='_ZN3JSC18ConcurrentJSLockerC1EN3WTF21NoLockingNecessaryTagE'/>
+<fun r='_ZN3JSC18ConcurrentJSLockerC1Ei'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ArrayProfile.h' l='217' c='_ZN3JSC12ArrayProfile24computeUpdatedPredictionERKNS_18ConcurrentJSLockerEPNS_9CodeBlockE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ArrayProfile.h' l='218' c='_ZN3JSC12ArrayProfile24computeUpdatedPredictionERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_9StructureE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ArrayProfile.h' l='223' c='_ZNK3JSC12ArrayProfile18observedArrayModesERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ArrayProfile.h' l='224' c='_ZNK3JSC12ArrayProfile27mayInterceptIndexedAccessesERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ArrayProfile.h' l='226' c='_ZNK3JSC12ArrayProfile14mayStoreToHoleERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ArrayProfile.h' l='227' c='_ZNK3JSC12ArrayProfile11outOfBoundsERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ArrayProfile.h' l='229' c='_ZNK3JSC12ArrayProfile27usesOriginalArrayStructuresERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ArrayProfile.h' l='231' c='_ZN3JSC12ArrayProfile16briefDescriptionERKNS_18ConcurrentJSLockerEPNS_9CodeBlockE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ArrayProfile.h' l='232' c='_ZN3JSC12ArrayProfile31briefDescriptionWithoutUpdatingERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITCode.h' l='205' c='_ZN3JSC7JITCode11shrinkToFitERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DFGExitProfile.h' l='190' c='_ZNK3JSC3DFG11ExitProfile11hasExitSiteERKNS_18ConcurrentJSLockerERKNS0_16FrequentExitSiteE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DFGExitProfile.h' l='191' c='_ZNK3JSC3DFG11ExitProfile11hasExitSiteERKNS_18ConcurrentJSLockerENS_8ExitKindE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/UnlinkedCodeBlock.h' l='316' c='_ZNK3JSC17UnlinkedCodeBlock11hasExitSiteERKNS_18ConcurrentJSLockerERKNS_3DFG16FrequentExitSiteE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/UnlinkedCodeBlock.h' l='323' c='_ZN3JSC17UnlinkedCodeBlock11hasExitSiteERKNS_3DFG16FrequentExitSiteE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ExecutableToCodeBlockEdge.h' l='85' c='_ZN3JSC25ExecutableToCodeBlockEdge13runConstraintERKNS_18ConcurrentJSLockerERNS_2VMERT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ValueProfile.h' l='95' c='_ZN3JSC16ValueProfileBase16briefDescriptionERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ValueProfile.h' l='123' c='_ZN3JSC16ValueProfileBase24computeUpdatedPredictionERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/LazyOperandValueProfile.h' l='154' c='_ZN3JSC39CompressedLazyOperandValueProfileHolder25computeUpdatedPredictionsERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/LazyOperandValueProfile.h' l='157' c='_ZN3JSC39CompressedLazyOperandValueProfileHolder3addERKNS_18ConcurrentJSLockerERKNS_26LazyOperandValueProfileKeyE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/LazyOperandValueProfile.h' l='171' c='_ZN3JSC29LazyOperandValueProfileParser10initializeERKNS_18ConcurrentJSLockerERNS_39CompressedLazyOperandValueProfileHolderE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/LazyOperandValueProfile.h' l='177' c='_ZNK3JSC29LazyOperandValueProfileParser10predictionERKNS_18ConcurrentJSLockerERKNS_26LazyOperandValueProfileKeyE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='266' c='_ZN3JSC9CodeBlock14getICStatusMapERKNS_18ConcurrentJSLockerERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS4_10HashTrait3308140'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='290' c='_ZN3JSC9CodeBlock13ensureJITDataERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='296' c='_ZN3JSC9CodeBlock17ensureJITDataSlowERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='333' c='_ZN3JSC9CodeBlock13setJITCodeMapEONS_10JITCodeMapE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='338' c='_ZN3JSC9CodeBlock10jitCodeMapEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='405' c='_ZN3JSC9CodeBlock10setJITCodeEON3WTF3RefINS_7JITCodeENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='495' c='_ZN3JSC9CodeBlock38valueProfilePredictionForBytecodeIndexERKNS_18ConcurrentJSLockerENS_13BytecodeIndexE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='510' c='_ZN3JSC9CodeBlock15getArrayProfileERKNS_18ConcurrentJSLockerENS_13BytecodeIndexE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='541' c='_ZN3JSC9CodeBlock24lazyOperandValueProfilesERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='561' c='_ZN3JSC9CodeBlock11addConstantERKNS_18ConcurrentJSLockerENS_7JSValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='569' c='_ZN3JSC9CodeBlock17addConstantLazilyERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='635' c='_ZN3JSC9CodeBlock11shrinkToFitERKNS_18ConcurrentJSLockerENS0_10ShrinkModeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='956' c='_ZN3JSC9CodeBlock19shouldVisitStronglyERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='958' c='_ZN3JSC9CodeBlock25shouldJettisonDueToOldAgeERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='960' c='_ZN3JSC9CodeBlock20propagateTransitionsERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='961' c='_ZN3JSC9CodeBlock17determineLivenessERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='963' c='_ZN3JSC9CodeBlock29stronglyVisitStrongReferencesERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='964' c='_ZN3JSC9CodeBlock27stronglyVisitWeakReferencesERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='965' c='_ZN3JSC9CodeBlock19visitOSRExitTargetsERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/StructureInlines.h' l='386' c='_ZN3JSC9Structure32propertyReplacementWatchpointSetEi'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/StructureInlines.h' l='738' c='_ZN3JSC9Structure52addPropertyTransitionToExistingStructureConcurrentlyEPS0_PN3WTF17UniquedStringImplEjRi'/>
+<size>32</size>
+<inh f='WebKit/Source/JavaScriptCore/runtime/ConcurrentJSLock.h' l='39' c='JSC::ConcurrentJSLockerBase'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/ConcurrentJSLock.h' l='97' ll='129'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ArrayProfile.h' l='217' c='_ZN3JSC12ArrayProfile24computeUpdatedPredictionERKNS_18ConcurrentJSLockerEPNS_9CodeBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ArrayProfile.h' l='218' c='_ZN3JSC12ArrayProfile24computeUpdatedPredictionERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_9StructureE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ArrayProfile.h' l='223' c='_ZNK3JSC12ArrayProfile18observedArrayModesERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ArrayProfile.h' l='224' c='_ZNK3JSC12ArrayProfile27mayInterceptIndexedAccessesERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ArrayProfile.h' l='226' c='_ZNK3JSC12ArrayProfile14mayStoreToHoleERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ArrayProfile.h' l='227' c='_ZNK3JSC12ArrayProfile11outOfBoundsERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ArrayProfile.h' l='229' c='_ZNK3JSC12ArrayProfile27usesOriginalArrayStructuresERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ArrayProfile.h' l='231' c='_ZN3JSC12ArrayProfile16briefDescriptionERKNS_18ConcurrentJSLockerEPNS_9CodeBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ArrayProfile.h' l='232' c='_ZN3JSC12ArrayProfile31briefDescriptionWithoutUpdatingERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCode.h' l='205' c='_ZN3JSC7JITCode11shrinkToFitERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='1379' c='_ZNK3JSC8JSObject21getDirectConcurrentlyEPNS_9StructureEi'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/TypeSet.h' l='100' c='_ZNK3JSC7TypeSet12structureSetERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='478' c='_ZN3JSC11SymbolTable4findERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='488' c='_ZN3JSC11SymbolTable3getERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='495' c='_ZN3JSC11SymbolTable3getEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='499' c='_ZN3JSC11SymbolTable9inlineGetERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='506' c='_ZN3JSC11SymbolTable9inlineGetEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='510' c='_ZN3JSC11SymbolTable5beginERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='515' c='_ZN3JSC11SymbolTable3endERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='525' c='_ZNK3JSC11SymbolTable4sizeERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='532' c='_ZNK3JSC11SymbolTable4sizeEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='571' c='_ZN3JSC11SymbolTable19takeNextScopeOffsetERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='580' c='_ZN3JSC11SymbolTable19takeNextScopeOffsetEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='585' c='_ZN3JSC11SymbolTable3addERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplEOT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='596' c='_ZN3JSC11SymbolTable3addEPN3WTF17UniquedStringImplEOT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='619' c='_ZN3JSC11SymbolTable3setERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplEOT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='629' c='_ZN3JSC11SymbolTable3setEPN3WTF17UniquedStringImplEOT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='633' c='_ZN3JSC11SymbolTable8containsERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='640' c='_ZN3JSC11SymbolTable8containsEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='698' c='_ZN3JSC11SymbolTable12localToEntryERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='699' c='_ZN3JSC11SymbolTable8entryForERKNS_18ConcurrentJSLockerENS_11ScopeOffsetE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='701' c='_ZN3JSC11SymbolTable19uniqueIDForVariableERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='702' c='_ZN3JSC11SymbolTable17uniqueIDForOffsetERKNS_18ConcurrentJSLockerENS_9VarOffsetERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='703' c='_ZN3JSC11SymbolTable22globalTypeSetForOffsetERKNS_18ConcurrentJSLockerENS_9VarOffsetERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='704' c='_ZN3JSC11SymbolTable24globalTypeSetForVariableERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='724' c='_ZN3JSC11SymbolTable23prepareForTypeProfilingERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSymbolTableObject.h' l='84' c='_ZN3JSC14symbolTableGetEPT_NS_12PropertyNameERNS_12PropertySlotE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSymbolTableObject.h' l='105' c='_ZN3JSC14symbolTableGetEPT_NS_12PropertyNameERNS_16SymbolTableEntryERNS_18PropertyDescriptorE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/DFGExitProfile.h' l='190' c='_ZNK3JSC3DFG11ExitProfile11hasExitSiteERKNS_18ConcurrentJSLockerERKNS0_16FrequentExitSiteE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/DFGExitProfile.h' l='191' c='_ZNK3JSC3DFG11ExitProfile11hasExitSiteERKNS_18ConcurrentJSLockerENS_8ExitKindE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlock.h' l='316' c='_ZNK3JSC17UnlinkedCodeBlock11hasExitSiteERKNS_18ConcurrentJSLockerERKNS_3DFG16FrequentExitSiteE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlock.h' l='323' c='_ZN3JSC17UnlinkedCodeBlock11hasExitSiteERKNS_3DFG16FrequentExitSiteE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ExecutableToCodeBlockEdge.h' l='85' c='_ZN3JSC25ExecutableToCodeBlockEdge13runConstraintERKNS_18ConcurrentJSLockerERNS_2VMERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ValueProfile.h' l='95' c='_ZN3JSC16ValueProfileBase16briefDescriptionERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ValueProfile.h' l='123' c='_ZN3JSC16ValueProfileBase24computeUpdatedPredictionERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/LazyOperandValueProfile.h' l='154' c='_ZN3JSC39CompressedLazyOperandValueProfileHolder25computeUpdatedPredictionsERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/LazyOperandValueProfile.h' l='157' c='_ZN3JSC39CompressedLazyOperandValueProfileHolder3addERKNS_18ConcurrentJSLockerERKNS_26LazyOperandValueProfileKeyE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/LazyOperandValueProfile.h' l='171' c='_ZN3JSC29LazyOperandValueProfileParser10initializeERKNS_18ConcurrentJSLockerERNS_39CompressedLazyOperandValueProfileHolderE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/LazyOperandValueProfile.h' l='177' c='_ZNK3JSC29LazyOperandValueProfileParser10predictionERKNS_18ConcurrentJSLockerERKNS_26LazyOperandValueProfileKeyE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='266' c='_ZN3JSC9CodeBlock14getICStatusMapERKNS_18ConcurrentJSLockerERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS4_10HashTrait3308140'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='290' c='_ZN3JSC9CodeBlock13ensureJITDataERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='296' c='_ZN3JSC9CodeBlock17ensureJITDataSlowERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='333' c='_ZN3JSC9CodeBlock13setJITCodeMapEONS_10JITCodeMapE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='338' c='_ZN3JSC9CodeBlock10jitCodeMapEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='405' c='_ZN3JSC9CodeBlock10setJITCodeEON3WTF3RefINS_7JITCodeENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='495' c='_ZN3JSC9CodeBlock38valueProfilePredictionForBytecodeIndexERKNS_18ConcurrentJSLockerENS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='510' c='_ZN3JSC9CodeBlock15getArrayProfileERKNS_18ConcurrentJSLockerENS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='541' c='_ZN3JSC9CodeBlock24lazyOperandValueProfilesERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='561' c='_ZN3JSC9CodeBlock11addConstantERKNS_18ConcurrentJSLockerENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='569' c='_ZN3JSC9CodeBlock17addConstantLazilyERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='635' c='_ZN3JSC9CodeBlock11shrinkToFitERKNS_18ConcurrentJSLockerENS0_10ShrinkModeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='956' c='_ZN3JSC9CodeBlock19shouldVisitStronglyERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='958' c='_ZN3JSC9CodeBlock25shouldJettisonDueToOldAgeERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='960' c='_ZN3JSC9CodeBlock20propagateTransitionsERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='961' c='_ZN3JSC9CodeBlock17determineLivenessERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='963' c='_ZN3JSC9CodeBlock29stronglyVisitStrongReferencesERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='964' c='_ZN3JSC9CodeBlock27stronglyVisitWeakReferencesERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='965' c='_ZN3JSC9CodeBlock19visitOSRExitTargetsERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/StructureInlines.h' l='386' c='_ZN3JSC9Structure32propertyReplacementWatchpointSetEi'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/StructureInlines.h' l='738' c='_ZN3JSC9Structure52addPropertyTransitionToExistingStructureConcurrentlyEPS0_PN3WTF17UniquedStringImplEjRi'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CallLinkStatus.h' l='77' c='_ZN3JSC14CallLinkStatus10computeForERKNS_18ConcurrentJSLockerEPNS_9CodeBlockERNS_12CallLinkInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CallLinkStatus.h' l='81' c='_ZN3JSC14CallLinkStatus10computeForERKNS_18ConcurrentJSLockerEPNS_9CodeBlockERNS_12CallLinkInfoENS0_12ExitSiteDataENS_17ExitingInlineKindE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CallLinkStatus.h' l='120' c='_ZN3JSC14CallLinkStatus16computeFromLLIntERKNS_18ConcurrentJSLockerEPNS_9CodeBlockENS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CallLinkStatus.h' l='123' c='_ZN3JSC14CallLinkStatus23computeFromCallLinkInfoERKNS_18ConcurrentJSLockerERNS_12CallLinkInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PutByIdStatus.h' l='103' c='_ZN3JSC13PutByIdStatus18computeForStubInfoERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoENS_10CodeOriginEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PutByIdStatus.h' l='132' c='_ZN3JSC13PutByIdStatus18computeForStubInfoERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoEPN3WTF17UniquedStringImplENS_14CallLinkStatus12ExitSiteDataE'/>
+<size>32</size>
+<fun r='_ZN3JSC18ConcurrentJSLockerC1ERN3WTF4LockE'/>
+<fun r='_ZN3JSC18ConcurrentJSLockerC1EPN3WTF4LockE'/>
+<fun r='_ZN3JSC18ConcurrentJSLockerC1EN3WTF21NoLockingNecessaryTagE'/>
+<fun r='_ZN3JSC18ConcurrentJSLockerC1Ei'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArrayMode.h' l='181' c='_ZN3JSC3DFG9ArrayMode12fromObservedERKNS_18ConcurrentJSLockerEPNS_12ArrayProfileENS0_5Array6ActionEb'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArrayMode.h' l='193' c='_ZNK3JSC3DFG9ArrayMode26withSpeculationFromProfileERKNS_18ConcurrentJSLockerEPNS_12ArrayProfileEb'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArrayMode.h' l='207' c='_ZNK3JSC3DFG9ArrayMode11withProfileERKNS_18ConcurrentJSLockerEPNS_12ArrayProfileEb'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CheckPrivateBrandStatus.h' l='101' c='_ZN3JSC23CheckPrivateBrandStatus41computeForStubInfoWithoutExitSiteFeedbackERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/DeleteByStatus.h' l='100' c='_ZN3JSC14DeleteByStatus41computeForStubInfoWithoutExitSiteFeedbackERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/GetByStatus.h' l='138' c='_ZN3JSC11GetByStatus41computeForStubInfoWithoutExitSiteFeedbackERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoENS_14CallLinkStatus12ExitSiteDataE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InByStatus.h' l='86' c='_ZN3JSC10InByStatus18computeForStubInfoERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoENS_10CodeOriginE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InByStatus.h' l='117' c='_ZN3JSC10InByStatus41computeForStubInfoWithoutExitSiteFeedbackERKNS_18ConcurrentJSLockerERNS_2VMEPNS_17StructureStubInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/SetPrivateBrandStatus.h' l='102' c='_ZN3JSC21SetPrivateBrandStatus41computeForStubInfoWithoutExitSiteFeedbackERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.h' l='111' c='_ZN3JSC3DFG17SetPointerAdaptor3addEPNS_9CodeBlockET_RNS0_19WatchpointCollectorE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLJITCode.h' l='70' c='_ZN3JSC3FTL7JITCode11shrinkToFitERKNS_18ConcurrentJSLockerE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLJITCode.cpp' l='138' c='_ZN3JSC3FTL7JITCode11shrinkToFitERKNS_18ConcurrentJSLockerE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCode.h' l='90' c='_ZN3JSC3DFG7JITCode11shrinkToFitERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOperations.cpp' l='300' c='_ZN3JSC3FTL31operationMaterializeObjectInOSREPNS_14JSGlobalObjectEPNS0_29ExitTimeObjectMaterializationEPl'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/WebAssemblyModuleRecord.cpp' l='182' c='_ZN3JSC23WebAssemblyModuleRecord8linkImplEPNS_14JSGlobalObjectEPNS_8JSObjectENS_4Wasm12CreationModeE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerBytecodeSequence.cpp' l='40' c='_ZN3JSC8Profiler16BytecodeSequenceC1EPNS_9CodeBlockE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='228' c='_ZN3JSC3JIT15compilePutByValERKNS_18ConcurrentJSLockerERNS_2VMEPNS_9CodeBlockEPNS_9ByValInfoENS_16ReturnAddressPtrENS_12JITArrayModeE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='235' c='_ZN3JSC3JIT21compileDirectPutByValERKNS_18ConcurrentJSLockerERNS_2VMEPNS_9CodeBlockEPNS_9ByValInfoENS_16ReturnAddressPtrENS_12JITArrayModeE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='277' c='_ZN3JSC3JIT22privateCompileGetByValERKNS_18ConcurrentJSLockerEPNS_9ByValInfoENS_16ReturnAddressPtrENS_12JITArrayModeE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='279' c='_ZN3JSC3JIT22privateCompilePutByValERKNS_18ConcurrentJSLockerEPNS_9ByValInfoENS_16ReturnAddressPtrENS_12JITArrayModeE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPathsInlines.h' l='49' c='_ZN3JSC15CommonSlowPaths24tryCachePutToScopeGlobalEPNS_14JSGlobalObjectEPNS_9CodeBlockERNS_12OpPutToScopeEPNS_8JSObjectERNS_15PutPropertySlotERKNS_10IdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPathsInlines.h' l='63' c='_ZN3JSC15CommonSlowPaths24tryCachePutToScopeGlobalEPNS_14JSGlobalObjectEPNS_9CodeBlockERNS_12OpPutToScopeEPNS_8JSObjectERNS_15PutPropertySlotERKNS_10IdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPathsInlines.h' l='93' c='_ZN3JSC15CommonSlowPaths24tryCachePutToScopeGlobalEPNS_14JSGlobalObjectEPNS_9CodeBlockERNS_12OpPutToScopeEPNS_8JSObjectERNS_15PutPropertySlotERKNS_10IdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPathsInlines.h' l='111' c='_ZN3JSC15CommonSlowPaths26tryCacheGetFromScopeGlobalEPNS_14JSGlobalObjectEPNS_9CodeBlockERNS_2VMERNS_14OpGetFromScopeEPNS_8JSObjectERNS_12PropertySlotERKNS_10IdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPathsInlines.h' l='125' c='_ZN3JSC15CommonSlowPaths26tryCacheGetFromScopeGlobalEPNS_14JSGlobalObjectEPNS_9CodeBlockERNS_2VMERNS_14OpGetFromScopeEPNS_8JSObjectERNS_12PropertySlotERKNS_10IdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPathsInlines.h' l='143' c='_ZN3JSC15CommonSlowPaths26tryCacheGetFromScopeGlobalEPNS_14JSGlobalObjectEPNS_9CodeBlockERNS_2VMERNS_14OpGetFromScopeEPNS_8JSObjectERNS_12PropertySlotERKNS_10IdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITInlines.h' l='391' c='_ZN3JSC3JIT15chooseArrayModeEPNS_12ArrayProfileE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.cpp' l='721' c='_ZN3JSC3JIT31compileAndLinkWithoutFinalizingENS_20JITCompilationEffortE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.cpp' l='1020' c='_ZN3JSC3JIT20finalizeOnMainThreadEv'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCode.cpp' l='94' c='_ZN3JSC7JITCode11shrinkToFitERKNS_18ConcurrentJSLockerE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='1050' c='_ZN3JSCL19tryPutByValOptimizeEPNS_14JSGlobalObjectEPNS_9CallFrameEPNS_9CodeBlockENS_7JSValueES6_PNS_9ByValInfoENS_16ReturnAddressPtrE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='1078' c='_ZN3JSCL19tryPutByValOptimizeEPNS_14JSGlobalObjectEPNS_9CallFrameEPNS_9CodeBlockENS_7JSValueES6_PNS_9ByValInfoENS_16ReturnAddressPtrE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='1144' c='_ZN3JSCL25tryDirectPutByValOptimizeEPNS_14JSGlobalObjectEPNS_9CallFrameEPNS_9CodeBlockEPNS_8JSObjectENS_7JSValueEPNS_9ByValInfoENS_16ReturnAddressPtrE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='1171' c='_ZN3JSCL25tryDirectPutByValOptimizeEPNS_14JSGlobalObjectEPNS_9CallFrameEPNS_9CodeBlockEPNS_8JSObjectENS_7JSValueEPNS_9ByValInfoENS_16ReturnAddressPtrE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='1378' c='_ZN3JSC31operationPutPrivateNameOptimizeEPNS_14JSGlobalObjectElllPNS_9ByValInfoENS_19PrivateFieldPutKindE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='2434' c='_ZN3JSC25operationGetByValOptimizeEPNS_14JSGlobalObjectEPNS_17StructureStubInfoEPNS_12ArrayProfileEll'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='3046' c='_ZN3JSC32operationResolveScopeForBaselineEPNS_14JSGlobalObjectEPKNS_11InstructionE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='3053' c='_ZN3JSC32operationResolveScopeForBaselineEPNS_14JSGlobalObjectEPKNS_11InstructionE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='3101' c='_ZN3JSC3JIT22privateCompilePutByValERKNS_18ConcurrentJSLockerEPNS_9ByValInfoENS_16ReturnAddressPtrENS_12JITArrayModeE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='3186' c='_ZN3JSC3JIT40privateCompilePutPrivateNameWithCachedIdEPNS_9ByValInfoENS_16ReturnAddressPtrENS_19CacheableIdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='3229' c='_ZN3JSC3JIT34privateCompilePutByValWithCachedIdEPNS_9ByValInfoENS_16ReturnAddressPtrENS_7PutKindENS_19CacheableIdentifierE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp' l='682' c='JSC::LLInt::llint_slow_path_get_by_id_direct'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp' l='753' c='_ZN3JSC5LLIntL26setupGetByIdPrototypeCacheEPNS_14JSGlobalObjectERNS_2VMEPNS_9CodeBlockEPKNS_11InstructionERNS_19GetByIdModeMetadataEPNS_6JSCellERNS_1215453493'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp' l='806' c='_ZN3JSC5LLIntL19performLLIntGetByIDEPKNS_11InstructionEPNS_9CodeBlockEPNS_14JSGlobalObjectENS_7JSValueERKNS_10IdentifierERNS_19GetByIdModeMetadataE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp' l='826' c='_ZN3JSC5LLIntL19performLLIntGetByIDEPKNS_11InstructionEPNS_9CodeBlockEPNS_14JSGlobalObjectENS_7JSValueERKNS_10IdentifierERNS_19GetByIdModeMetadataE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp' l='983' c='JSC::LLInt::llint_slow_path_put_by_id'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp' l='1136' c='JSC::LLInt::llint_slow_path_get_private_name'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp' l='1302' c='JSC::LLInt::llint_slow_path_put_private_name'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp' l='1855' c='_ZN3JSC5LLInt9setUpCallEPNS_9CallFrameENS_22CodeSpecializationKindENS_7JSValueEPNS_17LLIntCallLinkInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp' l='1898' c='_ZN3JSC5LLInt9setUpCallEPNS_9CallFrameENS_22CodeSpecializationKindENS_7JSValueEPNS_17LLIntCallLinkInfoE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPlan.cpp' l='226' c='_ZN3JSC3DFG4Plan19compileInThreadImplEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPlan.cpp' l='522' c='_ZN3JSC3DFG4Plan9reallyAddEPNS0_10CommonDataE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPlan.cpp' l='552' c='_ZN3JSC3DFG4Plan8finalizeEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPredictionInjectionPhase.cpp' l='51' c='_ZN3JSC3DFG24PredictionInjectionPhase3runEv'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArrayMode.cpp' l='39' c='_ZN3JSC3DFG9ArrayMode12fromObservedERKNS_18ConcurrentJSLockerEPNS_12ArrayProfileENS0_5Array6ActionEb'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InstanceOfStatus.h' l='85' c='_ZN3JSC16InstanceOfStatus18computeForStubInfoERKNS_18ConcurrentJSLockerERNS_2VMEPNS_17StructureStubInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='436' c='_ZN3JSC3DFG14ByteCodeParser28injectLazyOperandSpeculationEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='901' c='_ZN3JSC3DFG14ByteCodeParser27getPredictionWithoutOSRExitENS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='987' c='_ZN3JSC3DFG14ByteCodeParser12getArrayModeERNS_12ArrayProfileENS0_5Array6ActionE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='2062' c='_ZN3JSC3DFG14ByteCodeParser21handleVarargsInliningEPNS0_4NodeENS_7OperandERKNS_14CallLinkStatusEiNS_15VirtualRegisterES8_jNS0_8NodeTypeENS_15InlineCallFrame4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='6461' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='7064' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='7659' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='7781' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='7834' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='7957' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='8597' c='_ZN3JSC3DFG14ByteCodeParser16InlineStackEntryC1EPS1_PNS_9CodeBlockES5_PNS_10JSFunctionENS_7OperandENS_15VirtualRegisterEiNS_15InlineCallFrame4KindEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='8610' c='_ZN3JSC3DFG14ByteCodeParser16InlineStackEntryC1EPS1_PNS_9CodeBlockES5_PNS_10JSFunctionENS_7OperandENS_15VirtualRegisterEiNS_15InlineCallFrame4KindEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='8794' c='_ZN3JSC3DFG14ByteCodeParser14handlePutByValET_NS_13BytecodeIndexE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredGlobalProperties.cpp' l='47' c='_ZN3JSC3DFG23DesiredGlobalProperties24isStillValidOnMainThreadERNS_2VMERNS0_18DesiredIdentifiersE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredGlobalProperties.cpp' l='63' c='_ZN3JSC3DFG23DesiredGlobalProperties9reallyAddEPNS_9CodeBlockERNS0_18DesiredIdentifiersERNS0_19WatchpointCollectorE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredIdentifiers.cpp' l='97' c='_ZN3JSC3DFG18DesiredIdentifiers9reallyAddERNS_2VMEPNS0_10CommonDataE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredTransitions.cpp' l='78' c='_ZN3JSC3DFG18DesiredTransitions9reallyAddERNS_2VMEPNS0_10CommonDataE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.cpp' l='42' c='_ZN3JSC3DFG32ArrayBufferViewWatchpointAdaptor3addEPNS_9CodeBlockEPNS_17JSArrayBufferViewERNS0_19WatchpointCollectorE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.cpp' l='61' c='_ZN3JSC3DFG18SymbolTableAdaptor3addEPNS_9CodeBlockEPNS_11SymbolTableERNS0_19WatchpointCollectorE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.cpp' l='64' c='_ZN3JSC3DFG18SymbolTableAdaptor3addEPNS_9CodeBlockEPNS_11SymbolTableERNS0_19WatchpointCollectorE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.cpp' l='73' c='_ZN3JSC3DFG25FunctionExecutableAdaptor3addEPNS_9CodeBlockEPNS_18FunctionExecutableERNS0_19WatchpointCollectorE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.cpp' l='76' c='_ZN3JSC3DFG25FunctionExecutableAdaptor3addEPNS_9CodeBlockEPNS_18FunctionExecutableERNS0_19WatchpointCollectorE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.cpp' l='88' c='_ZN3JSC3DFG34AdaptiveStructureWatchpointAdaptor3addEPNS_9CodeBlockERKNS_23ObjectPropertyConditionERNS0_19WatchpointCollectorE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.cpp' l='98' c='_ZN3JSC3DFG34AdaptiveStructureWatchpointAdaptor3addEPNS_9CodeBlockERKNS_23ObjectPropertyConditionERNS0_19WatchpointCollectorE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.cpp' l='204' c='_ZN3JSC3DFG19WatchpointCollector8finalizeEPNS_9CodeBlockERNS0_10CommonDataE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWeakReferences.cpp' l='88' c='_ZN3JSC3DFG21DesiredWeakReferences9reallyAddERNS_2VMEPNS0_10CommonDataE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGFixupPhase.cpp' l='2389' c='_ZN3JSC3DFG10FixupPhase9fixupNodeEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGFixupPhase.cpp' l='4001' c='_ZN3JSC3DFG10FixupPhase27attemptToMakeGetArrayLengthEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1365' c='_ZN3JSC3DFG5Graph24tryGetConstantClosureVarENS_7JSValueENS_11ScopeOffsetE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1425' c='_ZN3JSC3DFG5Graph20registerFrozenValuesEv'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCode.cpp' l='59' c='_ZN3JSC3DFG7JITCode11shrinkToFitERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.cpp' l='189' c='_ZN3JSC3DFG11JITCompiler4linkERNS_10LinkBufferE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGLazyJSValue.cpp' l='258' c='_ZNK3JSC3DFG11LazyJSValue4emitERNS_12CCallHelpersENS_11JSValueRegsE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ArrayProfile.cpp' l='121' c='_ZN3JSC12ArrayProfile24computeUpdatedPredictionERKNS_18ConcurrentJSLockerEPNS_9CodeBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ArrayProfile.cpp' l='131' c='_ZN3JSC12ArrayProfile24computeUpdatedPredictionERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_9StructureE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ArrayProfile.cpp' l='166' c='_ZN3JSC12ArrayProfile16briefDescriptionERKNS_18ConcurrentJSLockerEPNS_9CodeBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ArrayProfile.cpp' l='172' c='_ZN3JSC12ArrayProfile31briefDescriptionWithoutUpdatingERKNS_18ConcurrentJSLockerE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PutByIdStatus.cpp' l='104' c='_ZN3JSC13PutByIdStatus10computeForEPNS_9CodeBlockERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS3_10HashTraitsIS5_EENS87037529'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PutByIdStatus.cpp' l='128' c='_ZN3JSC13PutByIdStatus18computeForStubInfoERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoENS_10CodeOriginEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PutByIdStatus.cpp' l='136' c='_ZN3JSC13PutByIdStatus18computeForStubInfoERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoEPN3WTF17UniquedStringImplENS_14CallLinkStatus12ExitSiteDataE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PutByIdStatus.cpp' l='271' c='_ZN3JSC13PutByIdStatus10computeForEPNS_9CodeBlockERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS3_10HashTraitsIS5_EENS89368650'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/SetPrivateBrandStatus.cpp' l='51' c='_ZN3JSC21SetPrivateBrandStatus18computeForBaselineEPNS_9CodeBlockERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS3_10Has6904447'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/SetPrivateBrandStatus.cpp' l='90' c='_ZN3JSC21SetPrivateBrandStatus41computeForStubInfoWithoutExitSiteFeedbackERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/SetPrivateBrandStatus.cpp' l='158' c='_ZN3JSC21SetPrivateBrandStatus10computeForEPNS_9CodeBlockERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS3_10HashTraitsI348687'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/StructureStubClearingWatchpoint.cpp' l='46' c='_ZN3JSC50StructureTransitionStructureStubClearingWatchpoint12fireInternalERNS_2VMERKNS_10FireDetailE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/StructureStubClearingWatchpoint.cpp' l='117' c='_ZN3JSC44AdaptiveValueStructureStubClearingWatchpoint10handleFireERNS_2VMERKNS_10FireDetailE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlock.cpp' l='302' c='_ZN3JSC17UnlinkedCodeBlock20livenessAnalysisSlowEPNS_9CodeBlockE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CallLinkStatus.cpp' l='55' c='_ZN3JSC14CallLinkStatus16computeFromLLIntERKNS_18ConcurrentJSLockerEPNS_9CodeBlockENS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CallLinkStatus.cpp' l='100' c='_ZN3JSC14CallLinkStatus10computeForEPNS_9CodeBlockENS_13BytecodeIndexERKN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS4_4334064'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CallLinkStatus.cpp' l='131' c='_ZN3JSC14CallLinkStatus19computeExitSiteDataEPNS_9CodeBlockENS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CallLinkStatus.cpp' l='158' c='_ZN3JSC14CallLinkStatus10computeForERKNS_18ConcurrentJSLockerEPNS_9CodeBlockERNS_12CallLinkInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CallLinkStatus.cpp' l='169' c='_ZN3JSC14CallLinkStatus23computeFromCallLinkInfoERKNS_18ConcurrentJSLockerERNS_12CallLinkInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CallLinkStatus.cpp' l='277' c='_ZN3JSC14CallLinkStatus10computeForERKNS_18ConcurrentJSLockerEPNS_9CodeBlockERNS_12CallLinkInfoENS0_12ExitSiteDataENS_17ExitingInlineKindE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CallLinkStatus.cpp' l='364' c='_ZN3JSC14CallLinkStatus10computeForEPNS_9CodeBlockENS_10CodeOriginERKN3WTF7HashMapIS3_NS_8ICStatusENS_25CodeOriginApproximateHashENS4_10HashTraitsIS3_9470245'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CheckPrivateBrandStatus.cpp' l='51' c='_ZN3JSC23CheckPrivateBrandStatus18computeForBaselineEPNS_9CodeBlockERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS3_10H10106132'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CheckPrivateBrandStatus.cpp' l='90' c='_ZN3JSC23CheckPrivateBrandStatus41computeForStubInfoWithoutExitSiteFeedbackERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CheckPrivateBrandStatus.cpp' l='154' c='_ZN3JSC23CheckPrivateBrandStatus10computeForEPNS_9CodeBlockERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS3_10HashTrait14203478'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='395' c='_ZN3JSC9CodeBlock14finishCreationERNS_2VMEPNS_16ScriptExecutableEPNS_17UnlinkedCodeBlockEPNS_7JSScopeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='573' c='_ZN3JSC9CodeBlock14finishCreationERNS_2VMEPNS_16ScriptExecutableEPNS_17UnlinkedCodeBlockEPNS_7JSScopeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='621' c='_ZN3JSC9CodeBlock14finishCreationERNS_2VMEPNS_16ScriptExecutableEPNS_17UnlinkedCodeBlockEPNS_7JSScopeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='676' c='_ZN3JSC9CodeBlock14finishCreationERNS_2VMEPNS_16ScriptExecutableEPNS_17UnlinkedCodeBlockEPNS_7JSScopeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='689' c='_ZN3JSC9CodeBlock14finishCreationERNS_2VMEPNS_16ScriptExecutableEPNS_17UnlinkedCodeBlockEPNS_7JSScopeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='880' c='_ZN3JSC9CodeBlock20setConstantRegistersERKN3WTF11FixedVectorINS_12WriteBarrierINS_7UnknownENS1_14RawValueTraitsIS4_EEEEEERKNS2_INS_24SourceCodeReprese2703177'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='898' c='_ZN3JSC9CodeBlock20setConstantRegistersERKN3WTF11FixedVectorINS_12WriteBarrierINS_7UnknownENS1_14RawValueTraitsIS4_EEEEEERKNS2_INS_24SourceCodeReprese2703177'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='973' c='_ZN3JSC9CodeBlock13visitChildrenERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='996' c='_ZN3JSC9CodeBlock19shouldVisitStronglyERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1065' c='_ZN3JSC9CodeBlock25shouldJettisonDueToOldAgeERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1103' c='_ZN3JSC9CodeBlock20propagateTransitionsERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1211' c='_ZN3JSC9CodeBlock17determineLivenessERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1490' c='_ZN3JSC9CodeBlock17ensureJITDataSlowERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1618' c='_ZN3JSC9CodeBlock14getICStatusMapERKNS_18ConcurrentJSLockerERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS4_10HashTrait3308140'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1653' c='_ZN3JSC9CodeBlock14getICStatusMapERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS1_10HashTraitsIS3_EENS6_IS4_EENS1_15HashTableTraitsEEE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1660' c='_ZN3JSC9CodeBlock11addStubInfoENS_10AccessTypeENS_10CodeOriginE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1666' c='_ZN3JSC9CodeBlock11addJITAddICEPNS_18BinaryArithProfileE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1672' c='_ZN3JSC9CodeBlock11addJITMulICEPNS_18BinaryArithProfileE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1678' c='_ZN3JSC9CodeBlock11addJITSubICEPNS_18BinaryArithProfileE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1684' c='_ZN3JSC9CodeBlock11addJITNegICEPNS_17UnaryArithProfileE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1690' c='_ZN3JSC9CodeBlock12findStubInfoENS_10CodeOriginE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1702' c='_ZN3JSC9CodeBlock13findByValInfoENS_10CodeOriginE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1714' c='_ZN3JSC9CodeBlock12addByValInfoENS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1720' c='_ZN3JSC9CodeBlock15addCallLinkInfoENS_10CodeOriginE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1726' c='_ZN3JSC9CodeBlock31getCallLinkInfoForBytecodeIndexENS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1740' c='_ZN3JSC9CodeBlock22setCalleeSaveRegistersENS_11RegisterSetE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1749' c='_ZN3JSC9CodeBlock22setCalleeSaveRegistersEONS_20RegisterAtOffsetListE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1759' c='_ZN3JSC9CodeBlock12resetJITDataEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1788' c='_ZN3JSC9CodeBlock19visitOSRExitTargetsERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1809' c='_ZN3JSC9CodeBlock29stronglyVisitStrongReferencesERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1846' c='_ZN3JSC9CodeBlock27stronglyVisitWeakReferencesERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2077' c='_ZN3JSC9CodeBlock11shrinkToFitERKNS_18ConcurrentJSLockerENS0_10ShrinkModeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2093' c='_ZN3JSC9CodeBlock16linkIncomingCallEPNS_9CallFrameEPNS_12CallLinkInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2101' c='_ZN3JSC9CodeBlock27linkIncomingPolymorphicCallEPNS_9CallFrameEPNS_19PolymorphicCallNodeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2114' c='_ZN3JSC9CodeBlock19unlinkIncomingCallsEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2286' c='_ZN3JSC9CodeBlock8jettisonENS_8Profiler14JettisonReasonENS_18ReoptimizationModeEPKNS_10FireDetailE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2791' c='_ZN3JSC9CodeBlock15getArrayProfileERKNS_18ConcurrentJSLockerENS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2825' c='_ZN3JSC9CodeBlock15getArrayProfileENS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2912' c='_ZN3JSC9CodeBlock48updateAllValueProfilePredictionsAndCountLivenessERjS1_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2955' c='_ZN3JSC9CodeBlock25updateAllArrayPredictionsEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='3046' c='_ZN3JSC9CodeBlock26notifyLexicalBindingUpdateEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='3049' c='_ZN3JSC9CodeBlock26notifyLexicalBindingUpdateEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='3162' c='_ZN3JSC9CodeBlock15nameForRegisterENS_15VirtualRegisterE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='3205' c='_ZN3JSC9CodeBlock38valueProfilePredictionForBytecodeIndexERKNS_18ConcurrentJSLockerENS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='3444' c='_ZN3JSC9CodeBlock20setPCToCodeOriginMapEOSt10unique_ptrINS_17PCToCodeOriginMapESt14default_deleteIS2_EE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='3451' c='_ZN3JSC9CodeBlock6findPCEPv'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/DFGExitProfile.cpp' l='49' c='_ZN3JSC3DFG11ExitProfile3addEPNS_9CodeBlockERKNS0_16FrequentExitSiteE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/DFGExitProfile.cpp' l='92' c='_ZNK3JSC3DFG11ExitProfile11hasExitSiteERKNS_18ConcurrentJSLockerERKNS0_16FrequentExitSiteE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/DFGExitProfile.cpp' l='109' c='_ZN3JSC3DFG20QueryableExitProfile10initializeEPNS_17UnlinkedCodeBlockE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/DeleteByStatus.cpp' l='50' c='_ZN3JSC14DeleteByStatus18computeForBaselineEPNS_9CodeBlockERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS3_10HashTraits15577305'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/DeleteByStatus.cpp' l='89' c='_ZN3JSC14DeleteByStatus41computeForStubInfoWithoutExitSiteFeedbackERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/DeleteByStatus.cpp' l='174' c='_ZN3JSC14DeleteByStatus10computeForEPNS_9CodeBlockERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS3_10HashTraitsIS5_EENS16344112'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ExecutableToCodeBlockEdge.cpp' l='78' c='_ZN3JSC25ExecutableToCodeBlockEdge17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ExecutableToCodeBlockEdge.cpp' l='196' c='_ZN3JSC25ExecutableToCodeBlockEdge13runConstraintERKNS_18ConcurrentJSLockerERNS_2VMERT_'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/GetByStatus.cpp' l='149' c='_ZN3JSC11GetByStatus10computeForEPNS_9CodeBlockERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS3_10HashTraitsIS5_EENS8_I8320371'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/GetByStatus.cpp' l='201' c='_ZN3JSC11GetByStatus41computeForStubInfoWithoutExitSiteFeedbackERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoENS_14CallLinkStatus12ExitSiteDataE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/GetByStatus.cpp' l='388' c='_ZN3JSC11GetByStatus10computeForEPNS_9CodeBlockERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS3_10HashTraitsIS5_EENS8_I12785148'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ICStatusUtils.cpp' l='39' c='_ZN3JSC19hasBadCacheExitSiteEPNS_9CodeBlockENS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InByStatus.cpp' l='53' c='_ZN3JSC10InByStatus10computeForEPNS_9CodeBlockERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS3_10HashTraitsIS5_EENS8_IS3252883'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InByStatus.cpp' l='102' c='_ZN3JSC10InByStatus10computeForEPNS_9CodeBlockERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS3_10HashTraitsIS5_EENS8_IS15271504'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InByStatus.cpp' l='119' c='_ZN3JSC10InByStatus18computeForStubInfoERKNS_18ConcurrentJSLockerEPNS_9CodeBlockEPNS_17StructureStubInfoENS_10CodeOriginE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InByStatus.cpp' l='128' c='_ZN3JSC10InByStatus41computeForStubInfoWithoutExitSiteFeedbackERKNS_18ConcurrentJSLockerERNS_2VMEPNS_17StructureStubInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InstanceOfStatus.cpp' l='50' c='_ZN3JSC16InstanceOfStatus10computeForEPNS_9CodeBlockERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS3_10HashTraitsIS5_EE5503882'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InstanceOfStatus.cpp' l='58' c='_ZN3JSC16InstanceOfStatus10computeForEPNS_9CodeBlockERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS3_10HashTraitsIS5_EE5503882'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InstanceOfStatus.cpp' l='74' c='_ZN3JSC16InstanceOfStatus18computeForStubInfoERKNS_18ConcurrentJSLockerERNS_2VMEPNS_17StructureStubInfoE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/LazyOperandValueProfile.cpp' l='36' c='_ZN3JSC39CompressedLazyOperandValueProfileHolder25computeUpdatedPredictionsERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/LazyOperandValueProfile.cpp' l='46' c='_ZN3JSC39CompressedLazyOperandValueProfileHolder3addERKNS_18ConcurrentJSLockerERKNS_26LazyOperandValueProfileKeyE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/LazyOperandValueProfile.cpp' l='65' c='_ZN3JSC29LazyOperandValueProfileParser10initializeERKNS_18ConcurrentJSLockerERNS_39CompressedLazyOperandValueProfileHolderE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/LazyOperandValueProfile.cpp' l='90' c='_ZNK3JSC29LazyOperandValueProfileParser10predictionERKNS_18ConcurrentJSLockerERKNS_26LazyOperandValueProfileKeyE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/MethodOfGettingAValueProfile.cpp' l='62' c='_ZNK3JSC28MethodOfGettingAValueProfile15emitReportValueERNS_12CCallHelpersENS_11JSValueRegsENS_12X86Registers10RegisterIDENS_16TagRegistersModeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/MethodOfGettingAValueProfile.cpp' l='96' c='_ZN3JSC28MethodOfGettingAValueProfile11reportValueENS_7JSValueE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='380' c='_ZN3JSC7JSArray20unshiftCountSlowCaseERKN3WTF14AbstractLockerERNS_2VMERNS_7DeferGCEbj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='822' c='_ZN3JSC7JSArray26shiftCountWithArrayStorageERNS_2VMEjjPNS_12ArrayStorageE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='989' c='_ZN3JSC7JSArray28unshiftCountWithArrayStorageEPNS_14JSGlobalObjectEjjPNS_12ArrayStorageE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='1634' c='_ZN3JSC14JSGlobalObject12addGlobalVarERKNS_10IdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='2258' c='_ZN3JSC14JSGlobalObject16addStaticGlobalsEPNS0_18GlobalPropertyInfoEi'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='2498' c='_ZN3JSC14JSGlobalObject34getReferencedPropertyWatchpointSetEPN3WTF17UniquedStringImplE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='2504' c='_ZN3JSC14JSGlobalObject37ensureReferencedPropertyWatchpointSetEPN3WTF17UniquedStringImplE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSLexicalEnvironment.cpp' l='55' c='_ZN3JSC20JSLexicalEnvironment11analyzeHeapEPNS_6JSCellERNS_12HeapAnalyzerE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSLexicalEnvironment.cpp' l='75' c='_ZN3JSC20JSLexicalEnvironment26getOwnSpecialPropertyNamesEPNS_8JSObjectEPNS_14JSGlobalObjectERNS_17PropertyNameArrayENS_22DontEnumPropertiesModeE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleNamespaceObject.cpp' l='110' c='_ZN3JSCL8getValueEPNS_19JSModuleEnvironmentENS_12PropertyNameERNS_11ScopeOffsetE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSScope.cpp' l='64' c='_ZN3JSCL14abstractAccessEPNS_14JSGlobalObjectEPNS_7JSScopeERKNS_10IdentifierENS_8GetOrPutEmRbRNS_9ResolveOpENS_18InitializationModeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSScope.cpp' l='89' c='_ZN3JSCL14abstractAccessEPNS_14JSGlobalObjectEPNS_7JSScopeERKNS_10IdentifierENS_8GetOrPutEmRbRNS_9ResolveOpENS_18InitializationModeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSScope.cpp' l='107' c='_ZN3JSCL14abstractAccessEPNS_14JSGlobalObjectEPNS_7JSScopeERKNS_10IdentifierENS_8GetOrPutEmRbRNS_9ResolveOpENS_18InitializationModeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSScope.cpp' l='140' c='_ZN3JSCL14abstractAccessEPNS_14JSGlobalObjectEPNS_7JSScopeERKNS_10IdentifierENS_8GetOrPutEmRbRNS_9ResolveOpENS_18InitializationModeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSScope.cpp' l='341' c='_ZN3JSC7JSScope31collectClosureVariablesUnderTDZEPS0_RN3WTF7HashSetINS2_6RefPtrINS2_17UniquedStringImplENS2_12RawPtrTraitsIS5_EENS2_21DefaultRefDerefT2068609'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSegmentedVariableObject.cpp' l='86' c='_ZN3JSC25JSSegmentedVariableObject11analyzeHeapEPNS_6JSCellERNS_12HeapAnalyzerE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSymbolTableObject.cpp' l='64' c='_ZN3JSC19JSSymbolTableObject26getOwnSpecialPropertyNamesEPNS_8JSObjectEPNS_14JSGlobalObjectERNS_17PropertyNameArrayENS_22DontEnumPropertiesModeE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/ProgramExecutable.cpp' l='178' c='_ZN3JSC17ProgramExecutable26initializeGlobalPropertiesERNS_2VMEPNS_14JSGlobalObjectEPNS_7JSScopeE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/Structure.cpp' l='528' c='_ZN3JSC9Structure24addNewPropertyTransitionERNS_2VMEPS0_NS_12PropertyNameEjRiNS_15PutPropertySlot7ContextEPNS_41DeferredStructureTransitionWatchpointFireE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Structure.cpp' l='600' c='_ZN3JSC9Structure57removePropertyTransitionFromExistingStructureConcurrentlyEPS0_NS_12PropertyNameERi'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Structure.cpp' l='625' c='_ZN3JSC9Structure27removeNewPropertyTransitionERNS_2VMEPS0_NS_12PropertyNameERiPNS_41DeferredStructureTransitionWatchpointFireE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Structure.cpp' l='719' c='_ZN3JSC9Structure25attributeChangeTransitionERNS_2VMEPS0_NS_12PropertyNameEjPNS_41DeferredStructureTransitionWatchpointFireE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Structure.cpp' l='797' c='_ZN3JSC9Structure32takePropertyTableOrCloneIfPinnedERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Structure.cpp' l='1018' c='_ZN3JSC9Structure38ensurePropertyReplacementWatchpointSetERNS_2VMEi'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Structure.cpp' l='1228' c='_ZN3JSC9Structure17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Structure.cpp' l='1474' c='_ZN3JSC9Structure51setBrandTransitionFromExistingStructureConcurrentlyEPS0_PN3WTF17UniquedStringImplE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.cpp' l='110' c='_ZN3JSC11SymbolTable17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.cpp' l='116' c='_ZN3JSC11SymbolTable12localToEntryERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.cpp' l='137' c='_ZN3JSC11SymbolTable8entryForERKNS_18ConcurrentJSLockerENS_11ScopeOffsetE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.cpp' l='199' c='_ZN3JSC11SymbolTable23prepareForTypeProfilingERKNS_18ConcurrentJSLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.cpp' l='229' c='_ZN3JSC11SymbolTable19uniqueIDForVariableERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.cpp' l='248' c='_ZN3JSC11SymbolTable17uniqueIDForOffsetERKNS_18ConcurrentJSLockerENS_9VarOffsetERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.cpp' l='260' c='_ZN3JSC11SymbolTable22globalTypeSetForOffsetERKNS_18ConcurrentJSLockerENS_9VarOffsetERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.cpp' l='274' c='_ZN3JSC11SymbolTable24globalTypeSetForVariableERKNS_18ConcurrentJSLockerEPN3WTF17UniquedStringImplERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.cpp' l='290' c='_ZNK3JSC11SymbolTable4dumpERN3WTF11PrintStreamE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/TypeSet.cpp' l='54' c='_ZN3JSC7TypeSet18addTypeInformationENS_11RuntimeTypeEON3WTF6RefPtrINS_14StructureShapeENS2_12RawPtrTraitsIS4_EENS2_21DefaultRefDerefTraitsIS4_EEEEPNS_9StructureEb'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/TypeSet.cpp' l='83' c='_ZN3JSC7TypeSet15invalidateCacheERNS_2VME'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPaths.cpp' l='1198' c='JSC::slow_path_resolve_scope'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPaths.cpp' l='1205' c='JSC::slow_path_resolve_scope'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='13587' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB334compileMaterializeCreateActivationEv'/>
+<size>32</size>

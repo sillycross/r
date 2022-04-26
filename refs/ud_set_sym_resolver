@@ -1,0 +1,17 @@
+<dec f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='103' type='void ud_set_sym_resolver(struct ud * u, const char *(*)(struct ud *, uint64_t, int64_t *) resolver)'/>
+<def f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='308' ll='314' type='void ud_set_sym_resolver(struct ud * u, const char *(*)(struct ud *, uint64_t, int64_t *) resolver)'/>
+<doc f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='293'>/* =============================================================================
+ * ud_set_sym_resolver
+ *    Set symbol resolver for relative targets used in the translation
+ *    phase.
+ *
+ *    The resolver is a function that takes a uint64_t address and returns a
+ *    symbolic name for the that address. The function also takes a second
+ *    argument pointing to an integer that the client can optionally set to a
+ *    non-zero value for offsetted targets. (symbol+offset) The function may
+ *    also return NULL, in which case the translator only prints the target
+ *    address.
+ *
+ *    The function pointer maybe NULL which resets symbol resolution.
+ * =============================================================================
+ */</doc>

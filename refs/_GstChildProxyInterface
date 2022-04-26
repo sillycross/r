@@ -1,0 +1,19 @@
+<use f='include/gstreamer-1.0/gst/gstchildproxy.h' l='42'/>
+<def f='include/gstreamer-1.0/gst/gstchildproxy.h' l='53' ll='68'/>
+<size>88</size>
+<doc f='include/gstreamer-1.0/gst/gstchildproxy.h' l='44'>/**
+ * GstChildProxyInterface:
+ * @parent: parent interface type.
+ * @get_child_by_name:  virtual method to fetch the child by name
+ * @get_child_by_index: virtual method to fetch the child by index
+ * @get_children_count: virtual method to get the children count
+ *
+ * #GstChildProxy interface.
+ */</doc>
+<mbr r='_GstChildProxyInterface::parent' o='0' t='GTypeInterface'/>
+<mbr r='_GstChildProxyInterface::get_child_by_name' o='128' t='GObject *(*)(GstChildProxy *, const gchar *)'/>
+<mbr r='_GstChildProxyInterface::get_child_by_index' o='192' t='GObject *(*)(GstChildProxy *, guint)'/>
+<mbr r='_GstChildProxyInterface::get_children_count' o='256' t='guint (*)(GstChildProxy *)'/>
+<mbr r='_GstChildProxyInterface::child_added' o='320' t='void (*)(GstChildProxy *, GObject *, const gchar *)'/>
+<mbr r='_GstChildProxyInterface::child_removed' o='384' t='void (*)(GstChildProxy *, GObject *, const gchar *)'/>
+<mbr r='_GstChildProxyInterface::_gst_reserved' o='448' t='gpointer [4]'/>

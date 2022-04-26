@@ -1,0 +1,75 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITCode.h' l='201' c='_ZN3JSC7JITCode9dfgCommonEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCode.h' l='201' c='_ZN3JSC7JITCode9dfgCommonEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredIdentifiers.h' l='56' c='_ZN3JSC3DFG18DesiredIdentifiers9reallyAddERNS_2VMEPNS0_10CommonDataE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredTransitions.h' l='64' c='_ZN3JSC3DFG18DesiredTransitions9reallyAddERNS_2VMEPNS0_10CommonDataE'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGCommonData.h' l='73' ll='133'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCommonData.h' l='74' c='_ZN3JSC3DFG10CommonDataC1ERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCommonData.h' l='74' c='_ZN3JSC3DFG10CommonDataaSERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCommonData.h' l='74' c='_ZN3JSC3DFG10CommonDataaSERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCommonData.h' l='104' c='_ZN3JSC3DFG10CommonData24frameRegisterCountOffsetEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.h' l='86' c='_ZN3JSC3DFG19WatchpointCollector8finalizeEPNS_9CodeBlockERNS0_10CommonDataE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.h' l='252' c='_ZN3JSC3DFG18DesiredWatchpoints9reallyAddEPNS_9CodeBlockERNS0_18DesiredIdentifiersEPNS0_10CommonDataE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWeakReferences.h' l='53' c='_ZN3JSC3DFG21DesiredWeakReferences9reallyAddERNS_2VMEPNS0_10CommonDataE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPlan.h' l='109' c='_ZN3JSC3DFG4Plan9reallyAddEPNS0_10CommonDataE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLJITCode.h' l='68' c='_ZN3JSC3FTL7JITCode9dfgCommonEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLJITCode.h' l='72'/>
+<size>240</size>
+<fun r='_ZN3JSC3DFG10CommonDataC1ERKS1_'/>
+<fun r='_ZN3JSC3DFG10CommonDataC1Ev'/>
+<fun r='_ZN3JSC3DFG10CommonDataD1Ev'/>
+<fun r='_ZN3JSC3DFG10CommonData11shrinkToFitEv'/>
+<fun r='_ZN3JSC3DFG10CommonData10invalidateEv'/>
+<fun r='_ZNK3JSC3DFG10CommonData30hasInstalledVMTrapsBreakpointsEv'/>
+<fun r='_ZN3JSC3DFG10CommonData24installVMTrapBreakpointsEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC3DFG10CommonData18isVMTrapBreakpointEPv'/>
+<fun r='_ZN3JSC3DFG10CommonData33catchOSREntryDataForBytecodeIndexENS_13BytecodeIndexE'/>
+<fun r='_ZN3JSC3DFG10CommonData24finalizeCatchEntrypointsEON3WTF6VectorINS0_19CatchEntrypointDataELm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<fun r='_ZNK3JSC3DFG10CommonData40requiredRegisterCountForExecutionAndExitEv'/>
+<fun r='_ZN3JSC3DFG10CommonData18validateReferencesERKNS_17TrackedReferencesE'/>
+<fun r='_ZN3JSC3DFG10CommonData24frameRegisterCountOffsetEv'/>
+<fun r='_ZN3JSC3DFG10CommonData16clearWatchpointsEv'/>
+<mbr r='JSC::DFG::CommonData::inlineCallFrames' o='0' t='RefPtr&lt;JSC::InlineCallFrameSet&gt;'/>
+<mbr r='JSC::DFG::CommonData::codeOrigins' o='64' t='Ref&lt;JSC::DFG::CodeOriginPool&gt;'/>
+<mbr r='JSC::DFG::CommonData::m_dfgIdentifiers' o='128' t='FixedVector&lt;JSC::Identifier&gt;'/>
+<mbr r='JSC::DFG::CommonData::m_transitions' o='192' t='FixedVector&lt;JSC::DFG::WeakReferenceTransition&gt;'/>
+<mbr r='JSC::DFG::CommonData::m_weakReferences' o='256' t='FixedVector&lt;WriteBarrier&lt;JSC::JSCell&gt; &gt;'/>
+<mbr r='JSC::DFG::CommonData::m_weakStructureReferences' o='320' t='FixedVector&lt;JSC::StructureID&gt;'/>
+<mbr r='JSC::DFG::CommonData::m_catchEntrypoints' o='384' t='FixedVector&lt;JSC::DFG::CatchEntrypointData&gt;'/>
+<mbr r='JSC::DFG::CommonData::m_watchpoints' o='448' t='FixedVector&lt;JSC::CodeBlockJettisoningWatchpoint&gt;'/>
+<mbr r='JSC::DFG::CommonData::m_adaptiveStructureWatchpoints' o='512' t='FixedVector&lt;JSC::DFG::AdaptiveStructureWatchpoint&gt;'/>
+<mbr r='JSC::DFG::CommonData::m_adaptiveInferredPropertyValueWatchpoints' o='576' t='FixedVector&lt;JSC::DFG::AdaptiveInferredPropertyValueWatchpoint&gt;'/>
+<mbr r='JSC::DFG::CommonData::recordedStatuses' o='640' t='JSC::RecordedStatuses'/>
+<mbr r='JSC::DFG::CommonData::m_jumpReplacements' o='1536' t='Vector&lt;JSC::DFG::JumpReplacement&gt;'/>
+<mbr r='JSC::DFG::CommonData::catchOSREntryBuffer' o='1664' t='JSC::ScratchBuffer *'/>
+<mbr r='JSC::DFG::CommonData::compilation' o='1728' t='RefPtr&lt;Profiler::Compilation&gt;'/>
+<mbr r='JSC::DFG::CommonData::isStillValid' o='1792' t='bool'/>
+<mbr r='JSC::DFG::CommonData::hasVMTrapsBreakpointsInstalled' o='1800' t='bool'/>
+<mbr r='JSC::DFG::CommonData::frameRegisterCount' o='1824' t='unsigned int'/>
+<mbr r='JSC::DFG::CommonData::requiredRegisterCountForExit' o='1856' t='unsigned int'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLJITCode.cpp' l='133' c='_ZN3JSC3FTL7JITCode9dfgCommonEv'/>
+<size>240</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCode.h' l='54' c='_ZN3JSC3DFG7JITCode9dfgCommonEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCode.h' l='109'/>
+<size>240</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCode.cpp' l='70' c='_ZN3JSC7JITCode9dfgCommonEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSREntry.cpp' l='357' c='_ZN3JSC3DFG20prepareCatchOSREntryERNS_2VMEPNS_9CallFrameEPNS_9CodeBlockES6_NS_13BytecodeIndexE'/>
+<size>240</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPlan.cpp' l='514' c='_ZN3JSC3DFG4Plan9reallyAddEPNS0_10CommonDataE'/>
+<size>240</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredIdentifiers.cpp' l='88' c='_ZN3JSC3DFG18DesiredIdentifiers9reallyAddERNS_2VMEPNS0_10CommonDataE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredTransitions.cpp' l='70' c='_ZN3JSC3DFG18DesiredTransitions9reallyAddERNS_2VMEPNS0_10CommonDataE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.cpp' l='154' c='_ZN3JSC3DFG18DesiredWatchpoints9reallyAddEPNS_9CodeBlockERNS0_18DesiredIdentifiersEPNS0_10CommonDataE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.cpp' l='202' c='_ZN3JSC3DFG19WatchpointCollector8finalizeEPNS_9CodeBlockERNS0_10CommonDataE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWeakReferences.cpp' l='68' c='_ZN3JSC3DFG21DesiredWeakReferences9reallyAddERNS_2VMEPNS0_10CommonDataE'/>
+<size>240</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCode.cpp' l='49' c='_ZN3JSC3DFG7JITCode9dfgCommonEv'/>
+<size>240</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1172' c='_ZN3JSC9CodeBlock20propagateTransitionsERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1226' c='_ZN3JSC9CodeBlock17determineLivenessERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1565' c='_ZN3JSC9CodeBlock23finalizeUnconditionallyERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1632' c='_ZN3JSC9CodeBlock14getICStatusMapERKNS_18ConcurrentJSLockerERN3WTF7HashMapINS_10CodeOriginENS_8ICStatusENS_25CodeOriginApproximateHashENS4_10HashTrait3308140'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1798' c='_ZN3JSC9CodeBlock19visitOSRExitTargetsERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1838' c='_ZN3JSC9CodeBlock29stronglyVisitStrongReferencesERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1854' c='_ZN3JSC9CodeBlock27stronglyVisitWeakReferencesERKNS_18ConcurrentJSLockerERT_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2211' c='_ZN3JSC9CodeBlock8jettisonENS_8Profiler14JettisonReasonENS_18ReoptimizationModeEPKNS_10FireDetailE'/>
+<size>240</size>

@@ -1,0 +1,16 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebsiteDataManager.cpp' l='1023' ll='1039' type='void webkit_website_data_manager_fetch(WebKitWebsiteDataManager * manager, WebKitWebsiteDataTypes types, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer userData)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebsiteDataManager.cpp' l='1008'>/**
+ * webkit_website_data_manager_fetch:
+ * @manager: a #WebKitWebsiteDataManager
+ * @types: #WebKitWebsiteDataTypes
+ * @cancellable: (allow-none): a #GCancellable or %NULL to ignore
+ * @callback: (scope async): a #GAsyncReadyCallback to call when the request is satisfied
+ * @user_data: (closure): the data to pass to callback function
+ *
+ * Asynchronously get the list of #WebKitWebsiteData for the given @types.
+ *
+ * When the operation is finished, @callback will be called. You can then call
+ * webkit_website_data_manager_fetch_finish() to get the result of the operation.
+ *
+ * Since: 2.16
+ */</doc>

@@ -1,0 +1,28 @@
+<dec f='WebKit/Source/WebCore/editing/VisibleSelection.h' l='149' type='WebCore::Position'/>
+<offset>0</offset>
+<doc f='WebKit/Source/WebCore/editing/VisibleSelection.h' l='142'>// We store only Positions because VisibleSelection is used to store values in
+    // editing commands for use when undoing the command. We need to be able to store
+    // a selection that, while currently invalid, will be valid once the changes are undone.
+
+    // FIXME: Consider doing canonicalization only as part of editing operations, and keeping all selection endpoints non-canonical outside of that code.
+    // FIXME: Rename m_base to m_canonicalAnchor.
+    // FIXME: Rename m_extent to m_canonicalFocus.</doc>
+<doc f='WebKit/Source/WebCore/editing/VisibleSelection.h' l='149'>// Where the first click happened.</doc>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='53' u='w' c='_ZN7WebCore16VisibleSelectionC1ERKNS_8PositionES3_NS_8AffinityEb'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='91' u='r' c='_ZNK7WebCore16VisibleSelection6anchorEv'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='101' u='r' c='_ZNK7WebCore16VisibleSelection20uncanonicalizedStartEv'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='106' u='r' c='_ZNK7WebCore16VisibleSelection18uncanonicalizedEndEv'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='116' u='w' c='_ZN7WebCore16VisibleSelection7setBaseERKNS_8PositionE'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='140' u='m' c='_ZNK7WebCore16VisibleSelection8isOrphanEv'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='140' u='m' c='_ZNK7WebCore16VisibleSelection8isOrphanEv'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='156' u='m' c='_ZNK7WebCore16VisibleSelection8documentEv'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='249' u='m' c='_ZN7WebCore16VisibleSelection33setBaseAndExtentToDeepEquivalentsEv'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='250' u='w' c='_ZN7WebCore16VisibleSelection33setBaseAndExtentToDeepEquivalentsEv'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='252' u='r' c='_ZN7WebCore16VisibleSelection33setBaseAndExtentToDeepEquivalentsEv'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='254' u='r' c='_ZN7WebCore16VisibleSelection33setBaseAndExtentToDeepEquivalentsEv'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='256' u='r' c='_ZN7WebCore16VisibleSelection33setBaseAndExtentToDeepEquivalentsEv'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='257' u='r' c='_ZN7WebCore16VisibleSelection33setBaseAndExtentToDeepEquivalentsEv'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='444' u='w' c='_ZN7WebCore16VisibleSelection8validateENS_15TextGranularityE'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='445' u='r' c='_ZN7WebCore16VisibleSelection8validateENS_15TextGranularityE'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='462' u='w' c='_ZN7WebCore16VisibleSelection20setWithoutValidationERKNS_8PositionES3_'/>
+<use f='WebKit/Source/WebCore/editing/VisibleSelection.cpp' l='464' u='r' c='_ZN7WebCore16VisibleSelection20setWithoutValidationERKNS_8PositionES3_'/>

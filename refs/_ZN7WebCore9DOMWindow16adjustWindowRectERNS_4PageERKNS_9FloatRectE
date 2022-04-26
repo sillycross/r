@@ -1,0 +1,13 @@
+<dec f='WebKit/Source/WebCore/page/DOMWindow.h' l='159' type='static WebCore::FloatRect WebCore::DOMWindow::adjustWindowRect(WebCore::Page &amp; , const WebCore::FloatRect &amp; pendingChanges)'/>
+<def f='WebKit/Source/WebCore/page/DOMWindow.cpp' l='303' ll='337' type='static WebCore::FloatRect WebCore::DOMWindow::adjustWindowRect(WebCore::Page &amp; page, const WebCore::FloatRect &amp; pendingChanges)'/>
+<use f='WebKit/Source/WebCore/page/DOMWindow.cpp' l='1761' u='c' c='_ZNK7WebCore9DOMWindow6moveByEff'/>
+<use f='WebKit/Source/WebCore/page/DOMWindow.cpp' l='1775' u='c' c='_ZNK7WebCore9DOMWindow6moveToEff'/>
+<use f='WebKit/Source/WebCore/page/DOMWindow.cpp' l='1787' u='c' c='_ZNK7WebCore9DOMWindow8resizeByEff'/>
+<use f='WebKit/Source/WebCore/page/DOMWindow.cpp' l='1799' u='c' c='_ZNK7WebCore9DOMWindow8resizeToEff'/>
+<doc f='WebKit/Source/WebCore/page/DOMWindow.cpp' l='297'>// This function:
+// 1) Validates the pending changes are not changing any value to NaN; in that case keep original value.
+// 2) Constrains the window rect to the minimum window size and no bigger than the float rect&apos;s dimensions.
+// 3) Constrains the window rect to within the top and left boundaries of the available screen rect.
+// 4) Constrains the window rect to within the bottom and right boundaries of the available screen rect.
+// 5) Translate the window rect coordinates to be within the coordinate space of the screen.</doc>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='4164' u='c' c='_ZN7WebCore12createWindowERNS_5FrameES1_ONS_16FrameLoadRequestERKNS_14WindowFeaturesERb'/>

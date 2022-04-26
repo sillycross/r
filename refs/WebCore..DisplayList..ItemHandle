@@ -1,0 +1,50 @@
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItems.h' l='2539' c='_ZN7WebCore11DisplayListlsERN3WTF10TextStreamENS0_10ItemHandleE'/>
+<def f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.h' l='59' ll='83'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.h' l='82' c='_ZNK7WebCore11DisplayList10ItemHandle8safeCopyENS0_8ItemTypeES1_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.h' l='85' c='_ZN7WebCore11DisplayList8safeCopyENS0_10ItemHandleERKN3WTF7VariantIJNS0_22ApplyDeviceScaleFactorENS0_26BeginClipToDrawingCommandsENS0_22BeginTranspare9260722'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.h' l='126' c='_ZN7WebCore11DisplayList23ItemBufferReadingClient10decodeItemEPKhmNS0_8ItemTypeEPh'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayList.h' l='94' c='_ZN7WebCore11DisplayList11DisplayList6appendENS0_10ItemHandleE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayList.h' l='135' c='_ZN7WebCore11DisplayList11DisplayList18shouldDumpForFlagsEjNS0_10ItemHandleE'/>
+<size>8</size>
+<doc f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.h' l='55'>// An ItemHandle wraps a pointer to an ItemType followed immediately by an item of that type.
+// Each item handle data pointer is aligned to 8 bytes, and the item itself is also aligned
+// to 8 bytes. To ensure this, the item type consists of 8 bytes (1 byte for the type and 7
+// bytes of padding).</doc>
+<mbr r='WebCore::DisplayList::ItemHandle::data' o='0' t='uint8_t *'/>
+<fun r='_ZN7WebCore11DisplayList10ItemHandle5applyERNS_15GraphicsContextE'/>
+<fun r='_ZN7WebCore11DisplayList10ItemHandle7destroyEv'/>
+<fun r='_ZNK7WebCore11DisplayList10ItemHandle13isDrawingItemEv'/>
+<fun r='_ZNK7WebCore11DisplayList10ItemHandlecvbEv'/>
+<fun r='_ZNK7WebCore11DisplayList10ItemHandlentEv'/>
+<fun r='_ZNK7WebCore11DisplayList10ItemHandle4typeEv'/>
+<fun r='_ZNK7WebCore11DisplayList10ItemHandle2isEv'/>
+<fun r='_ZNK7WebCore11DisplayList10ItemHandle3getEv'/>
+<fun r='_ZNK7WebCore11DisplayList10ItemHandle8safeCopyENS0_8ItemTypeES1_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/InMemoryDisplayList.h' l='50' c='_ZN7WebCore11DisplayList19InMemoryDisplayList13ReadingClient10decodeItemEPKhmNS0_8ItemTypeEPh'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListReplayer.h' l='68' c='_ZN7WebCore11DisplayList8Replayer8Delegate5applyENS0_10ItemHandleERNS_15GraphicsContextE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListReplayer.h' l='75' c='_ZN7WebCore11DisplayList8Replayer9applyItemENS0_10ItemHandleE'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListIterator.h' l='57'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListIterator.h' l='67' c='_ZNK7WebCore11DisplayList11DisplayList8IteratordeEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListIterator.h' l='67' c='_ZNK7WebCore11DisplayList11DisplayList8IteratordeEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayList.cpp' l='88' c='_ZN7WebCore11DisplayList11DisplayList18shouldDumpForFlagsEjNS0_10ItemHandleE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayList.cpp' l='200' c='_ZN7WebCore11DisplayList11DisplayList6appendENS0_10ItemHandleE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.cpp' l='494' c='_ZN7WebCore11DisplayListL8copyIntoEPhRKNS0_10ItemHandleE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.cpp' l='499' c='_ZNK7WebCore11DisplayList10ItemHandle8safeCopyENS0_8ItemTypeES1_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.cpp' l='651' c='_ZN7WebCore11DisplayList8safeCopyENS0_10ItemHandleERKN3WTF7VariantIJNS0_22ApplyDeviceScaleFactorENS0_26BeginClipToDrawingCommandsENS0_22BeginTranspare9260722'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItems.cpp' l='1208' c='_ZN7WebCore11DisplayListlsERN3WTF10TextStreamENS0_10ItemHandleE'/>
+<size>8</size>
+<fun r='_ZN7WebCore11DisplayList10ItemHandle5applyERNS_15GraphicsContextE'/>
+<fun r='_ZN7WebCore11DisplayList10ItemHandle7destroyEv'/>
+<fun r='_ZNK7WebCore11DisplayList10ItemHandle8safeCopyENS0_8ItemTypeES1_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListIterator.cpp' l='90' c='_ZN7WebCore11DisplayList11DisplayList8Iterator17updateCurrentItemEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListIterator.cpp' l='150' c='_ZN7WebCore11DisplayList11DisplayList8Iterator16clearCurrentItemEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListReplayer.cpp' l='58' c='_ZN7WebCore11DisplayListL20applyImageBufferItemERNS_15GraphicsContextERKN3WTF7HashMapINS3_16ObjectIdentifierINS_31RenderingResourceIdentifierTypeEEENS12091512'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListReplayer.cpp' l='70' c='_ZN7WebCore11DisplayListL20applyNativeImageItemERNS_15GraphicsContextERKN3WTF7HashMapINS3_16ObjectIdentifierINS_31RenderingResourceIdentifierTypeEEENS472294'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListReplayer.cpp' l='81' c='_ZN7WebCore11DisplayListL17applySetStateItemERNS_15GraphicsContextERKN3WTF7HashMapINS3_16ObjectIdentifierINS_31RenderingResourceIdentifierTypeEEENS3_311420876'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListReplayer.cpp' l='105' c='_ZN7WebCore11DisplayListL13applyFontItemERNS_15GraphicsContextERKN3WTF7HashMapINS3_16ObjectIdentifierINS_31RenderingResourceIdentifierTypeEEENS3_3RefI6282899'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListReplayer.cpp' l='116' c='_ZN7WebCore11DisplayList8Replayer9applyItemENS0_10ItemHandleE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/InMemoryDisplayList.cpp' l='44' c='_ZN7WebCore11DisplayList19InMemoryDisplayList13ReadingClient10decodeItemEPKhmNS0_8ItemTypeEPh'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/InMemoryDisplayList.cpp' l='46' c='_ZN7WebCore11DisplayList19InMemoryDisplayList13ReadingClient10decodeItemEPKhmNS0_8ItemTypeEPh'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/InMemoryDisplayList.cpp' l='48' c='_ZN7WebCore11DisplayList19InMemoryDisplayList13ReadingClient10decodeItemEPKhmNS0_8ItemTypeEPh'/>
+<size>8</size>

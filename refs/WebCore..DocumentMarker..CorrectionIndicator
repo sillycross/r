@@ -1,0 +1,14 @@
+<dec f='WebKit/Source/WebCore/dom/DocumentMarker.h' l='53' type='16'/>
+<use f='WebKit/Source/WebCore/dom/DocumentMarker.h' l='140' u='r' c='_ZN7WebCore14DocumentMarker10allMarkersEv'/>
+<use f='WebKit/Source/WebCore/dom/DocumentMarker.h' l='140' u='r' c='_ZN7WebCore14DocumentMarker10allMarkersEv'/>
+<doc f='WebKit/Source/WebCore/dom/DocumentMarker.h' l='48'>// Renderer needs to add underline indicating that the text has been modified by spell
+        // correction. Text with Replacement marker doesn&apos;t necessarily has CorrectionIndicator
+        // marker. For instance, after some text has been corrected, it will have both Replacement
+        // and CorrectionIndicator. However, if user further modifies such text, we would remove
+        // CorrectionIndicator marker, but retain Replacement marker.</doc>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='444' u='r' c='_ZN7WebCoreL14markerTypeFromERKN3WTF6StringERNS_14DocumentMarker10MarkerTypeE'/>
+<use f='WebKit/Source/WebCore/rendering/MarkedText.cpp' l='163' c='_ZN7WebCore10MarkedText25collectForDocumentMarkersERNS_10RenderTextERKNS_22TextBoxSelectableRangeENS0_10PaintPhaseE'/>
+<use f='WebKit/Source/WebCore/rendering/MarkedText.cpp' l='188' c='_ZN7WebCore10MarkedText25collectForDocumentMarkersERNS_10RenderTextERKNS_22TextBoxSelectableRangeENS0_10PaintPhaseE'/>
+<use f='WebKit/Source/WebCore/rendering/MarkedText.cpp' l='230' c='_ZN7WebCore10MarkedText25collectForDocumentMarkersERNS_10RenderTextERKNS_22TextBoxSelectableRangeENS0_10PaintPhaseE'/>
+<use f='WebKit/Source/WebCore/editing/Editor.cpp' l='3079' u='r' c='_ZN7WebCore6Editor38updateMarkersForWordsAffectedByEditingEb'/>
+<use f='WebKit/Source/WebCore/editing/Editor.cpp' l='3079' u='r' c='_ZN7WebCore6Editor38updateMarkersForWordsAffectedByEditingEb'/>

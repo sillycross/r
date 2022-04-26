@@ -1,0 +1,12 @@
+<def f='WebKit/Source/WebCore/page/Page.h' l='500' type='const WebCore::Pagination &amp; WebCore::Page::pagination() const'/>
+<doc f='WebKit/Source/WebCore/page/Page.h' l='496'>// Page and FrameView both store a Pagination value. Page::pagination() is set only by API,
+    // and FrameView::pagination() is set only by CSS. Page::pagination() will affect all
+    // FrameViews in the back/forward cache, but FrameView::pagination() only affects the current
+    // FrameView.</doc>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='2415' u='c' c='_ZN6WebKit7WebPage17setPaginationModeEj'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='2422' u='c' c='_ZN6WebKit7WebPage31setPaginationBehavesLikeColumnsEb'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='2429' u='c' c='_ZN6WebKit7WebPage13setPageLengthEd'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='2436' u='c' c='_ZN6WebKit7WebPage18setGapBetweenPagesEd'/>
+<use f='WebKit/Source/WebCore/rendering/RenderView.cpp' l='841' u='c' c='_ZNK7WebCore10RenderView35pageNumberForBlockProgressionOffsetEi'/>
+<use f='WebKit/Source/WebCore/rendering/RenderView.cpp' l='866' u='c' c='_ZNK7WebCore10RenderView9pageCountEv'/>
+<use f='WebKit/Source/WebCore/page/FrameView.cpp' l='3678' u='c' c='_ZNK7WebCore9FrameView10paginationEv'/>

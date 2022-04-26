@@ -1,0 +1,16 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1562' ll='1568' type='void webkit_web_context_set_web_extensions_initialization_user_data(WebKitWebContext * context, GVariant * userData)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1547'>/**
+ * webkit_web_context_set_web_extensions_initialization_user_data:
+ * @context: a #WebKitWebContext
+ * @user_data: a #GVariant
+ *
+ * Set user data to be passed to Web Extensions on initialization.
+ * The data will be passed to the
+ * #WebKitWebExtensionInitializeWithUserDataFunction.
+ * This method must be called before loading anything in this context,
+ * otherwise it will not have any effect. You can connect to
+ * #WebKitWebContext::initialize-web-extensions to call this method
+ * before anything is loaded.
+ *
+ * Since: 2.4
+ */</doc>

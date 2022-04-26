@@ -1,0 +1,21 @@
+<def f='WebKit/WTF/Headers/wtf/SmallSet.h' l='68' ll='72' type='void WTF::SmallSet::SmallSet&lt;T, Hash, SmallArraySize&gt;(SmallSet&lt;T, Hash, SmallArraySize&gt; &amp;&amp; other)'/>
+<doc f='WebKit/WTF/Headers/wtf/SmallSet.h' l='58'>// We take care to have SmallSet have partial move semantics allowable through
+    // memcpy. It&apos;s partial move semantics because our destructor should not be called
+    // on the SmallPtrObject in the old memory we were moved from (otherwise, we might free m_buffer twice)
+    // unless that old memory is reset to be isSmall(). See move constructor below.
+    // To maintain these semantics, we determine if we&apos;re small by checking our size
+    // and not our m_buffer pointer. And when we&apos;re small, we don&apos;t do operations on
+    // m_buffer, instead, we perform operations on m_smallStorage directly. The reason we want
+    // these semantics is that it&apos;s beneficial to have a Vector that contains SmallSet
+    // (or an object with SmallSet as a field) be allowed to use memcpy for its move operation.</doc>
+<use f='WebKit/Source/JavaScriptCore/parser/Nodes.cpp' l='146' u='c' c='_ZN3JSC9ScopeNodeC1ERNS_11ParserArenaERKNS_15JSTokenLocationES5_RKNS_10SourceCodeEPNS_14SourceElementsEONS_19VariableEnvironmentEON3WTF6VectorIPNS_20F10076643'/>
+<def f='WebKit/Source/WTF/wtf/SmallSet.h' l='68' ll='72' type='void WTF::SmallSet::SmallSet&lt;T, Hash, SmallArraySize&gt;(SmallSet&lt;T, Hash, SmallArraySize&gt; &amp;&amp; other)'/>
+<doc f='WebKit/Source/WTF/wtf/SmallSet.h' l='58'>// We take care to have SmallSet have partial move semantics allowable through
+    // memcpy. It&apos;s partial move semantics because our destructor should not be called
+    // on the SmallPtrObject in the old memory we were moved from (otherwise, we might free m_buffer twice)
+    // unless that old memory is reset to be isSmall(). See move constructor below.
+    // To maintain these semantics, we determine if we&apos;re small by checking our size
+    // and not our m_buffer pointer. And when we&apos;re small, we don&apos;t do operations on
+    // m_buffer, instead, we perform operations on m_smallStorage directly. The reason we want
+    // these semantics is that it&apos;s beneficial to have a Vector that contains SmallSet
+    // (or an object with SmallSet as a field) be allowed to use memcpy for its move operation.</doc>

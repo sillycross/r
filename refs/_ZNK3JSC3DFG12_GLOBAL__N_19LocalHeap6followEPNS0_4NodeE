@@ -1,0 +1,15 @@
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='422' ll='427' type='JSC::DFG::Node * JSC::DFG::(anonymous namespace)::LocalHeap::follow(JSC::DFG::Node * node) const'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='444' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_19LocalHeap19onlyLocalAllocationEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='482' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_19LocalHeap6escapeEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='1292' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_128ObjectAllocationSinkingPhase10handleNodeEPNS0_4NodeERKT_RKT0_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='2219' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_128ObjectAllocationSinkingPhase7resolveEPNS0_10BasicBlockEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='2283' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_128ObjectAllocationSinkingPhase23insertOSRHintsForUpdateEjNS0_10NodeOriginERbRNS0_15AvailabilityMapEPNS0_4NodeES8_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='2294' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_128ObjectAllocationSinkingPhase23insertOSRHintsForUpdateEjNS0_10NodeOriginERbRNS0_15AvailabilityMapEPNS0_4NodeES8_'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='414'>// follow solves the points-to problem. Given a live node, which
+    // may be either an allocation itself or a heap read (e.g. a
+    // GetByOffset node), it returns the corresponding allocation
+    // node, if there is one. If the argument node is neither an
+    // allocation or a heap read, or may point to different nodes,
+    // nullptr will be returned. Note that a node that points to
+    // different nodes can never point to an unescaped local
+    // allocation.</doc>

@@ -1,0 +1,15 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderObject.h' l='180' type='bool WebCore::RenderObject::canHaveGeneratedChildren() const'/>
+<ovr f='WebKit/Source/WebCore/rendering/RenderMenuList.h' l='84' c='_ZNK7WebCore14RenderMenuList24canHaveGeneratedChildrenEv'/>
+<ovr f='WebKit/Source/WebCore/rendering/RenderFragmentContainer.h' l='119' c='_ZNK7WebCore23RenderFragmentContainer24canHaveGeneratedChildrenEv'/>
+<def f='WebKit/Source/WebCore/rendering/RenderObject.cpp' l='1825' ll='1828' type='bool WebCore::RenderObject::canHaveGeneratedChildren() const'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderObject.cpp' l='1821'>// We only create &quot;generated&quot; child renderers like one for first-letter if:
+// - the firstLetterBlock can have children in the DOM and
+// - the block doesn&apos;t have any special assumption on its text children.
+// This correctly prevents form controls from having such renderers.</doc>
+<ovr f='WebKit/Source/WebCore/rendering/RenderTextControl.h' l='78' c='_ZNK7WebCore17RenderTextControl24canHaveGeneratedChildrenEv'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeBuilderFirstLetter.cpp' l='116' u='c' c='_ZN7WebCoreL19supportsFirstLetterERNS_11RenderBlockE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeUpdater.cpp' l='137' u='c' c='_ZN7WebCoreL20shouldCreateRendererERKNS_7ElementERKNS_13RenderElementE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeUpdaterGeneratedContent.cpp' l='179' u='c' c='_ZN7WebCore17RenderTreeUpdater16GeneratedContent18needsPseudoElementEPKNS_5Style13ElementUpdateE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBlock.cpp' l='2607' u='c' c='_ZN7WebCoreL20findFirstLetterBlockEPNS_11RenderBlockE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBlock.cpp' l='2665' u='c' c='_ZN7WebCore11RenderBlock14getFirstLetterERPNS_12RenderObjectERPNS_13RenderElementES2_'/>
+<ovr f='WebKit/Source/WebCore/rendering/RenderButton.cpp' l='132' c='_ZNK7WebCore12RenderButton24canHaveGeneratedChildrenEv'/>

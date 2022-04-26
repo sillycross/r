@@ -1,0 +1,9 @@
+<dec f='include/gcrypt.h' l='1031' type='gcry_error_t gcry_cipher_encrypt(gcry_cipher_hd_t h, void * out, size_t outsize, const void * in, size_t inlen)'/>
+<doc f='include/gcrypt.h' l='1027'>/* Encrypt the plaintext of size INLEN in IN using the cipher handle H
+   into the buffer OUT which has an allocated length of OUTSIZE.  For
+   most algorithms it is possible to pass NULL for in and 0 for INLEN
+   and do a in-place decryption of the data provided in OUT.  */</doc>
+<use f='WebKit/Source/WebCore/crypto/gcrypt/CryptoAlgorithmAES_CBCGCrypt.cpp' l='93' u='c' c='_ZN7WebCoreL13gcryptEncryptERKN3WTF6VectorIhLm0ENS0_15CrashOnOverflowELm16ENS0_10FastMallocEEES6_OS4_'/>
+<use f='WebKit/Source/WebCore/crypto/gcrypt/CryptoAlgorithmAES_CTRGCrypt.cpp' l='200' u='r' c='_ZN7WebCore22CryptoAlgorithmAES_CTR15platformEncryptERKNS_27CryptoAlgorithmAesCtrParamsERKNS_12CryptoKeyAESERKN3WTF6VectorIhLm0ENS7_15CrashOnOverflowE13612379'/>
+<use f='WebKit/Source/WebCore/crypto/gcrypt/CryptoAlgorithmAES_GCMGCrypt.cpp' l='89' u='c' c='_ZN7WebCoreL13gcryptEncryptERKN3WTF6VectorIhLm0ENS0_15CrashOnOverflowELm16ENS0_10FastMallocEEES6_S6_S6_h'/>
+<use f='WebKit/Source/WebCore/crypto/gcrypt/CryptoAlgorithmAES_KWGCrypt.cpp' l='69' u='c' c='_ZN7WebCoreL13gcryptWrapKeyERKN3WTF6VectorIhLm0ENS0_15CrashOnOverflowELm16ENS0_10FastMallocEEES6_'/>

@@ -1,0 +1,10 @@
+<dec f='WebKit/PAL/Headers/pal/text/UnencodableHandling.h' l='43' type='2'/>
+<use f='WebKit/Source/WebCore/platform/text/TextEncoding.h' l='55' u='r' c='_ZNK7WebCore12TextEncoding19encodeForURLParsingEN3WTF10StringViewE'/>
+<doc f='WebKit/PAL/Headers/pal/text/UnencodableHandling.h' l='40'>// Encodes the character as en entity as above, but escaped
+    // non-alphanumeric characters. This is used in URLs.
+    // For example, U+6DE would be &quot;%26%231758%3B&quot;.</doc>
+<use f='WebKit/Source/WebCore/platform/text/DecodeEscapeSequences.h' l='177' u='r' c='_ZN7WebCore30decodeURLEscapeSequencesAsDataEN3WTF10StringViewERKNS_12TextEncodingE'/>
+<use f='WebKit/Source/WebCore/platform/text/TextCodec.cpp' l='44' c='_ZN7WebCore9TextCodec25getUnencodableReplacementEiNS_19UnencodableHandlingERSt5arrayIcLm32EE'/>
+<use f='WebKit/Source/WebCore/platform/text/TextCodecCJK.cpp' l='1096' c='_ZN7WebCore18unencodableHandlerENS_19UnencodableHandlingE'/>
+<use f='WebKit/Source/WebCore/platform/text/TextCodecICU.cpp' l='283' u='r' c='_ZN7WebCoreL24urlEscapedEntityCallbackEPKvP25UConverterFromUnicodeArgsPKDsii24UConverterCallbackReasonP10UErrorCode'/>
+<use f='WebKit/Source/WebCore/platform/text/TextCodecICU.cpp' l='328' c='_ZNK7WebCore12TextCodecICU6encodeEN3WTF10StringViewENS_19UnencodableHandlingE'/>

@@ -1,0 +1,13 @@
+<dec f='WebKit/Source/WebCore/platform/graphics/ExtensionsGL.h' l='282' type='GCGLint WebCore::ExtensionsGL::getGraphicsResetStatusARB()'/>
+<doc f='WebKit/Source/WebCore/platform/graphics/ExtensionsGL.h' l='273'>// WebGL functions.
+
+    // GL_ARB_robustness
+    // Note: This method&apos;s behavior differs from the GL_ARB_robustness
+    // specification in the following way:
+    // The implementation must not reset the error state during this call.
+    // If getGraphicsResetStatusARB returns an error, it should continue
+    // returning the same error. Restoring the GraphicsContextGLOpenGL is handled
+    // externally.</doc>
+<ovr f='WebKit/Source/WebCore/platform/graphics/opengl/ExtensionsGLOpenGLCommon.cpp' l='162' c='_ZN7WebCore24ExtensionsGLOpenGLCommon25getGraphicsResetStatusARBEv'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='6224' u='c' c='_ZN7WebCore25WebGLRenderingContextBase15loseContextImplENS0_15LostContextModeE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='7534' u='c' c='_ZN7WebCore25WebGLRenderingContextBase19maybeRestoreContextEv'/>

@@ -1,0 +1,15 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderBlockFlow.cpp' l='4128' type='const WebCore::RenderBlockFlow &amp;'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBlockFlow.cpp' l='4134' u='w' c='_ZN7WebCore20InlineMinMaxIteratorC1ERKNS_15RenderBlockFlowE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBlockFlow.cpp' l='4152' u='m' c='_ZN7WebCore20InlineMinMaxIterator4nextEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBlockFlow.cpp' l='4164' u='a' c='_ZN7WebCore20InlineMinMaxIterator4nextEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBlockFlow.cpp' l='4169' u='a' c='_ZN7WebCore20InlineMinMaxIterator4nextEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBlockFlow.cpp' l='4185' u='a' c='_ZN7WebCore20InlineMinMaxIterator4nextEv'/>
+<offset>0</offset>
+<doc f='WebKit/Source/WebCore/rendering/RenderBlockFlow.cpp' l='4120'>/* InlineMinMaxIterator is a class that will iterate over all render objects that contribute to
+   inline min/max width calculations.  Note the following about the way it walks:
+   (1) Positioned content is skipped (since it does not contribute to min/max width of a block)
+   (2) We do not drill into the children of floats or replaced elements, since you can&apos;t break
+       in the middle of such an element.
+   (3) Inline flows (e.g., &lt;a&gt;, &lt;span&gt;, &lt;i&gt;) are walked twice, since each side can have
+       distinct borders/margin/padding that contribute to the min/max width.
+*/</doc>

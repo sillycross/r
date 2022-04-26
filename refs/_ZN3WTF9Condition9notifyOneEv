@@ -1,0 +1,49 @@
+<def f='WebKit/WTF/Headers/wtf/Condition.h' l='146' ll='165' type='bool WTF::Condition::notifyOne()'/>
+<doc f='WebKit/WTF/Headers/wtf/Condition.h' l='144'>// Note that this method is extremely fast when nobody is waiting. It is not necessary to try to
+    // avoid calling this method. This returns true if someone was actually woken up.</doc>
+<use f='WebKit/WTF/Headers/wtf/CrossThreadQueue.h' l='66' u='c' c='_ZN3WTF16CrossThreadQueue6appendEOT_'/>
+<use f='WebKit/WTF/Headers/wtf/MessageQueue.h' l='97' u='c' c='_ZN3WTF12MessageQueue6appendESt10unique_ptrIT_St14default_deleteIS2_EE'/>
+<use f='WebKit/WTF/Headers/wtf/MessageQueue.h' l='116' u='c' c='_ZN3WTF12MessageQueue19appendAndCheckEmptyESt10unique_ptrIT_St14default_deleteIS2_EE'/>
+<use f='WebKit/WTF/Headers/wtf/MessageQueue.h' l='125' u='c' c='_ZN3WTF12MessageQueue7prependESt10unique_ptrIT_St14default_deleteIS2_EE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/WebResourceLoadStatisticsStore.cpp' l='1477' u='c' c='_ZN6WebKit30WebResourceLoadStatisticsStore6resumeEv'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCacheStorage.cpp' l='1022' u='c' c='_ZN6WebKit12NetworkCache7Storage8traverseERKN3WTF6StringENS2_9OptionSetINS1_12TraverseFlagEEEONS2_8FunctionIFvPKNS1_6RecordERKNS1_10RecordInfoEEEE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='405' u='c' c='_ZN3JSC4Heap20lastChanceToFinalizeEv'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='2000' u='c' c='_ZL24functionDollarAgentStartPN3JSC14JSGlobalObjectEPNS_9CallFrameE'/>
+<def f='WebKit/Source/WTF/wtf/Condition.h' l='146' ll='165' type='bool WTF::Condition::notifyOne()'/>
+<use f='WebKit/Source/WTF/wtf/AutomaticThread.cpp' l='65' u='c' c='_ZN3WTF24AutomaticThreadCondition9notifyOneERKNS_14AbstractLockerE'/>
+<use f='WebKit/Source/WTF/wtf/AutomaticThread.cpp' l='153' u='c' c='_ZN3WTF15AutomaticThread6notifyERKNS_14AbstractLockerE'/>
+<doc f='WebKit/Source/WTF/wtf/Condition.h' l='144'>// Note that this method is extremely fast when nobody is waiting. It is not necessary to try to
+    // avoid calling this method. This returns true if someone was actually woken up.</doc>
+<use f='WebKit/Source/WTF/wtf/CrossThreadQueue.h' l='66' u='c' c='_ZN3WTF16CrossThreadQueue6appendEOT_'/>
+<use f='WebKit/Source/WTF/wtf/ParallelJobsGeneric.cpp' l='105' u='c' c='_ZN3WTF19ParallelEnvironment13ThreadPrivate10tryLockForEPS0_'/>
+<use f='WebKit/Source/WTF/wtf/ParallelJobsGeneric.cpp' l='125' u='c' c='_ZN3WTF19ParallelEnvironment13ThreadPrivate7executeEPFvPvES2_'/>
+<use f='WebKit/Source/WTF/wtf/WorkQueue.cpp' l='110' u='c' c='_ZZN3WTF9WorkQueue15concurrentApplyEmONS_8FunctionIFvmEEEEN10ThreadPool8dispatchEPKNS1_IFvvEEE'/>
+<use f='WebKit/Source/WTF/wtf/WorkQueue.cpp' l='165' u='c' c='_ZN3WTF9WorkQueue15concurrentApplyEmONS_8FunctionIFvmEEE'/>
+<use f='WebKit/Source/WTF/wtf/threads/BinarySemaphore.cpp' l='35' u='c' c='_ZN3WTF15BinarySemaphore6signalEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MainThreadNotifier.h' l='77' u='c' c='_ZN7WebCore18MainThreadNotifier13notifyAndWaitET_OT_'/>
+<use f='WebKit/Source/WebCore/platform/audio/gstreamer/WebKitWebAudioSourceGStreamer.cpp' l='344' u='c' c='_ZL36webKitWebAudioSrcRenderAndPushFramesON3WTF7GRefPtrI11_GstElementEEONS_6VectorINS0_I10_GstBufferEELm0ENS_15CrashOnOverflowELm16ENS_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/ImageDecoderGStreamer.cpp' l='291' u='c' c='_ZN7WebCore21ImageDecoderGStreamer9setHasEOSEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/ImageDecoderGStreamer.cpp' l='304' u='c' c='_ZN7WebCore21ImageDecoderGStreamer12notifySampleEON3WTF7GRefPtrI10_GstSampleEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/ImageDecoderGStreamer.cpp' l='321' u='c' c='_ZN7WebCore21ImageDecoderGStreamer12InnerDecoder13handleMessageEP11_GstMessage'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='2932' u='c' c='_ZN7WebCore27MediaPlayerPrivateGStreamer7repaintEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='3136' u='c' c='_ZN7WebCore27MediaPlayerPrivateGStreamer13cancelRepaintEb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='838' u='c' c='_ZL18webKitWebSrcUnLockP11_GstBaseSrc'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='1045' u='c' c='_ZN29CachedResourceStreamingClient16responseReceivedERN7WebCore21PlatformMediaResourceERKNS0_16ResourceResponseEON3WTF17CompletionHandlerIFvNS0_25Shou11662265'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='1056' u='c' c='_ZN29CachedResourceStreamingClient16responseReceivedERN7WebCore21PlatformMediaResourceERKNS0_16ResourceResponseEON3WTF17CompletionHandlerIFvNS0_25Shou11662265'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='1089' u='c' c='_ZN29CachedResourceStreamingClient16responseReceivedERN7WebCore21PlatformMediaResourceERKNS0_16ResourceResponseEON3WTF17CompletionHandlerIFvNS0_25Shou11662265'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='1129' u='c' c='_ZN29CachedResourceStreamingClient12dataReceivedERN7WebCore21PlatformMediaResourceEPKhi'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='1142' u='c' c='_ZN29CachedResourceStreamingClient24accessControlCheckFailedERN7WebCore21PlatformMediaResourceERKNS0_13ResourceErrorE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='1160' u='c' c='_ZN29CachedResourceStreamingClient10loadFailedERN7WebCore21PlatformMediaResourceERKNS0_13ResourceErrorE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/WebKitWebSourceGStreamer.cpp' l='1174' u='c' c='_ZN29CachedResourceStreamingClient12loadFinishedERN7WebCore21PlatformMediaResourceERKNS0_18NetworkLoadMetricsE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/WebKitMediaSourceGStreamer.cpp' l='349' u='c' c='_ZL26webKitMediaSrcActivateModeP7_GstPadP10_GstObject10GstPadModei'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/WebKitMediaSourceGStreamer.cpp' l='350' u='c' c='_ZL26webKitMediaSrcActivateModeP7_GstPadP10_GstObject10GstPadModei'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/WebKitMediaSourceGStreamer.cpp' l='368' u='c' c='_ZL23webKitMediaSrcPadLinkedP7_GstPadS0_Pv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/nicosia/NicosiaBuffer.cpp' l='63' u='c' c='_ZN7Nicosia6Buffer16completePaintingEv'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='786' u='c' c='_ZN3IPC10Connection22processIncomingMessageESt10unique_ptrINS_7DecoderESt14default_deleteIS2_EE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='791' u='c' c='_ZN3IPC10Connection22processIncomingMessageESt10unique_ptrINS_7DecoderESt14default_deleteIS2_EE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='797' u='c' c='_ZN3IPC10Connection22processIncomingMessageESt10unique_ptrINS_7DecoderESt14default_deleteIS2_EE'/>
+<use f='WebKit/Source/WebCore/platform/audio/ReverbConvolver.cpp' l='138' u='c' c='_ZN7WebCore15ReverbConvolverD1Ev'/>
+<use f='WebKit/Source/WebCore/platform/audio/ReverbConvolver.cpp' l='210' u='c' c='_ZN7WebCore15ReverbConvolver7processEPKNS_12AudioChannelEPS1_m'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseTask.cpp' l='53' u='c' c='_ZN7WebCore24DatabaseTaskSynchronizer13taskCompletedEv'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ThreadedScrollingTree.cpp' l='101' u='c' c='_ZN7WebCore21ThreadedScrollingTree34wheelEventWasProcessedByMainThreadERKNS_18PlatformWheelEventESt8optionalINS_23WheelScrollGestureStateEE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ThreadedScrollingTree.cpp' l='348' u='c' c='_ZN7WebCore21ThreadedScrollingTree26didCompleteRenderingUpdateEv'/>

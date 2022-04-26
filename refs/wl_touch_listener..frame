@@ -1,0 +1,14 @@
+<dec f='include/wayland-client-protocol.h' l='4935' type='void (*)(void *, struct wl_touch *)'/>
+<offset>192</offset>
+<doc f='include/wayland-client-protocol.h' l='4923'>/**
+	 * end of touch frame event
+	 *
+	 * Indicates the end of a set of events that logically belong
+	 * together. A client is expected to accumulate the data in all
+	 * events within the frame before proceeding.
+	 *
+	 * A wl_touch.frame terminates at least one event but otherwise no
+	 * guarantee is provided about the set of events within a frame. A
+	 * client must assume that any state not updated in a frame is
+	 * unchanged from the previously known state.
+	 */</doc>

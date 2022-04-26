@@ -1,0 +1,15 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1292' ll='1300' type='void webkit_web_context_set_sandbox_enabled(WebKitWebContext * context, gboolean enabled)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1278'>/**
+ * webkit_web_context_set_sandbox_enabled:
+ * @context: a #WebKitWebContext
+ * @enabled: if %TRUE enable sandboxing
+ *
+ * Set whether WebKit subprocesses will be sandboxed, limiting access to the system.
+ *
+ * This method **must be called before any web process has been created**,
+ * as early as possible in your application. Calling it later is a fatal error.
+ *
+ * This is only implemented on Linux and is a no-op otherwise.
+ *
+ * Since: 2.26
+ */</doc>

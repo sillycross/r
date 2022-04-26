@@ -1,0 +1,93 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITCode.h' l='202' c='_ZN3JSC7JITCode3dfgEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCode.h' l='202' c='_ZN3JSC7JITCode3dfgEv'/>
+<inh f='WebKit/Source/JavaScriptCore/jit/JITCode.h' l='252' c='JSC::DirectJITCode'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGJITCode.h' l='49' ll='146'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCode.h' l='55' c='_ZN3JSC3DFG7JITCode3dfgEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCode.h' l='99' c='_ZN3JSC3DFG7JITCode16commonDataOffsetEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSREntry.cpp' l='48' c='_ZN3JSC3FTL15prepareOSREntryERNS_2VMEPNS_9CallFrameEPNS_9CodeBlockES6_NS_13BytecodeIndexEj'/>
+<size>392</size>
+<fun r='_ZN3JSC3DFG7JITCodeC1Ev'/>
+<fun r='_ZN3JSC3DFG7JITCodeD1Ev'/>
+<fun r='_ZN3JSC3DFG7JITCode9dfgCommonEv'/>
+<fun r='_ZN3JSC3DFG7JITCode3dfgEv'/>
+<fun r='_ZN3JSC3DFG7JITCode28osrEntryDataForBytecodeIndexENS_13BytecodeIndexE'/>
+<fun r='_ZN3JSC3DFG7JITCode22finalizeOSREntrypointsEON3WTF6VectorINS0_12OSREntryDataELm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<fun r='_ZN3JSC3DFG7JITCode11reconstructEPNS_9CodeBlockENS_10CodeOriginEjRNS_8OperandsINS_13ValueRecoveryEN3WTF6VectorIS6_Lm0ENS7_20UnsafeVectorOverflowELm16E7192742'/>
+<fun r='_ZN3JSC3DFG7JITCode11reconstructEPNS_9CallFrameEPNS_9CodeBlockENS_10CodeOriginEjRNS_8OperandsISt8optionalINS_7JSValueEEN3WTF6VectorISA_Lm0ENSB_20Unsaf8333502'/>
+<fun r='_ZN3JSC3DFG7JITCode35checkIfOptimizationThresholdReachedEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC3DFG7JITCode22optimizeNextInvocationEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC3DFG7JITCode23dontOptimizeAnytimeSoonEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC3DFG7JITCode19optimizeAfterWarmUpEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC3DFG7JITCode12optimizeSoonEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC3DFG7JITCode37forceOptimizationSlowPathConcurrentlyEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC3DFG7JITCode48setOptimizationThresholdBasedOnCompilationResultEPNS_9CodeBlockENS_17CompilationResultE'/>
+<fun r='_ZN3JSC3DFG7JITCode18validateReferencesERKNS_17TrackedReferencesE'/>
+<fun r='_ZN3JSC3DFG7JITCode11shrinkToFitERKNS_18ConcurrentJSLockerE'/>
+<fun r='_ZN3JSC3DFG7JITCode50liveRegistersToPreserveAtExceptionHandlingCallSiteEPNS_9CodeBlockENS_13CallSiteIndexE'/>
+<fun r='_ZN3JSC3DFG7JITCode13osrEntryBlockEv'/>
+<fun r='_ZN3JSC3DFG7JITCode16setOSREntryBlockERNS_2VMEPKNS_6JSCellEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC3DFG7JITCode36clearOSREntryBlockAndResetThresholdsEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC3DFG7JITCode16commonDataOffsetEv'/>
+<fun r='_ZN3JSC3DFG7JITCode6findPCEPNS_9CodeBlockEPv'/>
+<mbr r='JSC::DFG::JITCode::common' o='320' t='JSC::DFG::CommonData'/>
+<mbr r='JSC::DFG::JITCode::m_osrEntry' o='2240' t='FixedVector&lt;DFG::OSREntryData&gt;'/>
+<mbr r='JSC::DFG::JITCode::m_osrExit' o='2304' t='FixedVector&lt;DFG::OSRExit&gt;'/>
+<mbr r='JSC::DFG::JITCode::m_speculationRecovery' o='2368' t='FixedVector&lt;DFG::SpeculationRecovery&gt;'/>
+<mbr r='JSC::DFG::JITCode::variableEventStream' o='2432' t='DFG::VariableEventStream'/>
+<mbr r='JSC::DFG::JITCode::minifiedDFG' o='2560' t='DFG::MinifiedGraph'/>
+<mbr r='JSC::DFG::JITCode::neverExecutedEntry' o='2688' t='uint8_t'/>
+<mbr r='JSC::DFG::JITCode::tierUpCounter' o='2720' t='JSC::UpperTierExecutionCounter'/>
+<mbr r='JSC::DFG::JITCode::tierUpInLoopHierarchy' o='2816' t='HashMap&lt;JSC::BytecodeIndex, FixedVector&lt;JSC::BytecodeIndex&gt; &gt;'/>
+<mbr r='JSC::DFG::JITCode::bytecodeIndexToStreamIndex' o='2880' t='HashMap&lt;JSC::BytecodeIndex, unsigned int&gt;'/>
+<mbr r='JSC::DFG::JITCode::tierUpEntryTriggers' o='2944' t='HashMap&lt;JSC::BytecodeIndex, JSC::DFG::JITCode::TriggerReason&gt;'/>
+<mbr r='JSC::DFG::JITCode::m_osrEntryBlock' o='3008' t='WriteBarrier&lt;JSC::CodeBlock&gt;'/>
+<mbr r='JSC::DFG::JITCode::osrEntryRetry' o='3072' t='unsigned int'/>
+<mbr r='JSC::DFG::JITCode::abandonOSREntry' o='3104' t='bool'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCode.cpp' l='76' c='_ZN3JSC7JITCode3dfgEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='290' c='_ZN3JSC3DFG11JITCompiler7jitCodeEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='324'/>
+<size>392</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSREntry.cpp' l='139' c='_ZN3JSC3DFG15prepareOSREntryERNS_2VMEPNS_9CallFrameEPNS_9CodeBlockENS_13BytecodeIndexE'/>
+<size>392</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='3784' c='_ZN3JSC3DFGL23shouldTriggerFTLCompileEPNS_9CodeBlockEPNS0_7JITCodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='3802' c='_ZN3JSC3DFGL28triggerFTLReplacementCompileERNS_2VMEPNS_9CodeBlockEPNS0_7JITCodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='3864' c='_ZN3JSC3DFG25operationTriggerTierUpNowEPNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='3900' c='_ZN3JSC3DFGL12tierUpCommonERNS_2VMEPNS_9CallFrameENS_13BytecodeIndexEb'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='3932' c='_ZN3JSC3DFGL12tierUpCommonERNS_2VMEPNS_9CallFrameENS_13BytecodeIndexEb'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='4131' c='_ZN3JSC3DFG31operationTriggerTierUpNowInLoopEPNS_2VMEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='4163' c='_ZN3JSC3DFG27operationTriggerOSREntryNowEPNS_2VMEj'/>
+<size>392</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGThunks.cpp' l='48' c='_ZN3JSC3DFG31osrExitGenerationThunkGeneratorERNS_2VME'/>
+<size>392</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGToFTLForOSREntryDeferredCompilationCallback.cpp' l='68' c='_ZN3JSC3DFG43ToFTLForOSREntryDeferredCompilationCallback22compilationDidCompleteEPNS_9CodeBlockES3_NS_17CompilationResultE'/>
+<size>392</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCode.cpp' l='54' c='_ZN3JSC3DFG7JITCode3dfgEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITFinalizer.h' l='38' c='_ZN3JSC3DFG12JITFinalizerC1ERNS0_4PlanEON3WTF3RefINS0_7JITCodeENS4_12RawPtrTraitsIS6_EEEESt10unique_ptrINS_10LinkBufferESt14default_deleteISC_EENS_21M16112622'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITFinalizer.h' l='46'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.cpp' l='51' c='_ZN3JSC3DFG11JITCompilerC1ERNS0_5GraphE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITFinalizer.cpp' l='39' c='_ZN3JSC3DFG12JITFinalizerC1ERNS0_4PlanEON3WTF3RefINS0_7JITCodeENS4_12RawPtrTraitsIS6_EEEESt10unique_ptrINS_10LinkBufferESt14default_deleteISC_EENS_21M16112622'/>
+<size>392</size>
+<fun r='_ZN3JSC3DFG7JITCodeC1Ev'/>
+<fun r='_ZN3JSC3DFG7JITCodeD1Ev'/>
+<fun r='_ZN3JSC3DFG7JITCode9dfgCommonEv'/>
+<fun r='_ZN3JSC3DFG7JITCode3dfgEv'/>
+<fun r='_ZN3JSC3DFG7JITCode11shrinkToFitERKNS_18ConcurrentJSLockerE'/>
+<fun r='_ZN3JSC3DFG7JITCode11reconstructEPNS_9CodeBlockENS_10CodeOriginEjRNS_8OperandsINS_13ValueRecoveryEN3WTF6VectorIS6_Lm0ENS7_20UnsafeVectorOverflowELm16E7192742'/>
+<fun r='_ZN3JSC3DFG7JITCode11reconstructEPNS_9CallFrameEPNS_9CodeBlockENS_10CodeOriginEjRNS_8OperandsISt8optionalINS_7JSValueEEN3WTF6VectorISA_Lm0ENSB_20Unsaf8333502'/>
+<fun r='_ZN3JSC3DFG7JITCode50liveRegistersToPreserveAtExceptionHandlingCallSiteEPNS_9CodeBlockENS_13CallSiteIndexE'/>
+<fun r='_ZN3JSC3DFG7JITCode35checkIfOptimizationThresholdReachedEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC3DFG7JITCode22optimizeNextInvocationEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC3DFG7JITCode23dontOptimizeAnytimeSoonEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC3DFG7JITCode19optimizeAfterWarmUpEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC3DFG7JITCode12optimizeSoonEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC3DFG7JITCode37forceOptimizationSlowPathConcurrentlyEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC3DFG7JITCode48setOptimizationThresholdBasedOnCompilationResultEPNS_9CodeBlockENS_17CompilationResultE'/>
+<fun r='_ZN3JSC3DFG7JITCode16setOSREntryBlockERNS_2VMEPKNS_6JSCellEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC3DFG7JITCode36clearOSREntryBlockAndResetThresholdsEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC3DFG7JITCode18validateReferencesERKNS_17TrackedReferencesE'/>
+<fun r='_ZN3JSC3DFG7JITCode6findPCEPNS_9CodeBlockEPv'/>
+<fun r='_ZN3JSC3DFG7JITCode22finalizeOSREntrypointsEON3WTF6VectorINS0_12OSREntryDataELm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='939' c='_ZN3JSC9CodeBlock26specialOSREntryBlockOrNullEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1588' c='_ZN3JSC9CodeBlock23finalizeUnconditionallyERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='3015' c='_ZN3JSC9CodeBlock22tallyFrequentExitSitesEv'/>
+<size>392</size>

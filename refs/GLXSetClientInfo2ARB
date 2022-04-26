@@ -1,0 +1,22 @@
+<def f='include/GL/glxproto.h' l='1367' ll='1379'/>
+<use f='include/GL/glxproto.h' l='1367'/>
+<size>24</size>
+<doc f='include/GL/glxproto.h' l='1356'>/**
+ * Protocol header for glXSetClientInfo2ARB
+ *
+ * The glXSetClientInfo2ARB protocol differs from glXSetClientInfoARB in that
+ * the list of OpenGL versions supported by the client is 3 \c CARD32 values
+ * per version: major version, minor version, and supported profile mask.
+ *
+ * This protocol replaces \c GLXClientInfo and \c GLXSetClientInfoARB.
+ *
+ * \sa GLXClientInfo, GLXSetClientInfoARB
+ */</doc>
+<mbr r='GLXSetClientInfo2ARB::reqType' o='0' t='CARD8'/>
+<mbr r='GLXSetClientInfo2ARB::glxCode' o='8' t='CARD8'/>
+<mbr r='GLXSetClientInfo2ARB::length' o='16' t='CARD16'/>
+<mbr r='GLXSetClientInfo2ARB::major' o='32' t='CARD32'/>
+<mbr r='GLXSetClientInfo2ARB::minor' o='64' t='CARD32'/>
+<mbr r='GLXSetClientInfo2ARB::numVersions' o='96' t='CARD32'/>
+<mbr r='GLXSetClientInfo2ARB::numGLExtensionBytes' o='128' t='CARD32'/>
+<mbr r='GLXSetClientInfo2ARB::numGLXExtensionBytes' o='160' t='CARD32'/>

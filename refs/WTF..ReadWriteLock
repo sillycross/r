@@ -1,0 +1,61 @@
+<def f='WebKit/WTF/Headers/wtf/ReadWriteLock.h' l='38' ll='69'/>
+<use f='WebKit/WTF/Headers/wtf/ReadWriteLock.h' l='39' c='_ZN3WTF13ReadWriteLockC1ERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/ReadWriteLock.h' l='39' c='_ZN3WTF13ReadWriteLockaSERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/ReadWriteLock.h' l='39' c='_ZN3WTF13ReadWriteLockaSERKS0_'/>
+<ovr f='WebKit/WTF/Headers/wtf/ReadWriteLock.h' l='71' c='WTF::ReadWriteLock::ReadLock'/>
+<use f='WebKit/WTF/Headers/wtf/ReadWriteLock.h' l='71'/>
+<ovr f='WebKit/WTF/Headers/wtf/ReadWriteLock.h' l='78' c='WTF::ReadWriteLock::WriteLock'/>
+<use f='WebKit/WTF/Headers/wtf/ReadWriteLock.h' l='78'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.cpp' l='589'/>
+<size>12</size>
+<doc f='WebKit/WTF/Headers/wtf/ReadWriteLock.h' l='33'>// This is a traditional read-write lock implementation that enables concurrency between readers so long as
+// the read critical section is long. Concurrent readers will experience contention on read().lock() and
+// read().unlock() if the work inside the critical section is short. The more cores participate in reading,
+// the longer the read critical section has to be for this locking scheme to be profitable.</doc>
+<fun r='_ZN3WTF13ReadWriteLockC1ERKS0_'/>
+<fun r='_ZN3WTF13ReadWriteLockC1Ev'/>
+<fun r='_ZN3WTF13ReadWriteLock8readLockEv'/>
+<fun r='_ZN3WTF13ReadWriteLock10readUnlockEv'/>
+<fun r='_ZN3WTF13ReadWriteLock9writeLockEv'/>
+<fun r='_ZN3WTF13ReadWriteLock11writeUnlockEv'/>
+<fun r='_ZN3WTF13ReadWriteLock4readEv'/>
+<fun r='_ZN3WTF13ReadWriteLock5writeEv'/>
+<mbr r='WTF::ReadWriteLock::m_lock' o='0' t='WTF::Lock'/>
+<mbr r='WTF::ReadWriteLock::m_cond' o='8' t='WTF::Condition'/>
+<mbr r='WTF::ReadWriteLock::m_isWriteLocked' o='16' t='bool'/>
+<mbr r='WTF::ReadWriteLock::m_numReaders' o='32' t='unsigned int'/>
+<mbr r='WTF::ReadWriteLock::m_numWaitingWriters' o='64' t='unsigned int'/>
+<fun r='_ZN3WTF13ReadWriteLock4readEv'/>
+<fun r='_ZN3WTF13ReadWriteLock5writeEv'/>
+<def f='WebKit/Source/WTF/wtf/ReadWriteLock.h' l='38' ll='69'/>
+<use f='WebKit/Source/WTF/wtf/ReadWriteLock.h' l='39' c='_ZN3WTF13ReadWriteLockC1ERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/ReadWriteLock.h' l='39' c='_ZN3WTF13ReadWriteLockaSERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/ReadWriteLock.h' l='39' c='_ZN3WTF13ReadWriteLockaSERKS0_'/>
+<ovr f='WebKit/Source/WTF/wtf/ReadWriteLock.h' l='71' c='WTF::ReadWriteLock::ReadLock'/>
+<use f='WebKit/Source/WTF/wtf/ReadWriteLock.h' l='71'/>
+<ovr f='WebKit/Source/WTF/wtf/ReadWriteLock.h' l='78' c='WTF::ReadWriteLock::WriteLock'/>
+<use f='WebKit/Source/WTF/wtf/ReadWriteLock.h' l='78'/>
+<size>12</size>
+<doc f='WebKit/Source/WTF/wtf/ReadWriteLock.h' l='33'>// This is a traditional read-write lock implementation that enables concurrency between readers so long as
+// the read critical section is long. Concurrent readers will experience contention on read().lock() and
+// read().unlock() if the work inside the critical section is short. The more cores participate in reading,
+// the longer the read critical section has to be for this locking scheme to be profitable.</doc>
+<fun r='_ZN3WTF13ReadWriteLockC1ERKS0_'/>
+<fun r='_ZN3WTF13ReadWriteLockC1Ev'/>
+<fun r='_ZN3WTF13ReadWriteLock8readLockEv'/>
+<fun r='_ZN3WTF13ReadWriteLock10readUnlockEv'/>
+<fun r='_ZN3WTF13ReadWriteLock9writeLockEv'/>
+<fun r='_ZN3WTF13ReadWriteLock11writeUnlockEv'/>
+<fun r='_ZN3WTF13ReadWriteLock4readEv'/>
+<fun r='_ZN3WTF13ReadWriteLock5writeEv'/>
+<mbr r='WTF::ReadWriteLock::m_lock' o='0' t='WTF::Lock'/>
+<mbr r='WTF::ReadWriteLock::m_cond' o='8' t='WTF::Condition'/>
+<mbr r='WTF::ReadWriteLock::m_isWriteLocked' o='16' t='bool'/>
+<mbr r='WTF::ReadWriteLock::m_numReaders' o='32' t='unsigned int'/>
+<mbr r='WTF::ReadWriteLock::m_numWaitingWriters' o='64' t='unsigned int'/>
+<fun r='_ZN3WTF13ReadWriteLock4readEv'/>
+<fun r='_ZN3WTF13ReadWriteLock5writeEv'/>
+<fun r='_ZN3WTF13ReadWriteLock8readLockEv'/>
+<fun r='_ZN3WTF13ReadWriteLock10readUnlockEv'/>
+<fun r='_ZN3WTF13ReadWriteLock9writeLockEv'/>
+<fun r='_ZN3WTF13ReadWriteLock11writeUnlockEv'/>

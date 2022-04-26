@@ -1,0 +1,18 @@
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCVirtualMachine.h' l='42'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCVirtualMachine.cpp' l='45' ll='48'/>
+<size>16</size>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCVirtualMachine.cpp' l='31'>/**
+ * SECTION: JSCVirtualMachine
+ * @short_description: JavaScript Virtual Machine
+ * @title: JSCVirtualMachine
+ * @see_also: JSCContext
+ *
+ * JSCVirtualMachine represents a group of JSCContext&lt;!-- --&gt;s. It allows
+ * concurrent JavaScript execution by creating a different instance of
+ * JSCVirtualMachine in each thread.
+ *
+ * To create a group of JSCContext&lt;!-- --&gt;s pass the same JSCVirtualMachine
+ * instance to every JSCContext constructor.
+ */</doc>
+<mbr r='_JSCVirtualMachinePrivate::jsContextGroup' o='0' t='JSContextGroupRef'/>
+<mbr r='_JSCVirtualMachinePrivate::contextCache' o='64' t='HashMap&lt;JSGlobalContextRef, JSCContext *&gt;'/>

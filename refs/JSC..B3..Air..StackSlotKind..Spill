@@ -1,0 +1,18 @@
+<dec f='WebKit/Source/JavaScriptCore/b3/air/AirStackSlotKind.h' l='44' type='1'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirStackSlot.h' l='50' u='r' c='_ZNK3JSC2B33Air9StackSlot7isSpillEv'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/air/AirStackSlotKind.h' l='39'>// A spill slot. These have fundamentally different behavior than a typical memory location.
+    // They are lowered to from temporaries. This means for example that a 32-bit ZDef store to a
+    // 8 byte stack slot will zero the top 4 bytes, even though a 32-bit ZDef store to any other
+    // kind of memory location would do no such thing. UseAddr on a spill slot is not allowed, so
+    // they never escape.</doc>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersAndStackAndGenerateCode.cpp' l='317' u='r' c='_ZN3JSC2B33Air28GenerateAndAllocateRegisters20prepareForGenerationEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersAndStackAndGenerateCode.cpp' l='362' u='r' c='_ZN3JSC2B33Air28GenerateAndAllocateRegisters20prepareForGenerationEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersAndStackByLinearScan.cpp' l='544' u='r' c='_ZN3JSC2B33Air12_GLOBAL__N_110LinearScan5spillENS1_3TmpE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='1982' u='r' c='_ZN3JSC2B33Air12_GLOBAL__N_131GraphColoringRegisterAllocation15addSpillAndFillERKT0_RN3WTF9BitVectorE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateStackByGraphColoring.cpp' l='91' u='r' c='_ZNK3JSC2B33Air12_GLOBAL__N_118StackAllocatorBase17isCoalescableMoveERNS1_4InstE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateStackByGraphColoring.cpp' l='173' u='r' c='_ZN3JSC2B33Air12_GLOBAL__N_127GraphColoringStackAllocator3runERKN3WTF6VectorIPNS1_9StackSlotELm0ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateStackByGraphColoring.cpp' l='204' u='r' c='_ZN3JSC2B33Air12_GLOBAL__N_127GraphColoringStackAllocator3runERKN3WTF6VectorIPNS1_9StackSlotELm0ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLowerAfterRegAlloc.cpp' l='135' u='r' c='_ZN3JSC2B33Air18lowerAfterRegAllocERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLowerAfterRegAlloc.cpp' l='222' u='r' c='_ZN3JSC2B33Air18lowerAfterRegAllocERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLowerStackArgs.cpp' l='151' u='r' c='_ZN3JSC2B33Air14lowerStackArgsERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirStackSlotKind.cpp' l='43' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC2B33Air13StackSlotKindE'/>

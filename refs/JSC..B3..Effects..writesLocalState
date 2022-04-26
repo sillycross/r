@@ -1,0 +1,19 @@
+<dec f='WebKit/Source/JavaScriptCore/b3/B3Effects.h' l='58' type='bool'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Effects.h' l='114' u='r' c='_ZNK3JSC2B37Effects11mustExecuteEv'/>
+<offset>24</offset>
+<doc f='WebKit/Source/JavaScriptCore/b3/B3Effects.h' l='54'>// True if this writes to the local state. Operations that write local state don&apos;t write to anything
+    // in &quot;memory&quot; but they have a side-effect anyway. This is for modeling Upsilons, Sets, and Fences.
+    // This is a way of saying: even though this operation is not a terminal, does not exit sideways,
+    // and does not write to the heap, you still cannot kill this operation.</doc>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Effects.cpp' l='46' u='r' c='_ZN3JSC2B312_GLOBAL__N_122interferesWithTerminalERKNS0_7EffectsES4_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Effects.cpp' l='58' u='r' c='_ZN3JSC2B312_GLOBAL__N_130interferesWithWritesLocalStateERKNS0_7EffectsES4_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Effects.cpp' l='60' u='r' c='_ZN3JSC2B312_GLOBAL__N_130interferesWithWritesLocalStateERKNS0_7EffectsES4_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Effects.cpp' l='93' u='r' c='_ZNK3JSC2B37EffectseqERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Effects.cpp' l='93' u='r' c='_ZNK3JSC2B37EffectseqERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Effects.cpp' l='116' u='r' c='_ZNK3JSC2B37Effects4dumpERN3WTF11PrintStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3HoistLoopInvariantValues.cpp' l='85' u='r' c='_ZN3JSC2B324hoistLoopInvariantValuesERNS0_9ProcedureE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='663' u='w' c='_ZNK3JSC2B35Value7effectsEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='642' u='w' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB315validateAIStateEPNS_3DFG4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='11543' u='w' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB324compileInvalidationPointEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='15502' u='w' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB315compileLoopHintEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='20135' u='w' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB320ensureStillAliveHereEPNS_2B35ValueE'/>

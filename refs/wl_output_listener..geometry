@@ -1,0 +1,28 @@
+<dec f='include/wayland-client-protocol.h' l='5253' type='void (*)(void *, struct wl_output *, int32_t, int32_t, int32_t, int32_t, int32_t, const char *, const char *, int32_t)'/>
+<offset>0</offset>
+<doc f='include/wayland-client-protocol.h' l='5227'>/**
+	 * properties of the output
+	 *
+	 * The geometry event describes geometric properties of the
+	 * output. The event is sent when binding to the output object and
+	 * whenever any of the properties change.
+	 *
+	 * The physical size can be set to zero if it doesn&apos;t make sense
+	 * for this output (e.g. for projectors or virtual outputs).
+	 *
+	 * Note: wl_output only advertises partial information about the
+	 * output position and identification. Some compositors, for
+	 * instance those not implementing a desktop-style output layout or
+	 * those exposing virtual outputs, might fake this information.
+	 * Instead of using x and y, clients should use
+	 * xdg_output.logical_position. Instead of using make and model,
+	 * clients should use xdg_output.name and xdg_output.description.
+	 * @param x x position within the global compositor space
+	 * @param y y position within the global compositor space
+	 * @param physical_width width in millimeters of the output
+	 * @param physical_height height in millimeters of the output
+	 * @param subpixel subpixel orientation of the output
+	 * @param make textual description of the manufacturer
+	 * @param model textual description of the model
+	 * @param transform transform that maps framebuffer to output
+	 */</doc>

@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.h' l='97' type='Ref&lt;JSC::FTL::OSRExitHandle&gt; JSC::FTL::OSRExitDescriptor::emitOSRExit(JSC::FTL::State &amp; , JSC::ExitKind , const DFG::NodeOrigin &amp; , JSC::CCallHelpers &amp; , const B3::StackmapGenerationParams &amp; , uint32_t dfgNodeIndex, unsigned int offset)'/>
+<doc f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.h' l='91'>// Call this once we have a place to emit the OSR exit jump and we have data about how the state
+    // should be recovered. This effectively emits code that does the exit, though the code is really a
+    // patchable jump and we emit the real code lazily. The description of how to emit the real code is
+    // up to the OSRExit object, which this creates. Note that it&apos;s OK to drop the OSRExitHandle object
+    // on the ground. It contains information that is mostly not useful if you use this API, since after
+    // this call, the OSRExit is simply ready to go.</doc>
+<def f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExit.cpp' l='58' ll='66' type='Ref&lt;JSC::FTL::OSRExitHandle&gt; JSC::FTL::OSRExitDescriptor::emitOSRExit(JSC::FTL::State &amp; state, JSC::ExitKind exitKind, const JSC::DFG::NodeOrigin &amp; nodeOrigin, JSC::CCallHelpers &amp; jit, const JSC::B3::StackmapGenerationParams &amp; params, uint32_t dfgNodeIndex, unsigned int offset)'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='19832' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB316blessSpeculationEPNS_2B310CheckValueENS_8ExitKindENS0_14FormattedValueERKNS_28MethodOfGettingAValueProfileENS_3DFG10NodeOriginE'/>

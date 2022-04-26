@@ -1,0 +1,6 @@
+<dec f='WebKit/Source/WebCore/Modules/webaudio/AudioBuffer.h' l='74' type='void WebCore::AudioBuffer::releaseMemory()'/>
+<doc f='WebKit/Source/WebCore/Modules/webaudio/AudioBuffer.h' l='71'>// Because an AudioBuffer has a JavaScript wrapper, which will be garbage collected, it may take a while for this object to be deleted.
+    // releaseMemory() can be called when the AudioContext goes away, so we can release the memory earlier than when the garbage collection happens.
+    // Careful! Only call this when the page unloads, after the AudioContext is no longer processing.</doc>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioBuffer.cpp' l='128' u='c' c='_ZN7WebCore11AudioBuffer10invalidateEv'/>
+<def f='WebKit/Source/WebCore/Modules/webaudio/AudioBuffer.cpp' l='132' ll='137' type='void WebCore::AudioBuffer::releaseMemory()'/>

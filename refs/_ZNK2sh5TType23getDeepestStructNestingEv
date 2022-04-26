@@ -1,0 +1,16 @@
+<dec f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Types.h' l='321' type='int sh::TType::getDeepestStructNesting() const'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Types.h' l='309'>// If this type is a struct, returns the deepest struct nesting of
+    // any field in the struct. For example:
+    //   struct nesting1 {
+    //     vec4 position;
+    //   };
+    //   struct nesting2 {
+    //     nesting1 field1;
+    //     vec4 field2;
+    //   };
+    // For type &quot;nesting2&quot;, this method would return 2 -- the number
+    // of structures through which indirection must occur to reach the
+    // deepest field (nesting2.field1.position).</doc>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='4111' u='c' c='_ZN2sh13TParseContext30checkIsBelowStructNestingLimitERKNS_10TSourceLocERKNS_6TFieldE'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Types.cpp' l='375' ll='378' type='int sh::TType::getDeepestStructNesting() const'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Types.cpp' l='869' u='c' c='_ZNK2sh20TFieldListCollection23calculateDeepestNestingEv'/>

@@ -1,0 +1,17 @@
+<dec f='include/wayland-client-protocol.h' l='2593' type='void (*)(void *, struct wl_data_device *, struct wl_data_offer *)'/>
+<offset>320</offset>
+<doc f='include/wayland-client-protocol.h' l='2578'>/**
+	 * advertise new selection
+	 *
+	 * The selection event is sent out to notify the client of a new
+	 * wl_data_offer for the selection for this device. The
+	 * data_device.data_offer and the data_offer.offer events are sent
+	 * out immediately before this event to introduce the data offer
+	 * object. The selection event is sent to a client immediately
+	 * before receiving keyboard focus and when a new selection is set
+	 * while the client has keyboard focus. The data_offer is valid
+	 * until a new data_offer or NULL is received or until the client
+	 * loses keyboard focus. The client must destroy the previous
+	 * selection data_offer, if any, upon receiving this event.
+	 * @param id selection data_offer object
+	 */</doc>

@@ -1,0 +1,30 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VM.h' l='995' type='JSC::ScratchBuffer * JSC::VM::scratchBufferForSize(size_t size)'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VM.h' l='991'>// The threading protocol here is as follows:
+    // - You can call scratchBufferForSize from any thread.
+    // - You can only set the ScratchBuffer&apos;s activeLength from the main thread.
+    // - You can only write to entries in the ScratchBuffer from the main thread.</doc>
+<dec f='WebKit/Source/JavaScriptCore/runtime/VM.h' l='995' type='JSC::ScratchBuffer * JSC::VM::scratchBufferForSize(size_t size)'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/VM.h' l='991'>// The threading protocol here is as follows:
+    // - You can call scratchBufferForSize from any thread.
+    // - You can only set the ScratchBuffer&apos;s activeLength from the main thread.
+    // - You can only write to entries in the ScratchBuffer from the main thread.</doc>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLForOSREntryJITCode.cpp' l='49' u='c' c='_ZN3JSC3FTL18ForOSREntryJITCode21initializeEntryBufferERNS_2VMEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExitCompilerCommon.h' l='62' u='c' c='_ZN3JSC3DFG41adjustFrameAndStackInOSRExitCompilerThunkERNS_14MacroAssemblerERNS_2VMENS_7JITTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExitCompiler.cpp' l='180' u='c' c='_ZN3JSC3FTLL11compileStubERNS_2VMEjPNS0_7JITCodeERNS0_7OSRExitEPNS_9CodeBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLThunks.cpp' l='78' u='c' c='_ZN3JSC3FTLL31genericGenerationThunkGeneratorERNS_2VMENS_11FunctionPtrILN3WTF6PtrTagE1EEES5_PKcjNS0_34FrameAndStackAdjustmentRequirementE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/AssemblyHelpers.cpp' l='1005' u='c' c='_ZN3JSC15AssemblyHelpers9debugCallERNS_2VMEPFvPNS_9CallFrameEPvS5_ES5_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSREntry.cpp' l='251' u='c' c='_ZN3JSC3DFG15prepareOSREntryERNS_2VMEPNS_9CallFrameEPNS_9CodeBlockENS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.cpp' l='503' u='c' c='_ZN3JSC3DFG7OSRExit11compileExitERNS_12CCallHelpersERNS_2VMERKS1_RKNS_8OperandsINS_13ValueRecoveryEN3WTF6VectorIS9_Lm0ENSA_20UnsafeVectorOverflowELm166472174'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGThunks.cpp' l='51' u='c' c='_ZN3JSC3DFG31osrExitGenerationThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.cpp' l='686' u='c' c='_ZN3JSC3DFG11JITCompiler23makeCatchOSREntryBufferEv'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/VM.cpp' l='1490' ll='1511' type='JSC::ScratchBuffer * JSC::VM::scratchBufferForSize(size_t size)'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='9187' u='c' c='_ZN3JSC3DFG14SpeculativeJIT15compileNewArrayEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='9375' u='c' c='_ZN3JSC3DFG14SpeculativeJIT25compileNewArrayWithSpreadEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='9921' u='c' c='_ZN3JSC3DFG14SpeculativeJIT16compileArrayPushEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='9990' u='c' c='_ZN3JSC3DFG14SpeculativeJIT16compileArrayPushEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='10066' u='c' c='_ZN3JSC3DFG14SpeculativeJIT16compileArrayPushEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='217' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB35lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='6179' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB316compileArrayPushEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='6283' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB316compileArrayPushEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='7292' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB315compileNewArrayEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='7536' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB325compileNewArrayWithSpreadEv'/>

@@ -1,0 +1,16 @@
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGMayExit.h' l='75' type='JSC::DFG::ExitMode JSC::DFG::mayExit(JSC::DFG::Graph &amp; , JSC::DFG::Node * )'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.cpp' l='59' u='c' c='_ZN3JSC3DFG7OSRExitC1ENS_8ExitKindENS_13JSValueSourceENS_28MethodOfGettingAValueProfileEPNS0_14SpeculativeJITEjj'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGMayExit.h' l='69'>// FIXME: This currently consumes the Check: flag produced by AI, and will claim that something doesn&apos;t
+// exit if the Check: flag was cleared. This makes it hard to use mayExit() for things like hoisting
+// (for example in LICM), since that wants to know if the node would exit if it was moved somewhere
+// else.
+// https://bugs.webkit.org/show_bug.cgi?id=148545</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPhantomInsertionPhase.cpp' l='118' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_121PhantomInsertionPhase11handleBlockEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGStoreBarrierClusteringPhase.cpp' l='102' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_127StoreBarrierClusteringPhase7doBlockEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGStoreBarrierClusteringPhase.cpp' l='106' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_127StoreBarrierClusteringPhase7doBlockEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='210' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_18Validate8validateEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGVarargsForwardingPhase.cpp' l='320' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_122VarargsForwardingPhase15handleCandidateEPNS0_10BasicBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='413' u='c' c='_ZN3JSC3DFG5Graph4dumpERN3WTF11PrintStreamEPKcPNS0_4NodeEPNS_11DumpContextE'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGMayExit.cpp' l='197' ll='201' type='JSC::DFG::ExitMode JSC::DFG::mayExit(JSC::DFG::Graph &amp; graph, JSC::DFG::Node * node)'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='2273' u='c' c='_ZN3JSC3DFG14SpeculativeJIT19compileCurrentBlockEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='19632' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB36vmCallENS_2B34TypeET_DpOT0_'/>

@@ -1,0 +1,10 @@
+<dec f='WebKit/Source/WebCore/loader/FrameLoaderClient.h' l='119' type='bool WebCore::FrameLoaderClient::hasHTMLView() const'/>
+<doc f='WebKit/Source/WebCore/loader/FrameLoaderClient.h' l='115'>// An inline function cannot be the first non-abstract virtual function declared
+    // in the class as it results in the vtable being generated as a weak symbol.
+    // This hurts performance (in Mac OS X at least, when loading frameworks), so we
+    // don&apos;t want to do it in WebKit.</doc>
+<ovr f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='173' c='_ZNK6WebKit20WebFrameLoaderClient11hasHTMLViewEv'/>
+<use f='WebKit/Source/WebCore/loader/DocumentWriter.cpp' l='118' u='c' c='_ZN7WebCore14DocumentWriter14createDocumentERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentWriter.cpp' l='206' u='c' c='_ZN7WebCore14DocumentWriter5beginERKN3WTF3URLEbPNS_8DocumentE'/>
+<def f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='4061' ll='4064' type='bool WebCore::FrameLoaderClient::hasHTMLView() const'/>
+<use f='WebKit/Source/WebCore/loader/ProgressTracker.cpp' l='240' u='c' c='_ZN7WebCore15ProgressTracker17incrementProgressEmj'/>

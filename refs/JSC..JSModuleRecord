@@ -1,0 +1,112 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGlobalObject.h' l='233'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSDOMGlobalObject.h' l='123' c='_ZN7WebCore17JSDOMGlobalObject38moduleLoaderCreateImportMetaPropertiesEPN3JSC14JSGlobalObjectEPNS1_14JSModuleLoaderENS1_7JSValueEPNS1_14JSModuleRecordES6_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.h' l='233'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/Interpreter.h' l='108' c='_ZN3JSC11Interpreter20executeModuleProgramEPNS_14JSModuleRecordEPNS_23ModuleProgramExecutableEPNS_14JSGlobalObjectEPNS_19JSModuleEnvironmentENS_7JSValueES9_'/>
+<inh f='WebKit/Source/JavaScriptCore/runtime/AbstractModuleRecord.h' l='41' c='JSC::AbstractModuleRecord'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/JSModuleRecord.h' l='38' ll='77'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleRecord.h' l='55' c='_ZN3JSC14JSModuleRecord6createEPNS_14JSGlobalObjectERNS_2VMEPNS_9StructureERKNS_10IdentifierERKNS_10SourceCodeERKNS_19VariableEnvironmentESF_'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/Interpreter.cpp' l='1200' c='_ZN3JSC11Interpreter20executeModuleProgramEPNS_14JSModuleRecordEPNS_23ModuleProgramExecutableEPNS_14JSGlobalObjectEPNS_19JSModuleEnvironmentENS_7JSValueES9_'/>
+<size>216</size>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSModuleRecord.h' l='36'>// Based on the Source Text Module Record
+// http://www.ecma-international.org/ecma-262/6.0/#sec-source-text-module-records</doc>
+<smbr r='JSC::JSModuleRecord::s_info' t='const ::JSC::ClassInfo'/>
+<fun r='_ZN3JSC14JSModuleRecord4infoEv'/>
+<smbr r='JSC::JSModuleRecord::needsDestruction' t='const bool'/>
+<fun r='_ZN3JSC14JSModuleRecord7destroyEPNS_6JSCellE'/>
+<fun r='_ZN3JSC14JSModuleRecord11subspaceForERNS_2VME'/>
+<fun r='_ZN3JSC14JSModuleRecord15createStructureERNS_2VMEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<fun r='_ZN3JSC14JSModuleRecord6createEPNS_14JSGlobalObjectERNS_2VMEPNS_9StructureERKNS_10IdentifierERKNS_10SourceCodeERKNS_19VariableEnvironmentESF_'/>
+<fun r='_ZN3JSC14JSModuleRecord4linkEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<fun r='_ZN3JSC14JSModuleRecord8evaluateEPNS_14JSGlobalObjectENS_7JSValueES3_'/>
+<fun r='_ZNK3JSC14JSModuleRecord10sourceCodeEv'/>
+<fun r='_ZNK3JSC14JSModuleRecord17declaredVariablesEv'/>
+<fun r='_ZNK3JSC14JSModuleRecord16lexicalVariablesEv'/>
+<fun r='_ZN3JSC14JSModuleRecordC1ERNS_2VMEPNS_9StructureERKNS_10IdentifierERKNS_10SourceCodeERKNS_19VariableEnvironmentESD_'/>
+<fun r='_ZN3JSC14JSModuleRecord14finishCreationEPNS_14JSGlobalObjectERNS_2VME'/>
+<fun r='_ZN3JSC14JSModuleRecord17visitChildrenImplEPNS_6JSCellERT_'/>
+<fun r='_ZN3JSC14JSModuleRecord13visitChildrenEPNS_6JSCellERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC14JSModuleRecord13visitChildrenEPNS_6JSCellERNS_11SlotVisitorE'/>
+<fun r='_ZN3JSC14JSModuleRecord23instantiateDeclarationsEPNS_14JSGlobalObjectEPNS_23ModuleProgramExecutableENS_7JSValueE'/>
+<mbr r='JSC::JSModuleRecord::m_sourceCode' o='1088' t='JSC::SourceCode'/>
+<mbr r='JSC::JSModuleRecord::m_declaredVariables' o='1280' t='JSC::VariableEnvironment'/>
+<mbr r='JSC::JSModuleRecord::m_lexicalVariables' o='1472' t='JSC::VariableEnvironment'/>
+<mbr r='JSC::JSModuleRecord::m_moduleProgramExecutable' o='1664' t='WriteBarrier&lt;JSC::ModuleProgramExecutable&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/parser/ModuleAnalyzer.h' l='40' c='_ZN3JSC14ModuleAnalyzer7analyzeERNS_17ModuleProgramNodeE'/>
+<use f='WebKit/Source/JavaScriptCore/parser/ModuleAnalyzer.h' l='44' c='_ZN3JSC14ModuleAnalyzer12moduleRecordEv'/>
+<use f='WebKit/Source/JavaScriptCore/parser/ModuleAnalyzer.h' l='50'/>
+<use f='WebKit/Source/JavaScriptCore/parser/ModuleAnalyzer.cpp' l='93' c='_ZN3JSC14ModuleAnalyzer7analyzeERNS_17ModuleProgramNodeE'/>
+<size>216</size>
+<use f='WebKit/Source/JavaScriptCore/API/JSAPIGlobalObject.h' l='67' c='_ZN3JSC17JSAPIGlobalObject38moduleLoaderCreateImportMetaPropertiesEPNS_14JSGlobalObjectEPNS_14JSModuleLoaderENS_7JSValueEPNS_14JSModuleRecordES5_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleLoader.h' l='84' c='_ZN3JSC14JSModuleLoader26createImportMetaPropertiesEPNS_14JSGlobalObjectENS_7JSValueEPNS_14JSModuleRecordES3_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/AbstractModuleRecord.cpp' l='822' c='_ZN3JSC20AbstractModuleRecord4linkEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/AbstractModuleRecord.cpp' l='835' c='_ZN3JSC20AbstractModuleRecord8evaluateEPNS_14JSGlobalObjectENS_7JSValueES3_'/>
+<size>216</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleLoader.cpp' l='306' c='_ZN3JSC14JSModuleLoader26createImportMetaPropertiesEPNS_14JSGlobalObjectENS_7JSValueEPNS_14JSModuleRecordES3_'/>
+<size>216</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleRecord.cpp' l='39'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleRecord.cpp' l='39'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleRecord.cpp' l='47' c='_ZN3JSC14JSModuleRecord6createEPNS_14JSGlobalObjectERNS_2VMEPNS_9StructureERKNS_10IdentifierERKNS_10SourceCodeERKNS_19VariableEnvironmentESF_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleRecord.cpp' l='49' c='_ZN3JSC14JSModuleRecord6createEPNS_14JSGlobalObjectERNS_2VMEPNS_9StructureERKNS_10IdentifierERKNS_10SourceCodeERKNS_19VariableEnvironmentESF_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleRecord.cpp' l='49' c='_ZN3JSC14JSModuleRecord6createEPNS_14JSGlobalObjectERNS_2VMEPNS_9StructureERKNS_10IdentifierERKNS_10SourceCodeERKNS_19VariableEnvironmentESF_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleRecord.cpp' l='49' c='_ZN3JSC14JSModuleRecord6createEPNS_14JSGlobalObjectERNS_2VMEPNS_9StructureERKNS_10IdentifierERKNS_10SourceCodeERKNS_19VariableEnvironmentESF_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleRecord.cpp' l='63' c='_ZN3JSC14JSModuleRecord7destroyEPNS_6JSCellE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleRecord.cpp' l='63' c='_ZN3JSC14JSModuleRecord7destroyEPNS_6JSCellE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleRecord.cpp' l='76' c='_ZN3JSC14JSModuleRecord17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleRecord.cpp' l='76' c='_ZN3JSC14JSModuleRecord17visitChildrenImplEPNS_6JSCellERT_'/>
+<size>216</size>
+<smbr r='JSC::JSModuleRecord::s_info' t='const JSC::ClassInfo'/>
+<fun r='_ZN3JSC14JSModuleRecord15createStructureERNS_2VMEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<fun r='_ZN3JSC14JSModuleRecord6createEPNS_14JSGlobalObjectERNS_2VMEPNS_9StructureERKNS_10IdentifierERKNS_10SourceCodeERKNS_19VariableEnvironmentESF_'/>
+<fun r='_ZN3JSC14JSModuleRecordC1ERNS_2VMEPNS_9StructureERKNS_10IdentifierERKNS_10SourceCodeERKNS_19VariableEnvironmentESD_'/>
+<fun r='_ZN3JSC14JSModuleRecord7destroyEPNS_6JSCellE'/>
+<fun r='_ZN3JSC14JSModuleRecord14finishCreationEPNS_14JSGlobalObjectERNS_2VME'/>
+<fun r='_ZN3JSC14JSModuleRecord17visitChildrenImplEPNS_6JSCellERT_'/>
+<fun r='_ZN3JSC14JSModuleRecord13visitChildrenEPNS_6JSCellERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC14JSModuleRecord13visitChildrenEPNS_6JSCellERNS_11SlotVisitorE'/>
+<fun r='_ZN3JSC14JSModuleRecord4linkEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<fun r='_ZN3JSC14JSModuleRecord23instantiateDeclarationsEPNS_14JSGlobalObjectEPNS_23ModuleProgramExecutableENS_7JSValueE'/>
+<fun r='_ZN3JSC14JSModuleRecord8evaluateEPNS_14JSGlobalObjectENS_7JSValueES3_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.cpp' l='304' c='_ZN3JSC2VMC1ENS0_6VMTypeENS_8HeapTypeEPN3WTF7RunLoopEPb'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.cpp' l='1567' c='_ZN3JSC2VM23jsModuleRecordSpaceSlowEv'/>
+<size>216</size>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='716' c='_ZN12GlobalObject38moduleLoaderCreateImportMetaPropertiesEPN3JSC14JSGlobalObjectEPNS0_14JSModuleLoaderENS0_7JSValueEPNS0_14JSModuleRecordES5_'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='1219' c='_ZN12GlobalObject38moduleLoaderCreateImportMetaPropertiesEPN3JSC14JSGlobalObjectEPNS0_14JSModuleLoaderENS0_7JSValueEPNS0_14JSModuleRecordES5_'/>
+<use f='WebKit/Source/WebCore/bindings/js/ScriptController.h' l='125' c='_ZN7WebCore16ScriptController14evaluateModuleERKN3WTF3URLERN3JSC14JSModuleRecordERNS_15DOMWrapperWorldENS5_7JSValueESA_'/>
+<use f='WebKit/Source/WebCore/bindings/js/ScriptController.h' l='126' c='_ZN7WebCore16ScriptController14evaluateModuleERKN3WTF3URLERN3JSC14JSModuleRecordENS5_7JSValueES8_'/>
+<use f='WebKit/Source/WebCore/workers/WorkerOrWorkletScriptController.h' l='99' c='_ZN7WebCore31WorkerOrWorkletScriptController14evaluateModuleERN3JSC14JSModuleRecordENS1_7JSValueES4_'/>
+<use f='WebKit/Source/WebCore/bindings/js/ScriptModuleLoader.h' l='64' c='_ZN7WebCore18ScriptModuleLoader26createImportMetaPropertiesEPN3JSC14JSGlobalObjectEPNS1_14JSModuleLoaderENS1_7JSValueEPNS1_14JSModuleRecordES6_'/>
+<inh f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractModuleRecord.h' l='41' c='JSC::AbstractModuleRecord'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSModuleRecord.h' l='38' ll='77'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSModuleRecord.h' l='55' c='_ZN3JSC14JSModuleRecord6createEPNS_14JSGlobalObjectERNS_2VMEPNS_9StructureERKNS_10IdentifierERKNS_10SourceCodeERKNS_19VariableEnvironmentESF_'/>
+<use f='WebKit/Source/WebCore/bindings/js/ScriptController.cpp' l='230' c='_ZN7WebCore16ScriptController14evaluateModuleERKN3WTF3URLERN3JSC14JSModuleRecordERNS_15DOMWrapperWorldENS5_7JSValueESA_'/>
+<use f='WebKit/Source/WebCore/bindings/js/ScriptController.cpp' l='249' c='_ZN7WebCore16ScriptController14evaluateModuleERKN3WTF3URLERN3JSC14JSModuleRecordENS5_7JSValueES8_'/>
+<use f='WebKit/Source/WebCore/bindings/js/ScriptModuleLoader.cpp' l='238' c='_ZN7WebCore18ScriptModuleLoader8evaluateEPN3JSC14JSGlobalObjectEPNS1_14JSModuleLoaderENS1_7JSValueES6_S6_S6_S6_'/>
+<use f='WebKit/Source/WebCore/bindings/js/ScriptModuleLoader.cpp' l='338' c='_ZN7WebCore18ScriptModuleLoader26createImportMetaPropertiesEPN3JSC14JSGlobalObjectEPNS1_14JSModuleLoaderENS1_7JSValueEPNS1_14JSModuleRecordES6_'/>
+<size>216</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSModuleRecord.h' l='36'>// Based on the Source Text Module Record
+// http://www.ecma-international.org/ecma-262/6.0/#sec-source-text-module-records</doc>
+<smbr r='JSC::JSModuleRecord::s_info' t='const ::JSC::ClassInfo'/>
+<fun r='_ZN3JSC14JSModuleRecord4infoEv'/>
+<smbr r='JSC::JSModuleRecord::needsDestruction' t='const bool'/>
+<fun r='_ZN3JSC14JSModuleRecord7destroyEPNS_6JSCellE'/>
+<fun r='_ZN3JSC14JSModuleRecord11subspaceForERNS_2VME'/>
+<fun r='_ZN3JSC14JSModuleRecord15createStructureERNS_2VMEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<fun r='_ZN3JSC14JSModuleRecord6createEPNS_14JSGlobalObjectERNS_2VMEPNS_9StructureERKNS_10IdentifierERKNS_10SourceCodeERKNS_19VariableEnvironmentESF_'/>
+<fun r='_ZN3JSC14JSModuleRecord4linkEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<fun r='_ZN3JSC14JSModuleRecord8evaluateEPNS_14JSGlobalObjectENS_7JSValueES3_'/>
+<fun r='_ZNK3JSC14JSModuleRecord10sourceCodeEv'/>
+<fun r='_ZNK3JSC14JSModuleRecord17declaredVariablesEv'/>
+<fun r='_ZNK3JSC14JSModuleRecord16lexicalVariablesEv'/>
+<fun r='_ZN3JSC14JSModuleRecordC1ERNS_2VMEPNS_9StructureERKNS_10IdentifierERKNS_10SourceCodeERKNS_19VariableEnvironmentESD_'/>
+<fun r='_ZN3JSC14JSModuleRecord14finishCreationEPNS_14JSGlobalObjectERNS_2VME'/>
+<fun r='_ZN3JSC14JSModuleRecord17visitChildrenImplEPNS_6JSCellERT_'/>
+<fun r='_ZN3JSC14JSModuleRecord13visitChildrenEPNS_6JSCellERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC14JSModuleRecord13visitChildrenEPNS_6JSCellERNS_11SlotVisitorE'/>
+<fun r='_ZN3JSC14JSModuleRecord23instantiateDeclarationsEPNS_14JSGlobalObjectEPNS_23ModuleProgramExecutableENS_7JSValueE'/>
+<mbr r='JSC::JSModuleRecord::m_sourceCode' o='1088' t='JSC::SourceCode'/>
+<mbr r='JSC::JSModuleRecord::m_declaredVariables' o='1280' t='JSC::VariableEnvironment'/>
+<mbr r='JSC::JSModuleRecord::m_lexicalVariables' o='1472' t='JSC::VariableEnvironment'/>
+<mbr r='JSC::JSModuleRecord::m_moduleProgramExecutable' o='1664' t='WriteBarrier&lt;JSC::ModuleProgramExecutable&gt;'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSDOMGlobalObject.cpp' l='535' c='_ZN7WebCore17JSDOMGlobalObject38moduleLoaderCreateImportMetaPropertiesEPN3JSC14JSGlobalObjectEPNS1_14JSModuleLoaderENS1_7JSValueEPNS1_14JSModuleRecordES6_'/>
+<use f='WebKit/Source/WebCore/workers/WorkerOrWorkletScriptController.cpp' l='262' c='_ZN7WebCore31WorkerOrWorkletScriptController14evaluateModuleERN3JSC14JSModuleRecordENS1_7JSValueES4_'/>
+<size>216</size>

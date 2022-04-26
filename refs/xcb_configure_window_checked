@@ -1,0 +1,17 @@
+<dec f='include/xcb/xproto.h' l='6428' type='xcb_void_cookie_t xcb_configure_window_checked(xcb_connection_t * c, xcb_window_t window, uint16_t value_mask, const void * value_list)'/>
+<doc f='include/xcb/xproto.h' l='6411'>/**
+ * @brief Configures window attributes
+ *
+ * @param c The connection
+ * @param window The window to configure.
+ * @param value_mask Bitmask of attributes to change.
+ * @param value_list New values, corresponding to the attributes in value_mask. The order has to
+ * correspond to the order of possible \a value_mask bits. See the example.
+ * @return A cookie
+ *
+ * Configures a window&apos;s size, position, border width and stacking order.
+ *
+ * This form can be used only if the request will not cause
+ * a reply to be generated. Any returned error will be
+ * saved for handling by xcb_request_check().
+ */</doc>

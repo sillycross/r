@@ -1,0 +1,21 @@
+<dec f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSObjectRef.h' l='376' type='const JSClassDefinition'/>
+<doc f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSObjectRef.h' l='368'>/*! 
+@const kJSClassDefinitionEmpty 
+@abstract A JSClassDefinition structure of the current version, filled with NULL pointers and having no attributes.
+@discussion Use this constant as a convenience when creating class definitions. For example, to create a class definition with only a finalize method:
+
+JSClassDefinition definition = kJSClassDefinitionEmpty;
+definition.finalize = Finalize;
+*/</doc>
+<def f='WebKit/Source/JavaScriptCore/API/JSClassRef.cpp' l='36' type='const JSClassDefinition'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSClassRef.cpp' l='112' u='r' c='_ZN13OpaqueJSClass6createEPK17JSClassDefinition'/>
+<doc f='WebKit/Source/JavaScriptCore/API/JSObjectRef.h' l='368'>/*! 
+@const kJSClassDefinitionEmpty 
+@abstract A JSClassDefinition structure of the current version, filled with NULL pointers and having no attributes.
+@discussion Use this constant as a convenience when creating class definitions. For example, to create a class definition with only a finalize method:
+
+JSClassDefinition definition = kJSClassDefinitionEmpty;
+definition.finalize = Finalize;
+*/</doc>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCClass.cpp' l='464' u='r' c='_Z14jscClassCreateP11_JSCContextPKcP9_JSCClassP14JSCClassVTablePFvPvE'/>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCClass.cpp' l='486' u='r' c='_Z14jscClassCreateP11_JSCContextPKcP9_JSCClassP14JSCClassVTablePFvPvE'/>

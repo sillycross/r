@@ -1,0 +1,10 @@
+<dec f='WebKit/Source/WebCore/platform/graphics/GraphicsContextGL.h' l='1252' type='void WebCore::GraphicsContextGL::enablePreserveDrawingBuffer()'/>
+<doc f='WebKit/Source/WebCore/platform/graphics/GraphicsContextGL.h' l='1247'>// FIXME: The calling site should be fixed, this breaks the WebGL spec
+    // wrt preserveDrawingBuffer == false behavior.
+    // Concession to Canvas captureStream, which needs to dynamically set
+    // preserveDrawingBuffer to true in order to avoid implicit clears.
+    // Implementations generally do not support toggling this bit arbitrarily.</doc>
+<def f='WebKit/Source/WebCore/platform/graphics/GraphicsContextGL.cpp' l='423' ll='428' type='void WebCore::GraphicsContextGL::enablePreserveDrawingBuffer()'/>
+<ovr f='WebKit/Source/WebCore/platform/graphics/opengl/GraphicsContextGLOpenGL.cpp' l='75' c='_ZN7WebCore23GraphicsContextGLOpenGL27enablePreserveDrawingBufferEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opengl/GraphicsContextGLOpenGL.cpp' l='77' u='c' c='_ZN7WebCore23GraphicsContextGLOpenGL27enablePreserveDrawingBufferEv'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='3828' u='c' c='_ZN7WebCore25WebGLRenderingContextBase27enablePreserveDrawingBufferEv'/>

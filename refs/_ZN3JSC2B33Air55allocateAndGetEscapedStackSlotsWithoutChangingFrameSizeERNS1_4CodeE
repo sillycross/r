@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/JavaScriptCore/b3/air/AirStackAllocation.h' l='51' type='Vector&lt;JSC::B3::Air::StackSlot *&gt; JSC::B3::Air::allocateAndGetEscapedStackSlotsWithoutChangingFrameSize(JSC::B3::Air::Code &amp; )'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateStackByGraphColoring.cpp' l='380' u='c' c='_ZN3JSC2B33Air28allocateStackByGraphColoringERNS1_4CodeE'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/air/AirStackAllocation.h' l='48'>// Allocates all stack slots that escape - that is, that don&apos;t have live ranges that can be
+// determined by looking at their uses. Returns a vector of slots that got assigned offsets.
+// This assumes that no stack allocation has happened previously, and so frame size is zero.</doc>
+<def f='WebKit/Source/JavaScriptCore/b3/air/AirStackAllocation.cpp' l='101' ll='127' type='Vector&lt;JSC::B3::Air::StackSlot *&gt; JSC::B3::Air::allocateAndGetEscapedStackSlotsWithoutChangingFrameSize(JSC::B3::Air::Code &amp; code)'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirStackAllocation.cpp' l='132' u='c' c='_ZN3JSC2B33Air25allocateEscapedStackSlotsERNS1_4CodeE'/>

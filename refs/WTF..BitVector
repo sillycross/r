@@ -1,0 +1,378 @@
+<def f='WebKit/WTF/Headers/wtf/BitVector.h' l='63' ll='494'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='77' c='_ZN3WTF9BitVectorC1ERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='91' c='_ZN3WTF9BitVectoraSERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='91' c='_ZN3WTF9BitVectoraSERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='202' c='_ZN3WTF9BitVector5mergeERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='212' c='_ZN3WTF9BitVector6filterERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='222' c='_ZN3WTF9BitVector7excludeERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='280' c='_ZNK3WTF9BitVectoreqERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='309' c='_ZN3WTF9BitVector8iteratorC1ERKS0_m'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='345'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='465' c='_ZN3WTF9BitVector7setSlowERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='467' c='_ZN3WTF9BitVector9mergeSlowERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='468' c='_ZN3WTF9BitVector10filterSlowERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='469' c='_ZN3WTF9BitVector11excludeSlowERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='474' c='_ZNK3WTF9BitVector14equalsSlowCaseERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='475' c='_ZNK3WTF9BitVector18equalsSlowCaseFastERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='476' c='_ZNK3WTF9BitVector20equalsSlowCaseSimpleERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='497' c='_ZN3WTF13BitVectorHash4hashERKNS_9BitVectorE'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='498' c='_ZN3WTF13BitVectorHash5equalERKNS_9BitVectorES3_'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='498' c='_ZN3WTF13BitVectorHash5equalERKNS_9BitVectorES3_'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='503'/>
+<use f='WebKit/WTF/Headers/wtf/BitVector.h' l='505'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='212' c='_ZNK7WebCore4Font15findOTSVGGlyphsEPKtj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/Font.h' l='293'/>
+<size>8</size>
+<doc f='WebKit/WTF/Headers/wtf/BitVector.h' l='42'>// This is a space-efficient, resizeable bitvector class. In the common case it
+// occupies one word, but if necessary, it will inflate this one word to point
+// to a single chunk of out-of-line allocated storage to store an arbitrary number
+// of bits.
+//
+// - The bitvector remembers the bound of how many bits can be stored, but this
+//   may be slightly greater (by as much as some platform-specific constant)
+//   than the last argument passed to ensureSize().
+//
+// - The bitvector can resize itself automatically (set, clear, get) or can be used
+//   in a manual mode, which is faster (quickSet, quickClear, quickGet, ensureSize).
+//
+// - Accesses ASSERT that you are within bounds.
+//
+// - Bits are automatically initialized to zero.
+//
+// On the other hand, this BitVector class may not be the fastest around, since
+// it does conditionals on every get/set/clear. But it is great if you need to
+// juggle a lot of variable-length BitVectors and you&apos;re worried about wasting
+// space.</doc>
+<fun r='_ZN3WTF9BitVectorC1Ev'/>
+<fun r='_ZN3WTF9BitVectorC1Em'/>
+<fun r='_ZN3WTF9BitVectorC1ERKS0_'/>
+<fun r='_ZN3WTF9BitVectorD1Ev'/>
+<fun r='_ZN3WTF9BitVectoraSERKS0_'/>
+<fun r='_ZNK3WTF9BitVector4sizeEv'/>
+<fun r='_ZN3WTF9BitVector10ensureSizeEm'/>
+<fun r='_ZN3WTF9BitVector6resizeEm'/>
+<fun r='_ZN3WTF9BitVector8clearAllEv'/>
+<fun r='_ZNK3WTF9BitVector8quickGetEm'/>
+<fun r='_ZN3WTF9BitVector8quickSetEm'/>
+<fun r='_ZN3WTF9BitVector10quickClearEm'/>
+<fun r='_ZN3WTF9BitVector8quickSetEmb'/>
+<fun r='_ZNK3WTF9BitVector3getEm'/>
+<fun r='_ZNK3WTF9BitVector8containsEm'/>
+<fun r='_ZN3WTF9BitVector3setEm'/>
+<fun r='_ZN3WTF9BitVector3addEm'/>
+<fun r='_ZN3WTF9BitVector16ensureSizeAndSetEmm'/>
+<fun r='_ZN3WTF9BitVector5clearEm'/>
+<fun r='_ZN3WTF9BitVector6removeEm'/>
+<fun r='_ZN3WTF9BitVector3setEmb'/>
+<fun r='_ZN3WTF9BitVector5mergeERKS0_'/>
+<fun r='_ZN3WTF9BitVector6filterERKS0_'/>
+<fun r='_ZN3WTF9BitVector7excludeERKS0_'/>
+<fun r='_ZNK3WTF9BitVector8bitCountEv'/>
+<fun r='_ZNK3WTF9BitVector7isEmptyEv'/>
+<fun r='_ZNK3WTF9BitVector7findBitEmb'/>
+<fun r='_ZNK3WTF9BitVector4dumpERNS_11PrintStreamE'/>
+<fun r='_ZN3WTF9BitVectorC1ENS0_13EmptyValueTagE'/>
+<fun r='_ZN3WTF9BitVectorC1ENS0_15DeletedValueTagE'/>
+<fun r='_ZNK3WTF9BitVector12isEmptyValueEv'/>
+<fun r='_ZNK3WTF9BitVector14isDeletedValueEv'/>
+<fun r='_ZNK3WTF9BitVector21isEmptyOrDeletedValueEv'/>
+<fun r='_ZNK3WTF9BitVectoreqERKS0_'/>
+<fun r='_ZNK3WTF9BitVector4hashEv'/>
+<fun r='_ZNK3WTF9BitVector5beginEv'/>
+<fun r='_ZNK3WTF9BitVector3endEv'/>
+<fun r='_ZNK3WTF9BitVector18outOfLineMemoryUseEv'/>
+<fun r='_ZN3WTF9BitVector13bitsInPointerEv'/>
+<fun r='_ZN3WTF9BitVector13maxInlineBitsEv'/>
+<fun r='_ZN3WTF9BitVector9byteCountEm'/>
+<fun r='_ZN3WTF9BitVector14makeInlineBitsEm'/>
+<fun r='_ZN3WTF9BitVector17cleanseInlineBitsEm'/>
+<fun r='_ZN3WTF9BitVector8bitCountEm'/>
+<fun r='_ZNK3WTF9BitVector11findBitFastEmb'/>
+<fun r='_ZNK3WTF9BitVector13findBitSimpleEmb'/>
+<fun r='_ZNK3WTF9BitVector8isInlineEv'/>
+<fun r='_ZNK3WTF9BitVector13outOfLineBitsEv'/>
+<fun r='_ZN3WTF9BitVector13outOfLineBitsEv'/>
+<fun r='_ZN3WTF9BitVector15resizeOutOfLineEm'/>
+<fun r='_ZN3WTF9BitVector7setSlowERKS0_'/>
+<fun r='_ZN3WTF9BitVector9mergeSlowERKS0_'/>
+<fun r='_ZN3WTF9BitVector10filterSlowERKS0_'/>
+<fun r='_ZN3WTF9BitVector11excludeSlowERKS0_'/>
+<fun r='_ZNK3WTF9BitVector12bitCountSlowEv'/>
+<fun r='_ZNK3WTF9BitVector11isEmptySlowEv'/>
+<fun r='_ZNK3WTF9BitVector14equalsSlowCaseERKS0_'/>
+<fun r='_ZNK3WTF9BitVector18equalsSlowCaseFastERKS0_'/>
+<fun r='_ZNK3WTF9BitVector20equalsSlowCaseSimpleERKS0_'/>
+<fun r='_ZNK3WTF9BitVector12hashSlowCaseEv'/>
+<fun r='_ZN3WTF9BitVector4bitsEv'/>
+<fun r='_ZNK3WTF9BitVector4bitsEv'/>
+<mbr r='WTF::BitVector::m_bitsOrPointer' o='0' t='uintptr_t'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/UnlinkedCodeBlock.h' l='174' c='_ZN3JSC17UnlinkedCodeBlock9bitVectorEm'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/UnlinkedCodeBlock.h' l='446'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='586' c='_ZN3JSC9CodeBlock9bitVectorEm'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlock.h' l='174' c='_ZN3JSC17UnlinkedCodeBlock9bitVectorEm'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlock.h' l='446'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='586' c='_ZN3JSC9CodeBlock9bitVectorEm'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmModuleInformation.h' l='73' c='_ZNK3JSC4Wasm17ModuleInformation19referencedFunctionsEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmModuleInformation.h' l='100'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmModuleInformation.h' l='101'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGNode.h' l='1275' c='_ZN3JSC3DFG4Node9bitVectorEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGNode.h' l='1278' c='_ZN3JSC3DFG4Node9bitVectorEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSREntry.h' l='61'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSREntry.h' l='62'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSREntry.h' l='64'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.h' l='936' c='_ZN3JSC3DFG5Graph27localsAndTmpsLiveInBytecodeENS_10CodeOriginE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.h' l='1148'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmInstance.h' l='150' c='_ZN3JSC4Wasm8Instance13globalsToMarkEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmInstance.h' l='151' c='_ZN3JSC4Wasm8Instance16globalsToBindingEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmInstance.h' l='230'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmInstance.h' l='231'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmInstance.h' l='238'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmInstance.h' l='239'/>
+<size>8</size>
+<use f='WebKit/WTF/Headers/wtf/IndexSet.h' l='87' c='_ZN3WTF8IndexSet8IterableC1ERKT_RKNS_9BitVectorE'/>
+<use f='WebKit/WTF/Headers/wtf/IndexSet.h' l='138'/>
+<use f='WebKit/WTF/Headers/wtf/IndexSet.h' l='152' c='_ZNK3WTF8IndexSet7indicesEv'/>
+<use f='WebKit/WTF/Headers/wtf/IndexSet.h' l='162'/>
+<size>8</size>
+<use f='WebKit/WTF/Headers/wtf/Liveness.h' l='287' c='_ZN3WTF8Liveness7computeEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersAndStackByLinearScan.cpp' l='681'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirUseCounts.h' l='122'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirUseCounts.h' l='123'/>
+<use f='WebKit/WTF/Headers/wtf/LikelyDenseUnsignedIntegerSet.h' l='56' c='_ZN3WTF29LikelyDenseUnsignedIntegerSetC1Ev'/>
+<use f='WebKit/WTF/Headers/wtf/LikelyDenseUnsignedIntegerSet.h' l='62' c='_ZN3WTF29LikelyDenseUnsignedIntegerSetD1Ev'/>
+<use f='WebKit/WTF/Headers/wtf/LikelyDenseUnsignedIntegerSet.h' l='73' c='_ZN3WTF29LikelyDenseUnsignedIntegerSetC1EONS_29LikelyDenseUnsignedIntegerSetIT_EE'/>
+<use f='WebKit/WTF/Headers/wtf/LikelyDenseUnsignedIntegerSet.h' l='81' c='_ZN3WTF29LikelyDenseUnsignedIntegerSet5clearEv'/>
+<use f='WebKit/WTF/Headers/wtf/LikelyDenseUnsignedIntegerSet.h' l='84' c='_ZN3WTF29LikelyDenseUnsignedIntegerSet5clearEv'/>
+<use f='WebKit/WTF/Headers/wtf/LikelyDenseUnsignedIntegerSet.h' l='164' c='_ZN3WTF29LikelyDenseUnsignedIntegerSet3addET_'/>
+<use f='WebKit/WTF/Headers/wtf/LikelyDenseUnsignedIntegerSet.h' l='297' c='_ZN3WTF29LikelyDenseUnsignedIntegerSet19transitionToHashSetEv'/>
+<use f='WebKit/WTF/Headers/wtf/LikelyDenseUnsignedIntegerSet.h' l='308' c='_ZN3WTF29LikelyDenseUnsignedIntegerSet21transitionToBitVectorEv'/>
+<use f='WebKit/WTF/Headers/wtf/LikelyDenseUnsignedIntegerSet.h' l='317' c='_ZN3WTF29LikelyDenseUnsignedIntegerSet21transitionToBitVectorEv'/>
+<use f='WebKit/WTF/Headers/wtf/LikelyDenseUnsignedIntegerSet.h' l='323'/>
+<use f='WebKit/WTF/Headers/wtf/InterferenceGraph.h' l='149'/>
+<use f='WebKit/WTF/Headers/wtf/InterferenceGraph.h' l='168'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='60' c='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocatorC1ERNS1_4CodeERKN3WTF6VectorINS_3RegELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEET_jRKNS64626996'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='496'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='502'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='510'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='556' c='_ZN3JSC2B33Air12_GLOBAL__N_16BriggsC1ERNS1_4CodeERKN3WTF6VectorINS_3RegELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEET_jRKNS6_9BitVectorERKNS1_9UseCountsE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='913' c='_ZN3JSC2B33Air12_GLOBAL__N_13IRCC1ERNS1_4CodeERKN3WTF6VectorINS_3RegELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEET_jRKNS6_9BitVectorERKNS1_9UseCountsE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='1311'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='1348' c='_ZN3JSC2B33Air12_GLOBAL__N_117ColoringAllocatorC1ERNS1_4CodeERNS1_8TmpWidthERKNS1_9UseCountsERKN3WTF9BitVectorE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='1769' c='_ZN3JSC2B33Air12_GLOBAL__N_131GraphColoringRegisterAllocation14allocateOnBankEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='1844' c='_ZN3JSC2B33Air12_GLOBAL__N_131GraphColoringRegisterAllocation22computeUnspillableTmpsEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='1899' c='_ZN3JSC2B33Air12_GLOBAL__N_131GraphColoringRegisterAllocation22computeUnspillableTmpsEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='1973' c='_ZN3JSC2B33Air12_GLOBAL__N_131GraphColoringRegisterAllocation15addSpillAndFillERKT0_RN3WTF9BitVectorE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirRegLiveness.cpp' l='73' c='_ZN3JSC2B33Air11RegLivenessC1ERNS1_4CodeE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerMacros.cpp' l='515' c='_ZN3JSC2B312_GLOBAL__N_111LowerMacros22recursivelyBuildSwitchERKN3WTF6VectorINS0_10SwitchCaseELm0ENS3_15CrashOnOverflowELm16ENS3_10FastMallocEEENS0_222151505'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Procedure.cpp' l='452' c='_ZN3JSC2B39Procedure33freeUnneededB3ValuesAfterLoweringEv'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlockGenerator.h' l='107' c='_ZN3JSC26UnlinkedCodeBlockGenerator9bitVectorEm'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlockGenerator.h' l='108' c='_ZN3JSC26UnlinkedCodeBlockGenerator12addBitVectorEON3WTF9BitVectorE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlockGenerator.h' l='222'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='3223' c='_ZN3JSC17BytecodeGenerator22emitNewArrayWithSpreadEPNS_10RegisterIDEPNS_11ElementNodeE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGForAllKills.h' l='111' c='_ZN3JSC3DFG20forAllKilledOperandsERNS0_5GraphEPNS0_4NodeES4_RKT_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArgumentsEliminationPhase.cpp' l='128' c='_ZN3JSC3DFG12_GLOBAL__N_125ArgumentsEliminationPhase18identifyCandidatesEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArgumentsEliminationPhase.cpp' l='180' c='_ZN3JSC3DFG12_GLOBAL__N_125ArgumentsEliminationPhase21isStillValidCandidateEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArgumentsEliminationPhase.cpp' l='329' c='_ZN3JSC3DFG12_GLOBAL__N_125ArgumentsEliminationPhase29eliminateCandidatesThatEscapeEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArgumentsEliminationPhase.cpp' l='522' c='_ZN3JSC3DFG12_GLOBAL__N_125ArgumentsEliminationPhase32eliminateCandidatesThatInterfereEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArgumentsEliminationPhase.cpp' l='916' c='_ZN3JSC3DFG12_GLOBAL__N_125ArgumentsEliminationPhase9transformEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArgumentsEliminationPhase.cpp' l='941' c='_ZN3JSC3DFG12_GLOBAL__N_125ArgumentsEliminationPhase9transformEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArgumentsEliminationPhase.cpp' l='977' c='_ZN3JSC3DFG12_GLOBAL__N_125ArgumentsEliminationPhase9transformEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArgumentsEliminationPhase.cpp' l='1162' c='_ZN3JSC3DFG12_GLOBAL__N_125ArgumentsEliminationPhase9transformEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArgumentsEliminationPhase.cpp' l='1191' c='_ZN3JSC3DFG12_GLOBAL__N_125ArgumentsEliminationPhase9transformEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGArgumentsUtilities.cpp' l='84' c='_ZN3JSC3DFG33emitCodeToGetArgumentsArrayLengthERNS0_12InsertionSetEPNS0_4NodeEjNS0_10NodeOriginEb'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGBlockSet.h' l='134'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPreciseLocalClobberize.h' l='166' c='_ZN3JSC3DFG29PreciseLocalClobberizeAdaptor7readTopEv'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreterInlines.h' l='2915' c='_ZN3JSC3DFG19AbstractInterpreter14executeEffectsEjPNS0_4NodeE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='901' c='_ZN3JSC3DFG12_GLOBAL__N_18Validate11validateSSAEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='919' c='_ZN3JSC3DFG12_GLOBAL__N_18Validate11validateSSAEv'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='5680' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='5684' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='839' c='_ZN3JSC3DFG12_GLOBAL__N_114GlobalCSEPhase15findReplacementENS0_12HeapLocationE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='878' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGFixupPhase.cpp' l='1675' c='_ZN3JSC3DFG10FixupPhase9fixupNodeEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1214' c='_ZN3JSC3DFG5Graph27localsAndTmpsLiveInBytecodeENS_10CodeOriginE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1216' c='_ZN3JSC3DFG5Graph27localsAndTmpsLiveInBytecodeENS_10CodeOriginE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGLivenessAnalysisPhase.cpp' l='180'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraintSet.h' l='90'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraintSet.h' l='91'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoAlignedMemoryAllocator.h' l='58'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MachineStackMarker.cpp' l='145' c='_ZN3JSC14MachineThreads24tryCopyOtherThreadStacksERKN3WTF14AbstractLockerEPvmPmRNS1_6ThreadE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraintSolver.h' l='61' c='_ZN3JSC23MarkingConstraintSolver5drainERN3WTF9BitVectorE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraintSolver.h' l='95'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkingConstraintSolver.cpp' l='85' c='_ZN3JSC23MarkingConstraintSolver5drainERN3WTF9BitVectorE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/CachedTypes.cpp' l='898'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CachedTypes.cpp' l='900' c='_ZN3JSC15CachedBitVector6encodeERNS_7EncoderERKN3WTF9BitVectorE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CachedTypes.cpp' l='910' c='_ZNK3JSC15CachedBitVector6decodeERNS_7DecoderERN3WTF9BitVectorE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPaths.cpp' l='1357' c='JSC::slow_path_new_array_with_spread'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='9261' c='_ZN3JSC3DFG14SpeculativeJIT25compileNewArrayWithSpreadEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='9378' c='_ZN3JSC3DFG14SpeculativeJIT25compileNewArrayWithSpreadEPNS0_4NodeE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='7322' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB325compileNewArrayWithSpreadEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='7538' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB325compileNewArrayWithSpreadEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10286' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB335compileCallOrConstructVarargsSpreadEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='11094' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB331compileForwardVarargsWithSpreadEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='13493' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB327compileMaterializeNewObjectEv'/>
+<size>8</size>
+<def f='WebKit/Source/WTF/wtf/BitVector.h' l='63' ll='494'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='77' c='_ZN3WTF9BitVectorC1ERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='91' c='_ZN3WTF9BitVectoraSERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='91' c='_ZN3WTF9BitVectoraSERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='202' c='_ZN3WTF9BitVector5mergeERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='212' c='_ZN3WTF9BitVector6filterERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='222' c='_ZN3WTF9BitVector7excludeERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='280' c='_ZNK3WTF9BitVectoreqERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='309' c='_ZN3WTF9BitVector8iteratorC1ERKS0_m'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='345'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='465' c='_ZN3WTF9BitVector7setSlowERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='467' c='_ZN3WTF9BitVector9mergeSlowERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='468' c='_ZN3WTF9BitVector10filterSlowERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='469' c='_ZN3WTF9BitVector11excludeSlowERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='474' c='_ZNK3WTF9BitVector14equalsSlowCaseERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='475' c='_ZNK3WTF9BitVector18equalsSlowCaseFastERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='476' c='_ZNK3WTF9BitVector20equalsSlowCaseSimpleERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='497' c='_ZN3WTF13BitVectorHash4hashERKNS_9BitVectorE'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='498' c='_ZN3WTF13BitVectorHash5equalERKNS_9BitVectorES3_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='498' c='_ZN3WTF13BitVectorHash5equalERKNS_9BitVectorES3_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='503'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.h' l='505'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.cpp' l='41' c='_ZN3WTF9BitVector7setSlowERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.cpp' l='113' c='_ZN3WTF9BitVector9mergeSlowERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.cpp' l='131' c='_ZN3WTF9BitVector10filterSlowERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.cpp' l='156' c='_ZN3WTF9BitVector11excludeSlowERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.cpp' l='199' c='_ZNK3WTF9BitVector14equalsSlowCaseERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.cpp' l='206' c='_ZNK3WTF9BitVector18equalsSlowCaseFastERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/BitVector.cpp' l='243' c='_ZNK3WTF9BitVector20equalsSlowCaseSimpleERKS0_'/>
+<size>8</size>
+<doc f='WebKit/Source/WTF/wtf/BitVector.h' l='42'>// This is a space-efficient, resizeable bitvector class. In the common case it
+// occupies one word, but if necessary, it will inflate this one word to point
+// to a single chunk of out-of-line allocated storage to store an arbitrary number
+// of bits.
+//
+// - The bitvector remembers the bound of how many bits can be stored, but this
+//   may be slightly greater (by as much as some platform-specific constant)
+//   than the last argument passed to ensureSize().
+//
+// - The bitvector can resize itself automatically (set, clear, get) or can be used
+//   in a manual mode, which is faster (quickSet, quickClear, quickGet, ensureSize).
+//
+// - Accesses ASSERT that you are within bounds.
+//
+// - Bits are automatically initialized to zero.
+//
+// On the other hand, this BitVector class may not be the fastest around, since
+// it does conditionals on every get/set/clear. But it is great if you need to
+// juggle a lot of variable-length BitVectors and you&apos;re worried about wasting
+// space.</doc>
+<fun r='_ZN3WTF9BitVectorC1Ev'/>
+<fun r='_ZN3WTF9BitVectorC1Em'/>
+<fun r='_ZN3WTF9BitVectorC1ERKS0_'/>
+<fun r='_ZN3WTF9BitVectorD1Ev'/>
+<fun r='_ZN3WTF9BitVectoraSERKS0_'/>
+<fun r='_ZNK3WTF9BitVector4sizeEv'/>
+<fun r='_ZN3WTF9BitVector10ensureSizeEm'/>
+<fun r='_ZN3WTF9BitVector6resizeEm'/>
+<fun r='_ZN3WTF9BitVector8clearAllEv'/>
+<fun r='_ZNK3WTF9BitVector8quickGetEm'/>
+<fun r='_ZN3WTF9BitVector8quickSetEm'/>
+<fun r='_ZN3WTF9BitVector10quickClearEm'/>
+<fun r='_ZN3WTF9BitVector8quickSetEmb'/>
+<fun r='_ZNK3WTF9BitVector3getEm'/>
+<fun r='_ZNK3WTF9BitVector8containsEm'/>
+<fun r='_ZN3WTF9BitVector3setEm'/>
+<fun r='_ZN3WTF9BitVector3addEm'/>
+<fun r='_ZN3WTF9BitVector16ensureSizeAndSetEmm'/>
+<fun r='_ZN3WTF9BitVector5clearEm'/>
+<fun r='_ZN3WTF9BitVector6removeEm'/>
+<fun r='_ZN3WTF9BitVector3setEmb'/>
+<fun r='_ZN3WTF9BitVector5mergeERKS0_'/>
+<fun r='_ZN3WTF9BitVector6filterERKS0_'/>
+<fun r='_ZN3WTF9BitVector7excludeERKS0_'/>
+<fun r='_ZNK3WTF9BitVector8bitCountEv'/>
+<fun r='_ZNK3WTF9BitVector7isEmptyEv'/>
+<fun r='_ZNK3WTF9BitVector7findBitEmb'/>
+<fun r='_ZNK3WTF9BitVector4dumpERNS_11PrintStreamE'/>
+<fun r='_ZN3WTF9BitVectorC1ENS0_13EmptyValueTagE'/>
+<fun r='_ZN3WTF9BitVectorC1ENS0_15DeletedValueTagE'/>
+<fun r='_ZNK3WTF9BitVector12isEmptyValueEv'/>
+<fun r='_ZNK3WTF9BitVector14isDeletedValueEv'/>
+<fun r='_ZNK3WTF9BitVector21isEmptyOrDeletedValueEv'/>
+<fun r='_ZNK3WTF9BitVectoreqERKS0_'/>
+<fun r='_ZNK3WTF9BitVector4hashEv'/>
+<fun r='_ZNK3WTF9BitVector5beginEv'/>
+<fun r='_ZNK3WTF9BitVector3endEv'/>
+<fun r='_ZNK3WTF9BitVector18outOfLineMemoryUseEv'/>
+<fun r='_ZN3WTF9BitVector13bitsInPointerEv'/>
+<fun r='_ZN3WTF9BitVector13maxInlineBitsEv'/>
+<fun r='_ZN3WTF9BitVector9byteCountEm'/>
+<fun r='_ZN3WTF9BitVector14makeInlineBitsEm'/>
+<fun r='_ZN3WTF9BitVector17cleanseInlineBitsEm'/>
+<fun r='_ZN3WTF9BitVector8bitCountEm'/>
+<fun r='_ZNK3WTF9BitVector11findBitFastEmb'/>
+<fun r='_ZNK3WTF9BitVector13findBitSimpleEmb'/>
+<fun r='_ZNK3WTF9BitVector8isInlineEv'/>
+<fun r='_ZNK3WTF9BitVector13outOfLineBitsEv'/>
+<fun r='_ZN3WTF9BitVector13outOfLineBitsEv'/>
+<fun r='_ZN3WTF9BitVector15resizeOutOfLineEm'/>
+<fun r='_ZN3WTF9BitVector7setSlowERKS0_'/>
+<fun r='_ZN3WTF9BitVector9mergeSlowERKS0_'/>
+<fun r='_ZN3WTF9BitVector10filterSlowERKS0_'/>
+<fun r='_ZN3WTF9BitVector11excludeSlowERKS0_'/>
+<fun r='_ZNK3WTF9BitVector12bitCountSlowEv'/>
+<fun r='_ZNK3WTF9BitVector11isEmptySlowEv'/>
+<fun r='_ZNK3WTF9BitVector14equalsSlowCaseERKS0_'/>
+<fun r='_ZNK3WTF9BitVector18equalsSlowCaseFastERKS0_'/>
+<fun r='_ZNK3WTF9BitVector20equalsSlowCaseSimpleERKS0_'/>
+<fun r='_ZNK3WTF9BitVector12hashSlowCaseEv'/>
+<fun r='_ZN3WTF9BitVector4bitsEv'/>
+<fun r='_ZNK3WTF9BitVector4bitsEv'/>
+<mbr r='WTF::BitVector::m_bitsOrPointer' o='0' t='uintptr_t'/>
+<fun r='_ZN3WTF9BitVector7setSlowERKS0_'/>
+<fun r='_ZN3WTF9BitVector6resizeEm'/>
+<fun r='_ZN3WTF9BitVector8clearAllEv'/>
+<fun r='_ZN3WTF9BitVector15resizeOutOfLineEm'/>
+<fun r='_ZN3WTF9BitVector9mergeSlowERKS0_'/>
+<fun r='_ZN3WTF9BitVector10filterSlowERKS0_'/>
+<fun r='_ZN3WTF9BitVector11excludeSlowERKS0_'/>
+<fun r='_ZNK3WTF9BitVector12bitCountSlowEv'/>
+<fun r='_ZNK3WTF9BitVector11isEmptySlowEv'/>
+<fun r='_ZNK3WTF9BitVector14equalsSlowCaseERKS0_'/>
+<fun r='_ZNK3WTF9BitVector18equalsSlowCaseFastERKS0_'/>
+<fun r='_ZNK3WTF9BitVector20equalsSlowCaseSimpleERKS0_'/>
+<fun r='_ZNK3WTF9BitVector12hashSlowCaseEv'/>
+<fun r='_ZNK3WTF9BitVector4dumpERNS_11PrintStreamE'/>
+<use f='WebKit/Source/WTF/wtf/LikelyDenseUnsignedIntegerSet.h' l='56' c='_ZN3WTF29LikelyDenseUnsignedIntegerSetC1Ev'/>
+<use f='WebKit/Source/WTF/wtf/LikelyDenseUnsignedIntegerSet.h' l='62' c='_ZN3WTF29LikelyDenseUnsignedIntegerSetD1Ev'/>
+<use f='WebKit/Source/WTF/wtf/LikelyDenseUnsignedIntegerSet.h' l='73' c='_ZN3WTF29LikelyDenseUnsignedIntegerSetC1EONS_29LikelyDenseUnsignedIntegerSetIT_EE'/>
+<use f='WebKit/Source/WTF/wtf/LikelyDenseUnsignedIntegerSet.h' l='81' c='_ZN3WTF29LikelyDenseUnsignedIntegerSet5clearEv'/>
+<use f='WebKit/Source/WTF/wtf/LikelyDenseUnsignedIntegerSet.h' l='84' c='_ZN3WTF29LikelyDenseUnsignedIntegerSet5clearEv'/>
+<use f='WebKit/Source/WTF/wtf/LikelyDenseUnsignedIntegerSet.h' l='164' c='_ZN3WTF29LikelyDenseUnsignedIntegerSet3addET_'/>
+<use f='WebKit/Source/WTF/wtf/LikelyDenseUnsignedIntegerSet.h' l='297' c='_ZN3WTF29LikelyDenseUnsignedIntegerSet19transitionToHashSetEv'/>
+<use f='WebKit/Source/WTF/wtf/LikelyDenseUnsignedIntegerSet.h' l='308' c='_ZN3WTF29LikelyDenseUnsignedIntegerSet21transitionToBitVectorEv'/>
+<use f='WebKit/Source/WTF/wtf/LikelyDenseUnsignedIntegerSet.h' l='317' c='_ZN3WTF29LikelyDenseUnsignedIntegerSet21transitionToBitVectorEv'/>
+<use f='WebKit/Source/WTF/wtf/LikelyDenseUnsignedIntegerSet.h' l='323'/>
+<size>8</size>
+<use f='WebKit/Source/WebCore/style/ClassChangeInvalidation.cpp' l='60' c='_ZN7WebCore5StyleL18computeClassChangeERKNS_16SpaceSplitStringES3_'/>
+<size>8</size>

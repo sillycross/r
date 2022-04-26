@@ -1,0 +1,15 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='643' type='Vector&lt;std::unique_ptr&lt;SlotVisitor&gt; &gt;'/>
+<offset>4480</offset>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='639'>// We pool the slot visitors used by parallel marking threads. It&apos;s useful to be able to
+    // enumerate over them, and it&apos;s useful to have them cache some small amount of memory from
+    // one GC to the next. GC marking threads claim these at the start of marking, and return
+    // them at the end.</doc>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapInlines.h' l='278' c='_ZN3JSC4Heap18forEachSlotVisitorERKT_'/>
+<dec f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='643' type='Vector&lt;std::unique_ptr&lt;SlotVisitor&gt; &gt;'/>
+<use f='WebKit/Source/JavaScriptCore/heap/HeapInlines.h' l='278' c='_ZN3JSC4Heap18forEachSlotVisitorERKT_'/>
+<offset>4480</offset>
+<doc f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='639'>// We pool the slot visitors used by parallel marking threads. It&apos;s useful to be able to
+    // enumerate over them, and it&apos;s useful to have them cache some small amount of memory from
+    // one GC to the next. GC marking threads claim these at the start of marking, and return
+    // them at the end.</doc>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='314' u='m' c='_ZN3JSC4HeapC1ERNS_2VMENS_8HeapTypeE'/>

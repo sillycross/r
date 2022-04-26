@@ -1,0 +1,19 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='419'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='419'/>
+<def f='WebKit/Source/JavaScriptCore/heap/HeapUtil.h' l='43' ll='180'/>
+<size>1</size>
+<doc f='WebKit/Source/JavaScriptCore/heap/HeapUtil.h' l='30'>// Are you tired of waiting for all of WebKit to build because you changed the implementation of a
+// function in HeapInlines.h?  Does it bother you that you&apos;re waiting on rebuilding the JS DOM
+// bindings even though your change is in a function called from only 2 .cpp files?  Then HeapUtil.h
+// is for you!  Everything in this class should be a static method that takes a Heap&amp; if needed.
+// This is a friend of Heap, so you can access all of Heap&apos;s privates.
+//
+// This ends up being an issue because Heap exposes a lot of methods that ought to be inline for
+// performance or that must be inline because they are templates.  This class ought to contain
+// methods that are used for the implementation of the collector, or for unusual clients that need
+// to reach deep into the collector for some reason.  Don&apos;t put things in here that would cause you
+// to have to include it from more than a handful of places, since that would defeat the purpose.
+// This class isn&apos;t here to look pretty.  It&apos;s to let us hack the GC more easily!</doc>
+<fun r='_ZN3JSC8HeapUtil30findGCObjectPointersForMarkingERNS_4HeapEjjNS_15TinyBloomFilterEPvRKT_'/>
+<fun r='_ZN3JSC8HeapUtil23isPointerGCObjectJSCellERNS_4HeapENS_15TinyBloomFilterEPNS_6JSCellE'/>
+<fun r='_ZN3JSC8HeapUtil15isValueGCObjectERNS_4HeapENS_15TinyBloomFilterENS_7JSValueE'/>

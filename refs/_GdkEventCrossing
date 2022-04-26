@@ -1,0 +1,42 @@
+<use f='include/gtk-3.0/gdk/gdkevents.h' l='133'/>
+<def f='include/gtk-3.0/gdk/gdkevents.h' l='938' ll='953'/>
+<size>88</size>
+<doc f='include/gtk-3.0/gdk/gdkevents.h' l='912'>/**
+ * GdkEventCrossing:
+ * @type: the type of the event (%GDK_ENTER_NOTIFY or %GDK_LEAVE_NOTIFY).
+ * @window: the window which received the event.
+ * @send_event: %TRUE if the event was sent explicitly.
+ * @subwindow: the window that was entered or left.
+ * @time: the time of the event in milliseconds.
+ * @x: the x coordinate of the pointer relative to the window.
+ * @y: the y coordinate of the pointer relative to the window.
+ * @x_root: the x coordinate of the pointer relative to the root of the screen.
+ * @y_root: the y coordinate of the pointer relative to the root of the screen.
+ * @mode: the crossing mode (%GDK_CROSSING_NORMAL, %GDK_CROSSING_GRAB,
+ *  %GDK_CROSSING_UNGRAB, %GDK_CROSSING_GTK_GRAB, %GDK_CROSSING_GTK_UNGRAB or
+ *  %GDK_CROSSING_STATE_CHANGED).  %GDK_CROSSING_GTK_GRAB, %GDK_CROSSING_GTK_UNGRAB,
+ *  and %GDK_CROSSING_STATE_CHANGED were added in 2.14 and are always synthesized,
+ *  never native.
+ * @detail: the kind of crossing that happened (%GDK_NOTIFY_INFERIOR,
+ *  %GDK_NOTIFY_ANCESTOR, %GDK_NOTIFY_VIRTUAL, %GDK_NOTIFY_NONLINEAR or
+ *  %GDK_NOTIFY_NONLINEAR_VIRTUAL).
+ * @focus: %TRUE if @window is the focus window or an inferior.
+ * @state: (type GdkModifierType): a bit-mask representing the state of
+ *   the modifier keys (e.g. Control, Shift and Alt) and the pointer
+ *   buttons. See #GdkModifierType.
+ *
+ * Generated when the pointer enters or leaves a window.
+ */</doc>
+<mbr r='_GdkEventCrossing::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventCrossing::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventCrossing::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventCrossing::subwindow' o='192' t='GdkWindow *'/>
+<mbr r='_GdkEventCrossing::time' o='256' t='guint32'/>
+<mbr r='_GdkEventCrossing::x' o='320' t='gdouble'/>
+<mbr r='_GdkEventCrossing::y' o='384' t='gdouble'/>
+<mbr r='_GdkEventCrossing::x_root' o='448' t='gdouble'/>
+<mbr r='_GdkEventCrossing::y_root' o='512' t='gdouble'/>
+<mbr r='_GdkEventCrossing::mode' o='576' t='GdkCrossingMode'/>
+<mbr r='_GdkEventCrossing::detail' o='608' t='GdkNotifyType'/>
+<mbr r='_GdkEventCrossing::focus' o='640' t='gboolean'/>
+<mbr r='_GdkEventCrossing::state' o='672' t='guint'/>

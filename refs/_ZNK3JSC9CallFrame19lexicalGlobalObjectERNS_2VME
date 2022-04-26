@@ -1,0 +1,28 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CallFrame.h' l='129' type='JSC::JSGlobalObject * JSC::CallFrame::lexicalGlobalObject(JSC::VM &amp; ) const'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CallFrame.h' l='127'>// Global object in which the currently executing code was defined.
+        // Differs from VM::deprecatedVMEntryGlobalObject() during function calls across web browser frames.</doc>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CallFrameInlines.h' l='70' ll='78' type='JSC::JSGlobalObject * JSC::CallFrame::lexicalGlobalObject(JSC::VM &amp; vm) const'/>
+<dec f='WebKit/Source/JavaScriptCore/interpreter/CallFrame.h' l='129' type='JSC::JSGlobalObject * JSC::CallFrame::lexicalGlobalObject(JSC::VM &amp; ) const'/>
+<def f='WebKit/Source/JavaScriptCore/interpreter/CallFrameInlines.h' l='70' ll='78' type='JSC::JSGlobalObject * JSC::CallFrame::lexicalGlobalObject(JSC::VM &amp; vm) const'/>
+<doc f='WebKit/Source/JavaScriptCore/interpreter/CallFrame.h' l='127'>// Global object in which the currently executing code was defined.
+        // Differs from VM::deprecatedVMEntryGlobalObject() during function calls across web browser frames.</doc>
+<use f='WebKit/Source/JavaScriptCore/interpreter/CallFrame.cpp' l='253' u='c' c='_ZN3JSC9CallFrame30globalObjectOfClosestCodeBlockERNS_2VMEPS0_'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/Interpreter.cpp' l='501' u='c' c='_ZN3JSCL25notifyDebuggerOfUnwindingERNS_2VMEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/Interpreter.cpp' l='1281' u='c' c='_ZN3JSC11Interpreter5debugEPNS_9CallFrameENS_13DebugHookTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/StackVisitor.cpp' l='367' u='c' c='_ZN3JSC12StackVisitor5Frame15createArgumentsERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOperations.cpp' l='475' u='c' c='_ZN3JSC4Wasm21operationConvertToI64EPNS_9CallFrameENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOperations.cpp' l='484' u='c' c='_ZN3JSC4Wasm21operationConvertToF64EPNS_9CallFrameENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOperations.cpp' l='493' u='c' c='_ZN3JSC4Wasm21operationConvertToI32EPNS_9CallFrameENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOperations.cpp' l='502' u='c' c='_ZN3JSC4Wasm21operationConvertToF32EPNS_9CallFrameENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='3277' u='c' c='_ZN3JSC35operationExceptionFuzzWithCallFrameEPNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/debugger/Debugger.cpp' l='778' u='c' c='_ZN3JSC8Debugger12breakProgramEON3WTF6RefPtrINS_10BreakpointENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<use f='WebKit/Source/JavaScriptCore/debugger/Debugger.cpp' l='838' u='c' c='_ZN3JSCL31lexicalGlobalObjectForCallFrameERNS_2VMEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/debugger/DebuggerCallFrame.cpp' l='125' u='c' c='_ZNK3JSC17DebuggerCallFrame29deprecatedVMEntryGlobalObjectEv'/>
+<use f='WebKit/Source/JavaScriptCore/debugger/DebuggerCallFrame.cpp' l='171' u='c' c='_ZN3JSC17DebuggerCallFrame5scopeEv'/>
+<use f='WebKit/Source/JavaScriptCore/debugger/DebuggerCallFrame.cpp' l='215' u='c' c='_ZNK3JSC17DebuggerCallFrame9thisValueERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp' l='2525' u='c' c='JSC::LLInt::llint_throw_stack_overflow_error'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='2377' u='c' c='_ZN7WebCore9Internals14parserMetaDataEN3JSC7JSValueE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='3792' u='c' c='_ZNK7WebCore9Internals18isFromCurrentWorldEN3JSC7JSValueE'/>
+<use f='WebKit/Source/WebCore/bindings/js/CommonVM.cpp' l='85' u='c' c='_ZN7WebCore24lexicalFrameFromCommonVMEv'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSDOMWindowBase.cpp' l='318' u='c' c='_ZN7WebCore19responsibleDocumentERN3JSC2VMERNS0_9CallFrameE'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='2733' u='c' c='_ZNK7WebCore8Document42shouldBypassMainWorldContentSecurityPolicyEv'/>

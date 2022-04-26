@@ -1,0 +1,35 @@
+<def f='WebKit/Source/WebCore/platform/PODInterval.h' l='51' ll='95'/>
+<use f='WebKit/Source/WebCore/platform/PODInterval.h' l='97'/>
+<use f='WebKit/Source/WebCore/platform/PODInterval.h' l='100' c='_ZN7WebCore11PODIntervalC1ERKT_S3_OT0_'/>
+<use f='WebKit/Source/WebCore/platform/PODInterval.h' l='105' c='_ZN7WebCore11PODIntervalC1ERKT_S3_RKT0_'/>
+<use f='WebKit/Source/WebCore/platform/PODInterval.h' l='130'/>
+<use f='WebKit/Source/WebCore/platform/PODInterval.h' l='133'/>
+<use f='WebKit/Source/WebCore/platform/PODInterval.h' l='136' c='_ZN7WebCore11PODIntervalIT_N3WTF7WeakPtrIT0_NS2_12EmptyCounterEEEEC1ERKS1_S9_OS6_'/>
+<use f='WebKit/Source/WebCore/platform/PODInterval.h' l='150'/>
+<doc f='WebKit/Source/WebCore/platform/PODInterval.h' l='35'>// Class template representing a closed interval which can hold arbitrary
+// endpoints and a piece of user data. Ordering and equality are defined
+// including the UserData, except in the special case of WeakPtr.
+//
+// Both the T and UserData types must support a copy constructor, operator&lt;,
+// operator==, and operator=, except that this does not depend on operator&lt;
+// or operator== for WeakPtr.
+//
+// In debug mode, printing of intervals and the data they contain is
+// enabled. This uses WTF::TextStream.
+//
+// Note that this class supplies a copy constructor and assignment
+// operator in order so it can be stored in the red-black tree.
+
+// FIXME: The prefix &quot;POD&quot; here isn&apos;t correct; this works with non-POD types.</doc>
+<fun r='_ZNK7WebCore15PODIntervalBase3lowEv'/>
+<fun r='_ZNK7WebCore15PODIntervalBase4highEv'/>
+<fun r='_ZNK7WebCore15PODIntervalBase4dataEv'/>
+<fun r='_ZNK7WebCore15PODIntervalBase8overlapsERKT_S3_'/>
+<fun r='_ZNK7WebCore15PODIntervalBase8overlapsERKNS_15PODIntervalBaseIT_T0_EE'/>
+<fun r='_ZNK7WebCore15PODIntervalBase7maxHighEv'/>
+<fun r='_ZN7WebCore15PODIntervalBase10setMaxHighERKT_'/>
+<fun r='_ZN7WebCore15PODIntervalBaseC1ERKT_S3_OT0_'/>
+<mbr r='WebCore::PODIntervalBase::m_low' t='T'/>
+<mbr r='WebCore::PODIntervalBase::m_high' t='T'/>
+<mbr r='WebCore::PODIntervalBase::m_data' t='UserData'/>
+<mbr r='WebCore::PODIntervalBase::m_maxHigh' t='T'/>

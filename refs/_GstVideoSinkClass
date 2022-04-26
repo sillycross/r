@@ -1,0 +1,17 @@
+<use f='include/gstreamer-1.0/gst/video/gstvideosink.h' l='64'/>
+<def f='include/gstreamer-1.0/gst/video/gstvideosink.h' l='115' ll='122'/>
+<size>832</size>
+<doc f='include/gstreamer-1.0/gst/video/gstvideosink.h' l='104'>/**
+ * GstVideoSinkClass:
+ * @parent_class: the parent class structure
+ * @show_frame: render a video frame. Maps to #GstBaseSinkClass.render() and
+ *     #GstBaseSinkClass.preroll() vfuncs. Rendering during preroll will be
+ *     suppressed if the #GstVideoSink:show-preroll-frame property is set to
+ *     %FALSE.
+ *
+ * The video sink class structure. Derived classes should override the
+ * @show_frame virtual function.
+ */</doc>
+<mbr r='_GstVideoSinkClass::parent_class' o='0' t='GstBaseSinkClass'/>
+<mbr r='_GstVideoSinkClass::show_frame' o='6336' t='GstFlowReturn (*)(GstVideoSink *, GstBuffer *)'/>
+<mbr r='_GstVideoSinkClass::_gst_reserved' o='6400' t='gpointer [4]'/>

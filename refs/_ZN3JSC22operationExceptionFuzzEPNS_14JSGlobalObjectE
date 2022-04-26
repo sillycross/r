@@ -1,0 +1,9 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITOperations.h' l='302' type='void JSC::operationExceptionFuzz(JSC::JSGlobalObject * )'/>
+<dec f='WebKit/Source/JavaScriptCore/jit/JITOperations.h' l='302' type='void JSC::operationExceptionFuzz(JSC::JSGlobalObject * )'/>
+<def f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='3249' ll='3263' macro='1' type='void JSC::operationExceptionFuzz(JSC::JSGlobalObject * globalObject)'/>
+<doc f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='3244'>// This function &quot;should&quot; just take the JSGlobalObject*, but doing so would make it more difficult
+// to call from exception check sites. So, unlike all of our other functions, we allow
+// ourselves to play some gnarly ABI tricks just to simplify the calling convention. This is
+// particularly safe here since this is never called on the critical path - it&apos;s only for
+// testing.</doc>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='19696' u='r' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB39callCheckEv'/>

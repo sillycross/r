@@ -1,0 +1,184 @@
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/WebResourceLoadStatisticsStore.h' l='280'/>
+<inh f='WebKit/WTF/Headers/wtf/WeakPtr.h' l='218' c='WTF::CanMakeWeakPtr'/>
+<def f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsStore.h' l='88' ll='306'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsStore.h' l='88'/>
+<ovr f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsDatabaseStore.h' l='77' c='WebKit::ResourceLoadStatisticsDatabaseStore'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsDatabaseStore.h' l='77'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsDatabaseStore.h' l='335' c='_ZN3WTF14TypeCastTraitsIKN6WebKit35ResourceLoadStatisticsDatabaseStoreET_Lb0EE6isTypeERKNS1_27ResourceLoadStatisticsStoreE'/>
+<ovr f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsMemoryStore.h' l='48' c='WebKit::ResourceLoadStatisticsMemoryStore'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsMemoryStore.h' l='48'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsMemoryStore.h' l='159' c='_ZN3WTF14TypeCastTraitsIKN6WebKit33ResourceLoadStatisticsMemoryStoreET_Lb0EE6isTypeERKNS1_27ResourceLoadStatisticsStoreE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsDatabaseStore.cpp' l='350' c='_ZN6WebKit35ResourceLoadStatisticsDatabaseStoreC1ERNS_30WebResourceLoadStatisticsStoreERN3WTF9WorkQueueENS_22ShouldIncludeLocalhostERKNS3_6StringEN3PAL9SessionIDE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsMemoryStore.cpp' l='73' c='_ZN6WebKit33ResourceLoadStatisticsMemoryStoreC1ERNS_30WebResourceLoadStatisticsStoreERN3WTF9WorkQueueENS_22ShouldIncludeLocalhostE'/>
+<size>232</size>
+<doc f='WebKit/Source/WebKit/NetworkProcess/Classifier/ResourceLoadStatisticsStore.h' l='87'>// This is always constructed / used / destroyed on the WebResourceLoadStatisticsStore&apos;s statistics queue.</doc>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStoreD1Ev'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore5clearEON3WTF17CompletionHandlerIFvvEEE'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore7isEmptyEv'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore24aggregatedThirdPartyDataEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore20updateCookieBlockingEON3WTF17CompletionHandlerIFvvEEE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore30updateCookieBlockingForDomainsERKNS_35RegistrableDomainsToBlockCookiesForEON3WTF17CompletionHandlerIFvvEEE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore28clearBlockingStateForDomainsERKN3WTF6VectorIN7WebCore17RegistrableDomainELm0ENS1_15CrashOnOverflowELm16ENS1_111507527'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore31processStatisticsAndDataRecordsEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore26classifyPrevalentResourcesEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore15mergeStatisticsEON3WTF6VectorIN7WebCore22ResourceLoadStatisticsELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore31requestStorageAccessUnderOpenerEON7WebCore17RegistrableDomainEN3WTF16ObjectIdentifierINS1_18PageIdentifierTypeEEES3_'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore22removeAllStorageAccessEON3WTF17CompletionHandlerIFvvEEE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore30grandfatherExistingWebsiteDataEON3WTF17CompletionHandlerIFvvEEE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore40cancelPendingStatisticsProcessingRequestEv'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore30isRegisteredAsSubresourceUnderERKN7WebCore17RegistrableDomainES4_'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore27isRegisteredAsSubFrameUnderERKN7WebCore17RegistrableDomainES4_'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore27isRegisteredAsRedirectingToERKN7WebCore17RegistrableDomainES4_'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore22clearPrevalentResourceERKN7WebCore17RegistrableDomainE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore26dumpResourceLoadStatisticsEON3WTF17CompletionHandlerIFvRKNS1_6StringEEEE'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore19isPrevalentResourceERKN7WebCore17RegistrableDomainE'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore23isVeryPrevalentResourceERKN7WebCore17RegistrableDomainE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore20setPrevalentResourceERKN7WebCore17RegistrableDomainE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore24setVeryPrevalentResourceERKN7WebCore17RegistrableDomainE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore16setGrandfatheredERKN7WebCore17RegistrableDomainEb'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore15isGrandfatheredERKN7WebCore17RegistrableDomainE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore38incrementRecordsDeletedCountForDomainsEON3WTF7HashSetIN7WebCore17RegistrableDomainENS1_11DefaultHashIS4_EENS115670991'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore25grandfatherDataForDomainsERKN3WTF7HashSetIN7WebCore17RegistrableDomainENS1_11DefaultHashIS4_EENS1_10HashTrait16555611'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore30setSubframeUnderTopFrameDomainERKN7WebCore17RegistrableDomainES4_'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore33setSubresourceUnderTopFrameDomainERKN7WebCore17RegistrableDomainES4_'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore30setSubresourceUniqueRedirectToERKN7WebCore17RegistrableDomainES4_'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore32setSubresourceUniqueRedirectFromERKN7WebCore17RegistrableDomainES4_'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore27setTopFrameUniqueRedirectToERKN7WebCore17RegistrableDomainES4_'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore29setTopFrameUniqueRedirectFromERKN7WebCore17RegistrableDomainES4_'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore15logTestingEventERKN3WTF6StringE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore23setMaxStatisticsEntriesEm'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore21setPruneEntriesDownToEm'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore30resetParametersToDefaultValuesEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore40setNotifyPagesWhenDataRecordsWereScannedEb'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore16setIsRunningTestEb'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore10shouldSkipERKN7WebCore17RegistrableDomainE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore50setShouldClassifyResourcesBeforeDataRecordsRemovalEb'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore28setTimeToLiveUserInteractionEN3WTF7SecondsE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore39setMinimumTimeBetweenDataRecordsRemovalEN3WTF7SecondsE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore21setGrandfatheringTimeEN3WTF7SecondsE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore34setResourceLoadStatisticsDebugModeEb'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore18isDebugModeEnabledEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore32setPrevalentResourceForDebugModeERKN7WebCore17RegistrableDomainE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore31setThirdPartyCookieBlockingModeEN7WebCore28ThirdPartyCookieBlockingModeE'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore28thirdPartyCookieBlockingModeEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore35setSameSiteStrictEnforcementEnabledEN7WebCore32SameSiteStrictEnforcementEnabledE'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore34isSameSiteStrictEnforcementEnabledEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore35setFirstPartyWebsiteDataRemovalModeEN7WebCore32FirstPartyWebsiteDataRemovalModeE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore30setStandaloneApplicationDomainEON7WebCore17RegistrableDomainE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore35areAllThirdPartyCookiesBlockedUnderERKN7WebCore17RegistrableDomainE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore16hasStorageAccessERKN7WebCore17RegistrableDomainES4_St8optionalIN3WTF16ObjectIdentifierINS1_19FrameIdentifierT7789410'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore20requestStorageAccessEON7WebCore17RegistrableDomainES3_N3WTF16ObjectIdentifierINS1_19FrameIdentifierTypeEEENS516433710'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore18grantStorageAccessEON7WebCore17RegistrableDomainES3_N3WTF16ObjectIdentifierINS1_19FrameIdentifierTypeEEENS5_I2778190'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore18logFrameNavigationERKN7WebCore17RegistrableDomainES4_S4_bbN3WTF7SecondsEb'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore18logUserInteractionERKN7WebCore17RegistrableDomainEON3WTF17CompletionHandlerIFvvEEE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore34logCrossSiteLoadWithLinkDecorationERKN7WebCore17RegistrableDomainES4_'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore20clearUserInteractionERKN7WebCore17RegistrableDomainEON3WTF17CompletionHandlerIFvvEEE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore21hasHadUserInteractionERKN7WebCore17RegistrableDomainENS_20OperatingDatesWindowE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore11setLastSeenERKN7WebCore17RegistrableDomainEN3WTF7SecondsE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore19removeDataForDomainERKN7WebCore17RegistrableDomainE'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore10allDomainsEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore23didCreateNetworkProcessEv'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore5storeEv'/>
+<smbr r='WebKit::ResourceLoadStatisticsStore::maxImportance' t='const unsigned int'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore13isMemoryStoreEv'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore15isDatabaseStoreEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore38includeTodayAsOperatingDateIfNecessaryEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore19clearOperatingDatesEv'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore20hasStatisticsExpiredEN3WTF8WallTimeENS_20OperatingDatesWindowE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore32insertExpiredStatisticForTestingERKN7WebCore17RegistrableDomainEjbbb'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore29insertPrivateClickMeasurementEON7WebCore23PrivateClickMeasurementENS_38PrivateClickMeasurementAttributionTypeE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore61markAllUnattributedPrivateClickMeasurementAsExpiredForTestingEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore32attributePrivateClickMeasurementERKN7WebCore23PrivateClickMeasurement10SourceSiteERKNS2_26AttributionDestinat8154428'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore36allAttributedPrivateClickMeasurementEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore28clearPrivateClickMeasurementESt8optionalIN7WebCore17RegistrableDomainEE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore35clearExpiredPrivateClickMeasurementEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore31privateClickMeasurementToStringEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore20clearSentAttributionEON7WebCore23PrivateClickMeasurementENS2_25AttributionReportEndpointE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore57markAttributedPrivateClickMeasurementsAsExpiredForTestingEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore17computeImportanceERKN7WebCore22ResourceLoadStatisticsE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStoreC1ERNS_30WebResourceLoadStatisticsStoreERN3WTF9WorkQueueENS_22ShouldIncludeLocalhostE'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore23dataRecordsBeingRemovedEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore46scheduleStatisticsProcessingRequestIfNecessaryEv'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore44shouldEnforceSameSiteStrictForSpecificDomainERKN7WebCore17RegistrableDomainE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore36ensurePrevalentResourcesForDebugModeEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore50registrableDomainsToDeleteOrRestrictWebsiteDataForEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore23pruneStatisticsIfNeededEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore5storeEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore9workQueueEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore10classifierEv'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore10parametersEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore28endOfGrandfatheringTimestampEv'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore28endOfGrandfatheringTimestampEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore31setEndOfGrandfatheringTimestampERKN3WTF8WallTimeE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore33clearEndOfGrandfatheringTimeStampEv'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore28debugManualPrevalentResourceEv'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore28debugStaticPrevalentResourceEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore28debugBroadcastConsoleMessageEN3JSC13MessageSourceENS1_12MessageLevelERKN3WTF6StringE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore24debugLogDomainsInBatchesEPKcRKNS_35RegistrableDomainsToBlockCookiesForE'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore19debugLoggingEnabledEv'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore16debugModeEnabledEv'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore32firstPartyWebsiteDataRemovalModeEv'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore35shouldExemptFromWebsiteDataDeletionERKN7WebCore17RegistrableDomainE'/>
+<smbr r='WebKit::ResourceLoadStatisticsStore::maxNumberOfRecursiveCallsInRedirectTraceBack' t='const unsigned int'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_dataRecordRemovalCompletionHandlers' o='128' t='Vector&lt;CompletionHandler&lt;void ()&gt; &gt;'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore23shouldRemoveDataRecordsEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore23setDebugLogggingEnabledEb'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore26setDataRecordsBeingRemovedEb'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore17removeDataRecordsEON3WTF17CompletionHandlerIFvvEEE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore17setCacheMaxAgeCapEN3WTF7SecondsE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore20updateCacheMaxAgeCapEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore29setAgeCapForClientSideCookiesEN3WTF7SecondsE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore29updateClientSideCookiesAgeCapEv'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_store' o='256' t='WebKit::WebResourceLoadStatisticsStore &amp;'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_workQueue' o='320' t='Ref&lt;WTF::WorkQueue&gt;'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_resourceLoadStatisticsClassifier' o='384' t='WebKit::ResourceLoadStatisticsClassifier'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_parameters' o='448' t='WebKit::ResourceLoadStatisticsStore::Parameters'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_endOfGrandfatheringTimestamp' o='1216' t='WTF::WallTime'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_debugManualPrevalentResource' o='1280' t='WebKit::ResourceLoadStatisticsStore::RegistrableDomain'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_lastTimeDataRecordsWereRemoved' o='1344' t='WTF::MonotonicTime'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_lastStatisticsProcessingRequestIdentifier' o='1408' t='uint64_t'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_pendingStatisticsProcessingRequestIdentifier' o='1472' t='std::optional&lt;uint64_t&gt;'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_debugStaticPrevalentResource' o='1600' t='const WebKit::ResourceLoadStatisticsStore::RegistrableDomain'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_debugLoggingEnabled' o='1664' t='bool'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_debugModeEnabled' o='1672' t='bool'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_thirdPartyCookieBlockingMode' o='1680' t='WebCore::ThirdPartyCookieBlockingMode'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_sameSiteStrictEnforcementEnabled' o='1688' t='WebCore::SameSiteStrictEnforcementEnabled'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_dataRecordsBeingRemoved' o='1696' t='bool'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_shouldIncludeLocalhost' o='1704' t='WebKit::ShouldIncludeLocalhost'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_firstPartyWebsiteDataRemovalMode' o='1712' t='WebCore::FirstPartyWebsiteDataRemovalMode'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_standaloneApplicationDomain' o='1728' t='WebKit::ResourceLoadStatisticsStore::RegistrableDomain'/>
+<mbr r='WebKit::ResourceLoadStatisticsStore::m_appBoundDomains' o='1792' t='HashSet&lt;WebKit::ResourceLoadStatisticsStore::RegistrableDomain&gt;'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStoreC1ERNS_30WebResourceLoadStatisticsStoreERN3WTF9WorkQueueENS_22ShouldIncludeLocalhostE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStoreD1Ev'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore17computeImportanceERKN7WebCore22ResourceLoadStatisticsE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore40setNotifyPagesWhenDataRecordsWereScannedEb'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore10shouldSkipERKN7WebCore17RegistrableDomainE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore16setIsRunningTestEb'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore50setShouldClassifyResourcesBeforeDataRecordsRemovalEb'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore17removeDataRecordsEON3WTF17CompletionHandlerIFvvEEE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore31processStatisticsAndDataRecordsEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore30grandfatherExistingWebsiteDataEON3WTF17CompletionHandlerIFvvEEE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore34setResourceLoadStatisticsDebugModeEb'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore32setPrevalentResourceForDebugModeERKN7WebCore17RegistrableDomainE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore46scheduleStatisticsProcessingRequestIfNecessaryEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore40cancelPendingStatisticsProcessingRequestEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore28setTimeToLiveUserInteractionEN3WTF7SecondsE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore39setMinimumTimeBetweenDataRecordsRemovalEN3WTF7SecondsE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore21setGrandfatheringTimeEN3WTF7SecondsE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore17setCacheMaxAgeCapEN3WTF7SecondsE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore20updateCacheMaxAgeCapEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore29setAgeCapForClientSideCookiesEN3WTF7SecondsE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore29updateClientSideCookiesAgeCapEv'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore23shouldRemoveDataRecordsEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore26setDataRecordsBeingRemovedEb'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore30updateCookieBlockingForDomainsERKNS_35RegistrableDomainsToBlockCookiesForEON3WTF17CompletionHandlerIFvvEEE'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore44shouldEnforceSameSiteStrictForSpecificDomainERKN7WebCore17RegistrableDomainE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore23setMaxStatisticsEntriesEm'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore21setPruneEntriesDownToEm'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore30resetParametersToDefaultValuesEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore15logTestingEventERKN3WTF6StringE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore22removeAllStorageAccessEON3WTF17CompletionHandlerIFvvEEE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore23didCreateNetworkProcessEv'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore28debugBroadcastConsoleMessageEN3JSC13MessageSourceENS1_12MessageLevelERKN3WTF6StringE'/>
+<fun r='_ZN6WebKit27ResourceLoadStatisticsStore24debugLogDomainsInBatchesEPKcRKNS_35RegistrableDomainsToBlockCookiesForE'/>
+<fun r='_ZNK6WebKit27ResourceLoadStatisticsStore35shouldExemptFromWebsiteDataDeletionERKN7WebCore17RegistrableDomainE'/>

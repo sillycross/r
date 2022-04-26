@@ -1,0 +1,11 @@
+<dec f='WebKit/Source/WebKit/Platform/IPC/MessageReceiveQueue.h' l='40' type='void IPC::MessageReceiveQueue::enqueueMessage(IPC::Connection &amp; , std::unique_ptr&lt;Decoder&gt; &amp;&amp; )'/>
+<doc f='WebKit/Source/WebKit/Platform/IPC/MessageReceiveQueue.h' l='38'>// Called with Connection incoming message lock held.
+    // May be called from multiple threads.</doc>
+<ovr f='WebKit/Source/WebKit/Platform/IPC/MessageReceiveQueues.h' l='43' c='_ZN3IPC23FunctionDispatcherQueue14enqueueMessageERNS_10ConnectionEOSt10unique_ptrINS_7DecoderESt14default_deleteIS4_EE'/>
+<ovr f='WebKit/Source/WebKit/Platform/IPC/MessageReceiveQueues.h' l='63' c='_ZN3IPC26ThreadMessageReceiverQueue14enqueueMessageERNS_10ConnectionEOSt10unique_ptrINS_7DecoderESt14default_deleteIS4_EE'/>
+<ovr f='WebKit/Source/WebKit/Platform/IPC/MessageReceiveQueues.h' l='83' c='_ZN3IPC29WorkQueueMessageReceiverQueue14enqueueMessageERNS_10ConnectionEOSt10unique_ptrINS_7DecoderESt14default_deleteIS4_EE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='150' u='c' c='_ZN3IPC10Connection16SyncMessageState23enqueueMatchingMessagesERS0_RNS_19MessageReceiveQueueENS_12ReceiverNameEm'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='352' u='c' c='_ZN3IPC10Connection44enqueueMatchingMessagesToMessageReceiveQueueERNS_19MessageReceiveQueueENS_12ReceiverNameEm'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='768' u='c' c='_ZN3IPC10Connection22processIncomingMessageESt10unique_ptrINS_7DecoderESt14default_deleteIS2_EE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='1076' u='c' c='_ZN3IPC10Connection15dispatchMessageESt10unique_ptrINS_7DecoderESt14default_deleteIS2_EE'/>
+<ovr f='WebKit/Source/WebKit/Platform/IPC/StreamServerConnection.cpp' l='53' c='_ZN3IPC26StreamServerConnectionBase14enqueueMessageERNS_10ConnectionEOSt10unique_ptrINS_7DecoderESt14default_deleteIS4_EE'/>

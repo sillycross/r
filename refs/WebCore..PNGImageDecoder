@@ -1,0 +1,85 @@
+<inh f='WebKit/Source/WebCore/platform/image-decoders/ScalableImageDecoder.h' l='46' c='WebCore::ScalableImageDecoder'/>
+<def f='WebKit/Source/WebCore/platform/image-decoders/png/PNGImageDecoder.h' l='43' ll='146'/>
+<use f='WebKit/Source/WebCore/platform/image-decoders/png/PNGImageDecoder.h' l='47' c='_ZN7WebCore15PNGImageDecoder6createENS_11AlphaOptionENS_26GammaAndColorProfileOptionE'/>
+<size>1296</size>
+<doc f='WebKit/Source/WebCore/platform/image-decoders/png/PNGImageDecoder.h' l='42'>// This class decodes the PNG image format.</doc>
+<fun r='_ZN7WebCore15PNGImageDecoder6createENS_11AlphaOptionENS_26GammaAndColorProfileOptionE'/>
+<fun r='_ZN7WebCore15PNGImageDecoderD1Ev'/>
+<fun r='_ZNK7WebCore15PNGImageDecoder17filenameExtensionEv'/>
+<fun r='_ZNK7WebCore15PNGImageDecoder10frameCountEv'/>
+<fun r='_ZNK7WebCore15PNGImageDecoder15repetitionCountEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder18frameBufferAtIndexEm'/>
+<fun r='_ZN7WebCore15PNGImageDecoder9setFailedEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder15headerAvailableEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder12rowAvailableEPhji'/>
+<fun r='_ZN7WebCore15PNGImageDecoder11pngCompleteEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder10readChunksEP19png_unknown_chunk_t'/>
+<fun r='_ZN7WebCore15PNGImageDecoder11frameHeaderEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder4initEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder21clearFrameBufferCacheEm'/>
+<fun r='_ZNK7WebCore15PNGImageDecoder10isCompleteEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder17isCompleteAtIndexEm'/>
+<fun r='_ZN7WebCore15PNGImageDecoderC1ENS_11AlphaOptionENS_26GammaAndColorProfileOptionE'/>
+<fun r='_ZN7WebCore15PNGImageDecoder13tryDecodeSizeEb'/>
+<fun r='_ZN7WebCore15PNGImageDecoder6decodeEbjb'/>
+<fun r='_ZN7WebCore15PNGImageDecoder15initFrameBufferEm'/>
+<fun r='_ZN7WebCore15PNGImageDecoder13frameCompleteEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder15processingStartEP19png_unknown_chunk_t'/>
+<fun r='_ZN7WebCore15PNGImageDecoder16processingFinishEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder19fallbackNotAnimatedEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder5clearEv'/>
+<mbr r='WebCore::PNGImageDecoder::m_reader' o='960' t='std::unique_ptr&lt;PNGImageReader&gt;'/>
+<mbr r='WebCore::PNGImageDecoder::m_doNothingOnFailure' o='1024' t='bool'/>
+<mbr r='WebCore::PNGImageDecoder::m_currentFrame' o='1056' t='unsigned int'/>
+<mbr r='WebCore::PNGImageDecoder::m_png' o='1088' t='png_structp'/>
+<mbr r='WebCore::PNGImageDecoder::m_info' o='1152' t='png_infop'/>
+<mbr r='WebCore::PNGImageDecoder::m_isAnimated' o='1216' t='bool'/>
+<mbr r='WebCore::PNGImageDecoder::m_frameInfo' o='1224' t='bool'/>
+<mbr r='WebCore::PNGImageDecoder::m_frameIsHidden' o='1232' t='bool'/>
+<mbr r='WebCore::PNGImageDecoder::m_hasInfo' o='1240' t='bool'/>
+<mbr r='WebCore::PNGImageDecoder::m_gamma' o='1248' t='int'/>
+<mbr r='WebCore::PNGImageDecoder::m_frameCount' o='1280' t='size_t'/>
+<mbr r='WebCore::PNGImageDecoder::m_playCount' o='1344' t='unsigned int'/>
+<mbr r='WebCore::PNGImageDecoder::m_totalFrames' o='1376' t='unsigned int'/>
+<mbr r='WebCore::PNGImageDecoder::m_sizePLTE' o='1408' t='unsigned int'/>
+<mbr r='WebCore::PNGImageDecoder::m_sizetRNS' o='1440' t='unsigned int'/>
+<mbr r='WebCore::PNGImageDecoder::m_sequenceNumber' o='1472' t='unsigned int'/>
+<mbr r='WebCore::PNGImageDecoder::m_width' o='1504' t='unsigned int'/>
+<mbr r='WebCore::PNGImageDecoder::m_height' o='1536' t='unsigned int'/>
+<mbr r='WebCore::PNGImageDecoder::m_xOffset' o='1568' t='unsigned int'/>
+<mbr r='WebCore::PNGImageDecoder::m_yOffset' o='1600' t='unsigned int'/>
+<mbr r='WebCore::PNGImageDecoder::m_delayNumerator' o='1632' t='unsigned int'/>
+<mbr r='WebCore::PNGImageDecoder::m_delayDenominator' o='1664' t='unsigned int'/>
+<mbr r='WebCore::PNGImageDecoder::m_dispose' o='1696' t='unsigned int'/>
+<mbr r='WebCore::PNGImageDecoder::m_blend' o='1728' t='unsigned int'/>
+<mbr r='WebCore::PNGImageDecoder::m_dataIHDR' o='1760' t='png_byte [25]'/>
+<mbr r='WebCore::PNGImageDecoder::m_dataPLTE' o='1960' t='png_byte [780]'/>
+<mbr r='WebCore::PNGImageDecoder::m_datatRNS' o='8200' t='png_byte [268]'/>
+<use f='WebKit/Source/WebCore/platform/image-decoders/png/PNGImageDecoder.cpp' l='91' c='_ZN7WebCoreL15headerAvailableEP14png_struct_defP12png_info_def'/>
+<use f='WebKit/Source/WebCore/platform/image-decoders/png/PNGImageDecoder.cpp' l='97' c='_ZN7WebCoreL12rowAvailableEP14png_struct_defPhji'/>
+<use f='WebKit/Source/WebCore/platform/image-decoders/png/PNGImageDecoder.cpp' l='103' c='_ZN7WebCoreL11pngCompleteEP14png_struct_defP12png_info_def'/>
+<use f='WebKit/Source/WebCore/platform/image-decoders/png/PNGImageDecoder.cpp' l='110' c='_ZN7WebCoreL11frameHeaderEP14png_struct_defP12png_info_def'/>
+<use f='WebKit/Source/WebCore/platform/image-decoders/png/PNGImageDecoder.cpp' l='116' c='_ZN7WebCoreL10readChunksEP14png_struct_defP19png_unknown_chunk_t'/>
+<use f='WebKit/Source/WebCore/platform/image-decoders/png/PNGImageDecoder.cpp' l='124' c='_ZN7WebCore14PNGImageReaderC1EPNS_15PNGImageDecoderE'/>
+<use f='WebKit/Source/WebCore/platform/image-decoders/png/PNGImageDecoder.cpp' l='158' c='_ZN7WebCore14PNGImageReader6decodeERKNS_12SharedBuffer11DataSegmentEbj'/>
+<use f='WebKit/Source/WebCore/platform/image-decoders/png/PNGImageDecoder.cpp' l='158' c='_ZN7WebCore14PNGImageReader6decodeERKNS_12SharedBuffer11DataSegmentEbj'/>
+<size>1296</size>
+<fun r='_ZN7WebCore15PNGImageDecoderC1ENS_11AlphaOptionENS_26GammaAndColorProfileOptionE'/>
+<fun r='_ZN7WebCore15PNGImageDecoderD1Ev'/>
+<fun r='_ZNK7WebCore15PNGImageDecoder15repetitionCountEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder18frameBufferAtIndexEm'/>
+<fun r='_ZN7WebCore15PNGImageDecoder5clearEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder9setFailedEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder15headerAvailableEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder12rowAvailableEPhji'/>
+<fun r='_ZN7WebCore15PNGImageDecoder11pngCompleteEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder6decodeEbjb'/>
+<fun r='_ZN7WebCore15PNGImageDecoder10readChunksEP19png_unknown_chunk_t'/>
+<fun r='_ZN7WebCore15PNGImageDecoder11frameHeaderEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder4initEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder21clearFrameBufferCacheEm'/>
+<fun r='_ZN7WebCore15PNGImageDecoder15initFrameBufferEm'/>
+<fun r='_ZN7WebCore15PNGImageDecoder13frameCompleteEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder15processingStartEP19png_unknown_chunk_t'/>
+<fun r='_ZN7WebCore15PNGImageDecoder16processingFinishEv'/>
+<fun r='_ZN7WebCore15PNGImageDecoder19fallbackNotAnimatedEv'/>

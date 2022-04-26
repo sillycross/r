@@ -1,0 +1,12 @@
+<dec f='WebKit/Source/WebCore/style/StyleBuilderState.h' l='84' type='bool WebCore::Style::BuilderState::useSVGZoomRules() const'/>
+<def f='WebKit/Source/WebCore/style/StyleBuilderState.cpp' l='75' ll='78' type='bool WebCore::Style::BuilderState::useSVGZoomRules() const'/>
+<use f='WebKit/Source/WebCore/style/StyleBuilderState.cpp' l='450' u='c' c='_ZN7WebCore5Style12BuilderState11setFontSizeERNS_22FontCascadeDescriptionEf'/>
+<doc f='WebKit/Source/WebCore/style/StyleBuilderState.cpp' l='67'>// SVG handles zooming in a different way compared to CSS. The whole document is scaled instead
+// of each individual length value in the render style / tree. CSSPrimitiveValue::computeLength*()
+// multiplies each resolved length with the zoom multiplier - so for SVG we need to disable that.
+// Though all CSS values that can be applied to outermost &lt;svg&gt; elements (width/height/border/padding...)
+// need to respect the scaling. RenderBox (the parent class of RenderSVGRoot) grabs values like
+// width/height/border/padding/... from the RenderStyle -&gt; for SVG these values would never scale,
+// if we&apos;d pass a 1.0 zoom factor everyhwere. So we only pass a zoom factor of 1.0 for specific
+// properties that are NOT allowed to scale within a zoomed SVG document (letter/word-spacing/font-size).</doc>
+<use f='WebKit/Source/WebCore/css/CSSToStyleMap.cpp' l='60' u='c' c='_ZNK7WebCore13CSSToStyleMap15useSVGZoomRulesEv'/>

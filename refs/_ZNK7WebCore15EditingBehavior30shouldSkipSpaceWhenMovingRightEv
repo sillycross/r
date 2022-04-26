@@ -1,0 +1,7 @@
+<def f='WebKit/Source/WebCore/editing/EditingBehavior.h' l='84' type='bool WebCore::EditingBehavior::shouldSkipSpaceWhenMovingRight() const'/>
+<doc f='WebKit/Source/WebCore/editing/EditingBehavior.h' l='81'>// Based on native behavior, when using ctrl(alt)+arrow to move caret by word, ctrl(alt)+left arrow moves caret to
+    // immediately before the word in all platforms, for example, the word break positions are: &quot;|abc |def |hij |opq&quot;.
+    // But ctrl+right arrow moves caret to &quot;abc |def |hij |opq&quot; on Windows and &quot;abc| def| hij| opq|&quot; on Mac and Linux.</doc>
+<use f='WebKit/Source/WebCore/editing/FrameSelection.cpp' l='748' u='c' c='_ZN7WebCore14FrameSelection27nextWordPositionForPlatformERKNS_15VisiblePositionE'/>
+<use f='WebKit/Source/WebCore/editing/FrameSelection.cpp' l='874' u='c' c='_ZN7WebCore14FrameSelection17modifyMovingRightENS_15TextGranularityEPb'/>
+<use f='WebKit/Source/WebCore/editing/FrameSelection.cpp' l='1091' u='c' c='_ZN7WebCore14FrameSelection16modifyMovingLeftENS_15TextGranularityEPb'/>

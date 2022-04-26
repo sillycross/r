@@ -1,0 +1,13 @@
+<dec f='WebKit/Source/WebCore/loader/TextResourceDecoder.h' l='81' type='bool WebCore::TextResourceDecoder::shouldAutoDetect() const'/>
+<def f='WebKit/Source/WebCore/loader/TextResourceDecoder.cpp' l='583' ll='587' type='bool WebCore::TextResourceDecoder::shouldAutoDetect() const'/>
+<use f='WebKit/Source/WebCore/loader/TextResourceDecoder.cpp' l='606' u='c' c='_ZN7WebCore19TextResourceDecoder6decodeEPKcm'/>
+<use f='WebKit/Source/WebCore/loader/TextResourceDecoder.cpp' l='640' u='c' c='_ZN7WebCore19TextResourceDecoder5flushEv'/>
+<doc f='WebKit/Source/WebCore/loader/TextResourceDecoder.cpp' l='574'>// We use the encoding detector in two cases:
+//   1. Encoding detector is turned ON and no other encoding source is
+//      available (that is, it&apos;s DefaultEncoding).
+//   2. Encoding detector is turned ON and the encoding is set to
+//      the encoding of the parent frame, which is also auto-detected.
+//   Note that condition #2 is NOT satisfied unless parent-child frame
+//   relationship is compliant to the same-origin policy. If they&apos;re from
+//   different domains, |m_source| would not be set to EncodingFromParentFrame
+//   in the first place. </doc>

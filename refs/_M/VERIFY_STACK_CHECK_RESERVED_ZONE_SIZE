@@ -1,0 +1,13 @@
+<dec f='WebKit/WTF/Headers/wtf/StackCheck.h' l='41'/>
+<use f='WebKit/WTF/Headers/wtf/StackCheck.h' l='52' u='c'/>
+<use f='WebKit/WTF/Headers/wtf/StackCheck.h' l='70' u='c'/>
+<use f='WebKit/WTF/Headers/wtf/StackCheck.h' l='81' u='c'/>
+<use f='WebKit/WTF/Headers/wtf/StackCheck.h' l='88' u='c'/>
+<use f='WebKit/WTF/Headers/wtf/StackCheck.h' l='105' u='c'/>
+<doc f='WebKit/WTF/Headers/wtf/StackCheck.h' l='33'>// We only enable the reserved zone size check by default on ASSERT_ENABLED
+// builds (which usually mean Debug builds). However, it is more valuable to
+// run this test on Release builds. That said, we don&apos;t want to do pay this
+// cost always because we may need to do stack checks on hot paths too.
+// Note also that we&apos;re deliberately using RELEASE_ASSERTs if the verification
+// is turned on. This makes it easier for us to turn this on for Release builds
+// for a reserved zone size calibration test runs.</doc>

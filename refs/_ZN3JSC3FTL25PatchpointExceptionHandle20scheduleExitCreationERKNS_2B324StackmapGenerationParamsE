@@ -1,0 +1,43 @@
+<dec f='WebKit/Source/JavaScriptCore/ftl/FTLPatchpointExceptionHandle.h' l='82' type='RefPtr&lt;JSC::FTL::ExceptionTarget&gt; JSC::FTL::PatchpointExceptionHandle::scheduleExitCreation(const B3::StackmapGenerationParams &amp; )'/>
+<def f='WebKit/Source/JavaScriptCore/ftl/FTLPatchpointExceptionHandle.cpp' l='61' ll='73' type='RefPtr&lt;JSC::FTL::ExceptionTarget&gt; JSC::FTL::PatchpointExceptionHandle::scheduleExitCreation(const B3::StackmapGenerationParams &amp; params)'/>
+<doc f='WebKit/Source/JavaScriptCore/ftl/FTLPatchpointExceptionHandle.h' l='61'>// Note that you can use this handle to schedule any number of exits. This capability is here for
+    // two reasons:
+    // 
+    // - B3 code duplication. B3 could take a patchpoint and turn it into multiple patchpoints if it
+    //   duplicates code. Duplicating code is legal since you can do it without changing the behavior
+    //   of the program. One example is tail duplication. Another is jump threading. Yet another is
+    //   path specialization. You will have one PatchpointExceptionHandle per patchpoint you create
+    //   during DFG-&gt;B3 lowering, and that patchpoint will have a generator that calls
+    //   handle-&gt;scheduleBlah(). That generator will be called multiple times if your patchpoint got
+    //   duplicated.
+    //
+    // - Combination of unwind and non-unwind exception handlers inside one patchpoint. A GetById may
+    //   need both an exception handler that serves as an unwind target and an exception handler that
+    //   is branched to directly for operation calls emitted inside the patchpoint. In that case,
+    //   you&apos;ll call both scheduleExitCreation() and scheduleExitCreationForUnwind() on the same
+    //   handle.
+
+    // Schedules the creation of an OSR exit jump destination. You don&apos;t know when this will be
+    // created, but it will happen before linking. You can link jumps to it during link time. That&apos;s
+    // why this returns an ExceptionTarget. That will contain the jump destination (target-&gt;label())
+    // at link time. This function should be used for exceptions from C calls.</doc>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='2396' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB318compileUnaryMathICEPNS_17UnaryArithProfileET0_T1_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='2505' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB319compileBinaryMathICEPNS_18BinaryArithProfileET0_T1_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='4009' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB314getPrivateNameEPNS_2B35ValueES5_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='4156' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB325compilePrivateBrandAccessEPNS_2B35ValueES5_NS_10AccessTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='4583' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB313cachedPutByIdEPNS_3DFG4NodeEPNS_2B35ValueES8_NS_8ECMAModeENS_7PutKindE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='5315' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB315compileGetByValEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='5936' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB312compileDelByEPNS_2B35ValueET0_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='9995' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB328compileDirectCallOrConstructEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10373' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB335compileCallOrConstructVarargsSpreadEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10657' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB329compileCallOrConstructVarargsEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10899' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB315compileCallEvalEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='12467' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB311compileInByEPNS_2B35ValueET0_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='12821' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB317compileInstanceOfEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='14324' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB37getByIdEPNS_2B35ValueENS_10AccessTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='14408' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB315getByIdWithThisEPNS_2B35ValueES5_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='15005' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB320compileCallDOMGetterEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='15770' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB317emitBinarySnippetEPFlPNS_14JSGlobalObjectEllE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='15838' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB322emitBinaryBitOpSnippetEPFlPNS_14JSGlobalObjectEllE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='15896' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB321emitRightShiftSnippetENS_22JITRightShiftGenerator9ShiftTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='17627' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB312lazySlowPathERKT_RKN3WTF6VectorIPNS_2B35ValueELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEE'/>

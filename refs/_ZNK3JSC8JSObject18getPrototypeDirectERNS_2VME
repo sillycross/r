@@ -1,0 +1,67 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='128' type='JSC::JSValue JSC::JSObject::getPrototypeDirect(JSC::VM &amp; ) const'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='1361' ll='1364' type='JSC::JSValue JSC::JSObject::getPrototypeDirect(JSC::VM &amp; vm) const'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='1369' u='c' c='_ZN3JSC8JSObject12getPrototypeERNS_2VMEPNS_14JSGlobalObjectE'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='122'>// This gets the prototype directly off of the structure. This does not do
+    // dynamic dispatch on the getPrototype method table method. It is not valid 
+    // to use this when performing a [[GetPrototypeOf]] operation in the specification.
+    // It is valid to use though when you know that you want to directly get it
+    // without consulting the method table. This is akin to getting the [[Prototype]]
+    // internal field directly as described in the specification.</doc>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGlobalObjectInlines.h' l='43' u='c' c='_ZN3JSC14JSGlobalObject21objectPrototypeIsSaneEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGlobalObjectInlines.h' l='49' u='c' c='_ZN3JSC14JSGlobalObject25arrayPrototypeChainIsSaneEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGlobalObjectInlines.h' l='56' u='c' c='_ZN3JSC14JSGlobalObject26stringPrototypeChainIsSaneEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/StructureInlines.h' l='366' u='c' c='_ZNK3JSC9Structure7isValidEPNS_14JSGlobalObjectEPNS_14StructureChainEPNS_8JSObjectE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayInlines.h' l='89' u='c' c='_ZN3JSC7JSArray22canDoFastIndexedAccessERNS_2VME'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObjectInlines.h' l='75' u='c' c='_ZN3JSC8JSObject37canPerformFastPutInlineExcludingProtoERNS_2VME'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObjectInlines.h' l='129' u='c' c='_ZN3JSC8JSObject15getPropertySlotEPNS_14JSGlobalObjectEjRNS_12PropertySlotE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObjectInlines.h' l='175' u='c' c='_ZN3JSC8JSObject23getNonIndexPropertySlotEPNS_14JSGlobalObjectENS_12PropertyNameERNS_12PropertySlotE'/>
+<dec f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='128' type='JSC::JSValue JSC::JSObject::getPrototypeDirect(JSC::VM &amp; ) const'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='1361' ll='1364' type='JSC::JSValue JSC::JSObject::getPrototypeDirect(JSC::VM &amp; vm) const'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='1369' u='c' c='_ZN3JSC8JSObject12getPrototypeERNS_2VMEPNS_14JSGlobalObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObjectInlines.h' l='43' u='c' c='_ZN3JSC14JSGlobalObject21objectPrototypeIsSaneEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObjectInlines.h' l='49' u='c' c='_ZN3JSC14JSGlobalObject25arrayPrototypeChainIsSaneEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObjectInlines.h' l='56' u='c' c='_ZN3JSC14JSGlobalObject26stringPrototypeChainIsSaneEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/StructureInlines.h' l='366' u='c' c='_ZNK3JSC9Structure7isValidEPNS_14JSGlobalObjectEPNS_14StructureChainEPNS_8JSObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayInlines.h' l='89' u='c' c='_ZN3JSC7JSArray22canDoFastIndexedAccessERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObjectInlines.h' l='75' u='c' c='_ZN3JSC8JSObject37canPerformFastPutInlineExcludingProtoERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObjectInlines.h' l='129' u='c' c='_ZN3JSC8JSObject15getPropertySlotEPNS_14JSGlobalObjectEjRNS_12PropertySlotE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObjectInlines.h' l='175' u='c' c='_ZN3JSC8JSObject23getNonIndexPropertySlotEPNS_14JSGlobalObjectENS_12PropertyNameERNS_12PropertySlotE'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='1538' u='c' c='_ZN12_GLOBAL__N_136domJITGetterBaseJSObjectCustomGetterEPN3JSC14JSGlobalObjectElNS0_12PropertyNameE'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='1548' u='c' c='_ZN12_GLOBAL__N_132domJITGetterBaseJSObjectSlowCallEPN3JSC14JSGlobalObjectEPv'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='2841' u='c' c='_ZN3JSCL19functionCreateProxyEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='122'>// This gets the prototype directly off of the structure. This does not do
+    // dynamic dispatch on the getPrototype method table method. It is not valid 
+    // to use this when performing a [[GetPrototypeOf]] operation in the specification.
+    // It is valid to use though when you know that you want to directly get it
+    // without consulting the method table. This is akin to getting the [[Prototype]]
+    // internal field directly as described in the specification.</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferPrototypeInlines.h' l='49' u='c' c='_ZN3JSC24speciesWatchpointIsValidERNS_2VMEPNS_8JSObjectENS_22ArrayBufferSharingModeE'/>
+<use f='WebKit/Source/JavaScriptCore/API/APICallbackFunction.h' l='118' u='c' c='_ZN3JSC19APICallbackFunction13constructImplEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSObjectRef.cpp' l='305' u='c' c='JSObjectGetPrototype'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='1293' u='c' c='_ZN3JSC7JSArray38isIteratorProtocolFastAndNonObservableEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ArrayPrototype.cpp' l='197' u='c' c='_ZN3JSCL24speciesWatchpointIsValidERNS_2VMEPNS_8JSObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='1669' u='c' c='_ZN3JSCL20lastInPrototypeChainERNS_2VMEPNS_8JSObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='1670' u='c' c='_ZN3JSCL20lastInPrototypeChainERNS_2VMEPNS_8JSObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='1719' u='c' c='_ZN3JSC12_GLOBAL__N_128GlobalObjectDependencyFinder5visitEPNS_8JSObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='1825' u='c' c='_ZN3JSC12_GLOBAL__N_131ObjectsWithBrokenIndexingFinder5visitEPNS_8JSObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='2041' u='c' c='_ZN3JSC14JSGlobalObject14resetPrototypeERNS_2VMENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='2525' u='c' c='_ZN3JSC14JSGlobalObject14finishCreationERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSMap.cpp' l='69' u='c' c='_ZN3JSC5JSMap38isIteratorProtocolFastAndNonObservableEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='514' u='c' c='_ZN3JSC8JSObject19calculatedClassNameEPS0_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='1903' u='c' c='_ZN3JSC8JSObject26setPrototypeWithCycleCheckERNS_2VMEPNS_14JSGlobalObjectENS_7JSValueEb'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='1922' u='c' c='_ZN3JSC8JSObject26setPrototypeWithCycleCheckERNS_2VMEPNS_14JSGlobalObjectENS_7JSValueEb'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='1935' u='c' c='_ZN3JSC8JSObject12getPrototypeEPS0_PNS_14JSGlobalObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='3956' u='c' c='_ZNK3JSC8JSObject43anyObjectInChainMayInterceptIndexedAccessesERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSProxy.cpp' l='52' u='c' c='_ZN3JSC7JSProxy9setTargetERNS_2VMEPNS_14JSGlobalObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSet.cpp' l='69' u='c' c='_ZN3JSC5JSSet38isIteratorProtocolFastAndNonObservableEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ProgramExecutable.cpp' l='88' u='c' c='_ZN3JSC17ProgramExecutable26initializeGlobalPropertiesERNS_2VMEPNS_14JSGlobalObjectEPNS_7JSScopeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ProgramExecutable.cpp' l='92' u='c' c='_ZN3JSC17ProgramExecutable26initializeGlobalPropertiesERNS_2VMEPNS_14JSGlobalObjectEPNS_7JSScopeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ErrorInstance.cpp' l='190' u='c' c='_ZN3JSC13ErrorInstance19sanitizedNameStringEPNS_14JSGlobalObjectE'/>
+<use f='WebKit/WebCore/DerivedSources/JSServiceWorkerGlobalScope.cpp' l='172' u='c' c='_ZN7WebCore32JSDOMConstructorNotConstructable20initializePropertiesERN3JSC2VMERNS_17JSDOMGlobalObjectE'/>
+<use f='WebKit/WebCore/DerivedSources/JSStorage.cpp' l='235' u='c' c='_ZN7WebCore9JSStorage3putEPN3JSC6JSCellEPNS1_14JSGlobalObjectENS1_12PropertyNameENS1_7JSValueERNS1_15PutPropertySlotE'/>
+<use f='WebKit/WebCore/DerivedSources/JSStorage.cpp' l='261' u='c' c='_ZN7WebCore9JSStorage10putByIndexEPN3JSC6JSCellEPNS1_14JSGlobalObjectEjNS1_7JSValueEb'/>
+<use f='WebKit/WebCore/DerivedSources/JSDOMWindow.cpp' l='5680' u='c' c='_ZN7WebCore32JSDOMConstructorNotConstructable20initializePropertiesERN3JSC2VMERNS_17JSDOMGlobalObjectE'/>
+<use f='WebKit/WebCore/DerivedSources/JSDedicatedWorkerGlobalScope.cpp' l='162' u='c' c='_ZN7WebCore32JSDOMConstructorNotConstructable20initializePropertiesERN3JSC2VMERNS_17JSDOMGlobalObjectE'/>
+<use f='WebKit/WebCore/DerivedSources/JSAudioWorkletGlobalScope.cpp' l='138' u='c' c='_ZN7WebCore32JSDOMConstructorNotConstructable20initializePropertiesERN3JSC2VMERNS_17JSDOMGlobalObjectE'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSPluginElementFunctions.cpp' l='124' u='c' c='_ZN7WebCore37pluginElementCustomGetOwnPropertySlotEPNS_13JSHTMLElementEPN3JSC14JSGlobalObjectENS2_12PropertyNameERNS2_12PropertySlotE'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSDOMWindowProperties.cpp' l='96' u='c' c='_ZN7WebCore21JSDOMWindowProperties18getOwnPropertySlotEPN3JSC8JSObjectEPNS1_14JSGlobalObjectENS1_12PropertyNameERNS1_12PropertySlotE'/>

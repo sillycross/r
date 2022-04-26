@@ -1,0 +1,13 @@
+<dec f='WebKit/Source/WebCore/Modules/webdatabase/SQLTransactionBackend.h' l='54' type='void WebCore::SQLTransactionBackend::requestTransitToState(WebCore::SQLTransactionState )'/>
+<doc f='WebKit/Source/WebCore/Modules/webdatabase/SQLTransactionBackend.h' l='53'>// API called from the frontend published via SQLTransactionBackend:</doc>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/SQLTransaction.cpp' l='402' u='c' c='_ZN7WebCore14SQLTransaction26deliverTransactionCallbackEv'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/SQLTransaction.cpp' l='421' u='c' c='_ZN7WebCore14SQLTransaction31deliverTransactionErrorCallbackEv'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/SQLTransaction.cpp' l='442' u='c' c='_ZN7WebCore14SQLTransaction24deliverStatementCallbackEv'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/SQLTransaction.cpp' l='446' u='c' c='_ZN7WebCore14SQLTransaction24deliverStatementCallbackEv'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/SQLTransaction.cpp' l='456' u='c' c='_ZN7WebCore14SQLTransaction28deliverQuotaIncreaseCallbackEv'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/SQLTransaction.cpp' l='473' u='c' c='_ZN7WebCore14SQLTransaction22deliverSuccessCallbackEv'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/SQLTransaction.cpp' l='503' u='c' c='_ZN7WebCore14SQLTransaction34computeNextStateAndCleanupIfNeededEv'/>
+<def f='WebKit/Source/WebCore/Modules/webdatabase/SQLTransactionBackend.cpp' l='506' ll='512' type='void WebCore::SQLTransactionBackend::requestTransitToState(WebCore::SQLTransactionState nextState)'/>
+<doc f='WebKit/Source/WebCore/Modules/webdatabase/SQLTransactionBackend.cpp' l='503'>// requestTransitToState() can be called from the frontend. Hence, it should
+// NOT be modifying SQLTransactionBackend in general. The only safe field to
+// modify is m_requestedState which is meant for this purpose.</doc>

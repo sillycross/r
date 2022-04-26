@@ -1,0 +1,16 @@
+<dec f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitFormSubmissionRequest.h' l='63' type='GHashTable * webkit_form_submission_request_get_text_fields(WebKitFormSubmissionRequest * request)'/>
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitFormSubmissionRequest.cpp' l='104' ll='118' type='GHashTable * webkit_form_submission_request_get_text_fields(WebKitFormSubmissionRequest * request)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitFormSubmissionRequest.cpp' l='90'>/**
+ * webkit_form_submission_request_get_text_fields:
+ * @request: a #WebKitFormSubmissionRequest
+ *
+ * Get a #GHashTable with the values of the text fields contained in the form
+ * associated to @request. Note that fields will be missing if the form
+ * contains multiple text input elements with the same name, so this
+ * function does not reliably return all text fields.
+ *
+ * Returns: (allow-none) (transfer none): a #GHashTable with the form
+ *    text fields, or %NULL if the form doesn&apos;t contain text fields.
+ *
+ * Deprecated: 2.20. Use webkit_form_submission_request_list_text_fields() instead.
+ */</doc>

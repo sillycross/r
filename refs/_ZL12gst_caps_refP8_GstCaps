@@ -1,0 +1,18 @@
+<def f='include/gstreamer-1.0/gst/gstcaps.h' l='207' ll='211' type='GstCaps * gst_caps_ref(GstCaps * caps)'/>
+<doc f='include/gstreamer-1.0/gst/gstcaps.h' l='192'>/**
+ * gst_caps_ref:
+ * @caps: the #GstCaps to reference
+ *
+ * Add a reference to a #GstCaps object.
+ *
+ * From this point on, until the caller calls gst_caps_unref() or
+ * gst_caps_make_writable(), it is guaranteed that the caps object will not
+ * change. This means its structures won&apos;t change, etc. To use a #GstCaps
+ * object, you must always have a refcount on it -- either the one made
+ * implicitly by e.g. gst_caps_new_simple(), or via taking one explicitly with
+ * this function.
+ *
+ * Returns: the same #GstCaps object.
+ */</doc>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/GRefPtrGStreamer.cpp' l='140' u='c' c='_ZN3WTF7refGPtrEPT_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.cpp' l='768' u='c' c='_ZN7WebCore14AppendPipeline29connectDemuxerSrcPadToAppsinkEP7_GstPad'/>

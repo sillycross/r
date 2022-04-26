@@ -1,0 +1,19 @@
+<def f='WebKit/Source/WebCore/rendering/RenderMultiColumnSet.h' l='224' ll='241'/>
+<use f='WebKit/Source/WebCore/rendering/RenderMultiColumnSet.h' l='242'/>
+<use f='WebKit/Source/WebCore/rendering/RenderMultiColumnSet.cpp' l='186' c='_ZNK7WebCore20RenderMultiColumnSet25findRunWithTallestColumnsEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderMultiColumnSet.cpp' l='270' c='_ZN7WebCore20RenderMultiColumnSet14addForcedBreakENS_10LayoutUnitE'/>
+<size>8</size>
+<doc f='WebKit/Source/WebCore/rendering/RenderMultiColumnSet.h' l='217'>// A run of content without explicit (forced) breaks; i.e. a flow thread portion between two
+    // explicit breaks, between flow thread start and an explicit break, between an explicit break
+    // and flow thread end, or, in cases when there are no explicit breaks at all: between flow flow
+    // thread start and flow thread end. We need to know where the explicit breaks are, in order to
+    // figure out where the implicit breaks will end up, so that we get the columns properly
+    // balanced. A content run starts out as representing one single column, and will represent one
+    // additional column for each implicit break &quot;inserted&quot; there.</doc>
+<fun r='_ZN7WebCore20RenderMultiColumnSet10ContentRunC1ENS_10LayoutUnitE'/>
+<fun r='_ZNK7WebCore20RenderMultiColumnSet10ContentRun21assumedImplicitBreaksEv'/>
+<fun r='_ZN7WebCore20RenderMultiColumnSet10ContentRun26assumeAnotherImplicitBreakEv'/>
+<fun r='_ZNK7WebCore20RenderMultiColumnSet10ContentRun11breakOffsetEv'/>
+<fun r='_ZNK7WebCore20RenderMultiColumnSet10ContentRun19columnLogicalHeightENS_10LayoutUnitE'/>
+<mbr r='WebCore::RenderMultiColumnSet::ContentRun::m_breakOffset' o='0' t='WebCore::LayoutUnit'/>
+<mbr r='WebCore::RenderMultiColumnSet::ContentRun::m_assumedImplicitBreaks' o='32' t='unsigned int'/>

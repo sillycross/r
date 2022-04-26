@@ -1,0 +1,52 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/X86Assembler.h' l='2160' u='c' c='_ZN3JSC12X86Assembler9testb_i8rEiNS_12X86Registers10RegisterIDE'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/X86Assembler.h' l='4639' ll='4645' type='void JSC::X86Assembler::X86InstructionFormatter::oneByteOp8(JSC::X86Assembler::OneByteOpcodeID opcode, JSC::X86Assembler::GroupOpcodeID groupOp, JSC::X86Assembler::RegisterID rm)'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/X86Assembler.h' l='4614'>// Byte-operands:
+        //
+        // These methods format byte operations.  Byte operations differ from the normal
+        // formatters in the circumstances under which they will decide to emit REX prefixes.
+        // These should be used where any register operand signifies a byte register.
+        //
+        // The disctinction is due to the handling of register numbers in the range 4..7 on
+        // x86-64.  These register numbers may either represent the second byte of the first
+        // four registers (ah..bh) or the first byte of the second four registers (spl..dil).
+        //
+        // Since ah..bh cannot be used in all permutations of operands (specifically cannot
+        // be accessed where a REX prefix is present), these are likely best treated as
+        // deprecated.  In order to ensure the correct registers spl..dil are selected a
+        // REX prefix will be emitted for any byte register operand in the range 4..15.
+        //
+        // These formatters may be used in instructions where a mix of operand sizes, in which
+        // case an unnecessary REX will be emitted, for example:
+        //     movzbl %al, %edi
+        // In this case a REX will be planted since edi is 7 (and were this a byte operand
+        // a REX would be required to specify dil instead of bh).  Unneeded REX prefixes will
+        // be silently ignored by the processor.
+        //
+        // Address operands should still be checked using regRequiresRex(), while byteRegRequiresRex()
+        // is provided to check byte register operands.</doc>
+<use f='WebKit/Source/JavaScriptCore/assembler/X86Assembler.h' l='2160' u='c' c='_ZN3JSC12X86Assembler9testb_i8rEiNS_12X86Registers10RegisterIDE'/>
+<def f='WebKit/Source/JavaScriptCore/assembler/X86Assembler.h' l='4639' ll='4645' type='void JSC::X86Assembler::X86InstructionFormatter::oneByteOp8(JSC::X86Assembler::OneByteOpcodeID opcode, JSC::X86Assembler::GroupOpcodeID groupOp, JSC::X86Assembler::RegisterID rm)'/>
+<doc f='WebKit/Source/JavaScriptCore/assembler/X86Assembler.h' l='4614'>// Byte-operands:
+        //
+        // These methods format byte operations.  Byte operations differ from the normal
+        // formatters in the circumstances under which they will decide to emit REX prefixes.
+        // These should be used where any register operand signifies a byte register.
+        //
+        // The disctinction is due to the handling of register numbers in the range 4..7 on
+        // x86-64.  These register numbers may either represent the second byte of the first
+        // four registers (ah..bh) or the first byte of the second four registers (spl..dil).
+        //
+        // Since ah..bh cannot be used in all permutations of operands (specifically cannot
+        // be accessed where a REX prefix is present), these are likely best treated as
+        // deprecated.  In order to ensure the correct registers spl..dil are selected a
+        // REX prefix will be emitted for any byte register operand in the range 4..15.
+        //
+        // These formatters may be used in instructions where a mix of operand sizes, in which
+        // case an unnecessary REX will be emitted, for example:
+        //     movzbl %al, %edi
+        // In this case a REX will be planted since edi is 7 (and were this a byte operand
+        // a REX would be required to specify dil instead of bh).  Unneeded REX prefixes will
+        // be silently ignored by the processor.
+        //
+        // Address operands should still be checked using regRequiresRex(), while byteRegRequiresRex()
+        // is provided to check byte register operands.</doc>

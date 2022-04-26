@@ -1,0 +1,15 @@
+<dec f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='205' type='void JSC::CallFrameShuffler::emitBox(JSC::CachedRecovery &amp; )'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='491' u='c' c='_ZN3JSC17CallFrameShuffler9tryWritesERNS_14CachedRecoveryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='637' u='c' c='_ZN3JSC17CallFrameShuffler10prepareAnyEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='656' u='c' c='_ZN3JSC17CallFrameShuffler10prepareAnyEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='696' u='c' c='_ZN3JSC17CallFrameShuffler10prepareAnyEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='716' u='c' c='_ZN3JSC17CallFrameShuffler10prepareAnyEv'/>
+<doc f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='198'>// &quot;box&quot; is arguably a bad name here. The meaning is that after
+    // calling emitBox(), your ensure that subsequently calling
+    // emitStore() will be able to store the value without additional
+    // transformation. In particular, this is a no-op for constants,
+    // and is a complete no-op on 32bits since any unboxed value can
+    // still be stored by storing the payload and a statically known
+    // tag.</doc>
+<def f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler64.cpp' l='76' ll='166' type='void JSC::CallFrameShuffler::emitBox(JSC::CachedRecovery &amp; cachedRecovery)'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler64.cpp' l='335' u='c' c='_ZN3JSC17CallFrameShuffler12emitDisplaceERNS_14CachedRecoveryE'/>

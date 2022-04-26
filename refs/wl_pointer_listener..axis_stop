@@ -1,0 +1,23 @@
+<dec f='include/wayland-client-protocol.h' l='4441' type='void (*)(void *, struct wl_pointer *, uint32_t, uint32_t)'/>
+<offset>448</offset>
+<doc f='include/wayland-client-protocol.h' l='4420'>/**
+	 * axis stop event
+	 *
+	 * Stop notification for scroll and other axes.
+	 *
+	 * For some wl_pointer.axis_source types, a wl_pointer.axis_stop
+	 * event is sent to notify a client that the axis sequence has
+	 * terminated. This enables the client to implement kinetic
+	 * scrolling. See the wl_pointer.axis_source documentation for
+	 * information on when this event may be generated.
+	 *
+	 * Any wl_pointer.axis events with the same axis_source after this
+	 * event should be considered as the start of a new axis motion.
+	 *
+	 * The timestamp is to be interpreted identical to the timestamp in
+	 * the wl_pointer.axis event. The timestamp value may be the same
+	 * as a preceding wl_pointer.axis event.
+	 * @param time timestamp with millisecond granularity
+	 * @param axis the axis stopped with this event
+	 * @since 5
+	 */</doc>

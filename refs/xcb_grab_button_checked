@@ -1,0 +1,69 @@
+<dec f='include/xcb/xproto.h' l='7525' type='xcb_void_cookie_t xcb_grab_button_checked(xcb_connection_t * c, uint8_t owner_events, xcb_window_t grab_window, uint16_t event_mask, uint8_t pointer_mode, uint8_t keyboard_mode, xcb_window_t confine_to, xcb_cursor_t cursor, uint8_t button, uint16_t modifiers)'/>
+<doc f='include/xcb/xproto.h' l='7456'>/**
+ * @brief Grab pointer button(s)
+ *
+ * @param c The connection
+ * @param owner_events If 1, the \a grab_window will still get the pointer events. If 0, events are not
+ * reported to the \a grab_window.
+ * @param grab_window Specifies the window on which the pointer should be grabbed.
+ * @param event_mask Specifies which pointer events are reported to the client.
+ * \n
+ * TODO: which values?
+ * @param pointer_mode A bitmask of #xcb_grab_mode_t values.
+ * @param pointer_mode \n
+ * @param keyboard_mode A bitmask of #xcb_grab_mode_t values.
+ * @param keyboard_mode \n
+ * @param confine_to Specifies the window to confine the pointer in (the user will not be able to
+ * move the pointer out of that window).
+ * \n
+ * The special value `XCB_NONE` means don&apos;t confine the pointer.
+ * @param cursor Specifies the cursor that should be displayed or `XCB_NONE` to not change the
+ * cursor.
+ * @param button A bitmask of #xcb_button_index_t values.
+ * @param button \n
+ * @param modifiers The modifiers to grab.
+ * \n
+ * Using the special value `XCB_MOD_MASK_ANY` means grab the pointer with all
+ * possible modifier combinations.
+ * @return A cookie
+ *
+ * This request establishes a passive grab. The pointer is actively grabbed as
+ * described in GrabPointer, the last-pointer-grab time is set to the time at
+ * which the button was pressed (as transmitted in the ButtonPress event), and the
+ * ButtonPress event is reported if all of the following conditions are true:
+ * 
+ * The pointer is not grabbed and the specified button is logically pressed when
+ * the specified modifier keys are logically down, and no other buttons or
+ * modifier keys are logically down.
+ * 
+ * The grab-window contains the pointer.
+ * 
+ * The confine-to window (if any) is viewable.
+ * 
+ * A passive grab on the same button/key combination does not exist on any
+ * ancestor of grab-window.
+ * 
+ * The interpretation of the remaining arguments is the same as for GrabPointer.
+ * The active grab is terminated automatically when the logical state of the
+ * pointer has all buttons released, independent of the logical state of modifier
+ * keys. Note that the logical state of a device (as seen by means of the
+ * protocol) may lag the physical state if device event processing is frozen. This
+ * request overrides all previous passive grabs by the same client on the same
+ * button/key combinations on the same window. A modifier of AnyModifier is
+ * equivalent to issuing the request for all possible modifier combinations
+ * (including the combination of no modifiers). It is not required that all
+ * specified modifiers have currently assigned keycodes. A button of AnyButton is
+ * equivalent to issuing the request for all possible buttons. Otherwise, it is
+ * not required that the button specified currently be assigned to a physical
+ * button.
+ * 
+ * An Access error is generated if some other client has already issued a
+ * GrabButton request with the same button/key combination on the same window.
+ * When using AnyModifier or AnyButton, the request fails completely (no grabs are
+ * established), and an Access error is generated if there is a conflicting grab
+ * for any combination. The request has no effect on an active grab.
+ *
+ * This form can be used only if the request will not cause
+ * a reply to be generated. Any returned error will be
+ * saved for handling by xcb_request_check().
+ */</doc>

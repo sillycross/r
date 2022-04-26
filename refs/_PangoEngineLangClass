@@ -1,0 +1,18 @@
+<use f='include/pango-1.0/pango/pango-engine.h' l='102'/>
+<def f='include/pango-1.0/pango/pango-engine.h' l='135' ll='147'/>
+<size>144</size>
+<doc f='include/pango-1.0/pango/pango-engine.h' l='122'>/**
+ * PangoEngineLangClass:
+ * @script_break: (nullable): Provides a custom implementation of
+ * pango_break().  If %NULL, pango_default_break() is used instead. If
+ * not %NULL, for Pango versions before 1.16 (module interface version
+ * before 1.6.0), this was called instead of pango_default_break(),
+ * but in newer versions, pango_default_break() is always called and
+ * this is called after that to allow tailoring the breaking results.
+ *
+ * Class structure for #PangoEngineLang
+ *
+ * Deprecated: 1.38
+ **/</doc>
+<mbr r='_PangoEngineLangClass::parent_class' o='0' t='PangoEngineClass'/>
+<mbr r='_PangoEngineLangClass::script_break' o='1088' t='void (*)(PangoEngineLang *, const char *, int, PangoAnalysis *, PangoLogAttr *, int)'/>

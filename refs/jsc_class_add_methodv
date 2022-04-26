@@ -1,0 +1,23 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCClass.h' l='126' type='void jsc_class_add_methodv(JSCClass * jsc_class, const char * name, GCallback callback, gpointer user_data, GDestroyNotify destroy_notify, GType return_type, guint n_parameters, GType * parameter_types)'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCClass.cpp' l='782' ll='798' type='void jsc_class_add_methodv(JSCClass * jscClass, const char * name, GCallback callback, gpointer userData, GDestroyNotify destroyNotify, GType returnType, unsigned int parametersCount, GType * parameterTypes)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCClass.cpp' l='761'>/**
+ * jsc_class_add_methodv: (rename-to jsc_class_add_method)
+ * @jsc_class: a #JSCClass
+ * @name: the method name
+ * @callback: (scope async): a #GCallback to be called to invoke method @name of @jsc_class
+ * @user_data: (closure): user data to pass to @callback
+ * @destroy_notify: (nullable): destroy notifier for @user_data
+ * @return_type: the #GType of the method return value, or %G_TYPE_NONE if the method is void.
+ * @n_parameters: the number of parameter types to follow or 0 if the method doesn&apos;t receive parameters.
+ * @parameter_types: (nullable) (array length=n_parameters) (element-type GType): a list of #GType&lt;!-- --&gt;s, one for each parameter, or %NULL
+ *
+ * Add method with @name to @jsc_class. When the method is called by JavaScript or jsc_value_object_invoke_method(),
+ * @callback is called receiving the class instance as first parameter, followed by the method parameters and then
+ * @user_data as last parameter. When the method is cleared in the #JSCClass context, @destroy_notify is called with
+ * @user_data as parameter.
+ *
+ * Note that the value returned by @callback must be transfer full. In case of non-refcounted boxed types, you should use
+ * %G_TYPE_POINTER instead of the actual boxed #GType to ensure that the instance owned by #JSCClass is used.
+ * If you really want to return a new copy of the boxed type, use #JSC_TYPE_VALUE and return a #JSCValue created
+ * with jsc_value_new_object() that receives the copy as the instance parameter.
+ */</doc>

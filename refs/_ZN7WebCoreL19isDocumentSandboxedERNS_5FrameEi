@@ -1,0 +1,10 @@
+<def f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='210' ll='213' type='bool WebCore::isDocumentSandboxed(WebCore::Frame &amp; frame, WebCore::SandboxFlags mask)'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='474' u='c' c='_ZN7WebCore11FrameLoader10submitFormEON3WTF3RefINS_14FormSubmissionENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='4088' u='c' c='_ZN7WebCore12createWindowERNS_5FrameES1_ONS_16FrameLoadRequestERKNS_14WindowFeaturesERb'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='4112' u='c' c='_ZN7WebCore12createWindowERNS_5FrameES1_ONS_16FrameLoadRequestERKNS_14WindowFeaturesERb'/>
+<doc f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='204'>// This is not in the FrameLoader class to emphasize that it does not depend on
+// private FrameLoader data, and to avoid increasing the number of public functions
+// with access to private data.  Since only this .cpp file needs it, making it
+// non-member lets us exclude it from the header file, thus keeping FrameLoader.h&apos;s
+// API simpler.
+//</doc>

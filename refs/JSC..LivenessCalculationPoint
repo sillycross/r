@@ -1,0 +1,11 @@
+<def f='WebKit/Source/JavaScriptCore/bytecode/BytecodeLivenessAnalysis.h' l='46' ll='49'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/FullBytecodeLiveness.h' l='48' c='_ZNK3JSC20FullBytecodeLiveness11getLivenessENS_13BytecodeIndexENS_24LivenessCalculationPointE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/FullBytecodeLiveness.h' l='61' c='_ZNK3JSC20FullBytecodeLiveness21virtualRegisterIsLiveENS_15VirtualRegisterENS_13BytecodeIndexENS_24LivenessCalculationPointE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.h' l='938' c='_ZN3JSC3DFG5Graph35appropriateLivenessCalculationPointENS_10CodeOriginEb'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/BytecodeLivenessAnalysis.h' l='39'>// We model our bytecode effects like the following and insert the liveness calculation points.
+//
+// &lt;- BeforeUse
+//     Use
+// &lt;- AfterUse
+//     Use by exception handlers
+//     Def</doc>

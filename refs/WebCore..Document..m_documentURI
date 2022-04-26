@@ -1,0 +1,13 @@
+<use f='WebKit/Source/WebCore/dom/Document.h' l='492' u='r' c='_ZNK7WebCore8Document11documentURIEv'/>
+<dec f='WebKit/Source/WebCore/dom/Document.h' l='1773' type='WTF::String'/>
+<offset>5824</offset>
+<doc f='WebKit/Source/WebCore/dom/Document.h' l='1766'>// Document.documentURI:
+    // Although URL-like, Document.documentURI can actually be set to any
+    // string by content.  Document.documentURI affects m_baseURL unless the
+    // document contains a &lt;base&gt; element, in which case the &lt;base&gt; element
+    // takes precedence.
+    //
+    // This property is read-only from JavaScript, but writable from Objective C.</doc>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='1541' u='w' c='_ZN7WebCore8Document14setDocumentURIERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='3406' u='w' c='_ZN7WebCore8Document6setURLERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='4180' u='w' c='_ZN7WebCore8Document21cloneDataFromDocumentERKS0_'/>

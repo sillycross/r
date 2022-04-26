@@ -1,0 +1,94 @@
+<use f='WebKit/Source/WebCore/rendering/RenderBoxModelObject.h' l='274' c='_ZNK7WebCore20RenderBoxModelObject24firstLetterRemainingTextEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBoxModelObject.h' l='275' c='_ZN7WebCore20RenderBoxModelObject27setFirstLetterRemainingTextERNS_18RenderTextFragmentE'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.h' l='120' c='_ZN7WebCore12TextIterator25handleTextNodeFirstLetterERNS_18RenderTextFragmentE'/>
+<inh f='WebKit/Source/WebCore/rendering/RenderText.h' l='41' c='WebCore::RenderText'/>
+<def f='WebKit/Source/WebCore/rendering/RenderTextFragment.h' l='34' ll='73'/>
+<use f='WebKit/Source/WebCore/rendering/RenderTextFragment.h' l='35' c='_ZN7WebCore18RenderTextFragment8bisoHeapEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderTextFragment.h' l='77'/>
+<use f='WebKit/Source/WebCore/rendering/RenderQuote.cpp' l='438' c='_ZN7WebCoreL17quoteTextRendererEPNS_12RenderObjectE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderQuote.cpp' l='443' c='_ZN7WebCoreL17quoteTextRendererEPNS_12RenderObjectE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderQuote.cpp' l='446' c='_ZN7WebCoreL17quoteTextRendererEPNS_12RenderObjectE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderQuote.cpp' l='461' c='_ZN7WebCore11RenderQuote18updateTextRendererERNS_17RenderTreeBuilderE'/>
+<size>136</size>
+<doc f='WebKit/Source/WebCore/rendering/RenderTextFragment.h' l='30'>// Used to represent a text substring of an element, e.g., for text runs that are split because of
+// first letter and that must therefore have different styles (and positions in the render tree).
+// We cache offsets so that text transformations can be applied in such a way that we can recover
+// the original unaltered string from our corresponding DOM node.</doc>
+<fun r='_ZN7WebCore18RenderTextFragment8bisoHeapEv'/>
+<fun r='_ZN7WebCore18RenderTextFragmentC1ERNS_4TextERKN3WTF6StringEii'/>
+<fun r='_ZN7WebCore18RenderTextFragmentC1ERNS_8DocumentERKN3WTF6StringEii'/>
+<fun r='_ZN7WebCore18RenderTextFragmentC1ERNS_8DocumentERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore18RenderTextFragmentD1Ev'/>
+<fun r='_ZNK7WebCore18RenderTextFragment18canBeSelectionLeafEv'/>
+<fun r='_ZNK7WebCore18RenderTextFragment5startEv'/>
+<fun r='_ZNK7WebCore18RenderTextFragment3endEv'/>
+<fun r='_ZNK7WebCore18RenderTextFragment11firstLetterEv'/>
+<fun r='_ZN7WebCore18RenderTextFragment14setFirstLetterERNS_20RenderBoxModelObjectE'/>
+<fun r='_ZN7WebCore18RenderTextFragment31blockForAccompanyingFirstLetterEv'/>
+<fun r='_ZN7WebCore18RenderTextFragment16setContentStringERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore18RenderTextFragment13contentStringEv'/>
+<fun r='_ZN7WebCore18RenderTextFragment7setTextERKN3WTF6StringEb'/>
+<fun r='_ZNK7WebCore18RenderTextFragment7altTextEv'/>
+<fun r='_ZN7WebCore18RenderTextFragment10setAltTextERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore18RenderTextFragment14isTextFragmentEv'/>
+<fun r='_ZN7WebCore18RenderTextFragment14styleDidChangeENS_15StyleDifferenceEPKNS_11RenderStyleE'/>
+<fun r='_ZNK7WebCore18RenderTextFragment17previousCharacterEv'/>
+<mbr r='WebCore::RenderTextFragment::m_start' o='832' t='unsigned int'/>
+<mbr r='WebCore::RenderTextFragment::m_end' o='864' t='unsigned int'/>
+<mbr r='WebCore::RenderTextFragment::m_altText' o='896' t='WTF::String'/>
+<mbr r='WebCore::RenderTextFragment::m_contentString' o='960' t='WTF::String'/>
+<mbr r='WebCore::RenderTextFragment::m_firstLetter' o='1024' t='WeakPtr&lt;WebCore::RenderBoxModelObject&gt;'/>
+<use f='WebKit/Source/WebCore/rendering/RenderTextFragment.cpp' l='35' c='_ZN7WebCore18RenderTextFragment8bisoHeapEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderTextFragment.cpp' l='35' c='_ZN7WebCore18RenderTextFragment8bisoHeapEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderTextFragment.cpp' l='35' c='_ZN7WebCore18RenderTextFragmentnwEm'/>
+<size>136</size>
+<fun r='_ZN7WebCore18RenderTextFragment8bisoHeapEv'/>
+<fun r='_ZN7WebCore18RenderTextFragmentC1ERNS_4TextERKN3WTF6StringEii'/>
+<fun r='_ZN7WebCore18RenderTextFragmentC1ERNS_8DocumentERKN3WTF6StringEii'/>
+<fun r='_ZN7WebCore18RenderTextFragmentC1ERNS_8DocumentERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore18RenderTextFragmentD1Ev'/>
+<fun r='_ZNK7WebCore18RenderTextFragment18canBeSelectionLeafEv'/>
+<fun r='_ZN7WebCore18RenderTextFragment14styleDidChangeENS_15StyleDifferenceEPKNS_11RenderStyleE'/>
+<fun r='_ZN7WebCore18RenderTextFragment7setTextERKN3WTF6StringEb'/>
+<fun r='_ZNK7WebCore18RenderTextFragment17previousCharacterEv'/>
+<fun r='_ZN7WebCore18RenderTextFragment31blockForAccompanyingFirstLetterEv'/>
+<fun r='_ZN7WebCore18RenderTextFragment16setContentStringERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/rendering/style/ContentData.cpp' l='57' c='_ZNK7WebCore15TextContentData21createContentRendererERNS_8DocumentERKNS_11RenderStyleE'/>
+<size>136</size>
+<use f='WebKit/Source/WebCore/rendering/RenderButton.h' l='76'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeBuilderFirstLetter.h' l='41' c='_ZN7WebCore17RenderTreeBuilder11FirstLetter16cleanupOnDestroyERNS_18RenderTextFragmentE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeBuilder.cpp' l='164' c='_ZN7WebCore17RenderTreeBuilder7destroyERNS_12RenderObjectENS0_25CanCollapseAnonymousBlockE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeBuilder.cpp' l='165' c='_ZN7WebCore17RenderTreeBuilder7destroyERNS_12RenderObjectENS0_25CanCollapseAnonymousBlockE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeBuilder.cpp' l='534' c='_ZN7WebCore17RenderTreeBuilder12moveChildrenERNS_20RenderBoxModelObjectES2_PNS_12RenderObjectES4_S4_NS0_23NormalizeAfterInsertionE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeBuilder.cpp' l='536' c='_ZN7WebCore17RenderTreeBuilder12moveChildrenERNS_20RenderBoxModelObjectES2_PNS_12RenderObjectES4_S4_NS0_23NormalizeAfterInsertionE'/>
+<size>136</size>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeBuilderFirstLetter.cpp' l='156' c='_ZN7WebCore17RenderTreeBuilder11FirstLetter16cleanupOnDestroyERNS_18RenderTextFragmentE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeBuilderFirstLetter.cpp' l='190' c='_ZN7WebCore17RenderTreeBuilder11FirstLetter11updateStyleERNS_11RenderBlockERNS_12RenderObjectE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeBuilderFirstLetter.cpp' l='261' c='_ZN7WebCore17RenderTreeBuilder11FirstLetter15createRenderersERNS_11RenderBlockERNS_10RenderTextE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeBuilderFirstLetter.cpp' l='263' c='_ZN7WebCore17RenderTreeBuilder11FirstLetter15createRenderersERNS_11RenderBlockERNS_10RenderTextE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeBuilderFirstLetter.cpp' l='266' c='_ZN7WebCore17RenderTreeBuilder11FirstLetter15createRenderersERNS_11RenderBlockERNS_10RenderTextE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeBuilderFirstLetter.cpp' l='268' c='_ZN7WebCore17RenderTreeBuilder11FirstLetter15createRenderersERNS_11RenderBlockERNS_10RenderTextE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeBuilderFirstLetter.cpp' l='280' c='_ZN7WebCore17RenderTreeBuilder11FirstLetter15createRenderersERNS_11RenderBlockERNS_10RenderTextE'/>
+<size>136</size>
+<use f='WebKit/Source/WebCore/rendering/RenderBoxModelObject.cpp' l='126'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBoxModelObject.cpp' l='2606' c='_ZNK7WebCore20RenderBoxModelObject24firstLetterRemainingTextEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBoxModelObject.cpp' l='2613' c='_ZN7WebCore20RenderBoxModelObject27setFirstLetterRemainingTextERNS_18RenderTextFragmentE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderButton.cpp' l='105' c='_ZN7WebCore12RenderButton7setTextERKN3WTF6StringE'/>
+<size>136</size>
+<use f='WebKit/Source/WebCore/accessibility/AccessibilityRenderObject.cpp' l='689' c='_ZNK7WebCore25AccessibilityRenderObject16textUnderElementENS_33AccessibilityTextUnderElementModeE'/>
+<use f='WebKit/Source/WebCore/accessibility/AccessibilityRenderObject.cpp' l='690' c='_ZNK7WebCore25AccessibilityRenderObject16textUnderElementENS_33AccessibilityTextUnderElementModeE'/>
+<use f='WebKit/Source/WebCore/accessibility/AccessibilityRenderObject.cpp' l='690' c='_ZNK7WebCore25AccessibilityRenderObject16textUnderElementENS_33AccessibilityTextUnderElementModeE'/>
+<use f='WebKit/Source/WebCore/accessibility/AccessibilityRenderObject.cpp' l='1381' c='_ZNK7WebCore25AccessibilityRenderObject29computeAccessibilityIsIgnoredEv'/>
+<use f='WebKit/Source/WebCore/accessibility/AccessibilityRenderObject.cpp' l='1382' c='_ZNK7WebCore25AccessibilityRenderObject29computeAccessibilityIsIgnoredEv'/>
+<size>136</size>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='533' c='_ZN7WebCoreL18hasVisibleTextNodeERNS_10RenderTextE'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='534' c='_ZN7WebCoreL18hasVisibleTextNodeERNS_10RenderTextE'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='560' c='_ZN7WebCore12TextIterator14handleTextNodeEv'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='561' c='_ZN7WebCore12TextIterator14handleTextNodeEv'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='585' c='_ZN7WebCore12TextIterator14handleTextNodeEv'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='587' c='_ZN7WebCore12TextIterator14handleTextNodeEv'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='696' c='_ZN7WebCore12TextIterator25handleTextNodeFirstLetterERNS_18RenderTextFragmentE'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='1300' c='_ZN7WebCore31SimplifiedBackwardsTextIterator17handleFirstLetterERiS1_'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='1305' c='_ZN7WebCore31SimplifiedBackwardsTextIterator17handleFirstLetterERiS1_'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='1305' c='_ZN7WebCore31SimplifiedBackwardsTextIterator17handleFirstLetterERiS1_'/>
+<size>136</size>

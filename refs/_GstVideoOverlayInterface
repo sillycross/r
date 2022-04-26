@@ -1,0 +1,18 @@
+<use f='include/gstreamer-1.0/gst/video/videooverlay.h' l='45'/>
+<def f='include/gstreamer-1.0/gst/video/videooverlay.h' l='57' ll='70'/>
+<size>48</size>
+<doc f='include/gstreamer-1.0/gst/video/videooverlay.h' l='47'>/**
+ * GstVideoOverlayInterface:
+ * @iface: parent interface type.
+ * @expose: virtual method to handle expose events
+ * @handle_events: virtual method to handle events
+ * @set_render_rectangle: virtual method to set the render rectangle
+ * @set_window_handle: virtual method to configure the window handle
+ *
+ * #GstVideoOverlay interface
+ */</doc>
+<mbr r='_GstVideoOverlayInterface::iface' o='0' t='GTypeInterface'/>
+<mbr r='_GstVideoOverlayInterface::expose' o='128' t='void (*)(GstVideoOverlay *)'/>
+<mbr r='_GstVideoOverlayInterface::handle_events' o='192' t='void (*)(GstVideoOverlay *, gboolean)'/>
+<mbr r='_GstVideoOverlayInterface::set_render_rectangle' o='256' t='void (*)(GstVideoOverlay *, gint, gint, gint, gint)'/>
+<mbr r='_GstVideoOverlayInterface::set_window_handle' o='320' t='void (*)(GstVideoOverlay *, guintptr)'/>

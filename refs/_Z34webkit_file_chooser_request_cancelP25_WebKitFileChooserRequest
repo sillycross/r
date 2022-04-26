@@ -1,0 +1,10 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitFileChooserRequest.cpp' l='382' ll='387' type='void webkit_file_chooser_request_cancel(WebKitFileChooserRequest * request)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitFileChooserRequest.cpp' l='373'>/**
+ * webkit_file_chooser_request_cancel:
+ * @request: a #WebKitFileChooserRequest
+ *
+ * Ask WebKit to cancel the request. It&apos;s important to do this in case
+ * no selection has been made in the client, otherwise the request
+ * won&apos;t be properly completed and the browser will keep the request
+ * pending forever, which might cause the browser to hang.
+ */</doc>

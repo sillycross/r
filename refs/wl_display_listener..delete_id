@@ -1,0 +1,12 @@
+<dec f='include/wayland-client-protocol.h' l='885' type='void (*)(void *, struct wl_display *, uint32_t)'/>
+<offset>64</offset>
+<doc f='include/wayland-client-protocol.h' l='875'>/**
+	 * acknowledge object ID deletion
+	 *
+	 * This event is used internally by the object ID management
+	 * logic. When a client deletes an object that it had created, the
+	 * server will send this event to acknowledge that it has seen the
+	 * delete request. When the client receives this event, it will
+	 * know that it can safely reuse the object ID.
+	 * @param id deleted object ID
+	 */</doc>

@@ -1,0 +1,11 @@
+<def f='WebKit/Source/WebCore/bindings/js/JSDOMWrapper.h' l='40' type='const uint8_t'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSDOMWrapper.h' l='54' u='r'/>
+<doc f='WebKit/Source/WebCore/bindings/js/JSDOMWrapper.h' l='32'>// JSC allows us to extend JSType. If the highest 3 bits are set, we can add any Object types and they are
+// recognized as OtherObj in JSC. And we encode Node type into JSType if the given JSType is subclass of Node.
+// offset | 7 | 6 | 5 | 4   3   2   1   0  |
+// value  | 1 | 1 | 1 | Non-node DOM types |
+// If the given JSType is a subclass of Node, the format is the following.
+// offset | 7 | 6 | 5 | 4 | 3   2   1   0  |
+// value  | 1 | 1 | 1 | 1 |    NodeType    |</doc>
+<use f='WebKit/Source/WebCore/domjit/DOMJITHelpers.h' l='99' u='r' c='_ZN7WebCore6DOMJIT18branchIfDOMWrapperERN3JSC12CCallHelpersENS1_12X86Registers10RegisterIDE'/>
+<use f='WebKit/Source/WebCore/domjit/DOMJITHelpers.h' l='107' u='r' c='_ZN7WebCore6DOMJIT21branchIfNotDOMWrapperERN3JSC12CCallHelpersENS1_12X86Registers10RegisterIDE'/>

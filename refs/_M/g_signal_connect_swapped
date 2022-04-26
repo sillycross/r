@@ -1,0 +1,83 @@
+<dec f='include/glib-2.0/gobject/gsignal.h' l='543'/>
+<doc f='include/glib-2.0/gobject/gsignal.h' l='507'>/**
+ * g_signal_connect_swapped:
+ * @instance: the instance to connect to.
+ * @detailed_signal: a string of the form &quot;signal-name::detail&quot;.
+ * @c_handler: the #GCallback to connect.
+ * @data: data to pass to @c_handler calls.
+ * 
+ * Connects a #GCallback function to a signal for a particular object.
+ * 
+ * The instance on which the signal is emitted and @data will be swapped when 
+ * calling the handler. This is useful when calling pre-existing functions to
+ * operate purely on the @data, rather than the @instance: swapping the
+ * parameters avoids the need to write a wrapper function.
+ *
+ * For example, this allows the shorter code:
+ * |[&lt;!-- language=&quot;C&quot; --&gt;
+ * g_signal_connect_swapped (button, &quot;clicked&quot;,
+ *                           (GCallback) gtk_widget_hide, other_widget);
+ * ]|
+ *
+ * Rather than the cumbersome:
+ * |[&lt;!-- language=&quot;C&quot; --&gt;
+ * static void
+ * button_clicked_cb (GtkButton *button, GtkWidget *other_widget)
+ * {
+ *     gtk_widget_hide (other_widget);
+ * }
+ *
+ * ...
+ *
+ * g_signal_connect (button, &quot;clicked&quot;,
+ *                   (GCallback) button_clicked_cb, other_widget);
+ * ]|
+ * 
+ * Returns: the handler ID, of type #gulong (always greater than 0 for successful connections)
+ */</doc>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/WebSocketTaskSoup.cpp' l='143' u='c'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/WebSocketTaskSoup.cpp' l='144' u='c'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/WebSocketTaskSoup.cpp' l='145' u='c'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/cache/NetworkCache.cpp' l='136' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/CoordinatedGraphics/DrawingAreaProxyCoordinatedGraphics.cpp' l='429' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/Inspector/gtk/RemoteWebInspectorUIProxyGtk.cpp' l='72' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WebDateTimePickerGtk.cpp' l='146' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WebPopupMenuProxyGtk.cpp' l='200' u='c'/>
+<use f='WebKit/Source/WebCore/platform/audio/gstreamer/AudioFileReaderGStreamer.cpp' l='305' u='c'/>
+<use f='WebKit/Source/WebCore/platform/audio/gstreamer/AudioFileReaderGStreamer.cpp' l='306' u='c'/>
+<use f='WebKit/Source/WebCore/platform/audio/gstreamer/AudioFileReaderGStreamer.cpp' l='361' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/ImageDecoderGStreamer.cpp' l='404' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='1269' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='2125' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='2678' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='2681' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='2687' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='2711' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='2713' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='2714' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='2718' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='3437' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='3438' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='3482' u='c'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/MediaPlayerPrivateGStreamer.cpp' l='3483' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/InputMethodFilter.cpp' l='74' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/InputMethodFilter.cpp' l='75' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/InputMethodFilter.cpp' l='76' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/InputMethodFilter.cpp' l='77' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/InputMethodFilter.cpp' l='78' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitEmojiChooser.cpp' l='558' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitInputMethodContextImplGtk.cpp' l='118' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitInputMethodContextImplGtk.cpp' l='119' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitPopupMenu.cpp' l='46' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitScriptDialogImpl.cpp' l='285' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitScriptDialogImpl.cpp' l='306' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitScriptDialogImpl.cpp' l='309' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitScriptDialogImpl.cpp' l='317' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitScriptDialogImpl.cpp' l='320' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitWebViewBase.cpp' l='466' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitWebViewBase.cpp' l='2660' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitWebViewBase.cpp' l='2661' u='c'/>
+<use f='WebKit/Source/WebCore/platform/glib/LowPowerModeNotifierGLib.cpp' l='49' u='c'/>
+<use f='WebKit/Source/WebCore/platform/network/glib/NetworkStateNotifierGLib.cpp' l='38' u='c'/>
+<use f='WebKit/Source/WebCore/platform/network/soup/NetworkStorageSessionSoup.cpp' l='63' u='c'/>
+<use f='WebKit/Source/WebCore/platform/network/soup/NetworkStorageSessionSoup.cpp' l='82' u='c'/>

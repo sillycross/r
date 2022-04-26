@@ -1,0 +1,45 @@
+<dec f='include/wayland-server-protocol.h' l='3121' type='void (*)(struct wl_client *, struct wl_resource *, int32_t, int32_t, int32_t, int32_t)'/>
+<offset>576</offset>
+<doc f='include/wayland-server-protocol.h' l='3078'>/**
+	 * mark part of the surface damaged using buffer coordinates
+	 *
+	 * This request is used to describe the regions where the pending
+	 * buffer is different from the current surface contents, and where
+	 * the surface therefore needs to be repainted. The compositor
+	 * ignores the parts of the damage that fall outside of the
+	 * surface.
+	 *
+	 * Damage is double-buffered state, see wl_surface.commit.
+	 *
+	 * The damage rectangle is specified in buffer coordinates, where x
+	 * and y specify the upper left corner of the damage rectangle.
+	 *
+	 * The initial value for pending damage is empty: no damage.
+	 * wl_surface.damage_buffer adds pending damage: the new pending
+	 * damage is the union of old pending damage and the given
+	 * rectangle.
+	 *
+	 * wl_surface.commit assigns pending damage as the current damage,
+	 * and clears pending damage. The server will clear the current
+	 * damage as it repaints the surface.
+	 *
+	 * This request differs from wl_surface.damage in only one way - it
+	 * takes damage in buffer coordinates instead of surface-local
+	 * coordinates. While this generally is more intuitive than surface
+	 * coordinates, it is especially desirable when using wp_viewport
+	 * or when a drawing library (like EGL) is unaware of buffer scale
+	 * and buffer transform.
+	 *
+	 * Note: Because buffer transformation changes and damage requests
+	 * may be interleaved in the protocol stream, it is impossible to
+	 * determine the actual mapping between surface and buffer damage
+	 * until wl_surface.commit time. Therefore, compositors wishing to
+	 * take both kinds of damage into account will have to accumulate
+	 * damage from the two requests separately and only transform from
+	 * one to the other after receiving the wl_surface.commit.
+	 * @param x buffer-local x coordinate
+	 * @param y buffer-local y coordinate
+	 * @param width width of damage rectangle
+	 * @param height height of damage rectangle
+	 * @since 4
+	 */</doc>

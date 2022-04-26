@@ -1,0 +1,36 @@
+<use f='WebKit/Source/WebCore/Modules/webdatabase/Database.h' l='107' c='_ZN7WebCore8Database14databaseThreadEv'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseContext.h' l='52' c='_ZNK7WebCore15DatabaseContext22existingDatabaseThreadEv'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseContext.h' l='53' c='_ZN7WebCore15DatabaseContext14databaseThreadEv'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseContext.h' l='78'/>
+<inh f='WebKit/WTF/Headers/wtf/ThreadSafeRefCounted.h' l='109' c='WTF::ThreadSafeRefCounted'/>
+<def f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseThread.h' l='46' ll='84'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseThread.h' l='46'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseThread.h' l='48' c='_ZN7WebCore14DatabaseThread6createEv'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseThread.h' l='48' c='_ZN7WebCore14DatabaseThread6createEv'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseThread.h' l='73'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/Database.cpp' l='217' c='_ZN7WebCore8Database14databaseThreadEv'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/DatabaseContext.cpp' l='133' c='_ZN7WebCore15DatabaseContext14databaseThreadEv'/>
+<size>104</size>
+<fun r='_ZN7WebCore14DatabaseThread6createEv'/>
+<fun r='_ZN7WebCore14DatabaseThreadD1Ev'/>
+<fun r='_ZN7WebCore14DatabaseThread5startEv'/>
+<fun r='_ZN7WebCore14DatabaseThread18requestTerminationEPNS_24DatabaseTaskSynchronizerE'/>
+<fun r='_ZNK7WebCore14DatabaseThread20terminationRequestedEPNS_24DatabaseTaskSynchronizerE'/>
+<fun r='_ZN7WebCore14DatabaseThread12scheduleTaskEOSt10unique_ptrINS_12DatabaseTaskESt14default_deleteIS2_EE'/>
+<fun r='_ZN7WebCore14DatabaseThread21scheduleImmediateTaskEOSt10unique_ptrINS_12DatabaseTaskESt14default_deleteIS2_EE'/>
+<fun r='_ZN7WebCore14DatabaseThread23unscheduleDatabaseTasksERNS_8DatabaseE'/>
+<fun r='_ZNK7WebCore14DatabaseThread26hasPendingDatabaseActivityEv'/>
+<fun r='_ZN7WebCore14DatabaseThread18recordDatabaseOpenERNS_8DatabaseE'/>
+<fun r='_ZN7WebCore14DatabaseThread20recordDatabaseClosedERNS_8DatabaseE'/>
+<fun r='_ZN7WebCore14DatabaseThread9getThreadEv'/>
+<fun r='_ZN7WebCore14DatabaseThread22transactionCoordinatorEv'/>
+<fun r='_ZN7WebCore14DatabaseThreadC1Ev'/>
+<fun r='_ZN7WebCore14DatabaseThread14databaseThreadEv'/>
+<mbr r='WebCore::DatabaseThread::m_threadCreationMutex' o='32' t='WTF::Lock'/>
+<mbr r='WebCore::DatabaseThread::m_thread' o='64' t='RefPtr&lt;WTF::Thread&gt;'/>
+<mbr r='WebCore::DatabaseThread::m_selfRef' o='128' t='RefPtr&lt;WebCore::DatabaseThread&gt;'/>
+<mbr r='WebCore::DatabaseThread::m_queue' o='192' t='MessageQueue&lt;WebCore::DatabaseTask&gt;'/>
+<mbr r='WebCore::DatabaseThread::m_openDatabaseSetLock' o='576' t='WTF::Lock'/>
+<mbr r='WebCore::DatabaseThread::m_openDatabaseSet' o='640' t='WebCore::DatabaseThread::DatabaseSet'/>
+<mbr r='WebCore::DatabaseThread::m_transactionCoordinator' o='704' t='std::unique_ptr&lt;SQLTransactionCoordinator&gt;'/>
+<mbr r='WebCore::DatabaseThread::m_cleanupSync' o='768' t='WebCore::DatabaseTaskSynchronizer *'/>

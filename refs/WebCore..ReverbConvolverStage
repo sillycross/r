@@ -1,0 +1,32 @@
+<def f='WebKit/Source/WebCore/platform/audio/ReverbConvolverStage.h' l='45' ll='83'/>
+<use f='WebKit/Source/WebCore/platform/audio/ReverbConvolver.h' l='70'/>
+<use f='WebKit/Source/WebCore/platform/audio/ReverbConvolver.h' l='71'/>
+<use f='WebKit/Source/WebCore/platform/audio/ReverbConvolver.cpp' l='95' c='_ZN7WebCore15ReverbConvolverC1EPNS_12AudioChannelEmmmbf'/>
+<size>120</size>
+<doc f='WebKit/Source/WebCore/platform/audio/ReverbConvolverStage.h' l='43'>// A ReverbConvolverStage represents the convolution associated with a sub-section of a large impulse response.
+// It incorporates a delay line to account for the offset of the sub-section within the larger impulse response.</doc>
+<fun r='_ZN7WebCore20ReverbConvolverStageC1EPKfmmmmmmmPNS_24ReverbAccumulationBufferEfb'/>
+<fun r='_ZN7WebCore20ReverbConvolverStageD1Ev'/>
+<fun r='_ZN7WebCore20ReverbConvolverStage7processEPKfm'/>
+<fun r='_ZN7WebCore20ReverbConvolverStage19processInBackgroundEPNS_15ReverbConvolverEm'/>
+<fun r='_ZN7WebCore20ReverbConvolverStage5resetEv'/>
+<fun r='_ZNK7WebCore20ReverbConvolverStage14inputReadIndexEv'/>
+<mbr r='WebCore::ReverbConvolverStage::m_fftKernel' o='0' t='std::unique_ptr&lt;FFTFrame&gt;'/>
+<mbr r='WebCore::ReverbConvolverStage::m_fftConvolver' o='64' t='std::unique_ptr&lt;FFTConvolver&gt;'/>
+<mbr r='WebCore::ReverbConvolverStage::m_preDelayBuffer' o='128' t='WebCore::AudioFloatArray'/>
+<mbr r='WebCore::ReverbConvolverStage::m_accumulationBuffer' o='256' t='WebCore::ReverbAccumulationBuffer *'/>
+<mbr r='WebCore::ReverbConvolverStage::m_accumulationReadIndex' o='320' t='int'/>
+<mbr r='WebCore::ReverbConvolverStage::m_inputReadIndex' o='352' t='int'/>
+<mbr r='WebCore::ReverbConvolverStage::m_preDelayLength' o='384' t='size_t'/>
+<mbr r='WebCore::ReverbConvolverStage::m_postDelayLength' o='448' t='size_t'/>
+<mbr r='WebCore::ReverbConvolverStage::m_preReadWriteIndex' o='512' t='size_t'/>
+<mbr r='WebCore::ReverbConvolverStage::m_framesProcessed' o='576' t='size_t'/>
+<mbr r='WebCore::ReverbConvolverStage::m_temporaryBuffer' o='640' t='WebCore::AudioFloatArray'/>
+<mbr r='WebCore::ReverbConvolverStage::m_directMode' o='768' t='bool'/>
+<mbr r='WebCore::ReverbConvolverStage::m_directKernel' o='832' t='std::unique_ptr&lt;AudioFloatArray&gt;'/>
+<mbr r='WebCore::ReverbConvolverStage::m_directConvolver' o='896' t='std::unique_ptr&lt;DirectConvolver&gt;'/>
+<fun r='_ZN7WebCore20ReverbConvolverStageC1EPKfmmmmmmmPNS_24ReverbAccumulationBufferEfb'/>
+<fun r='_ZN7WebCore20ReverbConvolverStageD1Ev'/>
+<fun r='_ZN7WebCore20ReverbConvolverStage19processInBackgroundEPNS_15ReverbConvolverEm'/>
+<fun r='_ZN7WebCore20ReverbConvolverStage7processEPKfm'/>
+<fun r='_ZN7WebCore20ReverbConvolverStage5resetEv'/>

@@ -1,0 +1,28 @@
+<use f='include/gstreamer-1.0/gst/video/gstvideoaggregator.h' l='30'/>
+<def f='include/gstreamer-1.0/gst/video/gstvideoaggregator.h' l='226' ll='245'/>
+<size>984</size>
+<doc f='include/gstreamer-1.0/gst/video/gstvideoaggregator.h' l='207'>/**
+ * GstVideoAggregatorClass:
+ * @update_caps:              Optional.
+ *                            Lets subclasses update the #GstCaps representing
+ *                            the src pad caps before usage.  Return %NULL to indicate failure.
+ * @aggregate_frames:         Lets subclasses aggregate frames that are ready. Subclasses
+ *                            should iterate the GstElement.sinkpads and use the already
+ *                            mapped #GstVideoFrame from gst_video_aggregator_pad_get_prepared_frame()
+ *                            or directly use the #GstBuffer from gst_video_aggregator_pad_get_current_buffer()
+ *                            if it needs to map the buffer in a special way. The result of the
+ *                            aggregation should land in @outbuffer.
+ * @create_output_buffer:     Optional.
+ *                            Lets subclasses provide a #GstBuffer to be used as @outbuffer of
+ *                            the #aggregate_frames vmethod.
+ * @find_best_format:         Optional.
+ *                            Lets subclasses decide of the best common format to use.
+ *
+ * Since: 1.16
+ **/</doc>
+<mbr r='_GstVideoAggregatorClass::parent_class' o='0' t='GstAggregatorClass'/>
+<mbr r='_GstVideoAggregatorClass::update_caps' o='6336' t='GstCaps *(*)(GstVideoAggregator *, GstCaps *)'/>
+<mbr r='_GstVideoAggregatorClass::aggregate_frames' o='6400' t='GstFlowReturn (*)(GstVideoAggregator *, GstBuffer *)'/>
+<mbr r='_GstVideoAggregatorClass::create_output_buffer' o='6464' t='GstFlowReturn (*)(GstVideoAggregator *, GstBuffer **)'/>
+<mbr r='_GstVideoAggregatorClass::find_best_format' o='6528' t='void (*)(GstVideoAggregator *, GstCaps *, GstVideoInfo *, gboolean *)'/>
+<mbr r='_GstVideoAggregatorClass::_gst_reserved' o='6592' t='gpointer [20]'/>

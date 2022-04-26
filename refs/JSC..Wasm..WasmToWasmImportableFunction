@@ -1,0 +1,50 @@
+<def f='WebKit/Source/JavaScriptCore/wasm/WasmFormat.h' l='382' ll='391'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmFormat.h' l='385' c='_ZN3JSC4Wasm28WasmToWasmImportableFunction22offsetOfSignatureIndexEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmFormat.h' l='386' c='_ZN3JSC4Wasm28WasmToWasmImportableFunction30offsetOfEntrypointLoadLocationEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmFormat.h' l='392'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/WebAssemblyFunctionBase.h' l='51' c='_ZNK3JSC23WebAssemblyFunctionBase18importableFunctionEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/WebAssemblyFunctionBase.h' l='62' c='_ZN3JSC23WebAssemblyFunctionBaseC1ERNS_2VMEPNS_16NativeExecutableEPNS_14JSGlobalObjectEPNS_9StructureENS_4Wasm28WasmToWasmImportableFunctionE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/WebAssemblyFunctionBase.h' l='69'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/WebAssemblyWrapperFunction.h' l='55' c='_ZN3JSC26WebAssemblyWrapperFunctionC1ERNS_2VMEPNS_16NativeExecutableEPNS_14JSGlobalObjectEPNS_9StructureENS_4Wasm28WasmToWasmImportableFunctionE'/>
+<size>16</size>
+<doc f='WebKit/Source/JavaScriptCore/wasm/WasmFormat.h' l='379'>// WebAssembly direct calls and call_indirect use indices into &quot;function index space&quot;. This space starts
+// with all imports, and then all internal functions. WasmToWasmImportableFunction and FunctionIndexSpace are only
+// meant as fast lookup tables for these opcodes and do not own code.</doc>
+<fun r='_ZN3JSC4Wasm28WasmToWasmImportableFunction22offsetOfSignatureIndexEv'/>
+<fun r='_ZN3JSC4Wasm28WasmToWasmImportableFunction30offsetOfEntrypointLoadLocationEv'/>
+<mbr r='JSC::Wasm::WasmToWasmImportableFunction::signatureIndex' o='0' t='JSC::Wasm::SignatureIndex'/>
+<mbr r='JSC::Wasm::WasmToWasmImportableFunction::entrypointLoadLocation' o='64' t='JSC::Wasm::WasmToWasmImportableFunction::LoadLocation'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTable.h' l='103' c='_ZN3JSC4Wasm12FuncRefTable11setFunctionEjPNS_8JSObjectENS0_28WasmToWasmImportableFunctionEPNS0_8InstanceE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTable.h' l='104' c='_ZNK3JSC4Wasm12FuncRefTable8functionEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTable.h' l='115'/>
+<size>16</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='2581' c='_ZN3JSC4Wasm13B3IRGenerator15addCallIndirectEjRKNS0_9SignatureERN3WTF6VectorIPNS_2B35ValueELm0ENS5_15CrashOnOverflowELm16ENS5_10FastMallocEEERNS6_IS9_Lm8ESA_Lm16ESB_EE'/>
+<size>16</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/WebAssemblyWrapperFunction.cpp' l='41' c='_ZN3JSC26WebAssemblyWrapperFunctionC1ERNS_2VMEPNS_16NativeExecutableEPNS_14JSGlobalObjectEPNS_9StructureENS_4Wasm28WasmToWasmImportableFunctionE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/WebAssemblyWrapperFunction.cpp' l='50' c='_ZN3JSC26WebAssemblyWrapperFunction6createERNS_2VMEPNS_14JSGlobalObjectEPNS_9StructureEPNS_8JSObjectEjPNS_21JSWebAssemblyInstanceEm'/>
+<size>16</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='474' c='_ZN3JSC5LLInt18doWasmCallIndirectEPNS_9CallFrameEPNS_4Wasm8InstanceEjjj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='512' c='_ZN3JSC5LLInt13doWasmCallRefEPNS_9CallFrameEPNS_4Wasm8InstanceENS_7JSValueEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTable.cpp' l='144' c='_ZN3JSC4Wasm5Table5clearEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTable.cpp' l='196' c='_ZN3JSC4Wasm12FuncRefTableC1EjSt8optionalIjE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTable.cpp' l='200' c='_ZN3JSC4Wasm12FuncRefTableC1EjSt8optionalIjE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTable.cpp' l='206' c='_ZN3JSC4Wasm12FuncRefTable11setFunctionEjPNS_8JSObjectENS0_28WasmToWasmImportableFunctionEPNS0_8InstanceE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmTable.cpp' l='217' c='_ZNK3JSC4Wasm12FuncRefTable8functionEj'/>
+<size>16</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/WebAssemblyFunction.cpp' l='490' c='_ZN3JSC19WebAssemblyFunctionC1ERNS_2VMEPNS_16NativeExecutableEPNS_14JSGlobalObjectEPNS_9StructureERNS_4Wasm6CalleeEPNS_21MacroAssemblerCodePtrILN3WTF6PtrTagE64376EEEm'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/WebAssemblyFunctionBase.cpp' l='40' c='_ZN3JSC23WebAssemblyFunctionBaseC1ERNS_2VMEPNS_16NativeExecutableEPNS_14JSGlobalObjectEPNS_9StructureENS_4Wasm28WasmToWasmImportableFunctionE'/>
+<size>16</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='3317' c='_ZN3JSC4Wasm14AirIRGenerator15addCallIndirectEjRKNS0_9SignatureERN3WTF6VectorINS0_8TypedTmpELm0ENS5_15CrashOnOverflowELm16ENS5_10FastMallocEEERNS6_IS7_Lm8ES8_Lm16ES9_EE'/>
+<size>16</size>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmFormat.h' l='382' ll='391'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmFormat.h' l='385' c='_ZN3JSC4Wasm28WasmToWasmImportableFunction22offsetOfSignatureIndexEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmFormat.h' l='386' c='_ZN3JSC4Wasm28WasmToWasmImportableFunction30offsetOfEntrypointLoadLocationEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmFormat.h' l='392'/>
+<size>16</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmFormat.h' l='379'>// WebAssembly direct calls and call_indirect use indices into &quot;function index space&quot;. This space starts
+// with all imports, and then all internal functions. WasmToWasmImportableFunction and FunctionIndexSpace are only
+// meant as fast lookup tables for these opcodes and do not own code.</doc>
+<fun r='_ZN3JSC4Wasm28WasmToWasmImportableFunction22offsetOfSignatureIndexEv'/>
+<fun r='_ZN3JSC4Wasm28WasmToWasmImportableFunction30offsetOfEntrypointLoadLocationEv'/>
+<mbr r='JSC::Wasm::WasmToWasmImportableFunction::signatureIndex' o='0' t='JSC::Wasm::SignatureIndex'/>
+<mbr r='JSC::Wasm::WasmToWasmImportableFunction::entrypointLoadLocation' o='64' t='JSC::Wasm::WasmToWasmImportableFunction::LoadLocation'/>

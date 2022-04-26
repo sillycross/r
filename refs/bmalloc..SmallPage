@@ -1,0 +1,91 @@
+<inh f='WebKit/bmalloc/Headers/bmalloc/List.h' l='32' c='bmalloc::ListNode'/>
+<def f='WebKit/bmalloc/Headers/bmalloc/SmallPage.h' l='39' ll='74'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/SmallPage.h' l='39'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/SmallPage.h' l='76'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Object.h' l='52' c='_ZN7bmalloc6Object4pageEv'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Chunk.h' l='52' c='_ZN7bmalloc5Chunk4pageEm'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Chunk.h' l='57' c='_ZN7bmalloc5Chunk5pagesEv'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Chunk.h' l='59' c='_ZN7bmalloc5Chunk9freePagesEv'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Chunk.h' l='63'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Chunk.h' l='66'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Chunk.h' l='96' c='_ZN7bmalloc5ChunkC1Em'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Chunk.h' l='119' c='_ZN7bmalloc5Chunk4pageEm'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Chunk.h' l='122' c='_ZN7bmalloc5Chunk4pageEm'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Chunk.h' l='177' c='_ZN7bmalloc6Object4pageEv'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/Heap.h' l='111' c='_ZN7bmalloc4Heap17allocateSmallPageERSt11unique_lockINS_5MutexEEmRSt5arrayINS_4ListINS_9SmallPageEEELm112EENS_13FailureActionE'/>
+<size>24</size>
+<fun r='_ZN7bmalloc9SmallPage3refERSt11unique_lockINS_5MutexEE'/>
+<fun r='_ZN7bmalloc9SmallPage5derefERSt11unique_lockINS_5MutexEE'/>
+<fun r='_ZN7bmalloc9SmallPage8refCountERSt11unique_lockINS_5MutexEE'/>
+<fun r='_ZN7bmalloc9SmallPage9sizeClassEv'/>
+<fun r='_ZN7bmalloc9SmallPage12setSizeClassEm'/>
+<fun r='_ZNK7bmalloc9SmallPage12hasFreeLinesERSt11unique_lockINS_5MutexEE'/>
+<fun r='_ZN7bmalloc9SmallPage15setHasFreeLinesERSt11unique_lockINS_5MutexEEb'/>
+<fun r='_ZN7bmalloc9SmallPage16hasPhysicalPagesEv'/>
+<fun r='_ZN7bmalloc9SmallPage19setHasPhysicalPagesEb'/>
+<fun r='_ZN7bmalloc9SmallPage21usedSinceLastScavengeEv'/>
+<fun r='_ZN7bmalloc9SmallPage26clearUsedSinceLastScavengeEv'/>
+<fun r='_ZN7bmalloc9SmallPage24setUsedSinceLastScavengeEv'/>
+<fun r='_ZN7bmalloc9SmallPage5beginEv'/>
+<fun r='_ZNK7bmalloc9SmallPage5slideEv'/>
+<fun r='_ZN7bmalloc9SmallPage8setSlideEh'/>
+<mbr r='bmalloc::SmallPage::m_hasFreeLines' o='128' t='unsigned char'/>
+<mbr r='bmalloc::SmallPage::m_hasPhysicalPages' o='129' t='unsigned char'/>
+<mbr r='bmalloc::SmallPage::m_usedSinceLastScavenge' o='130' t='unsigned char'/>
+<mbr r='bmalloc::SmallPage::m_refCount' o='136' t='unsigned char'/>
+<mbr r='bmalloc::SmallPage::m_sizeClass' o='144' t='unsigned char'/>
+<mbr r='bmalloc::SmallPage::m_slide' o='152' t='unsigned char'/>
+<fun r='_ZN7bmalloc9SmallPage3refERSt11unique_lockINS_5MutexEE'/>
+<fun r='_ZN7bmalloc9SmallPage5derefERSt11unique_lockINS_5MutexEE'/>
+<fun r='_ZN7bmalloc9SmallPage5beginEv'/>
+<inh f='WebKit/Source/bmalloc/bmalloc/List.h' l='32' c='bmalloc::ListNode'/>
+<def f='WebKit/Source/bmalloc/bmalloc/SmallPage.h' l='39' ll='74'/>
+<use f='WebKit/Source/bmalloc/bmalloc/SmallPage.h' l='39'/>
+<use f='WebKit/Source/bmalloc/bmalloc/SmallPage.h' l='76'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Object.h' l='52' c='_ZN7bmalloc6Object4pageEv'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Chunk.h' l='52' c='_ZN7bmalloc5Chunk4pageEm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Chunk.h' l='57' c='_ZN7bmalloc5Chunk5pagesEv'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Chunk.h' l='59' c='_ZN7bmalloc5Chunk9freePagesEv'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Chunk.h' l='63'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Chunk.h' l='66'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Chunk.h' l='96' c='_ZN7bmalloc5ChunkC1Em'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Chunk.h' l='119' c='_ZN7bmalloc5Chunk4pageEm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Chunk.h' l='122' c='_ZN7bmalloc5Chunk4pageEm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Chunk.h' l='177' c='_ZN7bmalloc6Object4pageEv'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Heap.h' l='111' c='_ZN7bmalloc4Heap17allocateSmallPageERSt11unique_lockINS_5MutexEEmRSt5arrayINS_4ListINS_9SmallPageEEELm112EENS_13FailureActionE'/>
+<size>24</size>
+<fun r='_ZN7bmalloc9SmallPage3refERSt11unique_lockINS_5MutexEE'/>
+<fun r='_ZN7bmalloc9SmallPage5derefERSt11unique_lockINS_5MutexEE'/>
+<fun r='_ZN7bmalloc9SmallPage8refCountERSt11unique_lockINS_5MutexEE'/>
+<fun r='_ZN7bmalloc9SmallPage9sizeClassEv'/>
+<fun r='_ZN7bmalloc9SmallPage12setSizeClassEm'/>
+<fun r='_ZNK7bmalloc9SmallPage12hasFreeLinesERSt11unique_lockINS_5MutexEE'/>
+<fun r='_ZN7bmalloc9SmallPage15setHasFreeLinesERSt11unique_lockINS_5MutexEEb'/>
+<fun r='_ZN7bmalloc9SmallPage16hasPhysicalPagesEv'/>
+<fun r='_ZN7bmalloc9SmallPage19setHasPhysicalPagesEb'/>
+<fun r='_ZN7bmalloc9SmallPage21usedSinceLastScavengeEv'/>
+<fun r='_ZN7bmalloc9SmallPage26clearUsedSinceLastScavengeEv'/>
+<fun r='_ZN7bmalloc9SmallPage24setUsedSinceLastScavengeEv'/>
+<fun r='_ZN7bmalloc9SmallPage5beginEv'/>
+<fun r='_ZNK7bmalloc9SmallPage5slideEv'/>
+<fun r='_ZN7bmalloc9SmallPage8setSlideEh'/>
+<mbr r='bmalloc::SmallPage::m_hasFreeLines' o='128' t='unsigned char'/>
+<mbr r='bmalloc::SmallPage::m_hasPhysicalPages' o='129' t='unsigned char'/>
+<mbr r='bmalloc::SmallPage::m_usedSinceLastScavenge' o='130' t='unsigned char'/>
+<mbr r='bmalloc::SmallPage::m_refCount' o='136' t='unsigned char'/>
+<mbr r='bmalloc::SmallPage::m_sizeClass' o='144' t='unsigned char'/>
+<mbr r='bmalloc::SmallPage::m_slide' o='152' t='unsigned char'/>
+<fun r='_ZN7bmalloc9SmallPage3refERSt11unique_lockINS_5MutexEE'/>
+<fun r='_ZN7bmalloc9SmallPage5derefERSt11unique_lockINS_5MutexEE'/>
+<fun r='_ZN7bmalloc9SmallPage5beginEv'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Heap.cpp' l='201' c='_ZN7bmalloc4Heap18allocateSmallChunkERSt11unique_lockINS_5MutexEEmNS_13FailureActionE'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Heap.cpp' l='226' c='_ZN7bmalloc4Heap20deallocateSmallChunkERSt11unique_lockINS_5MutexEEPNS_5ChunkEm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Heap.cpp' l='230' c='_ZN7bmalloc4Heap20deallocateSmallChunkERSt11unique_lockINS_5MutexEEPNS_5ChunkEm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Heap.cpp' l='249' c='_ZN7bmalloc4Heap17allocateSmallPageERSt11unique_lockINS_5MutexEEmRSt5arrayINS_4ListINS_9SmallPageEEELm112EENS_13FailureActionE'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Heap.cpp' l='259' c='_ZN7bmalloc4Heap17allocateSmallPageERSt11unique_lockINS_5MutexEEmRSt5arrayINS_4ListINS_9SmallPageEEELm112EENS_13FailureActionE'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Heap.cpp' l='259' c='_ZN7bmalloc4Heap17allocateSmallPageERSt11unique_lockINS_5MutexEEmRSt5arrayINS_4ListINS_9SmallPageEEELm112EENS_13FailureActionE'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Heap.cpp' l='271' c='_ZN7bmalloc4Heap17allocateSmallPageERSt11unique_lockINS_5MutexEEmRSt5arrayINS_4ListINS_9SmallPageEEELm112EENS_13FailureActionE'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Heap.cpp' l='304' c='_ZN7bmalloc4Heap19deallocateSmallLineERSt11unique_lockINS_5MutexEENS_6ObjectERSt5arrayINS_4ListINS_9SmallPageEEELm112EE'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Heap.cpp' l='348' c='_ZN7bmalloc4Heap33allocateSmallBumpRangesByMetadataERSt11unique_lockINS_5MutexEEmRNS_13BumpAllocatorERNS_11FixedVectorINS_9BumpRangeELm3EEERSt5arrayIN13461155'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Heap.cpp' l='417' c='_ZN7bmalloc4Heap31allocateSmallBumpRangesByObjectERSt11unique_lockINS_5MutexEEmRNS_13BumpAllocatorERNS_11FixedVectorINS_9BumpRangeELm3EEERSt5arrayINS_16326716'/>
+<size>24</size>

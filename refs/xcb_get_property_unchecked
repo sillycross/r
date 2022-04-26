@@ -1,0 +1,31 @@
+<dec f='include/xcb/xproto.h' l='6964' type='xcb_get_property_cookie_t xcb_get_property_unchecked(xcb_connection_t * c, uint8_t _delete, xcb_window_t window, xcb_atom_t property, xcb_atom_t type, uint32_t long_offset, uint32_t long_length)'/>
+<doc f='include/xcb/xproto.h' l='6933'>/**
+ * @brief Gets a window property
+ *
+ * @param c The connection
+ * @param _delete Whether the property should actually be deleted. For deleting a property, the
+ * specified \a type has to match the actual property type.
+ * @param window The window whose property you want to get.
+ * @param property The property you want to get (an atom).
+ * @param type The type of the property you want to get (an atom).
+ * @param long_offset Specifies the offset (in 32-bit multiples) in the specified property where the
+ * data is to be retrieved.
+ * @param long_length Specifies how many 32-bit multiples of data should be retrieved (e.g. if you
+ * set \a long_length to 4, you will receive 16 bytes of data).
+ * @return A cookie
+ *
+ * Gets the specified \a property from the specified \a window. Properties are for
+ * example the window title (`WM_NAME`) or its minimum size (`WM_NORMAL_HINTS`).
+ * Protocols such as EWMH also use properties - for example EWMH defines the
+ * window title, encoded as UTF-8 string, in the `_NET_WM_NAME` property.
+ * 
+ * TODO: talk about \a type
+ * 
+ * TODO: talk about `delete`
+ * 
+ * TODO: talk about the offset/length thing. what&apos;s a valid use case?
+ *
+ * This form can be used only if the request will cause
+ * a reply to be generated. Any returned error will be
+ * placed in the event queue.
+ */</doc>

@@ -1,0 +1,46 @@
+<def f='WebKit/bmalloc/Headers/bmalloc/LargeRange.h' l='87' type='size_t bmalloc::LargeRange::totalPhysicalSize() const'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/LargeRange.h' l='138' u='c' c='_ZN7bmalloc5mergeERKNS_10LargeRangeES2_'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/LargeRange.h' l='145' u='c' c='_ZN7bmalloc5mergeERKNS_10LargeRangeES2_'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/LargeRange.h' l='145' u='c' c='_ZN7bmalloc5mergeERKNS_10LargeRangeES2_'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/LargeRange.h' l='156' u='c' c='_ZN7bmalloc5mergeERKNS_10LargeRangeES2_'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/LargeRange.h' l='156' u='c' c='_ZN7bmalloc5mergeERKNS_10LargeRangeES2_'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/LargeRange.h' l='171' u='c' c='_ZNK7bmalloc10LargeRange5splitEm'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/LargeRange.h' l='176' u='c' c='_ZNK7bmalloc10LargeRange5splitEm'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/LargeRange.h' l='179' u='c' c='_ZNK7bmalloc10LargeRange5splitEm'/>
+<doc f='WebKit/bmalloc/Headers/bmalloc/LargeRange.h' l='76'>// This is accurate in the sense that if you take a range A and split it N ways
+    // and sum totalPhysicalSize over each of the N splits, you&apos;ll end up with A&apos;s
+    // totalPhysicalSize. This means if you take a LargeRange out of a LargeMap, split it,
+    // then insert the subsequent two ranges back into the LargeMap, the sum of the
+    // totalPhysicalSize of each LargeRange in the LargeMap will stay constant. This
+    // property is not true of startPhysicalSize. This invariant about totalPhysicalSize
+    // is good enough to get an accurate footprint estimate for memory used in bmalloc.
+    // The reason this is just an estimate is that splitting LargeRanges may lead to this
+    // number being rebalanced in arbitrary ways between the two resulting ranges. This
+    // is why the footprint is just an estimate. In practice, this arbitrary rebalance
+    // doesn&apos;t really affect accuracy.</doc>
+<def f='WebKit/Source/bmalloc/bmalloc/LargeRange.h' l='87' type='size_t bmalloc::LargeRange::totalPhysicalSize() const'/>
+<use f='WebKit/Source/bmalloc/bmalloc/LargeRange.h' l='138' u='c' c='_ZN7bmalloc5mergeERKNS_10LargeRangeES2_'/>
+<use f='WebKit/Source/bmalloc/bmalloc/LargeRange.h' l='145' u='c' c='_ZN7bmalloc5mergeERKNS_10LargeRangeES2_'/>
+<use f='WebKit/Source/bmalloc/bmalloc/LargeRange.h' l='145' u='c' c='_ZN7bmalloc5mergeERKNS_10LargeRangeES2_'/>
+<use f='WebKit/Source/bmalloc/bmalloc/LargeRange.h' l='156' u='c' c='_ZN7bmalloc5mergeERKNS_10LargeRangeES2_'/>
+<use f='WebKit/Source/bmalloc/bmalloc/LargeRange.h' l='156' u='c' c='_ZN7bmalloc5mergeERKNS_10LargeRangeES2_'/>
+<use f='WebKit/Source/bmalloc/bmalloc/LargeRange.h' l='171' u='c' c='_ZNK7bmalloc10LargeRange5splitEm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/LargeRange.h' l='176' u='c' c='_ZNK7bmalloc10LargeRange5splitEm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/LargeRange.h' l='179' u='c' c='_ZNK7bmalloc10LargeRange5splitEm'/>
+<doc f='WebKit/Source/bmalloc/bmalloc/LargeRange.h' l='76'>// This is accurate in the sense that if you take a range A and split it N ways
+    // and sum totalPhysicalSize over each of the N splits, you&apos;ll end up with A&apos;s
+    // totalPhysicalSize. This means if you take a LargeRange out of a LargeMap, split it,
+    // then insert the subsequent two ranges back into the LargeMap, the sum of the
+    // totalPhysicalSize of each LargeRange in the LargeMap will stay constant. This
+    // property is not true of startPhysicalSize. This invariant about totalPhysicalSize
+    // is good enough to get an accurate footprint estimate for memory used in bmalloc.
+    // The reason this is just an estimate is that splitting LargeRanges may lead to this
+    // number being rebalanced in arbitrary ways between the two resulting ranges. This
+    // is why the footprint is just an estimate. In practice, this arbitrary rebalance
+    // doesn&apos;t really affect accuracy.</doc>
+<use f='WebKit/Source/bmalloc/bmalloc/Heap.cpp' l='113' u='c' c='_ZN7bmalloc4Heap18decommitLargeRangeERSt11unique_lockINS_5MutexEERNS_10LargeRangeERNS_12BulkDecommitE'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Heap.cpp' l='114' u='c' c='_ZN7bmalloc4Heap18decommitLargeRangeERSt11unique_lockINS_5MutexEERNS_10LargeRangeERNS_12BulkDecommitE'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Heap.cpp' l='493' u='c' c='_ZN7bmalloc4Heap16splitAndAllocateERSt11unique_lockINS_5MutexEERNS_10LargeRangeEmm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Heap.cpp' l='504' u='c' c='_ZN7bmalloc4Heap16splitAndAllocateERSt11unique_lockINS_5MutexEERNS_10LargeRangeEmm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Heap.cpp' l='509' u='c' c='_ZN7bmalloc4Heap16splitAndAllocateERSt11unique_lockINS_5MutexEERNS_10LargeRangeEmm'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Heap.cpp' l='558' u='c' c='_ZN7bmalloc4Heap13allocateLargeERSt11unique_lockINS_5MutexEEmmNS_13FailureActionE'/>

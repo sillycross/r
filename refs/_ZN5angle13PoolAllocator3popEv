@@ -1,0 +1,15 @@
+<dec f='WebKit/Source/ThirdParty/ANGLE/src/common/PoolAlloc.h' l='153' type='void angle::PoolAllocator::pop()'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/common/PoolAlloc.cpp' l='171' ll='204' type='void angle::PoolAllocator::pop()'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/common/PoolAlloc.cpp' l='213' u='c' c='_ZN5angle13PoolAllocator6popAllEv'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/common/PoolAlloc.cpp' l='164'>//
+// Do a mass-deallocation of all the individual allocations
+// that have occurred since the last push(), or since the
+// last pop(), or since the object&apos;s creation.
+//
+// The deallocated pages are saved for future allocations.
+//</doc>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/common/PoolAlloc.h' l='149'>//
+    // Call pop() to free all memory allocated since the last call to push(),
+    // or if no last call to push, frees all memory since first allocation.
+    //</doc>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.cpp' l='183' u='c' c='_ZN2sh12_GLOBAL__N_120TScopedPoolAllocatorD1Ev'/>

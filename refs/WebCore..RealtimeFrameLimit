@@ -1,0 +1,10 @@
+<def f='WebKit/Source/WebCore/platform/audio/ReverbConvolver.cpp' l='50' type='const size_t'/>
+<use f='WebKit/Source/WebCore/platform/audio/ReverbConvolver.cpp' l='99' u='r' c='_ZN7WebCore15ReverbConvolverC1EPNS_12AudioChannelEmmmbf'/>
+<doc f='WebKit/Source/WebCore/platform/audio/ReverbConvolver.cpp' l='43'>// We only process the leading portion of the impulse response in the real-time thread.  We don&apos;t exceed this length.
+// It turns out then, that the background thread has about 278msec of scheduling slop.
+// Empirically, this has been found to be a good compromise between giving enough time for scheduling slop,
+// while still minimizing the amount of processing done in the primary (high-priority) thread.
+// This was found to be a good value on Mac OS X, and may work well on other platforms as well, assuming
+// the very rough scheduling latencies are similar on these time-scales.  Of course, this code may need to be
+// tuned for individual platforms if this assumption is found to be incorrect.</doc>
+<doc f='WebKit/Source/WebCore/platform/audio/ReverbConvolver.cpp' l='50'>// ~278msec @ 44.1KHz</doc>

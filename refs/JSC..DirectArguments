@@ -1,0 +1,127 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSCast.h' l='91'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSCast.h' l='91' c='_ZN3JSC16JSCastingHelpers14InheritsTraitsINS_15DirectArgumentsEE8inheritsERNS_2VMEPT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCast.h' l='91'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCast.h' l='91' c='_ZN3JSC16JSCastingHelpers14InheritsTraitsINS_15DirectArgumentsEE8inheritsERNS_2VMEPT_'/>
+<inh f='WebKit/Source/JavaScriptCore/runtime/GenericArguments.h' l='36' c='JSC::GenericArguments'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.h' l='44' ll='189'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.h' l='44'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.h' l='58' c='_ZN3JSC15DirectArguments19createUninitializedERNS_2VMEPNS_9StructureEjj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.h' l='62' c='_ZN3JSC15DirectArguments6createERNS_2VMEPNS_9StructureEjj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.h' l='65' c='_ZN3JSC15DirectArguments15createByCopyingEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.h' l='100' c='_ZNK3JSC15DirectArguments15getIndexQuicklyEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.h' l='153' c='_ZN3JSC15DirectArguments14offsetOfCalleeEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.h' l='154' c='_ZN3JSC15DirectArguments14offsetOfLengthEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.h' l='155' c='_ZN3JSC15DirectArguments19offsetOfMinCapacityEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.h' l='156' c='_ZN3JSC15DirectArguments23offsetOfMappedArgumentsEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.h' l='157' c='_ZN3JSC15DirectArguments35offsetOfModifiedArgumentsDescriptorEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.h' l='161' c='_ZN3JSC15DirectArguments13storageOffsetEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CellSize.h' l='54' c='_ZN3JSC8cellSizeERNS_2VMEPNS_6JSCellE'/>
+<size>48</size>
+<doc f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.h' l='35'>// This is an Arguments-class object that we create when you say &quot;arguments&quot; inside a function,
+// and none of the arguments are captured in the function&apos;s activation. The function will copy all
+// of its arguments into this object, and all subsequent accesses to the arguments will go through
+// this object thereafter. Special support is in place for mischevious events like the arguments
+// being deleted (something like &quot;delete arguments[0]&quot;) or reconfigured (broadly, we say deletions
+// and reconfigurations mean that the respective argument was &quot;overridden&quot;).
+//
+// To speed allocation, this object will hold all of the arguments in-place. The arguments as well
+// as a table of flags saying which arguments were overridden.</doc>
+<fun r='_ZN3JSC15DirectArgumentsC1ERNS_2VMEPNS_9StructureEjj'/>
+<fun r='_ZN3JSC15DirectArguments11subspaceForERNS_2VME'/>
+<fun r='_ZN3JSC15DirectArguments19createUninitializedERNS_2VMEPNS_9StructureEjj'/>
+<fun r='_ZN3JSC15DirectArguments6createERNS_2VMEPNS_9StructureEjj'/>
+<fun r='_ZN3JSC15DirectArguments15createByCopyingEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<fun r='_ZN3JSC15DirectArguments13estimatedSizeEPNS_6JSCellERNS_2VME'/>
+<fun r='_ZN3JSC15DirectArguments17visitChildrenImplEPNS_6JSCellERT_'/>
+<fun r='_ZN3JSC15DirectArguments13visitChildrenEPNS_6JSCellERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC15DirectArguments13visitChildrenEPNS_6JSCellERNS_11SlotVisitorE'/>
+<fun r='_ZNK3JSC15DirectArguments14internalLengthEv'/>
+<fun r='_ZNK3JSC15DirectArguments6lengthEPNS_14JSGlobalObjectE'/>
+<fun r='_ZNK3JSC15DirectArguments16isMappedArgumentEj'/>
+<fun r='_ZNK3JSC15DirectArguments21isMappedArgumentInDFGEj'/>
+<fun r='_ZNK3JSC15DirectArguments15getIndexQuicklyEj'/>
+<fun r='_ZN3JSC15DirectArguments15setIndexQuicklyERNS_2VMEjNS_7JSValueE'/>
+<fun r='_ZN3JSC15DirectArguments6calleeEv'/>
+<fun r='_ZN3JSC15DirectArguments9setCalleeERNS_2VMEPNS_10JSFunctionE'/>
+<fun r='_ZN3JSC15DirectArguments8argumentENS_21DirectArgumentsOffsetE'/>
+<fun r='_ZNK3JSC15DirectArguments14overrodeThingsEv'/>
+<fun r='_ZN3JSC15DirectArguments14overrideThingsEPNS_14JSGlobalObjectE'/>
+<fun r='_ZN3JSC15DirectArguments25overrideThingsIfNecessaryEPNS_14JSGlobalObjectE'/>
+<fun r='_ZN3JSC15DirectArguments13unmapArgumentEPNS_14JSGlobalObjectEj'/>
+<fun r='_ZN3JSC15DirectArguments42initModifiedArgumentsDescriptorIfNecessaryEPNS_14JSGlobalObjectE'/>
+<fun r='_ZN3JSC15DirectArguments29setModifiedArgumentDescriptorEPNS_14JSGlobalObjectEj'/>
+<fun r='_ZN3JSC15DirectArguments28isModifiedArgumentDescriptorEj'/>
+<fun r='_ZN3JSC15DirectArguments15copyToArgumentsEPNS_14JSGlobalObjectEPNS_7JSValueEjj'/>
+<smbr r='JSC::DirectArguments::s_info' t='const ::JSC::ClassInfo'/>
+<fun r='_ZN3JSC15DirectArguments4infoEv'/>
+<fun r='_ZN3JSC15DirectArguments15createStructureERNS_2VMEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<fun r='_ZN3JSC15DirectArguments14offsetOfCalleeEv'/>
+<fun r='_ZN3JSC15DirectArguments14offsetOfLengthEv'/>
+<fun r='_ZN3JSC15DirectArguments19offsetOfMinCapacityEv'/>
+<fun r='_ZN3JSC15DirectArguments23offsetOfMappedArgumentsEv'/>
+<fun r='_ZN3JSC15DirectArguments35offsetOfModifiedArgumentsDescriptorEv'/>
+<fun r='_ZN3JSC15DirectArguments13storageOffsetEv'/>
+<fun r='_ZN3JSC15DirectArguments12offsetOfSlotEN3WTF7CheckedImNS1_15CrashOnOverflowEEE'/>
+<fun r='_ZN3JSC15DirectArguments14allocationSizeEN3WTF7CheckedImNS1_15CrashOnOverflowEEE'/>
+<fun r='_ZN3JSC15DirectArguments7storageEv'/>
+<fun r='_ZN3JSC15DirectArguments19mappedArgumentsSizeEv'/>
+<mbr r='JSC::DirectArguments::m_callee' o='192' t='WriteBarrier&lt;JSC::JSFunction&gt;'/>
+<mbr r='JSC::DirectArguments::m_length' o='256' t='uint32_t'/>
+<mbr r='JSC::DirectArguments::m_minCapacity' o='288' t='uint32_t'/>
+<mbr r='JSC::DirectArguments::m_mappedArguments' o='320' t='JSC::DirectArguments::MappedArguments'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPaths.h' l='123' c='_ZN3JSC15CommonSlowPaths29canAccessArgumentIndexQuicklyERNS_8JSObjectEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPaths.h' l='123' c='_ZN3JSC15CommonSlowPaths29canAccessArgumentIndexQuicklyERNS_8JSObjectEj'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOperations.cpp' l='436' c='_ZN3JSC3FTL31operationMaterializeObjectInOSREPNS_14JSGlobalObjectEPNS0_29ExitTimeObjectMaterializationEPl'/>
+<size>48</size>
+<use f='WebKit/Source/JavaScriptCore/interpreter/Interpreter.cpp' l='182' c='_ZN3JSC13sizeOfVarargsEPNS_14JSGlobalObjectENS_7JSValueEj'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/Interpreter.cpp' l='254' c='_ZN3JSC11loadVarargsEPNS_14JSGlobalObjectEPNS_7JSValueES2_jj'/>
+<size>48</size>
+<use f='WebKit/Source/JavaScriptCore/jit/Repatch.cpp' l='253' c='_ZN3JSCL13tryCacheGetByEPNS_14JSGlobalObjectEPNS_9CodeBlockENS_7JSValueENS_19CacheableIdentifierERKNS_12PropertySlotERNS_17StructureStubInfoENS_9GetByKindE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/Repatch.cpp' l='253' c='_ZN3JSCL13tryCacheGetByEPNS_14JSGlobalObjectEPNS_9CodeBlockENS_7JSValueENS_19CacheableIdentifierERKNS_12PropertySlotERNS_17StructureStubInfoENS_9GetByKindE'/>
+<size>48</size>
+<use f='WebKit/Source/JavaScriptCore/inspector/JSInjectedScriptHost.cpp' l='196' c='_ZN9Inspector20JSInjectedScriptHost7subtypeEPN3JSC14JSGlobalObjectEPNS1_9CallFrameE'/>
+<size>48</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='2128' c='_ZN3JSC3DFG30operationCreateDirectArgumentsEPNS_2VMEPNS_9StructureEjj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='2193' c='_ZN3JSC3DFG40operationCreateDirectArgumentsDuringExitEPNS_2VMEPNS_15InlineCallFrameEPNS_10JSFunctionEj'/>
+<size>48</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/SpeculatedType.cpp' l='473' c='_ZN3JSC35speculationFromClassInfoInheritanceEPKNS_9ClassInfoE'/>
+<size>48</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.cpp' l='36'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.cpp' l='36'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.cpp' l='48' c='_ZN3JSC15DirectArguments19createUninitializedERNS_2VMEPNS_9StructureEjj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.cpp' l='51' c='_ZN3JSC15DirectArguments19createUninitializedERNS_2VMEPNS_9StructureEjj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.cpp' l='53' c='_ZN3JSC15DirectArguments19createUninitializedERNS_2VMEPNS_9StructureEjj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.cpp' l='52' c='_ZN3JSC15DirectArguments19createUninitializedERNS_2VMEPNS_9StructureEjj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.cpp' l='58' c='_ZN3JSC15DirectArguments6createERNS_2VMEPNS_9StructureEjj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.cpp' l='60' c='_ZN3JSC15DirectArguments6createERNS_2VMEPNS_9StructureEjj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.cpp' l='68' c='_ZN3JSC15DirectArguments15createByCopyingEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.cpp' l='74' c='_ZN3JSC15DirectArguments15createByCopyingEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.cpp' l='87' c='_ZN3JSC15DirectArguments13estimatedSizeEPNS_6JSCellERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.cpp' l='87' c='_ZN3JSC15DirectArguments13estimatedSizeEPNS_6JSCellERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.cpp' l='96' c='_ZN3JSC15DirectArguments17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DirectArguments.cpp' l='96' c='_ZN3JSC15DirectArguments17visitChildrenImplEPNS_6JSCellERT_'/>
+<size>48</size>
+<smbr r='JSC::DirectArguments::s_info' t='const JSC::ClassInfo'/>
+<fun r='_ZN3JSC15DirectArgumentsC1ERNS_2VMEPNS_9StructureEjj'/>
+<fun r='_ZN3JSC15DirectArguments19createUninitializedERNS_2VMEPNS_9StructureEjj'/>
+<fun r='_ZN3JSC15DirectArguments6createERNS_2VMEPNS_9StructureEjj'/>
+<fun r='_ZN3JSC15DirectArguments15createByCopyingEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<fun r='_ZN3JSC15DirectArguments13estimatedSizeEPNS_6JSCellERNS_2VME'/>
+<fun r='_ZN3JSC15DirectArguments17visitChildrenImplEPNS_6JSCellERT_'/>
+<fun r='_ZN3JSC15DirectArguments13visitChildrenEPNS_6JSCellERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC15DirectArguments13visitChildrenEPNS_6JSCellERNS_11SlotVisitorE'/>
+<fun r='_ZN3JSC15DirectArguments15createStructureERNS_2VMEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<fun r='_ZN3JSC15DirectArguments14overrideThingsEPNS_14JSGlobalObjectE'/>
+<fun r='_ZN3JSC15DirectArguments25overrideThingsIfNecessaryEPNS_14JSGlobalObjectE'/>
+<fun r='_ZN3JSC15DirectArguments13unmapArgumentEPNS_14JSGlobalObjectEj'/>
+<fun r='_ZN3JSC15DirectArguments15copyToArgumentsEPNS_14JSGlobalObjectEPNS_7JSValueEjj'/>
+<fun r='_ZN3JSC15DirectArguments19mappedArgumentsSizeEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='8692' c='_ZN3JSC3DFG14SpeculativeJIT28compileCreateDirectArgumentsEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='8714' c='_ZN3JSC3DFG14SpeculativeJIT28compileCreateDirectArgumentsEPNS0_4NodeE'/>
+<size>48</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='6837' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB328compileCreateDirectArgumentsEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='6849' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB328compileCreateDirectArgumentsEv'/>
+<size>48</size>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='2214' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='2214' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<size>48</size>

@@ -1,0 +1,36 @@
+<dec f='include/wayland-client-protocol.h' l='4983' type='void (*)(void *, struct wl_touch *, int32_t, wl_fixed_t, wl_fixed_t)'/>
+<offset>320</offset>
+<doc f='include/wayland-client-protocol.h' l='4949'>/**
+	 * update shape of touch point
+	 *
+	 * Sent when a touchpoint has changed its shape.
+	 *
+	 * This event does not occur on its own. It is sent before a
+	 * wl_touch.frame event and carries the new shape information for
+	 * any previously reported, or new touch points of that frame.
+	 *
+	 * Other events describing the touch point such as wl_touch.down,
+	 * wl_touch.motion or wl_touch.orientation may be sent within the
+	 * same wl_touch.frame. A client should treat these events as a
+	 * single logical touch point update. The order of wl_touch.shape,
+	 * wl_touch.orientation and wl_touch.motion is not guaranteed. A
+	 * wl_touch.down event is guaranteed to occur before the first
+	 * wl_touch.shape event for this touch ID but both events may occur
+	 * within the same wl_touch.frame.
+	 *
+	 * A touchpoint shape is approximated by an ellipse through the
+	 * major and minor axis length. The major axis length describes the
+	 * longer diameter of the ellipse, while the minor axis length
+	 * describes the shorter diameter. Major and minor are orthogonal
+	 * and both are specified in surface-local coordinates. The center
+	 * of the ellipse is always at the touchpoint location as reported
+	 * by wl_touch.down or wl_touch.move.
+	 *
+	 * This event is only sent by the compositor if the touch device
+	 * supports shape reports. The client has to make reasonable
+	 * assumptions about the shape if it did not receive this event.
+	 * @param id the unique ID of this touch point
+	 * @param major length of the major axis in surface-local coordinates
+	 * @param minor length of the minor axis in surface-local coordinates
+	 * @since 6
+	 */</doc>

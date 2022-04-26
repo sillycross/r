@@ -1,0 +1,30 @@
+<dec f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderLang.h' l='612' type='ShHandle sh::ConstructCompiler(sh::GLenum type, ShShaderSpec spec, ShShaderOutput output, const ShBuiltInResources * resources)'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderLang.h' l='601'>//
+// Driver calls these to create and destroy compiler objects.
+//
+// Returns the handle of constructed compiler, null if the requested compiler is not supported.
+// Parameters:
+// type: Specifies the type of shader - GL_FRAGMENT_SHADER or GL_VERTEX_SHADER.
+// spec: Specifies the language spec the compiler must conform to - SH_GLES2_SPEC or SH_WEBGL_SPEC.
+// output: Specifies the output code type - for example SH_ESSL_OUTPUT, SH_GLSL_OUTPUT,
+//         SH_HLSL_3_0_OUTPUT or SH_HLSL_4_1_OUTPUT. Note: Each output type may only
+//         be supported in some configurations.
+// resources: Specifies the built-in resources.</doc>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderLang.cpp' l='276' ll='301' type='ShHandle sh::ConstructCompiler(sh::GLenum type, ShShaderSpec spec, ShShaderOutput output, const ShBuiltInResources * resources)'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderLang.cpp' l='273'>//
+// Driver calls these to create and destroy compiler objects.
+//</doc>
+<dec f='WebKit/ANGLE/Headers/ANGLE/ShaderLang.h' l='612' type='ShHandle sh::ConstructCompiler(sh::GLenum type, ShShaderSpec spec, ShShaderOutput output, const ShBuiltInResources * resources)'/>
+<doc f='WebKit/ANGLE/Headers/ANGLE/ShaderLang.h' l='601'>//
+// Driver calls these to create and destroy compiler objects.
+//
+// Returns the handle of constructed compiler, null if the requested compiler is not supported.
+// Parameters:
+// type: Specifies the type of shader - GL_FRAGMENT_SHADER or GL_VERTEX_SHADER.
+// spec: Specifies the language spec the compiler must conform to - SH_GLES2_SPEC or SH_WEBGL_SPEC.
+// output: Specifies the output code type - for example SH_ESSL_OUTPUT, SH_GLSL_OUTPUT,
+//         SH_HLSL_3_0_OUTPUT or SH_HLSL_4_1_OUTPUT. Note: Each output type may only
+//         be supported in some configurations.
+// resources: Specifies the built-in resources.</doc>
+<use f='WebKit/Source/WebCore/platform/graphics/ANGLEWebKitBridge.cpp' l='166' u='c' c='_ZN7WebCore17ANGLEWebKitBridge19compileShaderSourceEPKcNS_15ANGLEShaderTypeERN3WTF6StringES6_RNS4_6VectorISt4pairINS_21ANGLEShaderSymbolTypeEN2sh14Sha5587038'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ANGLEWebKitBridge.cpp' l='167' u='c' c='_ZN7WebCore17ANGLEWebKitBridge19compileShaderSourceEPKcNS_15ANGLEShaderTypeERN3WTF6StringES6_RNS4_6VectorISt4pairINS_21ANGLEShaderSymbolTypeEN2sh14Sha5587038'/>

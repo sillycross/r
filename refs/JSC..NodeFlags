@@ -1,0 +1,84 @@
+<def f='WebKit/Source/JavaScriptCore/heap/HeapSnapshotBuilder.cpp' l='268' ll='271'/>
+<doc f='WebKit/Source/JavaScriptCore/heap/HeapSnapshotBuilder.cpp' l='184'>// Heap Snapshot JSON Format:
+//
+//  Inspector snapshots:
+//
+//   {
+//      &quot;version&quot;: 2,
+//      &quot;type&quot;: &quot;Inspector&quot;,
+//      // [&lt;address&gt;, &lt;labelIndex&gt;, &lt;wrappedAddress&gt;] only present in GCDebuggingSnapshot-type snapshots
+//      &quot;nodes&quot;: [
+//          &lt;nodeId&gt;, &lt;sizeInBytes&gt;, &lt;nodeClassNameIndex&gt;, &lt;flags&gt;
+//          &lt;nodeId&gt;, &lt;sizeInBytes&gt;, &lt;nodeClassNameIndex&gt;, &lt;flags&gt;
+//          ...
+//      ],
+//      &quot;nodeClassNames&quot;: [
+//          &quot;string&quot;, &quot;Structure&quot;, &quot;Object&quot;, ...
+//      ],
+//      &quot;edges&quot;: [
+//          &lt;fromNodeId&gt;, &lt;toNodeId&gt;, &lt;edgeTypeIndex&gt;, &lt;edgeExtraData&gt;,
+//          &lt;fromNodeId&gt;, &lt;toNodeId&gt;, &lt;edgeTypeIndex&gt;, &lt;edgeExtraData&gt;,
+//          ...
+//      ],
+//      &quot;edgeTypes&quot;: [
+//          &quot;Internal&quot;, &quot;Property&quot;, &quot;Index&quot;, &quot;Variable&quot;
+//      ],
+//      &quot;edgeNames&quot;: [
+//          &quot;propertyName&quot;, &quot;variableName&quot;, ...
+//      ]
+//   }
+//
+//  GC heap debugger snapshots:
+//
+//   {
+//      &quot;version&quot;: 2,
+//      &quot;type&quot;: &quot;GCDebugging&quot;,
+//      &quot;nodes&quot;: [
+//          &lt;nodeId&gt;, &lt;sizeInBytes&gt;, &lt;nodeClassNameIndex&gt;, &lt;flags&gt;, &lt;labelIndex&gt;, &lt;cellEddress&gt;, &lt;wrappedAddress&gt;,
+//          &lt;nodeId&gt;, &lt;sizeInBytes&gt;, &lt;nodeClassNameIndex&gt;, &lt;flags&gt;, &lt;labelIndex&gt;, &lt;cellEddress&gt;, &lt;wrappedAddress&gt;,
+//          ...
+//      ],
+//      &quot;nodeClassNames&quot;: [
+//          &quot;string&quot;, &quot;Structure&quot;, &quot;Object&quot;, ...
+//      ],
+//      &quot;edges&quot;: [
+//          &lt;fromNodeId&gt;, &lt;toNodeId&gt;, &lt;edgeTypeIndex&gt;, &lt;edgeExtraData&gt;,
+//          &lt;fromNodeId&gt;, &lt;toNodeId&gt;, &lt;edgeTypeIndex&gt;, &lt;edgeExtraData&gt;,
+//          ...
+//      ],
+//      &quot;edgeTypes&quot;: [
+//          &quot;Internal&quot;, &quot;Property&quot;, &quot;Index&quot;, &quot;Variable&quot;
+//      ],
+//      &quot;edgeNames&quot;: [
+//          &quot;propertyName&quot;, &quot;variableName&quot;, ...
+//      ],
+//      &quot;roots&quot; : [
+//          &lt;nodeId&gt;, &lt;rootReasonIndex&gt;, &lt;reachabilityReasonIndex&gt;,
+//          &lt;nodeId&gt;, &lt;rootReasonIndex&gt;, &lt;reachabilityReasonIndex&gt;,
+//          ... // &lt;nodeId&gt; may be repeated
+//      ],
+//      &quot;labels&quot; : [
+//          &quot;foo&quot;, &quot;bar&quot;, ...
+//      ]
+//   }
+//
+// Notes:
+//
+//     &lt;nodeClassNameIndex&gt;
+//       - index into the &quot;nodeClassNames&quot; list.
+//
+//     &lt;flags&gt;
+//       - 0b0000 - no flags
+//       - 0b0001 - internal instance
+//       - 0b0010 - Object subclassification
+//
+//     &lt;edgeTypeIndex&gt;
+//       - index into the &quot;edgeTypes&quot; list.
+//
+//     &lt;edgeExtraData&gt;
+//       - for Internal edges this should be ignored (0).
+//       - for Index edges this is the index value.
+//       - for Property or Variable edges this is an index into the &quot;edgeNames&quot; list.
+//
+//      &lt;rootReasonIndex&gt;
+//       - index into the &quot;labels&quot; list.</doc>

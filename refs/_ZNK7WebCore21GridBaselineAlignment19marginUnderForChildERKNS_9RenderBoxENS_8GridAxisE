@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebCore/rendering/GridBaselineAlignment.h' l='164' type='WebCore::LayoutUnit WebCore::GridBaselineAlignment::marginUnderForChild(const WebCore::RenderBox &amp; , WebCore::GridAxis ) const'/>
+<def f='WebKit/Source/WebCore/rendering/GridBaselineAlignment.cpp' l='54' ll='57' type='WebCore::LayoutUnit WebCore::GridBaselineAlignment::marginUnderForChild(const WebCore::RenderBox &amp; child, WebCore::GridAxis axis) const'/>
+<use f='WebKit/Source/WebCore/rendering/GridBaselineAlignment.cpp' l='67' u='c' c='_ZNK7WebCore21GridBaselineAlignment14ascentForChildERKNS_9RenderBoxENS_8GridAxisE'/>
+<doc f='WebKit/Source/WebCore/rendering/GridBaselineAlignment.cpp' l='49'>// This function gives the margin &apos;under&apos; based on the baseline-axis, since in grid we can can 2-dimensional
+// alignment by baseline. In horizontal writing-mode, the row-axis is the horizontal axis. When we use this
+// axis to move the grid items so that they are baseline-aligned, we want their &quot;horizontal&quot; margin (left);
+// the same will happen when using the column-axis under vertical writing mode, we also want in this case the
+// &apos;left&apos; margin.</doc>

@@ -1,0 +1,34 @@
+<dec f='WebKit/Source/JavaScriptCore/parser/Nodes.h' l='1240' type='JSC::RegisterID * JSC::BinaryOpNode::emitStrcat(JSC::BytecodeGenerator &amp; , JSC::RegisterID * destination, JSC::RegisterID * lhs = nullptr, JSC::ReadModifyResolveNode * emitExpressionInfoForMe = nullptr)'/>
+<def f='WebKit/Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp' l='2865' ll='2952' type='JSC::RegisterID * JSC::BinaryOpNode::emitStrcat(JSC::BytecodeGenerator &amp; generator, JSC::RegisterID * dst, JSC::RegisterID * lhs = nullptr, JSC::ReadModifyResolveNode * emitExpressionInfoForMe = nullptr)'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp' l='3083' u='c' c='_ZN3JSC12BinaryOpNode12emitBytecodeERNS_17BytecodeGeneratorEPNS_10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp' l='3354' u='c' c='_ZN3JSCL24emitReadModifyAssignmentERNS_17BytecodeGeneratorEPNS_10RegisterIDES3_PNS_14ExpressionNodeENS_8OperatorENS_12OperandTypesEPNS_21ReadModifyRes8205272'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp' l='2835'>// ------------------------------ Binary Operation Nodes -----------------------------------
+
+// BinaryOpNode::emitStrcat:
+//
+// This node generates an op_strcat operation.  This opcode can handle concatenation of three or
+// more values, where we can determine a set of separate op_add operations would be operating on
+// string values.
+//
+// This function expects to be operating on a graph of AST nodes looking something like this:
+//
+//     (a)...     (b)
+//          \   /
+//           (+)     (c)
+//              \   /
+//      [d]     ((+))
+//         \    /
+//          [+=]
+//
+// The assignment operation is optional, if it exists the register holding the value on the
+// lefthand side of the assignment should be passing as the optional &apos;lhs&apos; argument.
+//
+// The method should be called on the node at the root of the tree of regular binary add
+// operations (marked in the diagram with a double set of parentheses).  This node must
+// be performing a string concatenation (determined by statically detecting that at least
+// one child must be a string).  
+//
+// Since the minimum number of values being concatenated together is expected to be 3, if
+// a lhs to a concatenating assignment is not provided then the  root add should have at
+// least one left child that is also an add that can be determined to be operating on strings.
+//</doc>

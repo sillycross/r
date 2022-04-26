@@ -1,0 +1,935 @@
+<use f='WebKit/Source/WebCore/dom/TreeScope.h' l='109' c='_ZNK7WebCore9TreeScope8rootNodeEv'/>
+<use f='WebKit/Source/WebCore/dom/TreeScope.h' l='130'/>
+<use f='WebKit/Source/WebCore/dom/Node.h' l='122' c='_ZNK7WebCore4Node10parentNodeEv'/>
+<use f='WebKit/Source/WebCore/dom/Node.h' l='247' c='_ZNK7WebCore4Node22parentOrShadowHostNodeEv'/>
+<use f='WebKit/Source/WebCore/dom/Node.h' l='248' c='_ZNK7WebCore4Node20parentInComposedTreeEv'/>
+<use f='WebKit/Source/WebCore/dom/Node.h' l='251' c='_ZN7WebCore4Node13setParentNodeEPNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Node.h' l='264' c='_ZNK7WebCore4Node28parentNodeGuaranteedHostFreeEv'/>
+<use f='WebKit/Source/WebCore/dom/Node.h' l='266' c='_ZNK7WebCore4Node27nonShadowBoundaryParentNodeEv'/>
+<use f='WebKit/Source/WebCore/dom/Node.h' l='423' c='_ZN7WebCore4Node20insertedIntoAncestorENS0_13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Node.h' l='430' c='_ZN7WebCore4Node19removedFromAncestorENS0_11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Node.h' l='719'/>
+<use f='WebKit/Source/WebCore/dom/Node.h' l='756' c='_ZN7WebCore6parentERKNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/Node.h' l='825' c='_ZN7WebCore4Node13setParentNodeEPNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Node.h' l='832' c='_ZNK7WebCore4Node10parentNodeEv'/>
+<use f='WebKit/Source/WebCore/dom/Node.h' l='847' c='_ZNK7WebCore4Node28parentNodeGuaranteedHostFreeEv'/>
+<inh f='WebKit/Source/WebCore/dom/Node.h' l='72' c='WebCore::Node'/>
+<def f='WebKit/Source/WebCore/dom/ContainerNode.h' l='38' ll='166'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.h' l='39' c='_ZN7WebCore13ContainerNode8bisoHeapEv'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.h' l='44' c='_ZN7WebCore13ContainerNode22firstChildMemoryOffsetEv'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.h' l='46' c='_ZN7WebCore13ContainerNode21lastChildMemoryOffsetEv'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.h' l='72' c='_ZN7WebCore13ContainerNode19takeAllChildrenFromEPS0_'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.h' l='74' c='_ZN7WebCore13ContainerNode15cloneChildNodesERS0_'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.h' l='140' c='_ZN7WebCore28addChildNodesToDeletionQueueERPNS_4NodeES2_RNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.h' l='175' c='_ZNK7WebCore4Node15countChildNodesEv'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.h' l='177' c='_ZNK7WebCore4Node15countChildNodesEv'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.h' l='182' c='_ZNK7WebCore4Node17traverseToChildAtEj'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.h' l='184' c='_ZNK7WebCore4Node17traverseToChildAtEj'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.h' l='189' c='_ZNK7WebCore4Node10firstChildEv'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.h' l='191' c='_ZNK7WebCore4Node10firstChildEv'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.h' l='196' c='_ZNK7WebCore4Node9lastChildEv'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.h' l='198' c='_ZNK7WebCore4Node9lastChildEv'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.h' l='284'/>
+<use f='WebKit/Source/WebCore/style/StyleUpdate.h' l='71' c='_ZNK7WebCore5Style6Update5rootsEv'/>
+<use f='WebKit/Source/WebCore/style/StyleUpdate.h' l='93'/>
+<ovr f='WebKit/Source/WebCore/dom/Document.h' l='339' c='WebCore::Document'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='340'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='820' c='_ZN7WebCore8Document32updateRangesAfterChildrenChangedERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='822' c='_ZN7WebCore8Document25nodeChildrenWillBeRemovedERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='1377' c='_ZN7WebCore8Document27addPendingScrollEventTargetERNS_13ContainerNodeE'/>
+<ovr f='WebKit/Source/WebCore/dom/Element.h' l='88' c='WebCore::Element'/>
+<use f='WebKit/Source/WebCore/dom/Element.h' l='88'/>
+<use f='WebKit/Source/WebCore/dom/Element.h' l='635' c='_ZN7WebCore7Element20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Element.h' l='636' c='_ZN7WebCore7Element19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Element.h' l='763' c='_ZNK7WebCore4Node13parentElementEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderElement.h' l='320' c='_ZN7WebCore13RenderElementC1ERNS_13ContainerNodeEONS_11RenderStyleEj'/>
+<use f='WebKit/Source/WebCore/page/FrameView.h' l='449' c='_ZN7WebCore9FrameView30maintainScrollPositionAtAnchorEPNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/page/FrameView.h' l='871'/>
+<size>96</size>
+<fun r='_ZN7WebCore13ContainerNode8bisoHeapEv'/>
+<fun r='_ZN7WebCore13ContainerNodeD1Ev'/>
+<fun r='_ZNK7WebCore13ContainerNode10firstChildEv'/>
+<fun r='_ZN7WebCore13ContainerNode22firstChildMemoryOffsetEv'/>
+<fun r='_ZNK7WebCore13ContainerNode9lastChildEv'/>
+<fun r='_ZN7WebCore13ContainerNode21lastChildMemoryOffsetEv'/>
+<fun r='_ZNK7WebCore13ContainerNode13hasChildNodesEv'/>
+<fun r='_ZNK7WebCore13ContainerNode11hasOneChildEv'/>
+<fun r='_ZNK7WebCore13ContainerNode27directChildNeedsStyleRecalcEv'/>
+<fun r='_ZN7WebCore13ContainerNode30setDirectChildNeedsStyleRecalcEv'/>
+<fun r='_ZNK7WebCore13ContainerNode15countChildNodesEv'/>
+<fun r='_ZNK7WebCore13ContainerNode17traverseToChildAtEj'/>
+<fun r='_ZN7WebCore13ContainerNode12insertBeforeERNS_4NodeEPS1_'/>
+<fun r='_ZN7WebCore13ContainerNode12replaceChildERNS_4NodeES2_'/>
+<fun r='_ZN7WebCore13ContainerNode11removeChildERNS_4NodeE'/>
+<fun r='_ZN7WebCore13ContainerNode11appendChildERNS_4NodeE'/>
+<fun r='_ZN7WebCore13ContainerNode16stringReplaceAllERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore13ContainerNode10replaceAllEPNS_4NodeE'/>
+<fun r='_ZN7WebCore13ContainerNode17parserAppendChildERNS_4NodeE'/>
+<fun r='_ZN7WebCore13ContainerNode17parserRemoveChildERNS_4NodeE'/>
+<fun r='_ZN7WebCore13ContainerNode18parserInsertBeforeERNS_4NodeES2_'/>
+<fun r='_ZN7WebCore13ContainerNode14removeChildrenEv'/>
+<fun r='_ZN7WebCore13ContainerNode19takeAllChildrenFromEPS0_'/>
+<fun r='_ZN7WebCore13ContainerNode15cloneChildNodesERS0_'/>
+<fun r='_ZN7WebCore13ContainerNode15childrenChangedERKNS0_11ChildChangeE'/>
+<fun r='_ZN7WebCore13ContainerNode11appendChildENS0_11ChildChange6SourceERNS_4NodeE'/>
+<fun r='_ZN7WebCore13ContainerNode26disconnectDescendantFramesEv'/>
+<fun r='_ZNK7WebCore13ContainerNode8rendererEv'/>
+<fun r='_ZN7WebCore13ContainerNode26absoluteEventHandlerBoundsERb'/>
+<fun r='_ZN7WebCore13ContainerNode13querySelectorERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore13ContainerNode16querySelectorAllERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore13ContainerNode20getElementsByTagNameERKN3WTF10AtomStringE'/>
+<fun r='_ZN7WebCore13ContainerNode22getElementsByTagNameNSERKN3WTF10AtomStringES4_'/>
+<fun r='_ZN7WebCore13ContainerNode17getElementsByNameERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore13ContainerNode22getElementsByClassNameERKN3WTF10AtomStringE'/>
+<fun r='_ZN7WebCore13ContainerNode13radioNodeListERKN3WTF10AtomStringE'/>
+<fun r='_ZN7WebCore13ContainerNode8childrenEv'/>
+<fun r='_ZNK7WebCore13ContainerNode17firstElementChildEv'/>
+<fun r='_ZNK7WebCore13ContainerNode16lastElementChildEv'/>
+<fun r='_ZNK7WebCore13ContainerNode17childElementCountEv'/>
+<fun r='_ZN7WebCore13ContainerNode6appendEON3WTF6VectorINS1_7VariantIJNS1_6RefPtrINS_4NodeENS1_12RawPtrTraitsIS5_EENS1_21DefaultRefDerefTraitsIS5_EEEENS1_6Str5852291'/>
+<fun r='_ZN7WebCore13ContainerNode7prependEON3WTF6VectorINS1_7VariantIJNS1_6RefPtrINS_4NodeENS1_12RawPtrTraitsIS5_EENS1_21DefaultRefDerefTraitsIS5_EEEENS1_6St953332'/>
+<fun r='_ZN7WebCore13ContainerNode15replaceChildrenEON3WTF6VectorINS1_7VariantIJNS1_6RefPtrINS_4NodeENS1_12RawPtrTraitsIS5_EENS1_21DefaultRefDerefTraitsIS5_EE6788659'/>
+<fun r='_ZN7WebCore13ContainerNode26ensurePreInsertionValidityERNS_4NodeEPS1_'/>
+<fun r='_ZN7WebCore13ContainerNodeC1ERNS_8DocumentEN3WTF9OptionSetINS_4Node8NodeFlagEEE'/>
+<fun r='_ZN7WebCore13ContainerNode22removeDetachedChildrenEv'/>
+<fun r='_ZN7WebCore13ContainerNode13setFirstChildEPNS_4NodeE'/>
+<fun r='_ZN7WebCore13ContainerNode12setLastChildEPNS_4NodeE'/>
+<fun r='_ZN7WebCore13ContainerNode20cachedHTMLCollectionENS_14CollectionTypeE'/>
+<fun r='_ZN7WebCore13ContainerNode30executePreparedChildrenRemovalEv'/>
+<fun r='_ZN7WebCore13ContainerNode36removeAllChildrenWithScriptAssertionENS0_11ChildChange6SourceENS0_20DeferChildrenChangedE'/>
+<fun r='_ZN7WebCore13ContainerNode29removeNodeWithScriptAssertionERNS_4NodeENS0_11ChildChange6SourceE'/>
+<fun r='_ZN7WebCore13ContainerNode34removeSelfOrChildNodesForInsertionERNS_4NodeERN3WTF6VectorINS3_3RefIS1_NS3_12RawPtrTraitsIS1_EEEELm11ENS3_15CrashOnOverflo3296172'/>
+<fun r='_ZN7WebCore13ContainerNode13removeBetweenEPNS_4NodeES2_RS1_'/>
+<fun r='_ZN7WebCore13ContainerNode43appendChildWithoutPreInsertionValidityCheckERNS_4NodeE'/>
+<fun r='_ZN7WebCore13ContainerNode18insertBeforeCommonERNS_4NodeES2_'/>
+<fun r='_ZN7WebCore13ContainerNode17appendChildCommonERNS_4NodeE'/>
+<fun r='_ZN7WebCore13ContainerNode39rebuildSVGExtensionsElementsIfNecessaryEv'/>
+<fun r='_ZNK7WebCore13ContainerNode15isContainerNodeEv'/>
+<mbr r='WebCore::ContainerNode::m_firstChild' o='640' t='WebCore::Node *'/>
+<mbr r='WebCore::ContainerNode::m_lastChild' o='704' t='WebCore::Node *'/>
+<fun r='_ZN7WebCore13ContainerNodeC1ERNS_8DocumentEN3WTF9OptionSetINS_4Node8NodeFlagEEE'/>
+<fun r='_ZNK7WebCore13ContainerNode8rendererEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLMenuElement.h' l='39' c='_ZN7WebCore15HTMLMenuElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMenuElement.h' l='40' c='_ZN7WebCore15HTMLMenuElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMenuItemElement.h' l='40' c='_ZN7WebCore19HTMLMenuItemElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMenuItemElement.h' l='41' c='_ZN7WebCore19HTMLMenuItemElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/FormAssociatedElement.h' l='96' c='_ZN7WebCore21FormAssociatedElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/FormAssociatedElement.h' l='97' c='_ZN7WebCore21FormAssociatedElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFormControlElement.h' l='147' c='_ZN7WebCore22HTMLFormControlElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFormControlElement.h' l='149' c='_ZN7WebCore22HTMLFormControlElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFormControlElementWithState.h' l='48' c='_ZN7WebCore31HTMLFormControlElementWithState20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFormControlElementWithState.h' l='49' c='_ZN7WebCore31HTMLFormControlElementWithState19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLTextFormControlElement.h' l='58' c='_ZN7WebCore26HTMLTextFormControlElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLInputElement.h' l='360' c='_ZN7WebCore16HTMLInputElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLInputElement.h' l='362' c='_ZN7WebCore16HTMLInputElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/accessibility/AXObjectCache.h' l='114'/>
+<use f='WebKit/Source/WebCore/html/HTMLFrameOwnerElement.h' l='82' c='_ZN7WebCore23SubframeLoadingDisablerC1EPNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFrameOwnerElement.h' l='98' c='_ZN7WebCore23SubframeLoadingDisabler20disabledSubtreeRootsEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLFrameOwnerElement.h' l='100' c='_ZN7WebCore23SubframeLoadingDisabler20disabledSubtreeRootsEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLFrameOwnerElement.h' l='104'/>
+<use f='WebKit/Source/WebCore/dom/Range.h' l='94' c='_ZN7WebCore5Range19nodeChildrenChangedERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Range.h' l='95' c='_ZN7WebCore5Range25nodeChildrenWillBeRemovedERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/NodeTraversal.h' l='39' c='_ZN7WebCore13NodeTraversal4nextERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/NodeTraversal.h' l='40' c='_ZN7WebCore13NodeTraversal4nextERKNS_13ContainerNodeEPKNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/NodeTraversal.h' l='49' c='_ZN7WebCore13NodeTraversal4lastERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/NodeTraversal.h' l='85' c='_ZN7WebCore13NodeTraversal4nextERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/NodeTraversal.h' l='99' c='_ZN7WebCore13NodeTraversal4nextERKNS_13ContainerNodeEPKNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementTraversal.h' l='37' c='_ZN7WebCore9Traversal10firstChildERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementTraversal.h' l='39' c='_ZN7WebCore9Traversal9lastChildERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementTraversal.h' l='43' c='_ZN7WebCore9Traversal11firstWithinERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementTraversal.h' l='45' c='_ZN7WebCore9Traversal10lastWithinERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementTraversal.h' l='50' c='_ZN7WebCore9Traversal4nextERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementTraversal.h' l='51' c='_ZN7WebCore9Traversal4nextERKNS_13ContainerNodeEPKNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementTraversal.h' l='228' c='_ZN7WebCore9Traversal10firstChildERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementTraversal.h' l='233' c='_ZN7WebCore9Traversal9lastChildERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementTraversal.h' l='238' c='_ZN7WebCore9Traversal11firstWithinERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementTraversal.h' l='243' c='_ZN7WebCore9Traversal10lastWithinERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementTraversal.h' l='248' c='_ZN7WebCore9Traversal4nextERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementTraversal.h' l='252' c='_ZN7WebCore9Traversal4nextERKNS_13ContainerNodeEPKNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementIterator.h' l='59' c='_ZN7WebCore15ElementIteratorC1EPKNS_13ContainerNodeEPT_'/>
+<use f='WebKit/Source/WebCore/dom/ElementIterator.h' l='62'/>
+<use f='WebKit/Source/WebCore/dom/ElementIterator.h' l='73' c='_ZN7WebCore15ElementIteratorC1EPKNS_13ContainerNodeEPT_'/>
+<use f='WebKit/Source/WebCore/dom/ElementChildIterator.h' l='35' c='_ZN7WebCore14childrenOfTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementChildIterator.h' l='36' c='_ZN7WebCore14childrenOfTypeERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementChildIterator.h' l='42' c='_ZN7WebCore20ElementChildIteratorC1ERKNS_13ContainerNodeEPT_'/>
+<use f='WebKit/Source/WebCore/dom/ElementChildIterator.h' l='50' c='_ZN7WebCore17ElementChildRangeC1ERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementChildIterator.h' l='60'/>
+<use f='WebKit/Source/WebCore/dom/ElementChildIterator.h' l='66' c='_ZN7WebCore20ElementChildIteratorC1ERKNS_13ContainerNodeEPT_'/>
+<use f='WebKit/Source/WebCore/dom/ElementChildIterator.h' l='88' c='_ZN7WebCore17ElementChildRangeC1ERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementChildIterator.h' l='121' c='_ZN7WebCore14childrenOfTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementChildIterator.h' l='127' c='_ZN7WebCore14childrenOfTypeERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='38' c='_ZN7WebCore17descendantsOfTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='39' c='_ZN7WebCore17descendantsOfTypeERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='42' c='_ZN7WebCore19filteredDescendantsERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='46' c='_ZN7WebCore17descendantsOfTypeERNS_13ContainerNodeES1_'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='46' c='_ZN7WebCore17descendantsOfTypeERNS_13ContainerNodeES1_'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='51' c='_ZN7WebCore25ElementDescendantIteratorC1ERKNS_13ContainerNodeEPT_'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='58' c='_ZN7WebCore22ElementDescendantRangeC1ERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='68'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='100' c='_ZN7WebCore33FilteredElementDescendantIteratorC1ERKNS_13ContainerNodeEPT_'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='108' c='_ZN7WebCore30FilteredElementDescendantRangeC1ERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='115'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='120' c='_ZN7WebCore25ElementDescendantIteratorC1ERKNS_13ContainerNodeEPT_'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='139' c='_ZN7WebCore22ElementDescendantRangeC1ERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='213' c='_ZN7WebCore33FilteredElementDescendantIteratorC1ERKNS_13ContainerNodeEPT_'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='228' c='_ZN7WebCore30FilteredElementDescendantRangeC1ERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='249' c='_ZN7WebCore17descendantsOfTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='254' c='_ZN7WebCore17descendantsOfTypeERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='259' c='_ZN7WebCore17descendantsOfTypeERNS_13ContainerNodeES1_'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='259' c='_ZN7WebCore17descendantsOfTypeERNS_13ContainerNodeES1_'/>
+<use f='WebKit/Source/WebCore/dom/TypedElementDescendantIterator.h' l='264' c='_ZN7WebCore19filteredDescendantsERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/CollectionTraversal.h' l='41' c='_ZN7WebCore19CollectionTraversalILNS_23CollectionTraversalTypeE0EE5beginERKT_RNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/CollectionTraversal.h' l='44' c='_ZN7WebCore19CollectionTraversalILNS_23CollectionTraversalTypeE0EE4lastERKT_RNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/CollectionTraversal.h' l='54' c='_ZN7WebCore19CollectionTraversalILNS_23CollectionTraversalTypeE0EE5beginERKT_RNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/CollectionTraversal.h' l='65' c='_ZN7WebCore19CollectionTraversalILNS_23CollectionTraversalTypeE0EE4lastERKT_RNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/CollectionTraversal.h' l='106' c='_ZN7WebCore19CollectionTraversalILNS_23CollectionTraversalTypeE1EE5beginERKT_RNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/CollectionTraversal.h' l='109' c='_ZN7WebCore19CollectionTraversalILNS_23CollectionTraversalTypeE1EE4lastERKT_RNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/CollectionTraversal.h' l='119' c='_ZN7WebCore19CollectionTraversalILNS_23CollectionTraversalTypeE1EE5beginERKT_RNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/CollectionTraversal.h' l='130' c='_ZN7WebCore19CollectionTraversalILNS_23CollectionTraversalTypeE1EE4lastERKT_RNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/CollectionTraversal.h' l='170' c='_ZN7WebCore19CollectionTraversalILNS_23CollectionTraversalTypeE2EE3endERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/CollectionTraversal.h' l='173' c='_ZN7WebCore19CollectionTraversalILNS_23CollectionTraversalTypeE2EE5beginERKT_RNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/CollectionTraversal.h' l='176' c='_ZN7WebCore19CollectionTraversalILNS_23CollectionTraversalTypeE2EE4lastERKT_RNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/CollectionTraversal.h' l='186' c='_ZN7WebCore19CollectionTraversalILNS_23CollectionTraversalTypeE2EE5beginERKT_RNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/CollectionTraversal.h' l='192' c='_ZN7WebCore19CollectionTraversalILNS_23CollectionTraversalTypeE2EE4lastERKT_RNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/LiveNodeList.h' l='49' c='_ZNK7WebCore12LiveNodeList9ownerNodeEv'/>
+<use f='WebKit/Source/WebCore/dom/LiveNodeList.h' l='58' c='_ZN7WebCore12LiveNodeListC1ERNS_13ContainerNodeENS_24NodeListInvalidationTypeE'/>
+<use f='WebKit/Source/WebCore/dom/LiveNodeList.h' l='61' c='_ZNK7WebCore12LiveNodeList8rootNodeEv'/>
+<use f='WebKit/Source/WebCore/dom/LiveNodeList.h' l='66'/>
+<use f='WebKit/Source/WebCore/dom/LiveNodeList.h' l='101' c='_ZN7WebCore18CachedLiveNodeListC1ERNS_13ContainerNodeENS_24NodeListInvalidationTypeE'/>
+<use f='WebKit/Source/WebCore/dom/LiveNodeList.h' l='140' c='_ZNK7WebCore12LiveNodeList8rootNodeEv'/>
+<use f='WebKit/Source/WebCore/dom/LiveNodeList.h' l='149' c='_ZN7WebCore18CachedLiveNodeListC1ERNS_13ContainerNodeENS_24NodeListInvalidationTypeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLCollection.h' l='81' c='_ZNK7WebCore14HTMLCollection9ownerNodeEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLCollection.h' l='82' c='_ZNK7WebCore14HTMLCollection8rootNodeEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLCollection.h' l='90' c='_ZN7WebCore14HTMLCollectionC1ERNS_13ContainerNodeENS_14CollectionTypeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLCollection.h' l='111'/>
+<use f='WebKit/Source/WebCore/html/HTMLCollection.h' l='116' c='_ZNK7WebCore14HTMLCollection8rootNodeEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLCollection.h' l='197' c='_ZNK7WebCore14HTMLCollection9ownerNodeEv'/>
+<ovr f='WebKit/Source/WebCore/dom/DocumentFragment.h' l='31' c='WebCore::DocumentFragment'/>
+<use f='WebKit/Source/WebCore/dom/DocumentFragment.h' l='31'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLBaseElement.h' l='44' c='_ZN7WebCore15HTMLBaseElement19removedFromAncestorEiRNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLFormElement.h' l='132' c='_ZN7WebCore15HTMLFormElement19removedFromAncestorEiRNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFrameSetElement.h' l='69' c='_ZN7WebCore19HTMLFrameSetElement19removedFromAncestorEiRNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLImageElement.h' l='173' c='_ZN7WebCore16HTMLImageElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLImageElement.h' l='174' c='_ZN7WebCore16HTMLImageElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLMetaElement.h' l='53' c='_ZN7WebCore15HTMLMetaElement19removedFromAncestorEiRNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.h' l='622' c='_ZN7WebCore16HTMLMediaElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.h' l='624' c='_ZN7WebCore16HTMLMediaElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLCanvasElement.h' l='184' c='_ZN7WebCore17HTMLCanvasElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLCanvasElement.h' l='185' c='_ZN7WebCore17HTMLCanvasElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFrameElementBase.h' l='53' c='_ZN7WebCore20HTMLFrameElementBase20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLLinkElement.h' l='96' c='_ZN7WebCore15HTMLLinkElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLLinkElement.h' l='98' c='_ZN7WebCore15HTMLLinkElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMapElement.h' l='51' c='_ZN7WebCore14HTMLMapElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMapElement.h' l='52' c='_ZN7WebCore14HTMLMapElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLStyleElement.h' l='60' c='_ZN7WebCore16HTMLStyleElement19removedFromAncestorEiRNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLTitleElement.h' l='43' c='_ZN7WebCore16HTMLTitleElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLTitleElement.h' l='44' c='_ZN7WebCore16HTMLTitleElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLSelectElement.h' l='154' c='_ZN7WebCore17HTMLSelectElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/ScriptDisallowedScope.h' l='147' c='_ZN7WebCore21ScriptDisallowedScope17EventAllowedScopeC1ERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementAndTextDescendantIterator.h' l='39' c='_ZN7WebCore32ElementAndTextDescendantIteratorC1ERKNS_13ContainerNodeENS0_13FirstChildTagE'/>
+<use f='WebKit/Source/WebCore/dom/ElementAndTextDescendantIterator.h' l='40' c='_ZN7WebCore32ElementAndTextDescendantIteratorC1ERKNS_13ContainerNodeEPNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementAndTextDescendantIterator.h' l='87' c='_ZN7WebCore29ElementAndTextDescendantRangeC1ERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementAndTextDescendantIterator.h' l='92'/>
+<use f='WebKit/Source/WebCore/dom/ElementAndTextDescendantIterator.h' l='95' c='_ZN7WebCore25elementAndTextDescendantsERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementAndTextDescendantIterator.h' l='104' c='_ZN7WebCore32ElementAndTextDescendantIteratorC1ERKNS_13ContainerNodeENS0_13FirstChildTagE'/>
+<use f='WebKit/Source/WebCore/dom/ElementAndTextDescendantIterator.h' l='116' c='_ZN7WebCore32ElementAndTextDescendantIteratorC1ERKNS_13ContainerNodeEPNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementAndTextDescendantIterator.h' l='299' c='_ZN7WebCore29ElementAndTextDescendantRangeC1ERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ElementAndTextDescendantIterator.h' l='316' c='_ZN7WebCore25elementAndTextDescendantsERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLSlotElement.h' l='55' c='_ZN7WebCore15HTMLSlotElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLSlotElement.h' l='56' c='_ZN7WebCore15HTMLSlotElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ShadowRoot.h' l='92' c='_ZN7WebCore10ShadowRoot23removeSlotElementByNameERKN3WTF10AtomStringERNS_15HTMLSlotElementERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ShadowRoot.h' l='95' c='_ZN7WebCore10ShadowRoot21willRemoveAllChildrenERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ShadowRoot.h' l='126' c='_ZN7WebCore10ShadowRoot20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ShadowRoot.h' l='127' c='_ZN7WebCore10ShadowRoot19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ShadowRoot.h' l='162' c='_ZNK7WebCore4Node22parentOrShadowHostNodeEv'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.h' l='40' c='_ZN7WebCore20ComposedTreeIteratorC1ERNS_13ContainerNodeENS0_13FirstChildTagE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.h' l='41' c='_ZN7WebCore20ComposedTreeIteratorC1ERNS_13ContainerNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.h' l='61' c='_ZN7WebCore20ComposedTreeIterator22initializeContextStackERNS_13ContainerNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.h' l='70' c='_ZN7WebCore20ComposedTreeIterator7ContextC1ERNS_13ContainerNodeENS0_13FirstChildTagE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.h' l='71' c='_ZN7WebCore20ComposedTreeIterator7ContextC1ERNS_13ContainerNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.h' l='74' c='_ZN7WebCore20ComposedTreeIterator7ContextC1ERNS_13ContainerNodeERNS_4NodeENS1_10SlottedTagE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.h' l='149' c='_ZN7WebCore29ComposedTreeDescendantAdapterC1ERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.h' l='158'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.h' l='166' c='_ZN7WebCore24ComposedTreeChildAdapter8IteratorC1ERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.h' l='169' c='_ZN7WebCore24ComposedTreeChildAdapter8IteratorC1ERNS_13ContainerNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.h' l='177' c='_ZN7WebCore24ComposedTreeChildAdapterC1ERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.h' l='186'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.h' l='190' c='_ZN7WebCore23composedTreeDescendantsERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.h' l='195' c='_ZN7WebCore20composedTreeChildrenERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.h' l='201' c='_ZN7WebCore18composedTreeAsTextERNS_13ContainerNodeENS_22ComposedTreeAsTextModeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGElement.h' l='172' c='_ZN7WebCore10SVGElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGElement.h' l='174' c='_ZN7WebCore10SVGElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGSVGElement.h' l='134' c='_ZN7WebCore13SVGSVGElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGSVGElement.h' l='135' c='_ZN7WebCore13SVGSVGElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/css/SelectorFilter.h' l='47' c='_ZNK7WebCore14SelectorFilter23parentStackIsConsistentEPKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/css/SelectorChecker.h' l='95'/>
+<use f='WebKit/Source/WebCore/html/shadow/TextPlaceholderElement.h' l='42' c='_ZN7WebCore22TextPlaceholderElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/shadow/TextPlaceholderElement.h' l='43' c='_ZN7WebCore22TextPlaceholderElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/track/VTTCue.h' l='137' c='_ZN7WebCore6VTTCue22markFutureAndPastNodesEPNS_13ContainerNodeERKN3WTF9MediaTimeES6_'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='4942' c='_ZN7WebCore9Internals18composedTreeAsTextERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='4944' c='_ZN7WebCore9Internals18composedTreeAsTextERNS_4NodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/editing/Editing.h' l='50' c='_ZN7WebCore19highestEditableRootERKNS_8PositionENS_12EditableTypeE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.h' l='124' c='_ZN7WebCore40firstEditablePositionAfterPositionInRootERKNS_8PositionEPNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.h' l='125' c='_ZN7WebCore40lastEditablePositionBeforePositionInRootERKNS_8PositionEPNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.h' l='146' c='_ZN7WebCore23indexForVisiblePositionERKNS_15VisiblePositionERN3WTF6RefPtrINS_13ContainerNodeENS3_12RawPtrTraitsIS5_EENS3_21DefaultRefDerefTraitsIS5_EEEE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.h' l='149' c='_ZN7WebCore23visiblePositionForIndexEiPNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLOptionElement.h' l='74' c='_ZN7WebCore17HTMLOptionElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGImageElement.h' l='60' c='_ZN7WebCore15SVGImageElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGPathElement.h' l='121' c='_ZN7WebCore14SVGPathElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGPathElement.h' l='122' c='_ZN7WebCore14SVGPathElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGUseElement.h' l='59' c='_ZN7WebCore13SVGUseElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGUseElement.h' l='61' c='_ZN7WebCore13SVGUseElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGUseElement.h' l='80' c='_ZNK7WebCore13SVGUseElement11cloneTargetERNS_13ContainerNodeERNS_10SVGElementE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGTextPathElement.h' l='140' c='_ZN7WebCore18SVGTextPathElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGTextPathElement.h' l='141' c='_ZN7WebCore18SVGTextPathElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLObjectElement.h' l='69' c='_ZN7WebCore17HTMLObjectElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLObjectElement.h' l='71' c='_ZN7WebCore17HTMLObjectElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGFontFaceElement.h' l='61' c='_ZN7WebCore18SVGFontFaceElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGFontFaceElement.h' l='62' c='_ZN7WebCore18SVGFontFaceElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeUpdater.h' l='57' c='_ZN7WebCore17RenderTreeUpdater16updateRenderTreeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeUpdater.h' l='76' c='_ZN7WebCore17RenderTreeUpdater6ParentC1ERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeUpdater.cpp' l='67' c='_ZN7WebCore17RenderTreeUpdater6ParentC1ERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeUpdater.cpp' l='89' c='_ZN7WebCoreL17findRenderingRootERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeUpdater.cpp' l='89' c='_ZN7WebCoreL17findRenderingRootERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeUpdater.cpp' l='102' c='_ZN7WebCoreL18findRenderingRootsERKNS_5Style6UpdateE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeUpdater.cpp' l='104' c='_ZN7WebCoreL18findRenderingRootsERKNS_5Style6UpdateE'/>
+<use f='WebKit/Source/WebCore/rendering/updating/RenderTreeUpdater.cpp' l='144' c='_ZN7WebCore17RenderTreeUpdater16updateRenderTreeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/rendering/RenderElement.cpp' l='105' c='_ZN7WebCore13RenderElementC1ERNS_13ContainerNodeEONS_11RenderStyleEj'/>
+<use f='WebKit/Source/WebCore/rendering/RenderElement.cpp' l='133' c='_ZN7WebCore13RenderElementC1ERNS_7ElementEONS_11RenderStyleEj'/>
+<use f='WebKit/Source/WebCore/rendering/RenderElement.cpp' l='138' c='_ZN7WebCore13RenderElementC1ERNS_8DocumentEONS_11RenderStyleEj'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/ProcessingInstruction.h' l='62' c='_ZN7WebCore21ProcessingInstruction20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ProcessingInstruction.h' l='64' c='_ZN7WebCore21ProcessingInstruction19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGStyleElement.h' l='50' c='_ZN7WebCore15SVGStyleElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGStyleElement.h' l='51' c='_ZN7WebCore15SVGStyleElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/MutationRecord.h' l='55' c='_ZN7WebCore14MutationRecord15createChildListERNS_13ContainerNodeEON3WTF3RefINS_8NodeListENS3_12RawPtrTraitsIS5_EEEES9_ONS3_6RefPtrINS_4NodeENS6_ISB_EE8925461'/>
+<use f='WebKit/Source/WebCore/css/SelectorFilter.cpp' l='72' c='_ZNK7WebCore14SelectorFilter23parentStackIsConsistentEPKNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/ScriptElement.h' l='91' c='_ZNK7WebCore13ScriptElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLScriptElement.h' l='58' c='_ZN7WebCore17HTMLScriptElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLSourceElement.h' l='49' c='_ZN7WebCore17HTMLSourceElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLSourceElement.h' l='50' c='_ZN7WebCore17HTMLSourceElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLTrackElement.h' l='75' c='_ZN7WebCore16HTMLTrackElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLTrackElement.h' l='76' c='_ZN7WebCore16HTMLTrackElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGScriptElement.h' l='48' c='_ZN7WebCore16SVGScriptElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/animation/SVGSMILElement.h' l='51' c='_ZN7WebCore14SVGSMILElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/animation/SVGSMILElement.h' l='52' c='_ZN7WebCore14SVGSMILElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGTRefElement.h' l='52' c='_ZN7WebCore14SVGTRefElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGTRefElement.h' l='53' c='_ZN7WebCore14SVGTRefElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGTitleElement.h' l='36' c='_ZN7WebCore15SVGTitleElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGTitleElement.h' l='37' c='_ZN7WebCore15SVGTitleElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGFEImageElement.h' l='64' c='_ZN7WebCore17SVGFEImageElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGFEImageElement.h' l='65' c='_ZN7WebCore17SVGFEImageElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGFontFaceUriElement.h' l='44' c='_ZN7WebCore21SVGFontFaceUriElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGMPathElement.h' l='53' c='_ZN7WebCore15SVGMPathElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGMPathElement.h' l='54' c='_ZN7WebCore15SVGMPathElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGMPathElement.h' l='59' c='_ZN7WebCore15SVGMPathElement24notifyParentOfPathChangeEPNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/CachedHTMLCollection.h' l='38' c='_ZN7WebCore20CachedHTMLCollectionC1ERNS_13ContainerNodeENS_14CollectionTypeE'/>
+<use f='WebKit/Source/WebCore/html/CachedHTMLCollection.h' l='75' c='_ZN7WebCore20CachedHTMLCollectionC1ERNS_13ContainerNodeENS_14CollectionTypeE'/>
+<use f='WebKit/Source/WebCore/html/CachedHTMLCollection.h' l='141' c='_ZNK7WebCore20CachedHTMLCollection9namedItemERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/dom/AllDescendantsCollection.h' l='35' c='_ZN7WebCore24AllDescendantsCollection6createERNS_13ContainerNodeENS_14CollectionTypeE'/>
+<use f='WebKit/Source/WebCore/dom/AllDescendantsCollection.h' l='44' c='_ZN7WebCore24AllDescendantsCollectionC1ERNS_13ContainerNodeENS_14CollectionTypeE'/>
+<use f='WebKit/Source/WebCore/html/RadioNodeList.h' l='36' c='_ZN7WebCore13RadioNodeList6createERNS_13ContainerNodeERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/html/RadioNodeList.h' l='44' c='_ZN7WebCore13RadioNodeListC1ERNS_13ContainerNodeERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFormControlsCollection.h' l='40' c='_ZN7WebCore26HTMLFormControlsCollection6createERNS_13ContainerNodeENS_14CollectionTypeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFormControlsCollection.h' l='52' c='_ZN7WebCore26HTMLFormControlsCollectionC1ERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/page/IntersectionObserver.h' l='82' c='_ZNK7WebCore20IntersectionObserver4rootEv'/>
+<use f='WebKit/Source/WebCore/page/IntersectionObserver.h' l='112' c='_ZN7WebCore20IntersectionObserverC1ERNS_8DocumentEON3WTF3RefINS_28IntersectionObserverCallbackENS3_12RawPtrTraitsIS5_EEEEPNS_13ContainerNodeEONS_9Leng1225932'/>
+<use f='WebKit/Source/WebCore/page/IntersectionObserver.h' l='118'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/editing/markup.h' l='71' c='_ZN7WebCore27replaceChildrenWithFragmentERNS_13ContainerNodeEON3WTF3RefINS_16DocumentFragmentENS2_12RawPtrTraitsIS4_EEEE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/xml/XPathStep.cpp' l='263' c='_ZNK7WebCore5XPath4Step11nodesInAxisERNS_4NodeERNS0_7NodeSetE'/>
+<use f='WebKit/Source/WebCore/xml/XPathStep.cpp' l='325' c='_ZNK7WebCore5XPath4Step11nodesInAxisERNS_4NodeERNS0_7NodeSetE'/>
+<use f='WebKit/Source/WebCore/dom/TextNodeTraversal.h' l='40' c='_ZN7WebCore17TextNodeTraversal10firstChildERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/TextNodeTraversal.h' l='44' c='_ZN7WebCore17TextNodeTraversal11firstWithinERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/TextNodeTraversal.h' l='57' c='_ZN7WebCore17TextNodeTraversal16contentsAsStringERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/TextNodeTraversal.h' l='58' c='_ZN7WebCore17TextNodeTraversal14appendContentsERKNS_13ContainerNodeERN3WTF13StringBuilderE'/>
+<use f='WebKit/Source/WebCore/dom/TextNodeTraversal.h' l='59' c='_ZN7WebCore17TextNodeTraversal16childTextContentERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/TextNodeTraversal.h' l='74' c='_ZN7WebCore17TextNodeTraversal10firstChildERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/TextNodeTraversal.h' l='85' c='_ZN7WebCore17TextNodeTraversal11firstWithinERKNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/xml/parser/XMLDocumentParser.h' l='138' c='_ZN7WebCore17XMLDocumentParser15pushCurrentNodeEPNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/xml/parser/XMLDocumentParser.h' l='162'/>
+<use f='WebKit/Source/WebCore/xml/parser/XMLDocumentParser.h' l='163'/>
+<use f='WebKit/Source/WebCore/xml/parser/XMLDocumentParser.cpp' l='64' c='_ZN7WebCore17XMLDocumentParser15pushCurrentNodeEPNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/domjit/JSDocumentDOMJIT.cpp' l='108' c='_ZN7WebCore28compileDocumentBodyAttributeEv'/>
+<use f='WebKit/Source/WebCore/domjit/JSDocumentDOMJIT.cpp' l='194' c='_ZN7WebCore6DOMJIT26operationToJSContainerNodeEPN3JSC14JSGlobalObjectEPv'/>
+<use f='WebKit/Source/WebCore/domjit/JSNodeDOMJIT.cpp' l='85' c='_ZN7WebCore30compileNodeFirstChildAttributeEv'/>
+<use f='WebKit/Source/WebCore/domjit/JSNodeDOMJIT.cpp' l='92' c='_ZN7WebCore29compileNodeLastChildAttributeEv'/>
+<use f='WebKit/Source/WebCore/domjit/JSNodeDOMJIT.cpp' l='113' c='_ZN7WebCore30compileNodeParentNodeAttributeEv'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/ChildNodeList.h' l='61' c='_ZN7WebCore13ChildNodeList6createERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ChildNodeList.h' l='68' c='_ZN7WebCore13ChildNodeList9ownerNodeEv'/>
+<use f='WebKit/Source/WebCore/dom/ChildNodeList.h' l='81' c='_ZN7WebCore13ChildNodeListC1ERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ChildNodeList.h' l='95'/>
+<use f='WebKit/Source/WebCore/dom/TagCollection.h' l='35' c='_ZN7WebCore13TagCollection6createERNS_13ContainerNodeENS_14CollectionTypeERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/dom/TagCollection.h' l='45' c='_ZN7WebCore13TagCollectionC1ERNS_13ContainerNodeERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/dom/TagCollection.h' l='53' c='_ZN7WebCore15TagCollectionNS6createERNS_13ContainerNodeERKN3WTF10AtomStringES6_'/>
+<use f='WebKit/Source/WebCore/dom/TagCollection.h' l='62' c='_ZN7WebCore15TagCollectionNSC1ERNS_13ContainerNodeERKN3WTF10AtomStringES6_'/>
+<use f='WebKit/Source/WebCore/dom/TagCollection.h' l='71' c='_ZN7WebCore17HTMLTagCollection6createERNS_13ContainerNodeENS_14CollectionTypeERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/dom/TagCollection.h' l='81' c='_ZN7WebCore17HTMLTagCollectionC1ERNS_13ContainerNodeERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/dom/NodeRareData.h' l='54' c='_ZN7WebCore17NodeListsNodeData19ensureChildNodeListERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/NodeRareData.h' l='115' c='_ZN7WebCore17NodeListsNodeData24addCachedTagCollectionNSERNS_13ContainerNodeERKN3WTF10AtomStringES6_'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/bindings/js/JSLazyEventListener.h' l='62'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSLazyEventListener.cpp' l='48'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/editing/CompositeEditCommand.h' l='59' c='_ZNK7WebCore29AccessibilityUndoReplacedText23indexForVisiblePositionERKNS_15VisiblePositionERN3WTF6RefPtrINS_13ContainerNodeENS4_12RawPtrTraitsIS6_EEN9577640'/>
+<use f='WebKit/Source/WebCore/editing/CompositeEditCommand.h' l='142' c='_ZN7WebCore20CompositeEditCommand10appendNodeEON3WTF3RefINS_4NodeENS1_12RawPtrTraitsIS3_EEEEONS2_INS_13ContainerNodeENS4_IS8_EEEE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='48' c='_ZNK7WebCore16SelectorDataList8queryAllERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='49' c='_ZNK7WebCore16SelectorDataList10queryFirstERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='59' c='_ZNK7WebCore16SelectorDataList15selectorMatchesERKNS0_12SelectorDataERNS_7ElementERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='60' c='_ZNK7WebCore16SelectorDataList15selectorClosestERKNS0_12SelectorDataERNS_7ElementERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='62' c='_ZNK7WebCore16SelectorDataList7executeERNS_13ContainerNodeERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='63' c='_ZNK7WebCore16SelectorDataList28executeFastPathForIdSelectorERKNS_13ContainerNodeERKNS0_12SelectorDataEPKNS_11CSSSelectorERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='64' c='_ZNK7WebCore16SelectorDataList32executeSingleTagNameSelectorDataERKNS_13ContainerNodeERKNS0_12SelectorDataERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='65' c='_ZNK7WebCore16SelectorDataList34executeSingleClassNameSelectorDataERKNS_13ContainerNodeERKNS0_12SelectorDataERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='66' c='_ZNK7WebCore16SelectorDataList25executeSingleSelectorDataERKNS_13ContainerNodeES3_RKNS0_12SelectorDataERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='66' c='_ZNK7WebCore16SelectorDataList25executeSingleSelectorDataERKNS_13ContainerNodeES3_RKNS0_12SelectorDataERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='67' c='_ZNK7WebCore16SelectorDataList30executeSingleMultiSelectorDataERKNS_13ContainerNodeERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='69' c='_ZNK7WebCore16SelectorDataList36executeCompiledSimpleSelectorCheckerERKNS_13ContainerNodeET0_RNT_10OutputTypeERKNS0_12SelectorDataE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='70' c='_ZNK7WebCore16SelectorDataList49executeCompiledSelectorCheckerWithCheckingContextERKNS_13ContainerNodeES3_T0_RNT_10OutputTypeERKNS0_12SelectorDataE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='70' c='_ZNK7WebCore16SelectorDataList49executeCompiledSelectorCheckerWithCheckingContextERKNS_13ContainerNodeES3_T0_RNT_10OutputTypeERKNS0_12SelectorDataE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='71' c='_ZNK7WebCore16SelectorDataList38executeCompiledSingleMultiSelectorDataERKNS_13ContainerNodeERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='100' c='_ZNK7WebCore13SelectorQuery8queryAllERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='101' c='_ZNK7WebCore13SelectorQuery10queryFirstERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='126' c='_ZNK7WebCore13SelectorQuery8queryAllERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.h' l='131' c='_ZNK7WebCore13SelectorQuery10queryFirstERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/page/DOMWindow.cpp' l='594' c='_ZN7WebCore9DOMWindow33collectMatchingElementsInFlatTreeERNS_4NodeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/page/DOMWindow.cpp' l='600' c='_ZN7WebCore9DOMWindow33collectMatchingElementsInFlatTreeERNS_4NodeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/page/DOMWindow.cpp' l='614' c='_ZN7WebCore9DOMWindow25matchingElementInFlatTreeERNS_4NodeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/page/DOMWindow.cpp' l='619' c='_ZN7WebCore9DOMWindow25matchingElementInFlatTreeERNS_4NodeERKN3WTF6StringE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/page/DragController.cpp' l='1466' c='_ZN7WebCore14DragController37insertDroppedImagePlaceholdersAtCaretERKN3WTF6VectorINS_7IntSizeELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/page/DragController.cpp' l='1472' c='_ZN7WebCore14DragController37insertDroppedImagePlaceholdersAtCaretERKN3WTF6VectorINS_7IntSizeELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/page/EventHandler.cpp' l='2509' c='_ZN7WebCoreL35hierarchyHasCapturingEventListenersEPNS_7ElementERKN3WTF10AtomStringES5_'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/page/FocusController.cpp' l='115'/>
+<use f='WebKit/Source/WebCore/editing/ApplyStyleCommand.h' l='110' c='_ZN7WebCore17ApplyStyleCommand30cleanupUnstyledAppleStyleSpansEPNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/page/FrameView.cpp' l='2254' c='_ZN7WebCore9FrameView24scrollToFragmentInternalEN3WTF10StringViewE'/>
+<use f='WebKit/Source/WebCore/page/FrameView.cpp' l='2272' c='_ZN7WebCore9FrameView30maintainScrollPositionAtAnchorEPNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/page/FrameView.cpp' l='3191' c='_ZN7WebCore9FrameView14scrollToAnchorEv'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/page/IntersectionObserver.cpp' l='90' c='_ZN7WebCore20IntersectionObserver6createERNS_8DocumentEON3WTF3RefINS_28IntersectionObserverCallbackENS3_12RawPtrTraitsIS5_EEEEONS0_4InitE'/>
+<use f='WebKit/Source/WebCore/page/IntersectionObserver.cpp' l='119' c='_ZN7WebCore20IntersectionObserverC1ERNS_8DocumentEON3WTF3RefINS_28IntersectionObserverCallbackENS3_12RawPtrTraitsIS5_EEEEPNS_13ContainerNodeEONS_9Leng1225932'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/page/Page.cpp' l='846'/>
+<use f='WebKit/Source/WebCore/page/Page.cpp' l='852' c='_ZN7WebCoreL13replaceRangesERNS_4PageERKN3WTF6VectorINS_20FindReplacementRangeELm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEERKNS2_6StringE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/inspector/DOMPatchSupport.h' l='59' c='_ZN7WebCore15DOMPatchSupport18innerPatchChildrenERNS_13ContainerNodeERKN3WTF6VectorISt10unique_ptrINS0_6DigestESt14default_deleteIS6_EELm0ENS3_15Crash5336205'/>
+<use f='WebKit/Source/WebCore/inspector/DOMPatchSupport.h' l='61' c='_ZN7WebCore15DOMPatchSupport25insertBeforeAndMarkAsUsedERNS_13ContainerNodeERNS0_6DigestEPNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/inspector/DOMPatchSupport.cpp' l='287' c='_ZN7WebCore15DOMPatchSupport18innerPatchChildrenERNS_13ContainerNodeERKN3WTF6VectorISt10unique_ptrINS0_6DigestESt14default_deleteIS6_EELm0ENS3_15Crash5336205'/>
+<use f='WebKit/Source/WebCore/inspector/DOMPatchSupport.cpp' l='446' c='_ZN7WebCore15DOMPatchSupport25insertBeforeAndMarkAsUsedERNS_13ContainerNodeERNS0_6DigestEPNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorAuditAccessibilityObject.cpp' l='71' c='_ZN7WebCore33InspectorAuditAccessibilityObject25getElementsByComputedRoleERNS_8DocumentERKN3WTF6StringEPNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorAuditAccessibilityObject.cpp' l='71' c='_ZN7WebCore33InspectorAuditAccessibilityObject25getElementsByComputedRoleERNS_8DocumentERKN3WTF6StringEPNS_4NodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/inspector/InspectorNodeFinder.cpp' l='189' c='_ZN7WebCore19InspectorNodeFinder23searchUsingCSSSelectorsERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorNodeFinder.cpp' l='192' c='_ZN7WebCore19InspectorNodeFinder23searchUsingCSSSelectorsERNS_4NodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorCSSAgent.cpp' l='784' c='_ZN7WebCore17InspectorCSSAgent36createInspectorStyleSheetForDocumentERNS_8DocumentE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorCSSAgent.cpp' l='944' c='_ZN7WebCoreL53pushChildrenNodesToFrontendIfLayoutContextTypePresentERNS_17InspectorDOMAgentERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorDOMAgent.cpp' l='597' c='_ZN7WebCore17InspectorDOMAgent13querySelectorEiRKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorDOMAgent.cpp' l='600' c='_ZN7WebCore17InspectorDOMAgent13querySelectorEiRKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorDOMAgent.cpp' l='618' c='_ZN7WebCore17InspectorDOMAgent16querySelectorAllEiRKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorDOMAgent.cpp' l='621' c='_ZN7WebCore17InspectorDOMAgent16querySelectorAllEiRKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorDOMAgent.cpp' l='769' c='_ZN7WebCore17InspectorDOMAgent10removeNodeEi'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorDOMAgent.cpp' l='804' c='_ZN7WebCore17InspectorDOMAgent11setNodeNameEiRKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorDOMAgent.cpp' l='2423' c='_ZN7WebCore17InspectorDOMAgent16didInsertDOMNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorDOMAgent.cpp' l='2447' c='_ZN7WebCore17InspectorDOMAgent16didRemoveDOMNodeERNS_4NodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGMPathElement.cpp' l='79' c='_ZN7WebCore15SVGMPathElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGMPathElement.cpp' l='92' c='_ZN7WebCore15SVGMPathElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGMPathElement.cpp' l='130' c='_ZN7WebCore15SVGMPathElement24notifyParentOfPathChangeEPNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGPathElement.cpp' l='92' c='_ZN7WebCore14SVGPathElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGPathElement.cpp' l='99' c='_ZN7WebCore14SVGPathElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGSVGElement.cpp' l='398' c='_ZN7WebCore13SVGSVGElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGSVGElement.cpp' l='414' c='_ZN7WebCore13SVGSVGElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGScriptElement.cpp' l='65' c='_ZN7WebCore16SVGScriptElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGStyleElement.cpp' l='119' c='_ZN7WebCore15SVGStyleElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGStyleElement.cpp' l='127' c='_ZN7WebCore15SVGStyleElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGTRefElement.cpp' l='251' c='_ZN7WebCore14SVGTRefElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGTRefElement.cpp' l='264' c='_ZN7WebCore14SVGTRefElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGTextPathElement.cpp' l='156' c='_ZN7WebCore18SVGTextPathElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGTextPathElement.cpp' l='167' c='_ZN7WebCore18SVGTextPathElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGTitleElement.cpp' l='44' c='_ZN7WebCore15SVGTitleElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGTitleElement.cpp' l='51' c='_ZN7WebCore15SVGTitleElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGUseElement.cpp' l='97' c='_ZN7WebCore13SVGUseElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGUseElement.cpp' l='115' c='_ZN7WebCore13SVGUseElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGUseElement.cpp' l='436' c='_ZNK7WebCore13SVGUseElement11cloneTargetERNS_13ContainerNodeERNS_10SVGElementE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/animation/SVGSMILElement.cpp' l='258' c='_ZN7WebCore14SVGSMILElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/animation/SVGSMILElement.cpp' l='294' c='_ZN7WebCore14SVGSMILElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGElement.cpp' l='240' c='_ZN7WebCore10SVGElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGElement.cpp' l='266' c='_ZNK7WebCore10SVGElement15ownerSVGElementEv'/>
+<use f='WebKit/Source/WebCore/svg/SVGElement.cpp' l='281' c='_ZNK7WebCore10SVGElement15viewportElementEv'/>
+<use f='WebKit/Source/WebCore/svg/SVGElement.cpp' l='864' c='_ZN7WebCore10SVGElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGFEImageElement.cpp' l='142' c='_ZN7WebCore17SVGFEImageElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGFEImageElement.cpp' l='153' c='_ZN7WebCore17SVGFEImageElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGFontFaceElement.cpp' l='299' c='_ZN7WebCore18SVGFontFaceElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGFontFaceElement.cpp' l='312' c='_ZN7WebCore18SVGFontFaceElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGFontFaceUriElement.cpp' l='85' c='_ZN7WebCore21SVGFontFaceUriElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/svg/SVGImageElement.cpp' l='147' c='_ZN7WebCore15SVGImageElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/svg/SVGLengthContext.cpp' l='227' c='_ZN7WebCoreL29renderStyleForLengthResolvingEPKNS_10SVGElementE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/GenericCachedHTMLCollection.h' l='37' c='_ZN7WebCore27GenericCachedHTMLCollection6createERNS_13ContainerNodeENS_14CollectionTypeE'/>
+<use f='WebKit/Source/WebCore/html/GenericCachedHTMLCollection.h' l='45' c='_ZN7WebCore27GenericCachedHTMLCollectionC1ERNS_13ContainerNodeENS_14CollectionTypeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMapElement.cpp' l='118' c='_ZN7WebCore14HTMLMapElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMapElement.cpp' l='126' c='_ZN7WebCore14HTMLMapElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='775' c='_ZN7WebCore16HTMLMediaElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='831' c='_ZN7WebCore16HTMLMediaElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMenuElement.cpp' l='48' c='_ZN7WebCore15HTMLMenuElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMenuElement.cpp' l='58' c='_ZN7WebCore15HTMLMenuElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMenuItemElement.cpp' l='49' c='_ZN7WebCore19HTMLMenuItemElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMenuItemElement.cpp' l='61' c='_ZN7WebCore19HTMLMenuItemElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMetaElement.cpp' l='132' c='_ZN7WebCore15HTMLMetaElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMetaElement.cpp' l='145' c='_ZN7WebCore15HTMLMetaElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLObjectElement.cpp' l='293' c='_ZN7WebCore17HTMLObjectElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLObjectElement.cpp' l='305' c='_ZN7WebCore17HTMLObjectElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLOptionElement.cpp' l='288' c='_ZNK7WebCore17HTMLOptionElement31textIndentedToRespectGroupLabelEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLOptionElement.cpp' l='305' c='_ZN7WebCore17HTMLOptionElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLScriptElement.cpp' l='75' c='_ZN7WebCore17HTMLScriptElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLSelectElement.cpp' l='1584' c='_ZN7WebCore17HTMLSelectElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLSlotElement.cpp' l='55' c='_ZN7WebCore15HTMLSlotElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLSlotElement.cpp' l='70' c='_ZN7WebCore15HTMLSlotElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLSourceElement.cpp' l='74' c='_ZN7WebCore17HTMLSourceElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLSourceElement.cpp' l='103' c='_ZN7WebCore17HTMLSourceElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLStyleElement.cpp' l='102' c='_ZN7WebCore16HTMLStyleElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLStyleElement.cpp' l='110' c='_ZN7WebCore16HTMLStyleElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/SlotAssignment.h' l='55' c='_ZN7WebCore14SlotAssignment23removeSlotElementByNameERKN3WTF10AtomStringERNS_15HTMLSlotElementEPNS_13ContainerNodeERNS_10ShadowRootE'/>
+<use f='WebKit/Source/WebCore/dom/SlotAssignment.h' l='86' c='_ZN7WebCore14SlotAssignment29resolveSlotsAfterSlotMutationERNS_10ShadowRootENS0_16SlotMutationTypeEPNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/SlotAssignment.h' l='116' c='_ZN7WebCore10ShadowRoot21willRemoveAllChildrenERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLTableElement.cpp' l='212' c='_ZN7WebCore16HTMLTableElement9insertRowEi'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLTextFormControlElement.cpp' l='86' c='_ZN7WebCore26HTMLTextFormControlElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLTitleElement.cpp' l='56' c='_ZN7WebCore16HTMLTitleElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLTitleElement.cpp' l='63' c='_ZN7WebCore16HTMLTitleElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLTrackElement.cpp' l='84' c='_ZN7WebCore16HTMLTrackElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLTrackElement.cpp' l='96' c='_ZN7WebCore16HTMLTrackElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/MediaDocument.cpp' l='160' c='_ZN7WebCoreL22descendantVideoElementERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/MediaDocument.cpp' l='199' c='_ZN7WebCore13MediaDocument19defaultEventHandlerERNS_5EventE'/>
+<use f='WebKit/Source/WebCore/html/MediaDocument.cpp' l='201' c='_ZN7WebCore13MediaDocument19defaultEventHandlerERNS_5EventE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/RadioNodeList.cpp' l='42' c='_ZN7WebCore13RadioNodeListC1ERNS_13ContainerNodeERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/html/RadioNodeList.cpp' l='49' c='_ZN7WebCore13RadioNodeList6createERNS_13ContainerNodeERKN3WTF10AtomStringE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/parser/HTMLStackItem.h' l='51' c='_ZNK7WebCore13HTMLStackItem4nodeEv'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLStackItem.h' l='69'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLStackItem.h' l='128' c='_ZNK7WebCore13HTMLStackItem4nodeEv'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLElementStack.h' l='55' c='_ZNK7WebCore16HTMLElementStack13ElementRecord4nodeEv'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLElementStack.h' l='85' c='_ZNK7WebCore16HTMLElementStack7topNodeEv'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLElementStack.h' l='155' c='_ZNK7WebCore16HTMLElementStack8rootNodeEv'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLElementStack.h' l='174'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLConstructionSite.h' l='53' c='_ZN7WebCore24HTMLConstructionSiteTask9oldParentEv'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLConstructionSite.h' l='58' c='_ZN7WebCore24HTMLConstructionSiteTask9oldParentEv'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLConstructionSite.h' l='62'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLConstructionSite.h' l='143' c='_ZNK7WebCore20HTMLConstructionSite11currentNodeEv'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLConstructionSite.h' l='185' c='_ZN7WebCore20HTMLConstructionSite11attachLaterERNS_13ContainerNodeEON3WTF3RefINS_4NodeENS3_12RawPtrTraitsIS5_EEEEb'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLConstructionSite.h' l='201'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLConstructionSite.cpp' l='84' c='_ZN7WebCoreL20shouldUseLengthLimitERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLConstructionSite.cpp' l='147' c='_ZN7WebCoreL35executeInsertAlreadyParsedChildTaskERNS_24HTMLConstructionSiteTaskE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLConstructionSite.cpp' l='191' c='_ZN7WebCore20HTMLConstructionSite11attachLaterERNS_13ContainerNodeEON3WTF3RefINS_4NodeENS3_12RawPtrTraitsIS5_EEEEb'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLConstructionSite.cpp' l='461' c='_ZN7WebCore20HTMLConstructionSite30insertCommentOnHTMLHtmlElementEONS_13AtomHTMLTokenE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLElementStack.cpp' l='525' c='_ZNK7WebCore16HTMLElementStack8rootNodeEv'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/shadow/TextPlaceholderElement.cpp' l='53' c='_ZN7WebCore22TextPlaceholderElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/shadow/TextPlaceholderElement.cpp' l='62' c='_ZN7WebCore22TextPlaceholderElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/track/TextTrackCue.cpp' l='148' c='_ZN7WebCoreL24checkForInvalidNodeTypesERNS_4NodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/track/VTTCue.cpp' l='618' c='_ZN7WebCoreL23copyWebVTTNodeToDOMTreeERNS_13ContainerNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/html/track/VTTCue.cpp' l='627' c='_ZN7WebCoreL23copyWebVTTNodeToDOMTreeERNS_13ContainerNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/html/track/VTTCue.cpp' l='628' c='_ZN7WebCoreL23copyWebVTTNodeToDOMTreeERNS_13ContainerNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/html/track/VTTCue.cpp' l='936' c='_ZN7WebCore6VTTCue22markFutureAndPastNodesEPNS_13ContainerNodeERKN3WTF9MediaTimeES6_'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/track/WebVTTParser.cpp' l='507'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/FormAssociatedElement.cpp' l='71' c='_ZN7WebCore21FormAssociatedElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/FormAssociatedElement.cpp' l='91' c='_ZN7WebCore21FormAssociatedElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLBaseElement.cpp' l='57' c='_ZN7WebCore15HTMLBaseElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLBaseElement.cpp' l='65' c='_ZN7WebCore15HTMLBaseElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLBodyElement.cpp' l='184' c='_ZN7WebCore15HTMLBodyElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLCanvasElement.cpp' l='1072' c='_ZN7WebCore17HTMLCanvasElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLCanvasElement.cpp' l='1086' c='_ZN7WebCore17HTMLCanvasElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLCollection.cpp' l='114' c='_ZN7WebCore14HTMLCollectionC1ERNS_13ContainerNodeENS_14CollectionTypeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLElement.cpp' l='594' c='_ZN7WebCore11HTMLElement12setOuterTextERKN3WTF6StringE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLEmbedElement.cpp' l='196' c='_ZN7WebCore16HTMLEmbedElement16rendererIsNeededERKNS_11RenderStyleE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFormControlElement.cpp' l='274' c='_ZN7WebCoreL45addInvalidElementToAncestorFromInsertionPointERKNS_22HTMLFormControlElementEPNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFormControlElement.cpp' l='283' c='_ZN7WebCoreL48removeInvalidElementToAncestorFromInsertionPointERKNS_22HTMLFormControlElementEPNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFormControlElement.cpp' l='292' c='_ZN7WebCore22HTMLFormControlElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFormControlElement.cpp' l='312' c='_ZN7WebCore22HTMLFormControlElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFormControlElementWithState.cpp' l='44' c='_ZN7WebCore31HTMLFormControlElementWithState20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFormControlElementWithState.cpp' l='51' c='_ZN7WebCore31HTMLFormControlElementWithState19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFormControlsCollection.cpp' l='42' c='_ZN7WebCore26HTMLFormControlsCollectionC1ERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFormControlsCollection.cpp' l='50' c='_ZN7WebCore26HTMLFormControlsCollection6createERNS_13ContainerNodeENS_14CollectionTypeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFormElement.cpp' l='140' c='_ZN7WebCore15HTMLFormElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFormElement.cpp' l='148' c='_ZN7WebCore15HTMLFormElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLFrameElementBase.cpp' l='123' c='_ZN7WebCore20HTMLFrameElementBase20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFrameOwnerElement.cpp' l='61' c='_ZN7WebCore21HTMLFrameOwnerElement15setContentFrameERNS_5FrameE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFrameOwnerElement.cpp' l='72' c='_ZN7WebCore21HTMLFrameOwnerElement17clearContentFrameEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLFrameOwnerElement.cpp' l='146' c='_ZN7WebCore23SubframeLoadingDisabler12canLoadFrameERNS_21HTMLFrameOwnerElementE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFrameSetElement.cpp' l='215' c='_ZN7WebCore19HTMLFrameSetElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLFrameSetElement.cpp' l='221' c='_ZN7WebCore19HTMLFrameSetElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/html/HTMLImageElement.cpp' l='391' c='_ZN7WebCore16HTMLImageElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLImageElement.cpp' l='433' c='_ZN7WebCore16HTMLImageElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLInputElement.cpp' l='1572' c='_ZN7WebCore16HTMLInputElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLInputElement.cpp' l='1592' c='_ZN7WebCore16HTMLInputElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLLinkElement.cpp' l='369' c='_ZN7WebCore15HTMLLinkElement20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/html/HTMLLinkElement.cpp' l='386' c='_ZN7WebCore15HTMLLinkElement19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/accessibility/AccessibilityNodeObject.cpp' l='1263' c='_ZN7WebCoreL19siblingWithAriaRoleEPNS_4NodeEPKc'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/LiveNodeList.cpp' l='28' c='_ZN7WebCore12LiveNodeListC1ERNS_13ContainerNodeENS_24NodeListInvalidationTypeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/MutationRecord.cpp' l='55' c='_ZN7WebCore12_GLOBAL__N_115ChildListRecordC1ERNS_13ContainerNodeEON3WTF3RefINS_8NodeListENS4_12RawPtrTraitsIS6_EEEESA_ONS4_6RefPtrINS_4NodeENS7_ISC_EE12661537'/>
+<use f='WebKit/Source/WebCore/dom/MutationRecord.cpp' l='81'/>
+<use f='WebKit/Source/WebCore/dom/MutationRecord.cpp' l='196' c='_ZN7WebCore14MutationRecord15createChildListERNS_13ContainerNodeEON3WTF3RefINS_8NodeListENS3_12RawPtrTraitsIS5_EEEES9_ONS3_6RefPtrINS_4NodeENS6_ISB_EE8925461'/>
+<use f='WebKit/Source/WebCore/dom/NameNodeList.h' l='33' c='_ZN7WebCore12NameNodeList6createERNS_13ContainerNodeERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/dom/NameNodeList.h' l='40' c='_ZN7WebCore12NameNodeListC1ERNS_13ContainerNodeERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/dom/NameNodeList.cpp' l='35' c='_ZN7WebCore12NameNodeListC1ERNS_13ContainerNodeERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/dom/NameNodeList.cpp' l='41' c='_ZN7WebCore12NameNodeList6createERNS_13ContainerNodeERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/dom/ChildListMutationScope.h' l='47' c='_ZN7WebCore28ChildListMutationAccumulator11getOrCreateERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ChildListMutationScope.h' l='56' c='_ZN7WebCore28ChildListMutationAccumulatorC1ERNS_13ContainerNodeESt10unique_ptrINS_29MutationObserverInterestGroupESt14default_deleteIS4_EE'/>
+<use f='WebKit/Source/WebCore/dom/ChildListMutationScope.h' l='63'/>
+<use f='WebKit/Source/WebCore/dom/ChildListMutationScope.h' l='77' c='_ZN7WebCore22ChildListMutationScopeC1ERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.h' l='60' c='_ZN7WebCore26ContainerChildRemovalScopeC1ERNS_13ContainerNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.h' l='64' c='_ZN7WebCore23notifyChildNodeInsertedERNS_13ContainerNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.h' l='69' c='_ZN7WebCore22notifyChildNodeRemovedERNS_13ContainerNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.h' l='70' c='_ZN7WebCore33removeDetachedChildrenInContainerERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.h' l='76' c='_ZN7WebCore19disconnectSubframesERNS_13ContainerNodeENS_24SubframeDisconnectPolicyE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.h' l='78' c='_ZN7WebCore27disconnectSubframesIfNeededERNS_13ContainerNodeENS_24SubframeDisconnectPolicyE'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='455' c='_ZN7WebCore4Node10childNodesEv'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='456' c='_ZN7WebCore4Node10childNodesEv'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='488' c='_ZN7WebCore4Node12insertBeforeERS0_PS0_'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='490' c='_ZN7WebCore4Node12insertBeforeERS0_PS0_'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='495' c='_ZN7WebCore4Node12replaceChildERS0_S1_'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='497' c='_ZN7WebCore4Node12replaceChildERS0_S1_'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='502' c='_ZN7WebCore4Node11removeChildERS0_'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='504' c='_ZN7WebCore4Node11removeChildERS0_'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='509' c='_ZN7WebCore4Node11appendChildERS0_'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='511' c='_ZN7WebCore4Node11appendChildERS0_'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='572' c='_ZN7WebCore4Node6beforeEON3WTF6VectorINS1_7VariantIJNS1_6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEENS1_6StringEEEELm0ENS1_115301340'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='596' c='_ZN7WebCore4Node5afterEON3WTF6VectorINS1_7VariantIJNS1_6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEENS1_6StringEEEELm0ENS1_1511929407'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='615' c='_ZN7WebCore4Node11replaceWithEON3WTF6VectorINS1_7VariantIJNS1_6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEENS1_6StringEEEELm011224817'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='1148' c='_ZNK7WebCore4Node20containingShadowRootEv'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='1209' c='_ZNK7WebCore4Node20parentInComposedTreeEv'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='1255' c='_ZNK7WebCore4Node27nonShadowBoundaryParentNodeEv'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='1257' c='_ZNK7WebCore4Node27nonShadowBoundaryParentNodeEv'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='1263' c='_ZNK7WebCore4Node25parentOrShadowHostElementEv'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='1300' c='_ZN7WebCore4Node20insertedIntoAncestorENS0_13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='1312' c='_ZN7WebCore4Node19removedFromAncestorENS0_11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='1595' c='_ZN7WebCore4Node14setTextContentERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='2620' c='_ZN7WebCore6parentERKNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='2625' c='_ZN7WebCore6parentERKNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/Node.cpp' l='2630' c='_ZN7WebCore6parentERKNS_4NodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/NodeTraversal.cpp' l='106' c='_ZN7WebCore13NodeTraversal4lastERKNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/Position.cpp' l='375' c='_ZNK7WebCore8Position8previousENS_16PositionMoveTypeE'/>
+<use f='WebKit/Source/WebCore/dom/Position.cpp' l='423' c='_ZNK7WebCore8Position4nextENS_16PositionMoveTypeE'/>
+<use f='WebKit/Source/WebCore/dom/ProcessingInstruction.cpp' l='277' c='_ZN7WebCore21ProcessingInstruction20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ProcessingInstruction.cpp' l='291' c='_ZN7WebCore21ProcessingInstruction19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/Range.cpp' l='545' c='_ZN7WebCoreL32processAncestorsAndTheirSiblingsENS_5Range10ActionTypeEPNS_4NodeENS_24ContentsProcessDirectionEONS_11ExceptionOrIN3WTF6RefPtrIS2_NS6_12R14772020'/>
+<use f='WebKit/Source/WebCore/dom/Range.cpp' l='546' c='_ZN7WebCoreL32processAncestorsAndTheirSiblingsENS_5Range10ActionTypeEPNS_4NodeENS_24ContentsProcessDirectionEONS_11ExceptionOrIN3WTF6RefPtrIS2_NS6_12R14772020'/>
+<use f='WebKit/Source/WebCore/dom/Range.cpp' l='639' c='_ZN7WebCore5Range10insertNodeEON3WTF3RefINS_4NodeENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/dom/Range.cpp' l='642' c='_ZN7WebCore5Range10insertNodeEON3WTF3RefINS_4NodeENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/dom/Range.cpp' l='642' c='_ZN7WebCore5Range10insertNodeEON3WTF3RefINS_4NodeENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/dom/Range.cpp' l='827' c='_ZN7WebCore5Range16surroundContentsERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/Range.cpp' l='858' c='_ZN7WebCoreL27boundaryNodeChildrenChangedERNS_18RangeBoundaryPointERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Range.cpp' l='864' c='_ZN7WebCore5Range19nodeChildrenChangedERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Range.cpp' l='871' c='_ZN7WebCoreL33boundaryNodeChildrenWillBeRemovedERNS_18RangeBoundaryPointERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Range.cpp' l='877' c='_ZN7WebCore5Range25nodeChildrenWillBeRemovedERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='122' c='_ZNK7WebCore16SelectorDataList15selectorMatchesERKNS0_12SelectorDataERNS_7ElementERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='130' c='_ZNK7WebCore16SelectorDataList15selectorClosestERKNS0_12SelectorDataERNS_7ElementERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='166' c='_ZNK7WebCore16SelectorDataList8queryAllERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='184' c='_ZNK7WebCore16SelectorDataList10queryFirstERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='191' c='_ZN7WebCoreL19selectorForIdLookupERKNS_13ContainerNodeERKNS_11CSSSelectorE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='208' c='_ZN7WebCoreL15isTreeScopeRootERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='214' c='_ZNK7WebCore16SelectorDataList28executeFastPathForIdSelectorERKNS_13ContainerNodeERKNS0_12SelectorDataEPKNS_11CSSSelectorERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='241' c='_ZN7WebCoreL14filterRootByIdERNS_13ContainerNodeERKNS_11CSSSelectorE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='241' c='_ZN7WebCoreL14filterRootByIdERNS_13ContainerNodeERKNS_11CSSSelectorE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='262' c='_ZN7WebCoreL14filterRootByIdERNS_13ContainerNodeERKNS_11CSSSelectorE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='290' c='_ZN7WebCoreL20elementsForLocalNameERKNS_13ContainerNodeERKN3WTF10AtomStringES6_RNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='293' c='_ZN7WebCoreL20elementsForLocalNameERKNS_13ContainerNodeERKN3WTF10AtomStringES6_RNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='301' c='_ZN7WebCoreL20elementsForLocalNameERKNS_13ContainerNodeERKN3WTF10AtomStringES6_RNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='312' c='_ZN7WebCoreL10anyElementERKNS_13ContainerNodeERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='314' c='_ZN7WebCoreL10anyElementERKNS_13ContainerNodeERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='323' c='_ZNK7WebCore16SelectorDataList32executeSingleTagNameSelectorDataERKNS_13ContainerNodeERKNS0_12SelectorDataERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='343' c='_ZNK7WebCore16SelectorDataList32executeSingleTagNameSelectorDataERKNS_13ContainerNodeERKNS0_12SelectorDataERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='354' c='_ZNK7WebCore16SelectorDataList34executeSingleClassNameSelectorDataERKNS_13ContainerNodeERKNS0_12SelectorDataERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='360' c='_ZNK7WebCore16SelectorDataList34executeSingleClassNameSelectorDataERKNS_13ContainerNodeERKNS0_12SelectorDataERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='370' c='_ZNK7WebCore16SelectorDataList25executeSingleSelectorDataERKNS_13ContainerNodeES3_RKNS0_12SelectorDataERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='370' c='_ZNK7WebCore16SelectorDataList25executeSingleSelectorDataERKNS_13ContainerNodeES3_RKNS0_12SelectorDataERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='374' c='_ZNK7WebCore16SelectorDataList25executeSingleSelectorDataERKNS_13ContainerNodeES3_RKNS0_12SelectorDataERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='384' c='_ZNK7WebCore16SelectorDataList30executeSingleMultiSelectorDataERKNS_13ContainerNodeERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='386' c='_ZNK7WebCore16SelectorDataList30executeSingleMultiSelectorDataERKNS_13ContainerNodeERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='400' c='_ZNK7WebCore16SelectorDataList36executeCompiledSimpleSelectorCheckerERKNS_13ContainerNodeET0_RNT_10OutputTypeERKNS0_12SelectorDataE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='402' c='_ZNK7WebCore16SelectorDataList36executeCompiledSimpleSelectorCheckerERKNS_13ContainerNodeET0_RNT_10OutputTypeERKNS0_12SelectorDataE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='414' c='_ZNK7WebCore16SelectorDataList49executeCompiledSelectorCheckerWithCheckingContextERKNS_13ContainerNodeES3_T0_RNT_10OutputTypeERKNS0_12SelectorDataE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='414' c='_ZNK7WebCore16SelectorDataList49executeCompiledSelectorCheckerWithCheckingContextERKNS_13ContainerNodeES3_T0_RNT_10OutputTypeERKNS0_12SelectorDataE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='419' c='_ZNK7WebCore16SelectorDataList49executeCompiledSelectorCheckerWithCheckingContextERKNS_13ContainerNodeES3_T0_RNT_10OutputTypeERKNS0_12SelectorDataE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='431' c='_ZNK7WebCore16SelectorDataList38executeCompiledSingleMultiSelectorDataERKNS_13ContainerNodeERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='435' c='_ZNK7WebCore16SelectorDataList38executeCompiledSingleMultiSelectorDataERKNS_13ContainerNodeERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='469' c='_ZNK7WebCore16SelectorDataList7executeERNS_13ContainerNodeERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/SelectorQuery.cpp' l='471' c='_ZNK7WebCore16SelectorDataList7executeERNS_13ContainerNodeERNT_10OutputTypeE'/>
+<use f='WebKit/Source/WebCore/dom/ShadowRoot.cpp' l='110' c='_ZN7WebCore10ShadowRoot20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ShadowRoot.cpp' l='118' c='_ZN7WebCore10ShadowRoot19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ShadowRoot.cpp' l='247' c='_ZN7WebCore10ShadowRoot23removeSlotElementByNameERKN3WTF10AtomStringERNS_15HTMLSlotElementERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/SlotAssignment.cpp' l='62' c='_ZN7WebCoreL30nextSlotElementSkippingSubtreeERNS_13ContainerNodeEPS0_'/>
+<use f='WebKit/Source/WebCore/dom/SlotAssignment.cpp' l='62' c='_ZN7WebCoreL30nextSlotElementSkippingSubtreeERNS_13ContainerNodeEPS0_'/>
+<use f='WebKit/Source/WebCore/dom/SlotAssignment.cpp' l='150' c='_ZN7WebCore14SlotAssignment23removeSlotElementByNameERKN3WTF10AtomStringERNS_15HTMLSlotElementEPNS_13ContainerNodeERNS_10ShadowRootE'/>
+<use f='WebKit/Source/WebCore/dom/SlotAssignment.cpp' l='203' c='_ZN7WebCore14SlotAssignment29resolveSlotsAfterSlotMutationERNS_10ShadowRootENS0_16SlotMutationTypeEPNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/StaticRange.cpp' l='57' c='_ZN7WebCoreL20isDocumentTypeOrAttrERNS_4NodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/TagCollection.cpp' l='36' c='_ZN7WebCore15TagCollectionNSC1ERNS_13ContainerNodeERKN3WTF10AtomStringES6_'/>
+<use f='WebKit/Source/WebCore/dom/TagCollection.cpp' l='49' c='_ZN7WebCore13TagCollectionC1ERNS_13ContainerNodeERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/dom/TagCollection.cpp' l='61' c='_ZN7WebCore17HTMLTagCollectionC1ERNS_13ContainerNodeERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/dom/Text.cpp' l='128' c='_ZN7WebCore4Text16replaceWholeTextERKN3WTF6StringE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/BoundaryPoint.cpp' l='52' c='_ZN7WebCoreL19isOffsetBeforeChildERNS_13ContainerNodeEjRNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ChildListMutationScope.cpp' l='42'/>
+<use f='WebKit/Source/WebCore/dom/ChildListMutationScope.cpp' l='49' c='_ZN7WebCore28ChildListMutationAccumulatorC1ERNS_13ContainerNodeESt10unique_ptrINS_29MutationObserverInterestGroupESt14default_deleteIS4_EE'/>
+<use f='WebKit/Source/WebCore/dom/ChildListMutationScope.cpp' l='63' c='_ZN7WebCore28ChildListMutationAccumulator11getOrCreateERNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/TextNodeTraversal.cpp' l='35' c='_ZN7WebCore17TextNodeTraversal14appendContentsERKNS_13ContainerNodeERN3WTF13StringBuilderE'/>
+<use f='WebKit/Source/WebCore/dom/TextNodeTraversal.cpp' l='41' c='_ZN7WebCore17TextNodeTraversal16contentsAsStringERKNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/TextNodeTraversal.cpp' l='52' c='_ZN7WebCore17TextNodeTraversal16contentsAsStringERKNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/TextNodeTraversal.cpp' l='53' c='_ZN7WebCore17TextNodeTraversal16contentsAsStringERKNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/TextNodeTraversal.cpp' l='57' c='_ZN7WebCore17TextNodeTraversal16childTextContentERKNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/TreeWalker.cpp' l='96' c='_ZN7WebCore10TreeWalker10firstChildEv'/>
+<use f='WebKit/Source/WebCore/dom/TreeWalker.cpp' l='130' c='_ZN7WebCore10TreeWalker9lastChildEv'/>
+<use f='WebKit/Source/WebCore/dom/TreeWalker.cpp' l='216' c='_ZN7WebCore10TreeWalker12previousNodeEv'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/ChildNodeList.cpp' l='40' c='_ZN7WebCore13ChildNodeListC1ERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ClassCollection.h' l='41' c='_ZN7WebCore15ClassCollection6createERNS_13ContainerNodeENS_14CollectionTypeERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/dom/ClassCollection.h' l='48' c='_ZN7WebCore15ClassCollectionC1ERNS_13ContainerNodeENS_14CollectionTypeERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/dom/ClassCollection.h' l='54' c='_ZN7WebCore15ClassCollectionC1ERNS_13ContainerNodeENS_14CollectionTypeERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/dom/ClassCollection.cpp' l='41' c='_ZN7WebCore15ClassCollection6createERNS_13ContainerNodeENS_14CollectionTypeERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.cpp' l='38' c='_ZN7WebCore20ComposedTreeIterator7ContextC1ERNS_13ContainerNodeENS0_13FirstChildTagE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.cpp' l='43' c='_ZN7WebCore20ComposedTreeIterator7ContextC1ERNS_13ContainerNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.cpp' l='48' c='_ZN7WebCore20ComposedTreeIterator7ContextC1ERNS_13ContainerNodeERNS_4NodeENS1_10SlottedTagE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.cpp' l='55' c='_ZN7WebCore20ComposedTreeIteratorC1ERNS_13ContainerNodeENS0_13FirstChildTagE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.cpp' l='76' c='_ZN7WebCore20ComposedTreeIteratorC1ERNS_13ContainerNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.cpp' l='89' c='_ZN7WebCore20ComposedTreeIterator22initializeContextStackERNS_13ContainerNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ComposedTreeIterator.cpp' l='220' c='_ZN7WebCore18composedTreeAsTextERNS_13ContainerNodeENS_22ComposedTreeAsTextModeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='69' c='_ZN7WebCore13ContainerNode8bisoHeapEv'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='69' c='_ZN7WebCore13ContainerNode8bisoHeapEv'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='69' c='_ZN7WebCore13ContainerNodenwEm'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='158' c='_ZN7WebCore13ContainerNode29removeNodeWithScriptAssertionERNS_4NodeENS0_11ChildChange6SourceE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='159' c='_ZN7WebCore13ContainerNode29removeNodeWithScriptAssertionERNS_4NodeENS0_11ChildChange6SourceE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='208' c='_ZN7WebCoreL39executeNodeInsertionWithScriptAssertionERNS_13ContainerNodeERNS_4NodeENS0_11ChildChange6SourceENS_19ReplacedAllChildrenET_'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='297' c='_ZN7WebCore13ContainerNode19takeAllChildrenFromEPS0_'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='319' c='_ZN7WebCoreL18isChildTypeAllowedERNS_13ContainerNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='337' c='_ZN7WebCoreL29containsIncludingHostElementsERKNS_4NodeES2_'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='351' c='_ZN7WebCoreL16checkAcceptChildERNS_13ContainerNodeERNS_4NodeEPKS2_NS_8Document20AcceptChildOperationENS_25ShouldValidateChildParentE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='382' c='_ZN7WebCoreL35checkAcceptChildGuaranteedNodeTypesERNS_13ContainerNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='398' c='_ZN7WebCoreL27checkPreReplacementValidityERNS_13ContainerNodeERNS_4NodeES3_NS_25ShouldValidateChildParentE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='421' c='_ZN7WebCore13ContainerNode12insertBeforeERNS_4NodeEPS1_'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='526' c='_ZN7WebCore13ContainerNode12replaceChildERNS_4NodeES2_'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='608' c='_ZN7WebCore13ContainerNode11removeChildERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='681' c='_ZN7WebCore13ContainerNode10replaceAllEPNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='714' c='_ZN7WebCore13ContainerNode14removeChildrenEv'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='737' c='_ZN7WebCore13ContainerNode43appendChildWithoutPreInsertionValidityCheckERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='836' c='_ZN7WebCore13ContainerNode15cloneChildNodesERS0_'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='841' c='_ZN7WebCore13ContainerNode15cloneChildNodesERS0_'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='842' c='_ZN7WebCore13ContainerNode15cloneChildNodesERS0_'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNode.cpp' l='842' c='_ZN7WebCore13ContainerNode15cloneChildNodesERS0_'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='44' c='_ZN7WebCoreL30notifyNodeInsertedIntoDocumentERNS_13ContainerNodeERNS_4NodeENS_15TreeScopeChangeERN3WTF6VectorINS5_3RefIS2_NS5_12RawPtrTraitsIS2_EEEELm7605931'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='51' c='_ZN7WebCoreL30notifyNodeInsertedIntoDocumentERNS_13ContainerNodeERNS_4NodeENS_15TreeScopeChangeERN3WTF6VectorINS5_3RefIS2_NS5_12RawPtrTraitsIS2_EEEELm7605931'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='54' c='_ZN7WebCoreL30notifyNodeInsertedIntoDocumentERNS_13ContainerNodeERNS_4NodeENS_15TreeScopeChangeERN3WTF6VectorINS5_3RefIS2_NS5_12RawPtrTraitsIS2_EEEELm7605931'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='68' c='_ZN7WebCoreL26notifyNodeInsertedIntoTreeERNS_13ContainerNodeERNS_4NodeENS_15TreeScopeChangeERN3WTF6VectorINS5_3RefIS2_NS5_12RawPtrTraitsIS2_EEEELm11EN7217756'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='76' c='_ZN7WebCoreL26notifyNodeInsertedIntoTreeERNS_13ContainerNodeERNS_4NodeENS_15TreeScopeChangeERN3WTF6VectorINS5_3RefIS2_NS5_12RawPtrTraitsIS2_EEEELm11EN7217756'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='79' c='_ZN7WebCoreL26notifyNodeInsertedIntoTreeERNS_13ContainerNodeERNS_4NodeENS_15TreeScopeChangeERN3WTF6VectorINS5_3RefIS2_NS5_12RawPtrTraitsIS2_EEEELm11EN7217756'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='89' c='_ZN7WebCore23notifyChildNodeInsertedERNS_13ContainerNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='122' c='_ZN7WebCoreL29notifyNodeRemovedFromDocumentERNS_13ContainerNodeENS_15TreeScopeChangeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='129' c='_ZN7WebCoreL29notifyNodeRemovedFromDocumentERNS_13ContainerNodeENS_15TreeScopeChangeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='132' c='_ZN7WebCoreL29notifyNodeRemovedFromDocumentERNS_13ContainerNodeENS_15TreeScopeChangeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='147' c='_ZN7WebCoreL25notifyNodeRemovedFromTreeERNS_13ContainerNodeENS_15TreeScopeChangeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='154' c='_ZN7WebCoreL25notifyNodeRemovedFromTreeERNS_13ContainerNodeENS_15TreeScopeChangeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='157' c='_ZN7WebCoreL25notifyNodeRemovedFromTreeERNS_13ContainerNodeENS_15TreeScopeChangeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='169' c='_ZN7WebCore22notifyChildNodeRemovedERNS_13ContainerNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='182' c='_ZN7WebCore28addChildNodesToDeletionQueueERPNS_4NodeES2_RNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='219' c='_ZN7WebCore33removeDetachedChildrenInContainerERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='239' c='_ZN7WebCore33removeDetachedChildrenInContainerERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='240' c='_ZN7WebCore33removeDetachedChildrenInContainerERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='275' c='_ZN7WebCoreL18collectFrameOwnersERN3WTF6VectorINS0_3RefINS_21HTMLFrameOwnerElementENS0_12RawPtrTraitsIS3_EEEELm0ENS0_15CrashOnOverflowELm16ENS0_10Fast6397292'/>
+<use f='WebKit/Source/WebCore/dom/ContainerNodeAlgorithms.cpp' l='296' c='_ZN7WebCore19disconnectSubframesERNS_13ContainerNodeENS_24SubframeDisconnectPolicyE'/>
+<use f='WebKit/Source/WebCore/dom/CustomElementRegistry.cpp' l='57' c='_ZN7WebCoreL40enqueueUpgradeInShadowIncludingTreeOrderERNS_13ContainerNodeERNS_24JSCustomElementInterfaceE'/>
+<use f='WebKit/Source/WebCore/dom/CustomElementRegistry.cpp' l='116' c='_ZN7WebCoreL43upgradeElementsInShadowIncludingDescendantsERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/CustomElementRegistry.cpp' l='128' c='_ZN7WebCore21CustomElementRegistry7upgradeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/CustomElementRegistry.cpp' l='134' c='_ZN7WebCore21CustomElementRegistry7upgradeERNS_4NodeE'/>
+<size>96</size>
+<fun r='_ZN7WebCore13ContainerNode8bisoHeapEv'/>
+<fun r='_ZN7WebCore13ContainerNode36removeAllChildrenWithScriptAssertionENS0_11ChildChange6SourceENS0_20DeferChildrenChangedE'/>
+<fun r='_ZN7WebCore13ContainerNode29removeNodeWithScriptAssertionERNS_4NodeENS0_11ChildChange6SourceE'/>
+<fun r='_ZN7WebCore13ContainerNode34removeSelfOrChildNodesForInsertionERNS_4NodeERN3WTF6VectorINS3_3RefIS1_NS3_12RawPtrTraitsIS1_EEEELm11ENS3_15CrashOnOverflo3296172'/>
+<fun r='_ZN7WebCore13ContainerNode22removeDetachedChildrenEv'/>
+<fun r='_ZN7WebCore13ContainerNode19takeAllChildrenFromEPS0_'/>
+<fun r='_ZN7WebCore13ContainerNodeD1Ev'/>
+<fun r='_ZN7WebCore13ContainerNode26ensurePreInsertionValidityERNS_4NodeEPS1_'/>
+<fun r='_ZN7WebCore13ContainerNode12insertBeforeERNS_4NodeEPS1_'/>
+<fun r='_ZN7WebCore13ContainerNode18insertBeforeCommonERNS_4NodeES2_'/>
+<fun r='_ZN7WebCore13ContainerNode17appendChildCommonERNS_4NodeE'/>
+<fun r='_ZN7WebCore13ContainerNode18parserInsertBeforeERNS_4NodeES2_'/>
+<fun r='_ZN7WebCore13ContainerNode12replaceChildERNS_4NodeES2_'/>
+<fun r='_ZN7WebCore13ContainerNode26disconnectDescendantFramesEv'/>
+<fun r='_ZN7WebCore13ContainerNode11removeChildERNS_4NodeE'/>
+<fun r='_ZN7WebCore13ContainerNode13removeBetweenEPNS_4NodeES2_RS1_'/>
+<fun r='_ZN7WebCore13ContainerNode17parserRemoveChildERNS_4NodeE'/>
+<fun r='_ZN7WebCore13ContainerNode10replaceAllEPNS_4NodeE'/>
+<fun r='_ZN7WebCore13ContainerNode16stringReplaceAllERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore13ContainerNode39rebuildSVGExtensionsElementsIfNecessaryEv'/>
+<fun r='_ZN7WebCore13ContainerNode14removeChildrenEv'/>
+<fun r='_ZN7WebCore13ContainerNode11appendChildERNS_4NodeE'/>
+<fun r='_ZN7WebCore13ContainerNode43appendChildWithoutPreInsertionValidityCheckERNS_4NodeE'/>
+<fun r='_ZN7WebCore13ContainerNode17parserAppendChildERNS_4NodeE'/>
+<fun r='_ZN7WebCore13ContainerNode11appendChildENS0_11ChildChange6SourceERNS_4NodeE'/>
+<fun r='_ZN7WebCore13ContainerNode15childrenChangedERKNS0_11ChildChangeE'/>
+<fun r='_ZN7WebCore13ContainerNode15cloneChildNodesERS0_'/>
+<fun r='_ZNK7WebCore13ContainerNode15countChildNodesEv'/>
+<fun r='_ZNK7WebCore13ContainerNode17traverseToChildAtEj'/>
+<fun r='_ZN7WebCore13ContainerNode13querySelectorERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore13ContainerNode16querySelectorAllERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore13ContainerNode20getElementsByTagNameERKN3WTF10AtomStringE'/>
+<fun r='_ZN7WebCore13ContainerNode22getElementsByTagNameNSERKN3WTF10AtomStringES4_'/>
+<fun r='_ZN7WebCore13ContainerNode17getElementsByNameERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore13ContainerNode22getElementsByClassNameERKN3WTF10AtomStringE'/>
+<fun r='_ZN7WebCore13ContainerNode13radioNodeListERKN3WTF10AtomStringE'/>
+<fun r='_ZN7WebCore13ContainerNode8childrenEv'/>
+<fun r='_ZNK7WebCore13ContainerNode17firstElementChildEv'/>
+<fun r='_ZNK7WebCore13ContainerNode16lastElementChildEv'/>
+<fun r='_ZNK7WebCore13ContainerNode17childElementCountEv'/>
+<fun r='_ZN7WebCore13ContainerNode6appendEON3WTF6VectorINS1_7VariantIJNS1_6RefPtrINS_4NodeENS1_12RawPtrTraitsIS5_EENS1_21DefaultRefDerefTraitsIS5_EEEENS1_6Str5852291'/>
+<fun r='_ZN7WebCore13ContainerNode7prependEON3WTF6VectorINS1_7VariantIJNS1_6RefPtrINS_4NodeENS1_12RawPtrTraitsIS5_EENS1_21DefaultRefDerefTraitsIS5_EEEENS1_6St953332'/>
+<fun r='_ZN7WebCore13ContainerNode15replaceChildrenEON3WTF6VectorINS1_7VariantIJNS1_6RefPtrINS_4NodeENS1_12RawPtrTraitsIS5_EENS1_21DefaultRefDerefTraitsIS5_EE6788659'/>
+<fun r='_ZN7WebCore13ContainerNode20cachedHTMLCollectionENS_14CollectionTypeE'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='386'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='606' c='_ZN7WebCore8DocumentC1EPNS_5FrameERKNS_8SettingsERKN3WTF3URLEhj'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='4269' c='_ZN7WebCore8Document27addPendingScrollEventTargetERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='4415' c='_ZN7WebCore8Document30adjustFocusedNodeOnNodeRemovalERNS_4NodeENS0_11NodeRemovalE'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='4415' c='_ZN7WebCore8Document30adjustFocusedNodeOnNodeRemovalERNS_4NodeENS0_11NodeRemovalE'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='4794' c='_ZN7WebCore8Document32updateRangesAfterChildrenChangedERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='4800' c='_ZN7WebCore8Document25nodeChildrenWillBeRemovedERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/DocumentFragment.cpp' l='38' c='_ZN7WebCore16DocumentFragmentC1ERNS_8DocumentEN3WTF9OptionSetINS_4Node8NodeFlagEEE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/Element.cpp' l='199' c='_ZN7WebCore7ElementC1ERKNS_13QualifiedNameERNS_8DocumentEN3WTF9OptionSetINS_4Node8NodeFlagEEE'/>
+<use f='WebKit/Source/WebCore/dom/Element.cpp' l='2193' c='_ZN7WebCore7Element20insertedIntoAncestorENS_4Node13InsertionTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Element.cpp' l='2252' c='_ZN7WebCore7Element19removedFromAncestorENS_4Node11RemovalTypeERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/dom/Element.cpp' l='3299' c='_ZN7WebCore7Element12setInnerHTMLERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/dom/Element.cpp' l='4493' c='_ZN7WebCoreL23contextNodeForInsertionERKN3WTF6StringERNS_7ElementE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/dom/EventPath.cpp' l='119' c='_ZN7WebCore9EventPath9buildPathERNS_4NodeERNS_5EventE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/editing/AppendNodeCommand.h' l='34' c='_ZN7WebCore17AppendNodeCommand6createEON3WTF3RefINS_13ContainerNodeENS1_12RawPtrTraitsIS3_EEEEONS2_INS_4NodeENS4_IS8_EEEENS_10EditActionE'/>
+<use f='WebKit/Source/WebCore/editing/AppendNodeCommand.h' l='40' c='_ZN7WebCore17AppendNodeCommandC1EON3WTF3RefINS_13ContainerNodeENS1_12RawPtrTraitsIS3_EEEEONS2_INS_4NodeENS4_IS8_EEEENS_10EditActionE'/>
+<use f='WebKit/Source/WebCore/editing/AppendNodeCommand.h' l='49'/>
+<use f='WebKit/Source/WebCore/editing/AppendNodeCommand.cpp' l='38' c='_ZN7WebCore17AppendNodeCommandC1EON3WTF3RefINS_13ContainerNodeENS1_12RawPtrTraitsIS3_EEEEONS2_INS_4NodeENS4_IS8_EEEENS_10EditActionE'/>
+<use f='WebKit/Source/WebCore/editing/ApplyBlockElementCommand.cpp' l='85' c='_ZN7WebCore24ApplyBlockElementCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/ApplyBlockElementCommand.cpp' l='87' c='_ZN7WebCore24ApplyBlockElementCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/ApplyStyleCommand.cpp' l='428' c='_ZN7WebCoreL24dummySpanAncestorForNodeEPNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/editing/ApplyStyleCommand.cpp' l='436' c='_ZN7WebCore17ApplyStyleCommand30cleanupUnstyledAppleStyleSpansEPNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/editing/ApplyStyleCommand.cpp' l='553' c='_ZN7WebCore17ApplyStyleCommand16applyInlineStyleERNS_12EditingStyleE'/>
+<use f='WebKit/Source/WebCore/editing/ApplyStyleCommand.cpp' l='554' c='_ZN7WebCore17ApplyStyleCommand16applyInlineStyleERNS_12EditingStyleE'/>
+<use f='WebKit/Source/WebCore/editing/ApplyStyleCommand.cpp' l='867' c='_ZN7WebCore17ApplyStyleCommand35removeConflictingInlineStyleFromRunERNS_12EditingStyleERN3WTF6RefPtrINS_4NodeENS3_12RawPtrTraitsIS5_EENS3_21DefaultRef11360873'/>
+<use f='WebKit/Source/WebCore/editing/RemoveNodeCommand.h' l='50'/>
+<use f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='83' c='_ZNK7WebCore29AccessibilityUndoReplacedText23indexForVisiblePositionERKNS_15VisiblePositionERN3WTF6RefPtrINS_13ContainerNodeENS4_12RawPtrTraitsIS6_EEN9577640'/>
+<use f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='593' c='_ZN7WebCore20CompositeEditCommand12insertNodeAtEON3WTF3RefINS_4NodeENS1_12RawPtrTraitsIS3_EEEERKNS_8PositionE'/>
+<use f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='607' c='_ZN7WebCore20CompositeEditCommand10appendNodeEON3WTF3RefINS_4NodeENS1_12RawPtrTraitsIS3_EEEEONS2_INS_13ContainerNodeENS4_IS8_EEEE'/>
+<use f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='722' c='_ZN7WebCore20CompositeEditCommand9inputTextERKN3WTF6StringEb'/>
+<use f='WebKit/Source/WebCore/editing/CompositeEditCommand.cpp' l='1516' c='_ZN7WebCore20CompositeEditCommand14moveParagraphsERKNS_15VisiblePositionES3_S3_bb'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='82' c='_ZN7WebCore19highestEditableRootERKNS_8PositionENS_12EditableTypeE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='84' c='_ZN7WebCore19highestEditableRootERKNS_8PositionENS_12EditableTypeE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='88' c='_ZN7WebCore19highestEditableRootERKNS_8PositionENS_12EditableTypeE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='249' c='_ZN7WebCore40firstEditablePositionAfterPositionInRootERKNS_8PositionEPNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='277' c='_ZN7WebCore40lastEditablePositionBeforePositionInRootERKNS_8PositionEPNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='584' c='_ZN7WebCore13enclosingListEPNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='973' c='_ZN7WebCore23indexForVisiblePositionERKNS_15VisiblePositionERN3WTF6RefPtrINS_13ContainerNodeENS3_12RawPtrTraitsIS5_EENS3_21DefaultRefDerefTraitsIS5_EEEE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='1007' c='_ZN7WebCore36visiblePositionForPositionWithOffsetERKNS_15VisiblePositionEi'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='1015' c='_ZN7WebCore23visiblePositionForIndexEiPNS_13ContainerNodeE'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/editing/Editor.cpp' l='2775' c='_ZN7WebCoreL51correctSpellcheckingPreservingTextCheckingParagraphERNS_21TextCheckingParagraphERKNS_11SimpleRangeERKN3WTF6StringENS_14CharacterRangeE'/>
+<use f='WebKit/Source/WebCore/editing/FrameSelection.cpp' l='131' c='_ZNK7WebCore19DragCaretController40editableElementRectInRootViewCoordinatesEv'/>
+<use f='WebKit/Source/WebCore/editing/IndentOutdentCommand.cpp' l='164' c='_ZN7WebCore20IndentOutdentCommand16outdentParagraphEv'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/editing/InsertListCommand.cpp' l='167' c='_ZN7WebCore17InsertListCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/InsertNodeBeforeCommand.cpp' l='51' c='_ZN7WebCore23InsertNodeBeforeCommand7doApplyEv'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/editing/RemoveNodeCommand.cpp' l='46' c='_ZN7WebCore17RemoveNodeCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/RemoveNodeCommand.cpp' l='60' c='_ZN7WebCore17RemoveNodeCommand9doUnapplyEv'/>
+<use f='WebKit/Source/WebCore/editing/ReplaceNodeWithSpanCommand.cpp' l='48' c='_ZN7WebCoreL41swapInNodePreservingAttributesAndChildrenERNS_11HTMLElementES1_'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/editing/ReplaceSelectionCommand.cpp' l='281' c='_ZN7WebCore19ReplacementFragment10removeNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/editing/ReplaceSelectionCommand.cpp' l='290' c='_ZN7WebCore19ReplacementFragment16insertNodeBeforeERNS_4NodeES2_'/>
+<use f='WebKit/Source/WebCore/editing/SimplifyMarkupCommand.cpp' l='115' c='_ZN7WebCore21SimplifyMarkupCommand32pruneSubsequentAncestorsToRemoveERN3WTF6VectorINS1_3RefINS_4NodeENS1_12RawPtrTraitsIS4_EEEELm0ENS1_15CrashOnOverfl12117373'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/editing/SplitTextNodeCommand.cpp' l='53' c='_ZN7WebCore20SplitTextNodeCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/SplitTextNodeCommand.cpp' l='91' c='_ZN7WebCore20SplitTextNodeCommand9doReapplyEv'/>
+<use f='WebKit/Source/WebCore/editing/TextManipulationController.cpp' l='613' c='_ZN7WebCore26TextManipulationController25scheduleObservationUpdateEv'/>
+<use f='WebKit/Source/WebCore/editing/TextManipulationController.cpp' l='723' c='_ZN7WebCore26TextManipulationController7getPathEPNS_4NodeES2_'/>
+<use f='WebKit/Source/WebCore/editing/TextManipulationController.cpp' l='723' c='_ZN7WebCore26TextManipulationController7getPathEPNS_4NodeES2_'/>
+<use f='WebKit/Source/WebCore/editing/TextManipulationController.cpp' l='723' c='_ZN7WebCore26TextManipulationController7getPathEPNS_4NodeES2_'/>
+<use f='WebKit/Source/WebCore/editing/TextManipulationController.cpp' l='855' c='_ZN7WebCore26TextManipulationController7replaceERKNS0_20ManipulationItemDataERKN3WTF6VectorINS0_17ManipulationTokenELm0ENS4_15CrashOnOverflowELm16ENS47575568'/>
+<size>96</size>
+<use f='WebKit/Source/WebCore/editing/VisiblePosition.cpp' l='830' c='_ZN7WebCore8midpointERKNS_20VisiblePositionRangeE'/>
+<use f='WebKit/Source/WebCore/editing/markup.cpp' l='243' c='_ZN7WebCore23StyledMarkupAccumulator10parentNodeERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/editing/markup.cpp' l='782' c='_ZN7WebCoreL46ancestorToRetainStructureAndAppearanceForBlockEPNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/editing/markup.cpp' l='922' c='_ZN7WebCoreL43serializePreservingVisualAppearanceInternalERKNS_8PositionES2_PN3WTF6VectorIPNS_4NodeELm0ENS3_15CrashOnOverflowELm16ENS3_10FastMallocEEE14286901'/>
+<use f='WebKit/Source/WebCore/editing/markup.cpp' l='1092' c='_ZN7WebCoreL23fillContainerFromStringERNS_13ContainerNodeERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/editing/markup.cpp' l='1311' c='_ZN7WebCoreL35collectElementsToRemoveFromFragmentERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/editing/markup.cpp' l='1355' c='_ZN7WebCoreL15hasOneTextChildERNS_13ContainerNodeE'/>
+<use f='WebKit/Source/WebCore/editing/markup.cpp' l='1376' c='_ZN7WebCore27replaceChildrenWithFragmentERNS_13ContainerNodeEON3WTF3RefINS_16DocumentFragmentENS2_12RawPtrTraitsIS4_EEEE'/>
+<use f='WebKit/Source/WebCore/editing/markup.cpp' l='1378' c='_ZN7WebCore27replaceChildrenWithFragmentERNS_13ContainerNodeEON3WTF3RefINS_16DocumentFragmentENS2_12RawPtrTraitsIS4_EEEE'/>
+<size>96</size>

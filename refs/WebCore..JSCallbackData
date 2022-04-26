@@ -1,0 +1,16 @@
+<def f='WebKit/Source/WebCore/bindings/js/JSCallbackData.h' l='45' ll='72'/>
+<ovr f='WebKit/Source/WebCore/bindings/js/JSCallbackData.h' l='74' c='WebCore::JSCallbackDataStrong'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSCallbackData.h' l='74'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSCallbackData.h' l='77' c='_ZN7WebCore20JSCallbackDataStrongC1EPN3JSC8JSObjectEPNS_17JSDOMGlobalObjectEPv'/>
+<ovr f='WebKit/Source/WebCore/bindings/js/JSCallbackData.h' l='97' c='WebCore::JSCallbackDataWeak'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSCallbackData.h' l='97'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSCallbackData.h' l='100' c='_ZN7WebCore18JSCallbackDataWeakC1EPN3JSC8JSObjectEPNS_17JSDOMGlobalObjectEPv'/>
+<size>8</size>
+<doc f='WebKit/Source/WebCore/bindings/js/JSCallbackData.h' l='41'>// We have to clean up this data on the context thread because unprotecting a
+// JSObject on the wrong thread without synchronization would corrupt the heap
+// (and synchronization would be slow).</doc>
+<fun r='_ZN7WebCore14JSCallbackData12globalObjectEv'/>
+<fun r='_ZN7WebCore14JSCallbackDataC1EPNS_17JSDOMGlobalObjectE'/>
+<fun r='_ZN7WebCore14JSCallbackDataD1Ev'/>
+<fun r='_ZN7WebCore14JSCallbackData14invokeCallbackERNS_17JSDOMGlobalObjectEPN3JSC8JSObjectENS3_7JSValueERNS3_20MarkedArgumentBufferENS0_12CallbackTypeENS3_1214908548'/>
+<mbr r='WebCore::JSCallbackData::m_globalObject' o='0' t='JSC::Weak&lt;JSDOMGlobalObject&gt;'/>

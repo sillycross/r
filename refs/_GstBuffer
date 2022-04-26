@@ -1,0 +1,33 @@
+<use f='include/gstreamer-1.0/gst/gstbuffer.h' l='36'/>
+<def f='include/gstreamer-1.0/gst/gstbuffer.h' l='264' ll='278'/>
+<size>112</size>
+<doc f='include/gstreamer-1.0/gst/gstbuffer.h' l='241'>/**
+ * GstBuffer:
+ * @mini_object: the parent structure
+ * @pool: pointer to the pool owner of the buffer
+ * @pts: presentation timestamp of the buffer, can be #GST_CLOCK_TIME_NONE when the
+ *     pts is not known or relevant. The pts contains the timestamp when the
+ *     media should be presented to the user.
+ * @dts: decoding timestamp of the buffer, can be #GST_CLOCK_TIME_NONE when the
+ *     dts is not known or relevant. The dts contains the timestamp when the
+ *     media should be processed.
+ * @duration: duration in time of the buffer data, can be #GST_CLOCK_TIME_NONE
+ *     when the duration is not known or relevant.
+ * @offset: a media specific offset for the buffer data.
+ *     For video frames, this is the frame number of this buffer.
+ *     For audio samples, this is the offset of the first sample in this buffer.
+ *     For file data or compressed data this is the byte offset of the first
+ *       byte in this buffer.
+ * @offset_end: the last offset contained in this buffer. It has the same
+ *     format as @offset.
+ *
+ * The structure of a #GstBuffer. Use the associated macros to access the public
+ * variables.
+ */</doc>
+<mbr r='_GstBuffer::mini_object' o='0' t='GstMiniObject'/>
+<mbr r='_GstBuffer::pool' o='512' t='GstBufferPool *'/>
+<mbr r='_GstBuffer::pts' o='576' t='GstClockTime'/>
+<mbr r='_GstBuffer::dts' o='640' t='GstClockTime'/>
+<mbr r='_GstBuffer::duration' o='704' t='GstClockTime'/>
+<mbr r='_GstBuffer::offset' o='768' t='guint64'/>
+<mbr r='_GstBuffer::offset_end' o='832' t='guint64'/>

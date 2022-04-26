@@ -1,0 +1,17 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUserContentFilterStore.cpp' l='410' ll='428' type='void webkit_user_content_filter_store_load(WebKitUserContentFilterStore * store, const gchar * identifier, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer userData)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUserContentFilterStore.cpp' l='394'>/**
+ * webkit_user_content_filter_store_load:
+ * @store: a #WebKitUserContentFilterStore
+ * @identifier: a filter identifier
+ * @cancellable: (allow-none): a #GCancellable or %NULL to ignore
+ * @callback: (scope async): a #GAsyncReadyCallback to call when the load is completed
+ * @user_data: (closure): the data to pass to the callback function
+ *
+ * Asynchronously load a content filter given its @identifier. The filter must have been
+ * previously stored using webkit_user_content_filter_store_save().
+ *
+ * When the operation is finished, @callback will be invoked, which then can use
+ * webkit_user_content_filter_store_load_finish() to obtain the resulting filter.
+ *
+ * Since: 2.24
+ */</doc>

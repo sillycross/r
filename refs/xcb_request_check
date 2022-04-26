@@ -1,0 +1,17 @@
+<dec f='include/xcb/xcb.h' l='375' type='xcb_generic_error_t * xcb_request_check(xcb_connection_t * c, xcb_void_cookie_t cookie)'/>
+<doc f='include/xcb/xcb.h' l='359'>/**
+ * @brief Return the error for a request, or NULL if none can ever arrive.
+ * @param c The connection to the X server.
+ * @param cookie The request cookie.
+ * @return The error for the request, or NULL if none can ever arrive.
+ *
+ * The xcb_void_cookie_t cookie supplied to this function must have resulted
+ * from a call to xcb_[request_name]_checked().  This function will block
+ * until one of two conditions happens.  If an error is received, it will be
+ * returned.  If a reply to a subsequent request has already arrived, no error
+ * can arrive for this request, so this function will return NULL.
+ *
+ * Note that this function will perform a sync if needed to ensure that the
+ * sequence number will advance beyond that provided in cookie; this is a
+ * convenience to avoid races in determining whether the sync is needed.
+ */</doc>

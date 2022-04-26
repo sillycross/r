@@ -1,0 +1,68 @@
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.h' l='123' c='_ZN7WebCore9AudioNode5inputEj'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.h' l='149' c='_ZN7WebCore9AudioNode29checkNumberOfChannelsForInputEPNS_14AudioNodeInputE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.h' l='246'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioBasicProcessorNode.h' l='50' c='_ZN7WebCore23AudioBasicProcessorNode29checkNumberOfChannelsForInputEPNS_14AudioNodeInputE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/ConvolverNode.h' l='61' c='_ZN7WebCore13ConvolverNode29checkNumberOfChannelsForInputEPNS_14AudioNodeInputE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioBasicInspectorNode.h' l='44' c='_ZN7WebCore23AudioBasicInspectorNode29checkNumberOfChannelsForInputEPNS_14AudioNodeInputE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioWorkletNode.h' l='77' c='_ZN7WebCore16AudioWorkletNode29checkNumberOfChannelsForInputEPNS_14AudioNodeInputE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/GainNode.h' l='49' c='_ZN7WebCore8GainNode29checkNumberOfChannelsForInputEPNS_14AudioNodeInputE'/>
+<inh f='WebKit/Source/WebCore/Modules/webaudio/AudioSummingJunction.h' l='39' c='WebCore::AudioSummingJunction'/>
+<def f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeInput.h' l='41' ll='95'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeInput.h' l='42' c='_ZN7WebCore14AudioNodeInputC1ERKS0_'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeInput.h' l='42' c='_ZN7WebCore14AudioNodeInputaSERKS0_'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeInput.h' l='42' c='_ZN7WebCore14AudioNodeInputaSERKS0_'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeOutput.h' l='78' c='_ZNK7WebCore15AudioNodeOutput13isConnectedToERNS_14AudioNodeInputE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeOutput.h' l='96'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeOutput.h' l='101' c='_ZN7WebCore15AudioNodeOutput8addInputEPNS_14AudioNodeInputE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeOutput.h' l='102' c='_ZN7WebCore15AudioNodeOutput11removeInputEPNS_14AudioNodeInputE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeOutput.h' l='143'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioBasicInspectorNode.cpp' l='55' c='_ZN7WebCore23AudioBasicInspectorNode29checkNumberOfChannelsForInputEPNS_14AudioNodeInputE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioBasicProcessorNode.cpp' l='108' c='_ZN7WebCore23AudioBasicProcessorNode29checkNumberOfChannelsForInputEPNS_14AudioNodeInputE'/>
+<size>88</size>
+<doc f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeInput.h' l='37'>// An AudioNodeInput represents an input to an AudioNode and can be connected from one or more AudioNodeOutputs.
+// In the case of multiple connections, the input will act as a unity-gain summing junction, mixing all the outputs.
+// The number of channels of the input&apos;s bus is the maximum of the number of channels of all its connections.</doc>
+<fun r='_ZN7WebCore14AudioNodeInputC1ERKS0_'/>
+<fun r='_ZN7WebCore14AudioNodeInputC1EPNS_9AudioNodeE'/>
+<fun r='_ZN7WebCore14AudioNodeInput14canUpdateStateEv'/>
+<fun r='_ZN7WebCore14AudioNodeInput9didUpdateEv'/>
+<fun r='_ZNK7WebCore14AudioNodeInput4nodeEv'/>
+<fun r='_ZN7WebCore14AudioNodeInput7connectEPNS_15AudioNodeOutputE'/>
+<fun r='_ZN7WebCore14AudioNodeInput10disconnectEPNS_15AudioNodeOutputE'/>
+<fun r='_ZN7WebCore14AudioNodeInput6enableEPNS_15AudioNodeOutputE'/>
+<fun r='_ZN7WebCore14AudioNodeInput7disableEPNS_15AudioNodeOutputE'/>
+<fun r='_ZN7WebCore14AudioNodeInput4pullEPNS_8AudioBusEm'/>
+<fun r='_ZN7WebCore14AudioNodeInput3busEv'/>
+<fun r='_ZN7WebCore14AudioNodeInput17updateInternalBusEv'/>
+<fun r='_ZNK7WebCore14AudioNodeInput16numberOfChannelsEv'/>
+<mbr r='WebCore::AudioNodeInput::m_node' o='512' t='WebCore::AudioNode *'/>
+<mbr r='WebCore::AudioNodeInput::m_disabledOutputs' o='576' t='HashSet&lt;WebCore::AudioNodeOutput *&gt;'/>
+<fun r='_ZN7WebCore14AudioNodeInput18internalSummingBusEv'/>
+<fun r='_ZN7WebCore14AudioNodeInput17sumAllConnectionsEPNS_8AudioBusEm'/>
+<mbr r='WebCore::AudioNodeInput::m_internalSummingBus' o='640' t='RefPtr&lt;WebCore::AudioBus&gt;'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.cpp' l='157' c='_ZN7WebCore9AudioNode8addInputEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.cpp' l='167' c='_ZN7WebCore9AudioNode5inputEj'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.cpp' l='482' c='_ZN7WebCore9AudioNode29checkNumberOfChannelsForInputEPNS_14AudioNodeInputE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeOutput.cpp' l='155' c='_ZN7WebCore15AudioNodeOutput8addInputEPNS_14AudioNodeInputE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeOutput.cpp' l='166' c='_ZN7WebCore15AudioNodeOutput11removeInputEPNS_14AudioNodeInputE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeOutput.cpp' l='183' c='_ZN7WebCore15AudioNodeOutput19disconnectAllInputsEv'/>
+<size>88</size>
+<fun r='_ZN7WebCore14AudioNodeInputC1EPNS_9AudioNodeE'/>
+<fun r='_ZN7WebCore14AudioNodeInput7connectEPNS_15AudioNodeOutputE'/>
+<fun r='_ZN7WebCore14AudioNodeInput10disconnectEPNS_15AudioNodeOutputE'/>
+<fun r='_ZN7WebCore14AudioNodeInput7disableEPNS_15AudioNodeOutputE'/>
+<fun r='_ZN7WebCore14AudioNodeInput6enableEPNS_15AudioNodeOutputE'/>
+<fun r='_ZN7WebCore14AudioNodeInput9didUpdateEv'/>
+<fun r='_ZN7WebCore14AudioNodeInput17updateInternalBusEv'/>
+<fun r='_ZNK7WebCore14AudioNodeInput16numberOfChannelsEv'/>
+<fun r='_ZN7WebCore14AudioNodeInput3busEv'/>
+<fun r='_ZN7WebCore14AudioNodeInput18internalSummingBusEv'/>
+<fun r='_ZN7WebCore14AudioNodeInput17sumAllConnectionsEPNS_8AudioBusEm'/>
+<fun r='_ZN7WebCore14AudioNodeInput4pullEPNS_8AudioBusEm'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioWorkletNode.cpp' l='263' c='_ZN7WebCore16AudioWorkletNode29checkNumberOfChannelsForInputEPNS_14AudioNodeInputE'/>
+<size>88</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/ChannelMergerNode.cpp' l='82' c='_ZN7WebCore17ChannelMergerNode7processEm'/>
+<size>88</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/ConvolverNode.cpp' l='213' c='_ZN7WebCore13ConvolverNode29checkNumberOfChannelsForInputEPNS_14AudioNodeInputE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/GainNode.cpp' l='112' c='_ZN7WebCore8GainNode29checkNumberOfChannelsForInputEPNS_14AudioNodeInputE'/>
+<size>88</size>

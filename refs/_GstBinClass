@@ -1,0 +1,38 @@
+<use f='include/gstreamer-1.0/gst/gstbin.h' l='74'/>
+<def f='include/gstreamer-1.0/gst/gstbin.h' l='165' ll='193'/>
+<size>576</size>
+<doc f='include/gstreamer-1.0/gst/gstbin.h' l='141'>/**
+ * GstBinClass:
+ * @parent_class: bin parent class
+ * @add_element: method to add an element to a bin
+ * @remove_element: method to remove an element from a bin
+ * @handle_message: method to handle a message from the children
+ * @deep_element_added: method called when an element was added somewhere
+ *     in the bin hierarchy
+ * @deep_element_removed: method called when an element was removed somewhere
+ *     in the bin hierarchy
+ *
+ * Subclasses can override the @add_element and @remove_element to
+ * update the list of children in the bin.
+ *
+ * The @handle_message method can be overridden to implement custom
+ * message handling.  @handle_message takes ownership of the message, just like
+ * #gst_element_post_message.
+ *
+ * The @deep_element_added vfunc will be called when a new element has been
+ * added to any bin inside this bin, so it will also be called if a new child
+ * was added to a sub-bin of this bin. #GstBin implementations that override
+ * this message should chain up to the parent class implementation so the
+ * element-added-deep signal is emitted on all parents.
+ */</doc>
+<mbr r='_GstBinClass::parent_class' o='0' t='GstElementClass'/>
+<mbr r='_GstBinClass::pool' o='3904' t='GThreadPool *'/>
+<mbr r='_GstBinClass::element_added' o='3968' t='void (*)(GstBin *, GstElement *)'/>
+<mbr r='_GstBinClass::element_removed' o='4032' t='void (*)(GstBin *, GstElement *)'/>
+<mbr r='_GstBinClass::add_element' o='4096' t='gboolean (*)(GstBin *, GstElement *)'/>
+<mbr r='_GstBinClass::remove_element' o='4160' t='gboolean (*)(GstBin *, GstElement *)'/>
+<mbr r='_GstBinClass::handle_message' o='4224' t='void (*)(GstBin *, GstMessage *)'/>
+<mbr r='_GstBinClass::do_latency' o='4288' t='gboolean (*)(GstBin *)'/>
+<mbr r='_GstBinClass::deep_element_added' o='4352' t='void (*)(GstBin *, GstBin *, GstElement *)'/>
+<mbr r='_GstBinClass::deep_element_removed' o='4416' t='void (*)(GstBin *, GstBin *, GstElement *)'/>
+<mbr r='_GstBinClass::_gst_reserved' o='4480' t='gpointer [2]'/>

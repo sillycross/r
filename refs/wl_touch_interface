@@ -1,0 +1,34 @@
+<dec f='include/wayland-client-protocol.h' l='616' type='const struct wl_interface'/>
+<use f='include/wayland-client-protocol.h' l='4116' u='a' c='_ZL17wl_seat_get_touchP7wl_seat'/>
+<dec f='include/wayland-server-protocol.h' l='619' type='const struct wl_interface'/>
+<def f='include/wayland-server-protocol.h' l='3866' ll='3875'/>
+<size>8</size>
+<doc f='include/wayland-client-protocol.h' l='604'>/**
+ * @defgroup iface_wl_touch The wl_touch interface
+ *
+ * The wl_touch interface represents a touchscreen
+ * associated with a seat.
+ *
+ * Touch interactions can consist of one or more contacts.
+ * For each contact, a series of events is generated, starting
+ * with a down event, followed by zero or more motion events,
+ * and ending with an up event. Events relating to the same
+ * contact point can be identified by the ID of the sequence.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='607'>/**
+ * @defgroup iface_wl_touch The wl_touch interface
+ *
+ * The wl_touch interface represents a touchscreen
+ * associated with a seat.
+ *
+ * Touch interactions can consist of one or more contacts.
+ * For each contact, a series of events is generated, starting
+ * with a down event, followed by zero or more motion events,
+ * and ending with an up event. Events relating to the same
+ * contact point can be identified by the ID of the sequence.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='3862'>/**
+ * @ingroup iface_wl_touch
+ * @struct wl_touch_interface
+ */</doc>
+<mbr r='wl_touch_interface::release' o='0' t='void (*)(struct wl_client *, struct wl_resource *)'/>

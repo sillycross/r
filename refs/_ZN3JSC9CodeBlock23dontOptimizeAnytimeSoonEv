@@ -1,0 +1,14 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='733' type='void JSC::CodeBlock::dontOptimizeAnytimeSoon()'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='728'>// Call this to prevent optimization from happening again. Note that
+    // optimization will still happen after roughly 2^29 invocations,
+    // so this is really meant to delay that as much as possible. This
+    // is called if optimization failed, and we expect it to fail in
+    // the future as well.</doc>
+<dec f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='733' type='void JSC::CodeBlock::dontOptimizeAnytimeSoon()'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='728'>// Call this to prevent optimization from happening again. Note that
+    // optimization will still happen after roughly 2^29 invocations,
+    // so this is really meant to delay that as much as possible. This
+    // is called if optimization failed, and we expect it to fail in
+    // the future as well.</doc>
+<def f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2667' ll='2671' type='void JSC::CodeBlock::dontOptimizeAnytimeSoon()'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2732' u='c' c='_ZN3JSC9CodeBlock48setOptimizationThresholdBasedOnCompilationResultENS_17CompilationResultE'/>

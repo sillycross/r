@@ -1,0 +1,12 @@
+<dec f='include/gstreamer-1.0/gst/gstpad.h' l='1043'/>
+<doc f='include/gstreamer-1.0/gst/gstpad.h' l='1032'>/**
+ * GST_PAD_SET_FLUSHING:
+ * @pad: a #GstPad
+ *
+ * Set the given @pad to flushing state, which means it will not accept any
+ * more events, queries or buffers, and return GST_FLOW_FLUSHING if any buffers
+ * are pushed on it. This usually happens when the pad is shut down or when
+ * a flushing seek happens. This is used inside GStreamer when flush start/stop
+ * events pass through pads, or when an element state is changed and pads are
+ * activated or deactivated.
+ */</doc>

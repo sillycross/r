@@ -1,0 +1,48 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='411'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='592'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='411'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='592'/>
+<inh f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExitBase.h' l='41' c='JSC::DFG::OSRExitBase'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.h' l='149' ll='176'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.h' l='173' c='_ZN3JSC3DFG7OSRExit11compileExitERNS_12CCallHelpersERNS_2VMERKS1_RKNS_8OperandsINS_13ValueRecoveryEN3WTF6VectorIS9_Lm0ENSA_20UnsafeVectorOverflowELm166472174'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCode.h' l='111'/>
+<size>112</size>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.h' l='145'>// === OSRExit ===
+//
+// This structure describes how to exit the speculative path by
+// going into baseline code.</doc>
+<fun r='_ZN3JSC3DFG7OSRExitC1ENS_8ExitKindENS_13JSValueSourceENS_28MethodOfGettingAValueProfileEPNS0_14SpeculativeJITEjj'/>
+<mbr r='JSC::DFG::OSRExit::m_patchableJumpLocation' o='256' t='CodeLocationLabel&lt;JSInternalPtrTag&gt;'/>
+<mbr r='JSC::DFG::OSRExit::m_code' o='320' t='MacroAssemblerCodeRef&lt;OSRExitPtrTag&gt;'/>
+<mbr r='JSC::DFG::OSRExit::exitState' o='448' t='RefPtr&lt;JSC::DFG::OSRExitState&gt;'/>
+<mbr r='JSC::DFG::OSRExit::m_jsValueSource' o='512' t='JSC::JSValueSource'/>
+<mbr r='JSC::DFG::OSRExit::m_valueProfile' o='576' t='JSC::MethodOfGettingAValueProfile'/>
+<mbr r='JSC::DFG::OSRExit::m_recoveryIndex' o='832' t='unsigned int'/>
+<fun r='_ZNK3JSC3DFG7OSRExit22codeLocationForRepatchEv'/>
+<mbr r='JSC::DFG::OSRExit::m_streamIndex' o='864' t='unsigned int'/>
+<fun r='_ZN3JSC3DFG7OSRExit32considerAddingAsFrequentExitSiteEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC3DFG7OSRExit11compileExitERNS_12CCallHelpersERNS_2VMERKS1_RKNS_8OperandsINS_13ValueRecoveryEN3WTF6VectorIS9_Lm0ENSA_20UnsafeVectorOverflowELm166472174'/>
+<fun r='_ZN3JSC3DFG7OSRExit20emitRestoreArgumentsERNS_12CCallHelpersERNS_2VMERKNS_8OperandsINS_13ValueRecoveryEN3WTF6VectorIS7_Lm0ENS8_20UnsafeVectorOverflowE8551562'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='276' c='_ZN3JSC3DFG11JITCompiler13appendOSRExitEONS0_7OSRExitE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='310' c='_ZN3JSC3DFG11JITCompiler22exitSpeculativeWithOSRERKNS0_7OSRExitEPNS0_19SpeculationRecoveryE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='374'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='74'/>
+<size>112</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.cpp' l='168' c='_ZN3JSC3DFG23operationCompileOSRExitEPNS_9CallFrameEPv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.cpp' l='267' c='_ZN3JSC3DFG7OSRExit11compileExitERNS_12CCallHelpersERNS_2VMERKS1_RKNS_8OperandsINS_13ValueRecoveryEN3WTF6VectorIS9_Lm0ENSA_20UnsafeVectorOverflowELm166472174'/>
+<size>112</size>
+<fun r='_ZN3JSC3DFG7OSRExitC1ENS_8ExitKindENS_13JSValueSourceENS_28MethodOfGettingAValueProfileEPNS0_14SpeculativeJITEjj'/>
+<fun r='_ZNK3JSC3DFG7OSRExit22codeLocationForRepatchEv'/>
+<fun r='_ZN3JSC3DFG7OSRExit20emitRestoreArgumentsERNS_12CCallHelpersERNS_2VMERKNS_8OperandsINS_13ValueRecoveryEN3WTF6VectorIS7_Lm0ENS8_20UnsafeVectorOverflowE8551562'/>
+<fun r='_ZN3JSC3DFG7OSRExit11compileExitERNS_12CCallHelpersERNS_2VMERKS1_RKNS_8OperandsINS_13ValueRecoveryEN3WTF6VectorIS9_Lm0ENSA_20UnsafeVectorOverflowELm166472174'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCode.cpp' l='86' c='_ZN3JSC3DFG7JITCode50liveRegistersToPreserveAtExceptionHandlingCallSiteEPNS_9CodeBlockENS_13CallSiteIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCode.cpp' l='229' c='_ZN3JSC3DFG7JITCode6findPCEPNS_9CodeBlockEPv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.cpp' l='289' c='_ZN3JSC3DFG11JITCompiler4linkERNS_10LinkBufferE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.cpp' l='613' c='_ZN3JSC3DFG11JITCompiler30appendExceptionHandlingOSRExitENS_8ExitKindEjNS_10CodeOriginEPNS_11HandlerInfoENS_13CallSiteIndexENS_22AbstractMacroAssemble8603798'/>
+<size>112</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='273' c='_ZN3JSC3DFG14SpeculativeJIT16speculationCheckENS_8ExitKindENS_13JSValueSourceEPNS0_4NodeENS_22AbstractMacroAssemblerINS_12X86AssemblerEE4JumpE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='288' c='_ZN3JSC3DFG14SpeculativeJIT16speculationCheckENS_8ExitKindENS_13JSValueSourceEPNS0_4NodeERKNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='297' c='_ZN3JSC3DFG14SpeculativeJIT16speculationCheckENS_8ExitKindENS_13JSValueSourceEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='322' c='_ZN3JSC3DFG14SpeculativeJIT16speculationCheckENS_8ExitKindENS_13JSValueSourceEPNS0_4NodeENS_22AbstractMacroAssemblerINS_12X86AssemblerEE4JumpERKNS0_19SpeculationRecoveryE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='335' c='_ZN3JSC3DFG14SpeculativeJIT21emitInvalidationPointEPNS0_4NodeE'/>
+<size>112</size>

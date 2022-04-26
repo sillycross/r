@@ -1,0 +1,17 @@
+<dec f='WebKit/Source/JavaScriptCore/bytecode/PropertyCondition.h' l='282' type='0'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PropertyCondition.h' l='294' c='_ZNK3JSC17PropertyCondition43isWatchableAssumingImpurePropertyWatchpointEPNS_9StructureEPNS_8JSObjectENS0_18WatchabilityEffortE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PropertyCondition.h' l='299' c='_ZNK3JSC17PropertyCondition11isWatchableEPNS_9StructureEPNS_8JSObjectENS0_18WatchabilityEffortE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ObjectPropertyCondition.h' l='235' c='_ZNK3JSC23ObjectPropertyCondition43isWatchableAssumingImpurePropertyWatchpointEPNS_9StructureENS_17PropertyCondition18WatchabilityEffortE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ObjectPropertyCondition.h' l='237' c='_ZNK3JSC23ObjectPropertyCondition43isWatchableAssumingImpurePropertyWatchpointENS_17PropertyCondition18WatchabilityEffortE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ObjectPropertyCondition.h' l='243' c='_ZNK3JSC23ObjectPropertyCondition11isWatchableEPNS_9StructureENS_17PropertyCondition18WatchabilityEffortE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ObjectPropertyCondition.h' l='245' c='_ZNK3JSC23ObjectPropertyCondition11isWatchableENS_17PropertyCondition18WatchabilityEffortE'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/PropertyCondition.h' l='273'>// This is the default. It means that we don&apos;t change the state of any Structure or
+        // object, and implies that if the property happens not to be watchable then we don&apos;t make
+        // it watchable. This is mandatory if calling from a JIT thread. This is also somewhat
+        // preferable when first deciding whether to watch a condition for the first time (i.e.
+        // not from a watchpoint fire that causes us to see if we should adapt), since a
+        // watchpoint not being initialized for watching implies that maybe we don&apos;t know enough
+        // yet to make it profitable to watch -- as in, the thing being watched may not have
+        // stabilized yet. We prefer to only assume that a condition will hold if it has been
+        // known to hold for a while already.</doc>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PropertyCondition.cpp' l='333' c='_ZNK3JSC17PropertyCondition20isWatchableWhenValidEPNS_9StructureENS0_18WatchabilityEffortE'/>

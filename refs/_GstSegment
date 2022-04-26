@@ -1,0 +1,34 @@
+<use f='include/gstreamer-1.0/gst/gstsegment.h' l='32'/>
+<def f='include/gstreamer-1.0/gst/gstsegment.h' l='191' ll='210'/>
+<size>120</size>
+<doc f='include/gstreamer-1.0/gst/gstsegment.h' l='172'>/**
+ * GstSegment:
+ * @flags: flags for this segment
+ * @rate: the playback rate of the segment
+ * @applied_rate: the already applied rate to the segment
+ * @format: the format of the segment values
+ * @base: the running time (plus elapsed time, see offset) of the segment start
+ * @offset: the amount (in buffer timestamps) that has already been elapsed in
+ *     the segment
+ * @start: the start of the segment in buffer timestamp time (PTS)
+ * @stop: the stop of the segment in buffer timestamp time (PTS)
+ * @time: the stream time of the segment start
+ * @position: the buffer timestamp position in the segment (used internally by
+ *     elements such as sources, demuxers or parsers to track progress)
+ * @duration: the duration of the stream
+ *
+ * A helper structure that holds the configured region of
+ * interest in a media file.
+ */</doc>
+<mbr r='_GstSegment::flags' o='0' t='GstSegmentFlags'/>
+<mbr r='_GstSegment::rate' o='64' t='gdouble'/>
+<mbr r='_GstSegment::applied_rate' o='128' t='gdouble'/>
+<mbr r='_GstSegment::format' o='192' t='GstFormat'/>
+<mbr r='_GstSegment::base' o='256' t='guint64'/>
+<mbr r='_GstSegment::offset' o='320' t='guint64'/>
+<mbr r='_GstSegment::start' o='384' t='guint64'/>
+<mbr r='_GstSegment::stop' o='448' t='guint64'/>
+<mbr r='_GstSegment::time' o='512' t='guint64'/>
+<mbr r='_GstSegment::position' o='576' t='guint64'/>
+<mbr r='_GstSegment::duration' o='640' t='guint64'/>
+<mbr r='_GstSegment::_gst_reserved' o='704' t='gpointer [4]'/>

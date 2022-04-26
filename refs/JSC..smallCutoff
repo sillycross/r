@@ -1,0 +1,14 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCMemoryOperations.h' l='38' type='const size_t'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCMemoryOperations.h' l='57' u='r' c='_ZN3JSC12gcSafeMemcpyEPT_S1_m'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCMemoryOperations.h' l='170' u='r' c='_ZN3JSC13gcSafeMemmoveEPT_S1_m'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCMemoryOperations.h' l='33'>// We use these memory operations when modifying memory that might be scanned by the concurrent collector.
+// We don&apos;t call the default operations because they&apos;re not guaranteed to store to memory in eight byte aligned
+// chunks. If we happened to fall into the system&apos;s normal byte copy loop, we may see a torn JSValue in the
+// concurrent collector.</doc>
+<def f='WebKit/Source/JavaScriptCore/heap/GCMemoryOperations.h' l='38' type='const size_t'/>
+<use f='WebKit/Source/JavaScriptCore/heap/GCMemoryOperations.h' l='57' u='r' c='_ZN3JSC12gcSafeMemcpyEPT_S1_m'/>
+<use f='WebKit/Source/JavaScriptCore/heap/GCMemoryOperations.h' l='170' u='r' c='_ZN3JSC13gcSafeMemmoveEPT_S1_m'/>
+<doc f='WebKit/Source/JavaScriptCore/heap/GCMemoryOperations.h' l='33'>// We use these memory operations when modifying memory that might be scanned by the concurrent collector.
+// We don&apos;t call the default operations because they&apos;re not guaranteed to store to memory in eight byte aligned
+// chunks. If we happened to fall into the system&apos;s normal byte copy loop, we may see a torn JSValue in the
+// concurrent collector.</doc>

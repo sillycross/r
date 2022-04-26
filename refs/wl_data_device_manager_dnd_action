@@ -1,0 +1,29 @@
+<def f='include/wayland-client-protocol.h' l='2775' ll='2792'/>
+<doc f='include/wayland-client-protocol.h' l='2747'>/**
+ * @ingroup iface_wl_data_device_manager
+ * drag and drop actions
+ *
+ * This is a bitmask of the available/preferred actions in a
+ * drag-and-drop operation.
+ *
+ * In the compositor, the selected action is a result of matching the
+ * actions offered by the source and destination sides.  &quot;action&quot; events
+ * with a &quot;none&quot; action will be sent to both source and destination if
+ * there is no match. All further checks will effectively happen on
+ * (source actions ∩ destination actions).
+ *
+ * In addition, compositors may also pick different actions in
+ * reaction to key modifiers being pressed. One common design that
+ * is used in major toolkits (and the behavior recommended for
+ * compositors) is:
+ *
+ * - If no modifiers are pressed, the first match (in bit order)
+ * will be used.
+ * - Pressing Shift selects &quot;move&quot;, if enabled in the mask.
+ * - Pressing Control selects &quot;copy&quot;, if enabled in the mask.
+ *
+ * Behavior beyond that is considered implementation-dependent.
+ * Compositors may for example bind other modifiers (like Alt/Meta)
+ * or drags initiated with other buttons than BTN_LEFT to specific
+ * actions (e.g. &quot;ask&quot;).
+ */</doc>

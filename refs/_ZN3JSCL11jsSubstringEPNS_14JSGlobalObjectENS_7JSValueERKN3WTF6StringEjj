@@ -1,0 +1,15 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/StringObject.h' l='102' ll='109' type='JSC::JSString * JSC::jsSubstring(JSC::JSGlobalObject * globalObject, JSC::JSValue originalValue, const WTF::String &amp; string, unsigned int offset, unsigned int length)'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/StringObject.h' l='97'>// Helper that tries to use the JSString substring sharing mechanism if &apos;originalValue&apos; is a JSString.
+// FIXME: Basically any use of this is bad. toString() returns a JSString* so we don&apos;t need to
+// pass around the originalValue; we could just pass around the JSString*. And since we&apos;ve
+// resolved it, we know that we can just allocate the substring cell directly.
+// https://bugs.webkit.org/show_bug.cgi?id=158140</doc>
+<def f='WebKit/Source/JavaScriptCore/runtime/StringObject.h' l='102' ll='109' type='JSC::JSString * JSC::jsSubstring(JSC::JSGlobalObject * globalObject, JSC::JSValue originalValue, const WTF::String &amp; string, unsigned int offset, unsigned int length)'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/StringObject.h' l='97'>// Helper that tries to use the JSString substring sharing mechanism if &apos;originalValue&apos; is a JSString.
+// FIXME: Basically any use of this is bad. toString() returns a JSString* so we don&apos;t need to
+// pass around the originalValue; we could just pass around the JSString*. And since we&apos;ve
+// resolved it, we know that we can just allocate the substring cell directly.
+// https://bugs.webkit.org/show_bug.cgi?id=158140</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/StringPrototype.cpp' l='1218' u='c' c='_ZN3JSCL29splitStringByOneCharacterImplEPNS_14JSGlobalObjectEPNS_7JSArrayENS_7JSValueERKN3WTF6StringEPNS5_10StringImplEDsRmRjj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/StringPrototype.cpp' l='1344' u='c' c='_ZN3JSC24stringProtoFuncSplitFastEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/StringPrototype.cpp' l='1362' u='c' c='_ZN3JSC24stringProtoFuncSplitFastEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>

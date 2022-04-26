@@ -1,0 +1,20 @@
+<def f='include/wayland-client-protocol.h' l='2133' ll='2138' type='void wl_data_offer_receive(struct wl_data_offer * wl_data_offer, const char * mime_type, int32_t fd)'/>
+<doc f='include/wayland-client-protocol.h' l='2114'>/**
+ * @ingroup iface_wl_data_offer
+ *
+ * To transfer the offered data, the client issues this request
+ * and indicates the mime type it wants to receive.  The transfer
+ * happens through the passed file descriptor (typically created
+ * with the pipe system call).  The source client writes the data
+ * in the mime type representation requested and then closes the
+ * file descriptor.
+ *
+ * The receiving client reads from the read end of the pipe until
+ * EOF and then closes its end, at which point the transfer is
+ * complete.
+ *
+ * This request may happen multiple times for different mime types,
+ * both before and after wl_data_device.drop. Drag-and-drop destination
+ * clients may preemptively fetch data or examine it more closely to
+ * determine acceptance.
+ */</doc>

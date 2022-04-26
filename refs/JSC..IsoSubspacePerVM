@@ -1,0 +1,17 @@
+<def f='WebKit/Source/JavaScriptCore/heap/IsoSubspacePerVM.h' l='39' ll='68'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspacePerVM.cpp' l='36' c='_ZN3JSC16IsoSubspacePerVM23AutoremovingIsoSubspaceC1ERS0_N3WTF7CStringERNS_4HeapEPNS_12HeapCellTypeEm'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspacePerVM.cpp' l='49'/>
+<size>24</size>
+<doc f='WebKit/Source/JavaScriptCore/heap/IsoSubspacePerVM.h' l='35'>// This is an appropriate way to stash IsoSubspaces for rarely-used classes or classes that are mostly
+// sure to be main-thread-only. But if a class typically gets instantiated from multiple threads at
+// once, then this is not great, because concurrent allocations will probably contend on this thing&apos;s
+// lock.</doc>
+<fun r='_ZN3JSC16IsoSubspacePerVMC1EN3WTF8FunctionIFNS0_18SubspaceParametersERNS_2VMEEEE'/>
+<fun r='_ZN3JSC16IsoSubspacePerVMD1Ev'/>
+<fun r='_ZN3JSC16IsoSubspacePerVM5forVMERNS_2VME'/>
+<mbr r='JSC::IsoSubspacePerVM::m_lock' o='0' t='WTF::Lock'/>
+<mbr r='JSC::IsoSubspacePerVM::m_subspacePerVM' o='64' t='HashMap&lt;JSC::VM *, JSC::IsoSubspace *&gt;'/>
+<mbr r='JSC::IsoSubspacePerVM::m_subspaceParameters' o='128' t='Function&lt;JSC::IsoSubspacePerVM::SubspaceParameters (JSC::VM &amp;)&gt;'/>
+<fun r='_ZN3JSC16IsoSubspacePerVMC1EN3WTF8FunctionIFNS0_18SubspaceParametersERNS_2VMEEEE'/>
+<fun r='_ZN3JSC16IsoSubspacePerVMD1Ev'/>
+<fun r='_ZN3JSC16IsoSubspacePerVM5forVMERNS_2VME'/>

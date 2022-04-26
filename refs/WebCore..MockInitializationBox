@@ -1,0 +1,24 @@
+<inh f='WebKit/Source/WebCore/platform/mock/mediasource/MockBox.h' l='46' c='WebCore::MockBox'/>
+<def f='WebKit/Source/WebCore/platform/mock/mediasource/MockBox.h' l='97' ll='108'/>
+<use f='WebKit/Source/WebCore/platform/mock/mediasource/MockSourceBufferPrivate.h' l='77' c='_ZN7WebCore23MockSourceBufferPrivate31didReceiveInitializationSegmentERKNS_21MockInitializationBoxE'/>
+<use f='WebKit/Source/WebCore/platform/mock/mediasource/MockSourceBufferPrivate.cpp' l='152' c='_ZN7WebCore23MockSourceBufferPrivate6appendEON3WTF6VectorIhLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/mock/mediasource/MockSourceBufferPrivate.cpp' l='152' c='_ZN7WebCore23MockSourceBufferPrivate6appendEON3WTF6VectorIhLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/mock/mediasource/MockSourceBufferPrivate.cpp' l='171' c='_ZN7WebCore23MockSourceBufferPrivate31didReceiveInitializationSegmentERKNS_21MockInitializationBoxE'/>
+<size>48</size>
+<doc f='WebKit/Source/WebCore/platform/mock/mediasource/MockBox.h' l='88'>// A MockInitializationBox extends MockBox and contains 0 or more
+// MockTrackBoxes. It expects the following data structure:
+//
+// 4 bytes : 4CC : identifier = &apos;init&apos;
+// 4 bytes : unsigned : length = 16 + (13 * num tracks)
+// 4 bytes : signed : duration time value
+// 4 bytes : signed : duration time scale
+// N bytes : MockTrackBoxes : tracks
+//</doc>
+<fun r='_ZN7WebCore21MockInitializationBox4typeEv'/>
+<fun r='_ZN7WebCore21MockInitializationBoxC1EPN3JSC11ArrayBufferE'/>
+<fun r='_ZNK7WebCore21MockInitializationBox8durationEv'/>
+<fun r='_ZNK7WebCore21MockInitializationBox6tracksEv'/>
+<mbr r='WebCore::MockInitializationBox::m_duration' o='128' t='WTF::MediaTime'/>
+<mbr r='WebCore::MockInitializationBox::m_tracks' o='256' t='Vector&lt;WebCore::MockTrackBox&gt;'/>
+<fun r='_ZN7WebCore21MockInitializationBoxC1EPN3JSC11ArrayBufferE'/>
+<fun r='_ZN7WebCore21MockInitializationBox4typeEv'/>

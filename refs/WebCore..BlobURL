@@ -1,0 +1,17 @@
+<def f='WebKit/Source/WebCore/fileapi/BlobURL.h' l='48' ll='59'/>
+<size>1</size>
+<doc f='WebKit/Source/WebCore/fileapi/BlobURL.h' l='39'>// Blob URLs are of the form
+//     blob:%escaped_origin%/%UUID%
+// For public urls, the origin of the host page is encoded in the URL value to
+// allow easy lookup of the origin when security checks need to be performed.
+// When loading blobs via ResourceHandle or when reading blobs via FileReader
+// the loader conducts security checks that examine the origin of host page
+// encoded in the public blob url. The origin baked into internal blob urls
+// is a simple constant value, &quot;blobinternal://&quot;, internal urls should not
+// be used with ResourceHandle or FileReader.</doc>
+<fun r='_ZN7WebCore7BlobURL15createPublicURLEPNS_14SecurityOriginE'/>
+<fun r='_ZN7WebCore7BlobURL17createInternalURLEv'/>
+<fun r='_ZN7WebCore7BlobURL12getOriginURLERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore7BlobURL15isSecureBlobURLERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore7BlobURL13createBlobURLERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore7BlobURLC1Ev'/>

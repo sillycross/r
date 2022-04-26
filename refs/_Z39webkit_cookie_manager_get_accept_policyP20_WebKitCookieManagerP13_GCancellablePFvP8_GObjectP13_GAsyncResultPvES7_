@@ -1,0 +1,16 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitCookieManager.cpp' l='235' ll='244' type='void webkit_cookie_manager_get_accept_policy(WebKitCookieManager * manager, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer userData)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitCookieManager.cpp' l='220'>/**
+ * webkit_cookie_manager_get_accept_policy:
+ * @cookie_manager: a #WebKitCookieManager
+ * @cancellable: (allow-none): a #GCancellable or %NULL to ignore
+ * @callback: (scope async): a #GAsyncReadyCallback to call when the request is satisfied
+ * @user_data: (closure): the data to pass to callback function
+ *
+ * Asynchronously get the cookie acceptance policy of @cookie_manager.
+ * Note that when policy was set to %WEBKIT_COOKIE_POLICY_ACCEPT_NO_THIRD_PARTY and
+ * ITP is enabled, this will return %WEBKIT_COOKIE_POLICY_ACCEPT_ALWAYS.
+ * See also webkit_website_data_manager_set_itp_enabled().
+ *
+ * When the operation is finished, @callback will be called. You can then call
+ * webkit_cookie_manager_get_accept_policy_finish() to get the result of the operation.
+ */</doc>

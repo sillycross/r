@@ -1,0 +1,7 @@
+<def f='WebKit/Source/WebCore/platform/graphics/filters/FilterOperation.cpp' l='231' ll='294' type='ColorComponents&lt;float, 4&gt; WebCore::hueRotate(const ColorComponents&lt;float, 4&gt; &amp; color, float amount)'/>
+<use f='WebKit/Source/WebCore/platform/graphics/filters/FilterOperation.cpp' l='298' u='c' c='_ZNK7WebCore30InvertLightnessFilterOperation14transformColorERNS_19BoundedGammaEncodedIfNS_15SRGBADescriptorEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/filters/FilterOperation.cpp' l='320' u='c' c='_ZNK7WebCore30InvertLightnessFilterOperation21inverseTransformColorERNS_19BoundedGammaEncodedIfNS_15SRGBADescriptorEEE'/>
+<doc f='WebKit/Source/WebCore/platform/graphics/filters/FilterOperation.cpp' l='227'>// FIXME: This hueRotate code exists to allow InvertLightnessFilterOperation to perform hue rotation
+// on color values outside of the non-extended SRGB value range (0-1) to maintain the behavior of colors
+// prior to clamping being enforced. It should likely just use the existing hueRotateColorMatrix(amount)
+// in ColorMatrix.h</doc>

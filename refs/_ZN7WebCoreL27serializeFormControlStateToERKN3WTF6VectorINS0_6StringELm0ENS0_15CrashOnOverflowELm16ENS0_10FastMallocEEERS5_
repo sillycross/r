@@ -1,0 +1,15 @@
+<def f='WebKit/Source/WebCore/html/FormController.cpp' l='59' ll='64' type='void WebCore::serializeFormControlStateTo(const WebCore::FormControlState &amp; formControlState, Vector&lt;WTF::String&gt; &amp; stateVector)'/>
+<use f='WebKit/Source/WebCore/html/FormController.cpp' l='226' u='c' c='_ZNK7WebCore14SavedFormState11serializeToERN3WTF6VectorINS1_6StringELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<doc f='WebKit/Source/WebCore/html/FormController.cpp' l='45'>// ----------------------------------------------------------------------------
+
+// Serilized form of FormControlState:
+//  (&apos;,&apos; means strings around it are separated in stateVector.)
+//
+// SerializedControlState ::= SkipState | RestoreState
+// SkipState ::= &apos;0&apos;
+// RestoreState ::= UnsignedNumber, ControlValue+
+// UnsignedNumber ::= [0-9]+
+// ControlValue ::= arbitrary string
+//
+// RestoreState has a sequence of ControlValues. The length of the
+// sequence is represented by UnsignedNumber.</doc>

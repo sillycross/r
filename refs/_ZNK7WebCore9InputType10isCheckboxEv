@@ -1,0 +1,10 @@
+<def f='WebKit/Source/WebCore/html/InputType.h' l='176' type='bool WebCore::InputType::isCheckbox() const'/>
+<doc f='WebKit/Source/WebCore/html/InputType.h' l='167'>// Type query functions.
+
+    // Any time we are using one of these functions it&apos;s best to refactor
+    // to add a virtual function to allow the input type object to do the
+    // work instead, or at least make a query function that asks a higher
+    // level question. These functions make the HTMLInputElement class
+    // inflexible because it&apos;s harder to add new input types if there is
+    // scattered code with special cases for various types.</doc>
+<use f='WebKit/Source/WebCore/html/HTMLInputElement.cpp' l='1745' u='c' c='_ZNK7WebCore16HTMLInputElement10isCheckboxEv'/>

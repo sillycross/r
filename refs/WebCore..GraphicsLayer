@@ -1,0 +1,709 @@
+<use f='WebKit/Source/WebCore/page/PageOverlay.h' l='115' c='_ZN7WebCore11PageOverlay5layerEv'/>
+<use f='WebKit/Source/WebCore/platform/ScrollableArea.h' l='328' c='_ZNK7WebCore14ScrollableArea27layerForHorizontalScrollbarEv'/>
+<use f='WebKit/Source/WebCore/platform/ScrollableArea.h' l='329' c='_ZNK7WebCore14ScrollableArea25layerForVerticalScrollbarEv'/>
+<use f='WebKit/Source/WebCore/platform/ScrollableArea.h' l='361' c='_ZNK7WebCore14ScrollableArea20layerForScrollCornerEv'/>
+<use f='WebKit/Source/WebCore/page/FrameView.h' l='167' c='_ZN7WebCore9FrameView30graphicsLayerForPlatformWidgetEPv'/>
+<use f='WebKit/Source/WebCore/page/FrameView.h' l='674' c='_ZNK7WebCore9FrameView27layerForHorizontalScrollbarEv'/>
+<use f='WebKit/Source/WebCore/page/FrameView.h' l='675' c='_ZNK7WebCore9FrameView25layerForVerticalScrollbarEv'/>
+<use f='WebKit/Source/WebCore/page/FrameView.h' l='764' c='_ZNK7WebCore9FrameView20layerForScrollCornerEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerClient.h' l='107' c='_ZN7WebCore19GraphicsLayerClient24tiledBackingUsageChangedEPKNS_13GraphicsLayerEb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerClient.h' l='110' c='_ZN7WebCore19GraphicsLayerClient22notifyAnimationStartedEPKNS_13GraphicsLayerERKN3WTF6StringENS4_13MonotonicTimeE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerClient.h' l='111' c='_ZN7WebCore19GraphicsLayerClient20notifyAnimationEndedEPKNS_13GraphicsLayerERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerClient.h' l='115' c='_ZN7WebCore19GraphicsLayerClient19notifyFlushRequiredEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerClient.h' l='118' c='_ZN7WebCore19GraphicsLayerClient31notifyFlushBeforeDisplayRefreshEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerClient.h' l='120' c='_ZN7WebCore19GraphicsLayerClient13paintContentsEPKNS_13GraphicsLayerERNS_15GraphicsContextERKNS_9FloatRectEj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerClient.h' l='121' c='_ZN7WebCore19GraphicsLayerClient30didChangePlatformLayerForLayerEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerClient.h' l='125' c='_ZNK7WebCore19GraphicsLayerClient19getCurrentTransformEPKNS_13GraphicsLayerERNS_20TransformationMatrixE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerClient.h' l='129' c='_ZNK7WebCore19GraphicsLayerClient39customPositionForVisibleRectComputationEPKNS_13GraphicsLayerERNS_10FloatPointE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerClient.h' l='137' c='_ZNK7WebCore19GraphicsLayerClient34contentsScaleMultiplierForNewTilesEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerClient.h' l='138' c='_ZNK7WebCore19GraphicsLayerClient33paintsOpaquelyAtNonIntegralScalesEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerClient.h' l='142' c='_ZNK7WebCore19GraphicsLayerClient21shouldSkipLayerInDumpEPKNS_13GraphicsLayerEj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerClient.h' l='143' c='_ZNK7WebCore19GraphicsLayerClient26shouldDumpPropertyForLayerEPKNS_13GraphicsLayerEPKcj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerClient.h' l='145' c='_ZNK7WebCore19GraphicsLayerClient29shouldAggressivelyRetainTilesEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerClient.h' l='146' c='_ZNK7WebCore19GraphicsLayerClient34shouldTemporarilyRetainTileCohortsEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerClient.h' l='152' c='_ZNK7WebCore19GraphicsLayerClient64needsIOSDumpRenderTreeMainFrameRenderViewLayerIsAlwaysOpaqueHackERKNS_13GraphicsLayerE'/>
+<inh f='WebKit/WTF/Headers/wtf/RefCounted.h' l='184' c='WTF::RefCounted'/>
+<def f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='247' ll='780'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='247'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='258' c='_ZN7WebCore13GraphicsLayer6createEPNS_20GraphicsLayerFactoryERNS_19GraphicsLayerClientENS0_4TypeE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='263' c='_ZN7WebCore13GraphicsLayer16unparentAndClearERN3WTF6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='265' c='_ZN7WebCore13GraphicsLayer5clearERN3WTF6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='284' c='_ZNK7WebCore13GraphicsLayer6parentEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='285' c='_ZN7WebCore13GraphicsLayer9setParentEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='288' c='_ZNK7WebCore13GraphicsLayer11hasAncestorEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='290' c='_ZNK7WebCore13GraphicsLayer8childrenEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='291' c='_ZN7WebCore13GraphicsLayer8childrenEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='294' c='_ZN7WebCore13GraphicsLayer11setChildrenEON3WTF6VectorINS1_3RefIS0_NS1_12RawPtrTraitsIS0_EEEELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='297' c='_ZN7WebCore13GraphicsLayer8addChildEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='298' c='_ZN7WebCore13GraphicsLayer15addChildAtIndexEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEEi'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='299' c='_ZN7WebCore13GraphicsLayer13addChildAboveEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='299' c='_ZN7WebCore13GraphicsLayer13addChildAboveEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='300' c='_ZN7WebCore13GraphicsLayer13addChildBelowEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='300' c='_ZN7WebCore13GraphicsLayer13addChildBelowEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='301' c='_ZN7WebCore13GraphicsLayer12replaceChildEPS0_ON3WTF3RefIS0_NS2_12RawPtrTraitsIS0_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='301' c='_ZN7WebCore13GraphicsLayer12replaceChildEPS0_ON3WTF3RefIS0_NS2_12RawPtrTraitsIS0_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='307' c='_ZNK7WebCore13GraphicsLayer9maskLayerEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='308' c='_ZN7WebCore13GraphicsLayer12setMaskLayerEON3WTF6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='314' c='_ZN7WebCore13GraphicsLayer20setReplicatedByLayerEON3WTF6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='318' c='_ZNK7WebCore13GraphicsLayer12replicaLayerEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='641' c='_ZN7WebCore13GraphicsLayer8traverseERS0_RKN3WTF8FunctionIFvS1_EEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='641' c='_ZN7WebCore13GraphicsLayer8traverseERS0_RKN3WTF8FunctionIFvS1_EEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='671' c='_ZNK7WebCore13GraphicsLayer15replicatedLayerEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='672' c='_ZN7WebCore13GraphicsLayer18setReplicatedLayerEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='757'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='758'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='760'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='762'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='764'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='628' c='_ZN6WebKit7WebPage31enterAcceleratedCompositingModeEPN7WebCore13GraphicsLayerE'/>
+<size>544</size>
+<doc f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.h' l='244'>// GraphicsLayer is an abstraction for a rendering surface with backing store,
+// which may have associated transformation and animations.</doc>
+<fun r='_ZN7WebCore13GraphicsLayer6createEPNS_20GraphicsLayerFactoryERNS_19GraphicsLayerClientENS0_4TypeE'/>
+<fun r='_ZN7WebCore13GraphicsLayerD1Ev'/>
+<fun r='_ZN7WebCore13GraphicsLayer16unparentAndClearERN3WTF6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEE'/>
+<fun r='_ZN7WebCore13GraphicsLayer5clearERN3WTF6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEE'/>
+<fun r='_ZN7WebCore13GraphicsLayer11clearClientEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer9setClientERNS_19GraphicsLayerClientE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer4typeEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer10initializeENS0_4TypeE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer14primaryLayerIDEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer6clientEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer4nameEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer7setNameERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer9debugNameEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer6parentEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer9setParentEPS0_'/>
+<fun r='_ZNK7WebCore13GraphicsLayer11hasAncestorEPS0_'/>
+<fun r='_ZNK7WebCore13GraphicsLayer8childrenEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer8childrenEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer11setChildrenEON3WTF6VectorINS1_3RefIS0_NS1_12RawPtrTraitsIS0_EEEELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<fun r='_ZN7WebCore13GraphicsLayer8addChildEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEE'/>
+<fun r='_ZN7WebCore13GraphicsLayer15addChildAtIndexEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEEi'/>
+<fun r='_ZN7WebCore13GraphicsLayer13addChildAboveEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEEPS0_'/>
+<fun r='_ZN7WebCore13GraphicsLayer13addChildBelowEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEEPS0_'/>
+<fun r='_ZN7WebCore13GraphicsLayer12replaceChildEPS0_ON3WTF3RefIS0_NS2_12RawPtrTraitsIS0_EEEE'/>
+<fun r='_ZN7WebCore13GraphicsLayer17removeAllChildrenEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer16removeFromParentEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer9maskLayerEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer12setMaskLayerEON3WTF6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEE'/>
+<fun r='_ZN7WebCore13GraphicsLayer14setIsMaskLayerEb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer11isMaskLayerEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer20setReplicatedByLayerEON3WTF6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer12isReplicatedEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer12replicaLayerEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer23replicatedLayerPositionEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer26setReplicatedLayerPositionERKNS_10FloatPointE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer18offsetFromRendererEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer21setOffsetFromRendererERKNS_9FloatSizeENS0_21ShouldSetNeedsDisplayE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer12scrollOffsetEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer15setScrollOffsetERKNS_8IntPointENS0_21ShouldSetNeedsDisplayE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer15scrollingNodeIDEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer18setScrollingNodeIDEm'/>
+<fun r='_ZNK7WebCore13GraphicsLayer8positionEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer11setPositionERKNS_10FloatPointE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer19approximatePositionEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer22setApproximatePositionERKNS_10FloatPointE'/>
+<fun r='_ZN7WebCore13GraphicsLayer12syncPositionERKNS_10FloatPointE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer11anchorPointEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer14setAnchorPointERKNS_12FloatPoint3DE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer4sizeEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer7setSizeERKNS_9FloatSizeE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer12boundsOriginEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer15setBoundsOriginERKNS_10FloatPointE'/>
+<fun r='_ZN7WebCore13GraphicsLayer16syncBoundsOriginERKNS_10FloatPointE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer9transformEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer12setTransformERKNS_20TransformationMatrixE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer23hasNonIdentityTransformEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer17childrenTransformEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer20setChildrenTransformERKNS_20TransformationMatrixE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer31hasNonIdentityChildrenTransformEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer11preserves3DEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer14setPreserves3DEb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer13masksToBoundsEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer16setMasksToBoundsEb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer12drawsContentEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer15setDrawsContentEb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer18contentsAreVisibleEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer18setContentsVisibleEb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer22userInteractionEnabledEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer25setUserInteractionEnabledEb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer18acceleratesDrawingEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer21setAcceleratesDrawingEb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer22usesDisplayListDrawingEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer25setUsesDisplayListDrawingEb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer13needsBackdropEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer15backgroundColorEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer18setBackgroundColorERKNS_5ColorE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer14contentsOpaqueEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer17setContentsOpaqueEb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer31supportsSubpixelAntialiasedTextEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer34setSupportsSubpixelAntialiasedTextEb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer18backfaceVisibilityEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer21setBackfaceVisibilityEb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer7opacityEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer10setOpacityEf'/>
+<fun r='_ZNK7WebCore13GraphicsLayer7filtersEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer10setFiltersERKNS_16FilterOperationsE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer15backdropFiltersEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer18setBackdropFiltersERKNS_16FilterOperationsE'/>
+<fun r='_ZN7WebCore13GraphicsLayer22setBackdropFiltersRectERKNS_16FloatRoundedRectE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer19backdropFiltersRectEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer9blendModeEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer12setBlendModeENS_9BlendModeE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer13paintingPhaseEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer16setPaintingPhaseEN3WTF9OptionSetINS_26GraphicsLayerPaintingPhaseEEE'/>
+<fun r='_ZN7WebCore13GraphicsLayer15setNeedsDisplayEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer21setNeedsDisplayInRectERKNS_9FloatRectENS0_17ShouldClipToLayerE'/>
+<fun r='_ZN7WebCore13GraphicsLayer23setContentsNeedsDisplayEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer20setContentsTilePhaseERKNS_9FloatSizeE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer17contentsTilePhaseEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer19setContentsTileSizeERKNS_9FloatSizeE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer16contentsTileSizeEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer17hasContentsTilingEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer12contentsRectEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer15setContentsRectERKNS_9FloatRectE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer20contentsClippingRectEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer23setContentsClippingRectERKNS_16FloatRoundedRectE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer28contentsRectClipsDescendantsEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer31setContentsRectClipsDescendantsEb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer16maskToBoundsRectEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer20setMasksToBoundsRectERKNS_16FloatRoundedRectE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer14shapeLayerPathEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer17setShapeLayerPathERKNS_4PathE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer18shapeLayerWindRuleEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer21setShapeLayerWindRuleENS_8WindRuleE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer11eventRegionEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer14setEventRegionEONS_11EventRegionE'/>
+<fun r='_ZN7WebCore13GraphicsLayer26animationNameForTransitionENS_18AnimatedPropertyIDE'/>
+<fun r='_ZN7WebCore13GraphicsLayer12addAnimationERKNS_17KeyframeValueListERKNS_9FloatSizeEPKNS_9AnimationERKN3WTF6StringEd'/>
+<fun r='_ZN7WebCore13GraphicsLayer14pauseAnimationERKN3WTF6StringEd'/>
+<fun r='_ZN7WebCore13GraphicsLayer15removeAnimationERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore13GraphicsLayer33transformRelatedPropertyDidChangeEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer17suspendAnimationsEN3WTF13MonotonicTimeE'/>
+<fun r='_ZN7WebCore13GraphicsLayer16resumeAnimationsEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer31acceleratedAnimationsForTestingEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer18setContentsToImageEPNS_5ImageE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer28shouldDirectlyCompositeImageEPNS_5ImageE'/>
+<fun r='_ZN7WebCore13GraphicsLayer23setContentsToSolidColorERKNS_5ColorE'/>
+<fun r='_ZN7WebCore13GraphicsLayer26setContentsToPlatformLayerEPN7Nicosia13PlatformLayerENS0_20ContentsLayerPurposeE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer17usesContentsLayerEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer26paintGraphicsLayerContentsERNS_15GraphicsContextERKNS_9FloatRectEj'/>
+<fun r='_ZNK7WebCore13GraphicsLayer13platformLayerEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer22setContentsOrientationENS0_33CompositingCoordinatesOrientationE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer19contentsOrientationEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer9dumpLayerERN3WTF10TextStreamEj'/>
+<fun r='_ZN7WebCore13GraphicsLayer18setShowDebugBorderEb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer20isShowingDebugBorderEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer21setShowRepaintCounterEb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer23isShowingRepaintCounterEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer12repaintCountEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer21incrementRepaintCountEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer23setDebugBackgroundColorERKNS_5ColorE'/>
+<fun r='_ZN7WebCore13GraphicsLayer14setDebugBorderERKNS_5ColorEf'/>
+<fun r='_ZN7WebCore13GraphicsLayer19setCustomAppearanceENS0_16CustomAppearanceE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer16customAppearanceEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer9zPositionEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer12setZPositionEf'/>
+<fun r='_ZNK7WebCore13GraphicsLayer20pixelAlignmentOffsetEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer19setAppliesPageScaleEb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer16appliesPageScaleEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer15pageScaleFactorEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer17deviceScaleFactorEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer30setAllowsBackingStoreDetachingEb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer27allowsBackingStoreDetachingEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer30deviceOrPageScaleFactorChangedEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer54noteDeviceOrPageScaleFactorChangedIncludingDescendantsEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer13setIsInWindowEb'/>
+<fun r='_ZN7WebCore13GraphicsLayer21flushCompositingStateERKNS_9FloatRectE'/>
+<fun r='_ZN7WebCore13GraphicsLayer37flushCompositingStateForThisLayerOnlyEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer30visibleRectChangeRequiresFlushERKNS_9FloatRectE'/>
+<fun r='_ZN7WebCore13GraphicsLayer29adjustCoverageRectForMovementERKNS_9FloatRectES3_S3_'/>
+<fun r='_ZNK7WebCore13GraphicsLayer15layerTreeAsTextEj'/>
+<fun r='_ZNK7WebCore13GraphicsLayer17displayListAsTextEj'/>
+<fun r='_ZNK7WebCore13GraphicsLayer23platformLayerTreeAsTextEN3WTF9OptionSetINS_28PlatformLayerTreeAsTextFlagsEEE'/>
+<fun r='_ZN7WebCore13GraphicsLayer30setIsTrackingDisplayListReplayEb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer27isTrackingDisplayListReplayEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer23replayDisplayListAsTextEj'/>
+<fun r='_ZNK7WebCore13GraphicsLayer26backingStoreMemoryEstimateEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer20backingStoreAttachedEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer30backingStoreAttachedForTestingEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer12tiledBackingEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer20resetTrackedRepaintsEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer14addRepaintRectERKNS_9FloatRectE'/>
+<fun r='_ZN7WebCore13GraphicsLayer19supportsRoundedClipEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer30supportsBackgroundColorContentEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer17supportsLayerTypeENS0_4TypeE'/>
+<fun r='_ZN7WebCore13GraphicsLayer22supportsContentsTilingEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer36supportsSubpixelAntialiasedLayerTextEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer21updateDebugIndicatorsEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer17isGraphicsLayerCAEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer23isGraphicsLayerCARemoteEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer28isGraphicsLayerTextureMapperEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer26isCoordinatedGraphicsLayerEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer15animationExtentEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer18setAnimationExtentESt8optionalINS_9FloatRectEE'/>
+<fun r='_ZN7WebCore13GraphicsLayer8traverseERS0_RKN3WTF8FunctionIFvS1_EEE'/>
+<fun r='_ZN7WebCore13GraphicsLayerC1ENS0_4TypeERNS_19GraphicsLayerClientE'/>
+<fun r='_ZN7WebCore13GraphicsLayer15willBeDestroyedEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer14beingDestroyedEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer12clearFiltersEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer20clearBackdropFiltersEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer24validateFilterOperationsERKNS_17KeyframeValueListE'/>
+<fun r='_ZN7WebCore13GraphicsLayer27validateTransformOperationsERKNS_17KeyframeValueListERb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer25shouldRepaintOnSizeChangeEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer24removeFromParentInternalEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer15replicatedLayerEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer18setReplicatedLayerEPS0_'/>
+<fun r='_ZNK7WebCore13GraphicsLayer14dumpPropertiesERN3WTF10TextStreamEj'/>
+<fun r='_ZNK7WebCore13GraphicsLayer24dumpAdditionalPropertiesERN3WTF10TextStreamEj'/>
+<fun r='_ZNK7WebCore13GraphicsLayer18getDebugBorderInfoERNS_5ColorERf'/>
+<mbr r='WebCore::GraphicsLayer::m_client' o='128' t='WebCore::GraphicsLayerClient *'/>
+<mbr r='WebCore::GraphicsLayer::m_name' o='192' t='WTF::String'/>
+<mbr r='WebCore::GraphicsLayer::m_offsetFromRenderer' o='256' t='WebCore::FloatSize'/>
+<mbr r='WebCore::GraphicsLayer::m_scrollOffset' o='352' t='WebCore::ScrollOffset'/>
+<mbr r='WebCore::GraphicsLayer::m_position' o='416' t='WebCore::FloatPoint'/>
+<mbr r='WebCore::GraphicsLayer::m_approximatePosition' o='480' t='std::optional&lt;FloatPoint&gt;'/>
+<mbr r='WebCore::GraphicsLayer::m_anchorPoint' o='576' t='WebCore::FloatPoint3D'/>
+<mbr r='WebCore::GraphicsLayer::m_size' o='672' t='WebCore::FloatSize'/>
+<mbr r='WebCore::GraphicsLayer::m_boundsOrigin' o='768' t='WebCore::FloatPoint'/>
+<mbr r='WebCore::GraphicsLayer::m_transform' o='832' t='std::unique_ptr&lt;TransformationMatrix&gt;'/>
+<mbr r='WebCore::GraphicsLayer::m_childrenTransform' o='896' t='std::unique_ptr&lt;TransformationMatrix&gt;'/>
+<mbr r='WebCore::GraphicsLayer::m_backgroundColor' o='960' t='WebCore::Color'/>
+<mbr r='WebCore::GraphicsLayer::m_opacity' o='1024' t='float'/>
+<mbr r='WebCore::GraphicsLayer::m_zPosition' o='1056' t='float'/>
+<mbr r='WebCore::GraphicsLayer::m_filters' o='1088' t='WebCore::FilterOperations'/>
+<mbr r='WebCore::GraphicsLayer::m_backdropFilters' o='1216' t='WebCore::FilterOperations'/>
+<mbr r='WebCore::GraphicsLayer::m_scrollingNodeID' o='1344' t='WebCore::ScrollingNodeID'/>
+<mbr r='WebCore::GraphicsLayer::m_blendMode' o='1408' t='WebCore::BlendMode'/>
+<mbr r='WebCore::GraphicsLayer::m_type' o='1416' t='const WebCore::GraphicsLayer::Type'/>
+<mbr r='WebCore::GraphicsLayer::m_customAppearance' o='1424' t='WebCore::GraphicsLayer::CustomAppearance'/>
+<mbr r='WebCore::GraphicsLayer::m_paintingPhase' o='1440' t='OptionSet&lt;WebCore::GraphicsLayerPaintingPhase&gt;'/>
+<mbr r='WebCore::GraphicsLayer::m_contentsOrientation' o='1472' t='WebCore::GraphicsLayer::CompositingCoordinatesOrientation'/>
+<mbr r='WebCore::GraphicsLayer::m_beingDestroyed' o='1480' t='bool'/>
+<mbr r='WebCore::GraphicsLayer::m_contentsOpaque' o='1481' t='bool'/>
+<mbr r='WebCore::GraphicsLayer::m_supportsSubpixelAntialiasedText' o='1482' t='bool'/>
+<mbr r='WebCore::GraphicsLayer::m_preserves3D' o='1483' t='bool'/>
+<mbr r='WebCore::GraphicsLayer::m_backfaceVisibility' o='1484' t='bool'/>
+<mbr r='WebCore::GraphicsLayer::m_masksToBounds' o='1485' t='bool'/>
+<mbr r='WebCore::GraphicsLayer::m_drawsContent' o='1486' t='bool'/>
+<mbr r='WebCore::GraphicsLayer::m_contentsVisible' o='1487' t='bool'/>
+<mbr r='WebCore::GraphicsLayer::m_contentsRectClipsDescendants' o='1488' t='bool'/>
+<mbr r='WebCore::GraphicsLayer::m_acceleratesDrawing' o='1489' t='bool'/>
+<mbr r='WebCore::GraphicsLayer::m_usesDisplayListDrawing' o='1490' t='bool'/>
+<mbr r='WebCore::GraphicsLayer::m_appliesPageScale' o='1491' t='bool'/>
+<mbr r='WebCore::GraphicsLayer::m_showDebugBorder' o='1492' t='bool'/>
+<mbr r='WebCore::GraphicsLayer::m_showRepaintCounter' o='1493' t='bool'/>
+<mbr r='WebCore::GraphicsLayer::m_isMaskLayer' o='1494' t='bool'/>
+<mbr r='WebCore::GraphicsLayer::m_isTrackingDisplayListReplay' o='1495' t='bool'/>
+<mbr r='WebCore::GraphicsLayer::m_userInteractionEnabled' o='1496' t='bool'/>
+<mbr r='WebCore::GraphicsLayer::m_canDetachBackingStore' o='1497' t='bool'/>
+<mbr r='WebCore::GraphicsLayer::m_repaintCount' o='1504' t='int'/>
+<mbr r='WebCore::GraphicsLayer::m_children' o='1536' t='Vector&lt;Ref&lt;WebCore::GraphicsLayer&gt; &gt;'/>
+<mbr r='WebCore::GraphicsLayer::m_parent' o='1664' t='WebCore::GraphicsLayer *'/>
+<mbr r='WebCore::GraphicsLayer::m_maskLayer' o='1728' t='RefPtr&lt;WebCore::GraphicsLayer&gt;'/>
+<mbr r='WebCore::GraphicsLayer::m_replicaLayer' o='1792' t='RefPtr&lt;WebCore::GraphicsLayer&gt;'/>
+<mbr r='WebCore::GraphicsLayer::m_replicatedLayer' o='1856' t='WebCore::GraphicsLayer *'/>
+<mbr r='WebCore::GraphicsLayer::m_replicatedLayerPosition' o='1920' t='WebCore::FloatPoint'/>
+<mbr r='WebCore::GraphicsLayer::m_contentsRect' o='1984' t='WebCore::FloatRect'/>
+<mbr r='WebCore::GraphicsLayer::m_contentsClippingRect' o='2144' t='WebCore::FloatRoundedRect'/>
+<mbr r='WebCore::GraphicsLayer::m_masksToBoundsRect' o='2688' t='WebCore::FloatRoundedRect'/>
+<mbr r='WebCore::GraphicsLayer::m_contentsTilePhase' o='3232' t='WebCore::FloatSize'/>
+<mbr r='WebCore::GraphicsLayer::m_contentsTileSize' o='3328' t='WebCore::FloatSize'/>
+<mbr r='WebCore::GraphicsLayer::m_backdropFiltersRect' o='3424' t='WebCore::FloatRoundedRect'/>
+<mbr r='WebCore::GraphicsLayer::m_animationExtent' o='3968' t='std::optional&lt;FloatRect&gt;'/>
+<mbr r='WebCore::GraphicsLayer::m_eventRegion' o='4160' t='WebCore::EventRegion'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/DrawingArea.h' l='118' c='_ZN6WebKit11DrawingArea23setRootCompositingLayerEPN7WebCore13GraphicsLayerE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/DrawingArea.h' l='128' c='_ZN6WebKit11DrawingArea30attachViewOverlayGraphicsLayerEPN7WebCore13GraphicsLayerE'/>
+<size>544</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/PageBanner.h' l='77' c='_ZN6WebKit10PageBanner17didAddParentLayerEPN7WebCore13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.h' l='50' c='_ZN7WebCore21PageOverlayController25layerWithDocumentOverlaysEv'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.h' l='51' c='_ZN7WebCore21PageOverlayController21layerWithViewOverlaysEv'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.h' l='61' c='_ZNK7WebCore21PageOverlayController15layerForOverlayERNS_11PageOverlayE'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.h' l='84' c='_ZNK7WebCore21PageOverlayController24documentOverlayRootLayerEv'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.h' l='85' c='_ZNK7WebCore21PageOverlayController20viewOverlayRootLayerEv'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.h' l='91' c='_ZN7WebCore21PageOverlayController22updateSettingsForLayerERNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.h' l='95' c='_ZN7WebCore21PageOverlayController19notifyFlushRequiredEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.h' l='96' c='_ZN7WebCore21PageOverlayController13paintContentsEPKNS_13GraphicsLayerERNS_15GraphicsContextERKNS_9FloatRectEj'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.h' l='98' c='_ZNK7WebCore21PageOverlayController21shouldSkipLayerInDumpEPKNS_13GraphicsLayerEj'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.h' l='99' c='_ZN7WebCore21PageOverlayController24tiledBackingUsageChangedEPKNS_13GraphicsLayerEb'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.h' l='102'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.h' l='103'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.h' l='105'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.h' l='138'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.h' l='139'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.h' l='140'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.h' l='141'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.h' l='142'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.h' l='143'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.h' l='144'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.h' l='145'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.h' l='190' c='_ZN7WebCore20ScrollingCoordinator32scrollContainerLayerForFrameViewERNS_9FrameViewE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.h' l='191' c='_ZN7WebCore20ScrollingCoordinator33scrolledContentsLayerForFrameViewERNS_9FrameViewE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.h' l='192' c='_ZN7WebCore20ScrollingCoordinator33counterScrollingLayerForFrameViewERNS_9FrameViewE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.h' l='193' c='_ZN7WebCore20ScrollingCoordinator26insetClipLayerForFrameViewERNS_9FrameViewE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.h' l='194' c='_ZN7WebCore20ScrollingCoordinator29rootContentsLayerForFrameViewERNS_9FrameViewE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.h' l='195' c='_ZN7WebCore20ScrollingCoordinator30contentShadowLayerForFrameViewERNS_9FrameViewE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.h' l='196' c='_ZN7WebCore20ScrollingCoordinator23headerLayerForFrameViewERNS_9FrameViewE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.h' l='197' c='_ZN7WebCore20ScrollingCoordinator23footerLayerForFrameViewERNS_9FrameViewE'/>
+<use f='WebKit/Source/WebCore/page/ChromeClient.h' l='361' c='_ZN7WebCore12ChromeClient23attachRootGraphicsLayerERNS_5FrameEPNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/page/ChromeClient.h' l='362' c='_ZN7WebCore12ChromeClient30attachViewOverlayGraphicsLayerEPNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/page/ChromeClient.h' l='429' c='_ZN7WebCore12ChromeClient22setRootFullScreenLayerEPNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/page/ChromeClient.h' l='500' c='_ZN7WebCore12ChromeClient17didAddHeaderLayerERNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/page/ChromeClient.h' l='501' c='_ZN7WebCore12ChromeClient17didAddFooterLayerERNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/LayerAncestorClippingStack.h' l='88' c='_ZNK7WebCore26LayerAncestorClippingStack18firstClippingLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/LayerAncestorClippingStack.h' l='89' c='_ZNK7WebCore26LayerAncestorClippingStack17lastClippingLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/LayerAncestorClippingStack.h' l='95'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='183' c='_ZN7WebCore21RenderLayerCompositor19notifyFlushRequiredEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='187' c='_ZN7WebCore21RenderLayerCompositor30didChangePlatformLayerForLayerERNS_11RenderLayerEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='232' c='_ZNK7WebCore21RenderLayerCompositor24fixedRootBackgroundLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='262' c='_ZNK7WebCore21RenderLayerCompositor17rootGraphicsLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='264' c='_ZNK7WebCore21RenderLayerCompositor20scrollContainerLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='265' c='_ZNK7WebCore21RenderLayerCompositor21scrolledContentsLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='266' c='_ZNK7WebCore21RenderLayerCompositor9clipLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='267' c='_ZNK7WebCore21RenderLayerCompositor17rootContentsLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='269' c='_ZNK7WebCore21RenderLayerCompositor16layerForClippingEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='326' c='_ZNK7WebCore21RenderLayerCompositor34contentsScaleMultiplierForNewTilesEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='329' c='_ZN7WebCore21RenderLayerCompositor30didChangePlatformLayerForLayerEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='330' c='_ZN7WebCore21RenderLayerCompositor31notifyFlushBeforeDisplayRefreshEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='332' c='_ZN7WebCore21RenderLayerCompositor29layerTiledBackingUsageChangedEPKNS_13GraphicsLayerEb'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='341' c='_ZNK7WebCore21RenderLayerCompositor27layerForHorizontalScrollbarEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='342' c='_ZNK7WebCore21RenderLayerCompositor25layerForVerticalScrollbarEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='343' c='_ZNK7WebCore21RenderLayerCompositor20layerForScrollCornerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='405' c='_ZN7WebCore21RenderLayerCompositor13paintContentsEPKNS_13GraphicsLayerERNS_15GraphicsContextERKNS_9FloatRectEj'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='406' c='_ZNK7WebCore21RenderLayerCompositor39customPositionForVisibleRectComputationEPKNS_13GraphicsLayerERNS_10FloatPointE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='452' c='_ZN7WebCore21RenderLayerCompositor25updateBackingAndHierarchyERNS_11RenderLayerERN3WTF6VectorINS3_3RefINS_13GraphicsLayerENS3_12RawPtrTraitsIS6_EEEELm15108328'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='454' c='_ZN7WebCore21RenderLayerCompositor38adjustOverflowScrollbarContainerLayersERNS_11RenderLayerERKN3WTF6VectorIPS1_Lm0ENS3_15CrashOnOverflowELm16ENS3_10F414421'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='459' c='_ZN7WebCore21RenderLayerCompositor27appendDocumentOverlayLayersERN3WTF6VectorINS1_3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS4_EEEELm0ENS1_15CrashOnO11731469'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='607'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='610'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='611'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='612'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='615'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='618'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='619'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='620'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='107' c='_ZNK7WebCore18RenderLayerBacking13graphicsLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='111' c='_ZNK7WebCore18RenderLayerBacking13clippingLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='120' c='_ZNK7WebCore18RenderLayerBacking24contentsContainmentLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='122' c='_ZNK7WebCore18RenderLayerBacking15foregroundLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='123' c='_ZNK7WebCore18RenderLayerBacking15backgroundLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='132' c='_ZNK7WebCore18RenderLayerBacking20scrollContainerLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='133' c='_ZNK7WebCore18RenderLayerBacking21scrolledContentsLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='163' c='_ZNK7WebCore18RenderLayerBacking18parentForSublayersEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='164' c='_ZNK7WebCore18RenderLayerBacking19childForSuperlayersEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='224' c='_ZN7WebCore18RenderLayerBacking24tiledBackingUsageChangedEPKNS_13GraphicsLayerEb'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='225' c='_ZN7WebCore18RenderLayerBacking22notifyAnimationStartedEPKNS_13GraphicsLayerERKN3WTF6StringENS4_13MonotonicTimeE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='226' c='_ZN7WebCore18RenderLayerBacking19notifyFlushRequiredEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='227' c='_ZN7WebCore18RenderLayerBacking31notifyFlushBeforeDisplayRefreshEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='229' c='_ZN7WebCore18RenderLayerBacking13paintContentsEPKNS_13GraphicsLayerERNS_15GraphicsContextERKNS_9FloatRectEj'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='232' c='_ZNK7WebCore18RenderLayerBacking34contentsScaleMultiplierForNewTilesEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='234' c='_ZNK7WebCore18RenderLayerBacking33paintsOpaquelyAtNonIntegralScalesEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='239' c='_ZN7WebCore18RenderLayerBacking30didChangePlatformLayerForLayerEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='240' c='_ZNK7WebCore18RenderLayerBacking19getCurrentTransformEPKNS_13GraphicsLayerERNS_20TransformationMatrixE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='243' c='_ZNK7WebCore18RenderLayerBacking21shouldSkipLayerInDumpEPKNS_13GraphicsLayerEj'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='244' c='_ZNK7WebCore18RenderLayerBacking26shouldDumpPropertyForLayerEPKNS_13GraphicsLayerEPKcj'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='246' c='_ZNK7WebCore18RenderLayerBacking29shouldAggressivelyRetainTilesEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='247' c='_ZNK7WebCore18RenderLayerBacking34shouldTemporarilyRetainTileCohortsEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='269' c='_ZNK7WebCore18RenderLayerBacking27layerForHorizontalScrollbarEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='270' c='_ZNK7WebCore18RenderLayerBacking25layerForVerticalScrollbarEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='271' c='_ZNK7WebCore18RenderLayerBacking20layerForScrollCornerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='272' c='_ZNK7WebCore18RenderLayerBacking25overflowControlsContainerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='299' c='_ZN7WebCore18RenderLayerBacking16willDestroyLayerEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='303' c='_ZN7WebCore18RenderLayerBacking19createGraphicsLayerERKN3WTF6StringENS_13GraphicsLayer4TypeE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='391' c='_ZNK7WebCore18RenderLayerBacking24tileCacheFlatteningLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='393' c='_ZN7WebCore18RenderLayerBacking14paintIntoLayerEPKNS_13GraphicsLayerERNS_15GraphicsContextERKNS_7IntRectEN3WTF9OptionSetINS_13PaintBehaviorEEEPNS_18EventRegionContextE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='394' c='_ZNK7WebCore18RenderLayerBacking18paintFlagsForLayerERKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='396' c='_ZN7WebCore18RenderLayerBacking18paintDebugOverlaysEPKNS_13GraphicsLayerERNS_15GraphicsContextE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='416'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='417'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='418'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='419'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='420'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='421'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='422'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='424'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='425'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='426'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='427'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='429'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='430'/>
+<size>544</size>
+<use f='WebKit/Source/WebKit/WebProcess/Inspector/WebInspectorClient.h' l='84' c='_ZN6WebKit18WebInspectorClient22animationEndedForLayerEPKN7WebCore13GraphicsLayerE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Inspector/WebInspectorClient.h' l='91'/>
+<use f='WebKit/Source/WebKit/WebProcess/Inspector/WebInspectorClient.cpp' l='55' c='_ZN6WebKit27RepaintIndicatorLayerClient20notifyAnimationEndedEPKN7WebCore13GraphicsLayerERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Inspector/WebInspectorClient.cpp' l='192' c='_ZN6WebKit18WebInspectorClient13showPaintRectERKN7WebCore9FloatRectE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Inspector/WebInspectorClient.cpp' l='195' c='_ZN6WebKit18WebInspectorClient13showPaintRectERKN7WebCore9FloatRectE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Inspector/WebInspectorClient.cpp' l='199' c='_ZN6WebKit18WebInspectorClient22animationEndedForLayerEPKN7WebCore13GraphicsLayerE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Inspector/WebInspectorClient.cpp' l='201' c='_ZN6WebKit18WebInspectorClient22animationEndedForLayerEPKN7WebCore13GraphicsLayerE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Inspector/WebInspectorClient.cpp' l='201' c='_ZN6WebKit18WebInspectorClient22animationEndedForLayerEPKN7WebCore13GraphicsLayerE'/>
+<size>544</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebChromeClient.h' l='229' c='_ZN6WebKit15WebChromeClient23attachRootGraphicsLayerERN7WebCore5FrameEPNS1_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebChromeClient.h' l='230' c='_ZN6WebKit15WebChromeClient30attachViewOverlayGraphicsLayerEPN7WebCore13GraphicsLayerE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebChromeClient.h' l='350' c='_ZN6WebKit15WebChromeClient17didAddHeaderLayerERN7WebCore13GraphicsLayerE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebChromeClient.h' l='351' c='_ZN6WebKit15WebChromeClient17didAddFooterLayerERN7WebCore13GraphicsLayerE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebChromeClient.cpp' l='961' c='_ZN6WebKit15WebChromeClient23attachRootGraphicsLayerERN7WebCore5FrameEPNS1_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebChromeClient.cpp' l='969' c='_ZN6WebKit15WebChromeClient30attachViewOverlayGraphicsLayerEPN7WebCore13GraphicsLayerE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebChromeClient.cpp' l='1223' c='_ZN6WebKit15WebChromeClient17didAddHeaderLayerERN7WebCore13GraphicsLayerE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebChromeClient.cpp' l='1233' c='_ZN6WebKit15WebChromeClient17didAddFooterLayerERN7WebCore13GraphicsLayerE'/>
+<size>544</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/CoordinatedGraphics/DrawingAreaCoordinatedGraphics.h' l='71' c='_ZN6WebKit30DrawingAreaCoordinatedGraphics23setRootCompositingLayerEPN7WebCore13GraphicsLayerE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/CoordinatedGraphics/DrawingAreaCoordinatedGraphics.h' l='81' c='_ZN6WebKit30DrawingAreaCoordinatedGraphics30attachViewOverlayGraphicsLayerEPN7WebCore13GraphicsLayerE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/CoordinatedGraphics/DrawingAreaCoordinatedGraphics.h' l='101' c='_ZN6WebKit30DrawingAreaCoordinatedGraphics31enterAcceleratedCompositingModeEPN7WebCore13GraphicsLayerE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/PageBanner.cpp' l='68' c='_ZN6WebKit10PageBanner17didAddParentLayerEPN7WebCore13GraphicsLayerE'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/BitmapTexture.h' l='63' c='_ZN7WebCore13BitmapTexture14updateContentsEPNS_13GraphicsLayerERKNS_7IntRectERKNS_8IntPointEf'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/platform/graphics/nicosia/NicosiaPaintingEngine.h' l='50' c='_ZN7Nicosia14PaintingEngine5paintERN7WebCore13GraphicsLayerEON3WTF3RefINS_6BufferENS4_12RawPtrTraitsIS6_EEEERKNS1_7IntRectESD_SD_f'/>
+<use f='WebKit/Source/WebCore/platform/graphics/nicosia/NicosiaPaintingEngineBasic.h' l='41' c='_ZN7Nicosia19PaintingEngineBasic5paintERN7WebCore13GraphicsLayerEON3WTF3RefINS_6BufferENS4_12RawPtrTraitsIS6_EEEERKNS1_7IntRectESD_SD_f'/>
+<use f='WebKit/Source/WebCore/platform/graphics/nicosia/NicosiaPaintingEngineThreaded.h' l='44' c='_ZN7Nicosia22PaintingEngineThreaded5paintERN7WebCore13GraphicsLayerEON3WTF3RefINS_6BufferENS4_12RawPtrTraitsIS6_EEEERKNS1_7IntRectESD_SD_f'/>
+<use f='WebKit/Source/WebCore/platform/graphics/nicosia/NicosiaPaintingEngineBasic.cpp' l='44' c='_ZN7Nicosia19PaintingEngineBasic5paintERN7WebCore13GraphicsLayerEON3WTF3RefINS_6BufferENS4_12RawPtrTraitsIS6_EEEERKNS1_7IntRectESD_SD_f'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/platform/graphics/nicosia/NicosiaPaintingEngineThreaded.cpp' l='42' c='_ZN7NicosiaL10paintLayerERN7WebCore15GraphicsContextERNS0_13GraphicsLayerERKNS0_7IntRectES7_S7_fb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/nicosia/NicosiaPaintingEngineThreaded.cpp' l='71' c='_ZN7Nicosia22PaintingEngineThreaded5paintERN7WebCore13GraphicsLayerEON3WTF3RefINS_6BufferENS4_12RawPtrTraitsIS6_EEEERKNS1_7IntRectESD_SD_f'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/TextureMapperTile.h' l='40' c='_ZN7WebCore17TextureMapperTile14updateContentsERNS_13TextureMapperEPNS_13GraphicsLayerERKNS_7IntRectEf'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/BitmapTexture.cpp' l='37' c='_ZN7WebCore13BitmapTexture14updateContentsEPNS_13GraphicsLayerERKNS_7IntRectERKNS_8IntPointEf'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/TextureMapperTile.cpp' l='51' c='_ZN7WebCore17TextureMapperTile14updateContentsERNS_13TextureMapperEPNS_13GraphicsLayerERKNS_7IntRectEf'/>
+<ovr f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.h' l='57' c='WebCore::CoordinatedGraphicsLayer'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.h' l='57'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.h' l='67' c='_ZN7WebCore24CoordinatedGraphicsLayer11setChildrenEON3WTF6VectorINS1_3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS4_EEEELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.h' l='68' c='_ZN7WebCore24CoordinatedGraphicsLayer8addChildEON3WTF3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.h' l='69' c='_ZN7WebCore24CoordinatedGraphicsLayer15addChildAtIndexEON3WTF3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EEEEi'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.h' l='70' c='_ZN7WebCore24CoordinatedGraphicsLayer13addChildAboveEON3WTF3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EEEEPS3_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.h' l='70' c='_ZN7WebCore24CoordinatedGraphicsLayer13addChildAboveEON3WTF3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EEEEPS3_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.h' l='71' c='_ZN7WebCore24CoordinatedGraphicsLayer13addChildBelowEON3WTF3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EEEEPS3_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.h' l='71' c='_ZN7WebCore24CoordinatedGraphicsLayer13addChildBelowEON3WTF3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EEEEPS3_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.h' l='72' c='_ZN7WebCore24CoordinatedGraphicsLayer12replaceChildEPNS_13GraphicsLayerEON3WTF3RefIS1_NS3_12RawPtrTraitsIS1_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.h' l='72' c='_ZN7WebCore24CoordinatedGraphicsLayer12replaceChildEPNS_13GraphicsLayerEON3WTF3RefIS1_NS3_12RawPtrTraitsIS1_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.h' l='100' c='_ZN7WebCore24CoordinatedGraphicsLayer12setMaskLayerEON3WTF6RefPtrINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.h' l='101' c='_ZN7WebCore24CoordinatedGraphicsLayer20setReplicatedByLayerEON3WTF6RefPtrINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.h' l='253' macro='1' c='_ZN3WTF14TypeCastTraitsIKN7WebCore24CoordinatedGraphicsLayerET_Lb0EE6isTypeERKNS1_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayerFactory.h' l='38' c='_ZN7WebCore20GraphicsLayerFactory19createGraphicsLayerENS_13GraphicsLayer4TypeERNS_19GraphicsLayerClientE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='53' c='_ZN7WebCore13GraphicsLayer6createEPNS_20GraphicsLayerFactoryERNS_19GraphicsLayerClientENS0_4TypeE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='131' c='_ZN7WebCore24CoordinatedGraphicsLayerC1ENS_13GraphicsLayer4TypeERNS_19GraphicsLayerClientE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='190' c='_ZN7WebCore24CoordinatedGraphicsLayer11setChildrenEON3WTF6VectorINS1_3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS4_EEEELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='199' c='_ZN7WebCore24CoordinatedGraphicsLayer8addChildEON3WTF3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='201' c='_ZN7WebCore24CoordinatedGraphicsLayer8addChildEON3WTF3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='207' c='_ZN7WebCore24CoordinatedGraphicsLayer15addChildAtIndexEON3WTF3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EEEEi'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='209' c='_ZN7WebCore24CoordinatedGraphicsLayer15addChildAtIndexEON3WTF3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EEEEi'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='215' c='_ZN7WebCore24CoordinatedGraphicsLayer13addChildAboveEON3WTF3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EEEEPS3_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='215' c='_ZN7WebCore24CoordinatedGraphicsLayer13addChildAboveEON3WTF3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EEEEPS3_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='217' c='_ZN7WebCore24CoordinatedGraphicsLayer13addChildAboveEON3WTF3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EEEEPS3_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='223' c='_ZN7WebCore24CoordinatedGraphicsLayer13addChildBelowEON3WTF3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EEEEPS3_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='223' c='_ZN7WebCore24CoordinatedGraphicsLayer13addChildBelowEON3WTF3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EEEEPS3_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='225' c='_ZN7WebCore24CoordinatedGraphicsLayer13addChildBelowEON3WTF3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EEEEPS3_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='231' c='_ZN7WebCore24CoordinatedGraphicsLayer12replaceChildEPNS_13GraphicsLayerEON3WTF3RefIS1_NS3_12RawPtrTraitsIS1_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='231' c='_ZN7WebCore24CoordinatedGraphicsLayer12replaceChildEPNS_13GraphicsLayerEON3WTF3RefIS1_NS3_12RawPtrTraitsIS1_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='233' c='_ZN7WebCore24CoordinatedGraphicsLayer12replaceChildEPNS_13GraphicsLayerEON3WTF3RefIS1_NS3_12RawPtrTraitsIS1_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='610' c='_ZN7WebCore24CoordinatedGraphicsLayer12setMaskLayerEON3WTF6RefPtrINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='615' c='_ZN7WebCore24CoordinatedGraphicsLayer12setMaskLayerEON3WTF6RefPtrINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='641' c='_ZN7WebCore24CoordinatedGraphicsLayer20setReplicatedByLayerEON3WTF6RefPtrINS_13GraphicsLayerENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedGraphicsLayer.cpp' l='1274' c='_ZN7WebCore24CoordinatedGraphicsLayer29computePositionRelativeToBaseEv'/>
+<size>544</size>
+<fun r='_ZN7WebCore13GraphicsLayer6createEPNS_20GraphicsLayerFactoryERNS_19GraphicsLayerClientENS0_4TypeE'/>
+<fun r='_ZN7WebCore13GraphicsLayer22supportsContentsTilingEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerScrollableArea.h' l='161' c='_ZNK7WebCore25RenderLayerScrollableArea27layerForHorizontalScrollbarEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerScrollableArea.h' l='162' c='_ZNK7WebCore25RenderLayerScrollableArea25layerForVerticalScrollbarEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerScrollableArea.h' l='163' c='_ZNK7WebCore25RenderLayerScrollableArea20layerForScrollCornerEv'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/testing/MockPageOverlayClient.cpp' l='72' c='_ZN7WebCore21MockPageOverlayClient15layerTreeAsTextERNS_4PageEj'/>
+<use f='WebKit/Source/WebCore/testing/MockPageOverlayClient.cpp' l='73' c='_ZN7WebCore21MockPageOverlayClient15layerTreeAsTextERNS_4PageEj'/>
+<size>544</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='1490' c='_ZN6WebKit7WebPage31enterAcceleratedCompositingModeEPN7WebCore13GraphicsLayerE'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerScrollableArea.cpp' l='744' c='_ZN7WebCore25RenderLayerScrollableArea23invalidateScrollbarRectERNS_9ScrollbarERKNS_7IntRectE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerScrollableArea.cpp' l='749' c='_ZN7WebCore25RenderLayerScrollableArea23invalidateScrollbarRectERNS_9ScrollbarERKNS_7IntRectE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerScrollableArea.cpp' l='779' c='_ZN7WebCore25RenderLayerScrollableArea26invalidateScrollCornerRectERKNS_7IntRectE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerScrollableArea.cpp' l='1576' c='_ZNK7WebCore25RenderLayerScrollableArea27layerForHorizontalScrollbarEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerScrollableArea.cpp' l='1581' c='_ZNK7WebCore25RenderLayerScrollableArea25layerForVerticalScrollbarEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerScrollableArea.cpp' l='1586' c='_ZNK7WebCore25RenderLayerScrollableArea20layerForScrollCornerEv'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/rendering/LayerAncestorClippingStack.cpp' l='89' c='_ZNK7WebCore26LayerAncestorClippingStack18firstClippingLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/LayerAncestorClippingStack.cpp' l='94' c='_ZNK7WebCore26LayerAncestorClippingStack17lastClippingLayerEv'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='278' c='_ZN7WebCore18RenderLayerBacking16willDestroyLayerEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='342' c='_ZN7WebCore18RenderLayerBacking19createGraphicsLayerERKN3WTF6StringENS_13GraphicsLayer4TypeE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='384' c='_ZN7WebCore18RenderLayerBacking24tiledBackingUsageChangedEPKNS_13GraphicsLayerEb'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='679' c='_ZN7WebCore18RenderLayerBacking37updateChildrenTransformAndAnchorPointERKNS_10LayoutRectENS_10LayoutSizeE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='1629' c='_ZN7WebCore18RenderLayerBacking23updateInternalHierarchyEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='1787' c='_ZN7WebCore18RenderLayerBacking17updateEventRegionEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='1799' c='_ZN7WebCore18RenderLayerBacking17updateEventRegionEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='1925' c='_ZN7WebCore18RenderLayerBacking26connectClippingStackLayersERNS_26LayerAncestorClippingStackE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='2087' c='_ZN7WebCore18RenderLayerBacking28updateOverflowControlsLayersEbbb'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='2141' c='_ZN7WebCore18RenderLayerBacking30positionOverflowControlsLayersEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='2992' c='_ZNK7WebCore18RenderLayerBacking18parentForSublayersEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3000' c='_ZNK7WebCore18RenderLayerBacking19childForSuperlayersEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3154' c='_ZN7WebCore18RenderLayerBacking14paintIntoLayerEPKNS_13GraphicsLayerERNS_15GraphicsContextERKNS_7IntRectEN3WTF9OptionSetINS_13PaintBehaviorEEEPNS_18EventRegionContextE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3214' c='_ZN7WebCore18RenderLayerBacking14paintIntoLayerEPKNS_13GraphicsLayerERNS_15GraphicsContextERKNS_7IntRectEN3WTF9OptionSetINS_13PaintBehaviorEEEPNS_18EventRegionContextE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3239' c='_ZNK7WebCore18RenderLayerBacking18paintFlagsForLayerERKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3369' c='_ZN7WebCore18RenderLayerBacking18paintDebugOverlaysEPKNS_13GraphicsLayerERNS_15GraphicsContextE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3438' c='_ZN7WebCore18RenderLayerBacking13paintContentsEPKNS_13GraphicsLayerERNS_15GraphicsContextERKNS_9FloatRectEj'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3526' c='_ZNK7WebCore18RenderLayerBacking34contentsScaleMultiplierForNewTilesEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3531' c='_ZNK7WebCore18RenderLayerBacking33paintsOpaquelyAtNonIntegralScalesEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3536' c='_ZN7WebCore18RenderLayerBacking30didChangePlatformLayerForLayerEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3541' c='_ZNK7WebCore18RenderLayerBacking19getCurrentTransformEPKNS_13GraphicsLayerERNS_20TransformationMatrixE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3559' c='_ZNK7WebCore18RenderLayerBacking21shouldSkipLayerInDumpEPKNS_13GraphicsLayerEj'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3568' c='_ZNK7WebCore18RenderLayerBacking26shouldDumpPropertyForLayerEPKNS_13GraphicsLayerEPKcj'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3589' c='_ZNK7WebCore18RenderLayerBacking29shouldAggressivelyRetainTilesEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3599' c='_ZNK7WebCore18RenderLayerBacking34shouldTemporarilyRetainTileCohortsEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3738' c='_ZN7WebCore18RenderLayerBacking22notifyAnimationStartedEPKNS_13GraphicsLayerERKN3WTF6StringENS4_13MonotonicTimeE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3742' c='_ZN7WebCore18RenderLayerBacking19notifyFlushRequiredEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='3750' c='_ZN7WebCore18RenderLayerBacking31notifyFlushBeforeDisplayRefreshEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='552' c='_ZNK7WebCore21RenderLayerCompositor39customPositionForVisibleRectComputationEPKNS_13GraphicsLayerERNS_10FloatPointE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='565' c='_ZN7WebCore21RenderLayerCompositor19notifyFlushRequiredEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='664' c='_ZN7WebCore21RenderLayerCompositor30didChangePlatformLayerForLayerERNS_11RenderLayerEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='708' c='_ZN7WebCore21RenderLayerCompositor31notifyFlushBeforeDisplayRefreshEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='728' c='_ZN7WebCore21RenderLayerCompositor29layerTiledBackingUsageChangedEPKNS_13GraphicsLayerEb'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='915' c='_ZN7WebCore21RenderLayerCompositor23updateCompositingLayersENS_21CompositingUpdateTypeEPNS_11RenderLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='1301' c='_ZN7WebCore21RenderLayerCompositor25updateBackingAndHierarchyERNS_11RenderLayerERN3WTF6VectorINS3_3RefINS_13GraphicsLayerENS3_12RawPtrTraitsIS6_EEEELm15108328'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='1376' c='_ZN7WebCore21RenderLayerCompositor25updateBackingAndHierarchyERNS_11RenderLayerERN3WTF6VectorINS3_3RefINS_13GraphicsLayerENS3_12RawPtrTraitsIS6_EEEELm15108328'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='1451' c='_ZN7WebCore21RenderLayerCompositor38adjustOverflowScrollbarContainerLayersERNS_11RenderLayerERKN3WTF6VectorIPS1_Lm0ENS3_15CrashOnOverflowELm16ENS3_10F414421'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='1494' c='_ZN7WebCore21RenderLayerCompositor38adjustOverflowScrollbarContainerLayersERNS_11RenderLayerERKN3WTF6VectorIPS1_Lm0ENS3_15CrashOnOverflowELm16ENS3_10F414421'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='1523' c='_ZN7WebCore21RenderLayerCompositor27appendDocumentOverlayLayersERN3WTF6VectorINS1_3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS4_EEEELm0ENS1_15CrashOnO11731469'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='1531' c='_ZN7WebCore21RenderLayerCompositor27appendDocumentOverlayLayersERN3WTF6VectorINS1_3RefINS_13GraphicsLayerENS1_12RawPtrTraitsIS4_EEEELm0ENS1_15CrashOnO11731469'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='2498' c='_ZNK7WebCore21RenderLayerCompositor17rootGraphicsLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='2513' c='_ZN7WebCore21RenderLayerCompositor13setIsInWindowEb'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='3617' c='_ZN7WebCore21RenderLayerCompositor13paintContentsEPKNS_13GraphicsLayerERNS_15GraphicsContextERKNS_9FloatRectEj'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='3656' c='_ZNK7WebCore21RenderLayerCompositor24fixedRootBackgroundLayerEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='3672' c='_ZN7WebCore21RenderLayerCompositor24resetTrackedRepaintRectsEv'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='3693' c='_ZNK7WebCore21RenderLayerCompositor34contentsScaleMultiplierForNewTilesEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='4338' c='_ZN7WebCore21RenderLayerCompositor26rootLayerAttachmentChangedEv'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='47'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='171' c='_ZN7WebCore13GraphicsLayer16unparentAndClearERN3WTF6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='180' c='_ZN7WebCore13GraphicsLayer5clearERN3WTF6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='224' c='_ZN7WebCore13GraphicsLayer9setParentEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='230' c='_ZNK7WebCore13GraphicsLayer11hasAncestorEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='232' c='_ZNK7WebCore13GraphicsLayer11hasAncestorEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='240' c='_ZN7WebCore13GraphicsLayer11setChildrenEON3WTF6VectorINS1_3RefIS0_NS1_12RawPtrTraitsIS0_EEEELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='255' c='_ZN7WebCore13GraphicsLayer8addChildEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='264' c='_ZN7WebCore13GraphicsLayer15addChildAtIndexEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEEi'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='273' c='_ZN7WebCore13GraphicsLayer13addChildBelowEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='273' c='_ZN7WebCore13GraphicsLayer13addChildBelowEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='290' c='_ZN7WebCore13GraphicsLayer13addChildAboveEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='290' c='_ZN7WebCore13GraphicsLayer13addChildAboveEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEEPS0_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='307' c='_ZN7WebCore13GraphicsLayer12replaceChildEPS0_ON3WTF3RefIS0_NS2_12RawPtrTraitsIS0_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='307' c='_ZN7WebCore13GraphicsLayer12replaceChildEPS0_ON3WTF3RefIS0_NS2_12RawPtrTraitsIS0_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='311' c='_ZN7WebCore13GraphicsLayer12replaceChildEPS0_ON3WTF3RefIS0_NS2_12RawPtrTraitsIS0_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='334' c='_ZN7WebCore13GraphicsLayer17removeAllChildrenEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='344' c='_ZN7WebCore13GraphicsLayer24removeFromParentInternalEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='386' c='_ZN7WebCore13GraphicsLayer12setMaskLayerEON3WTF6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='469' c='_ZN7WebCore13GraphicsLayer20setReplicatedByLayerEON3WTF6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='815' c='_ZN7WebCore13GraphicsLayer8traverseERS0_RKN3WTF8FunctionIFvS1_EEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='815' c='_ZN7WebCore13GraphicsLayer8traverseERS0_RKN3WTF8FunctionIFvS1_EEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='834' c='_ZNK7WebCore13GraphicsLayer9dumpLayerERN3WTF10TextStreamEj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsLayer.cpp' l='843' c='_ZN7WebCoreL12dumpChildrenERN3WTF10TextStreamERKNS0_6VectorINS0_3RefINS_13GraphicsLayerENS0_12RawPtrTraitsIS5_EEEELm0ENS0_15CrashOnOverflowELm16ENS0_10FastMallocEEERjj'/>
+<size>544</size>
+<fun r='_ZN7WebCore13GraphicsLayer17supportsLayerTypeENS0_4TypeE'/>
+<fun r='_ZN7WebCore13GraphicsLayer19supportsRoundedClipEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer30supportsBackgroundColorContentEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer36supportsSubpixelAntialiasedLayerTextEv'/>
+<fun r='_ZN7WebCore13GraphicsLayerC1ENS0_4TypeERNS_19GraphicsLayerClientE'/>
+<fun r='_ZN7WebCore13GraphicsLayerD1Ev'/>
+<fun r='_ZN7WebCore13GraphicsLayer16unparentAndClearERN3WTF6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEE'/>
+<fun r='_ZN7WebCore13GraphicsLayer5clearERN3WTF6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEE'/>
+<fun r='_ZN7WebCore13GraphicsLayer15willBeDestroyedEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer11clearClientEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer9debugNameEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer9setClientERNS_19GraphicsLayerClientE'/>
+<fun r='_ZN7WebCore13GraphicsLayer9setParentEPS0_'/>
+<fun r='_ZNK7WebCore13GraphicsLayer11hasAncestorEPS0_'/>
+<fun r='_ZN7WebCore13GraphicsLayer11setChildrenEON3WTF6VectorINS1_3RefIS0_NS1_12RawPtrTraitsIS0_EEEELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<fun r='_ZN7WebCore13GraphicsLayer8addChildEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEE'/>
+<fun r='_ZN7WebCore13GraphicsLayer15addChildAtIndexEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEEi'/>
+<fun r='_ZN7WebCore13GraphicsLayer13addChildBelowEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEEPS0_'/>
+<fun r='_ZN7WebCore13GraphicsLayer13addChildAboveEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEEPS0_'/>
+<fun r='_ZN7WebCore13GraphicsLayer12replaceChildEPS0_ON3WTF3RefIS0_NS2_12RawPtrTraitsIS0_EEEE'/>
+<fun r='_ZN7WebCore13GraphicsLayer17removeAllChildrenEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer24removeFromParentInternalEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer9transformEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer12setTransformERKNS_20TransformationMatrixE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer17childrenTransformEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer20setChildrenTransformERKNS_20TransformationMatrixE'/>
+<fun r='_ZN7WebCore13GraphicsLayer16removeFromParentEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer12setMaskLayerEON3WTF6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEE'/>
+<fun r='_ZN7WebCore13GraphicsLayer20setMasksToBoundsRectERKNS_16FloatRoundedRectE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer14shapeLayerPathEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer17setShapeLayerPathERKNS_4PathE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer18shapeLayerWindRuleEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer21setShapeLayerWindRuleENS_8WindRuleE'/>
+<fun r='_ZN7WebCore13GraphicsLayer14setEventRegionEONS_11EventRegionE'/>
+<fun r='_ZN7WebCore13GraphicsLayer54noteDeviceOrPageScaleFactorChangedIncludingDescendantsEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer13setIsInWindowEb'/>
+<fun r='_ZN7WebCore13GraphicsLayer20setReplicatedByLayerEON3WTF6RefPtrIS0_NS1_12RawPtrTraitsIS0_EENS1_21DefaultRefDerefTraitsIS0_EEEE'/>
+<fun r='_ZN7WebCore13GraphicsLayer21setOffsetFromRendererERKNS_9FloatSizeENS0_21ShouldSetNeedsDisplayE'/>
+<fun r='_ZN7WebCore13GraphicsLayer15setScrollOffsetERKNS_8IntPointENS0_21ShouldSetNeedsDisplayE'/>
+<fun r='_ZN7WebCore13GraphicsLayer7setSizeERKNS_9FloatSizeE'/>
+<fun r='_ZN7WebCore13GraphicsLayer18setBackgroundColorERKNS_5ColorE'/>
+<fun r='_ZN7WebCore13GraphicsLayer16setPaintingPhaseEN3WTF9OptionSetINS_26GraphicsLayerPaintingPhaseEEE'/>
+<fun r='_ZN7WebCore13GraphicsLayer26paintGraphicsLayerContentsERNS_15GraphicsContextERKNS_9FloatRectEj'/>
+<fun r='_ZN7WebCore13GraphicsLayer29adjustCoverageRectForMovementERKNS_9FloatRectES3_S3_'/>
+<fun r='_ZN7WebCore13GraphicsLayer26animationNameForTransitionENS_18AnimatedPropertyIDE'/>
+<fun r='_ZN7WebCore13GraphicsLayer17suspendAnimationsEN3WTF13MonotonicTimeE'/>
+<fun r='_ZN7WebCore13GraphicsLayer16resumeAnimationsEv'/>
+<fun r='_ZNK7WebCore13GraphicsLayer18getDebugBorderInfoERNS_5ColorERf'/>
+<fun r='_ZN7WebCore13GraphicsLayer21updateDebugIndicatorsEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer12setZPositionEf'/>
+<fun r='_ZN7WebCore13GraphicsLayer24validateFilterOperationsERKNS_17KeyframeValueListE'/>
+<fun r='_ZN7WebCore13GraphicsLayer27validateTransformOperationsERKNS_17KeyframeValueListERb'/>
+<fun r='_ZNK7WebCore13GraphicsLayer26backingStoreMemoryEstimateEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer20resetTrackedRepaintsEv'/>
+<fun r='_ZN7WebCore13GraphicsLayer14addRepaintRectERKNS_9FloatRectE'/>
+<fun r='_ZN7WebCore13GraphicsLayer8traverseERS0_RKN3WTF8FunctionIFvS1_EEE'/>
+<fun r='_ZNK7WebCore13GraphicsLayer9dumpLayerERN3WTF10TextStreamEj'/>
+<fun r='_ZNK7WebCore13GraphicsLayer14dumpPropertiesERN3WTF10TextStreamEj'/>
+<fun r='_ZNK7WebCore13GraphicsLayer15layerTreeAsTextEj'/>
+<use f='WebKit/Source/WebCore/platform/ScrollView.cpp' l='1139' c='_ZN7WebCoreL22positionScrollbarLayerEPNS_13GraphicsLayerEPNS_9ScrollbarE'/>
+<use f='WebKit/Source/WebCore/platform/ScrollView.cpp' l='1161' c='_ZN7WebCoreL25positionScrollCornerLayerEPNS_13GraphicsLayerERKNS_7IntRectE'/>
+<use f='WebKit/Source/WebCore/platform/ScrollableArea.cpp' l='397' c='_ZN7WebCore14ScrollableArea19invalidateScrollbarERNS_9ScrollbarERKNS_7IntRectE'/>
+<use f='WebKit/Source/WebCore/platform/ScrollableArea.cpp' l='403' c='_ZN7WebCore14ScrollableArea19invalidateScrollbarERNS_9ScrollbarERKNS_7IntRectE'/>
+<use f='WebKit/Source/WebCore/platform/ScrollableArea.cpp' l='415' c='_ZN7WebCore14ScrollableArea22invalidateScrollCornerERKNS_7IntRectE'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/page/ResourceUsageOverlay.h' l='86'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/page/linux/ResourceUsageOverlayLinux.cpp' l='88' c='_ZN7WebCore27ResourceUsageOverlayPainter13paintContentsEPKNS_13GraphicsLayerERNS_15GraphicsContextERKNS_9FloatRectEj'/>
+<use f='WebKit/Source/WebCore/page/linux/ResourceUsageOverlayLinux.cpp' l='125' c='_ZN7WebCore27ResourceUsageOverlayPainter19notifyFlushRequiredEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingStateNode.h' l='63' c='_ZN7WebCore19LayerRepresentationC1EPNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingStateNode.h' l='97' c='_ZNK7WebCore19LayerRepresentationcvPNS_13GraphicsLayerEEv'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingStateNode.h' l='194'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.cpp' l='203' c='_ZN7WebCore20ScrollingCoordinator32scrollContainerLayerForFrameViewERNS_9FrameViewE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.cpp' l='210' c='_ZN7WebCore20ScrollingCoordinator33scrolledContentsLayerForFrameViewERNS_9FrameViewE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.cpp' l='217' c='_ZN7WebCore20ScrollingCoordinator23headerLayerForFrameViewERNS_9FrameViewE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.cpp' l='229' c='_ZN7WebCore20ScrollingCoordinator23footerLayerForFrameViewERNS_9FrameViewE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.cpp' l='241' c='_ZN7WebCore20ScrollingCoordinator33counterScrollingLayerForFrameViewERNS_9FrameViewE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.cpp' l='248' c='_ZN7WebCore20ScrollingCoordinator26insetClipLayerForFrameViewERNS_9FrameViewE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.cpp' l='255' c='_ZN7WebCore20ScrollingCoordinator30contentShadowLayerForFrameViewERNS_9FrameViewE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingCoordinator.cpp' l='268' c='_ZN7WebCore20ScrollingCoordinator29rootContentsLayerForFrameViewERNS_9FrameViewE'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingStateFixedNode.cpp' l='85' c='_ZN7WebCore23ScrollingStateFixedNode37reconcileLayerPositionForViewportRectERKNS_10LayoutRectENS_28ScrollingLayerPositionActionE'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingStateStickyNode.cpp' l='126' c='_ZN7WebCore24ScrollingStateStickyNode37reconcileLayerPositionForViewportRectERKNS_10LayoutRectENS_28ScrollingLayerPositionActionE'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/page/FrameView.cpp' l='829' c='_ZNK7WebCore9FrameView27layerForHorizontalScrollbarEv'/>
+<use f='WebKit/Source/WebCore/page/FrameView.cpp' l='837' c='_ZNK7WebCore9FrameView25layerForVerticalScrollbarEv'/>
+<use f='WebKit/Source/WebCore/page/FrameView.cpp' l='845' c='_ZNK7WebCore9FrameView20layerForScrollCornerEv'/>
+<use f='WebKit/Source/WebCore/page/FrameView.cpp' l='1016' c='_ZN7WebCore9FrameView30graphicsLayerForPlatformWidgetEPv'/>
+<use f='WebKit/Source/WebCore/page/FrameView.cpp' l='1429' c='_ZNK7WebCore9FrameView23usesCompositedScrollingEv'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.h' l='169' c='_ZN7WebCore17EmptyChromeClient23attachRootGraphicsLayerERNS_5FrameEPNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.h' l='170' c='_ZN7WebCore17EmptyChromeClient30attachViewOverlayGraphicsLayerEPNS_13GraphicsLayerE'/>
+<size>544</size>
+<use f='WebKit/Source/WebCore/page/PageOverlay.cpp' l='290' c='_ZN7WebCore11PageOverlay5layerEv'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.cpp' l='110' c='_ZNK7WebCore21PageOverlayController24documentOverlayRootLayerEv'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.cpp' l='115' c='_ZNK7WebCore21PageOverlayController20viewOverlayRootLayerEv'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.cpp' l='120' c='_ZN7WebCoreL21updateOverlayGeometryERNS_11PageOverlayERNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.cpp' l='131' c='_ZN7WebCore21PageOverlayController25layerWithDocumentOverlaysEv'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.cpp' l='143' c='_ZN7WebCore21PageOverlayController25layerWithDocumentOverlaysEv'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.cpp' l='155' c='_ZN7WebCore21PageOverlayController21layerWithViewOverlaysEv'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.cpp' l='167' c='_ZN7WebCore21PageOverlayController21layerWithViewOverlaysEv'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.cpp' l='278' c='_ZNK7WebCore21PageOverlayController15layerForOverlayERNS_11PageOverlayE'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.cpp' l='333' c='_ZN7WebCore21PageOverlayController22updateSettingsForLayerERNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.cpp' l='394' c='_ZN7WebCore21PageOverlayController13paintContentsEPKNS_13GraphicsLayerERNS_15GraphicsContextERKNS_9FloatRectEj'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.cpp' l='413' c='_ZN7WebCore21PageOverlayController19notifyFlushRequiredEPKNS_13GraphicsLayerE'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.cpp' l='432' c='_ZNK7WebCore21PageOverlayController21shouldSkipLayerInDumpEPKNS_13GraphicsLayerEj'/>
+<use f='WebKit/Source/WebCore/page/PageOverlayController.cpp' l='437' c='_ZN7WebCore21PageOverlayController24tiledBackingUsageChangedEPKNS_13GraphicsLayerEb'/>
+<size>544</size>

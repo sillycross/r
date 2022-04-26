@@ -1,0 +1,9 @@
+<use f='WebKit/Source/JavaScriptCore/b3/B3ReduceStrength.cpp' l='615' u='c' c='_ZN3JSC2B312_GLOBAL__N_114ReduceStrength19reduceValueStrengthEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ReduceStrength.cpp' l='732' u='c' c='_ZN3JSC2B312_GLOBAL__N_114ReduceStrength19reduceValueStrengthEv'/>
+<def f='WebKit/Source/JavaScriptCore/b3/B3ReduceStrength.cpp' l='2572' ll='2608' type='bool JSC::B3::(anonymous namespace)::ReduceStrength::handleMulDistributivity()'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/B3ReduceStrength.cpp' l='2566'>// For Op==Add or Sub, turn any of these:
+    //      Op(Mul(x1, x2), Mul(x1, x3))
+    //      Op(Mul(x2, x1), Mul(x1, x3))
+    //      Op(Mul(x1, x2), Mul(x3, x1))
+    //      Op(Mul(x2, x1), Mul(x3, x1))
+    // Into this: Mul(x1, Op(x2, x3))</doc>

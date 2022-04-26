@@ -1,0 +1,288 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ArrayBufferView.h' l='113' c='_ZN3JSC15ArrayBufferView4wrapEPNS_14JSGlobalObjectES2_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GenericTypedArrayView.h' l='118' c='_ZN3JSC21GenericTypedArrayView4wrapEPNS_14JSGlobalObjectES2_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSCast.h' l='80'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSCast.h' l='80' c='_ZN3JSC16JSCastingHelpers14InheritsTraitsINS_17JSArrayBufferViewEE8inheritsERNS_2VMEPT_'/>
+<use f='WebKit/Source/WebCore/Modules/indexeddb/IDBKey.h' l='104' c='_ZN7WebCore6IDBKey12createBinaryERN3JSC17JSArrayBufferViewE'/>
+<inh f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='1165' c='JSC::JSNonFinalObject'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferView.h' l='101' ll='224'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferView.h' l='129' c='_ZN3JSC17JSArrayBufferView14allocationSizeEN3WTF7CheckedImNS1_15CrashOnOverflowEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferView.h' l='201' c='_ZN3JSC17JSArrayBufferView14offsetOfVectorEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferView.h' l='202' c='_ZN3JSC17JSArrayBufferView14offsetOfLengthEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferView.h' l='203' c='_ZN3JSC17JSArrayBufferView12offsetOfModeEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferView.h' l='226' c='_ZN3JSC18validateTypedArrayEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DataView.h' l='43' c='_ZN3JSC8DataView4wrapEPNS_14JSGlobalObjectES2_'/>
+<ovr f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSDataView.h' l='33' c='JSC::JSDataView'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSDataView.h' l='33'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSDataView.h' l='35'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferViewInlines.h' l='125' c='_ZN3JSC17JSArrayBufferView9toWrappedERNS_2VMENS_7JSValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferViewInlines.h' l='125' c='_ZN3JSC17JSArrayBufferView9toWrappedERNS_2VMENS_7JSValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferViewInlines.h' l='134' c='_ZN3JSC17JSArrayBufferView20toWrappedAllowSharedERNS_2VMENS_7JSValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferViewInlines.h' l='134' c='_ZN3JSC17JSArrayBufferView20toWrappedAllowSharedERNS_2VMENS_7JSValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/StructureInlines.h' l='261' c='_ZNK3JSC9Structure17hasIndexingHeaderEPKNS_6JSCellE'/>
+<ovr f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGenericTypedArrayView.h' l='95' c='JSC::JSGenericTypedArrayView'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGenericTypedArrayView.h' l='95'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGenericTypedArrayView.h' l='97'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObjectInlines.h' l='125' c='_ZN3JSC8JSObject15getPropertySlotEPNS_14JSGlobalObjectEjRNS_12PropertySlotE'/>
+<size>32</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArrayBufferView.h' l='94'>// When WebCore uses a JSArrayBufferView, it expects to be able to get the native
+// ArrayBuffer and little else. This requires slowing down and wasting memory,
+// and then accessing things via the Butterfly. When JS uses a JSArrayBufferView
+// it is always via the usual methods in the MethodTable, so this class&apos;s
+// implementation of those has no need to even exist - we could at any time sink
+// code into JSGenericTypedArrayView if it was convenient.</doc>
+<fun r='_ZN3JSC17JSArrayBufferView11subspaceForERNS_2VME'/>
+<smbr r='JSC::JSArrayBufferView::fastSizeLimit' t='const unsigned int'/>
+<fun r='_ZN3JSC17JSArrayBufferView13nullVectorPtrEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView6sizeOfEjj'/>
+<fun r='_ZN3JSC17JSArrayBufferView14allocationSizeEN3WTF7CheckedImNS1_15CrashOnOverflowEEE'/>
+<fun r='_ZN3JSC17JSArrayBufferViewC1ERNS_2VMERNS0_19ConstructionContextE'/>
+<fun r='_ZN3JSC17JSArrayBufferView14finishCreationERNS_2VME'/>
+<fun r='_ZN3JSC17JSArrayBufferView17visitChildrenImplEPNS_6JSCellERT_'/>
+<fun r='_ZN3JSC17JSArrayBufferView13visitChildrenEPNS_6JSCellERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC17JSArrayBufferView13visitChildrenEPNS_6JSCellERNS_11SlotVisitorE'/>
+<fun r='_ZNK3JSC17JSArrayBufferView4modeEv'/>
+<fun r='_ZNK3JSC17JSArrayBufferView14hasArrayBufferEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView8isSharedEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView14unsharedBufferEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView20possiblySharedBufferEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView16unsharedJSBufferEPNS_14JSGlobalObjectE'/>
+<fun r='_ZN3JSC17JSArrayBufferView22possiblySharedJSBufferEPNS_14JSGlobalObjectE'/>
+<fun r='_ZN3JSC17JSArrayBufferView12unsharedImplEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView18possiblySharedImplEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView10isDetachedEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView6detachEv'/>
+<fun r='_ZNK3JSC17JSArrayBufferView9hasVectorEv'/>
+<fun r='_ZNK3JSC17JSArrayBufferView6vectorEv'/>
+<fun r='_ZNK3JSC17JSArrayBufferView26vectorWithoutPACValidationEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView10byteOffsetEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView22byteOffsetConcurrentlyEv'/>
+<fun r='_ZNK3JSC17JSArrayBufferView6lengthEv'/>
+<fun r='_ZNK3JSC17JSArrayBufferView10byteLengthEv'/>
+<smbr r='JSC::JSArrayBufferView::s_info' t='const ::JSC::ClassInfo'/>
+<fun r='_ZN3JSC17JSArrayBufferView4infoEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView14offsetOfVectorEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView14offsetOfLengthEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView12offsetOfModeEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView9toWrappedERNS_2VMENS_7JSValueE'/>
+<fun r='_ZN3JSC17JSArrayBufferView20toWrappedAllowSharedERNS_2VMENS_7JSValueE'/>
+<fun r='_ZN3JSC17JSArrayBufferView14byteOffsetImplEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView24possiblySharedBufferImplEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView22slowDownAndWasteMemoryEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView8finalizeEPNS_6JSCellE'/>
+<fun r='_ZN3JSC17JSArrayBufferView25existingBufferInButterflyEv'/>
+<mbr r='JSC::JSArrayBufferView::m_vector' o='128' t='JSC::JSArrayBufferView::VectorPtr'/>
+<mbr r='JSC::JSArrayBufferView::m_length' o='192' t='uint32_t'/>
+<mbr r='JSC::JSArrayBufferView::m_mode' o='224' t='JSC::TypedArrayMode'/>
+<fun r='_ZN3JSC17JSArrayBufferView8isSharedEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView24possiblySharedBufferImplEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView20possiblySharedBufferEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView25existingBufferInButterflyEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView12unsharedImplEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView14byteOffsetImplEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView10byteOffsetEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView22byteOffsetConcurrentlyEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView9toWrappedERNS_2VMENS_7JSValueE'/>
+<fun r='_ZN3JSC17JSArrayBufferView20toWrappedAllowSharedERNS_2VMENS_7JSValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GenericTypedArrayViewInlines.h' l='141' c='_ZN3JSC21GenericTypedArrayView4wrapEPNS_14JSGlobalObjectES2_'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSDOMConvertBufferSource.h' l='102' c='_ZN7WebCore31toPossiblySharedArrayBufferViewERN3JSC2VMENS0_7JSValueE'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSDOMConvertBufferSource.h' l='435'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCast.h' l='80'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCast.h' l='80' c='_ZN3JSC16JSCastingHelpers14InheritsTraitsINS_17JSArrayBufferViewEE8inheritsERNS_2VMEPT_'/>
+<inh f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='1165' c='JSC::JSNonFinalObject'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.h' l='101' ll='224'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.h' l='129' c='_ZN3JSC17JSArrayBufferView14allocationSizeEN3WTF7CheckedImNS1_15CrashOnOverflowEEE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.h' l='201' c='_ZN3JSC17JSArrayBufferView14offsetOfVectorEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.h' l='202' c='_ZN3JSC17JSArrayBufferView14offsetOfLengthEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.h' l='203' c='_ZN3JSC17JSArrayBufferView12offsetOfModeEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.h' l='226' c='_ZN3JSC18validateTypedArrayEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/StructureInlines.h' l='261' c='_ZNK3JSC9Structure17hasIndexingHeaderEPKNS_6JSCellE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ArrayBufferView.h' l='113' c='_ZN3JSC15ArrayBufferView4wrapEPNS_14JSGlobalObjectES2_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/DataView.h' l='43' c='_ZN3JSC8DataView4wrapEPNS_14JSGlobalObjectES2_'/>
+<ovr f='WebKit/Source/JavaScriptCore/runtime/JSDataView.h' l='33' c='JSC::JSDataView'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSDataView.h' l='33'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSDataView.h' l='35'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferViewInlines.h' l='125' c='_ZN3JSC17JSArrayBufferView9toWrappedERNS_2VMENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferViewInlines.h' l='125' c='_ZN3JSC17JSArrayBufferView9toWrappedERNS_2VMENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferViewInlines.h' l='134' c='_ZN3JSC17JSArrayBufferView20toWrappedAllowSharedERNS_2VMENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferViewInlines.h' l='134' c='_ZN3JSC17JSArrayBufferView20toWrappedAllowSharedERNS_2VMENS_7JSValueE'/>
+<ovr f='WebKit/Source/JavaScriptCore/runtime/JSGenericTypedArrayView.h' l='95' c='JSC::JSGenericTypedArrayView'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGenericTypedArrayView.h' l='95'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGenericTypedArrayView.h' l='97'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObjectInlines.h' l='125' c='_ZN3JSC8JSObject15getPropertySlotEPNS_14JSGlobalObjectEjRNS_12PropertySlotE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssemblyHelpers.h' l='74' c='_ZN3JSC22getWasmBufferFromValueEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssemblyHelpers.h' l='74' c='_ZN3JSC22getWasmBufferFromValueEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='2232' c='_ZN3JSCL18functionCpuClflushEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='2232' c='_ZN3JSCL18functionCpuClflushEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<size>32</size>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.h' l='94'>// When WebCore uses a JSArrayBufferView, it expects to be able to get the native
+// ArrayBuffer and little else. This requires slowing down and wasting memory,
+// and then accessing things via the Butterfly. When JS uses a JSArrayBufferView
+// it is always via the usual methods in the MethodTable, so this class&apos;s
+// implementation of those has no need to even exist - we could at any time sink
+// code into JSGenericTypedArrayView if it was convenient.</doc>
+<fun r='_ZN3JSC17JSArrayBufferView11subspaceForERNS_2VME'/>
+<smbr r='JSC::JSArrayBufferView::fastSizeLimit' t='const unsigned int'/>
+<fun r='_ZN3JSC17JSArrayBufferView13nullVectorPtrEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView6sizeOfEjj'/>
+<fun r='_ZN3JSC17JSArrayBufferView14allocationSizeEN3WTF7CheckedImNS1_15CrashOnOverflowEEE'/>
+<fun r='_ZN3JSC17JSArrayBufferViewC1ERNS_2VMERNS0_19ConstructionContextE'/>
+<fun r='_ZN3JSC17JSArrayBufferView14finishCreationERNS_2VME'/>
+<fun r='_ZN3JSC17JSArrayBufferView17visitChildrenImplEPNS_6JSCellERT_'/>
+<fun r='_ZN3JSC17JSArrayBufferView13visitChildrenEPNS_6JSCellERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC17JSArrayBufferView13visitChildrenEPNS_6JSCellERNS_11SlotVisitorE'/>
+<fun r='_ZNK3JSC17JSArrayBufferView4modeEv'/>
+<fun r='_ZNK3JSC17JSArrayBufferView14hasArrayBufferEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView8isSharedEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView14unsharedBufferEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView20possiblySharedBufferEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView16unsharedJSBufferEPNS_14JSGlobalObjectE'/>
+<fun r='_ZN3JSC17JSArrayBufferView22possiblySharedJSBufferEPNS_14JSGlobalObjectE'/>
+<fun r='_ZN3JSC17JSArrayBufferView12unsharedImplEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView18possiblySharedImplEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView10isDetachedEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView6detachEv'/>
+<fun r='_ZNK3JSC17JSArrayBufferView9hasVectorEv'/>
+<fun r='_ZNK3JSC17JSArrayBufferView6vectorEv'/>
+<fun r='_ZNK3JSC17JSArrayBufferView26vectorWithoutPACValidationEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView10byteOffsetEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView22byteOffsetConcurrentlyEv'/>
+<fun r='_ZNK3JSC17JSArrayBufferView6lengthEv'/>
+<fun r='_ZNK3JSC17JSArrayBufferView10byteLengthEv'/>
+<smbr r='JSC::JSArrayBufferView::s_info' t='const ::JSC::ClassInfo'/>
+<fun r='_ZN3JSC17JSArrayBufferView4infoEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView14offsetOfVectorEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView14offsetOfLengthEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView12offsetOfModeEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView9toWrappedERNS_2VMENS_7JSValueE'/>
+<fun r='_ZN3JSC17JSArrayBufferView20toWrappedAllowSharedERNS_2VMENS_7JSValueE'/>
+<fun r='_ZN3JSC17JSArrayBufferView14byteOffsetImplEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView24possiblySharedBufferImplEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView22slowDownAndWasteMemoryEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView8finalizeEPNS_6JSCellE'/>
+<fun r='_ZN3JSC17JSArrayBufferView25existingBufferInButterflyEv'/>
+<mbr r='JSC::JSArrayBufferView::m_vector' o='128' t='JSC::JSArrayBufferView::VectorPtr'/>
+<mbr r='JSC::JSArrayBufferView::m_length' o='192' t='uint32_t'/>
+<mbr r='JSC::JSArrayBufferView::m_mode' o='224' t='JSC::TypedArrayMode'/>
+<fun r='_ZN3JSC17JSArrayBufferView8isSharedEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView24possiblySharedBufferImplEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView20possiblySharedBufferEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView25existingBufferInButterflyEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView12unsharedImplEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView14byteOffsetImplEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView10byteOffsetEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView22byteOffsetConcurrentlyEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView9toWrappedERNS_2VMENS_7JSValueE'/>
+<fun r='_ZN3JSC17JSArrayBufferView20toWrappedAllowSharedERNS_2VMENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.h' l='152' c='_ZN3JSC3DFG32ArrayBufferViewWatchpointAdaptor3addEPNS_9CodeBlockEPNS_17JSArrayBufferViewERNS0_19WatchpointCollectorE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.h' l='153' c='_ZN3JSC3DFG32ArrayBufferViewWatchpointAdaptor18hasBeenInvalidatedEPNS_17JSArrayBufferViewE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.h' l='157' c='_ZN3JSC3DFG32ArrayBufferViewWatchpointAdaptor13dumpInContextERN3WTF11PrintStreamEPNS_17JSArrayBufferViewEPNS_11DumpContextE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.h' l='242' c='_ZN3JSC3DFG18DesiredWatchpoints9addLazilyEPNS_17JSArrayBufferViewE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.h' l='273' c='_ZN3JSC3DFG18DesiredWatchpoints9isWatchedEPNS_17JSArrayBufferViewE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.h' l='288'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.h' l='996' c='_ZN3JSC3DFG5Graph18tryGetFoldableViewENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.h' l='997' c='_ZN3JSC3DFG5Graph18tryGetFoldableViewENS_7JSValueENS0_9ArrayModeE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGenericTypedArrayViewConstructorInlines.h' l='108' c='_ZN3JSC34constructCustomArrayBufferIfNeededEPNS_14JSGlobalObjectEPNS_17JSArrayBufferViewE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGenericTypedArrayViewConstructorInlines.h' l='189' c='_ZN3JSC43constructGenericTypedArrayViewWithArgumentsEPNS_14JSGlobalObjectEPNS_9StructureEljSt8optionalIjE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/GenericTypedArrayView.h' l='118' c='_ZN3JSC21GenericTypedArrayView4wrapEPNS_14JSGlobalObjectES2_'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreterInlines.h' l='3472' c='_ZN3JSC3DFG19AbstractInterpreter14executeEffectsEjPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreterInlines.h' l='3792' c='_ZN3JSC3DFG19AbstractInterpreter14executeEffectsEjPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreterInlines.h' l='3805' c='_ZN3JSC3DFG19AbstractInterpreter14executeEffectsEjPNS0_4NodeE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='242' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.cpp' l='37' c='_ZN3JSC3DFG32ArrayBufferViewWatchpointAdaptor3addEPNS_9CodeBlockEPNS_17JSArrayBufferViewERNS0_19WatchpointCollectorE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDesiredWatchpoints.cpp' l='131' c='_ZN3JSC3DFG18DesiredWatchpoints9addLazilyEPNS_17JSArrayBufferViewE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1401' c='_ZN3JSC3DFG5Graph18tryGetFoldableViewENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1405' c='_ZN3JSC3DFG5Graph18tryGetFoldableViewENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1405' c='_ZN3JSC3DFG5Graph18tryGetFoldableViewENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1416' c='_ZN3JSC3DFG5Graph18tryGetFoldableViewENS_7JSValueENS0_9ArrayModeE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/API/JSTypedArray.cpp' l='260' c='JSObjectGetTypedArrayBytesPtr'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSTypedArray.cpp' l='260' c='JSObjectGetTypedArrayBytesPtr'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSTypedArray.cpp' l='277' c='JSObjectGetTypedArrayLength'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSTypedArray.cpp' l='277' c='JSObjectGetTypedArrayLength'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSTypedArray.cpp' l='289' c='JSObjectGetTypedArrayByteLength'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSTypedArray.cpp' l='289' c='JSObjectGetTypedArrayByteLength'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSTypedArray.cpp' l='301' c='JSObjectGetTypedArrayByteOffset'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSTypedArray.cpp' l='301' c='JSObjectGetTypedArrayByteOffset'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSTypedArray.cpp' l='315' c='JSObjectGetTypedArrayBuffer'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSTypedArray.cpp' l='315' c='JSObjectGetTypedArrayBuffer'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/ArrayBuffer.cpp' l='404' c='_ZN3JSC11ArrayBuffer15notifyDetachingERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ArrayBuffer.cpp' l='404' c='_ZN3JSC11ArrayBuffer15notifyDetachingERNS_2VME'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferConstructor.cpp' l='141' c='_ZN3JSCL21arrayBufferFuncIsViewEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/GenericTypedArrayViewInlines.h' l='141' c='_ZN3JSC21GenericTypedArrayView4wrapEPNS_14JSGlobalObjectES2_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.cpp' l='40'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.cpp' l='40'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.cpp' l='161' c='_ZN3JSC17JSArrayBufferView17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.cpp' l='161' c='_ZN3JSC17JSArrayBufferView17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.cpp' l='184' c='_ZN3JSC17JSArrayBufferView8finalizeEPNS_6JSCellE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.cpp' l='184' c='_ZN3JSC17JSArrayBufferView8finalizeEPNS_6JSCellE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.cpp' l='334' c='_ZN3JSC18validateTypedArrayEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.cpp' l='350' c='_ZN3JSC18validateTypedArrayEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArrayBufferView.cpp' l='350' c='_ZN3JSC18validateTypedArrayEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<size>32</size>
+<smbr r='JSC::JSArrayBufferView::s_info' t='const JSC::ClassInfo'/>
+<fun r='_ZN3JSC17JSArrayBufferViewC1ERNS_2VMERNS0_19ConstructionContextE'/>
+<fun r='_ZN3JSC17JSArrayBufferView14finishCreationERNS_2VME'/>
+<fun r='_ZN3JSC17JSArrayBufferView17visitChildrenImplEPNS_6JSCellERT_'/>
+<fun r='_ZN3JSC17JSArrayBufferView13visitChildrenEPNS_6JSCellERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC17JSArrayBufferView13visitChildrenEPNS_6JSCellERNS_11SlotVisitorE'/>
+<fun r='_ZN3JSC17JSArrayBufferView14unsharedBufferEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView8finalizeEPNS_6JSCellE'/>
+<fun r='_ZN3JSC17JSArrayBufferView16unsharedJSBufferEPNS_14JSGlobalObjectE'/>
+<fun r='_ZN3JSC17JSArrayBufferView22possiblySharedJSBufferEPNS_14JSGlobalObjectE'/>
+<fun r='_ZN3JSC17JSArrayBufferView6detachEv'/>
+<fun r='_ZNK3JSC17JSArrayBufferView10byteLengthEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView22slowDownAndWasteMemoryEv'/>
+<fun r='_ZN3JSC17JSArrayBufferView18possiblySharedImplEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGenericTypedArrayViewPrototypeFunctions.h' l='46' c='_ZN3JSC16speciesConstructEPNS_14JSGlobalObjectEPNS_8JSObjectERNS_20MarkedArgumentBufferERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGenericTypedArrayViewPrototypeFunctions.h' l='72' c='_ZN3JSC16speciesConstructEPNS_14JSGlobalObjectEPNS_8JSObjectERNS_20MarkedArgumentBufferERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGenericTypedArrayViewPrototypeFunctions.h' l='72' c='_ZN3JSC16speciesConstructEPNS_14JSGlobalObjectEPNS_8JSObjectERNS_20MarkedArgumentBufferERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGenericTypedArrayViewPrototypeFunctions.h' l='131' c='_ZN3JSC33genericTypedArrayViewProtoFuncSetERNS_2VMEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGenericTypedArrayViewPrototypeFunctions.h' l='131' c='_ZN3JSC33genericTypedArrayViewProtoFuncSetERNS_2VMEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGenericTypedArrayViewPrototypeFunctions.h' l='135' c='_ZN3JSC33genericTypedArrayViewProtoFuncSetERNS_2VMEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGenericTypedArrayViewPrototypeFunctions.h' l='486' c='_ZN3JSC35genericTypedArrayViewProtoFuncSliceERNS_2VMEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGenericTypedArrayViewPrototypeFunctions.h' l='622' c='_ZN3JSC46genericTypedArrayViewPrivateFuncSubarrayCreateERNS_2VMEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSTypedArrayViewPrototype.cpp' l='102' c='_ZN3JSC47typedArrayViewPrivateFuncIsSharedTypedArrayViewEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSTypedArrayViewPrototype.cpp' l='109' c='_ZN3JSC35typedArrayViewPrivateFuncIsDetachedEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSTypedArrayViewPrototype.cpp' l='172' c='_ZN3JSC31typedArrayViewPrivateFuncLengthEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSTypedArrayViewPrototype.cpp' l='172' c='_ZN3JSC31typedArrayViewPrivateFuncLengthEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSTypedArrayViewPrototype.cpp' l='206' c='_ZN3JSC30createTypedArrayIteratorObjectEPNS_14JSGlobalObjectEPNS_9CallFrameENS_13IterationKindE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSTypedArrayViewPrototype.cpp' l='206' c='_ZN3JSC30createTypedArrayIteratorObjectEPNS_14JSGlobalObjectEPNS_9CallFrameENS_13IterationKindE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/AtomicsObject.cpp' l='93' c='_ZN3JSC12_GLOBAL__N_125atomicReadModifyWriteCaseEPNS_14JSGlobalObjectERNS_2VMEPKNS_7JSValueEPNS_17JSArrayBufferViewEjRKT0_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/AtomicsObject.cpp' l='113' c='_ZN3JSC12_GLOBAL__N_120validateAtomicAccessEPNS_14JSGlobalObjectERNS_2VMEPNS_17JSArrayBufferViewENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/AtomicsObject.cpp' l='135' c='_ZN3JSC12_GLOBAL__N_125validateIntegerTypedArrayEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/AtomicsObject.cpp' l='140' c='_ZN3JSC12_GLOBAL__N_125validateIntegerTypedArrayEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/AtomicsObject.cpp' l='176' c='_ZN3JSC12_GLOBAL__N_121atomicReadModifyWriteEPNS_14JSGlobalObjectERNS_2VMEPKNS_7JSValueERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/AtomicsObject.cpp' l='321' c='_ZN3JSC12_GLOBAL__N_115atomicStoreCaseEPNS_14JSGlobalObjectERNS_2VMENS_7JSValueEPNS_17JSArrayBufferViewEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/AtomicsObject.cpp' l='354' c='_ZN3JSC12_GLOBAL__N_111atomicStoreEPNS_14JSGlobalObjectERNS_2VMENS_7JSValueES5_S5_'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/DataView.cpp' l='52' c='_ZN3JSC8DataView4wrapEPNS_14JSGlobalObjectES2_'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='3269' c='_ZN3JSC3DFG14SpeculativeJIT28jumpForTypedArrayOutOfBoundsEPNS0_4NodeENS_12X86Registers10RegisterIDES5_'/>
+<size>32</size>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='1527' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='1530' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='1527' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='1530' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<size>32</size>
+<use f='WebKit/WebCore/DerivedSources/JSWebGLRenderingContext.cpp' l='4772' c='_ZN7WebCoreL69jsWebGLRenderingContextPrototypeFunction_bufferDataOverloadDispatcherEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_23JSWebGLRenderingContextE'/>
+<size>32</size>
+<use f='WebKit/WebCore/DerivedSources/JSWebSocket.cpp' l='575' c='_ZN7WebCoreL51jsWebSocketPrototypeFunction_sendOverloadDispatcherEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_11JSWebSocketE'/>
+<size>32</size>
+<use f='WebKit/Source/WebCore/Modules/indexeddb/IDBKey.cpp' l='53' c='_ZN7WebCore6IDBKey12createBinaryERN3JSC17JSArrayBufferViewE'/>
+<size>32</size>
+<use f='WebKit/Source/WebCore/bindings/js/IDBBindingUtilities.cpp' l='249' c='_ZN7WebCoreL21createIDBKeyFromValueERN3JSC14JSGlobalObjectENS0_7JSValueERN3WTF6VectorIPNS0_7JSArrayELm0ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEE'/>
+<size>32</size>
+<use f='WebKit/Source/WebCore/bindings/js/SerializedScriptValue.cpp' l='1289' c='_ZN7WebCore15CloneSerializer14dumpIfTerminalEN3JSC7JSValueERNS_23SerializationReturnCodeE'/>
+<size>32</size>
+<use f='WebKit/Source/WebCore/bindings/js/StructuredClone.cpp' l='83' c='_ZN7WebCore24structuredCloneForStreamEPN3JSC14JSGlobalObjectEPNS0_9CallFrameE'/>
+<use f='WebKit/Source/WebCore/bindings/js/StructuredClone.cpp' l='84' c='_ZN7WebCore24structuredCloneForStreamEPN3JSC14JSGlobalObjectEPNS0_9CallFrameE'/>
+<size>32</size>

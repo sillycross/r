@@ -1,0 +1,37 @@
+<def f='WebKit/Source/WebCore/platform/ScrollAnimationKinetic.cpp' l='68' type='const double'/>
+<use f='WebKit/Source/WebCore/platform/ScrollAnimationKinetic.cpp' l='82' u='r' c='_ZN7WebCore22ScrollAnimationKinetic11PerAxisDataC1Edddd'/>
+<use f='WebKit/Source/WebCore/platform/ScrollAnimationKinetic.cpp' l='83' u='r' c='_ZN7WebCore22ScrollAnimationKinetic11PerAxisDataC1Edddd'/>
+<use f='WebKit/Source/WebCore/platform/ScrollAnimationKinetic.cpp' l='95' u='r' c='_ZN7WebCore22ScrollAnimationKinetic11PerAxisData13animateScrollEN3WTF7SecondsE'/>
+<use f='WebKit/Source/WebCore/platform/ScrollAnimationKinetic.cpp' l='97' u='r' c='_ZN7WebCore22ScrollAnimationKinetic11PerAxisData13animateScrollEN3WTF7SecondsE'/>
+<doc f='WebKit/Source/WebCore/platform/ScrollAnimationKinetic.cpp' l='35'>/*
+ * PerAxisData is a port of GtkKineticScrolling as of GTK+ 3.20,
+ * mimicking its API and its behavior.
+ *
+ * All our curves are second degree linear differential equations, and
+ * so they can always be written as linear combinations of 2 base
+ * solutions. coef1 and coef2 are the coefficients to these two base
+ * solutions, and are computed from the initial position and velocity.
+ *
+ * In the case of simple deceleration, the differential equation is
+ *
+ *   y&apos;&apos; = -my&apos;
+ *
+ * With m the resistence factor. For this we use the following 2
+ * base solutions:
+ *
+ *   f1(x) = 1
+ *   f2(x) = exp(-mx)
+ *
+ * In the case of overshoot, the differential equation is
+ *
+ *   y&apos;&apos; = -my&apos; - ky
+ *
+ * With m the resistance, and k the spring stiffness constant. We let
+ * k = m^2 / 4, so that the system is critically damped (ie, returns to its
+ * equilibrium position as quickly as possible, without oscillating), and offset
+ * the whole thing, such that the equilibrium position is at 0. This gives the
+ * base solutions
+ *
+ *   f1(x) = exp(-mx / 2)
+ *   f2(x) = t exp(-mx / 2)
+ */</doc>

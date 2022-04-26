@@ -1,0 +1,17 @@
+<dec f='include/xcb/xproto.h' l='8935' type='xcb_list_fonts_with_info_cookie_t xcb_list_fonts_with_info(xcb_connection_t * c, uint16_t max_names, uint16_t pattern_len, const char * pattern)'/>
+<doc f='include/xcb/xproto.h' l='8918'>/**
+ * @brief get matching font names and information
+ *
+ * @param c The connection
+ * @param max_names The maximum number of fonts to be returned.
+ * @param pattern_len The length (in bytes) of \a pattern.
+ * @param pattern A font pattern, for example &quot;-misc-fixed-*&quot;.
+ * \n
+ * The asterisk (*) is a wildcard for any number of characters. The question mark
+ * (?) is a wildcard for a single character. Use of uppercase or lowercase does
+ * not matter.
+ * @return A cookie
+ *
+ * Gets a list of available font names which match the given \a pattern.
+ *
+ */</doc>

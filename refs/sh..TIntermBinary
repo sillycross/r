@@ -1,0 +1,552 @@
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.h' l='99' c='_ZN2sh11TIntermNode15getAsBinaryNodeEv'/>
+<inh f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.h' l='398' c='sh::TIntermOperator'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.h' l='465' ll='519'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.h' l='471' c='_ZN2sh13TIntermBinary11CreateCommaEPNS_12TIntermTypedES2_i'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.h' l='473' c='_ZNK2sh13TIntermBinary8deepCopyEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.h' l='481' c='_ZN2sh13TIntermBinary15getAsBinaryNodeEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.h' l='518' c='_ZN2sh13TIntermBinaryC1ERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermTraverse.h' l='47' c='_ZN2sh16TIntermTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermTraverse.h' l='82' c='_ZN2sh16TIntermTraverser14traverseBinaryEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermTraverse.h' l='306' c='_ZN2sh24TLValueTrackingTraverser14traverseBinaryEPNS_13TIntermBinaryE'/>
+<size>200</size>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.h' l='462'>//
+// Nodes for all the basic binary math operators.
+//</doc>
+<fun r='_ZN2sh13TIntermBinaryC1E9TOperatorPNS_12TIntermTypedES3_'/>
+<fun r='_ZN2sh13TIntermBinary11CreateCommaEPNS_12TIntermTypedES2_i'/>
+<fun r='_ZNK2sh13TIntermBinary8deepCopyEv'/>
+<fun r='_ZNK2sh13TIntermBinary16hasConstantValueEv'/>
+<fun r='_ZNK2sh13TIntermBinary16getConstantValueEv'/>
+<fun r='_ZN2sh13TIntermBinary23GetMulOpBasedOnOperandsERKNS_5TTypeES3_'/>
+<fun r='_ZN2sh13TIntermBinary29GetMulAssignOpBasedOnOperandsERKNS_5TTypeES3_'/>
+<fun r='_ZN2sh13TIntermBinary15getAsBinaryNodeEv'/>
+<fun r='_ZN2sh13TIntermBinary8traverseEPNS_16TIntermTraverserE'/>
+<fun r='_ZN2sh13TIntermBinary5visitENS_5VisitEPNS_16TIntermTraverserE'/>
+<fun r='_ZNK2sh13TIntermBinary13getChildCountEv'/>
+<fun r='_ZNK2sh13TIntermBinary12getChildNodeEm'/>
+<fun r='_ZN2sh13TIntermBinary16replaceChildNodeEPNS_11TIntermNodeES2_'/>
+<fun r='_ZNK2sh13TIntermBinary14hasSideEffectsEv'/>
+<fun r='_ZNK2sh13TIntermBinary7getLeftEv'/>
+<fun r='_ZNK2sh13TIntermBinary8getRightEv'/>
+<fun r='_ZN2sh13TIntermBinary4foldEPNS_12TDiagnosticsE'/>
+<fun r='_ZN2sh13TIntermBinary16setAddIndexClampEv'/>
+<fun r='_ZNK2sh13TIntermBinary16getAddIndexClampEv'/>
+<fun r='_ZNK2sh13TIntermBinary23getIndexStructFieldNameEv'/>
+<mbr r='sh::TIntermBinary::mLeft' o='1408' t='sh::TIntermTyped *'/>
+<mbr r='sh::TIntermBinary::mRight' o='1472' t='sh::TIntermTyped *'/>
+<mbr r='sh::TIntermBinary::mAddIndexClamp' o='1536' t='bool'/>
+<fun r='_ZN2sh13TIntermBinary7promoteEv'/>
+<fun r='_ZN2sh13TIntermBinary17GetCommaQualifierEiPKNS_12TIntermTypedES3_'/>
+<fun r='_ZN2sh13TIntermBinaryC1ERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/BuiltinsWorkaroundGLSL.cpp' l='59' c='_ZN2sh12_GLOBAL__N_123TBuiltinsWorkaroundGLSL11visitSymbolEPNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/BuiltinsWorkaroundGLSL.cpp' l='60' c='_ZN2sh12_GLOBAL__N_123TBuiltinsWorkaroundGLSL11visitSymbolEPNS_13TIntermSymbolE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='125' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='938' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CollectVariables.cpp' l='952' c='_ZN2sh12_GLOBAL__N_125CollectVariablesTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='212' c='_ZN2sh13TParseContext18executeInitializerERKNS_10TSourceLocERKNS_15ImmutableStringEPNS_5TTypeEPNS_12TIntermTypedEPPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulatePrecision.h' l='30' c='_ZN2sh16EmulatePrecision11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNodePatternMatcher.h' l='27' c='_ZN2sh24IntermNodePatternMatcher40IsDynamicIndexingOfNonSSBOVectorOrMatrixEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNodePatternMatcher.h' l='28' c='_ZN2sh24IntermNodePatternMatcher33IsDynamicIndexingOfVectorOrMatrixEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNodePatternMatcher.h' l='29' c='_ZN2sh24IntermNodePatternMatcher33IsDynamicIndexingOfSwizzledVectorEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNodePatternMatcher.h' l='63' c='_ZNK2sh24IntermNodePatternMatcher5matchEPNS_13TIntermBinaryEPNS_11TIntermNodeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNodePatternMatcher.h' l='67' c='_ZNK2sh24IntermNodePatternMatcher5matchEPNS_13TIntermBinaryEPNS_11TIntermNodeEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNodePatternMatcher.h' l='76' c='_ZNK2sh24IntermNodePatternMatcher13matchInternalEPNS_13TIntermBinaryEPNS_11TIntermNodeE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.cpp' l='462' c='_ZN2sh18TIntermDeclarationC1EPKNS_9TVariableEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.cpp' l='1101' c='_ZN2sh13TIntermBinaryC1ERKS0_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.cpp' l='1370' c='_ZN2sh13TIntermBinary11CreateCommaEPNS_12TIntermTypedES2_i'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.cpp' l='1374' c='_ZN2sh13TIntermBinary11CreateCommaEPNS_12TIntermTypedES2_i'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/IntermNode.cpp' l='1374' c='_ZN2sh13TIntermBinary11CreateCommaEPNS_12TIntermTypedES2_i'/>
+<size>200</size>
+<fun r='_ZNK2sh13TIntermBinary13getChildCountEv'/>
+<fun r='_ZNK2sh13TIntermBinary12getChildNodeEm'/>
+<fun r='_ZN2sh13TIntermBinary16replaceChildNodeEPNS_11TIntermNodeES2_'/>
+<fun r='_ZN2sh13TIntermBinaryC1ERKS0_'/>
+<fun r='_ZN2sh13TIntermBinary23GetMulOpBasedOnOperandsERKNS_5TTypeES3_'/>
+<fun r='_ZN2sh13TIntermBinary29GetMulAssignOpBasedOnOperandsERKNS_5TTypeES3_'/>
+<fun r='_ZN2sh13TIntermBinaryC1E9TOperatorPNS_12TIntermTypedES3_'/>
+<fun r='_ZN2sh13TIntermBinary11CreateCommaEPNS_12TIntermTypedES2_i'/>
+<fun r='_ZN2sh13TIntermBinary17GetCommaQualifierEiPKNS_12TIntermTypedES3_'/>
+<fun r='_ZN2sh13TIntermBinary7promoteEv'/>
+<fun r='_ZN2sh13TIntermBinary4foldEPNS_12TDiagnosticsE'/>
+<fun r='_ZNK2sh13TIntermBinary16hasConstantValueEv'/>
+<fun r='_ZNK2sh13TIntermBinary16getConstantValueEv'/>
+<fun r='_ZNK2sh13TIntermBinary23getIndexStructFieldNameEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/OutputGLSLBase.h' l='61' c='_ZN2sh15TOutputGLSLBase11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/OutputGLSLBase.cpp' l='545' c='_ZN2sh15TOutputGLSLBase11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/OutputTree.cpp' l='42' c='_ZN2sh12_GLOBAL__N_116TOutputTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/OutputTree.cpp' l='115' c='_ZN2sh12_GLOBAL__N_116TOutputTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.h' l='38' c='_ZN2sh24CreateTempAssignmentNodeEPKNS_9TVariableEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='135' c='_ZN2sh12_GLOBAL__N_114FindLValueBaseEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='478' c='_ZN2sh13TParseContext22markStaticReadIfSymbolEPNS_11TIntermNodeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='516' c='_ZN2sh13TParseContext16checkCanBeLValueERKNS_10TSourceLocEPKcPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2085' c='_ZN2sh13TParseContext18executeInitializerERKNS_10TSourceLocERKNS_15ImmutableStringEPNS_5TTypeEPNS_12TIntermTypedEPPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2181' c='_ZN2sh13TParseContext18executeInitializerERKNS_10TSourceLocERKNS_15ImmutableStringEPNS_5TTypeEPNS_12TIntermTypedEPPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2193' c='_ZN2sh13TParseContext23addConditionInitializerERKNS_11TPublicTypeERKNS_15ImmutableStringEPNS_12TIntermTypedERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2258' c='_ZN2sh13TParseContext7addLoopENS_9TLoopTypeEPNS_11TIntermNodeES3_PNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2270' c='_ZN2sh13TParseContext7addLoopENS_9TLoopTypeEPNS_11TIntermNodeES3_PNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2270' c='_ZN2sh13TParseContext7addLoopENS_9TLoopTypeEPNS_11TIntermNodeES3_PNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2739' c='_ZN2sh13TParseContext26parseSingleInitDeclarationERKNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES6_PNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2776' c='_ZN2sh13TParseContext31parseSingleArrayInitDeclarationERNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES5_RKNS_7TVectorIjEES5_PNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2942' c='_ZN2sh13TParseContext19parseInitDeclaratorERKNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES6_PNS_12TIntermTypedEPNS_18TIntermDeclarationE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='2981' c='_ZN2sh13TParseContext24parseArrayInitDeclaratorERKNS_11TPublicTypeERKNS_10TSourceLocERKNS_15ImmutableStringES6_RKNS_7TVectorIjEES6_PNS_12TIntermTypedE2142086'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='4319' c='_ZN2sh13TParseContext18addIndexExpressionEPNS_12TIntermTypedERKNS_10TSourceLocES2_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='4320' c='_ZN2sh13TParseContext18addIndexExpressionEPNS_12TIntermTypedERKNS_10TSourceLocES2_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='4327' c='_ZN2sh13TParseContext18addIndexExpressionEPNS_12TIntermTypedERKNS_10TSourceLocES2_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='4327' c='_ZN2sh13TParseContext18addIndexExpressionEPNS_12TIntermTypedERKNS_10TSourceLocES2_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='4403' c='_ZN2sh13TParseContext27addFieldSelectionExpressionEPNS_12TIntermTypedERKNS_10TSourceLocERKNS_15ImmutableStringES5_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='4404' c='_ZN2sh13TParseContext27addFieldSelectionExpressionEPNS_12TIntermTypedERKNS_10TSourceLocERKNS_15ImmutableStringES5_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='4439' c='_ZN2sh13TParseContext27addFieldSelectionExpressionEPNS_12TIntermTypedERKNS_10TSourceLocERKNS_15ImmutableStringES5_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='4440' c='_ZN2sh13TParseContext27addFieldSelectionExpressionEPNS_12TIntermTypedERKNS_10TSourceLocERKNS_15ImmutableStringES5_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='5652' c='_ZN2sh13TParseContext21addBinaryMathInternalE9TOperatorPNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='5652' c='_ZN2sh13TParseContext21addBinaryMathInternalE9TOperatorPNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='5695' c='_ZN2sh13TParseContext9addAssignE9TOperatorPNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='5703' c='_ZN2sh13TParseContext9addAssignE9TOperatorPNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='5708' c='_ZN2sh13TParseContext9addAssignE9TOperatorPNS_12TIntermTypedES3_RKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='5741' c='_ZN2sh13TParseContext8addCommaEPNS_12TIntermTypedES2_RKNS_10TSourceLocE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateAST.cpp' l='28' c='_ZN2sh12_GLOBAL__N_111ValidateAST11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateAST.cpp' l='145' c='_ZN2sh12_GLOBAL__N_111ValidateAST11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateGlobalInitializer.cpp' l='29' c='_ZN2sh12_GLOBAL__N_134ValidateGlobalInitializerTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateGlobalInitializer.cpp' l='110' c='_ZN2sh12_GLOBAL__N_134ValidateGlobalInitializerTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateLimitations.cpp' l='25' c='_ZN2sh12_GLOBAL__N_115GetLoopSymbolIdEPNS_11TIntermLoopE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateLimitations.cpp' l='77' c='_ZN2sh12_GLOBAL__N_128ValidateLimitationsTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateLimitations.cpp' l='97' c='_ZN2sh12_GLOBAL__N_128ValidateLimitationsTraverser16validateIndexingEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateLimitations.cpp' l='124' c='_ZN2sh12_GLOBAL__N_128ValidateLimitationsTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateLimitations.cpp' l='233' c='_ZN2sh12_GLOBAL__N_128ValidateLimitationsTraverser19validateForLoopInitEPNS_11TIntermLoopE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateLimitations.cpp' l='275' c='_ZN2sh12_GLOBAL__N_128ValidateLimitationsTraverser19validateForLoopCondEPNS_11TIntermLoopEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateLimitations.cpp' l='338' c='_ZN2sh12_GLOBAL__N_128ValidateLimitationsTraverser19validateForLoopExprEPNS_11TIntermLoopEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateLimitations.cpp' l='412' c='_ZN2sh12_GLOBAL__N_128ValidateLimitationsTraverser16validateIndexingEPNS_13TIntermBinaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateSwitch.cpp' l='32' c='_ZN2sh12_GLOBAL__N_114ValidateSwitch11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ValidateSwitch.cpp' l='128' c='_ZN2sh12_GLOBAL__N_114ValidateSwitch11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/AddAndTrueToLoopCondition.cpp' l='44' c='_ZN2sh12_GLOBAL__N_134AddAndTrueToLoopConditionTraverser9visitLoopENS_5VisitEPNS_11TIntermLoopE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/AddAndTrueToLoopCondition.cpp' l='44' c='_ZN2sh12_GLOBAL__N_134AddAndTrueToLoopConditionTraverser9visitLoopENS_5VisitEPNS_11TIntermLoopE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/BreakVariableAliasingInInnerLoops.cpp' l='42' c='_ZN2sh12_GLOBAL__N_115AliasingBreaker11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/BreakVariableAliasingInInnerLoops.cpp' l='73' c='_ZN2sh12_GLOBAL__N_115AliasingBreaker11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/BreakVariableAliasingInInnerLoops.cpp' l='73' c='_ZN2sh12_GLOBAL__N_115AliasingBreaker11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ClampFragDepth.cpp' l='49' c='_ZN2sh14ClampFragDepthEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ClampFragDepth.cpp' l='49' c='_ZN2sh14ClampFragDepthEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ClampPointSize.cpp' l='46' c='_ZN2sh14ClampPointSizeEPNS_9TCompilerEPNS_12TIntermBlockEfPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ClampPointSize.cpp' l='46' c='_ZN2sh14ClampPointSizeEPNS_9TCompilerEPNS_12TIntermBlockEfPNS_12TSymbolTableE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='54' c='_ZN2sh12_GLOBAL__N_129InitializeViewIDAndInstanceIDEPKNS_9TVariableES3_jRKNS_12TSymbolTableEPNS_7TVectorIPNS_11TIntermNodeEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='55' c='_ZN2sh12_GLOBAL__N_129InitializeViewIDAndInstanceIDEPKNS_9TVariableES3_jRKNS_12TSymbolTableEPNS_7TVectorIPNS_11TIntermNodeEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='64' c='_ZN2sh12_GLOBAL__N_129InitializeViewIDAndInstanceIDEPKNS_9TVariableES3_jRKNS_12TSymbolTableEPNS_7TVectorIPNS_11TIntermNodeEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='65' c='_ZN2sh12_GLOBAL__N_129InitializeViewIDAndInstanceIDEPKNS_9TVariableES3_jRKNS_12TSymbolTableEPNS_7TVectorIPNS_11TIntermNodeEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='69' c='_ZN2sh12_GLOBAL__N_129InitializeViewIDAndInstanceIDEPKNS_9TVariableES3_jRKNS_12TSymbolTableEPNS_7TVectorIPNS_11TIntermNodeEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='70' c='_ZN2sh12_GLOBAL__N_129InitializeViewIDAndInstanceIDEPKNS_9TVariableES3_jRKNS_12TSymbolTableEPNS_7TVectorIPNS_11TIntermNodeEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='73' c='_ZN2sh12_GLOBAL__N_129InitializeViewIDAndInstanceIDEPKNS_9TVariableES3_jRKNS_12TSymbolTableEPNS_7TVectorIPNS_11TIntermNodeEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='74' c='_ZN2sh12_GLOBAL__N_129InitializeViewIDAndInstanceIDEPKNS_9TVariableES3_jRKNS_12TSymbolTableEPNS_7TVectorIPNS_11TIntermNodeEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='97' c='_ZN2sh12_GLOBAL__N_129SelectViewIndexInVertexShaderEPKNS_9TVariableES3_PNS_7TVectorIPNS_11TIntermNodeEEERKNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='103' c='_ZN2sh12_GLOBAL__N_129SelectViewIndexInVertexShaderEPKNS_9TVariableES3_PNS_7TVectorIPNS_11TIntermNodeEEERKNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='103' c='_ZN2sh12_GLOBAL__N_129SelectViewIndexInVertexShaderEPKNS_9TVariableES3_PNS_7TVectorIPNS_11TIntermNodeEEERKNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='109' c='_ZN2sh12_GLOBAL__N_129SelectViewIndexInVertexShaderEPKNS_9TVariableES3_PNS_7TVectorIPNS_11TIntermNodeEEERKNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='112' c='_ZN2sh12_GLOBAL__N_129SelectViewIndexInVertexShaderEPKNS_9TVariableES3_PNS_7TVectorIPNS_11TIntermNodeEEERKNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeclareAndInitBuiltinsForInstancedMultiview.cpp' l='113' c='_ZN2sh12_GLOBAL__N_129SelectViewIndexInVertexShaderEPKNS_9TVariableES3_PNS_7TVectorIPNS_11TIntermNodeEEERKNS_12TSymbolTableE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeferGlobalInitializers.cpp' l='49' c='_ZN2sh12_GLOBAL__N_123GetDeferredInitializersEPNS_18TIntermDeclarationEbbbPNS_7TVectorIPNS_11TIntermNodeEEEPSt6vectorIPKNS_9TVariableESaISB_EEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeferGlobalInitializers.cpp' l='75' c='_ZN2sh12_GLOBAL__N_123GetDeferredInitializersEPNS_18TIntermDeclarationEbbbPNS_7TVectorIPNS_11TIntermNodeEEEPSt6vectorIPKNS_9TVariableESaISB_EEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/DeferGlobalInitializers.cpp' l='76' c='_ZN2sh12_GLOBAL__N_123GetDeferredInitializersEPNS_18TIntermDeclarationEbbbPNS_7TVectorIPNS_11TIntermNodeEEEPSt6vectorIPKNS_9TVariableESaISB_EEPNS_12TSymbolTableE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateGLFragColorBroadcast.cpp' l='47' c='_ZNK2sh12_GLOBAL__N_129GLFragColorBroadcastTraverser23constructGLFragDataNodeEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateGLFragColorBroadcast.cpp' l='48' c='_ZNK2sh12_GLOBAL__N_129GLFragColorBroadcastTraverser29constructGLFragDataAssignNodeEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateGLFragColorBroadcast.cpp' l='56' c='_ZNK2sh12_GLOBAL__N_129GLFragColorBroadcastTraverser23constructGLFragDataNodeEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateGLFragColorBroadcast.cpp' l='62' c='_ZNK2sh12_GLOBAL__N_129GLFragColorBroadcastTraverser23constructGLFragDataNodeEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateGLFragColorBroadcast.cpp' l='62' c='_ZNK2sh12_GLOBAL__N_129GLFragColorBroadcastTraverser23constructGLFragDataNodeEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateGLFragColorBroadcast.cpp' l='66' c='_ZNK2sh12_GLOBAL__N_129GLFragColorBroadcastTraverser29constructGLFragDataAssignNodeEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateGLFragColorBroadcast.cpp' l='71' c='_ZNK2sh12_GLOBAL__N_129GLFragColorBroadcastTraverser29constructGLFragDataAssignNodeEi'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateMultiDrawShaderBuiltins.cpp' l='68' c='_ZN2sh12_GLOBAL__N_134AddBaseVertexToGLVertexIDTraverser11visitSymbolEPNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulateMultiDrawShaderBuiltins.cpp' l='68' c='_ZN2sh12_GLOBAL__N_134AddBaseVertexToGLVertexIDTraverser11visitSymbolEPNS_13TIntermSymbolE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulatePrecision.cpp' l='449' c='_ZN2sh12_GLOBAL__N_116ParentUsesResultEPNS_11TIntermNodeEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/EmulatePrecision.cpp' l='493' c='_ZN2sh16EmulatePrecision11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ExpandIntegerPowExpressions.cpp' l='125' c='_ZN2sh12_GLOBAL__N_19Traverser14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ExpandIntegerPowExpressions.cpp' l='125' c='_ZN2sh12_GLOBAL__N_19Traverser14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ExpandIntegerPowExpressions.cpp' l='136' c='_ZN2sh12_GLOBAL__N_19Traverser14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ExpandIntegerPowExpressions.cpp' l='136' c='_ZN2sh12_GLOBAL__N_19Traverser14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/FoldExpressions.cpp' l='61' c='_ZN2sh12_GLOBAL__N_124FoldExpressionsTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='37' c='_ZN2sh12_GLOBAL__N_124CreateZeroInitAssignmentEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='40' c='_ZN2sh12_GLOBAL__N_124CreateZeroInitAssignmentEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='76' c='_ZN2sh12_GLOBAL__N_125AddStructZeroInitSequenceEPKNS_12TIntermTypedEbbPNS_7TVectorIPNS_11TIntermNodeEEEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='76' c='_ZN2sh12_GLOBAL__N_125AddStructZeroInitSequenceEPKNS_12TIntermTypedEbbPNS_7TVectorIPNS_11TIntermNodeEEEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='94' c='_ZN2sh12_GLOBAL__N_129AddArrayZeroInitStatementListEPKNS_12TIntermTypedEbbPNS_7TVectorIPNS_11TIntermNodeEEEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='95' c='_ZN2sh12_GLOBAL__N_129AddArrayZeroInitStatementListEPKNS_12TIntermTypedEbbPNS_7TVectorIPNS_11TIntermNodeEEEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='116' c='_ZN2sh12_GLOBAL__N_123AddArrayZeroInitForLoopEPKNS_12TIntermTypedEbPNS_7TVectorIPNS_11TIntermNodeEEEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='117' c='_ZN2sh12_GLOBAL__N_123AddArrayZeroInitForLoopEPKNS_12TIntermTypedEbPNS_7TVectorIPNS_11TIntermNodeEEEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='124' c='_ZN2sh12_GLOBAL__N_123AddArrayZeroInitForLoopEPKNS_12TIntermTypedEbPNS_7TVectorIPNS_11TIntermNodeEEEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='124' c='_ZN2sh12_GLOBAL__N_123AddArrayZeroInitForLoopEPKNS_12TIntermTypedEbPNS_7TVectorIPNS_11TIntermNodeEEEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='193' c='_ZN2sh12_GLOBAL__N_114InsertInitCodeEPNS_9TCompilerEPNS_7TVectorIPNS_11TIntermNodeEEERKSt6vectorINS_14ShaderVariableESaIS9_EEPNS_12TSymbolTableEiRKSt311843920'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='260' c='_ZN2sh12_GLOBAL__N_125InitializeLocalsTraverser16visitDeclarationENS_5VisitEPNS_18TIntermDeclarationE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/InitializeVariables.cpp' l='261' c='_ZN2sh12_GLOBAL__N_125InitializeLocalsTraverser16visitDeclarationENS_5VisitEPNS_18TIntermDeclarationE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/NameNamelessUniformBuffers.cpp' l='103' c='_ZN2sh12_GLOBAL__N_135NameUniformBufferVariablesTraverser11visitSymbolEPNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/NameNamelessUniformBuffers.cpp' l='104' c='_ZN2sh12_GLOBAL__N_135NameUniformBufferVariablesTraverser11visitSymbolEPNS_13TIntermSymbolE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RecordConstantPrecision.cpp' l='57' c='_ZN2sh12_GLOBAL__N_132RecordConstantPrecisionTraverser38operandAffectsParentOperationPrecisionEPNS_12TIntermTypedE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RecordUniformBlocksTranslatedToStructuredBuffers.cpp' l='41' c='_ZN2sh12_GLOBAL__N_149UniformBlockTranslatedToStructuredBufferTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RecordUniformBlocksTranslatedToStructuredBuffers.cpp' l='134' c='_ZN2sh12_GLOBAL__N_149UniformBlockTranslatedToStructuredBufferTraverser11visitSymbolEPNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RecordUniformBlocksTranslatedToStructuredBuffers.cpp' l='173' c='_ZN2sh12_GLOBAL__N_149UniformBlockTranslatedToStructuredBufferTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RecordUniformBlocksTranslatedToStructuredBuffers.cpp' l='213' c='_ZN2sh12_GLOBAL__N_149UniformBlockTranslatedToStructuredBufferTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='29'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='195' c='_ZN2sh12_GLOBAL__N_126GetIndexFunctionDefinitionERKNS_5TTypeEbRKNS_9TFunctionEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='196' c='_ZN2sh12_GLOBAL__N_126GetIndexFunctionDefinitionERKNS_5TTypeEbRKNS_9TFunctionEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='199' c='_ZN2sh12_GLOBAL__N_126GetIndexFunctionDefinitionERKNS_5TTypeEbRKNS_9TFunctionEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='200' c='_ZN2sh12_GLOBAL__N_126GetIndexFunctionDefinitionERKNS_5TTypeEbRKNS_9TFunctionEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='223' c='_ZN2sh12_GLOBAL__N_126GetIndexFunctionDefinitionERKNS_5TTypeEbRKNS_9TFunctionEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='224' c='_ZN2sh12_GLOBAL__N_126GetIndexFunctionDefinitionERKNS_5TTypeEbRKNS_9TFunctionEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='230' c='_ZN2sh12_GLOBAL__N_126GetIndexFunctionDefinitionERKNS_5TTypeEbRKNS_9TFunctionEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='231' c='_ZN2sh12_GLOBAL__N_126GetIndexFunctionDefinitionERKNS_5TTypeEbRKNS_9TFunctionEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='232' c='_ZN2sh12_GLOBAL__N_126GetIndexFunctionDefinitionERKNS_5TTypeEbRKNS_9TFunctionEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='233' c='_ZN2sh12_GLOBAL__N_126GetIndexFunctionDefinitionERKNS_5TTypeEbRKNS_9TFunctionEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='236' c='_ZN2sh12_GLOBAL__N_126GetIndexFunctionDefinitionERKNS_5TTypeEbRKNS_9TFunctionEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='237' c='_ZN2sh12_GLOBAL__N_126GetIndexFunctionDefinitionERKNS_5TTypeEbRKNS_9TFunctionEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='242' c='_ZN2sh12_GLOBAL__N_126GetIndexFunctionDefinitionERKNS_5TTypeEbRKNS_9TFunctionEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='243' c='_ZN2sh12_GLOBAL__N_126GetIndexFunctionDefinitionERKNS_5TTypeEbRKNS_9TFunctionEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='270' c='_ZN2sh12_GLOBAL__N_130RemoveDynamicIndexingTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='327' c='_ZN2sh12_GLOBAL__N_123CreateIndexFunctionCallEPNS_13TIntermBinaryEPNS_12TIntermTypedEPNS_9TFunctionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='342' c='_ZN2sh12_GLOBAL__N_130CreateIndexedWriteFunctionCallEPNS_13TIntermBinaryEPNS_9TVariableES4_PNS_9TFunctionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='360' c='_ZN2sh12_GLOBAL__N_130RemoveDynamicIndexingTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='441' c='_ZN2sh12_GLOBAL__N_130RemoveDynamicIndexingTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='564' c='_ZN2sh44RemoveDynamicIndexingOfNonSSBOVectorOrMatrixEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableEPNS_22PerformanceDiagnosticsE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveDynamicIndexing.cpp' l='576' c='_ZN2sh37RemoveDynamicIndexingOfSwizzledVectorEPNS_9TCompilerEPNS_11TIntermNodeEPNS_12TSymbolTableEPNS_22PerformanceDiagnosticsE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemovePow.cpp' l='66' c='_ZN2sh12_GLOBAL__N_118RemovePowTraverser14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemovePow.cpp' l='66' c='_ZN2sh12_GLOBAL__N_118RemovePowTraverser14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RemoveUnreferencedVariables.cpp' l='253' c='_ZN2sh12_GLOBAL__N_136RemoveUnreferencedVariablesTraverser16visitDeclarationENS_5VisitEPNS_18TIntermDeclarationE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='76' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='103' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='104' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='105' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='106' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='109' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='109' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='112' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='113' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='117' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='118' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='119' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='120' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='123' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='124' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='125' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='126' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='129' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='130' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='131' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='132' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='135' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='136' c='_ZN2sh12_GLOBAL__N_122CreateAtomicCounterRefEPKNS_9TVariableEPKNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='367' c='_ZN2sh12_GLOBAL__N_130RewriteAtomicCountersTraverser20declareAtomicCounterEPKNS_9TVariableEPNS_18TIntermDeclarationE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='368' c='_ZN2sh12_GLOBAL__N_130RewriteAtomicCountersTraverser20declareAtomicCounterEPKNS_9TVariableEPNS_18TIntermDeclarationE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='438' c='_ZN2sh12_GLOBAL__N_130RewriteAtomicCountersTraverser29convertFunctionArgumentHelperERKNS_7TVectorIjEEPNS_12TIntermTypedEjPj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='470' c='_ZN2sh12_GLOBAL__N_130RewriteAtomicCountersTraverser29convertFunctionArgumentHelperERKNS_7TVectorIjEEPNS_12TIntermTypedEjPj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='478' c='_ZN2sh12_GLOBAL__N_130RewriteAtomicCountersTraverser29convertFunctionArgumentHelperERKNS_7TVectorIjEEPNS_12TIntermTypedEjPj'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='560' c='_ZN2sh12_GLOBAL__N_130RewriteAtomicCountersTraverser23convertFunctionArgumentEPNS_11TIntermNodeEPPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='561' c='_ZN2sh12_GLOBAL__N_130RewriteAtomicCountersTraverser23convertFunctionArgumentEPNS_11TIntermNodeEPPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='563' c='_ZN2sh12_GLOBAL__N_130RewriteAtomicCountersTraverser23convertFunctionArgumentEPNS_11TIntermNodeEPPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='564' c='_ZN2sh12_GLOBAL__N_130RewriteAtomicCountersTraverser23convertFunctionArgumentEPNS_11TIntermNodeEPPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='634' c='_ZN2sh12_GLOBAL__N_130RewriteAtomicCountersTraverser22convertBuiltinFunctionEPNS_16TIntermAggregateE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicFunctionExpressions.cpp' l='78' c='_ZN2sh12_GLOBAL__N_141RewriteAtomicFunctionExpressionsTraverser29rewriteAtomicFunctionCallNodeEPNS_16TIntermAggregateE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicFunctionExpressions.cpp' l='78' c='_ZN2sh12_GLOBAL__N_141RewriteAtomicFunctionExpressionsTraverser29rewriteAtomicFunctionCallNodeEPNS_16TIntermAggregateE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='34' c='_ZN2sh12_GLOBAL__N_118DerivativeQuotientEPNS_12TIntermTypedES2_S2_S2_S2_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='36' c='_ZN2sh12_GLOBAL__N_118DerivativeQuotientEPNS_12TIntermTypedES2_S2_S2_S2_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='36' c='_ZN2sh12_GLOBAL__N_118DerivativeQuotientEPNS_12TIntermTypedES2_S2_S2_S2_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='37' c='_ZN2sh12_GLOBAL__N_118DerivativeQuotientEPNS_12TIntermTypedES2_S2_S2_S2_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='38' c='_ZN2sh12_GLOBAL__N_118DerivativeQuotientEPNS_12TIntermTypedES2_S2_S2_S2_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='48' c='_ZN2sh12_GLOBAL__N_111IndexDirectEPNS_12TIntermTypedEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='65' c='_ZN2sh12_GLOBAL__N_115TransformXMajorEPNS_12TIntermBlockEPNS_12TIntermTypedES4_S4_S4_S4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='68' c='_ZN2sh12_GLOBAL__N_115TransformXMajorEPNS_12TIntermBlockEPNS_12TIntermTypedES4_S4_S4_S4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='69' c='_ZN2sh12_GLOBAL__N_115TransformXMajorEPNS_12TIntermBlockEPNS_12TIntermTypedES4_S4_S4_S4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='88' c='_ZN2sh12_GLOBAL__N_125TransformDerivativeXMajorEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_12TIntermTypedES6_S6_S6_S6_S6_S6_S6_S6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='89' c='_ZN2sh12_GLOBAL__N_125TransformDerivativeXMajorEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_12TIntermTypedES6_S6_S6_S6_S6_S6_S6_S6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='90' c='_ZN2sh12_GLOBAL__N_125TransformDerivativeXMajorEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_12TIntermTypedES6_S6_S6_S6_S6_S6_S6_S6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='91' c='_ZN2sh12_GLOBAL__N_125TransformDerivativeXMajorEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_12TIntermTypedES6_S6_S6_S6_S6_S6_S6_S6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='100' c='_ZN2sh12_GLOBAL__N_133TransformImplicitDerivativeXMajorEPNS_12TIntermBlockEPNS_12TIntermTypedES4_S4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='102' c='_ZN2sh12_GLOBAL__N_133TransformImplicitDerivativeXMajorEPNS_12TIntermBlockEPNS_12TIntermTypedES4_S4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='117' c='_ZN2sh12_GLOBAL__N_115TransformYMajorEPNS_12TIntermBlockEPNS_12TIntermTypedES4_S4_S4_S4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='119' c='_ZN2sh12_GLOBAL__N_115TransformYMajorEPNS_12TIntermBlockEPNS_12TIntermTypedES4_S4_S4_S4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='120' c='_ZN2sh12_GLOBAL__N_115TransformYMajorEPNS_12TIntermBlockEPNS_12TIntermTypedES4_S4_S4_S4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='139' c='_ZN2sh12_GLOBAL__N_125TransformDerivativeYMajorEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_12TIntermTypedES6_S6_S6_S6_S6_S6_S6_S6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='140' c='_ZN2sh12_GLOBAL__N_125TransformDerivativeYMajorEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_12TIntermTypedES6_S6_S6_S6_S6_S6_S6_S6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='141' c='_ZN2sh12_GLOBAL__N_125TransformDerivativeYMajorEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_12TIntermTypedES6_S6_S6_S6_S6_S6_S6_S6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='142' c='_ZN2sh12_GLOBAL__N_125TransformDerivativeYMajorEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_12TIntermTypedES6_S6_S6_S6_S6_S6_S6_S6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='151' c='_ZN2sh12_GLOBAL__N_133TransformImplicitDerivativeYMajorEPNS_12TIntermBlockEPNS_12TIntermTypedES4_S4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='153' c='_ZN2sh12_GLOBAL__N_133TransformImplicitDerivativeYMajorEPNS_12TIntermBlockEPNS_12TIntermTypedES4_S4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='167' c='_ZN2sh12_GLOBAL__N_115TransformZMajorEPNS_12TIntermBlockEPNS_12TIntermTypedES4_S4_S4_S4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='170' c='_ZN2sh12_GLOBAL__N_115TransformZMajorEPNS_12TIntermBlockEPNS_12TIntermTypedES4_S4_S4_S4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='171' c='_ZN2sh12_GLOBAL__N_115TransformZMajorEPNS_12TIntermBlockEPNS_12TIntermTypedES4_S4_S4_S4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='190' c='_ZN2sh12_GLOBAL__N_125TransformDerivativeZMajorEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_12TIntermTypedES6_S6_S6_S6_S6_S6_S6_S6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='191' c='_ZN2sh12_GLOBAL__N_125TransformDerivativeZMajorEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_12TIntermTypedES6_S6_S6_S6_S6_S6_S6_S6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='192' c='_ZN2sh12_GLOBAL__N_125TransformDerivativeZMajorEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_12TIntermTypedES6_S6_S6_S6_S6_S6_S6_S6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='193' c='_ZN2sh12_GLOBAL__N_125TransformDerivativeZMajorEPNS_12TIntermBlockEPNS_12TSymbolTableEPNS_12TIntermTypedES6_S6_S6_S6_S6_S6_S6_S6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='202' c='_ZN2sh12_GLOBAL__N_133TransformImplicitDerivativeZMajorEPNS_12TIntermBlockEPNS_12TIntermTypedES4_S4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='204' c='_ZN2sh12_GLOBAL__N_133TransformImplicitDerivativeZMajorEPNS_12TIntermBlockEPNS_12TIntermTypedES4_S4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='314' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser11visitSymbolEPNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='322' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser11visitSymbolEPNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='500' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='501' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='502' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='525' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='535' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='535' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='607' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='610' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='611' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='621' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='625' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='630' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='634' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='639' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='653' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='654' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='666' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='671' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='676' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='717' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='718' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='721' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='722' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='723' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='724' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='726' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='727' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='734' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='735' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser31declareCoordTranslationFunctionEbRKNS_15ImmutableStringEPPNS_9TFunctionEPPNS_25TIntermFunctionDefinitionE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='944' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser22convertBuiltinFunctionEPNS_16TIntermAggregateE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='946' c='_ZN2sh12_GLOBAL__N_140RewriteCubeMapSamplersAs2DArrayTraverser22convertBuiltinFunctionEPNS_16TIntermAggregateE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.h' l='32' c='_ZN2sh11RewriteDfdyEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEiPNS_13TIntermBinaryEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='29' c='_ZN2sh12_GLOBAL__N_19Traverser5ApplyEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEPNS_13TIntermBinaryEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='33' c='_ZN2sh12_GLOBAL__N_19TraverserC1EPNS_13TIntermBinaryEPNS_12TIntermTypedEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='39'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='43' c='_ZN2sh12_GLOBAL__N_19TraverserC1EPNS_13TIntermBinaryEPNS_12TIntermTypedEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='53' c='_ZN2sh12_GLOBAL__N_19Traverser5ApplyEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEPNS_13TIntermBinaryEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='110' c='_ZN2sh12_GLOBAL__N_19Traverser22visitUnaryWithRotationENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='114' c='_ZN2sh12_GLOBAL__N_19Traverser22visitUnaryWithRotationENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='119' c='_ZN2sh12_GLOBAL__N_19Traverser22visitUnaryWithRotationENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='123' c='_ZN2sh12_GLOBAL__N_19Traverser22visitUnaryWithRotationENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='123' c='_ZN2sh12_GLOBAL__N_19Traverser22visitUnaryWithRotationENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='142' c='_ZN2sh12_GLOBAL__N_19Traverser22visitUnaryWithRotationENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='142' c='_ZN2sh12_GLOBAL__N_19Traverser22visitUnaryWithRotationENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='143' c='_ZN2sh12_GLOBAL__N_19Traverser22visitUnaryWithRotationENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='143' c='_ZN2sh12_GLOBAL__N_19Traverser22visitUnaryWithRotationENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='146' c='_ZN2sh12_GLOBAL__N_19Traverser22visitUnaryWithRotationENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='147' c='_ZN2sh12_GLOBAL__N_19Traverser22visitUnaryWithRotationENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='169' c='_ZN2sh12_GLOBAL__N_19Traverser25visitUnaryWithoutRotationENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='170' c='_ZN2sh12_GLOBAL__N_19Traverser25visitUnaryWithoutRotationENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='173' c='_ZN2sh12_GLOBAL__N_19Traverser25visitUnaryWithoutRotationENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='173' c='_ZN2sh12_GLOBAL__N_19Traverser25visitUnaryWithoutRotationENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDfdy.cpp' l='187' c='_ZN2sh11RewriteDfdyEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEiPNS_13TIntermBinaryEPNS_12TIntermTypedE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteDoWhile.cpp' l='83' c='_ZN2sh12_GLOBAL__N_115DoWhileRewriter10visitBlockENS_5VisitEPNS_12TIntermBlockE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteExpressionsWithShaderStorageBlock.cpp' l='122' c='_ZN2sh12_GLOBAL__N_149RewriteExpressionsWithShaderStorageBlockTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteExpressionsWithShaderStorageBlock.cpp' l='151' c='_ZN2sh12_GLOBAL__N_149RewriteExpressionsWithShaderStorageBlockTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteExpressionsWithShaderStorageBlock.cpp' l='195' c='_ZN2sh12_GLOBAL__N_149RewriteExpressionsWithShaderStorageBlockTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteExpressionsWithShaderStorageBlock.cpp' l='196' c='_ZN2sh12_GLOBAL__N_149RewriteExpressionsWithShaderStorageBlockTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteExpressionsWithShaderStorageBlock.cpp' l='200' c='_ZN2sh12_GLOBAL__N_149RewriteExpressionsWithShaderStorageBlockTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteExpressionsWithShaderStorageBlock.cpp' l='201' c='_ZN2sh12_GLOBAL__N_149RewriteExpressionsWithShaderStorageBlockTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteExpressionsWithShaderStorageBlock.cpp' l='207' c='_ZN2sh12_GLOBAL__N_149RewriteExpressionsWithShaderStorageBlockTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteExpressionsWithShaderStorageBlock.cpp' l='208' c='_ZN2sh12_GLOBAL__N_149RewriteExpressionsWithShaderStorageBlockTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteExpressionsWithShaderStorageBlock.cpp' l='236' c='_ZN2sh12_GLOBAL__N_149RewriteExpressionsWithShaderStorageBlockTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteExpressionsWithShaderStorageBlock.cpp' l='237' c='_ZN2sh12_GLOBAL__N_149RewriteExpressionsWithShaderStorageBlockTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteExpressionsWithShaderStorageBlock.cpp' l='300' c='_ZN2sh12_GLOBAL__N_149RewriteExpressionsWithShaderStorageBlockTraverser14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteExpressionsWithShaderStorageBlock.cpp' l='300' c='_ZN2sh12_GLOBAL__N_149RewriteExpressionsWithShaderStorageBlockTraverser14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteExpressionsWithShaderStorageBlock.cpp' l='370' c='_ZN2sh12_GLOBAL__N_149RewriteExpressionsWithShaderStorageBlockTraverser10visitUnaryENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteExpressionsWithShaderStorageBlock.cpp' l='371' c='_ZN2sh12_GLOBAL__N_149RewriteExpressionsWithShaderStorageBlockTraverser10visitUnaryENS_5VisitEPNS_12TIntermUnaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteInterpolateAtOffset.cpp' l='29' c='_ZN2sh12_GLOBAL__N_19Traverser5ApplyEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEPNS_13TIntermBinaryEPNS_12TIntermTypedEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteInterpolateAtOffset.cpp' l='34' c='_ZN2sh12_GLOBAL__N_19TraverserC1EPNS_13TIntermBinaryEPNS_12TIntermTypedEPNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteInterpolateAtOffset.cpp' l='40'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteInterpolateAtOffset.cpp' l='46' c='_ZN2sh12_GLOBAL__N_19TraverserC1EPNS_13TIntermBinaryEPNS_12TIntermTypedEPNS_12TSymbolTableEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteInterpolateAtOffset.cpp' l='61' c='_ZN2sh12_GLOBAL__N_19Traverser5ApplyEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEPNS_13TIntermBinaryEPNS_12TIntermTypedEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteInterpolateAtOffset.cpp' l='100' c='_ZN2sh12_GLOBAL__N_19Traverser14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteInterpolateAtOffset.cpp' l='107' c='_ZN2sh12_GLOBAL__N_19Traverser14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteInterpolateAtOffset.cpp' l='107' c='_ZN2sh12_GLOBAL__N_19Traverser14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteInterpolateAtOffset.cpp' l='127' c='_ZN2sh26RewriteInterpolateAtOffsetEPNS_9TCompilerEPNS_11TIntermNodeERKNS_12TSymbolTableEiPNS_13TIntermBinaryEPNS_12TIntermTypedE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRepeatedAssignToSwizzled.cpp' l='35' c='_ZN2sh12_GLOBAL__N_132RewriteAssignToSwizzledTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRepeatedAssignToSwizzled.cpp' l='70' c='_ZN2sh12_GLOBAL__N_132RewriteAssignToSwizzledTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRepeatedAssignToSwizzled.cpp' l='72' c='_ZN2sh12_GLOBAL__N_132RewriteAssignToSwizzledTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRepeatedAssignToSwizzled.cpp' l='80' c='_ZN2sh12_GLOBAL__N_132RewriteAssignToSwizzledTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRepeatedAssignToSwizzled.cpp' l='81' c='_ZN2sh12_GLOBAL__N_132RewriteAssignToSwizzledTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='94' c='_ZN2sh12_GLOBAL__N_111IsIndexNodeEPNS_11TIntermNodeES2_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='145' c='_ZN2sh12_GLOBAL__N_18GetIndexEPNS_12TSymbolTableEPNS_11TIntermNodeEPNS_7TVectorIS4_EES7_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='173' c='_ZN2sh12_GLOBAL__N_118ReplicateIndexNodeEPNS_12TSymbolTableEPNS_11TIntermNodeEPNS_12TIntermTypedEPNS_7TVectorIS4_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='179' c='_ZN2sh12_GLOBAL__N_118ReplicateIndexNodeEPNS_12TSymbolTableEPNS_11TIntermNodeEPNS_12TIntermTypedEPNS_7TVectorIS4_EE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='190' c='_ZN2sh12_GLOBAL__N_116IsConvertedFieldEPNS_12TIntermTypedERKSt13unordered_mapIPKNS_6TFieldEbSt4hashIS6_ESt8equal_toIS6_ESaISt4pairIKS6_bEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='284' c='_ZN2sh12_GLOBAL__N_120TransformArrayHelper17getCurrentElementEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='519' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='546' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverserC1EPNS_12TSymbolTableEPS1_PSt13unordered_mapIPKNS_9TVariableEPS6_St4hashIS8_ESt8equal_toIS8_ESaI4598150'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='811' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser15determineAccessEPNS_11TIntermNodeES3_PbS4_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1064' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser19transformExpressionEPNS_13TIntermSymbolE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1241' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser23transformReadExpressionEPNS_12TIntermTypedEPNS_11TIntermNodeEPNS_7TVectorIS5_EEPKNS_10TStructureES8_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1241' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser23transformReadExpressionEPNS_12TIntermTypedEPNS_11TIntermNodeEPNS_7TVectorIS5_EEPKNS_10TStructureES8_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1243' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser23transformReadExpressionEPNS_12TIntermTypedEPNS_11TIntermNodeEPNS_7TVectorIS5_EEPKNS_10TStructureES8_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1244' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser23transformReadExpressionEPNS_12TIntermTypedEPNS_11TIntermNodeEPNS_7TVectorIS5_EEPKNS_10TStructureES8_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1295' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser24transformWriteExpressionEPNS_12TIntermTypedEPNS_11TIntermNodeEPNS_7TVectorIS5_EEPKNS_10TStructureES3_9TOperatorS8_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1303' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser24transformWriteExpressionEPNS_12TIntermTypedEPNS_11TIntermNodeEPNS_7TVectorIS5_EEPKNS_10TStructureES3_9TOperatorS8_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1326' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser24transformWriteExpressionEPNS_12TIntermTypedEPNS_11TIntermNodeEPNS_7TVectorIS5_EEPKNS_10TStructureES3_9TOperatorS8_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1334' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser24transformWriteExpressionEPNS_12TIntermTypedEPNS_11TIntermNodeEPNS_7TVectorIS5_EEPKNS_10TStructureES3_9TOperatorS8_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1358' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser24transformWriteExpressionEPNS_12TIntermTypedEPNS_11TIntermNodeEPNS_7TVectorIS5_EEPKNS_10TStructureES3_9TOperatorS8_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1358' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser24transformWriteExpressionEPNS_12TIntermTypedEPNS_11TIntermNodeEPNS_7TVectorIS5_EEPKNS_10TStructureES3_9TOperatorS8_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1360' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser24transformWriteExpressionEPNS_12TIntermTypedEPNS_11TIntermNodeEPNS_7TVectorIS5_EEPKNS_10TStructureES3_9TOperatorS8_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1361' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser24transformWriteExpressionEPNS_12TIntermTypedEPNS_11TIntermNodeEPNS_7TVectorIS5_EEPKNS_10TStructureES3_9TOperatorS8_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1366' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser24transformWriteExpressionEPNS_12TIntermTypedEPNS_11TIntermNodeEPNS_7TVectorIS5_EEPKNS_10TStructureES3_9TOperatorS8_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1371' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser24transformWriteExpressionEPNS_12TIntermTypedEPNS_11TIntermNodeEPNS_7TVectorIS5_EEPKNS_10TStructureES3_9TOperatorS8_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1438' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser12addFieldCopyEPNS_12TIntermBlockEPNS_12TIntermTypedES5_b'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1478' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser17declareStructCopyEPKNS_10TStructureES4_b'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1479' c='_ZN2sh12_GLOBAL__N_132RewriteRowMajorMatricesTraverser17declareStructCopyEPKNS_10TStructureES4_b'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteRowMajorMatrices.cpp' l='1579'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='62' c='_ZN2sh12_GLOBAL__N_128ReplaceTypeOfTypedStructNodeEPNS_12TIntermTypedEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='118' c='_ZN2sh12_GLOBAL__N_131GetIndexExpressionFromTypedNodeEPNS_12TIntermTypedERKSt6vectorImSaImEES2_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='142' c='_ZN2sh12_GLOBAL__N_131GetIndexExpressionFromTypedNodeEPNS_12TIntermTypedERKSt6vectorImSaImEES2_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='152' c='_ZN2sh12_GLOBAL__N_131GetIndexExpressionFromTypedNodeEPNS_12TIntermTypedERKSt6vectorImSaImEES2_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='153' c='_ZN2sh12_GLOBAL__N_131GetIndexExpressionFromTypedNodeEPNS_12TIntermTypedERKSt6vectorImSaImEES2_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='155' c='_ZN2sh12_GLOBAL__N_131GetIndexExpressionFromTypedNodeEPNS_12TIntermTypedERKSt6vectorImSaImEES2_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='372' c='_ZN2sh12_GLOBAL__N_19Traverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='409' c='_ZN2sh12_GLOBAL__N_19Traverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='506' c='_ZN2sh12_GLOBAL__N_19Traverser33GetStructSamplerNameFromTypedNodeEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplers.cpp' l='968' c='_ZN2sh12_GLOBAL__N_19Traverser26GetSamplerArgumentsVisitor25visitSamplerInStructParamERKNS_15ImmutableStringEPKNS_5TTypeEm'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplersOld.cpp' l='60' c='_ZN2sh12_GLOBAL__N_128ReplaceTypeOfTypedStructNodeEPNS_12TIntermTypedEPNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplersOld.cpp' l='140' c='_ZN2sh12_GLOBAL__N_19Traverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteStructSamplersOld.cpp' l='238' c='_ZN2sh12_GLOBAL__N_19Traverser33GetStructSamplerNameFromTypedNodeEPNS_12TIntermTypedE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteTexelFetchOffset.cpp' l='135' c='_ZN2sh12_GLOBAL__N_19Traverser14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteTexelFetchOffset.cpp' l='135' c='_ZN2sh12_GLOBAL__N_19Traverser14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteUnaryMinusOperatorFloat.cpp' l='81' c='_ZN2sh12_GLOBAL__N_19Traverser10visitUnaryENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteUnaryMinusOperatorFloat.cpp' l='81' c='_ZN2sh12_GLOBAL__N_19Traverser10visitUnaryENS_5VisitEPNS_12TIntermUnaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteUnaryMinusOperatorInt.cpp' l='99' c='_ZN2sh12_GLOBAL__N_19Traverser10visitUnaryENS_5VisitEPNS_12TIntermUnaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteUnaryMinusOperatorInt.cpp' l='99' c='_ZN2sh12_GLOBAL__N_19Traverser10visitUnaryENS_5VisitEPNS_12TIntermUnaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ScalarizeVecAndMatConstructorArgs.cpp' l='29' c='_ZN2sh12_GLOBAL__N_130ConstructVectorIndexBinaryNodeEPNS_13TIntermSymbolEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ScalarizeVecAndMatConstructorArgs.cpp' l='31' c='_ZN2sh12_GLOBAL__N_130ConstructVectorIndexBinaryNodeEPNS_13TIntermSymbolEi'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ScalarizeVecAndMatConstructorArgs.cpp' l='34' c='_ZN2sh12_GLOBAL__N_130ConstructMatrixIndexBinaryNodeEPNS_13TIntermSymbolEii'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ScalarizeVecAndMatConstructorArgs.cpp' l='36' c='_ZN2sh12_GLOBAL__N_130ConstructMatrixIndexBinaryNodeEPNS_13TIntermSymbolEii'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ScalarizeVecAndMatConstructorArgs.cpp' l='38' c='_ZN2sh12_GLOBAL__N_130ConstructMatrixIndexBinaryNodeEPNS_13TIntermSymbolEii'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ScalarizeVecAndMatConstructorArgs.cpp' l='147' c='_ZN2sh12_GLOBAL__N_122ScalarizeArgsTraverser13scalarizeArgsEPNS_16TIntermAggregateEbb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/ScalarizeVecAndMatConstructorArgs.cpp' l='169' c='_ZN2sh12_GLOBAL__N_122ScalarizeArgsTraverser13scalarizeArgsEPNS_16TIntermAggregateEbb'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/SimplifyLoopConditions.cpp' l='40' c='_ZN2sh12_GLOBAL__N_131SimplifyLoopConditionsTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/SimplifyLoopConditions.cpp' l='87' c='_ZN2sh12_GLOBAL__N_131SimplifyLoopConditionsTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/SplitSequenceOperator.cpp' l='29' c='_ZN2sh12_GLOBAL__N_130SplitSequenceOperatorTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/SplitSequenceOperator.cpp' l='89' c='_ZN2sh12_GLOBAL__N_130SplitSequenceOperatorTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/UnfoldShortCircuitAST.cpp' l='40' c='_ZN2sh12_GLOBAL__N_130UnfoldShortCircuitASTTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/UnfoldShortCircuitAST.cpp' l='43' c='_ZN2sh12_GLOBAL__N_130UnfoldShortCircuitASTTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/UseInterfaceBlockFields.cpp' l='32' c='_ZN2sh12_GLOBAL__N_120AddNodeUseStatementsEPNS_12TIntermTypedEPNS_7TVectorIPNS_11TIntermNodeEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/UseInterfaceBlockFields.cpp' l='33' c='_ZN2sh12_GLOBAL__N_120AddNodeUseStatementsEPNS_12TIntermTypedEPNS_7TVectorIPNS_11TIntermNodeEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/UseInterfaceBlockFields.cpp' l='56' c='_ZN2sh12_GLOBAL__N_113InsertUseCodeERKNS_14InterfaceBlockEPNS_12TIntermTypedEPNS_7TVectorIPNS_11TIntermNodeEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/UseInterfaceBlockFields.cpp' l='56' c='_ZN2sh12_GLOBAL__N_113InsertUseCodeERKNS_14InterfaceBlockEPNS_12TIntermTypedEPNS_7TVectorIPNS_11TIntermNodeEEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/UseInterfaceBlockFields.cpp' l='81' c='_ZN2sh12_GLOBAL__N_113InsertUseCodeEPNS_7TVectorIPNS_11TIntermNodeEEERKSt6vectorINS_14InterfaceBlockESaIS7_EERKNS_12TSymbolTableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/UseInterfaceBlockFields.cpp' l='82' c='_ZN2sh12_GLOBAL__N_113InsertUseCodeEPNS_7TVectorIPNS_11TIntermNodeEEERKSt6vectorINS_14InterfaceBlockESaIS7_EERKNS_12TSymbolTableE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.cpp' l='41' c='_ZN2sh12_GLOBAL__N_140VectorizeVectorScalarArithmeticTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.cpp' l='47' c='_ZN2sh12_GLOBAL__N_140VectorizeVectorScalarArithmeticTraverser28replaceMathInsideConstructorEPNS_16TIntermAggregateEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.cpp' l='49' c='_ZN2sh12_GLOBAL__N_140VectorizeVectorScalarArithmeticTraverser30replaceAssignInsideConstructorEPKNS_16TIntermAggregateEPKNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.cpp' l='85' c='_ZN2sh12_GLOBAL__N_140VectorizeVectorScalarArithmeticTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.cpp' l='132' c='_ZN2sh12_GLOBAL__N_140VectorizeVectorScalarArithmeticTraverser28replaceMathInsideConstructorEPNS_16TIntermAggregateEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.cpp' l='151' c='_ZN2sh12_GLOBAL__N_140VectorizeVectorScalarArithmeticTraverser28replaceMathInsideConstructorEPNS_16TIntermAggregateEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.cpp' l='151' c='_ZN2sh12_GLOBAL__N_140VectorizeVectorScalarArithmeticTraverser28replaceMathInsideConstructorEPNS_16TIntermAggregateEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.cpp' l='157' c='_ZN2sh12_GLOBAL__N_140VectorizeVectorScalarArithmeticTraverser30replaceAssignInsideConstructorEPKNS_16TIntermAggregateEPKNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.cpp' l='190' c='_ZN2sh12_GLOBAL__N_140VectorizeVectorScalarArithmeticTraverser30replaceAssignInsideConstructorEPKNS_16TIntermAggregateEPKNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.cpp' l='190' c='_ZN2sh12_GLOBAL__N_140VectorizeVectorScalarArithmeticTraverser30replaceAssignInsideConstructorEPKNS_16TIntermAggregateEPKNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.cpp' l='199' c='_ZN2sh12_GLOBAL__N_140VectorizeVectorScalarArithmeticTraverser30replaceAssignInsideConstructorEPKNS_16TIntermAggregateEPKNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.cpp' l='200' c='_ZN2sh12_GLOBAL__N_140VectorizeVectorScalarArithmeticTraverser30replaceAssignInsideConstructorEPKNS_16TIntermAggregateEPKNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.cpp' l='203' c='_ZN2sh12_GLOBAL__N_140VectorizeVectorScalarArithmeticTraverser30replaceAssignInsideConstructorEPKNS_16TIntermAggregateEPKNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.cpp' l='204' c='_ZN2sh12_GLOBAL__N_140VectorizeVectorScalarArithmeticTraverser30replaceAssignInsideConstructorEPKNS_16TIntermAggregateEPKNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.cpp' l='208' c='_ZN2sh12_GLOBAL__N_140VectorizeVectorScalarArithmeticTraverser30replaceAssignInsideConstructorEPKNS_16TIntermAggregateEPKNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/VectorizeVectorScalarArithmetic.cpp' l='229' c='_ZN2sh12_GLOBAL__N_140VectorizeVectorScalarArithmeticTraverser14visitAggregateENS_5VisitEPNS_16TIntermAggregateE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNodePatternMatcher.cpp' l='50' c='_ZN2sh24IntermNodePatternMatcher40IsDynamicIndexingOfNonSSBOVectorOrMatrixEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNodePatternMatcher.cpp' l='56' c='_ZN2sh24IntermNodePatternMatcher33IsDynamicIndexingOfVectorOrMatrixEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNodePatternMatcher.cpp' l='63' c='_ZN2sh24IntermNodePatternMatcher33IsDynamicIndexingOfSwizzledVectorEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNodePatternMatcher.cpp' l='68' c='_ZNK2sh24IntermNodePatternMatcher13matchInternalEPNS_13TIntermBinaryEPNS_11TIntermNodeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNodePatternMatcher.cpp' l='102' c='_ZNK2sh24IntermNodePatternMatcher5matchEPNS_13TIntermBinaryEPNS_11TIntermNodeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNodePatternMatcher.cpp' l='111' c='_ZNK2sh24IntermNodePatternMatcher5matchEPNS_13TIntermBinaryEPNS_11TIntermNodeEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNodePatternMatcher.cpp' l='135' c='_ZNK2sh24IntermNodePatternMatcher5matchEPNS_16TIntermAggregateEPNS_11TIntermNodeE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='194' c='_ZN2sh29CreateTempInitDeclarationNodeEPKNS_9TVariableEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='194' c='_ZN2sh29CreateTempInitDeclarationNodeEPKNS_9TVariableEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='199' c='_ZN2sh24CreateTempAssignmentNodeEPKNS_9TVariableEPNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermNode_util.cpp' l='203' c='_ZN2sh24CreateTempAssignmentNodeEPKNS_9TVariableEPNS_12TIntermTypedE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/AsNode.h' l='86'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/AsNode.h' l='88' c='_ZN2sh4priv6AsNodeINS_13TIntermBinaryEE4execEPNS_11TIntermNodeE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/NodeType.h' l='74' c='_ZN2sh11GetNodeType11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermRebuild.h' l='219' c='_ZN2sh14TIntermRebuild14visitBinaryPreERNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermRebuild.h' l='238' c='_ZN2sh14TIntermRebuild15visitBinaryPostERNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermRebuild.h' l='299' c='_ZN2sh14TIntermRebuild22traverseBinaryChildrenERNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermRebuild.cpp' l='564' c='_ZN2sh14TIntermRebuild22traverseBinaryChildrenERNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermRebuild.cpp' l='606' c='_ZN2sh14TIntermRebuild22traverseBinaryChildrenERNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermRebuild.cpp' l='869' c='_ZN2sh14TIntermRebuild14visitBinaryPreERNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermRebuild.cpp' l='962' c='_ZN2sh14TIntermRebuild15visitBinaryPostERNS_13TIntermBinaryE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermTraverse.cpp' l='310' c='_ZN2sh16TIntermTraverser14traverseBinaryEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermTraverse.cpp' l='315' c='_ZN2sh24TLValueTrackingTraverser14traverseBinaryEPNS_13TIntermBinaryE'/>
+<size>200</size>
+<fun r='_ZN2sh13TIntermBinary8traverseEPNS_16TIntermTraverserE'/>
+<fun r='_ZN2sh13TIntermBinary5visitENS_5VisitEPNS_16TIntermTraverserE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceArrayOfMatrixVarying.cpp' l='126' c='_ZN2sh27ReplaceArrayOfMatrixVaryingEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_9TVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceArrayOfMatrixVarying.cpp' l='127' c='_ZN2sh27ReplaceArrayOfMatrixVaryingEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_9TVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceArrayOfMatrixVarying.cpp' l='131' c='_ZN2sh27ReplaceArrayOfMatrixVaryingEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_9TVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceArrayOfMatrixVarying.cpp' l='131' c='_ZN2sh27ReplaceArrayOfMatrixVaryingEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_9TVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceArrayOfMatrixVarying.cpp' l='133' c='_ZN2sh27ReplaceArrayOfMatrixVaryingEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_9TVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceArrayOfMatrixVarying.cpp' l='134' c='_ZN2sh27ReplaceArrayOfMatrixVaryingEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_9TVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceArrayOfMatrixVarying.cpp' l='136' c='_ZN2sh27ReplaceArrayOfMatrixVaryingEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_9TVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceArrayOfMatrixVarying.cpp' l='139' c='_ZN2sh27ReplaceArrayOfMatrixVaryingEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_9TVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceArrayOfMatrixVarying.cpp' l='143' c='_ZN2sh27ReplaceArrayOfMatrixVaryingEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_9TVariableE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='71' c='_ZN2sh12_GLOBAL__N_132GLClipDistanceReferenceTraverser11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='252' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='253' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='254' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='254' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='256' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='256' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='258' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='258' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='260' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='260' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='264' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='265' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='300' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='300' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='302' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceClipDistanceVariable.cpp' l='303' c='_ZN2sh30ReplaceClipDistanceAssignmentsEPNS_9TCompilerEPNS_12TIntermBlockEPNS_12TSymbolTableEPKNS_12TIntermTypedE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceShadowingVariables.cpp' l='87' c='_ZN2sh12_GLOBAL__N_134ReplaceShadowingVariablesTraverser16visitDeclarationENS_5VisitEPNS_18TIntermDeclarationE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/util.cpp' l='821' c='_ZN2sh22IsInShaderStorageBlockEPNS_12TIntermTypedE'/>
+<size>200</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/third_party/compiler/ArrayBoundsClamper.cpp' l='56' c='_ZN2sh12_GLOBAL__N_124ArrayBoundsClamperMarker11visitBinaryENS_5VisitEPNS_13TIntermBinaryE'/>
+<size>200</size>

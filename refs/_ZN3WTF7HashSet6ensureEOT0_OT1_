@@ -1,0 +1,20 @@
+<dec f='WebKit/WTF/Headers/wtf/HashSet.h' l='116' type='WTF::HashSet::AddResult WTF::HashSet::ensure(T &amp;&amp; , Functor &amp;&amp; )'/>
+<def f='WebKit/WTF/Headers/wtf/HashSet.h' l='257' ll='262' type='WTF::HashSet::AddResult WTF::HashSet::ensure(T &amp;&amp; key, Functor &amp;&amp; functor)'/>
+<doc f='WebKit/WTF/Headers/wtf/HashSet.h' l='108'>// An alternate version of translated add(), ensure() will still do translation
+    // by hashing and comparing with some other type, to avoid the cost of type
+    // conversion if the object is already in the table, but rather than a static
+    // translate() function, uses the passed in functor to perform lazy creation of
+    // the value only if it is not already there. HashTranslator must have the following
+    // function members:
+    //   static unsigned hash(const T&amp;);
+    //   static bool equal(const ValueType&amp;, const T&amp;);</doc>
+<dec f='WebKit/Source/WTF/wtf/HashSet.h' l='116' type='WTF::HashSet::AddResult WTF::HashSet::ensure(T &amp;&amp; , Functor &amp;&amp; )'/>
+<def f='WebKit/Source/WTF/wtf/HashSet.h' l='257' ll='262' type='WTF::HashSet::AddResult WTF::HashSet::ensure(T &amp;&amp; key, Functor &amp;&amp; functor)'/>
+<doc f='WebKit/Source/WTF/wtf/HashSet.h' l='108'>// An alternate version of translated add(), ensure() will still do translation
+    // by hashing and comparing with some other type, to avoid the cost of type
+    // conversion if the object is already in the table, but rather than a static
+    // translate() function, uses the passed in functor to perform lazy creation of
+    // the value only if it is not already there. HashTranslator must have the following
+    // function members:
+    //   static unsigned hash(const T&amp;);
+    //   static bool equal(const ValueType&amp;, const T&amp;);</doc>

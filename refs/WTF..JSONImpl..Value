@@ -1,0 +1,370 @@
+<inh f='WebKit/WTF/Headers/wtf/RefCounted.h' l='184' c='WTF::RefCounted'/>
+<def f='WebKit/WTF/Headers/wtf/JSONValues.h' l='53' ll='161'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='53'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='75' c='_ZN3WTF8JSONImpl5Value4nullEv'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='76' c='_ZN3WTF8JSONImpl5Value6createEb'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='77' c='_ZN3WTF8JSONImpl5Value6createEi'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='78' c='_ZN3WTF8JSONImpl5Value6createEd'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='79' c='_ZN3WTF8JSONImpl5Value6createERKNS_6StringE'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='81' c='_ZN3WTF8JSONImpl5Value6createET_'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='100' c='_ZN3WTF8JSONImpl5Value7asValueEv'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='104' c='_ZN3WTF8JSONImpl5Value9parseJSONERKNS_6StringE'/>
+<ovr f='WebKit/WTF/Headers/wtf/JSONValues.h' l='163' c='WTF::JSONImpl::ObjectBase'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='163'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='165'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='184' c='_ZN3WTF8JSONImpl10ObjectBase8setValueERKNS_6StringEONS_3RefINS0_5ValueENS_12RawPtrTraitsIS6_EEEE'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='197' c='_ZNK3WTF8JSONImpl10ObjectBase8getValueERKNS_6StringE'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='215' c='_ZNK3WTF8JSONImpl10ObjectBase8getValueERKNS_6StringERNS_6RefPtrINS0_5ValueENS_12RawPtrTraitsIS6_EENS_21DefaultRefDerefTraitsIS6_EEEE'/>
+<ovr f='WebKit/WTF/Headers/wtf/JSONValues.h' l='256' c='WTF::JSONImpl::ArrayBase'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='256'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='258'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='266' c='_ZNK3WTF8JSONImpl9ArrayBase3getEm'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='279' c='_ZN3WTF8JSONImpl9ArrayBase9pushValueEONS_3RefINS0_5ValueENS_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='345' c='_ZN3WTF8JSONImpl10ObjectBase8setValueERKNS_6StringEONS_3RefINS0_5ValueENS_12RawPtrTraitsIS6_EEEE'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='383' c='_ZN3WTF8JSONImpl9ArrayBase9pushValueEONS_3RefINS0_5ValueENS_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='412' c='_ZN3WTF8JSONImpl7ArrayOf7addItemEb'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='418' c='_ZN3WTF8JSONImpl7ArrayOf7addItemEi'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='424' c='_ZN3WTF8JSONImpl7ArrayOf7addItemEd'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='430' c='_ZN3WTF8JSONImpl7ArrayOf7addItemERKNS_6StringE'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='436' c='_ZN3WTF8JSONImpl7ArrayOf7addItemEONS_3RefINS0_5ValueENS_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/WTF/Headers/wtf/JSONValues.h' l='436' c='_ZN3WTF8JSONImpl7ArrayOf7addItemEONS_3RefINS0_5ValueENS_12RawPtrTraitsIS3_EEEE'/>
+<size>24</size>
+<doc f='WebKit/WTF/Headers/wtf/JSONValues.h' l='52'>// FIXME: unify this JSON parser with JSONParse in JavaScriptCore.</doc>
+<smbr r='WTF::JSONImpl::Value::maxDepth' t='const int'/>
+<fun r='_ZN3WTF8JSONImpl5ValueD1Ev'/>
+<fun r='_ZN3WTF8JSONImpl5Value4nullEv'/>
+<fun r='_ZN3WTF8JSONImpl5Value6createEb'/>
+<fun r='_ZN3WTF8JSONImpl5Value6createEi'/>
+<fun r='_ZN3WTF8JSONImpl5Value6createEd'/>
+<fun r='_ZN3WTF8JSONImpl5Value6createERKNS_6StringE'/>
+<fun r='_ZN3WTF8JSONImpl5Value6createET_'/>
+<fun r='_ZNK3WTF8JSONImpl5Value4typeEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value6isNullEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value9asBooleanEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value9asIntegerEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value8asDoubleEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value8asStringEv'/>
+<fun r='_ZN3WTF8JSONImpl5Value7asValueEv'/>
+<fun r='_ZN3WTF8JSONImpl5Value8asObjectEv'/>
+<fun r='_ZN3WTF8JSONImpl5Value7asArrayEv'/>
+<fun r='_ZN3WTF8JSONImpl5Value9parseJSONERKNS_6StringE'/>
+<fun r='_ZN3WTF8JSONImpl5Value12escapeStringERNS_13StringBuilderENS_10StringViewE'/>
+<fun r='_ZNK3WTF8JSONImpl5Value12toJSONStringEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value9writeJSONERNS_13StringBuilderE'/>
+<fun r='_ZNK3WTF8JSONImpl5Value10memoryCostEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value8asDoubleERd'/>
+<fun r='_ZNK3WTF8JSONImpl5Value9asIntegerERi'/>
+<fun r='_ZNK3WTF8JSONImpl5Value8asStringERNS_6StringE'/>
+<fun r='_ZN3WTF8JSONImpl5ValueC1Ev'/>
+<fun r='_ZN3WTF8JSONImpl5ValueC1ENS1_4TypeE'/>
+<fun r='_ZN3WTF8JSONImpl5ValueC1Eb'/>
+<fun r='_ZN3WTF8JSONImpl5ValueC1Ei'/>
+<fun r='_ZN3WTF8JSONImpl5ValueC1Ed'/>
+<fun r='_ZN3WTF8JSONImpl5ValueC1ERKNS_6StringE'/>
+<mbr r='WTF::JSONImpl::Value::m_type' o='96' t='WTF::JSONImpl::Value::Type'/>
+<mbr r='WTF::JSONImpl::Value::m_value' o='128' t='union (anonymous union at /home/lemon/WebKit/WTF/Headers/wtf/JSONValues.h:156:5)'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorFrontendAPIDispatcher.h' l='73' c='_ZN7WebCore30InspectorFrontendAPIDispatcher29dispatchCommandWithResultSyncERKN3WTF6StringEONS1_6VectorINS1_3RefINS1_8JSONImpl5ValueENS1_12RawPtrTraits14924753'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorFrontendAPIDispatcher.h' l='74' c='_ZN7WebCore30InspectorFrontendAPIDispatcher30dispatchCommandWithResultAsyncERKN3WTF6StringEONS1_6VectorINS1_3RefINS1_8JSONImpl5ValueENS1_12RawPtrTrait7861587'/>
+<size>24</size>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolTypes.h' l='46' c='_ZN9Inspector8Protocol22PrimitiveBindingTraits26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolTypes.h' l='54' c='_ZN9Inspector8Protocol13BindingTraitsIN3WTF8JSONImpl7ArrayOfIT_EEE11runtimeCastEONS2_3RefINS3_5ValueENS2_12RawPtrTraitsIS9_EEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolTypes.h' l='62' c='_ZN9Inspector8Protocol13BindingTraitsIN3WTF8JSONImpl7ArrayOfIT_EEE26assertValueHasExpectedTypeEPNS3_5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolTypes.h' l='74'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolTypes.h' l='75' c='_ZN9Inspector8Protocol13BindingTraitsIN3WTF8JSONImpl5ValueEE26assertValueHasExpectedTypeEPS4_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorBackendDispatcher.h' l='104' c='_ZN9Inspector17BackendDispatcher8getValueEPN3WTF8JSONImpl6ObjectERKNS1_6StringEb'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorBackendDispatcher.h' l='112' c='_ZN9Inspector17BackendDispatcher16getPropertyValueEPN3WTF8JSONImpl6ObjectERKNS1_6StringEbSt8functionIFT_RNS2_5ValueEEEPKc'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='8186' c='_ZN9Inspector8Protocol9Recording12InitialState13setParametersEON3WTF3RefINS3_8JSONImpl7ArrayOfINS5_5ValueEEENS3_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='8224' c='_ZN9Inspector8Protocol9Recording5Frame7Builder10setActionsEON3WTF3RefINS4_8JSONImpl7ArrayOfINS6_5ValueEEENS4_12RawPtrTraitsIS9_EEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='8314' c='_ZN9Inspector8Protocol9Recording9Recording7Builder7setDataEON3WTF3RefINS4_8JSONImpl7ArrayOfINS6_5ValueEEENS4_12RawPtrTraitsIS9_EEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='8451' c='_ZN9Inspector8Protocol7Runtime12RemoteObject8setValueEON3WTF3RefINS3_8JSONImpl5ValueENS3_12RawPtrTraitsIS6_EEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='9060' c='_ZN9Inspector8Protocol7Runtime12CallArgument8setValueEON3WTF3RefINS3_8JSONImpl5ValueENS3_12RawPtrTraitsIS6_EEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10545' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger8LocationEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10548' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger15FunctionDetailsEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10549' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger15FunctionDetailsEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10552' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger9CallFrameEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10553' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger9CallFrameEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10556' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger5ScopeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10559' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger5Scope4TypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10562' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime12RemoteObjectEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10563' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime12RemoteObjectEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10566' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime12RemoteObject4TypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10569' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime12RemoteObject7SubtypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10572' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime13ObjectPreviewEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10573' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime13ObjectPreviewEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10576' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime13ObjectPreview4TypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10579' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime13ObjectPreview7SubtypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10582' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime15PropertyPreviewEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10585' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime15PropertyPreview4TypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10588' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime15PropertyPreview7SubtypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10591' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime12EntryPreviewEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10594' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime15CollectionEntryEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10595' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime15CollectionEntryEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10598' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime18PropertyDescriptorEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10599' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime18PropertyDescriptorEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10602' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime26InternalPropertyDescriptorEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10603' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime26InternalPropertyDescriptorEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10606' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Timeline13TimelineEventEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10607' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Timeline13TimelineEventEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='10610' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Timeline9EventTypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorBackendDispatchers.h' l='281' c='_ZN9Inspector32DatabaseBackendDispatcherHandler18ExecuteSQLCallback11sendSuccessEON3WTF6RefPtrINS2_8JSONImpl7ArrayOfINS2_6StringEEENS2_12RawPtrTraitsI12605823'/>
+<size>24</size>
+<use f='WebKit/Source/JavaScriptCore/inspector/InspectorProtocolTypes.h' l='46' c='_ZN9Inspector8Protocol22PrimitiveBindingTraits26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InspectorProtocolTypes.h' l='54' c='_ZN9Inspector8Protocol13BindingTraitsIN3WTF8JSONImpl7ArrayOfIT_EEE11runtimeCastEONS2_3RefINS3_5ValueENS2_12RawPtrTraitsIS9_EEEE'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InspectorProtocolTypes.h' l='62' c='_ZN9Inspector8Protocol13BindingTraitsIN3WTF8JSONImpl7ArrayOfIT_EEE26assertValueHasExpectedTypeEPNS3_5ValueE'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InspectorProtocolTypes.h' l='74'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InspectorProtocolTypes.h' l='75' c='_ZN9Inspector8Protocol13BindingTraitsIN3WTF8JSONImpl5ValueEE26assertValueHasExpectedTypeEPS4_'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='8186' c='_ZN9Inspector8Protocol9Recording12InitialState13setParametersEON3WTF3RefINS3_8JSONImpl7ArrayOfINS5_5ValueEEENS3_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='8224' c='_ZN9Inspector8Protocol9Recording5Frame7Builder10setActionsEON3WTF3RefINS4_8JSONImpl7ArrayOfINS6_5ValueEEENS4_12RawPtrTraitsIS9_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='8314' c='_ZN9Inspector8Protocol9Recording9Recording7Builder7setDataEON3WTF3RefINS4_8JSONImpl7ArrayOfINS6_5ValueEEENS4_12RawPtrTraitsIS9_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='8451' c='_ZN9Inspector8Protocol7Runtime12RemoteObject8setValueEON3WTF3RefINS3_8JSONImpl5ValueENS3_12RawPtrTraitsIS6_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='9060' c='_ZN9Inspector8Protocol7Runtime12CallArgument8setValueEON3WTF3RefINS3_8JSONImpl5ValueENS3_12RawPtrTraitsIS6_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10545' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger8LocationEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10548' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger15FunctionDetailsEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10549' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger15FunctionDetailsEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10552' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger9CallFrameEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10553' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger9CallFrameEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10556' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger5ScopeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10559' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger5Scope4TypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10562' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime12RemoteObjectEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10563' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime12RemoteObjectEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10566' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime12RemoteObject4TypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10569' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime12RemoteObject7SubtypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10572' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime13ObjectPreviewEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10573' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime13ObjectPreviewEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10576' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime13ObjectPreview4TypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10579' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime13ObjectPreview7SubtypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10582' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime15PropertyPreviewEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10585' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime15PropertyPreview4TypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10588' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime15PropertyPreview7SubtypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10591' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime12EntryPreviewEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10594' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime15CollectionEntryEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10595' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime15CollectionEntryEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10598' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime18PropertyDescriptorEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10599' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime18PropertyDescriptorEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10602' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime26InternalPropertyDescriptorEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10603' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime26InternalPropertyDescriptorEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10606' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Timeline13TimelineEventEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10607' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Timeline13TimelineEventEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='10610' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Timeline9EventTypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/Source/JavaScriptCore/bindings/ScriptValue.h' l='42' c='_ZN9Inspector16toInspectorValueEPN3JSC14JSGlobalObjectENS0_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InjectedScriptBase.h' l='70' c='_ZN9Inspector18InjectedScriptBase8makeCallERN10Deprecated18ScriptFunctionCallE'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InjectedScriptBase.h' l='75' c='_ZN9Inspector18InjectedScriptBase15checkCallResultERN3WTF6StringENS1_6RefPtrINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS6_EENS1_21DefaultRefDerefTraitsIS5548177'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InjectedScriptBase.h' l='76' c='_ZN9Inspector18InjectedScriptBase20checkAsyncCallResultEN3WTF6RefPtrINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEERK7297302'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InjectedScript.cpp' l='127' c='_ZN9Inspector14InjectedScript18getFunctionDetailsERN3WTF6StringERKS2_RNS1_6RefPtrINS_8Protocol8Debugger15FunctionDetailsENS1_12RawPtrTraitsIS9_EENS1_215906581'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InjectedScript.cpp' l='143' c='_ZN9Inspector14InjectedScript15functionDetailsERN3WTF6StringEN3JSC7JSValueERNS1_6RefPtrINS_8Protocol8Debugger15FunctionDetailsENS1_12RawPtrTraitsIS9_E2362226'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InjectedScript.cpp' l='159' c='_ZN9Inspector14InjectedScript10getPreviewERN3WTF6StringERKS2_RNS1_6RefPtrINS_8Protocol7Runtime13ObjectPreviewENS1_12RawPtrTraitsIS9_EENS1_21DefaultRefDerefTraitsIS9_EEEE'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InjectedScript.cpp' l='182' c='_ZN9Inspector14InjectedScript13getPropertiesERN3WTF6StringERKS2_biibRNS1_6RefPtrINS1_8JSONImpl7ArrayOfINS_8Protocol7Runtime18PropertyDescriptorEEENS1_14542726'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InjectedScript.cpp' l='202' c='_ZN9Inspector14InjectedScript24getDisplayablePropertiesERN3WTF6StringERKS2_iibRNS1_6RefPtrINS1_8JSONImpl7ArrayOfINS_8Protocol7Runtime18PropertyDescrip15839063'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InjectedScript.cpp' l='217' c='_ZN9Inspector14InjectedScript21getInternalPropertiesERN3WTF6StringERKS2_bRNS1_6RefPtrINS1_8JSONImpl7ArrayOfINS_8Protocol7Runtime26InternalPropertyDesc11560237'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InjectedScript.cpp' l='239' c='_ZN9Inspector14InjectedScript20getCollectionEntriesERN3WTF6StringERKS2_S5_iiRNS1_6RefPtrINS1_8JSONImpl7ArrayOfINS_8Protocol7Runtime15CollectionEntryEE14648146'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InjectedScript.cpp' l='253' c='_ZN9Inspector14InjectedScript10saveResultERN3WTF6StringERKS2_RSt8optionalIiE'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InjectedScript.cpp' l='273' c='_ZNK9Inspector14InjectedScript14wrapCallFramesEN3JSC7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InjectedScriptBase.cpp' l='77' c='_ZN9Inspector18InjectedScriptBase8makeCallERN10Deprecated18ScriptFunctionCallE'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InjectedScriptBase.cpp' l='146' c='_ZN9Inspector18InjectedScriptBase15checkCallResultERN3WTF6StringENS1_6RefPtrINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS6_EENS1_21DefaultRefDerefTraitsIS5548177'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InjectedScriptBase.cpp' l='181' c='_ZN9Inspector18InjectedScriptBase20checkAsyncCallResultEN3WTF6RefPtrINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEERK7297302'/>
+<size>24</size>
+<use f='WebKit/Source/JavaScriptCore/inspector/InspectorBackendDispatcher.h' l='104' c='_ZN9Inspector17BackendDispatcher8getValueEPN3WTF8JSONImpl6ObjectERKNS1_6StringEb'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InspectorBackendDispatcher.h' l='112' c='_ZN9Inspector17BackendDispatcher16getPropertyValueEPN3WTF8JSONImpl6ObjectERKNS1_6StringEbSt8functionIFT_RNS2_5ValueEEEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InspectorBackendDispatcher.cpp' l='291' c='_ZN9Inspector17BackendDispatcher16getPropertyValueEPN3WTF8JSONImpl6ObjectERKNS1_6StringEbSt8functionIFT_RNS2_5ValueEEEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InspectorBackendDispatcher.cpp' l='342' c='_ZN9Inspector17BackendDispatcher8getValueEPN3WTF8JSONImpl6ObjectERKNS1_6StringEb'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/InspectorBackendDispatcher.cpp' l='344' c='_ZN9Inspector17BackendDispatcher8getValueEPN3WTF8JSONImpl6ObjectERKNS1_6StringEb'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorBackendDispatchers.h' l='281' c='_ZN9Inspector32DatabaseBackendDispatcherHandler18ExecuteSQLCallback11sendSuccessEON3WTF6RefPtrINS2_8JSONImpl7ArrayOfINS2_6StringEEENS2_12RawPtrTraitsI12605823'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorBackendDispatchers.cpp' l='3681' c='_ZN9Inspector32DatabaseBackendDispatcherHandler18ExecuteSQLCallback11sendSuccessEON3WTF6RefPtrINS2_8JSONImpl7ArrayOfINS2_6StringEEENS2_12RawPtrTraitsI12605823'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1345' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger8LocationEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1370' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger15FunctionDetailsEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1409' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger15FunctionDetailsEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1418' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger9CallFrameEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1461' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger9CallFrameEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1470' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger5Scope4TypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1480' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Debugger5ScopeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1524' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime12RemoteObject4TypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1534' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime12RemoteObject7SubtypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1544' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime12RemoteObjectEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1618' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime12RemoteObjectEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1627' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime13ObjectPreview4TypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1637' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime13ObjectPreview7SubtypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1647' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime13ObjectPreviewEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1712' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime13ObjectPreviewEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1721' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime15PropertyPreview4TypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1731' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime15PropertyPreview7SubtypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1741' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime15PropertyPreviewEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1792' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime12EntryPreviewEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1817' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime15CollectionEntryEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1842' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime15CollectionEntryEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1851' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime18PropertyDescriptorEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1939' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime18PropertyDescriptorEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1948' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime26InternalPropertyDescriptorEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1973' c='_ZN9Inspector8Protocol13BindingTraitsINS0_7Runtime26InternalPropertyDescriptorEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1982' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Timeline9EventTypeEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='1992' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Timeline13TimelineEventEE26assertValueHasExpectedTypeEPN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='2017' c='_ZN9Inspector8Protocol13BindingTraitsINS0_8Timeline13TimelineEventEE11runtimeCastEON3WTF3RefINS5_8JSONImpl5ValueENS5_12RawPtrTraitsIS8_EEEE'/>
+<size>24</size>
+<use f='WebKit/Source/JavaScriptCore/bindings/ScriptValue.cpp' l='40' c='_ZN9InspectorL18jsToInspectorValueEPN3JSC14JSGlobalObjectENS0_7JSValueEi'/>
+<use f='WebKit/Source/JavaScriptCore/bindings/ScriptValue.cpp' l='94' c='_ZN9Inspector16toInspectorValueEPN3JSC14JSGlobalObjectENS0_7JSValueE'/>
+<size>24</size>
+<inh f='WebKit/Source/WTF/wtf/RefCounted.h' l='184' c='WTF::RefCounted'/>
+<def f='WebKit/Source/WTF/wtf/JSONValues.h' l='53' ll='161'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='53'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='75' c='_ZN3WTF8JSONImpl5Value4nullEv'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='76' c='_ZN3WTF8JSONImpl5Value6createEb'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='77' c='_ZN3WTF8JSONImpl5Value6createEi'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='78' c='_ZN3WTF8JSONImpl5Value6createEd'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='79' c='_ZN3WTF8JSONImpl5Value6createERKNS_6StringE'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='81' c='_ZN3WTF8JSONImpl5Value6createET_'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='100' c='_ZN3WTF8JSONImpl5Value7asValueEv'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='104' c='_ZN3WTF8JSONImpl5Value9parseJSONERKNS_6StringE'/>
+<ovr f='WebKit/Source/WTF/wtf/JSONValues.h' l='163' c='WTF::JSONImpl::ObjectBase'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='163'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='165'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='184' c='_ZN3WTF8JSONImpl10ObjectBase8setValueERKNS_6StringEONS_3RefINS0_5ValueENS_12RawPtrTraitsIS6_EEEE'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='197' c='_ZNK3WTF8JSONImpl10ObjectBase8getValueERKNS_6StringE'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='215' c='_ZNK3WTF8JSONImpl10ObjectBase8getValueERKNS_6StringERNS_6RefPtrINS0_5ValueENS_12RawPtrTraitsIS6_EENS_21DefaultRefDerefTraitsIS6_EEEE'/>
+<ovr f='WebKit/Source/WTF/wtf/JSONValues.h' l='256' c='WTF::JSONImpl::ArrayBase'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='256'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='258'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='266' c='_ZNK3WTF8JSONImpl9ArrayBase3getEm'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='279' c='_ZN3WTF8JSONImpl9ArrayBase9pushValueEONS_3RefINS0_5ValueENS_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='345' c='_ZN3WTF8JSONImpl10ObjectBase8setValueERKNS_6StringEONS_3RefINS0_5ValueENS_12RawPtrTraitsIS6_EEEE'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='383' c='_ZN3WTF8JSONImpl9ArrayBase9pushValueEONS_3RefINS0_5ValueENS_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='412' c='_ZN3WTF8JSONImpl7ArrayOf7addItemEb'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='418' c='_ZN3WTF8JSONImpl7ArrayOf7addItemEi'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='424' c='_ZN3WTF8JSONImpl7ArrayOf7addItemEd'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='430' c='_ZN3WTF8JSONImpl7ArrayOf7addItemERKNS_6StringE'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='436' c='_ZN3WTF8JSONImpl7ArrayOf7addItemEONS_3RefINS0_5ValueENS_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.h' l='436' c='_ZN3WTF8JSONImpl7ArrayOf7addItemEONS_3RefINS0_5ValueENS_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='338' c='_ZN3WTF8JSONImpl12_GLOBAL__N_110buildValueEPKDsS3_PS3_i'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='343' c='_ZN3WTF8JSONImpl12_GLOBAL__N_110buildValueEPKDsS3_PS3_i'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='380' c='_ZN3WTF8JSONImpl12_GLOBAL__N_110buildValueEPKDsS3_PS3_i'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='420' c='_ZN3WTF8JSONImpl12_GLOBAL__N_110buildValueEPKDsS3_PS3_i'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='462' c='_ZN3WTF8JSONImpl5Value4nullEv'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='464' c='_ZN3WTF8JSONImpl5Value4nullEv'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='467' c='_ZN3WTF8JSONImpl5Value6createEb'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='469' c='_ZN3WTF8JSONImpl5Value6createEb'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='472' c='_ZN3WTF8JSONImpl5Value6createEi'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='474' c='_ZN3WTF8JSONImpl5Value6createEi'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='477' c='_ZN3WTF8JSONImpl5Value6createEd'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='479' c='_ZN3WTF8JSONImpl5Value6createEd'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='482' c='_ZN3WTF8JSONImpl5Value6createERKNS_6StringE'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='484' c='_ZN3WTF8JSONImpl5Value6createERKNS_6StringE'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='487' c='_ZN3WTF8JSONImpl5Value7asValueEv'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='502' c='_ZN3WTF8JSONImpl5Value9parseJSONERKNS_6StringE'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='699' c='_ZNK3WTF8JSONImpl10ObjectBase8getValueERKNS_6StringE'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='729' c='_ZN3WTF8JSONImpl10ObjectBaseC1Ev'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='755' c='_ZN3WTF8JSONImpl9ArrayBaseC1Ev'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='759' c='_ZNK3WTF8JSONImpl9ArrayBase3getEm'/>
+<use f='WebKit/Source/WTF/wtf/JSONValues.cpp' l='848' c='_ZNK3WTF8JSONImpl10ObjectBase8getValueERKNS_6StringERNS_6RefPtrINS0_5ValueENS_12RawPtrTraitsIS6_EENS_21DefaultRefDerefTraitsIS6_EEEE'/>
+<size>24</size>
+<doc f='WebKit/Source/WTF/wtf/JSONValues.h' l='52'>// FIXME: unify this JSON parser with JSONParse in JavaScriptCore.</doc>
+<smbr r='WTF::JSONImpl::Value::maxDepth' t='const int'/>
+<fun r='_ZN3WTF8JSONImpl5ValueD1Ev'/>
+<fun r='_ZN3WTF8JSONImpl5Value4nullEv'/>
+<fun r='_ZN3WTF8JSONImpl5Value6createEb'/>
+<fun r='_ZN3WTF8JSONImpl5Value6createEi'/>
+<fun r='_ZN3WTF8JSONImpl5Value6createEd'/>
+<fun r='_ZN3WTF8JSONImpl5Value6createERKNS_6StringE'/>
+<fun r='_ZN3WTF8JSONImpl5Value6createET_'/>
+<fun r='_ZNK3WTF8JSONImpl5Value4typeEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value6isNullEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value9asBooleanEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value9asIntegerEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value8asDoubleEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value8asStringEv'/>
+<fun r='_ZN3WTF8JSONImpl5Value7asValueEv'/>
+<fun r='_ZN3WTF8JSONImpl5Value8asObjectEv'/>
+<fun r='_ZN3WTF8JSONImpl5Value7asArrayEv'/>
+<fun r='_ZN3WTF8JSONImpl5Value9parseJSONERKNS_6StringE'/>
+<fun r='_ZN3WTF8JSONImpl5Value12escapeStringERNS_13StringBuilderENS_10StringViewE'/>
+<fun r='_ZNK3WTF8JSONImpl5Value12toJSONStringEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value9writeJSONERNS_13StringBuilderE'/>
+<fun r='_ZNK3WTF8JSONImpl5Value10memoryCostEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value8asDoubleERd'/>
+<fun r='_ZNK3WTF8JSONImpl5Value9asIntegerERi'/>
+<fun r='_ZNK3WTF8JSONImpl5Value8asStringERNS_6StringE'/>
+<fun r='_ZN3WTF8JSONImpl5ValueC1Ev'/>
+<fun r='_ZN3WTF8JSONImpl5ValueC1ENS1_4TypeE'/>
+<fun r='_ZN3WTF8JSONImpl5ValueC1Eb'/>
+<fun r='_ZN3WTF8JSONImpl5ValueC1Ei'/>
+<fun r='_ZN3WTF8JSONImpl5ValueC1Ed'/>
+<fun r='_ZN3WTF8JSONImpl5ValueC1ERKNS_6StringE'/>
+<mbr r='WTF::JSONImpl::Value::m_type' o='96' t='WTF::JSONImpl::Value::Type'/>
+<mbr r='WTF::JSONImpl::Value::m_value' o='128' t='union (anonymous union at /home/lemon/WebKit/Source/WTF/wtf/JSONValues.h:156:5)'/>
+<fun r='_ZN3WTF8JSONImpl5Value4nullEv'/>
+<fun r='_ZN3WTF8JSONImpl5Value6createEb'/>
+<fun r='_ZN3WTF8JSONImpl5Value6createEi'/>
+<fun r='_ZN3WTF8JSONImpl5Value6createEd'/>
+<fun r='_ZN3WTF8JSONImpl5Value6createERKNS_6StringE'/>
+<fun r='_ZN3WTF8JSONImpl5Value7asValueEv'/>
+<fun r='_ZN3WTF8JSONImpl5Value8asObjectEv'/>
+<fun r='_ZN3WTF8JSONImpl5Value7asArrayEv'/>
+<fun r='_ZN3WTF8JSONImpl5Value9parseJSONERKNS_6StringE'/>
+<fun r='_ZN3WTF8JSONImpl5Value12escapeStringERNS_13StringBuilderENS_10StringViewE'/>
+<fun r='_ZNK3WTF8JSONImpl5Value12toJSONStringEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value9asBooleanEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value8asDoubleEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value9asIntegerEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value8asStringEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value9writeJSONERNS_13StringBuilderE'/>
+<fun r='_ZNK3WTF8JSONImpl5Value10memoryCostEv'/>
+<fun r='_ZNK3WTF8JSONImpl5Value8asDoubleERd'/>
+<fun r='_ZNK3WTF8JSONImpl5Value9asIntegerERi'/>
+<fun r='_ZNK3WTF8JSONImpl5Value8asStringERNS_6StringE'/>
+<use f='WebKit/Source/WebDriver/CommandResult.h' l='64' c='_ZN9WebDriver13CommandResult7successEON3WTF6RefPtrINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEE'/>
+<use f='WebKit/Source/WebDriver/CommandResult.h' l='69' c='_ZN9WebDriver13CommandResult4failEON3WTF6RefPtrINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEE'/>
+<use f='WebKit/Source/WebDriver/CommandResult.h' l='80' c='_ZNK9WebDriver13CommandResult6resultEv'/>
+<use f='WebKit/Source/WebDriver/CommandResult.h' l='89' c='_ZN9WebDriver13CommandResultC1EON3WTF6RefPtrINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEESt8optionalINS0_9ErrorCodeEE'/>
+<use f='WebKit/Source/WebDriver/CommandResult.h' l='92'/>
+<use f='WebKit/Source/WebDriver/CommandResult.cpp' l='41' c='_ZN9WebDriver13CommandResultC1EON3WTF6RefPtrINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEESt8optionalINS0_9ErrorCodeEE'/>
+<size>24</size>
+<use f='WebKit/Source/WebDriver/Session.h' l='92' c='_ZN9WebDriver7Session13switchToFrameEON3WTF6RefPtrINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEEONS1_8FunctionIFvONS_13CommandResultEEEE'/>
+<use f='WebKit/Source/WebDriver/Session.h' l='147' c='_ZN9WebDriver7Session13createElementEON3WTF6RefPtrINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEE'/>
+<use f='WebKit/Source/WebDriver/Session.h' l='149' c='_ZN9WebDriver7Session14extractElementERN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/Source/WebDriver/Session.h' l='150' c='_ZN9WebDriver7Session16extractElementIDERN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/Source/WebDriver/Session.h' l='151' c='_ZN9WebDriver7Session18handleScriptResultEON3WTF3RefINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS4_EEEE'/>
+<use f='WebKit/Source/WebDriver/Session.h' l='151' c='_ZN9WebDriver7Session18handleScriptResultEON3WTF3RefINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS4_EEEE'/>
+<use f='WebKit/Source/WebDriver/Session.h' l='177' c='_ZN9WebDriver7Session30parseElementIsFileUploadResultERKN3WTF6RefPtrINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEE'/>
+<use f='WebKit/Source/WebDriver/Session.cpp' l='84' c='_ZN9WebDriverL25firstWindowHandleInResultERN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/Source/WebDriver/Session.cpp' l='672' c='_ZN9WebDriver7Session13switchToFrameEON3WTF6RefPtrINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEEONS1_8FunctionIFvONS_13CommandResultEEEE'/>
+<use f='WebKit/Source/WebDriver/Session.cpp' l='962' c='_ZN9WebDriver7Session13createElementEON3WTF6RefPtrINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEE'/>
+<use f='WebKit/Source/WebDriver/Session.cpp' l='987' c='_ZN9WebDriver7Session14extractElementERN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/Source/WebDriver/Session.cpp' l='993' c='_ZN9WebDriver7Session16extractElementIDERN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/Source/WebDriver/Session.cpp' l='1675' c='_ZN9WebDriver7Session30parseElementIsFileUploadResultERKN3WTF6RefPtrINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEE'/>
+<use f='WebKit/Source/WebDriver/Session.cpp' l='2214' c='_ZN9WebDriver7Session18handleScriptResultEON3WTF3RefINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS4_EEEE'/>
+<use f='WebKit/Source/WebDriver/Session.cpp' l='2214' c='_ZN9WebDriver7Session18handleScriptResultEON3WTF3RefINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS4_EEEE'/>
+<size>24</size>
+<use f='WebKit/Source/WebDriver/WebDriverService.h' l='126' c='_ZNK9WebDriver16WebDriverService26platformValidateCapabilityERKN3WTF6StringERKNS1_3RefINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS7_EEEE'/>
+<use f='WebKit/Source/WebDriver/WebDriverService.h' l='127' c='_ZNK9WebDriver16WebDriverService23platformMatchCapabilityERKN3WTF6StringERKNS1_3RefINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS7_EEEE'/>
+<size>24</size>
+<use f='WebKit/Source/WebDriver/WebDriverService.cpp' l='301' c='_ZNK9WebDriver16WebDriverService12sendResponseEON3WTF8FunctionIFvONS_18HTTPRequestHandler8ResponseEEEEONS_13CommandResultE'/>
+<use f='WebKit/Source/WebDriver/WebDriverService.cpp' l='327' c='_ZN9WebDriverL20valueAsNumberInRangeERKN3WTF8JSONImpl5ValueEdd'/>
+<use f='WebKit/Source/WebDriver/WebDriverService.cpp' l='342' c='_ZN9WebDriverL13unsignedValueERN3WTF8JSONImpl5ValueE'/>
+<use f='WebKit/Source/WebDriver/WebDriverService.cpp' l='2132' c='_ZN9WebDriverL26processInputActionSequenceERNS_7SessionERN3WTF8JSONImpl5ValueERSt8optionalINS2_6StringEE'/>
+<size>24</size>
+<use f='WebKit/Source/WebDriver/gtk/WebDriverServiceGtk.cpp' l='47' c='_ZNK9WebDriver16WebDriverService26platformValidateCapabilityERKN3WTF6StringERKNS1_3RefINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS7_EEEE'/>
+<use f='WebKit/Source/WebDriver/gtk/WebDriverServiceGtk.cpp' l='106' c='_ZNK9WebDriver16WebDriverService23platformMatchCapabilityERKN3WTF6StringERKNS1_3RefINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS7_EEEE'/>
+<size>24</size>
+<use f='WebKit/Source/WebCore/inspector/InspectorCanvasCallTracer.h' l='193'/>
+<size>24</size>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ScriptValue.h' l='42' c='_ZN9Inspector16toInspectorValueEPN3JSC14JSGlobalObjectENS0_7JSValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InjectedScriptBase.h' l='70' c='_ZN9Inspector18InjectedScriptBase8makeCallERN10Deprecated18ScriptFunctionCallE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InjectedScriptBase.h' l='75' c='_ZN9Inspector18InjectedScriptBase15checkCallResultERN3WTF6StringENS1_6RefPtrINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS6_EENS1_21DefaultRefDerefTraitsIS5548177'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InjectedScriptBase.h' l='76' c='_ZN9Inspector18InjectedScriptBase20checkAsyncCallResultEN3WTF6RefPtrINS1_8JSONImpl5ValueENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEERK7297302'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorCanvas.h' l='146' c='_ZN7WebCore15InspectorCanvas17valueIndexForDataEN3WTF7VariantIJNS1_6RefPtrINS_14CanvasGradientENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_13080701'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorCanvas.h' l='149' c='_ZN7WebCore15InspectorCanvas11buildActionEON3WTF6StringEOSt16initializer_listISt8optionalINS_25InspectorCanvasCallTracer17ProcessedArgumentEEE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorCanvas.h' l='150' c='_ZN7WebCore15InspectorCanvas27buildArrayForCanvasGradientERKNS_14CanvasGradientE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorCanvas.h' l='151' c='_ZN7WebCore15InspectorCanvas26buildArrayForCanvasPatternERKNS_13CanvasPatternE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorCanvas.h' l='152' c='_ZN7WebCore15InspectorCanvas22buildArrayForImageDataERKNS_9ImageDataE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorCanvas.h' l='166'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorCanvas.h' l='167'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorCanvas.h' l='168'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorCanvas.cpp' l='335' c='_ZN7WebCoreL19buildArrayForVectorERKN3WTF6VectorIT_Lm0ENS0_15CrashOnOverflowELm16ENS0_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorCanvas.cpp' l='1155' c='_ZN7WebCore15InspectorCanvas12indexForDataEN3WTF7VariantIJNS1_6RefPtrINS_14CanvasGradientENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEEN553389'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorCanvas.cpp' l='1258' c='_ZN7WebCore15InspectorCanvas17valueIndexForDataEN3WTF7VariantIJNS1_6RefPtrINS_14CanvasGradientENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_13080701'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorCanvas.cpp' l='1385' c='_ZN7WebCore15InspectorCanvas11buildActionEON3WTF6StringEOSt16initializer_listISt8optionalINS_25InspectorCanvasCallTracer17ProcessedArgumentEEE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorCanvas.cpp' l='1408' c='_ZN7WebCore15InspectorCanvas27buildArrayForCanvasGradientERKNS_14CanvasGradientE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorCanvas.cpp' l='1451' c='_ZN7WebCore15InspectorCanvas26buildArrayForCanvasPatternERKNS_13CanvasPatternE'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorCanvas.cpp' l='1476' c='_ZN7WebCore15InspectorCanvas22buildArrayForImageDataERKNS_9ImageDataE'/>
+<size>24</size>
+<use f='WebKit/Source/WebCore/inspector/InspectorFrontendAPIDispatcher.cpp' l='114' c='_ZN7WebCoreL30expressionForEvaluatingCommandERKN3WTF6StringEONS0_6VectorINS0_3RefINS0_8JSONImpl5ValueENS0_12RawPtrTraitsIS7_EEEELm0ENS0_15CrashOnOverf14995393'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorFrontendAPIDispatcher.cpp' l='126' c='_ZN7WebCore30InspectorFrontendAPIDispatcher29dispatchCommandWithResultSyncERKN3WTF6StringEONS1_6VectorINS1_3RefINS1_8JSONImpl5ValueENS1_12RawPtrTraits14924753'/>
+<use f='WebKit/Source/WebCore/inspector/InspectorFrontendAPIDispatcher.cpp' l='134' c='_ZN7WebCore30InspectorFrontendAPIDispatcher30dispatchCommandWithResultAsyncERKN3WTF6StringEONS1_6VectorINS1_3RefINS1_8JSONImpl5ValueENS1_12RawPtrTrait7861587'/>
+<size>24</size>

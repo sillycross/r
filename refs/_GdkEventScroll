@@ -1,0 +1,49 @@
+<use f='include/gtk-3.0/gdk/gdkevents.h' l='130'/>
+<def f='include/gtk-3.0/gdk/gdkevents.h' l='849' ll='864'/>
+<size>96</size>
+<doc f='include/gtk-3.0/gdk/gdkevents.h' l='817'>/**
+ * GdkEventScroll:
+ * @type: the type of the event (%GDK_SCROLL).
+ * @window: the window which received the event.
+ * @send_event: %TRUE if the event was sent explicitly.
+ * @time: the time of the event in milliseconds.
+ * @x: the x coordinate of the pointer relative to the window.
+ * @y: the y coordinate of the pointer relative to the window.
+ * @state: (type GdkModifierType): a bit-mask representing the state of
+ *   the modifier keys (e.g. Control, Shift and Alt) and the pointer
+ *   buttons. See #GdkModifierType.
+ * @direction: the direction to scroll to (one of %GDK_SCROLL_UP,
+ *   %GDK_SCROLL_DOWN, %GDK_SCROLL_LEFT, %GDK_SCROLL_RIGHT or
+ *   %GDK_SCROLL_SMOOTH).
+ * @device: the master device that the event originated from. Use
+ * gdk_event_get_source_device() to get the slave device.
+ * @x_root: the x coordinate of the pointer relative to the root of the
+ *   screen.
+ * @y_root: the y coordinate of the pointer relative to the root of the
+ *   screen.
+ * @delta_x: the x coordinate of the scroll delta
+ * @delta_y: the y coordinate of the scroll delta
+ *
+ * Generated from button presses for the buttons 4 to 7. Wheel mice are
+ * usually configured to generate button press events for buttons 4 and 5
+ * when the wheel is turned.
+ *
+ * Some GDK backends can also generate “smooth” scroll events, which
+ * can be recognized by the %GDK_SCROLL_SMOOTH scroll direction. For
+ * these, the scroll deltas can be obtained with
+ * gdk_event_get_scroll_deltas().
+ */</doc>
+<mbr r='_GdkEventScroll::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventScroll::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventScroll::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventScroll::time' o='160' t='guint32'/>
+<mbr r='_GdkEventScroll::x' o='192' t='gdouble'/>
+<mbr r='_GdkEventScroll::y' o='256' t='gdouble'/>
+<mbr r='_GdkEventScroll::state' o='320' t='guint'/>
+<mbr r='_GdkEventScroll::direction' o='352' t='GdkScrollDirection'/>
+<mbr r='_GdkEventScroll::device' o='384' t='GdkDevice *'/>
+<mbr r='_GdkEventScroll::x_root' o='448' t='gdouble'/>
+<mbr r='_GdkEventScroll::y_root' o='512' t='gdouble'/>
+<mbr r='_GdkEventScroll::delta_x' o='576' t='gdouble'/>
+<mbr r='_GdkEventScroll::delta_y' o='640' t='gdouble'/>
+<mbr r='_GdkEventScroll::is_stop' o='704' t='guint'/>

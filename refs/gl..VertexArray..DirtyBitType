@@ -1,0 +1,12 @@
+<def f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/VertexArray.h' l='122' ll='141'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/VertexArray.h' l='306' c='_ZNK2gl11VertexArray20getDirtyBitFromIndexEbm'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/VertexArray.h' l='112'>// Dirty bits for VertexArrays use a heirarchical design. At the top level, each attribute
+    // has a single dirty bit. Then an array of MAX_ATTRIBS dirty bits each has a dirty bit for
+    // enabled/pointer/format/binding. Bindings are handled similarly. Note that because the
+    // total number of dirty bits is 33, it will not be as fast on a 32-bit machine, which
+    // can&apos;t support the advanced 64-bit scanning intrinsics. We could consider packing the
+    // binding and attribute bits together if this becomes a problem.
+    //
+    // Special note on &quot;DIRTY_ATTRIB_POINTER_BUFFER&quot;: this is a special case when the app
+    // calls glVertexAttribPointer but only changes a VBO and/or offset binding. This allows
+    // the Vulkan back-end to skip performing a pipeline change for performance.</doc>

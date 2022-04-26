@@ -1,0 +1,78 @@
+<def f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBase.h' l='42' ll='89'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/Label.h' l='45'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/Label.h' l='129'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmFunctionCodeBlock.h' l='57'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBaseC1ENT_9CodeBlockEj'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase23allocateCalleeSaveSpaceEj'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase8newLabelEv'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase15newEmittedLabelEv'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase11newRegisterEv'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase6addVarEv'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase12newTemporaryEv'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase9emitLabelERNS_12GenericLabelIT_EE'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase12recordOpcodeENT_8OpcodeIDE'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase17alignWideOpcode16Ev'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase17alignWideOpcode32Ev'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase5writeEh'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase5writeEt'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase5writeEj'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase5writeEa'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase5writeEs'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase5writeEi'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase20reclaimFreeRegistersEv'/>
+<mbr r='JSC::BytecodeGeneratorBase::m_writer' t='JSC::InstructionStreamWriter'/>
+<mbr r='JSC::BytecodeGeneratorBase::m_codeBlock' t='typename Traits::CodeBlock'/>
+<mbr r='JSC::BytecodeGeneratorBase::m_outOfMemoryDuringConstruction' t='bool'/>
+<mbr r='JSC::BytecodeGeneratorBase::m_lastOpcodeID' t='typename Traits::OpcodeID'/>
+<mbr r='JSC::BytecodeGeneratorBase::m_lastInstruction' t='InstructionStream::MutableRef'/>
+<mbr r='JSC::BytecodeGeneratorBase::m_labels' t='SegmentedVector&lt;GenericLabel&lt;Traits&gt;, 32&gt;'/>
+<mbr r='JSC::BytecodeGeneratorBase::m_calleeLocals' t='SegmentedVector&lt;JSC::RegisterID, 32&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBaseInlines.h' l='43' c='_ZN3JSC21BytecodeGeneratorBaseC1ENT_9CodeBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBaseInlines.h' l='50' c='_ZN3JSC21BytecodeGeneratorBase8newLabelEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBaseInlines.h' l='60' c='_ZN3JSC21BytecodeGeneratorBase15newEmittedLabelEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBaseInlines.h' l='68' c='_ZN3JSC21BytecodeGeneratorBase20reclaimFreeRegistersEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBaseInlines.h' l='74' c='_ZN3JSC21BytecodeGeneratorBase9emitLabelERNS_12GenericLabelIT_EE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBaseInlines.h' l='94' c='_ZN3JSC21BytecodeGeneratorBase12recordOpcodeENT_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBaseInlines.h' l='102' c='_ZN3JSC21BytecodeGeneratorBase17alignWideOpcode16Ev'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBaseInlines.h' l='113' c='_ZN3JSC21BytecodeGeneratorBase17alignWideOpcode32Ev'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBaseInlines.h' l='124' c='_ZN3JSC21BytecodeGeneratorBase5writeEh'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBaseInlines.h' l='131' c='_ZN3JSC21BytecodeGeneratorBase5writeEt'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBaseInlines.h' l='137' c='_ZN3JSC21BytecodeGeneratorBase5writeEj'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBaseInlines.h' l='143' c='_ZN3JSC21BytecodeGeneratorBase5writeEa'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBaseInlines.h' l='149' c='_ZN3JSC21BytecodeGeneratorBase5writeEs'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBaseInlines.h' l='155' c='_ZN3JSC21BytecodeGeneratorBase5writeEi'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBaseInlines.h' l='161' c='_ZN3JSC21BytecodeGeneratorBase11newRegisterEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBaseInlines.h' l='172' c='_ZN3JSC21BytecodeGeneratorBase12newTemporaryEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBaseInlines.h' l='183' c='_ZN3JSC21BytecodeGeneratorBase6addVarEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGeneratorBaseInlines.h' l='194' c='_ZN3JSC21BytecodeGeneratorBase23allocateCalleeSaveSpaceEj'/>
+<ovr f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntGenerator.cpp' l='47' c='JSC::Wasm::LLIntGenerator'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntGenerator.cpp' l='47'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntGenerator.cpp' l='470' c='_ZN3JSC4Wasm14LLIntGeneratorC1ERKNS0_17ModuleInformationEjRKNS0_9SignatureE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntGenerator.cpp' l='1622' c='_ZN3JSC12GenericLabel11setLocationERNS_21BytecodeGeneratorBaseIT_EEj'/>
+<size>104</size>
+<fun r='_ZN3JSC21BytecodeGeneratorBaseC1ENT_9CodeBlockEj'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase8newLabelEv'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase15newEmittedLabelEv'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase20reclaimFreeRegistersEv'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase9emitLabelERNS_12GenericLabelIT_EE'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase12recordOpcodeENT_8OpcodeIDE'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase17alignWideOpcode16Ev'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase17alignWideOpcode32Ev'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase5writeEh'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase5writeEt'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase5writeEj'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase5writeEa'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase5writeEs'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase5writeEi'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase11newRegisterEv'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase12newTemporaryEv'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase6addVarEv'/>
+<fun r='_ZN3JSC21BytecodeGeneratorBase23allocateCalleeSaveSpaceEj'/>
+<ovr f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='397' c='JSC::BytecodeGenerator'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='397'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='294' c='_ZN3JSC17BytecodeGeneratorC1ERNS_2VMEPNS_11ProgramNodeEPNS_24UnlinkedProgramCodeBlockEN3WTF9OptionSetINS_18CodeGenerationModeEEERKNS7_6RefPtrINS_18TDZ13770524'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='341' c='_ZN3JSC17BytecodeGeneratorC1ERNS_2VMEPNS_12FunctionNodeEPNS_25UnlinkedFunctionCodeBlockEN3WTF9OptionSetINS_18CodeGenerationModeEEERKNS7_6RefPtrINS_18T13194151'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='867' c='_ZN3JSC17BytecodeGeneratorC1ERNS_2VMEPNS_8EvalNodeEPNS_21UnlinkedEvalCodeBlockEN3WTF9OptionSetINS_18CodeGenerationModeEEERKNS7_6RefPtrINS_18TDZEnviron2288662'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='932' c='_ZN3JSC17BytecodeGeneratorC1ERNS_2VMEPNS_17ModuleProgramNodeEPNS_30UnlinkedModuleProgramCodeBlockEN3WTF9OptionSetINS_18CodeGenerationModeEEERKNS7_6Ref10936391'/>
+<size>104</size>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmFunctionCodeBlock.h' l='57'/>

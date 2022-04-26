@@ -1,0 +1,10 @@
+<def f='include/gcrypt.h' l='1571' ll='1576'/>
+<use f='include/gcrypt.h' l='1571'/>
+<use f='include/gcrypt.h' l='1582' c='gcry_randomize'/>
+<use f='include/gcrypt.h' l='1598' c='gcry_random_bytes'/>
+<use f='include/gcrypt.h' l='1604' c='gcry_random_bytes_secure'/>
+<use f='include/gcrypt.h' l='1612' c='gcry_mpi_randomize'/>
+<doc f='include/gcrypt.h' l='1567'>/* The possible values for the random quality.  The rule of thumb is
+   to use STRONG for session keys and VERY_STRONG for key material.
+   WEAK is usually an alias for STRONG and should not be used anymore
+   (except with gcry_mpi_randomize); use gcry_create_nonce instead. */</doc>

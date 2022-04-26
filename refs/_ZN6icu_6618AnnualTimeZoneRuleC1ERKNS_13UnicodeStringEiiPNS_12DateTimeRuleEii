@@ -1,0 +1,17 @@
+<dec f='include/unicode/tzrule.h' l='423' type='void icu_66::AnnualTimeZoneRule::AnnualTimeZoneRule(const icu_66::UnicodeString &amp; name, int32_t rawOffset, int32_t dstSavings, icu_66::DateTimeRule * dateTimeRule, int32_t startYear, int32_t endYear)'/>
+<doc f='include/unicode/tzrule.h' l='407'>/**
+     * Constructs a &lt;code&gt;AnnualTimeZoneRule&lt;/code&gt; with the name, the GMT offset of its
+     * standard time, the amount of daylight saving offset adjustment, the annual start
+     * time rule and the start/until years.  The input DateTimeRule object is adopted
+     * by this object, therefore, the caller must not delete the object.
+     * @param name          The time zone name.
+     * @param rawOffset     The GMT offset of its standard time in milliseconds.
+     * @param dstSavings    The amount of daylight saving offset adjustment in
+     *                      milliseconds.  If this ia a rule for standard time,
+     *                      the value of this argument is 0.
+     * @param dateTimeRule  The start date/time rule repeated annually.
+     * @param startYear     The first year when this rule takes effect.
+     * @param endYear       The last year when this rule takes effect.  If this
+     *                      rule is effective forever in future, specify MAX_YEAR.
+     * @stable ICU 3.8
+     */</doc>

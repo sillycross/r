@@ -1,0 +1,13 @@
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGInPlaceAbstractState.h' l='210' type='bool JSC::DFG::InPlaceAbstractState::endBasicBlock()'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGInPlaceAbstractState.h' l='200'>// Finish abstractly executing a basic block. If MergeToTail or
+    // MergeToSuccessors is passed, then this merges everything we have
+    // learned about how the state changes during this block&apos;s execution into
+    // the block&apos;s data structures.
+    //
+    // Returns true if the state of the block at the tail was changed,
+    // and, if the state at the heads of successors was changed.
+    // A true return means that you must revisit (at least) the successor
+    // blocks. This also sets cfaShouldRevisit to true for basic blocks
+    // that must be visited next.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCFAPhase.cpp' l='247' u='c' c='_ZN3JSC3DFG8CFAPhase15performBlockCFAEPNS0_10BasicBlockE'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGInPlaceAbstractState.cpp' l='197' ll='320' type='bool JSC::DFG::InPlaceAbstractState::endBasicBlock()'/>

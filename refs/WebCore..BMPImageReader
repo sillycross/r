@@ -1,0 +1,56 @@
+<def f='WebKit/Source/WebCore/platform/image-decoders/bmp/BMPImageReader.h' l='40' ll='345'/>
+<use f='WebKit/Source/WebCore/platform/image-decoders/bmp/BMPImageDecoder.h' l='83'/>
+<use f='WebKit/Source/WebCore/platform/image-decoders/ico/ICOImageDecoder.h' l='146'/>
+<size>168</size>
+<doc f='WebKit/Source/WebCore/platform/image-decoders/bmp/BMPImageReader.h' l='38'>// This class decodes a BMP image. It is used in the BMP and ICO decoders,
+// which wrap it in the appropriate code to read file headers, etc.</doc>
+<fun r='_ZN7WebCore14BMPImageReader10readUint16ERKNS_12SharedBuffer11DataSegmentEi'/>
+<fun r='_ZN7WebCore14BMPImageReader10readUint32ERKNS_12SharedBuffer11DataSegmentEi'/>
+<fun r='_ZN7WebCore14BMPImageReaderC1EPNS_20ScalableImageDecoderEmmb'/>
+<fun r='_ZN7WebCore14BMPImageReader9setBufferEPNS_25ScalableImageDecoderFrameE'/>
+<fun r='_ZN7WebCore14BMPImageReader7setDataERNS_12SharedBuffer11DataSegmentE'/>
+<fun r='_ZN7WebCore14BMPImageReader9decodeBMPEb'/>
+<fun r='_ZNK7WebCore14BMPImageReader10readUint16Ei'/>
+<fun r='_ZNK7WebCore14BMPImageReader10readUint32Ei'/>
+<fun r='_ZN7WebCore14BMPImageReader18readInfoHeaderSizeEv'/>
+<fun r='_ZN7WebCore14BMPImageReader17processInfoHeaderEv'/>
+<fun r='_ZN7WebCore14BMPImageReader14readInfoHeaderEv'/>
+<fun r='_ZNK7WebCore14BMPImageReader15isWindowsV4PlusEv'/>
+<fun r='_ZNK7WebCore14BMPImageReader17isInfoHeaderValidEv'/>
+<fun r='_ZN7WebCore14BMPImageReader15processBitmasksEv'/>
+<fun r='_ZN7WebCore14BMPImageReader17processColorTableEv'/>
+<fun r='_ZN7WebCore14BMPImageReader14processRLEDataEv'/>
+<fun r='_ZN7WebCore14BMPImageReader17processNonRLEDataEbi'/>
+<fun r='_ZN7WebCore14BMPImageReader14pastEndOfImageEi'/>
+<fun r='_ZNK7WebCore14BMPImageReader16readCurrentPixelEi'/>
+<fun r='_ZNK7WebCore14BMPImageReader12getComponentEji'/>
+<fun r='_ZNK7WebCore14BMPImageReader8getAlphaEj'/>
+<fun r='_ZN7WebCore14BMPImageReader4setIEm'/>
+<fun r='_ZN7WebCore14BMPImageReader8setPixelEjjjj'/>
+<fun r='_ZN7WebCore14BMPImageReader8fillRGBAEijjjj'/>
+<fun r='_ZN7WebCore14BMPImageReader19moveBufferToNextRowEv'/>
+<mbr r='WebCore::BMPImageReader::m_parent' o='0' t='WebCore::ScalableImageDecoder *'/>
+<mbr r='WebCore::BMPImageReader::m_buffer' o='64' t='WebCore::ScalableImageDecoderFrame *'/>
+<mbr r='WebCore::BMPImageReader::m_data' o='128' t='RefPtr&lt;SharedBuffer::DataSegment&gt;'/>
+<mbr r='WebCore::BMPImageReader::m_decodedOffset' o='192' t='size_t'/>
+<mbr r='WebCore::BMPImageReader::m_headerOffset' o='256' t='size_t'/>
+<mbr r='WebCore::BMPImageReader::m_imgDataOffset' o='320' t='size_t'/>
+<mbr r='WebCore::BMPImageReader::m_infoHeader' o='384' t='WebCore::BMPImageReader::BitmapInfoHeader'/>
+<mbr r='WebCore::BMPImageReader::m_isOS21x' o='576' t='bool'/>
+<mbr r='WebCore::BMPImageReader::m_isOS22x' o='584' t='bool'/>
+<mbr r='WebCore::BMPImageReader::m_isTopDown' o='592' t='bool'/>
+<mbr r='WebCore::BMPImageReader::m_needToProcessBitmasks' o='600' t='bool'/>
+<mbr r='WebCore::BMPImageReader::m_needToProcessColorTable' o='608' t='bool'/>
+<mbr r='WebCore::BMPImageReader::m_bitMasks' o='640' t='uint32_t [4]'/>
+<mbr r='WebCore::BMPImageReader::m_bitShiftsRight' o='768' t='int [4]'/>
+<mbr r='WebCore::BMPImageReader::m_bitShiftsLeft' o='896' t='int [4]'/>
+<mbr r='WebCore::BMPImageReader::m_tableSizeInBytes' o='1024' t='size_t'/>
+<mbr r='WebCore::BMPImageReader::m_colorTable' o='1088' t='Vector&lt;WebCore::BMPImageReader::RGBTriple&gt;'/>
+<mbr r='WebCore::BMPImageReader::m_coord' o='1216' t='WebCore::IntPoint'/>
+<mbr r='WebCore::BMPImageReader::m_seenNonZeroAlphaPixel' o='1280' t='bool'/>
+<mbr r='WebCore::BMPImageReader::m_seenZeroAlphaPixel' o='1288' t='bool'/>
+<mbr r='WebCore::BMPImageReader::m_andMaskState' o='1312' t='WebCore::BMPImageReader::AndMaskState'/>
+<use f='WebKit/Source/WebCore/platform/image-decoders/bmp/BMPImageDecoder.cpp' l='101' c='_ZN7WebCore15BMPImageDecoder12decodeHelperEb'/>
+<size>168</size>
+<use f='WebKit/Source/WebCore/platform/image-decoders/ico/ICOImageDecoder.cpp' l='198' c='_ZN7WebCore15ICOImageDecoder13decodeAtIndexEm'/>
+<size>168</size>

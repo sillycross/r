@@ -1,0 +1,177 @@
+<inh f='WebKit/Source/ThirdParty/ANGLE/src/common/angleutils.h' l='43' c='angle::NonCopyable'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermRebuild.h' l='47' ll='324'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermRebuild.h' l='139'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermRebuild.h' l='172'/>
+<size>216</size>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/IntermRebuild.h' l='16'>// Walks the tree to rebuild nodes.
+// This class is intended to be derived with overridden visitXXX functions.
+//
+// Each visitXXX function that does not have a Visit parameter simply has the visitor called
+// exactly once, regardless of (preVisit) or (postVisit) values.
+
+// Each visitXXX function that has a Visit parameter behaves as follows:
+//    * If (preVisit):
+//      - The node is visited before children are traversed.
+//      - The returned value is used to replace the visited node. The returned value may be the same
+//        as the original node.
+//      - If multiple nodes are returned, children and post visits of the returned nodes are not
+//        preformed, even if it is a singleton collection.
+//    * If (childVisit)
+//      - If any new children are returned, the node is automatically rebuilt with the new children
+//        before post visit.
+//      - Depending on the type of the node, null children may be discarded.
+//      - Ill-typed children cause rebuild errors. Ill-typed means the node to automatically rebuild
+//        cannot accept a child of a certain type as input to its constructor.
+//      - Only instances of TIntermAggregateBase can accept Multi results for any of its children.
+//        If supplied, the nodes are spliced children at the spot of the original child.
+//    * If (postVisit)
+//      - The node is visited after any children are traversed.
+//      - Only after such a rebuild (or lack thereof), the post-visit is performed.
+//
+// Nodes in visit functions are allowed to be modified in place, including TIntermAggregateBase
+// child sequences.
+//
+// The default implementations of all the visitXXX functions support full pre and post traversal
+// without modifying the visited nodes.
+//</doc>
+<fun r='_ZN2sh14TIntermRebuildC1ERNS_9TCompilerEbb'/>
+<fun r='_ZN2sh14TIntermRebuildD1Ev'/>
+<fun r='_ZN2sh14TIntermRebuild11rebuildRootERNS_12TIntermBlockE'/>
+<fun r='_ZN2sh14TIntermRebuild14visitSymbolPreERNS_13TIntermSymbolE'/>
+<fun r='_ZN2sh14TIntermRebuild21visitConstantUnionPreERNS_20TIntermConstantUnionE'/>
+<fun r='_ZN2sh14TIntermRebuild25visitFunctionPrototypePreERNS_24TIntermFunctionPrototypeE'/>
+<fun r='_ZN2sh14TIntermRebuild29visitPreprocessorDirectivePreERNS_28TIntermPreprocessorDirectiveE'/>
+<fun r='_ZN2sh14TIntermRebuild13visitUnaryPreERNS_12TIntermUnaryE'/>
+<fun r='_ZN2sh14TIntermRebuild14visitBinaryPreERNS_13TIntermBinaryE'/>
+<fun r='_ZN2sh14TIntermRebuild15visitTernaryPreERNS_14TIntermTernaryE'/>
+<fun r='_ZN2sh14TIntermRebuild15visitSwizzlePreERNS_14TIntermSwizzleE'/>
+<fun r='_ZN2sh14TIntermRebuild14visitIfElsePreERNS_13TIntermIfElseE'/>
+<fun r='_ZN2sh14TIntermRebuild14visitSwitchPreERNS_13TIntermSwitchE'/>
+<fun r='_ZN2sh14TIntermRebuild12visitCasePreERNS_11TIntermCaseE'/>
+<fun r='_ZN2sh14TIntermRebuild12visitLoopPreERNS_11TIntermLoopE'/>
+<fun r='_ZN2sh14TIntermRebuild14visitBranchPreERNS_13TIntermBranchE'/>
+<fun r='_ZN2sh14TIntermRebuild19visitDeclarationPreERNS_18TIntermDeclarationE'/>
+<fun r='_ZN2sh14TIntermRebuild13visitBlockPreERNS_12TIntermBlockE'/>
+<fun r='_ZN2sh14TIntermRebuild17visitAggregatePreERNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh14TIntermRebuild26visitFunctionDefinitionPreERNS_25TIntermFunctionDefinitionE'/>
+<fun r='_ZN2sh14TIntermRebuild34visitGlobalQualifierDeclarationPreERNS_33TIntermGlobalQualifierDeclarationE'/>
+<fun r='_ZN2sh14TIntermRebuild15visitSymbolPostERNS_13TIntermSymbolE'/>
+<fun r='_ZN2sh14TIntermRebuild22visitConstantUnionPostERNS_20TIntermConstantUnionE'/>
+<fun r='_ZN2sh14TIntermRebuild26visitFunctionPrototypePostERNS_24TIntermFunctionPrototypeE'/>
+<fun r='_ZN2sh14TIntermRebuild30visitPreprocessorDirectivePostERNS_28TIntermPreprocessorDirectiveE'/>
+<fun r='_ZN2sh14TIntermRebuild14visitUnaryPostERNS_12TIntermUnaryE'/>
+<fun r='_ZN2sh14TIntermRebuild15visitBinaryPostERNS_13TIntermBinaryE'/>
+<fun r='_ZN2sh14TIntermRebuild16visitTernaryPostERNS_14TIntermTernaryE'/>
+<fun r='_ZN2sh14TIntermRebuild16visitSwizzlePostERNS_14TIntermSwizzleE'/>
+<fun r='_ZN2sh14TIntermRebuild15visitIfElsePostERNS_13TIntermIfElseE'/>
+<fun r='_ZN2sh14TIntermRebuild15visitSwitchPostERNS_13TIntermSwitchE'/>
+<fun r='_ZN2sh14TIntermRebuild13visitCasePostERNS_11TIntermCaseE'/>
+<fun r='_ZN2sh14TIntermRebuild13visitLoopPostERNS_11TIntermLoopE'/>
+<fun r='_ZN2sh14TIntermRebuild15visitBranchPostERNS_13TIntermBranchE'/>
+<fun r='_ZN2sh14TIntermRebuild20visitDeclarationPostERNS_18TIntermDeclarationE'/>
+<fun r='_ZN2sh14TIntermRebuild14visitBlockPostERNS_12TIntermBlockE'/>
+<fun r='_ZN2sh14TIntermRebuild18visitAggregatePostERNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh14TIntermRebuild27visitFunctionDefinitionPostERNS_25TIntermFunctionDefinitionE'/>
+<fun r='_ZN2sh14TIntermRebuild35visitGlobalQualifierDeclarationPostERNS_33TIntermGlobalQualifierDeclarationE'/>
+<fun r='_ZN2sh14TIntermRebuild7rebuildERNS_11TIntermNodeE'/>
+<fun r='_ZN2sh14TIntermRebuild14rebuildInPlaceERNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh14TIntermRebuild14rebuildInPlaceERNS_12TIntermBlockE'/>
+<fun r='_ZN2sh14TIntermRebuild14rebuildInPlaceERNS_18TIntermDeclarationE'/>
+<fun r='_ZNK2sh14TIntermRebuild17getParentFunctionEv'/>
+<fun r='_ZNK2sh14TIntermRebuild13getParentNodeEm'/>
+<fun r='_ZN2sh14TIntermRebuild18rebuildInPlaceImplERT_'/>
+<fun r='_ZN2sh14TIntermRebuild11traverseAnyERNS_11TIntermNodeE'/>
+<fun r='_ZN2sh14TIntermRebuild13traverseAnyAsERNS_11TIntermNodeE'/>
+<fun r='_ZN2sh14TIntermRebuild13traverseAnyAsERNS_11TIntermNodeERPT_'/>
+<fun r='_ZN2sh14TIntermRebuild11traversePreERNS_11TIntermNodeE'/>
+<fun r='_ZN2sh14TIntermRebuild16traverseChildrenENS_8NodeTypeERKNS_11TIntermNodeERS2_NS0_9VisitBitsE'/>
+<fun r='_ZN2sh14TIntermRebuild12traversePostENS_8NodeTypeERKNS_11TIntermNodeERS2_NS0_9VisitBitsE'/>
+<fun r='_ZN2sh14TIntermRebuild29traverseAggregateBaseChildrenERNS_20TIntermAggregateBaseE'/>
+<fun r='_ZN2sh14TIntermRebuild21traverseUnaryChildrenERNS_12TIntermUnaryE'/>
+<fun r='_ZN2sh14TIntermRebuild22traverseBinaryChildrenERNS_13TIntermBinaryE'/>
+<fun r='_ZN2sh14TIntermRebuild23traverseTernaryChildrenERNS_14TIntermTernaryE'/>
+<fun r='_ZN2sh14TIntermRebuild23traverseSwizzleChildrenERNS_14TIntermSwizzleE'/>
+<fun r='_ZN2sh14TIntermRebuild22traverseIfElseChildrenERNS_13TIntermIfElseE'/>
+<fun r='_ZN2sh14TIntermRebuild22traverseSwitchChildrenERNS_13TIntermSwitchE'/>
+<fun r='_ZN2sh14TIntermRebuild20traverseCaseChildrenERNS_11TIntermCaseE'/>
+<fun r='_ZN2sh14TIntermRebuild20traverseLoopChildrenERNS_11TIntermLoopE'/>
+<fun r='_ZN2sh14TIntermRebuild22traverseBranchChildrenERNS_13TIntermBranchE'/>
+<fun r='_ZN2sh14TIntermRebuild27traverseDeclarationChildrenERNS_18TIntermDeclarationE'/>
+<fun r='_ZN2sh14TIntermRebuild21traverseBlockChildrenERNS_12TIntermBlockE'/>
+<fun r='_ZN2sh14TIntermRebuild25traverseAggregateChildrenERNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh14TIntermRebuild34traverseFunctionDefinitionChildrenERNS_25TIntermFunctionDefinitionE'/>
+<fun r='_ZN2sh14TIntermRebuild42traverseGlobalQualifierDeclarationChildrenERNS_33TIntermGlobalQualifierDeclarationE'/>
+<mbr r='sh::TIntermRebuild::mCompiler' o='64' t='sh::TCompiler &amp;'/>
+<mbr r='sh::TIntermRebuild::mSymbolTable' o='128' t='sh::TSymbolTable &amp;'/>
+<mbr r='sh::TIntermRebuild::mParentFunc' o='192' t='const sh::TFunction *'/>
+<mbr r='sh::TIntermRebuild::getNodeType' o='256' t='sh::GetNodeType'/>
+<mbr r='sh::TIntermRebuild::mNodeStack' o='1536' t='ConsList&lt;sh::TIntermNode *&gt;'/>
+<mbr r='sh::TIntermRebuild::mPreVisit' o='1664' t='bool'/>
+<mbr r='sh::TIntermRebuild::mPostVisit' o='1672' t='bool'/>
+<fun r='_ZN2sh14TIntermRebuildC1ERNS_9TCompilerEbb'/>
+<fun r='_ZN2sh14TIntermRebuildD1Ev'/>
+<fun r='_ZNK2sh14TIntermRebuild17getParentFunctionEv'/>
+<fun r='_ZNK2sh14TIntermRebuild13getParentNodeEm'/>
+<fun r='_ZN2sh14TIntermRebuild11rebuildRootERNS_12TIntermBlockE'/>
+<fun r='_ZN2sh14TIntermRebuild14rebuildInPlaceERNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh14TIntermRebuild14rebuildInPlaceERNS_12TIntermBlockE'/>
+<fun r='_ZN2sh14TIntermRebuild14rebuildInPlaceERNS_18TIntermDeclarationE'/>
+<fun r='_ZN2sh14TIntermRebuild18rebuildInPlaceImplERT_'/>
+<fun r='_ZN2sh14TIntermRebuild7rebuildERNS_11TIntermNodeE'/>
+<fun r='_ZN2sh14TIntermRebuild13traverseAnyAsERNS_11TIntermNodeE'/>
+<fun r='_ZN2sh14TIntermRebuild13traverseAnyAsERNS_11TIntermNodeERPT_'/>
+<fun r='_ZN2sh14TIntermRebuild29traverseAggregateBaseChildrenERNS_20TIntermAggregateBaseE'/>
+<fun r='_ZN2sh14TIntermRebuild11traverseAnyERNS_11TIntermNodeE'/>
+<fun r='_ZN2sh14TIntermRebuild11traversePreERNS_11TIntermNodeE'/>
+<fun r='_ZN2sh14TIntermRebuild16traverseChildrenENS_8NodeTypeERKNS_11TIntermNodeERS2_NS0_9VisitBitsE'/>
+<fun r='_ZN2sh14TIntermRebuild12traversePostENS_8NodeTypeERKNS_11TIntermNodeERS2_NS0_9VisitBitsE'/>
+<fun r='_ZN2sh14TIntermRebuild25traverseAggregateChildrenERNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh14TIntermRebuild21traverseBlockChildrenERNS_12TIntermBlockE'/>
+<fun r='_ZN2sh14TIntermRebuild27traverseDeclarationChildrenERNS_18TIntermDeclarationE'/>
+<fun r='_ZN2sh14TIntermRebuild23traverseSwizzleChildrenERNS_14TIntermSwizzleE'/>
+<fun r='_ZN2sh14TIntermRebuild22traverseBinaryChildrenERNS_13TIntermBinaryE'/>
+<fun r='_ZN2sh14TIntermRebuild21traverseUnaryChildrenERNS_12TIntermUnaryE'/>
+<fun r='_ZN2sh14TIntermRebuild23traverseTernaryChildrenERNS_14TIntermTernaryE'/>
+<fun r='_ZN2sh14TIntermRebuild22traverseIfElseChildrenERNS_13TIntermIfElseE'/>
+<fun r='_ZN2sh14TIntermRebuild22traverseSwitchChildrenERNS_13TIntermSwitchE'/>
+<fun r='_ZN2sh14TIntermRebuild20traverseCaseChildrenERNS_11TIntermCaseE'/>
+<fun r='_ZN2sh14TIntermRebuild34traverseFunctionDefinitionChildrenERNS_25TIntermFunctionDefinitionE'/>
+<fun r='_ZN2sh14TIntermRebuild42traverseGlobalQualifierDeclarationChildrenERNS_33TIntermGlobalQualifierDeclarationE'/>
+<fun r='_ZN2sh14TIntermRebuild20traverseLoopChildrenERNS_11TIntermLoopE'/>
+<fun r='_ZN2sh14TIntermRebuild22traverseBranchChildrenERNS_13TIntermBranchE'/>
+<fun r='_ZN2sh14TIntermRebuild14visitSymbolPreERNS_13TIntermSymbolE'/>
+<fun r='_ZN2sh14TIntermRebuild21visitConstantUnionPreERNS_20TIntermConstantUnionE'/>
+<fun r='_ZN2sh14TIntermRebuild25visitFunctionPrototypePreERNS_24TIntermFunctionPrototypeE'/>
+<fun r='_ZN2sh14TIntermRebuild29visitPreprocessorDirectivePreERNS_28TIntermPreprocessorDirectiveE'/>
+<fun r='_ZN2sh14TIntermRebuild13visitUnaryPreERNS_12TIntermUnaryE'/>
+<fun r='_ZN2sh14TIntermRebuild14visitBinaryPreERNS_13TIntermBinaryE'/>
+<fun r='_ZN2sh14TIntermRebuild15visitTernaryPreERNS_14TIntermTernaryE'/>
+<fun r='_ZN2sh14TIntermRebuild15visitSwizzlePreERNS_14TIntermSwizzleE'/>
+<fun r='_ZN2sh14TIntermRebuild14visitIfElsePreERNS_13TIntermIfElseE'/>
+<fun r='_ZN2sh14TIntermRebuild14visitSwitchPreERNS_13TIntermSwitchE'/>
+<fun r='_ZN2sh14TIntermRebuild12visitCasePreERNS_11TIntermCaseE'/>
+<fun r='_ZN2sh14TIntermRebuild12visitLoopPreERNS_11TIntermLoopE'/>
+<fun r='_ZN2sh14TIntermRebuild14visitBranchPreERNS_13TIntermBranchE'/>
+<fun r='_ZN2sh14TIntermRebuild19visitDeclarationPreERNS_18TIntermDeclarationE'/>
+<fun r='_ZN2sh14TIntermRebuild13visitBlockPreERNS_12TIntermBlockE'/>
+<fun r='_ZN2sh14TIntermRebuild17visitAggregatePreERNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh14TIntermRebuild26visitFunctionDefinitionPreERNS_25TIntermFunctionDefinitionE'/>
+<fun r='_ZN2sh14TIntermRebuild34visitGlobalQualifierDeclarationPreERNS_33TIntermGlobalQualifierDeclarationE'/>
+<fun r='_ZN2sh14TIntermRebuild15visitSymbolPostERNS_13TIntermSymbolE'/>
+<fun r='_ZN2sh14TIntermRebuild22visitConstantUnionPostERNS_20TIntermConstantUnionE'/>
+<fun r='_ZN2sh14TIntermRebuild26visitFunctionPrototypePostERNS_24TIntermFunctionPrototypeE'/>
+<fun r='_ZN2sh14TIntermRebuild30visitPreprocessorDirectivePostERNS_28TIntermPreprocessorDirectiveE'/>
+<fun r='_ZN2sh14TIntermRebuild14visitUnaryPostERNS_12TIntermUnaryE'/>
+<fun r='_ZN2sh14TIntermRebuild15visitBinaryPostERNS_13TIntermBinaryE'/>
+<fun r='_ZN2sh14TIntermRebuild16visitTernaryPostERNS_14TIntermTernaryE'/>
+<fun r='_ZN2sh14TIntermRebuild16visitSwizzlePostERNS_14TIntermSwizzleE'/>
+<fun r='_ZN2sh14TIntermRebuild15visitIfElsePostERNS_13TIntermIfElseE'/>
+<fun r='_ZN2sh14TIntermRebuild15visitSwitchPostERNS_13TIntermSwitchE'/>
+<fun r='_ZN2sh14TIntermRebuild13visitCasePostERNS_11TIntermCaseE'/>
+<fun r='_ZN2sh14TIntermRebuild13visitLoopPostERNS_11TIntermLoopE'/>
+<fun r='_ZN2sh14TIntermRebuild15visitBranchPostERNS_13TIntermBranchE'/>
+<fun r='_ZN2sh14TIntermRebuild20visitDeclarationPostERNS_18TIntermDeclarationE'/>
+<fun r='_ZN2sh14TIntermRebuild14visitBlockPostERNS_12TIntermBlockE'/>
+<fun r='_ZN2sh14TIntermRebuild18visitAggregatePostERNS_16TIntermAggregateE'/>
+<fun r='_ZN2sh14TIntermRebuild27visitFunctionDefinitionPostERNS_25TIntermFunctionDefinitionE'/>
+<fun r='_ZN2sh14TIntermRebuild35visitGlobalQualifierDeclarationPostERNS_33TIntermGlobalQualifierDeclarationE'/>

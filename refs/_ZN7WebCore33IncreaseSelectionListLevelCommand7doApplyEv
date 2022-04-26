@@ -1,0 +1,17 @@
+<dec f='WebKit/Source/WebCore/editing/ModifySelectionListLevel.h' l='66' type='void WebCore::IncreaseSelectionListLevelCommand::doApply()'/>
+<inh f='WebKit/Source/WebCore/editing/EditCommand.h' l='61' c='_ZN7WebCore11EditCommand7doApplyEv'/>
+<def f='WebKit/Source/WebCore/editing/ModifySelectionListLevel.cpp' l='172' ll='204' type='void WebCore::IncreaseSelectionListLevelCommand::doApply()'/>
+<doc f='WebKit/Source/WebCore/editing/ModifySelectionListLevel.cpp' l='158'>// For the moment, this is SPI and the only client (Mail.app) is satisfied.
+// Here are two things to re-evaluate when making into API.
+// 1. Currently, InheritedListType uses clones whereas OrderedList and
+// UnorderedList create a new list node of the specified type.  That is
+// inconsistent wrt style.  If that is not OK, here are some alternatives:
+//  - new nodes always inherit style (probably the best choice)
+//  - new nodes have always have no style
+//  - new nodes of the same type inherit style
+// 2. Currently, the node we return may be either a pre-existing one or
+// a new one. Is it confusing to return the pre-existing one without
+// somehow indicating that it is not new?  If so, here are some alternatives:
+//  - only return the list node if we created it
+//  - indicate whether the list node is new or pre-existing
+//  - (silly) client specifies whether to return pre-existing list nodes</doc>

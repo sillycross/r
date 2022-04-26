@@ -1,0 +1,11 @@
+<def f='include/gstreamer-1.0/gst/gstevent.h' l='347' ll='351' type='GstEvent * gst_event_steal(GstEvent ** old_event)'/>
+<doc f='include/gstreamer-1.0/gst/gstevent.h' l='337'>/**
+ * gst_event_steal:
+ * @old_event: (inout) (transfer full) (nullable): pointer to a
+ *     pointer to a #GstEvent to be stolen.
+ *
+ * Atomically replace the #GstEvent pointed to by @old_event with %NULL and
+ * return the original event.
+ *
+ * Returns: the #GstEvent that was in @old_event
+ */</doc>

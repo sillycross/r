@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.h' l='862' type='bool JSC::DFG::Graph::isLiveInBytecode(JSC::Operand , JSC::CodeOrigin )'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.h' l='859'>// Quickly query if a single local is live at the given point. This is faster than calling
+    // forAllLiveInBytecode() if you will only query one local. But, if you want to know all of the
+    // locals live, then calling this for each local is much slower than forAllLiveInBytecode().</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGForAllKills.h' l='64' u='c' c='_ZN3JSC3DFG20forAllKilledOperandsERNS0_5GraphEPNS0_4NodeES4_RKT_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRAvailabilityAnalysisPhase.cpp' l='173' u='c' c='_ZN3JSC3DFG28OSRAvailabilityAnalysisPhase3runEv'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1128' ll='1212' type='bool JSC::DFG::Graph::isLiveInBytecode(JSC::Operand operand, JSC::CodeOrigin codeOrigin)'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='19883' u='c' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB318buildExitArgumentsEPNS0_17OSRExitDescriptorENS_10CodeOriginERN3WTF6VectorIPNS_2B35ValueELm16ENS6_15CrashOnOve1760691'/>

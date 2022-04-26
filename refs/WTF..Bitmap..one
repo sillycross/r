@@ -1,0 +1,15 @@
+<def f='WebKit/WTF/Headers/wtf/Bitmap.h' l='142' type='const WordType'/>
+<use f='WebKit/WTF/Headers/wtf/Bitmap.h' l='156' c='_ZNK3WTF6Bitmap3getEmNS_10DependencyE'/>
+<use f='WebKit/WTF/Headers/wtf/Bitmap.h' l='162' c='_ZN3WTF6Bitmap3setEm'/>
+<use f='WebKit/WTF/Headers/wtf/Bitmap.h' l='177' c='_ZN3WTF6Bitmap10testAndSetEm'/>
+<use f='WebKit/WTF/Headers/wtf/Bitmap.h' l='187' c='_ZN3WTF6Bitmap12testAndClearEm'/>
+<use f='WebKit/WTF/Headers/wtf/Bitmap.h' l='197' c='_ZN3WTF6Bitmap20concurrentTestAndSetEmNS_10DependencyE'/>
+<use f='WebKit/WTF/Headers/wtf/Bitmap.h' l='213' c='_ZN3WTF6Bitmap22concurrentTestAndClearEmNS_10DependencyE'/>
+<use f='WebKit/WTF/Headers/wtf/Bitmap.h' l='230' c='_ZN3WTF6Bitmap5clearEm'/>
+<use f='WebKit/WTF/Headers/wtf/Bitmap.h' l='444' c='_ZN3WTF6Bitmap13setEachNthBitEmmm'/>
+<use f='WebKit/WTF/Headers/wtf/Bitmap.h' l='453' c='_ZN3WTF6Bitmap13setEachNthBitEmmm'/>
+<doc f='WebKit/WTF/Headers/wtf/Bitmap.h' l='137'>// the literal &apos;1&apos; is of type signed int.  We want to use an unsigned
+    // version of the correct size when doing the calculations because if
+    // WordType is larger than int, &apos;1 &lt;&lt; 31&apos; will first be sign extended
+    // and then casted to unsigned, meaning that set(31) when WordType is
+    // a 64 bit unsigned int would give 0xffff8000</doc>

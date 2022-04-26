@@ -1,0 +1,18 @@
+<use f='include/gstreamer-1.0/gst/tag/gsttagmux.h' l='42'/>
+<def f='include/gstreamer-1.0/gst/tag/gsttagmux.h' l='71' ll='80'/>
+<size>536</size>
+<doc f='include/gstreamer-1.0/gst/tag/gsttagmux.h' l='60'>/**
+ * GstTagMuxClass:
+ * @parent_class: the parent class.
+ * @render_start_tag: create a tag buffer to add to the beginning of the
+ *     input stream given a tag list, or NULL
+ * @render_end_tag: create a tag buffer to add to the end of the
+ *     input stream given a tag list, or NULL
+ *
+ * The #GstTagMuxClass structure. Subclasses need to override at least one
+ * of the two render vfuncs.
+ */</doc>
+<mbr r='_GstTagMuxClass::parent_class' o='0' t='GstElementClass'/>
+<mbr r='_GstTagMuxClass::render_start_tag' o='3904' t='GstBuffer *(*)(GstTagMux *, const GstTagList *)'/>
+<mbr r='_GstTagMuxClass::render_end_tag' o='3968' t='GstBuffer *(*)(GstTagMux *, const GstTagList *)'/>
+<mbr r='_GstTagMuxClass::_gst_reserved' o='4032' t='gpointer [4]'/>

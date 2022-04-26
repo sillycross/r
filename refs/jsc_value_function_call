@@ -1,0 +1,16 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.h' l='241' type='JSCValue * jsc_value_function_call(JSCValue * value, GType first_parameter_type)'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='1306' ll='1323' type='JSCValue * jsc_value_function_call(JSCValue * value, GType firstParameterType)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='1292'>/**
+ * jsc_value_function_call: (skip)
+ * @value: a #JSCValue
+ * @first_parameter_type: #GType of first parameter, or %G_TYPE_NONE
+ * @...: value of the first parameter, followed optionally by more type/value pairs, followed by %G_TYPE_NONE
+ *
+ * Call function referenced by @value, passing the given parameters. If @first_parameter_type
+ * is %G_TYPE_NONE no parameters will be passed to the function.
+ *
+ * This function always returns a #JSCValue, in case of void functions a #JSCValue referencing
+ * &lt;function&gt;undefined&lt;/function&gt; is returned
+ *
+ * Returns: (transfer full): a #JSCValue with the return value of the function.
+ */</doc>

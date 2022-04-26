@@ -1,0 +1,13 @@
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioSummingJunction.h' l='53' u='m' c='_ZNK7WebCore20AudioSummingJunction28numberOfRenderingConnectionsEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioSummingJunction.h' l='54' u='m' c='_ZN7WebCore20AudioSummingJunction15renderingOutputEj'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioSummingJunction.h' l='55' u='m' c='_ZNK7WebCore20AudioSummingJunction15renderingOutputEj'/>
+<dec f='WebKit/Source/WebCore/Modules/webaudio/AudioSummingJunction.h' l='79' type='Vector&lt;WebCore::AudioNodeOutput *&gt;'/>
+<offset>128</offset>
+<doc f='WebKit/Source/WebCore/Modules/webaudio/AudioSummingJunction.h' l='75'>// m_renderingOutputs is a copy of m_outputs which will never be modified during the graph rendering on the audio thread.
+    // This is the list which is used by the rendering code.
+    // Whenever m_outputs is modified, the context is told so it can later update m_renderingOutputs from m_outputs at a safe time.
+    // Most of the time, m_renderingOutputs is identical to m_outputs.</doc>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeInput.cpp' l='210' c='_ZN7WebCore14AudioNodeInput17sumAllConnectionsEPNS_8AudioBusEm'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioParam.cpp' l='317' c='_ZN7WebCore10AudioParam20calculateFinalValuesEPfjb'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioSummingJunction.cpp' l='100' u='w' c='_ZN7WebCore20AudioSummingJunction20updateRenderingStateEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioSummingJunction.cpp' l='101' c='_ZN7WebCore20AudioSummingJunction20updateRenderingStateEv'/>

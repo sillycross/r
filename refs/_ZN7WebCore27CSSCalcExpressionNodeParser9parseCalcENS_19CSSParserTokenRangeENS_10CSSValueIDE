@@ -1,0 +1,21 @@
+<dec f='WebKit/Source/WebCore/css/calc/CSSCalcExpressionNodeParser.h' l='47' type='RefPtr&lt;WebCore::CSSCalcExpressionNode&gt; WebCore::CSSCalcExpressionNodeParser::parseCalc(WebCore::CSSParserTokenRange , WebCore::CSSValueID function)'/>
+<def f='WebKit/Source/WebCore/css/calc/CSSCalcExpressionNodeParser.cpp' l='64' ll='83' type='RefPtr&lt;WebCore::CSSCalcExpressionNode&gt; WebCore::CSSCalcExpressionNodeParser::parseCalc(WebCore::CSSParserTokenRange tokens, WebCore::CSSValueID function)'/>
+<use f='WebKit/Source/WebCore/css/calc/CSSCalcValue.cpp' l='310' u='c' c='_ZN7WebCore12CSSCalcValue6createENS_10CSSValueIDERKNS_19CSSParserTokenRangeENS_19CalculationCategoryENS_10ValueRangeERKNS_18CSSCalcSymbolTableE'/>
+<doc f='WebKit/Source/WebCore/css/calc/CSSCalcExpressionNodeParser.cpp' l='46'>// &lt;https://drafts.csswg.org/css-values-4/#calc-syntax&gt;:
+// &lt;calc()&gt;  = calc( &lt;calc-sum&gt; )
+// &lt;min()&gt;   = min( &lt;calc-sum&gt;# )
+// &lt;max()&gt;   = max( &lt;calc-sum&gt;# )
+// &lt;clamp()&gt; = clamp( &lt;calc-sum&gt;#{3} )
+// &lt;sin()&gt;   = sin( &lt;calc-sum&gt; )
+// &lt;cos()&gt;   = cos( &lt;calc-sum&gt; )
+// &lt;tan()&gt;   = tan( &lt;calc-sum&gt; )
+// &lt;asin()&gt;  = asin( &lt;calc-sum&gt; )
+// &lt;acos()&gt;  = acos( &lt;calc-sum&gt; )
+// &lt;atan()&gt;  = atan( &lt;calc-sum&gt; )
+// &lt;atan2()&gt; = atan2( &lt;calc-sum&gt;, &lt;calc-sum&gt; )
+// &lt;pow()&gt;   = pow( &lt;calc-sum&gt;, &lt;calc-sum&gt; )
+// &lt;sqrt()&gt;  = sqrt( &lt;calc-sum&gt; )
+// &lt;hypot()&gt; = hypot( &lt;calc-sum&gt;# )
+// &lt;calc-sum&gt; = &lt;calc-product&gt; [ [ &apos;+&apos; | &apos;-&apos; ] &lt;calc-product&gt; ]*
+// &lt;calc-product&gt; = &lt;calc-value&gt; [ [ &apos;*&apos; | &apos;/&apos; ] &lt;calc-value&gt; ]*
+// &lt;calc-value&gt; = &lt;number&gt; | &lt;dimension&gt; | &lt;percentage&gt; | ( &lt;calc-sum&gt; )</doc>

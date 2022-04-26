@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebCore/platform/network/HTTPParsers.h' l='81' type='WTF::String WebCore::filenameFromHTTPContentDisposition(const WTF::String &amp; )'/>
+<def f='WebKit/Source/WebCore/platform/network/HTTPParsers.cpp' l='337' ll='359' type='WTF::String WebCore::filenameFromHTTPContentDisposition(const WTF::String &amp; value)'/>
+<doc f='WebKit/Source/WebCore/platform/network/HTTPParsers.cpp' l='332'>// FIXME: This function doesn&apos;t comply with RFC 6266.
+// For example, this function doesn&apos;t handle the interaction between &quot; and ;
+// that arises from quoted-string, nor does this function properly unquote
+// attribute values. Further this function appears to process parameter names
+// in a case-sensitive manner. (There are likely other bugs as well.)</doc>
+<use f='WebKit/Source/WebCore/platform/network/ResourceResponseBase.cpp' l='785' u='c' c='_ZNK7WebCore20ResourceResponseBase24isAttachmentWithFilenameEv'/>

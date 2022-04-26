@@ -1,0 +1,25 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.h' l='200' type='void jsc_value_object_define_property_accessor(JSCValue * value, const char * property_name, JSCValuePropertyFlags flags, GType property_type, GCallback getter, GCallback setter, gpointer user_data, GDestroyNotify destroy_notify)'/>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCClass.cpp' l='862' u='c' c='jsc_class_add_property'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='1099' ll='1145' type='void jsc_value_object_define_property_accessor(JSCValue * value, const char * propertyName, JSCValuePropertyFlags flags, GType propertyType, GCallback getter, GCallback setter, gpointer userData, GDestroyNotify destroyNotify)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='1077'>/**
+ * jsc_value_object_define_property_accessor:
+ * @value: a #JSCValue
+ * @property_name: the name of the property to define
+ * @flags: #JSCValuePropertyFlags
+ * @property_type: the #GType of the property
+ * @getter: (scope async) (nullable): a #GCallback to be called to get the property value
+ * @setter: (scope async) (nullable): a #GCallback to be called to set the property value
+ * @user_data: (closure): user data to pass to @getter and @setter
+ * @destroy_notify: (nullable): destroy notifier for @user_data
+ *
+ * Define or modify a property with @property_name in object referenced by @value. When the
+ * property value needs to be getted or set, @getter and @setter callbacks will be called.
+ * When the property is cleared in the #JSCClass context, @destroy_notify is called with
+ * @user_data as parameter. This is equivalent to JavaScript &lt;function&gt;Object.defineProperty()&lt;/function&gt;
+ * when used with an accessor descriptor.
+ *
+ * Note that the value returned by @getter must be fully transferred. In case of boxed types, you could use
+ * %G_TYPE_POINTER instead of the actual boxed #GType to ensure that the instance owned by #JSCClass is used.
+ * If you really want to return a new copy of the boxed type, use #JSC_TYPE_VALUE and return a #JSCValue created
+ * with jsc_value_new_object() that receives the copy as instance parameter.
+ */</doc>

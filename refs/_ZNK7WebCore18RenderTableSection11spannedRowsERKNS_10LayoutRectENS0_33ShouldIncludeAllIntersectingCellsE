@@ -1,0 +1,10 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderTableSection.h' l='212' type='WebCore::CellSpan WebCore::RenderTableSection::spannedRows(const WebCore::LayoutRect &amp; flippedRect, WebCore::RenderTableSection::ShouldIncludeAllIntersectingCells ) const'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderTableSection.h' l='206'>// These two functions take a rectangle as input that has been flipped by logicalRectForWritingModeAndDirection.
+    // The returned span of rows or columns is end-exclusive, and empty if start==end.
+    // The IncludeAllIntersectingCells argument is used to determine which cells to include when
+    // an edge of the flippedRect lies exactly on a cell boundary. Using IncludeAllIntersectingCells
+    // will return both cells, and using DoNotIncludeAllIntersectingCells will return only the cell
+    // that hittesting should return.</doc>
+<use f='WebKit/Source/WebCore/rendering/RenderTableSection.cpp' l='988' u='c' c='_ZNK7WebCore18RenderTableSection11dirtiedRowsERKNS_10LayoutRectE'/>
+<def f='WebKit/Source/WebCore/rendering/RenderTableSection.cpp' l='1018' ll='1041' type='WebCore::CellSpan WebCore::RenderTableSection::spannedRows(const WebCore::LayoutRect &amp; flippedRect, WebCore::RenderTableSection::ShouldIncludeAllIntersectingCells shouldIncludeAllIntersectionCells) const'/>
+<use f='WebKit/Source/WebCore/rendering/RenderTableSection.cpp' l='1484' u='c' c='_ZN7WebCore18RenderTableSection11nodeAtPointERKNS_14HitTestRequestERNS_13HitTestResultERKNS_15HitTestLocationERKNS_11LayoutPointENS_13HitTestActionE'/>

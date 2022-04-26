@@ -1,0 +1,138 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSCJSValue.h' l='150'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSCallee.h' l='42'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FunctionRareData.h' l='47'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSFunction.h' l='59'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCJSValue.h' l='150'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FunctionRareData.h' l='47'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCallee.h' l='42'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSFunction.h' l='59'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCode.h' l='106'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGeneratorFunction.h' l='40'/>
+<inh f='WebKit/Source/JavaScriptCore/jit/CCallHelpers.h' l='51' c='JSC::CCallHelpers'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='87' ll='386'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExitJumpPlaceholder.h' l='55' c='_ZN3JSC3DFG22OSRExitJumpPlaceholder4fillERNS0_11JITCompilerERKNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='111' c='_ZN3JSC3DFG14SpeculativeJITC1ERNS0_11JITCompilerE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='1784'/>
+<size>3248</size>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='79'>// === JITCompiler ===
+//
+// DFG::JITCompiler is responsible for generating JIT code from the dataflow graph.
+// It does so by delegating to the speculative &amp; non-speculative JITs, which
+// generate to a MacroAssembler (which the JITCompiler owns through an inheritance
+// relationship). The JITCompiler holds references to information required during
+// compilation, and also records information used in linking (e.g. a list of all
+// call to be linked).</doc>
+<fun r='_ZN3JSC3DFG11JITCompilerC1ERNS0_5GraphE'/>
+<fun r='_ZN3JSC3DFG11JITCompilerD1Ev'/>
+<fun r='_ZN3JSC3DFG11JITCompiler7compileEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler15compileFunctionEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler5graphEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler14setStartOfCodeEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler16setForBlockIndexEj'/>
+<fun r='_ZN3JSC3DFG11JITCompiler10setForNodeEPNS0_4NodeE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler16setEndOfMainPathEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler12setEndOfCodeEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler11addCallSiteENS_10CodeOriginE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler19emitStoreCodeOriginENS_10CodeOriginE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler22emitStoreCallSiteIndexENS_13CallSiteIndexE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler10appendCallENS_11FunctionPtrILN3WTF6PtrTagE1EEE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler19appendOperationCallENS_11FunctionPtrILN3WTF6PtrTagE64323EEE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler10appendCallENS_22AbstractMacroAssemblerINS_12X86AssemblerEE7AddressE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler14exceptionCheckEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler35exceptionCheckWithCallFrameRollbackEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler14appendExitInfoENS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler10addGetByIdERKNS_19JITGetByIdGeneratorEPNS0_17SlowPathGeneratorE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler18addGetByIdWithThisERKNS_27JITGetByIdWithThisGeneratorEPNS0_17SlowPathGeneratorE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler11addGetByValERKNS_20JITGetByValGeneratorEPNS0_17SlowPathGeneratorE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler10addPutByIdERKNS_19JITPutByIdGeneratorEPNS0_17SlowPathGeneratorE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler10addDelByIdERKNS_19JITDelByIdGeneratorEPNS0_17SlowPathGeneratorE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler11addDelByValERKNS_20JITDelByValGeneratorEPNS0_17SlowPathGeneratorE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler13addInstanceOfERKNS_22JITInstanceOfGeneratorEPNS0_17SlowPathGeneratorE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler9addInByIdERKNS_18JITInByIdGeneratorEPNS0_17SlowPathGeneratorE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler10addInByValERKNS_19JITInByValGeneratorEPNS0_17SlowPathGeneratorE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler21addPrivateBrandAccessERKNS_30JITPrivateBrandAccessGeneratorEPNS0_17SlowPathGeneratorE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler9addJSCallENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelES5_PNS_12CallLinkInfoE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler15addJSDirectCallENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelEPNS_12CallLinkInfoE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler16addWeakReferenceEPNS_6JSCellE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler17addWeakReferencesERKNS_12StructureSetE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler13branchWeakPtrENS_23MacroAssemblerX86Common19RelationalConditionET_PNS_6JSCellE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler19branchWeakStructureENS_23MacroAssemblerX86Common19RelationalConditionET_NS0_19RegisteredStructureE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler14noticeOSREntryERNS0_10BasicBlockENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelERNS_10LinkBufferE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler21noticeCatchEntrypointERNS0_10BasicBlockENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelERNS_10LinkBufferEON3WTF6Vector8201714'/>
+<fun r='_ZN3JSC3DFG11JITCompiler13appendOSRExitEONS0_7OSRExitE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler25appendSpeculationRecoveryERKNS0_19SpeculationRecoveryE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler7jitCodeEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler10blockHeadsEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler57recordCallSiteAndGenerateExceptionHandlingOSRExitIfNeededERKNS_10CodeOriginEj'/>
+<fun r='_ZN3JSC3DFG11JITCompiler24pcToCodeOriginMapBuilderEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler2vmEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler12compileEntryEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler29compileSetupRegistersForEntryEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler25compileEntryExecutionFlagEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler11compileBodyEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler4linkERNS_10LinkBufferE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler22exitSpeculativeWithOSRERKNS0_7OSRExitEPNS0_19SpeculationRecoveryE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler24compileExceptionHandlersEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler12linkOSRExitsEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler11disassembleERNS_10LinkBufferE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler30appendExceptionHandlingOSRExitENS_8ExitKindEjNS_10CodeOriginEPNS_11HandlerInfoENS_13CallSiteIndexENS_22AbstractMacroAssemble8603798'/>
+<fun r='_ZN3JSC3DFG11JITCompiler23makeCatchOSREntryBufferEv'/>
+<mbr r='JSC::DFG::JITCompiler::m_graph' o='1984' t='JSC::DFG::Graph &amp;'/>
+<mbr r='JSC::DFG::JITCompiler::m_disassembler' o='2048' t='std::unique_ptr&lt;Disassembler&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_jitCode' o='2112' t='RefPtr&lt;JSC::DFG::JITCode&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_calls' o='2176' t='Vector&lt;JSC::DFG::CallLinkRecord&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_exceptionChecks' o='2304' t='JSC::AbstractMacroAssembler&lt;JSC::X86Assembler&gt;::JumpList'/>
+<mbr r='JSC::DFG::JITCompiler::m_exceptionChecksWithCallFrameRollback' o='2496' t='JSC::AbstractMacroAssembler&lt;JSC::X86Assembler&gt;::JumpList'/>
+<mbr r='JSC::DFG::JITCompiler::m_blockHeads' o='2688' t='Vector&lt;JSC::AbstractMacroAssembler&lt;JSC::X86Assembler&gt;::Label&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_getByIds' o='2816' t='Vector&lt;InlineCacheWrapper&lt;JSC::JITGetByIdGenerator&gt;, 4&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_getByIdsWithThis' o='4992' t='Vector&lt;InlineCacheWrapper&lt;JSC::JITGetByIdWithThisGenerator&gt;, 4&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_getByVals' o='7168' t='Vector&lt;InlineCacheWrapper&lt;JSC::JITGetByValGenerator&gt;, 4&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_putByIds' o='9344' t='Vector&lt;InlineCacheWrapper&lt;JSC::JITPutByIdGenerator&gt;, 4&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_delByIds' o='11776' t='Vector&lt;InlineCacheWrapper&lt;JSC::JITDelByIdGenerator&gt;, 4&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_delByVals' o='13696' t='Vector&lt;InlineCacheWrapper&lt;JSC::JITDelByValGenerator&gt;, 4&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_inByIds' o='15616' t='Vector&lt;InlineCacheWrapper&lt;JSC::JITInByIdGenerator&gt;, 4&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_inByVals' o='17792' t='Vector&lt;InlineCacheWrapper&lt;JSC::JITInByValGenerator&gt;, 4&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_instanceOfs' o='19712' t='Vector&lt;InlineCacheWrapper&lt;JSC::JITInstanceOfGenerator&gt;, 4&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_privateBrandAccesses' o='21632' t='Vector&lt;InlineCacheWrapper&lt;JSC::JITPrivateBrandAccessGenerator&gt;, 4&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_jsCalls' o='23552' t='Vector&lt;JSC::DFG::JITCompiler::JSCallRecord, 4&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_jsDirectCalls' o='24192' t='Vector&lt;JSC::DFG::JITCompiler::JSDirectCallRecord, 4&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_exitCompilationInfo' o='24832' t='SegmentedVector&lt;JSC::DFG::OSRExitCompilationInfo, 4&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_exitSiteLabels' o='25024' t='Vector&lt;Vector&lt;JSC::AbstractMacroAssembler&lt;JSC::X86Assembler&gt;::Label&gt; &gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_osrEntry' o='25152' t='Vector&lt;DFG::OSREntryData&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_osrExit' o='25280' t='Vector&lt;DFG::OSRExit&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_speculationRecovery' o='25408' t='Vector&lt;DFG::SpeculationRecovery&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_exceptionHandlerOSRExitCallSites' o='25536' t='Vector&lt;JSC::DFG::JITCompiler::ExceptionHandlingOSRExitInfo&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_speculative' o='25664' t='std::unique_ptr&lt;SpeculativeJIT&gt;'/>
+<mbr r='JSC::DFG::JITCompiler::m_pcToCodeOriginMapBuilder' o='25728' t='JSC::PCToCodeOriginMapBuilder'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExitJumpPlaceholder.cpp' l='37' c='_ZN3JSC3DFG22OSRExitJumpPlaceholder4fillERNS0_11JITCompilerERKNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListE'/>
+<size>3248</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPlan.cpp' l='341' c='_ZN3JSC3DFG4Plan19compileInThreadImplEv'/>
+<size>3248</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.cpp' l='338' c='_ZN3JSC3DFGL22emitStackOverflowCheckERNS0_11JITCompilerERNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListE'/>
+<size>3248</size>
+<fun r='_ZN3JSC3DFG11JITCompilerC1ERNS0_5GraphE'/>
+<fun r='_ZN3JSC3DFG11JITCompilerD1Ev'/>
+<fun r='_ZN3JSC3DFG11JITCompiler12linkOSRExitsEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler12compileEntryEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler29compileSetupRegistersForEntryEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler25compileEntryExecutionFlagEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler11compileBodyEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler24compileExceptionHandlersEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler4linkERNS_10LinkBufferE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler7compileEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler15compileFunctionEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler11disassembleERNS_10LinkBufferE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler21noticeCatchEntrypointERNS0_10BasicBlockENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelERNS_10LinkBufferEON3WTF6Vector8201714'/>
+<fun r='_ZN3JSC3DFG11JITCompiler14noticeOSREntryERNS0_10BasicBlockENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelERNS_10LinkBufferE'/>
+<fun r='_ZN3JSC3DFG11JITCompiler30appendExceptionHandlingOSRExitENS_8ExitKindEjNS_10CodeOriginEPNS_11HandlerInfoENS_13CallSiteIndexENS_22AbstractMacroAssemble8603798'/>
+<fun r='_ZN3JSC3DFG11JITCompiler14exceptionCheckEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler57recordCallSiteAndGenerateExceptionHandlingOSRExitIfNeededERKNS_10CodeOriginEj'/>
+<fun r='_ZN3JSC3DFG11JITCompiler16setEndOfMainPathEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler12setEndOfCodeEv'/>
+<fun r='_ZN3JSC3DFG11JITCompiler23makeCatchOSREntryBufferEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='76' c='_ZN3JSC3DFG14SpeculativeJITC1ERNS0_11JITCompilerE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='3223' c='_ZN3JSC3DFGL25compileClampIntegerToByteERNS0_11JITCompilerENS_12X86Registers10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='3235' c='_ZN3JSC3DFGL24compileClampDoubleToByteERNS0_11JITCompilerENS_12X86Registers10RegisterIDENS3_13XMMRegisterIDES5_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='6804' c='_ZN3JSC3DFGL30compileArithPowIntegerFastPathERNS0_11JITCompilerENS_12X86Registers13XMMRegisterIDENS3_10RegisterIDES4_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='10868' c='_ZN3JSC3DFGL13getExecutableERNS0_11JITCompilerENS_12X86Registers10RegisterIDES4_'/>
+<size>3248</size>

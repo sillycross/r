@@ -1,0 +1,50 @@
+<dec f='WebKit/WTF/Headers/wtf/Forward.h' l='186'/>
+<doc f='WebKit/WTF/Headers/wtf/Forward.h' l='162'>// Sometimes an inline method simply forwards to another one and does nothing else. If it were
+// just a forward declaration of that method then you would only need a forward declaration of
+// its return types and parameter types too, but because it&apos;s inline and it actually needs to
+// return / pass these types (even though it&apos;s just passing through whatever it called) you
+// now find yourself having to actually have a full declaration of these types. That might be
+// an include you&apos;d rather avoid.
+//
+// No more. Enter template magic to lazily instantiate that method!
+//
+// This macro makes the method work as if you&apos;d declared the return / parameter types as normal,
+// but forces lazy instantiation of the method at the call site, at which point the caller (not
+// the declaration) had better have a full declaration of the return / parameter types.
+//
+// Simply pass the forward-declared types to the macro, with an alias for each, and then define
+// your function as you otherwise would have but using the aliased name. Why the alias? So you
+// can be lazy on templated types! Sample usage:
+//
+// struct Foo; // No need to define Foo!
+// template&lt;typename T&gt;
+// struct A {
+//     Foo declared(Bar); // Forward declarations of Foo and Bar are sufficient here.
+//     // The below code would normally require a definition of Foo and Bar.
+//     WTF_LAZY_INSTANTIATE(Foo=Foo, Bar=Bar) Foo forwarder(Bar b) { return declared(b); }
+// };</doc>
+<dec f='WebKit/Source/WTF/wtf/Forward.h' l='186'/>
+<doc f='WebKit/Source/WTF/wtf/Forward.h' l='162'>// Sometimes an inline method simply forwards to another one and does nothing else. If it were
+// just a forward declaration of that method then you would only need a forward declaration of
+// its return types and parameter types too, but because it&apos;s inline and it actually needs to
+// return / pass these types (even though it&apos;s just passing through whatever it called) you
+// now find yourself having to actually have a full declaration of these types. That might be
+// an include you&apos;d rather avoid.
+//
+// No more. Enter template magic to lazily instantiate that method!
+//
+// This macro makes the method work as if you&apos;d declared the return / parameter types as normal,
+// but forces lazy instantiation of the method at the call site, at which point the caller (not
+// the declaration) had better have a full declaration of the return / parameter types.
+//
+// Simply pass the forward-declared types to the macro, with an alias for each, and then define
+// your function as you otherwise would have but using the aliased name. Why the alias? So you
+// can be lazy on templated types! Sample usage:
+//
+// struct Foo; // No need to define Foo!
+// template&lt;typename T&gt;
+// struct A {
+//     Foo declared(Bar); // Forward declarations of Foo and Bar are sufficient here.
+//     // The below code would normally require a definition of Foo and Bar.
+//     WTF_LAZY_INSTANTIATE(Foo=Foo, Bar=Bar) Foo forwarder(Bar b) { return declared(b); }
+// };</doc>

@@ -1,0 +1,46 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DFGCommon.h' l='201' type='1'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DFGCommon.h' l='188'>// ThreadedCPS form means that basic blocks list up-front which locals they
+    // expect to be live at the head, and which locals they make available at the
+    // tail. ThreadedCPS form also implies that:
+    //
+    // - GetLocals and SetLocals are not redundant within a basic block.
+    //
+    // - All GetLocals and Flushes are linked directly to the last access point
+    //   of the variable, which must not be another GetLocal.
+    //
+    // - Phantom(Phi) is not legal, but PhantomLocal is.
+    //
+    // ThreadedCPS form is suitable for data flow analysis (CFA, prediction
+    // propagation), register allocation, and code generation.</doc>
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGCommon.h' l='201' type='1'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGCommon.h' l='188'>// ThreadedCPS form means that basic blocks list up-front which locals they
+    // expect to be live at the head, and which locals they make available at the
+    // tail. ThreadedCPS form also implies that:
+    //
+    // - GetLocals and SetLocals are not redundant within a basic block.
+    //
+    // - All GetLocals and Flushes are linked directly to the last access point
+    //   of the variable, which must not be another GetLocal.
+    //
+    // - Phantom(Phi) is not legal, but PhantomLocal is.
+    //
+    // ThreadedCPS form is suitable for data flow analysis (CFA, prediction
+    // propagation), register allocation, and code generation.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSREntrypointCreationPhase.cpp' l='50' u='r' c='_ZN3JSC3DFG26OSREntrypointCreationPhase3runEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSSAConversionPhase.cpp' l='63' u='r' c='_ZN3JSC3DFG18SSAConversionPhase3runEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='407' c='_ZN3JSC3DFG12_GLOBAL__N_18Validate8validateEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='594' u='r' c='_ZN3JSC3DFG12_GLOBAL__N_18Validate11validateCPSEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='602' u='r' c='_ZN3JSC3DFG12_GLOBAL__N_18Validate11validateCPSEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='610' u='r' c='_ZN3JSC3DFG12_GLOBAL__N_18Validate11validateCPSEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='707' u='r' c='_ZN3JSC3DFG12_GLOBAL__N_18Validate11validateCPSEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='731' u='r' c='_ZN3JSC3DFG12_GLOBAL__N_18Validate11validateCPSEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='764' u='r' c='_ZN3JSC3DFG12_GLOBAL__N_18Validate11validateCPSEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGVirtualRegisterAllocationPhase.cpp' l='46' u='r' c='_ZN3JSC3DFG30VirtualRegisterAllocationPhase3runEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCPSRethreadingPhase.cpp' l='49' u='r' c='_ZN3JSC3DFG19CPSRethreadingPhase3runEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCPSRethreadingPhase.cpp' l='62' u='r' c='_ZN3JSC3DFG19CPSRethreadingPhase3runEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCommon.cpp' l='90' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC3DFG9GraphFormE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDCEPhase.cpp' l='101' u='r' c='_ZN3JSC3DFG8DCEPhase10fixupBlockEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='582' c='_ZN3JSC3DFG5Graph4dumpERN3WTF11PrintStreamEPNS_11DumpContextE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='620' c='_ZN3JSC3DFG5Graph4dumpERN3WTF11PrintStreamEPNS_11DumpContextE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGInPlaceAbstractState.cpp' l='218' c='_ZN3JSC3DFG20InPlaceAbstractState13endBasicBlockEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGInPlaceAbstractState.cpp' l='353' c='_ZN3JSC3DFG20InPlaceAbstractState5mergeEPNS0_10BasicBlockES3_'/>

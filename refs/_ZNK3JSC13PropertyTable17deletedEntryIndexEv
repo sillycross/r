@@ -1,0 +1,20 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PropertyMapHashTable.h' l='234' type='unsigned int JSC::PropertyTable::deletedEntryIndex() const'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PropertyMapHashTable.h' l='401' u='c' c='_ZN3JSC13PropertyTable6removeERNS_2VMERKSt4pairIPNS_16PropertyMapEntryEjE'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PropertyMapHashTable.h' l='538' type='unsigned int JSC::PropertyTable::deletedEntryIndex() const'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PropertyMapHashTable.h' l='227'>// We keep an extra deleted slot after the array to make iteration work,
+    // and to use for deleted values. Index values into the array are 1-based,
+    // so this is tableCapacity() + 1.
+    // For example, if m_tableSize is 16, then tableCapacity() is 8 - but the
+    // values array is actually 9 long (the 9th used for the deleted value/
+    // iteration guard).  The 8 valid entries are numbered 1..8, so the
+    // deleted index is 9 (0 being reserved for empty).</doc>
+<dec f='WebKit/Source/JavaScriptCore/runtime/PropertyMapHashTable.h' l='234' type='unsigned int JSC::PropertyTable::deletedEntryIndex() const'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/PropertyMapHashTable.h' l='401' u='c' c='_ZN3JSC13PropertyTable6removeERNS_2VMERKSt4pairIPNS_16PropertyMapEntryEjE'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/PropertyMapHashTable.h' l='538' type='unsigned int JSC::PropertyTable::deletedEntryIndex() const'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/PropertyMapHashTable.h' l='227'>// We keep an extra deleted slot after the array to make iteration work,
+    // and to use for deleted values. Index values into the array are 1-based,
+    // so this is tableCapacity() + 1.
+    // For example, if m_tableSize is 16, then tableCapacity() is 8 - but the
+    // values array is actually 9 long (the 9th used for the deleted value/
+    // iteration guard).  The 8 valid entries are numbered 1..8, so the
+    // deleted index is 9 (0 being reserved for empty).</doc>

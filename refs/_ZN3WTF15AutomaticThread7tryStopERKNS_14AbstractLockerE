@@ -1,0 +1,13 @@
+<dec f='WebKit/WTF/Headers/wtf/AutomaticThread.h' l='121' type='bool WTF::AutomaticThread::tryStop(const WTF::AbstractLocker &amp; )'/>
+<doc f='WebKit/WTF/Headers/wtf/AutomaticThread.h' l='117'>// This attempts to quickly stop the thread. This will succeed if the thread happens to not be
+    // running. Returns true if the thread has been stopped. A good idiom for stopping your automatic
+    // thread is to first try this, and if that doesn&apos;t work, to tell the thread using your own
+    // mechanism (set some flag and then notify the condition).</doc>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='446' u='c' c='_ZN3JSC4Heap20lastChanceToFinalizeEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VMTraps.cpp' l='312' u='c' c='_ZN3JSC7VMTraps13willDestroyVMEv'/>
+<dec f='WebKit/Source/WTF/wtf/AutomaticThread.h' l='121' type='bool WTF::AutomaticThread::tryStop(const WTF::AbstractLocker &amp; )'/>
+<def f='WebKit/Source/WTF/wtf/AutomaticThread.cpp' l='134' ll='142' type='bool WTF::AutomaticThread::tryStop(const WTF::AbstractLocker &amp; )'/>
+<doc f='WebKit/Source/WTF/wtf/AutomaticThread.h' l='117'>// This attempts to quickly stop the thread. This will succeed if the thread happens to not be
+    // running. Returns true if the thread has been stopped. A good idiom for stopping your automatic
+    // thread is to first try this, and if that doesn&apos;t work, to tell the thread using your own
+    // mechanism (set some flag and then notify the condition).</doc>

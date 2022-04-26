@@ -1,0 +1,17 @@
+<dec f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitWebContext.h' l='271' type='void webkit_web_context_set_disk_cache_directory(WebKitWebContext * context, const gchar * directory)'/>
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1586' ll='1589' type='void webkit_web_context_set_disk_cache_directory(WebKitWebContext * , const char * )'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1571'>/**
+ * webkit_web_context_set_disk_cache_directory:
+ * @context: a #WebKitWebContext
+ * @directory: the directory to set
+ *
+ * Set the directory where disk cache files will be stored
+ * This method must be called before loading anything in this context, otherwise
+ * it will not have any effect.
+ *
+ * Note that this method overrides the directory set in the #WebKitWebsiteDataManager,
+ * but it doesn&apos;t change the value returned by webkit_website_data_manager_get_disk_cache_directory()
+ * since the #WebKitWebsiteDataManager is immutable.
+ *
+ * Deprecated: 2.10. Use webkit_web_context_new_with_website_data_manager() instead.
+ */</doc>

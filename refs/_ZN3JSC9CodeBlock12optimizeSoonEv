@@ -1,0 +1,40 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='765' type='void JSC::CodeBlock::optimizeSoon()'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='747'>// Call this to cause an optimization trigger to fire soon, but
+    // not necessarily the next one. This makes sense if optimization
+    // succeeds. Successful optimization means that all calls are
+    // relinked to the optimized code, so this only affects call
+    // frames that are still executing this CodeBlock. The value here
+    // is tuned to strike a balance between the cost of OSR entry
+    // (which is too high to warrant making every loop back edge to
+    // trigger OSR immediately) and the cost of executing baseline
+    // code (which is high enough that we don&apos;t necessarily want to
+    // have a full warm-up). The intuition for calling this instead of
+    // optimizeNextInvocation() is for the case of recursive functions
+    // with loops. Consider that there may be N call frames of some
+    // recursive function, for a reasonably large value of N. The top
+    // one triggers optimization, and then returns, and then all of
+    // the others return. We don&apos;t want optimization to be triggered on
+    // each return, as that would be superfluous. It only makes sense
+    // to trigger optimization if one of those functions becomes hot
+    // in the baseline code.</doc>
+<dec f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='765' type='void JSC::CodeBlock::optimizeSoon()'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='747'>// Call this to cause an optimization trigger to fire soon, but
+    // not necessarily the next one. This makes sense if optimization
+    // succeeds. Successful optimization means that all calls are
+    // relinked to the optimized code, so this only affects call
+    // frames that are still executing this CodeBlock. The value here
+    // is tuned to strike a balance between the cost of OSR entry
+    // (which is too high to warrant making every loop back edge to
+    // trigger OSR immediately) and the cost of executing baseline
+    // code (which is high enough that we don&apos;t necessarily want to
+    // have a full warm-up). The intuition for calling this instead of
+    // optimizeNextInvocation() is for the case of recursive functions
+    // with loops. Consider that there may be N call frames of some
+    // recursive function, for a reasonably large value of N. The top
+    // one triggers optimization, and then returns, and then all of
+    // the others return. We don&apos;t want optimization to be triggered on
+    // each return, as that would be superfluous. It only makes sense
+    // to trigger optimization if one of those functions becomes hot
+    // in the baseline code.</doc>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='2130' u='c' c='_ZN3JSC17operationOptimizeEPNS_2VMEj'/>
+<def f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2691' ll='2698' type='void JSC::CodeBlock::optimizeSoon()'/>

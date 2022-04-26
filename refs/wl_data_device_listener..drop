@@ -1,0 +1,19 @@
+<dec f='include/wayland-client-protocol.h' l='2576' type='void (*)(void *, struct wl_data_device *)'/>
+<offset>256</offset>
+<doc f='include/wayland-client-protocol.h' l='2559'>/**
+	 * end drag-and-drop session successfully
+	 *
+	 * The event is sent when a drag-and-drop operation is ended
+	 * because the implicit grab is removed.
+	 *
+	 * The drag-and-drop destination is expected to honor the last
+	 * action received through wl_data_offer.action, if the resulting
+	 * action is &quot;copy&quot; or &quot;move&quot;, the destination can still perform
+	 * wl_data_offer.receive requests, and is expected to end all
+	 * transfers with a wl_data_offer.finish request.
+	 *
+	 * If the resulting action is &quot;ask&quot;, the action will not be
+	 * considered final. The drag-and-drop destination is expected to
+	 * perform one last wl_data_offer.set_actions request, or
+	 * wl_data_offer.destroy in order to cancel the operation.
+	 */</doc>

@@ -1,0 +1,15 @@
+<dec f='include/xcb/xproto.h' l='6364' type='xcb_void_cookie_t xcb_unmap_window(xcb_connection_t * c, xcb_window_t window)'/>
+<doc f='include/xcb/xproto.h' l='6349'>/**
+ * @brief Makes a window invisible
+ *
+ * @param c The connection
+ * @param window The window to make invisible.
+ * @return A cookie
+ *
+ * Unmaps the specified window. This means making the window invisible (and all
+ * its child windows).
+ * 
+ * Unmapping a window leads to the `UnmapNotify` event being generated. Also,
+ * `Expose` events are generated for formerly obscured windows.
+ *
+ */</doc>

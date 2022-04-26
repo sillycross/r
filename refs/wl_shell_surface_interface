@@ -1,0 +1,49 @@
+<dec f='include/wayland-client-protocol.h' l='430' type='const struct wl_interface'/>
+<use f='include/wayland-client-protocol.h' l='2927' u='a' c='_ZL26wl_shell_get_shell_surfaceP8wl_shellP10wl_surface'/>
+<dec f='include/wayland-server-protocol.h' l='433' type='const struct wl_interface'/>
+<def f='include/wayland-server-protocol.h' l='2438' ll='2649'/>
+<size>80</size>
+<doc f='include/wayland-client-protocol.h' l='415'>/**
+ * @defgroup iface_wl_shell_surface The wl_shell_surface interface
+ *
+ * An interface that may be implemented by a wl_surface, for
+ * implementations that provide a desktop-style user interface.
+ *
+ * It provides requests to treat surfaces like toplevel, fullscreen
+ * or popup windows, move, resize or maximize them, associate
+ * metadata like title and class, etc.
+ *
+ * On the server side the object is automatically destroyed when
+ * the related wl_surface is destroyed. On the client side,
+ * wl_shell_surface_destroy() must be called before destroying
+ * the wl_surface object.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='418'>/**
+ * @defgroup iface_wl_shell_surface The wl_shell_surface interface
+ *
+ * An interface that may be implemented by a wl_surface, for
+ * implementations that provide a desktop-style user interface.
+ *
+ * It provides requests to treat surfaces like toplevel, fullscreen
+ * or popup windows, move, resize or maximize them, associate
+ * metadata like title and class, etc.
+ *
+ * On the server side the object is automatically destroyed when
+ * the related wl_surface is destroyed. On the client side,
+ * wl_shell_surface_destroy() must be called before destroying
+ * the wl_surface object.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='2434'>/**
+ * @ingroup iface_wl_shell_surface
+ * @struct wl_shell_surface_interface
+ */</doc>
+<mbr r='wl_shell_surface_interface::pong' o='0' t='void (*)(struct wl_client *, struct wl_resource *, uint32_t)'/>
+<mbr r='wl_shell_surface_interface::move' o='64' t='void (*)(struct wl_client *, struct wl_resource *, struct wl_resource *, uint32_t)'/>
+<mbr r='wl_shell_surface_interface::resize' o='128' t='void (*)(struct wl_client *, struct wl_resource *, struct wl_resource *, uint32_t, uint32_t)'/>
+<mbr r='wl_shell_surface_interface::set_toplevel' o='192' t='void (*)(struct wl_client *, struct wl_resource *)'/>
+<mbr r='wl_shell_surface_interface::set_transient' o='256' t='void (*)(struct wl_client *, struct wl_resource *, struct wl_resource *, int32_t, int32_t, uint32_t)'/>
+<mbr r='wl_shell_surface_interface::set_fullscreen' o='320' t='void (*)(struct wl_client *, struct wl_resource *, uint32_t, uint32_t, struct wl_resource *)'/>
+<mbr r='wl_shell_surface_interface::set_popup' o='384' t='void (*)(struct wl_client *, struct wl_resource *, struct wl_resource *, uint32_t, struct wl_resource *, int32_t, int32_t, uint32_t)'/>
+<mbr r='wl_shell_surface_interface::set_maximized' o='448' t='void (*)(struct wl_client *, struct wl_resource *, struct wl_resource *)'/>
+<mbr r='wl_shell_surface_interface::set_title' o='512' t='void (*)(struct wl_client *, struct wl_resource *, const char *)'/>
+<mbr r='wl_shell_surface_interface::set_class' o='576' t='void (*)(struct wl_client *, struct wl_resource *, const char *)'/>

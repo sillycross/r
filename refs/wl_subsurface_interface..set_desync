@@ -1,0 +1,26 @@
+<dec f='include/wayland-server-protocol.h' l='4478' type='void (*)(struct wl_client *, struct wl_resource *)'/>
+<offset>320</offset>
+<doc f='include/wayland-server-protocol.h' l='4454'>/**
+	 * set sub-surface to desynchronized mode
+	 *
+	 * Change the commit behaviour of the sub-surface to
+	 * desynchronized mode, also described as independent or freely
+	 * running mode.
+	 *
+	 * In desynchronized mode, wl_surface.commit on a sub-surface will
+	 * apply the pending state directly, without caching, as happens
+	 * normally with a wl_surface. Calling wl_surface.commit on the
+	 * parent surface has no effect on the sub-surface&apos;s wl_surface
+	 * state. This mode allows a sub-surface to be updated on its own.
+	 *
+	 * If cached state exists when wl_surface.commit is called in
+	 * desynchronized mode, the pending state is added to the cached
+	 * state, and applied as a whole. This invalidates the cache.
+	 *
+	 * Note: even if a sub-surface is set to desynchronized, a parent
+	 * sub-surface may override it to behave as synchronized. For
+	 * details, see wl_subsurface.
+	 *
+	 * If a surface&apos;s parent surface behaves as desynchronized, then
+	 * the cached state is applied on set_desync.
+	 */</doc>

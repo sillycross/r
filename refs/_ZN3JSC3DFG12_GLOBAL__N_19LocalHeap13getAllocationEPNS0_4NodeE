@@ -1,0 +1,41 @@
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='400' ll='405' type='JSC::DFG::(anonymous namespace)::Allocation &amp; JSC::DFG::(anonymous namespace)::LocalHeap::getAllocation(JSC::DFG::Node * identifier)'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='448' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_19LocalHeap19onlyLocalAllocationEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='457' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_19LocalHeap19onlyLocalAllocationENS0_20PromotedHeapLocationE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='745' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_19LocalHeap16escapeAllocationEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='1416' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_128ObjectAllocationSinkingPhase23determineSinkCandidatesEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='1927' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_128ObjectAllocationSinkingPhase16promoteLocalHeapEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='1949' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_128ObjectAllocationSinkingPhase16promoteLocalHeapEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='2306' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_128ObjectAllocationSinkingPhase23populateMaterializationEPNS0_10BasicBlockEPNS0_4NodeES6_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='2496' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_128ObjectAllocationSinkingPhase14createRecoveryEPNS0_10BasicBlockENS0_20PromotedHeapLocationEPNS0_4NodeERb'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGObjectAllocationSinkingPhase.cpp' l='368'>// Note that this is fundamentally different from
+    // onlyLocalAllocation() below. getAllocation() takes as argument
+    // a node-as-identifier, that is, an allocation node. This
+    // allocation node doesn&apos;t have to be alive; it may only be
+    // pointed to by other nodes or allocation fields.
+    // For instance, in the following graph:
+    //
+    // Block #0
+    //  0: NewObject({})
+    //  1: NewObject({})
+    //  -: PutByOffset(@0, @1, x)
+    //  -: PutStructure(@0, {x:0})
+    //  2: GetByOffset(@0, x)
+    //  -: Jump(#1)
+    //
+    // Block #1
+    //  -: Return(@2)
+    //
+    // At head of block #1, the only reachable allocation is #@1,
+    // which can be reached through node @2. Thus, getAllocation(#@1)
+    // contains the appropriate metadata for this allocation, but
+    // onlyLocalAllocation(@1) is null, as @1 is no longer a pointer
+    // to #@1 (since it is dead). Conversely, onlyLocalAllocation(@2)
+    // is the same as getAllocation(#@1), while getAllocation(#@2)
+    // does not make sense since @2 is not an allocation node.
+    //
+    // This is meant to be used when the node is already known to be
+    // an identifier (i.e. an allocation) - probably because it was
+    // found as value of a field or pointer in the current heap, or
+    // was the result of a call to follow(). In any other cases (such
+    // as when doing anything while traversing the graph), the
+    // appropriate function to call is probably onlyLocalAllocation.</doc>

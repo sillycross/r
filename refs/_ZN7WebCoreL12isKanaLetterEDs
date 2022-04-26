@@ -1,0 +1,16 @@
+<def f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='1685' ll='1702' type='bool WebCore::isKanaLetter(UChar character)'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='1849' u='c' c='_ZN7WebCoreL19containsKanaLettersERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='2059' u='c' c='_ZNK7WebCore12SearchBuffer10isBadMatchEPKDsm'/>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='2061' u='c' c='_ZNK7WebCore12SearchBuffer10isBadMatchEPKDsm'/>
+<doc f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='1672'>// ICU&apos;s search ignores the distinction between small kana letters and ones
+// that are not small, and also characters that differ only in the voicing
+// marks when considering only primary collation strength differences.
+// This is not helpful for end users, since these differences make words
+// distinct, so for our purposes we need these to be considered.
+// The Unicode folks do not think the collation algorithm should be
+// changed. To work around this, we would like to tailor the ICU searcher,
+// but we can&apos;t get that to work yet. So instead, we check for cases where
+// these differences occur, and skip those matches.
+
+// We refer to the above technique as the &quot;kana workaround&quot;. The next few
+// functions are helper functinos for the kana workaround.</doc>

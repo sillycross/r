@@ -1,0 +1,6 @@
+<def f='WebKit/Source/JavaScriptCore/API/JSObjectRef.cpp' l='544' ll='552' type='const JSC::ClassInfo * classInfoPrivate(JSC::JSObject * jsObject)'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSObjectRef.cpp' l='559' u='c' c='JSObjectGetPrivate'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSObjectRef.cpp' l='584' u='c' c='JSObjectSetPrivate'/>
+<doc f='WebKit/Source/JavaScriptCore/API/JSObjectRef.cpp' l='541'>// API objects have private properties, which may get accessed during destruction. This
+// helper lets us get the ClassInfo of an API object from a function that may get called
+// during destruction.</doc>

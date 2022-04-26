@@ -1,0 +1,20 @@
+<dec f='include/gstreamer-1.0/gst/gstcaps.h' l='279'/>
+<doc f='include/gstreamer-1.0/gst/gstcaps.h' l='260'>/**
+ * gst_caps_make_writable:
+ * @caps: (transfer full): a #GstCaps
+ *
+ * Returns a writable copy of @caps.
+ *
+ * If there is only one reference count on @caps, the caller must be the owner,
+ * and so this function will return the caps object unchanged. If on the other
+ * hand there is more than one reference on the object, a new caps object will
+ * be returned. The caller&apos;s reference on @caps will be removed, and instead the
+ * caller will own a reference to the returned object.
+ *
+ * In short, this function unrefs the caps in the argument and refs the caps
+ * that it returns. Don&apos;t access the argument after calling this function. See
+ * also: gst_caps_ref().
+ *
+ * Returns: (transfer full): a writable caps which may or may not be the
+ *     same as @caps
+ */</doc>

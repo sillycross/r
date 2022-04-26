@@ -1,0 +1,42 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITCode.h' l='204' c='_ZN3JSC7JITCode14ftlForOSREntryEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCode.h' l='204' c='_ZN3JSC7JITCode14ftlForOSREntryEv'/>
+<inh f='WebKit/Source/JavaScriptCore/ftl/FTLJITCode.h' l='42' c='JSC::FTL::JITCode'/>
+<def f='WebKit/Source/JavaScriptCore/ftl/FTLForOSREntryJITCode.h' l='44' ll='71'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLForOSREntryJITCode.h' l='58' c='_ZN3JSC3FTL18ForOSREntryJITCode14ftlForOSREntryEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLForOSREntryJITCode.cpp' l='42' c='_ZN3JSC3FTL18ForOSREntryJITCode14ftlForOSREntryEv'/>
+<size>384</size>
+<doc f='WebKit/Source/JavaScriptCore/ftl/FTLForOSREntryJITCode.h' l='35'>// OSR entry into the FTL has a number of quirks:
+//
+// - OSR entry only happens through special OSR entry compilations. They have their
+//   own CodeBlock and their own JITCode.
+//
+// - We only OSR enter in loop headers that have a null inline call frame.
+//
+// - Each OSR entry compilation allows entry through only one bytecode index.</doc>
+<fun r='_ZN3JSC3FTL18ForOSREntryJITCodeC1Ev'/>
+<fun r='_ZN3JSC3FTL18ForOSREntryJITCodeD1Ev'/>
+<fun r='_ZN3JSC3FTL18ForOSREntryJITCode21initializeEntryBufferERNS_2VMEj'/>
+<fun r='_ZNK3JSC3FTL18ForOSREntryJITCode11entryBufferEv'/>
+<fun r='_ZN3JSC3FTL18ForOSREntryJITCode16setBytecodeIndexENS_13BytecodeIndexE'/>
+<fun r='_ZNK3JSC3FTL18ForOSREntryJITCode13bytecodeIndexEv'/>
+<fun r='_ZN3JSC3FTL18ForOSREntryJITCode17countEntryFailureEv'/>
+<fun r='_ZNK3JSC3FTL18ForOSREntryJITCode17entryFailureCountEv'/>
+<fun r='_ZN3JSC3FTL18ForOSREntryJITCode14ftlForOSREntryEv'/>
+<fun r='_ZN3JSC3FTL18ForOSREntryJITCode23setArgumentFlushFormatsEON3WTF11FixedVectorINS_3DFG11FlushFormatEEE'/>
+<fun r='_ZN3JSC3FTL18ForOSREntryJITCode20argumentFlushFormatsEv'/>
+<mbr r='JSC::FTL::ForOSREntryJITCode::m_argumentFlushFormats' o='2880' t='FixedVector&lt;DFG::FlushFormat&gt;'/>
+<mbr r='JSC::FTL::ForOSREntryJITCode::m_entryBuffer' o='2944' t='JSC::ScratchBuffer *'/>
+<mbr r='JSC::FTL::ForOSREntryJITCode::m_bytecodeIndex' o='3008' t='JSC::BytecodeIndex'/>
+<mbr r='JSC::FTL::ForOSREntryJITCode::m_entryFailureCount' o='3040' t='unsigned int'/>
+<fun r='_ZN3JSC3FTL18ForOSREntryJITCodeC1Ev'/>
+<fun r='_ZN3JSC3FTL18ForOSREntryJITCodeD1Ev'/>
+<fun r='_ZN3JSC3FTL18ForOSREntryJITCode14ftlForOSREntryEv'/>
+<fun r='_ZN3JSC3FTL18ForOSREntryJITCode21initializeEntryBufferERNS_2VMEj'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSREntry.cpp' l='49' c='_ZN3JSC3FTL15prepareOSREntryERNS_2VMEPNS_9CallFrameEPNS_9CodeBlockES6_NS_13BytecodeIndexEj'/>
+<size>384</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLState.cpp' l='56' c='_ZN3JSC3FTL5StateC1ERNS_3DFG5GraphE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLState.cpp' l='56' c='_ZN3JSC3FTL5StateC1ERNS_3DFG5GraphE'/>
+<size>384</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCode.cpp' l='88' c='_ZN3JSC7JITCode14ftlForOSREntryEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='3942' c='_ZN3JSC3DFGL12tierUpCommonERNS_2VMEPNS_9CallFrameENS_13BytecodeIndexEb'/>
+<size>384</size>

@@ -1,0 +1,18 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapCell.h' l='76' type='JSC::Heap * JSC::HeapCell::heap() const'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapCell.h' l='70'>// If you want performance and you know that your cell is small, you can do this instead:
+    // ASSERT(!cell-&gt;isPreciseAllocation());
+    // cell-&gt;markedBlock().vm()
+    // We currently only use this hack for callees to make CallFrame::vm() fast. It&apos;s not
+    // recommended to use it for too many other things, since the large allocation cutoff is
+    // a runtime option and its default value is small (400 bytes).</doc>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapCellInlines.h' l='57' ll='60' macro='1' type='JSC::Heap * JSC::HeapCell::heap() const'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapInlines.h' l='50' u='c' c='_ZN3JSC4Heap4heapEPKNS_8HeapCellE'/>
+<dec f='WebKit/Source/JavaScriptCore/heap/HeapCell.h' l='76' type='JSC::Heap * JSC::HeapCell::heap() const'/>
+<def f='WebKit/Source/JavaScriptCore/heap/HeapCellInlines.h' l='57' ll='60' macro='1' type='JSC::Heap * JSC::HeapCell::heap() const'/>
+<use f='WebKit/Source/JavaScriptCore/heap/HeapInlines.h' l='50' u='c' c='_ZN3JSC4Heap4heapEPKNS_8HeapCellE'/>
+<doc f='WebKit/Source/JavaScriptCore/heap/HeapCell.h' l='70'>// If you want performance and you know that your cell is small, you can do this instead:
+    // ASSERT(!cell-&gt;isPreciseAllocation());
+    // cell-&gt;markedBlock().vm()
+    // We currently only use this hack for callees to make CallFrame::vm() fast. It&apos;s not
+    // recommended to use it for too many other things, since the large allocation cutoff is
+    // a runtime option and its default value is small (400 bytes).</doc>

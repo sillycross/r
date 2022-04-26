@@ -1,0 +1,281 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapCell.h' l='68' c='_ZNK3JSC8HeapCell17preciseAllocationEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CellContainer.h' l='56' c='_ZN3JSC13CellContainerC1ERNS_17PreciseAllocationE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CellContainer.h' l='75' c='_ZNK3JSC13CellContainer17preciseAllocationEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CellContainer.h' l='78' c='_ZNK3JSC13CellContainer17preciseAllocationEv'/>
+<inh f='WebKit/WTF/Headers/wtf/SentinelLinkedList.h' l='46' c='WTF::BasicRawSentinelNode'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PreciseAllocation.h' l='41' ll='175'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PreciseAllocation.h' l='41'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PreciseAllocation.h' l='46' c='_ZN3JSC17PreciseAllocation9tryCreateERNS_4HeapEmPNS_8SubspaceEj'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PreciseAllocation.h' l='48' c='_ZN3JSC17PreciseAllocation18createForLowerTierERNS_4HeapEmPNS_8SubspaceEh'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PreciseAllocation.h' l='49' c='_ZN3JSC17PreciseAllocation17reuseForLowerTierEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PreciseAllocation.h' l='51' c='_ZN3JSC17PreciseAllocation13tryReallocateEmPNS_8SubspaceE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PreciseAllocation.h' l='55' c='_ZN3JSC17PreciseAllocation8fromCellEPKv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PreciseAllocation.h' l='57' c='_ZN3JSC17PreciseAllocation8fromCellEPKv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PreciseAllocation.h' l='78' c='_ZN3JSC17PreciseAllocation15offsetOfWeakSetEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PreciseAllocation.h' l='158' c='_ZN3JSC17PreciseAllocation10headerSizeEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedSpace.h' l='156' c='_ZNK3JSC11MarkedSpace18preciseAllocationsEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedSpace.h' l='165' c='_ZNK3JSC11MarkedSpace40preciseAllocationsForThisCollectionBeginEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedSpace.h' l='166' c='_ZNK3JSC11MarkedSpace38preciseAllocationsForThisCollectionEndEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedSpace.h' l='204'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedSpace.h' l='209'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedSpace.h' l='210'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractSlotVisitor.h' l='171' c='_ZNK3JSC19AbstractSlotVisitor8isMarkedERNS_17PreciseAllocationEPNS_8HeapCellE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SlotVisitor.h' l='122' c='_ZNK3JSC11SlotVisitor8isMarkedERNS_17PreciseAllocationEPNS_8HeapCellE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Subspace.h' l='116'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Subspace.h' l='116'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoSubspace.h' l='51' c='_ZN3JSC11IsoSubspace18sweepLowerTierCellEPNS_17PreciseAllocationE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoSubspace.h' l='52' c='_ZN3JSC11IsoSubspace18clearIsoCellSetBitEPNS_17PreciseAllocationE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoSubspace.h' l='71'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoSubspace.h' l='71'/>
+<size>96</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PreciseAllocation.h' l='36'>// WebKit has a good malloc that already knows what to do for large allocations. The GC shouldn&apos;t
+// have to think about such things. That&apos;s where PreciseAllocation comes in. We will allocate large
+// objects directly using malloc, and put the PreciseAllocation header just before them. We can detect
+// when a HeapCell* is a PreciseAllocation because it will have the MarkedBlock::atomSize / 2 bit set.</doc>
+<fun r='_ZN3JSC17PreciseAllocation9tryCreateERNS_4HeapEmPNS_8SubspaceEj'/>
+<fun r='_ZN3JSC17PreciseAllocation18createForLowerTierERNS_4HeapEmPNS_8SubspaceEh'/>
+<fun r='_ZN3JSC17PreciseAllocation17reuseForLowerTierEv'/>
+<fun r='_ZN3JSC17PreciseAllocation13tryReallocateEmPNS_8SubspaceE'/>
+<fun r='_ZN3JSC17PreciseAllocationD1Ev'/>
+<fun r='_ZN3JSC17PreciseAllocation8fromCellEPKv'/>
+<fun r='_ZNK3JSC17PreciseAllocation4cellEv'/>
+<fun r='_ZN3JSC17PreciseAllocation19isPreciseAllocationEPNS_8HeapCellE'/>
+<fun r='_ZNK3JSC17PreciseAllocation8subspaceEv'/>
+<fun r='_ZN3JSC17PreciseAllocation20lastChanceToFinalizeEv'/>
+<fun r='_ZNK3JSC17PreciseAllocation4heapEv'/>
+<fun r='_ZNK3JSC17PreciseAllocation2vmEv'/>
+<fun r='_ZN3JSC17PreciseAllocation7weakSetEv'/>
+<fun r='_ZN3JSC17PreciseAllocation15offsetOfWeakSetEv'/>
+<fun r='_ZN3JSC17PreciseAllocation12indexInSpaceEv'/>
+<fun r='_ZN3JSC17PreciseAllocation15setIndexInSpaceEj'/>
+<fun r='_ZN3JSC17PreciseAllocation19clearNewlyAllocatedEv'/>
+<fun r='_ZN3JSC17PreciseAllocation4flipEv'/>
+<fun r='_ZNK3JSC17PreciseAllocation16isNewlyAllocatedEv'/>
+<fun r='_ZN3JSC17PreciseAllocation8isMarkedEv'/>
+<fun r='_ZN3JSC17PreciseAllocation8isMarkedEPNS_8HeapCellE'/>
+<fun r='_ZN3JSC17PreciseAllocation8isMarkedEPNS_8HeapCellEN3WTF10DependencyE'/>
+<fun r='_ZN3JSC17PreciseAllocation8isMarkedEjPNS_8HeapCellE'/>
+<fun r='_ZN3JSC17PreciseAllocation6isLiveEv'/>
+<fun r='_ZNK3JSC17PreciseAllocation12hasValidCellEv'/>
+<fun r='_ZN3JSC17PreciseAllocation7isEmptyEv'/>
+<fun r='_ZNK3JSC17PreciseAllocation8cellSizeEv'/>
+<fun r='_ZNK3JSC17PreciseAllocation14lowerTierIndexEv'/>
+<fun r='_ZN3JSC17PreciseAllocation15aboveLowerBoundEPKv'/>
+<fun r='_ZN3JSC17PreciseAllocation15belowUpperBoundEPKv'/>
+<fun r='_ZN3JSC17PreciseAllocation8containsEPKv'/>
+<fun r='_ZNK3JSC17PreciseAllocation10attributesEv'/>
+<fun r='_ZN3JSC17PreciseAllocation11aboutToMarkEj'/>
+<fun r='_ZN3JSC17PreciseAllocation16testAndSetMarkedEv'/>
+<fun r='_ZN3JSC17PreciseAllocation16testAndSetMarkedEPNS_8HeapCellEN3WTF10DependencyE'/>
+<fun r='_ZN3JSC17PreciseAllocation11clearMarkedEv'/>
+<fun r='_ZN3JSC17PreciseAllocation10noteMarkedEv'/>
+<fun r='_ZNK3JSC17PreciseAllocation15assertValidCellERNS_2VMEPNS_8HeapCellE'/>
+<fun r='_ZN3JSC17PreciseAllocation5sweepEv'/>
+<fun r='_ZN3JSC17PreciseAllocation7destroyEv'/>
+<fun r='_ZNK3JSC17PreciseAllocation4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZNK3JSC17PreciseAllocation11isLowerTierEv'/>
+<smbr r='JSC::PreciseAllocation::alignment' t='const unsigned int'/>
+<smbr r='JSC::PreciseAllocation::halfAlignment' t='const unsigned int'/>
+<fun r='_ZN3JSC17PreciseAllocation10headerSizeEv'/>
+<fun r='_ZN3JSC17PreciseAllocationC1ERNS_4HeapEmPNS_8SubspaceEjb'/>
+<fun r='_ZNK3JSC17PreciseAllocation11basePointerEv'/>
+<mbr r='JSC::PreciseAllocation::m_indexInSpace' o='96' t='unsigned int'/>
+<mbr r='JSC::PreciseAllocation::m_cellSize' o='128' t='size_t'/>
+<mbr r='JSC::PreciseAllocation::m_isNewlyAllocated' o='192' t='bool'/>
+<mbr r='JSC::PreciseAllocation::m_hasValidCell' o='193' t='bool'/>
+<mbr r='JSC::PreciseAllocation::m_adjustedAlignment' o='194' t='bool'/>
+<mbr r='JSC::PreciseAllocation::m_isMarked' o='200' t='Atomic&lt;bool&gt;'/>
+<mbr r='JSC::PreciseAllocation::m_attributes' o='208' t='JSC::CellAttributes'/>
+<mbr r='JSC::PreciseAllocation::m_lowerTierIndex' o='224' t='uint8_t'/>
+<mbr r='JSC::PreciseAllocation::m_subspace' o='256' t='JSC::Subspace *'/>
+<mbr r='JSC::PreciseAllocation::m_weakSet' o='320' t='JSC::WeakSet'/>
+<fun r='_ZNK3JSC17PreciseAllocation11basePointerEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapCellInlines.h' l='52' c='_ZNK3JSC8HeapCell17preciseAllocationEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoSubspaceInlines.h' l='38' c='_ZN3JSC11IsoSubspace18clearIsoCellSetBitEPNS_17PreciseAllocationE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoSubspaceInlines.h' l='52' c='_ZN3JSC11IsoSubspace5sweepEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SlotVisitorInlines.h' l='148' c='_ZNK3JSC11SlotVisitor8isMarkedERNS_17PreciseAllocationEPNS_8HeapCellE'/>
+<size>96</size>
+<use f='WebKit/Source/JavaScriptCore/heap/HeapCell.h' l='68' c='_ZNK3JSC8HeapCell17preciseAllocationEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CellContainer.h' l='56' c='_ZN3JSC13CellContainerC1ERNS_17PreciseAllocationE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CellContainer.h' l='75' c='_ZNK3JSC13CellContainer17preciseAllocationEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CellContainer.h' l='78' c='_ZNK3JSC13CellContainer17preciseAllocationEv'/>
+<inh f='WebKit/WTF/Headers/wtf/SentinelLinkedList.h' l='46' c='WTF::BasicRawSentinelNode'/>
+<def f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.h' l='41' ll='175'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.h' l='41'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.h' l='46' c='_ZN3JSC17PreciseAllocation9tryCreateERNS_4HeapEmPNS_8SubspaceEj'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.h' l='48' c='_ZN3JSC17PreciseAllocation18createForLowerTierERNS_4HeapEmPNS_8SubspaceEh'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.h' l='49' c='_ZN3JSC17PreciseAllocation17reuseForLowerTierEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.h' l='51' c='_ZN3JSC17PreciseAllocation13tryReallocateEmPNS_8SubspaceE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.h' l='55' c='_ZN3JSC17PreciseAllocation8fromCellEPKv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.h' l='57' c='_ZN3JSC17PreciseAllocation8fromCellEPKv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.h' l='78' c='_ZN3JSC17PreciseAllocation15offsetOfWeakSetEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.h' l='158' c='_ZN3JSC17PreciseAllocation10headerSizeEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.h' l='156' c='_ZNK3JSC11MarkedSpace18preciseAllocationsEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.h' l='165' c='_ZNK3JSC11MarkedSpace40preciseAllocationsForThisCollectionBeginEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.h' l='166' c='_ZNK3JSC11MarkedSpace38preciseAllocationsForThisCollectionEndEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.h' l='204'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.h' l='209'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.h' l='210'/>
+<use f='WebKit/Source/JavaScriptCore/heap/AbstractSlotVisitor.h' l='171' c='_ZNK3JSC19AbstractSlotVisitor8isMarkedERNS_17PreciseAllocationEPNS_8HeapCellE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SlotVisitor.h' l='122' c='_ZNK3JSC11SlotVisitor8isMarkedERNS_17PreciseAllocationEPNS_8HeapCellE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Subspace.h' l='116'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Subspace.h' l='116'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.h' l='51' c='_ZN3JSC11IsoSubspace18sweepLowerTierCellEPNS_17PreciseAllocationE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.h' l='52' c='_ZN3JSC11IsoSubspace18clearIsoCellSetBitEPNS_17PreciseAllocationE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.h' l='71'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.h' l='71'/>
+<use f='WebKit/Source/JavaScriptCore/heap/HeapCellInlines.h' l='52' c='_ZNK3JSC8HeapCell17preciseAllocationEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspaceInlines.h' l='38' c='_ZN3JSC11IsoSubspace18clearIsoCellSetBitEPNS_17PreciseAllocationE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspaceInlines.h' l='52' c='_ZN3JSC11IsoSubspace5sweepEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SlotVisitorInlines.h' l='148' c='_ZNK3JSC11SlotVisitor8isMarkedERNS_17PreciseAllocationEPNS_8HeapCellE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpaceInlines.h' l='55' c='_ZN3JSC11MarkedSpace15forEachLiveCellERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpaceInlines.h' l='71' c='_ZN3JSC11MarkedSpace15forEachDeadCellERNS_18HeapIterationScopeERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/tools/VMInspectorInlines.h' l='63' c='_ZN3JSC11VMInspector10verifyCellERNS_2VMEPNS_6JSCellE'/>
+<size>96</size>
+<doc f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.h' l='36'>// WebKit has a good malloc that already knows what to do for large allocations. The GC shouldn&apos;t
+// have to think about such things. That&apos;s where PreciseAllocation comes in. We will allocate large
+// objects directly using malloc, and put the PreciseAllocation header just before them. We can detect
+// when a HeapCell* is a PreciseAllocation because it will have the MarkedBlock::atomSize / 2 bit set.</doc>
+<fun r='_ZN3JSC17PreciseAllocation9tryCreateERNS_4HeapEmPNS_8SubspaceEj'/>
+<fun r='_ZN3JSC17PreciseAllocation18createForLowerTierERNS_4HeapEmPNS_8SubspaceEh'/>
+<fun r='_ZN3JSC17PreciseAllocation17reuseForLowerTierEv'/>
+<fun r='_ZN3JSC17PreciseAllocation13tryReallocateEmPNS_8SubspaceE'/>
+<fun r='_ZN3JSC17PreciseAllocationD1Ev'/>
+<fun r='_ZN3JSC17PreciseAllocation8fromCellEPKv'/>
+<fun r='_ZNK3JSC17PreciseAllocation4cellEv'/>
+<fun r='_ZN3JSC17PreciseAllocation19isPreciseAllocationEPNS_8HeapCellE'/>
+<fun r='_ZNK3JSC17PreciseAllocation8subspaceEv'/>
+<fun r='_ZN3JSC17PreciseAllocation20lastChanceToFinalizeEv'/>
+<fun r='_ZNK3JSC17PreciseAllocation4heapEv'/>
+<fun r='_ZNK3JSC17PreciseAllocation2vmEv'/>
+<fun r='_ZN3JSC17PreciseAllocation7weakSetEv'/>
+<fun r='_ZN3JSC17PreciseAllocation15offsetOfWeakSetEv'/>
+<fun r='_ZN3JSC17PreciseAllocation12indexInSpaceEv'/>
+<fun r='_ZN3JSC17PreciseAllocation15setIndexInSpaceEj'/>
+<fun r='_ZN3JSC17PreciseAllocation19clearNewlyAllocatedEv'/>
+<fun r='_ZN3JSC17PreciseAllocation4flipEv'/>
+<fun r='_ZNK3JSC17PreciseAllocation16isNewlyAllocatedEv'/>
+<fun r='_ZN3JSC17PreciseAllocation8isMarkedEv'/>
+<fun r='_ZN3JSC17PreciseAllocation8isMarkedEPNS_8HeapCellE'/>
+<fun r='_ZN3JSC17PreciseAllocation8isMarkedEPNS_8HeapCellEN3WTF10DependencyE'/>
+<fun r='_ZN3JSC17PreciseAllocation8isMarkedEjPNS_8HeapCellE'/>
+<fun r='_ZN3JSC17PreciseAllocation6isLiveEv'/>
+<fun r='_ZNK3JSC17PreciseAllocation12hasValidCellEv'/>
+<fun r='_ZN3JSC17PreciseAllocation7isEmptyEv'/>
+<fun r='_ZNK3JSC17PreciseAllocation8cellSizeEv'/>
+<fun r='_ZNK3JSC17PreciseAllocation14lowerTierIndexEv'/>
+<fun r='_ZN3JSC17PreciseAllocation15aboveLowerBoundEPKv'/>
+<fun r='_ZN3JSC17PreciseAllocation15belowUpperBoundEPKv'/>
+<fun r='_ZN3JSC17PreciseAllocation8containsEPKv'/>
+<fun r='_ZNK3JSC17PreciseAllocation10attributesEv'/>
+<fun r='_ZN3JSC17PreciseAllocation11aboutToMarkEj'/>
+<fun r='_ZN3JSC17PreciseAllocation16testAndSetMarkedEv'/>
+<fun r='_ZN3JSC17PreciseAllocation16testAndSetMarkedEPNS_8HeapCellEN3WTF10DependencyE'/>
+<fun r='_ZN3JSC17PreciseAllocation11clearMarkedEv'/>
+<fun r='_ZN3JSC17PreciseAllocation10noteMarkedEv'/>
+<fun r='_ZNK3JSC17PreciseAllocation15assertValidCellERNS_2VMEPNS_8HeapCellE'/>
+<fun r='_ZN3JSC17PreciseAllocation5sweepEv'/>
+<fun r='_ZN3JSC17PreciseAllocation7destroyEv'/>
+<fun r='_ZNK3JSC17PreciseAllocation4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZNK3JSC17PreciseAllocation11isLowerTierEv'/>
+<smbr r='JSC::PreciseAllocation::alignment' t='const unsigned int'/>
+<smbr r='JSC::PreciseAllocation::halfAlignment' t='const unsigned int'/>
+<fun r='_ZN3JSC17PreciseAllocation10headerSizeEv'/>
+<fun r='_ZN3JSC17PreciseAllocationC1ERNS_4HeapEmPNS_8SubspaceEjb'/>
+<fun r='_ZNK3JSC17PreciseAllocation11basePointerEv'/>
+<mbr r='JSC::PreciseAllocation::m_indexInSpace' o='96' t='unsigned int'/>
+<mbr r='JSC::PreciseAllocation::m_cellSize' o='128' t='size_t'/>
+<mbr r='JSC::PreciseAllocation::m_isNewlyAllocated' o='192' t='bool'/>
+<mbr r='JSC::PreciseAllocation::m_hasValidCell' o='193' t='bool'/>
+<mbr r='JSC::PreciseAllocation::m_adjustedAlignment' o='194' t='bool'/>
+<mbr r='JSC::PreciseAllocation::m_isMarked' o='200' t='Atomic&lt;bool&gt;'/>
+<mbr r='JSC::PreciseAllocation::m_attributes' o='208' t='JSC::CellAttributes'/>
+<mbr r='JSC::PreciseAllocation::m_lowerTierIndex' o='224' t='uint8_t'/>
+<mbr r='JSC::PreciseAllocation::m_subspace' o='256' t='JSC::Subspace *'/>
+<mbr r='JSC::PreciseAllocation::m_weakSet' o='320' t='JSC::WeakSet'/>
+<fun r='_ZNK3JSC17PreciseAllocation11basePointerEv'/>
+<use f='WebKit/Source/JavaScriptCore/tools/VMInspector.cpp' l='208' c='_ZN3JSC11VMInspector8isInHeapEPNS_4HeapEPv'/>
+<size>96</size>
+<use f='WebKit/Source/JavaScriptCore/heap/SubspaceInlines.h' l='65' c='_ZN3JSC8Subspace24forEachPreciseAllocationERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SubspaceInlines.h' l='82' c='_ZN3JSC8Subspace17forEachMarkedCellERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SubspaceInlines.h' l='119' c='_ZZN3JSC8Subspace27forEachMarkedCellInParallelERKT0_EN4Task3runERT_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SubspaceInlines.h' l='149' c='_ZN3JSC8Subspace15forEachLiveCellERKT_'/>
+<size>96</size>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.cpp' l='140' c='_ZN3JSC16CompleteSubspace15tryAllocateSlowERNS_2VMEmPNS_17GCDeferralContextE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.cpp' l='164' c='_ZN3JSC16CompleteSubspace37reallocatePreciseAllocationNonVirtualERNS_2VMEPNS_8HeapCellEmPNS_17GCDeferralContextENS_21AllocationFailureModeE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.cpp' l='188' c='_ZN3JSC16CompleteSubspace37reallocatePreciseAllocationNonVirtualERNS_2VMEPNS_8HeapCellEmPNS_17GCDeferralContextENS_21AllocationFailureModeE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/HeapUtil.h' l='63' c='_ZN3JSC8HeapUtil30findGCObjectPointersForMarkingERNS_4HeapEjjNS_15TinyBloomFilterEPvRKT_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/HeapUtil.h' l='63' c='_ZN3JSC8HeapUtil30findGCObjectPointersForMarkingERNS_4HeapEjjNS_15TinyBloomFilterEPvRKT_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/HeapUtil.h' l='67' c='_ZN3JSC8HeapUtil30findGCObjectPointersForMarkingERNS_4HeapEjjNS_15TinyBloomFilterEPvRKT_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/HeapUtil.h' l='67' c='_ZN3JSC8HeapUtil30findGCObjectPointersForMarkingERNS_4HeapEjjNS_15TinyBloomFilterEPvRKT_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/HeapUtil.h' l='69' c='_ZN3JSC8HeapUtil30findGCObjectPointersForMarkingERNS_4HeapEjjNS_15TinyBloomFilterEPvRKT_'/>
+<size>96</size>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoCellSetInlines.h' l='88' c='_ZN3JSC10IsoCellSet17forEachMarkedCellERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoCellSetInlines.h' l='128' c='_ZZN3JSC10IsoCellSet27forEachMarkedCellInParallelERKT0_EN4Task3runERT_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoCellSetInlines.h' l='164' c='_ZN3JSC10IsoCellSet15forEachLiveCellERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/VerifierSlotVisitor.h' l='87' c='_ZNK3JSC19VerifierSlotVisitor8isMarkedERNS_17PreciseAllocationEPNS_8HeapCellE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/VerifierSlotVisitor.h' l='146' c='_ZN3JSC19VerifierSlotVisitor21PreciseAllocationDataC1EPNS_17PreciseAllocationE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/VerifierSlotVisitor.h' l='147' c='_ZNK3JSC19VerifierSlotVisitor21PreciseAllocationData10allocationEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/VerifierSlotVisitor.h' l='153'/>
+<use f='WebKit/Source/JavaScriptCore/heap/VerifierSlotVisitor.h' l='171'/>
+<use f='WebKit/Source/JavaScriptCore/heap/VerifierSlotVisitor.h' l='178' c='_ZN3JSC19VerifierSlotVisitor16testAndSetMarkedERNS_17PreciseAllocationE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/VerifierSlotVisitorInlines.h' l='44' c='_ZN3JSC19VerifierSlotVisitor28forEachLivePreciseAllocationERKT_'/>
+<size>96</size>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.cpp' l='95' c='_ZN3JSC11IsoSubspace24tryAllocateFromLowerTierEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.cpp' l='107' c='_ZN3JSC11IsoSubspace24tryAllocateFromLowerTierEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.cpp' l='112' c='_ZN3JSC11IsoSubspace24tryAllocateFromLowerTierEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.cpp' l='118' c='_ZN3JSC11IsoSubspace18sweepLowerTierCellEPNS_17PreciseAllocationE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.cpp' l='126' c='_ZN3JSC11IsoSubspace24destroyLowerTierFreeListEv'/>
+<size>96</size>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.cpp' l='197' c='_ZN3JSC11MarkedSpace10freeMemoryEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.cpp' l='213' c='_ZN3JSC11MarkedSpace20lastChanceToFinalizeEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.cpp' l='234' c='_ZN3JSC11MarkedSpace23sweepPreciseAllocationsEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.cpp' l='333' c='_ZN3JSC11MarkedSpace26prepareForConservativeScanEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.cpp' l='333' c='_ZN3JSC11MarkedSpace26prepareForConservativeScanEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.cpp' l='421' c='_ZN3JSC11MarkedSpace12beginMarkingEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.cpp' l='452' c='_ZN3JSC11MarkedSpace10endMarkingEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.cpp' l='486' c='_ZN3JSC11MarkedSpace11objectCountEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.cpp' l='500' c='_ZN3JSC11MarkedSpace4sizeEv'/>
+<size>96</size>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.cpp' l='43' c='_ZN3JSC17PreciseAllocation9tryCreateERNS_4HeapEmPNS_8SubspaceEj'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.cpp' l='65' c='_ZN3JSC17PreciseAllocation9tryCreateERNS_4HeapEmPNS_8SubspaceEj'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.cpp' l='68' c='_ZN3JSC17PreciseAllocation13tryReallocateEmPNS_8SubspaceE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.cpp' l='84' c='_ZN3JSC17PreciseAllocation13tryReallocateEmPNS_8SubspaceE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.cpp' l='84' c='_ZN3JSC17PreciseAllocation13tryReallocateEmPNS_8SubspaceE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.cpp' l='88' c='_ZN3JSC17PreciseAllocation13tryReallocateEmPNS_8SubspaceE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.cpp' l='123' c='_ZN3JSC17PreciseAllocation18createForLowerTierERNS_4HeapEmPNS_8SubspaceEh'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.cpp' l='143' c='_ZN3JSC17PreciseAllocation18createForLowerTierERNS_4HeapEmPNS_8SubspaceEh'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.cpp' l='143' c='_ZN3JSC17PreciseAllocation18createForLowerTierERNS_4HeapEmPNS_8SubspaceEh'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.cpp' l='148' c='_ZN3JSC17PreciseAllocation17reuseForLowerTierEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.cpp' l='164' c='_ZN3JSC17PreciseAllocation17reuseForLowerTierEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.cpp' l='164' c='_ZN3JSC17PreciseAllocation17reuseForLowerTierEv'/>
+<size>96</size>
+<fun r='_ZN3JSC17PreciseAllocation9tryCreateERNS_4HeapEmPNS_8SubspaceEj'/>
+<fun r='_ZN3JSC17PreciseAllocation13tryReallocateEmPNS_8SubspaceE'/>
+<fun r='_ZN3JSC17PreciseAllocation18createForLowerTierERNS_4HeapEmPNS_8SubspaceEh'/>
+<fun r='_ZN3JSC17PreciseAllocation17reuseForLowerTierEv'/>
+<fun r='_ZN3JSC17PreciseAllocationC1ERNS_4HeapEmPNS_8SubspaceEjb'/>
+<fun r='_ZN3JSC17PreciseAllocationD1Ev'/>
+<fun r='_ZN3JSC17PreciseAllocation20lastChanceToFinalizeEv'/>
+<fun r='_ZN3JSC17PreciseAllocation4flipEv'/>
+<fun r='_ZN3JSC17PreciseAllocation7isEmptyEv'/>
+<fun r='_ZN3JSC17PreciseAllocation5sweepEv'/>
+<fun r='_ZN3JSC17PreciseAllocation7destroyEv'/>
+<fun r='_ZNK3JSC17PreciseAllocation4dumpERN3WTF11PrintStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/VerifierSlotVisitor.cpp' l='70' c='_ZN3JSC19VerifierSlotVisitor21PreciseAllocationDataC1EPNS_17PreciseAllocationE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/VerifierSlotVisitor.cpp' l='224' c='_ZN3JSC19VerifierSlotVisitor14dumpMarkerDataEPNS_8HeapCellE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/VerifierSlotVisitor.cpp' l='327' c='_ZNK3JSC19VerifierSlotVisitor8isMarkedERNS_17PreciseAllocationEPNS_8HeapCellE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/VerifierSlotVisitor.cpp' l='364' c='_ZN3JSC19VerifierSlotVisitor16testAndSetMarkedERNS_17PreciseAllocationE'/>
+<size>96</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCell.cpp' l='300' c='_ZN3JSC24reportZappedCellAndCrashERNS_4HeapEPKNS_6JSCellE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCell.cpp' l='302' c='_ZN3JSC24reportZappedCellAndCrashERNS_4HeapEPKNS_6JSCellE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCell.cpp' l='310' c='_ZN3JSC24reportZappedCellAndCrashERNS_4HeapEPKNS_6JSCellE'/>
+<size>96</size>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='1971' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='1971' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<size>96</size>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SubspaceInlines.h' l='65' c='_ZN3JSC8Subspace24forEachPreciseAllocationERKT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SubspaceInlines.h' l='82' c='_ZN3JSC8Subspace17forEachMarkedCellERKT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SubspaceInlines.h' l='119' c='_ZZN3JSC8Subspace27forEachMarkedCellInParallelERKT0_EN4Task3runERT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SubspaceInlines.h' l='149' c='_ZN3JSC8Subspace15forEachLiveCellERKT_'/>
+<size>96</size>

@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/WebKit/WebProcess/Plugins/PluginController.h' l='66' type='void WebKit::PluginController::loadURL(uint64_t requestID, const WTF::String &amp; method, const WTF::String &amp; urlString, const WTF::String &amp; target, const WebCore::HTTPHeaderMap &amp; headerFields, const Vector&lt;uint8_t&gt; &amp; httpBody, bool allowPopups)'/>
+<doc f='WebKit/Source/WebKit/WebProcess/Plugins/PluginController.h' l='59'>// Loads the given URL and associates it with the request ID.
+    // 
+    // If a target is specified, then the URL will be loaded in the window or frame that the target refers to.
+    // Once the URL finishes loading, Plugin::frameDidFinishLoading will be called with the given requestID. If the URL
+    // fails to load, Plugin::frameDidFailToLoad will be called.
+    //
+    // If the URL is a JavaScript URL, the JavaScript code will be evaluated and the result sent back using Plugin::didEvaluateJavaScript.</doc>
+<ovr f='WebKit/Source/WebKit/WebProcess/Plugins/PluginView.cpp' l='1347' c='_ZN6WebKit10PluginView7loadURLEmRKN3WTF6StringES4_S4_RKN7WebCore13HTTPHeaderMapERKNS1_6VectorIhLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEEb'/>

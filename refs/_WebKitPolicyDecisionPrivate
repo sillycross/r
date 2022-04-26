@@ -1,0 +1,20 @@
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitPolicyDecision.h' l='42'/>
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitPolicyDecision.cpp' l='50' ll='52'/>
+<size>8</size>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitPolicyDecision.cpp' l='33'>/**
+ * SECTION: WebKitPolicyDecision
+ * @Short_description: A pending policy decision
+ * @Title: WebKitPolicyDecision
+ * @See_also: #WebKitWebView
+ *
+ * Often WebKit allows the client to decide the policy for certain
+ * operations. For instance, a client may want to open a link in a new
+ * tab, block a navigation entirely, query the user or trigger a download
+ * instead of a navigation. In these cases WebKit will fire the
+ * #WebKitWebView::decide-policy signal with a #WebKitPolicyDecision
+ * object. If the signal handler does nothing, WebKit will act as if
+ * webkit_policy_decision_use() was called as soon as signal handling
+ * completes. To make a policy decision asynchronously, simply increment
+ * the reference count of the #WebKitPolicyDecision object.
+ */</doc>
+<mbr r='_WebKitPolicyDecisionPrivate::listener' o='0' t='RefPtr&lt;WebKit::WebFramePolicyListenerProxy&gt;'/>

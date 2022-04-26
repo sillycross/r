@@ -1,0 +1,13 @@
+<def f='WebKit/Source/WebCore/rendering/mathml/RenderMathMLToken.cpp' l='295' ll='497' type='UChar32 WebCore::mathVariant(UChar32 codePoint, MathMLElement::MathVariant mathvariant)'/>
+<use f='WebKit/Source/WebCore/rendering/mathml/RenderMathMLToken.cpp' l='537' u='c' c='_ZN7WebCore17RenderMathMLToken22updateMathVariantGlyphEv'/>
+<use f='WebKit/Source/WebCore/rendering/mathml/RenderMathMLToken.cpp' l='539' u='c' c='_ZN7WebCore17RenderMathMLToken22updateMathVariantGlyphEv'/>
+<doc f='WebKit/Source/WebCore/rendering/mathml/RenderMathMLToken.cpp' l='285'>// Performs the character mapping needed to implement MathML&apos;s mathvariant attribute.
+// It takes a unicode character and maps it to its appropriate mathvariant counterpart specified by mathvariant.
+// The mapped character is typically located within Unicode&apos;s mathematical blocks (0x1D***, 0x1EE**) but there are exceptions which this function accounts for.
+// Characters without a valid mapping or valid aMathvar value are returned
+// unaltered.
+// Characters already in the mathematical blocks (or are one of the exceptions) are never transformed.
+// Acceptable values for mathvariant are specified in MathMLElement.h
+// The transformable characters can be found at:
+// http://lists.w3.org/Archives/Public/www-math/2013Sep/0012.html and
+// https://en.wikipedia.org/wiki/Mathematical_Alphanumeric_Symbols</doc>

@@ -1,0 +1,19 @@
+<doc f='WebKit/Source/JavaScriptCore/API/JSContextRefPrivate.h' l='50'>/*! 
+@typedef JSShouldTerminateCallback
+@abstract The callback invoked when script execution has exceeded the allowed
+ time limit previously specified via JSContextGroupSetExecutionTimeLimit.
+@param ctx The execution context to use.
+@param context User specified context data previously passed to
+ JSContextGroupSetExecutionTimeLimit.
+@discussion If you named your function Callback, you would declare it like this:
+
+ bool Callback(JSContextRef ctx, void* context);
+
+ If you return true, the timed out script will terminate.
+ If you return false, the script will run for another period of the allowed
+ time limit specified via JSContextGroupSetExecutionTimeLimit.
+
+ Within this callback function, you may call JSContextGroupSetExecutionTimeLimit
+ to set a new time limit, or JSContextGroupClearExecutionTimeLimit to cancel the
+ timeout.
+*/</doc>

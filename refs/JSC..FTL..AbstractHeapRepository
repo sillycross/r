@@ -1,0 +1,192 @@
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLAbstractHeap.h' l='109'/>
+<def f='WebKit/Source/JavaScriptCore/ftl/FTLAbstractHeapRepository.h' l='192' ll='304'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLAbstractHeapRepository.h' l='193' c='_ZN3JSC3FTL22AbstractHeapRepositoryC1ERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLAbstractHeapRepository.h' l='193' c='_ZN3JSC3FTL22AbstractHeapRepositoryaSERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLAbstractHeapRepository.h' l='193' c='_ZN3JSC3FTL22AbstractHeapRepositoryaSERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOutput.h' l='77' c='_ZN3JSC3FTL6Output10initializeERNS0_22AbstractHeapRepositoryE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOutput.h' l='464'/>
+<size>25768</size>
+<doc f='WebKit/Source/JavaScriptCore/ftl/FTLAbstractHeapRepository.h' l='189'>// This class is meant to be cacheable between compilations, but it doesn&apos;t have to be.
+// Doing so saves on creation of nodes. But clearing it will save memory.</doc>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepositoryC1ERKS1_'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepositoryC1Ev'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepositoryD1Ev'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::root' o='0' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::typedArrayProperties' o='384' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSCellHeaderAndNamedProperties' o='768' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ArrayBuffer_data' o='1152' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ArrayStorage_numValuesInVector' o='1536' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::Butterfly_arrayBuffer' o='1920' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::Butterfly_publicLength' o='2304' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::Butterfly_vectorLength' o='2688' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::CallFrame_callerFrame' o='3072' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ClassInfo_parentClass' o='3456' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstance_internalNumber' o='3840' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstance_data' o='4224' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstanceData_gregorianDateTimeCachedForMS' o='4608' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstanceData_gregorianDateTimeUTCCachedForMS' o='4992' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstanceData_cachedGregorianDateTime_year' o='5376' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstanceData_cachedGregorianDateTimeUTC_year' o='5760' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstanceData_cachedGregorianDateTime_month' o='6144' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstanceData_cachedGregorianDateTimeUTC_month' o='6528' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstanceData_cachedGregorianDateTime_monthDay' o='6912' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstanceData_cachedGregorianDateTimeUTC_monthDay' o='7296' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstanceData_cachedGregorianDateTime_weekDay' o='7680' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstanceData_cachedGregorianDateTimeUTC_weekDay' o='8064' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstanceData_cachedGregorianDateTime_hour' o='8448' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstanceData_cachedGregorianDateTimeUTC_hour' o='8832' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstanceData_cachedGregorianDateTime_minute' o='9216' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstanceData_cachedGregorianDateTimeUTC_minute' o='9600' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstanceData_cachedGregorianDateTime_second' o='9984' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstanceData_cachedGregorianDateTimeUTC_second' o='10368' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstanceData_cachedGregorianDateTime_utcOffsetInMinute' o='10752' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DateInstanceData_cachedGregorianDateTimeUTC_utcOffsetInMinute' o='11136' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DirectArguments_callee' o='11520' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DirectArguments_length' o='11904' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DirectArguments_minCapacity' o='12288' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DirectArguments_mappedArguments' o='12672' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DirectArguments_modifiedArgumentsDescriptor' o='13056' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::FunctionExecutable_rareData' o='13440' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::FunctionExecutableRareData_asString' o='13824' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::FunctionRareData_allocator' o='14208' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::FunctionRareData_structure' o='14592' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::FunctionRareData_prototype' o='14976' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::FunctionRareData_allocationProfileWatchpointSet' o='15360' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::FunctionRareData_executable' o='15744' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::FunctionRareData_internalFunctionAllocationProfile_structure' o='16128' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::FunctionRareData_boundFunctionStructure' o='16512' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::FunctionRareData_allocationProfileClearingWatchpoint' o='16896' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::GetterSetter_getter' o='17280' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::GetterSetter_setter' o='17664' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSArrayBufferView_length' o='18048' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSArrayBufferView_mode' o='18432' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSArrayBufferView_vector' o='18816' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSBigInt_length' o='19200' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSCell_cellState' o='19584' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSCell_header' o='19968' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSCell_indexingTypeAndMisc' o='20352' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSCell_structureID' o='20736' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSCell_typeInfoFlags' o='21120' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSCell_typeInfoType' o='21504' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSCell_usefulBytes' o='21888' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSFunction_executableOrRareData' o='22272' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSFunction_scope' o='22656' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSGlobalObject_regExpGlobalData_cachedResult_lastRegExp' o='23040' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSGlobalObject_regExpGlobalData_cachedResult_lastInput' o='23424' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSGlobalObject_regExpGlobalData_cachedResult_result_start' o='23808' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSGlobalObject_regExpGlobalData_cachedResult_result_end' o='24192' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSGlobalObject_regExpGlobalData_cachedResult_reified' o='24576' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSObject_butterfly' o='24960' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSPropertyNameEnumerator_cachedInlineCapacity' o='25344' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSPropertyNameEnumerator_cachedPropertyNamesVector' o='25728' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSPropertyNameEnumerator_cachedStructureID' o='26112' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSPropertyNameEnumerator_endGenericPropertyIndex' o='26496' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSPropertyNameEnumerator_endStructurePropertyIndex' o='26880' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSPropertyNameEnumerator_indexLength' o='27264' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSRopeString_flags' o='27648' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSRopeString_length' o='28032' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSRopeString_fiber0' o='28416' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSRopeString_fiber1' o='28800' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSRopeString_fiber2' o='29184' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSScope_next' o='29568' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSSymbolTableObject_symbolTable' o='29952' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::NativeExecutable_asString' o='30336' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::RegExpObject_regExpAndLastIndexIsNotWritableFlag' o='30720' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::RegExpObject_lastIndex' o='31104' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ShadowChicken_Packet_callee' o='31488' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ShadowChicken_Packet_frame' o='31872' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ShadowChicken_Packet_callerFrame' o='32256' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ShadowChicken_Packet_thisValue' o='32640' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ShadowChicken_Packet_scope' o='33024' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ShadowChicken_Packet_codeBlock' o='33408' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ShadowChicken_Packet_callSiteIndex' o='33792' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ScopedArguments_overrodeThings' o='34176' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ScopedArguments_scope' o='34560' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ScopedArguments_storage' o='34944' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ScopedArguments_table' o='35328' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ScopedArguments_totalLength' o='35712' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ScopedArgumentsTable_arguments' o='36096' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ScopedArgumentsTable_length' o='36480' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::StringImpl_data' o='36864' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::StringImpl_hashAndFlags' o='37248' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::StringImpl_length' o='37632' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::Structure_classInfo' o='38016' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::Structure_globalObject' o='38400' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::Structure_indexingModeIncludingHistory' o='38784' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::Structure_inlineCapacity' o='39168' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::Structure_outOfLineTypeFlags' o='39552' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::Structure_previousOrRareData' o='39936' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::Structure_prototype' o='40320' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::Structure_structureID' o='40704' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::StructureRareData_cachedKeys' o='41088' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::StructureRareData_cachedGetOwnPropertyNames' o='41472' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::HashMapImpl_capacity' o='41856' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::HashMapImpl_buffer' o='42240' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::HashMapImpl_head' o='42624' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::HashMapBucket_value' o='43008' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::HashMapBucket_key' o='43392' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::HashMapBucket_next' o='43776' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::WeakMapImpl_capacity' o='44160' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::WeakMapImpl_buffer' o='44544' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::WeakMapBucket_value' o='44928' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::WeakMapBucket_key' o='45312' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::Symbol_symbolImpl' o='45696' t='JSC::FTL::AbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSCell_freeListNext' o='46080' t='JSC::FTL::AbstractHeap &amp;'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ArrayStorage_publicLength' o='46144' t='JSC::FTL::AbstractHeap &amp;'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ArrayStorage_vectorLength' o='46208' t='JSC::FTL::AbstractHeap &amp;'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ArrayStorage_vector' o='46272' t='JSC::FTL::IndexedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::CompleteSubspace_allocatorForSizeStep' o='54208' t='JSC::FTL::IndexedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::DirectArguments_storage' o='62144' t='JSC::FTL::IndexedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSLexicalEnvironment_variables' o='70080' t='JSC::FTL::IndexedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSPropertyNameEnumerator_cachedPropertyNamesVectorContents' o='78016' t='JSC::FTL::IndexedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSInternalFieldObjectImpl_internalFields' o='85952' t='JSC::FTL::IndexedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::ScopedArguments_Storage_storage' o='93888' t='JSC::FTL::IndexedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::WriteBarrierBuffer_bufferContents' o='101824' t='JSC::FTL::IndexedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::characters8' o='109760' t='JSC::FTL::IndexedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::characters16' o='117696' t='JSC::FTL::IndexedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::indexedInt32Properties' o='125632' t='JSC::FTL::IndexedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::indexedDoubleProperties' o='133568' t='JSC::FTL::IndexedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::indexedContiguousProperties' o='141504' t='JSC::FTL::IndexedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::scopedArgumentsTableArguments' o='149440' t='JSC::FTL::IndexedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::singleCharacterStrings' o='157376' t='JSC::FTL::IndexedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::structureTable' o='165312' t='JSC::FTL::IndexedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::variables' o='173248' t='JSC::FTL::IndexedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::HasOwnPropertyCache' o='181184' t='JSC::FTL::IndexedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::properties' o='189120' t='JSC::FTL::NumberedAbstractHeap'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSString_value' o='197056' t='JSC::FTL::AbstractHeap &amp;'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::JSWrapperObject_internalValue' o='197120' t='JSC::FTL::AbstractHeap &amp;'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::absolute' o='197184' t='JSC::FTL::AbsoluteAbstractHeap'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository15forIndexingTypeEh'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository12forArrayTypeENS_3DFG5Array4TypeE'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository14decorateMemoryEPKNS0_12AbstractHeapEPNS_2B35ValueE'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository17decorateCCallReadEPKNS0_12AbstractHeapEPNS_2B35ValueE'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository18decorateCCallWriteEPKNS0_12AbstractHeapEPNS_2B35ValueE'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository22decoratePatchpointReadEPKNS0_12AbstractHeapEPNS_2B35ValueE'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository23decoratePatchpointWriteEPKNS0_12AbstractHeapEPNS_2B35ValueE'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository17decorateFenceReadEPKNS0_12AbstractHeapEPNS_2B35ValueE'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository18decorateFenceWriteEPKNS0_12AbstractHeapEPNS_2B35ValueE'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository20decorateFencedAccessEPKNS0_12AbstractHeapEPNS_2B35ValueE'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository36computeRangesAndDecorateInstructionsEv'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::m_heapForMemory' o='205120' t='Vector&lt;JSC::FTL::AbstractHeapRepository::HeapForValue&gt;'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::m_heapForCCallRead' o='205248' t='Vector&lt;JSC::FTL::AbstractHeapRepository::HeapForValue&gt;'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::m_heapForCCallWrite' o='205376' t='Vector&lt;JSC::FTL::AbstractHeapRepository::HeapForValue&gt;'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::m_heapForPatchpointRead' o='205504' t='Vector&lt;JSC::FTL::AbstractHeapRepository::HeapForValue&gt;'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::m_heapForPatchpointWrite' o='205632' t='Vector&lt;JSC::FTL::AbstractHeapRepository::HeapForValue&gt;'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::m_heapForFenceRead' o='205760' t='Vector&lt;JSC::FTL::AbstractHeapRepository::HeapForValue&gt;'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::m_heapForFenceWrite' o='205888' t='Vector&lt;JSC::FTL::AbstractHeapRepository::HeapForValue&gt;'/>
+<mbr r='JSC::FTL::AbstractHeapRepository::m_heapForFencedAccess' o='206016' t='Vector&lt;JSC::FTL::AbstractHeapRepository::HeapForValue&gt;'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepositoryC1Ev'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepositoryD1Ev'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository14decorateMemoryEPKNS0_12AbstractHeapEPNS_2B35ValueE'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository17decorateCCallReadEPKNS0_12AbstractHeapEPNS_2B35ValueE'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository18decorateCCallWriteEPKNS0_12AbstractHeapEPNS_2B35ValueE'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository22decoratePatchpointReadEPKNS0_12AbstractHeapEPNS_2B35ValueE'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository23decoratePatchpointWriteEPKNS0_12AbstractHeapEPNS_2B35ValueE'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository17decorateFenceReadEPKNS0_12AbstractHeapEPNS_2B35ValueE'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository18decorateFenceWriteEPKNS0_12AbstractHeapEPNS_2B35ValueE'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository20decorateFencedAccessEPKNS0_12AbstractHeapEPNS_2B35ValueE'/>
+<fun r='_ZN3JSC3FTL22AbstractHeapRepository36computeRangesAndDecorateInstructionsEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOutput.cpp' l='56' c='_ZN3JSC3FTL6Output10initializeERNS0_22AbstractHeapRepositoryE'/>
+<size>25768</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='20306'/>
+<size>25768</size>

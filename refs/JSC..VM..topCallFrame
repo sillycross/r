@@ -1,0 +1,67 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VM.h' l='708' type='JSC::CallFrame *'/>
+<offset>331456</offset>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VM.h' l='704'>// NOTE: When throwing an exception while rolling back the call frame, this may be equal to
+    // topEntryFrame.
+    // FIXME: This should be a void*, because it might not point to a CallFrame.
+    // https://bugs.webkit.org/show_bug.cgi?id=160441</doc>
+<dec f='WebKit/Source/JavaScriptCore/runtime/VM.h' l='708' type='JSC::CallFrame *'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/FrameTracers.h' l='58' u='r' c='_ZN3JSC18TopCallFrameSetterC1ERNS_2VMEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/FrameTracers.h' l='60' u='w' c='_ZN3JSC18TopCallFrameSetterC1ERNS_2VMEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/FrameTracers.h' l='65' u='w' c='_ZN3JSC18TopCallFrameSetterD1Ev'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/FrameTracers.h' l='91' u='w' c='_ZN3JSC19SlowPathFrameTracerC1ERNS_2VMEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/FrameTracers.h' l='102' u='w' c='_ZN3JSC21NativeCallFrameTracerC1ERNS_2VMEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/FrameTracers.h' l='123' u='w' c='_ZN3JSC35JITOperationPrologueCallFrameTracerC1ERNS_2VMEPNS_9CallFrameE'/>
+<offset>331456</offset>
+<doc f='WebKit/Source/JavaScriptCore/runtime/VM.h' l='704'>// NOTE: When throwing an exception while rolling back the call frame, this may be equal to
+    // topEntryFrame.
+    // FIXME: This should be a void*, because it might not point to a CallFrame.
+    // https://bugs.webkit.org/show_bug.cgi?id=160441</doc>
+<use f='WebKit/Source/JavaScriptCore/tools/VMInspector.cpp' l='422' u='r' c='_ZN3JSC11VMInspector13dumpRegistersEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLink.cpp' l='86' u='a' c='_ZN3JSC3FTL4linkERNS0_5StateE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VMInlines.h' l='80' u='r' c='_ZNK3JSC2VM14topJSCallFrameEv'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/Interpreter.cpp' l='419' u='r' c='_ZN3JSC11Interpreter13getStackTraceEPNS_6JSCellERN3WTF6VectorINS_10StackFrameELm0ENS3_15CrashOnOverflowELm16ENS3_10FastMallocEEEmm'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/StackVisitor.cpp' l='50' u='r' c='_ZN3JSC12StackVisitorC1EPNS_9CallFrameERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/StackVisitor.cpp' l='55' u='r' c='_ZN3JSC12StackVisitorC1EPNS_9CallFrameERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssemblyInstance.cpp' l='182' u='w' c='_ZN3JSC21JSWebAssemblyInstance9tryCreateERNS_2VMEPNS_14JSGlobalObjectERKNS_10IdentifierEPNS_19JSWebAssemblyModuleEPNS_8JSObjectEPNS_9StructureEON3WTF313901825'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='183' u='a' c='_ZN3JSCL11slowPathForERNS_12CCallHelpersERNS_2VMEPFNS_18SlowPathReturnTypeEPNS_9CallFrameEPNS_14JSGlobalObjectEPNS_12CallLinkInfoEE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='425' u='a' c='_ZN3JSCL18nativeForGeneratorERNS_2VMENS_17ThunkFunctionTypeENS_22CodeSpecializationKindENS_14ThunkEntryTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='492' u='a' c='_ZN3JSCL18nativeForGeneratorERNS_2VMENS_17ThunkFunctionTypeENS_22CodeSpecializationKindENS_14ThunkEntryTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/debugger/Debugger.cpp' l='767' u='r' c='_ZN3JSC8Debugger12breakProgramEON3WTF6RefPtrINS_10BreakpointENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<use f='WebKit/Source/JavaScriptCore/debugger/Debugger.cpp' l='777' u='r' c='_ZN3JSC8Debugger12breakProgramEON3WTF6RefPtrINS_10BreakpointENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp' l='2521' u='r' c='JSC::LLInt::llint_throw_stack_overflow_error'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/ScriptCallStackFactory.cpp' l='89' u='r' c='_ZN9Inspector21createScriptCallStackEPN3JSC14JSGlobalObjectEm'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/ScriptCallStackFactory.cpp' l='107' u='r' c='_ZN9Inspector31createScriptCallStackForConsoleEPN3JSC14JSGlobalObjectEm'/>
+<use f='WebKit/Source/JavaScriptCore/API/JSContextRef.cpp' l='325' u='r' c='JSContextCreateBacktrace'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='1651' u='r' c='_ZN3JSC4Heap16stopThePeripheryENS_11GCConductorE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='1798' u='a' c='_ZN3JSC10AccessCase12generateImplERNS_21AccessGenerationStateE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2409' u='r' c='_ZN3JSC9CodeBlock18noticeIncomingCallEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FunctionPrototype.cpp' l='162' u='r' c='_ZN3JSCL15argumentsGetterEPNS_14JSGlobalObjectElNS_12PropertyNameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FunctionPrototype.cpp' l='226' u='r' c='_ZN3JSCL12callerGetterEPNS_14JSGlobalObjectElNS_12PropertyNameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSLock.cpp' l='223' u='r' c='_ZN3JSC6JSLock15willReleaseLockEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SamplingProfiler.cpp' l='391' u='r' c='_ZN3JSC16SamplingProfiler10takeSampleERN3WTF7SecondsE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SamplingProfiler.cpp' l='401' u='r' c='_ZN3JSC16SamplingProfiler10takeSampleERN3WTF7SecondsE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.cpp' l='388' u='w' c='_ZN3JSC2VMC1ENS0_6VMTypeENS_8HeapTypeEPN3WTF7RunLoopEPb'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.cpp' l='1193' u='r' c='_ZN3JSC16logSanitizeStackERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.cpp' l='1197' u='r' c='_ZN3JSC16logSanitizeStackERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.cpp' l='1199' u='r' c='_ZN3JSC16logSanitizeStackERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.cpp' l='1200' u='r' c='_ZN3JSC16logSanitizeStackERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.cpp' l='1412' u='r' c='_ZN3JSC18sanitizeStackForVMERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VMTraps.cpp' l='157' u='r' c='_ZN3JSC7VMTraps27invalidateCodeBlocksOnStackEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VMTraps.cpp' l='369' u='r' c='_ZN3JSC7VMTraps11handleTrapsEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Error.cpp' l='171' u='r' c='_ZN3JSC16getBytecodeIndexERNS_2VMEPNS_9CallFrameEPN3WTF6VectorINS_10StackFrameELm0ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEERS3_RNS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ErrorInstance.cpp' l='135' u='r' c='_ZN3JSC13ErrorInstance14finishCreationERNS_2VMEPNS_14JSGlobalObjectERKN3WTF6StringENS_7JSValueEPFS6_S8_S8_NS_11RuntimeTypeENS0_28SourceTextWhereErrorOccurredEESA_b'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='10606' u='a' c='_ZN3JSC3DFG14SpeculativeJIT20compileCallDOMGetterEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='14947' u='a' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB320compileCallDOMGetterEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='2112' u='a' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='2112' u='a' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='2376' u='r' c='_ZN7WebCore9Internals14parserMetaDataEN3JSC7JSValueE'/>
+<use f='WebKit/Source/WebCore/testing/Internals.cpp' l='3792' u='r' c='_ZNK7WebCore9Internals18isFromCurrentWorldEN3JSC7JSValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FrameTracers.h' l='58' u='r' c='_ZN3JSC18TopCallFrameSetterC1ERNS_2VMEPNS_9CallFrameE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FrameTracers.h' l='60' u='w' c='_ZN3JSC18TopCallFrameSetterC1ERNS_2VMEPNS_9CallFrameE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FrameTracers.h' l='65' u='w' c='_ZN3JSC18TopCallFrameSetterD1Ev'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FrameTracers.h' l='91' u='w' c='_ZN3JSC19SlowPathFrameTracerC1ERNS_2VMEPNS_9CallFrameE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FrameTracers.h' l='102' u='w' c='_ZN3JSC21NativeCallFrameTracerC1ERNS_2VMEPNS_9CallFrameE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/FrameTracers.h' l='123' u='w' c='_ZN3JSC35JITOperationPrologueCallFrameTracerC1ERNS_2VMEPNS_9CallFrameE'/>
+<use f='WebKit/Source/WebCore/bindings/js/CommonVM.cpp' l='84' u='r' c='_ZN7WebCore24lexicalFrameFromCommonVMEv'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSDOMWindowBase.cpp' l='295' u='r' c='_ZN7WebCore18incumbentDOMWindowERN3JSC14JSGlobalObjectE'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='2732' u='r' c='_ZNK7WebCore8Document42shouldBypassMainWorldContentSecurityPolicyEv'/>

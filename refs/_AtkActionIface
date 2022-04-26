@@ -1,0 +1,27 @@
+<use f='include/atk-1.0/atk/atkaction.h' l='44'/>
+<def f='include/atk-1.0/atk/atkaction.h' l='62' ll='82'/>
+<size>72</size>
+<doc f='include/atk-1.0/atk/atkaction.h' l='46'>/**
+ * AtkActionIface:
+ * @do_action:
+ * @get_n_actions:
+ * @get_description:
+ * @get_name:
+ * @get_keybinding:
+ * @set_description:
+ * @get_localized_name:
+ *
+ * The #AtkAction interface should be supported by any object that can
+ * perform one or more actions. The interface provides the standard
+ * mechanism for an assistive technology to determine what those actions
+ * are as well as tell the object to perform them. Any object that can
+ * be manipulated should support this interface.
+ */</doc>
+<mbr r='_AtkActionIface::parent' o='0' t='GTypeInterface'/>
+<mbr r='_AtkActionIface::do_action' o='128' t='gboolean (*)(AtkAction *, gint)'/>
+<mbr r='_AtkActionIface::get_n_actions' o='192' t='gint (*)(AtkAction *)'/>
+<mbr r='_AtkActionIface::get_description' o='256' t='const gchar *(*)(AtkAction *, gint)'/>
+<mbr r='_AtkActionIface::get_name' o='320' t='const gchar *(*)(AtkAction *, gint)'/>
+<mbr r='_AtkActionIface::get_keybinding' o='384' t='const gchar *(*)(AtkAction *, gint)'/>
+<mbr r='_AtkActionIface::set_description' o='448' t='gboolean (*)(AtkAction *, gint, const gchar *)'/>
+<mbr r='_AtkActionIface::get_localized_name' o='512' t='const gchar *(*)(AtkAction *, gint)'/>

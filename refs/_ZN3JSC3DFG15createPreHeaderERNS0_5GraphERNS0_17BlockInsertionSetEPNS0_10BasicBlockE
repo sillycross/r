@@ -1,0 +1,14 @@
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGLoopPreHeaderCreationPhase.h' l='51' type='JSC::DFG::BasicBlock * JSC::DFG::createPreHeader(JSC::DFG::Graph &amp; , JSC::DFG::BlockInsertionSet &amp; , JSC::DFG::BasicBlock * )'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSREntrypointCreationPhase.cpp' l='140' u='c' c='_ZN3JSC3DFG26OSREntrypointCreationPhase3runEv'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGLoopPreHeaderCreationPhase.h' l='41'>// Creates a new basic block (a pre-header) that jumps to the given block. All
+// predecessors of the given block that aren&apos;t dominated by it are rerouted to
+// the pre-header.
+//
+// This function is used internally and it&apos;s used in a surgical fashion by
+// OSREntrypointCreationPhase.
+//
+// Note that executing this function requires having an intact dominators
+// analysis. You should run that analysis before doing damage to the CFG, even
+// if said damage is done before you call this.</doc>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGLoopPreHeaderCreationPhase.cpp' l='41' ll='123' type='JSC::DFG::BasicBlock * JSC::DFG::createPreHeader(JSC::DFG::Graph &amp; graph, JSC::DFG::BlockInsertionSet &amp; insertionSet, JSC::DFG::BasicBlock * block)'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGLoopPreHeaderCreationPhase.cpp' l='177' u='c' c='_ZN3JSC3DFG26LoopPreHeaderCreationPhase3runEv'/>

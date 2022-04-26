@@ -1,0 +1,10 @@
+<use f='WebKit/Source/WebCore/rendering/InlineIterator.h' l='62' u='w' c='_ZN7WebCore14InlineIteratorC1EPNS_13RenderElementEPNS_12RenderObjectEj'/>
+<use f='WebKit/Source/WebCore/rendering/InlineIterator.h' l='91' u='r' c='_ZNK7WebCore14InlineIterator25refersToEndOfPreviousNodeEv'/>
+<dec f='WebKit/Source/WebCore/rendering/InlineIterator.h' l='129' type='bool'/>
+<use f='WebKit/Source/WebCore/rendering/InlineIterator.h' l='359' u='w' c='_ZN7WebCore14InlineIterator28setRefersToEndOfPreviousNodeEv'/>
+<offset>224</offset>
+<doc f='WebKit/Source/WebCore/rendering/InlineIterator.h' l='124'>// There are a couple places where we want to decrement an InlineIterator.
+    // Usually this take the form of decrementing m_pos; however, m_pos might be 0.
+    // However, we shouldn&apos;t ever need to decrement an InlineIterator more than
+    // once, so rather than implementing a decrement() function which traverses
+    // nodes, we can simply keep track of this state and handle it.</doc>

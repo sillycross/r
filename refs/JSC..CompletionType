@@ -1,0 +1,17 @@
+<def f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='172' ll='177'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='179' c='_ZN3JSC22bytecodeOffsetToJumpIDEj'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='183' c='_ZN3JSC22bytecodeOffsetToJumpIDEj'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='187' c='_ZN3JSC11FinallyJumpC1ENS_14CompletionTypeEiRNS_12GenericLabelINS_17JSGeneratorTraitsEEE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='193'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='215' c='_ZN3JSC14FinallyContext12registerJumpENS_14CompletionTypeEiRNS_12GenericLabelINS_17JSGeneratorTraitsEEE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='1044' c='_ZN3JSC17BytecodeGenerator8emitLoadEPNS_10RegisterIDENS_14CompletionTypeE'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='163'>// https://tc39.github.io/ecma262/#sec-completion-record-specification-type
+    //
+    // For the Break and Continue cases, instead of using the Break and Continue enum values
+    // below, we use the unique jumpID of the break and continue statement as the encoding
+    // for the CompletionType value. emitFinallyCompletion() uses this jumpID value later
+    // to determine the appropriate jump target to jump to after executing the relevant finally
+    // blocks. The jumpID is computed as:
+    //     jumpID = bytecodeOffset (of the break/continue node) + CompletionType::NumberOfTypes.
+    // Hence, there won&apos;t be any collision between jumpIDs and CompletionType enums.</doc>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='233' c='_ZN3JSC17BytecodeGenerator8generateEv'/>

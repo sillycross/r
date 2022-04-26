@@ -1,0 +1,12 @@
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGOSREntrypointCreationPhase.h' l='44' type='bool JSC::DFG::performOSREntrypointCreation(JSC::DFG::Graph &amp; )'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGOSREntrypointCreationPhase.cpp' l='157' ll='160' type='bool JSC::DFG::performOSREntrypointCreation(JSC::DFG::Graph &amp; graph)'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGOSREntrypointCreationPhase.h' l='34'>// This phase is only for compilation pipelines that go through SSA, and that
+// do a specialized OSR entry compile. Currently that means FTL.
+//
+// Creates an OSR entrypoint that establishes all argument and local variable
+// values. This entrypoint only works for the Plan::osrEntryBytecodeIndex.
+// Unlike ordinary OSR entry into the DFG, this forces all variables slurped
+// in through OSR entry to appear TOP to the CFA. Hence this phase must be run
+// early - before doing any CFA. But this also does some additional hacks that
+// require this to run before unification.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPlan.cpp' l='247' u='c' c='_ZN3JSC3DFG4Plan19compileInThreadImplEv'/>

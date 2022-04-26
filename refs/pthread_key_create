@@ -1,0 +1,15 @@
+<dec f='include/pthread.h' l='1123' type='int pthread_key_create(pthread_key_t * __key, void (*)(void *) __destr_function)'/>
+<use f='include/x86_64-linux-gnu/c++/9/bits/gthr-default.h' l='132' c='__gthrw_pthread_key_create'/>
+<use f='include/x86_64-linux-gnu/c++/9/bits/gthr-default.h' l='239' c='__gthrw___pthread_key_create'/>
+<doc f='include/pthread.h' l='1117'>/* Create a key value identifying a location in the thread-specific
+   data area.  Each thread maintains a distinct thread-specific data
+   area.  DESTR_FUNCTION, if non-NULL, is called with the value
+   associated to that key when the key is destroyed.
+   DESTR_FUNCTION is not called if the value associated is NULL when
+   the key is destroyed.  */</doc>
+<use f='WebKit/WTF/Headers/wtf/ThreadingPrimitives.h' l='123' u='c' c='_ZN3WTF23threadSpecificKeyCreateEPjPFvPvE'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/PerThread.h' l='111' u='c' c='_ZN7bmalloc16PerThreadStorage4initEPvPFvS1_E'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/common/tls.cpp' l='61' u='c' c='_Z14CreateTLSIndexv'/>
+<use f='WebKit/Source/WTF/wtf/ThreadingPrimitives.h' l='123' u='c' c='_ZN3WTF23threadSpecificKeyCreateEPjPFvPvE'/>
+<use f='WebKit/Source/bmalloc/bmalloc/PerThread.h' l='111' u='c' c='_ZN7bmalloc16PerThreadStorage4initEPvPFvS1_E'/>
+<use f='WebKit/Source/bmalloc/bmalloc/IsoTLS.cpp' l='69' u='c' c='_ZN7bmalloc6IsoTLS13ensureEntriesEj'/>

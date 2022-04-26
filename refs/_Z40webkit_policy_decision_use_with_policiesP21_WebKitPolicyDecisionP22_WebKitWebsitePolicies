@@ -1,0 +1,16 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitPolicyDecision.cpp' l='105' ll='116' type='void webkit_policy_decision_use_with_policies(WebKitPolicyDecision * decision, WebKitWebsitePolicies * policies)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitPolicyDecision.cpp' l='90'>/**
+ * webkit_policy_decision_use_with_policies:
+ * @decision: a #WebKitPolicyDecision
+ * @policies: a #WebKitWebsitePolicies
+ *
+ * Accept the navigation action which triggered this decision, and
+ * continue with @policies affecting all subsequent loads of resources
+ * in the origin associated with the accepted navigation action.
+ *
+ * For example, a navigation decision to a video sharing website may
+ * be accepted under the priviso no movies are allowed to autoplay. The
+ * autoplay policy in this case would be set in the @policies.
+ *
+ * Since: 2.30
+ */</doc>

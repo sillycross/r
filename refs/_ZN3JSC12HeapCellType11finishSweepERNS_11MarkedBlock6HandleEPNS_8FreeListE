@@ -1,0 +1,11 @@
+<dec f='WebKit/Source/JavaScriptCore/heap/HeapCellType.h' l='43' type='void JSC::HeapCellType::finishSweep(MarkedBlock::Handle &amp; , JSC::FreeList * )'/>
+<doc f='WebKit/Source/JavaScriptCore/heap/HeapCellType.h' l='41'>// The purpose of overriding this is to specialize the sweep for your destructors. This won&apos;t
+    // be called for no-destructor blocks. This must call MarkedBlock::finishSweepKnowingSubspace.</doc>
+<def f='WebKit/Source/JavaScriptCore/heap/HeapCellType.cpp' l='59' ll='62' type='void JSC::HeapCellType::finishSweep(MarkedBlock::Handle &amp; block, JSC::FreeList * freeList)'/>
+<ovr f='WebKit/Source/JavaScriptCore/heap/IsoHeapCellType.cpp' l='42' c='_ZN3JSC15IsoHeapCellType11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Subspace.cpp' l='60' u='c' c='_ZN3JSC8Subspace11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<ovr f='WebKit/Source/JavaScriptCore/runtime/JSDestructibleObjectHeapCellType.cpp' l='51' c='_ZN3JSC32JSDestructibleObjectHeapCellType11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<ovr f='WebKit/Source/JavaScriptCore/heap/IsoInlinedHeapCellType.h' l='48' c='_ZN3JSC22IsoInlinedHeapCellType11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapCellType.h' l='43' type='void JSC::HeapCellType::finishSweep(MarkedBlock::Handle &amp; , JSC::FreeList * )'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapCellType.h' l='41'>// The purpose of overriding this is to specialize the sweep for your destructors. This won&apos;t
+    // be called for no-destructor blocks. This must call MarkedBlock::finishSweepKnowingSubspace.</doc>

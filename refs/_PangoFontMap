@@ -1,0 +1,19 @@
+<use f='include/pango-1.0/pango/pango-types.h' l='38'/>
+<def f='include/pango-1.0/pango/pango-fontmap.h' l='72' ll='75'/>
+<size>24</size>
+<doc f='include/pango-1.0/pango/pango-fontmap.h' l='57'>/**
+ * PangoFontMap:
+ *
+ * The #PangoFontMap represents the set of fonts available for a
+ * particular rendering system. This is a virtual object with
+ * implementations being specific to particular rendering systems.  To
+ * create an implementation of a #PangoFontMap, the rendering-system
+ * specific code should allocate a larger structure that contains a nested
+ * #PangoFontMap, fill in the &lt;structfield&gt;klass&lt;/structfield&gt; member of the nested #PangoFontMap with a
+ * pointer to a appropriate #PangoFontMapClass, then call
+ * pango_font_map_init() on the structure.
+ *
+ * The #PangoFontMap structure contains one member which the implementation
+ * fills in.
+ */</doc>
+<mbr r='_PangoFontMap::parent_instance' o='0' t='GObject'/>

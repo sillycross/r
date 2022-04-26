@@ -1,0 +1,23 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/BytecodeConventions.h' l='32' type='const int'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/BytecodeConventions.h' l='36' u='r'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VirtualRegister.h' l='53' u='r'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/BytecodeConventions.h' l='28'>// Register numbers used in bytecode operations have different meaning according to their ranges:
+//      0x80000000-0xFFFFFFFF  Negative indices from the CallFrame pointer are entries in the call frame.
+//      0x00000000-0x3FFFFFFF  Forwards indices from the CallFrame pointer are local vars and temporaries with the function&apos;s callframe.
+//      0x40000000-0x7FFFFFFF  Positive indices from 0x40000000 specify entries in the constant pool on the CodeBlock.</doc>
+<def f='WebKit/Source/JavaScriptCore/bytecode/BytecodeConventions.h' l='32' type='const int'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeConventions.h' l='36' u='r'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/VirtualRegister.h' l='53' u='r'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTableOrScopeDepth.h' l='40' u='r' c='_ZN3JSC23SymbolTableOrScopeDepth11symbolTableENS_15VirtualRegisterE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTableOrScopeDepth.h' l='55' u='r' c='_ZNK3JSC23SymbolTableOrScopeDepth11symbolTableEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Fits.h' l='147' u='r' c='_ZN3JSC4FitsINS_15VirtualRegisterEXT_ENSt9enable_ifIXneT_LNS_10OpcodeSizeE4EESt17integral_constantIbLb1EEE4typeEE7convertENS_10TypeBySizeIXT_EE10signedTypeE'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/BytecodeConventions.h' l='28'>// Register numbers used in bytecode operations have different meaning according to their ranges:
+//      0x80000000-0xFFFFFFFF  Negative indices from the CallFrame pointer are entries in the call frame.
+//      0x00000000-0x3FFFFFFF  Forwards indices from the CallFrame pointer are local vars and temporaries with the function&apos;s callframe.
+//      0x40000000-0x7FFFFFFF  Positive indices from 0x40000000 specify entries in the constant pool on the CodeBlock.</doc>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntGenerator.cpp' l='296' u='r' c='_ZN3JSC4Wasm14LLIntGenerator14jsNullConstantEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntGenerator.cpp' l='307' u='r' c='_ZN3JSC4Wasm14LLIntGenerator12zeroConstantEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntGenerator.cpp' l='811' u='r' c='_ZN3JSC4Wasm14LLIntGenerator11addConstantENS0_4TypeEl'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='286' u='r' c='_ZN3JSC17BytecodeGenerator8generateEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='1849' u='r' c='_ZN3JSC17BytecodeGenerator16addConstantIndexEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='16' u='r' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>

@@ -1,0 +1,14 @@
+<dec f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='125' type='bool sh::TParseContext::checkIsNotReserved(const sh::TSourceLoc &amp; line, const sh::ImmutableString &amp; identifier)'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.h' l='123'>// Check functions - the ones that return bool return false if an error was generated.</doc>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='707' ll='737' type='bool sh::TParseContext::checkIsNotReserved(const sh::TSourceLoc &amp; line, const sh::ImmutableString &amp; identifier)'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='1278' u='c' c='_ZN2sh13TParseContext15declareVariableERKNS_10TSourceLocERKNS_15ImmutableStringEPKNS_5TTypeEPPNS_9TVariableE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='3394' u='c' c='_ZN2sh13TParseContext31createPrototypeNodeFromFunctionERKNS_9TFunctionERKNS_10TSourceLocEb'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='3714' u='c' c='_ZN2sh13TParseContext24parseParameterDeclaratorEPNS_5TTypeERKNS_15ImmutableStringERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='3836' u='c' c='_ZN2sh13TParseContext17addInterfaceBlockERKNS_21TTypeQualifierBuilderERKNS_10TSourceLocERKNS_15ImmutableStringEPNS_7TVectorIPNS_6TFieldEEES9_S6_PNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='4060' u='c' c='_ZN2sh13TParseContext17addInterfaceBlockERKNS_21TTypeQualifierBuilderERKNS_10TSourceLocERKNS_15ImmutableStringEPNS_7TVectorIPNS_6TFieldEEES9_S6_PNS_12TIntermTypedES6_'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='4956' u='c' c='_ZN2sh13TParseContext21parseStructDeclaratorERKNS_15ImmutableStringERKNS_10TSourceLocE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='4964' u='c' c='_ZN2sh13TParseContext26parseStructArrayDeclaratorERKNS_15ImmutableStringERKNS_10TSourceLocEPKNS_7TVectorIjEE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='5077' u='c' c='_ZN2sh13TParseContext12addStructureERKNS_10TSourceLocES3_RKNS_15ImmutableStringEPNS_7TVectorIPNS_6TFieldEEE'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ParseContext.cpp' l='704'>// ESSL 3.00.5 sections 3.8 and 3.9.
+// If it starts &quot;gl_&quot; or contains two consecutive underscores, it&apos;s reserved.
+// Also checks for &quot;webgl_&quot; and &quot;_webgl_&quot; reserved identifiers if parsing a webgl shader.</doc>

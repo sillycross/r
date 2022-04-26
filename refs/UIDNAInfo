@@ -1,0 +1,19 @@
+<def f='include/unicode/uidna.h' l='181' ll='199'/>
+<use f='include/unicode/uidna.h' l='181'/>
+<size>16</size>
+<doc f='include/unicode/uidna.h' l='171'>/**
+ * Output container for IDNA processing errors.
+ * Initialize with UIDNA_INFO_INITIALIZER:
+ * \code
+ * UIDNAInfo info = UIDNA_INFO_INITIALIZER;
+ * int32_t length = uidna_nameToASCII(..., &amp;info, &amp;errorCode);
+ * if(U_SUCCESS(errorCode) &amp;&amp; info.errors!=0) { ... }
+ * \endcode
+ * @stable ICU 4.6
+ */</doc>
+<mbr r='UIDNAInfo::size' o='0' t='int16_t'/>
+<mbr r='UIDNAInfo::isTransitionalDifferent' o='16' t='UBool'/>
+<mbr r='UIDNAInfo::reservedB3' o='24' t='UBool'/>
+<mbr r='UIDNAInfo::errors' o='32' t='uint32_t'/>
+<mbr r='UIDNAInfo::reservedI2' o='64' t='int32_t'/>
+<mbr r='UIDNAInfo::reservedI3' o='96' t='int32_t'/>

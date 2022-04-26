@@ -1,0 +1,15 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Butterfly.h' l='231' type='static JSC::Butterfly * JSC::Butterfly::createOrGrowPropertyStorage(JSC::Butterfly * , JSC::VM &amp; , JSC::JSObject * intendedOwner, JSC::Structure * , size_t oldPropertyCapacity, size_t newPropertyCapacity)'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Butterfly.h' l='226'>// The butterfly reallocation methods perform the reallocation itself but do not change any
+    // of the meta-data to reflect that the reallocation occurred. Note that this set of
+    // methods is not exhaustive and is not intended to encapsulate all possible allocation
+    // modes of butterflies - there are code paths that allocate butterflies by calling
+    // directly into Heap::tryAllocateStorage.</doc>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ButterflyInlines.h' l='131' ll='150' type='static JSC::Butterfly * JSC::Butterfly::createOrGrowPropertyStorage(JSC::Butterfly * oldButterfly, JSC::VM &amp; vm, JSC::JSObject * intendedOwner, JSC::Structure * structure, size_t oldPropertyCapacity, size_t newPropertyCapacity)'/>
+<dec f='WebKit/Source/JavaScriptCore/runtime/Butterfly.h' l='231' type='static JSC::Butterfly * JSC::Butterfly::createOrGrowPropertyStorage(JSC::Butterfly * , JSC::VM &amp; , JSC::JSObject * intendedOwner, JSC::Structure * , size_t oldPropertyCapacity, size_t newPropertyCapacity)'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/ButterflyInlines.h' l='131' ll='150' type='static JSC::Butterfly * JSC::Butterfly::createOrGrowPropertyStorage(JSC::Butterfly * oldButterfly, JSC::VM &amp; vm, JSC::JSObject * intendedOwner, JSC::Structure * structure, size_t oldPropertyCapacity, size_t newPropertyCapacity)'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/Butterfly.h' l='226'>// The butterfly reallocation methods perform the reallocation itself but do not change any
+    // of the meta-data to reflect that the reallocation occurred. Note that this set of
+    // methods is not exhaustive and is not intended to encapsulate all possible allocation
+    // modes of butterflies - there are code paths that allocate butterflies by calling
+    // directly into Heap::tryAllocateStorage.</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='3600' u='c' c='_ZN3JSC8JSObject28allocateMoreOutOfLineStorageERNS_2VMEmm'/>

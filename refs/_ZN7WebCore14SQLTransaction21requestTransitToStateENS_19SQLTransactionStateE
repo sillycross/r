@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/WebCore/Modules/webdatabase/SQLTransaction.h' l='75' type='void WebCore::SQLTransaction::requestTransitToState(WebCore::SQLTransactionState )'/>
+<doc f='WebKit/Source/WebCore/Modules/webdatabase/SQLTransaction.h' l='74'>// APIs called from the backend published via SQLTransaction:</doc>
+<def f='WebKit/Source/WebCore/Modules/webdatabase/SQLTransaction.cpp' l='177' ll='182' type='void WebCore::SQLTransaction::requestTransitToState(WebCore::SQLTransactionState nextState)'/>
+<use f='WebKit/Source/WebCore/Modules/webdatabase/SQLTransactionBackend.cpp' l='460' u='c' c='_ZN7WebCore21SQLTransactionBackend34computeNextStateAndCleanupIfNeededEv'/>
+<doc f='WebKit/Source/WebCore/Modules/webdatabase/SQLTransaction.cpp' l='174'>// requestTransitToState() can be called from the backend. Hence, it should
+// NOT be modifying SQLTransactionBackend in general. The only safe field to
+// modify is m_requestedState which is meant for this purpose.</doc>

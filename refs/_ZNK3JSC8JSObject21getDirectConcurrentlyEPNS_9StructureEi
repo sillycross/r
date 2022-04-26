@@ -1,0 +1,16 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='798' type='JSC::JSValue JSC::JSObject::getDirectConcurrently(JSC::Structure * expectedStructure, JSC::PropertyOffset ) const'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='1377' ll='1383' type='JSC::JSValue JSC::JSObject::getDirectConcurrently(JSC::Structure * structure, JSC::PropertyOffset offset) const'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='1373'>// Normally, we never shrink the butterfly so if we know an offset is valid for some
+// past structure then it should be valid for any new structure. However, we may sometimes
+// shrink the butterfly when we are holding the Structure&apos;s ConcurrentJSLock, such as when we
+// flatten an object.</doc>
+<dec f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='798' type='JSC::JSValue JSC::JSObject::getDirectConcurrently(JSC::Structure * expectedStructure, JSC::PropertyOffset ) const'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='1377' ll='1383' type='JSC::JSValue JSC::JSObject::getDirectConcurrently(JSC::Structure * structure, JSC::PropertyOffset offset) const'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='1373'>// Normally, we never shrink the butterfly so if we know an offset is valid for some
+// past structure then it should be valid for any new structure. However, we may sometimes
+// shrink the butterfly when we are holding the Structure&apos;s ConcurrentJSLock, such as when we
+// flatten an object.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1311' u='c' c='_ZN3JSC3DFG5Graph22tryGetConstantPropertyENS_7JSValueERKNS0_22RegisteredStructureSetEi'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PropertyCondition.cpp' l='244' u='c' c='_ZNK3JSC17PropertyCondition44isStillValidAssumingImpurePropertyWatchpointEPNS_9StructureEPNS_8JSObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PropertyCondition.cpp' l='410' u='c' c='_ZNK3JSC17PropertyCondition38attemptToMakeEquivalenceWithoutBarrierERNS_2VMEPNS_8JSObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ObjectPropertyConditionSet.cpp' l='241' u='c' c='_ZN3JSC12_GLOBAL__N_117generateConditionERNS_2VMEPNS_6JSCellEPNS_8JSObjectEPN3WTF17UniquedStringImplENS_17PropertyCondition4KindE'/>

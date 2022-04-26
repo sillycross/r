@@ -1,0 +1,23 @@
+<def f='WebKit/Source/WebCore/xml/XMLHttpRequestProgressEventThrottle.h' l='45' ll='75'/>
+<use f='WebKit/Source/WebCore/xml/XMLHttpRequest.h' l='246'/>
+<size>136</size>
+<doc f='WebKit/Source/WebCore/xml/XMLHttpRequestProgressEventThrottle.h' l='43'>// This implements the XHR2 progress event dispatching: &quot;dispatch a progress event called progress
+// about every 50ms or for every byte received, whichever is least frequent&quot;.</doc>
+<fun r='_ZN7WebCore35XMLHttpRequestProgressEventThrottleC1ERNS_14XMLHttpRequestE'/>
+<fun r='_ZN7WebCore35XMLHttpRequestProgressEventThrottleD1Ev'/>
+<fun r='_ZN7WebCore35XMLHttpRequestProgressEventThrottle14updateProgressEbbyy'/>
+<fun r='_ZN7WebCore35XMLHttpRequestProgressEventThrottle29dispatchReadyStateChangeEventERNS_5EventENS_19ProgressEventActionE'/>
+<fun r='_ZN7WebCore35XMLHttpRequestProgressEventThrottle21dispatchProgressEventERKN3WTF10AtomStringE'/>
+<fun r='_ZN7WebCore35XMLHttpRequestProgressEventThrottle7suspendEv'/>
+<fun r='_ZN7WebCore35XMLHttpRequestProgressEventThrottle6resumeEv'/>
+<smbr r='WebCore::XMLHttpRequestProgressEventThrottle::minimumProgressEventDispatchingInterval' t='const WTF::Seconds'/>
+<fun r='_ZN7WebCore35XMLHttpRequestProgressEventThrottle40dispatchThrottledProgressEventTimerFiredEv'/>
+<fun r='_ZN7WebCore35XMLHttpRequestProgressEventThrottle18flushProgressEventEv'/>
+<fun r='_ZN7WebCore35XMLHttpRequestProgressEventThrottle25dispatchEventWhenPossibleERNS_5EventE'/>
+<mbr r='WebCore::XMLHttpRequestProgressEventThrottle::m_target' o='64' t='WebCore::XMLHttpRequest &amp;'/>
+<mbr r='WebCore::XMLHttpRequestProgressEventThrottle::m_loaded' o='128' t='unsigned long long'/>
+<mbr r='WebCore::XMLHttpRequestProgressEventThrottle::m_total' o='192' t='unsigned long long'/>
+<mbr r='WebCore::XMLHttpRequestProgressEventThrottle::m_dispatchThrottledProgressEventTimer' o='256' t='WebCore::SuspendableTimer'/>
+<mbr r='WebCore::XMLHttpRequestProgressEventThrottle::m_hasPendingThrottledProgressEvent' o='1024' t='bool'/>
+<mbr r='WebCore::XMLHttpRequestProgressEventThrottle::m_lengthComputable' o='1032' t='bool'/>
+<mbr r='WebCore::XMLHttpRequestProgressEventThrottle::m_shouldDeferEventsDueToSuspension' o='1040' t='bool'/>

@@ -1,0 +1,72 @@
+<def f='WebKit/WTF/Headers/wtf/WordLock.h' l='48' ll='101'/>
+<use f='WebKit/WTF/Headers/wtf/WordLock.h' l='49' c='_ZN3WTF8WordLockC1ERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/WordLock.h' l='49' c='_ZN3WTF8WordLockaSERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/WordLock.h' l='49' c='_ZN3WTF8WordLockaSERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/WordLock.h' l='103'/>
+<use f='WebKit/WTF/Headers/wtf/Threading.h' l='345'/>
+<size>8</size>
+<doc f='WebKit/WTF/Headers/wtf/WordLock.h' l='39'>// A WordLock is a fully adaptive mutex that uses sizeof(void*) storage. It has a fast path that is
+// similar to a spinlock, and a slow path that is similar to std::mutex. In most cases, you should use
+// Lock instead. WordLock sits lower in the stack and is used to implement Lock, so Lock is the main
+// client of WordLock.
+
+// NOTE: This is also a great lock to use if you are very low in the stack. For example,
+// PrintStream uses this so that ParkingLot and Lock can use PrintStream. This means that if you
+// try to use dataLog to debug this code, you will have a bad time.</doc>
+<fun r='_ZN3WTF8WordLockC1ERKS0_'/>
+<fun r='_ZN3WTF8WordLockC1Ev'/>
+<fun r='_ZN3WTF8WordLock4lockEv'/>
+<fun r='_ZN3WTF8WordLock6unlockEv'/>
+<fun r='_ZNK3WTF8WordLock6isHeldEv'/>
+<fun r='_ZNK3WTF8WordLock8isLockedEv'/>
+<smbr r='WTF::WordLock::isLockedBit' t='const uintptr_t'/>
+<smbr r='WTF::WordLock::isQueueLockedBit' t='const uintptr_t'/>
+<smbr r='WTF::WordLock::queueHeadMask' t='const uintptr_t'/>
+<fun r='_ZN3WTF8WordLock8lockSlowEv'/>
+<fun r='_ZN3WTF8WordLock10unlockSlowEv'/>
+<fun r='_ZNK3WTF8WordLock12isFullyResetEv'/>
+<mbr r='WTF::WordLock::m_word' o='0' t='Atomic&lt;uintptr_t&gt;'/>
+<use f='WebKit/WTF/Headers/wtf/ThreadGroup.h' l='54' c='_ZN3WTF11ThreadGroup7getLockEv'/>
+<use f='WebKit/WTF/Headers/wtf/ThreadGroup.h' l='67'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MachineStackMarker.h' l='53' c='_ZN3JSC14MachineThreads7getLockEv'/>
+<size>8</size>
+<def f='WebKit/Source/WTF/wtf/WordLock.h' l='48' ll='101'/>
+<use f='WebKit/Source/WTF/wtf/WordLock.h' l='49' c='_ZN3WTF8WordLockC1ERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/WordLock.h' l='49' c='_ZN3WTF8WordLockaSERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/WordLock.h' l='49' c='_ZN3WTF8WordLockaSERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/WordLock.h' l='103'/>
+<use f='WebKit/Source/WTF/wtf/Threading.h' l='345'/>
+<size>8</size>
+<doc f='WebKit/Source/WTF/wtf/WordLock.h' l='39'>// A WordLock is a fully adaptive mutex that uses sizeof(void*) storage. It has a fast path that is
+// similar to a spinlock, and a slow path that is similar to std::mutex. In most cases, you should use
+// Lock instead. WordLock sits lower in the stack and is used to implement Lock, so Lock is the main
+// client of WordLock.
+
+// NOTE: This is also a great lock to use if you are very low in the stack. For example,
+// PrintStream uses this so that ParkingLot and Lock can use PrintStream. This means that if you
+// try to use dataLog to debug this code, you will have a bad time.</doc>
+<fun r='_ZN3WTF8WordLockC1ERKS0_'/>
+<fun r='_ZN3WTF8WordLockC1Ev'/>
+<fun r='_ZN3WTF8WordLock4lockEv'/>
+<fun r='_ZN3WTF8WordLock6unlockEv'/>
+<fun r='_ZNK3WTF8WordLock6isHeldEv'/>
+<fun r='_ZNK3WTF8WordLock8isLockedEv'/>
+<smbr r='WTF::WordLock::isLockedBit' t='const uintptr_t'/>
+<smbr r='WTF::WordLock::isQueueLockedBit' t='const uintptr_t'/>
+<smbr r='WTF::WordLock::queueHeadMask' t='const uintptr_t'/>
+<fun r='_ZN3WTF8WordLock8lockSlowEv'/>
+<fun r='_ZN3WTF8WordLock10unlockSlowEv'/>
+<fun r='_ZNK3WTF8WordLock12isFullyResetEv'/>
+<mbr r='WTF::WordLock::m_word' o='0' t='Atomic&lt;uintptr_t&gt;'/>
+<use f='WebKit/Source/WTF/wtf/LockedPrintStream.h' l='50'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/StackShotProfiler.h' l='76'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/ParkingLot.cpp' l='191'/>
+<use f='WebKit/Source/WTF/wtf/ParkingLot.cpp' l='206'/>
+<size>8</size>
+<use f='WebKit/Source/WTF/wtf/ThreadGroup.h' l='54' c='_ZN3WTF11ThreadGroup7getLockEv'/>
+<use f='WebKit/Source/WTF/wtf/ThreadGroup.h' l='67'/>
+<size>8</size>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MachineStackMarker.h' l='53' c='_ZN3JSC14MachineThreads7getLockEv'/>
+<size>8</size>

@@ -1,0 +1,34 @@
+<dec f='include/xcb/xproto.h' l='11431' type='xcb_void_cookie_t xcb_create_glyph_cursor_checked(xcb_connection_t * c, xcb_cursor_t cid, xcb_font_t source_font, xcb_font_t mask_font, uint16_t source_char, uint16_t mask_char, uint16_t fore_red, uint16_t fore_green, uint16_t fore_blue, uint16_t back_red, uint16_t back_green, uint16_t back_blue)'/>
+<doc f='include/xcb/xproto.h' l='11397'>/**
+ * @brief create cursor
+ *
+ * @param c The connection
+ * @param cid The ID with which you will refer to the cursor, created by `xcb_generate_id`.
+ * @param source_font In which font to look for the cursor glyph.
+ * @param mask_font In which font to look for the mask glyph.
+ * @param source_char The glyph of \a source_font to use.
+ * @param mask_char The glyph of \a mask_font to use as a mask: Pixels which are set to 1 define
+ * which source pixels are displayed. All pixels which are set to 0 are not
+ * displayed.
+ * @param fore_red The red value of the foreground color.
+ * @param fore_green The green value of the foreground color.
+ * @param fore_blue The blue value of the foreground color.
+ * @param back_red The red value of the background color.
+ * @param back_green The green value of the background color.
+ * @param back_blue The blue value of the background color.
+ * @return A cookie
+ *
+ * Creates a cursor from a font glyph. X provides a set of standard cursor shapes
+ * in a special font named cursor. Applications are encouraged to use this
+ * interface for their cursors because the font can be customized for the
+ * individual display type.
+ * 
+ * All pixels which are set to 1 in the source will use the foreground color (as
+ * specified by \a fore_red, \a fore_green and \a fore_blue). All pixels set to 0
+ * will use the background color (as specified by \a back_red, \a back_green and
+ * \a back_blue).
+ *
+ * This form can be used only if the request will not cause
+ * a reply to be generated. Any returned error will be
+ * saved for handling by xcb_request_check().
+ */</doc>

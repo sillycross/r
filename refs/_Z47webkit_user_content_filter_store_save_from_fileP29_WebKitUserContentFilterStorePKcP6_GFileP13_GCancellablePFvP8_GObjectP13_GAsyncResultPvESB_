@@ -1,0 +1,19 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUserContentFilterStore.cpp' l='278' ll='317' type='void webkit_user_content_filter_store_save_from_file(WebKitUserContentFilterStore * store, const gchar * identifier, GFile * file, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer userData)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUserContentFilterStore.cpp' l='260'>/**
+ * webkit_user_content_filter_store_save_from_file:
+ * @store: a #WebKitUserContentFilterStore
+ * @identifier: a string used to identify the saved filter
+ * @file: a #GFile containing the rule set in JSON format
+ * @cancellable: (allow-none): a #GCancellable or %NULL to ignore
+ * @callback: (scope async): a #GAsyncReadyCallback to call when saving is completed
+ * @user_data: (closure): the data to pass to the callback function
+ *
+ * Asynchronously save a content filter from the contents of a file, which must be
+ * native to the platform, as checked by g_file_is_native(). See
+ * webkit_user_content_filter_store_save() for more details.
+ *
+ * When the operation is finished, @callback will be invoked, which then can use
+ * webkit_user_content_filter_store_save_finish() to obtain the resulting filter.
+ *
+ * Since: 2.24
+ */</doc>

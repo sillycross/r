@@ -1,0 +1,20 @@
+<def f='include/gstreamer-1.0/gst/gsttaglist.h' l='519' ll='523' type='GstTagList * gst_tag_list_copy(const GstTagList * taglist)'/>
+<doc f='include/gstreamer-1.0/gst/gsttaglist.h' l='503'>/**
+ * gst_tag_list_copy:
+ * @taglist: a #GstTagList.
+ *
+ * Creates a new #GstTagList as a copy of the old @taglist. The new taglist
+ * will have a refcount of 1, owned by the caller, and will be writable as
+ * a result.
+ *
+ * Note that this function is the semantic equivalent of a gst_tag_list_ref()
+ * followed by a gst_tag_list_make_writable(). If you only want to hold on to a
+ * reference to the data, you should use gst_tag_list_ref().
+ *
+ * When you are finished with the taglist, call gst_tag_list_unref() on it.
+ *
+ * Returns: the new #GstTagList
+ */</doc>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/TextCombinerPadGStreamer.cpp' l='66' u='c' c='_ZL26webkitTextCombinerPadEventP7_GstPadP10_GstObjectP9_GstEvent'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/TextCombinerPadGStreamer.cpp' l='109' u='c' c='_ZL32webkitTextCombinerPadGetPropertyP8_GObjectjP7_GValueP11_GParamSpec'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/TrackPrivateBaseGStreamer.cpp' l='147' u='c' c='_ZN7WebCore25TrackPrivateBaseGStreamer11tagsChangedEv'/>

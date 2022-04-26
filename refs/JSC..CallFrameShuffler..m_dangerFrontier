@@ -1,0 +1,21 @@
+<dec f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='745' type='JSC::VirtualRegister'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='751' u='r' c='_ZNK3JSC17CallFrameShuffler14dangerFrontierEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='764' u='w' c='_ZN3JSC17CallFrameShuffler20updateDangerFrontierEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='769' u='w' c='_ZN3JSC17CallFrameShuffler20updateDangerFrontierEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='771' u='r' c='_ZN3JSC17CallFrameShuffler20updateDangerFrontierEv'/>
+<offset>4864</offset>
+<doc f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='730'>// We use a concept of &quot;danger zone&quot;. The danger zone consists of
+    // all the writes in the new frame that could overlap with reads
+    // in the old frame.
+    //
+    // Because we could have a higher actual number of arguments than
+    // parameters, when preparing a tail call, we need to assume that
+    // writing to a slot on the new frame could overlap not only with
+    // the corresponding slot in the old frame, but also with any slot
+    // above it. Thus, the danger zone consists of all writes between
+    // the first write and what I call the &quot;danger frontier&quot;: the
+    // highest slot in the old frame we still care about. Thus, the
+    // danger zone contains all the slots between the first slot of
+    // the new frame and the danger frontier. Because the danger
+    // frontier is related to the new frame, it is stored as a virtual
+    // register *in the new frame*.</doc>

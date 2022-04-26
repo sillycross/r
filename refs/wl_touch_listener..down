@@ -1,0 +1,16 @@
+<dec f='include/wayland-client-protocol.h' l='4885' type='void (*)(void *, struct wl_touch *, uint32_t, uint32_t, struct wl_surface *, int32_t, wl_fixed_t, wl_fixed_t)'/>
+<offset>0</offset>
+<doc f='include/wayland-client-protocol.h' l='4871'>/**
+	 * touch down event and beginning of a touch sequence
+	 *
+	 * A new touch point has appeared on the surface. This touch
+	 * point is assigned a unique ID. Future events from this touch
+	 * point reference this ID. The ID ceases to be valid after a touch
+	 * up event and may be reused in the future.
+	 * @param serial serial number of the touch down event
+	 * @param time timestamp with millisecond granularity
+	 * @param surface surface touched
+	 * @param id the unique ID of this touch point
+	 * @param x surface-local x coordinate
+	 * @param y surface-local y coordinate
+	 */</doc>

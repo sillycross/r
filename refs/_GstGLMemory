@@ -1,0 +1,28 @@
+<use f='include/gstreamer-1.0/gst/gl/gstgl_fwd.h' l='50'/>
+<def f='include/gstreamer-1.0/gst/gl/gstglmemory.h' l='71' ll='90'/>
+<size>480</size>
+<doc f='include/gstreamer-1.0/gst/gl/gstglmemory.h' l='58'>/**
+ * GstGLMemory:
+ * @mem: the parent #GstGLBaseMemory object
+ * @tex_id: the GL texture id for this memory
+ * @tex_target: the GL texture target for this memory
+ * @tex_format: the texture type
+ * @info: the texture&apos;s #GstVideoInfo
+ * @valign: data alignment for system memory mapping
+ * @plane: data plane in @info
+ * @tex_scaling: GL shader scaling parameters for @valign and/or width/height
+ *
+ * Represents information about a GL texture
+ */</doc>
+<mbr r='_GstGLMemory::mem' o='0' t='GstGLBaseMemory'/>
+<mbr r='_GstGLMemory::tex_id' o='1792' t='guint'/>
+<mbr r='_GstGLMemory::tex_target' o='1824' t='GstGLTextureTarget'/>
+<mbr r='_GstGLMemory::tex_format' o='1856' t='GstGLFormat'/>
+<mbr r='_GstGLMemory::info' o='1920' t='GstVideoInfo'/>
+<mbr r='_GstGLMemory::valign' o='3136' t='GstVideoAlignment'/>
+<mbr r='_GstGLMemory::plane' o='3392' t='guint'/>
+<mbr r='_GstGLMemory::tex_scaling' o='3424' t='gfloat [2]'/>
+<mbr r='_GstGLMemory::texture_wrapped' o='3488' t='gboolean'/>
+<mbr r='_GstGLMemory::unpack_length' o='3520' t='guint'/>
+<mbr r='_GstGLMemory::tex_width' o='3552' t='guint'/>
+<mbr r='_GstGLMemory::_padding' o='3584' t='gpointer [4]'/>

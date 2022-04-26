@@ -1,0 +1,31 @@
+<use f='include/gstreamer-1.0/gst/audio/audio-format.h' l='149'/>
+<def f='include/gstreamer-1.0/gst/audio/audio-format.h' l='237' ll='254'/>
+<size>104</size>
+<doc f='include/gstreamer-1.0/gst/audio/audio-format.h' l='221'>/**
+ * GstAudioFormatInfo:
+ * @format: #GstAudioFormat
+ * @name: string representation of the format
+ * @description: user readable description of the format
+ * @flags: #GstAudioFormatFlags
+ * @endianness: the endianness
+ * @width: amount of bits used for one sample
+ * @depth: amount of valid bits in @width
+ * @silence: @width/8 bytes with 1 silent sample
+ * @unpack_format: the format of the unpacked samples
+ * @unpack_func: function to unpack samples
+ * @pack_func: function to pack samples
+ *
+ * Information for an audio format.
+ */</doc>
+<mbr r='_GstAudioFormatInfo::format' o='0' t='GstAudioFormat'/>
+<mbr r='_GstAudioFormatInfo::name' o='64' t='const gchar *'/>
+<mbr r='_GstAudioFormatInfo::description' o='128' t='const gchar *'/>
+<mbr r='_GstAudioFormatInfo::flags' o='192' t='GstAudioFormatFlags'/>
+<mbr r='_GstAudioFormatInfo::endianness' o='224' t='gint'/>
+<mbr r='_GstAudioFormatInfo::width' o='256' t='gint'/>
+<mbr r='_GstAudioFormatInfo::depth' o='288' t='gint'/>
+<mbr r='_GstAudioFormatInfo::silence' o='320' t='guint8 [8]'/>
+<mbr r='_GstAudioFormatInfo::unpack_format' o='384' t='GstAudioFormat'/>
+<mbr r='_GstAudioFormatInfo::unpack_func' o='448' t='GstAudioFormatUnpack'/>
+<mbr r='_GstAudioFormatInfo::pack_func' o='512' t='GstAudioFormatPack'/>
+<mbr r='_GstAudioFormatInfo::_gst_reserved' o='576' t='gpointer [4]'/>

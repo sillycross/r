@@ -1,0 +1,17 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitCookieManager.cpp' l='187' ll='199' type='void webkit_cookie_manager_set_persistent_storage(WebKitCookieManager * manager, const char * filename, WebKitCookiePersistentStorage storage)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitCookieManager.cpp' l='171'>/**
+ * webkit_cookie_manager_set_persistent_storage:
+ * @cookie_manager: a #WebKitCookieManager
+ * @filename: the filename to read to/write from
+ * @storage: a #WebKitCookiePersistentStorage
+ *
+ * Set the @filename where non-session cookies are stored persistently using
+ * @storage as the format to read/write the cookies.
+ * Cookies are initially read from @filename to create an initial set of cookies.
+ * Then, non-session cookies will be written to @filename when the WebKitCookieManager::changed
+ * signal is emitted.
+ * By default, @cookie_manager doesn&apos;t store the cookies persistently, so you need to call this
+ * method to keep cookies saved across sessions.
+ *
+ * This method should never be called on a #WebKitCookieManager associated to an ephemeral #WebKitWebsiteDataManager.
+ */</doc>

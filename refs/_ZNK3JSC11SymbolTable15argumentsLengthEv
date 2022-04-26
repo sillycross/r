@@ -1,0 +1,14 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='651' ll='656' type='uint32_t JSC::SymbolTable::argumentsLength() const'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='644'>// The principle behind ScopedArgumentsTable modifications is that we will create one and
+    // leave it unlocked - thereby allowing in-place changes - until someone asks for a pointer to
+    // the table. Then, we will lock it. Then both our future changes and their future changes
+    // will first have to make a copy. This discipline means that usually when we create a
+    // ScopedArguments object, we don&apos;t have to make a copy of the ScopedArgumentsTable - instead
+    // we just take a reference to one that we already have.</doc>
+<def f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='651' ll='656' type='uint32_t JSC::SymbolTable::argumentsLength() const'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='644'>// The principle behind ScopedArgumentsTable modifications is that we will create one and
+    // leave it unlocked - thereby allowing in-place changes - until someone asks for a pointer to
+    // the table. Then, we will lock it. Then both our future changes and their future changes
+    // will first have to make a copy. This discipline means that usually when we create a
+    // ScopedArguments object, we don&apos;t have to make a copy of the ScopedArgumentsTable - instead
+    // we just take a reference to one that we already have.</doc>

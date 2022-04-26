@@ -1,0 +1,30 @@
+<doc f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSObjectRef.h' l='94'>/*! 
+@typedef JSObjectFinalizeCallback
+@abstract The callback invoked when an object is finalized (prepared for garbage collection). An object may be finalized on any thread.
+@param object The JSObject being finalized.
+@discussion If you named your function Finalize, you would declare it like this:
+
+void Finalize(JSObjectRef object);
+
+The finalize callback is called on the most derived class first, and the least 
+derived class (the parent class) last.
+
+You must not call any function that may cause a garbage collection or an allocation
+of a garbage collected object from within a JSObjectFinalizeCallback. This includes
+all functions that have a JSContextRef parameter.
+*/</doc>
+<doc f='WebKit/Source/JavaScriptCore/API/JSObjectRef.h' l='94'>/*! 
+@typedef JSObjectFinalizeCallback
+@abstract The callback invoked when an object is finalized (prepared for garbage collection). An object may be finalized on any thread.
+@param object The JSObject being finalized.
+@discussion If you named your function Finalize, you would declare it like this:
+
+void Finalize(JSObjectRef object);
+
+The finalize callback is called on the most derived class first, and the least 
+derived class (the parent class) last.
+
+You must not call any function that may cause a garbage collection or an allocation
+of a garbage collected object from within a JSObjectFinalizeCallback. This includes
+all functions that have a JSContextRef parameter.
+*/</doc>

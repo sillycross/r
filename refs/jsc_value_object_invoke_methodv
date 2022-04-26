@@ -1,0 +1,20 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.h' l='188' type='JSCValue * jsc_value_object_invoke_methodv(JSCValue * value, const char * name, guint n_parameters, JSCValue ** parameters)'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='982' ll='1016' type='JSCValue * jsc_value_object_invoke_methodv(JSCValue * value, const char * name, unsigned int parametersCount, JSCValue ** parameters)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='964'>/**
+ * jsc_value_object_invoke_methodv: (rename-to jsc_value_object_invoke_method)
+ * @value: a #JSCValue
+ * @name: the method name
+ * @n_parameters: the number of parameters
+ * @parameters: (nullable) (array length=n_parameters) (element-type JSCValue): the #JSCValue&lt;!-- --&gt;s to pass as parameters to the method, or %NULL
+ *
+ * Invoke method with @name on object referenced by @value, passing the given @parameters. If
+ * @n_parameters is 0 no parameters will be passed to the method.
+ * The object instance will be handled automatically even when the method is a custom one
+ * registered with jsc_class_add_method(), so it should never be passed explicitly as parameter
+ * of this function.
+ *
+ * This function always returns a #JSCValue, in case of void methods a #JSCValue referencing
+ * &lt;function&gt;undefined&lt;/function&gt; is returned.
+ *
+ * Returns: (transfer full): a #JSCValue with the return value of the method.
+ */</doc>

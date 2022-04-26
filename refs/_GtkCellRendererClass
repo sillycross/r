@@ -1,0 +1,36 @@
+<use f='include/gtk-3.0/gtk/gtkcellrenderer.h' l='82'/>
+<def f='include/gtk-3.0/gtk/gtkcellrenderer.h' l='109' ll='183'/>
+<size>264</size>
+<doc f='include/gtk-3.0/gtk/gtkcellrenderer.h' l='93'>/**
+ * GtkCellRendererClass:
+ * @get_request_mode: Called to gets whether the cell renderer prefers
+ *    a height-for-width layout or a width-for-height layout.
+ * @get_preferred_width: Called to get a renderer’s natural width.
+ * @get_preferred_height_for_width: Called to get a renderer’s natural height for width.
+ * @get_preferred_height: Called to get a renderer’s natural height.
+ * @get_preferred_width_for_height: Called to get a renderer’s natural width for height.
+ * @get_aligned_area: Called to get the aligned area used by @cell inside @cell_area.
+ * @get_size: Called to get the width and height needed to render the cell. Deprecated: 3.0.
+ * @render: Called to render the content of the #GtkCellRenderer.
+ * @activate: Called to activate the content of the #GtkCellRenderer.
+ * @start_editing: Called to initiate editing the content of the #GtkCellRenderer.
+ * @editing_canceled: Signal gets emitted when the user cancels the process of editing a cell.
+ * @editing_started: Signal gets emitted when a cell starts to be edited.
+ */</doc>
+<mbr r='_GtkCellRendererClass::parent_class' o='0' t='GInitiallyUnownedClass'/>
+<mbr r='_GtkCellRendererClass::get_request_mode' o='1088' t='GtkSizeRequestMode (*)(GtkCellRenderer *)'/>
+<mbr r='_GtkCellRendererClass::get_preferred_width' o='1152' t='void (*)(GtkCellRenderer *, GtkWidget *, gint *, gint *)'/>
+<mbr r='_GtkCellRendererClass::get_preferred_height_for_width' o='1216' t='void (*)(GtkCellRenderer *, GtkWidget *, gint, gint *, gint *)'/>
+<mbr r='_GtkCellRendererClass::get_preferred_height' o='1280' t='void (*)(GtkCellRenderer *, GtkWidget *, gint *, gint *)'/>
+<mbr r='_GtkCellRendererClass::get_preferred_width_for_height' o='1344' t='void (*)(GtkCellRenderer *, GtkWidget *, gint, gint *, gint *)'/>
+<mbr r='_GtkCellRendererClass::get_aligned_area' o='1408' t='void (*)(GtkCellRenderer *, GtkWidget *, GtkCellRendererState, const GdkRectangle *, GdkRectangle *)'/>
+<mbr r='_GtkCellRendererClass::get_size' o='1472' t='void (*)(GtkCellRenderer *, GtkWidget *, const GdkRectangle *, gint *, gint *, gint *, gint *)'/>
+<mbr r='_GtkCellRendererClass::render' o='1536' t='void (*)(GtkCellRenderer *, cairo_t *, GtkWidget *, const GdkRectangle *, const GdkRectangle *, GtkCellRendererState)'/>
+<mbr r='_GtkCellRendererClass::activate' o='1600' t='gboolean (*)(GtkCellRenderer *, GdkEvent *, GtkWidget *, const gchar *, const GdkRectangle *, const GdkRectangle *, GtkCellRendererState)'/>
+<mbr r='_GtkCellRendererClass::start_editing' o='1664' t='GtkCellEditable *(*)(GtkCellRenderer *, GdkEvent *, GtkWidget *, const gchar *, const GdkRectangle *, const GdkRectangle *, GtkCellRendererState)'/>
+<mbr r='_GtkCellRendererClass::editing_canceled' o='1728' t='void (*)(GtkCellRenderer *)'/>
+<mbr r='_GtkCellRendererClass::editing_started' o='1792' t='void (*)(GtkCellRenderer *, GtkCellEditable *, const gchar *)'/>
+<mbr r='_GtkCellRendererClass::priv' o='1856' t='GtkCellRendererClassPrivate *'/>
+<mbr r='_GtkCellRendererClass::_gtk_reserved2' o='1920' t='void (*)()'/>
+<mbr r='_GtkCellRendererClass::_gtk_reserved3' o='1984' t='void (*)()'/>
+<mbr r='_GtkCellRendererClass::_gtk_reserved4' o='2048' t='void (*)()'/>

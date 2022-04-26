@@ -1,0 +1,13 @@
+<dec f='include/gstreamer-1.0/gst/gstpad.h' l='1211'/>
+<doc f='include/gstreamer-1.0/gst/gstpad.h' l='1199'>/**
+ * GST_PAD_IS_ACCEPT_TEMPLATE:
+ * @pad: a #GstPad
+ *
+ * Check if the pad&apos;s accept caps operation will use the pad template caps.
+ * The default accept-caps will do a query caps to get the caps, which might
+ * be querying downstream causing unnecessary overhead. It is recommended to
+ * implement a proper accept-caps query handler or to use this flag to prevent
+ * recursive accept-caps handling.
+ *
+ * Since: 1.6
+ */</doc>

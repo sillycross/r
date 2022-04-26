@@ -1,0 +1,16 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/StringObject.h' l='88' ll='95' type='JSC::JSString * JSC::jsStringWithReuse(JSC::JSGlobalObject * globalObject, JSC::JSValue originalValue, const WTF::String &amp; string)'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/StringObject.h' l='82'>// Helper for producing a JSString for &apos;string&apos;, where &apos;string&apos; was been produced by
+// calling ToString on &apos;originalValue&apos;. In cases where &apos;originalValue&apos; already was a
+// string primitive we can just use this, otherwise we need to allocate a new JSString.
+// FIXME: Basically any use of this is bad. toString() returns a JSString* so we don&apos;t need to
+// pass around the originalValue; we could just pass around the JSString*. Then you don&apos;t need
+// this function. You just use the JSString* that toString() returned.</doc>
+<def f='WebKit/Source/JavaScriptCore/runtime/StringObject.h' l='88' ll='95' type='JSC::JSString * JSC::jsStringWithReuse(JSC::JSGlobalObject * globalObject, JSC::JSValue originalValue, const WTF::String &amp; string)'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/StringObject.h' l='82'>// Helper for producing a JSString for &apos;string&apos;, where &apos;string&apos; was been produced by
+// calling ToString on &apos;originalValue&apos;. In cases where &apos;originalValue&apos; already was a
+// string primitive we can just use this, otherwise we need to allocate a new JSString.
+// FIXME: Basically any use of this is bad. toString() returns a JSString* so we don&apos;t need to
+// pass around the originalValue; we could just pass around the JSString*. Then you don&apos;t need
+// this function. You just use the JSString* that toString() returned.</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/StringPrototype.cpp' l='1278' u='c' c='_ZN3JSC24stringProtoFuncSplitFastEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/StringPrototype.cpp' l='1291' u='c' c='_ZN3JSC24stringProtoFuncSplitFastEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>

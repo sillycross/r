@@ -1,0 +1,15 @@
+<def f='include/gstreamer-1.0/gst/gstbufferlist.h' l='76' ll='81' type='GstBufferList * gst_buffer_list_ref(GstBufferList * list)'/>
+<doc f='include/gstreamer-1.0/gst/gstbufferlist.h' l='63'>/**
+ * gst_buffer_list_ref:
+ * @list: a #GstBufferList
+ *
+ * Increases the refcount of the given buffer list by one.
+ *
+ * Note that the refcount affects the writability of @list and its data, see
+ * gst_buffer_list_make_writable(). It is important to note that keeping
+ * additional references to GstBufferList instances can potentially increase
+ * the number of memcpy operations in a pipeline.
+ *
+ * Returns: (transfer full): @list
+ */</doc>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/GRefPtrGStreamer.cpp' l='256' u='c' c='_ZN3WTF7refGPtrEPT_'/>

@@ -1,0 +1,23 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUserContentFilterStore.cpp' l='224' ll='233' type='void webkit_user_content_filter_store_save(WebKitUserContentFilterStore * store, const gchar * identifier, GBytes * source, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer userData)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUserContentFilterStore.cpp' l='202'>/**
+ * webkit_user_content_filter_store_save:
+ * @store: a #WebKitUserContentFilterStore
+ * @identifier: a string used to identify the saved filter
+ * @source: #GBytes containing the rule set in JSON format
+ * @cancellable: (allow-none): a #GCancellable or %NULL to ignore
+ * @callback: (scope async): a #GAsyncReadyCallback to call when saving is completed
+ * @user_data: (closure): the data to pass to the callback function
+ *
+ * Asynchronously save a content filter from a source rule set in the
+ * [WebKit content extesions JSON format](https://webkit.org/blog/3476/content-blockers-first-look/).
+ *
+ * The @identifier can be used afterwards to refer to the filter when using
+ * webkit_user_content_filter_store_remove() and webkit_user_content_filter_store_load().
+ * When the @identifier has been used in the past, the new filter source will replace
+ * the one saved beforehand for the same identifier.
+ *
+ * When the operation is finished, @callback will be invoked, which then can use
+ * webkit_user_content_filter_store_save_finish() to obtain the resulting filter.
+ *
+ * Since: 2.24
+ */</doc>

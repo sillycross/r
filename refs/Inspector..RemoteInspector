@@ -1,0 +1,183 @@
+<def f='WebKit/Source/JavaScriptCore/inspector/remote/RemoteInspector.h' l='74' ll='298'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/RemoteInspector.h' l='125' c='_ZN9Inspector15RemoteInspector9singletonEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/RemoteInspector.h' l='126'/>
+<size>112</size>
+<fun r='_ZN9Inspector15RemoteInspector13startDisabledEv'/>
+<fun r='_ZN9Inspector15RemoteInspector9singletonEv'/>
+<fun r='_ZN9Inspector15RemoteInspector14registerTargetEPNS_24RemoteControllableTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector16unregisterTargetEPNS_24RemoteControllableTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector12updateTargetEPNS_24RemoteControllableTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector19sendMessageToRemoteEjRKN3WTF6StringE'/>
+<fun r='_ZNK9Inspector15RemoteInspector6clientEv'/>
+<fun r='_ZN9Inspector15RemoteInspector9setClientEPNS0_6ClientE'/>
+<fun r='_ZN9Inspector15RemoteInspector27clientCapabilitiesDidChangeEv'/>
+<fun r='_ZNK9Inspector15RemoteInspector18clientCapabilitiesEv'/>
+<fun r='_ZN9Inspector15RemoteInspector11setupFailedEj'/>
+<fun r='_ZN9Inspector15RemoteInspector14setupCompletedEj'/>
+<fun r='_ZN9Inspector15RemoteInspector29waitingForAutomaticInspectionEj'/>
+<fun r='_ZN9Inspector15RemoteInspector34updateAutomaticInspectionCandidateEPNS_22RemoteInspectionTargetE'/>
+<fun r='_ZNK9Inspector15RemoteInspector7enabledEv'/>
+<fun r='_ZNK9Inspector15RemoteInspector21hasActiveDebugSessionEv'/>
+<fun r='_ZN9Inspector15RemoteInspector5startEv'/>
+<fun r='_ZN9Inspector15RemoteInspector4stopEv'/>
+<fun r='_ZN9Inspector15RemoteInspector19updateTargetListingEj'/>
+<fun r='_ZN9Inspector15RemoteInspector24requestAutomationSessionEPKcRKNS0_6Client19SessionCapabilitiesE'/>
+<fun r='_ZN9Inspector15RemoteInspector5setupEj'/>
+<fun r='_ZN9Inspector15RemoteInspector19sendMessageToTargetEjPKc'/>
+<fun r='_ZN9Inspector15RemoteInspectorC1Ev'/>
+<fun r='_ZN9Inspector15RemoteInspector29nextAvailableTargetIdentifierEv'/>
+<fun r='_ZN9Inspector15RemoteInspector12stopInternalENS0_10StopSourceE'/>
+<fun r='_ZN9Inspector15RemoteInspector15setupConnectionEON3WTF3RefINS1_16SocketConnectionENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<fun r='_ZN9Inspector15RemoteInspector28receivedGetTargetListMessageEv'/>
+<fun r='_ZN9Inspector15RemoteInspector20receivedSetupMessageEj'/>
+<fun r='_ZN9Inspector15RemoteInspector19receivedDataMessageEjPKc'/>
+<fun r='_ZN9Inspector15RemoteInspector20receivedCloseMessageEj'/>
+<fun r='_ZN9Inspector15RemoteInspector39receivedAutomationSessionRequestMessageEPKc'/>
+<fun r='_ZNK9Inspector15RemoteInspector16listingForTargetERKNS_24RemoteControllableTargetE'/>
+<fun r='_ZNK9Inspector15RemoteInspector26listingForInspectionTargetERKNS_22RemoteInspectionTargetE'/>
+<fun r='_ZNK9Inspector15RemoteInspector26listingForAutomationTargetERKNS_22RemoteAutomationTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector15updateTargetMapEPNS_24RemoteControllableTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector15pushListingsNowEv'/>
+<fun r='_ZN9Inspector15RemoteInspector16pushListingsSoonEv'/>
+<fun r='_ZN9Inspector15RemoteInspector19updateTargetListingERKNS_24RemoteControllableTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector27updateHasActiveDebugSessionEv'/>
+<fun r='_ZN9Inspector15RemoteInspector24updateClientCapabilitiesEv'/>
+<fun r='_ZN9Inspector15RemoteInspector39sendAutomaticInspectionCandidateMessageEv'/>
+<smbr r='Inspector::RemoteInspector::startEnabled' t='bool'/>
+<mbr r='Inspector::RemoteInspector::m_mutex' o='0' t='WTF::Lock'/>
+<mbr r='Inspector::RemoteInspector::m_targetMap' o='64' t='HashMap&lt;Inspector::TargetID, Inspector::RemoteControllableTarget *&gt;'/>
+<mbr r='Inspector::RemoteInspector::m_targetConnectionMap' o='128' t='HashMap&lt;Inspector::TargetID, RefPtr&lt;Inspector::RemoteConnectionToTarget&gt; &gt;'/>
+<mbr r='Inspector::RemoteInspector::m_targetListingMap' o='192' t='HashMap&lt;Inspector::TargetID, TargetListing&gt;'/>
+<mbr r='Inspector::RemoteInspector::m_socketConnection' o='256' t='RefPtr&lt;WTF::SocketConnection&gt;'/>
+<mbr r='Inspector::RemoteInspector::m_cancellable' o='320' t='GRefPtr&lt;GCancellable&gt;'/>
+<mbr r='Inspector::RemoteInspector::m_client' o='384' t='RemoteInspector::Client *'/>
+<mbr r='Inspector::RemoteInspector::m_clientCapabilities' o='448' t='std::optional&lt;RemoteInspector::Client::Capabilities&gt;'/>
+<mbr r='Inspector::RemoteInspector::m_nextAvailableTargetIdentifier' o='704' t='Inspector::TargetID'/>
+<mbr r='Inspector::RemoteInspector::m_notifyToken' o='736' t='int'/>
+<mbr r='Inspector::RemoteInspector::m_enabled' o='768' t='bool'/>
+<mbr r='Inspector::RemoteInspector::m_hasActiveDebugSession' o='776' t='bool'/>
+<mbr r='Inspector::RemoteInspector::m_pushScheduled' o='784' t='bool'/>
+<mbr r='Inspector::RemoteInspector::m_parentProcessIdentifier' o='800' t='WTF::ProcessID'/>
+<mbr r='Inspector::RemoteInspector::m_shouldSendParentProcessInformation' o='832' t='bool'/>
+<mbr r='Inspector::RemoteInspector::m_automaticInspectionEnabled' o='840' t='bool'/>
+<mbr r='Inspector::RemoteInspector::m_automaticInspectionPaused' o='848' t='bool'/>
+<mbr r='Inspector::RemoteInspector::m_automaticInspectionCandidateTargetIdentifier' o='864' t='Inspector::TargetID'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='41' c='_ZN9Inspector15RemoteInspector9singletonEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='43' c='_ZN9Inspector15RemoteInspector9singletonEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='70' c='_ZN9Inspector15RemoteInspector5startEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='70' c='_ZN9Inspector15RemoteInspector5startEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='104' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='110' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='116' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='124' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='133' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='104' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='110' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='116' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='124' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/remote/glib/RemoteInspectorGlib.cpp' l='133' c='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<size>112</size>
+<smbr r='Inspector::RemoteInspector::startEnabled' t='bool'/>
+<fun r='_ZN9Inspector15RemoteInspector13startDisabledEv'/>
+<fun r='_ZN9Inspector15RemoteInspector29nextAvailableTargetIdentifierEv'/>
+<fun r='_ZN9Inspector15RemoteInspector14registerTargetEPNS_24RemoteControllableTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector16unregisterTargetEPNS_24RemoteControllableTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector12updateTargetEPNS_24RemoteControllableTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector15updateTargetMapEPNS_24RemoteControllableTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector34updateAutomaticInspectionCandidateEPNS_22RemoteInspectionTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector24updateClientCapabilitiesEv'/>
+<fun r='_ZN9Inspector15RemoteInspector9setClientEPNS0_6ClientE'/>
+<fun r='_ZN9Inspector15RemoteInspector11setupFailedEj'/>
+<fun r='_ZN9Inspector15RemoteInspector14setupCompletedEj'/>
+<fun r='_ZN9Inspector15RemoteInspector29waitingForAutomaticInspectionEj'/>
+<fun r='_ZN9Inspector15RemoteInspector27clientCapabilitiesDidChangeEv'/>
+<fun r='_ZN9Inspector15RemoteInspector4stopEv'/>
+<fun r='_ZNK9Inspector15RemoteInspector16listingForTargetERKNS_24RemoteControllableTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector19updateTargetListingEj'/>
+<fun r='_ZN9Inspector15RemoteInspector19updateTargetListingERKNS_24RemoteControllableTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector27updateHasActiveDebugSessionEv'/>
+<fun r='_ZN9Inspector15RemoteInspector9singletonEv'/>
+<fun r='_ZN9Inspector15RemoteInspectorC1Ev'/>
+<fun r='_ZN9Inspector15RemoteInspector5startEv'/>
+<fun r='_ZN9Inspector15RemoteInspector12stopInternalENS0_10StopSourceE'/>
+<fun r='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<fun r='_ZN9Inspector15RemoteInspector15setupConnectionEON3WTF3RefINS1_16SocketConnectionENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZNK9Inspector15RemoteInspector26listingForInspectionTargetERKNS_22RemoteInspectionTargetE'/>
+<fun r='_ZNK9Inspector15RemoteInspector26listingForAutomationTargetERKNS_22RemoteAutomationTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector15pushListingsNowEv'/>
+<fun r='_ZN9Inspector15RemoteInspector16pushListingsSoonEv'/>
+<fun r='_ZN9Inspector15RemoteInspector39sendAutomaticInspectionCandidateMessageEv'/>
+<fun r='_ZN9Inspector15RemoteInspector19sendMessageToRemoteEjRKN3WTF6StringE'/>
+<fun r='_ZN9Inspector15RemoteInspector28receivedGetTargetListMessageEv'/>
+<fun r='_ZN9Inspector15RemoteInspector20receivedSetupMessageEj'/>
+<fun r='_ZN9Inspector15RemoteInspector19receivedDataMessageEjPKc'/>
+<fun r='_ZN9Inspector15RemoteInspector20receivedCloseMessageEj'/>
+<fun r='_ZN9Inspector15RemoteInspector5setupEj'/>
+<fun r='_ZN9Inspector15RemoteInspector19sendMessageToTargetEjPKc'/>
+<fun r='_ZN9Inspector15RemoteInspector24requestAutomationSessionEPKcRKNS0_6Client19SessionCapabilitiesE'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/RemoteInspector.h' l='74' ll='298'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/RemoteInspector.h' l='125' c='_ZN9Inspector15RemoteInspector9singletonEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/RemoteInspector.h' l='126'/>
+<size>112</size>
+<fun r='_ZN9Inspector15RemoteInspector13startDisabledEv'/>
+<fun r='_ZN9Inspector15RemoteInspector9singletonEv'/>
+<fun r='_ZN9Inspector15RemoteInspector14registerTargetEPNS_24RemoteControllableTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector16unregisterTargetEPNS_24RemoteControllableTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector12updateTargetEPNS_24RemoteControllableTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector19sendMessageToRemoteEjRKN3WTF6StringE'/>
+<fun r='_ZNK9Inspector15RemoteInspector6clientEv'/>
+<fun r='_ZN9Inspector15RemoteInspector9setClientEPNS0_6ClientE'/>
+<fun r='_ZN9Inspector15RemoteInspector27clientCapabilitiesDidChangeEv'/>
+<fun r='_ZNK9Inspector15RemoteInspector18clientCapabilitiesEv'/>
+<fun r='_ZN9Inspector15RemoteInspector11setupFailedEj'/>
+<fun r='_ZN9Inspector15RemoteInspector14setupCompletedEj'/>
+<fun r='_ZN9Inspector15RemoteInspector29waitingForAutomaticInspectionEj'/>
+<fun r='_ZN9Inspector15RemoteInspector34updateAutomaticInspectionCandidateEPNS_22RemoteInspectionTargetE'/>
+<fun r='_ZNK9Inspector15RemoteInspector7enabledEv'/>
+<fun r='_ZNK9Inspector15RemoteInspector21hasActiveDebugSessionEv'/>
+<fun r='_ZN9Inspector15RemoteInspector5startEv'/>
+<fun r='_ZN9Inspector15RemoteInspector4stopEv'/>
+<fun r='_ZN9Inspector15RemoteInspector19updateTargetListingEj'/>
+<fun r='_ZN9Inspector15RemoteInspector24requestAutomationSessionEPKcRKNS0_6Client19SessionCapabilitiesE'/>
+<fun r='_ZN9Inspector15RemoteInspector5setupEj'/>
+<fun r='_ZN9Inspector15RemoteInspector19sendMessageToTargetEjPKc'/>
+<fun r='_ZN9Inspector15RemoteInspectorC1Ev'/>
+<fun r='_ZN9Inspector15RemoteInspector29nextAvailableTargetIdentifierEv'/>
+<fun r='_ZN9Inspector15RemoteInspector12stopInternalENS0_10StopSourceE'/>
+<fun r='_ZN9Inspector15RemoteInspector15setupConnectionEON3WTF3RefINS1_16SocketConnectionENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN9Inspector15RemoteInspector15messageHandlersEv'/>
+<fun r='_ZN9Inspector15RemoteInspector28receivedGetTargetListMessageEv'/>
+<fun r='_ZN9Inspector15RemoteInspector20receivedSetupMessageEj'/>
+<fun r='_ZN9Inspector15RemoteInspector19receivedDataMessageEjPKc'/>
+<fun r='_ZN9Inspector15RemoteInspector20receivedCloseMessageEj'/>
+<fun r='_ZN9Inspector15RemoteInspector39receivedAutomationSessionRequestMessageEPKc'/>
+<fun r='_ZNK9Inspector15RemoteInspector16listingForTargetERKNS_24RemoteControllableTargetE'/>
+<fun r='_ZNK9Inspector15RemoteInspector26listingForInspectionTargetERKNS_22RemoteInspectionTargetE'/>
+<fun r='_ZNK9Inspector15RemoteInspector26listingForAutomationTargetERKNS_22RemoteAutomationTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector15updateTargetMapEPNS_24RemoteControllableTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector15pushListingsNowEv'/>
+<fun r='_ZN9Inspector15RemoteInspector16pushListingsSoonEv'/>
+<fun r='_ZN9Inspector15RemoteInspector19updateTargetListingERKNS_24RemoteControllableTargetE'/>
+<fun r='_ZN9Inspector15RemoteInspector27updateHasActiveDebugSessionEv'/>
+<fun r='_ZN9Inspector15RemoteInspector24updateClientCapabilitiesEv'/>
+<fun r='_ZN9Inspector15RemoteInspector39sendAutomaticInspectionCandidateMessageEv'/>
+<smbr r='Inspector::RemoteInspector::startEnabled' t='bool'/>
+<mbr r='Inspector::RemoteInspector::m_mutex' o='0' t='WTF::Lock'/>
+<mbr r='Inspector::RemoteInspector::m_targetMap' o='64' t='HashMap&lt;Inspector::TargetID, Inspector::RemoteControllableTarget *&gt;'/>
+<mbr r='Inspector::RemoteInspector::m_targetConnectionMap' o='128' t='HashMap&lt;Inspector::TargetID, RefPtr&lt;Inspector::RemoteConnectionToTarget&gt; &gt;'/>
+<mbr r='Inspector::RemoteInspector::m_targetListingMap' o='192' t='HashMap&lt;Inspector::TargetID, TargetListing&gt;'/>
+<mbr r='Inspector::RemoteInspector::m_socketConnection' o='256' t='RefPtr&lt;WTF::SocketConnection&gt;'/>
+<mbr r='Inspector::RemoteInspector::m_cancellable' o='320' t='GRefPtr&lt;GCancellable&gt;'/>
+<mbr r='Inspector::RemoteInspector::m_client' o='384' t='RemoteInspector::Client *'/>
+<mbr r='Inspector::RemoteInspector::m_clientCapabilities' o='448' t='std::optional&lt;RemoteInspector::Client::Capabilities&gt;'/>
+<mbr r='Inspector::RemoteInspector::m_nextAvailableTargetIdentifier' o='704' t='Inspector::TargetID'/>
+<mbr r='Inspector::RemoteInspector::m_notifyToken' o='736' t='int'/>
+<mbr r='Inspector::RemoteInspector::m_enabled' o='768' t='bool'/>
+<mbr r='Inspector::RemoteInspector::m_hasActiveDebugSession' o='776' t='bool'/>
+<mbr r='Inspector::RemoteInspector::m_pushScheduled' o='784' t='bool'/>
+<mbr r='Inspector::RemoteInspector::m_parentProcessIdentifier' o='800' t='WTF::ProcessID'/>
+<mbr r='Inspector::RemoteInspector::m_shouldSendParentProcessInformation' o='832' t='bool'/>
+<mbr r='Inspector::RemoteInspector::m_automaticInspectionEnabled' o='840' t='bool'/>
+<mbr r='Inspector::RemoteInspector::m_automaticInspectionPaused' o='848' t='bool'/>
+<mbr r='Inspector::RemoteInspector::m_automaticInspectionCandidateTargetIdentifier' o='864' t='Inspector::TargetID'/>

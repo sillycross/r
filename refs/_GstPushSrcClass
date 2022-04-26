@@ -1,0 +1,24 @@
+<use f='include/gstreamer-1.0/gst/base/gstpushsrc.h' l='40'/>
+<def f='include/gstreamer-1.0/gst/base/gstpushsrc.h' l='70' ll='83'/>
+<size>856</size>
+<doc f='include/gstreamer-1.0/gst/base/gstpushsrc.h' l='54'>/**
+ * GstPushSrcClass:
+ * @parent_class: Element parent class
+ * @create: Ask the subclass to create a buffer. The subclass decides which
+ *          size this buffer should be. Other then that, refer to
+ *          #GstBaseSrc&lt;!-- --&gt;.create() for more details. If this method is
+ *          not implemented, @alloc followed by @fill will be called.
+ * @alloc: Ask the subclass to allocate a buffer. The subclass decides which
+ *         size this buffer should be. The default implementation will create
+ *         a new buffer from the negotiated allocator.
+ * @fill: Ask the subclass to fill the buffer with data.
+ *
+ * Subclasses can override any of the available virtual methods or not, as
+ * needed. At the minimum, the @fill method should be overridden to produce
+ * buffers.
+ */</doc>
+<mbr r='_GstPushSrcClass::parent_class' o='0' t='GstBaseSrcClass'/>
+<mbr r='_GstPushSrcClass::create' o='6400' t='GstFlowReturn (*)(GstPushSrc *, GstBuffer **)'/>
+<mbr r='_GstPushSrcClass::alloc' o='6464' t='GstFlowReturn (*)(GstPushSrc *, GstBuffer **)'/>
+<mbr r='_GstPushSrcClass::fill' o='6528' t='GstFlowReturn (*)(GstPushSrc *, GstBuffer *)'/>
+<mbr r='_GstPushSrcClass::_gst_reserved' o='6592' t='gpointer [4]'/>

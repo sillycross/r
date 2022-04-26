@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/WebCore/platform/graphics/FontCascade.h' l='162' type='bool WebCore::FontCascade::hasValidAverageCharWidth() const'/>
+<use f='WebKit/Source/WebCore/rendering/RenderTextControlSingleLine.cpp' l='327' u='c' c='_ZNK7WebCore27RenderTextControlSingleLine28preferredContentLogicalWidthEf'/>
+<def f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='360' ll='409' type='bool WebCore::FontCascade::hasValidAverageCharWidth() const'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='413' u='c' c='_ZNK7WebCore11FontCascade31fastAverageCharWidthIfAvailableERf'/>
+<doc f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='355'>// For font families where any of the fonts don&apos;t have a valid entry in the OS/2 table
+// for avgCharWidth, fallback to the legacy webkit behavior of getting the avgCharWidth
+// from the width of a &apos;0&apos;. This only seems to apply to a fixed number of Mac fonts,
+// but, in order to get similar rendering across platforms, we do this check for
+// all platforms.</doc>

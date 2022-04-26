@@ -1,0 +1,53 @@
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapValue.h' l='307'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapGenerationParams.h' l='121'/>
+<inh f='WebKit/Source/JavaScriptCore/b3/B3StackmapSpecial.h' l='42' c='JSC::B3::StackmapSpecial'/>
+<def f='WebKit/Source/JavaScriptCore/b3/B3CheckSpecial.h' l='51' ll='139'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3CheckSpecial.cpp' l='93' c='_ZN3JSC2B312CheckSpecialC1ERKNS1_3KeyE'/>
+<size>40</size>
+<doc f='WebKit/Source/JavaScriptCore/b3/B3CheckSpecial.h' l='40'>// We want to lower Check instructions to a branch, but then we want to route that branch to our
+// out-of-line code instead of doing anything else. For this reason, a CheckSpecial will remember
+// which branch opcode we have selected along with the number of args in the overload we want. It
+// will create an Inst with that opcode plus the appropriate args from the owning Inst whenever you
+// call any of the callbacks.
+//
+// Note that for CheckAdd, CheckSub, and CheckMul we expect that the B3 arguments are the reverse
+// of the Air arguments (Add(a, b) =&gt; Add32 b, a). Except:
+// - CheckSub(0, x), which turns into BranchNeg32 x.
+// - CheckMul(a, b), which turns into Mul32 b, a but we pass Any for a&apos;s ValueRep.</doc>
+<fun r='_ZN3JSC2B312CheckSpecialC1ENS0_3Air4KindEjNS0_15StackmapSpecial8RoleModeE'/>
+<fun r='_ZN3JSC2B312CheckSpecialC1ERKNS1_3KeyE'/>
+<fun r='_ZN3JSC2B312CheckSpecialD1Ev'/>
+<fun r='_ZNK3JSC2B312CheckSpecial12hiddenBranchERKNS0_3Air4InstE'/>
+<fun r='_ZN3JSC2B312CheckSpecial10forEachArgERNS0_3Air4InstERKN3WTF12ScopedLambdaIFvRNS2_3ArgENS7_4RoleENS0_4BankENS0_5WidthEEEE'/>
+<fun r='_ZN3JSC2B312CheckSpecial7isValidERNS0_3Air4InstE'/>
+<fun r='_ZN3JSC2B312CheckSpecial11admitsStackERNS0_3Air4InstEj'/>
+<fun r='_ZN3JSC2B312CheckSpecial24admitsExtendedOffsetAddrERNS0_3Air4InstEj'/>
+<fun r='_ZN3JSC2B312CheckSpecial20shouldTryAliasingDefERNS0_3Air4InstE'/>
+<fun r='_ZN3JSC2B312CheckSpecial8generateERNS0_3Air4InstERNS_12CCallHelpersERNS2_17GenerationContextE'/>
+<fun r='_ZNK3JSC2B312CheckSpecial8dumpImplERN3WTF11PrintStreamE'/>
+<fun r='_ZNK3JSC2B312CheckSpecial12deepDumpImplERN3WTF11PrintStreamE'/>
+<mbr r='JSC::B3::CheckSpecial::m_checkKind' o='192' t='Air::Kind'/>
+<mbr r='JSC::B3::CheckSpecial::m_stackmapRole' o='224' t='JSC::B3::StackmapSpecial::RoleMode'/>
+<mbr r='JSC::B3::CheckSpecial::m_numCheckArgs' o='256' t='unsigned int'/>
+<fun r='_ZN3JSC2B312CheckSpecialC1ENS0_3Air4KindEjNS0_15StackmapSpecial8RoleModeE'/>
+<fun r='_ZN3JSC2B312CheckSpecialC1ERKNS1_3KeyE'/>
+<fun r='_ZN3JSC2B312CheckSpecialD1Ev'/>
+<fun r='_ZNK3JSC2B312CheckSpecial12hiddenBranchERKNS0_3Air4InstE'/>
+<fun r='_ZN3JSC2B312CheckSpecial10forEachArgERNS0_3Air4InstERKN3WTF12ScopedLambdaIFvRNS2_3ArgENS7_4RoleENS0_4BankENS0_5WidthEEEE'/>
+<fun r='_ZN3JSC2B312CheckSpecial7isValidERNS0_3Air4InstE'/>
+<fun r='_ZN3JSC2B312CheckSpecial11admitsStackERNS0_3Air4InstEj'/>
+<fun r='_ZN3JSC2B312CheckSpecial24admitsExtendedOffsetAddrERNS0_3Air4InstEj'/>
+<fun r='_ZN3JSC2B312CheckSpecial20shouldTryAliasingDefERNS0_3Air4InstE'/>
+<fun r='_ZN3JSC2B312CheckSpecial8generateERNS0_3Air4InstERNS_12CCallHelpersERNS2_17GenerationContextE'/>
+<fun r='_ZNK3JSC2B312CheckSpecial8dumpImplERN3WTF11PrintStreamE'/>
+<fun r='_ZNK3JSC2B312CheckSpecial12deepDumpImplERN3WTF11PrintStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='1307' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir18ensureCheckSpecialEDpOT_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='3753' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='3839' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='3857' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='4282'/>
+<size>40</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='577' c='_ZN3JSC4Wasm14AirIRGenerator9emitCheckERKT_RKT0_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='577' c='_ZN3JSC4Wasm14AirIRGenerator9emitCheckERKT_RKT0_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='577' c='_ZN3JSC4Wasm14AirIRGenerator9emitCheckERKT_RKT0_'/>
+<size>40</size>

@@ -1,0 +1,27 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='144' type='void JSC::MarkedBlock::Handle::sweep(JSC::FreeList * )'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='135'>// Sweeping ensures that destructors get called and removes the block from the unswept
+        // set. Sweeping to free list also removes the block from the empty set, if it was in that
+        // set. Sweeping with SweepOnly may add this block to the empty set, if the block is found
+        // to be empty. The free-list being null implies SweepOnly.
+        //
+        // Note that you need to make sure that the empty bit reflects reality. If it&apos;s not set
+        // and the block is freshly created, then we&apos;ll make the mistake of running destructors in
+        // the block. If it&apos;s not set and the block has nothing marked, then we&apos;ll make the
+        // mistake of making a pop freelist rather than a bump freelist.</doc>
+<dec f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='144' type='void JSC::MarkedBlock::Handle::sweep(JSC::FreeList * )'/>
+<doc f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='135'>// Sweeping ensures that destructors get called and removes the block from the unswept
+        // set. Sweeping to free list also removes the block from the empty set, if it was in that
+        // set. Sweeping with SweepOnly may add this block to the empty set, if the block is found
+        // to be empty. The free-list being null implies SweepOnly.
+        //
+        // Note that you need to make sure that the empty bit reflects reality. If it&apos;s not set
+        // and the block is freshly created, then we&apos;ll make the mistake of running destructors in
+        // the block. If it&apos;s not set and the block has nothing marked, then we&apos;ll make the
+        // mistake of making a pop freelist rather than a bump freelist.</doc>
+<use f='WebKit/Source/JavaScriptCore/heap/BlockDirectory.cpp' l='299' u='c' c='_ZN3JSC14BlockDirectory5sweepEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IncrementalSweeper.cpp' l='88' u='c' c='_ZN3JSC18IncrementalSweeper14sweepNextBlockERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/heap/LocalAllocator.cpp' l='199' u='c' c='_ZN3JSC14LocalAllocator28tryAllocateWithoutCollectingEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/LocalAllocator.cpp' l='225' u='c' c='_ZN3JSC14LocalAllocator13tryAllocateInEPNS_11MarkedBlock6HandleE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.cpp' l='170' u='c' c='_ZN3JSC11MarkedBlock6Handle20lastChanceToFinalizeEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.cpp' l='194' u='c' c='_ZN3JSC11MarkedBlock6Handle16resumeAllocatingERNS_8FreeListE'/>
+<def f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.cpp' l='383' ll='466' type='void JSC::MarkedBlock::Handle::sweep(JSC::FreeList * freeList)'/>

@@ -1,0 +1,19 @@
+<dec f='include/xcb/xproto.h' l='6677' type='xcb_intern_atom_cookie_t xcb_intern_atom(xcb_connection_t * c, uint8_t only_if_exists, uint16_t name_len, const char * name)'/>
+<doc f='include/xcb/xproto.h' l='6658'>/**
+ * @brief Get atom identifier by name
+ *
+ * @param c The connection
+ * @param only_if_exists Return a valid atom id only if the atom already exists.
+ * @param name_len The length of the following \a name.
+ * @param name The name of the atom.
+ * @return A cookie
+ *
+ * Retrieves the identifier (xcb_atom_t TODO) for the atom with the specified
+ * name. Atoms are used in protocols like EWMH, for example to store window titles
+ * (`_NET_WM_NAME` atom) as property of a window.
+ * 
+ * If \a only_if_exists is 0, the atom will be created if it does not already exist.
+ * If \a only_if_exists is 1, `XCB_ATOM_NONE` will be returned if the atom does
+ * not yet exist.
+ *
+ */</doc>

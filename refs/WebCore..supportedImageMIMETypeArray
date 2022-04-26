@@ -1,0 +1,9 @@
+<def f='WebKit/Source/WebCore/platform/MIMETypeRegistry.cpp' l='78' ll='149' type='const WTF::ComparableCaseFoldingASCIILiteral [9]'/>
+<use f='WebKit/Source/WebCore/platform/MIMETypeRegistry.cpp' l='162' u='r' c='_ZN7WebCore16MIMETypeRegistry23supportedImageMIMETypesEv'/>
+<use f='WebKit/Source/WebCore/platform/MIMETypeRegistry.cpp' l='410' u='r' c='_ZN7WebCore16MIMETypeRegistry24isSupportedImageMIMETypeERKN3WTF6StringE'/>
+<doc f='WebKit/Source/WebCore/platform/MIMETypeRegistry.cpp' l='72'>// On iOS, we include malformed image MIME types for compatibility with Mail.
+// These were removed for &lt;rdar://problem/6564538&gt; Re-enable UTI code in WebCore now that
+// MobileCoreServices exists. But Mail relies on at least image/tif reported as being
+// supported (should be image/tiff). This can be removed when Mail addresses:
+// &lt;rdar://problem/7879510&gt; Mail should use standard image mimetypes
+// and we fix sniffing so that it corrects items such as image/jpg -&gt; image/jpeg.</doc>

@@ -1,0 +1,36 @@
+<dec f='include/wayland-client-protocol.h' l='4479' type='void (*)(void *, struct wl_pointer *, uint32_t, int32_t)'/>
+<offset>512</offset>
+<doc f='include/wayland-client-protocol.h' l='4445'>/**
+	 * axis click event
+	 *
+	 * Discrete step information for scroll and other axes.
+	 *
+	 * This event carries the axis value of the wl_pointer.axis event
+	 * in discrete steps (e.g. mouse wheel clicks).
+	 *
+	 * This event does not occur on its own, it is coupled with a
+	 * wl_pointer.axis event that represents this axis value on a
+	 * continuous scale. The protocol guarantees that each
+	 * axis_discrete event is always followed by exactly one axis event
+	 * with the same axis number within the same wl_pointer.frame. Note
+	 * that the protocol allows for other events to occur between the
+	 * axis_discrete and its coupled axis event, including other
+	 * axis_discrete or axis events.
+	 *
+	 * This event is optional; continuous scrolling devices like
+	 * two-finger scrolling on touchpads do not have discrete steps and
+	 * do not generate this event.
+	 *
+	 * The discrete value carries the directional information. e.g. a
+	 * value of -2 is two steps towards the negative direction of this
+	 * axis.
+	 *
+	 * The axis number is identical to the axis number in the
+	 * associated axis event.
+	 *
+	 * The order of wl_pointer.axis_discrete and wl_pointer.axis_source
+	 * is not guaranteed.
+	 * @param axis axis type
+	 * @param discrete number of steps
+	 * @since 5
+	 */</doc>

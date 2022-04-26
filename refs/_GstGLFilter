@@ -1,0 +1,30 @@
+<use f='include/gstreamer-1.0/gst/gl/gstgl_fwd.h' l='93'/>
+<def f='include/gstreamer-1.0/gst/gl/gstglfilter.h' l='63' ll='93'/>
+<size>1064</size>
+<doc f='include/gstreamer-1.0/gst/gl/gstglfilter.h' l='54'>/**
+ * GstGLFilter:
+ * @in_info: the video info for input buffers
+ * @out_info: the video info for output buffers
+ * @in_texture_target: The texture target of the input buffers (usually 2D)
+ * @out_texture_target: The texture target of the output buffers (usually 2D)
+ * @out_caps: the output #GstCaps
+ * @fbo: #GstGLFramebuffer object used for transformations (only for subclass usage)
+ */</doc>
+<mbr r='_GstGLFilter::parent' o='0' t='GstGLBaseFilter'/>
+<mbr r='_GstGLFilter::in_info' o='5184' t='GstVideoInfo'/>
+<mbr r='_GstGLFilter::out_info' o='6400' t='GstVideoInfo'/>
+<mbr r='_GstGLFilter::in_texture_target' o='7616' t='GstGLTextureTarget'/>
+<mbr r='_GstGLFilter::out_texture_target' o='7648' t='GstGLTextureTarget'/>
+<mbr r='_GstGLFilter::out_caps' o='7680' t='GstCaps *'/>
+<mbr r='_GstGLFilter::fbo' o='7744' t='GstGLFramebuffer *'/>
+<mbr r='_GstGLFilter::gl_result' o='7808' t='gboolean'/>
+<mbr r='_GstGLFilter::inbuf' o='7872' t='GstBuffer *'/>
+<mbr r='_GstGLFilter::outbuf' o='7936' t='GstBuffer *'/>
+<mbr r='_GstGLFilter::default_shader' o='8000' t='GstGLShader *'/>
+<mbr r='_GstGLFilter::valid_attributes' o='8064' t='gboolean'/>
+<mbr r='_GstGLFilter::vao' o='8096' t='guint'/>
+<mbr r='_GstGLFilter::vbo_indices' o='8128' t='guint'/>
+<mbr r='_GstGLFilter::vertex_buffer' o='8160' t='guint'/>
+<mbr r='_GstGLFilter::draw_attr_position_loc' o='8192' t='gint'/>
+<mbr r='_GstGLFilter::draw_attr_texture_loc' o='8224' t='gint'/>
+<mbr r='_GstGLFilter::_padding' o='8256' t='gpointer [4]'/>

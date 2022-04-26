@@ -1,0 +1,30 @@
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGNode.h' l='202' ll='223'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGNode.h' l='213' c='_ZN3JSC3DFG10SwitchCase17withBytecodeIndexENS0_11LazyJSValueEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGNode.h' l='215' c='_ZN3JSC3DFG10SwitchCase17withBytecodeIndexENS0_11LazyJSValueEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGNode.h' l='236'/>
+<size>32</size>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGNode.h' l='191'>// The SwitchData and associated data structures duplicate the information in
+// JumpTable. The DFG may ultimately end up using the JumpTable, though it may
+// instead decide to do something different - this is entirely up to the DFG.
+// These data structures give the DFG a higher-level semantic description of
+// what is going on, which will allow it to make the right decision.
+//
+// Note that there will never be multiple SwitchCases in SwitchData::cases that
+// have the same SwitchCase::value, since the bytecode&apos;s JumpTables never have
+// duplicates - since the JumpTable maps a value to a target. It&apos;s a
+// one-to-many mapping. So we may have duplicate targets, but never duplicate
+// values.</doc>
+<fun r='_ZN3JSC3DFG10SwitchCaseC1Ev'/>
+<fun r='_ZN3JSC3DFG10SwitchCaseC1ENS0_11LazyJSValueEPNS0_10BasicBlockE'/>
+<fun r='_ZN3JSC3DFG10SwitchCase17withBytecodeIndexENS0_11LazyJSValueEj'/>
+<mbr r='JSC::DFG::SwitchCase::value' o='0' t='JSC::DFG::LazyJSValue'/>
+<mbr r='JSC::DFG::SwitchCase::target' o='128' t='JSC::DFG::BranchTarget'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='2233' c='_ZN3JSC3DFG14ByteCodeParser14handleInliningEPNS0_4NodeENS_7OperandERKNS_14CallLinkStatusEiNS_15VirtualRegisterEiNS_13BytecodeIndexENS0_8NodeTypeENS_158442622'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.cpp' l='213' c='_ZN3JSC3DFG11JITCompiler4linkERNS_10LinkBufferE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.cpp' l='233' c='_ZN3JSC3DFG11JITCompiler4linkERNS_10LinkBufferE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='16832' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB312switchStringEPNS_3DFG10SwitchDataEPNS_2B35ValueERNS3_4EdgeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='16875' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB312switchStringEPNS_3DFG10SwitchDataEPNS_2B35ValueERNS3_4EdgeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='17103' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB316switchStringSlowEPNS_3DFG10SwitchDataEPNS_2B35ValueE'/>
+<size>32</size>

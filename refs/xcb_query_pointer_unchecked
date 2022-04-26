@@ -1,0 +1,16 @@
+<dec f='include/xcb/xproto.h' l='8105' type='xcb_query_pointer_cookie_t xcb_query_pointer_unchecked(xcb_connection_t * c, xcb_window_t window)'/>
+<doc f='include/xcb/xproto.h' l='8089'>/**
+ * @brief get pointer coordinates
+ *
+ * @param c The connection
+ * @param window A window to check if the pointer is on the same screen as \a window (see the
+ * `same_screen` field in the reply).
+ * @return A cookie
+ *
+ * Gets the root window the pointer is logically on and the pointer coordinates
+ * relative to the root window&apos;s origin.
+ *
+ * This form can be used only if the request will cause
+ * a reply to be generated. Any returned error will be
+ * placed in the event queue.
+ */</doc>

@@ -1,0 +1,12 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='325' type='bool JSC::Heap::hasAccess() const'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='322'>// If true, the GC believes that the mutator is currently messing with the heap. We call this
+    // &quot;having heap access&quot;. The GC may block if the mutator is in this state. If false, the GC may
+    // currently be doing things to the heap that make the heap unsafe to access for the mutator.</doc>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapInlines.h' l='247' ll='250' type='bool JSC::Heap::hasAccess() const'/>
+<dec f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='325' type='bool JSC::Heap::hasAccess() const'/>
+<def f='WebKit/Source/JavaScriptCore/heap/HeapInlines.h' l='247' ll='250' type='bool JSC::Heap::hasAccess() const'/>
+<doc f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='322'>// If true, the GC believes that the mutator is currently messing with the heap. We call this
+    // &quot;having heap access&quot;. The GC may block if the mutator is in this state. If false, the GC may
+    // currently be doing things to the heap that make the heap unsafe to access for the mutator.</doc>
+<use f='WebKit/Source/JavaScriptCore/heap/ReleaseHeapAccessScope.h' l='62' u='c' c='_ZN3JSC30ReleaseHeapAccessIfNeededScopeC1ERNS_4HeapE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSLock.cpp' l='144' u='c' c='_ZN3JSC6JSLock14didAcquireLockEv'/>

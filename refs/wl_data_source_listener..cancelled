@@ -1,0 +1,25 @@
+<dec f='include/wayland-client-protocol.h' l='2288' type='void (*)(void *, struct wl_data_source *)'/>
+<offset>128</offset>
+<doc f='include/wayland-client-protocol.h' l='2265'>/**
+	 * selection was cancelled
+	 *
+	 * This data source is no longer valid. There are several reasons
+	 * why this could happen:
+	 *
+	 * - The data source has been replaced by another data source. -
+	 * The drag-and-drop operation was performed, but the drop
+	 * destination did not accept any of the mime types offered through
+	 * wl_data_source.target. - The drag-and-drop operation was
+	 * performed, but the drop destination did not select any of the
+	 * actions present in the mask offered through
+	 * wl_data_source.action. - The drag-and-drop operation was
+	 * performed but didn&apos;t happen over a surface. - The compositor
+	 * cancelled the drag-and-drop operation (e.g. compositor dependent
+	 * timeouts to avoid stale drag-and-drop transfers).
+	 *
+	 * The client should clean up and destroy this data source.
+	 *
+	 * For objects of version 2 or older, wl_data_source.cancelled will
+	 * only be emitted if the data source was replaced by another data
+	 * source.
+	 */</doc>

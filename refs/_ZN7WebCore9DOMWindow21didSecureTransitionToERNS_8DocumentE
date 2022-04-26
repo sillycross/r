@@ -1,0 +1,10 @@
+<dec f='WebKit/Source/WebCore/page/DOMWindow.h' l='130' type='void WebCore::DOMWindow::didSecureTransitionTo(WebCore::Document &amp; )'/>
+<doc f='WebKit/Source/WebCore/page/DOMWindow.h' l='123'>// In some rare cases, we&apos;ll reuse a DOMWindow for a new Document. For example,
+    // when a script calls window.open(&quot;...&quot;), the browser gives JavaScript a window
+    // synchronously but kicks off the load in the window asynchronously. Web sites
+    // expect that modifications that they make to the window object synchronously
+    // won&apos;t be blown away when the network load commits. To make that happen, we
+    // &quot;securely transition&quot; the existing DOMWindow to the Document that results from
+    // the network load. See also SecurityContext::isSecureTransitionTo.</doc>
+<def f='WebKit/Source/WebCore/page/DOMWindow.cpp' l='393' ll='402' type='void WebCore::DOMWindow::didSecureTransitionTo(WebCore::Document &amp; document)'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='4959' u='c' c='_ZN7WebCore8Document17takeDOMWindowFromERS0_'/>

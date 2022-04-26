@@ -1,0 +1,23 @@
+<def f='WebKit/Source/ThirdParty/ANGLE/src/common/third_party/base/anglebase/sha1.cc' l='40' ll='69'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/common/third_party/base/anglebase/sha1.cc' l='236' c='_ZN5angle4base13SHA1HashBytesEPKhmPh'/>
+<size>376</size>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/common/third_party/base/anglebase/sha1.cc' l='19'>// Implementation of SHA-1. Only handles data in byte-sized blocks,
+// which simplifies the code a fair bit.
+
+// Identifier names follow notation in FIPS PUB 180-3, where you&apos;ll
+// also find a description of the algorithm:
+// http://csrc.nist.gov/publications/fips/fips180-3/fips180-3_final.pdf
+
+// Usage example:
+//
+// SecureHashAlgorithm sha;
+// while(there is data to hash)
+//   sha.Update(moredata, size of data);
+// sha.Final();
+// memcpy(somewhere, sha.Digest(), 20);
+//
+// to reuse the instance of sha, call sha.Init();
+
+// TODO(jhawkins): Replace this implementation with a per-platform
+// implementation using each platform&apos;s crypto library.  See
+// http://crbug.com/47218</doc>

@@ -1,0 +1,26 @@
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitSecurityOrigin.h' l='34'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSecurityOriginPrivate.h' l='25' c='_Z26webkitSecurityOriginCreateOi'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitAuthenticationRequest.cpp' l='344' c='_Z49webkit_authentication_request_get_security_originP28_WebKitAuthenticationRequest'/>
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSecurityOrigin.cpp' l='44' ll='54'/>
+<size>48</size>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitSecurityOrigin.cpp' l='27'>/**
+ * SECTION: WebKitSecurityOrigin
+ * @Short_description: A security boundary for websites
+ * @Title: WebKitSecurityOrigin
+ *
+ * #WebKitSecurityOrigin is a representation of a security domain
+ * defined by websites. A security origin consists of a protocol, a
+ * hostname, and an optional port number.
+ *
+ * Resources with the same security origin can generally access each
+ * other for client-side scripting or database access. When comparing
+ * origins, beware that if both protocol and host are %NULL, the origins
+ * should not be treated as equal.
+ *
+ * Since: 2.16
+ */</doc>
+<fun r='_ZN21_WebKitSecurityOriginC1EON7WebCore18SecurityOriginDataE'/>
+<mbr r='_WebKitSecurityOrigin::securityOriginData' o='0' t='WebCore::SecurityOriginData'/>
+<mbr r='_WebKitSecurityOrigin::protocol' o='192' t='WTF::CString'/>
+<mbr r='_WebKitSecurityOrigin::host' o='256' t='WTF::CString'/>
+<mbr r='_WebKitSecurityOrigin::referenceCount' o='320' t='int'/>

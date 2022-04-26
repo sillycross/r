@@ -1,0 +1,17 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitCookieManager.cpp' l='327' ll='342' type='void webkit_cookie_manager_get_cookies(WebKitCookieManager * manager, const gchar * uri, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer userData)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitCookieManager.cpp' l='311'>/**
+ * webkit_cookie_manager_get_cookies:
+ * @cookie_manager: a #WebKitCookieManager
+ * @uri: the URI associated to the cookies to be retrieved
+ * @cancellable: (allow-none): a #GCancellable or %NULL to ignore
+ * @callback: (scope async): a #GAsyncReadyCallback to call when the request is satisfied
+ * @user_data: (closure): the data to pass to callback function
+ *
+ * Asynchronously get a list of #SoupCookie from @cookie_manager associated with @uri, which
+ * must be either an HTTP or an HTTPS URL.
+ *
+ * When the operation is finished, @callback will be called. You can then call
+ * webkit_cookie_manager_get_cookies_finish() to get the result of the operation.
+ *
+ * Since: 2.20
+ */</doc>

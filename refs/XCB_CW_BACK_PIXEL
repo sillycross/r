@@ -1,0 +1,13 @@
+<dec f='include/xcb/xproto.h' l='1369' type='2'/>
+<doc f='include/xcb/xproto.h' l='1356'>/**&lt; Overrides the default background-pixmap. The background pixmap and window must
+have the same root and same depth. Any size pixmap can be used, although some
+sizes may be faster than others.
+
+If `XCB_BACK_PIXMAP_NONE` is specified, the window has no defined background.
+The server may fill the contents with the previous screen contents or with
+contents of its own choosing.
+
+If `XCB_BACK_PIXMAP_PARENT_RELATIVE` is specified, the parent&apos;s background is
+used, but the window must have the same depth as the parent (or a Match error
+results).   The parent&apos;s background is tracked, and the current version is
+used each time the window background is required. */</doc>

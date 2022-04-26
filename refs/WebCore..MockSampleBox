@@ -1,0 +1,48 @@
+<use f='WebKit/Source/WebCore/platform/MediaSample.h' l='53'/>
+<inh f='WebKit/Source/WebCore/platform/mock/mediasource/MockBox.h' l='46' c='WebCore::MockBox'/>
+<def f='WebKit/Source/WebCore/platform/mock/mediasource/MockBox.h' l='122' ll='167'/>
+<use f='WebKit/Source/WebCore/platform/mock/mediasource/MockSourceBufferPrivate.h' l='78' c='_ZN7WebCore23MockSourceBufferPrivate16didReceiveSampleERKNS_13MockSampleBoxE'/>
+<use f='WebKit/Source/WebCore/platform/mock/mediasource/MockSourceBufferPrivate.cpp' l='47' c='_ZN7WebCore15MockMediaSample6createERKNS_13MockSampleBoxE'/>
+<use f='WebKit/Source/WebCore/platform/mock/mediasource/MockSourceBufferPrivate.cpp' l='51' c='_ZN7WebCore15MockMediaSampleC1ERKNS_13MockSampleBoxE'/>
+<use f='WebKit/Source/WebCore/platform/mock/mediasource/MockSourceBufferPrivate.cpp' l='76'/>
+<use f='WebKit/Source/WebCore/platform/mock/mediasource/MockSourceBufferPrivate.cpp' l='155' c='_ZN7WebCore23MockSourceBufferPrivate6appendEON3WTF6VectorIhLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/mock/mediasource/MockSourceBufferPrivate.cpp' l='155' c='_ZN7WebCore23MockSourceBufferPrivate6appendEON3WTF6VectorIhLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<use f='WebKit/Source/WebCore/platform/mock/mediasource/MockSourceBufferPrivate.cpp' l='202' c='_ZN7WebCore23MockSourceBufferPrivate16didReceiveSampleERKNS_13MockSampleBoxE'/>
+<size>72</size>
+<doc f='WebKit/Source/WebCore/platform/mock/mediasource/MockBox.h' l='110'>// A MockSampleBox extends MockBox and expects the following data structure:
+//
+// 4 bytes : 4CC : identifier = &apos;smpl&apos;
+// 4 bytes : unsigned : length = 29
+// 4 bytes : signed : time scale
+// 4 bytes : signed : presentation time value
+// 4 bytes : signed : decode time value
+// 4 bytes : signed : duration time value
+// 4 bytes : signed : track ID
+// 1 byte  : unsigned : flags
+// 1 byte  : unsigned : generation
+//</doc>
+<fun r='_ZN7WebCore13MockSampleBox4typeEv'/>
+<fun r='_ZN7WebCore13MockSampleBoxC1EPN3JSC11ArrayBufferE'/>
+<fun r='_ZNK7WebCore13MockSampleBox21presentationTimestampEv'/>
+<fun r='_ZNK7WebCore13MockSampleBox15decodeTimestampEv'/>
+<fun r='_ZNK7WebCore13MockSampleBox8durationEv'/>
+<fun r='_ZNK7WebCore13MockSampleBox7trackIDEv'/>
+<fun r='_ZNK7WebCore13MockSampleBox5flagsEv'/>
+<fun r='_ZNK7WebCore13MockSampleBox10generationEv'/>
+<fun r='_ZN7WebCore13MockSampleBox18offsetTimestampsByERKN3WTF9MediaTimeE'/>
+<fun r='_ZN7WebCore13MockSampleBox13setTimestampsERKN3WTF9MediaTimeES4_'/>
+<fun r='_ZN7WebCore13MockSampleBox9clearFlagEh'/>
+<fun r='_ZN7WebCore13MockSampleBox7setFlagEh'/>
+<fun r='_ZNK7WebCore13MockSampleBox6isSyncEv'/>
+<fun r='_ZNK7WebCore13MockSampleBox11isCorruptedEv'/>
+<fun r='_ZNK7WebCore13MockSampleBox9isDroppedEv'/>
+<fun r='_ZNK7WebCore13MockSampleBox9isDelayedEv'/>
+<fun r='_ZNK7WebCore13MockSampleBox15isNonDisplayingEv'/>
+<mbr r='WebCore::MockSampleBox::m_presentationTimestamp' o='128' t='WTF::MediaTime'/>
+<mbr r='WebCore::MockSampleBox::m_decodeTimestamp' o='256' t='WTF::MediaTime'/>
+<mbr r='WebCore::MockSampleBox::m_duration' o='384' t='WTF::MediaTime'/>
+<mbr r='WebCore::MockSampleBox::m_trackID' o='512' t='int32_t'/>
+<mbr r='WebCore::MockSampleBox::m_flags' o='544' t='uint8_t'/>
+<mbr r='WebCore::MockSampleBox::m_generation' o='552' t='uint8_t'/>
+<fun r='_ZN7WebCore13MockSampleBoxC1EPN3JSC11ArrayBufferE'/>
+<fun r='_ZN7WebCore13MockSampleBox4typeEv'/>

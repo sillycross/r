@@ -1,0 +1,15 @@
+<def f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='145' ll='148' type='int sh::ShaderVariable::parentArrayIndex() const'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderVars.h' l='139'>// Offset of this variable in parent arrays. In case the parent is an array of arrays, the
+    // offset is outerArrayElement * innerArraySize + innerArrayElement.
+    // For example, if there&apos;s a variable declared as size 3 array of size 4 array of int:
+    //   int a[3][4];
+    // then the flattenedOffsetInParentArrays of a[2] would be 2.
+    // and flattenedOffsetInParentArrays of a[2][1] would be 2*4 + 1 = 9.</doc>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderVars.cpp' l='162' u='c' c='_ZN2sh14ShaderVariable14indexIntoArrayEj'/>
+<def f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='145' ll='148' type='int sh::ShaderVariable::parentArrayIndex() const'/>
+<doc f='WebKit/ANGLE/Headers/ANGLE/ShaderVars.h' l='139'>// Offset of this variable in parent arrays. In case the parent is an array of arrays, the
+    // offset is outerArrayElement * innerArraySize + innerArrayElement.
+    // For example, if there&apos;s a variable declared as size 3 array of size 4 array of int:
+    //   int a[3][4];
+    // then the flattenedOffsetInParentArrays of a[2] would be 2.
+    // and flattenedOffsetInParentArrays of a[2][1] would be 2*4 + 1 = 9.</doc>

@@ -1,0 +1,11 @@
+<dec f='WebKit/Source/WebCore/dom/DocumentParser.h' l='91' type='void WebCore::DocumentParser::detach()'/>
+<doc f='WebKit/Source/WebCore/dom/DocumentParser.h' l='86'>// Document is expected to detach the parser before releasing its ref.
+    // After detach, m_document is cleared.  The parser will unwind its
+    // callstacks, but not produce any more nodes.
+    // It is impossible for the parser to touch the rest of WebCore after
+    // detach is called.</doc>
+<use f='WebKit/Source/WebCore/inspector/DOMPatchSupport.cpp' l='93' u='c' c='_ZN7WebCore15DOMPatchSupport13patchDocumentERKN3WTF6StringE'/>
+<ovr f='WebKit/Source/WebCore/dom/ScriptableDocumentParser.cpp' l='73' c='_ZN7WebCore24ScriptableDocumentParser6detachEv'/>
+<use f='WebKit/Source/WebCore/dom/ScriptableDocumentParser.cpp' l='77' u='c' c='_ZN7WebCore24ScriptableDocumentParser6detachEv'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='2980' u='c' c='_ZN7WebCore8Document12detachParserEv'/>
+<def f='WebKit/Source/WebCore/dom/DocumentParser.cpp' l='65' ll='69' type='void WebCore::DocumentParser::detach()'/>

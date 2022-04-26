@@ -1,0 +1,19 @@
+<dec f='WebKit/WTF/Headers/wtf/SaturatedArithmetic.h' l='42' type='std::enable_if_t&lt;std::is_integral_v&lt;SignedIntegralType&gt; &amp;&amp; std::is_signed_v&lt;SignedIntegralType&gt;, SignedIntegralType&gt; WTF::saturatedSum(SignedIntegralType , SignedIntegralType )'/>
+<dec f='WebKit/WTF/Headers/wtf/SaturatedArithmetic.h' l='43' type='std::enable_if_t&lt;std::is_integral_v&lt;UnsignedIntegralType&gt; &amp;&amp; ! std::is_signed_v&lt;UnsignedIntegralType&gt;, UnsignedIntegralType&gt; WTF::saturatedSum(UnsignedIntegralType , UnsignedIntegralType )'/>
+<def f='WebKit/WTF/Headers/wtf/SaturatedArithmetic.h' l='62' ll='76' type='int32_t WTF::saturatedSum(int32_t a, int32_t b)'/>
+<def f='WebKit/WTF/Headers/wtf/SaturatedArithmetic.h' l='111' ll='115' type='std::enable_if_t&lt;std::is_integral_v&lt;UnsignedIntegralType&gt; &amp;&amp; ! std::is_signed_v&lt;UnsignedIntegralType&gt;, UnsignedIntegralType&gt; WTF::saturatedSum(UnsignedIntegralType a, UnsignedIntegralType b)'/>
+<use f='WebKit/Source/WebCore/platform/LayoutUnit.h' l='153' u='c' c='_ZNK7WebCore10LayoutUnit5roundEv'/>
+<use f='WebKit/Source/WebCore/platform/LayoutUnit.h' l='591' u='c' c='_ZN7WebCoreplERKNS_10LayoutUnitES2_'/>
+<use f='WebKit/Source/WebCore/platform/LayoutUnit.h' l='694' u='c' c='_ZN7WebCorepLERNS_10LayoutUnitERKS0_'/>
+<doc f='WebKit/WTF/Headers/wtf/SaturatedArithmetic.h' l='41'>// FIXME: Enhance this so it fails to compile calls where either of the arguments can be outside the range of the integral type instead of quietly converting.</doc>
+<dec f='WebKit/Source/WTF/wtf/SaturatedArithmetic.h' l='42' type='std::enable_if_t&lt;std::is_integral_v&lt;SignedIntegralType&gt; &amp;&amp; std::is_signed_v&lt;SignedIntegralType&gt;, SignedIntegralType&gt; WTF::saturatedSum(SignedIntegralType , SignedIntegralType )'/>
+<dec f='WebKit/Source/WTF/wtf/SaturatedArithmetic.h' l='43' type='std::enable_if_t&lt;std::is_integral_v&lt;UnsignedIntegralType&gt; &amp;&amp; ! std::is_signed_v&lt;UnsignedIntegralType&gt;, UnsignedIntegralType&gt; WTF::saturatedSum(UnsignedIntegralType , UnsignedIntegralType )'/>
+<def f='WebKit/Source/WTF/wtf/SaturatedArithmetic.h' l='62' ll='76' type='int32_t WTF::saturatedSum(int32_t a, int32_t b)'/>
+<def f='WebKit/Source/WTF/wtf/SaturatedArithmetic.h' l='111' ll='115' type='std::enable_if_t&lt;std::is_integral_v&lt;UnsignedIntegralType&gt; &amp;&amp; ! std::is_signed_v&lt;UnsignedIntegralType&gt;, UnsignedIntegralType&gt; WTF::saturatedSum(UnsignedIntegralType a, UnsignedIntegralType b)'/>
+<doc f='WebKit/Source/WTF/wtf/SaturatedArithmetic.h' l='41'>// FIXME: Enhance this so it fails to compile calls where either of the arguments can be outside the range of the integral type instead of quietly converting.</doc>
+<use f='WebKit/Source/WTF/wtf/text/StringBuilder.cpp' l='160' u='c' c='_ZN3WTF13StringBuilder16appendCharactersEPKDsj'/>
+<use f='WebKit/Source/WTF/wtf/text/StringBuilder.cpp' l='169' u='c' c='_ZN3WTF13StringBuilder16appendCharactersEPKhj'/>
+<use f='WebKit/Source/WTF/wtf/text/StringBuilder.cpp' l='172' u='c' c='_ZN3WTF13StringBuilder16appendCharactersEPKhj'/>
+<use f='WebKit/Source/WebCore/rendering/RenderCounter.cpp' l='190' u='c' c='_ZN7WebCoreL11planCounterERNS_13RenderElementERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderCounter.cpp' l='190' u='c' c='_ZN7WebCoreL11planCounterERNS_13RenderElementERKN3WTF10AtomStringE'/>
+<use f='WebKit/Source/WebCore/style/StyleBuilderCustom.h' l='1363' u='c' c='_ZN7WebCore5Style13BuilderCustom17applyValueCounterERNS0_12BuilderStateERNS_8CSSValueE'/>

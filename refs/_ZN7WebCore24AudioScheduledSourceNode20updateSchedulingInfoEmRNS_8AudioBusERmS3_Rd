@@ -1,0 +1,14 @@
+<dec f='WebKit/Source/WebCore/Modules/webaudio/AudioScheduledSourceNode.h' l='75' type='void WebCore::AudioScheduledSourceNode::updateSchedulingInfo(size_t quantumFrameSize, WebCore::AudioBus &amp; outputBus, size_t &amp; quantumFrameOffset, size_t &amp; nonSilentFramesToProcess, double &amp; startFrameOffset)'/>
+<doc f='WebKit/Source/WebCore/Modules/webaudio/AudioScheduledSourceNode.h' l='66'>// Get frame information for the current time quantum.
+    // We handle the transition into PLAYING_STATE and FINISHED_STATE here,
+    // zeroing out portions of the outputBus which are outside the range of startFrame and endFrame.
+    // Each frame time is relative to the context&apos;s currentSampleFrame().
+    // quantumFrameOffset: Offset frame in this time quantum to start rendering.
+    // nonSilentFramesToProcess: Number of frames rendering non-silence (will be &lt;= quantumFrameSize).
+    // startFrameOffset : The fractional frame offset from quantumFrameOffset and the actual starting
+    //                    time of the source. This is non-zero only when transitioning from the
+    //                    SCHEDULED_STATE to the PLAYING_STATE.</doc>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioBufferSourceNode.cpp' l='129' u='c' c='_ZN7WebCore21AudioBufferSourceNode7processEm'/>
+<def f='WebKit/Source/WebCore/Modules/webaudio/AudioScheduledSourceNode.cpp' l='57' ll='146' type='void WebCore::AudioScheduledSourceNode::updateSchedulingInfo(size_t quantumFrameSize, WebCore::AudioBus &amp; outputBus, size_t &amp; quantumFrameOffset, size_t &amp; nonSilentFramesToProcess, double &amp; startFrameOffset)'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/ConstantSourceNode.cpp' l='73' u='c' c='_ZN7WebCore18ConstantSourceNode7processEm'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/OscillatorNode.cpp' l='370' u='c' c='_ZN7WebCore14OscillatorNode7processEm'/>

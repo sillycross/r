@@ -1,0 +1,108 @@
+<inh f='WebKit/WTF/Headers/wtf/Locker.h' l='43' c='WTF::AbstractLocker'/>
+<def f='WebKit/WTF/Headers/wtf/Locker.h' l='62' ll='142'/>
+<use f='WebKit/WTF/Headers/wtf/Locker.h' l='148' c='_ZN3WTF16DropLockForScopeC1ERNS_6LockerIT_EE'/>
+<use f='WebKit/WTF/Headers/wtf/Locker.h' l='160'/>
+<use f='WebKit/WTF/Headers/wtf/ThreadingPrimitives.h' l='94'/>
+<inh f='WebKit/WTF/Headers/wtf/Locker.h' l='43' c='WTF::AbstractLocker'/>
+<def f='WebKit/WTF/Headers/wtf/Lock.h' l='151' ll='198'/>
+<use f='WebKit/WTF/Headers/wtf/Lock.h' l='152'/>
+<use f='WebKit/WTF/Headers/wtf/Lock.h' l='176' c='_ZN3WTF6LockerINS_4LockEEC1ERKS2_'/>
+<use f='WebKit/WTF/Headers/wtf/Lock.h' l='177' c='_ZN3WTF6LockerINS_4LockEEaSERKS2_'/>
+<use f='WebKit/WTF/Headers/wtf/Lock.h' l='177' c='_ZN3WTF6LockerINS_4LockEEaSERKS2_'/>
+<use f='WebKit/WTF/Headers/wtf/Lock.h' l='200' c='WTF::{deductionguideforLocker}'/>
+<use f='WebKit/WTF/Headers/wtf/Lock.h' l='201' c='WTF::{deductionguideforLocker}'/>
+<use f='WebKit/WTF/Headers/wtf/Lock.h' l='203'/>
+<use f='WebKit/WTF/Headers/wtf/WordLock.h' l='103'/>
+<use f='WebKit/WTF/Headers/wtf/NoLock.h' l='40'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VMTraps.h' l='239' c='_ZN3JSC7VMTraps27invalidateCodeBlocksOnStackERN3WTF6LockerINS1_4LockEEEPNS_9CallFrameE'/>
+<size>16</size>
+<doc f='WebKit/WTF/Headers/wtf/Lock.h' l='148'>// Locker specialization to use with Lock.
+// Non-movable simple scoped lock holder.
+// Example: Locker locker { m_lock };</doc>
+<fun r='_ZN3WTF6LockerC1ERT_'/>
+<fun r='_ZN3WTF6LockerC1EPT_'/>
+<fun r='_ZN3WTF6LockerC1ESt12adopt_lock_tRT_'/>
+<fun r='_ZN3WTF6LockerC1ENS_21NoLockingNecessaryTagE'/>
+<fun r='_ZN3WTF6LockerC1Ej'/>
+<fun r='_ZN3WTF6LockerD1Ev'/>
+<fun r='_ZN3WTF6Locker7tryLockERT_'/>
+<fun r='_ZN3WTF6Locker8lockableEv'/>
+<fun r='_ZNK3WTF6LockercvbEv'/>
+<fun r='_ZN3WTF6Locker11unlockEarlyEv'/>
+<fun r='_ZN3WTF6LockerC1EONS_6LockerIT_EE'/>
+<fun r='_ZN3WTF6LockeraSEONS_6LockerIT_EE'/>
+<fun r='_ZN3WTF6Locker6unlockEv'/>
+<fun r='_ZN3WTF6Locker4lockEv'/>
+<mbr r='WTF::Locker::m_lockable' t='T *'/>
+<fun r='_ZN3WTF6LockerINS_4LockEEC1ERS1_'/>
+<fun r='_ZN3WTF6LockerINS_4LockEEC1ESt12adopt_lock_tRS1_'/>
+<fun r='_ZN3WTF6LockerINS_4LockEED1Ev'/>
+<fun r='_ZN3WTF6LockerINS_4LockEE11unlockEarlyEv'/>
+<fun r='_ZN3WTF6LockerINS_4LockEEC1ERKS2_'/>
+<fun r='_ZN3WTF6LockerINS_4LockEEaSERKS2_'/>
+<fun r='_ZN3WTF6LockerINS_4LockEE4lockEv'/>
+<fun r='_ZN3WTF6LockerINS_4LockEE6unlockEv'/>
+<mbr r='WTF::Locker::m_lock' o='0' t='WTF::Lock &amp;'/>
+<mbr r='WTF::Locker::m_isLocked' o='64' t='bool'/>
+<use f='WebKit/Source/WebCore/Modules/indexeddb/IDBActiveDOMObject.h' l='41' c='_ZN7WebCore18IDBActiveDOMObject16contextDestroyedEv'/>
+<use f='WebKit/Source/WebCore/Modules/indexeddb/IDBActiveDOMObject.h' l='55' c='_ZN7WebCore18IDBActiveDOMObject29performCallbackOnOriginThreadERT_MS1_FvDpT0_EDpOT1_'/>
+<use f='WebKit/Source/WebCore/Modules/indexeddb/IDBActiveDOMObject.h' l='71' c='_ZN7WebCore18IDBActiveDOMObject26callFunctionOnOriginThreadEON3WTF8FunctionIFvvEEE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VMTraps.h' l='239' c='_ZN3JSC7VMTraps27invalidateCodeBlocksOnStackERN3WTF6LockerINS1_4LockEEEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSFinalizationRegistry.h' l='83' c='_ZN3JSC22JSFinalizationRegistry9liveCountERKN3WTF6LockerINS_10JSCellLockEEE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSFinalizationRegistry.h' l='84' c='_ZN3JSC22JSFinalizationRegistry9deadCountERKN3WTF6LockerINS_10JSCellLockEEE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSFinalizationRegistry.cpp' l='224' c='_ZN3JSC22JSFinalizationRegistry9liveCountERKN3WTF6LockerINS_10JSCellLockEEE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSFinalizationRegistry.cpp' l='233' c='_ZN3JSC22JSFinalizationRegistry9deadCountERKN3WTF6LockerINS_10JSCellLockEEE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='378' c='_ZN3JSC8JSObject18visitButterflyImplERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VMTraps.cpp' l='166' c='_ZN3JSC7VMTraps27invalidateCodeBlocksOnStackERN3WTF6LockerINS1_4LockEEEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCWeakValue.cpp' l='191' c='_Z24jsc_weak_value_get_valueP13_JSCWeakValue'/>
+<inh f='WebKit/Source/WTF/wtf/Locker.h' l='43' c='WTF::AbstractLocker'/>
+<def f='WebKit/Source/WTF/wtf/Locker.h' l='62' ll='142'/>
+<use f='WebKit/Source/WTF/wtf/Locker.h' l='148' c='_ZN3WTF16DropLockForScopeC1ERNS_6LockerIT_EE'/>
+<use f='WebKit/Source/WTF/wtf/Locker.h' l='160'/>
+<inh f='WebKit/Source/WTF/wtf/Locker.h' l='43' c='WTF::AbstractLocker'/>
+<def f='WebKit/Source/WTF/wtf/Lock.h' l='151' ll='198'/>
+<use f='WebKit/Source/WTF/wtf/Lock.h' l='152'/>
+<use f='WebKit/Source/WTF/wtf/Lock.h' l='176' c='_ZN3WTF6LockerINS_4LockEEC1ERKS2_'/>
+<use f='WebKit/Source/WTF/wtf/Lock.h' l='177' c='_ZN3WTF6LockerINS_4LockEEaSERKS2_'/>
+<use f='WebKit/Source/WTF/wtf/Lock.h' l='177' c='_ZN3WTF6LockerINS_4LockEEaSERKS2_'/>
+<use f='WebKit/Source/WTF/wtf/Lock.h' l='200' c='WTF::{deductionguideforLocker}'/>
+<use f='WebKit/Source/WTF/wtf/Lock.h' l='201' c='WTF::{deductionguideforLocker}'/>
+<use f='WebKit/Source/WTF/wtf/Lock.h' l='203'/>
+<use f='WebKit/Source/WTF/wtf/ThreadingPrimitives.h' l='94'/>
+<size>16</size>
+<doc f='WebKit/Source/WTF/wtf/Lock.h' l='148'>// Locker specialization to use with Lock.
+// Non-movable simple scoped lock holder.
+// Example: Locker locker { m_lock };</doc>
+<fun r='_ZN3WTF6LockerC1ERT_'/>
+<fun r='_ZN3WTF6LockerC1EPT_'/>
+<fun r='_ZN3WTF6LockerC1ESt12adopt_lock_tRT_'/>
+<fun r='_ZN3WTF6LockerC1ENS_21NoLockingNecessaryTagE'/>
+<fun r='_ZN3WTF6LockerC1Ej'/>
+<fun r='_ZN3WTF6LockerD1Ev'/>
+<fun r='_ZN3WTF6Locker7tryLockERT_'/>
+<fun r='_ZN3WTF6Locker8lockableEv'/>
+<fun r='_ZNK3WTF6LockercvbEv'/>
+<fun r='_ZN3WTF6Locker11unlockEarlyEv'/>
+<fun r='_ZN3WTF6LockerC1EONS_6LockerIT_EE'/>
+<fun r='_ZN3WTF6LockeraSEONS_6LockerIT_EE'/>
+<fun r='_ZN3WTF6Locker6unlockEv'/>
+<fun r='_ZN3WTF6Locker4lockEv'/>
+<mbr r='WTF::Locker::m_lockable' t='T *'/>
+<fun r='_ZN3WTF6LockerINS_4LockEEC1ERS1_'/>
+<fun r='_ZN3WTF6LockerINS_4LockEEC1ESt12adopt_lock_tRS1_'/>
+<fun r='_ZN3WTF6LockerINS_4LockEED1Ev'/>
+<fun r='_ZN3WTF6LockerINS_4LockEE11unlockEarlyEv'/>
+<fun r='_ZN3WTF6LockerINS_4LockEEC1ERKS2_'/>
+<fun r='_ZN3WTF6LockerINS_4LockEEaSERKS2_'/>
+<fun r='_ZN3WTF6LockerINS_4LockEE4lockEv'/>
+<fun r='_ZN3WTF6LockerINS_4LockEE6unlockEv'/>
+<mbr r='WTF::Locker::m_lock' o='0' t='WTF::Lock &amp;'/>
+<mbr r='WTF::Locker::m_isLocked' o='64' t='bool'/>
+<use f='WebKit/Source/WTF/wtf/WordLock.h' l='103'/>
+<use f='WebKit/Source/WTF/wtf/CrossThreadTaskHandler.cpp' l='37' c='_ZN3WTF22CrossThreadTaskHandlerC1EPKcNS0_25AutodrainedPoolForRunLoopE'/>
+<use f='WebKit/Source/WTF/wtf/CrossThreadTaskHandler.cpp' l='74' c='_ZN3WTF22CrossThreadTaskHandler11taskRunLoopEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.cpp' l='582' c='_ZN7WebCore9AudioNode24decrementConnectionCountEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='545' c='_ZN7WebCore16BaseAudioContext20handlePreRenderTasksERKNS_15AudioIOPositionE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='569' c='_ZN7WebCore16BaseAudioContext21handlePostRenderTasksEv'/>
+<use f='WebKit/Source/WebCore/bindings/js/IDBBindingUtilities.cpp' l='146' c='_ZN7WebCore4toJSERN3JSC14JSGlobalObjectES2_PNS_6IDBKeyE'/>
+<use f='WebKit/Source/WebCore/html/HTMLMediaElement.cpp' l='6675' c='_ZN7WebCore16HTMLMediaElement17createMediaPlayerEv'/>

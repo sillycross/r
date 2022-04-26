@@ -1,0 +1,10 @@
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGFrozenValue.h' l='115' ll='121' type='static JSC::DFG::FrozenValue JSC::DFG::FrozenValue::freeze(JSC::JSValue value)'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGFrozenValue.h' l='107'>// This is a utility method for DFG::Graph::freeze(). You should almost always call
+    // Graph::freeze() directly. Calling this instead of Graph::freeze() can result in
+    // the same constant being viewed as having different structures during the course
+    // of compilation, which can sometimes cause bad things to happen. For example, we
+    // may observe that one version of the constant has an unwatchable structure but
+    // then a later version may start to have a watchable structure due to a transition.
+    // The point of freezing is to ensure that we generally only see one version of
+    // constants, but that requires freezing through the Graph.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1479' u='c' c='_ZN3JSC3DFG5Graph6freezeENS_7JSValueE'/>

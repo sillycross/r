@@ -1,0 +1,53 @@
+<use f='WebKit/Source/JavaScriptCore/runtime/DatePrototype.h' l='43' u='c' c='_ZN3JSC13DatePrototype6createERNS_2VMEPNS_14JSGlobalObjectEPNS_9StructureE'/>
+<dec f='WebKit/Source/JavaScriptCore/runtime/DatePrototype.h' l='56' type='void JSC::DatePrototype::DatePrototype(JSC::VM &amp; , JSC::Structure * )'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/DatePrototype.cpp' l='267' ll='270' type='void JSC::DatePrototype::DatePrototype(JSC::VM &amp; vm, JSC::Structure * structure)'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/DatePrototype.cpp' l='216'>/* Source for DatePrototype.lut.h
+@begin datePrototypeTable
+  toString              dateProtoFuncToString                DontEnum|Function       0
+  toISOString           dateProtoFuncToISOString             DontEnum|Function       0
+  toDateString          dateProtoFuncToDateString            DontEnum|Function       0
+  toTimeString          dateProtoFuncToTimeString            DontEnum|Function       0
+  toLocaleString        JSBuiltin                            DontEnum|Function       0
+  toLocaleDateString    JSBuiltin                            DontEnum|Function       0
+  toLocaleTimeString    JSBuiltin                            DontEnum|Function       0
+  valueOf               dateProtoFuncGetTime                 DontEnum|Function       0  DatePrototypeGetTimeIntrinsic
+  getTime               dateProtoFuncGetTime                 DontEnum|Function       0  DatePrototypeGetTimeIntrinsic
+  getFullYear           dateProtoFuncGetFullYear             DontEnum|Function       0  DatePrototypeGetFullYearIntrinsic
+  getUTCFullYear        dateProtoFuncGetUTCFullYear          DontEnum|Function       0  DatePrototypeGetUTCFullYearIntrinsic
+  getMonth              dateProtoFuncGetMonth                DontEnum|Function       0  DatePrototypeGetMonthIntrinsic
+  getUTCMonth           dateProtoFuncGetUTCMonth             DontEnum|Function       0  DatePrototypeGetUTCMonthIntrinsic
+  getDate               dateProtoFuncGetDate                 DontEnum|Function       0  DatePrototypeGetDateIntrinsic
+  getUTCDate            dateProtoFuncGetUTCDate              DontEnum|Function       0  DatePrototypeGetUTCDateIntrinsic
+  getDay                dateProtoFuncGetDay                  DontEnum|Function       0  DatePrototypeGetDayIntrinsic
+  getUTCDay             dateProtoFuncGetUTCDay               DontEnum|Function       0  DatePrototypeGetUTCDayIntrinsic
+  getHours              dateProtoFuncGetHours                DontEnum|Function       0  DatePrototypeGetHoursIntrinsic
+  getUTCHours           dateProtoFuncGetUTCHours             DontEnum|Function       0  DatePrototypeGetUTCHoursIntrinsic
+  getMinutes            dateProtoFuncGetMinutes              DontEnum|Function       0  DatePrototypeGetMinutesIntrinsic
+  getUTCMinutes         dateProtoFuncGetUTCMinutes           DontEnum|Function       0  DatePrototypeGetUTCMinutesIntrinsic
+  getSeconds            dateProtoFuncGetSeconds              DontEnum|Function       0  DatePrototypeGetSecondsIntrinsic
+  getUTCSeconds         dateProtoFuncGetUTCSeconds           DontEnum|Function       0  DatePrototypeGetUTCSecondsIntrinsic
+  getMilliseconds       dateProtoFuncGetMilliSeconds         DontEnum|Function       0  DatePrototypeGetMillisecondsIntrinsic
+  getUTCMilliseconds    dateProtoFuncGetUTCMilliseconds      DontEnum|Function       0  DatePrototypeGetUTCMillisecondsIntrinsic
+  getTimezoneOffset     dateProtoFuncGetTimezoneOffset       DontEnum|Function       0  DatePrototypeGetTimezoneOffsetIntrinsic
+  getYear               dateProtoFuncGetYear                 DontEnum|Function       0  DatePrototypeGetYearIntrinsic
+  setTime               dateProtoFuncSetTime                 DontEnum|Function       1
+  setMilliseconds       dateProtoFuncSetMilliSeconds         DontEnum|Function       1
+  setUTCMilliseconds    dateProtoFuncSetUTCMilliseconds      DontEnum|Function       1
+  setSeconds            dateProtoFuncSetSeconds              DontEnum|Function       2
+  setUTCSeconds         dateProtoFuncSetUTCSeconds           DontEnum|Function       2
+  setMinutes            dateProtoFuncSetMinutes              DontEnum|Function       3
+  setUTCMinutes         dateProtoFuncSetUTCMinutes           DontEnum|Function       3
+  setHours              dateProtoFuncSetHours                DontEnum|Function       4
+  setUTCHours           dateProtoFuncSetUTCHours             DontEnum|Function       4
+  setDate               dateProtoFuncSetDate                 DontEnum|Function       1
+  setUTCDate            dateProtoFuncSetUTCDate              DontEnum|Function       1
+  setMonth              dateProtoFuncSetMonth                DontEnum|Function       2
+  setUTCMonth           dateProtoFuncSetUTCMonth             DontEnum|Function       2
+  setFullYear           dateProtoFuncSetFullYear             DontEnum|Function       3
+  setUTCFullYear        dateProtoFuncSetUTCFullYear          DontEnum|Function       3
+  setYear               dateProtoFuncSetYear                 DontEnum|Function       1
+  toJSON                dateProtoFuncToJSON                  DontEnum|Function       1
+@end
+*/
+
+// ECMA 15.9.4</doc>

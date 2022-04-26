@@ -1,0 +1,20 @@
+<use f='include/gstreamer-1.0/gst/gstcontrolbinding.h' l='46'/>
+<def f='include/gstreamer-1.0/gst/gstcontrolbinding.h' l='97' ll='109'/>
+<size>248</size>
+<doc f='include/gstreamer-1.0/gst/gstcontrolbinding.h' l='85'>/**
+ * GstControlBindingClass:
+ * @parent_class: Parent class
+ * @sync_values: implementation for updating the target values
+ * @get_value: implementation to fetch a single control-value
+ * @get_value_array: implementation to fetch a series of control-values
+ * @get_g_value_array: implementation to fetch a series of control-values
+ *                     as g_values
+ *
+ * The class structure of #GstControlBinding.
+ */</doc>
+<mbr r='_GstControlBindingClass::parent_class' o='0' t='GstObjectClass'/>
+<mbr r='_GstControlBindingClass::sync_values' o='1472' t='gboolean (*)(GstControlBinding *, GstObject *, GstClockTime, GstClockTime)'/>
+<mbr r='_GstControlBindingClass::get_value' o='1536' t='GValue *(*)(GstControlBinding *, GstClockTime)'/>
+<mbr r='_GstControlBindingClass::get_value_array' o='1600' t='gboolean (*)(GstControlBinding *, GstClockTime, GstClockTime, guint, gpointer)'/>
+<mbr r='_GstControlBindingClass::get_g_value_array' o='1664' t='gboolean (*)(GstControlBinding *, GstClockTime, GstClockTime, guint, GValue *)'/>
+<mbr r='_GstControlBindingClass::_gst_reserved' o='1728' t='gpointer [4]'/>

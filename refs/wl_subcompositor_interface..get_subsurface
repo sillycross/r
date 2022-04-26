@@ -1,0 +1,25 @@
+<dec f='include/wayland-server-protocol.h' l='4331' type='void (*)(struct wl_client *, struct wl_resource *, uint32_t, struct wl_resource *, struct wl_resource *)'/>
+<offset>64</offset>
+<doc f='include/wayland-server-protocol.h' l='4308'>/**
+	 * give a surface the role sub-surface
+	 *
+	 * Create a sub-surface interface for the given surface, and
+	 * associate it with the given parent surface. This turns a plain
+	 * wl_surface into a sub-surface.
+	 *
+	 * The to-be sub-surface must not already have another role, and it
+	 * must not have an existing wl_subsurface object. Otherwise a
+	 * protocol error is raised.
+	 *
+	 * Adding sub-surfaces to a parent is a double-buffered operation
+	 * on the parent (see wl_surface.commit). The effect of adding a
+	 * sub-surface becomes visible on the next time the state of the
+	 * parent surface is applied.
+	 *
+	 * This request modifies the behaviour of wl_surface.commit request
+	 * on the sub-surface, see the documentation on wl_subsurface
+	 * interface.
+	 * @param id the new sub-surface object ID
+	 * @param surface the surface to be turned into a sub-surface
+	 * @param parent the parent surface
+	 */</doc>

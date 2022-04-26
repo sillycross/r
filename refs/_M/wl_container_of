@@ -1,0 +1,38 @@
+<dec f='include/wayland-util.h' l='408'/>
+<doc f='include/wayland-util.h' l='373'>/**
+ * Retrieves a pointer to a containing struct, given a member name.
+ *
+ * This macro allows &quot;conversion&quot; from a pointer to a member to its containing
+ * struct. This is useful if you have a contained item like a wl_list,
+ * wl_listener, or wl_signal, provided via a callback or other means, and would
+ * like to retrieve the struct that contains it.
+ *
+ * To demonstrate, the following example retrieves a pointer to
+ * `example_container` given only its `destroy_listener` member:
+ *
+ * \code
+ * struct example_container {
+ *         struct wl_listener destroy_listener;
+ *         // other members...
+ * };
+ *
+ * void example_container_destroy(struct wl_listener *listener, void *data)
+ * {
+ *         struct example_container *ctr;
+ *
+ *         ctr = wl_container_of(listener, ctr, destroy_listener);
+ *         // destroy ctr...
+ * }
+ * \endcode
+ *
+ * \note `sample` need not be a valid pointer. A null or uninitialised pointer
+ *       is sufficient.
+ *
+ * \param ptr Valid pointer to the contained member
+ * \param sample Pointer to a struct whose type contains \p ptr
+ * \param member Named location of \p ptr within the \p sample type
+ *
+ * \return The container for the specified pointer
+ */</doc>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='99' u='c'/>
+<use f='WebKit/Source/WebKit/UIProcess/gtk/WaylandCompositor.cpp' l='121' u='c'/>

@@ -1,0 +1,17 @@
+<dec f='WebKit/Source/WebCore/html/parser/HTMLTokenizer.h' l='65' type='void WebCore::HTMLTokenizer::updateStateFor(const WTF::AtomString &amp; tagName)'/>
+<doc f='WebKit/Source/WebCore/html/parser/HTMLTokenizer.h' l='53'>// Updates the tokenizer&apos;s state according to the given tag name. This is an approximation of how the tree
+    // builder would update the tokenizer&apos;s state. This method is useful for approximating HTML tokenization.
+    // To get exactly the correct tokenization, you need the real tree builder.
+    //
+    // The main failures in the approximation are as follows:
+    //
+    //  * The first set of character tokens emitted for a &lt;pre&gt; element might contain an extra leading newline.
+    //  * The replacement of U+0000 with U+FFFD will not be sensitive to the tree builder&apos;s insertion mode.
+    //  * CDATA sections in foreign content will be tokenized as bogus comments instead of as character tokens.
+    //
+    // This approximation is also the algorithm called for when parsing an HTML fragment.
+    // https://html.spec.whatwg.org/multipage/syntax.html#parsing-html-fragments</doc>
+<use f='WebKit/Source/WebCore/html/parser/HTMLDocumentParser.cpp' l='88' u='c' c='_ZN7WebCore18HTMLDocumentParserC1ERNS_16DocumentFragmentERNS_7ElementENS_19ParserContentPolicyE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLMetaCharsetParser.cpp' l='170' u='c' c='_ZN7WebCore21HTMLMetaCharsetParser19checkForMetaCharsetEPKcm'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLPreloadScanner.cpp' l='514' u='c' c='_ZN7WebCore18HTMLPreloadScanner4scanERNS_21HTMLResourcePreloaderERNS_8DocumentE'/>
+<def f='WebKit/Source/WebCore/html/parser/HTMLTokenizer.cpp' l='1408' ll='1423' type='void WebCore::HTMLTokenizer::updateStateFor(const WTF::AtomString &amp; tagName)'/>

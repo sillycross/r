@@ -1,0 +1,26 @@
+<dec f='include/xcb/xproto.h' l='6815' type='xcb_void_cookie_t xcb_change_property_checked(xcb_connection_t * c, uint8_t mode, xcb_window_t window, xcb_atom_t property, xcb_atom_t type, uint8_t format, uint32_t data_len, const void * data)'/>
+<doc f='include/xcb/xproto.h' l='6789'>/**
+ * @brief Changes a window property
+ *
+ * @param c The connection
+ * @param mode A bitmask of #xcb_prop_mode_t values.
+ * @param mode \n
+ * @param window The window whose property you want to change.
+ * @param property The property you want to change (an atom).
+ * @param type The type of the property you want to change (an atom).
+ * @param format Specifies whether the data should be viewed as a list of 8-bit, 16-bit or
+ * 32-bit quantities. Possible values are 8, 16 and 32. This information allows
+ * the X server to correctly perform byte-swap operations as necessary.
+ * @param data_len Specifies the number of elements (see \a format).
+ * @param data The property data.
+ * @return A cookie
+ *
+ * Sets or updates a property on the specified \a window. Properties are for
+ * example the window title (`WM_NAME`) or its minimum size (`WM_NORMAL_HINTS`).
+ * Protocols such as EWMH also use properties - for example EWMH defines the
+ * window title, encoded as UTF-8 string, in the `_NET_WM_NAME` property.
+ *
+ * This form can be used only if the request will not cause
+ * a reply to be generated. Any returned error will be
+ * saved for handling by xcb_request_check().
+ */</doc>

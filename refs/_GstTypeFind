@@ -1,0 +1,17 @@
+<use f='include/gstreamer-1.0/gst/gsttypefind.h' l='34'/>
+<def f='include/gstreamer-1.0/gst/gsttypefind.h' l='75' ll='92'/>
+<size>64</size>
+<doc f='include/gstreamer-1.0/gst/gsttypefind.h' l='66'>/**
+ * GstTypeFind:
+ * @peek: Method to peek data.
+ * @suggest: Method to suggest #GstCaps with a given probability.
+ * @data: The data used by the caller of the typefinding function.
+ * @get_length: Returns the length of current data.
+ *
+ * Object that stores typefind callbacks. To use with #GstTypeFindFactory.
+ */</doc>
+<mbr r='_GstTypeFind::peek' o='0' t='const guint8 *(*)(gpointer, gint64, guint)'/>
+<mbr r='_GstTypeFind::suggest' o='64' t='void (*)(gpointer, guint, GstCaps *)'/>
+<mbr r='_GstTypeFind::data' o='128' t='gpointer'/>
+<mbr r='_GstTypeFind::get_length' o='192' t='guint64 (*)(gpointer)'/>
+<mbr r='_GstTypeFind::_gst_reserved' o='256' t='gpointer [4]'/>

@@ -1,0 +1,15 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Structure.h' l='319' type='bool JSC::Structure::isCheapDuringGC(Visitor &amp; )'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Structure.h' l='313'>// A Structure is cheap to mark during GC if doing so would only add a small and bounded amount
+    // to our heap footprint. For example, if the structure refers to a global object that is not
+    // yet marked, then as far as we know, the decision to mark this Structure would lead to a large
+    // increase in footprint because no other object refers to that global object. This method
+    // returns true if all user-controlled (and hence unbounded in size) objects referenced from the
+    // Structure are already marked.</doc>
+<dec f='WebKit/Source/JavaScriptCore/runtime/Structure.h' l='319' type='bool JSC::Structure::isCheapDuringGC(Visitor &amp; )'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/Structure.h' l='313'>// A Structure is cheap to mark during GC if doing so would only add a small and bounded amount
+    // to our heap footprint. For example, if the structure refers to a global object that is not
+    // yet marked, then as far as we know, the decision to mark this Structure would lead to a large
+    // increase in footprint because no other object refers to that global object. This method
+    // returns true if all user-controlled (and hence unbounded in size) objects referenced from the
+    // Structure are already marked.</doc>
+<def f='WebKit/Source/JavaScriptCore/runtime/Structure.cpp' l='1255' ll='1263' macro='1' type='bool JSC::Structure::isCheapDuringGC(Visitor &amp; visitor)'/>

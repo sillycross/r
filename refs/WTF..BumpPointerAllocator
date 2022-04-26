@@ -1,0 +1,35 @@
+<use f='WebKit/WTF/Headers/wtf/BumpPointerAllocator.h' l='203'/>
+<def f='WebKit/WTF/Headers/wtf/BumpPointerAllocator.h' l='221' ll='250'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VM.h' l='1026'/>
+<size>8</size>
+<doc f='WebKit/WTF/Headers/wtf/BumpPointerAllocator.h' l='206'>// A BumpPointerAllocator manages a set of BumpPointerPool objects, which
+// can be used for LIFO (stack like) allocation.
+//
+// To begin allocating using this class call startAllocator().  The result
+// of this method will be null if the initial pool allocation fails, or a
+// pointer to a BumpPointerPool object that can be used to perform
+// allocations.  Whilst running no memory will be released until
+// stopAllocator() is called.  At this point all allocations made through
+// this allocator will be reaped, and underlying memory may be freed.
+//
+// (In practice we will still hold on to the initial pool to allow allocation
+// to be quickly restared, but aditional pools will be freed).
+//
+// This allocator is non-renetrant, it is encumbant on the clients to ensure
+// startAllocator() is not called again until stopAllocator() has been called.</doc>
+<fun r='_ZN3WTF20BumpPointerAllocatorC1Ev'/>
+<fun r='_ZN3WTF20BumpPointerAllocatorD1Ev'/>
+<fun r='_ZN3WTF20BumpPointerAllocator14startAllocatorEv'/>
+<fun r='_ZN3WTF20BumpPointerAllocator13stopAllocatorEv'/>
+<mbr r='WTF::BumpPointerAllocator::m_head' o='0' t='WTF::BumpPointerPool *'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.h' l='1026'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrInterpreter.h' l='350' c='_ZN3JSC4Yarr15BytecodePatternC1ESt10unique_ptrINS0_15ByteDisjunctionESt14default_deleteIS3_EERN3WTF6VectorIS6_Lm0ENS7_15CrashOnOverflowELm16ENS7_10Fas3666951'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrInterpreter.h' l='384'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrInterpreter.h' l='395' c='_ZN3JSC4Yarr11byteCompileERNS0_11YarrPatternEPN3WTF20BumpPointerAllocatorERNS0_9ErrorCodeEPNS3_4LockE'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/RegularExpression.cpp' l='77'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrInterpreter.cpp' l='1723' c='_ZN3JSC4Yarr12ByteCompiler7compileEPN3WTF20BumpPointerAllocatorEPNS2_4LockERNS0_9ErrorCodeE'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrInterpreter.cpp' l='2454' c='_ZN3JSC4Yarr11byteCompileERNS0_11YarrPatternEPN3WTF20BumpPointerAllocatorERNS0_9ErrorCodeEPNS3_4LockE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/inspector/ContentSearchUtilities.cpp' l='186' c='_ZN9Inspector22ContentSearchUtilitiesL16findMagicCommentERKN3WTF6StringES4_'/>
+<size>8</size>

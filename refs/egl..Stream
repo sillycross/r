@@ -1,0 +1,48 @@
+<inh f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Debug.h' l='139' c='egl::LabeledObject'/>
+<inh f='WebKit/Source/ThirdParty/ANGLE/src/common/angleutils.h' l='43' c='angle::NonCopyable'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Stream.h' l='39' ll='146'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Texture.h' l='491' c='_ZNK2gl7Texture14getBoundStreamEv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Texture.h' l='615'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Texture.h' l='616' c='_ZN2gl7Texture10bindStreamEPN3egl6StreamE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Texture.h' l='644'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Display.h' l='161' c='_ZN3egl7Display12createStreamERKNS_12AttributeMapEPPNS_6StreamE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Display.h' l='186' c='_ZN3egl7Display13destroyStreamEPNS_6StreamE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Display.h' l='195' c='_ZNK3egl7Display13isValidStreamEPKNS_6StreamE'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/Display.h' l='320'/>
+<size>136</size>
+<fun r='_ZN3egl6StreamC1EPNS_7DisplayERKNS_12AttributeMapE'/>
+<fun r='_ZN3egl6StreamD1Ev'/>
+<fun r='_ZN3egl6Stream8setLabelEPv'/>
+<fun r='_ZNK3egl6Stream8getLabelEv'/>
+<fun r='_ZNK3egl6Stream8getStateEv'/>
+<fun r='_ZN3egl6Stream18setConsumerLatencyEi'/>
+<fun r='_ZNK3egl6Stream18getConsumerLatencyEv'/>
+<fun r='_ZNK3egl6Stream16getProducerFrameEv'/>
+<fun r='_ZNK3egl6Stream16getConsumerFrameEv'/>
+<fun r='_ZN3egl6Stream25setConsumerAcquireTimeoutEi'/>
+<fun r='_ZNK3egl6Stream25getConsumerAcquireTimeoutEv'/>
+<fun r='_ZNK3egl6Stream15getConsumerTypeEv'/>
+<fun r='_ZNK3egl6Stream15getProducerTypeEv'/>
+<fun r='_ZNK3egl6Stream13getPlaneCountEv'/>
+<fun r='_ZN3egl6Stream17getImplementationEv'/>
+<fun r='_ZN3egl6Stream31createConsumerGLTextureExternalERKNS_12AttributeMapEPN2gl7ContextE'/>
+<fun r='_ZN3egl6Stream26createProducerD3D11TextureERKNS_12AttributeMapE'/>
+<fun r='_ZN3egl6Stream15consumerAcquireEPKN2gl7ContextE'/>
+<fun r='_ZN3egl6Stream15consumerReleaseEPKN2gl7ContextE'/>
+<fun r='_ZNK3egl6Stream24isConsumerBoundToContextEPKN2gl7ContextE'/>
+<fun r='_ZNK3egl6Stream20validateD3D11TextureEPvRKNS_12AttributeMapE'/>
+<fun r='_ZN3egl6Stream16postD3D11TextureEPvRKNS_12AttributeMapE'/>
+<mbr r='egl::Stream::mLabel' o='64' t='EGLLabelKHR'/>
+<mbr r='egl::Stream::mDisplay' o='128' t='egl::Display *'/>
+<mbr r='egl::Stream::mProducerImplementation' o='192' t='rx::StreamProducerImpl *'/>
+<mbr r='egl::Stream::mContext' o='256' t='gl::Context *'/>
+<mbr r='egl::Stream::mState' o='320' t='EGLint'/>
+<mbr r='egl::Stream::mProducerFrame' o='384' t='EGLuint64KHR'/>
+<mbr r='egl::Stream::mConsumerFrame' o='448' t='EGLuint64KHR'/>
+<mbr r='egl::Stream::mConsumerLatency' o='512' t='EGLint'/>
+<mbr r='egl::Stream::mConsumerAcquireTimeout' o='544' t='EGLint'/>
+<mbr r='egl::Stream::mPlaneCount' o='576' t='EGLint'/>
+<mbr r='egl::Stream::mPlanes' o='640' t='std::array&lt;PlaneTexture, 3&gt;'/>
+<mbr r='egl::Stream::mConsumerType' o='1024' t='egl::Stream::ConsumerType'/>
+<mbr r='egl::Stream::mProducerType' o='1056' t='egl::Stream::ProducerType'/>
+<fun r='_ZN3egl6Stream15releaseTexturesEv'/>

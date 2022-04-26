@@ -1,0 +1,6 @@
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGMayExit.h' l='80' type='JSC::DFG::ExitMode JSC::DFG::mayExit(JSC::DFG::Graph &amp; , JSC::DFG::Node * , JSC::DFG::AtTailAbstractState &amp; )'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGMayExit.h' l='77'>// Like mayExit(), but instead of using the Check: flag to determine if something exits, it
+// evaluates whether it will exit based on the tail state. This is useful for LICM. This *may* also
+// use the AtTailAbstractState to return more precise answers for other nodes.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGLICMPhase.cpp' l='407' u='c' c='_ZN3JSC3DFG9LICMPhase12attemptHoistEPNS0_10BasicBlockERPNS0_4NodeEPKN3WTF11NaturalLoopINS0_3CFGEEE'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGMayExit.cpp' l='203' ll='206' type='JSC::DFG::ExitMode JSC::DFG::mayExit(JSC::DFG::Graph &amp; graph, JSC::DFG::Node * node, JSC::DFG::AtTailAbstractState &amp; state)'/>

@@ -1,0 +1,11 @@
+<dec f='WebKit/Source/WebCore/Modules/webaudio/PeriodicWave.h' l='64' type='void WebCore::PeriodicWave::waveDataForFundamentalFrequency(float , float *&amp; lowerWaveData, float *&amp; higherWaveData, float &amp; tableInterpolationFactor)'/>
+<doc f='WebKit/Source/WebCore/Modules/webaudio/PeriodicWave.h' l='58'>// Returns pointers to the lower and higher wave data for the pitch range containing
+    // the given fundamental frequency. These two tables are in adjacent &quot;pitch&quot; ranges
+    // where the higher table will have the maximum number of partials which won&apos;t alias when played back
+    // at this fundamental frequency. The lower wave is the next range containing fewer partials than the higher wave.
+    // Interpolation between these two tables can be made according to tableInterpolationFactor.
+    // Where values from 0 -&gt; 1 interpolate between lower -&gt; higher.</doc>
+<use f='WebKit/Source/WebCore/Modules/webaudio/OscillatorNode.cpp' l='290' u='c' c='_ZN7WebCore14OscillatorNode12processARateEiPfdS1_'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/OscillatorNode.cpp' l='321' u='c' c='_ZN7WebCore14OscillatorNode12processKRateEiPfd'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/OscillatorNode.cpp' l='398' u='c' c='_ZN7WebCore14OscillatorNode7processEm'/>
+<def f='WebKit/Source/WebCore/Modules/webaudio/PeriodicWave.cpp' l='135' ll='161' type='void WebCore::PeriodicWave::waveDataForFundamentalFrequency(float fundamentalFrequency, float *&amp; lowerWaveData, float *&amp; higherWaveData, float &amp; tableInterpolationFactor)'/>

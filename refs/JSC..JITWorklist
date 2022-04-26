@@ -1,0 +1,79 @@
+<use f='WebKit/Source/JavaScriptCore/jit/JITWorklistThread.h' l='43'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITWorklistThread.h' l='46' c='_ZN3JSC17JITWorklistThreadC1ERKN3WTF14AbstractLockerERNS_11JITWorklistE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITWorklistThread.h' l='59'/>
+<def f='WebKit/Source/JavaScriptCore/jit/JITWorklist.h' l='44' ll='126'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITWorklist.h' l='45' c='_ZN3JSC11JITWorklistC1ERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITWorklist.h' l='45' c='_ZN3JSC11JITWorklistaSERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITWorklist.h' l='45' c='_ZN3JSC11JITWorklistaSERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITWorklist.h' l='53' c='_ZN3JSC11JITWorklist20ensureGlobalWorklistEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITWorklist.h' l='54' c='_ZN3JSC11JITWorklist28existingGlobalWorklistOrNullEv'/>
+<size>328</size>
+<fun r='_ZN3JSC11JITWorklistC1ERKS0_'/>
+<fun r='_ZN3JSC11JITWorklistD1Ev'/>
+<fun r='_ZN3JSC11JITWorklist20ensureGlobalWorklistEv'/>
+<fun r='_ZN3JSC11JITWorklist28existingGlobalWorklistOrNullEv'/>
+<fun r='_ZN3JSC11JITWorklist7enqueueEN3WTF3RefINS_7JITPlanENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZNK3JSC11JITWorklist11queueLengthEv'/>
+<fun r='_ZN3JSC11JITWorklist17suspendAllThreadsEv'/>
+<fun r='_ZN3JSC11JITWorklist16resumeAllThreadsEv'/>
+<fun r='_ZN3JSC11JITWorklist16compilationStateENS_17JITCompilationKeyE'/>
+<fun r='_ZN3JSC11JITWorklist26completeAllReadyPlansForVMERNS_2VMENS_17JITCompilationKeyE'/>
+<fun r='_ZN3JSC11JITWorklist30waitUntilAllPlansForVMAreReadyERNS_2VME'/>
+<fun r='_ZN3JSC11JITWorklist21completeAllPlansForVMERNS_2VME'/>
+<fun r='_ZN3JSC11JITWorklist19cancelAllPlansForVMERNS_2VME'/>
+<fun r='_ZN3JSC11JITWorklist15removeDeadPlansERNS_2VME'/>
+<fun r='_ZN3JSC11JITWorklist43setMaximumNumberOfConcurrentDFGCompilationsEj'/>
+<fun r='_ZN3JSC11JITWorklist43setMaximumNumberOfConcurrentFTLCompilationsEj'/>
+<fun r='_ZN3JSC11JITWorklist19visitWeakReferencesERT_'/>
+<fun r='_ZN3JSC11JITWorklist22iterateCodeBlocksForGCERT_RNS_2VMERKN3WTF8FunctionIFvPNS_9CodeBlockEEEE'/>
+<fun r='_ZNK3JSC11JITWorklist4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZN3JSC11JITWorklistC1Ev'/>
+<fun r='_ZNK3JSC11JITWorklist11queueLengthERKN3WTF14AbstractLockerE'/>
+<fun r='_ZN3JSC11JITWorklist24removeMatchingPlansForVMERNS_2VMERKT_'/>
+<fun r='_ZN3JSC11JITWorklist24removeAllReadyPlansForVMERNS_2VMERN3WTF6VectorINS3_6RefPtrINS_7JITPlanENS3_12RawPtrTraitsIS6_EENS3_21DefaultRefDerefTraitsIS6_EE2926099'/>
+<fun r='_ZNK3JSC11JITWorklist4dumpERKN3WTF14AbstractLockerERNS1_11PrintStreamE'/>
+<mbr r='JSC::JITWorklist::m_numberOfActiveThreads' o='0' t='unsigned int'/>
+<mbr r='JSC::JITWorklist::m_ongoingCompilationsPerTier' o='32' t='std::array&lt;unsigned int, static_cast&lt;size_t&gt;(JITPlan::Tier::Count)&gt;'/>
+<mbr r='JSC::JITWorklist::m_maximumNumberOfConcurrentCompilationsPerTier' o='128' t='std::array&lt;unsigned int, static_cast&lt;size_t&gt;(JITPlan::Tier::Count)&gt;'/>
+<mbr r='JSC::JITWorklist::m_threads' o='256' t='Vector&lt;RefPtr&lt;JSC::JITWorklistThread&gt; &gt;'/>
+<mbr r='JSC::JITWorklist::m_queues' o='384' t='std::array&lt;Deque&lt;RefPtr&lt;JITPlan&gt; &gt;, static_cast&lt;size_t&gt;(JITPlan::Tier::Count)&gt;'/>
+<mbr r='JSC::JITWorklist::m_plans' o='1152' t='HashMap&lt;JSC::JITCompilationKey, RefPtr&lt;JSC::JITPlan&gt; &gt;'/>
+<mbr r='JSC::JITWorklist::m_readyPlans' o='1216' t='Vector&lt;RefPtr&lt;JSC::JITPlan&gt;, 16&gt;'/>
+<mbr r='JSC::JITWorklist::m_suspensionLock' o='2368' t='WTF::Lock'/>
+<mbr r='JSC::JITWorklist::m_lock' o='2432' t='Box&lt;WTF::Lock&gt;'/>
+<mbr r='JSC::JITWorklist::m_planEnqueued' o='2496' t='Ref&lt;WTF::AutomaticThreadCondition&gt;'/>
+<mbr r='JSC::JITWorklist::m_planCompiledOrCancelled' o='2560' t='WTF::Condition'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITWorklist.cpp' l='60'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITWorklist.cpp' l='62' c='_ZN3JSC11JITWorklist28existingGlobalWorklistOrNullEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITWorklist.cpp' l='67' c='_ZN3JSC11JITWorklist20ensureGlobalWorklistEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITWorklist.cpp' l='73' c='_ZN3JSC11JITWorklist20ensureGlobalWorklistEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITWorklistThread.cpp' l='60' c='_ZN3JSC17JITWorklistThreadC1ERKN3WTF14AbstractLockerERNS_11JITWorklistE'/>
+<size>328</size>
+<fun r='_ZN3JSC11JITWorklistC1Ev'/>
+<fun r='_ZN3JSC11JITWorklistD1Ev'/>
+<fun r='_ZN3JSC11JITWorklist28existingGlobalWorklistOrNullEv'/>
+<fun r='_ZN3JSC11JITWorklist20ensureGlobalWorklistEv'/>
+<fun r='_ZN3JSC11JITWorklist7enqueueEN3WTF3RefINS_7JITPlanENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZNK3JSC11JITWorklist11queueLengthEv'/>
+<fun r='_ZNK3JSC11JITWorklist11queueLengthERKN3WTF14AbstractLockerE'/>
+<fun r='_ZN3JSC11JITWorklist17suspendAllThreadsEv'/>
+<fun r='_ZN3JSC11JITWorklist16resumeAllThreadsEv'/>
+<fun r='_ZN3JSC11JITWorklist16compilationStateENS_17JITCompilationKeyE'/>
+<fun r='_ZN3JSC11JITWorklist26completeAllReadyPlansForVMERNS_2VMENS_17JITCompilationKeyE'/>
+<fun r='_ZN3JSC11JITWorklist30waitUntilAllPlansForVMAreReadyERNS_2VME'/>
+<fun r='_ZN3JSC11JITWorklist21completeAllPlansForVMERNS_2VME'/>
+<fun r='_ZN3JSC11JITWorklist19cancelAllPlansForVMERNS_2VME'/>
+<fun r='_ZN3JSC11JITWorklist15removeDeadPlansERNS_2VME'/>
+<fun r='_ZN3JSC11JITWorklist43setMaximumNumberOfConcurrentDFGCompilationsEj'/>
+<fun r='_ZN3JSC11JITWorklist43setMaximumNumberOfConcurrentFTLCompilationsEj'/>
+<fun r='_ZN3JSC11JITWorklist19visitWeakReferencesERT_'/>
+<fun r='_ZNK3JSC11JITWorklist4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZNK3JSC11JITWorklist4dumpERKN3WTF14AbstractLockerERNS1_11PrintStreamE'/>
+<fun r='_ZN3JSC11JITWorklist24removeAllReadyPlansForVMERNS_2VMERN3WTF6VectorINS3_6RefPtrINS_7JITPlanENS3_12RawPtrTraitsIS6_EENS3_21DefaultRefDerefTraitsIS6_EE2926099'/>
+<fun r='_ZN3JSC11JITWorklist24removeMatchingPlansForVMERNS_2VMERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDriver.cpp' l='88' c='_ZN3JSC3DFGL11compileImplERNS_2VMEPNS_9CodeBlockES4_NS_18JITCompilationModeENS_13BytecodeIndexERKNS_8OperandsISt8optionalINS_7JSValueEEN3WTF6VectorISA1843053'/>
+<size>328</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2601' c='_ZN3JSC9CodeBlock35checkIfOptimizationThresholdReachedEv'/>
+<size>328</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.cpp' l='622' c='_ZN3JSC2VMD1Ev'/>
+<size>328</size>

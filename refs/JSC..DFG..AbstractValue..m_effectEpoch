@@ -1,0 +1,28 @@
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='126' u='r' c='_ZN3JSC3DFG13AbstractValue13fastForwardToENS0_25AbstractValueClobberEpochE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='130' u='w' c='_ZN3JSC3DFG13AbstractValue13fastForwardToENS0_25AbstractValueClobberEpochE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='371' u='w' c='_ZN3JSC3DFG13AbstractValue30fastForwardToAndFilterUnprovenENS0_25AbstractValueClobberEpochEm'/>
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='495' type='JSC::DFG::AbstractValueClobberEpoch'/>
+<offset>160</offset>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='484'>// The effect epoch is usually ignored. This field is used by InPlaceAbstractState.
+    //
+    // InPlaceAbstractState needs to be able to clobberStructures() for all values it tracks. That
+    // could be a lot of values. So, it makes this operation O(1) by bumping its effect epoch and
+    // calling AbstractValue::fastForwardTo() anytime it vends someone an AbstractValue, which lazily
+    // does clobberStructures(). The epoch type used here (AbstractValueClobberEpoch) is a bit more
+    // complex than the normal Epoch, because it knows how to track clobberStructures() and
+    // observeInvalidationPoint() precisely using integer math.
+    //
+    // One reason why it&apos;s here is to steal the 32-bit hole between m_arrayModes and m_value on
+    // 64-bit systems.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGInPlaceAbstractState.h' l='85' u='w' c='_ZN3JSC3DFG20InPlaceAbstractState12clearForNodeENS0_18NodeFlowProjectionE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGInPlaceAbstractState.h' l='98' u='w' c='_ZN3JSC3DFG20InPlaceAbstractState10setForNodeENS0_18NodeFlowProjectionEDpOT_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGInPlaceAbstractState.h' l='112' u='w' c='_ZN3JSC3DFG20InPlaceAbstractState14setTypeForNodeENS0_18NodeFlowProjectionEDpOT_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGInPlaceAbstractState.h' l='126' u='w' c='_ZN3JSC3DFG20InPlaceAbstractState21setNonCellTypeForNodeENS0_18NodeFlowProjectionEDpOT_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGInPlaceAbstractState.h' l='139' u='w' c='_ZN3JSC3DFG20InPlaceAbstractState22makeBytecodeTopForNodeENS0_18NodeFlowProjectionE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGInPlaceAbstractState.h' l='151' u='w' c='_ZN3JSC3DFG20InPlaceAbstractState18makeHeapTopForNodeENS0_18NodeFlowProjectionE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='315' u='r' c='_ZN3JSC3DFG13AbstractValue26fastForwardToAndFilterSlowENS0_25AbstractValueClobberEpochEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='514' u='r' c='_ZNK3JSC3DFG13AbstractValue13dumpInContextERN3WTF11PrintStreamEPNS_11DumpContextE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='537' u='m' c='_ZN3JSC3DFG13AbstractValue17fastForwardToSlowENS0_25AbstractValueClobberEpochE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='542' u='w' c='_ZN3JSC3DFG13AbstractValue17fastForwardToSlowENS0_25AbstractValueClobberEpochE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGInPlaceAbstractState.cpp' l='78' u='w' c='_ZN3JSC3DFG20InPlaceAbstractState15beginBasicBlockEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGInPlaceAbstractState.cpp' l='334' u='w' c='_ZN3JSC3DFG20InPlaceAbstractState16activateVariableEm'/>

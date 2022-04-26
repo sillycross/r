@@ -1,0 +1,91 @@
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='2269' ll='2326'/>
+<size>24</size>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='2259'>// === Speculative Operand types ===
+//
+// SpeculateInt32Operand, SpeculateStrictInt32Operand and SpeculateCellOperand.
+//
+// These are used to lock the operands to a node into machine registers within the
+// SpeculativeJIT. The classes operate like those above, however these will
+// perform a speculative check for a more restrictive type than we can statically
+// determine the operand to have. If the operand does not have the requested type,
+// a bail-out to the non-speculative path will be taken.</doc>
+<fun r='_ZN3JSC3DFG21SpeculateInt32OperandC1EPNS0_14SpeculativeJITENS0_4EdgeENS0_22OperandSpeculationModeE'/>
+<fun r='_ZN3JSC3DFG21SpeculateInt32OperandD1Ev'/>
+<fun r='_ZNK3JSC3DFG21SpeculateInt32Operand4edgeEv'/>
+<fun r='_ZNK3JSC3DFG21SpeculateInt32Operand4nodeEv'/>
+<fun r='_ZN3JSC3DFG21SpeculateInt32Operand6formatEv'/>
+<fun r='_ZN3JSC3DFG21SpeculateInt32Operand3gprEv'/>
+<fun r='_ZN3JSC3DFG21SpeculateInt32Operand3useEv'/>
+<mbr r='JSC::DFG::SpeculateInt32Operand::m_jit' o='0' t='JSC::DFG::SpeculativeJIT *'/>
+<mbr r='JSC::DFG::SpeculateInt32Operand::m_edge' o='64' t='JSC::DFG::Edge'/>
+<mbr r='JSC::DFG::SpeculateInt32Operand::m_gprOrInvalid' o='128' t='JSC::GPRReg'/>
+<mbr r='JSC::DFG::SpeculateInt32Operand::m_format' o='136' t='JSC::DataFormat'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='979' c='_ZN3JSC3DFG14SpeculativeJIT8arrayifyEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='1865' c='_ZN3JSC3DFG14SpeculativeJIT18compileStringSliceEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='1868' c='_ZN3JSC3DFG14SpeculativeJIT18compileStringSliceEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='2013' c='_ZN3JSC3DFG14SpeculativeJIT26compilePeepHoleInt32BranchEPNS0_4NodeES3_NS_23MacroAssemblerX86Common19RelationalConditionE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='2016' c='_ZN3JSC3DFG14SpeculativeJIT26compilePeepHoleInt32BranchEPNS0_4NodeES3_NS_23MacroAssemblerX86Common19RelationalConditionE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='2020' c='_ZN3JSC3DFG14SpeculativeJIT26compilePeepHoleInt32BranchEPNS0_4NodeES3_NS_23MacroAssemblerX86Common19RelationalConditionE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='2021' c='_ZN3JSC3DFG14SpeculativeJIT26compilePeepHoleInt32BranchEPNS0_4NodeES3_NS_23MacroAssemblerX86Common19RelationalConditionE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='2806' c='_ZN3JSC3DFG14SpeculativeJIT19compileValueToInt32EPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='2947' c='_ZN3JSC3DFG14SpeculativeJIT21compileUInt32ToNumberEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='2953' c='_ZN3JSC3DFG14SpeculativeJIT21compileUInt32ToNumberEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='2971' c='_ZN3JSC3DFG14SpeculativeJIT21compileUInt32ToNumberEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='3037' c='_ZN3JSC3DFG14SpeculativeJIT16compileDoubleRepEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='3437' c='_ZN3JSC3DFG14SpeculativeJIT28getIntTypedArrayStoreOperandERNS0_12GPRTemporaryENS_12X86Registers10RegisterIDENS0_4EdgeERNS_22AbstractMacroAssemblerINS_13979014'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='4102' c='_ZN3JSC3DFG14SpeculativeJIT15compileParseIntEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='4349' c='_ZN3JSC3DFG14SpeculativeJIT17compileBitwiseNotEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='4546' c='_ZN3JSC3DFG14SpeculativeJIT16compileBitwiseOpEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='4556' c='_ZN3JSC3DFG14SpeculativeJIT16compileBitwiseOpEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='4565' c='_ZN3JSC3DFG14SpeculativeJIT16compileBitwiseOpEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='4566' c='_ZN3JSC3DFG14SpeculativeJIT16compileBitwiseOpEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='4746' c='_ZN3JSC3DFG14SpeculativeJIT14compileShiftOpEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='4754' c='_ZN3JSC3DFG14SpeculativeJIT14compileShiftOpEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='4755' c='_ZN3JSC3DFG14SpeculativeJIT14compileShiftOpEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='5243' c='_ZN3JSC3DFG14SpeculativeJIT15compileArithAddEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='5267' c='_ZN3JSC3DFG14SpeculativeJIT15compileArithAddEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='5268' c='_ZN3JSC3DFG14SpeculativeJIT15compileArithAddEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='5386' c='_ZN3JSC3DFG14SpeculativeJIT17compileArithClz32EPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='5435' c='_ZN3JSC3DFG14SpeculativeJIT15compileArithSubEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='5453' c='_ZN3JSC3DFG14SpeculativeJIT15compileArithSubEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='5466' c='_ZN3JSC3DFG14SpeculativeJIT15compileArithSubEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='5467' c='_ZN3JSC3DFG14SpeculativeJIT15compileArithSubEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='5562' c='_ZN3JSC3DFG14SpeculativeJIT18compileArithNegateEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='5819' c='_ZN3JSC3DFG14SpeculativeJIT15compileArithMulEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='5850' c='_ZN3JSC3DFG14SpeculativeJIT15compileArithMulEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='5851' c='_ZN3JSC3DFG14SpeculativeJIT15compileArithMulEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='6095' c='_ZN3JSC3DFG14SpeculativeJIT15compileArithDivEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='6096' c='_ZN3JSC3DFG14SpeculativeJIT15compileArithDivEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='6401' c='_ZN3JSC3DFG14SpeculativeJIT15compileArithModEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='6874' c='_ZN3JSC3DFG14SpeculativeJIT15compileArithPowEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='7334' c='_ZN3JSC3DFG14SpeculativeJIT19compileInt32CompareEPNS0_4NodeENS_23MacroAssemblerX86Common19RelationalConditionE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='7341' c='_ZN3JSC3DFG14SpeculativeJIT19compileInt32CompareEPNS0_4NodeENS_23MacroAssemblerX86Common19RelationalConditionE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='7348' c='_ZN3JSC3DFG14SpeculativeJIT19compileInt32CompareEPNS0_4NodeENS_23MacroAssemblerX86Common19RelationalConditionE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='7349' c='_ZN3JSC3DFG14SpeculativeJIT19compileInt32CompareEPNS0_4NodeENS_23MacroAssemblerX86Common19RelationalConditionE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='9451' c='_ZN3JSC3DFG14SpeculativeJIT22emitPopulateSliceIndexERNS0_4EdgeESt8optionalINS_12X86Registers10RegisterIDEES6_S6_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='10509' c='_ZN3JSC3DFG14SpeculativeJIT14compileCallDOMEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='10527' c='_ZN3JSC3DFG14SpeculativeJIT14compileCallDOMEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='11073' c='_ZN3JSC3DFG14SpeculativeJIT28compileNewTypedArrayWithSizeEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='11214' c='_ZN3JSC3DFG14SpeculativeJIT14speculateInt32ENS0_4EdgeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='12036' c='_ZN3JSC3DFG14SpeculativeJIT13emitSwitchImmEPNS0_4NodeEPNS0_10SwitchDataE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='13051' c='_ZN3JSC3DFG14SpeculativeJIT31compileRecordRegExpCachedResultEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='13052' c='_ZN3JSC3DFG14SpeculativeJIT31compileRecordRegExpCachedResultEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='13099' c='_ZN3JSC3DFG14SpeculativeJIT25compileDefineDataPropertyEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='13180' c='_ZN3JSC3DFG14SpeculativeJIT29compileDefineAccessorPropertyEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='13474' c='_ZN3JSC3DFG14SpeculativeJIT20compileToIndexStringEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='14534' c='_ZN3JSC3DFG14SpeculativeJIT13compileSetAddEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='14555' c='_ZN3JSC3DFG14SpeculativeJIT13compileMapSetEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='14585' c='_ZN3JSC3DFG14SpeculativeJIT17compileWeakMapGetEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='14674' c='_ZN3JSC3DFG14SpeculativeJIT17compileWeakSetAddEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='14694' c='_ZN3JSC3DFG14SpeculativeJIT17compileWeakMapSetEPNS0_4NodeE'/>
+<size>24</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='1893' c='_ZN3JSC3DFG14SpeculativeJIT16compileToBooleanEPNS0_4NodeEb'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='2184' c='_ZN3JSC3DFG14SpeculativeJIT10emitBranchEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='2377' c='_ZN3JSC3DFG14SpeculativeJIT7compileEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='2496' c='_ZN3JSC3DFG14SpeculativeJIT7compileEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='3602' c='_ZN3JSC3DFG14SpeculativeJIT7compileEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='4766' c='_ZN3JSC3DFG14SpeculativeJIT7compileEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='5371' c='_ZN3JSC3DFG14SpeculativeJIT7compileEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='5540' c='_ZN3JSC3DFG14SpeculativeJIT7compileEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='5545' c='_ZN3JSC3DFG14SpeculativeJIT7compileEPNS0_4NodeE'/>
+<size>24</size>

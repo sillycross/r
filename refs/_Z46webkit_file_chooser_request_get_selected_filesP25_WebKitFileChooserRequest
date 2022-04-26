@@ -1,0 +1,21 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitFileChooserRequest.cpp' l='349' ll='371' type='const gchar *const * webkit_file_chooser_request_get_selected_files(WebKitFileChooserRequest * request)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitFileChooserRequest.cpp' l='329'>/**
+ * webkit_file_chooser_request_get_selected_files:
+ * @request: a #WebKitFileChooserRequest
+ *
+ * Get the list of selected files currently associated to the
+ * request. Initially, the return value of this method contains any
+ * files selected in previous file chooser requests for this HTML
+ * input element. Once webkit_file_chooser_request_select_files, the
+ * value will reflect whatever files are given.
+ *
+ * This function should normally be called only before presenting the
+ * file chooser dialog to the user, to decide whether to perform some
+ * extra action, like pre-selecting the files from a previous request.
+ *
+ * Returns: (array zero-terminated=1) (transfer none): a
+ * %NULL-terminated array of strings if there are selected files
+ * associated with the request or %NULL otherwise. This array and its
+ * contents are owned by WebKit and should not be modified or
+ * freed.
+ */</doc>

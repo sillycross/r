@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/WebCore/workers/WorkerOrWorkletScriptController.h' l='81' type='void WebCore::WorkerOrWorkletScriptController::scheduleExecutionTermination()'/>
+<doc f='WebKit/Source/WebCore/workers/WorkerOrWorkletScriptController.h' l='76'>// Async request to terminate a JS run execution. Eventually causes termination
+    // exception raised during JS execution, if the worker thread happens to run JS.
+    // After JS execution was terminated in this way, the Worker thread has to use
+    // forbidExecution()/isExecutionForbidden() to guard against reentry into JS.
+    // Can be called from any thread.</doc>
+<def f='WebKit/Source/WebCore/workers/WorkerOrWorkletScriptController.cpp' l='120' ll='133' type='void WebCore::WorkerOrWorkletScriptController::scheduleExecutionTermination()'/>
+<use f='WebKit/Source/WebCore/workers/WorkerOrWorkletThread.cpp' l='126' u='c' c='_ZN7WebCore21WorkerOrWorkletThread21workerOrWorkletThreadEv'/>
+<use f='WebKit/Source/WebCore/workers/WorkerOrWorkletThread.cpp' l='229' u='c' c='_ZN7WebCore21WorkerOrWorkletThread4stopEON3WTF8FunctionIFvvEEE'/>

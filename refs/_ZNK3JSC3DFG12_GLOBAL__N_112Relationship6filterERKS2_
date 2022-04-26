@@ -1,0 +1,14 @@
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGIntegerRangeOptimizationPhase.cpp' l='444' ll='534' type='JSC::DFG::(anonymous namespace)::Relationship JSC::DFG::(anonymous namespace)::Relationship::filter(const JSC::DFG::(anonymous namespace)::Relationship &amp; other) const'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGIntegerRangeOptimizationPhase.cpp' l='471' u='c' c='_ZNK3JSC3DFG12_GLOBAL__N_112Relationship6filterERKS2_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGIntegerRangeOptimizationPhase.cpp' l='513' u='c' c='_ZNK3JSC3DFG12_GLOBAL__N_112Relationship6filterERKS2_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGIntegerRangeOptimizationPhase.cpp' l='1661' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_129IntegerRangeOptimizationPhase10setOneSideERN3WTF7HashMapINS0_18NodeFlowProjectionENS3_6VectorINS1_12RelationshipELm0ENS3_1513416411'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGIntegerRangeOptimizationPhase.cpp' l='1844' u='c' c='_ZN3JSC3DFG12_GLOBAL__N_129IntegerRangeOptimizationPhase7mergeToERN3WTF7HashMapINS0_18NodeFlowProjectionENS3_6VectorINS1_12RelationshipELm0ENS3_15Cras14760228'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGIntegerRangeOptimizationPhase.cpp' l='435'>// Attempts to construct one Relationship that adequately summarizes the intersection of
+    // this and other. Returns a null relationship if the filtration should be expressed as two
+    // different relationships. Returning null is always safe because relationship lists in
+    // this phase always imply intersection. So, you could soundly skip calling this method and
+    // just put both relationships into the list. But, that could lead the fixpoint to diverge.
+    // Hence this will attempt to combine the two relationships into one as a convergence hack.
+    // In some cases, it will do something conservative. It&apos;s always safe for this to return
+    // *this, or to return other. It&apos;ll do that sometimes, mainly to accelerate convergence for
+    // things that we don&apos;t think are important enough to slow down the analysis.</doc>

@@ -1,0 +1,10 @@
+<dec f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='290' type='Vector&lt;WebCore::AudioNode *&gt;'/>
+<offset>1536</offset>
+<doc f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='286'>// Accumulate nodes which need to be deleted here.
+    // This is copied to m_nodesToDelete at the end of a render cycle in handlePostRenderTasks(), where we&apos;re assured of a stable graph
+    // state which will have no references to any of the nodes in m_nodesToDelete once the context lock is released
+    // (when handlePostRenderTasks() has completed).</doc>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='180' u='a' c='_ZN7WebCore16BaseAudioContext5clearEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='697' u='m' c='_ZN7WebCore16BaseAudioContext15markForDeletionERNS_9AudioNodeE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='715' u='m' c='_ZN7WebCore16BaseAudioContext20scheduleNodeDeletionEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='717' u='a' c='_ZN7WebCore16BaseAudioContext20scheduleNodeDeletionEv'/>

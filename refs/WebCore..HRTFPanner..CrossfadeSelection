@@ -1,0 +1,13 @@
+<def f='WebKit/Source/WebCore/platform/audio/HRTFPanner.h' l='75' ll='78'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFPanner.h' l='80'/>
+<doc f='WebKit/Source/WebCore/platform/audio/HRTFPanner.h' l='64'>// We maintain two sets of convolvers for smooth cross-faded interpolations when
+    // then azimuth and elevation are dynamically changing.
+    // When the azimuth and elevation are not changing, we simply process with one of the two sets.
+    // Initially we use CrossfadeSelection1 corresponding to m_convolverL1 and m_convolverR1.
+    // Whenever the azimuth or elevation changes, a crossfade is initiated to transition
+    // to the new position. So if we&apos;re currently processing with CrossfadeSelection1, then
+    // we transition to CrossfadeSelection2 (and vice versa).
+    // If we&apos;re in the middle of a transition, then we wait until it is complete before
+    // initiating a new transition.
+
+    // Selects either the convolver set (m_convolverL1, m_convolverR1) or (m_convolverL2, m_convolverR2).</doc>

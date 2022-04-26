@@ -1,0 +1,6 @@
+<dec f='WebKit/Source/JavaScriptCore/runtime/WeakMapImpl.h' l='262' type='void JSC::WeakMapImpl::takeSnapshot(JSC::MarkedArgumentBuffer &amp; , unsigned int limit = 0)'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/JSInjectedScriptHost.cpp' l='474' u='c' c='_ZN9Inspector20JSInjectedScriptHost14weakMapEntriesEPN3JSC14JSGlobalObjectEPNS1_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/inspector/JSInjectedScriptHost.cpp' l='518' u='c' c='_ZN9Inspector20JSInjectedScriptHost14weakSetEntriesEPN3JSC14JSGlobalObjectEPNS1_9CallFrameE'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/WeakMapImpl.cpp' l='114' ll='120' type='void JSC::WeakMapImpl&lt;JSC::WeakMapBucket&lt;JSC::WeakMapBucketDataKey&gt; &gt;::takeSnapshot(JSC::MarkedArgumentBuffer &amp; buffer, unsigned int limit)'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/WeakMapImpl.cpp' l='122' ll='129' type='void JSC::WeakMapImpl&lt;JSC::WeakMapBucket&lt;JSC::WeakMapBucketDataKeyValue&gt; &gt;::takeSnapshot(JSC::MarkedArgumentBuffer &amp; buffer, unsigned int limit)'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/WeakMapImpl.cpp' l='113'>// takeSnapshot must not invoke garbage collection since iterating WeakMap may be modified.</doc>

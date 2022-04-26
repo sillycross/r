@@ -1,0 +1,57 @@
+<def f='WebKit/Source/WebCore/accessibility/AccessibilityObject.cpp' l='2871' ll='2907' type='int WebCore::computeBestScrollOffset(int currentScrollOffset, int subfocusMin, int subfocusMax, int objectMin, int objectMax, int viewportMin, int viewportMax)'/>
+<use f='WebKit/Source/WebCore/accessibility/AccessibilityObject.cpp' l='2978' u='c' c='_ZNK7WebCore19AccessibilityObject31scrollToMakeVisibleWithSubFocusERKNS_7IntRectE'/>
+<use f='WebKit/Source/WebCore/accessibility/AccessibilityObject.cpp' l='2983' u='c' c='_ZNK7WebCore19AccessibilityObject31scrollToMakeVisibleWithSubFocusERKNS_7IntRectE'/>
+<use f='WebKit/Source/WebCore/accessibility/AccessibilityObject.cpp' l='3037' u='c' c='_ZNK7WebCore19AccessibilityObject19scrollToGlobalPointERKNS_8IntPointE'/>
+<use f='WebKit/Source/WebCore/accessibility/AccessibilityObject.cpp' l='3042' u='c' c='_ZNK7WebCore19AccessibilityObject19scrollToGlobalPointERKNS_8IntPointE'/>
+<doc f='WebKit/Source/WebCore/accessibility/AccessibilityObject.cpp' l='2819'>// This is a 1-dimensional scroll offset helper function that&apos;s applied
+// separately in the horizontal and vertical directions, because the
+// logic is the same. The goal is to compute the best scroll offset
+// in order to make an object visible within a viewport.
+//
+// If the object is already fully visible, returns the same scroll
+// offset.
+//
+// In case the whole object cannot fit, you can specify a
+// subfocus - a smaller region within the object that should
+// be prioritized. If the whole object can fit, the subfocus is
+// ignored.
+//
+// If possible, the object and subfocus are centered within the
+// viewport.
+//
+// Example 1: the object is already visible, so nothing happens.
+//   +----------Viewport---------+
+//                 +---Object---+
+//                 +--SubFocus--+
+//
+// Example 2: the object is not fully visible, so it&apos;s centered
+// within the viewport.
+//   Before:
+//   +----------Viewport---------+
+//                         +---Object---+
+//                         +--SubFocus--+
+//
+//   After:
+//                 +----------Viewport---------+
+//                         +---Object---+
+//                         +--SubFocus--+
+//
+// Example 3: the object is larger than the viewport, so the
+// viewport moves to show as much of the object as possible,
+// while also trying to center the subfocus.
+//   Before:
+//   +----------Viewport---------+
+//     +---------------Object--------------+
+//                         +-SubFocus-+
+//
+//   After:
+//             +----------Viewport---------+
+//     +---------------Object--------------+
+//                         +-SubFocus-+
+//
+// When constraints cannot be fully satisfied, the min
+// (left/top) position takes precedence over the max (right/bottom).
+//
+// Note that the return value represents the ideal new scroll offset.
+// This may be out of range - the calling function should clip this
+// to the available range.</doc>

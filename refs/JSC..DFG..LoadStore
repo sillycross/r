@@ -1,0 +1,65 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DFGCommon.h' l='186' type='0'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DFGCommon.h' l='160'>// LoadStore form means that basic blocks may freely use GetLocal, SetLocal,
+    // and Flush for accessing local variables and indicating where their live
+    // ranges ought to be. Data flow between local accesses is implicit. Liveness
+    // is only explicit at block heads (variablesAtHead). This is only used by
+    // the DFG simplifier and is only preserved by same.
+    //
+    // For example, LoadStore form gives no easy way to determine which SetLocal&apos;s
+    // flow into a GetLocal. As well, LoadStore form implies no restrictions on
+    // redundancy: you can freely emit multiple GetLocals, or multiple SetLocals
+    // (or any combination thereof) to the same local in the same block. LoadStore
+    // form does not require basic blocks to declare how they affect or use locals,
+    // other than implicitly by using the local ops and by preserving
+    // variablesAtHead. Finally, LoadStore allows flexibility in how liveness of
+    // locals is extended; for example you can replace a GetLocal with a Phantom
+    // and so long as the Phantom retains the GetLocal&apos;s children (i.e. the Phi
+    // most likely) then it implies that the local is still live but that it need
+    // not be stored to the stack necessarily. This implies that Phantom can
+    // reference nodes that have no result, as long as those nodes are valid
+    // GetLocal children (i.e. Phi, SetLocal, SetArgumentDefinitely, SetArgumentMaybe).
+    //
+    // LoadStore form also implies that Phis need not have children. By default,
+    // they end up having no children if you enter LoadStore using the canonical
+    // way (call Graph::dethread).
+    //
+    // LoadStore form is suitable for CFG transformations, as well as strength
+    // reduction, folding, and CSE.</doc>
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGCommon.h' l='186' type='0'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGCommon.h' l='160'>// LoadStore form means that basic blocks may freely use GetLocal, SetLocal,
+    // and Flush for accessing local variables and indicating where their live
+    // ranges ought to be. Data flow between local accesses is implicit. Liveness
+    // is only explicit at block heads (variablesAtHead). This is only used by
+    // the DFG simplifier and is only preserved by same.
+    //
+    // For example, LoadStore form gives no easy way to determine which SetLocal&apos;s
+    // flow into a GetLocal. As well, LoadStore form implies no restrictions on
+    // redundancy: you can freely emit multiple GetLocals, or multiple SetLocals
+    // (or any combination thereof) to the same local in the same block. LoadStore
+    // form does not require basic blocks to declare how they affect or use locals,
+    // other than implicitly by using the local ops and by preserving
+    // variablesAtHead. Finally, LoadStore allows flexibility in how liveness of
+    // locals is extended; for example you can replace a GetLocal with a Phantom
+    // and so long as the Phantom retains the GetLocal&apos;s children (i.e. the Phi
+    // most likely) then it implies that the local is still live but that it need
+    // not be stored to the stack necessarily. This implies that Phantom can
+    // reference nodes that have no result, as long as those nodes are valid
+    // GetLocal children (i.e. Phi, SetLocal, SetArgumentDefinitely, SetArgumentMaybe).
+    //
+    // LoadStore form also implies that Phis need not have children. By default,
+    // they end up having no children if you enter LoadStore using the canonical
+    // way (call Graph::dethread).
+    //
+    // LoadStore form is suitable for CFG transformations, as well as strength
+    // reduction, folding, and CSE.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='131' u='r' c='_ZN3JSC3DFG12_GLOBAL__N_18Validate8validateEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='406' c='_ZN3JSC3DFG12_GLOBAL__N_18Validate8validateEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='521' u='r' c='_ZN3JSC3DFG12_GLOBAL__N_18Validate11validateCPSEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGValidate.cpp' l='746' u='r' c='_ZN3JSC3DFG12_GLOBAL__N_18Validate11validateCPSEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCommon.cpp' l='87' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC3DFG9GraphFormE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='81' u='r' c='_ZN3JSC3DFG5GraphC1ERNS_2VMERNS0_4PlanE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='581' c='_ZN3JSC3DFG5Graph4dumpERN3WTF11PrintStreamEPNS_11DumpContextE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='619' c='_ZN3JSC3DFG5Graph4dumpERN3WTF11PrintStreamEPNS_11DumpContextE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='678' u='r' c='_ZN3JSC3DFG5Graph8dethreadEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='694' u='r' c='_ZN3JSC3DFG5Graph8dethreadEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGLiveCatchVariablePreservationPhase.cpp' l='48' u='r' c='_ZN3JSC3DFG34LiveCatchVariablePreservationPhase3runEv'/>

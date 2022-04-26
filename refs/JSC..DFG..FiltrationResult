@@ -1,0 +1,52 @@
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGFiltrationResult.h' l='41' ll='47'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='337' c='_ZN3JSC3DFG13AbstractValue6filterERNS0_5GraphERKNS0_22RegisteredStructureSetEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='339' c='_ZN3JSC3DFG13AbstractValue16filterArrayModesEjm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='341' c='_ZN3JSC3DFG13AbstractValue6filterEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='349' c='_ZN3JSC3DFG13AbstractValue6filterEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='362' c='_ZN3JSC3DFG13AbstractValue13filterByValueERKNS0_11FrozenValueE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='363' c='_ZN3JSC3DFG13AbstractValue6filterERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='364' c='_ZN3JSC3DFG13AbstractValue15filterClassInfoERNS0_5GraphEPKNS_9ClassInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='366' c='_ZN3JSC3DFG13AbstractValue30fastForwardToAndFilterUnprovenENS0_25AbstractValueClobberEpochEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='373' c='_ZN3JSC3DFG13AbstractValue30fastForwardToAndFilterUnprovenENS0_25AbstractValueClobberEpochEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='383' c='_ZN3JSC3DFG13AbstractValue15changeStructureERNS0_5GraphERKNS0_22RegisteredStructureSetE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='549' c='_ZN3JSC3DFG13AbstractValue10filterSlowEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='550' c='_ZN3JSC3DFG13AbstractValue26fastForwardToAndFilterSlowENS0_25AbstractValueClobberEpochEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='560' c='_ZN3JSC3DFG13AbstractValue16normalizeClarityEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='561' c='_ZN3JSC3DFG13AbstractValue16normalizeClarityERNS0_5GraphE'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGFiltrationResult.h' l='32'>// Tells you if an operation that filters type (i.e. does a type check/speculation) will always
+// exit. Formally, this means that the proven type of a value prior to the filter was not
+// bottom (i.e. not &quot;clear&quot; or &quot;SpecEmpty&quot;) but becomes bottom as a result of executing the
+// filter.
+//
+// Note that per this definition, a filter will not return Contradiction if the node&apos;s proven
+// type was already bottom. This is necessary because we have this yucky convention of using
+// a proven type of bottom for nodes that don&apos;t hold JS values, like Phi nodes in ThreadedCPS
+// and storage nodes.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreter.h' l='180' c='_ZN3JSC3DFG19AbstractInterpreter6filterET_RKNS0_22RegisteredStructureSetEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreter.h' l='186' c='_ZN3JSC3DFG19AbstractInterpreter16filterArrayModesET_jm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreter.h' l='192' c='_ZN3JSC3DFG19AbstractInterpreter6filterET_m'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreter.h' l='198' c='_ZN3JSC3DFG19AbstractInterpreter13filterByValueET_NS0_11FrozenValueE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreter.h' l='204' c='_ZN3JSC3DFG19AbstractInterpreter15filterClassInfoET_PKNS_9ClassInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreter.h' l='209' c='_ZN3JSC3DFG19AbstractInterpreter6filterERNS0_13AbstractValueERKNS0_22RegisteredStructureSetEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreter.h' l='210' c='_ZN3JSC3DFG19AbstractInterpreter16filterArrayModesERNS0_13AbstractValueEjm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreter.h' l='211' c='_ZN3JSC3DFG19AbstractInterpreter6filterERNS0_13AbstractValueEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreter.h' l='212' c='_ZN3JSC3DFG19AbstractInterpreter13filterByValueERNS0_13AbstractValueENS0_11FrozenValueE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreter.h' l='213' c='_ZN3JSC3DFG19AbstractInterpreter15filterClassInfoERNS0_13AbstractValueEPKNS_9ClassInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='230' c='_ZN3JSC3DFG13AbstractValue6filterERNS0_5GraphERKNS0_22RegisteredStructureSetEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='258' c='_ZN3JSC3DFG13AbstractValue15changeStructureERNS0_5GraphERKNS0_22RegisteredStructureSetE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='269' c='_ZN3JSC3DFG13AbstractValue16filterArrayModesEjm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='282' c='_ZN3JSC3DFG13AbstractValue15filterClassInfoERNS0_5GraphEPKNS_9ClassInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='299' c='_ZN3JSC3DFG13AbstractValue10filterSlowEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='313' c='_ZN3JSC3DFG13AbstractValue26fastForwardToAndFilterSlowENS0_25AbstractValueClobberEpochEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='321' c='_ZN3JSC3DFG13AbstractValue13filterByValueERKNS0_11FrozenValueE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='323' c='_ZN3JSC3DFG13AbstractValue13filterByValueERKNS0_11FrozenValueE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='343' c='_ZN3JSC3DFG13AbstractValue6filterERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='432' c='_ZN3JSC3DFG13AbstractValue16normalizeClarityEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='437' c='_ZN3JSC3DFG13AbstractValue16normalizeClarityEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='450' c='_ZN3JSC3DFG13AbstractValue16normalizeClarityERNS0_5GraphE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='452' c='_ZN3JSC3DFG13AbstractValue16normalizeClarityERNS0_5GraphE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreterInlines.h' l='4840' c='_ZN3JSC3DFG19AbstractInterpreter6filterERNS0_13AbstractValueERKNS0_22RegisteredStructureSetEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreterInlines.h' l='4850' c='_ZN3JSC3DFG19AbstractInterpreter16filterArrayModesERNS0_13AbstractValueEjm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreterInlines.h' l='4860' c='_ZN3JSC3DFG19AbstractInterpreter6filterERNS0_13AbstractValueEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreterInlines.h' l='4870' c='_ZN3JSC3DFG19AbstractInterpreter13filterByValueERNS0_13AbstractValueENS0_11FrozenValueE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreterInlines.h' l='4880' c='_ZN3JSC3DFG19AbstractInterpreter15filterClassInfoERNS0_13AbstractValueEPKNS_9ClassInfoE'/>

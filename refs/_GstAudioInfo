@@ -1,0 +1,27 @@
+<use f='include/gstreamer-1.0/gst/audio/audio-info.h' l='31'/>
+<def f='include/gstreamer-1.0/gst/audio/audio-info.h' l='74' ll='85'/>
+<size>320</size>
+<doc f='include/gstreamer-1.0/gst/audio/audio-info.h' l='58'>/**
+ * GstAudioInfo:
+ * @finfo: the format info of the audio
+ * @flags: additional audio flags
+ * @layout: audio layout
+ * @rate: the audio sample rate
+ * @channels: the number of channels
+ * @bpf: the number of bytes for one frame, this is the size of one
+ *         sample * @channels
+ * @position: the positions for each channel
+ *
+ * Information describing audio properties. This information can be filled
+ * in from GstCaps with gst_audio_info_from_caps().
+ *
+ * Use the provided macros to access the info in this structure.
+ */</doc>
+<mbr r='_GstAudioInfo::finfo' o='0' t='const GstAudioFormatInfo *'/>
+<mbr r='_GstAudioInfo::flags' o='64' t='GstAudioFlags'/>
+<mbr r='_GstAudioInfo::layout' o='96' t='GstAudioLayout'/>
+<mbr r='_GstAudioInfo::rate' o='128' t='gint'/>
+<mbr r='_GstAudioInfo::channels' o='160' t='gint'/>
+<mbr r='_GstAudioInfo::bpf' o='192' t='gint'/>
+<mbr r='_GstAudioInfo::position' o='224' t='GstAudioChannelPosition [64]'/>
+<mbr r='_GstAudioInfo::_gst_reserved' o='2304' t='gpointer [4]'/>

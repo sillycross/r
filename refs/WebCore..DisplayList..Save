@@ -1,0 +1,24 @@
+<def f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItems.h' l='69' ll='76'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItems.h' l='2498'/>
+<size>1</size>
+<doc f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItems.h' l='60'>/* isInlineItem indicates whether the object needs to be passed through IPC::Encoder in order to serialize,
+ * or whether we can just use placement new and be done.
+ * It needs to match (1) RemoteImageBufferProxy::encodeItem(), (2) RemoteRenderingBackend::decodeItem(),
+ * and (3) isInlineItem() in DisplayListItemType.cpp.
+ *
+ * isDrawingItem indicates if this command can affect dirty rects.
+ * We can do things like skip drawing items when replaying them if their extents don&apos;t intersect with the current clip.
+ * It needs to match isDrawingItem() in DisplayListItemType.cpp. */</doc>
+<smbr r='WebCore::DisplayList::Save::itemType' t='const WebCore::DisplayList::ItemType'/>
+<smbr r='WebCore::DisplayList::Save::isInlineItem' t='const bool'/>
+<smbr r='WebCore::DisplayList::Save::isDrawingItem' t='const bool'/>
+<fun r='_ZNK7WebCore11DisplayList4Save5applyERNS_15GraphicsContextE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayList.cpp' l='204' c='_ZN7WebCore11DisplayList11DisplayList6appendENS0_10ItemHandleE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayList.cpp' l='204' c='_ZN7WebCore11DisplayList11DisplayList6appendENS0_10ItemHandleE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.cpp' l='49' c='_ZN7WebCore11DisplayList10ItemHandle5applyERNS_15GraphicsContextE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemBuffer.cpp' l='612' c='_ZNK7WebCore11DisplayList10ItemHandle8safeCopyENS0_8ItemTypeES1_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListItemType.cpp' l='38' c='_ZN7WebCore11DisplayListL17sizeOfItemInBytesENS0_8ItemTypeE'/>
+<size>1</size>
+<fun r='_ZNK7WebCore11DisplayList4Save5applyERNS_15GraphicsContextE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/displaylists/DisplayListRecorder.cpp' l='225' c='_ZN7WebCore11DisplayList8Recorder4saveEv'/>
+<size>1</size>

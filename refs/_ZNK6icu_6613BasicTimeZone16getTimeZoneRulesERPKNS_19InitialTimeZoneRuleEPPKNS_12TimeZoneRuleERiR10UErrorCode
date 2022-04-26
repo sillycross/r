@@ -1,0 +1,17 @@
+<dec f='include/unicode/basictz.h' l='123' type='void icu_66::BasicTimeZone::getTimeZoneRules(const icu_66::InitialTimeZoneRule *&amp; initial, const icu_66::TimeZoneRule ** trsrules, int32_t &amp; trscount, UErrorCode &amp; status) const'/>
+<doc f='include/unicode/basictz.h' l='107'>/**
+     * Gets the &lt;code&gt;InitialTimeZoneRule&lt;/code&gt; and the set of &lt;code&gt;TimeZoneRule&lt;/code&gt;
+     * which represent time transitions for this time zone.  On successful return,
+     * the argument initial points to non-NULL &lt;code&gt;InitialTimeZoneRule&lt;/code&gt; and
+     * the array trsrules is filled with 0 or multiple &lt;code&gt;TimeZoneRule&lt;/code&gt;
+     * instances up to the size specified by trscount.  The results are referencing the
+     * rule instance held by this time zone instance.  Therefore, after this time zone
+     * is destructed, they are no longer available.
+     * @param initial       Receives the initial timezone rule
+     * @param trsrules      Receives the timezone transition rules
+     * @param trscount      On input, specify the size of the array &apos;transitions&apos; receiving
+     *                      the timezone transition rules.  On output, actual number of
+     *                      rules filled in the array will be set.
+     * @param status        Receives error status code.
+     * @stable ICU 3.8
+     */</doc>

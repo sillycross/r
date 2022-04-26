@@ -1,0 +1,50 @@
+<def f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceVariable.h' l='65' ll='139'/>
+<size>248</size>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_util/ReplaceVariable.h' l='39'>// A helper class to keep track of opaque variable re-typing during a pass.  Unlike the above
+// functions, this can be used to replace all opaque variables of a certain type with another in a
+// pass that possibly does other related transformations.  Only opaque variables are supported as
+// replacing local variables is not supported.
+//
+// The class uses &quot;old&quot; to refer to the original type of the variable and &quot;new&quot; to refer to the type
+// that will replace it.
+//
+// - replaceGlobalVariable(): Call to track a global variable that is replaced.
+// - in TIntermTraverser::visitFunctionPrototype():
+//   * Call visitFunctionPrototype().
+//   * For every replaced parameter, call replaceFunctionParam().
+//   * call convertFunctionPrototype() to convert the prototype based on the above replacements
+//     and track the function with its replacement.
+//   * Call replaceFunction() to track the function that is replaced.
+// - In PreVisit of TIntermTraverser::visitAggregate():
+//   * call preVisitAggregate()
+// - In TIntermTraverser::visitSymbol():
+//   * Replace non-function-call-argument symbols that refer to a global or function param with the
+//     replacement (getVariableReplacement()).
+//   * For function call arguments, call replaceFunctionCallArg() to track the replacement.
+// - In PostVisit of TIntermTraverser::visitAggregate():
+//   * Convert built-in functions per case.  Call convertASTFunction() for non built-in functions
+//     for the replacement to be created.
+//   * Call postVisitAggregate() when done.
+//</doc>
+<fun r='_ZN2sh27RetypeOpaqueVariablesHelperC1Ev'/>
+<fun r='_ZN2sh27RetypeOpaqueVariablesHelperD1Ev'/>
+<fun r='_ZN2sh27RetypeOpaqueVariablesHelper21replaceGlobalVariableEPKNS_9TVariableEPS1_'/>
+<fun r='_ZNK2sh27RetypeOpaqueVariablesHelper22getVariableReplacementEPKNS_9TVariableE'/>
+<fun r='_ZN2sh27RetypeOpaqueVariablesHelper22visitFunctionPrototypeEv'/>
+<fun r='_ZN2sh27RetypeOpaqueVariablesHelper20replaceFunctionParamEPKNS_9TVariableEPS1_'/>
+<fun r='_ZNK2sh27RetypeOpaqueVariablesHelper27getFunctionParamReplacementEPKNS_9TVariableE'/>
+<fun r='_ZN2sh27RetypeOpaqueVariablesHelper17preVisitAggregateEv'/>
+<fun r='_ZNK2sh27RetypeOpaqueVariablesHelper13isInAggregateEv'/>
+<fun r='_ZN2sh27RetypeOpaqueVariablesHelper18postVisitAggregateEv'/>
+<fun r='_ZN2sh27RetypeOpaqueVariablesHelper22replaceFunctionCallArgEPKNS_11TIntermNodeEPNS_12TIntermTypedE'/>
+<fun r='_ZNK2sh27RetypeOpaqueVariablesHelper29getFunctionCallArgReplacementEPKNS_11TIntermNodeE'/>
+<fun r='_ZN2sh27RetypeOpaqueVariablesHelper24convertFunctionPrototypeEPNS_12TSymbolTableEPKNS_9TFunctionE'/>
+<fun r='_ZN2sh27RetypeOpaqueVariablesHelper18convertASTFunctionEPNS_16TIntermAggregateE'/>
+<mbr r='sh::RetypeOpaqueVariablesHelper::mReplacedGlobalVariables' o='0' t='std::unordered_map&lt;const TVariable *, TVariable *&gt;'/>
+<mbr r='sh::RetypeOpaqueVariablesHelper::mReplacedFunctions' o='448' t='std::unordered_map&lt;const TFunction *, TFunction *&gt;'/>
+<mbr r='sh::RetypeOpaqueVariablesHelper::mReplacedFunctionParams' o='896' t='std::unordered_map&lt;const TVariable *, TVariable *&gt;'/>
+<mbr r='sh::RetypeOpaqueVariablesHelper::mReplacedFunctionCallArgs' o='1344' t='std::stack&lt;std::unordered_map&lt;const TIntermNode *, TIntermTyped *&gt; &gt;'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteAtomicCounters.cpp' l='643'/>
+<size>248</size>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/tree_ops/RewriteCubeMapSamplersAs2DArray.cpp' l='976'/>
+<size>248</size>

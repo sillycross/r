@@ -1,0 +1,18 @@
+<def f='include/gstreamer-1.0/gst/gstbuffer.h' l='428' ll='432' type='GstBuffer * gst_buffer_ref(GstBuffer * buf)'/>
+<doc f='include/gstreamer-1.0/gst/gstbuffer.h' l='414'>/**
+ * gst_buffer_ref:
+ * @buf: a #GstBuffer.
+ *
+ * Increases the refcount of the given buffer by one.
+ *
+ * Note that the refcount affects the writability
+ * of @buf and its metadata, see gst_buffer_is_writable().
+ * It is important to note that keeping additional references to
+ * GstBuffer instances can potentially increase the number
+ * of memcpy operations in a pipeline.
+ *
+ * Returns: (transfer full): @buf
+ */</doc>
+<use f='WebKit/Source/WebCore/platform/audio/gstreamer/AudioFileReaderGStreamer.cpp' l='197' u='c' c='_ZN7WebCore15AudioFileReader12handleSampleEP11_GstAppSink'/>
+<use f='WebKit/Source/WebCore/platform/audio/gstreamer/AudioSourceProviderGStreamer.cpp' l='196' u='c' c='_ZN7WebCore28AudioSourceProviderGStreamer12handleSampleEP11_GstAppSinkb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/GRefPtrGStreamer.cpp' l='237' u='c' c='_ZN3WTF7refGPtrEPT_'/>

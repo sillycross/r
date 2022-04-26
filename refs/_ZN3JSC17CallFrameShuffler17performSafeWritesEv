@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='798' type='bool JSC::CallFrameShuffler::performSafeWrites()'/>
+<def f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='514' ll='599' type='bool JSC::CallFrameShuffler::performSafeWrites()'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.cpp' l='612' u='c' c='_ZN3JSC17CallFrameShuffler10prepareAnyEv'/>
+<doc f='WebKit/Source/JavaScriptCore/jit/CallFrameShuffler.h' l='792'>// This function tries to ensure that there is no longer any
+    // possible safe write, i.e. all remaining writes are either to
+    // the danger zone or callee save restorations.
+    //
+    // It returns false if it was unable to perform some safe writes
+    // due to high register pressure.</doc>

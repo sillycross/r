@@ -1,0 +1,12 @@
+<dec f='WebKit/WTF/Headers/wtf/Threading.h' l='289' type='1'/>
+<use f='WebKit/WTF/Headers/wtf/Threading.h' l='298' u='r' c='_ZN3WTF6Thread7didJoinEv'/>
+<doc f='WebKit/WTF/Headers/wtf/Threading.h' l='285'>// Somebody waited on this thread to exit and this thread finally exited. This state is here because there can be a
+        // period of time between when the thread exits (which causes pthread_join to return and the remainder of waitOnThreadCompletion to run)
+        // and when threadDidExit is called. We need threadDidExit to take charge and delete the thread data since there&apos;s
+        // nobody else to pick up the slack in this case (since waitOnThreadCompletion has already returned).</doc>
+<dec f='WebKit/Source/WTF/wtf/Threading.h' l='289' type='1'/>
+<use f='WebKit/Source/WTF/wtf/Threading.h' l='298' u='r' c='_ZN3WTF6Thread7didJoinEv'/>
+<doc f='WebKit/Source/WTF/wtf/Threading.h' l='285'>// Somebody waited on this thread to exit and this thread finally exited. This state is here because there can be a
+        // period of time between when the thread exits (which causes pthread_join to return and the remainder of waitOnThreadCompletion to run)
+        // and when threadDidExit is called. We need threadDidExit to take charge and delete the thread data since there&apos;s
+        // nobody else to pick up the slack in this case (since waitOnThreadCompletion has already returned).</doc>

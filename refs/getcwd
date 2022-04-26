@@ -1,0 +1,11 @@
+<dec f='include/unistd.h' l='511' type='char * getcwd(char * __buf, size_t __size)'/>
+<doc f='include/unistd.h' l='504'>/* Get the pathname of the current working directory,
+   and put it in SIZE bytes of BUF.  Returns NULL if the
+   directory couldn&apos;t be determined or SIZE was too small.
+   If successful, returns BUF.  In GNU, if BUF is NULL,
+   an array is allocated with `malloc&apos;; the array is SIZE
+   bytes long, unless SIZE == 0, in which case it is as
+   big as necessary.  */</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/ConfigFile.cpp' l='484' u='c' c='_ZN3JSC10ConfigFile17canonicalizePathsEv'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='811' u='c' c='_ZL23currentWorkingDirectoryv'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/common/system_utils_posix.cpp' l='25' u='c' c='_ZN5angle6GetCWDB5cxx11Ev'/>

@@ -1,0 +1,14 @@
+<use f='include/gtk-3.0/gtk/gtktreednd.h' l='94'/>
+<def f='include/gtk-3.0/gtk/gtktreednd.h' l='104' ll='120'/>
+<size>32</size>
+<doc f='include/gtk-3.0/gtk/gtktreednd.h' l='96'>/**
+ * GtkTreeDragDestIface:
+ * @drag_data_received: Asks the #GtkTreeDragDest to insert a row
+ *    before the path dest, deriving the contents of the row from
+ *    selection_data.
+ * @row_drop_possible: Determines whether a drop is possible before
+ *    the given dest_path, at the same depth as dest_path.
+ */</doc>
+<mbr r='_GtkTreeDragDestIface::g_iface' o='0' t='GTypeInterface'/>
+<mbr r='_GtkTreeDragDestIface::drag_data_received' o='128' t='gboolean (*)(GtkTreeDragDest *, GtkTreePath *, GtkSelectionData *)'/>
+<mbr r='_GtkTreeDragDestIface::row_drop_possible' o='192' t='gboolean (*)(GtkTreeDragDest *, GtkTreePath *, GtkSelectionData *)'/>

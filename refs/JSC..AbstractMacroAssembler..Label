@@ -1,0 +1,426 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='409' ll='433'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='428' c='_ZNK3JSC22AbstractMacroAssembler5LabeleqERKS1_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='639' c='_ZNK3JSC22AbstractMacroAssembler4Jump5labelEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='641' c='_ZNK3JSC22AbstractMacroAssembler4Jump5labelEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='668' c='_ZNK3JSC22AbstractMacroAssembler4Jump6linkToENS0_5LabelEPNS_22AbstractMacroAssemblerIT_EE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='742' c='_ZNK3JSC22AbstractMacroAssembler8JumpList6linkToENS0_5LabelEPNS_22AbstractMacroAssemblerIT_EE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='779' c='_ZN3JSC22AbstractMacroAssembler24labelIgnoringWatchpointsEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='781' c='_ZN3JSC22AbstractMacroAssembler24labelIgnoringWatchpointsEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='792' c='_ZN3JSC22AbstractMacroAssembler5labelEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='794' c='_ZN3JSC22AbstractMacroAssembler5labelEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='803' c='_ZN3JSC22AbstractMacroAssembler15watchpointLabelEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='805' c='_ZN3JSC22AbstractMacroAssembler15watchpointLabelEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='810' c='_ZN3JSC22AbstractMacroAssembler5alignEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='813' c='_ZN3JSC22AbstractMacroAssembler5alignEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='1070'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssembler.h' l='368' c='_ZN3JSC14MacroAssembler9branchPtrENS_23MacroAssemblerX86Common19RelationalConditionENS_12X86Registers10RegisterIDENS_22AbstractMacroAssemblerINS_12X862525462'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssembler.h' l='372' c='_ZN3JSC14MacroAssembler9branchPtrENS_23MacroAssemblerX86Common19RelationalConditionENS_12X86Registers10RegisterIDENS_22AbstractMacroAssemblerINS_12X862329821'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssembler.h' l='382' c='_ZN3JSC14MacroAssembler8branch32ENS_23MacroAssemblerX86Common19RelationalConditionENS_12X86Registers10RegisterIDES4_NS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssembler.h' l='387' c='_ZN3JSC14MacroAssembler8branch32ENS_23MacroAssemblerX86Common19RelationalConditionENS_12X86Registers10RegisterIDENS_22AbstractMacroAssemblerINS_12X86A11167197'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssembler.h' l='392' c='_ZN3JSC14MacroAssembler8branch32ENS_23MacroAssemblerX86Common19RelationalConditionENS_12X86Registers10RegisterIDENS_22AbstractMacroAssemblerINS_12X86A5378811'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssembler.h' l='397' c='_ZN3JSC14MacroAssembler8branch32ENS_23MacroAssemblerX86Common19RelationalConditionENS_12X86Registers10RegisterIDENS_22AbstractMacroAssemblerINS_12X86A8217320'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssembler.h' l='417' c='_ZN3JSC14MacroAssembler13branchTestPtrENS_23MacroAssemblerX86Common15ResultConditionENS_12X86Registers10RegisterIDENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MacroAssembler.h' l='464' c='_ZN3JSC14MacroAssembler4jumpENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AssemblyHelpers.h' l='1807' c='_ZN3JSC15AssemblyHelpers27emitInitializeInlineStorageENS_12X86Registers10RegisterIDES2_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CCallHelpers.h' l='828' c='_ZN3JSC12CCallHelpers22prepareForTailCallSlowENS_12X86Registers10RegisterIDE'/>
+<size>4</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractMacroAssembler.h' l='397'>// Section 2: MacroAssembler code buffer handles
+    //
+    // The following types are used to reference items in the code buffer
+    // during JIT code generation.  For example, the type Jump is used to
+    // track the location of a jump instruction so that it may later be
+    // linked to a label marking its destination.
+
+
+    // Label:
+    //
+    // A Label records a point in the generated instruction stream, typically such that
+    // it may be used as a destination for a jump.</doc>
+<fun r='_ZN3JSC22AbstractMacroAssembler5LabelC1Ev'/>
+<fun r='_ZN3JSC22AbstractMacroAssembler5LabelC1EPNS_22AbstractMacroAssemblerIT_EE'/>
+<fun r='_ZNK3JSC22AbstractMacroAssembler5LabeleqERKS1_'/>
+<fun r='_ZNK3JSC22AbstractMacroAssembler5Label5isSetEv'/>
+<mbr r='JSC::AbstractMacroAssembler::Label::m_label' t='JSC::AssemblerLabel'/>
+<def f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='409' ll='433'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='428' c='_ZNK3JSC22AbstractMacroAssembler5LabeleqERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='639' c='_ZNK3JSC22AbstractMacroAssembler4Jump5labelEv'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='641' c='_ZNK3JSC22AbstractMacroAssembler4Jump5labelEv'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='668' c='_ZNK3JSC22AbstractMacroAssembler4Jump6linkToENS0_5LabelEPNS_22AbstractMacroAssemblerIT_EE'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='742' c='_ZNK3JSC22AbstractMacroAssembler8JumpList6linkToENS0_5LabelEPNS_22AbstractMacroAssemblerIT_EE'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='779' c='_ZN3JSC22AbstractMacroAssembler24labelIgnoringWatchpointsEv'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='781' c='_ZN3JSC22AbstractMacroAssembler24labelIgnoringWatchpointsEv'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='792' c='_ZN3JSC22AbstractMacroAssembler5labelEv'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='794' c='_ZN3JSC22AbstractMacroAssembler5labelEv'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='803' c='_ZN3JSC22AbstractMacroAssembler15watchpointLabelEv'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='805' c='_ZN3JSC22AbstractMacroAssembler15watchpointLabelEv'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='810' c='_ZN3JSC22AbstractMacroAssembler5alignEv'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='813' c='_ZN3JSC22AbstractMacroAssembler5alignEv'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='1070'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssembler.h' l='368' c='_ZN3JSC14MacroAssembler9branchPtrENS_23MacroAssemblerX86Common19RelationalConditionENS_12X86Registers10RegisterIDENS_22AbstractMacroAssemblerINS_12X862525462'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssembler.h' l='372' c='_ZN3JSC14MacroAssembler9branchPtrENS_23MacroAssemblerX86Common19RelationalConditionENS_12X86Registers10RegisterIDENS_22AbstractMacroAssemblerINS_12X862329821'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssembler.h' l='382' c='_ZN3JSC14MacroAssembler8branch32ENS_23MacroAssemblerX86Common19RelationalConditionENS_12X86Registers10RegisterIDES4_NS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssembler.h' l='387' c='_ZN3JSC14MacroAssembler8branch32ENS_23MacroAssemblerX86Common19RelationalConditionENS_12X86Registers10RegisterIDENS_22AbstractMacroAssemblerINS_12X86A11167197'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssembler.h' l='392' c='_ZN3JSC14MacroAssembler8branch32ENS_23MacroAssemblerX86Common19RelationalConditionENS_12X86Registers10RegisterIDENS_22AbstractMacroAssemblerINS_12X86A5378811'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssembler.h' l='397' c='_ZN3JSC14MacroAssembler8branch32ENS_23MacroAssemblerX86Common19RelationalConditionENS_12X86Registers10RegisterIDENS_22AbstractMacroAssemblerINS_12X86A8217320'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssembler.h' l='417' c='_ZN3JSC14MacroAssembler13branchTestPtrENS_23MacroAssemblerX86Common15ResultConditionENS_12X86Registers10RegisterIDENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/MacroAssembler.h' l='464' c='_ZN3JSC14MacroAssembler4jumpENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/AssemblyHelpers.h' l='1807' c='_ZN3JSC15AssemblyHelpers27emitInitializeInlineStorageENS_12X86Registers10RegisterIDES2_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/CCallHelpers.h' l='828' c='_ZN3JSC12CCallHelpers22prepareForTailCallSlowENS_12X86Registers10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITSizeStatistics.h' l='43'/>
+<use f='WebKit/Source/JavaScriptCore/assembler/LinkBuffer.h' l='71'/>
+<size>4</size>
+<doc f='WebKit/Source/JavaScriptCore/assembler/AbstractMacroAssembler.h' l='397'>// Section 2: MacroAssembler code buffer handles
+    //
+    // The following types are used to reference items in the code buffer
+    // during JIT code generation.  For example, the type Jump is used to
+    // track the location of a jump instruction so that it may later be
+    // linked to a label marking its destination.
+
+
+    // Label:
+    //
+    // A Label records a point in the generated instruction stream, typically such that
+    // it may be used as a destination for a jump.</doc>
+<fun r='_ZN3JSC22AbstractMacroAssembler5LabelC1Ev'/>
+<fun r='_ZN3JSC22AbstractMacroAssembler5LabelC1EPNS_22AbstractMacroAssemblerIT_EE'/>
+<fun r='_ZNK3JSC22AbstractMacroAssembler5LabeleqERKS1_'/>
+<fun r='_ZNK3JSC22AbstractMacroAssembler5Label5isSetEv'/>
+<mbr r='JSC::AbstractMacroAssembler::Label::m_label' t='JSC::AssemblerLabel'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirDisassembler.h' l='53' c='_ZN3JSC2B33Air12Disassembler7addInstEPNS1_4InstENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelES8_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirDisassembler.h' l='53' c='_ZN3JSC2B33Air12Disassembler7addInstEPNS1_4InstENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelES8_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirDisassembler.h' l='58'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirDisassembler.h' l='58'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirDisassembler.h' l='60'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirDisassembler.h' l='61'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirDisassembler.h' l='62'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirDisassembler.h' l='63'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirCode.h' l='204' c='_ZNK3JSC2B33Air4Code15entrypointLabelEj'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirCode.h' l='407'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3PCToOriginMap.h' l='47'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3PCToOriginMap.h' l='51' c='_ZN3JSC2B313PCToOriginMap10appendItemENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelENS0_6OriginE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExitHandle.h' l='55'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLState.h' l='85'/>
+<use f='WebKit/Source/JavaScriptCore/jit/PCToCodeOriginMap.h' l='59' c='_ZN3JSC24PCToCodeOriginMapBuilder10appendItemENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelERKNS_10CodeOriginE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/PCToCodeOriginMap.h' l='67'/>
+<use f='WebKit/Source/JavaScriptCore/jit/PCToCodeOriginMap.h' l='68'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLExceptionTarget.h' l='55' c='_ZN3JSC3FTL15ExceptionTargetC1EbN3WTF3BoxINS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelEEENS2_6RefPtrINS0_13OSRExitHandleENS2_12RawPtrTraitsIS6818564'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLExceptionTarget.h' l='58'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLExceptionTarget.cpp' l='50' c='_ZN3JSC3FTL15ExceptionTarget5jumpsERNS_12CCallHelpersE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLExceptionTarget.cpp' l='66' c='_ZN3JSC3FTL15ExceptionTargetC1EbN3WTF3BoxINS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelEEENS2_6RefPtrINS0_13OSRExitHandleENS2_12RawPtrTraitsIS6818564'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLink.cpp' l='140' c='_ZN3JSC3FTL4linkERNS0_5StateE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirGenerationContext.h' l='51'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapGenerationParams.h' l='96' c='_ZNK3JSC2B324StackmapGenerationParams15successorLabelsEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExitHandle.cpp' l='42' c='_ZN3JSC3FTL13OSRExitHandle13emitExitThunkERNS0_5StateERNS_12CCallHelpersE'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLSnippetParams.cpp' l='39' c='_ZN3JSC3FTLL8dispatchERNS_12CCallHelpersEPNS0_5StateERKNS_2B324StackmapGenerationParamsENS_10CodeOriginEN3WTF3BoxINS_22AbstractMacroAssemblerINS_12X8613067551'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='2047' c='_ZN3JSC4Wasm13B3IRGenerator20emitEntryTierUpCheckEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='2121' c='_ZN3JSC4Wasm13B3IRGenerator19emitLoopTierUpCheckEjRKN3WTF6VectorINS0_14FunctionParserIS1_E15TypedExpressionELm16ENS2_20UnsafeVectorOverflowELm16ENS2_10FastMallocEEE'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntPlan.cpp' l='109' c='_ZN3JSC4Wasm9LLIntPlan22didCompleteCompilationEv'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersAndStackAndGenerateCode.h' l='92'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersAndStackAndGenerateCode.cpp' l='133' c='_ZN3JSC2B33Air28GenerateAndAllocateRegisters44insertBlocksForFlushAfterTerminalPatchpointsEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersAndStackAndGenerateCode.cpp' l='133' c='_ZN3JSC2B33Air28GenerateAndAllocateRegisters44insertBlocksForFlushAfterTerminalPatchpointsEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersAndStackAndGenerateCode.cpp' l='470' c='_ZN3JSC2B33Air28GenerateAndAllocateRegisters8generateERNS_12CCallHelpersE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersAndStackAndGenerateCode.cpp' l='854' c='_ZN3JSC2B33Air28GenerateAndAllocateRegisters8generateERNS_12CCallHelpersE'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirDisassembler.cpp' l='66' c='_ZN3JSC2B33Air12Disassembler7addInstEPNS1_4InstENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelES8_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirDisassembler.cpp' l='66' c='_ZN3JSC2B33Air12Disassembler7addInstEPNS1_4InstENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelES8_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirDisassembler.cpp' l='74' c='_ZN3JSC2B33Air12Disassembler4dumpERNS1_4CodeERN3WTF11PrintStreamERNS_10LinkBufferEPKcSB_RKNS5_12ScopedLambdaIFvRNS1_4InstEEEE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirDisassembler.cpp' l='74' c='_ZN3JSC2B33Air12Disassembler4dumpERNS1_4CodeERN3WTF11PrintStreamERNS_10LinkBufferEPKcSB_RKNS5_12ScopedLambdaIFvRNS1_4InstEEEE'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirGenerate.cpp' l='231' c='_ZN3JSC2B33AirL37generateWithAlreadyAllocatedRegistersERNS1_4CodeERNS_12CCallHelpersE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirGenerate.cpp' l='312' c='_ZN3JSC2B33AirL37generateWithAlreadyAllocatedRegistersERNS1_4CodeERNS_12CCallHelpersE'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerMacros.cpp' l='553' c='_ZN3JSC2B312_GLOBAL__N_111LowerMacros22recursivelyBuildSwitchERKN3WTF6VectorINS0_10SwitchCaseELm0ENS3_15CrashOnOverflowELm16ENS3_10FastMallocEEENS0_222151505'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapGenerationParams.cpp' l='62' c='_ZNK3JSC2B324StackmapGenerationParams15successorLabelsEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapGenerationParams.cpp' l='67' c='_ZNK3JSC2B324StackmapGenerationParams15successorLabelsEv'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/jit/AssemblyHelpers.cpp' l='1084' c='_ZN3JSC15AssemblyHelpers19sanitizeStackInlineERNS_2VMENS_12X86Registers10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='50' c='_ZN3JSC15JITDisassembler14setStartOfCodeENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='51' c='_ZN3JSC15JITDisassembler22setForBytecodeMainPathEjNS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='55' c='_ZN3JSC15JITDisassembler22setForBytecodeSlowPathEjNS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='59' c='_ZN3JSC15JITDisassembler16setEndOfSlowPathENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='60' c='_ZN3JSC15JITDisassembler12setEndOfCodeENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='68' c='_ZN3JSC15JITDisassembler14firstSlowLabelEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='74' c='_ZN3JSC15JITDisassembler25dumpVectorForInstructionsERNS_10LinkBufferEPKcRN3WTF6VectorINS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelELm0ENS5_156849531'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='74' c='_ZN3JSC15JITDisassembler25dumpVectorForInstructionsERNS_10LinkBufferEPKcRN3WTF6VectorINS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelELm0ENS5_156849531'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='76' c='_ZN3JSC15JITDisassembler19dumpForInstructionsERN3WTF11PrintStreamERNS_10LinkBufferEPKcRNS1_6VectorINS_22AbstractMacroAssemblerINS_12X86AssemblerEE5Lab14555145'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='76' c='_ZN3JSC15JITDisassembler19dumpForInstructionsERN3WTF11PrintStreamERNS_10LinkBufferEPKcRNS1_6VectorINS_22AbstractMacroAssemblerINS_12X86AssemblerEE5Lab14555145'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='77' c='_ZN3JSC15JITDisassembler18reportInstructionsEPNS_8Profiler11CompilationERNS_10LinkBufferEPKcRN3WTF6VectorINS_22AbstractMacroAssemblerINS_12X86Assemble6264508'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='77' c='_ZN3JSC15JITDisassembler18reportInstructionsEPNS_8Profiler11CompilationERNS_10LinkBufferEPKcRN3WTF6VectorINS_22AbstractMacroAssemblerINS_12X86Assemble6264508'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='79' c='_ZN3JSC15JITDisassembler15dumpDisassemblyERN3WTF11PrintStreamERNS_10LinkBufferENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelES9_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='79' c='_ZN3JSC15JITDisassembler15dumpDisassemblyERN3WTF11PrintStreamERNS_10LinkBufferENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelES9_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='82'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='83'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='84'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='85'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='86'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITInlineCacheGenerator.h' l='54' c='_ZN3JSC23JITInlineCacheGenerator18reportSlowPathCallENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelENS3_4CallE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITInlineCacheGenerator.h' l='60' c='_ZNK3JSC23JITInlineCacheGenerator13slowPathBeginEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITInlineCacheGenerator.h' l='71'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITInlineCacheGenerator.h' l='72'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITInlineCacheGenerator.h' l='101'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITInlineCacheGenerator.h' l='170'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITInlineCacheGenerator.h' l='195'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITInlineCacheGenerator.h' l='220'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITInlineCacheGenerator.h' l='256'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITInlineCacheGenerator.h' l='284'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITInlineCacheGenerator.h' l='309'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITMathIC.h' l='46'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITMathIC.h' l='47'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITMathIC.h' l='48'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='155' c='_ZN3JSC20ByValCompilationInfoC1EPNS_9ByValInfoENS_13BytecodeIndexENS_22AbstractMacroAssemblerINS_12X86AssemblerEE13PatchableJumpES7_NS_12JITArrayModeE1296909'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='155' c='_ZN3JSC20ByValCompilationInfoC1EPNS_9ByValInfoENS_13BytecodeIndexENS_22AbstractMacroAssemblerINS_12X86AssemblerEE13PatchableJumpES7_NS_12JITArrayModeE1296909'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='167' c='_ZN3JSC20ByValCompilationInfoC1EPNS_9ByValInfoENS_13BytecodeIndexENS_22AbstractMacroAssemblerINS_12X86AssemblerEE13PatchableJumpENS6_5LabelES8_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='167' c='_ZN3JSC20ByValCompilationInfoC1EPNS_9ByValInfoENS_13BytecodeIndexENS_22AbstractMacroAssemblerINS_12X86AssemblerEE13PatchableJumpENS6_5LabelES8_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='182'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='183'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='184'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='189'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='190'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='1078'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='1079'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='1121'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.cpp' l='746' c='_ZN3JSC3JIT31compileAndLinkWithoutFinalizingENS_20JITCompilationEffortE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.cpp' l='757' c='_ZN3JSC3JIT31compileAndLinkWithoutFinalizingENS_20JITCompilationEffortE'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCall.cpp' l='435' c='_ZN3JSC3JIT25emitSlow_op_iterator_openEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCall.cpp' l='544' c='_ZN3JSC3JIT25emitSlow_op_iterator_nextEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCall.cpp' l='573' c='_ZN3JSC3JIT25emitSlow_op_iterator_nextEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.cpp' l='95' c='_ZN3JSC15JITDisassembler14firstSlowLabelEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.cpp' l='97' c='_ZN3JSC15JITDisassembler14firstSlowLabelEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.cpp' l='107' c='_ZN3JSC15JITDisassembler25dumpVectorForInstructionsERNS_10LinkBufferEPKcRN3WTF6VectorINS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelELm0ENS5_156849531'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.cpp' l='107' c='_ZN3JSC15JITDisassembler25dumpVectorForInstructionsERNS_10LinkBufferEPKcRN3WTF6VectorINS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelELm0ENS5_156849531'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.cpp' l='140' c='_ZN3JSC15JITDisassembler19dumpForInstructionsERN3WTF11PrintStreamERNS_10LinkBufferEPKcRNS1_6VectorINS_22AbstractMacroAssemblerINS_12X86AssemblerEE5Lab14555145'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.cpp' l='140' c='_ZN3JSC15JITDisassembler19dumpForInstructionsERN3WTF11PrintStreamERNS_10LinkBufferEPKcRNS1_6VectorINS_22AbstractMacroAssemblerINS_12X86AssemblerEE5Lab14555145'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.cpp' l='148' c='_ZN3JSC15JITDisassembler18reportInstructionsEPNS_8Profiler11CompilationERNS_10LinkBufferEPKcRN3WTF6VectorINS_22AbstractMacroAssemblerINS_12X86Assemble6264508'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.cpp' l='148' c='_ZN3JSC15JITDisassembler18reportInstructionsEPNS_8Profiler11CompilationERNS_10LinkBufferEPKcRN3WTF6VectorINS_22AbstractMacroAssemblerINS_12X86Assemble6264508'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.cpp' l='160' c='_ZN3JSC15JITDisassembler15dumpDisassemblyERN3WTF11PrintStreamERNS_10LinkBufferENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelES9_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.cpp' l='160' c='_ZN3JSC15JITDisassembler15dumpDisassemblyERN3WTF11PrintStreamERNS_10LinkBufferENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelES9_'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='193' c='_ZN3JSC3JIT22emitSlow_op_instanceofEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='1800' c='_ZN3JSC3JIT39emit_op_has_enumerable_indexed_propertyEPKNS_11InstructionE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='1804' c='_ZN3JSC3JIT39emit_op_has_enumerable_indexed_propertyEPKNS_11InstructionE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='1819' c='_ZN3JSC3JIT43emitSlow_op_has_enumerable_indexed_propertyEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='101' c='_ZN3JSC3JIT22emitSlow_op_get_by_valEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='217' c='_ZN3JSC3JIT28emitSlow_op_get_private_nameEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='326' c='_ZN3JSC3JIT29emitSlow_op_set_private_brandEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='388' c='_ZN3JSC3JIT31emitSlow_op_check_private_brandEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='491' c='_ZN3JSC3JIT18emit_op_put_by_valEPKNS_11InstructionE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='519' c='_ZN3JSC3JIT29emitGenericContiguousPutByValET_RNS_22AbstractMacroAssemblerINS_12X86AssemblerEE13PatchableJumpEPNS_9ByValInfoEh'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='587' c='_ZN3JSC3JIT24emitArrayStoragePutByValET_RNS_22AbstractMacroAssemblerINS_12X86AssemblerEE13PatchableJumpEPNS_9ByValInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='635' c='_ZN3JSC3JIT24emitPutByValWithCachedIdET_NS_7PutKindENS_19CacheableIdentifierERNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListES8_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='674' c='_ZN3JSC3JIT22emitSlow_op_put_by_valEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='773' c='_ZN3JSC3JIT24emit_op_put_private_nameEPKNS_11InstructionE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='785' c='_ZN3JSC3JIT28emitSlow_op_put_private_nameEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='957' c='_ZN3JSC3JIT21emitSlow_op_del_by_idEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='1074' c='_ZN3JSC3JIT22emitSlow_op_del_by_valEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='1184' c='_ZN3JSC3JIT25emitSlow_op_try_get_by_idEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='1254' c='_ZN3JSC3JIT28emitSlow_op_get_by_id_directEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='1358' c='_ZN3JSC3JIT21emitSlow_op_get_by_idEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='1441' c='_ZN3JSC3JIT31emitSlow_op_get_by_id_with_thisEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='1555' c='_ZN3JSC3JIT21emitSlow_op_put_by_idEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='1661' c='_ZN3JSC3JIT20emitSlow_op_in_by_idEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='1736' c='_ZN3JSC3JIT21emitSlow_op_in_by_valEPKNS_11InstructionERPNS_13SlowCaseEntryE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='1799' c='_ZN3JSC3JIT18emitHasPrivateSlowENS_15VirtualRegisterENS_10AccessTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='2061' c='_ZN3JSC3JIT27generateOpResolveScopeThunkENS_11ResolveTypeEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITSizeStatistics.cpp' l='47' c='_ZN3JSC17JITSizeStatistics7markEndENS0_6MarkerERNS_12CCallHelpersE'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/jit/PCToCodeOriginMap.cpp' l='130' c='_ZN3JSC24PCToCodeOriginMapBuilder10appendItemENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelERKNS_10CodeOriginE'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.h' l='52' c='_ZN3JSC3DFG12Disassembler14setStartOfCodeENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.h' l='53' c='_ZN3JSC3DFG12Disassembler16setForBlockIndexEjNS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.h' l='57' c='_ZN3JSC3DFG12Disassembler10setForNodeEPNS0_4NodeENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.h' l='62' c='_ZN3JSC3DFG12Disassembler16setEndOfMainPathENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.h' l='66' c='_ZN3JSC3DFG12Disassembler12setEndOfCodeENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.h' l='91' c='_ZN3JSC3DFG12Disassembler15dumpDisassemblyERN3WTF11PrintStreamEPKcRNS_10LinkBufferERNS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelESC_PNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.h' l='91' c='_ZN3JSC3DFG12Disassembler15dumpDisassemblyERN3WTF11PrintStreamEPKcRNS_10LinkBufferERNS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelESC_PNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.h' l='95'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.h' l='96'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.h' l='97'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.h' l='98'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.h' l='99'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExitCompilationInfo.h' l='36'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExitCompilationInfo.h' l='37'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='232' c='_ZN3JSC3DFG11JITCompiler9addJSCallENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelES5_PNS_12CallLinkInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='232' c='_ZN3JSC3DFG11JITCompiler9addJSCallENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelES5_PNS_12CallLinkInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='237' c='_ZN3JSC3DFG11JITCompiler15addJSDirectCallENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelEPNS_12CallLinkInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='273' c='_ZN3JSC3DFG11JITCompiler14noticeOSREntryERNS0_10BasicBlockENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelERNS_10LinkBufferE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='274' c='_ZN3JSC3DFG11JITCompiler21noticeCatchEntrypointERNS0_10BasicBlockENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelERNS_10LinkBufferEON3WTF6Vector8201714'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='292' c='_ZN3JSC3DFG11JITCompiler10blockHeadsEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='332'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='336' c='_ZN3JSC3DFG11JITCompiler12JSCallRecordC1ENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelES6_PNS_12CallLinkInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='336' c='_ZN3JSC3DFG11JITCompiler12JSCallRecordC1ENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelES6_PNS_12CallLinkInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='343'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='344'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='349' c='_ZN3JSC3DFG11JITCompiler18JSDirectCallRecordC1ENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelEPNS_12CallLinkInfoE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='355'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.h' l='372'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='1804'/>
+<use f='WebKit/Source/JavaScriptCore/jit/SetupVarargsFrame.cpp' l='98' c='_ZN3JSCL29emitSetupVarargsFrameFastCaseERNS_2VMERNS_12CCallHelpersENS_12X86Registers10RegisterIDES5_S5_S5_NS_13ValueRecoveryENS_15VirtualRegisterEjRNS6082068'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='315' c='_ZN3JSCL15virtualThunkForERNS_2VMENS_8CallModeENS_22CodeSpecializationKindE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='580' c='_ZN3JSC19arityFixupGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='602' c='_ZN3JSC19arityFixupGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='611' c='_ZN3JSC19arityFixupGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='870' c='_ZN3JSC19clz32ThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1230' c='_ZN3JSC17absThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1265' c='_ZN3JSC18imulThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1268' c='_ZN3JSC18imulThunkGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1388' c='_ZN3JSC26boundFunctionCallGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/ThunkGenerators.cpp' l='1400' c='_ZN3JSC26boundFunctionCallGeneratorERNS_2VME'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='58' c='_ZN3JSC4Yarr16YarrDisassembler14setStartOfCodeENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='59' c='_ZN3JSC4Yarr16YarrDisassembler14setForGenerateEjNS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='64' c='_ZN3JSC4Yarr16YarrDisassembler15setForBacktrackEjNS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='69' c='_ZN3JSC4Yarr16YarrDisassembler16setEndOfGenerateENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='70' c='_ZN3JSC4Yarr16YarrDisassembler17setEndOfBacktrackENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='71' c='_ZN3JSC4Yarr16YarrDisassembler12setEndOfCodeENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='83' c='_ZN3JSC4Yarr16YarrDisassembler14firstSlowLabelEv'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='96' c='_ZN3JSC4Yarr16YarrDisassembler25dumpVectorForInstructionsERNS_10LinkBufferERN3WTF6VectorINS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelELm0ENS43935345'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='96' c='_ZN3JSC4Yarr16YarrDisassembler25dumpVectorForInstructionsERNS_10LinkBufferERN3WTF6VectorINS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelELm0ENS43935345'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='98' c='_ZN3JSC4Yarr16YarrDisassembler19dumpForInstructionsERN3WTF11PrintStreamERNS_10LinkBufferERNS2_6VectorINS_22AbstractMacroAssemblerINS_12X86AssemblerEE54910646'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='98' c='_ZN3JSC4Yarr16YarrDisassembler19dumpForInstructionsERN3WTF11PrintStreamERNS_10LinkBufferERNS2_6VectorINS_22AbstractMacroAssemblerINS_12X86AssemblerEE54910646'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='100' c='_ZN3JSC4Yarr16YarrDisassembler15dumpDisassemblyERN3WTF11PrintStreamEPKcRNS_10LinkBufferENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelESC_'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='100' c='_ZN3JSC4Yarr16YarrDisassembler15dumpDisassemblyERN3WTF11PrintStreamEPKcRNS_10LinkBufferENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelESC_'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='103'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='104'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='105'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='106'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='107'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.h' l='108'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.cpp' l='91' c='_ZN3JSC4Yarr16YarrDisassembler25dumpVectorForInstructionsERNS_10LinkBufferERN3WTF6VectorINS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelELm0ENS43935345'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.cpp' l='91' c='_ZN3JSC4Yarr16YarrDisassembler25dumpVectorForInstructionsERNS_10LinkBufferERN3WTF6VectorINS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelELm0ENS43935345'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.cpp' l='134' c='_ZN3JSC4Yarr16YarrDisassembler19dumpForInstructionsERN3WTF11PrintStreamERNS_10LinkBufferERNS2_6VectorINS_22AbstractMacroAssemblerINS_12X86AssemblerEE54910646'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.cpp' l='134' c='_ZN3JSC4Yarr16YarrDisassembler19dumpForInstructionsERN3WTF11PrintStreamERNS_10LinkBufferERNS2_6VectorINS_22AbstractMacroAssemblerINS_12X86AssemblerEE54910646'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.cpp' l='142' c='_ZN3JSC4Yarr16YarrDisassembler15dumpDisassemblyERN3WTF11PrintStreamEPKcRNS_10LinkBufferENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelESC_'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrDisassembler.cpp' l='142' c='_ZN3JSC4Yarr16YarrDisassembler15dumpDisassemblyERN3WTF11PrintStreamEPKcRNS_10LinkBufferENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelESC_'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='240' c='_ZN3JSC4Yarr13YarrGenerator24initParenContextFreeListEv'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='813'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='885' c='_ZN3JSC4Yarr13YarrGenerator17BacktrackingState4linkEPNS_14MacroAssemblerE'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='894' c='_ZN3JSC4Yarr13YarrGenerator17BacktrackingState6linkToENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelEPNS_14MacroAssemblerE'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='910' c='_ZN3JSC4Yarr13YarrGenerator17BacktrackingState24takeBacktracksToJumpListERNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListEPNS_14MacroAssemblerE'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='938' c='_ZN3JSC4Yarr13YarrGenerator17BacktrackingState19ReturnAddressRecordC1ENS_22AbstractMacroAssemblerINS_12X86AssemblerEE12DataLabelPtrENS6_5LabelE'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='945'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='1115' c='_ZN3JSC4Yarr13YarrGenerator18matchBackreferenceEmRNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListENS_12X86Registers10RegisterIDES8_S8_'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='1188' c='_ZN3JSC4Yarr13YarrGenerator21generateBackReferenceEm'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='1212' c='_ZN3JSC4Yarr13YarrGenerator21generateBackReferenceEm'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='1560' c='_ZN3JSC4Yarr13YarrGenerator29generatePatternCharacterFixedEm'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='1598' c='_ZN3JSC4Yarr13YarrGenerator30generatePatternCharacterGreedyEm'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='1772' c='_ZN3JSC4Yarr13YarrGenerator27generateCharacterClassFixedEm'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='1824' c='_ZN3JSC4Yarr13YarrGenerator28generateCharacterClassGreedyEm'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='1896' c='_ZN3JSC4Yarr13YarrGenerator29backtrackCharacterClassGreedyEm'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='2019' c='_ZN3JSC4Yarr13YarrGenerator24generateDotStarEnclosureEm'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='2042' c='_ZN3JSC4Yarr13YarrGenerator24generateDotStarEnclosureEm'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='2863' c='_ZN3JSC4Yarr13YarrGenerator9backtrackEv'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='4196'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSlowPathGenerator.h' l='58' c='_ZNK3JSC3DFG17SlowPathGenerator5labelEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSlowPathGenerator.h' l='71'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSlowPathGenerator.h' l='98'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGThunks.cpp' l='151' c='_ZN3JSC3DFG22osrEntryThunkGeneratorERNS_2VME'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.cpp' l='102' c='_ZN3JSC3DFG12Disassembler14createDumpListERNS_10LinkBufferE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.cpp' l='113' c='_ZN3JSC3DFG12Disassembler14createDumpListERNS_10LinkBufferE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.cpp' l='151' c='_ZN3JSC3DFG12Disassembler15dumpDisassemblyERN3WTF11PrintStreamEPKcRNS_10LinkBufferERNS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelESC_PNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.cpp' l='151' c='_ZN3JSC3DFG12Disassembler15dumpDisassemblyERN3WTF11PrintStreamEPKcRNS_10LinkBufferERNS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelESC_PNS0_4NodeE'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.cpp' l='74' c='_ZN3JSC3DFG11JITCompiler12linkOSRExitsEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.cpp' l='76' c='_ZN3JSC3DFG11JITCompiler12linkOSRExitsEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.cpp' l='302' c='_ZN3JSC3DFG11JITCompiler4linkERNS_10LinkBufferE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.cpp' l='415' c='_ZN3JSC3DFG11JITCompiler15compileFunctionEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.cpp' l='422' c='_ZN3JSC3DFG11JITCompiler15compileFunctionEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.cpp' l='461' c='_ZN3JSC3DFG11JITCompiler15compileFunctionEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.cpp' l='548' c='_ZN3JSC3DFG11JITCompiler21noticeCatchEntrypointERNS0_10BasicBlockENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelERNS_10LinkBufferEON3WTF6Vector8201714'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGJITCompiler.cpp' l='555' c='_ZN3JSC3DFG11JITCompiler14noticeOSREntryERNS0_10BasicBlockENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelERNS_10LinkBufferE'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='1340' c='_ZN3JSC10AccessCase17generateWithGuardERNS_21AccessGenerationStateERNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCaseSnippetParams.cpp' l='40' c='_ZN3JSC34SlowPathCallGeneratorWithArgumentsC1ET_NS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelET0_T1_St5tupleIJDpT2_EE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCaseSnippetParams.cpp' l='97'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCaseSnippetParams.cpp' l='106' c='_ZN3JSC23AccessCaseSnippetParams19addSlowPathCallImplENS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListERNS_12CCallHelpersEPFlPNS_14JSGlobalObj12253172'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PolymorphicAccess.cpp' l='761' c='_ZN3JSC17PolymorphicAccess10regenerateERKNS_24GCSafeConcurrentJSLockerERNS_2VMEPNS_14JSGlobalObjectEPNS_9CodeBlockENS_8ECMAModeERNS_17StructureStubInfoE'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='6812' c='_ZN3JSC3DFGL30compileArithPowIntegerFastPathERNS0_11JITCompilerENS_12X86Registers13XMMRegisterIDENS3_10RegisterIDES4_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='7554' c='_ZN3JSC3DFG14SpeculativeJIT21compileStringEqualityEPNS0_4NodeENS_12X86Registers10RegisterIDES5_S5_S5_S5_S5_S5_RKNS_22AbstractMacroAssemblerINS_12X86As8690086'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='8530' c='_ZN3JSC3DFG14SpeculativeJIT21compileForwardVarargsEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='8779' c='_ZN3JSC3DFG14SpeculativeJIT28compileCreateDirectArgumentsEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='10678' c='_ZN3JSC3DFG14SpeculativeJIT18compileCheckJSCastEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='11114' c='_ZN3JSC3DFG14SpeculativeJIT28compileNewTypedArrayWithSizeEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='13347' c='_ZN3JSC3DFG14SpeculativeJIT23compileGetMapBucketNextEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='14619' c='_ZN3JSC3DFG14SpeculativeJIT17compileWeakMapGetEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='14874' c='_ZN3JSC3DFG14SpeculativeJIT23emitInitializeButterflyENS_12X86Registers10RegisterIDES3_NS_11JSValueRegsES3_'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='853' c='_ZN3JSC3DFG14SpeculativeJIT8emitCallEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='860' c='_ZN3JSC3DFG14SpeculativeJIT8emitCallEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='874' c='_ZN3JSC3DFG14SpeculativeJIT8emitCallEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='879' c='_ZN3JSC3DFG14SpeculativeJIT8emitCallEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='3487' c='_ZN3JSC3DFG14SpeculativeJIT7compileEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='4797' c='_ZN3JSC3DFG14SpeculativeJIT7compileEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='5736' c='_ZN3JSC3DFG14SpeculativeJIT7compileEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT64.cpp' l='5786' c='_ZN3JSC3DFG14SpeculativeJIT7compileEPNS0_4NodeE'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='399' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB35lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='4030' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB314getPrivateNameEPNS_2B35ValueES5_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='4039' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB314getPrivateNameEPNS_2B35ValueES5_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='4176' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB325compilePrivateBrandAccessEPNS_2B35ValueES5_NS_10AccessTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='4197' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB325compilePrivateBrandAccessEPNS_2B35ValueES5_NS_10AccessTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='4597' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB313cachedPutByIdEPNS_3DFG4NodeEPNS_2B35ValueES8_NS_8ECMAModeENS_7PutKindE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='4604' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB313cachedPutByIdEPNS_3DFG4NodeEPNS_2B35ValueES8_NS_8ECMAModeENS_7PutKindE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='5340' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB315compileGetByValEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='5349' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB315compileGetByValEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='5985' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB312compileDelByEPNS_2B35ValueET0_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='5992' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB312compileDelByEPNS_2B35ValueET0_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10020' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB328compileDirectCallOrConstructEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10031' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB328compileDirectCallOrConstructEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10053' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB328compileDirectCallOrConstructEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='10070' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB328compileDirectCallOrConstructEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='11525' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB324compileInvalidationPointEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='12515' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB311compileInByEPNS_2B35ValueET0_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='12522' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB311compileInByEPNS_2B35ValueET0_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='12830' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB317compileInstanceOfEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='12839' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB317compileInstanceOfEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='14339' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB37getByIdEPNS_2B35ValueENS_10AccessTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='14348' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB37getByIdEPNS_2B35ValueENS_10AccessTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='14423' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB315getByIdWithThisEPNS_2B35ValueES5_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='14432' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB315getByIdWithThisEPNS_2B35ValueES5_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='15782' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB317emitBinarySnippetEPFlPNS_14JSGlobalObjectEllE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='15846' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB322emitBinaryBitOpSnippetEPFlPNS_14JSGlobalObjectEllE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='15905' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB321emitRightShiftSnippetENS_22JITRightShiftGenerator9ShiftTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='16001' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB316allocateHeapCellEPNS_2B35ValueEPNS3_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='17622' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB312lazySlowPathERKT_RKN3WTF6VectorIPNS_2B35ValueELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEE'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='2824' c='_ZN3JSC4Wasm14AirIRGenerator20emitEntryTierUpCheckEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='2896' c='_ZN3JSC4Wasm14AirIRGenerator19emitLoopTierUpCheckEjRKN3WTF6VectorINS0_14FunctionParserIS1_E15TypedExpressionELm16ENS2_20UnsafeVectorOverflowELm16ENS2_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='3090' c='_ZN3JSC4Wasm14AirIRGenerator9addSwitchENS0_8TypedTmpERKN3WTF6VectorIPNS1_11ControlDataELm0ENS3_15CrashOnOverflowELm16ENS3_10FastMallocEEERS5_RKNS4_INS16684932'/>
+<size>4</size>
+<use f='WebKit/Source/WebCore/domjit/JSDocumentDOMJIT.cpp' l='118' c='_ZN7WebCore28compileDocumentBodyAttributeEv'/>
+<size>4</size>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/LinkBuffer.h' l='71'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='308'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='309'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='310'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='311'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='2359' c='_ZN7WebCore16SelectorCompiler21SelectorCodeGenerator26generateAncestorTreeWalkerERN3JSC22AbstractMacroAssemblerINS2_12X86AssemblerEE8JumpListERKNS0_16SelectorFragmentE'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='2376' c='_ZN7WebCore16SelectorCompiler21SelectorCodeGenerator33generateWalkToNextAdjacentElementERN3JSC22AbstractMacroAssemblerINS2_12X86AssemblerEE8JumpListEN14864453'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='2384' c='_ZN7WebCore16SelectorCompiler21SelectorCodeGenerator37generateWalkToPreviousAdjacentElementERN3JSC22AbstractMacroAssemblerINS2_12X86AssemblerEE8JumpLi16059769'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='2442' c='_ZN7WebCore16SelectorCompiler21SelectorCodeGenerator34generateIndirectAdjacentTreeWalkerERN3JSC22AbstractMacroAssemblerINS2_12X86AssemblerEE8JumpListE11432299'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='3084' c='_ZN7WebCore16SelectorCompiler21SelectorCodeGenerator32generateElementAttributeMatchingERN3JSC22AbstractMacroAssemblerINS2_12X86AssemblerEE8JumpListENS528530'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='3106' c='_ZN7WebCore16SelectorCompiler21SelectorCodeGenerator32generateElementAttributeMatchingERN3JSC22AbstractMacroAssemblerINS2_12X86AssemblerEE8JumpListENS528530'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='3429' c='_ZN7WebCore16SelectorCompilerL23jumpIfElementIsNotEmptyERN3JSC14MacroAssemblerERNS_17RegisterAllocatorERNS1_22AbstractMacroAssemblerINS1_12X86Assemble6877890'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='3505' c='_ZN7WebCore16SelectorCompiler21SelectorCodeGenerator27generateElementIsFirstChildERN3JSC22AbstractMacroAssemblerINS2_12X86AssemblerEE8JumpListE'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='3595' c='_ZN7WebCore16SelectorCompiler21SelectorCodeGenerator26generateElementIsLastChildERN3JSC22AbstractMacroAssemblerINS2_12X86AssemblerEE8JumpListE'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='3663' c='_ZN7WebCore16SelectorCompiler21SelectorCodeGenerator26generateElementIsOnlyChildERN3JSC22AbstractMacroAssemblerINS2_12X86AssemblerEE8JumpListE'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='3803' c='_ZN7WebCore16SelectorCompiler21SelectorCodeGenerator25generateElementHasClassesERN3JSC22AbstractMacroAssemblerINS2_12X86AssemblerEE8JumpListERKNS_13Lo1374895'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='3902' c='_ZN7WebCore16SelectorCompiler21SelectorCodeGenerator25generateElementIsNthChildERN3JSC22AbstractMacroAssemblerINS2_12X86AssemblerEE8JumpListERKNS0_16SelectorFragmentE'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='3944' c='_ZN7WebCore16SelectorCompiler21SelectorCodeGenerator27generateElementIsNthChildOfERN3JSC22AbstractMacroAssemblerINS2_12X86AssemblerEE8JumpListERKNS0_16SelectorFragmentE'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='4007' c='_ZN7WebCore16SelectorCompiler21SelectorCodeGenerator29generateElementIsNthLastChildERN3JSC22AbstractMacroAssemblerINS2_12X86AssemblerEE8JumpListERKNS0_16SelectorFragmentE'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='4049' c='_ZN7WebCore16SelectorCompiler21SelectorCodeGenerator31generateElementIsNthLastChildOfERN3JSC22AbstractMacroAssemblerINS2_12X86AssemblerEE8JumpListERKN527639'/>
+<use f='WebKit/Source/WebCore/cssjit/SelectorCompiler.cpp' l='4163' c='_ZN7WebCore16SelectorCompiler21SelectorCodeGenerator26generateElementIsFirstLinkERN3JSC22AbstractMacroAssemblerINS2_12X86AssemblerEE8JumpListENS2_12X810896202'/>
+<size>4</size>

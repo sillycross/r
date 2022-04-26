@@ -1,0 +1,14 @@
+<def f='include/gstreamer-1.0/gst/gstcaps.h' l='316' ll='320' type='gboolean gst_caps_take(GstCaps ** old_caps, GstCaps * new_caps)'/>
+<doc f='include/gstreamer-1.0/gst/gstcaps.h' l='303'>/**
+ * gst_caps_take:
+ * @old_caps: (inout) (transfer full): pointer to a pointer to a #GstCaps to be
+ *     replaced.
+ * @new_caps: (transfer full) (allow-none): pointer to a #GstCaps that will
+ *     replace the caps pointed to by @old_caps.
+ *
+ * Modifies a pointer to a #GstCaps to point to a different #GstCaps. This
+ * function is similar to gst_caps_replace() except that it takes ownership
+ * of @new_caps.
+ *
+ * Returns: %TRUE if @new_caps was different from @old_caps
+ */</doc>

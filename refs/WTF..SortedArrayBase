@@ -1,0 +1,11 @@
+<def f='WebKit/WTF/Headers/wtf/SortedArrayMap.h' l='38' ll='46'/>
+<ovr f='WebKit/WTF/Headers/wtf/SortedArrayMap.h' l='48' c='WTF::SortedArrayMap'/>
+<use f='WebKit/WTF/Headers/wtf/SortedArrayMap.h' l='48'/>
+<ovr f='WebKit/WTF/Headers/wtf/SortedArrayMap.h' l='65' c='WTF::SortedArraySet'/>
+<use f='WebKit/WTF/Headers/wtf/SortedArrayMap.h' l='65'/>
+<size>1</size>
+<doc f='WebKit/WTF/Headers/wtf/SortedArrayMap.h' l='33'>// SortedArrayMap is a map like HashMap, but it&apos;s read-only. It uses much less memory than HashMap.
+// It uses binary search instead of hashing, so can be outperformed by HashMap for large maps.
+// The array passed to the constructor has std::pair elements: keys first and values second.
+// The array and the SortedArrayMap should typically both be global constant expressions.</doc>
+<smbr r='WTF::SortedArrayBase::binarySearchThreshold' t='const size_t'/>

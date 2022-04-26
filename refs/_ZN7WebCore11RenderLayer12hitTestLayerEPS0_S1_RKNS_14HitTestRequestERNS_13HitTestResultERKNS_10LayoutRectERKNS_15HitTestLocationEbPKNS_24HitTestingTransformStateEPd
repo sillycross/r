@@ -1,0 +1,13 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderLayer.h' l='1002' type='WebCore::RenderLayer * WebCore::RenderLayer::hitTestLayer(WebCore::RenderLayer * rootLayer, WebCore::RenderLayer * containerLayer, const WebCore::HitTestRequest &amp; , WebCore::HitTestResult &amp; , const WebCore::LayoutRect &amp; hitTestRect, const WebCore::HitTestLocation &amp; , bool appliedTransform, const WebCore::HitTestingTransformState *  = nullptr, double * zOffset = nullptr)'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='3915' u='c' c='_ZN7WebCore11RenderLayer7hitTestERKNS_14HitTestRequestERKNS_15HitTestLocationERNS_13HitTestResultE'/>
+<def f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4038' ll='4201' type='WebCore::RenderLayer * WebCore::RenderLayer::hitTestLayer(WebCore::RenderLayer * rootLayer, WebCore::RenderLayer * containerLayer, const WebCore::HitTestRequest &amp; request, WebCore::HitTestResult &amp; result, const WebCore::LayoutRect &amp; hitTestRect, const WebCore::HitTestLocation &amp; hitTestLocation, bool appliedTransform, const WebCore::HitTestingTransformState * transformState = nullptr, double * zOffset = nullptr)'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4288' u='c' c='_ZN7WebCore11RenderLayer31hitTestLayerByApplyingTransformEPS0_S1_RKNS_14HitTestRequestERNS_13HitTestResultERKNS_10LayoutRectERKNS_15HitTestLocationEPK5503104'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4337' u='c' c='_ZN7WebCore11RenderLayer11hitTestListENS0_9LayerListEPS0_RKNS_14HitTestRequestERNS_13HitTestResultERKNS_10LayoutRectERKNS_15HitTestLocationEPKNS_24Hit13804349'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='4030'>// hitTestLocation and hitTestRect are relative to rootLayer.
+// A &apos;flattening&apos; layer is one preserves3D() == false.
+// transformState.m_accumulatedTransform holds the transform from the containing flattening layer.
+// transformState.m_lastPlanarPoint is the hitTestLocation in the plane of the containing flattening layer.
+// transformState.m_lastPlanarQuad is the hitTestRect as a quad in the plane of the containing flattening layer.
+// 
+// If zOffset is non-null (which indicates that the caller wants z offset information), 
+//  *zOffset on return is the z offset of the hit point relative to the containing flattening layer.</doc>

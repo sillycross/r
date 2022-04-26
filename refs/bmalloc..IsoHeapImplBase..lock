@@ -1,0 +1,15 @@
+<dec f='WebKit/bmalloc/Headers/bmalloc/IsoHeapImpl.h' l='79' type='bmalloc::Mutex &amp;'/>
+<offset>64</offset>
+<doc f='WebKit/bmalloc/Headers/bmalloc/IsoHeapImpl.h' l='74'>// It&apos;s almost always the caller&apos;s responsibility to grab the lock. This lock comes from the
+    // (*PerProcess&lt;IsoTLSEntryHolder&lt;IsoTLSDeallocatorEntry&lt;Config&gt;&gt;&gt;::get())-&gt;lock. That&apos;s pretty weird, and we don&apos;t
+    // try to disguise the fact that it&apos;s weird. We only do that because heaps in the same size class
+    // share the same deallocator log, so it makes sense for them to also share the same lock to
+    // amortize lock acquisition costs.</doc>
+<dec f='WebKit/Source/bmalloc/bmalloc/IsoHeapImpl.h' l='79' type='bmalloc::Mutex &amp;'/>
+<offset>64</offset>
+<doc f='WebKit/Source/bmalloc/bmalloc/IsoHeapImpl.h' l='74'>// It&apos;s almost always the caller&apos;s responsibility to grab the lock. This lock comes from the
+    // (*PerProcess&lt;IsoTLSEntryHolder&lt;IsoTLSDeallocatorEntry&lt;Config&gt;&gt;&gt;::get())-&gt;lock. That&apos;s pretty weird, and we don&apos;t
+    // try to disguise the fact that it&apos;s weird. We only do that because heaps in the same size class
+    // share the same deallocator log, so it makes sense for them to also share the same lock to
+    // amortize lock acquisition costs.</doc>
+<use f='WebKit/Source/bmalloc/bmalloc/IsoHeapImpl.cpp' l='35' u='w' c='_ZN7bmalloc15IsoHeapImplBaseC1ERNS_5MutexE'/>

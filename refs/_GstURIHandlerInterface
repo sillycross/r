@@ -1,0 +1,18 @@
+<use f='include/gstreamer-1.0/gst/gsturi.h' l='100'/>
+<def f='include/gstreamer-1.0/gst/gsturi.h' l='115' ll='129'/>
+<size>48</size>
+<doc f='include/gstreamer-1.0/gst/gsturi.h' l='105'>/**
+ * GstURIHandlerInterface:
+ * @parent: The parent interface type
+ * @get_type: Method to tell whether the element handles source or sink URI.
+ * @get_protocols: Method to return the list of protocols handled by the element.
+ * @get_uri: Method to return the URI currently handled by the element.
+ * @set_uri: Method to set a new URI.
+ *
+ * Any #GstElement using this interface should implement these methods.
+ */</doc>
+<mbr r='_GstURIHandlerInterface::parent' o='0' t='GTypeInterface'/>
+<mbr r='_GstURIHandlerInterface::get_type' o='128' t='GstURIType (*)(GType)'/>
+<mbr r='_GstURIHandlerInterface::get_protocols' o='192' t='const gchar *const *(*)(GType)'/>
+<mbr r='_GstURIHandlerInterface::get_uri' o='256' t='gchar *(*)(GstURIHandler *)'/>
+<mbr r='_GstURIHandlerInterface::set_uri' o='320' t='gboolean (*)(GstURIHandler *, const gchar *, GError **)'/>

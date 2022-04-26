@@ -1,0 +1,23 @@
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGControlEquivalenceAnalysis.h' l='64' ll='68' type='bool JSC::DFG::ControlEquivalenceAnalysis::dominatesEquivalently(JSC::DFG::BasicBlock * a, JSC::DFG::BasicBlock * b)'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGControlEquivalenceAnalysis.h' l='73' u='c' c='_ZN3JSC3DFG26ControlEquivalenceAnalysis13areEquivalentEPNS0_10BasicBlockES3_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGControlEquivalenceAnalysis.h' l='74' u='c' c='_ZN3JSC3DFG26ControlEquivalenceAnalysis13areEquivalentEPNS0_10BasicBlockES3_'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGControlEquivalenceAnalysis.h' l='45'>// This returns true iff:
+    //
+    // - If b executes then a must have executed before it (a dominates b).
+    // - If a executes then b will execute after it (b backwards-dominates a).
+    //
+    // Note that like Dominators and BackwardsDominators, this analysis ignores OSR:
+    //
+    // - This may return true even if we OSR enter in beteen a and b. OSR entry would mean that b
+    //   could execute even if a had not executed. This is impossible in DFG SSA but it&apos;s possible
+    //   in DFG CPS.
+    // - This may return true even if we OSR exit in between a and b. OSR exit would mean that a
+    //   could execute even though b will not execute. This is possible in all forms of DFG IR.
+    //
+    // In DFG SSA you only have to worry about the definition being weaked by exits. This is usually
+    // OK, since we use this analysis to determine the cost of moving exits from one block to
+    // another. If we move an exit from b to a and a equivalently dominates b then at worst we have
+    // made the exit happen sooner. If we move an exit from b to a and a dominates b but not
+    // equivalently then we&apos;ve done something much worse: the program may now exit even if it would
+    // not have ever exited before.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGLICMPhase.cpp' l='260' u='c' c='_ZN3JSC3DFG9LICMPhase12attemptHoistEPNS0_10BasicBlockERPNS0_4NodeEPKN3WTF11NaturalLoopINS0_3CFGEEE'/>

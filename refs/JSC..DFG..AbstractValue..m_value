@@ -1,0 +1,72 @@
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='74' u='w' c='_ZN3JSC3DFG13AbstractValue5clearEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='182' u='w' c='_ZN3JSC3DFG13AbstractValue12clobberValueEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='190' u='m' c='_ZNK3JSC3DFG13AbstractValue9isHeapTopEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='198' u='m' c='_ZNK3JSC3DFG13AbstractValue13isBytecodeTopEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='203' u='m' c='_ZNK3JSC3DFG13AbstractValue10valueIsTopEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='213' u='r' c='_ZNK3JSC3DFG13AbstractValue5valueEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='262' u='w' c='_ZN3JSC3DFG13AbstractValue14setNonCellTypeEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='274' u='m' c='_ZNK3JSC3DFG13AbstractValueeqERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='274' u='r' c='_ZNK3JSC3DFG13AbstractValueeqERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='297' u='m' c='_ZN3JSC3DFG13AbstractValue5mergeERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='297' u='r' c='_ZN3JSC3DFG13AbstractValue5mergeERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='298' u='m' c='_ZN3JSC3DFG13AbstractValue5mergeERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='299' u='w' c='_ZN3JSC3DFG13AbstractValue5mergeERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='317' u='w' c='_ZN3JSC3DFG13AbstractValue5mergeEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='399' u='m' c='_ZNK3JSC3DFG13AbstractValue21validateOSREntryValueENS_7JSValueENS0_11FlushFormatE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='402' u='m' c='_ZNK3JSC3DFG13AbstractValue21validateOSREntryValueENS_7JSValueENS0_11FlushFormatE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='406' u='m' c='_ZNK3JSC3DFG13AbstractValue21validateOSREntryValueENS_7JSValueENS0_11FlushFormatE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='406' u='m' c='_ZNK3JSC3DFG13AbstractValue21validateOSREntryValueENS_7JSValueENS0_11FlushFormatE'/>
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='507' type='JSC::JSValue'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='544' u='w' c='_ZN3JSC3DFG13AbstractValue7makeTopEm'/>
+<offset>192</offset>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.h' l='497'>// This is a proven constraint on the possible values that this value can
+    // have now or any time in the future, unless it is reassigned. Note that this
+    // implies nothing about the structure. Oddly, JSValue() (i.e. the empty value)
+    // means either BOTTOM or TOP depending on the state of m_type: if m_type is
+    // BOTTOM then JSValue() means BOTTOM; if m_type is not BOTTOM then JSValue()
+    // means TOP. Also note that this value isn&apos;t necessarily known to the GC
+    // (strongly or even weakly - it may be an &quot;fragile&quot; value, see
+    // DFGValueStrength.h). If you perform any optimization based on a cell m_value
+    // that requires that the value be kept alive, you must call freeze() on that
+    // value, which will turn it into a weak value.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='74' u='w' c='_ZN3JSC3DFG13AbstractValue3setERNS0_5GraphERKNS0_11FrozenValueENS0_21StructureClobberStateE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='92' u='w' c='_ZN3JSC3DFG13AbstractValue3setERNS0_5GraphENS0_19RegisteredStructureE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='103' u='w' c='_ZN3JSC3DFG13AbstractValue3setERNS0_5GraphERKNS0_22RegisteredStructureSetE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='125' u='w' c='_ZN3JSC3DFG13AbstractValue7setTypeERNS0_5GraphEm'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='132' u='m' c='_ZN3JSC3DFG13AbstractValue24fixTypeForRepresentationERNS0_5GraphEjPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='133' u='m' c='_ZN3JSC3DFG13AbstractValue24fixTypeForRepresentationERNS0_5GraphEjPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='134' u='m' c='_ZN3JSC3DFG13AbstractValue24fixTypeForRepresentationERNS0_5GraphEjPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='135' u='w' c='_ZN3JSC3DFG13AbstractValue24fixTypeForRepresentationERNS0_5GraphEjPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='135' u='m' c='_ZN3JSC3DFG13AbstractValue24fixTypeForRepresentationERNS0_5GraphEjPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='158' u='m' c='_ZN3JSC3DFG13AbstractValue24fixTypeForRepresentationERNS0_5GraphEjPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='159' u='m' c='_ZN3JSC3DFG13AbstractValue24fixTypeForRepresentationERNS0_5GraphEjPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='160' u='r' c='_ZN3JSC3DFG13AbstractValue24fixTypeForRepresentationERNS0_5GraphEjPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='209' u='w' c='_ZN3JSC3DFG13AbstractValue18mergeOSREntryValueERNS0_5GraphENS_7JSValueEPNS0_18VariableAccessDataEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='217' u='m' c='_ZN3JSC3DFG13AbstractValue18mergeOSREntryValueERNS0_5GraphENS_7JSValueEPNS0_18VariableAccessDataEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='218' u='w' c='_ZN3JSC3DFG13AbstractValue18mergeOSREntryValueERNS0_5GraphENS_7JSValueEPNS0_18VariableAccessDataEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='325' u='w' c='_ZN3JSC3DFG13AbstractValue13filterByValueERKNS0_11FrozenValueE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='356' u='m' c='_ZN3JSC3DFG13AbstractValue6filterERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='356' u='r' c='_ZN3JSC3DFG13AbstractValue6filterERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='360' u='m' c='_ZN3JSC3DFG13AbstractValue6filterERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='362' u='w' c='_ZN3JSC3DFG13AbstractValue6filterERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='362' u='r' c='_ZN3JSC3DFG13AbstractValue6filterERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='371' u='m' c='_ZN3JSC3DFG13AbstractValue6filterERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='387' u='m' c='_ZN3JSC3DFG13AbstractValue17filterValueByTypeEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='390' u='r' c='_ZN3JSC3DFG13AbstractValue17filterValueByTypeEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='398' u='w' c='_ZN3JSC3DFG13AbstractValue17filterValueByTypeEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='512' u='m' c='_ZNK3JSC3DFG13AbstractValue13dumpInContextERN3WTF11PrintStreamEPNS_11DumpContextE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='513' u='r' c='_ZNK3JSC3DFG13AbstractValue13dumpInContextERN3WTF11PrintStreamEPNS_11DumpContextE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractValue.cpp' l='520' u='r' c='_ZN3JSC3DFG13AbstractValue18validateReferencesERKNS_17TrackedReferencesE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGAbstractInterpreterInlines.h' l='3883' u='m' c='_ZN3JSC3DFG19AbstractInterpreter14executeEffectsEjPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='243' u='r' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='732' u='r' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='772' u='r' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='803' u='r' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='839' u='r' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='934' u='r' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='949' u='r' c='_ZN3JSC3DFG20ConstantFoldingPhase13foldConstantsEPNS0_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGConstantFoldingPhase.cpp' l='1186' u='r' c='_ZN3JSC3DFG20ConstantFoldingPhase15emitGetByOffsetEjPNS0_4NodeERKNS0_13AbstractValueERKNS_12GetByVariantEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1334' u='r' c='_ZN3JSC3DFG5Graph22tryGetConstantPropertyERKNS0_13AbstractValueEi'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1391' u='r' c='_ZN3JSC3DFG5Graph24tryGetConstantClosureVarERKNS0_13AbstractValueENS_11ScopeOffsetE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='3270' u='r' c='_ZN3JSC3DFG14SpeculativeJIT28jumpForTypedArrayOutOfBoundsEPNS0_4NodeENS_12X86Registers10RegisterIDES5_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='20251' u='a' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB311provenValueEPNS_3DFG4NodeE'/>

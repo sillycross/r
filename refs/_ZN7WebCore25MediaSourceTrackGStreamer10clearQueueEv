@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/MediaSourceTrackGStreamer.h' l='62' type='void WebCore::MediaSourceTrackGStreamer::clearQueue()'/>
+<doc f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/MediaSourceTrackGStreamer.h' l='58'>// This method is provided to clear the TrackQueue in cases where the stream hasn&apos;t been started (e.g. because
+    // another SourceBuffer hasn&apos;t received the necessary initalization segment for playback).
+    // Otherwise, webKitMediaSrcFlush() should be used instead, which will also do a GStreamer pipeline flush where
+    // necessary.</doc>
+<def f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/MediaSourceTrackGStreamer.cpp' l='80' ll='85' type='void WebCore::MediaSourceTrackGStreamer::clearQueue()'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/SourceBufferPrivateGStreamer.cpp' l='140' u='c' c='_ZN7WebCore28SourceBufferPrivateGStreamer5flushERKN3WTF10AtomStringE'/>

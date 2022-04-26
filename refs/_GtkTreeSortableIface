@@ -1,0 +1,25 @@
+<use f='include/gtk-3.0/gtk/gtktreesortable.h' l='59'/>
+<def f='include/gtk-3.0/gtk/gtktreesortable.h' l='104' ll='131'/>
+<size>64</size>
+<doc f='include/gtk-3.0/gtk/gtktreesortable.h' l='89'>/**
+ * GtkTreeSortableIface:
+ * @sort_column_changed: Signal emitted when the sort column or sort
+ *    order of sortable is changed.
+ * @get_sort_column_id: Fills in sort_column_id and order with the
+ *    current sort column and the order.
+ * @set_sort_column_id: Sets the current sort column to be
+ *    sort_column_id.
+ * @set_sort_func: Sets the comparison function used when sorting to
+ *    be sort_func.
+ * @set_default_sort_func: Sets the default comparison function used
+ *    when sorting to be sort_func.
+ * @has_default_sort_func: %TRUE if the model has a default sort
+ * function.
+ */</doc>
+<mbr r='_GtkTreeSortableIface::g_iface' o='0' t='GTypeInterface'/>
+<mbr r='_GtkTreeSortableIface::sort_column_changed' o='128' t='void (*)(GtkTreeSortable *)'/>
+<mbr r='_GtkTreeSortableIface::get_sort_column_id' o='192' t='gboolean (*)(GtkTreeSortable *, gint *, GtkSortType *)'/>
+<mbr r='_GtkTreeSortableIface::set_sort_column_id' o='256' t='void (*)(GtkTreeSortable *, gint, GtkSortType)'/>
+<mbr r='_GtkTreeSortableIface::set_sort_func' o='320' t='void (*)(GtkTreeSortable *, gint, GtkTreeIterCompareFunc, gpointer, GDestroyNotify)'/>
+<mbr r='_GtkTreeSortableIface::set_default_sort_func' o='384' t='void (*)(GtkTreeSortable *, GtkTreeIterCompareFunc, gpointer, GDestroyNotify)'/>
+<mbr r='_GtkTreeSortableIface::has_default_sort_func' o='448' t='gboolean (*)(GtkTreeSortable *)'/>

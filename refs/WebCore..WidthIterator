@@ -1,0 +1,51 @@
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.h' l='235'/>
+<def f='WebKit/Source/WebCore/platform/graphics/WidthIterator.h' l='41' ll='100'/>
+<use f='WebKit/Source/WebCore/rendering/svg/SVGTextMetricsBuilder.h' l='58'/>
+<size>80</size>
+<fun r='_ZN7WebCore13WidthIteratorC1ERKNS_11FontCascadeERKNS_7TextRunEPN3WTF7HashSetIPKNS_4FontENS7_11DefaultHashISB_EENS7_10HashTraitsISB_EENS7_15HashTableTraitsEEEbb'/>
+<fun r='_ZN7WebCore13WidthIterator7advanceEjRNS_11GlyphBufferE'/>
+<fun r='_ZN7WebCore13WidthIterator19advanceOneCharacterERfRNS_11GlyphBufferE'/>
+<fun r='_ZN7WebCore13WidthIterator8finalizeERNS_11GlyphBufferE'/>
+<fun r='_ZNK7WebCore13WidthIterator20maxGlyphBoundingBoxYEv'/>
+<fun r='_ZNK7WebCore13WidthIterator20minGlyphBoundingBoxYEv'/>
+<fun r='_ZNK7WebCore13WidthIterator18firstGlyphOverflowEv'/>
+<fun r='_ZNK7WebCore13WidthIterator17lastGlyphOverflowEv'/>
+<fun r='_ZNK7WebCore13WidthIterator3runEv'/>
+<fun r='_ZNK7WebCore13WidthIterator13runWidthSoFarEv'/>
+<fun r='_ZNK7WebCore13WidthIterator21currentCharacterIndexEv'/>
+<fun r='_ZN7WebCore13WidthIterator21glyphDataForCharacterEib'/>
+<fun r='_ZN7WebCore13WidthIterator15advanceInternalERT_RNS_11GlyphBufferE'/>
+<fun r='_ZNK7WebCore13WidthIterator25shouldApplyFontTransformsERKNS_11GlyphBufferEjj'/>
+<fun r='_ZN7WebCore13WidthIterator19applyFontTransformsERNS_11GlyphBufferEjjRKNS_4FontEbRN3WTF6VectorINS_42OriginalAdvancesForCharacterTreatedAsSpaceELm64ENS62524897'/>
+<fun r='_ZN7WebCore13WidthIterator22commitCurrentFontRangeERNS_11GlyphBufferEjjRKNS_4FontES5_ifRN3WTF6VectorINS_42OriginalAdvancesForCharacterTreatedAsSpaceEL1719711'/>
+<fun r='_ZNK7WebCore13WidthIterator15hasExtraSpacingEv'/>
+<fun r='_ZN7WebCore13WidthIterator29applyExtraSpacingAfterShapingERNS_11GlyphBufferEjjjf'/>
+<fun r='_ZNK7WebCore13WidthIterator24calculateAdditionalWidthERNS_11GlyphBufferEjjjf'/>
+<fun r='_ZN7WebCore13WidthIterator20applyAdditionalWidthERNS_11GlyphBufferENS_15GlyphIndexRangeEffff'/>
+<mbr r='WebCore::WidthIterator::m_font' o='0' t='const WebCore::FontCascade &amp;'/>
+<mbr r='WebCore::WidthIterator::m_run' o='64' t='const WebCore::TextRun &amp;'/>
+<mbr r='WebCore::WidthIterator::m_fallbackFonts' o='128' t='HashSet&lt;const WebCore::Font *&gt; *'/>
+<mbr r='WebCore::WidthIterator::m_lastCharacterIndex' o='192' t='std::optional&lt;unsigned int&gt;'/>
+<mbr r='WebCore::WidthIterator::m_currentCharacterIndex' o='256' t='unsigned int'/>
+<mbr r='WebCore::WidthIterator::m_leftoverJustificationWidth' o='288' t='float'/>
+<mbr r='WebCore::WidthIterator::m_runWidthSoFar' o='320' t='float'/>
+<mbr r='WebCore::WidthIterator::m_expansion' o='352' t='float'/>
+<mbr r='WebCore::WidthIterator::m_expansionPerOpportunity' o='384' t='float'/>
+<mbr r='WebCore::WidthIterator::m_maxGlyphBoundingBoxY' o='416' t='float'/>
+<mbr r='WebCore::WidthIterator::m_minGlyphBoundingBoxY' o='448' t='float'/>
+<mbr r='WebCore::WidthIterator::m_firstGlyphOverflow' o='480' t='float'/>
+<mbr r='WebCore::WidthIterator::m_lastGlyphOverflow' o='512' t='float'/>
+<mbr r='WebCore::WidthIterator::m_containsTabs' o='544' t='bool'/>
+<mbr r='WebCore::WidthIterator::m_isAfterExpansion' o='552' t='bool'/>
+<mbr r='WebCore::WidthIterator::m_accountForGlyphBounds' o='560' t='bool'/>
+<mbr r='WebCore::WidthIterator::m_enableKerning' o='568' t='bool'/>
+<mbr r='WebCore::WidthIterator::m_requiresShaping' o='576' t='bool'/>
+<mbr r='WebCore::WidthIterator::m_forTextEmphasis' o='584' t='bool'/>
+<use f='WebKit/Source/WebCore/rendering/svg/SVGTextMetricsBuilder.cpp' l='108' c='_ZN7WebCore21SVGTextMetricsBuilder37initializeMeasurementWithTextRendererERNS_19RenderSVGInlineTextE'/>
+<size>80</size>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='248' c='_ZNK7WebCore11FontCascade16widthOfTextRangeERKNS_7TextRunEjjPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTableTraitsEEEPfSG_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1250' c='_ZNK7WebCore11FontCascade16layoutSimpleTextERKNS_7TextRunEjjNS0_20ForTextEmphasisOrNotE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1407' c='_ZNK7WebCore11FontCascade23floatWidthForSimpleTextERKNS_7TextRunEPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTraitsIS8_EENS4_15HashTabl7274659'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1437' c='_ZNK7WebCore11FontCascade32adjustSelectionRectForSimpleTextERKNS_7TextRunERNS_10LayoutRectEjj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/FontCascade.cpp' l='1474' c='_ZNK7WebCore11FontCascade30offsetForPositionForSimpleTextERKNS_7TextRunEfb'/>
+<size>80</size>

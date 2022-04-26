@@ -1,0 +1,24 @@
+<def f='include/wayland-client-protocol.h' l='3332' ll='3337' type='void wl_shell_surface_set_popup(struct wl_shell_surface * wl_shell_surface, struct wl_seat * seat, uint32_t serial, struct wl_surface * parent, int32_t x, int32_t y, uint32_t flags)'/>
+<doc f='include/wayland-client-protocol.h' l='3309'>/**
+ * @ingroup iface_wl_shell_surface
+ *
+ * Map the surface as a popup.
+ *
+ * A popup surface is a transient surface with an added pointer
+ * grab.
+ *
+ * An existing implicit grab will be changed to owner-events mode,
+ * and the popup grab will continue after the implicit grab ends
+ * (i.e. releasing the mouse button does not cause the popup to
+ * be unmapped).
+ *
+ * The popup grab continues until the window is destroyed or a
+ * mouse button is pressed in any other client&apos;s window. A click
+ * in any of the client&apos;s surfaces is reported as normal, however,
+ * clicks in other clients&apos; surfaces will be discarded and trigger
+ * the callback.
+ *
+ * The x and y arguments specify the location of the upper left
+ * corner of the surface relative to the upper left corner of the
+ * parent surface, in surface-local coordinates.
+ */</doc>

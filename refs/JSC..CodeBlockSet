@@ -1,0 +1,50 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='283' c='_ZN3JSC4Heap12codeBlockSetEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='647'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='933'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='283' c='_ZN3JSC4Heap12codeBlockSetEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='647'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='933'/>
+<def f='WebKit/Source/JavaScriptCore/heap/CodeBlockSet.h' l='45' ll='82'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CodeBlockSet.h' l='47' c='_ZN3JSC12CodeBlockSetC1ERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CodeBlockSet.h' l='47' c='_ZN3JSC12CodeBlockSetaSERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CodeBlockSet.h' l='47' c='_ZN3JSC12CodeBlockSetaSERKS0_'/>
+<size>24</size>
+<doc f='WebKit/Source/JavaScriptCore/heap/CodeBlockSet.h' l='41'>// CodeBlockSet tracks all CodeBlocks. Every CodeBlock starts out with one
+// reference coming in from GC. The GC is responsible for freeing CodeBlocks
+// once they hasOneRef() and nobody is running code from that CodeBlock.</doc>
+<fun r='_ZN3JSC12CodeBlockSetC1ERKS0_'/>
+<fun r='_ZN3JSC12CodeBlockSetC1Ev'/>
+<fun r='_ZN3JSC12CodeBlockSetD1Ev'/>
+<fun r='_ZN3JSC12CodeBlockSet4markERKN3WTF14AbstractLockerEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC12CodeBlockSet23clearCurrentlyExecutingEv'/>
+<fun r='_ZN3JSC12CodeBlockSet8containsERKN3WTF14AbstractLockerEPv'/>
+<fun r='_ZN3JSC12CodeBlockSet7getLockEv'/>
+<fun r='_ZN3JSC12CodeBlockSet20isCurrentlyExecutingEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC12CodeBlockSet7iterateERKT_'/>
+<fun r='_ZN3JSC12CodeBlockSet7iterateERKN3WTF14AbstractLockerERKT_'/>
+<fun r='_ZN3JSC12CodeBlockSet19iterateViaSubspacesERNS_2VMERKT_'/>
+<fun r='_ZN3JSC12CodeBlockSet25iterateCurrentlyExecutingERKT_'/>
+<fun r='_ZNK3JSC12CodeBlockSet4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZN3JSC12CodeBlockSet3addEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC12CodeBlockSet6removeEPNS_9CodeBlockE'/>
+<mbr r='JSC::CodeBlockSet::m_codeBlocks' o='0' t='HashSet&lt;JSC::CodeBlock *&gt;'/>
+<mbr r='JSC::CodeBlockSet::m_currentlyExecuting' o='64' t='HashSet&lt;JSC::CodeBlock *&gt;'/>
+<mbr r='JSC::CodeBlockSet::m_lock' o='128' t='WTF::Lock'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MachineStackMarker.h' l='48' c='_ZN3JSC14MachineThreads23gatherConservativeRootsERNS_17ConservativeRootsERNS_17JITStubRoutineSetERNS_12CodeBlockSetEPNS_18CurrentThreadStateEPN3WTF6ThreadE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MachineStackMarker.h' l='57' c='_ZN3JSC14MachineThreads23gatherFromCurrentThreadERNS_17ConservativeRootsERNS_17JITStubRoutineSetERNS_12CodeBlockSetERNS_18CurrentThreadStateE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/ConservativeRoots.h' l='42' c='_ZN3JSC17ConservativeRoots3addEPvS1_RNS_17JITStubRoutineSetERNS_12CodeBlockSetE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/ConservativeRoots.cpp' l='118' c='_ZN3JSC17CompositeMarkHookC1ERNS_17JITStubRoutineSetERNS_12CodeBlockSetERKN3WTF14AbstractLockerE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/ConservativeRoots.cpp' l='138'/>
+<use f='WebKit/Source/JavaScriptCore/heap/ConservativeRoots.cpp' l='143' c='_ZN3JSC17ConservativeRoots3addEPvS1_RNS_17JITStubRoutineSetERNS_12CodeBlockSetE'/>
+<size>24</size>
+<fun r='_ZN3JSC12CodeBlockSet4markERKN3WTF14AbstractLockerEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC12CodeBlockSet7iterateERKT_'/>
+<fun r='_ZN3JSC12CodeBlockSet7iterateERKN3WTF14AbstractLockerERKT_'/>
+<fun r='_ZN3JSC12CodeBlockSet19iterateViaSubspacesERNS_2VMERKT_'/>
+<fun r='_ZN3JSC12CodeBlockSet25iterateCurrentlyExecutingERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='292' c='_ZN3JSC4HeapC1ERNS_2VMENS_8HeapTypeE'/>
+<size>24</size>
+<use f='WebKit/Source/JavaScriptCore/heap/MachineStackMarker.cpp' l='39' c='_ZN3JSC14MachineThreads23gatherFromCurrentThreadERNS_17ConservativeRootsERNS_17JITStubRoutineSetERNS_12CodeBlockSetERNS_18CurrentThreadStateE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MachineStackMarker.cpp' l='199' c='_ZN3JSC14MachineThreads23gatherConservativeRootsERNS_17ConservativeRootsERNS_17JITStubRoutineSetERNS_12CodeBlockSetEPNS_18CurrentThreadStateEPN3WTF6ThreadE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MachineStackMarker.h' l='48' c='_ZN3JSC14MachineThreads23gatherConservativeRootsERNS_17ConservativeRootsERNS_17JITStubRoutineSetERNS_12CodeBlockSetEPNS_18CurrentThreadStateEPN3WTF6ThreadE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MachineStackMarker.h' l='57' c='_ZN3JSC14MachineThreads23gatherFromCurrentThreadERNS_17ConservativeRootsERNS_17JITStubRoutineSetERNS_12CodeBlockSetERNS_18CurrentThreadStateE'/>

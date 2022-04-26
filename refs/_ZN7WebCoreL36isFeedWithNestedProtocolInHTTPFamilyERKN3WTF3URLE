@@ -1,0 +1,10 @@
+<def f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='367' ll='379' type='bool WebCore::isFeedWithNestedProtocolInHTTPFamily(const WTF::URL &amp; url)'/>
+<use f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='395' u='c' c='_ZNK7WebCore14SecurityOrigin10canDisplayERKN3WTF3URLE'/>
+<doc f='WebKit/Source/WebCore/page/SecurityOrigin.cpp' l='359'>// This is a hack to allow keep navigation to http/https feeds working. To remove this
+// we need to introduce new API akin to registerURLSchemeAsLocal, that registers a
+// protocols navigation policy.
+// feed(|s|search): is considered a &apos;nesting&apos; scheme by embedders that support it, so it can be
+// local or remote depending on what is nested. Currently we just check if we are nesting
+// http or https, otherwise we ignore the nesting for the purpose of a security check. We need
+// a facility for registering nesting schemes, and some generalized logic for them.
+// This function should be removed as an outcome of https://bugs.webkit.org/show_bug.cgi?id=69196</doc>

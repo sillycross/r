@@ -1,0 +1,59 @@
+<dec f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderLang.h' l='642' type='bool sh::Compile(const ShHandle handle, const char *const * shaderStrings, size_t numStrings, ShCompileOptions compileOptions)'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/include/GLSLANG/ShaderLang.h' l='618'>//
+// Compiles the given shader source.
+// If the function succeeds, the return value is true, else false.
+// Parameters:
+// handle: Specifies the handle of compiler to be used.
+// shaderStrings: Specifies an array of pointers to null-terminated strings containing the shader
+// source code.
+// numStrings: Specifies the number of elements in shaderStrings array.
+// compileOptions: A mask containing the following parameters:
+// SH_VALIDATE: Validates shader to ensure that it conforms to the spec
+//              specified during compiler construction.
+// SH_VALIDATE_LOOP_INDEXING: Validates loop and indexing in the shader to
+//                            ensure that they do not exceed the minimum
+//                            functionality mandated in GLSL 1.0 spec,
+//                            Appendix A, Section 4 and 5.
+//                            There is no need to specify this parameter when
+//                            compiling for WebGL - it is implied.
+// SH_INTERMEDIATE_TREE: Writes intermediate tree to info log.
+//                       Can be queried by calling sh::GetInfoLog().
+// SH_OBJECT_CODE: Translates intermediate tree to glsl or hlsl shader.
+//                 Can be queried by calling sh::GetObjectCode().
+// SH_VARIABLES: Extracts attributes, uniforms, and varyings.
+//               Can be queried by calling ShGetVariableInfo().
+//</doc>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderLang.cpp' l='328' ll='337' type='bool sh::Compile(const ShHandle handle, const char *const * shaderStrings, size_t numStrings, ShCompileOptions compileOptions)'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderLang.cpp' l='321'>//
+// Do an actual compile on the given strings.  The result is left
+// in the given compile object.
+//
+// Return:  The return value of ShCompile is really boolean, indicating
+// success or failure.
+//</doc>
+<dec f='WebKit/ANGLE/Headers/ANGLE/ShaderLang.h' l='642' type='bool sh::Compile(const ShHandle handle, const char *const * shaderStrings, size_t numStrings, ShCompileOptions compileOptions)'/>
+<doc f='WebKit/ANGLE/Headers/ANGLE/ShaderLang.h' l='618'>//
+// Compiles the given shader source.
+// If the function succeeds, the return value is true, else false.
+// Parameters:
+// handle: Specifies the handle of compiler to be used.
+// shaderStrings: Specifies an array of pointers to null-terminated strings containing the shader
+// source code.
+// numStrings: Specifies the number of elements in shaderStrings array.
+// compileOptions: A mask containing the following parameters:
+// SH_VALIDATE: Validates shader to ensure that it conforms to the spec
+//              specified during compiler construction.
+// SH_VALIDATE_LOOP_INDEXING: Validates loop and indexing in the shader to
+//                            ensure that they do not exceed the minimum
+//                            functionality mandated in GLSL 1.0 spec,
+//                            Appendix A, Section 4 and 5.
+//                            There is no need to specify this parameter when
+//                            compiling for WebGL - it is implied.
+// SH_INTERMEDIATE_TREE: Writes intermediate tree to info log.
+//                       Can be queried by calling sh::GetInfoLog().
+// SH_OBJECT_CODE: Translates intermediate tree to glsl or hlsl shader.
+//                 Can be queried by calling sh::GetObjectCode().
+// SH_VARIABLES: Extracts attributes, uniforms, and varyings.
+//               Can be queried by calling ShGetVariableInfo().
+//</doc>
+<use f='WebKit/Source/WebCore/platform/graphics/ANGLEWebKitBridge.cpp' l='185' u='c' c='_ZN7WebCore17ANGLEWebKitBridge19compileShaderSourceEPKcNS_15ANGLEShaderTypeERN3WTF6StringES6_RNS4_6VectorISt4pairINS_21ANGLEShaderSymbolTypeEN2sh14Sha5587038'/>

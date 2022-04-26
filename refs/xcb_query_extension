@@ -1,0 +1,21 @@
+<dec f='include/xcb/xproto.h' l='11636' type='xcb_query_extension_cookie_t xcb_query_extension(xcb_connection_t * c, uint16_t name_len, const char * name)'/>
+<doc f='include/xcb/xproto.h' l='11615'>/**
+ * @brief check if extension is present
+ *
+ * @param c The connection
+ * @param name_len The length of \a name in bytes.
+ * @param name The name of the extension to query, for example &quot;RANDR&quot;. This is case
+ * sensitive!
+ * @return A cookie
+ *
+ * Determines if the specified extension is present on this X11 server.
+ * 
+ * Every extension has a unique `major_opcode` to identify requests, the minor
+ * opcodes and request formats are extension-specific. If the extension provides
+ * events and errors, the `first_event` and `first_error` fields in the reply are
+ * set accordingly.
+ * 
+ * There should rarely be a need to use this request directly, XCB provides the
+ * `xcb_get_extension_data` function instead.
+ *
+ */</doc>

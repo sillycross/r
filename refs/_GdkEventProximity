@@ -1,0 +1,27 @@
+<use f='include/gtk-3.0/gdk/gdkevents.h' l='138'/>
+<def f='include/gtk-3.0/gdk/gdkevents.h' l='1093' ll='1100'/>
+<size>32</size>
+<doc f='include/gtk-3.0/gdk/gdkevents.h' l='1074'>/**
+ * GdkEventProximity:
+ * @type: the type of the event (%GDK_PROXIMITY_IN or %GDK_PROXIMITY_OUT).
+ * @window: the window which received the event.
+ * @send_event: %TRUE if the event was sent explicitly.
+ * @time: the time of the event in milliseconds.
+ * @device: the master device that the event originated from. Use
+ * gdk_event_get_source_device() to get the slave device.
+ *
+ * Proximity events are generated when using GDK’s wrapper for the
+ * XInput extension. The XInput extension is an add-on for standard X
+ * that allows you to use nonstandard devices such as graphics tablets.
+ * A proximity event indicates that the stylus has moved in or out of
+ * contact with the tablet, or perhaps that the user’s finger has moved
+ * in or out of contact with a touch screen.
+ *
+ * This event type will be used pretty rarely. It only is important for
+ * XInput aware programs that are drawing their own cursor.
+ */</doc>
+<mbr r='_GdkEventProximity::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventProximity::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventProximity::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventProximity::time' o='160' t='guint32'/>
+<mbr r='_GdkEventProximity::device' o='192' t='GdkDevice *'/>

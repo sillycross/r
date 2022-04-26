@@ -1,0 +1,16 @@
+<dec f='include/sqlite3.h' l='8748' type='int sqlite3_strglob(const char * zGlob, const char * zStr)'/>
+<doc f='include/sqlite3.h' l='8733'>/*
+** CAPI3REF: String Globbing
+*
+** ^The [sqlite3_strglob(P,X)] interface returns zero if and only if
+** string X matches the [GLOB] pattern P.
+** ^The definition of [GLOB] pattern matching used in
+** [sqlite3_strglob(P,X)] is the same as for the &quot;X GLOB P&quot; operator in the
+** SQL dialect understood by SQLite.  ^The [sqlite3_strglob(P,X)] function
+** is case sensitive.
+**
+** Note that this routine returns zero on a match and non-zero if the strings
+** do not match, the same as [sqlite3_stricmp()] and [sqlite3_strnicmp()].
+**
+** See also: [sqlite3_strlike()].
+*/</doc>

@@ -1,0 +1,16 @@
+<dec f='WebKit/WTF/Headers/wtf/HashMap.h' l='186' type='WTF::HashMap::AddResult WTF::HashMap::add(K &amp;&amp; , V &amp;&amp; )'/>
+<def f='WebKit/WTF/Headers/wtf/HashMap.h' l='406' ll='411' type='WTF::HashMap::AddResult WTF::HashMap::add(K &amp;&amp; key, V &amp;&amp; value)'/>
+<doc f='WebKit/WTF/Headers/wtf/HashMap.h' l='180'>// An alternate version of add() that finds the object by hashing and comparing
+    // with some other type, to avoid the cost of type conversion if the object is already
+    // in the table. HashTranslator must have the following function members:
+    //   static unsigned hash(const T&amp;);
+    //   static bool equal(const ValueType&amp;, const T&amp;);
+    //   static translate(ValueType&amp;, const T&amp;, unsigned hashCode);</doc>
+<dec f='WebKit/Source/WTF/wtf/HashMap.h' l='186' type='WTF::HashMap::AddResult WTF::HashMap::add(K &amp;&amp; , V &amp;&amp; )'/>
+<def f='WebKit/Source/WTF/wtf/HashMap.h' l='406' ll='411' type='WTF::HashMap::AddResult WTF::HashMap::add(K &amp;&amp; key, V &amp;&amp; value)'/>
+<doc f='WebKit/Source/WTF/wtf/HashMap.h' l='180'>// An alternate version of add() that finds the object by hashing and comparing
+    // with some other type, to avoid the cost of type conversion if the object is already
+    // in the table. HashTranslator must have the following function members:
+    //   static unsigned hash(const T&amp;);
+    //   static bool equal(const ValueType&amp;, const T&amp;);
+    //   static translate(ValueType&amp;, const T&amp;, unsigned hashCode);</doc>

@@ -1,0 +1,47 @@
+<dec f='WebKit/Source/JavaScriptCore/b3/B3Opcode.h' l='336' type='81'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.h' l='473' c='_ZN3JSC2B35Value18adjacencyListSpaceENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapValue.h' l='56' c='_ZN3JSC2B313StackmapValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3CheckValue.h' l='42' c='_ZN3JSC2B310CheckValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueInlines.h' l='162' c='_ZNK3JSC2B35Value19adjacencyListOffsetEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueInlines.h' l='162' c='_ZNK3JSC2B35Value9cloneImplEv'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/B3Opcode.h' l='331'>// Check that side-exits. Use the CheckValue class. Like CheckAdd and friends, this has a
+    // stackmap with a generation callback. This takes an int argument that this branches on, with
+    // full branch fusion in the instruction selector. A true value jumps to the generator&apos;s slow
+    // path. Note that the predicate child is has both an input ValueRep. The input constraint must be
+    // WarmAny. It will not have an output constraint.</doc>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOutput.cpp' l='775' u='r' c='_ZN3JSC3FTL6Output9speculateEPNS_2B35ValueE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='720' u='r' c='_ZN3JSC4Wasm13B3IRGenerator11addTableGetEjPNS_2B35ValueERS4_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='739' u='r' c='_ZN3JSC4Wasm13B3IRGenerator11addTableSetEjPNS_2B35ValueES4_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='772' u='r' c='_ZN3JSC4Wasm13B3IRGenerator12addTableInitEjjPNS_2B35ValueES4_S4_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='820' u='r' c='_ZN3JSC4Wasm13B3IRGenerator12addTableFillEjPNS_2B35ValueES4_S4_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='842' u='r' c='_ZN3JSC4Wasm13B3IRGenerator12addTableCopyEjjPNS_2B35ValueES4_S4_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='997' u='r' c='_ZN3JSC4Wasm13B3IRGenerator13addMemoryFillEPNS_2B35ValueES4_S4_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='1018' u='r' c='_ZN3JSC4Wasm13B3IRGenerator13addMemoryInitEjPNS_2B35ValueES4_S4_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='1038' u='r' c='_ZN3JSC4Wasm13B3IRGenerator13addMemoryCopyEPNS_2B35ValueES4_S4_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='1498' u='r' c='_ZN3JSC4Wasm13B3IRGenerator34fixupPointerPlusOffsetForAtomicOpsENS0_15ExtAtomicOpTypeEPNS_2B35ValueEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='1819' u='r' c='_ZN3JSC4Wasm13B3IRGenerator10atomicWaitENS0_15ExtAtomicOpTypeEPNS_2B35ValueES5_S5_RS5_j'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='1837' u='r' c='_ZN3JSC4Wasm13B3IRGenerator12atomicNotifyENS0_15ExtAtomicOpTypeEPNS_2B35ValueES5_RS5_j'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='2567' u='r' c='_ZN3JSC4Wasm13B3IRGenerator15addCallIndirectEjRKNS0_9SignatureERN3WTF6VectorIPNS_2B35ValueELm0ENS5_15CrashOnOverflowELm16ENS5_10FastMallocEEERNS6_IS9_Lm8ESA_Lm16ESB_EE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='2589' u='r' c='_ZN3JSC4Wasm13B3IRGenerator15addCallIndirectEjRKNS0_9SignatureERN3WTF6VectorIPNS_2B35ValueELm0ENS5_15CrashOnOverflowELm16ENS5_10FastMallocEEERNS6_IS9_Lm8ESA_Lm16ESB_EE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='2602' u='r' c='_ZN3JSC4Wasm13B3IRGenerator15addCallIndirectEjRKNS0_9SignatureERN3WTF6VectorIPNS_2B35ValueELm0ENS5_15CrashOnOverflowELm16ENS5_10FastMallocEEERNS6_IS9_Lm8ESA_Lm16ESB_EE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='2752' u='r' c='_ZN3JSC4Wasm13B3IRGenerator21emitChecksForModOrDivENS_2B36OpcodeEPNS2_5ValueES5_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='2763' u='r' c='_ZN3JSC4Wasm13B3IRGenerator21emitChecksForModOrDivENS_2B36OpcodeEPNS2_5ValueES5_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='3017' u='r' c='_ZN3JSC4Wasm13B3IRGenerator5addOpEPNS_2B35ValueERS4_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='3040' u='r' c='_ZN3JSC4Wasm13B3IRGenerator5addOpEPNS_2B35ValueERS4_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='3064' u='r' c='_ZN3JSC4Wasm13B3IRGenerator5addOpEPNS_2B35ValueERS4_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='3087' u='r' c='_ZN3JSC4Wasm13B3IRGenerator5addOpEPNS_2B35ValueERS4_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='3110' u='r' c='_ZN3JSC4Wasm13B3IRGenerator5addOpEPNS_2B35ValueERS4_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='3133' u='r' c='_ZN3JSC4Wasm13B3IRGenerator5addOpEPNS_2B35ValueERS4_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='3176' u='r' c='_ZN3JSC4Wasm13B3IRGenerator5addOpEPNS_2B35ValueERS4_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='3199' u='r' c='_ZN3JSC4Wasm13B3IRGenerator5addOpEPNS_2B35ValueERS4_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3CheckSpecial.cpp' l='52' c='_ZN3JSC2B312_GLOBAL__N_19numB3ArgsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerMacros.cpp' l='193' u='r' c='_ZN3JSC2B312_GLOBAL__N_111LowerMacros19processCurrentBlockEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='3854' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Opcode.cpp' l='345' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC2B36OpcodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Procedure.cpp' l='466' c='_ZN3JSC2B39Procedure33freeUnneededB3ValuesAfterLoweringEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ReduceStrength.cpp' l='2189' c='_ZN3JSC2B312_GLOBAL__N_114ReduceStrength19reduceValueStrengthEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ReduceStrength.cpp' l='2342' u='r' c='_ZN3JSC2B312_GLOBAL__N_114ReduceStrength19reduceValueStrengthEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Validate.cpp' l='477' c='_ZN3JSC2B312_GLOBAL__N_19Validater3runEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='648' c='_ZNK3JSC2B35Value7effectsEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='708' c='_ZNK3JSC2B35Value3keyEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='582' u='r' c='_ZN3JSC4Wasm14AirIRGenerator9emitCheckERKT_RKT0_'/>

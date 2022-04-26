@@ -1,0 +1,69 @@
+<inh f='WebKit/Source/WebKit/Shared/API/APIObject.h' l='265' c='API::ObjectImpl'/>
+<inh f='WebKit/WTF/Headers/wtf/InstanceCounted.h' l='34' c='WTF::InstanceCounted'/>
+<def f='WebKit/Source/WebKit/UIProcess/WebURLSchemeTask.h' l='57' ll='121'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeTask.h' l='57'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeTask.h' l='58' c='_ZN6WebKit16WebURLSchemeTaskC1ERKS0_'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeTask.h' l='58' c='_ZN6WebKit16WebURLSchemeTaskaSERKS0_'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeTask.h' l='58' c='_ZN6WebKit16WebURLSchemeTaskaSERKS0_'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeTask.h' l='60' c='_ZN6WebKit16WebURLSchemeTask6createERNS_19WebURLSchemeHandlerERNS_12WebPageProxyERNS_15WebProcessProxyEN3WTF16ObjectIdentifierIN7WebCore18PageIdentifi1148295'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeHandler.h' l='56' c='_ZN6WebKit19WebURLSchemeHandler13taskCompletedERNS_16WebURLSchemeTaskE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeHandler.h' l='62' c='_ZN6WebKit19WebURLSchemeHandler17platformStartTaskERNS_12WebPageProxyERNS_16WebURLSchemeTaskE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeHandler.h' l='63' c='_ZN6WebKit19WebURLSchemeHandler16platformStopTaskERNS_12WebPageProxyERNS_16WebURLSchemeTaskE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeHandler.h' l='64' c='_ZN6WebKit19WebURLSchemeHandler21platformTaskCompletedERNS_16WebURLSchemeTaskE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeHandler.h' l='71'/>
+<size>544</size>
+<fun r='_ZN6WebKit16WebURLSchemeTaskC1ERKS0_'/>
+<fun r='_ZN6WebKit16WebURLSchemeTask6createERNS_19WebURLSchemeHandlerERNS_12WebPageProxyERNS_15WebProcessProxyEN3WTF16ObjectIdentifierIN7WebCore18PageIdentifi1148295'/>
+<fun r='_ZN6WebKit16WebURLSchemeTaskD1Ev'/>
+<fun r='_ZNK6WebKit16WebURLSchemeTask10identifierEv'/>
+<fun r='_ZNK6WebKit16WebURLSchemeTask11pageProxyIDEv'/>
+<fun r='_ZNK6WebKit16WebURLSchemeTask9webPageIDEv'/>
+<fun r='_ZN6WebKit16WebURLSchemeTask7processEv'/>
+<fun r='_ZNK6WebKit16WebURLSchemeTask7requestEv'/>
+<fun r='_ZNK6WebKit16WebURLSchemeTask9frameInfoEv'/>
+<fun r='_ZN6WebKit16WebURLSchemeTask22willPerformRedirectionEON7WebCore16ResourceResponseEONS1_15ResourceRequestEON3WTF8FunctionIFvS5_EEE'/>
+<fun r='_ZN6WebKit16WebURLSchemeTask21didPerformRedirectionEON7WebCore16ResourceResponseEONS1_15ResourceRequestE'/>
+<fun r='_ZN6WebKit16WebURLSchemeTask18didReceiveResponseERKN7WebCore16ResourceResponseE'/>
+<fun r='_ZN6WebKit16WebURLSchemeTask14didReceiveDataEON3WTF3RefIN7WebCore12SharedBufferENS1_12RawPtrTraitsIS4_EEEE'/>
+<fun r='_ZN6WebKit16WebURLSchemeTask11didCompleteERKN7WebCore13ResourceErrorE'/>
+<fun r='_ZN6WebKit16WebURLSchemeTask4stopEv'/>
+<fun r='_ZN6WebKit16WebURLSchemeTask13pageDestroyedEv'/>
+<fun r='_ZN6WebKit16WebURLSchemeTask29suppressTaskStoppedExceptionsEv'/>
+<fun r='_ZNK6WebKit16WebURLSchemeTask43waitingForRedirectCompletionHandlerCallbackEv'/>
+<fun r='_ZN6WebKit16WebURLSchemeTaskC1ERNS_19WebURLSchemeHandlerERNS_12WebPageProxyERNS_15WebProcessProxyEN3WTF16ObjectIdentifierIN7WebCore18PageIdentifierTyp5208152'/>
+<fun r='_ZNK6WebKit16WebURLSchemeTask6isSyncEv'/>
+<mbr r='WebKit::WebURLSchemeTask::m_urlSchemeHandler' o='128' t='Ref&lt;WebKit::WebURLSchemeHandler&gt;'/>
+<mbr r='WebKit::WebURLSchemeTask::m_process' o='192' t='RefPtr&lt;WebKit::WebProcessProxy&gt;'/>
+<mbr r='WebKit::WebURLSchemeTask::m_identifier' o='256' t='uint64_t'/>
+<mbr r='WebKit::WebURLSchemeTask::m_pageProxyID' o='320' t='WebKit::WebPageProxyIdentifier'/>
+<mbr r='WebKit::WebURLSchemeTask::m_webPageID' o='384' t='WebCore::PageIdentifier'/>
+<mbr r='WebKit::WebURLSchemeTask::m_request' o='448' t='WebCore::ResourceRequest'/>
+<mbr r='WebKit::WebURLSchemeTask::m_frameInfo' o='1920' t='Ref&lt;API::FrameInfo&gt;'/>
+<mbr r='WebKit::WebURLSchemeTask::m_requestLock' o='1984' t='WTF::Lock'/>
+<mbr r='WebKit::WebURLSchemeTask::m_stopped' o='1992' t='bool'/>
+<mbr r='WebKit::WebURLSchemeTask::m_responseSent' o='2000' t='bool'/>
+<mbr r='WebKit::WebURLSchemeTask::m_dataSent' o='2008' t='bool'/>
+<mbr r='WebKit::WebURLSchemeTask::m_completed' o='2016' t='bool'/>
+<mbr r='WebKit::WebURLSchemeTask::m_shouldSuppressTaskStoppedExceptions' o='2024' t='bool'/>
+<mbr r='WebKit::WebURLSchemeTask::m_syncCompletionHandler' o='2048' t='WebKit::SyncLoadCompletionHandler'/>
+<mbr r='WebKit::WebURLSchemeTask::m_syncResponse' o='2112' t='WebCore::ResourceResponse'/>
+<mbr r='WebKit::WebURLSchemeTask::m_syncData' o='4224' t='RefPtr&lt;WebCore::SharedBuffer&gt;'/>
+<mbr r='WebKit::WebURLSchemeTask::m_waitingForRedirectCompletionHandlerCallback' o='4288' t='bool'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeHandler.cpp' l='109' c='_ZN6WebKit19WebURLSchemeHandler13taskCompletedERNS_16WebURLSchemeTaskE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebURLSchemeTask.cpp' l='40' c='_ZN6WebKit16WebURLSchemeTask6createERNS_19WebURLSchemeHandlerERNS_12WebPageProxyERNS_15WebProcessProxyEN3WTF16ObjectIdentifierIN7WebCore18PageIdentifi1148295'/>
+<size>544</size>
+<fun r='_ZN6WebKit16WebURLSchemeTask6createERNS_19WebURLSchemeHandlerERNS_12WebPageProxyERNS_15WebProcessProxyEN3WTF16ObjectIdentifierIN7WebCore18PageIdentifi1148295'/>
+<fun r='_ZN6WebKit16WebURLSchemeTaskC1ERNS_19WebURLSchemeHandlerERNS_12WebPageProxyERNS_15WebProcessProxyEN3WTF16ObjectIdentifierIN7WebCore18PageIdentifierTyp5208152'/>
+<fun r='_ZN6WebKit16WebURLSchemeTaskD1Ev'/>
+<fun r='_ZNK6WebKit16WebURLSchemeTask7requestEv'/>
+<fun r='_ZN6WebKit16WebURLSchemeTask22willPerformRedirectionEON7WebCore16ResourceResponseEONS1_15ResourceRequestEON3WTF8FunctionIFvS5_EEE'/>
+<fun r='_ZN6WebKit16WebURLSchemeTask21didPerformRedirectionEON7WebCore16ResourceResponseEONS1_15ResourceRequestE'/>
+<fun r='_ZN6WebKit16WebURLSchemeTask18didReceiveResponseERKN7WebCore16ResourceResponseE'/>
+<fun r='_ZN6WebKit16WebURLSchemeTask14didReceiveDataEOi'/>
+<fun r='_ZN6WebKit16WebURLSchemeTask11didCompleteERKN7WebCore13ResourceErrorE'/>
+<fun r='_ZN6WebKit16WebURLSchemeTask13pageDestroyedEv'/>
+<fun r='_ZN6WebKit16WebURLSchemeTask4stopEv'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitURISchemeRequestPrivate.h' l='28' c='_Z28webkitURISchemeRequestCreateP17_WebKitWebContextRN6WebKit12WebPageProxyERNS1_16WebURLSchemeTaskE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitURISchemeRequest.cpp' l='60'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitURISchemeRequest.cpp' l='81' c='_Z28webkitURISchemeRequestCreateP17_WebKitWebContextRN6WebKit12WebPageProxyERNS1_16WebURLSchemeTaskE'/>
+<size>544</size>

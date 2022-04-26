@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='619' type='void WebKit::WebPageProxy::makeViewBlankIfUnpaintedSinceLastLoadCommit()'/>
+<def f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='2572' ll='2586' type='void WebKit::WebPageProxy::makeViewBlankIfUnpaintedSinceLastLoadCommit()'/>
+<doc f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='2569'>// If we have not painted yet since the last load commit, then we are likely still displaying the previous page.
+// Displaying a JS prompt for the new page with the old page behind would be confusing so we make the view blank
+// until the next paint in such case.</doc>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUIClient.cpp' l='86' u='c' c='_ZN8UIClient18runJavaScriptAlertERN6WebKit12WebPageProxyERKN3WTF6StringEPNS0_13WebFrameProxyEONS0_13FrameInfoDataEONS3_8FunctionIFvvEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUIClient.cpp' l='92' u='c' c='_ZN8UIClient20runJavaScriptConfirmERN6WebKit12WebPageProxyERKN3WTF6StringEPNS0_13WebFrameProxyEONS0_13FrameInfoDataEONS3_8FunctionIFvbEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUIClient.cpp' l='98' u='c' c='_ZN8UIClient19runJavaScriptPromptERN6WebKit12WebPageProxyERKN3WTF6StringES6_PNS0_13WebFrameProxyEONS0_13FrameInfoDataEONS3_8FunctionIFvS6_EEE'/>

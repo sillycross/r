@@ -1,0 +1,12 @@
+<def f='WebKit/Source/JavaScriptCore/yarr/YarrInterpreter.cpp' l='1109' ll='1249' type='JSC::Yarr::JSRegExpResult JSC::Yarr::Interpreter::backtrackParentheses(JSC::Yarr::ByteTerm &amp; term, JSC::Yarr::Interpreter::DisjunctionContext * context)'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrInterpreter.cpp' l='1580' u='c' c='_ZN3JSC4Yarr11Interpreter16matchDisjunctionEPNS0_15ByteDisjunctionEPNS1_18DisjunctionContextEb'/>
+<doc f='WebKit/Source/JavaScriptCore/yarr/YarrInterpreter.cpp' l='1099'>// Rules for backtracking differ depending on whether this is greedy or non-greedy.
+    //
+    // Greedy matches never should try just adding more - you should already have done
+    // the &apos;more&apos; cases.  Always backtrack, at least a leetle bit.  However cases where
+    // you backtrack an item off the list needs checking, since we&apos;ll never have matched
+    // the one less case.  Tracking forwards, still add as much as possible.
+    //
+    // Non-greedy, we&apos;ve already done the one less case, so don&apos;t match on popping.
+    // We haven&apos;t done the one more case, so always try to add that.
+    //</doc>

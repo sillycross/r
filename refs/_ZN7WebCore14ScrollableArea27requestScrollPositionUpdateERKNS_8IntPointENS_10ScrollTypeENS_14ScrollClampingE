@@ -1,0 +1,9 @@
+<def f='WebKit/Source/WebCore/platform/ScrollableArea.h' l='87' type='bool WebCore::ScrollableArea::requestScrollPositionUpdate(const WebCore::ScrollPosition &amp; , WebCore::ScrollType  = ScrollType::User, WebCore::ScrollClamping  = ScrollClamping::Clamped)'/>
+<doc f='WebKit/Source/WebCore/platform/ScrollableArea.h' l='84'>// Allows subclasses to handle scroll position updates themselves. If this member function
+    // returns true, the scrollable area won&apos;t actually update the scroll position and instead
+    // expect it to happen sometime in the future.</doc>
+<ovr f='WebKit/Source/WebCore/rendering/RenderLayerScrollableArea.cpp' l='246' c='_ZN7WebCore25RenderLayerScrollableArea27requestScrollPositionUpdateERKNS_8IntPointENS_10ScrollTypeENS_14ScrollClampingE'/>
+<use f='WebKit/Source/WebCore/platform/ScrollView.cpp' l='496' u='c' c='_ZN7WebCore10ScrollView8scrollToERKNS_8IntPointE'/>
+<use f='WebKit/Source/WebCore/platform/ScrollView.cpp' l='537' u='c' c='_ZN7WebCore10ScrollView17setScrollPositionERKNS_8IntPointERKNS_27ScrollPositionChangeOptionsE'/>
+<use f='WebKit/Source/WebCore/platform/ScrollableArea.cpp' l='235' u='c' c='_ZN7WebCore14ScrollableArea30setScrollPositionFromAnimationERKNS_8IntPointE'/>
+<ovr f='WebKit/Source/WebCore/page/FrameView.cpp' l='2669' c='_ZN7WebCore9FrameView27requestScrollPositionUpdateERKNS_8IntPointENS_10ScrollTypeENS_14ScrollClampingE'/>

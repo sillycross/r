@@ -1,0 +1,17 @@
+<dec f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='323' type='sh::TCompiler * sh::ConstructCompiler(sh::GLenum type, ShShaderSpec spec, ShShaderOutput output)'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CodeGen.cpp' l='40' ll='85' type='sh::TCompiler * sh::ConstructCompiler(sh::GLenum type, ShShaderSpec spec, ShShaderOutput output)'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/CodeGen.cpp' l='35'>//
+// This function must be provided to create the actual
+// compile object used by higher level code.  It returns
+// a subclass of TCompiler.
+//</doc>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/Compiler.h' l='314'>//
+// This is the interface between the machine independent code
+// and the machine dependent code.
+//
+// The machine dependent code should derive from the classes
+// above. Then Construct*() and Delete*() will create and
+// destroy the machine dependent objects, which contain the
+// above machine independent information.
+//</doc>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/ShaderLang.cpp' l='281' u='c' c='_ZN2sh17ConstructCompilerEj12ShShaderSpec14ShShaderOutputPK18ShBuiltInResources'/>

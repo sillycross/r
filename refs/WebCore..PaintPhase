@@ -1,0 +1,30 @@
+<def f='WebKit/Source/WebCore/rendering/PaintPhase.h' l='39' ll='54'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBox.h' l='515' c='_ZNK7WebCore9RenderBox16overflowClipRectERKNS_11LayoutPointEPNS_23RenderFragmentContainerENS_29OverlayScrollbarSizeRelevancyENS_10PaintPhaseE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBox.h' l='521' c='_ZN7WebCore9RenderBox15popContentsClipERNS_9PaintInfoENS_10PaintPhaseERKNS_11LayoutPointE'/>
+<doc f='WebKit/Source/WebCore/rendering/PaintPhase.h' l='30'>/*
+ *  The painting of a layer occurs in three distinct phases.  Each phase involves
+ *  a recursive descent into the layer&apos;s render objects. The first phase is the background phase.
+ *  The backgrounds and borders of all blocks are painted.  Inlines are not painted at all.
+ *  Floats must paint above block backgrounds but entirely below inline content that can overlap them.
+ *  In the foreground phase, all inlines are fully painted.  Inline replaced elements will get all
+ *  three phases invoked on them during this phase.
+ */</doc>
+<use f='WebKit/Source/WebCore/rendering/PaintInfo.h' l='54' c='_ZN7WebCore9PaintInfoC1ERNS_15GraphicsContextERKNS_10LayoutRectENS_10PaintPhaseEN3WTF9OptionSetINS_13PaintBehaviorEEEPNS_12RenderObjectEPNS7_11ListHas7262091'/>
+<use f='WebKit/Source/WebCore/rendering/PaintInfo.h' l='125'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.h' l='991' c='_ZN7WebCore11RenderLayer36paintForegroundForFragmentsWithPhaseENS_10PaintPhaseERKN3WTF6VectorINS_13LayerFragmentELm1ENS2_15CrashOnOverflowELm16ENS2_108601257'/>
+<use f='WebKit/Source/WebCore/rendering/RenderTable.h' l='316' c='_ZNK7WebCore11RenderTable16overflowClipRectERKNS_11LayoutPointEPNS_23RenderFragmentContainerENS_29OverlayScrollbarSizeRelevancyENS_10PaintPhaseE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderTable.cpp' l='695' c='_ZN7WebCore11RenderTable5paintERNS_9PaintInfoERKNS_11LayoutPointE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderTable.cpp' l='713' c='_ZN7WebCore11RenderTable11paintObjectERNS_9PaintInfoERKNS_11LayoutPointE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderTable.cpp' l='1529' c='_ZNK7WebCore11RenderTable16overflowClipRectERKNS_11LayoutPointEPNS_23RenderFragmentContainerENS_29OverlayScrollbarSizeRelevancyENS_10PaintPhaseE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderTableRow.cpp' l='205' c='_ZN7WebCore14RenderTableRow26paintOutlineForRowIfNeededERNS_9PaintInfoERKNS_11LayoutPointE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderTableSection.cpp' l='909' c='_ZN7WebCore18RenderTableSection5paintERNS_9PaintInfoERKNS_11LayoutPointE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderTableSection.cpp' l='937' c='_ZN7WebCore18RenderTableSection9paintCellEPNS_15RenderTableCellERNS_9PaintInfoERKNS_11LayoutPointE'/>
+<use f='WebKit/Source/WebCore/rendering/LegacyInlineFlowBox.cpp' l='1252' c='_ZN7WebCore19LegacyInlineFlowBox5paintERNS_9PaintInfoERKNS_11LayoutPointENS_10LayoutUnitES6_'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBlock.cpp' l='1116' c='_ZN7WebCore11RenderBlock5paintERNS_9PaintInfoERKNS_11LayoutPointE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBlock.cpp' l='1153' c='_ZN7WebCore11RenderBlock13paintContentsERNS_9PaintInfoERKNS_11LayoutPointE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBlock.cpp' l='1248' c='_ZN7WebCore11RenderBlock11paintObjectERNS_9PaintInfoERKNS_11LayoutPointE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBox.cpp' l='2027' c='_ZN7WebCore9RenderBox15popContentsClipERNS_9PaintInfoENS_10PaintPhaseERKNS_11LayoutPointE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderBox.cpp' l='2043' c='_ZNK7WebCore9RenderBox16overflowClipRectERKNS_11LayoutPointEPNS_23RenderFragmentContainerENS_29OverlayScrollbarSizeRelevancyENS_10PaintPhaseE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderElement.cpp' l='1130' c='_ZN7WebCoreL10paintPhaseERNS_13RenderElementENS_10PaintPhaseERNS_9PaintInfoERKNS_11LayoutPointE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderElement.cpp' l='1141' c='_ZN7WebCore13RenderElement18paintAsInlineBlockERNS_9PaintInfoERKNS_11LayoutPointE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayer.cpp' l='3790' c='_ZN7WebCore11RenderLayer36paintForegroundForFragmentsWithPhaseENS_10PaintPhaseERKN3WTF6VectorINS_13LayerFragmentELm1ENS2_15CrashOnOverflowELm16ENS2_108601257'/>

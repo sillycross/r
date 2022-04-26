@@ -1,0 +1,76 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/RegExpCachedResult.h' l='46' ll='86'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/RegExpCachedResult.h' l='72' c='_ZN3JSC18RegExpCachedResult18offsetOfLastRegExpEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/RegExpCachedResult.h' l='73' c='_ZN3JSC18RegExpCachedResult17offsetOfLastInputEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/RegExpCachedResult.h' l='74' c='_ZN3JSC18RegExpCachedResult14offsetOfResultEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/RegExpCachedResult.h' l='75' c='_ZN3JSC18RegExpCachedResult15offsetOfReifiedEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/RegExpGlobalData.h' l='36' c='_ZN3JSC16RegExpGlobalData12cachedResultEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/RegExpGlobalData.h' l='58'/>
+<size>72</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/RegExpCachedResult.h' l='37'>// RegExpCachedResult is used to track the cached results of the last
+// match, stores on the RegExp constructor (e.g. $&amp;, $_, $1, $2 ...).
+// These values will be lazily generated on demand, so the cached result
+// may be in a lazy or reified state. A lazy state is indicated by a
+// value of m_result indicating a successful match, and a reified state
+// is indicated by setting m_result to MatchResult::failed().
+// Following a successful match, m_result, m_lastInput and m_lastRegExp
+// can be used to reify the results from the match, following reification
+// m_reifiedResult and m_reifiedInput hold the cached results.</doc>
+<fun r='_ZN3JSC18RegExpCachedResult6recordERNS_2VMEPNS_8JSObjectEPNS_6RegExpEPNS_8JSStringENS_11MatchResultE'/>
+<fun r='_ZN3JSC18RegExpCachedResult10lastResultEPNS_14JSGlobalObjectEPNS_8JSObjectE'/>
+<fun r='_ZN3JSC18RegExpCachedResult8setInputEPNS_14JSGlobalObjectEPNS_8JSObjectEPNS_8JSStringE'/>
+<fun r='_ZN3JSC18RegExpCachedResult11leftContextEPNS_14JSGlobalObjectEPNS_8JSObjectE'/>
+<fun r='_ZN3JSC18RegExpCachedResult12rightContextEPNS_14JSGlobalObjectEPNS_8JSObjectE'/>
+<fun r='_ZN3JSC18RegExpCachedResult5inputEv'/>
+<fun r='_ZN3JSC18RegExpCachedResult18visitAggregateImplERT_'/>
+<fun r='_ZN3JSC18RegExpCachedResult14visitAggregateERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC18RegExpCachedResult14visitAggregateERNS_11SlotVisitorE'/>
+<fun r='_ZN3JSC18RegExpCachedResult18offsetOfLastRegExpEv'/>
+<fun r='_ZN3JSC18RegExpCachedResult17offsetOfLastInputEv'/>
+<fun r='_ZN3JSC18RegExpCachedResult14offsetOfResultEv'/>
+<fun r='_ZN3JSC18RegExpCachedResult15offsetOfReifiedEv'/>
+<mbr r='JSC::RegExpCachedResult::m_result' o='0' t='JSC::MatchResult'/>
+<mbr r='JSC::RegExpCachedResult::m_reified' o='128' t='bool'/>
+<mbr r='JSC::RegExpCachedResult::m_lastInput' o='192' t='WriteBarrier&lt;JSC::JSString&gt;'/>
+<mbr r='JSC::RegExpCachedResult::m_lastRegExp' o='256' t='WriteBarrier&lt;JSC::RegExp&gt;'/>
+<mbr r='JSC::RegExpCachedResult::m_reifiedResult' o='320' t='WriteBarrier&lt;JSC::JSArray&gt;'/>
+<mbr r='JSC::RegExpCachedResult::m_reifiedInput' o='384' t='WriteBarrier&lt;JSC::JSString&gt;'/>
+<mbr r='JSC::RegExpCachedResult::m_reifiedLeftContext' o='448' t='WriteBarrier&lt;JSC::JSString&gt;'/>
+<mbr r='JSC::RegExpCachedResult::m_reifiedRightContext' o='512' t='WriteBarrier&lt;JSC::JSString&gt;'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/RegExpCachedResult.h' l='46' ll='86'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/RegExpCachedResult.h' l='72' c='_ZN3JSC18RegExpCachedResult18offsetOfLastRegExpEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/RegExpCachedResult.h' l='73' c='_ZN3JSC18RegExpCachedResult17offsetOfLastInputEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/RegExpCachedResult.h' l='74' c='_ZN3JSC18RegExpCachedResult14offsetOfResultEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/RegExpCachedResult.h' l='75' c='_ZN3JSC18RegExpCachedResult15offsetOfReifiedEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/RegExpGlobalData.h' l='36' c='_ZN3JSC16RegExpGlobalData12cachedResultEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/RegExpGlobalData.h' l='58'/>
+<size>72</size>
+<doc f='WebKit/Source/JavaScriptCore/runtime/RegExpCachedResult.h' l='37'>// RegExpCachedResult is used to track the cached results of the last
+// match, stores on the RegExp constructor (e.g. $&amp;, $_, $1, $2 ...).
+// These values will be lazily generated on demand, so the cached result
+// may be in a lazy or reified state. A lazy state is indicated by a
+// value of m_result indicating a successful match, and a reified state
+// is indicated by setting m_result to MatchResult::failed().
+// Following a successful match, m_result, m_lastInput and m_lastRegExp
+// can be used to reify the results from the match, following reification
+// m_reifiedResult and m_reifiedInput hold the cached results.</doc>
+<fun r='_ZN3JSC18RegExpCachedResult6recordERNS_2VMEPNS_8JSObjectEPNS_6RegExpEPNS_8JSStringENS_11MatchResultE'/>
+<fun r='_ZN3JSC18RegExpCachedResult10lastResultEPNS_14JSGlobalObjectEPNS_8JSObjectE'/>
+<fun r='_ZN3JSC18RegExpCachedResult8setInputEPNS_14JSGlobalObjectEPNS_8JSObjectEPNS_8JSStringE'/>
+<fun r='_ZN3JSC18RegExpCachedResult11leftContextEPNS_14JSGlobalObjectEPNS_8JSObjectE'/>
+<fun r='_ZN3JSC18RegExpCachedResult12rightContextEPNS_14JSGlobalObjectEPNS_8JSObjectE'/>
+<fun r='_ZN3JSC18RegExpCachedResult5inputEv'/>
+<fun r='_ZN3JSC18RegExpCachedResult18visitAggregateImplERT_'/>
+<fun r='_ZN3JSC18RegExpCachedResult14visitAggregateERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC18RegExpCachedResult14visitAggregateERNS_11SlotVisitorE'/>
+<fun r='_ZN3JSC18RegExpCachedResult18offsetOfLastRegExpEv'/>
+<fun r='_ZN3JSC18RegExpCachedResult17offsetOfLastInputEv'/>
+<fun r='_ZN3JSC18RegExpCachedResult14offsetOfResultEv'/>
+<fun r='_ZN3JSC18RegExpCachedResult15offsetOfReifiedEv'/>
+<mbr r='JSC::RegExpCachedResult::m_result' o='0' t='JSC::MatchResult'/>
+<mbr r='JSC::RegExpCachedResult::m_reified' o='128' t='bool'/>
+<mbr r='JSC::RegExpCachedResult::m_lastInput' o='192' t='WriteBarrier&lt;JSC::JSString&gt;'/>
+<mbr r='JSC::RegExpCachedResult::m_lastRegExp' o='256' t='WriteBarrier&lt;JSC::RegExp&gt;'/>
+<mbr r='JSC::RegExpCachedResult::m_reifiedResult' o='320' t='WriteBarrier&lt;JSC::JSArray&gt;'/>
+<mbr r='JSC::RegExpCachedResult::m_reifiedInput' o='384' t='WriteBarrier&lt;JSC::JSString&gt;'/>
+<mbr r='JSC::RegExpCachedResult::m_reifiedLeftContext' o='448' t='WriteBarrier&lt;JSC::JSString&gt;'/>
+<mbr r='JSC::RegExpCachedResult::m_reifiedRightContext' o='512' t='WriteBarrier&lt;JSC::JSString&gt;'/>

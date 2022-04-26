@@ -1,0 +1,20 @@
+<def f='WebKit/Source/JavaScriptCore/heap/ReleaseHeapAccessScope.h' l='40' ll='55'/>
+<size>8</size>
+<doc f='WebKit/Source/JavaScriptCore/heap/ReleaseHeapAccessScope.h' l='32'>// Almost all of the VM&apos;s code runs with &quot;heap access&quot;. This means that the GC thread believes that
+// the VM is messing with the heap in a way that would be unsafe for certain phases of the collector,
+// like the weak reference fixpoint, stack scanning, and changing barrier modes. However, many long
+// running operations inside the VM don&apos;t require heap access. For example, memcpying a typed array
+// if a reference to it is on the stack is totally fine without heap access. Blocking on a futex is
+// also fine without heap access. Releasing heap access for long-running code (in the case of futex
+// wait, possibly infinitely long-running) ensures that the GC can finish a collection cycle while
+// you are waiting.</doc>
+<fun r='_ZN3JSC22ReleaseHeapAccessScopeC1ERNS_4HeapE'/>
+<fun r='_ZN3JSC22ReleaseHeapAccessScopeD1Ev'/>
+<mbr r='JSC::ReleaseHeapAccessScope::m_heap' o='0' t='JSC::Heap &amp;'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOperations.cpp' l='836' c='_ZN3JSC4WasmL4waitERNS_2VMEPT_S3_l'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/AtomicsObject.cpp' l='453' c='_ZN3JSC15atomicsWaitImplEPNS_14JSGlobalObjectEPT0_jT_NS_7JSValueE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='2035' c='_ZL35functionDollarAgentReceiveBroadcastPN3JSC14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='2159' c='_ZL21functionWaitForReportPN3JSC14JSGlobalObjectEPNS_9CallFrameE'/>
+<size>8</size>

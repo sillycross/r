@@ -1,0 +1,65 @@
+<use f='WebKit/Source/WebKit/UIProcess/API/C/WKAPICast.h' l='132'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/C/WKAPICast.h' l='132'/>
+<inh f='WebKit/Source/WebKit/Shared/API/APIObject.h' l='265' c='API::ObjectImpl'/>
+<inh f='WebKit/Source/WebKit/UIProcess/WebContextSupplement.h' l='35' c='WebKit::WebContextSupplement'/>
+<inh f='WebKit/Source/WebKit/Platform/IPC/MessageReceiver.h' l='37' c='IPC::MessageReceiver'/>
+<def f='WebKit/Source/WebKit/UIProcess/WebGeolocationManagerProxy.h' l='46' ll='89'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebGeolocationManagerProxy.h' l='50' c='_ZN6WebKit26WebGeolocationManagerProxy6createEPNS_14WebProcessPoolE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/C/WKContext.cpp' l='427' c='WKContextGetGeolocationManager'/>
+<size>192</size>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy14supplementNameEv'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy6createEPNS_14WebProcessPoolE'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy11setProviderEOSt10unique_ptrIN3API19GeolocationProviderESt14default_deleteIS3_EE'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy25providerDidChangePositionEPNS_22WebGeolocationPositionE'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy34providerDidFailToDeterminePositionERKN3WTF6StringE'/>
+<fun r='_ZNK6WebKit26WebGeolocationManagerProxy12lastPositionEv'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxyC1EPNS_14WebProcessPoolE'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy20processPoolDestroyedEv'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy15processDidCloseEPNS_15WebProcessProxyE'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy23refWebContextSupplementEv'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy25derefWebContextSupplementEv'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy17didReceiveMessageERN3IPC10ConnectionERNS1_7DecoderE'/>
+<fun r='_ZNK6WebKit26WebGeolocationManagerProxy10isUpdatingEv'/>
+<fun r='_ZNK6WebKit26WebGeolocationManagerProxy21isHighAccuracyEnabledEv'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy13startUpdatingERN3IPC10ConnectionEN3WTF16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEERKNS4_6StringE'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy12stopUpdatingERN3IPC10ConnectionE'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy15removeRequesterEPKN3IPC10Connection6ClientE'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy21setEnableHighAccuracyERN3IPC10ConnectionEb'/>
+<mbr r='WebKit::WebGeolocationManagerProxy::m_updateRequesters' o='384' t='HashSet&lt;const IPC::Connection::Client *&gt;'/>
+<mbr r='WebKit::WebGeolocationManagerProxy::m_highAccuracyRequesters' o='448' t='HashSet&lt;const IPC::Connection::Client *&gt;'/>
+<mbr r='WebKit::WebGeolocationManagerProxy::m_provider' o='512' t='std::unique_ptr&lt;API::GeolocationProvider&gt;'/>
+<mbr r='WebKit::WebGeolocationManagerProxy::m_lastPosition' o='576' t='std::optional&lt;WebCore::GeolocationPositionData&gt;'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APIGeolocationProvider.h' l='41' c='_ZN3API19GeolocationProvider13startUpdatingERN6WebKit26WebGeolocationManagerProxyE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APIGeolocationProvider.h' l='42' c='_ZN3API19GeolocationProvider12stopUpdatingERN6WebKit26WebGeolocationManagerProxyE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/APIGeolocationProvider.h' l='43' c='_ZN3API19GeolocationProvider21setEnableHighAccuracyERN6WebKit26WebGeolocationManagerProxyEb'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebGeolocationProvider.h' l='49' c='_ZN6WebKit22WebGeolocationProvider13startUpdatingERNS_26WebGeolocationManagerProxyE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebGeolocationProvider.h' l='50' c='_ZN6WebKit22WebGeolocationProvider12stopUpdatingERNS_26WebGeolocationManagerProxyE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebGeolocationProvider.h' l='51' c='_ZN6WebKit22WebGeolocationProvider21setEnableHighAccuracyERNS_26WebGeolocationManagerProxyEb'/>
+<size>192</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebGeolocationManagerProxy.cpp' l='46' c='_ZN6WebKit26WebGeolocationManagerProxy6createEPNS_14WebProcessPoolE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebGeolocationManagerProxy.cpp' l='48' c='_ZN6WebKit26WebGeolocationManagerProxy6createEPNS_14WebProcessPoolE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebGeolocationProvider.cpp' l='39' c='_ZN6WebKit22WebGeolocationProvider13startUpdatingERNS_26WebGeolocationManagerProxyE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebGeolocationProvider.cpp' l='47' c='_ZN6WebKit22WebGeolocationProvider12stopUpdatingERNS_26WebGeolocationManagerProxyE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebGeolocationProvider.cpp' l='55' c='_ZN6WebKit22WebGeolocationProvider21setEnableHighAccuracyERNS_26WebGeolocationManagerProxyEb'/>
+<size>192</size>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy14supplementNameEv'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy6createEPNS_14WebProcessPoolE'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxyC1EPNS_14WebProcessPoolE'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy11setProviderEOSt10unique_ptrIN3API19GeolocationProviderESt14default_deleteIS3_EE'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy20processPoolDestroyedEv'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy15processDidCloseEPNS_15WebProcessProxyE'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy23refWebContextSupplementEv'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy25derefWebContextSupplementEv'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy25providerDidChangePositionEPNS_22WebGeolocationPositionE'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy34providerDidFailToDeterminePositionERKN3WTF6StringE'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy13startUpdatingERN3IPC10ConnectionEN3WTF16ObjectIdentifierINS_26WebPageProxyIdentifierTypeEEERKNS4_6StringE'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy12stopUpdatingERN3IPC10ConnectionE'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy15removeRequesterEPKN3IPC10Connection6ClientE'/>
+<fun r='_ZN6WebKit26WebGeolocationManagerProxy21setEnableHighAccuracyERN3IPC10ConnectionEb'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitGeolocationManagerPrivate.h' l='25' c='_Z30webkitGeolocationManagerCreatePN6WebKit26WebGeolocationManagerProxyE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitGeolocationManager.cpp' l='235'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitGeolocationManager.cpp' l='295' c='_ZN19GeolocationProvider13startUpdatingERN6WebKit26WebGeolocationManagerProxyE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitGeolocationManager.cpp' l='300' c='_ZN19GeolocationProvider12stopUpdatingERN6WebKit26WebGeolocationManagerProxyE'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitGeolocationManager.cpp' l='305' c='_ZN19GeolocationProvider21setEnableHighAccuracyERN6WebKit26WebGeolocationManagerProxyEb'/>
+<use f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitGeolocationManager.cpp' l='313' c='_Z30webkitGeolocationManagerCreatePN6WebKit26WebGeolocationManagerProxyE'/>
+<size>192</size>

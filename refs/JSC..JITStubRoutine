@@ -1,0 +1,100 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='421'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITStubRoutine.h' l='56' ll='123'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITStubRoutine.h' l='57' c='_ZN3JSC14JITStubRoutineC1ERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITStubRoutine.h' l='57' c='_ZN3JSC14JITStubRoutineaSERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITStubRoutine.h' l='57' c='_ZN3JSC14JITStubRoutineaSERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITStubRoutine.h' l='68' c='_ZN3JSC14JITStubRoutine24createSelfManagedRoutineENS_21MacroAssemblerCodePtrILN3WTF6PtrTagE49594EEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITStubRoutine.h' l='71' c='_ZN3JSC14JITStubRoutine24createSelfManagedRoutineENS_21MacroAssemblerCodePtrILN3WTF6PtrTagE49594EEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITStubRoutine.h' l='82' c='_ZN3JSC14JITStubRoutine9asCodePtrEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEE'/>
+<ovr f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCAwareJITStubRoutine.h' l='57' c='JSC::GCAwareJITStubRoutine'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCAwareJITStubRoutine.h' l='57'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCAwareJITStubRoutine.h' l='62' c='_ZN3JSC21GCAwareJITStubRoutine6createERNS_2VMERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CallLinkInfo.h' l='236' c='_ZN3JSC12CallLinkInfo11setSlowStubEON3WTF3RefINS_14JITStubRoutineENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CallLinkInfo.h' l='246' c='_ZN3JSC12CallLinkInfo8slowStubEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CallLinkInfo.h' l='406'/>
+<size>32</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITStubRoutine.h' l='46'>// This is a base-class for JIT stub routines, and also the class you want
+// to instantiate directly if you have a routine that does not need any
+// help from the GC. If in doubt, use one of the other stub routines. But
+// if you know for sure that the stub routine cannot be on the stack while
+// someone triggers a stub routine reset, then using this will speed up
+// memory reclamation. One case where a stub routine satisfies this
+// condition is if it doesn&apos;t make any calls, to either C++ or JS code. In
+// such a routine you know that it cannot be on the stack when anything
+// interesting happens.
+// See GCAwareJITStubRoutine.h for the other stub routines.</doc>
+<fun r='_ZN3JSC14JITStubRoutineC1ERKS0_'/>
+<fun r='_ZN3JSC14JITStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<fun r='_ZN3JSC14JITStubRoutine24createSelfManagedRoutineENS_21MacroAssemblerCodePtrILN3WTF6PtrTagE49594EEE'/>
+<fun r='_ZN3JSC14JITStubRoutineD1Ev'/>
+<fun r='_ZN3JSC14JITStubRoutine10aboutToDieEv'/>
+<fun r='_ZNK3JSC14JITStubRoutine4codeEv'/>
+<fun r='_ZN3JSC14JITStubRoutine9asCodePtrEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEE'/>
+<fun r='_ZN3JSC14JITStubRoutine3refEv'/>
+<fun r='_ZN3JSC14JITStubRoutine5derefEv'/>
+<fun r='_ZNK3JSC14JITStubRoutine12startAddressEv'/>
+<fun r='_ZNK3JSC14JITStubRoutine10endAddressEv'/>
+<fun r='_ZN3JSC14JITStubRoutine11addressStepEv'/>
+<fun r='_ZN3JSC14JITStubRoutine12passesFilterEm'/>
+<fun r='_ZN3JSC14JITStubRoutine9visitWeakERNS_2VME'/>
+<fun r='_ZN3JSC14JITStubRoutine19observeZeroRefCountEv'/>
+<mbr r='JSC::JITStubRoutine::m_code' o='64' t='MacroAssemblerCodeRef&lt;JITStubRoutinePtrTag&gt;'/>
+<mbr r='JSC::JITStubRoutine::m_refCount' o='192' t='unsigned int'/>
+<mbr r='JSC::JITStubRoutine::m_hash' o='224' t='unsigned int'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='421'/>
+<def f='WebKit/Source/JavaScriptCore/jit/JITStubRoutine.h' l='56' ll='123'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITStubRoutine.h' l='57' c='_ZN3JSC14JITStubRoutineC1ERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITStubRoutine.h' l='57' c='_ZN3JSC14JITStubRoutineaSERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITStubRoutine.h' l='57' c='_ZN3JSC14JITStubRoutineaSERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITStubRoutine.h' l='68' c='_ZN3JSC14JITStubRoutine24createSelfManagedRoutineENS_21MacroAssemblerCodePtrILN3WTF6PtrTagE49594EEE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITStubRoutine.h' l='71' c='_ZN3JSC14JITStubRoutine24createSelfManagedRoutineENS_21MacroAssemblerCodePtrILN3WTF6PtrTagE49594EEE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITStubRoutine.h' l='82' c='_ZN3JSC14JITStubRoutine9asCodePtrEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEE'/>
+<ovr f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.h' l='57' c='JSC::GCAwareJITStubRoutine'/>
+<use f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.h' l='57'/>
+<use f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.h' l='62' c='_ZN3JSC21GCAwareJITStubRoutine6createERNS_2VMERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CallLinkInfo.h' l='236' c='_ZN3JSC12CallLinkInfo11setSlowStubEON3WTF3RefINS_14JITStubRoutineENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CallLinkInfo.h' l='246' c='_ZN3JSC12CallLinkInfo8slowStubEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CallLinkInfo.h' l='406'/>
+<size>32</size>
+<doc f='WebKit/Source/JavaScriptCore/jit/JITStubRoutine.h' l='46'>// This is a base-class for JIT stub routines, and also the class you want
+// to instantiate directly if you have a routine that does not need any
+// help from the GC. If in doubt, use one of the other stub routines. But
+// if you know for sure that the stub routine cannot be on the stack while
+// someone triggers a stub routine reset, then using this will speed up
+// memory reclamation. One case where a stub routine satisfies this
+// condition is if it doesn&apos;t make any calls, to either C++ or JS code. In
+// such a routine you know that it cannot be on the stack when anything
+// interesting happens.
+// See GCAwareJITStubRoutine.h for the other stub routines.</doc>
+<fun r='_ZN3JSC14JITStubRoutineC1ERKS0_'/>
+<fun r='_ZN3JSC14JITStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<fun r='_ZN3JSC14JITStubRoutine24createSelfManagedRoutineENS_21MacroAssemblerCodePtrILN3WTF6PtrTagE49594EEE'/>
+<fun r='_ZN3JSC14JITStubRoutineD1Ev'/>
+<fun r='_ZN3JSC14JITStubRoutine10aboutToDieEv'/>
+<fun r='_ZNK3JSC14JITStubRoutine4codeEv'/>
+<fun r='_ZN3JSC14JITStubRoutine9asCodePtrEON3WTF3RefIS0_NS1_12RawPtrTraitsIS0_EEEE'/>
+<fun r='_ZN3JSC14JITStubRoutine3refEv'/>
+<fun r='_ZN3JSC14JITStubRoutine5derefEv'/>
+<fun r='_ZNK3JSC14JITStubRoutine12startAddressEv'/>
+<fun r='_ZNK3JSC14JITStubRoutine10endAddressEv'/>
+<fun r='_ZN3JSC14JITStubRoutine11addressStepEv'/>
+<fun r='_ZN3JSC14JITStubRoutine12passesFilterEm'/>
+<fun r='_ZN3JSC14JITStubRoutine9visitWeakERNS_2VME'/>
+<fun r='_ZN3JSC14JITStubRoutine19observeZeroRefCountEv'/>
+<mbr r='JSC::JITStubRoutine::m_code' o='64' t='MacroAssemblerCodeRef&lt;JITStubRoutinePtrTag&gt;'/>
+<mbr r='JSC::JITStubRoutine::m_refCount' o='192' t='unsigned int'/>
+<mbr r='JSC::JITStubRoutine::m_hash' o='224' t='unsigned int'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ByValInfo.h' l='285'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.cpp' l='43' c='_ZN3JSC21GCAwareJITStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='1748' macro='1' c='_ZN3JSC3JIT32privateCompileHasIndexedPropertyEPNS_9ByValInfoENS_16ReturnAddressPtrENS_12JITArrayModeE'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='3153' macro='1' c='_ZN3JSC3JIT22privateCompilePutByValERKNS_18ConcurrentJSLockerEPNS_9ByValInfoENS_16ReturnAddressPtrENS_12JITArrayModeE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='3158' macro='1' c='_ZN3JSC3JIT22privateCompilePutByValERKNS_18ConcurrentJSLockerEPNS_9ByValInfoENS_16ReturnAddressPtrENS_12JITArrayModeE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='3203' macro='1' c='_ZN3JSC3JIT40privateCompilePutPrivateNameWithCachedIdEPNS_9ByValInfoENS_16ReturnAddressPtrENS_19CacheableIdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITPropertyAccess.cpp' l='3246' macro='1' c='_ZN3JSC3JIT34privateCompilePutByValWithCachedIdEPNS_9ByValInfoENS_16ReturnAddressPtrENS_7PutKindENS_19CacheableIdentifierE'/>
+<size>32</size>
+<fun r='_ZN3JSC14JITStubRoutineD1Ev'/>
+<fun r='_ZN3JSC14JITStubRoutine9visitWeakERNS_2VME'/>
+<fun r='_ZN3JSC14JITStubRoutine19observeZeroRefCountEv'/>

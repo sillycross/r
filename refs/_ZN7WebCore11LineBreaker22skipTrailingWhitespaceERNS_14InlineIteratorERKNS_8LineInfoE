@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/WebCore/rendering/line/LineBreaker.h' l='63' type='void WebCore::LineBreaker::skipTrailingWhitespace(WebCore::InlineIterator &amp; , const WebCore::LineInfo &amp; )'/>
+<use f='WebKit/Source/WebCore/rendering/line/BreakingContext.h' l='862' u='c' c='_ZN7WebCore15BreakingContext10handleTextERN3WTF6VectorINS_15WordMeasurementELm64ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEERbRj'/>
+<def f='WebKit/Source/WebCore/rendering/line/LineBreaker.cpp' l='46' ll='56' type='void WebCore::LineBreaker::skipTrailingWhitespace(WebCore::InlineIterator &amp; iterator, const WebCore::LineInfo &amp; lineInfo)'/>
+<doc f='WebKit/Source/WebCore/rendering/line/LineBreaker.cpp' l='40'>// FIXME: The entire concept of the skipTrailingWhitespace function is flawed, since we really need to be building
+// line boxes even for containers that may ultimately collapse away. Otherwise we&apos;ll never get positioned
+// elements quite right. In other words, we need to build this function&apos;s work into the normal line
+// object iteration process.
+// NB. this function will insert any floating elements that would otherwise
+// be skipped but it will not position them.</doc>

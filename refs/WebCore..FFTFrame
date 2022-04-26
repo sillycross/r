@@ -1,0 +1,88 @@
+<def f='WebKit/Source/WebCore/platform/audio/FFTFrame.h' l='51' ll='115'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTFrame.h' l='58' c='_ZN7WebCore8FFTFrameC1ERKS0_'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTFrame.h' l='64' c='_ZN7WebCore8FFTFrame8multiplyERKS0_'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTFrame.h' l='81' c='_ZN7WebCore8FFTFrame23createInterpolatedFrameERKS0_S2_d'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTFrame.h' l='81' c='_ZN7WebCore8FFTFrame23createInterpolatedFrameERKS0_S2_d'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTFrame.h' l='81' c='_ZN7WebCore8FFTFrame23createInterpolatedFrameERKS0_S2_d'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTFrame.h' l='94' c='_ZN7WebCore8FFTFrame30interpolateFrequencyComponentsERKS0_S2_d'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTFrame.h' l='94' c='_ZN7WebCore8FFTFrame30interpolateFrequencyComponentsERKS0_S2_d'/>
+<use f='WebKit/Source/WebCore/platform/audio/gstreamer/FFTFrameGStreamer.cpp' l='70' c='_ZN7WebCore8FFTFrameC1ERKS0_'/>
+<size>64</size>
+<doc f='WebKit/Source/WebCore/platform/audio/FFTFrame.h' l='48'>// Defines the interface for an &quot;FFT frame&quot;, an object which is able to perform a forward
+// and reverse FFT, internally storing the resultant frequency-domain data.</doc>
+<fun r='_ZN7WebCore8FFTFrameC1Ej'/>
+<fun r='_ZN7WebCore8FFTFrameC1Ev'/>
+<fun r='_ZN7WebCore8FFTFrameC1ERKS0_'/>
+<fun r='_ZN7WebCore8FFTFrameD1Ev'/>
+<fun r='_ZN7WebCore8FFTFrame10initializeEv'/>
+<fun r='_ZN7WebCore8FFTFrame5doFFTEPKf'/>
+<fun r='_ZN7WebCore8FFTFrame12doInverseFFTEPf'/>
+<fun r='_ZN7WebCore8FFTFrame8multiplyERKS0_'/>
+<fun r='_ZN7WebCore8FFTFrame8scaleFFTEf'/>
+<fun r='_ZN7WebCore8FFTFrame8realDataEv'/>
+<fun r='_ZN7WebCore8FFTFrame8imagDataEv'/>
+<fun r='_ZNK7WebCore8FFTFrame8realDataEv'/>
+<fun r='_ZNK7WebCore8FFTFrame8imagDataEv'/>
+<fun r='_ZN7WebCore8FFTFrame10minFFTSizeEv'/>
+<fun r='_ZN7WebCore8FFTFrame10maxFFTSizeEv'/>
+<fun r='_ZN7WebCore8FFTFrame5printEv'/>
+<fun r='_ZN7WebCore8FFTFrame23createInterpolatedFrameERKS0_S2_d'/>
+<fun r='_ZN7WebCore8FFTFrame11doPaddedFFTEPKfm'/>
+<fun r='_ZN7WebCore8FFTFrame24extractAverageGroupDelayEv'/>
+<fun r='_ZN7WebCore8FFTFrame21addConstantGroupDelayEd'/>
+<fun r='_ZNK7WebCore8FFTFrame7fftSizeEv'/>
+<fun r='_ZNK7WebCore8FFTFrame11log2FFTSizeEv'/>
+<mbr r='WebCore::FFTFrame::m_FFTSize' o='0' t='unsigned int'/>
+<mbr r='WebCore::FFTFrame::m_log2FFTSize' o='32' t='unsigned int'/>
+<fun r='_ZN7WebCore8FFTFrame30interpolateFrequencyComponentsERKS0_S2_d'/>
+<mbr r='WebCore::FFTFrame::m_fft' o='64' t='GstFFTF32 *'/>
+<mbr r='WebCore::FFTFrame::m_inverseFft' o='128' t='GstFFTF32 *'/>
+<mbr r='WebCore::FFTFrame::m_complexData' o='192' t='UniqueArray&lt;GstFFTF32Complex&gt;'/>
+<mbr r='WebCore::FFTFrame::m_realData' o='256' t='WebCore::AudioFloatArray'/>
+<mbr r='WebCore::FFTFrame::m_imagData' o='384' t='WebCore::AudioFloatArray'/>
+<fun r='_ZN7WebCore8FFTFrameC1Ej'/>
+<fun r='_ZN7WebCore8FFTFrameC1Ev'/>
+<fun r='_ZN7WebCore8FFTFrameC1ERKS0_'/>
+<fun r='_ZN7WebCore8FFTFrame10initializeEv'/>
+<fun r='_ZN7WebCore8FFTFrameD1Ev'/>
+<fun r='_ZN7WebCore8FFTFrame5doFFTEPKf'/>
+<fun r='_ZN7WebCore8FFTFrame12doInverseFFTEPf'/>
+<fun r='_ZN7WebCore8FFTFrame10minFFTSizeEv'/>
+<fun r='_ZN7WebCore8FFTFrame10maxFFTSizeEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/RealtimeAnalyser.h' l='87'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTConvolver.h' l='51' c='_ZN7WebCore12FFTConvolver7processEPNS_8FFTFrameEPKfPfm'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTConvolver.h' l='58'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTConvolver.cpp' l='47' c='_ZN7WebCore12FFTConvolver7processEPNS_8FFTFrameEPKfPfm'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTFrame.cpp' l='56' c='_ZN7WebCore8FFTFrame23createInterpolatedFrameERKS0_S2_d'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTFrame.cpp' l='56' c='_ZN7WebCore8FFTFrame23createInterpolatedFrameERKS0_S2_d'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTFrame.cpp' l='56' c='_ZN7WebCore8FFTFrame23createInterpolatedFrameERKS0_S2_d'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTFrame.cpp' l='58' c='_ZN7WebCore8FFTFrame23createInterpolatedFrameERKS0_S2_d'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTFrame.cpp' l='74' c='_ZN7WebCore8FFTFrame30interpolateFrequencyComponentsERKS0_S2_d'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTFrame.cpp' l='74' c='_ZN7WebCore8FFTFrame30interpolateFrequencyComponentsERKS0_S2_d'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTFrame.cpp' l='182' c='_ZN7WebCore8FFTFrame8multiplyERKS0_'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTFrame.cpp' l='184' c='_ZN7WebCore8FFTFrame8multiplyERKS0_'/>
+<use f='WebKit/Source/WebCore/platform/audio/FFTFrame.cpp' l='185' c='_ZN7WebCore8FFTFrame8multiplyERKS0_'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.h' l='57' c='_ZN7WebCore10HRTFKernel6createESt10unique_ptrINS_8FFTFrameESt14default_deleteIS2_EEff'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.h' l='65' c='_ZN7WebCore10HRTFKernel8fftFrameEv'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.h' l='80' c='_ZN7WebCore10HRTFKernelC1ESt10unique_ptrINS_8FFTFrameESt14default_deleteIS2_EEff'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.h' l='87'/>
+<size>64</size>
+<fun r='_ZN7WebCore8FFTFrame11doPaddedFFTEPKfm'/>
+<fun r='_ZN7WebCore8FFTFrame23createInterpolatedFrameERKS0_S2_d'/>
+<fun r='_ZN7WebCore8FFTFrame30interpolateFrequencyComponentsERKS0_S2_d'/>
+<fun r='_ZN7WebCore8FFTFrame8scaleFFTEf'/>
+<fun r='_ZN7WebCore8FFTFrame8multiplyERKS0_'/>
+<fun r='_ZN7WebCore8FFTFrame24extractAverageGroupDelayEv'/>
+<fun r='_ZN7WebCore8FFTFrame21addConstantGroupDelayEd'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.cpp' l='61' c='_ZN7WebCoreL24extractAverageGroupDelayEPNS_12AudioChannelEm'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.cpp' l='94' c='_ZN7WebCore10HRTFKernelC1EPNS_12AudioChannelEmf'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.cpp' l='106' c='_ZN7WebCore10HRTFKernel21createImpulseResponseEv'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.cpp' l='133' c='_ZN7WebCore10HRTFKernel24createInterpolatedKernelEPS0_S1_f'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/platform/audio/ReverbConvolverStage.h' l='64'/>
+<use f='WebKit/Source/WebCore/platform/audio/ReverbConvolverStage.cpp' l='54' c='_ZN7WebCore20ReverbConvolverStageC1EPKfmmmmmmmPNS_24ReverbAccumulationBufferEfb'/>
+<size>64</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/PeriodicWave.cpp' l='198' c='_ZN7WebCore12PeriodicWave23createBandLimitedTablesEPKfS2_jNS_26ShouldDisableNormalizationE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/RealtimeAnalyser.cpp' l='49' c='_ZN7WebCore16RealtimeAnalyserC1Ev'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/RealtimeAnalyser.cpp' l='66' c='_ZN7WebCore16RealtimeAnalyser10setFftSizeEm'/>
+<size>64</size>

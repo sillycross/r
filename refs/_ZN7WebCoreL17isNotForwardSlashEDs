@@ -1,0 +1,47 @@
+<def f='WebKit/Source/WebCore/platform/network/ParsedContentType.cpp' l='208' ll='211' type='bool WebCore::isNotForwardSlash(UChar ch)'/>
+<use f='WebKit/Source/WebCore/platform/network/ParsedContentType.cpp' l='241' u='r' c='_ZN7WebCore17ParsedContentType16parseContentTypeENS_4ModeE'/>
+<doc f='WebKit/Source/WebCore/platform/network/ParsedContentType.cpp' l='162'>// From http://tools.ietf.org/html/rfc2045#section-5.1:
+//
+// content := &quot;Content-Type&quot; &quot;:&quot; type &quot;/&quot; subtype
+//            *(&quot;;&quot; parameter)
+//            ; Matching of media type and subtype
+//            ; is ALWAYS case-insensitive.
+//
+// type := discrete-type / composite-type
+//
+// discrete-type := &quot;text&quot; / &quot;image&quot; / &quot;audio&quot; / &quot;video&quot; /
+//                  &quot;application&quot; / extension-token
+//
+// composite-type := &quot;message&quot; / &quot;multipart&quot; / extension-token
+//
+// extension-token := ietf-token / x-token
+//
+// ietf-token := &lt;An extension token defined by a
+//                standards-track RFC and registered
+//                with IANA.&gt;
+//
+// x-token := &lt;The two characters &quot;X-&quot; or &quot;x-&quot; followed, with
+//             no intervening white space, by any token&gt;
+//
+// subtype := extension-token / iana-token
+//
+// iana-token := &lt;A publicly-defined extension token. Tokens
+//                of this form must be registered with IANA
+//                as specified in RFC 2048.&gt;
+//
+// parameter := attribute &quot;=&quot; value
+//
+// attribute := token
+//              ; Matching of attributes
+//              ; is ALWAYS case-insensitive.
+//
+// value := token / quoted-string
+//
+// token := 1*&lt;any (US-ASCII) CHAR except SPACE, CTLs,
+//             or tspecials&gt;
+//
+// tspecials :=  &quot;(&quot; / &quot;)&quot; / &quot;&lt;&quot; / &quot;&gt;&quot; / &quot;@&quot; /
+//               &quot;,&quot; / &quot;;&quot; / &quot;:&quot; / &quot;\&quot; / &lt;&quot;&gt;
+//               &quot;/&quot; / &quot;[&quot; / &quot;]&quot; / &quot;?&quot; / &quot;=&quot;
+//               ; Must be in quoted-string,
+//               ; to use within parameter values</doc>

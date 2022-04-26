@@ -1,0 +1,22 @@
+<dec f='include/xcb/xproto.h' l='6203' type='xcb_void_cookie_t xcb_reparent_window_checked(xcb_connection_t * c, xcb_window_t window, xcb_window_t parent, int16_t x, int16_t y)'/>
+<doc f='include/xcb/xproto.h' l='6181'>/**
+ * @brief Reparents a window
+ *
+ * @param c The connection
+ * @param window The window to reparent.
+ * @param parent The new parent of the window.
+ * @param x The X position of the window within its new parent.
+ * @param y The Y position of the window within its new parent.
+ * @return A cookie
+ *
+ * Makes the specified window a child of the specified parent window. If the
+ * window is mapped, it will automatically be unmapped before reparenting and
+ * re-mapped after reparenting. The window is placed in the stacking order on top
+ * with respect to sibling windows.
+ * 
+ * After reparenting, a ReparentNotify event is generated.
+ *
+ * This form can be used only if the request will not cause
+ * a reply to be generated. Any returned error will be
+ * saved for handling by xcb_request_check().
+ */</doc>

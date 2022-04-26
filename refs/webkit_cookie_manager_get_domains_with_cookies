@@ -1,0 +1,16 @@
+<dec f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitCookieManager.h' l='149' type='void webkit_cookie_manager_get_domains_with_cookies(WebKitCookieManager * cookie_manager, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer user_data)'/>
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitCookieManager.cpp' l='427' ll='450' type='void webkit_cookie_manager_get_domains_with_cookies(WebKitCookieManager * manager, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer userData)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitCookieManager.cpp' l='413'>/**
+ * webkit_cookie_manager_get_domains_with_cookies:
+ * @cookie_manager: a #WebKitCookieManager
+ * @cancellable: (allow-none): a #GCancellable or %NULL to ignore
+ * @callback: (scope async): a #GAsyncReadyCallback to call when the request is satisfied
+ * @user_data: (closure): the data to pass to callback function
+ *
+ * Asynchronously get the list of domains for which @cookie_manager contains cookies.
+ *
+ * When the operation is finished, @callback will be called. You can then call
+ * webkit_cookie_manager_get_domains_with_cookies_finish() to get the result of the operation.
+ *
+ * Deprecated: 2.16: Use webkit_website_data_manager_fetch() instead.
+ */</doc>

@@ -1,0 +1,18 @@
+<dec f='WebKit/Source/WebCore/platform/audio/IIRFilter.h' l='60' type='Vector&lt;double&gt;'/>
+<use f='WebKit/Source/WebCore/platform/audio/IIRFilter.cpp' l='58' u='m' c='_ZN7WebCore9IIRFilterC1ERKN3WTF6VectorIdLm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEES7_'/>
+<use f='WebKit/Source/WebCore/platform/audio/IIRFilter.cpp' l='64' u='m' c='_ZN7WebCore9IIRFilter5resetEv'/>
+<use f='WebKit/Source/WebCore/platform/audio/IIRFilter.cpp' l='93' u='m' c='_ZN7WebCore9IIRFilter7processEPKfPfm'/>
+<use f='WebKit/Source/WebCore/platform/audio/IIRFilter.cpp' l='116' u='m' c='_ZN7WebCore9IIRFilter7processEPKfPfm'/>
+<offset>0</offset>
+<doc f='WebKit/Source/WebCore/platform/audio/IIRFilter.h' l='48'>// Filter memory
+    //
+    // For simplicity, we assume |m_xBuffer| and |m_yBuffer| have the same length,
+    // and the length is a power of two. Since the number of coefficients has a
+    // fixed upper length, the size of xBuffer and yBuffer is fixed. |m_xBuffer|
+    // holds the old input values and |m_yBuffer| holds the old output values
+    // needed to compute the new output value.
+    //
+    // m_yBuffer[m_bufferIndex] holds the most recent output value, say, y[n].
+    // Then m_yBuffer[m_bufferIndex - k] is y[n - k]. Similarly for m_xBuffer.
+    //
+    // To minimize roundoff, these arrays are double&apos;s instead of floats.</doc>

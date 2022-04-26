@@ -1,0 +1,86 @@
+<inh f='WebKit/WTF/Headers/wtf/RefCounted.h' l='184' c='WTF::RefCounted'/>
+<def f='WebKit/Source/JavaScriptCore/profiler/ProfilerCompilation.h' l='54' ll='97'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerCompilation.h' l='54'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCommonData.h' l='123'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPlan.h' l='83' c='_ZNK3JSC3DFG4Plan11compilationEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPlan.h' l='122'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.h' l='834' c='_ZN3JSC3DFG5Graph11compilationEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLCompile.cpp' l='177' c='_ZN3JSC3FTL7compileERNS0_5StateERNS_9Safepoint6ResultE'/>
+<size>128</size>
+<doc f='WebKit/Source/JavaScriptCore/profiler/ProfilerCompilation.h' l='51'>// Represents the act of executing some bytecodes in some engine, and does
+// all of the counting for those executions.</doc>
+<fun r='_ZN3JSC8Profiler11CompilationC1EPNS0_9BytecodesENS0_15CompilationKindE'/>
+<fun r='_ZN3JSC8Profiler11CompilationD1Ev'/>
+<fun r='_ZN3JSC8Profiler11Compilation20addProfiledBytecodesERNS0_8DatabaseEPNS_9CodeBlockE'/>
+<fun r='_ZNK3JSC8Profiler11Compilation21profiledBytecodesSizeEv'/>
+<fun r='_ZNK3JSC8Profiler11Compilation19profiledBytecodesAtEj'/>
+<fun r='_ZN3JSC8Profiler11Compilation20noticeInlinedGetByIdEv'/>
+<fun r='_ZN3JSC8Profiler11Compilation20noticeInlinedPutByIdEv'/>
+<fun r='_ZN3JSC8Profiler11Compilation17noticeInlinedCallEv'/>
+<fun r='_ZNK3JSC8Profiler11Compilation9bytecodesEv'/>
+<fun r='_ZNK3JSC8Profiler11Compilation4kindEv'/>
+<fun r='_ZN3JSC8Profiler11Compilation14addDescriptionERKNS0_16CompiledBytecodeE'/>
+<fun r='_ZN3JSC8Profiler11Compilation14addDescriptionERKNS0_11OriginStackERKN3WTF7CStringE'/>
+<fun r='_ZN3JSC8Profiler11Compilation19executionCounterForERKNS0_11OriginStackE'/>
+<fun r='_ZN3JSC8Profiler11Compilation14addOSRExitSiteERKN3WTF6VectorINS_21MacroAssemblerCodePtrILNS2_6PtrTagE26432EEELm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<fun r='_ZN3JSC8Profiler11Compilation10addOSRExitEjRKNS0_11OriginStackENS_8ExitKindEb'/>
+<fun r='_ZN3JSC8Profiler11Compilation17setJettisonReasonENS0_14JettisonReasonEPKNS_10FireDetailE'/>
+<fun r='_ZNK3JSC8Profiler11Compilation3uidEv'/>
+<fun r='_ZNK3JSC8Profiler11Compilation4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZNK3JSC8Profiler11Compilation4toJSEPNS_14JSGlobalObjectE'/>
+<mbr r='JSC::Profiler::Compilation::m_kind' o='32' t='JSC::Profiler::CompilationKind'/>
+<mbr r='JSC::Profiler::Compilation::m_bytecodes' o='64' t='JSC::Profiler::Bytecodes *'/>
+<mbr r='JSC::Profiler::Compilation::m_profiledBytecodes' o='128' t='Vector&lt;JSC::Profiler::ProfiledBytecodes&gt;'/>
+<mbr r='JSC::Profiler::Compilation::m_descriptions' o='256' t='Vector&lt;JSC::Profiler::CompiledBytecode&gt;'/>
+<mbr r='JSC::Profiler::Compilation::m_counters' o='384' t='HashMap&lt;JSC::Profiler::OriginStack, std::unique_ptr&lt;ExecutionCounter&gt; &gt;'/>
+<mbr r='JSC::Profiler::Compilation::m_osrExitSites' o='448' t='Vector&lt;JSC::Profiler::OSRExitSite&gt;'/>
+<mbr r='JSC::Profiler::Compilation::m_osrExits' o='576' t='SegmentedVector&lt;JSC::Profiler::OSRExit&gt;'/>
+<mbr r='JSC::Profiler::Compilation::m_numInlinedGetByIds' o='768' t='unsigned int'/>
+<mbr r='JSC::Profiler::Compilation::m_numInlinedPutByIds' o='800' t='unsigned int'/>
+<mbr r='JSC::Profiler::Compilation::m_numInlinedCalls' o='832' t='unsigned int'/>
+<mbr r='JSC::Profiler::Compilation::m_jettisonReason' o='864' t='JSC::Profiler::JettisonReason'/>
+<mbr r='JSC::Profiler::Compilation::m_additionalJettisonReason' o='896' t='WTF::CString'/>
+<mbr r='JSC::Profiler::Compilation::m_uid' o='960' t='JSC::Profiler::UID'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerEvent.h' l='44' c='_ZN3JSC8Profiler5EventC1EN3WTF8WallTimeEPNS0_9BytecodesEPNS0_11CompilationEPKcRKNS2_7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerEvent.h' l='60' c='_ZNK3JSC8Profiler5Event11compilationEv'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerEvent.h' l='70'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.h' l='52' c='_ZN3JSC8Profiler8Database14addCompilationEPNS_9CodeBlockEON3WTF3RefINS0_11CompilationENS4_12RawPtrTraitsIS6_EEEE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.h' l='85'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.h' l='86'/>
+<size>128</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExitCompiler.cpp' l='231' c='_ZN3JSC3FTLL11compileStubERNS_2VMEjPNS0_7JITCodeERNS0_7OSRExitEPNS_9CodeBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOSRExitHandle.cpp' l='41' c='_ZN3JSC3FTL13OSRExitHandle13emitExitThunkERNS0_5StateERNS_12CCallHelpersE'/>
+<size>128</size>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.cpp' l='89' c='_ZN3JSC8Profiler8Database14addCompilationEPNS_9CodeBlockEON3WTF3RefINS0_11CompilationENS4_12RawPtrTraitsIS6_EEEE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerDatabase.cpp' l='179' c='_ZN3JSC8Profiler8Database8logEventEPNS_9CodeBlockEPKcRKN3WTF7CStringE'/>
+<size>128</size>
+<fun r='_ZN3JSC8Profiler11CompilationC1EPNS0_9BytecodesENS0_15CompilationKindE'/>
+<fun r='_ZN3JSC8Profiler11CompilationD1Ev'/>
+<fun r='_ZN3JSC8Profiler11Compilation20addProfiledBytecodesERNS0_8DatabaseEPNS_9CodeBlockE'/>
+<fun r='_ZN3JSC8Profiler11Compilation14addDescriptionERKNS0_16CompiledBytecodeE'/>
+<fun r='_ZN3JSC8Profiler11Compilation14addDescriptionERKNS0_11OriginStackERKN3WTF7CStringE'/>
+<fun r='_ZN3JSC8Profiler11Compilation19executionCounterForERKNS0_11OriginStackE'/>
+<fun r='_ZN3JSC8Profiler11Compilation14addOSRExitSiteERKN3WTF6VectorINS_21MacroAssemblerCodePtrILNS2_6PtrTagE26432EEELm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<fun r='_ZN3JSC8Profiler11Compilation10addOSRExitEjRKNS0_11OriginStackENS_8ExitKindEb'/>
+<fun r='_ZN3JSC8Profiler11Compilation17setJettisonReasonENS0_14JettisonReasonEPKNS_10FireDetailE'/>
+<fun r='_ZNK3JSC8Profiler11Compilation4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZNK3JSC8Profiler11Compilation4toJSEPNS_14JSGlobalObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='64' c='_ZN3JSC15JITDisassembler16reportToProfilerEPNS_8Profiler11CompilationERNS_10LinkBufferE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.h' l='77' c='_ZN3JSC15JITDisassembler18reportInstructionsEPNS_8Profiler11CompilationERNS_10LinkBufferEPKcRN3WTF6VectorINS_22AbstractMacroAssemblerINS_12X86Assemble6264508'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='1125'/>
+<size>128</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.cpp' l='732' c='_ZN3JSC3JIT31compileAndLinkWithoutFinalizingENS_20JITCompilationEffortE'/>
+<size>128</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.cpp' l='69' c='_ZN3JSC15JITDisassembler16reportToProfilerEPNS_8Profiler11CompilationERNS_10LinkBufferE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITDisassembler.cpp' l='148' c='_ZN3JSC15JITDisassembler18reportInstructionsEPNS_8Profiler11CompilationERNS_10LinkBufferEPKcRN3WTF6VectorINS_22AbstractMacroAssemblerINS_12X86Assemble6264508'/>
+<size>128</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.h' l='73' c='_ZN3JSC3DFG12Disassembler16reportToProfilerEPNS_8Profiler11CompilationERNS_10LinkBufferE'/>
+<size>128</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSRExit.cpp' l='198' c='_ZN3JSC3DFG23operationCompileOSRExitEPNS_9CallFrameEPv'/>
+<size>128</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPlan.cpp' l='134' c='_ZN3JSC3DFG4PlanC1EPNS_9CodeBlockES3_NS_18JITCompilationModeENS_13BytecodeIndexERKNS_8OperandsISt8optionalINS_7JSValueEEN3WTF6VectorIS9_Lm0ENSA_20Unsa8993005'/>
+<size>128</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGDisassembler.cpp' l='58' c='_ZN3JSC3DFG12Disassembler16reportToProfilerEPNS_8Profiler11CompilationERNS_10LinkBufferE'/>
+<size>128</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='2242' c='_ZN3JSC9CodeBlock8jettisonENS_8Profiler14JettisonReasonENS_18ReoptimizationModeEPKNS_10FireDetailE'/>
+<size>128</size>

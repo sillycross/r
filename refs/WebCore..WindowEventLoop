@@ -1,0 +1,55 @@
+<use f='WebKit/Source/WebCore/dom/MutationObserver.h' l='115' c='_ZN7WebCore16MutationObserver23notifyMutationObserversERNS_15WindowEventLoopE'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='1084' c='_ZN7WebCore8Document15windowEventLoopEv'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='2155'/>
+<inh f='WebKit/Source/WebCore/dom/EventLoop.h' l='65' c='WebCore::EventLoop'/>
+<def f='WebKit/Source/WebCore/dom/WindowEventLoop.h' l='43' ll='85'/>
+<use f='WebKit/Source/WebCore/dom/WindowEventLoop.h' l='45' c='_ZN7WebCore15WindowEventLoop26eventLoopForSecurityOriginERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/dom/WindowEventLoop.h' l='59' c='_ZN7WebCore15WindowEventLoop6createERKN3WTF6StringE'/>
+<size>208</size>
+<doc f='WebKit/Source/WebCore/dom/WindowEventLoop.h' l='42'>// https://html.spec.whatwg.org/multipage/webappapis.html#window-event-loop</doc>
+<fun r='_ZN7WebCore15WindowEventLoop26eventLoopForSecurityOriginERKNS_14SecurityOriginE'/>
+<fun r='_ZN7WebCore15WindowEventLoopD1Ev'/>
+<fun r='_ZN7WebCore15WindowEventLoop38queueMutationObserverCompoundMicrotaskEv'/>
+<fun r='_ZN7WebCore15WindowEventLoop14signalSlotListEv'/>
+<fun r='_ZN7WebCore15WindowEventLoop23activeMutationObserversEv'/>
+<fun r='_ZN7WebCore15WindowEventLoop26suspendedMutationObserversEv'/>
+<fun r='_ZN7WebCore15WindowEventLoop18backupElementQueueEv'/>
+<fun r='_ZN7WebCore15WindowEventLoop27breakToAllowRenderingUpdateEv'/>
+<fun r='_ZN7WebCore15WindowEventLoop6createERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore15WindowEventLoopC1ERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore15WindowEventLoop13scheduleToRunEv'/>
+<fun r='_ZNK7WebCore15WindowEventLoop15isContextThreadEv'/>
+<fun r='_ZN7WebCore15WindowEventLoop14microtaskQueueEv'/>
+<fun r='_ZN7WebCore15WindowEventLoop17didReachTimeToRunEv'/>
+<mbr r='WebCore::WindowEventLoop::m_agentClusterKey' o='512' t='WTF::String'/>
+<mbr r='WebCore::WindowEventLoop::m_timer' o='576' t='WebCore::Timer'/>
+<mbr r='WebCore::WindowEventLoop::m_microtaskQueue' o='960' t='std::unique_ptr&lt;MicrotaskQueue&gt;'/>
+<mbr r='WebCore::WindowEventLoop::m_perpetualTaskGroupForSimilarOriginWindowAgents' o='1024' t='WebCore::EventLoopTaskGroup'/>
+<mbr r='WebCore::WindowEventLoop::m_mutationObserverCompoundMicrotaskQueuedFlag' o='1216' t='bool'/>
+<mbr r='WebCore::WindowEventLoop::m_deliveringMutationRecords' o='1224' t='bool'/>
+<mbr r='WebCore::WindowEventLoop::m_signalSlotList' o='1280' t='Vector&lt;GCReachableRef&lt;WebCore::HTMLSlotElement&gt; &gt;'/>
+<mbr r='WebCore::WindowEventLoop::m_activeObservers' o='1408' t='HashSet&lt;RefPtr&lt;WebCore::MutationObserver&gt; &gt;'/>
+<mbr r='WebCore::WindowEventLoop::m_suspendedObservers' o='1472' t='HashSet&lt;RefPtr&lt;WebCore::MutationObserver&gt; &gt;'/>
+<mbr r='WebCore::WindowEventLoop::m_customElementQueue' o='1536' t='std::unique_ptr&lt;CustomElementQueue&gt;'/>
+<mbr r='WebCore::WindowEventLoop::m_processingBackupElementQueue' o='1600' t='bool'/>
+<use f='WebKit/Source/WebCore/dom/MutationObserver.cpp' l='226' c='_ZN7WebCore16MutationObserver23notifyMutationObserversERNS_15WindowEventLoopE'/>
+<size>208</size>
+<use f='WebKit/Source/WebCore/dom/WindowEventLoop.cpp' l='41' c='_ZN7WebCoreL18windowEventLoopMapEv'/>
+<use f='WebKit/Source/WebCore/dom/WindowEventLoop.cpp' l='44' c='_ZN7WebCoreL18windowEventLoopMapEv'/>
+<use f='WebKit/Source/WebCore/dom/WindowEventLoop.cpp' l='65' c='_ZN7WebCore15WindowEventLoop26eventLoopForSecurityOriginERKNS_14SecurityOriginE'/>
+<use f='WebKit/Source/WebCore/dom/WindowEventLoop.cpp' l='80' c='_ZN7WebCore15WindowEventLoop6createERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/dom/WindowEventLoop.cpp' l='82' c='_ZN7WebCore15WindowEventLoop6createERKN3WTF6StringE'/>
+<size>208</size>
+<fun r='_ZN7WebCore15WindowEventLoop26eventLoopForSecurityOriginERKNS_14SecurityOriginE'/>
+<fun r='_ZN7WebCore15WindowEventLoop6createERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore15WindowEventLoopC1ERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore15WindowEventLoopD1Ev'/>
+<fun r='_ZN7WebCore15WindowEventLoop13scheduleToRunEv'/>
+<fun r='_ZNK7WebCore15WindowEventLoop15isContextThreadEv'/>
+<fun r='_ZN7WebCore15WindowEventLoop14microtaskQueueEv'/>
+<fun r='_ZN7WebCore15WindowEventLoop17didReachTimeToRunEv'/>
+<fun r='_ZN7WebCore15WindowEventLoop38queueMutationObserverCompoundMicrotaskEv'/>
+<fun r='_ZN7WebCore15WindowEventLoop18backupElementQueueEv'/>
+<fun r='_ZN7WebCore15WindowEventLoop27breakToAllowRenderingUpdateEv'/>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='6550' c='_ZN7WebCore8Document15windowEventLoopEv'/>
+<size>208</size>

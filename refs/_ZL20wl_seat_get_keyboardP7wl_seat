@@ -1,0 +1,12 @@
+<def f='include/wayland-client-protocol.h' l='4088' ll='4097' type='struct wl_keyboard * wl_seat_get_keyboard(struct wl_seat * wl_seat)'/>
+<doc f='include/wayland-client-protocol.h' l='4077'>/**
+ * @ingroup iface_wl_seat
+ *
+ * The ID provided will be initialized to the wl_keyboard interface
+ * for this seat.
+ *
+ * This request only takes effect if the seat has the keyboard
+ * capability, or has had the keyboard capability in the past.
+ * It is a protocol violation to issue this request on a seat that has
+ * never had the keyboard capability.
+ */</doc>

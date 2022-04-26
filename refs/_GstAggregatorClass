@@ -1,0 +1,115 @@
+<use f='include/gstreamer-1.0/gst/base/gstaggregator.h' l='35'/>
+<def f='include/gstreamer-1.0/gst/base/gstaggregator.h' l='251' ll='316'/>
+<size>792</size>
+<doc f='include/gstreamer-1.0/gst/base/gstaggregator.h' l='159'>/**
+ * GstAggregatorClass:
+ * @flush:          Optional.
+ *                  Called after a successful flushing seek, once all the flush
+ *                  stops have been received. Flush pad-specific data in
+ *                  #GstAggregatorPad-&gt;flush.
+ * @clip:           Optional.
+ *                  Called when a buffer is received on a sink pad, the task of
+ *                  clipping it and translating it to the current segment falls
+ *                  on the subclass. The function should use the segment of data
+ *                  and the negotiated media type on the pad to perform
+ *                  clipping of input buffer. This function takes ownership of
+ *                  buf and should output a buffer or return NULL in
+ *                  if the buffer should be dropped.
+ * @finish_buffer:  Optional.
+ *                  Called when a subclass calls gst_aggregator_finish_buffer()
+ *                  from their aggregate function to push out a buffer.
+ *                  Subclasses can override this to modify or decorate buffers
+ *                  before they get pushed out. This function takes ownership
+ *                  of the buffer passed. Subclasses that override this method
+ *                  should always chain up to the parent class virtual method.
+ * @sink_event:     Optional.
+ *                  Called when an event is received on a sink pad, the subclass
+ *                  should always chain up.
+ * @sink_query:     Optional.
+ *                  Called when a query is received on a sink pad, the subclass
+ *                  should always chain up.
+ * @src_event:      Optional.
+ *                  Called when an event is received on the src pad, the subclass
+ *                  should always chain up.
+ * @src_query:      Optional.
+ *                  Called when a query is received on the src pad, the subclass
+ *                  should always chain up.
+ * @src_activate:   Optional.
+ *                  Called when the src pad is activated, it will start/stop its
+ *                  pad task right after that call.
+ * @aggregate:      Mandatory.
+ *                  Called when buffers are queued on all sinkpads. Classes
+ *                  should iterate the GstElement-&gt;sinkpads and peek or steal
+ *                  buffers from the #GstAggregatorPads. If the subclass returns
+ *                  GST_FLOW_EOS, sending of the eos event will be taken care
+ *                  of. Once / if a buffer has been constructed from the
+ *                  aggregated buffers, the subclass should call _finish_buffer.
+ * @stop:           Optional.
+ *                  Called when the element goes from PAUSED to READY.
+ *                  The subclass should free all resources and reset its state.
+ * @start:          Optional.
+ *                  Called when the element goes from READY to PAUSED.
+ *                  The subclass should get ready to process
+ *                  aggregated buffers.
+ * @get_next_time:  Optional.
+ *                  Called when the element needs to know the running time of the next
+ *                  rendered buffer for live pipelines. This causes deadline
+ *                  based aggregation to occur. Defaults to returning
+ *                  GST_CLOCK_TIME_NONE causing the element to wait for buffers
+ *                  on all sink pads before aggregating.
+ * @create_new_pad: Optional.
+ *                  Called when a new pad needs to be created. Allows subclass that
+ *                  don&apos;t have a single sink pad template to provide a pad based
+ *                  on the provided information.
+ * @update_src_caps: Lets subclasses update the #GstCaps representing
+ *                   the src pad caps before usage.  The result should end up
+ *                   in @ret. Return %GST_AGGREGATOR_FLOW_NEED_DATA to indicate that the
+ *                   element needs more information (caps, a buffer, etc) to
+ *                   choose the correct caps. Should return ANY caps if the
+ *                   stream has not caps at all.
+ * @fixate_src_caps: Optional.
+ *                   Fixate and return the src pad caps provided.  The function takes
+ *                   ownership of @caps and returns a fixated version of
+ *                   @caps. @caps is not guaranteed to be writable.
+ * @negotiated_src_caps: Optional.
+ *                       Notifies subclasses what caps format has been negotiated
+ * @decide_allocation: Optional.
+ *                     Allows the subclass to influence the allocation choices.
+ *                     Setup the allocation parameters for allocating output
+ *                     buffers. The passed in query contains the result of the
+ *                     downstream allocation query.
+ * @propose_allocation: Optional.
+ *                     Allows the subclass to handle the allocation query from upstream.
+ *
+ * The aggregator base class will handle in a thread-safe way all manners of
+ * concurrent flushes, seeks, pad additions and removals, leaving to the
+ * subclass the responsibility of clipping buffers, and aggregating buffers in
+ * the way the implementor sees fit.
+ *
+ * It will also take care of event ordering (stream-start, segment, eos).
+ *
+ * Basically, a simple implementation will override @aggregate, and call
+ * _finish_buffer from inside that function.
+ *
+ * Since: 1.14
+ */</doc>
+<mbr r='_GstAggregatorClass::parent_class' o='0' t='GstElementClass'/>
+<mbr r='_GstAggregatorClass::flush' o='3904' t='GstFlowReturn (*)(GstAggregator *)'/>
+<mbr r='_GstAggregatorClass::clip' o='3968' t='GstBuffer *(*)(GstAggregator *, GstAggregatorPad *, GstBuffer *)'/>
+<mbr r='_GstAggregatorClass::finish_buffer' o='4032' t='GstFlowReturn (*)(GstAggregator *, GstBuffer *)'/>
+<mbr r='_GstAggregatorClass::sink_event' o='4096' t='gboolean (*)(GstAggregator *, GstAggregatorPad *, GstEvent *)'/>
+<mbr r='_GstAggregatorClass::sink_query' o='4160' t='gboolean (*)(GstAggregator *, GstAggregatorPad *, GstQuery *)'/>
+<mbr r='_GstAggregatorClass::src_event' o='4224' t='gboolean (*)(GstAggregator *, GstEvent *)'/>
+<mbr r='_GstAggregatorClass::src_query' o='4288' t='gboolean (*)(GstAggregator *, GstQuery *)'/>
+<mbr r='_GstAggregatorClass::src_activate' o='4352' t='gboolean (*)(GstAggregator *, GstPadMode, gboolean)'/>
+<mbr r='_GstAggregatorClass::aggregate' o='4416' t='GstFlowReturn (*)(GstAggregator *, gboolean)'/>
+<mbr r='_GstAggregatorClass::stop' o='4480' t='gboolean (*)(GstAggregator *)'/>
+<mbr r='_GstAggregatorClass::start' o='4544' t='gboolean (*)(GstAggregator *)'/>
+<mbr r='_GstAggregatorClass::get_next_time' o='4608' t='GstClockTime (*)(GstAggregator *)'/>
+<mbr r='_GstAggregatorClass::create_new_pad' o='4672' t='GstAggregatorPad *(*)(GstAggregator *, GstPadTemplate *, const gchar *, const GstCaps *)'/>
+<mbr r='_GstAggregatorClass::update_src_caps' o='4736' t='GstFlowReturn (*)(GstAggregator *, GstCaps *, GstCaps **)'/>
+<mbr r='_GstAggregatorClass::fixate_src_caps' o='4800' t='GstCaps *(*)(GstAggregator *, GstCaps *)'/>
+<mbr r='_GstAggregatorClass::negotiated_src_caps' o='4864' t='gboolean (*)(GstAggregator *, GstCaps *)'/>
+<mbr r='_GstAggregatorClass::decide_allocation' o='4928' t='gboolean (*)(GstAggregator *, GstQuery *)'/>
+<mbr r='_GstAggregatorClass::propose_allocation' o='4992' t='gboolean (*)(GstAggregator *, GstAggregatorPad *, GstQuery *, GstQuery *)'/>
+<mbr r='_GstAggregatorClass::_gst_reserved' o='5056' t='gpointer [20]'/>

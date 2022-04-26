@@ -1,0 +1,43 @@
+<dec f='include/freetype2/freetype/tttables.h' l='687' type='void * FT_Get_Sfnt_Table(FT_Face face, FT_Sfnt_Tag tag)'/>
+<doc f='include/freetype2/freetype/tttables.h' l='646'>/**************************************************************************
+   *
+   * @function:
+   *   FT_Get_Sfnt_Table
+   *
+   * @description:
+   *   Return a pointer to a given SFNT table stored within a face.
+   *
+   * @input:
+   *   face ::
+   *     A handle to the source.
+   *
+   *   tag ::
+   *     The index of the SFNT table.
+   *
+   * @return:
+   *   A type-less pointer to the table.  This will be `NULL` in case of
+   *   error, or if the corresponding table was not found **OR** loaded from
+   *   the file.
+   *
+   *   Use a typecast according to `tag` to access the structure elements.
+   *
+   * @note:
+   *   The table is owned by the face object and disappears with it.
+   *
+   *   This function is only useful to access SFNT tables that are loaded by
+   *   the sfnt, truetype, and opentype drivers.  See @FT_Sfnt_Tag for a
+   *   list.
+   *
+   * @example:
+   *   Here is an example demonstrating access to the &apos;vhea&apos; table.
+   *
+   *   ```
+   *     TT_VertHeader*  vert_header;
+   *
+   *
+   *     vert_header =
+   *       (TT_VertHeader*)FT_Get_Sfnt_Table( face, FT_SFNT_VHEA );
+   *   ```
+   */</doc>
+<use f='WebKit/Source/WebCore/platform/graphics/freetype/SimpleFontDataFreeType.cpp' l='94' u='c' c='_ZN7WebCoreL14fontUnitsPerEmEP11FT_FaceRec_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/freetype/SimpleFontDataFreeType.cpp' l='129' u='c' c='_ZN7WebCore4Font12platformInitEv'/>

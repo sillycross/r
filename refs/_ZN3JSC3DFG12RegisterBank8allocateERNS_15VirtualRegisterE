@@ -1,0 +1,14 @@
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGRegisterBank.h' l='108' ll='140' type='JSC::DFG::RegisterBank::RegID JSC::DFG::RegisterBank::allocate(JSC::VirtualRegister &amp; spillMe)'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='236' u='c' c='_ZN3JSC3DFG14SpeculativeJIT8allocateEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h' l='274' u='c' c='_ZN3JSC3DFG14SpeculativeJIT11fprAllocateEv'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGRegisterBank.h' l='97'>// Allocate a register - this function finds an unlocked register,
+    // locks it, and returns it. If any named registers exist, one
+    // of these should be selected to be allocated. If all unlocked
+    // registers are named, then one of the named registers will need
+    // to be spilled. In this case the register selected to be spilled
+    // will be one of the registers that has the lowest &apos;spillOrder&apos;
+    // cost associated with it.
+    //
+    // This method select the register to be allocated, and calls the
+    // private &apos;allocateInternal&apos; method to update internal data
+    // structures accordingly.</doc>

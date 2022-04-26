@@ -1,0 +1,32 @@
+<dec f='include/wayland-util.h' l='442'/>
+<use f='include/wayland-server-core.h' l='458' u='c'/>
+<doc f='include/wayland-util.h' l='412'>/**
+ * Iterates over a list.
+ *
+ * This macro expresses a for-each iterator for wl_list. Given a list and
+ * wl_list link member name (often named `link` by convention), this macro
+ * assigns each element in the list to \p pos, which can then be referenced in
+ * a trailing code block. For example, given a wl_list of `struct message`
+ * elements:
+ *
+ * \code
+ * struct message {
+ *         char *contents;
+ *         wl_list link;
+ * };
+ *
+ * struct wl_list *message_list;
+ * // Assume message_list now &quot;contains&quot; many messages
+ *
+ * struct message *m;
+ * wl_list_for_each(m, message_list, link) {
+ *         do_something_with_message(m);
+ * }
+ * \endcode
+ *
+ * \param pos Cursor that each list element will be assigned to
+ * \param head Head of the list to iterate over
+ * \param member Name of the link member within the element struct
+ *
+ * \relates wl_list
+ */</doc>

@@ -1,0 +1,13 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitDownload.cpp' l='523' ll='528' type='_WebKitURIResponse * webkit_download_get_response(WebKitDownload * download)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitDownload.cpp' l='511'>/**
+ * webkit_download_get_response:
+ * @download: a #WebKitDownload
+ *
+ * Retrieves the #WebKitURIResponse object that backs the download
+ * process. This method returns %NULL if called before the response
+ * is received from the server. You can connect to notify::response
+ * signal to be notified when the response is received.
+ *
+ * Returns: (transfer none): the #WebKitURIResponse, or %NULL if
+ *     the response hasn&apos;t been received yet.
+ */</doc>

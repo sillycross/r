@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebCore/platform/network/DNSResolveQueue.h' l='57' type='bool WebCore::DNSResolveQueue::isUsingProxy()'/>
+<def f='WebKit/Source/WebCore/platform/network/DNSResolveQueue.cpp' l='81' ll='90' type='bool WebCore::DNSResolveQueue::isUsingProxy()'/>
+<use f='WebKit/Source/WebCore/platform/network/DNSResolveQueue.cpp' l='96' u='c' c='_ZN7WebCore15DNSResolveQueue3addERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/platform/network/DNSResolveQueue.cpp' l='116' u='c' c='_ZN7WebCore15DNSResolveQueue10timerFiredEv'/>
+<doc f='WebKit/Source/WebCore/platform/network/DNSResolveQueue.cpp' l='77'>// Don&apos;t do DNS prefetch if proxies are involved. For many proxy types, the user agent is never
+// exposed to the IP address during normal operation. Querying an internal DNS server may not help
+// performance, as it doesn&apos;t necessarily look up the actual external IP. Also, if DNS returns a
+// fake internal address, local caches may keep it even after re-connecting to another network.</doc>

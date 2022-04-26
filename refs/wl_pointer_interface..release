@@ -1,0 +1,12 @@
+<dec f='include/wayland-server-protocol.h' l='3504' type='void (*)(struct wl_client *, struct wl_resource *)'/>
+<offset>64</offset>
+<doc f='include/wayland-server-protocol.h' l='3494'>/**
+	 * release the pointer object
+	 *
+	 * Using this request a client can tell the server that it is not
+	 * going to use the pointer object anymore.
+	 *
+	 * This request destroys the pointer proxy object, so clients must
+	 * not call wl_pointer_destroy() after using this request.
+	 * @since 3
+	 */</doc>

@@ -1,0 +1,10 @@
+<def f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='3511' ll='3557' type='void JSC::Yarr::YarrGenerator::opCompileParentheticalAssertion(JSC::Yarr::PatternTerm * term)'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='3574' u='c' c='_ZN3JSC4Yarr13YarrGenerator20opCompileAlternativeEPNS0_18PatternAlternativeE'/>
+<doc f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='3503'>// opCompileParentheticalAssertion
+    // Emits ops for a parenthetical assertion. These consist of an
+    // YarrOpCode::SimpleNestedAlternativeBegin/Next/End set of nodes wrapping
+    // the alternatives, with these wrapped by an outer pair of
+    // YarrOpCode::ParentheticalAssertionBegin/End nodes.
+    // We can always use the OpSimpleNestedAlternative nodes in the
+    // case of parenthetical assertions since these only ever match
+    // once, and will never backtrack back into the assertion.</doc>

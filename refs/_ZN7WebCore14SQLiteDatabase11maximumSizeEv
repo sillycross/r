@@ -1,0 +1,6 @@
+<dec f='WebKit/Source/WebCore/platform/sql/SQLiteDatabase.h' l='105' type='int64_t WebCore::SQLiteDatabase::maximumSize()'/>
+<doc f='WebKit/Source/WebCore/platform/sql/SQLiteDatabase.h' l='101'>// Gets/sets the maximum size in bytes
+    // Depending on per-database attributes, the size will only be settable in units that are the page size of the database, which is established at creation
+    // These chunks will never be anything other than 512, 1024, 2048, 4096, 8192, 16384, or 32768 bytes in size.
+    // setMaximumSize() will round the size down to the next smallest chunk if the passed size doesn&apos;t align.</doc>
+<def f='WebKit/Source/WebCore/platform/sql/SQLiteDatabase.cpp' l='277' ll='290' type='int64_t WebCore::SQLiteDatabase::maximumSize()'/>

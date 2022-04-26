@@ -1,0 +1,14 @@
+<def f='WebKit/Source/WebCore/platform/graphics/filters/FETurbulence.cpp' l='45' type='const int'/>
+<use f='WebKit/Source/WebCore/platform/graphics/filters/FETurbulence.cpp' l='212' u='r' c='_ZNK7WebCore12FETurbulence16computeStitchingENS_7IntSizeERfS2_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/filters/FETurbulence.cpp' l='214' u='r' c='_ZNK7WebCore12FETurbulence16computeStitchingENS_7IntSizeERfS2_'/>
+<use f='WebKit/Source/WebCore/platform/graphics/filters/FETurbulence.cpp' l='233' u='r' c='_ZZNK7WebCore12FETurbulence7noise2DERKNS0_12PaintingDataERKNS0_10StitchDataERKNS_10FloatPointEEN13NoisePositionC1Ef'/>
+<use f='WebKit/Source/WebCore/platform/graphics/filters/FETurbulence.cpp' l='355' u='r' c='_ZNK7WebCore12FETurbulence32calculateTurbulenceValueForPointERKNS0_12PaintingDataENS0_10StitchDataERKNS_10FloatPointE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/filters/FETurbulence.cpp' l='357' u='r' c='_ZNK7WebCore12FETurbulence32calculateTurbulenceValueForPointERKNS0_12PaintingDataENS0_10StitchDataERKNS_10FloatPointE'/>
+<doc f='WebKit/Source/WebCore/platform/graphics/filters/FETurbulence.cpp' l='37'>/*
+    Produces results in the range [1, 2**31 - 2]. Algorithm is:
+    r = (a * r) mod m where a = randAmplitude = 16807 and
+    m = randMaximum = 2**31 - 1 = 2147483647, r = seed.
+    See [Park &amp; Miller], CACM vol. 31 no. 10 p. 1195, Oct. 1988
+    To test: the algorithm should produce the result 1043618065
+    as the 10,000th generated number if the original seed is 1.
+*/</doc>

@@ -1,0 +1,32 @@
+<dec f='WebKit/Source/WebCore/editing/Editing.h' l='82' type='bool WebCore::editingIgnoresContent(const WebCore::Node &amp; )'/>
+<def f='WebKit/Source/WebCore/editing/Editing.h' l='221' ll='224' type='bool WebCore::editingIgnoresContent(const WebCore::Node &amp; node)'/>
+<use f='WebKit/Source/WebCore/editing/Editing.h' l='228' u='c' c='_ZN7WebCore36positionBeforeOrAfterNodeIsCandidateERNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.h' l='235' u='c' c='_ZN7WebCore27firstPositionInOrBeforeNodeEPNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.h' l='242' u='c' c='_ZN7WebCore25lastPositionInOrAfterNodeEPNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/rendering/CaretRectComputation.cpp' l='254' u='c' c='_ZN7WebCoreL22computeCaretRectForBoxERKNS_9RenderBoxERKNS_18InlineRunAndOffsetENS_13CaretRectModeE'/>
+<doc f='WebKit/Source/WebCore/editing/Editing.h' l='78'>// FIXME: editingIgnoresContent, canHaveChildrenForEditing, and isAtomicNode should be named to clarify how they differ.
+
+// Returns true for nodes that either have no content, or have content that is ignored (skipped over) while editing.
+// There are no VisiblePositions inside these nodes.</doc>
+<use f='WebKit/Source/WebCore/dom/Position.cpp' l='247' u='c' c='_ZNK7WebCore8Position24parentAnchoredEquivalentEv'/>
+<use f='WebKit/Source/WebCore/dom/Position.cpp' l='254' u='c' c='_ZNK7WebCore8Position24parentAnchoredEquivalentEv'/>
+<use f='WebKit/Source/WebCore/dom/Position.cpp' l='320' u='c' c='_ZN7WebCore8Position34anchorTypeForLegacyEditingPositionEPNS_4NodeEj'/>
+<use f='WebKit/Source/WebCore/dom/Position.cpp' l='427' u='c' c='_ZNK7WebCore8Position4nextENS_16PositionMoveTypeE'/>
+<use f='WebKit/Source/WebCore/dom/Position.cpp' l='732' u='c' c='_ZNK7WebCore8Position8upstreamENS_27EditingBoundaryCrossingRuleE'/>
+<use f='WebKit/Source/WebCore/dom/Position.cpp' l='839' u='c' c='_ZNK7WebCore8Position10downstreamENS_27EditingBoundaryCrossingRuleE'/>
+<use f='WebKit/Source/WebCore/dom/Position.cpp' l='1575' u='c' c='_ZN7WebCore26positionInParentBeforeNodeEPNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/Position.cpp' l='1586' u='c' c='_ZN7WebCore25positionInParentAfterNodeEPNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/dom/PositionIterator.cpp' l='164' u='c' c='_ZNK7WebCore16PositionIterator11isCandidateEv'/>
+<use f='WebKit/Source/WebCore/editing/ApplyStyleCommand.cpp' l='788' u='c' c='_ZN7WebCore17ApplyStyleCommand27applyInlineStyleToNodeRangeERNS_12EditingStyleERNS_4NodeEPS3_'/>
+<use f='WebKit/Source/WebCore/editing/ApplyStyleCommand.cpp' l='856' u='c' c='_ZN7WebCore17ApplyStyleCommand35removeConflictingInlineStyleFromRunERNS_12EditingStyleERN3WTF6RefPtrINS_4NodeENS3_12RawPtrTraitsIS5_EENS3_21DefaultRef11360873'/>
+<use f='WebKit/Source/WebCore/editing/ApplyStyleCommand.cpp' l='1108' u='c' c='_ZN7WebCore17ApplyStyleCommand17removeInlineStyleERNS_12EditingStyleERKNS_8PositionES5_'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='79' u='c' c='_ZN7WebCore12isAtomicNodeEPKNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='348' u='c' c='_ZN7WebCore20lastOffsetForEditingERKNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/editing/Editing.cpp' l='1151' u='c' c='_ZN7WebCoreL22caretRendersInsideNodeERKNS_4NodeE'/>
+<use f='WebKit/Source/WebCore/editing/InsertParagraphSeparatorCommand.cpp' l='336' u='c' c='_ZN7WebCore31InsertParagraphSeparatorCommand7doApplyEv'/>
+<use f='WebKit/Source/WebCore/editing/ReplaceSelectionCommand.cpp' l='132' u='c' c='_ZN7WebCoreL30positionAvoidingPrecedingNodesENS_8PositionE'/>
+<use f='WebKit/Source/WebCore/editing/VisibleUnits.cpp' l='986' u='c' c='_ZN7WebCore20previousLinePositionERKNS_15VisiblePositionEiNS_12EditableTypeE'/>
+<use f='WebKit/Source/WebCore/editing/VisibleUnits.cpp' l='1039' u='c' c='_ZN7WebCore16nextLinePositionERKNS_15VisiblePositionEiNS_12EditableTypeE'/>
+<use f='WebKit/Source/WebCore/editing/VisibleUnits.cpp' l='1147' u='c' c='_ZN7WebCore20findStartOfParagraphEPNS_4NodeES1_S1_RiRNS_8Position10AnchorTypeENS_27EditingBoundaryCrossingRuleE'/>
+<use f='WebKit/Source/WebCore/editing/VisibleUnits.cpp' l='1205' u='c' c='_ZN7WebCore18findEndOfParagraphEPNS_4NodeES1_S1_RiRNS_8Position10AnchorTypeENS_27EditingBoundaryCrossingRuleE'/>
+<use f='WebKit/Source/WebCore/editing/markup.cpp' l='843' u='c' c='_ZN7WebCoreL27highestAncestorToWrapMarkupERKNS_8PositionES2_RNS_4NodeENS_22AnnotateForInterchangeE'/>

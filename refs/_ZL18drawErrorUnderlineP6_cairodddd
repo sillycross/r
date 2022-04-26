@@ -1,0 +1,22 @@
+<def f='WebKit/Source/WebCore/platform/graphics/cairo/DrawErrorUnderline.h' l='51' ll='102' type='void drawErrorUnderline(cairo_t * cr, double x, double y, double width, double height)'/>
+<use f='WebKit/Source/WebCore/platform/graphics/cairo/CairoOperations.cpp' l='1103' u='c' c='_ZN7WebCore5Cairo25drawDotsForDocumentMarkerERNS_20GraphicsContextCairoERKNS_9FloatRectENS_23DocumentMarkerLineStyleE'/>
+<doc f='WebKit/Source/WebCore/platform/graphics/cairo/DrawErrorUnderline.h' l='31'>//
+// Draws an error underline that looks like one of:
+//
+//              H       E                H
+//     /\      /\      /\        /\      /\               -
+//   A/  \    /  \    /  \     A/  \    /  \              |
+//    \   \  /    \  /   /D     \   \  /    \             |
+//     \   \/  C   \/   /        \   \/   C  \            | height = heightSquares * square
+//      \      /\  F   /          \  F   /\   \           |
+//       \    /  \    /            \    /  \   \G         |
+//        \  /    \  /              \  /    \  /          |
+//         \/      \/                \/      \/           -
+//         B                         B
+//         |---|
+//       unitWidth = (heightSquares - 1) * square
+//
+// The x, y, width, height passed in give the desired bounding box;
+// x/width are adjusted to make the underline a integer number of units
+// wide.
+//</doc>

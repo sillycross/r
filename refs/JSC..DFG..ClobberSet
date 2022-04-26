@@ -1,0 +1,60 @@
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.h' l='46' ll='75'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.h' l='54' c='_ZN3JSC3DFG10ClobberSet6addAllERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.h' l='79' c='_ZN3JSC3DFG13ClobberSetAddC1ERNS0_10ClobberSetE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.h' l='89'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.h' l='94' c='_ZN3JSC3DFG18ClobberSetOverlapsC1ERKNS0_10ClobberSetE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.h' l='108'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.h' l='112' c='_ZN3JSC3DFG8addReadsERNS0_5GraphEPNS0_4NodeERNS0_10ClobberSetE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.h' l='113' c='_ZN3JSC3DFG9addWritesERNS0_5GraphEPNS0_4NodeERNS0_10ClobberSetE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.h' l='114' c='_ZN3JSC3DFG17addReadsAndWritesERNS0_5GraphEPNS0_4NodeERNS0_10ClobberSetES6_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.h' l='114' c='_ZN3JSC3DFG17addReadsAndWritesERNS0_5GraphEPNS0_4NodeERNS0_10ClobberSetES6_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.h' l='116' c='_ZN3JSC3DFG8writeSetERNS0_5GraphEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.h' l='118' c='_ZN3JSC3DFG12readsOverlapERNS0_5GraphEPNS0_4NodeERNS0_10ClobberSetE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.h' l='119' c='_ZN3JSC3DFG13writesOverlapERNS0_5GraphEPNS0_4NodeERNS0_10ClobberSetE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='961'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='975'/>
+<size>8</size>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.h' l='40'>// FIXME: If we ever want to compare if two nodes clobber each other, we should
+// have a SmallClobberSet, which just keeps an array of the AbstractHeaps and
+// satisfies overlaps() requests by looping over all of them. This will probably
+// be faster than a full HashMap in a lot of cases. Or, maybe, we could have
+// ClobberSet be smart and use a vector so long as it was small.</doc>
+<fun r='_ZN3JSC3DFG10ClobberSetC1Ev'/>
+<fun r='_ZN3JSC3DFG10ClobberSetD1Ev'/>
+<fun r='_ZNK3JSC3DFG10ClobberSet7isEmptyEv'/>
+<fun r='_ZN3JSC3DFG10ClobberSet3addENS0_12AbstractHeapE'/>
+<fun r='_ZN3JSC3DFG10ClobberSet6addAllERKS1_'/>
+<fun r='_ZNK3JSC3DFG10ClobberSet8overlapsENS0_12AbstractHeapE'/>
+<fun r='_ZN3JSC3DFG10ClobberSet5clearEv'/>
+<fun r='_ZNK3JSC3DFG10ClobberSet6directEv'/>
+<fun r='_ZNK3JSC3DFG10ClobberSet5superEv'/>
+<fun r='_ZNK3JSC3DFG10ClobberSet4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZNK3JSC3DFG10ClobberSet8containsENS0_12AbstractHeapE'/>
+<fun r='_ZNK3JSC3DFG10ClobberSet5setOfEb'/>
+<mbr r='JSC::DFG::ClobberSet::m_clobbers' o='0' t='HashMap&lt;JSC::DFG::AbstractHeap, bool&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.cpp' l='55' c='_ZN3JSC3DFG10ClobberSet6addAllERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.cpp' l='139' c='_ZN3JSC3DFG8addReadsERNS0_5GraphEPNS0_4NodeERNS0_10ClobberSetE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.cpp' l='146' c='_ZN3JSC3DFG9addWritesERNS0_5GraphEPNS0_4NodeERNS0_10ClobberSetE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.cpp' l='153' c='_ZN3JSC3DFG17addReadsAndWritesERNS0_5GraphEPNS0_4NodeERNS0_10ClobberSetES6_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.cpp' l='153' c='_ZN3JSC3DFG17addReadsAndWritesERNS0_5GraphEPNS0_4NodeERNS0_10ClobberSetES6_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.cpp' l='161' c='_ZN3JSC3DFG8writeSetERNS0_5GraphEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.cpp' l='163' c='_ZN3JSC3DFG8writeSetERNS0_5GraphEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.cpp' l='168' c='_ZN3JSC3DFG12readsOverlapERNS0_5GraphEPNS0_4NodeERNS0_10ClobberSetE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGClobberSet.cpp' l='176' c='_ZN3JSC3DFG13writesOverlapERNS0_5GraphEPNS0_4NodeERNS0_10ClobberSetE'/>
+<size>8</size>
+<fun r='_ZN3JSC3DFG10ClobberSetC1Ev'/>
+<fun r='_ZN3JSC3DFG10ClobberSetD1Ev'/>
+<fun r='_ZN3JSC3DFG10ClobberSet3addENS0_12AbstractHeapE'/>
+<fun r='_ZN3JSC3DFG10ClobberSet6addAllERKS1_'/>
+<fun r='_ZNK3JSC3DFG10ClobberSet8containsENS0_12AbstractHeapE'/>
+<fun r='_ZNK3JSC3DFG10ClobberSet8overlapsENS0_12AbstractHeapE'/>
+<fun r='_ZN3JSC3DFG10ClobberSet5clearEv'/>
+<fun r='_ZNK3JSC3DFG10ClobberSet6directEv'/>
+<fun r='_ZNK3JSC3DFG10ClobberSet5superEv'/>
+<fun r='_ZNK3JSC3DFG10ClobberSet4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZNK3JSC3DFG10ClobberSet5setOfEb'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='406' c='_ZN3JSC3DFG5Graph4dumpERN3WTF11PrintStreamEPKcPNS0_4NodeEPNS_11DumpContextE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='407' c='_ZN3JSC3DFG5Graph4dumpERN3WTF11PrintStreamEPKcPNS0_4NodeEPNS_11DumpContextE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGLICMPhase.cpp' l='52'/>
+<size>8</size>

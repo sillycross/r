@@ -1,0 +1,49 @@
+<def f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='58' ll='515'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='518'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='519'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='873'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='874'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocatorC1ERNS1_4CodeERKN3WTF6VectorINS_3RegELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEET_jRKNS64626996'/>
+<fun r='_ZNK3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator10tmpToIndexENS1_3TmpE'/>
+<fun r='_ZNK3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator13registerCountEv'/>
+<fun r='_ZNK3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator8getAliasET_'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator7addEdgeET_S4_'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator10addToSpillEj'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator12isPrecoloredET_'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator17initializeDegreesEj'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator15addEdgeDistinctET_S4_'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator34addEdgeDistinctWithoutDegreeChangeET_S4_'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator15forEachAdjacentET_T_'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator17hasBeenSimplifiedET_'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator20canBeSafelyCoalescedET_S4_'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator21conservativeHeuristicET_S4_'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator29precoloredCoalescingHeuristicET_S4_'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator7addBiasET_S4_'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator11selectSpillEv'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator12assignColorsEv'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator19addInterferenceEdgeET_S4_'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator19hasInterferenceEdgeET_S4_'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator22clearInterferenceEdgesEv'/>
+<fun r='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocator26dumpInterferenceGraphInDotERN3WTF11PrintStreamE'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_regsInPriorityOrder' t='Vector&lt;JSC::Reg&gt;'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_lastPrecoloredRegisterIndex' t='IndexType'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_interferenceEdges' t='InterferenceSet'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_adjacencyList' t='Vector&lt;Vector&lt;IndexType, 0, WTF::UnsafeVectorOverflow, 4&gt;, 0, WTF::UnsafeVectorOverflow&gt;'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_degrees' t='Vector&lt;IndexType, 0, WTF::UnsafeVectorOverflow&gt;'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_biases' t='HashMap&lt;IndexType, JSC::B3::Air::(anonymous namespace)::AbstractColoringAllocator::IndexTypeSet, DefaultHash&lt;IndexType&gt;, WTF::UnsignedWithZeroKeyHashTraits&lt;IndexType&gt; &gt;'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_coalescingCandidates' t='Vector&lt;JSC::B3::Air::(anonymous namespace)::AbstractColoringAllocator::MoveOperands, 0, WTF::UnsafeVectorOverflow&gt;'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_moveList' t='Vector&lt;SmallSet&lt;unsigned int, IntHash&lt;unsigned int&gt; &gt; &gt;'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_coloredTmp' t='Vector&lt;JSC::Reg, 0, WTF::UnsafeVectorOverflow&gt;'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_spilledTmps' t='Vector&lt;IndexType&gt;'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_coalescedTmps' t='Vector&lt;IndexType, 0, WTF::UnsafeVectorOverflow&gt;'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_isOnSelectStack' t='WTF::BitVector'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_selectStack' t='Vector&lt;IndexType&gt;'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_simplifyWorklist' t='Vector&lt;IndexType&gt;'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_spillWorklist' t='WTF::BitVector'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_hasSelectedSpill' t='bool'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_hasCoalescedNonTrivialMove' t='bool'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_coalescedTmpsAtSpill' t='Vector&lt;IndexType, 0, WTF::UnsafeVectorOverflow&gt;'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_unspillableTmps' t='const WTF::BitVector &amp;'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_useCounts' t='const JSC::B3::Air::UseCounts &amp;'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_code' t='JSC::B3::Air::Code &amp;'/>
+<mbr r='JSC::B3::Air::(anonymousnamespace)::AbstractColoringAllocator::m_pinnedRegs' t='Vector&lt;JSC::B3::Air::Tmp, 4&gt;'/>

@@ -1,0 +1,18 @@
+<dec f='include/xcb/xcb.h' l='517' type='xcb_connection_t * xcb_connect_to_fd(int fd, xcb_auth_info_t * auth_info)'/>
+<doc f='include/xcb/xcb.h' l='500'>/**
+ * @brief Connects to the X server.
+ * @param fd The file descriptor.
+ * @param auth_info Authentication data.
+ * @return A newly allocated xcb_connection_t structure.
+ *
+ * Connects to an X server, given the open socket @p fd and the
+ * xcb_auth_info_t @p auth_info. The file descriptor @p fd is
+ * bidirectionally connected to an X server. If the connection
+ * should be unauthenticated, @p auth_info must be @c
+ * NULL.
+ *
+ * Always returns a non-NULL pointer to a xcb_connection_t, even on failure.
+ * Callers need to use xcb_connection_has_error() to check for failure.
+ * When finished, use xcb_disconnect() to close the connection and free
+ * the structure.
+ */</doc>

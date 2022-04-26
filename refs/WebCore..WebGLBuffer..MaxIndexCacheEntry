@@ -1,0 +1,12 @@
+<def f='WebKit/Source/WebCore/html/canvas/WebGLBuffer.h' l='84' ll='87'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLBuffer.h' l='90'/>
+<size>8</size>
+<doc f='WebKit/Source/WebCore/html/canvas/WebGLBuffer.h' l='77'>// Optimization for index validation. For each type of index
+    // (i.e., UNSIGNED_SHORT), cache the maximum index in the
+    // entire buffer.
+    //
+    // This is sufficient to eliminate a lot of work upon each
+    // draw call as long as all bound array buffers are at least
+    // that size.</doc>
+<mbr r='WebCore::WebGLBuffer::MaxIndexCacheEntry::type' o='0' t='GCGLenum'/>
+<mbr r='WebCore::WebGLBuffer::MaxIndexCacheEntry::maxIndex' o='32' t='unsigned int'/>

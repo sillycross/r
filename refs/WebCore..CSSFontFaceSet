@@ -1,0 +1,55 @@
+<inh f='WebKit/WTF/Headers/wtf/RefCounted.h' l='184' c='WTF::RefCounted'/>
+<inh f='WebKit/Source/WebCore/css/CSSFontFace.h' l='122' c='WebCore::CSSFontFace::Client'/>
+<def f='WebKit/Source/WebCore/css/CSSFontFaceSet.h' l='41' ll='128'/>
+<use f='WebKit/Source/WebCore/css/CSSFontFaceSet.h' l='41'/>
+<use f='WebKit/Source/WebCore/css/CSSFontFaceSet.h' l='43' c='_ZN7WebCore14CSSFontFaceSet6createEPNS_15CSSFontSelectorE'/>
+<use f='WebKit/Source/WebCore/css/CSSFontFaceSet.h' l='45' c='_ZN7WebCore14CSSFontFaceSet6createEPNS_15CSSFontSelectorE'/>
+<use f='WebKit/Source/WebCore/css/CSSFontSelector.h' l='123'/>
+<size>112</size>
+<fun r='_ZN7WebCore14CSSFontFaceSet6createEPNS_15CSSFontSelectorE'/>
+<fun r='_ZN7WebCore14CSSFontFaceSetD1Ev'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet23addFontModifiedObserverERKN3WTF8ObserverIFvvEEE'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet18addFontEventClientERKNS0_15FontEventClientE'/>
+<fun r='_ZNK7WebCore14CSSFontFaceSet7hasFaceERKNS_11CSSFontFaceE'/>
+<fun r='_ZNK7WebCore14CSSFontFaceSet9faceCountEv'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet3addERNS_11CSSFontFaceE'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet6removeERKNS_11CSSFontFaceE'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet5purgeEv'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet11emptyCachesEv'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet5clearEv'/>
+<fun r='_ZN7WebCore14CSSFontFaceSetixEm'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet21lookUpByCSSConnectionERNS_17StyleRuleFontFaceE'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet5checkERKN3WTF6StringES4_'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet8fontFaceENS_20FontSelectionRequestERKN3WTF10AtomStringE'/>
+<fun r='_ZNK7WebCore14CSSFontFaceSet6statusEv'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet18hasActiveFontFacesEv'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet39matchingFacesExcludingPreinstalledFontsERKN3WTF6StringES4_'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet3refEv'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet5derefEv'/>
+<fun r='_ZN7WebCore14CSSFontFaceSetC1EPNS_15CSSFontSelectorE'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet26removeFromFacesLookupTableERKNS_11CSSFontFaceERKNS_12CSSValueListE'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet21addToFacesLookupTableERNS_11CSSFontFaceE'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet20incrementActiveCountEv'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet20decrementActiveCountEv'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet16fontStateChangedERNS_11CSSFontFaceENS1_6StatusES3_'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet19fontPropertyChangedERNS_11CSSFontFaceEPNS_12CSSValueListE'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet39ensureLocalFontFacesForFamilyRegisteredERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore14CSSFontFaceSet23familyNameFromPrimitiveERKNS_17CSSPrimitiveValueE'/>
+<mbr r='WebCore::CSSFontFaceSet::m_faces' o='128' t='Vector&lt;Ref&lt;WebCore::CSSFontFace&gt; &gt;'/>
+<mbr r='WebCore::CSSFontFaceSet::m_facesLookupTable' o='256' t='HashMap&lt;WTF::String, Vector&lt;Ref&lt;WebCore::CSSFontFace&gt; &gt;, WTF::ASCIICaseInsensitiveHash&gt;'/>
+<mbr r='WebCore::CSSFontFaceSet::m_locallyInstalledFacesLookupTable' o='320' t='HashMap&lt;WTF::String, Vector&lt;Ref&lt;WebCore::CSSFontFace&gt; &gt;, WTF::ASCIICaseInsensitiveHash&gt;'/>
+<mbr r='WebCore::CSSFontFaceSet::m_cache' o='384' t='HashMap&lt;WTF::String, WebCore::CSSFontFaceSet::FontSelectionHashMap, WTF::ASCIICaseInsensitiveHash&gt;'/>
+<mbr r='WebCore::CSSFontFaceSet::m_constituentCSSConnections' o='448' t='HashMap&lt;WebCore::StyleRuleFontFace *, WebCore::CSSFontFace *&gt;'/>
+<mbr r='WebCore::CSSFontFaceSet::m_facesPartitionIndex' o='512' t='size_t'/>
+<mbr r='WebCore::CSSFontFaceSet::m_status' o='576' t='WebCore::CSSFontFaceSet::Status'/>
+<mbr r='WebCore::CSSFontFaceSet::m_fontModifiedObservers' o='640' t='WeakHashSet&lt;WebCore::CSSFontFaceSet::FontModifiedObserver&gt;'/>
+<mbr r='WebCore::CSSFontFaceSet::m_fontEventClients' o='704' t='WeakHashSet&lt;WebCore::CSSFontFaceSet::FontEventClient&gt;'/>
+<mbr r='WebCore::CSSFontFaceSet::m_owningFontSelector' o='768' t='WeakPtr&lt;WebCore::CSSFontSelector&gt;'/>
+<mbr r='WebCore::CSSFontFaceSet::m_activeCount' o='832' t='unsigned int'/>
+<use f='WebKit/Source/WebCore/css/FontFaceSet.h' l='45' c='_ZN7WebCore11FontFaceSet6createERNS_22ScriptExecutionContextERNS_14CSSFontFaceSetE'/>
+<use f='WebKit/Source/WebCore/css/FontFaceSet.h' l='65' c='_ZN7WebCore11FontFaceSet7backingEv'/>
+<use f='WebKit/Source/WebCore/css/FontFaceSet.h' l='99' c='_ZN7WebCore11FontFaceSetC1ERNS_22ScriptExecutionContextERNS_14CSSFontFaceSetE'/>
+<use f='WebKit/Source/WebCore/css/FontFaceSet.h' l='118'/>
+<use f='WebKit/Source/WebCore/css/FontFaceSet.cpp' l='51' c='_ZN7WebCore11FontFaceSet6createERNS_22ScriptExecutionContextERNS_14CSSFontFaceSetE'/>
+<use f='WebKit/Source/WebCore/css/FontFaceSet.cpp' l='68' c='_ZN7WebCore11FontFaceSetC1ERNS_22ScriptExecutionContextERNS_14CSSFontFaceSetE'/>
+<size>112</size>

@@ -1,0 +1,7 @@
+<dec f='include/sqlite3.h' l='9767' type='int sqlite3_rtree_geometry_callback(sqlite3 * db, const char * zGeom, int (*)(sqlite3_rtree_geometry *, int, sqlite3_rtree_dbl *, int *) xGeom, void * pContext)'/>
+<doc f='include/sqlite3.h' l='9761'>/*
+** Register a geometry callback named zGeom that can be used as part of an
+** R-Tree geometry query as follows:
+**
+**   SELECT ... FROM &lt;rtree&gt; WHERE &lt;rtree col&gt; MATCH $zGeom(... params ...)
+*/</doc>

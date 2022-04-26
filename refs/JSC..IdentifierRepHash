@@ -1,0 +1,78 @@
+<inh f='WebKit/WTF/Headers/wtf/HashFunctions.h' l='149' c='WTF::PtrHash'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Identifier.h' l='297' ll='301'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Identifier.h' l='308'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Identifier.h' l='309'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Identifier.h' l='310'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VariableEnvironment.h' l='143'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VariableEnvironment.h' l='148'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VariableEnvironment.h' l='336'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSScope.h' l='38'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/TypeSet.h' l='76'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/TypeSet.h' l='77'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='449'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='450'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='451'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSGlobalObject.h' l='553'/>
+<size>1</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Identifier.h' l='293'>// FIXME: It may be better for this to just be a typedef for PtrHash, since PtrHash may be cheaper to
+// compute than loading the StringImpl&apos;s hash from memory. That change would also reduce the likelihood of
+// crashes in code that somehow dangled a StringImpl.
+// https://bugs.webkit.org/show_bug.cgi?id=150137</doc>
+<fun r='_ZN3JSC17IdentifierRepHash4hashERKN3WTF6RefPtrINS1_17UniquedStringImplENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<fun r='_ZN3JSC17IdentifierRepHash4hashEPN3WTF17UniquedStringImplE'/>
+<smbr r='JSC::IdentifierRepHash::hasHashInValue' t='const bool'/>
+<inh f='WebKit/WTF/Headers/wtf/HashFunctions.h' l='149' c='WTF::PtrHash'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/Identifier.h' l='297' ll='301'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Identifier.h' l='308'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Identifier.h' l='309'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Identifier.h' l='310'/>
+<use f='WebKit/Source/JavaScriptCore/parser/VariableEnvironment.h' l='143'/>
+<use f='WebKit/Source/JavaScriptCore/parser/VariableEnvironment.h' l='148'/>
+<use f='WebKit/Source/JavaScriptCore/parser/VariableEnvironment.h' l='336'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSScope.h' l='38'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/TypeSet.h' l='76'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/TypeSet.h' l='77'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='449'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='450'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='451'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.h' l='553'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeIntrinsicRegistry.h' l='216'/>
+<use f='WebKit/Source/JavaScriptCore/parser/ModuleScopeData.h' l='38'/>
+<size>1</size>
+<doc f='WebKit/Source/JavaScriptCore/runtime/Identifier.h' l='293'>// FIXME: It may be better for this to just be a typedef for PtrHash, since PtrHash may be cheaper to
+// compute than loading the StringImpl&apos;s hash from memory. That change would also reduce the likelihood of
+// crashes in code that somehow dangled a StringImpl.
+// https://bugs.webkit.org/show_bug.cgi?id=150137</doc>
+<fun r='_ZN3JSC17IdentifierRepHash4hashERKN3WTF6RefPtrINS1_17UniquedStringImplENS1_12RawPtrTraitsIS3_EENS1_21DefaultRefDerefTraitsIS3_EEEE'/>
+<fun r='_ZN3JSC17IdentifierRepHash4hashEPN3WTF17UniquedStringImplE'/>
+<smbr r='JSC::IdentifierRepHash::hasHashInValue' t='const bool'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/AbstractModuleRecord.h' l='99'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/AbstractModuleRecord.h' l='100'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/AbstractModuleRecord.h' l='101'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/AbstractModuleRecord.h' l='209'/>
+<size>1</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSModuleNamespaceObject.h' l='85'/>
+<size>1</size>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='1163'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='1249'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='1311'/>
+<size>1</size>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp' l='584' c='_ZN3JSC16PropertyListNode12emitBytecodeERNS_17BytecodeGeneratorEPNS_10RegisterIDES4_PN3WTF6VectorINS_14JSTextPositionELm0ENS5_15CrashOnOverflowELm16EN15941020'/>
+<size>1</size>
+<use f='WebKit/Source/JavaScriptCore/API/JSCallbackObject.h' l='121'/>
+<size>1</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/CodeCache.h' l='55'/>
+<size>1</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/CachedTypes.cpp' l='987'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CachedTypes.cpp' l='992'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CachedTypes.cpp' l='1031'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CachedTypes.cpp' l='1220'/>
+<size>1</size>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/BytecodeIntrinsicRegistry.h' l='216'/>
+<size>1</size>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractModuleRecord.h' l='99'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractModuleRecord.h' l='100'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractModuleRecord.h' l='101'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AbstractModuleRecord.h' l='209'/>
+<use f='WebKit/Source/WebCore/bindings/js/SerializedScriptValue.cpp' l='1774'/>
+<size>1</size>

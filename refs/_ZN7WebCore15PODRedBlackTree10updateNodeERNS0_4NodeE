@@ -1,0 +1,21 @@
+<def f='WebKit/Source/WebCore/platform/PODRedBlackTree.h' l='192' ll='195' type='static bool WebCore::PODRedBlackTree::updateNode(WebCore::PODRedBlackTree::Node &amp; node)'/>
+<use f='WebKit/Source/WebCore/platform/PODRedBlackTree.h' l='294' u='c' c='_ZN7WebCore15PODRedBlackTree10leftRotateEPNS0_4NodeE'/>
+<use f='WebKit/Source/WebCore/platform/PODRedBlackTree.h' l='295' u='c' c='_ZN7WebCore15PODRedBlackTree10leftRotateEPNS0_4NodeE'/>
+<use f='WebKit/Source/WebCore/platform/PODRedBlackTree.h' l='301' u='c' c='_ZN7WebCore15PODRedBlackTree16propagateUpdatesEPNS0_4NodeE'/>
+<use f='WebKit/Source/WebCore/platform/PODRedBlackTree.h' l='333' u='c' c='_ZN7WebCore15PODRedBlackTree11rightRotateEPNS0_4NodeE'/>
+<use f='WebKit/Source/WebCore/platform/PODRedBlackTree.h' l='334' u='c' c='_ZN7WebCore15PODRedBlackTree11rightRotateEPNS0_4NodeE'/>
+<use f='WebKit/Source/WebCore/platform/PODRedBlackTree.h' l='343' u='c' c='_ZN7WebCore15PODRedBlackTree10insertNodeEPNS0_4NodeE'/>
+<use f='WebKit/Source/WebCore/platform/PODRedBlackTree.h' l='359' u='c' c='_ZN7WebCore15PODRedBlackTree10insertNodeEPNS0_4NodeE'/>
+<use f='WebKit/Source/WebCore/platform/PODRedBlackTree.h' l='361' u='c' c='_ZN7WebCore15PODRedBlackTree10insertNodeEPNS0_4NodeE'/>
+<use f='WebKit/Source/WebCore/platform/PODRedBlackTree.h' l='386' u='c' c='_ZN7WebCore15PODRedBlackTree10insertNodeEPNS0_4NodeE'/>
+<use f='WebKit/Source/WebCore/platform/PODRedBlackTree.h' l='388' u='c' c='_ZN7WebCore15PODRedBlackTree10insertNodeEPNS0_4NodeE'/>
+<use f='WebKit/Source/WebCore/platform/PODRedBlackTree.h' l='539' u='c' c='_ZN7WebCore15PODRedBlackTree10deleteNodeEPNS0_4NodeE'/>
+<doc f='WebKit/Source/WebCore/platform/PODRedBlackTree.h' l='183'>// The update function is the hook that subclasses should use when
+    // augmenting the red-black tree with additional per-node summary
+    // information. For example, in the case of an interval tree, this
+    // is used to compute the maximum endpoint of the subtree below the
+    // given node based on the values in the left and right children. It
+    // is guaranteed that this will be called in the correct order to
+    // properly update such summary information based only on the values
+    // in the left and right children. The function should return true if
+    // the node&apos;s summary information changed.</doc>

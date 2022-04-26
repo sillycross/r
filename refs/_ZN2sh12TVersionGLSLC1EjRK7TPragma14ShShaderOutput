@@ -1,0 +1,20 @@
+<dec f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VersionGLSL.h' l='50' type='void sh::TVersionGLSL::TVersionGLSL(sh::GLenum type, const TPragma &amp; pragma, ShShaderOutput output)'/>
+<use f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/TranslatorGLSL.cpp' l='243' u='c' c='_ZN2sh14TranslatorGLSL12writeVersionEPNS_11TIntermNodeE'/>
+<def f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VersionGLSL.cpp' l='69' ll='81' type='void sh::TVersionGLSL::TVersionGLSL(sh::GLenum type, const TPragma &amp; pragma, ShShaderOutput output)'/>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/compiler/translator/VersionGLSL.cpp' l='52'>// We need to scan for the following:
+// 1. &quot;invariant&quot; keyword: This can occur in both - vertex and fragment shaders
+//    but only at the global scope.
+// 2. &quot;gl_PointCoord&quot; built-in variable: This can only occur in fragment shader
+//    but inside any scope.
+// 3. Call to a matrix constructor with another matrix as argument.
+//    (These constructors were reserved in GLSL version 1.10.)
+// 4. Arrays as &quot;out&quot; function parameters.
+//    GLSL spec section 6.1.1: &quot;When calling a function, expressions that do
+//    not evaluate to l-values cannot be passed to parameters declared as
+//    out or inout.&quot;
+//    GLSL 1.1 section 5.8: &quot;Other binary or unary expressions,
+//    non-dereferenced arrays, function names, swizzles with repeated fields,
+//    and constants cannot be l-values.&quot;
+//    GLSL 1.2 relaxed the restriction on arrays, section 5.8: &quot;Variables that
+//    are built-in types, entire structures or arrays... are all l-values.&quot;
+//</doc>

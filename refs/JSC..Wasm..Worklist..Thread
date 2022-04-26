@@ -1,0 +1,18 @@
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmWorklist.h' l='67'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmWorklist.h' l='93'/>
+<inh f='WebKit/WTF/Headers/wtf/AutomaticThread.h' l='100' c='WTF::AutomaticThread'/>
+<def f='WebKit/Source/JavaScriptCore/wasm/WasmWorklist.cpp' l='62' ll='135'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmWorklist.cpp' l='223' c='_ZN3JSC4Wasm8WorklistC1Ev'/>
+<size>80</size>
+<doc f='WebKit/Source/JavaScriptCore/wasm/WasmWorklist.cpp' l='57'>// The Thread class is designed to prevent threads from blocking when there is still work
+// in the queue. Wasm&apos;s Plans have some phases, Validiation, Preparation, and Completion,
+// that can only be done by one thread, and another phase, Compilation, that can be done
+// many threads. In order to stop a thread from wasting time we remove any plan that is
+// is currently in a single threaded state from the work queue so other plans can run.</doc>
+<fun r='_ZN3JSC4Wasm8Worklist6ThreadC1ERKN3WTF14AbstractLockerERS1_'/>
+<fun r='_ZN3JSC4Wasm8Worklist6Thread4pollERKN3WTF14AbstractLockerE'/>
+<fun r='_ZN3JSC4Wasm8Worklist6Thread4workEv'/>
+<fun r='_ZNK3JSC4Wasm8Worklist6Thread4nameEv'/>
+<mbr r='JSC::Wasm::Worklist::Thread::synchronize' o='368' t='WTF::Condition'/>
+<mbr r='JSC::Wasm::Worklist::Thread::worklist' o='384' t='JSC::Wasm::Worklist &amp;'/>
+<mbr r='JSC::Wasm::Worklist::Thread::element' o='448' t='JSC::Wasm::Worklist::QueueElement'/>

@@ -1,0 +1,193 @@
+<use f='WebKit/WTF/Headers/wtf/ParallelHelperPool.h' l='79'/>
+<use f='WebKit/WTF/Headers/wtf/ParallelHelperPool.h' l='86' c='_ZN3WTF18ParallelHelperPool17getClientWithTaskEv'/>
+<use f='WebKit/WTF/Headers/wtf/ParallelHelperPool.h' l='94'/>
+<def f='WebKit/WTF/Headers/wtf/ParallelHelperPool.h' l='164' ll='212'/>
+<use f='WebKit/WTF/Headers/wtf/ParallelHelperPool.h' l='165' c='_ZN3WTF20ParallelHelperClientC1ERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/ParallelHelperPool.h' l='165' c='_ZN3WTF20ParallelHelperClientaSERKS0_'/>
+<use f='WebKit/WTF/Headers/wtf/ParallelHelperPool.h' l='165' c='_ZN3WTF20ParallelHelperClientaSERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='698'/>
+<size>24</size>
+<doc f='WebKit/WTF/Headers/wtf/ParallelHelperPool.h' l='101'>// A client is a placeholder for a parallel algorithm. A parallel algorithm will have a task that
+// can be run concurrently. Whenever a client has a task set (you have called setTask() or
+// setFunction()), threads in the pool may run that task. If a task returns on any thread, the
+// client will assume that the task is done and will clear the task. If the task is cleared (the
+// task runs to completion on any thread or you call finish()), any threads in the pool already
+// running the last set task(s) will continue to run them. You can wait for all of them to finish
+// by calling finish(). That method will clear the task and wait for any threads running the last
+// set task to finish. There are two known-good patterns for using a client:
+//
+// 1) Tasks intrinsically know when the algorithm reaches termination, and simply returns when
+//    this happens. The main thread runs the task by doing:
+//
+//    client-&gt;setFunction(
+//        [=] () {
+//            do things;
+//        });
+//    client-&gt;doSomeHelping();
+//    client-&gt;finish();
+//
+//    Calling doSomeHelping() ensures that the algorithm runs on at least one thread (this one).
+//    Tasks will know when to complete, and will return when they are done. This will clear the
+//    task to ensure that no new threads will run the task. Then, finish() clears the current task
+//    and waits for any parallel tasks to finish after the main thread has finished. It&apos;s possible
+//    for threads to still be running the last set task (i.e. the one set by setFunction()) even
+//    after the task has been cleared. Waiting for idle ensures that no old tasks are running
+//    anymore.
+//
+//    You can do this more easily by using the runFunctionInParallel() helper:
+//
+//    clients-&gt;runFunctionInParallel(
+//        [=] () {
+//            do things;
+//        });
+//
+// 2) Tasks keep doing things until they are told to quit using some custom notification mechanism.
+//    The main thread runs the task by doing:
+//
+//    bool keepGoing = true;
+//    client-&gt;setFunction(
+//        [=] () {
+//            while (keepGoing) {
+//                do things;
+//            }
+//        });
+//
+//    When work runs out, the main thread will inform tasks that there is no more work, and then
+//    wait until no more tasks are running:
+//
+//    keepGoing = false;
+//    client-&gt;finish();
+//
+//    This works best when the main thread doesn&apos;t actually want to run the task that it set in the
+//    client. This happens for example in parallel marking. The main thread uses a somewhat
+//    different marking algorithm than the helpers. The main thread may provide work that the
+//    helpers steal. The main thread knows when termination is reached, and simply tells the
+//    helpers to stop upon termination.
+//
+// The known-good styles of using ParallelHelperClient all involve a parallel algorithm that has
+// its own work distribution and load balancing.
+//
+// Note that it is not valid to use the same ParallelHelperClient instance from multiple threads.
+// Each thread should have its own ParallelHelperClient in that case. Failure to follow this advice
+// will lead to RELEASE_ASSERT&apos;s or worse.</doc>
+<fun r='_ZN3WTF20ParallelHelperClientC1ERKS0_'/>
+<fun r='_ZN3WTF20ParallelHelperClientC1EONS_6RefPtrINS_18ParallelHelperPoolENS_12RawPtrTraitsIS2_EENS_21DefaultRefDerefTraitsIS2_EEEE'/>
+<fun r='_ZN3WTF20ParallelHelperClientD1Ev'/>
+<fun r='_ZN3WTF20ParallelHelperClient7setTaskEONS_6RefPtrINS_10SharedTaskIFvvEEENS_12RawPtrTraitsIS4_EENS_21DefaultRefDerefTraitsIS4_EEEE'/>
+<fun r='_ZN3WTF20ParallelHelperClient11setFunctionERKT_'/>
+<fun r='_ZN3WTF20ParallelHelperClient6finishEv'/>
+<fun r='_ZN3WTF20ParallelHelperClient13doSomeHelpingEv'/>
+<fun r='_ZN3WTF20ParallelHelperClient17runTaskInParallelEONS_6RefPtrINS_10SharedTaskIFvvEEENS_12RawPtrTraitsIS4_EENS_21DefaultRefDerefTraitsIS4_EEEE'/>
+<fun r='_ZN3WTF20ParallelHelperClient21runFunctionInParallelERKT_'/>
+<fun r='_ZN3WTF20ParallelHelperClient4poolEv'/>
+<fun r='_ZNK3WTF20ParallelHelperClient21numberOfActiveThreadsEv'/>
+<fun r='_ZN3WTF20ParallelHelperClient14finishWithLockEv'/>
+<fun r='_ZN3WTF20ParallelHelperClient9claimTaskEv'/>
+<fun r='_ZN3WTF20ParallelHelperClient7runTaskERKNS_6RefPtrINS_10SharedTaskIFvvEEENS_12RawPtrTraitsIS4_EENS_21DefaultRefDerefTraitsIS4_EEEE'/>
+<mbr r='WTF::ParallelHelperClient::m_pool' o='0' t='RefPtr&lt;WTF::ParallelHelperPool&gt;'/>
+<mbr r='WTF::ParallelHelperClient::m_task' o='64' t='RefPtr&lt;SharedTask&lt;void ()&gt; &gt;'/>
+<mbr r='WTF::ParallelHelperClient::m_numActive' o='128' t='unsigned int'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='698'/>
+<size>24</size>
+<use f='WebKit/Source/WTF/wtf/ParallelHelperPool.h' l='79'/>
+<use f='WebKit/Source/WTF/wtf/ParallelHelperPool.h' l='86' c='_ZN3WTF18ParallelHelperPool17getClientWithTaskEv'/>
+<use f='WebKit/Source/WTF/wtf/ParallelHelperPool.h' l='94'/>
+<def f='WebKit/Source/WTF/wtf/ParallelHelperPool.h' l='164' ll='212'/>
+<use f='WebKit/Source/WTF/wtf/ParallelHelperPool.h' l='165' c='_ZN3WTF20ParallelHelperClientC1ERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/ParallelHelperPool.h' l='165' c='_ZN3WTF20ParallelHelperClientaSERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/ParallelHelperPool.h' l='165' c='_ZN3WTF20ParallelHelperClientaSERKS0_'/>
+<use f='WebKit/Source/WTF/wtf/ParallelHelperPool.cpp' l='157' c='_ZN3WTF18ParallelHelperPool13doSomeHelpingEv'/>
+<use f='WebKit/Source/WTF/wtf/ParallelHelperPool.cpp' l='208'/>
+<use f='WebKit/Source/WTF/wtf/ParallelHelperPool.cpp' l='224' c='_ZN3WTF18ParallelHelperPool17getClientWithTaskEv'/>
+<use f='WebKit/Source/WTF/wtf/ParallelHelperPool.cpp' l='229' c='_ZN3WTF18ParallelHelperPool17getClientWithTaskEv'/>
+<use f='WebKit/Source/WTF/wtf/ParallelHelperPool.cpp' l='234' c='_ZN3WTF18ParallelHelperPool17getClientWithTaskEv'/>
+<size>24</size>
+<doc f='WebKit/Source/WTF/wtf/ParallelHelperPool.h' l='101'>// A client is a placeholder for a parallel algorithm. A parallel algorithm will have a task that
+// can be run concurrently. Whenever a client has a task set (you have called setTask() or
+// setFunction()), threads in the pool may run that task. If a task returns on any thread, the
+// client will assume that the task is done and will clear the task. If the task is cleared (the
+// task runs to completion on any thread or you call finish()), any threads in the pool already
+// running the last set task(s) will continue to run them. You can wait for all of them to finish
+// by calling finish(). That method will clear the task and wait for any threads running the last
+// set task to finish. There are two known-good patterns for using a client:
+//
+// 1) Tasks intrinsically know when the algorithm reaches termination, and simply returns when
+//    this happens. The main thread runs the task by doing:
+//
+//    client-&gt;setFunction(
+//        [=] () {
+//            do things;
+//        });
+//    client-&gt;doSomeHelping();
+//    client-&gt;finish();
+//
+//    Calling doSomeHelping() ensures that the algorithm runs on at least one thread (this one).
+//    Tasks will know when to complete, and will return when they are done. This will clear the
+//    task to ensure that no new threads will run the task. Then, finish() clears the current task
+//    and waits for any parallel tasks to finish after the main thread has finished. It&apos;s possible
+//    for threads to still be running the last set task (i.e. the one set by setFunction()) even
+//    after the task has been cleared. Waiting for idle ensures that no old tasks are running
+//    anymore.
+//
+//    You can do this more easily by using the runFunctionInParallel() helper:
+//
+//    clients-&gt;runFunctionInParallel(
+//        [=] () {
+//            do things;
+//        });
+//
+// 2) Tasks keep doing things until they are told to quit using some custom notification mechanism.
+//    The main thread runs the task by doing:
+//
+//    bool keepGoing = true;
+//    client-&gt;setFunction(
+//        [=] () {
+//            while (keepGoing) {
+//                do things;
+//            }
+//        });
+//
+//    When work runs out, the main thread will inform tasks that there is no more work, and then
+//    wait until no more tasks are running:
+//
+//    keepGoing = false;
+//    client-&gt;finish();
+//
+//    This works best when the main thread doesn&apos;t actually want to run the task that it set in the
+//    client. This happens for example in parallel marking. The main thread uses a somewhat
+//    different marking algorithm than the helpers. The main thread may provide work that the
+//    helpers steal. The main thread knows when termination is reached, and simply tells the
+//    helpers to stop upon termination.
+//
+// The known-good styles of using ParallelHelperClient all involve a parallel algorithm that has
+// its own work distribution and load balancing.
+//
+// Note that it is not valid to use the same ParallelHelperClient instance from multiple threads.
+// Each thread should have its own ParallelHelperClient in that case. Failure to follow this advice
+// will lead to RELEASE_ASSERT&apos;s or worse.</doc>
+<fun r='_ZN3WTF20ParallelHelperClientC1ERKS0_'/>
+<fun r='_ZN3WTF20ParallelHelperClientC1EONS_6RefPtrINS_18ParallelHelperPoolENS_12RawPtrTraitsIS2_EENS_21DefaultRefDerefTraitsIS2_EEEE'/>
+<fun r='_ZN3WTF20ParallelHelperClientD1Ev'/>
+<fun r='_ZN3WTF20ParallelHelperClient7setTaskEONS_6RefPtrINS_10SharedTaskIFvvEEENS_12RawPtrTraitsIS4_EENS_21DefaultRefDerefTraitsIS4_EEEE'/>
+<fun r='_ZN3WTF20ParallelHelperClient11setFunctionERKT_'/>
+<fun r='_ZN3WTF20ParallelHelperClient6finishEv'/>
+<fun r='_ZN3WTF20ParallelHelperClient13doSomeHelpingEv'/>
+<fun r='_ZN3WTF20ParallelHelperClient17runTaskInParallelEONS_6RefPtrINS_10SharedTaskIFvvEEENS_12RawPtrTraitsIS4_EENS_21DefaultRefDerefTraitsIS4_EEEE'/>
+<fun r='_ZN3WTF20ParallelHelperClient21runFunctionInParallelERKT_'/>
+<fun r='_ZN3WTF20ParallelHelperClient4poolEv'/>
+<fun r='_ZNK3WTF20ParallelHelperClient21numberOfActiveThreadsEv'/>
+<fun r='_ZN3WTF20ParallelHelperClient14finishWithLockEv'/>
+<fun r='_ZN3WTF20ParallelHelperClient9claimTaskEv'/>
+<fun r='_ZN3WTF20ParallelHelperClient7runTaskERKNS_6RefPtrINS_10SharedTaskIFvvEEENS_12RawPtrTraitsIS4_EENS_21DefaultRefDerefTraitsIS4_EEEE'/>
+<mbr r='WTF::ParallelHelperClient::m_pool' o='0' t='RefPtr&lt;WTF::ParallelHelperPool&gt;'/>
+<mbr r='WTF::ParallelHelperClient::m_task' o='64' t='RefPtr&lt;SharedTask&lt;void ()&gt; &gt;'/>
+<mbr r='WTF::ParallelHelperClient::m_numActive' o='128' t='unsigned int'/>
+<fun r='_ZN3WTF20ParallelHelperClientC1EONS_6RefPtrINS_18ParallelHelperPoolENS_12RawPtrTraitsIS2_EENS_21DefaultRefDerefTraitsIS2_EEEE'/>
+<fun r='_ZN3WTF20ParallelHelperClientD1Ev'/>
+<fun r='_ZN3WTF20ParallelHelperClient7setTaskEONS_6RefPtrINS_10SharedTaskIFvvEEENS_12RawPtrTraitsIS4_EENS_21DefaultRefDerefTraitsIS4_EEEE'/>
+<fun r='_ZN3WTF20ParallelHelperClient6finishEv'/>
+<fun r='_ZN3WTF20ParallelHelperClient13doSomeHelpingEv'/>
+<fun r='_ZN3WTF20ParallelHelperClient17runTaskInParallelEONS_6RefPtrINS_10SharedTaskIFvvEEENS_12RawPtrTraitsIS4_EENS_21DefaultRefDerefTraitsIS4_EEEE'/>
+<fun r='_ZN3WTF20ParallelHelperClient14finishWithLockEv'/>
+<fun r='_ZN3WTF20ParallelHelperClient9claimTaskEv'/>
+<fun r='_ZN3WTF20ParallelHelperClient7runTaskERKNS_6RefPtrINS_10SharedTaskIFvvEEENS_12RawPtrTraitsIS4_EENS_21DefaultRefDerefTraitsIS4_EEEE'/>

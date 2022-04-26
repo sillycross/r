@@ -1,0 +1,16 @@
+<def f='include/gstreamer-1.0/gst/gstbufferlist.h' l='172' ll='177' type='gboolean gst_buffer_list_take(GstBufferList ** old_list, GstBufferList * new_list)'/>
+<doc f='include/gstreamer-1.0/gst/gstbufferlist.h' l='157'>/**
+ * gst_buffer_list_take:
+ * @old_list: (inout) (transfer full): pointer to a pointer to a #GstBufferList
+ *     to be replaced.
+ * @new_list: (transfer full) (allow-none): pointer to a #GstBufferList
+ *     that will replace the bufferlist pointed to by @old_list.
+ *
+ * Modifies a pointer to a #GstBufferList to point to a different
+ * #GstBufferList. This function is similar to gst_buffer_list_replace() except
+ * that it takes ownership of @new_list.
+ *
+ * Returns: %TRUE if @new_list was different from @old_list
+ *
+ * Since: 1.16
+ */</doc>

@@ -1,0 +1,92 @@
+<def f='WebKit/bmalloc/Headers/bmalloc/IsoHeapImpl.h' l='39' ll='95'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/IsoHeapImpl.h' l='41' c='_ZN7bmalloc15IsoHeapImplBaseC1ERKS0_'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/IsoHeapImpl.h' l='42' c='_ZN7bmalloc15IsoHeapImplBaseaSERKS0_'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/IsoHeapImpl.h' l='42' c='_ZN7bmalloc15IsoHeapImplBaseaSERKS0_'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/IsoHeapImpl.h' l='81'/>
+<ovr f='WebKit/bmalloc/Headers/bmalloc/IsoHeapImpl.h' l='98' c='bmalloc::IsoHeapImpl'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/IsoHeapImpl.h' l='98'/>
+<use f='WebKit/bmalloc/Headers/bmalloc/IsoHeapImplInlines.h' l='37' c='_ZN7bmalloc11IsoHeapImplC1Ev'/>
+<size>112</size>
+<fun r='_ZN7bmalloc15IsoHeapImplBaseC1ERKS0_'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBaseaSERKS0_'/>
+<smbr r='bmalloc::IsoHeapImplBase::maxAllocationFromShared' t='const unsigned int'/>
+<smbr r='bmalloc::IsoHeapImplBase::maxAllocationFromSharedMask' t='const unsigned int'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBaseD1Ev'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase8scavengeERNS_6VectorINS_16DeferredDecommitEEE'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase11scavengeNowEv'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase16finishScavengingERNS_6VectorINS_16DeferredDecommitEEE'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase9didCommitEPvm'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase11didDecommitEPvm'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase13isNowFreeableEPvm'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase18isNoLongerFreeableEPvm'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase14freeableMemoryEv'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase9footprintEv'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase16addToAllIsoHeapsEv'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBaseC1ERNS_5MutexE'/>
+<mbr r='bmalloc::IsoHeapImplBase::lock' o='64' t='bmalloc::Mutex &amp;'/>
+<mbr r='bmalloc::IsoHeapImplBase::m_next' o='128' t='bmalloc::IsoHeapImplBase *'/>
+<mbr r='bmalloc::IsoHeapImplBase::m_lastSlowPathTime' o='192' t='std::chrono::steady_clock::time_point'/>
+<mbr r='bmalloc::IsoHeapImplBase::m_footprint' o='256' t='size_t'/>
+<mbr r='bmalloc::IsoHeapImplBase::m_freeableMemory' o='320' t='size_t'/>
+<mbr r='bmalloc::IsoHeapImplBase::m_sharedCells' o='384' t='std::array&lt;PackedAlignedPtr&lt;uint8_t, bmalloc::alignment&gt;, maxAllocationFromShared&gt;'/>
+<mbr r='bmalloc::IsoHeapImplBase::m_numberOfAllocationsFromSharedInOneCycle' o='768' t='unsigned int'/>
+<mbr r='bmalloc::IsoHeapImplBase::m_availableShared' o='800' t='unsigned int'/>
+<mbr r='bmalloc::IsoHeapImplBase::m_allocationMode' o='832' t='bmalloc::AllocationMode'/>
+<mbr r='bmalloc::IsoHeapImplBase::m_isInlineDirectoryEligibleOrDecommitted' o='840' t='bool'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase14freeableMemoryEv'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase9footprintEv'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase9didCommitEPvm'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase11didDecommitEPvm'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase13isNowFreeableEPvm'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase18isNoLongerFreeableEPvm'/>
+<def f='WebKit/Source/bmalloc/bmalloc/IsoHeapImpl.h' l='39' ll='95'/>
+<use f='WebKit/Source/bmalloc/bmalloc/IsoHeapImpl.h' l='41' c='_ZN7bmalloc15IsoHeapImplBaseC1ERKS0_'/>
+<use f='WebKit/Source/bmalloc/bmalloc/IsoHeapImpl.h' l='42' c='_ZN7bmalloc15IsoHeapImplBaseaSERKS0_'/>
+<use f='WebKit/Source/bmalloc/bmalloc/IsoHeapImpl.h' l='42' c='_ZN7bmalloc15IsoHeapImplBaseaSERKS0_'/>
+<use f='WebKit/Source/bmalloc/bmalloc/IsoHeapImpl.h' l='81'/>
+<ovr f='WebKit/Source/bmalloc/bmalloc/IsoHeapImpl.h' l='98' c='bmalloc::IsoHeapImpl'/>
+<use f='WebKit/Source/bmalloc/bmalloc/IsoHeapImpl.h' l='98'/>
+<use f='WebKit/Source/bmalloc/bmalloc/AllIsoHeaps.h' l='38' c='_ZN7bmalloc11AllIsoHeaps3addEPNS_15IsoHeapImplBaseE'/>
+<use f='WebKit/Source/bmalloc/bmalloc/AllIsoHeaps.h' l='39' c='_ZN7bmalloc11AllIsoHeaps4headEv'/>
+<use f='WebKit/Source/bmalloc/bmalloc/AllIsoHeaps.h' l='45'/>
+<use f='WebKit/Source/bmalloc/bmalloc/AllIsoHeaps.cpp' l='36' c='_ZN7bmalloc11AllIsoHeaps3addEPNS_15IsoHeapImplBaseE'/>
+<use f='WebKit/Source/bmalloc/bmalloc/AllIsoHeaps.cpp' l='43' c='_ZN7bmalloc11AllIsoHeaps4headEv'/>
+<size>112</size>
+<fun r='_ZN7bmalloc15IsoHeapImplBaseC1ERKS0_'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBaseaSERKS0_'/>
+<smbr r='bmalloc::IsoHeapImplBase::maxAllocationFromShared' t='const unsigned int'/>
+<smbr r='bmalloc::IsoHeapImplBase::maxAllocationFromSharedMask' t='const unsigned int'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBaseD1Ev'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase8scavengeERNS_6VectorINS_16DeferredDecommitEEE'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase11scavengeNowEv'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase16finishScavengingERNS_6VectorINS_16DeferredDecommitEEE'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase9didCommitEPvm'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase11didDecommitEPvm'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase13isNowFreeableEPvm'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase18isNoLongerFreeableEPvm'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase14freeableMemoryEv'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase9footprintEv'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase16addToAllIsoHeapsEv'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBaseC1ERNS_5MutexE'/>
+<mbr r='bmalloc::IsoHeapImplBase::lock' o='64' t='bmalloc::Mutex &amp;'/>
+<mbr r='bmalloc::IsoHeapImplBase::m_next' o='128' t='bmalloc::IsoHeapImplBase *'/>
+<mbr r='bmalloc::IsoHeapImplBase::m_lastSlowPathTime' o='192' t='std::chrono::steady_clock::time_point'/>
+<mbr r='bmalloc::IsoHeapImplBase::m_footprint' o='256' t='size_t'/>
+<mbr r='bmalloc::IsoHeapImplBase::m_freeableMemory' o='320' t='size_t'/>
+<mbr r='bmalloc::IsoHeapImplBase::m_sharedCells' o='384' t='std::array&lt;PackedAlignedPtr&lt;uint8_t, bmalloc::alignment&gt;, maxAllocationFromShared&gt;'/>
+<mbr r='bmalloc::IsoHeapImplBase::m_numberOfAllocationsFromSharedInOneCycle' o='768' t='unsigned int'/>
+<mbr r='bmalloc::IsoHeapImplBase::m_availableShared' o='800' t='unsigned int'/>
+<mbr r='bmalloc::IsoHeapImplBase::m_allocationMode' o='832' t='bmalloc::AllocationMode'/>
+<mbr r='bmalloc::IsoHeapImplBase::m_isInlineDirectoryEligibleOrDecommitted' o='840' t='bool'/>
+<use f='WebKit/Source/bmalloc/bmalloc/AllIsoHeapsInlines.h' l='36' c='_ZN7bmalloc11AllIsoHeaps7forEachERKT_'/>
+<use f='WebKit/Source/bmalloc/bmalloc/IsoHeapImplInlines.h' l='37' c='_ZN7bmalloc11IsoHeapImplC1Ev'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Scavenger.cpp' l='235' c='_ZN7bmalloc9Scavenger8scavengeEv'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Scavenger.cpp' l='267' c='_ZN7bmalloc9Scavenger14freeableMemoryEv'/>
+<use f='WebKit/Source/bmalloc/bmalloc/Scavenger.cpp' l='286' c='_ZN7bmalloc9Scavenger9footprintEv'/>
+<size>112</size>
+<fun r='_ZN7bmalloc15IsoHeapImplBase14freeableMemoryEv'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase9footprintEv'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase9didCommitEPvm'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase11didDecommitEPvm'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase13isNowFreeableEPvm'/>
+<fun r='_ZN7bmalloc15IsoHeapImplBase18isNoLongerFreeableEPvm'/>

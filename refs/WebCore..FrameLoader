@@ -1,0 +1,463 @@
+<use f='WebKit/Source/WebCore/page/Frame.h' l='172' c='_ZNK7WebCore5Frame6loaderEv'/>
+<use f='WebKit/Source/WebCore/page/Frame.h' l='173' c='_ZN7WebCore5Frame6loaderEv'/>
+<use f='WebKit/Source/WebCore/page/Frame.h' l='340'/>
+<use f='WebKit/Source/WebCore/css/StyleSheetContents.h' l='75' c='_ZNK7WebCore18StyleSheetContents22subresourcesAllowReuseENS_11CachePolicyERNS_11FrameLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='169' c='_ZNK7WebCore14DocumentLoader11frameLoaderEv'/>
+<use f='WebKit/Source/WebCore/loader/LoaderStrategy.h' l='61' c='_ZN7WebCore14LoaderStrategy25loadResourceSynchronouslyERNS_11FrameLoaderEmRKNS_15ResourceRequestENS_22ClientCredentialPolicyERKNS_12FetchOptionsERKNS_9904374'/>
+<use f='WebKit/Source/WebCore/loader/LoaderStrategy.h' l='81' c='_ZN7WebCore14LoaderStrategy12preconnectToERNS_11FrameLoaderERKN3WTF3URLENS_23StoredCredentialsPolicyEONS3_8FunctionIFvRKNS_13ResourceErrorEEEE'/>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.h' l='79' c='_ZNK7WebCore14ResourceLoader11frameLoaderEv'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.h' l='55' c='_ZN6WebKit17WebLoaderStrategy25loadResourceSynchronouslyERN7WebCore11FrameLoaderEmRKNS1_15ResourceRequestENS1_22ClientCredentialPolicyERKNS1_12FetchOp10967908'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.h' l='73' c='_ZN6WebKit17WebLoaderStrategy12preconnectToERN7WebCore11FrameLoaderERKN3WTF3URLENS1_23StoredCredentialsPolicyEONS4_8FunctionIFvRKNS1_13ResourceErrorEEEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.h' l='106' c='_ZN6WebKit17WebLoaderStrategy44tryLoadingSynchronouslyUsingURLSchemeHandlerERN7WebCore11FrameLoaderEmRKNS1_15ResourceRequestE'/>
+<def f='WebKit/Source/WebCore/loader/FrameLoader.h' l='97' ll='503'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.h' l='99' c='_ZN7WebCore11FrameLoaderC1ERKS0_'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.h' l='99' c='_ZN7WebCore11FrameLoaderaSERKS0_'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.h' l='99' c='_ZN7WebCore11FrameLoaderaSERKS0_'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.h' l='351' c='_ZN7WebCore11FrameLoader25dispatchBeforeUnloadEventERNS_6ChromeEPS0_'/>
+<size>392</size>
+<fun r='_ZN7WebCore11FrameLoaderC1ERKS0_'/>
+<fun r='_ZN7WebCore11FrameLoaderC1ERNS_5FrameEON3WTF9UniqueRefINS_17FrameLoaderClientEEE'/>
+<fun r='_ZN7WebCore11FrameLoaderD1Ev'/>
+<fun r='_ZN7WebCore11FrameLoader4initEv'/>
+<fun r='_ZN7WebCore11FrameLoader26initForSynthesizedDocumentERKN3WTF3URLE'/>
+<fun r='_ZNK7WebCore11FrameLoader5frameEv'/>
+<fun r='_ZNK7WebCore11FrameLoader13policyCheckerEv'/>
+<fun r='_ZNK7WebCore11FrameLoader7historyEv'/>
+<fun r='_ZNK7WebCore11FrameLoader8notifierEv'/>
+<fun r='_ZN7WebCore11FrameLoader14subframeLoaderEv'/>
+<fun r='_ZNK7WebCore11FrameLoader14subframeLoaderEv'/>
+<fun r='_ZN7WebCore11FrameLoader15setupForReplaceEv'/>
+<fun r='_ZN7WebCore11FrameLoader16loadFrameRequestEONS_16FrameLoadRequestEPNS_5EventEON3WTF6RefPtrINS_9FormStateENS5_12RawPtrTraitsIS7_EENS5_21DefaultRefDeref1222653'/>
+<fun r='_ZN7WebCore11FrameLoader4loadEONS_16FrameLoadRequestE'/>
+<fun r='_ZN7WebCore11FrameLoader11loadArchiveEON3WTF3RefINS_7ArchiveENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore11FrameLoader25loadResourceSynchronouslyERKNS_15ResourceRequestENS_22ClientCredentialPolicyERKNS_12FetchOptionsERKNS_13HTTPHeaderMapERNS_13665605'/>
+<fun r='_ZN7WebCore11FrameLoader14changeLocationERKN3WTF3URLERKNS1_6StringEPNS_5EventERKNS_14ReferrerPolicyENS_28ShouldOpenExternalURLsPolicyESt8optionalINS_28733374'/>
+<fun r='_ZN7WebCore11FrameLoader14changeLocationEONS_16FrameLoadRequestEPNS_5EventEOSt8optionalINS_23PrivateClickMeasurementEE'/>
+<fun r='_ZN7WebCore11FrameLoader10submitFormEON3WTF3RefINS_14FormSubmissionENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore11FrameLoader6reloadEN3WTF9OptionSetINS_12ReloadOptionEEE'/>
+<fun r='_ZN7WebCore11FrameLoader26reloadWithOverrideEncodingERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore11FrameLoader4openERNS_15CachedFrameBaseE'/>
+<fun r='_ZN7WebCore11FrameLoader41retryAfterFailedCacheOnlyMainResourceLoadEv'/>
+<fun r='_ZN7WebCore11FrameLoader21reportLocalLoadFailedEPNS_5FrameERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore11FrameLoader23reportBlockedLoadFailedERNS_5FrameERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore11FrameLoader34stopAllLoadersAndCheckCompletenessEv'/>
+<fun r='_ZN7WebCore11FrameLoader14stopAllLoadersENS_20ClearProvisionalItemENS_17StopLoadingPolicyE'/>
+<fun r='_ZN7WebCore11FrameLoader17stopForUserCancelEb'/>
+<fun r='_ZN7WebCore11FrameLoader23stopForBackForwardCacheEv'/>
+<fun r='_ZN7WebCore11FrameLoader4stopEv'/>
+<fun r='_ZN7WebCore11FrameLoader11stopLoadingENS_17UnloadEventPolicyE'/>
+<fun r='_ZN7WebCore11FrameLoader8closeURLEv'/>
+<fun r='_ZN7WebCore11FrameLoader5clearEPNS_8DocumentEbbbON3WTF8FunctionIFvvEEE'/>
+<fun r='_ZNK7WebCore11FrameLoader9isLoadingEv'/>
+<fun r='_ZNK7WebCore11FrameLoader14frameHasLoadedEv'/>
+<fun r='_ZNK7WebCore11FrameLoader27numPendingOrLoadingRequestsEb'/>
+<fun r='_ZNK7WebCore11FrameLoader23effectiveReferrerPolicyEv'/>
+<fun r='_ZNK7WebCore11FrameLoader8referrerEv'/>
+<fun r='_ZNK7WebCore11FrameLoader16outgoingReferrerEv'/>
+<fun r='_ZNK7WebCore11FrameLoader14outgoingOriginEv'/>
+<fun r='_ZNK7WebCore11FrameLoader20activeDocumentLoaderEv'/>
+<fun r='_ZNK7WebCore11FrameLoader14documentLoaderEv'/>
+<fun r='_ZNK7WebCore11FrameLoader20policyDocumentLoaderEv'/>
+<fun r='_ZNK7WebCore11FrameLoader25provisionalDocumentLoaderEv'/>
+<fun r='_ZNK7WebCore11FrameLoader5stateEv'/>
+<fun r='_ZNK7WebCore11FrameLoader39shouldReportResourceTimingToParentFrameEv'/>
+<fun r='_ZN7WebCore11FrameLoader25receivedMainResourceErrorERKNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore11FrameLoader23willLoadMediaElementURLERN3WTF3URLERNS_4NodeE'/>
+<fun r='_ZNK7WebCore11FrameLoader14cancelledErrorERKNS_15ResourceRequestE'/>
+<fun r='_ZNK7WebCore11FrameLoader28blockedByContentBlockerErrorERKNS_15ResourceRequestE'/>
+<fun r='_ZNK7WebCore11FrameLoader12blockedErrorERKNS_15ResourceRequestE'/>
+<fun r='_ZNK7WebCore11FrameLoader11isReplacingEv'/>
+<fun r='_ZN7WebCore11FrameLoader12setReplacingEv'/>
+<fun r='_ZNK7WebCore11FrameLoader17subframeIsLoadingEv'/>
+<fun r='_ZN7WebCore11FrameLoader15willChangeTitleEPNS_14DocumentLoaderE'/>
+<fun r='_ZN7WebCore11FrameLoader14didChangeTitleEPNS_14DocumentLoaderE'/>
+<fun r='_ZNK7WebCore11FrameLoader30shouldTreatURLAsSrcdocDocumentERKN3WTF3URLE'/>
+<fun r='_ZNK7WebCore11FrameLoader8loadTypeEv'/>
+<fun r='_ZNK7WebCore11FrameLoader22subresourceCachePolicyERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore11FrameLoader23didReachLayoutMilestoneEN3WTF9OptionSetINS_15LayoutMilestoneEEE'/>
+<fun r='_ZN7WebCore11FrameLoader14didFirstLayoutEv'/>
+<fun r='_ZN7WebCore11FrameLoader29didReachVisuallyNonEmptyStateEv'/>
+<fun r='_ZN7WebCore11FrameLoader29loadedResourceFromMemoryCacheERNS_14CachedResourceERNS_15ResourceRequestERNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore11FrameLoader35tellClientAboutPastMemoryCacheLoadsEv'/>
+<fun r='_ZN7WebCore11FrameLoader17checkLoadCompleteEv'/>
+<fun r='_ZN7WebCore11FrameLoader16detachFromParentEv'/>
+<fun r='_ZN7WebCore11FrameLoader28detachViewsAndDocumentLoaderEv'/>
+<fun r='_ZN7WebCore11FrameLoader21addHTTPOriginIfNeededERNS_15ResourceRequestERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore11FrameLoader32addSameSiteInfoToRequestIfNeededERNS_15ResourceRequestEPKNS_8DocumentE'/>
+<fun r='_ZNK7WebCore11FrameLoader6clientEv'/>
+<fun r='_ZN7WebCore11FrameLoader6clientEv'/>
+<fun r='_ZNK7WebCore11FrameLoader6pageIDEv'/>
+<fun r='_ZNK7WebCore11FrameLoader7frameIDEv'/>
+<fun r='_ZN7WebCore11FrameLoader16setDefersLoadingEb'/>
+<fun r='_ZN7WebCore11FrameLoader18checkContentPolicyERKNS_16ResourceResponseENS_21PolicyCheckIdentifierEON3WTF8FunctionIFvNS_12PolicyActionES4_EEE'/>
+<fun r='_ZN7WebCore11FrameLoader15didExplicitOpenEv'/>
+<fun r='_ZN7WebCore11FrameLoader16didBeginDocumentEb'/>
+<fun r='_ZN7WebCore11FrameLoader17receivedFirstDataEv'/>
+<fun r='_ZN7WebCore11FrameLoader20dispatchOnloadEventsEv'/>
+<fun r='_ZNK7WebCore11FrameLoader9userAgentERKN3WTF3URLE'/>
+<fun r='_ZNK7WebCore11FrameLoader17navigatorPlatformEv'/>
+<fun r='_ZN7WebCore11FrameLoader35dispatchDidClearWindowObjectInWorldERNS_15DOMWrapperWorldE'/>
+<fun r='_ZN7WebCore11FrameLoader40dispatchDidClearWindowObjectsInAllWorldsEv'/>
+<fun r='_ZN7WebCore11FrameLoader17forceSandboxFlagsEi'/>
+<fun r='_ZNK7WebCore11FrameLoader21effectiveSandboxFlagsEv'/>
+<fun r='_ZNK7WebCore11FrameLoader29checkIfFormActionAllowedByCSPERKN3WTF3URLEb'/>
+<fun r='_ZN7WebCore11FrameLoader6openerEv'/>
+<fun r='_ZNK7WebCore11FrameLoader6openerEv'/>
+<fun r='_ZN7WebCore11FrameLoader9setOpenerEPNS_5FrameE'/>
+<fun r='_ZN7WebCore11FrameLoader25detachFromAllOpenedFramesEv'/>
+<fun r='_ZN7WebCore11FrameLoader37resetMultipleFormSubmissionProtectionEv'/>
+<fun r='_ZN7WebCore11FrameLoader22checkCallImplicitCloseEv'/>
+<fun r='_ZN7WebCore11FrameLoader13frameDetachedEv'/>
+<fun r='_ZN7WebCore11FrameLoader19setOutgoingReferrerERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore11FrameLoader8loadDoneENS_18LoadCompletionTypeE'/>
+<fun r='_ZN7WebCore11FrameLoader19subresourceLoadDoneENS_18LoadCompletionTypeE'/>
+<fun r='_ZN7WebCore11FrameLoader15finishedParsingEv'/>
+<fun r='_ZN7WebCore11FrameLoader14checkCompletedEv'/>
+<fun r='_ZNK7WebCore11FrameLoader10isCompleteEv'/>
+<fun r='_ZN7WebCore11FrameLoader21commitProvisionalLoadEv'/>
+<fun r='_ZN7WebCore11FrameLoader21setLoadsSynchronouslyEb'/>
+<fun r='_ZNK7WebCore11FrameLoader18loadsSynchronouslyEv'/>
+<fun r='_ZN7WebCore11FrameLoader12stateMachineEv'/>
+<fun r='_ZN7WebCore11FrameLoader22findFrameForNavigationERKN3WTF10AtomStringEPNS_8DocumentE'/>
+<fun r='_ZN7WebCore11FrameLoader22applyUserAgentIfNeededERNS_15ResourceRequestE'/>
+<fun r='_ZN7WebCore11FrameLoader35shouldInterruptLoadForXFrameOptionsERKN3WTF6StringERKNS1_3URLEm'/>
+<fun r='_ZN7WebCore11FrameLoader9completedEv'/>
+<fun r='_ZNK7WebCore11FrameLoader23allAncestorsAreCompleteEv'/>
+<fun r='_ZN7WebCore11FrameLoader16clientRedirectedERKN3WTF3URLEdNS1_8WallTimeENS_19LockBackForwardListE'/>
+<fun r='_ZN7WebCore11FrameLoader33clientRedirectCancelledOrFinishedENS_17NewLoadInProgressE'/>
+<fun r='_ZN7WebCore11FrameLoader32setOriginalURLForDownloadRequestERNS_15ResourceRequestE'/>
+<fun r='_ZNK7WebCore11FrameLoader19quickRedirectComingEv'/>
+<fun r='_ZN7WebCore11FrameLoader11shouldCloseEv'/>
+<fun r='_ZNK7WebCore11FrameLoader33pageDismissalEventBeingDispatchedEv'/>
+<fun r='_ZNK7WebCore11FrameLoader17networkingContextEv'/>
+<fun r='_ZN7WebCore11FrameLoader28loadProgressingStatusChangedEv'/>
+<fun r='_ZNK7WebCore11FrameLoader11previousURLEv'/>
+<fun r='_ZN7WebCore11FrameLoader30completePageTransitionIfNeededEv'/>
+<fun r='_ZN7WebCore11FrameLoader32setOverrideCachePolicyForTestingENS_26ResourceRequestCachePolicyE'/>
+<fun r='_ZN7WebCore11FrameLoader41setOverrideResourceLoadPriorityForTestingENS_20ResourceLoadPriorityE'/>
+<fun r='_ZN7WebCore11FrameLoader54setStrictRawResourceValidationPolicyDisabledForTestingEb'/>
+<fun r='_ZN7WebCore11FrameLoader53isStrictRawResourceValidationPolicyDisabledForTestingEv'/>
+<fun r='_ZN7WebCore11FrameLoader21clearTestingOverridesEv'/>
+<fun r='_ZNK7WebCore11FrameLoader35provisionalLoadErrorBeingHandledURLEv'/>
+<fun r='_ZN7WebCore11FrameLoader38setProvisionalLoadErrorBeingHandledURLERKN3WTF3URLE'/>
+<fun r='_ZNK7WebCore11FrameLoader34shouldSuppressTextInputFromEditingEv'/>
+<fun r='_ZNK7WebCore11FrameLoader21isReloadingFromOriginEv'/>
+<fun r='_ZN7WebCore11FrameLoader29setAlwaysAllowLocalWebarchiveEb'/>
+<fun r='_ZNK7WebCore11FrameLoader26alwaysAllowLocalWebarchiveEv'/>
+<fun r='_ZN7WebCore11FrameLoader30updateRequestAndAddExtraFieldsERNS_15ResourceRequestENS_14IsMainResourceENS_13FrameLoadTypeENS_29ShouldUpdateAppInitiatedValueE'/>
+<fun r='_ZN7WebCore11FrameLoader23scheduleRefreshIfNeededERNS_8DocumentERKN3WTF6StringE'/>
+<fun r='_ZNK7WebCore11FrameLoader22allChildrenAreCompleteEv'/>
+<fun r='_ZN7WebCore11FrameLoader15checkTimerFiredEv'/>
+<fun r='_ZN7WebCore11FrameLoader20checkCompletenessNowEv'/>
+<fun r='_ZN7WebCore11FrameLoader20loadSameDocumentItemERNS_11HistoryItemE'/>
+<fun r='_ZN7WebCore11FrameLoader25loadDifferentDocumentItemERNS_11HistoryItemEPS1_NS_13FrameLoadTypeENS0_29FormSubmissionCacheLoadPolicyENS_27ShouldTreatAsContinuingLoadE'/>
+<fun r='_ZN7WebCore11FrameLoader33loadProvisionalItemFromCachedPageEv'/>
+<fun r='_ZN7WebCore11FrameLoader26updateFirstPartyForCookiesEv'/>
+<fun r='_ZN7WebCore11FrameLoader23setFirstPartyForCookiesERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore11FrameLoader27defaultRequestCachingPolicyERKNS_15ResourceRequestENS_13FrameLoadTypeEb'/>
+<fun r='_ZN7WebCore11FrameLoader20clearProvisionalLoadEv'/>
+<fun r='_ZN7WebCore11FrameLoader21transitionToCommittedEPNS_10CachedPageE'/>
+<fun r='_ZN7WebCore11FrameLoader18frameLoadCompletedEv'/>
+<fun r='_ZN7WebCore11FrameLoader27defaultSubstituteDataForURLERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore11FrameLoader25dispatchBeforeUnloadEventERNS_6ChromeEPS0_'/>
+<fun r='_ZN7WebCore11FrameLoader20dispatchUnloadEventsENS_17UnloadEventPolicyE'/>
+<fun r='_ZN7WebCore11FrameLoader33continueLoadAfterNavigationPolicyERKNS_15ResourceRequestEPNS_9FormStateENS_24NavigationPolicyDecisionENS_27AllowNavigationToInvalidURLE'/>
+<fun r='_ZN7WebCore11FrameLoader32continueLoadAfterNewWindowPolicyERKNS_15ResourceRequestEPNS_9FormStateERKN3WTF6StringERKNS_16NavigationActionENS_25ShouldCon642457'/>
+<fun r='_ZN7WebCore11FrameLoader43continueFragmentScrollAfterNavigationPolicyERKNS_15ResourceRequestEb'/>
+<fun r='_ZN7WebCore11FrameLoader31shouldPerformFragmentNavigationEbRKN3WTF6StringENS_13FrameLoadTypeERKNS1_3URLE'/>
+<fun r='_ZN7WebCore11FrameLoader34scrollToFragmentWithParentBoundaryERKN3WTF3URLEb'/>
+<fun r='_ZN7WebCore11FrameLoader30dispatchDidFailProvisionalLoadERNS_14DocumentLoaderERKNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore11FrameLoader29checkLoadCompleteForThisFrameEv'/>
+<fun r='_ZN7WebCore11FrameLoader17setDocumentLoaderEPNS_14DocumentLoaderE'/>
+<fun r='_ZN7WebCore11FrameLoader23setPolicyDocumentLoaderEPNS_14DocumentLoaderE'/>
+<fun r='_ZN7WebCore11FrameLoader28setProvisionalDocumentLoaderEPNS_14DocumentLoaderE'/>
+<fun r='_ZN7WebCore11FrameLoader8setStateENS_10FrameStateE'/>
+<fun r='_ZN7WebCore11FrameLoader19closeOldDataSourcesEv'/>
+<fun r='_ZN7WebCore11FrameLoader25willRestoreFromCachedPageEv'/>
+<fun r='_ZN7WebCore11FrameLoader34shouldReloadToHandleUnreachableURLERNS_14DocumentLoaderE'/>
+<fun r='_ZN7WebCore11FrameLoader21dispatchDidCommitLoadESt8optionalINS_18HasInsecureContentEES1_INS_13UsedLegacyTLSEE'/>
+<fun r='_ZN7WebCore11FrameLoader22loadWithDocumentLoaderEPNS_14DocumentLoaderENS_13FrameLoadTypeEON3WTF6RefPtrINS_9FormStateENS4_12RawPtrTraitsIS6_EENS4_21Def7653511'/>
+<fun r='_ZN7WebCore11FrameLoader4loadERNS_14DocumentLoaderE'/>
+<fun r='_ZN7WebCore11FrameLoader24loadWithNavigationActionERKNS_15ResourceRequestEONS_16NavigationActionENS_13FrameLoadTypeEON3WTF6RefPtrINS_9FormStateENS7_129580964'/>
+<fun r='_ZN7WebCore11FrameLoader15loadPostRequestEONS_16FrameLoadRequestERKN3WTF6StringENS_13FrameLoadTypeEPNS_5EventEONS3_6RefPtrINS_9FormStateENS3_12RawPtrT10896572'/>
+<fun r='_ZN7WebCore11FrameLoader7loadURLEONS_16FrameLoadRequestERKN3WTF6StringENS_13FrameLoadTypeEPNS_5EventEONS3_6RefPtrINS_9FormStateENS3_12RawPtrTraitsISB_3936764'/>
+<fun r='_ZN7WebCore11FrameLoader12shouldReloadERKN3WTF3URLES4_'/>
+<fun r='_ZN7WebCore11FrameLoader19requestFromDelegateERNS_15ResourceRequestERmRNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore11FrameLoader14detachChildrenEv'/>
+<fun r='_ZN7WebCore11FrameLoader19closeAndRemoveChildERNS_5FrameE'/>
+<fun r='_ZN7WebCore11FrameLoader18loadInSameDocumentERKN3WTF3URLEPNS_21SerializedScriptValueEb'/>
+<fun r='_ZN7WebCore11FrameLoader19prepareForLoadStartEv'/>
+<fun r='_ZN7WebCore11FrameLoader22provisionalLoadStartedEv'/>
+<fun r='_ZN7WebCore11FrameLoader10didOpenURLEv'/>
+<fun r='_ZN7WebCore11FrameLoader22scheduleCheckCompletedEv'/>
+<fun r='_ZN7WebCore11FrameLoader25scheduleCheckLoadCompleteEv'/>
+<fun r='_ZN7WebCore11FrameLoader23startCheckCompleteTimerEv'/>
+<fun r='_ZNK7WebCore11FrameLoader29shouldTreatURLAsSameAsCurrentERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore11FrameLoader40dispatchGlobalObjectAvailableInAllWorldsEv'/>
+<fun r='_ZNK7WebCore11FrameLoader19isNavigationAllowedEv'/>
+<fun r='_ZNK7WebCore11FrameLoader20isStopLoadingAllowedEv'/>
+<fun r='_ZNK7WebCore11FrameLoader38shouldTreatCurrentLoadAsContinuingLoadEv'/>
+<fun r='_ZN7WebCore11FrameLoader8loadItemERNS_11HistoryItemEPS1_NS_13FrameLoadTypeENS_27ShouldTreatAsContinuingLoadE'/>
+<fun r='_ZNK7WebCore11FrameLoader20requestedHistoryItemEv'/>
+<fun r='_ZN7WebCore11FrameLoader21loadURLIntoChildFrameERKN3WTF3URLERKNS1_6StringEPNS_5FrameE'/>
+<fun r='_ZN7WebCore11FrameLoader7startedEv'/>
+<fun r='_ZN7WebCore11FrameLoader34clearProvisionalLoadForPolicyCheckEv'/>
+<fun r='_ZNK7WebCore11FrameLoader15hasOpenedFramesEv'/>
+<fun r='_ZNK7WebCore11FrameLoader31preventsParentFromBeingCompleteERKNS_5FrameE'/>
+<mbr r='WebCore::FrameLoader::m_frame' o='0' t='WebCore::Frame &amp;'/>
+<mbr r='WebCore::FrameLoader::m_client' o='64' t='UniqueRef&lt;WebCore::FrameLoaderClient&gt;'/>
+<mbr r='WebCore::FrameLoader::m_policyChecker' o='128' t='const std::unique_ptr&lt;PolicyChecker&gt;'/>
+<mbr r='WebCore::FrameLoader::m_history' o='192' t='const std::unique_ptr&lt;HistoryController&gt;'/>
+<mbr r='WebCore::FrameLoader::m_notifier' o='256' t='WebCore::ResourceLoadNotifier'/>
+<mbr r='WebCore::FrameLoader::m_subframeLoader' o='448' t='const std::unique_ptr&lt;SubframeLoader&gt;'/>
+<mbr r='WebCore::FrameLoader::m_stateMachine' o='512' t='WebCore::FrameLoaderStateMachine'/>
+<mbr r='WebCore::FrameLoader::m_progressTracker' o='576' t='std::unique_ptr&lt;FrameProgressTracker&gt;'/>
+<mbr r='WebCore::FrameLoader::m_state' o='640' t='WebCore::FrameState'/>
+<mbr r='WebCore::FrameLoader::m_loadType' o='648' t='WebCore::FrameLoadType'/>
+<mbr r='WebCore::FrameLoader::m_documentLoader' o='704' t='RefPtr&lt;WebCore::DocumentLoader&gt;'/>
+<mbr r='WebCore::FrameLoader::m_provisionalDocumentLoader' o='768' t='RefPtr&lt;WebCore::DocumentLoader&gt;'/>
+<mbr r='WebCore::FrameLoader::m_policyDocumentLoader' o='832' t='RefPtr&lt;WebCore::DocumentLoader&gt;'/>
+<mbr r='WebCore::FrameLoader::m_provisionalLoadErrorBeingHandledURL' o='896' t='WTF::URL'/>
+<mbr r='WebCore::FrameLoader::m_quickRedirectComing' o='1216' t='bool'/>
+<mbr r='WebCore::FrameLoader::m_sentRedirectNotification' o='1224' t='bool'/>
+<mbr r='WebCore::FrameLoader::m_inStopAllLoaders' o='1232' t='bool'/>
+<mbr r='WebCore::FrameLoader::m_inClearProvisionalLoadForPolicyCheck' o='1240' t='bool'/>
+<mbr r='WebCore::FrameLoader::m_shouldReportResourceTimingToParentFrame' o='1248' t='bool'/>
+<mbr r='WebCore::FrameLoader::m_outgoingReferrer' o='1280' t='WTF::String'/>
+<mbr r='WebCore::FrameLoader::m_isExecutingJavaScriptFormAction' o='1344' t='bool'/>
+<mbr r='WebCore::FrameLoader::m_didCallImplicitClose' o='1352' t='bool'/>
+<mbr r='WebCore::FrameLoader::m_wasUnloadEventEmitted' o='1360' t='bool'/>
+<mbr r='WebCore::FrameLoader::m_pageDismissalEventBeingDispatched' o='1376' t='WebCore::FrameLoader::PageDismissalType'/>
+<mbr r='WebCore::FrameLoader::m_isComplete' o='1408' t='bool'/>
+<mbr r='WebCore::FrameLoader::m_pendingStateObject' o='1472' t='RefPtr&lt;WebCore::SerializedScriptValue&gt;'/>
+<mbr r='WebCore::FrameLoader::m_needsClear' o='1536' t='bool'/>
+<mbr r='WebCore::FrameLoader::m_submittedFormURL' o='1600' t='WTF::URL'/>
+<mbr r='WebCore::FrameLoader::m_checkTimer' o='1920' t='WebCore::Timer'/>
+<mbr r='WebCore::FrameLoader::m_shouldCallCheckCompleted' o='2304' t='bool'/>
+<mbr r='WebCore::FrameLoader::m_shouldCallCheckLoadComplete' o='2312' t='bool'/>
+<mbr r='WebCore::FrameLoader::m_opener' o='2368' t='WeakPtr&lt;WebCore::Frame&gt;'/>
+<mbr r='WebCore::FrameLoader::m_openedFrames' o='2432' t='WeakHashSet&lt;WebCore::Frame&gt;'/>
+<mbr r='WebCore::FrameLoader::m_loadingFromCachedPage' o='2496' t='bool'/>
+<mbr r='WebCore::FrameLoader::m_currentNavigationHasShownBeforeUnloadConfirmPanel' o='2504' t='bool'/>
+<mbr r='WebCore::FrameLoader::m_loadsSynchronously' o='2512' t='bool'/>
+<mbr r='WebCore::FrameLoader::m_forcedSandboxFlags' o='2528' t='WebCore::SandboxFlags'/>
+<mbr r='WebCore::FrameLoader::m_networkingContext' o='2560' t='RefPtr&lt;WebCore::FrameNetworkingContext&gt;'/>
+<mbr r='WebCore::FrameLoader::m_overrideCachePolicyForTesting' o='2624' t='std::optional&lt;ResourceRequestCachePolicy&gt;'/>
+<mbr r='WebCore::FrameLoader::m_overrideResourceLoadPriorityForTesting' o='2640' t='std::optional&lt;ResourceLoadPriority&gt;'/>
+<mbr r='WebCore::FrameLoader::m_isStrictRawResourceValidationPolicyDisabledForTesting' o='2656' t='bool'/>
+<mbr r='WebCore::FrameLoader::m_currentLoadContinuingState' o='2664' t='WebCore::FrameLoader::LoadContinuingState'/>
+<mbr r='WebCore::FrameLoader::m_checkingLoadCompleteForDetachment' o='2672' t='bool'/>
+<mbr r='WebCore::FrameLoader::m_previousURL' o='2688' t='WTF::URL'/>
+<mbr r='WebCore::FrameLoader::m_requestedHistoryItem' o='3008' t='RefPtr&lt;WebCore::HistoryItem&gt;'/>
+<mbr r='WebCore::FrameLoader::m_alwaysAllowLocalWebarchive' o='3072' t='bool'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='558' c='_ZN6WebKit17WebLoaderStrategy44tryLoadingSynchronouslyUsingURLSchemeHandlerERN7WebCore11FrameLoaderEmRKNS1_15ResourceRequestE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='578' c='_ZN6WebKit17WebLoaderStrategy25loadResourceSynchronouslyERN7WebCore11FrameLoaderEmRKNS1_15ResourceRequestENS1_22ClientCredentialPolicyERKNS1_12FetchOp10967908'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/WebLoaderStrategy.cpp' l='747' c='_ZN6WebKit17WebLoaderStrategy12preconnectToERN7WebCore11FrameLoaderERKN3WTF3URLENS1_23StoredCredentialsPolicyEONS4_8FunctionIFvRKNS1_13ResourceErrorEEEE'/>
+<size>392</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='230' c='_ZN6WebKit20WebFrameLoaderClient32assignIdentifierToInitialRequestEmPN7WebCore14DocumentLoaderERKNS1_15ResourceRequestE'/>
+<size>392</size>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResourceRequest.h' l='81' c='_ZN7WebCore21CachedResourceRequest30updateReferrerAndOriginHeadersERNS_11FrameLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResourceRequest.h' l='82' c='_ZN7WebCore21CachedResourceRequest21updateUserAgentHeaderERNS_11FrameLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResourceLoader.h' l='181' c='_ZN7WebCore20CachedResourceLoader24updateHTTPRequestHeadersERNS_11FrameLoaderENS_14CachedResource4TypeERNS_21CachedResourceRequestE'/>
+<size>392</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='5046' c='_ZN6WebKit7WebPage23SandboxExtensionTracker36shouldReuseCommittedSandboxExtensionEPNS_8WebFrameE'/>
+<size>392</size>
+<use f='WebKit/Source/WebCore/loader/cache/CachedCSSStyleSheet.h' l='43' c='_ZN7WebCore19CachedCSSStyleSheet23restoreParsedStyleSheetERKNS_16CSSParserContextENS_11CachePolicyERNS_11FrameLoaderE'/>
+<use f='WebKit/Source/WebCore/css/StyleSheetContents.cpp' l='494' c='_ZNK7WebCore18StyleSheetContents22subresourcesAllowReuseENS_11CachePolicyERNS_11FrameLoaderE'/>
+<size>392</size>
+<use f='WebKit/Source/WebCore/history/BackForwardCache.cpp' l='79' c='_ZN7WebCoreL13canCacheFrameERNS_5FrameERNS_23DiagnosticLoggingClientEj'/>
+<size>392</size>
+<use f='WebKit/Source/WebCore/page/ContextMenuController.cpp' l='881' c='_ZN7WebCore21ContextMenuController8populateEv'/>
+<use f='WebKit/Source/WebCore/page/ContextMenuController.cpp' l='1079' c='_ZN7WebCore21ContextMenuController8populateEv'/>
+<size>392</size>
+<use f='WebKit/Source/WebCore/page/Frame.cpp' l='158' c='_ZN7WebCore5FrameC1ERNS_4PageEPNS_21HTMLFrameOwnerElementEON3WTF9UniqueRefINS_17FrameLoaderClientEEE'/>
+<size>392</size>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorPageAgent.cpp' l='312' c='_ZN7WebCore18InspectorPageAgent20assertDocumentLoaderERN3WTF6StringEPNS_5FrameE'/>
+<size>392</size>
+<use f='WebKit/Source/WebCore/svg/graphics/SVGImage.cpp' l='496' c='_ZN7WebCore8SVGImage11dataChangedEb'/>
+<size>392</size>
+<use f='WebKit/Source/WebCore/html/parser/XSSAuditorDelegate.cpp' l='90' c='_ZN7WebCore18XSSAuditorDelegate14didBlockScriptERKNS_7XSSInfoE'/>
+<size>392</size>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='3784' c='_ZN7WebCore8Document16processHttpEquivERKN3WTF6StringES4_b'/>
+<size>392</size>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResource.cpp' l='203' c='_ZN7WebCore14CachedResource4loadERNS_20CachedResourceLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResourceLoader.cpp' l='785' c='_ZN7WebCore20CachedResourceLoader24updateHTTPRequestHeadersERNS_11FrameLoaderENS_14CachedResource4TypeERNS_21CachedResourceRequestE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResourceRequest.cpp' l='235' c='_ZN7WebCore21CachedResourceRequest30updateReferrerAndOriginHeadersERNS_11FrameLoaderE'/>
+<use f='WebKit/Source/WebCore/loader/cache/CachedResourceRequest.cpp' l='253' c='_ZN7WebCore21CachedResourceRequest21updateUserAgentHeaderERNS_11FrameLoaderE'/>
+<size>392</size>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='175' c='_ZNK7WebCore14DocumentLoader11frameLoaderEv'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='810' c='_ZN7WebCore14DocumentLoader58stopLoadingAfterXFrameOptionsOrContentSecurityPolicyDeniedEmRKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='1128' c='_ZN7WebCore14DocumentLoader10commitLoadEPKhi'/>
+<size>392</size>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='2371' c='_ZNK7WebCore11FrameLoader17subframeIsLoadingEv'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='3356' c='_ZN7WebCore11FrameLoader25dispatchBeforeUnloadEventERNS_6ChromeEPS0_'/>
+<use f='WebKit/Source/WebCore/loader/HistoryController.cpp' l='383' c='_ZN7WebCore11FrameLoader17HistoryController21updateForStandardLoadENS1_17HistoryUpdateTypeE'/>
+<use f='WebKit/Source/WebCore/loader/HistoryController.cpp' l='471' c='_ZN7WebCore11FrameLoader17HistoryController15updateForCommitEv'/>
+<use f='WebKit/Source/WebCore/loader/HistoryController.cpp' l='710' c='_ZN7WebCore11FrameLoader17HistoryController14createItemTreeERNS_5FrameEb'/>
+<use f='WebKit/Source/WebCore/loader/HistoryController.cpp' l='820' c='_ZN7WebCore11FrameLoader17HistoryController36updateBackForwardListClippedAtTargetEb'/>
+<size>392</size>
+<fun r='_ZN7WebCore11FrameLoaderC1ERNS_5FrameEON3WTF9UniqueRefINS_17FrameLoaderClientEEE'/>
+<fun r='_ZN7WebCore11FrameLoaderD1Ev'/>
+<fun r='_ZN7WebCore11FrameLoader25detachFromAllOpenedFramesEv'/>
+<fun r='_ZN7WebCore11FrameLoader4initEv'/>
+<fun r='_ZN7WebCore11FrameLoader26initForSynthesizedDocumentERKN3WTF3URLE'/>
+<fun r='_ZNK7WebCore11FrameLoader6pageIDEv'/>
+<fun r='_ZNK7WebCore11FrameLoader7frameIDEv'/>
+<fun r='_ZN7WebCore11FrameLoader6openerEv'/>
+<fun r='_ZNK7WebCore11FrameLoader6openerEv'/>
+<fun r='_ZN7WebCore11FrameLoader16setDefersLoadingEb'/>
+<fun r='_ZN7WebCore11FrameLoader18checkContentPolicyERKNS_16ResourceResponseENS_21PolicyCheckIdentifierEON3WTF8FunctionIFvNS_12PolicyActionES4_EEE'/>
+<fun r='_ZN7WebCore11FrameLoader14changeLocationERKN3WTF3URLERKNS1_6StringEPNS_5EventERKNS_14ReferrerPolicyENS_28ShouldOpenExternalURLsPolicyESt8optionalINS_28733374'/>
+<fun r='_ZN7WebCore11FrameLoader14changeLocationEONS_16FrameLoadRequestEPNS_5EventEOSt8optionalINS_23PrivateClickMeasurementEE'/>
+<fun r='_ZN7WebCore11FrameLoader10submitFormEON3WTF3RefINS_14FormSubmissionENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZN7WebCore11FrameLoader11stopLoadingENS_17UnloadEventPolicyE'/>
+<fun r='_ZN7WebCore11FrameLoader4stopEv'/>
+<fun r='_ZN7WebCore11FrameLoader8closeURLEv'/>
+<fun r='_ZN7WebCore11FrameLoader10didOpenURLEv'/>
+<fun r='_ZN7WebCore11FrameLoader15didExplicitOpenEv'/>
+<fun r='_ZN7WebCore11FrameLoader5clearEPNS_8DocumentEbbbON3WTF8FunctionIFvvEEE'/>
+<fun r='_ZN7WebCore11FrameLoader17receivedFirstDataEv'/>
+<fun r='_ZN7WebCore11FrameLoader19setOutgoingReferrerERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore11FrameLoader16didBeginDocumentEb'/>
+<fun r='_ZN7WebCore11FrameLoader15finishedParsingEv'/>
+<fun r='_ZN7WebCore11FrameLoader8loadDoneENS_18LoadCompletionTypeE'/>
+<fun r='_ZN7WebCore11FrameLoader19subresourceLoadDoneENS_18LoadCompletionTypeE'/>
+<fun r='_ZNK7WebCore11FrameLoader31preventsParentFromBeingCompleteERKNS_5FrameE'/>
+<fun r='_ZNK7WebCore11FrameLoader22allChildrenAreCompleteEv'/>
+<fun r='_ZNK7WebCore11FrameLoader23allAncestorsAreCompleteEv'/>
+<fun r='_ZN7WebCore11FrameLoader14checkCompletedEv'/>
+<fun r='_ZN7WebCore11FrameLoader15checkTimerFiredEv'/>
+<fun r='_ZN7WebCore11FrameLoader20checkCompletenessNowEv'/>
+<fun r='_ZN7WebCore11FrameLoader23startCheckCompleteTimerEv'/>
+<fun r='_ZN7WebCore11FrameLoader22scheduleCheckCompletedEv'/>
+<fun r='_ZN7WebCore11FrameLoader25scheduleCheckLoadCompleteEv'/>
+<fun r='_ZN7WebCore11FrameLoader22checkCallImplicitCloseEv'/>
+<fun r='_ZN7WebCore11FrameLoader21loadURLIntoChildFrameERKN3WTF3URLERKNS1_6StringEPNS_5FrameE'/>
+<fun r='_ZN7WebCore11FrameLoader11loadArchiveEON3WTF3RefINS_7ArchiveENS1_12RawPtrTraitsIS3_EEEE'/>
+<fun r='_ZNK7WebCore11FrameLoader16outgoingReferrerEv'/>
+<fun r='_ZNK7WebCore11FrameLoader14outgoingOriginEv'/>
+<fun r='_ZNK7WebCore11FrameLoader29checkIfFormActionAllowedByCSPERKN3WTF3URLEb'/>
+<fun r='_ZN7WebCore11FrameLoader9setOpenerEPNS_5FrameE'/>
+<fun r='_ZN7WebCore11FrameLoader22provisionalLoadStartedEv'/>
+<fun r='_ZN7WebCore11FrameLoader37resetMultipleFormSubmissionProtectionEv'/>
+<fun r='_ZN7WebCore11FrameLoader26updateFirstPartyForCookiesEv'/>
+<fun r='_ZN7WebCore11FrameLoader23setFirstPartyForCookiesERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore11FrameLoader18loadInSameDocumentERKN3WTF3URLEPNS_21SerializedScriptValueEb'/>
+<fun r='_ZNK7WebCore11FrameLoader10isCompleteEv'/>
+<fun r='_ZN7WebCore11FrameLoader9completedEv'/>
+<fun r='_ZN7WebCore11FrameLoader7startedEv'/>
+<fun r='_ZN7WebCore11FrameLoader19prepareForLoadStartEv'/>
+<fun r='_ZN7WebCore11FrameLoader15setupForReplaceEv'/>
+<fun r='_ZN7WebCore11FrameLoader16loadFrameRequestEONS_16FrameLoadRequestEPNS_5EventEON3WTF6RefPtrINS_9FormStateENS5_12RawPtrTraitsIS7_EENS5_21DefaultRefDeref1222653'/>
+<fun r='_ZNK7WebCore11FrameLoader19isNavigationAllowedEv'/>
+<fun r='_ZNK7WebCore11FrameLoader20isStopLoadingAllowedEv'/>
+<fun r='_ZN7WebCore11FrameLoader7loadURLEONS_16FrameLoadRequestERKN3WTF6StringENS_13FrameLoadTypeEPNS_5EventEONS3_6RefPtrINS_9FormStateENS3_12RawPtrTraitsISB_3936764'/>
+<fun r='_ZN7WebCore11FrameLoader27defaultSubstituteDataForURLERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore11FrameLoader4loadEONS_16FrameLoadRequestE'/>
+<fun r='_ZN7WebCore11FrameLoader24loadWithNavigationActionERKNS_15ResourceRequestEONS_16NavigationActionENS_13FrameLoadTypeEON3WTF6RefPtrINS_9FormStateENS7_129580964'/>
+<fun r='_ZN7WebCore11FrameLoader4loadERNS_14DocumentLoaderE'/>
+<fun r='_ZN7WebCore11FrameLoader22loadWithDocumentLoaderEPNS_14DocumentLoaderENS_13FrameLoadTypeEON3WTF6RefPtrINS_9FormStateENS4_12RawPtrTraitsIS6_EENS4_21Def7653511'/>
+<fun r='_ZN7WebCore11FrameLoader34clearProvisionalLoadForPolicyCheckEv'/>
+<fun r='_ZNK7WebCore11FrameLoader15hasOpenedFramesEv'/>
+<fun r='_ZN7WebCore11FrameLoader21reportLocalLoadFailedEPNS_5FrameERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore11FrameLoader23reportBlockedLoadFailedERNS_5FrameERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore11FrameLoader23willLoadMediaElementURLERN3WTF3URLERNS_4NodeE'/>
+<fun r='_ZN7WebCore11FrameLoader34shouldReloadToHandleUnreachableURLERNS_14DocumentLoaderE'/>
+<fun r='_ZN7WebCore11FrameLoader26reloadWithOverrideEncodingERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore11FrameLoader6reloadEN3WTF9OptionSetINS_12ReloadOptionEEE'/>
+<fun r='_ZN7WebCore11FrameLoader14stopAllLoadersENS_20ClearProvisionalItemENS_17StopLoadingPolicyE'/>
+<fun r='_ZN7WebCore11FrameLoader23stopForBackForwardCacheEv'/>
+<fun r='_ZN7WebCore11FrameLoader34stopAllLoadersAndCheckCompletenessEv'/>
+<fun r='_ZN7WebCore11FrameLoader17stopForUserCancelEb'/>
+<fun r='_ZNK7WebCore11FrameLoader20activeDocumentLoaderEv'/>
+<fun r='_ZNK7WebCore11FrameLoader9isLoadingEv'/>
+<fun r='_ZNK7WebCore11FrameLoader14frameHasLoadedEv'/>
+<fun r='_ZN7WebCore11FrameLoader17setDocumentLoaderEPNS_14DocumentLoaderE'/>
+<fun r='_ZN7WebCore11FrameLoader23setPolicyDocumentLoaderEPNS_14DocumentLoaderE'/>
+<fun r='_ZN7WebCore11FrameLoader28setProvisionalDocumentLoaderEPNS_14DocumentLoaderE'/>
+<fun r='_ZN7WebCore11FrameLoader8setStateENS_10FrameStateE'/>
+<fun r='_ZN7WebCore11FrameLoader20clearProvisionalLoadEv'/>
+<fun r='_ZN7WebCore11FrameLoader21commitProvisionalLoadEv'/>
+<fun r='_ZN7WebCore11FrameLoader21transitionToCommittedEPNS_10CachedPageE'/>
+<fun r='_ZN7WebCore11FrameLoader33clientRedirectCancelledOrFinishedENS_17NewLoadInProgressE'/>
+<fun r='_ZN7WebCore11FrameLoader16clientRedirectedERKN3WTF3URLEdNS1_8WallTimeENS_19LockBackForwardListE'/>
+<fun r='_ZN7WebCore11FrameLoader12shouldReloadERKN3WTF3URLES4_'/>
+<fun r='_ZN7WebCore11FrameLoader19closeOldDataSourcesEv'/>
+<fun r='_ZN7WebCore11FrameLoader25willRestoreFromCachedPageEv'/>
+<fun r='_ZN7WebCore11FrameLoader4openERNS_15CachedFrameBaseE'/>
+<fun r='_ZNK7WebCore11FrameLoader11isReplacingEv'/>
+<fun r='_ZN7WebCore11FrameLoader12setReplacingEv'/>
+<fun r='_ZNK7WebCore11FrameLoader17subframeIsLoadingEv'/>
+<fun r='_ZN7WebCore11FrameLoader15willChangeTitleEPNS_14DocumentLoaderE'/>
+<fun r='_ZNK7WebCore11FrameLoader8loadTypeEv'/>
+<fun r='_ZNK7WebCore11FrameLoader22subresourceCachePolicyERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore11FrameLoader30dispatchDidFailProvisionalLoadERNS_14DocumentLoaderERKNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore11FrameLoader29checkLoadCompleteForThisFrameEv'/>
+<fun r='_ZN7WebCore11FrameLoader32setOriginalURLForDownloadRequestERNS_15ResourceRequestE'/>
+<fun r='_ZN7WebCore11FrameLoader23didReachLayoutMilestoneEN3WTF9OptionSetINS_15LayoutMilestoneEEE'/>
+<fun r='_ZN7WebCore11FrameLoader14didFirstLayoutEv'/>
+<fun r='_ZN7WebCore11FrameLoader29didReachVisuallyNonEmptyStateEv'/>
+<fun r='_ZN7WebCore11FrameLoader18frameLoadCompletedEv'/>
+<fun r='_ZN7WebCore11FrameLoader14detachChildrenEv'/>
+<fun r='_ZN7WebCore11FrameLoader19closeAndRemoveChildERNS_5FrameE'/>
+<fun r='_ZN7WebCore11FrameLoader17checkLoadCompleteEv'/>
+<fun r='_ZNK7WebCore11FrameLoader27numPendingOrLoadingRequestsEb'/>
+<fun r='_ZNK7WebCore11FrameLoader9userAgentERKN3WTF3URLE'/>
+<fun r='_ZNK7WebCore11FrameLoader17navigatorPlatformEv'/>
+<fun r='_ZN7WebCore11FrameLoader20dispatchOnloadEventsEv'/>
+<fun r='_ZN7WebCore11FrameLoader13frameDetachedEv'/>
+<fun r='_ZN7WebCore11FrameLoader16detachFromParentEv'/>
+<fun r='_ZN7WebCore11FrameLoader28detachViewsAndDocumentLoaderEv'/>
+<fun r='_ZN7WebCore11FrameLoader27defaultRequestCachingPolicyERKNS_15ResourceRequestENS_13FrameLoadTypeEb'/>
+<fun r='_ZN7WebCore11FrameLoader30updateRequestAndAddExtraFieldsERNS_15ResourceRequestENS_14IsMainResourceENS_13FrameLoadTypeENS_29ShouldUpdateAppInitiatedValueE'/>
+<fun r='_ZN7WebCore11FrameLoader23scheduleRefreshIfNeededERNS_8DocumentERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore11FrameLoader21addHTTPOriginIfNeededERNS_15ResourceRequestERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore11FrameLoader32addSameSiteInfoToRequestIfNeededERNS_15ResourceRequestEPKNS_8DocumentE'/>
+<fun r='_ZN7WebCore11FrameLoader15loadPostRequestEONS_16FrameLoadRequestERKN3WTF6StringENS_13FrameLoadTypeEPNS_5EventEONS3_6RefPtrINS_9FormStateENS3_12RawPtrT10896572'/>
+<fun r='_ZN7WebCore11FrameLoader25loadResourceSynchronouslyERKNS_15ResourceRequestENS_22ClientCredentialPolicyERKNS_12FetchOptionsERKNS_13HTTPHeaderMapERNS_13665605'/>
+<fun r='_ZN7WebCore11FrameLoader25receivedMainResourceErrorERKNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore11FrameLoader43continueFragmentScrollAfterNavigationPolicyERKNS_15ResourceRequestEb'/>
+<fun r='_ZN7WebCore11FrameLoader31shouldPerformFragmentNavigationEbRKN3WTF6StringENS_13FrameLoadTypeERKNS1_3URLE'/>
+<fun r='_ZN7WebCore11FrameLoader34scrollToFragmentWithParentBoundaryERKN3WTF3URLEb'/>
+<fun r='_ZN7WebCore11FrameLoader11shouldCloseEv'/>
+<fun r='_ZN7WebCore11FrameLoader20dispatchUnloadEventsENS_17UnloadEventPolicyE'/>
+<fun r='_ZN7WebCore11FrameLoader25dispatchBeforeUnloadEventERNS_6ChromeEPS0_'/>
+<fun r='_ZN7WebCore11FrameLoader33continueLoadAfterNavigationPolicyERKNS_15ResourceRequestEPNS_9FormStateENS_24NavigationPolicyDecisionENS_27AllowNavigationToInvalidURLE'/>
+<fun r='_ZN7WebCore11FrameLoader32continueLoadAfterNewWindowPolicyERKNS_15ResourceRequestEPNS_9FormStateERKN3WTF6StringERKNS_16NavigationActionENS_25ShouldCon642457'/>
+<fun r='_ZN7WebCore11FrameLoader19requestFromDelegateERNS_15ResourceRequestERmRNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore11FrameLoader29loadedResourceFromMemoryCacheERNS_14CachedResourceERNS_15ResourceRequestERNS_13ResourceErrorE'/>
+<fun r='_ZN7WebCore11FrameLoader22applyUserAgentIfNeededERNS_15ResourceRequestE'/>
+<fun r='_ZN7WebCore11FrameLoader35shouldInterruptLoadForXFrameOptionsERKN3WTF6StringERKNS1_3URLEm'/>
+<fun r='_ZN7WebCore11FrameLoader33loadProvisionalItemFromCachedPageEv'/>
+<fun r='_ZNK7WebCore11FrameLoader29shouldTreatURLAsSameAsCurrentERKN3WTF3URLE'/>
+<fun r='_ZNK7WebCore11FrameLoader30shouldTreatURLAsSrcdocDocumentERKN3WTF3URLE'/>
+<fun r='_ZN7WebCore11FrameLoader22findFrameForNavigationERKN3WTF10AtomStringEPNS_8DocumentE'/>
+<fun r='_ZN7WebCore11FrameLoader20loadSameDocumentItemERNS_11HistoryItemE'/>
+<fun r='_ZN7WebCore11FrameLoader25loadDifferentDocumentItemERNS_11HistoryItemEPS1_NS_13FrameLoadTypeENS0_29FormSubmissionCacheLoadPolicyENS_27ShouldTreatAsContinuingLoadE'/>
+<fun r='_ZN7WebCore11FrameLoader8loadItemERNS_11HistoryItemEPS1_NS_13FrameLoadTypeENS_27ShouldTreatAsContinuingLoadE'/>
+<fun r='_ZN7WebCore11FrameLoader41retryAfterFailedCacheOnlyMainResourceLoadEv'/>
+<fun r='_ZNK7WebCore11FrameLoader14cancelledErrorERKNS_15ResourceRequestE'/>
+<fun r='_ZNK7WebCore11FrameLoader28blockedByContentBlockerErrorERKNS_15ResourceRequestE'/>
+<fun r='_ZNK7WebCore11FrameLoader12blockedErrorERKNS_15ResourceRequestE'/>
+<fun r='_ZNK7WebCore11FrameLoader23effectiveReferrerPolicyEv'/>
+<fun r='_ZNK7WebCore11FrameLoader8referrerEv'/>
+<fun r='_ZN7WebCore11FrameLoader40dispatchDidClearWindowObjectsInAllWorldsEv'/>
+<fun r='_ZN7WebCore11FrameLoader35dispatchDidClearWindowObjectInWorldERNS_15DOMWrapperWorldE'/>
+<fun r='_ZN7WebCore11FrameLoader40dispatchGlobalObjectAvailableInAllWorldsEv'/>
+<fun r='_ZNK7WebCore11FrameLoader21effectiveSandboxFlagsEv'/>
+<fun r='_ZN7WebCore11FrameLoader14didChangeTitleEPNS_14DocumentLoaderE'/>
+<fun r='_ZN7WebCore11FrameLoader21dispatchDidCommitLoadESt8optionalINS_18HasInsecureContentEES1_INS_13UsedLegacyTLSEE'/>
+<fun r='_ZN7WebCore11FrameLoader35tellClientAboutPastMemoryCacheLoadsEv'/>
+<fun r='_ZNK7WebCore11FrameLoader17networkingContextEv'/>
+<fun r='_ZN7WebCore11FrameLoader28loadProgressingStatusChangedEv'/>
+<fun r='_ZN7WebCore11FrameLoader30completePageTransitionIfNeededEv'/>
+<fun r='_ZN7WebCore11FrameLoader21clearTestingOverridesEv'/>
+<fun r='_ZNK7WebCore11FrameLoader34shouldSuppressTextInputFromEditingEv'/>
+<use f='WebKit/Source/WebCore/loader/NavigationScheduler.cpp' l='452' c='_ZN7WebCore19NavigationScheduler22scheduleLocationChangeERNS_8DocumentERNS_14SecurityOriginERKN3WTF3URLERKNS5_6StringENS_11LockHistoryENS_19LockBackFo6696214'/>
+<size>392</size>
+<use f='WebKit/Source/WebCore/loader/ResourceLoader.cpp' l='268' c='_ZNK7WebCore14ResourceLoader11frameLoaderEv'/>
+<size>392</size>
+<use f='WebKit/Source/WebCore/loader/cache/CachedCSSStyleSheet.cpp' l='172' c='_ZN7WebCore19CachedCSSStyleSheet23restoreParsedStyleSheetERKNS_16CSSParserContextENS_11CachePolicyERNS_11FrameLoaderE'/>
+<size>392</size>
+<use f='WebKit/Source/WebCore/editing/markup.cpp' l='198' c='_ZN7WebCore33createPageForSanitizingWebContentEv'/>
+<size>392</size>

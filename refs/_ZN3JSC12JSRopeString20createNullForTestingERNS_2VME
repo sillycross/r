@@ -1,0 +1,15 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSString.h' l='558' ll='566' type='static JSC::JSRopeString * JSC::JSRopeString::createNullForTesting(JSC::VM &amp; vm)'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSString.h' l='552'>// This JSRopeString is only used to simulate half-baked JSRopeString in DFG and FTL MakeRope. If OSR exit happens in
+    // the middle of MakeRope due to string length overflow, we have half-baked JSRopeString which is the same to the result
+    // of this function. This half-baked JSRopeString will not be exposed to users, but still collectors can see it due to
+    // the conservative stack scan. This JSRopeString is used to test the collector with such a half-baked JSRopeString.
+    // Because this JSRopeString breaks the JSString&apos;s invariant (only one singleton JSString can be zero length), almost all the
+    // operations in JS fail to handle this string correctly.</doc>
+<def f='WebKit/Source/JavaScriptCore/runtime/JSString.h' l='558' ll='566' type='static JSC::JSRopeString * JSC::JSRopeString::createNullForTesting(JSC::VM &amp; vm)'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='2859' u='c' c='_ZN3JSCL28functionCreateNullRopeStringEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSString.h' l='552'>// This JSRopeString is only used to simulate half-baked JSRopeString in DFG and FTL MakeRope. If OSR exit happens in
+    // the middle of MakeRope due to string length overflow, we have half-baked JSRopeString which is the same to the result
+    // of this function. This half-baked JSRopeString will not be exposed to users, but still collectors can see it due to
+    // the conservative stack scan. This JSRopeString is used to test the collector with such a half-baked JSRopeString.
+    // Because this JSRopeString breaks the JSString&apos;s invariant (only one singleton JSString can be zero length), almost all the
+    // operations in JS fail to handle this string correctly.</doc>

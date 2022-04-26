@@ -1,0 +1,84 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ArrayConventions.h' l='57'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='1081' u='c'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSArray.h' l='243' u='c'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ArrayConventions.h' l='29'>// Overview of JSArray
+//
+// Properties of JSArray objects may be stored in one of three locations:
+//   * The regular JSObject property map.
+//   * A storage vector.
+//   * A sparse map of array entries.
+//
+// Properties with non-numeric identifiers, with identifiers that are not representable
+// as an unsigned integer, or where the value is greater than  MAX_ARRAY_INDEX
+// (specifically, this is only one property - the value 0xFFFFFFFFU as an unsigned 32-bit
+// integer) are not considered array indices and will be stored in the JSObject property map.
+//
+// All properties with a numeric identifier, representable as an unsigned integer i,
+// where (i &lt;= MAX_ARRAY_INDEX), are an array index and will be stored in either the
+// storage vector or the sparse map. An array index i will be handled in the following
+// fashion:
+//
+//   * Where (i &lt; MIN_SPARSE_ARRAY_INDEX) the value will be stored in the storage vector,
+//     unless the array is in SparseMode in which case all properties go into the map.
+//   * Where (MIN_SPARSE_ARRAY_INDEX &lt;= i &lt;= MAX_STORAGE_VECTOR_INDEX) the value will either
+//     be stored in the storage vector or in the sparse array, depending on the density of
+//     data that would be stored in the vector (a vector being used where at least
+//     (1 / minDensityMultiplier) of the entries would be populated).
+//   * Where (MAX_STORAGE_VECTOR_INDEX &lt; i &lt;= MAX_ARRAY_INDEX) the value will always be stored
+//     in the sparse array.
+
+// Define the maximum storage vector length to be 2^32 / sizeof(JSValue) / 2 to ensure that
+// there is no risk of overflow.</doc>
+<dec f='WebKit/Source/JavaScriptCore/runtime/ArrayConventions.h' l='57'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='1081' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.h' l='243' u='c'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/ArrayConventions.h' l='29'>// Overview of JSArray
+//
+// Properties of JSArray objects may be stored in one of three locations:
+//   * The regular JSObject property map.
+//   * A storage vector.
+//   * A sparse map of array entries.
+//
+// Properties with non-numeric identifiers, with identifiers that are not representable
+// as an unsigned integer, or where the value is greater than  MAX_ARRAY_INDEX
+// (specifically, this is only one property - the value 0xFFFFFFFFU as an unsigned 32-bit
+// integer) are not considered array indices and will be stored in the JSObject property map.
+//
+// All properties with a numeric identifier, representable as an unsigned integer i,
+// where (i &lt;= MAX_ARRAY_INDEX), are an array index and will be stored in either the
+// storage vector or the sparse map. An array index i will be handled in the following
+// fashion:
+//
+//   * Where (i &lt; MIN_SPARSE_ARRAY_INDEX) the value will be stored in the storage vector,
+//     unless the array is in SparseMode in which case all properties go into the map.
+//   * Where (MIN_SPARSE_ARRAY_INDEX &lt;= i &lt;= MAX_STORAGE_VECTOR_INDEX) the value will either
+//     be stored in the storage vector or in the sparse array, depending on the density of
+//     data that would be stored in the vector (a vector being used where at least
+//     (1 / minDensityMultiplier) of the entries would be populated).
+//   * Where (MAX_STORAGE_VECTOR_INDEX &lt; i &lt;= MAX_ARRAY_INDEX) the value will always be stored
+//     in the sparse array.
+
+// Define the maximum storage vector length to be 2^32 / sizeof(JSValue) / 2 to ensure that
+// there is no risk of overflow.</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/RegExpMatchesArray.h' l='43' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/RegExpObjectInlines.h' l='183' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='45' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='318' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='329' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='371' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='576' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='1050' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSArray.cpp' l='1099' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='1580' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='3387' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='3470' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='3499' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='3546' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/RegExpPrototype.cpp' l='577' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/RegExpPrototype.cpp' l='589' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ClonedArguments.cpp' l='47' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='9042' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='7781' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='7855' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='16228' u='c'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='16237' u='c'/>

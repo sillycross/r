@@ -1,0 +1,29 @@
+<inh f='WebKit/WTF/Headers/wtf/PageBlock.h' l='63' c='WTF::PageBlock'/>
+<def f='WebKit/WTF/Headers/wtf/PageAllocation.h' l='70' ll='108'/>
+<use f='WebKit/WTF/Headers/wtf/PageAllocation.h' l='84' c='_ZN3WTF14PageAllocation8allocateEmNS_11OSAllocator5UsageEbb'/>
+<use f='WebKit/WTF/Headers/wtf/PageAllocation.h' l='87' c='_ZN3WTF14PageAllocation8allocateEmNS_11OSAllocator5UsageEbb'/>
+<use f='WebKit/WTF/Headers/wtf/PageAllocation.h' l='94' c='_ZN3WTF14PageAllocation10deallocateEv'/>
+<use f='WebKit/WTF/Headers/wtf/BumpPointerAllocator.h' l='93' c='_ZN3WTF15BumpPointerPoolnwEmRKNS_14PageAllocationE'/>
+<use f='WebKit/WTF/Headers/wtf/BumpPointerAllocator.h' l='99' c='_ZN3WTF15BumpPointerPoolC1ERKNS_14PageAllocationE'/>
+<use f='WebKit/WTF/Headers/wtf/BumpPointerAllocator.h' l='124' c='_ZN3WTF15BumpPointerPool6createEm'/>
+<use f='WebKit/WTF/Headers/wtf/BumpPointerAllocator.h' l='201'/>
+<size>24</size>
+<doc f='WebKit/WTF/Headers/wtf/PageAllocation.h' l='54'>/*
+    PageAllocation
+
+    The PageAllocation class provides a cross-platform memory allocation interface
+    with similar capabilities to posix mmap/munmap.  Memory is allocated by calling
+    PageAllocation::allocate, and deallocated by calling deallocate on the
+    PageAllocation object.  The PageAllocation holds the allocation&apos;s base pointer
+    and size.
+
+    The allocate method is passed the size required (which must be a multiple of
+    the system page size, which can be accessed using PageAllocation::pageSize).
+    Callers may also optinally provide a flag indicating the usage (for use by
+    system memory usage tracking tools, where implemented), and boolean values
+    specifying the required protection (defaulting to writable, non-executable).
+*/</doc>
+<fun r='_ZNK3WTF14PageAllocationcvbEv'/>
+<fun r='_ZN3WTF14PageAllocation8allocateEmNS_11OSAllocator5UsageEbb'/>
+<fun r='_ZN3WTF14PageAllocation10deallocateEv'/>
+<fun r='_ZN3WTF14PageAllocationC1EPvm'/>

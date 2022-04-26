@@ -1,0 +1,16 @@
+<def f='WebKit/Source/WebCore/rendering/RenderTableCell.cpp' l='465' ll='506' type='int WebCore::compareBorders(const WebCore::CollapsedBorderValue &amp; border1, const WebCore::CollapsedBorderValue &amp; border2)'/>
+<use f='WebKit/Source/WebCore/rendering/RenderTableCell.cpp' l='510' u='c' c='_ZN7WebCoreL12chooseBorderERKNS_20CollapsedBorderValueES2_'/>
+<use f='WebKit/Source/WebCore/rendering/RenderTableCell.cpp' l='1190' u='c' c='_ZN7WebCoreL27compareBorderValuesForQSortEPKvS1_'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderTableCell.cpp' l='452'>// The following rules apply for resolving conflicts and figuring out which border
+// to use.
+// (1) Borders with the &apos;border-style&apos; of &apos;hidden&apos; take precedence over all other conflicting 
+// borders. Any border with this value suppresses all borders at this location.
+// (2) Borders with a style of &apos;none&apos; have the lowest priority. Only if the border properties of all 
+// the elements meeting at this edge are &apos;none&apos; will the border be omitted (but note that &apos;none&apos; is 
+// the default value for the border style.)
+// (3) If none of the styles are &apos;hidden&apos; and at least one of them is not &apos;none&apos;, then narrow borders 
+// are discarded in favor of wider ones. If several have the same &apos;border-width&apos; then styles are preferred 
+// in this order: &apos;double&apos;, &apos;solid&apos;, &apos;dashed&apos;, &apos;dotted&apos;, &apos;ridge&apos;, &apos;outset&apos;, &apos;groove&apos;, and the lowest: &apos;inset&apos;.
+// (4) If border styles differ only in color, then a style set on a cell wins over one on a row, 
+// which wins over a row group, column, column group and, lastly, table. It is undefined which color 
+// is used when two elements of the same type disagree.</doc>

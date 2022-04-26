@@ -1,0 +1,14 @@
+<dec f='include/wayland-client-protocol.h' l='4690' type='void (*)(void *, struct wl_keyboard *, uint32_t, int32_t, uint32_t)'/>
+<offset>0</offset>
+<doc f='include/wayland-client-protocol.h' l='4678'>/**
+	 * keyboard mapping
+	 *
+	 * This event provides a file descriptor to the client which can
+	 * be memory-mapped to provide a keyboard mapping description.
+	 *
+	 * From version 7 onwards, the fd must be mapped with MAP_PRIVATE
+	 * by the recipient, as MAP_SHARED may fail.
+	 * @param format keymap format
+	 * @param fd keymap file descriptor
+	 * @param size keymap size, in bytes
+	 */</doc>

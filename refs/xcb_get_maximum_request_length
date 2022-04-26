@@ -1,0 +1,16 @@
+<dec f='include/xcb/xcb.h' l='263' type='uint32_t xcb_get_maximum_request_length(xcb_connection_t * c)'/>
+<doc f='include/xcb/xcb.h' l='248'>/**
+ * @brief Returns the maximum request length that this server accepts.
+ * @param c The connection to the X server.
+ * @return The maximum request length field.
+ *
+ * In the absence of the BIG-REQUESTS extension, returns the
+ * maximum request length field from the connection setup data, which
+ * may be as much as 65535. If the server supports BIG-REQUESTS, then
+ * the maximum request length field from the reply to the
+ * BigRequestsEnable request will be returned instead.
+ *
+ * Note that this length is measured in four-byte units, making the
+ * theoretical maximum lengths roughly 256kB without BIG-REQUESTS and
+ * 16GB with.
+ */</doc>

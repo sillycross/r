@@ -1,0 +1,55 @@
+<def f='WebKit/Source/WebCore/platform/AbortableTaskQueue.h' l='65' ll='239'/>
+<use f='WebKit/Source/WebCore/platform/AbortableTaskQueue.h' l='66' c='_ZN7WebCore18AbortableTaskQueueC1ERKS0_'/>
+<use f='WebKit/Source/WebCore/platform/AbortableTaskQueue.h' l='66' c='_ZN7WebCore18AbortableTaskQueueaSERKS0_'/>
+<use f='WebKit/Source/WebCore/platform/AbortableTaskQueue.h' l='66' c='_ZN7WebCore18AbortableTaskQueueaSERKS0_'/>
+<use f='WebKit/Source/WebCore/platform/AbortableTaskQueue.h' l='178' c='_ZN7WebCore18AbortableTaskQueue4Task6createEPS0_ON3WTF8FunctionIFvvEEE'/>
+<use f='WebKit/Source/WebCore/platform/AbortableTaskQueue.h' l='210'/>
+<use f='WebKit/Source/WebCore/platform/AbortableTaskQueue.h' l='213' c='_ZN7WebCore18AbortableTaskQueue4TaskC1EPS0_ON3WTF8FunctionIFvvEEE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/gstreamer/mse/AppendPipeline.h' l='150'/>
+<size>40</size>
+<doc f='WebKit/Source/WebCore/platform/AbortableTaskQueue.h' l='32'>/* AbortableTaskQueue is a high-level synchronization object for cases where abortable work is done in
+ * background thread(s) that sometimes needs to post tasks to the main thread.
+ *
+ * The tasks posted by the background thread(s) to the main thread may be asynchronous, using enqueueTask(),
+ * which returns immediately; or synchronous, using enqueueTaskAndWait(), which blocks the calling
+ * background thread until the task is run by the main thread (possibly returning a value).
+ *
+ * What makes AbortableTaskQueue different from other task queueing mechanisms is that it provides a two-phase
+ * protocol for aborting the work in the background thread in presence of queued tasks without deadlocks or
+ * late notification bugs.
+ *
+ * Without a two-phase design deadlocks would occur when attempting an abort if a background thread was
+ * blocked in a synchronous task and needed to return from there for the abort to be handled. Also, without
+ * a design like this, tasks already enqueued at that point or soon thereafter until the abort is complete
+ * would still be handled by the main thread, even though we don&apos;t want to anymore.
+ *
+ * Aborting background processing with AbortableTaskQueue is a several step process:
+ *
+ *  1. Call abortableTaskQueue.startAborting() -- This will make any current or future (until further notice)
+ *     synchronous tasks fail immediately, so that we don&apos;t deadlock in the next step. Also, tasks of any kind
+ *     already enqueued will not be run.
+ *
+ *  2. Send the abort signal to the background threads. This is completely application specific. For instance,
+ *     in the AppendPipeline case you would flush or reset the GStreamer pipeline here. Wait until all the
+ *     background threads have finished aborting.
+ *
+ *  3. Call abortableTaskQueue.finishAborting() -- This will allow new tasks queued from this point on to be
+ *     handled just as before the abort was made.
+ *
+ *  4. After this, the background thread(s) can be put to work again safely.
+ *
+ * This class is used for handling demuxer events in AppendPipeline, taking into account demuxing can be
+ * aborted at any moment if SourceBuffer.abort() is called or the SourceBuffer is destroyed. */</doc>
+<fun r='_ZN7WebCore18AbortableTaskQueueC1ERKS0_'/>
+<fun r='_ZN7WebCore18AbortableTaskQueueC1Ev'/>
+<fun r='_ZN7WebCore18AbortableTaskQueueD1Ev'/>
+<fun r='_ZN7WebCore18AbortableTaskQueue13startAbortingEv'/>
+<fun r='_ZN7WebCore18AbortableTaskQueue14finishAbortingEv'/>
+<fun r='_ZN7WebCore18AbortableTaskQueue11enqueueTaskEON3WTF8FunctionIFvvEEE'/>
+<fun r='_ZN7WebCore18AbortableTaskQueue18enqueueTaskAndWaitEON3WTF8FunctionIFT_vEEE'/>
+<fun r='_ZN7WebCore18AbortableTaskQueue8postTaskEON3WTF8FunctionIFvvEEE'/>
+<fun r='_ZN7WebCore18AbortableTaskQueue14cancelAllTasksEv'/>
+<mbr r='WebCore::AbortableTaskQueue::m_aborting' o='0' t='bool'/>
+<mbr r='WebCore::AbortableTaskQueue::m_lock' o='8' t='WTF::Lock'/>
+<mbr r='WebCore::AbortableTaskQueue::m_abortedOrResponseSet' o='16' t='WTF::Condition'/>
+<mbr r='WebCore::AbortableTaskQueue::m_channel' o='64' t='WTF::Deque&lt;Ref&lt;Task&gt; &gt;'/>

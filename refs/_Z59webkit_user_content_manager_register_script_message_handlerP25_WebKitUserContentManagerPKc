@@ -1,0 +1,30 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUserContentManager.cpp' l='286' ll='294' type='gboolean webkit_user_content_manager_register_script_message_handler(WebKitUserContentManager * manager, const char * name)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitUserContentManager.cpp' l='257'>/**
+ * webkit_user_content_manager_register_script_message_handler:
+ * @manager: A #WebKitUserContentManager
+ * @name: Name of the script message channel
+ *
+ * Registers a new user script message handler. After it is registered,
+ * scripts can use `window.webkit.messageHandlers.&amp;lt;name&amp;gt;.postMessage(value)`
+ * to send messages. Those messages are received by connecting handlers
+ * to the #WebKitUserContentManager::script-message-received signal. The
+ * handler name is used as the detail of the signal. To avoid race
+ * conditions between registering the handler name, and starting to
+ * receive the signals, it is recommended to connect to the signal
+ * *before* registering the handler name:
+ *
+ * &lt;informalexample&gt;&lt;programlisting&gt;
+ * WebKitWebView *view = webkit_web_view_new ();
+ * WebKitUserContentManager *manager = webkit_web_view_get_user_content_manager ();
+ * g_signal_connect (manager, &quot;script-message-received::foobar&quot;,
+ *                   G_CALLBACK (handle_script_message), NULL);
+ * webkit_user_content_manager_register_script_message_handler (manager, &quot;foobar&quot;);
+ * &lt;/programlisting&gt;&lt;/informalexample&gt;
+ *
+ * Registering a script message handler will fail if the requested
+ * name has been already registered before.
+ *
+ * Returns: %TRUE if message handler was registered successfully, or %FALSE otherwise.
+ *
+ * Since: 2.8
+ */</doc>

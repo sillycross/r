@@ -1,0 +1,8 @@
+<def f='WebKit/Source/WebCore/editing/MarkupAccumulator.cpp' l='143' ll='152' type='bool WebCore::shouldSelfClose(const WebCore::Element &amp; element, WebCore::SerializationSyntax syntax)'/>
+<use f='WebKit/Source/WebCore/editing/MarkupAccumulator.cpp' l='262' u='c' c='_ZN7WebCore17MarkupAccumulator12appendEndTagERN3WTF13StringBuilderERKNS_7ElementE'/>
+<use f='WebKit/Source/WebCore/editing/MarkupAccumulator.cpp' l='452' u='c' c='_ZN7WebCore17MarkupAccumulator14appendCloseTagERN3WTF13StringBuilderERKNS_7ElementE'/>
+<doc f='WebKit/Source/WebCore/editing/MarkupAccumulator.cpp' l='138'>// Rules of self-closure
+// 1. No elements in HTML documents use the self-closing syntax.
+// 2. Elements w/ children never self-close because they use a separate end tag.
+// 3. HTML elements which do not have a &quot;forbidden&quot; end tag will close with a separate end tag.
+// 4. Other elements self-close.</doc>

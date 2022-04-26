@@ -1,0 +1,17 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCOptions.h' l='106' type='GOptionGroup * jsc_options_get_option_group()'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCOptions.cpp' l='657' ll='686' type='GOptionGroup * jsc_options_get_option_group()'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCOptions.cpp' l='642'>/**
+ * jsc_options_get_option_group:
+ *
+ * Create a #GOptionGroup to handle JSCOptions as command line arguments.
+ * The options will be exposed as command line arguments with the form
+ * &lt;emphasis&gt;--jsc-&amp;lt;option&amp;gt;=&amp;lt;value&amp;gt;&lt;/emphasis&gt;.
+ * Each entry in the returned #GOptionGroup is configured to apply the
+ * corresponding option during command line parsing. Applications only need to
+ * pass the returned group to g_option_context_add_group(), and the rest will
+ * be taken care for automatically.
+ *
+ * Returns: (transfer full): a #GOptionGroup for the JSCOptions
+ *
+ * Since: 2.24
+ */</doc>

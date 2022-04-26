@@ -1,0 +1,82 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InstructionStream.h' l='188'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/UnlinkedCodeBlock.h' l='352'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/InstructionStream.h' l='188'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlock.h' l='352'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlockGenerator.h' l='197' c='_ZN3JSC26UnlinkedCodeBlockGenerator17applyModificationERNS_16BytecodeRewriterERNS_23InstructionStreamWriterE'/>
+<def f='WebKit/Source/JavaScriptCore/bytecode/BytecodeRewriter.h' l='81' ll='242'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeRewriter.h' l='82' c='_ZN3JSC16BytecodeRewriterC1ERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeRewriter.h' l='82' c='_ZN3JSC16BytecodeRewriteraSERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeRewriter.h' l='82' c='_ZN3JSC16BytecodeRewriteraSERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlockGenerator.cpp' l='169' c='_ZN3JSC26UnlinkedCodeBlockGenerator17applyModificationERNS_16BytecodeRewriterERNS_23InstructionStreamWriterE'/>
+<size>432</size>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/BytecodeRewriter.h' l='39'>// BytecodeRewriter offers the ability to insert and remove the bytecodes including jump operations.
+//
+// We use the original bytecode offsets as labels. When you emit some jumps, you can specify the jump target by
+// using the original bytecode offsets. These bytecode offsets are later converted appropriate values by the
+// rewriter. And we also use the labels to represents the position the new bytecodes inserted.
+//
+//                      |  [bytecode]  |  [bytecode]  |
+//   offsets            A              B              C
+//
+// We can use the above &quot;A&quot;, &quot;B&quot;, and &quot;C&quot; offsets as labels. And the rewriter has the ability to insert bytecode fragments
+// before and after the label. For example, if you insert the fragment after &quot;B&quot;, the layout becomes like this.
+//
+//                      |  [bytecode]  |  [fragment]  [bytecode]  |
+//   offsets            A              B                          C
+//
+//  And even if you remove some original bytecodes, the offset remains as labels. For example, when you remove the A&apos;s bytecode,
+//  the layout becomes like this.
+//
+//                      |              |  [bytecode]  |
+//   offsets            A              B              C
+//
+//  And still you can insert fragments before and after &quot;A&quot;.
+//
+//                      |  [fragment]  |  [bytecode]  |
+//   offsets            A              B              C
+//
+//   We can insert bytecode fragments &quot;Before&quot; and &quot;After&quot; the labels. This inserted position, either &quot;Before&quot; and &quot;After&quot;,
+//   has effect when the label is involved with jumps. For example, when you have jump to the position &quot;B&quot;,
+//
+//                      |  [bytecode]  |  [bytecode]  |
+//   offsets            A              B              C
+//                                     ^
+//                                     jump to here.
+//
+//  and you insert the bytecode before/after &quot;B&quot;,
+//
+//                      |  [bytecode] [before]  |  [after] [bytecode]  |
+//   offsets            A                       B              C
+//                                              ^
+//                                              jump to here.
+//
+//  as you can see, the execution jumping into &quot;B&quot; does not execute [before] code.</doc>
+<fun r='_ZN3JSC16BytecodeRewriterC1ERKS0_'/>
+<fun r='_ZN3JSC16BytecodeRewriterC1ERNS_17BytecodeGeneratorERNS_13BytecodeGraphEPNS_26UnlinkedCodeBlockGeneratorERNS_23InstructionStreamWriterE'/>
+<fun r='_ZN3JSC16BytecodeRewriter20insertFragmentBeforeERKNS_17InstructionStream7BaseRefIKN3WTF6VectorIhLm0ENS3_20UnsafeVectorOverflowELm16ENS3_10FastMallocEEEEET_'/>
+<fun r='_ZN3JSC16BytecodeRewriter19insertFragmentAfterERKNS_17InstructionStream7BaseRefIKN3WTF6VectorIhLm0ENS3_20UnsafeVectorOverflowELm16ENS3_10FastMallocEEEEET_'/>
+<fun r='_ZN3JSC16BytecodeRewriter14removeBytecodeERKNS_17InstructionStream7BaseRefIKN3WTF6VectorIhLm0ENS3_20UnsafeVectorOverflowELm16ENS3_10FastMallocEEEEE'/>
+<fun r='_ZN3JSC16BytecodeRewriter7executeEv'/>
+<fun r='_ZN3JSC16BytecodeRewriter5graphEv'/>
+<fun r='_ZN3JSC16BytecodeRewriter20adjustAbsoluteOffsetEj'/>
+<fun r='_ZN3JSC16BytecodeRewriter16adjustJumpTargetEji'/>
+<fun r='_ZN3JSC16BytecodeRewriter17adjustJumpTargetsEv'/>
+<fun r='_ZN3JSC16BytecodeRewriter10insertImplENS0_14InsertionPointENS0_13IncludeBranchEONS_23InstructionStreamWriterE'/>
+<fun r='_ZN3JSC16BytecodeRewriter17applyModificationEv'/>
+<fun r='_ZN3JSC16BytecodeRewriter27adjustJumpTargetsInFragmentEjRNS0_9InsertionE'/>
+<fun r='_ZN3JSC16BytecodeRewriter16adjustJumpTargetENS0_14InsertionPointES1_'/>
+<fun r='_ZN3JSC16BytecodeRewriter19calculateDifferenceET_S1_'/>
+<mbr r='JSC::BytecodeRewriter::m_bytecodeGenerator' o='0' t='JSC::BytecodeGenerator &amp;'/>
+<mbr r='JSC::BytecodeRewriter::m_graph' o='64' t='JSC::BytecodeGraph &amp;'/>
+<mbr r='JSC::BytecodeRewriter::m_codeBlock' o='128' t='JSC::UnlinkedCodeBlockGenerator *'/>
+<mbr r='JSC::BytecodeRewriter::m_writer' o='192' t='JSC::InstructionStreamWriter &amp;'/>
+<mbr r='JSC::BytecodeRewriter::m_insertions' o='256' t='Vector&lt;JSC::BytecodeRewriter::Insertion, 8&gt;'/>
+<fun r='_ZN3JSC16BytecodeRewriter19calculateDifferenceET_S1_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeGeneratorification.cpp' l='213' c='_ZN3JSC26BytecodeGeneratorification3runEv'/>
+<size>432</size>
+<fun r='_ZN3JSC16BytecodeRewriter17applyModificationEv'/>
+<fun r='_ZN3JSC16BytecodeRewriter7executeEv'/>
+<fun r='_ZN3JSC16BytecodeRewriter27adjustJumpTargetsInFragmentEjRNS0_9InsertionE'/>
+<fun r='_ZN3JSC16BytecodeRewriter10insertImplENS0_14InsertionPointENS0_13IncludeBranchEONS_23InstructionStreamWriterE'/>
+<fun r='_ZN3JSC16BytecodeRewriter16adjustJumpTargetENS0_14InsertionPointES1_'/>
+<fun r='_ZN3JSC16BytecodeRewriter17adjustJumpTargetsEv'/>

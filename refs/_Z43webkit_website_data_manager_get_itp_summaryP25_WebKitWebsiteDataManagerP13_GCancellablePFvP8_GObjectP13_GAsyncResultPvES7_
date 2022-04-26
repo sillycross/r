@@ -1,0 +1,16 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebsiteDataManager.cpp' l='1414' ll='1427' type='void webkit_website_data_manager_get_itp_summary(WebKitWebsiteDataManager * manager, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer userData)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebsiteDataManager.cpp' l='1399'>/**
+ * webkit_website_data_manager_get_itp_summary:
+ * @manager: a #WebKitWebsiteDataManager
+ * @cancellable: (allow-none): a #GCancellable or %NULL to ignore
+ * @callback: (scope async): a #GAsyncReadyCallback to call when the request is satisfied
+ * @user_data: (closure): the data to pass to callback function
+ *
+ * Asynchronously get the list of #WebKitITPThirdParty seen for @manager. Every #WebKitITPThirdParty
+ * contains the list of #WebKitITPFirstParty under which it has been seen.
+ *
+ * When the operation is finished, @callback will be called. You can then call
+ * webkit_website_data_manager_get_itp_summary_finish() to get the result of the operation.
+ *
+ * Since: 2.30
+ */</doc>

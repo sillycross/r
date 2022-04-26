@@ -1,0 +1,110 @@
+<use f='include/gstreamer-1.0/gst/video/gstvideodecoder.h' l='115'/>
+<def f='include/gstreamer-1.0/gst/video/gstvideodecoder.h' l='281' ll='342'/>
+<size>760</size>
+<doc f='include/gstreamer-1.0/gst/video/gstvideodecoder.h' l='196'>/**
+ * GstVideoDecoderClass:
+ * @open:           Optional.
+ *                  Called when the element changes to GST_STATE_READY.
+ *                  Allows opening external resources.
+ * @close:          Optional.
+ *                  Called when the element changes to GST_STATE_NULL.
+ *                  Allows closing external resources.
+ * @start:          Optional.
+ *                  Called when the element starts processing.
+ *                  Allows opening external resources.
+ * @stop:           Optional.
+ *                  Called when the element stops processing.
+ *                  Allows closing external resources.
+ * @set_format:     Notifies subclass of incoming data format (caps).
+ * @parse:          Required for non-packetized input.
+ *                  Allows chopping incoming data into manageable units (frames)
+ *                  for subsequent decoding.
+ * @reset:          Optional.
+ *                  Allows subclass (decoder) to perform post-seek semantics reset.
+ *                  Deprecated.
+ * @handle_frame:   Provides input data frame to subclass.
+ * @finish:         Optional.
+ *                  Called to request subclass to dispatch any pending remaining
+ *                  data at EOS. Sub-classes can refuse to decode new data after.
+ * @drain:	    Optional.
+ *                  Called to request subclass to decode any data it can at this
+ *                  point, but that more data may arrive after. (e.g. at segment end).
+ *                  Sub-classes should be prepared to handle new data afterward,
+ *                  or seamless segment processing will break. Since: 1.6
+ * @sink_event:     Optional.
+ *                  Event handler on the sink pad. This function should return
+ *                  TRUE if the event was handled and should be discarded
+ *                  (i.e. not unref&apos;ed).
+ *                  Subclasses should chain up to the parent implementation to
+ *                  invoke the default handler.
+ * @src_event:      Optional.
+ *                  Event handler on the source pad. This function should return
+ *                  TRUE if the event was handled and should be discarded
+ *                  (i.e. not unref&apos;ed).
+ *                  Subclasses should chain up to the parent implementation to
+ *                  invoke the default handler.
+ * @negotiate:      Optional.
+ *                  Negotiate with downstream and configure buffer pools, etc.
+ *                  Subclasses should chain up to the parent implementation to
+ *                  invoke the default handler.
+ * @decide_allocation: Optional.
+ *                     Setup the allocation parameters for allocating output
+ *                     buffers. The passed in query contains the result of the
+ *                     downstream allocation query.
+ *                     Subclasses should chain up to the parent implementation to
+ *                     invoke the default handler.
+ * @propose_allocation: Optional.
+ *                      Propose buffer allocation parameters for upstream elements.
+ *                      Subclasses should chain up to the parent implementation to
+ *                      invoke the default handler.
+ * @flush:              Optional.
+ *                      Flush all remaining data from the decoder without
+ *                      pushing it downstream. Since: 1.2
+ * @sink_query:     Optional.
+ *                  Query handler on the sink pad. This function should
+ *                  return TRUE if the query could be performed. Subclasses
+ *                  should chain up to the parent implementation to invoke the
+ *                  default handler. Since: 1.4
+ * @src_query:      Optional.
+ *                  Query handler on the source pad. This function should
+ *                  return TRUE if the query could be performed. Subclasses
+ *                  should chain up to the parent implementation to invoke the
+ *                  default handler. Since: 1.4
+ * @getcaps:        Optional.
+ *                  Allows for a custom sink getcaps implementation.
+ *                  If not implemented, default returns
+ *                  gst_video_decoder_proxy_getcaps
+ *                  applied to sink template caps.
+ * @transform_meta: Optional. Transform the metadata on the input buffer to the
+ *                  output buffer. By default this method is copies all meta without
+ *                  tags and meta with only the &quot;video&quot; tag. subclasses can
+ *                  implement this method and return %TRUE if the metadata is to be
+ *                  copied. Since: 1.6
+ *
+ * Subclasses can override any of the available virtual methods or not, as
+ * needed. At minimum @handle_frame needs to be overridden, and @set_format
+ * and likely as well.  If non-packetized input is supported or expected,
+ * @parse needs to be overridden as well.
+ */</doc>
+<mbr r='_GstVideoDecoderClass::element_class' o='0' t='GstElementClass'/>
+<mbr r='_GstVideoDecoderClass::open' o='3904' t='gboolean (*)(GstVideoDecoder *)'/>
+<mbr r='_GstVideoDecoderClass::close' o='3968' t='gboolean (*)(GstVideoDecoder *)'/>
+<mbr r='_GstVideoDecoderClass::start' o='4032' t='gboolean (*)(GstVideoDecoder *)'/>
+<mbr r='_GstVideoDecoderClass::stop' o='4096' t='gboolean (*)(GstVideoDecoder *)'/>
+<mbr r='_GstVideoDecoderClass::parse' o='4160' t='GstFlowReturn (*)(GstVideoDecoder *, GstVideoCodecFrame *, GstAdapter *, gboolean)'/>
+<mbr r='_GstVideoDecoderClass::set_format' o='4224' t='gboolean (*)(GstVideoDecoder *, GstVideoCodecState *)'/>
+<mbr r='_GstVideoDecoderClass::reset' o='4288' t='gboolean (*)(GstVideoDecoder *, gboolean)'/>
+<mbr r='_GstVideoDecoderClass::finish' o='4352' t='GstFlowReturn (*)(GstVideoDecoder *)'/>
+<mbr r='_GstVideoDecoderClass::handle_frame' o='4416' t='GstFlowReturn (*)(GstVideoDecoder *, GstVideoCodecFrame *)'/>
+<mbr r='_GstVideoDecoderClass::sink_event' o='4480' t='gboolean (*)(GstVideoDecoder *, GstEvent *)'/>
+<mbr r='_GstVideoDecoderClass::src_event' o='4544' t='gboolean (*)(GstVideoDecoder *, GstEvent *)'/>
+<mbr r='_GstVideoDecoderClass::negotiate' o='4608' t='gboolean (*)(GstVideoDecoder *)'/>
+<mbr r='_GstVideoDecoderClass::decide_allocation' o='4672' t='gboolean (*)(GstVideoDecoder *, GstQuery *)'/>
+<mbr r='_GstVideoDecoderClass::propose_allocation' o='4736' t='gboolean (*)(GstVideoDecoder *, GstQuery *)'/>
+<mbr r='_GstVideoDecoderClass::flush' o='4800' t='gboolean (*)(GstVideoDecoder *)'/>
+<mbr r='_GstVideoDecoderClass::sink_query' o='4864' t='gboolean (*)(GstVideoDecoder *, GstQuery *)'/>
+<mbr r='_GstVideoDecoderClass::src_query' o='4928' t='gboolean (*)(GstVideoDecoder *, GstQuery *)'/>
+<mbr r='_GstVideoDecoderClass::getcaps' o='4992' t='GstCaps *(*)(GstVideoDecoder *, GstCaps *)'/>
+<mbr r='_GstVideoDecoderClass::drain' o='5056' t='GstFlowReturn (*)(GstVideoDecoder *)'/>
+<mbr r='_GstVideoDecoderClass::transform_meta' o='5120' t='gboolean (*)(GstVideoDecoder *, GstVideoCodecFrame *, GstMeta *)'/>
+<mbr r='_GstVideoDecoderClass::padding' o='5184' t='gpointer [14]'/>

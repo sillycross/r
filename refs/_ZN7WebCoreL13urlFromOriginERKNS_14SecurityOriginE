@@ -1,0 +1,7 @@
+<def f='WebKit/Source/WebCore/page/csp/ContentSecurityPolicyDirectiveList.cpp' l='78' ll='81' type='WTF::URL WebCore::urlFromOrigin(const WebCore::SecurityOrigin &amp; origin)'/>
+<use f='WebKit/Source/WebCore/page/csp/ContentSecurityPolicyDirectiveList.cpp' l='89' u='c' c='_ZN7WebCoreL19checkFrameAncestorsEPNS_40ContentSecurityPolicySourceListDirectiveERKNS_5FrameE'/>
+<use f='WebKit/Source/WebCore/page/csp/ContentSecurityPolicyDirectiveList.cpp' l='102' u='c' c='_ZN7WebCoreL19checkFrameAncestorsEPNS_40ContentSecurityPolicySourceListDirectiveERKN3WTF6VectorINS2_6RefPtrINS_14SecurityOriginENS2_12RawPtrTraitsIS5_14374045'/>
+<doc f='WebKit/Source/WebCore/page/csp/ContentSecurityPolicyDirectiveList.cpp' l='74'>// Used to compute the comparison URL when checking frame-ancestors. We do this weird conversion so that child
+// frames of a page with a unique origin (e.g. about:blank) are not blocked due to their frame-ancestors policy
+// and do not need to add the parent&apos;s URL to their policy. The latter could allow the child page to be framed
+// by anyone. See &lt;https://github.com/w3c/webappsec/issues/311&gt; for more details.</doc>

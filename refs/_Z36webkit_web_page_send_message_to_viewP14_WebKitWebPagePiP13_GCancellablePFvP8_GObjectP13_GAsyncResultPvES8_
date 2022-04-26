@@ -1,0 +1,17 @@
+<def f='WebKit/Source/WebKit/WebProcess/InjectedBundle/API/glib/WebKitWebPage.cpp' l='881' ll='908' type='void webkit_web_page_send_message_to_view(WebKitWebPage * webPage, int * message, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer userData)'/>
+<doc f='WebKit/Source/WebKit/WebProcess/InjectedBundle/API/glib/WebKitWebPage.cpp' l='865'>/**
+ * webkit_web_page_send_message_to_view:
+ * @web_page: a #WebKitWebPage
+ * @message: a #WebKitUserMessage
+ * @cancellable: (nullable): a #GCancellable or %NULL to ignore
+ * @callback: (scope async): (nullable): A #GAsyncReadyCallback to call when the request is satisfied or %NULL
+ * @user_data: (closure): the data to pass to callback function
+ *
+ * Send @message to the #WebKitWebView corresponding to @web_page. If @message is floating, it&apos;s consumed.
+ *
+ * If you don&apos;t expect any reply, or you simply want to ignore it, you can pass %NULL as @callback.
+ * When the operation is finished, @callback will be called. You can then call
+ * webkit_web_page_send_message_to_view_finish() to get the message reply.
+ *
+ * Since: 2.28
+ */</doc>

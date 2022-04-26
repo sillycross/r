@@ -1,0 +1,16 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.h' l='108' type='JSCValue * jsc_value_new_string(JSCContext * context, const char * string)'/>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCContext.cpp' l='447' u='c' c='_Z25jscContextGValueToJSValueP11_JSCContextPK7_GValuePPK13OpaqueJSValue'/>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCException.cpp' l='202' u='c' c='jsc_exception_new_with_name'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='340' ll='351' type='JSCValue * jsc_value_new_string(JSCContext * context, const char * string)'/>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='367' u='c' c='jsc_value_new_string_from_bytes'/>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='571' u='c' c='jsc_value_new_array_from_strv'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='330'>/**
+ * jsc_value_new_string:
+ * @context: a #JSCContext
+ * @string: (nullable): a null-terminated string
+ *
+ * Create a new #JSCValue from @string. If you need to create a #JSCValue from a
+ * string containing null characters, use jsc_value_new_string_from_bytes() instead.
+ *
+ * Returns: (transfer full): a #JSCValue.
+ */</doc>

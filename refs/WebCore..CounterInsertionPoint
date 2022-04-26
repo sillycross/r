@@ -1,0 +1,20 @@
+<def f='WebKit/Source/WebCore/rendering/RenderCounter.cpp' l='212' ll='215'/>
+<use f='WebKit/Source/WebCore/rendering/RenderCounter.cpp' l='217' c='_ZN7WebCoreL19findPlaceForCounterERNS_13RenderElementERKN3WTF10AtomStringEb'/>
+<size>16</size>
+<doc f='WebKit/Source/WebCore/rendering/RenderCounter.cpp' l='196'>// - Finds the insertion point for the counter described by counterOwner, isReset and 
+// identifier in the CounterNode tree for identifier and sets parent and
+// previousSibling accordingly.
+// - The function returns true if the counter whose insertion point is searched is NOT
+// the root of the tree.
+// - The root of the tree is a counter reference that is not in the scope of any other
+// counter with the same identifier.
+// - All the counter references with the same identifier as this one that are in
+// children or subsequent siblings of the renderer that owns the root of the tree
+// form the rest of of the nodes of the tree.
+// - The root of the tree is always a reset type reference.
+// - A subtree rooted at any reset node in the tree is equivalent to all counter 
+// references that are in the scope of the counter or nested counter defined by that
+// reset node.
+// - Non-reset CounterNodes cannot have descendants.</doc>
+<mbr r='WebCore::CounterInsertionPoint::parent' o='0' t='RefPtr&lt;WebCore::CounterNode&gt;'/>
+<mbr r='WebCore::CounterInsertionPoint::previousSibling' o='64' t='RefPtr&lt;WebCore::CounterNode&gt;'/>

@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.h' l='144' type='void WebCore::AudioNode::processIfNecessary(size_t framesToProcess)'/>
+<doc f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.h' l='140'>// processIfNecessary() is called by our output(s) when the rendering graph needs this AudioNode to process.
+    // This method ensures that the AudioNode will only process once per rendering time quantum even if it&apos;s called repeatedly.
+    // This handles the case of &quot;fanout&quot; where an output is connected to multiple AudioNode inputs.
+    // Called from context&apos;s audio thread.</doc>
+<def f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.cpp' l='450' ll='480' type='void WebCore::AudioNode::processIfNecessary(size_t framesToProcess)'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/AudioNodeOutput.cpp' l='123' u='c' c='_ZN7WebCore15AudioNodeOutput4pullEPNS_8AudioBusEm'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='852' u='c' c='_ZN7WebCore16BaseAudioContext25processAutomaticPullNodesEm'/>

@@ -1,0 +1,15 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DFGExitProfile.h' l='190' type='bool JSC::DFG::ExitProfile::hasExitSite(const JSC::ConcurrentJSLocker &amp; , const JSC::DFG::FrequentExitSite &amp; ) const'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DFGExitProfile.h' l='193' u='c' c='_ZNK3JSC3DFG11ExitProfile11hasExitSiteERKNS_18ConcurrentJSLockerENS_8ExitKindE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/UnlinkedCodeBlock.h' l='318' u='c' c='_ZNK3JSC17UnlinkedCodeBlock11hasExitSiteERKNS_18ConcurrentJSLockerERKNS_3DFG16FrequentExitSiteE'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/DFGExitProfile.h' l='186'>// This is O(n) and should be called on less-frequently executed code paths
+    // in the compiler. It should be strictly cheaper than building a
+    // QueryableExitProfile, if you really expect this to be called infrequently
+    // and you believe that there are few exit sites.</doc>
+<dec f='WebKit/Source/JavaScriptCore/bytecode/DFGExitProfile.h' l='190' type='bool JSC::DFG::ExitProfile::hasExitSite(const JSC::ConcurrentJSLocker &amp; , const JSC::DFG::FrequentExitSite &amp; ) const'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/DFGExitProfile.h' l='193' u='c' c='_ZNK3JSC3DFG11ExitProfile11hasExitSiteERKNS_18ConcurrentJSLockerENS_8ExitKindE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedCodeBlock.h' l='318' u='c' c='_ZNK3JSC17UnlinkedCodeBlock11hasExitSiteERKNS_18ConcurrentJSLockerERKNS_3DFG16FrequentExitSiteE'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/DFGExitProfile.h' l='186'>// This is O(n) and should be called on less-frequently executed code paths
+    // in the compiler. It should be strictly cheaper than building a
+    // QueryableExitProfile, if you really expect this to be called infrequently
+    // and you believe that there are few exit sites.</doc>
+<def f='WebKit/Source/JavaScriptCore/bytecode/DFGExitProfile.cpp' l='92' ll='102' type='bool JSC::DFG::ExitProfile::hasExitSite(const JSC::ConcurrentJSLocker &amp; , const JSC::DFG::FrequentExitSite &amp; site) const'/>

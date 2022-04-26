@@ -1,0 +1,26 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1656' ll='1669' type='void webkit_web_context_set_process_model(WebKitWebContext * context, WebKitProcessModel processModel)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1631'>/**
+ * webkit_web_context_set_process_model:
+ * @context: the #WebKitWebContext
+ * @process_model: a #WebKitProcessModel
+ *
+ * Specifies a process model for WebViews, which WebKit will use to
+ * determine how auxiliary processes are handled.
+ *
+ * %WEBKIT_PROCESS_MODEL_MULTIPLE_SECONDARY_PROCESSES will use
+ * one process per view most of the time, while still allowing for web
+ * views to share a process when needed (for example when different
+ * views interact with each other). Using this model, when a process
+ * hangs or crashes, only the WebViews using it stop working, while
+ * the rest of the WebViews in the application will still function
+ * normally.
+ *
+ * %WEBKIT_PROCESS_MODEL_SHARED_SECONDARY_PROCESS is deprecated since 2.26,
+ * using it has no effect for security reasons.
+ *
+ * This method **must be called before any web process has been created**,
+ * as early as possible in your application. Calling it later will make
+ * your application crash.
+ *
+ * Since: 2.4
+ */</doc>

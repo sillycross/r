@@ -1,0 +1,133 @@
+<inh f='WebKit/WTF/Headers/wtf/ThreadSafeRefCounted.h' l='109' c='WTF::ThreadSafeRefCounted'/>
+<def f='WebKit/Source/JavaScriptCore/wasm/WasmCodeBlock.h' l='52' ll='156'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCodeBlock.h' l='52'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCodeBlock.h' l='54'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCodeBlock.h' l='56' c='_ZN3JSC4Wasm9CodeBlock6createEPNS0_7ContextENS0_10MemoryModeERNS0_17ModuleInformationEN3WTF6RefPtrINS0_12LLIntCalleesENS7_12RawPtrTraitsIS9_EENS7_21De14812106'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmModule.h' l='62' c='_ZN3JSC4Wasm6Module11compileSyncEPNS0_7ContextENS0_10MemoryModeE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmModule.h' l='67' c='_ZN3JSC4Wasm6Module12codeBlockForENS0_10MemoryModeE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmModule.h' l='69' c='_ZN3JSC4Wasm6Module20getOrCreateCodeBlockEPNS0_7ContextENS0_10MemoryModeE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmModule.h' l='73'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssemblyCodeBlock.h' l='54' c='_ZN3JSC22JSWebAssemblyCodeBlock6createERNS_2VMEN3WTF3RefINS_4Wasm9CodeBlockENS3_12RawPtrTraitsIS6_EEEERKNS5_17ModuleInformationE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssemblyCodeBlock.h' l='66' c='_ZN3JSC22JSWebAssemblyCodeBlock9codeBlockEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssemblyCodeBlock.h' l='85' c='_ZN3JSC22JSWebAssemblyCodeBlockC1ERNS_2VMEON3WTF3RefINS_4Wasm9CodeBlockENS3_12RawPtrTraitsIS6_EEEERKNS5_17ModuleInformationE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssemblyCodeBlock.h' l='91'/>
+<size>144</size>
+<doc f='WebKit/Source/JavaScriptCore/wasm/WasmCodeBlock.h' l='50'>// FIXME: Rename this, since it&apos;s not a CodeBlock
+// https://bugs.webkit.org/show_bug.cgi?id=203694</doc>
+<fun r='_ZN3JSC4Wasm9CodeBlock6createEPNS0_7ContextENS0_10MemoryModeERNS0_17ModuleInformationEN3WTF6RefPtrINS0_12LLIntCalleesENS7_12RawPtrTraitsIS9_EENS7_21De14812106'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock17waitUntilFinishedEv'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock12compileAsyncEPNS0_7ContextEON3WTF6RefPtrINS4_10SharedTaskIFvONS4_3RefIS1_NS4_12RawPtrTraitsIS1_EEEEEEENS8_ISD_EENS4_21DefaultR840098'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock19compilationFinishedEv'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock8runnableEv'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock12errorMessageEv'/>
+<fun r='_ZNK3JSC4Wasm9CodeBlock19functionImportCountEv'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock46embedderEntrypointCalleeFromFunctionIndexSpaceEj'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock42wasmEntrypointCalleeFromFunctionIndexSpaceEj'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock35wasmBBQCalleeFromFunctionIndexSpaceEj'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock44entrypointLoadLocationFromFunctionIndexSpaceEj'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock18wasmToWasmExitStubEj'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock11isSafeToRunENS0_10MemoryModeE'/>
+<fun r='_ZNK3JSC4Wasm9CodeBlock4modeEv'/>
+<fun r='_ZN3JSC4Wasm9CodeBlockD1Ev'/>
+<fun r='_ZN3JSC4Wasm9CodeBlockC1EPNS0_7ContextENS0_10MemoryModeERNS0_17ModuleInformationEN3WTF6RefPtrINS0_12LLIntCalleesENS7_12RawPtrTraitsIS9_EENS7_21Default8799563'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock22setCompilationFinishedEv'/>
+<mbr r='JSC::Wasm::CodeBlock::m_calleeCount' o='32' t='unsigned int'/>
+<mbr r='JSC::Wasm::CodeBlock::m_mode' o='64' t='JSC::Wasm::MemoryMode'/>
+<mbr r='JSC::Wasm::CodeBlock::m_omgCallees' o='128' t='Vector&lt;RefPtr&lt;JSC::Wasm::OMGCallee&gt; &gt;'/>
+<mbr r='JSC::Wasm::CodeBlock::m_bbqCallees' o='256' t='Vector&lt;RefPtr&lt;JSC::Wasm::BBQCallee&gt; &gt;'/>
+<mbr r='JSC::Wasm::CodeBlock::m_llintCallees' o='384' t='RefPtr&lt;JSC::Wasm::LLIntCallees&gt;'/>
+<mbr r='JSC::Wasm::CodeBlock::m_embedderCallees' o='448' t='HashMap&lt;uint32_t, RefPtr&lt;JSC::Wasm::EmbedderEntrypointCallee&gt;, DefaultHash&lt;uint32_t&gt;, WTF::UnsignedWithZeroKeyHashTraits&lt;uint32_t&gt; &gt;'/>
+<mbr r='JSC::Wasm::CodeBlock::m_wasmIndirectCallEntryPoints' o='512' t='Vector&lt;MacroAssemblerCodePtr&lt;WasmEntryPtrTag&gt; &gt;'/>
+<mbr r='JSC::Wasm::CodeBlock::m_wasmToWasmCallsites' o='640' t='Vector&lt;Vector&lt;JSC::Wasm::UnlinkedWasmToWasmCall&gt; &gt;'/>
+<mbr r='JSC::Wasm::CodeBlock::m_wasmToWasmExitStubs' o='768' t='Vector&lt;MacroAssemblerCodeRef&lt;WasmEntryPtrTag&gt; &gt;'/>
+<mbr r='JSC::Wasm::CodeBlock::m_plan' o='896' t='RefPtr&lt;JSC::Wasm::EntryPlan&gt;'/>
+<mbr r='JSC::Wasm::CodeBlock::m_compilationFinished' o='960' t='std::atomic&lt;bool&gt;'/>
+<mbr r='JSC::Wasm::CodeBlock::m_errorMessage' o='1024' t='WTF::String'/>
+<mbr r='JSC::Wasm::CodeBlock::m_lock' o='1088' t='WTF::Lock'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmInstance.h' l='59' c='_ZN3JSC4Wasm8Instance16finalizeCreationEPvON3WTF3RefINS0_9CodeBlockENS3_12RawPtrTraitsIS5_EEEE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmInstance.h' l='75' c='_ZN3JSC4Wasm8Instance9codeBlockEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmInstance.h' l='225'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssemblyInstance.h' l='69' c='_ZN3JSC21JSWebAssemblyInstance16finalizeCreationERNS_2VMEPNS_14JSGlobalObjectEON3WTF3RefINS_4Wasm9CodeBlockENS5_12RawPtrTraitsIS8_EEEEPNS_8JSObjectENS7_12CreationModeE'/>
+<size>144</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmPlan.h' l='88' c='_ZN3JSC4Wasm4Plan23updateCallSitesToCallUsERNS0_9CodeBlockENS_17CodeLocationLabelILN3WTF6PtrTagE64376EEEjj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmBBQPlan.h' l='57' c='_ZN3JSC4Wasm7BBQPlanC1EPNS0_7ContextEN3WTF3RefINS0_17ModuleInformationENS4_12RawPtrTraitsIS6_EEEEjPNS0_9CodeBlockEONS4_6RefPtrINS4_10SharedTaskIFvRNS04087437'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmBBQPlan.h' l='90'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmBBQPlan.cpp' l='50' c='_ZN3JSC4Wasm7BBQPlanC1EPNS0_7ContextEN3WTF3RefINS0_17ModuleInformationENS4_12RawPtrTraitsIS6_EEEEjPNS0_9CodeBlockEONS4_6RefPtrINS4_10SharedTaskIFvRNS04087437'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCodeBlock.cpp' l='38' c='_ZN3JSC4Wasm9CodeBlock6createEPNS0_7ContextENS0_10MemoryModeERNS0_17ModuleInformationEN3WTF6RefPtrINS0_12LLIntCalleesENS7_12RawPtrTraitsIS9_EENS7_21De14812106'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCodeBlock.cpp' l='40' c='_ZN3JSC4Wasm9CodeBlock6createEPNS0_7ContextENS0_10MemoryModeERNS0_17ModuleInformationEN3WTF6RefPtrINS0_12LLIntCalleesENS7_12RawPtrTraitsIS9_EENS7_21De14812106'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCodeBlock.cpp' l='40' c='_ZN3JSC4Wasm9CodeBlock6createEPNS0_7ContextENS0_10MemoryModeERNS0_17ModuleInformationEN3WTF6RefPtrINS0_12LLIntCalleesENS7_12RawPtrTraitsIS9_EENS7_21De14812106'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCodeBlock.cpp' l='49' c='_ZN3JSC4Wasm9CodeBlockC1EPNS0_7ContextENS0_10MemoryModeERNS0_17ModuleInformationEN3WTF6RefPtrINS0_12LLIntCalleesENS7_12RawPtrTraitsIS9_EENS7_21Default8799563'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCodeBlock.cpp' l='144' c='_ZN3JSC4Wasm9CodeBlock12compileAsyncEPNS0_7ContextEON3WTF6RefPtrINS4_10SharedTaskIFvONS4_3RefIS1_NS4_12RawPtrTraitsIS1_EEEEEEENS8_ISD_EENS4_21DefaultR840098'/>
+<size>144</size>
+<fun r='_ZN3JSC4Wasm9CodeBlock6createEPNS0_7ContextENS0_10MemoryModeERNS0_17ModuleInformationEN3WTF6RefPtrINS0_12LLIntCalleesENS7_12RawPtrTraitsIS9_EENS7_21De14812106'/>
+<fun r='_ZN3JSC4Wasm9CodeBlockC1EPNS0_7ContextENS0_10MemoryModeERNS0_17ModuleInformationEN3WTF6RefPtrINS0_12LLIntCalleesENS7_12RawPtrTraitsIS9_EENS7_21Default8799563'/>
+<fun r='_ZN3JSC4Wasm9CodeBlockD1Ev'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock17waitUntilFinishedEv'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock12compileAsyncEPNS0_7ContextEON3WTF6RefPtrINS4_10SharedTaskIFvONS4_3RefIS1_NS4_12RawPtrTraitsIS1_EEEEEEENS8_ISD_EENS4_21DefaultR840098'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock11isSafeToRunENS0_10MemoryModeE'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock22setCompilationFinishedEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmModule.cpp' l='81' c='_ZN3JSC4Wasm6Module20getOrCreateCodeBlockEPNS0_7ContextENS0_10MemoryModeE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmModule.cpp' l='83' c='_ZN3JSC4Wasm6Module20getOrCreateCodeBlockEPNS0_7ContextENS0_10MemoryModeE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmModule.cpp' l='101' c='_ZN3JSC4Wasm6Module11compileSyncEPNS0_7ContextENS0_10MemoryModeE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmModule.cpp' l='103' c='_ZN3JSC4Wasm6Module11compileSyncEPNS0_7ContextENS0_10MemoryModeE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmModule.cpp' l='110' c='_ZN3JSC4Wasm6Module12compileAsyncEPNS0_7ContextENS0_10MemoryModeEON3WTF6RefPtrINS5_10SharedTaskIFvONS5_3RefINS0_9CodeBlockENS5_12RawPtrTraitsIS9_EEEEE8450788'/>
+<size>144</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOMGForOSREntryPlan.h' l='65'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOMGPlan.h' l='63'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOperations.cpp' l='72' c='_ZN3JSC4WasmL28triggerOMGReplacementCompileERNS0_11TierUpCountEPNS0_9OMGCalleeEPNS0_8InstanceERNS0_9CodeBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOperations.cpp' l='242' c='_ZN3JSC4Wasm31operationWasmTriggerOSREntryNowERNS_5Probe7ContextE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmOperations.cpp' l='421' c='_ZN3JSC4Wasm29operationWasmTriggerTierUpNowEPNS0_8InstanceEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmPlan.cpp' l='127' c='_ZN3JSC4Wasm4Plan23updateCallSitesToCallUsERNS0_9CodeBlockENS_17CodeLocationLabelILN3WTF6PtrTagE64376EEEjj'/>
+<size>144</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssembly.cpp' l='141' c='_ZN3JSCL7resolveERNS_2VMEPNS_14JSGlobalObjectEPNS_9JSPromiseEPNS_21JSWebAssemblyInstanceEPNS_19JSWebAssemblyModuleEPNS_8JSObjectEON3WTF3RefINS_4Wasm9C4776395'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssembly.cpp' l='206' c='_ZN3JSCL11instantiateERNS_2VMEPNS_14JSGlobalObjectEPNS_9JSPromiseEPNS_19JSWebAssemblyModuleEPNS_8JSObjectERKNS_10IdentifierENS_7ResolveENS_4Wasm12CreationModeE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssembly.cpp' l='207' c='_ZN3JSCL11instantiateERNS_2VMEPNS_14JSGlobalObjectEPNS_9JSPromiseEPNS_19JSWebAssemblyModuleEPNS_8JSObjectERKNS_10IdentifierENS_7ResolveENS_4Wasm12CreationModeE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssemblyCodeBlock.cpp' l='40' c='_ZN3JSC22JSWebAssemblyCodeBlock6createERNS_2VMEN3WTF3RefINS_4Wasm9CodeBlockENS3_12RawPtrTraitsIS6_EEEERKNS5_17ModuleInformationE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssemblyCodeBlock.cpp' l='47' c='_ZN3JSC22JSWebAssemblyCodeBlockC1ERNS_2VMEON3WTF3RefINS_4Wasm9CodeBlockENS3_12RawPtrTraitsIS6_EEEERKNS5_17ModuleInformationE'/>
+<size>144</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/JSWebAssemblyInstance.cpp' l='108' c='_ZN3JSC21JSWebAssemblyInstance16finalizeCreationERNS_2VMEPNS_14JSGlobalObjectEON3WTF3RefINS_4Wasm9CodeBlockENS5_12RawPtrTraitsIS8_EEEEPNS_8JSObjectENS7_12CreationModeE'/>
+<size>144</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/js/WebAssemblyModuleRecord.cpp' l='114' c='_ZN3JSC23WebAssemblyModuleRecord8linkImplEPNS_14JSGlobalObjectEPNS_8JSObjectENS_4Wasm12CreationModeE'/>
+<size>144</size>
+<inh f='WebKit/WTF/Headers/wtf/ThreadSafeRefCounted.h' l='109' c='WTF::ThreadSafeRefCounted'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmCodeBlock.h' l='52' ll='156'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmCodeBlock.h' l='52'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmCodeBlock.h' l='54'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmCodeBlock.h' l='56' c='_ZN3JSC4Wasm9CodeBlock6createEPNS0_7ContextENS0_10MemoryModeERNS0_17ModuleInformationEN3WTF6RefPtrINS0_12LLIntCalleesENS7_12RawPtrTraitsIS9_EENS7_21De14812106'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmModule.h' l='62' c='_ZN3JSC4Wasm6Module11compileSyncEPNS0_7ContextENS0_10MemoryModeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmModule.h' l='67' c='_ZN3JSC4Wasm6Module12codeBlockForENS0_10MemoryModeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmModule.h' l='69' c='_ZN3JSC4Wasm6Module20getOrCreateCodeBlockEPNS0_7ContextENS0_10MemoryModeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmModule.h' l='73'/>
+<size>144</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmCodeBlock.h' l='50'>// FIXME: Rename this, since it&apos;s not a CodeBlock
+// https://bugs.webkit.org/show_bug.cgi?id=203694</doc>
+<fun r='_ZN3JSC4Wasm9CodeBlock6createEPNS0_7ContextENS0_10MemoryModeERNS0_17ModuleInformationEN3WTF6RefPtrINS0_12LLIntCalleesENS7_12RawPtrTraitsIS9_EENS7_21De14812106'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock17waitUntilFinishedEv'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock12compileAsyncEPNS0_7ContextEON3WTF6RefPtrINS4_10SharedTaskIFvONS4_3RefIS1_NS4_12RawPtrTraitsIS1_EEEEEEENS8_ISD_EENS4_21DefaultR840098'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock19compilationFinishedEv'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock8runnableEv'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock12errorMessageEv'/>
+<fun r='_ZNK3JSC4Wasm9CodeBlock19functionImportCountEv'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock46embedderEntrypointCalleeFromFunctionIndexSpaceEj'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock42wasmEntrypointCalleeFromFunctionIndexSpaceEj'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock35wasmBBQCalleeFromFunctionIndexSpaceEj'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock44entrypointLoadLocationFromFunctionIndexSpaceEj'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock18wasmToWasmExitStubEj'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock11isSafeToRunENS0_10MemoryModeE'/>
+<fun r='_ZNK3JSC4Wasm9CodeBlock4modeEv'/>
+<fun r='_ZN3JSC4Wasm9CodeBlockD1Ev'/>
+<fun r='_ZN3JSC4Wasm9CodeBlockC1EPNS0_7ContextENS0_10MemoryModeERNS0_17ModuleInformationEN3WTF6RefPtrINS0_12LLIntCalleesENS7_12RawPtrTraitsIS9_EENS7_21Default8799563'/>
+<fun r='_ZN3JSC4Wasm9CodeBlock22setCompilationFinishedEv'/>
+<mbr r='JSC::Wasm::CodeBlock::m_calleeCount' o='32' t='unsigned int'/>
+<mbr r='JSC::Wasm::CodeBlock::m_mode' o='64' t='JSC::Wasm::MemoryMode'/>
+<mbr r='JSC::Wasm::CodeBlock::m_omgCallees' o='128' t='Vector&lt;RefPtr&lt;JSC::Wasm::OMGCallee&gt; &gt;'/>
+<mbr r='JSC::Wasm::CodeBlock::m_bbqCallees' o='256' t='Vector&lt;RefPtr&lt;JSC::Wasm::BBQCallee&gt; &gt;'/>
+<mbr r='JSC::Wasm::CodeBlock::m_llintCallees' o='384' t='RefPtr&lt;JSC::Wasm::LLIntCallees&gt;'/>
+<mbr r='JSC::Wasm::CodeBlock::m_embedderCallees' o='448' t='HashMap&lt;uint32_t, RefPtr&lt;JSC::Wasm::EmbedderEntrypointCallee&gt;, DefaultHash&lt;uint32_t&gt;, WTF::UnsignedWithZeroKeyHashTraits&lt;uint32_t&gt; &gt;'/>
+<mbr r='JSC::Wasm::CodeBlock::m_wasmIndirectCallEntryPoints' o='512' t='Vector&lt;MacroAssemblerCodePtr&lt;WasmEntryPtrTag&gt; &gt;'/>
+<mbr r='JSC::Wasm::CodeBlock::m_wasmToWasmCallsites' o='640' t='Vector&lt;Vector&lt;JSC::Wasm::UnlinkedWasmToWasmCall&gt; &gt;'/>
+<mbr r='JSC::Wasm::CodeBlock::m_wasmToWasmExitStubs' o='768' t='Vector&lt;MacroAssemblerCodeRef&lt;WasmEntryPtrTag&gt; &gt;'/>
+<mbr r='JSC::Wasm::CodeBlock::m_plan' o='896' t='RefPtr&lt;JSC::Wasm::EntryPlan&gt;'/>
+<mbr r='JSC::Wasm::CodeBlock::m_compilationFinished' o='960' t='std::atomic&lt;bool&gt;'/>
+<mbr r='JSC::Wasm::CodeBlock::m_errorMessage' o='1024' t='WTF::String'/>
+<mbr r='JSC::Wasm::CodeBlock::m_lock' o='1088' t='WTF::Lock'/>

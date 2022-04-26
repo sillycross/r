@@ -1,0 +1,36 @@
+<doc f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSObjectRef.h' l='201'>/*! 
+@typedef JSObjectCallAsFunctionCallback
+@abstract The callback invoked when an object is called as a function.
+@param ctx The execution context to use.
+@param function A JSObject that is the function being called.
+@param thisObject A JSObject that is the &apos;this&apos; variable in the function&apos;s scope.
+@param argumentCount An integer count of the number of arguments in arguments.
+@param arguments A JSValue array of the  arguments passed to the function.
+@param exception A pointer to a JSValueRef in which to return an exception, if any.
+@result A JSValue that is the function&apos;s return value.
+@discussion If you named your function CallAsFunction, you would declare it like this:
+
+JSValueRef CallAsFunction(JSContextRef ctx, JSObjectRef function, JSObjectRef thisObject, size_t argumentCount, const JSValueRef arguments[], JSValueRef* exception);
+
+If your callback were invoked by the JavaScript expression &apos;myObject.myFunction()&apos;, function would be set to myFunction, and thisObject would be set to myObject.
+
+If this callback is NULL, calling your object as a function will throw an exception.
+*/</doc>
+<doc f='WebKit/Source/JavaScriptCore/API/JSObjectRef.h' l='201'>/*! 
+@typedef JSObjectCallAsFunctionCallback
+@abstract The callback invoked when an object is called as a function.
+@param ctx The execution context to use.
+@param function A JSObject that is the function being called.
+@param thisObject A JSObject that is the &apos;this&apos; variable in the function&apos;s scope.
+@param argumentCount An integer count of the number of arguments in arguments.
+@param arguments A JSValue array of the  arguments passed to the function.
+@param exception A pointer to a JSValueRef in which to return an exception, if any.
+@result A JSValue that is the function&apos;s return value.
+@discussion If you named your function CallAsFunction, you would declare it like this:
+
+JSValueRef CallAsFunction(JSContextRef ctx, JSObjectRef function, JSObjectRef thisObject, size_t argumentCount, const JSValueRef arguments[], JSValueRef* exception);
+
+If your callback were invoked by the JavaScript expression &apos;myObject.myFunction()&apos;, function would be set to myFunction, and thisObject would be set to myObject.
+
+If this callback is NULL, calling your object as a function will throw an exception.
+*/</doc>

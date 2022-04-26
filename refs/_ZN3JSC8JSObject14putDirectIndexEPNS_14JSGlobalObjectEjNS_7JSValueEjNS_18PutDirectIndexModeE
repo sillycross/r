@@ -1,0 +1,38 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='238' ll='264' type='bool JSC::JSObject::putDirectIndex(JSC::JSGlobalObject * globalObject, unsigned int propertyName, JSC::JSValue value, unsigned int attributes, JSC::PutDirectIndexMode mode)'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='268' u='c' c='_ZN3JSC8JSObject14putDirectIndexEPNS_14JSGlobalObjectEjNS_7JSValueE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='274' u='c' c='_ZN3JSC8JSObject14putDirectIndexEPNS_14JSGlobalObjectEmNS_7JSValueEjNS_18PutDirectIndexModeE'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObject.h' l='232'>// This is similar to the putDirect* methods:
+    //  - the prototype chain is not consulted
+    //  - accessors are not called.
+    //  - it will ignore extensibility and read-only properties if PutDirectIndexLikePutDirect is passed as the mode (the default).
+    // This method creates a property with attributes writable, enumerable and configurable all set to true if attributes is zero,
+    // otherwise, it creates a property with the provided attributes. Semantically, this is performing defineOwnProperty.</doc>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSObjectInlines.h' l='543' u='c' c='_ZN3JSC8JSObject28putOwnDataPropertyMayBeIndexEPNS_14JSGlobalObjectENS_12PropertyNameENS_7JSValueERNS_15PutPropertySlotE'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='238' ll='264' type='bool JSC::JSObject::putDirectIndex(JSC::JSGlobalObject * globalObject, unsigned int propertyName, JSC::JSValue value, unsigned int attributes, JSC::PutDirectIndexMode mode)'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='268' u='c' c='_ZN3JSC8JSObject14putDirectIndexEPNS_14JSGlobalObjectEjNS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='274' u='c' c='_ZN3JSC8JSObject14putDirectIndexEPNS_14JSGlobalObjectEmNS_7JSValueEjNS_18PutDirectIndexModeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObjectInlines.h' l='543' u='c' c='_ZN3JSC8JSObject28putOwnDataPropertyMayBeIndexEPNS_14JSGlobalObjectENS_12PropertyNameENS_7JSValueERNS_15PutPropertySlotE'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='232'>// This is similar to the putDirect* methods:
+    //  - the prototype chain is not consulted
+    //  - accessors are not called.
+    //  - it will ignore extensibility and read-only properties if PutDirectIndexLikePutDirect is passed as the mode (the default).
+    // This method creates a property with attributes writable, enumerable and configurable all set to true if attributes is zero,
+    // otherwise, it creates a property with the provided attributes. Semantically, this is performing defineOwnProperty.</doc>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='996' u='c' c='_ZN3JSCL14directPutByValEPNS_14JSGlobalObjectEPNS_8JSObjectENS_7JSValueES4_PNS_9ByValInfoENS_8ECMAModeE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='1007' u='c' c='_ZN3JSCL14directPutByValEPNS_14JSGlobalObjectEPNS_8JSObjectENS_7JSValueES4_PNS_9ByValInfoENS_8ECMAModeE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp' l='1194' u='c' c='JSC::LLInt::llint_slow_path_put_by_val_direct'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp' l='1204' u='c' c='JSC::LLInt::llint_slow_path_put_by_val_direct'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='94' u='c' c='_ZN3JSC3DFGL8putByValEPNS_14JSGlobalObjectERNS_2VMENS_7JSValueEjS5_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='136' u='c' c='_ZN3JSC3DFGL16putByValInternalEPNS_14JSGlobalObjectERNS_2VMElll'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='155' u='c' c='_ZN3JSC3DFGL20putByValCellInternalEPNS_14JSGlobalObjectERNS_2VMEPNS_6JSCellENS_12PropertyNameENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='983' u='c' c='_ZN3JSC3DFG52operationPutDoubleByValDirectBeyondArrayBoundsStrictEPNS_14JSGlobalObjectEPNS_8JSObjectEid'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOperations.cpp' l='1088' u='c' c='_ZN3JSC3DFG46operationPutByValDirectBeyondArrayBoundsStrictEPNS_14JSGlobalObjectEPNS_8JSObjectEil'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ArrayPrototype.cpp' l='1463' u='c' c='_ZN3JSCL12moveElementsEPNS_14JSGlobalObjectERNS_2VMEPNS_7JSArrayEjS5_j'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ArrayPrototype.cpp' l='1472' u='c' c='_ZN3JSCL12moveElementsEPNS_14JSGlobalObjectERNS_2VMEPNS_7JSArrayEjS5_j'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSONObject.cpp' l='700' u='c' c='_ZN3JSC6Walker4walkENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='1976' u='c' c='_ZN3JSC8JSObject17putDirectAccessorEPNS_14JSGlobalObjectENS_12PropertyNameEPNS_12GetterSetterEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='2750' u='c' c='_ZN3JSC8JSObject24defineOwnIndexedPropertyEPNS_14JSGlobalObjectEjRKNS_18PropertyDescriptorEb'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSObject.cpp' l='3250' u='c' c='_ZN3JSC8JSObject38putDirectIndexSlowOrBeyondVectorLengthEPNS_14JSGlobalObjectEjNS_7JSValueEjNS_18PutDirectIndexModeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSTemplateObjectDescriptor.cpp' l='71' u='c' c='_ZN3JSC26JSTemplateObjectDescriptor20createTemplateObjectEPNS_14JSGlobalObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSTemplateObjectDescriptor.cpp' l='73' u='c' c='_ZN3JSC26JSTemplateObjectDescriptor20createTemplateObjectEPNS_14JSGlobalObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSTemplateObjectDescriptor.cpp' l='76' u='c' c='_ZN3JSC26JSTemplateObjectDescriptor20createTemplateObjectEPNS_14JSGlobalObjectE'/>

@@ -1,0 +1,48 @@
+<use f='include/gstreamer-1.0/gst/gl/gstgl_fwd.h' l='40'/>
+<def f='include/gstreamer-1.0/gst/gl/gstglwindow.h' l='154' ll='177'/>
+<size>336</size>
+<doc f='include/gstreamer-1.0/gst/gl/gstglwindow.h' l='127'>/**
+ * GstGLWindowClass:
+ * @parent_class: Parent class
+ * @get_display: Gets the current windowing system display connection
+ * @set_window_handle: Set a window handle to render into
+ * @get_window_handle: Gets the current window handle that this #GstGLWindow is
+ *                     rendering into.  This may return a different value to
+ *                     what is passed into @set_window_handle
+ * @draw: redraw the window with the specified dimensions
+ * @run: run the mainloop
+ * @quit: send a quit to the mainloop
+ * @send_message: invoke a function on the window thread.  Required to be reentrant.
+ * @send_message_async: invoke a function on the window thread. @run may or may
+ *                      not have been called.  Required to be reentrant.
+ * @open: open the connection to the display
+ * @close: close the connection to the display
+ * @handle_events: whether to handle &apos;extra&apos; events from the windowing system.
+ *                 Basic events like surface moves and resizes are still valid
+ *                 things to listen for.
+ * @set_preferred_size: request that the window change surface size.  The
+ *                      implementation is free to ignore this information.
+ * @show: request that the window be shown to the user
+ * @set_render_rectangle: request a rectangle to render into.  See #GstVideoOverlay
+ * @queue_resize: request a resize to occur when possible
+ * @controls_viewport: Whether the window takes care of glViewport setup.
+ *                     and the user does not need to deal with viewports
+ */</doc>
+<mbr r='_GstGLWindowClass::parent_class' o='0' t='GstObjectClass'/>
+<mbr r='_GstGLWindowClass::get_display' o='1472' t='guintptr (*)(GstGLWindow *)'/>
+<mbr r='_GstGLWindowClass::set_window_handle' o='1536' t='void (*)(GstGLWindow *, guintptr)'/>
+<mbr r='_GstGLWindowClass::get_window_handle' o='1600' t='guintptr (*)(GstGLWindow *)'/>
+<mbr r='_GstGLWindowClass::draw' o='1664' t='void (*)(GstGLWindow *)'/>
+<mbr r='_GstGLWindowClass::run' o='1728' t='void (*)(GstGLWindow *)'/>
+<mbr r='_GstGLWindowClass::quit' o='1792' t='void (*)(GstGLWindow *)'/>
+<mbr r='_GstGLWindowClass::send_message' o='1856' t='void (*)(GstGLWindow *, GstGLWindowCB, gpointer)'/>
+<mbr r='_GstGLWindowClass::send_message_async' o='1920' t='void (*)(GstGLWindow *, GstGLWindowCB, gpointer, GDestroyNotify)'/>
+<mbr r='_GstGLWindowClass::open' o='1984' t='gboolean (*)(GstGLWindow *, GError **)'/>
+<mbr r='_GstGLWindowClass::close' o='2048' t='void (*)(GstGLWindow *)'/>
+<mbr r='_GstGLWindowClass::handle_events' o='2112' t='void (*)(GstGLWindow *, gboolean)'/>
+<mbr r='_GstGLWindowClass::set_preferred_size' o='2176' t='void (*)(GstGLWindow *, gint, gint)'/>
+<mbr r='_GstGLWindowClass::show' o='2240' t='void (*)(GstGLWindow *)'/>
+<mbr r='_GstGLWindowClass::set_render_rectangle' o='2304' t='gboolean (*)(GstGLWindow *, gint, gint, gint, gint)'/>
+<mbr r='_GstGLWindowClass::queue_resize' o='2368' t='void (*)(GstGLWindow *)'/>
+<mbr r='_GstGLWindowClass::controls_viewport' o='2432' t='gboolean (*)(GstGLWindow *)'/>
+<mbr r='_GstGLWindowClass::_reserved' o='2496' t='gpointer [3]'/>

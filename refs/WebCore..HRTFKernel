@@ -1,0 +1,64 @@
+<inh f='WebKit/WTF/Headers/wtf/RefCounted.h' l='184' c='WTF::RefCounted'/>
+<def f='WebKit/Source/WebCore/platform/audio/HRTFKernel.h' l='48' ll='90'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.h' l='48'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.h' l='52' c='_ZN7WebCore10HRTFKernel6createEPNS_12AudioChannelEmf'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.h' l='54' c='_ZN7WebCore10HRTFKernel6createEPNS_12AudioChannelEmf'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.h' l='57' c='_ZN7WebCore10HRTFKernel6createESt10unique_ptrINS_8FFTFrameESt14default_deleteIS2_EEff'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.h' l='59' c='_ZN7WebCore10HRTFKernel6createESt10unique_ptrINS_8FFTFrameESt14default_deleteIS2_EEff'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.h' l='63' c='_ZN7WebCore10HRTFKernel24createInterpolatedKernelEPS0_S1_f'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.h' l='63' c='_ZN7WebCore10HRTFKernel24createInterpolatedKernelEPS0_S1_f'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.h' l='63' c='_ZN7WebCore10HRTFKernel24createInterpolatedKernelEPS0_S1_f'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.h' l='92'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFElevation.h' l='73' c='_ZN7WebCore13HRTFElevation21getKernelsFromAzimuthEdjRPNS_10HRTFKernelES3_RdS4_'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFElevation.h' l='73' c='_ZN7WebCore13HRTFElevation21getKernelsFromAzimuthEdjRPNS_10HRTFKernelES3_RdS4_'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFElevation.h' l='92' c='_ZN7WebCore13HRTFElevation35calculateKernelsForAzimuthElevationEiifRKN3WTF6StringERNS1_6RefPtrINS_10HRTFKernelENS1_12RawPtrTraitsIS6_EENS1_21DefaultRe1301443'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFElevation.h' l='92' c='_ZN7WebCore13HRTFElevation35calculateKernelsForAzimuthElevationEiifRKN3WTF6StringERNS1_6RefPtrINS_10HRTFKernelENS1_12RawPtrTraitsIS6_EENS1_21DefaultRe1301443'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFElevation.h' l='98' c='_ZN7WebCore13HRTFElevation44calculateSymmetricKernelsForAzimuthElevationEiifRKN3WTF6StringERNS1_6RefPtrINS_10HRTFKernelENS1_12RawPtrTraitsIS6_EENS1_211302979'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFElevation.h' l='98' c='_ZN7WebCore13HRTFElevation44calculateSymmetricKernelsForAzimuthElevationEiifRKN3WTF6StringERNS1_6RefPtrINS_10HRTFKernelENS1_12RawPtrTraitsIS6_EENS1_211302979'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFDatabase.h' l='52' c='_ZN7WebCore12HRTFDatabase30getKernelsFromAzimuthElevationEdjdRPNS_10HRTFKernelES3_RdS4_'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFDatabase.h' l='52' c='_ZN7WebCore12HRTFDatabase30getKernelsFromAzimuthElevationEdjdRPNS_10HRTFKernelES3_RdS4_'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFDatabase.cpp' l='70' c='_ZN7WebCore12HRTFDatabase30getKernelsFromAzimuthElevationEdjdRPNS_10HRTFKernelES3_RdS4_'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFDatabase.cpp' l='70' c='_ZN7WebCore12HRTFDatabase30getKernelsFromAzimuthElevationEdjdRPNS_10HRTFKernelES3_RdS4_'/>
+<size>24</size>
+<doc f='WebKit/Source/WebCore/platform/audio/HRTFKernel.h' l='42'>// HRTF stands for Head-Related Transfer Function.
+// HRTFKernel is a frequency-domain representation of an impulse-response used as part of the spatialized panning system.
+// For a given azimuth / elevation angle there will be one HRTFKernel for the left ear transfer function, and one for the right ear.
+// The leading delay (average group delay) for each impulse response is extracted:
+//      m_fftFrame is the frequency-domain representation of the impulse response with the delay removed
+//      m_frameDelay is the leading delay of the original impulse response.</doc>
+<fun r='_ZN7WebCore10HRTFKernel6createEPNS_12AudioChannelEmf'/>
+<fun r='_ZN7WebCore10HRTFKernel6createESt10unique_ptrINS_8FFTFrameESt14default_deleteIS2_EEff'/>
+<fun r='_ZN7WebCore10HRTFKernel24createInterpolatedKernelEPS0_S1_f'/>
+<fun r='_ZN7WebCore10HRTFKernel8fftFrameEv'/>
+<fun r='_ZNK7WebCore10HRTFKernel7fftSizeEv'/>
+<fun r='_ZNK7WebCore10HRTFKernel10frameDelayEv'/>
+<fun r='_ZNK7WebCore10HRTFKernel10sampleRateEv'/>
+<fun r='_ZNK7WebCore10HRTFKernel7nyquistEv'/>
+<fun r='_ZN7WebCore10HRTFKernel21createImpulseResponseEv'/>
+<fun r='_ZN7WebCore10HRTFKernelC1EPNS_12AudioChannelEmf'/>
+<fun r='_ZN7WebCore10HRTFKernelC1ESt10unique_ptrINS_8FFTFrameESt14default_deleteIS2_EEff'/>
+<mbr r='WebCore::HRTFKernel::m_fftFrame' o='64' t='std::unique_ptr&lt;FFTFrame&gt;'/>
+<mbr r='WebCore::HRTFKernel::m_frameDelay' o='128' t='float'/>
+<mbr r='WebCore::HRTFKernel::m_sampleRate' o='160' t='float'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFElevation.cpp' l='98' c='_ZN7WebCore13HRTFElevation44calculateSymmetricKernelsForAzimuthElevationEiifRKN3WTF6StringERNS1_6RefPtrINS_10HRTFKernelENS1_12RawPtrTraitsIS6_EENS1_211302979'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFElevation.cpp' l='98' c='_ZN7WebCore13HRTFElevation44calculateSymmetricKernelsForAzimuthElevationEiifRKN3WTF6StringERNS1_6RefPtrINS_10HRTFKernelENS1_12RawPtrTraitsIS6_EENS1_211302979'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFElevation.cpp' l='100' c='_ZN7WebCore13HRTFElevation44calculateSymmetricKernelsForAzimuthElevationEiifRKN3WTF6StringERNS1_6RefPtrINS_10HRTFKernelENS1_12RawPtrTraitsIS6_EENS1_211302979'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFElevation.cpp' l='101' c='_ZN7WebCore13HRTFElevation44calculateSymmetricKernelsForAzimuthElevationEiifRKN3WTF6StringERNS1_6RefPtrINS_10HRTFKernelENS1_12RawPtrTraitsIS6_EENS1_211302979'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFElevation.cpp' l='109' c='_ZN7WebCore13HRTFElevation44calculateSymmetricKernelsForAzimuthElevationEiifRKN3WTF6StringERNS1_6RefPtrINS_10HRTFKernelENS1_12RawPtrTraitsIS6_EENS1_211302979'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFElevation.cpp' l='110' c='_ZN7WebCore13HRTFElevation44calculateSymmetricKernelsForAzimuthElevationEiifRKN3WTF6StringERNS1_6RefPtrINS_10HRTFKernelENS1_12RawPtrTraitsIS6_EENS1_211302979'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFElevation.cpp' l='123' c='_ZN7WebCore13HRTFElevation35calculateKernelsForAzimuthElevationEiifRKN3WTF6StringERNS1_6RefPtrINS_10HRTFKernelENS1_12RawPtrTraitsIS6_EENS1_21DefaultRe1301443'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFElevation.cpp' l='123' c='_ZN7WebCore13HRTFElevation35calculateKernelsForAzimuthElevationEiifRKN3WTF6StringERNS1_6RefPtrINS_10HRTFKernelENS1_12RawPtrTraitsIS6_EENS1_21DefaultRe1301443'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFElevation.cpp' l='303' c='_ZN7WebCore13HRTFElevation21getKernelsFromAzimuthEdjRPNS_10HRTFKernelES3_RdS4_'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFElevation.cpp' l='303' c='_ZN7WebCore13HRTFElevation21getKernelsFromAzimuthEdjRPNS_10HRTFKernelES3_RdS4_'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.cpp' l='116' c='_ZN7WebCore10HRTFKernel24createInterpolatedKernelEPS0_S1_f'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.cpp' l='116' c='_ZN7WebCore10HRTFKernel24createInterpolatedKernelEPS0_S1_f'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFKernel.cpp' l='116' c='_ZN7WebCore10HRTFKernel24createInterpolatedKernelEPS0_S1_f'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFPanner.cpp' l='221' c='_ZN7WebCore10HRTFPanner3panEddPKNS_8AudioBusEPS1_m'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFPanner.cpp' l='222' c='_ZN7WebCore10HRTFPanner3panEddPKNS_8AudioBusEPS1_m'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFPanner.cpp' l='223' c='_ZN7WebCore10HRTFPanner3panEddPKNS_8AudioBusEPS1_m'/>
+<use f='WebKit/Source/WebCore/platform/audio/HRTFPanner.cpp' l='224' c='_ZN7WebCore10HRTFPanner3panEddPKNS_8AudioBusEPS1_m'/>
+<size>24</size>
+<fun r='_ZN7WebCore10HRTFKernelC1EPNS_12AudioChannelEmf'/>
+<fun r='_ZNK7WebCore10HRTFKernel7fftSizeEv'/>
+<fun r='_ZN7WebCore10HRTFKernel21createImpulseResponseEv'/>
+<fun r='_ZN7WebCore10HRTFKernel24createInterpolatedKernelEPS0_S1_f'/>

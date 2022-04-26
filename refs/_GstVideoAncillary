@@ -1,0 +1,24 @@
+<use f='include/gstreamer-1.0/gst/video/video-anc.h' l='29'/>
+<def f='include/gstreamer-1.0/gst/video/video-anc.h' l='47' ll='56'/>
+<size>296</size>
+<doc f='include/gstreamer-1.0/gst/video/video-anc.h' l='31'>/**
+ * GstVideoAncillary:
+ * @DID: The Data Identifier
+ * @SDID_block_number: The Secondary Data Identifier (if type 2) or the Data
+ *                     Block Number (if type 1)
+ * @data_count: The amount of data (in bytes) in @data (max 255 bytes)
+ * @data: (array length=data_count): The user data content of the Ancillary packet.
+ *    Does not contain the ADF, DID, SDID nor CS.
+ *
+ * Video Ancillary data, according to SMPTE-291M specification.
+ *
+ * Note that the contents of the data are always stored as 8bit data (i.e. do not contain
+ * the parity check bits).
+ *
+ * Since: 1.16
+ */</doc>
+<mbr r='_GstVideoAncillary::DID' o='0' t='guint8'/>
+<mbr r='_GstVideoAncillary::SDID_block_number' o='8' t='guint8'/>
+<mbr r='_GstVideoAncillary::data_count' o='16' t='guint8'/>
+<mbr r='_GstVideoAncillary::data' o='24' t='guint8 [256]'/>
+<mbr r='_GstVideoAncillary::_gst_reserved' o='2112' t='gpointer [4]'/>

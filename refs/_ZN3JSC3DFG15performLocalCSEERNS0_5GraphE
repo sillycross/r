@@ -1,0 +1,11 @@
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.h' l='44' type='bool JSC::DFG::performLocalCSE(JSC::DFG::Graph &amp; )'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPlan.cpp' l='280' u='c' c='_ZN3JSC3DFG4Plan19compileInThreadImplEv'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.h' l='36'>// Block-local common subexpression elimination. It uses clobberize() for heap
+// modeling, which is quite precise. This phase is known to produce big wins on
+// a few benchmarks, and is relatively cheap to run.
+//
+// Note that this phase also gets rid of Identity nodes, which means that it&apos;s
+// currently not an optional phase. Basically, DFG IR doesn&apos;t have use-lists,
+// so there is no instantaneous replaceAllUsesWith operation. Instead, you turn
+// a node into an Identity and wait for CSE to clean it up.</doc>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGCSEPhase.cpp' l='983' ll='986' type='bool JSC::DFG::performLocalCSE(JSC::DFG::Graph &amp; graph)'/>

@@ -1,0 +1,21 @@
+<dec f='WebKit/Source/JavaScriptCore/b3/B3Opcode.h' l='299' type='76'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.h' l='477' c='_ZN3JSC2B35Value18adjacencyListSpaceENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapValue.h' l='57' c='_ZN3JSC2B313StackmapValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3PatchpointValue.h' l='40' u='r' c='_ZN3JSC2B315PatchpointValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3PatchpointValue.h' l='73' u='r' c='_ZN3JSC2B315PatchpointValue21opcodeFromConstructorENS0_4TypeENS0_6OriginE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueInlines.h' l='167' c='_ZNK3JSC2B35Value19adjacencyListOffsetEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueInlines.h' l='167' c='_ZNK3JSC2B35Value9cloneImplEv'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/B3Opcode.h' l='293'>// This is a patchpoint. Use the PatchpointValue class. This is viewed as behaving like a call,
+    // but only emits code via a code generation callback. That callback gets to emit code inline.
+    // You can pass a stackmap along with constraints on how each stackmap argument must be passed.
+    // It&apos;s legal to request that a stackmap argument is in some register and it&apos;s legal to request
+    // that a stackmap argument is at some offset from the top of the argument passing area on the
+    // stack.</doc>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='146' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir3runEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='439' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir12tmpsForTupleEPNS0_5ValueE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='3671' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Opcode.cpp' l='330' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC2B36OpcodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3PatchpointValue.cpp' l='55' u='r' c='_ZN3JSC2B315PatchpointValueC1ENS0_4TypeENS0_6OriginE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Procedure.cpp' l='462' c='_ZN3JSC2B39Procedure33freeUnneededB3ValuesAfterLoweringEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Validate.cpp' l='442' c='_ZN3JSC2B312_GLOBAL__N_19Validater3runEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='642' c='_ZNK3JSC2B35Value7effectsEv'/>

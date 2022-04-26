@@ -1,0 +1,304 @@
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirTmp.h' l='177' c='_ZNK3JSC2B33Air3Tmp15linearlyIndexedERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirTmp.h' l='179' c='_ZN3JSC2B33Air3Tmp8indexEndERNS1_4CodeENS0_4BankE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirTmp.h' l='180' c='_ZN3JSC2B33Air3Tmp16absoluteIndexEndERNS1_4CodeENS0_4BankE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirTmp.h' l='181' c='_ZN3JSC2B33Air3Tmp14linearIndexEndERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirTmp.h' l='226' c='_ZN3JSC2B33Air3Tmp17tmpForLinearIndexERNS1_4CodeEj'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirBasicBlock.h' l='143'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirDisassembler.h' l='55' c='_ZN3JSC2B33Air12Disassembler4dumpERNS1_4CodeERN3WTF11PrintStreamERNS_10LinkBufferEPKcSB_RKNS5_12ScopedLambdaIFvRNS1_4InstEEEE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirSpecial.h' l='51' c='_ZNK3JSC2B33Air7Special4codeEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirSpecial.h' l='108'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirSpecial.h' l='112'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirStackSlot.h' l='85'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirCode.h' l='70'/>
+<def f='WebKit/Source/JavaScriptCore/b3/air/AirCode.h' l='79' ll='413'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirCode.h' l='80' c='_ZN3JSC2B33Air4CodeC1ERKS2_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirCode.h' l='80' c='_ZN3JSC2B33Air4CodeaSERKS2_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirCode.h' l='80' c='_ZN3JSC2B33Air4CodeaSERKS2_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirCode.h' l='262' c='_ZN3JSC2B33Air4Code8iteratorC1ERKS2_j'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirCode.h' l='290'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Procedure.h' l='239' c='_ZNK3JSC2B39Procedure4codeEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Procedure.h' l='240' c='_ZN3JSC2B39Procedure4codeEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Procedure.h' l='301'/>
+<size>328</size>
+<doc f='WebKit/Source/JavaScriptCore/b3/air/AirCode.h' l='75'>// This is an IR that is very close to the bare metal. It requires about 40x more bytes than the
+// generated machine code - for example if you&apos;re generating 1MB of machine code, you need about
+// 40MB of Air.</doc>
+<fun r='_ZN3JSC2B33Air4CodeC1ERKS2_'/>
+<fun r='_ZN3JSC2B33Air4CodeD1Ev'/>
+<fun r='_ZN3JSC2B33Air4Code4procEv'/>
+<fun r='_ZNK3JSC2B33Air4Code19regsInPriorityOrderENS0_4BankE'/>
+<fun r='_ZNK3JSC2B33Air4Code11mutableRegsEv'/>
+<fun r='_ZNK3JSC2B33Air4Code8isPinnedENS_3RegE'/>
+<fun r='_ZN3JSC2B33Air4Code11pinRegisterENS_3RegE'/>
+<fun r='_ZN3JSC2B33Air4Code11setOptLevelEj'/>
+<fun r='_ZNK3JSC2B33Air4Code8optLevelEv'/>
+<fun r='_ZNK3JSC2B33Air4Code18needsUsedRegistersEv'/>
+<fun r='_ZN3JSC2B33Air4Code8addBlockEd'/>
+<fun r='_ZN3JSC2B33Air4Code12addStackSlotEmNS1_13StackSlotKindE'/>
+<fun r='_ZN3JSC2B33Air4Code10addSpecialESt10unique_ptrINS1_7SpecialESt14default_deleteIS4_EE'/>
+<fun r='_ZN3JSC2B33Air4Code12cCallSpecialEv'/>
+<fun r='_ZN3JSC2B33Air4Code6newTmpENS0_4BankE'/>
+<fun r='_ZN3JSC2B33Air4Code7numTmpsENS0_4BankE'/>
+<fun r='_ZN3JSC2B33Air4Code10forEachTmpERKT_'/>
+<fun r='_ZNK3JSC2B33Air4Code22callArgAreaSizeInBytesEv'/>
+<fun r='_ZN3JSC2B33Air4Code29requestCallArgAreaSizeInBytesEj'/>
+<fun r='_ZNK3JSC2B33Air4Code9frameSizeEv'/>
+<fun r='_ZN3JSC2B33Air4Code12setFrameSizeEj'/>
+<fun r='_ZNK3JSC2B33Air4Code14numEntrypointsEv'/>
+<fun r='_ZNK3JSC2B33Air4Code11entrypointsEv'/>
+<fun r='_ZNK3JSC2B33Air4Code10entrypointEj'/>
+<fun r='_ZNK3JSC2B33Air4Code12isEntrypointEPNS1_10BasicBlockE'/>
+<fun r='_ZNK3JSC2B33Air4Code15entrypointIndexEPNS1_10BasicBlockE'/>
+<fun r='_ZN3JSC2B33Air4Code24setPrologueForEntrypointEjON3WTF3RefINS3_10SharedTaskIFvRNS_12CCallHelpersERS2_EEENS3_12RawPtrTraitsISA_EEEE'/>
+<fun r='_ZN3JSC2B33Air4Code30prologueGeneratorForEntrypointEj'/>
+<fun r='_ZN3JSC2B33Air4Code17setNumEntrypointsEj'/>
+<fun r='_ZN3JSC2B33Air4Code14setEntrypointsEOT_'/>
+<fun r='_ZNK3JSC2B33Air4Code15entrypointLabelEj'/>
+<fun r='_ZN3JSC2B33Air4Code19setEntrypointLabelsEOT_'/>
+<fun r='_ZN3JSC2B33Air4Code19setStackIsAllocatedEb'/>
+<fun r='_ZNK3JSC2B33Air4Code16stackIsAllocatedEv'/>
+<fun r='_ZN3JSC2B33Air4Code33setCalleeSaveRegisterAtOffsetListEONS_20RegisterAtOffsetListEPNS1_9StackSlotE'/>
+<fun r='_ZNK3JSC2B33Air4Code30calleeSaveRegisterAtOffsetListEv'/>
+<fun r='_ZNK3JSC2B33Air4Code19calleeSaveRegistersEv'/>
+<fun r='_ZN3JSC2B33Air4Code17resetReachabilityEv'/>
+<fun r='_ZNK3JSC2B33Air4Code4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZNK3JSC2B33Air4Code4sizeEv'/>
+<fun r='_ZNK3JSC2B33Air4Code2atEj'/>
+<fun r='_ZNK3JSC2B33Air4CodeixEj'/>
+<fun r='_ZN3JSC2B33Air4Code9blockListEv'/>
+<fun r='_ZNK3JSC2B33Air4Code19findFirstBlockIndexEj'/>
+<fun r='_ZNK3JSC2B33Air4Code18findNextBlockIndexEj'/>
+<fun r='_ZNK3JSC2B33Air4Code13findNextBlockEPNS1_10BasicBlockE'/>
+<fun r='_ZNK3JSC2B33Air4Code5beginEv'/>
+<fun r='_ZNK3JSC2B33Air4Code3endEv'/>
+<fun r='_ZNK3JSC2B33Air4Code10stackSlotsEv'/>
+<fun r='_ZN3JSC2B33Air4Code10stackSlotsEv'/>
+<fun r='_ZNK3JSC2B33Air4Code8specialsEv'/>
+<fun r='_ZN3JSC2B33Air4Code8specialsEv'/>
+<fun r='_ZNK3JSC2B33Air4Code10forAllTmpsERKT_'/>
+<fun r='_ZN3JSC2B33Air4Code10addFastTmpENS1_3TmpE'/>
+<fun r='_ZNK3JSC2B33Air4Code14forEachFastTmpERKT_'/>
+<fun r='_ZNK3JSC2B33Air4Code3cfgEv'/>
+<fun r='_ZN3JSC2B33Air4Code14addDataSectionEm'/>
+<fun r='_ZN3JSC2B33Air4Code16setLastPhaseNameEPKc'/>
+<fun r='_ZNK3JSC2B33Air4Code13lastPhaseNameEv'/>
+<fun r='_ZN3JSC2B33Air4Code27setWasmBoundsCheckGeneratorEN3WTF6RefPtrINS3_10SharedTaskIFvRNS_12CCallHelpersENS_12X86Registers10RegisterIDEEEENS3_12RawPtrTrait8916969'/>
+<fun r='_ZNK3JSC2B33Air4Code24wasmBoundsCheckGeneratorEv'/>
+<fun r='_ZNK3JSC2B33Air4Code6jsHashEv'/>
+<fun r='_ZNK3JSC2B33Air4Code23shouldPreserveB3OriginsEv'/>
+<fun r='_ZN3JSC2B33Air4Code28forcePreservationOfB3OriginsEv'/>
+<fun r='_ZN3JSC2B33Air4Code15setDisassemblerEOSt10unique_ptrINS1_12DisassemblerESt14default_deleteIS4_EE'/>
+<fun r='_ZN3JSC2B33Air4Code12disassemblerEv'/>
+<fun r='_ZN3JSC2B33Air4Code11mutableGPRsEv'/>
+<fun r='_ZN3JSC2B33Air4Code11mutableFPRsEv'/>
+<fun r='_ZNK3JSC2B33Air4Code15pinnedRegistersEv'/>
+<fun r='_ZN3JSC2B33Air4Code10weakRandomEv'/>
+<fun r='_ZN3JSC2B33Air4Code19emitDefaultPrologueERNS_12CCallHelpersE'/>
+<fun r='_ZN3JSC2B33Air4Code12emitEpilogueERNS_12CCallHelpersE'/>
+<mbr r='JSC::B3::Air::Code::m_generateAndAllocateRegisters' o='0' t='std::unique_ptr&lt;GenerateAndAllocateRegisters&gt;'/>
+<fun r='_ZN3JSC2B33Air4CodeC1ERNS0_9ProcedureE'/>
+<fun r='_ZN3JSC2B33Air4Code22setRegsInPriorityOrderENS0_4BankERKN3WTF6VectorINS_3RegELm0ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEE'/>
+<fun r='_ZN3JSC2B33Air4Code23regsInPriorityOrderImplENS0_4BankE'/>
+<mbr r='JSC::B3::Air::Code::m_weakRandom' o='64' t='WTF::WeakRandom'/>
+<mbr r='JSC::B3::Air::Code::m_proc' o='256' t='JSC::B3::Procedure &amp;'/>
+<mbr r='JSC::B3::Air::Code::m_gpRegsInPriorityOrder' o='320' t='Vector&lt;JSC::Reg&gt;'/>
+<mbr r='JSC::B3::Air::Code::m_fpRegsInPriorityOrder' o='448' t='Vector&lt;JSC::Reg&gt;'/>
+<mbr r='JSC::B3::Air::Code::m_mutableRegs' o='576' t='JSC::RegisterSet'/>
+<mbr r='JSC::B3::Air::Code::m_pinnedRegs' o='608' t='JSC::RegisterSet'/>
+<mbr r='JSC::B3::Air::Code::m_stackSlots' o='640' t='SparseCollection&lt;JSC::B3::Air::StackSlot&gt;'/>
+<mbr r='JSC::B3::Air::Code::m_blocks' o='896' t='Vector&lt;std::unique_ptr&lt;BasicBlock&gt; &gt;'/>
+<mbr r='JSC::B3::Air::Code::m_specials' o='1024' t='SparseCollection&lt;JSC::B3::Air::Special&gt;'/>
+<mbr r='JSC::B3::Air::Code::m_cfg' o='1280' t='std::unique_ptr&lt;CFG&gt;'/>
+<mbr r='JSC::B3::Air::Code::m_fastTmps' o='1344' t='SmallSet&lt;JSC::B3::Air::Tmp, JSC::B3::Air::TmpHash, 2&gt;'/>
+<mbr r='JSC::B3::Air::Code::m_cCallSpecial' o='1472' t='JSC::B3::Air::CCallSpecial *'/>
+<mbr r='JSC::B3::Air::Code::m_numGPTmps' o='1536' t='unsigned int'/>
+<mbr r='JSC::B3::Air::Code::m_numFPTmps' o='1568' t='unsigned int'/>
+<mbr r='JSC::B3::Air::Code::m_frameSize' o='1600' t='unsigned int'/>
+<mbr r='JSC::B3::Air::Code::m_callArgAreaSize' o='1632' t='unsigned int'/>
+<mbr r='JSC::B3::Air::Code::m_optLevel' o='1664' t='unsigned int'/>
+<mbr r='JSC::B3::Air::Code::m_stackIsAllocated' o='1696' t='bool'/>
+<mbr r='JSC::B3::Air::Code::m_preserveB3Origins' o='1704' t='bool'/>
+<mbr r='JSC::B3::Air::Code::m_uncorrectedCalleeSaveRegisterAtOffsetList' o='1728' t='JSC::RegisterAtOffsetList'/>
+<mbr r='JSC::B3::Air::Code::m_calleeSaveRegisters' o='1792' t='JSC::RegisterSet'/>
+<mbr r='JSC::B3::Air::Code::m_calleeSaveStackSlot' o='1856' t='JSC::B3::Air::StackSlot *'/>
+<mbr r='JSC::B3::Air::Code::m_entrypoints' o='1920' t='Vector&lt;JSC::B3::Air::FrequentedBlock&gt;'/>
+<mbr r='JSC::B3::Air::Code::m_entrypointLabels' o='2048' t='Vector&lt;MacroAssembler::Label&gt;'/>
+<mbr r='JSC::B3::Air::Code::m_prologueGenerators' o='2176' t='Vector&lt;Ref&lt;JSC::B3::Air::PrologueGenerator&gt;, 1&gt;'/>
+<mbr r='JSC::B3::Air::Code::m_wasmBoundsCheckGenerator' o='2368' t='RefPtr&lt;JSC::B3::Air::WasmBoundsCheckGenerator&gt;'/>
+<mbr r='JSC::B3::Air::Code::m_lastPhaseName' o='2432' t='const char *'/>
+<mbr r='JSC::B3::Air::Code::m_disassembler' o='2496' t='std::unique_ptr&lt;Disassembler&gt;'/>
+<mbr r='JSC::B3::Air::Code::m_defaultPrologueGenerator' o='2560' t='Ref&lt;JSC::B3::Air::PrologueGenerator&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirGenerationContext.h' l='54'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapGenerationParams.h' l='105' c='_ZNK3JSC2B324StackmapGenerationParams4codeEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirCFG.h' l='46' c='_ZN3JSC2B33Air3CFGC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirCFG.h' l='71'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirTmpInlines.h' l='132' c='_ZN3JSC2B33Air3Tmp15LinearlyIndexedC1ES2_RNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirTmpInlines.h' l='146'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirTmpInlines.h' l='161' c='_ZNK3JSC2B33Air3Tmp15linearlyIndexedERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirTmpInlines.h' l='166' c='_ZN3JSC2B33Air3Tmp8indexEndERNS1_4CodeENS0_4BankE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirTmpInlines.h' l='171' c='_ZN3JSC2B33Air3Tmp16absoluteIndexEndERNS1_4CodeENS0_4BankE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirTmpInlines.h' l='178' c='_ZN3JSC2B33Air3Tmp14linearIndexEndERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirTmpInlines.h' l='191' c='_ZN3JSC2B33Air3Tmp17tmpForLinearIndexERNS1_4CodeEj'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLivenessAdapter.h' l='55' c='_ZN3JSC2B33Air15LivenessAdapterC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLivenessAdapter.h' l='118'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLivenessAdapter.h' l='129' c='_ZN3JSC2B33Air18TmpLivenessAdapterC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLivenessAdapter.h' l='151' c='_ZN3JSC2B33Air25UnifiedTmpLivenessAdapterC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLivenessAdapter.h' l='171' c='_ZN3JSC2B33Air24StackSlotLivenessAdapterC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLiveness.h' l='41' c='_ZN3JSC2B33Air8LivenessC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirTmpMap.h' l='47' c='_ZN3JSC2B33Air6TmpMapC1ERNS1_4CodeEDpRKT_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirTmpMap.h' l='54' c='_ZN3JSC2B33Air6TmpMap6resizeERNS1_4CodeEDpRKT_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersAndStackAndGenerateCode.h' l='52' c='_ZN3JSC2B33Air28GenerateAndAllocateRegistersC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersAndStackAndGenerateCode.h' l='70'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirBlockInsertionSet.h' l='43' c='_ZN3JSC2B33Air17BlockInsertionSetC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirHandleCalleeSaves.h' l='47' c='_ZN3JSC2B33Air17handleCalleeSavesERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirHandleCalleeSaves.h' l='48' c='_ZN3JSC2B33Air17handleCalleeSavesERNS1_4CodeENS_11RegisterSetE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLowerStackArgs.h' l='37' c='_ZN3JSC2B33Air14lowerStackArgsERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirStackAllocation.h' l='51' c='_ZN3JSC2B33Air55allocateAndGetEscapedStackSlotsWithoutChangingFrameSizeERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirStackAllocation.h' l='56' c='_ZN3JSC2B33Air25allocateEscapedStackSlotsERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirStackAllocation.h' l='60' c='_ZN3JSC2B33Air32updateFrameSizeBasedOnStackSlotsERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersAndStackAndGenerateCode.cpp' l='43' c='_ZN3JSC2B33Air28GenerateAndAllocateRegistersC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersAndStackByLinearScan.h' l='49' c='_ZN3JSC2B33Air37allocateRegistersAndStackByLinearScanERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirFixSpillsAfterTerminals.h' l='39' c='_ZN3JSC2B33Air23fixSpillsAfterTerminalsERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirInsertionSet.h' l='43' c='_ZN3JSC2B33Air12InsertionSetC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirInsertionSet.h' l='48' c='_ZN3JSC2B33Air12InsertionSet4codeEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirInsertionSet.h' l='79'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirPadInterference.h' l='43' c='_ZN3JSC2B33Air15padInterferenceERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirPhaseScope.h' l='41' c='_ZN3JSC2B33Air10PhaseScopeC1ERNS1_4CodeEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirPhaseScope.h' l='45'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirRegLiveness.h' l='56' c='_ZN3JSC2B33Air11RegLivenessC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirRegLiveness.h' l='110'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersAndStackByLinearScan.cpp' l='110' c='_ZN3JSC2B33Air12_GLOBAL__N_110LinearScanC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersAndStackByLinearScan.cpp' l='670'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersAndStackByLinearScan.cpp' l='687' c='_ZN3JSC2B33Air37allocateRegistersAndStackByLinearScanERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.h' l='52' c='_ZN3JSC2B33Air32allocateRegistersByGraphColoringERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirTmpWidth.h' l='39' c='_ZN3JSC2B33Air8TmpWidthC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirTmpWidth.h' l='43' c='_ZN3JSC2B33Air8TmpWidth9recomputeERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirUseCounts.h' l='46' c='_ZN3JSC2B33Air9UseCountsC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='60' c='_ZN3JSC2B33Air12_GLOBAL__N_125AbstractColoringAllocatorC1ERNS1_4CodeERKN3WTF6VectorINS_3RegELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEET_jRKNS64626996'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='512'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='556' c='_ZN3JSC2B33Air12_GLOBAL__N_16BriggsC1ERNS1_4CodeERKN3WTF6VectorINS_3RegELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEET_jRKNS6_9BitVectorERKNS1_9UseCountsE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='913' c='_ZN3JSC2B33Air12_GLOBAL__N_13IRCC1ERNS1_4CodeERKN3WTF6VectorINS_3RegELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEET_jRKNS6_9BitVectorERKNS1_9UseCountsE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='1348' c='_ZN3JSC2B33Air12_GLOBAL__N_117ColoringAllocatorC1ERNS1_4CodeERNS1_8TmpWidthERKNS1_9UseCountsERKN3WTF9BitVectorE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='1479' c='_ZN3JSC2B33Air12_GLOBAL__N_117ColoringAllocator12tmpArraySizeERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='1749' c='_ZN3JSC2B33Air12_GLOBAL__N_131GraphColoringRegisterAllocationC1ERNS1_4CodeERNS1_9UseCountsE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='2172'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='2179' c='_ZN3JSC2B33Air32allocateRegistersByGraphColoringERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateStackByGraphColoring.h' l='42' c='_ZN3JSC2B33Air28allocateStackByGraphColoringERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateStackByGraphColoring.cpp' l='52' c='_ZN3JSC2B33Air12_GLOBAL__N_118StackAllocatorBaseC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateStackByGraphColoring.cpp' l='125'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateStackByGraphColoring.cpp' l='133' c='_ZN3JSC2B33Air12_GLOBAL__N_127GraphColoringStackAllocatorC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateStackByGraphColoring.cpp' l='360' c='_ZN3JSC2B33Air12_GLOBAL__N_125tryTrivialStackAllocationERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateStackByGraphColoring.cpp' l='373' c='_ZN3JSC2B33Air28allocateStackByGraphColoringERNS1_4CodeE'/>
+<size>328</size>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirBlockInsertionSet.cpp' l='36' c='_ZN3JSC2B33Air17BlockInsertionSetC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirBreakCriticalEdges.h' l='34' c='_ZN3JSC2B33Air18breakCriticalEdgesERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirBreakCriticalEdges.cpp' l='36' c='_ZN3JSC2B33Air18breakCriticalEdgesERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirCCallingConvention.h' l='43' c='_ZN3JSC2B33Air25computeCCallingConventionERNS1_4CodeEPNS0_10CCallValueE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirCCallingConvention.h' l='47' c='_ZN3JSC2B33Air10buildCCallERNS1_4CodeEPNS0_5ValueERKN3WTF6VectorINS1_3ArgELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirCCallingConvention.cpp' l='76' c='_ZN3JSC2B33Air25computeCCallingConventionERNS1_4CodeEPNS0_10CCallValueE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirCCallingConvention.cpp' l='110' c='_ZN3JSC2B33Air10buildCCallERNS1_4CodeEPNS0_5ValueERKN3WTF6VectorINS1_3ArgELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirCode.cpp' l='45' c='_ZN3JSC2B33AirL24defaultPrologueGeneratorERNS_12CCallHelpersERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirDisassembler.cpp' l='72' c='_ZN3JSC2B33Air12Disassembler4dumpERNS1_4CodeERN3WTF11PrintStreamERNS_10LinkBufferEPKcSB_RKNS5_12ScopedLambdaIFvRNS1_4InstEEEE'/>
+<size>328</size>
+<fun r='_ZN3JSC2B33Air4CodeC1ERNS0_9ProcedureE'/>
+<fun r='_ZN3JSC2B33Air4CodeD1Ev'/>
+<fun r='_ZN3JSC2B33Air4Code19emitDefaultPrologueERNS_12CCallHelpersE'/>
+<fun r='_ZN3JSC2B33Air4Code12emitEpilogueERNS_12CCallHelpersE'/>
+<fun r='_ZN3JSC2B33Air4Code22setRegsInPriorityOrderENS0_4BankERKN3WTF6VectorINS_3RegELm0ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEE'/>
+<fun r='_ZN3JSC2B33Air4Code11pinRegisterENS_3RegE'/>
+<fun r='_ZN3JSC2B33Air4Code11mutableGPRsEv'/>
+<fun r='_ZN3JSC2B33Air4Code11mutableFPRsEv'/>
+<fun r='_ZNK3JSC2B33Air4Code18needsUsedRegistersEv'/>
+<fun r='_ZN3JSC2B33Air4Code8addBlockEd'/>
+<fun r='_ZN3JSC2B33Air4Code12addStackSlotEmNS1_13StackSlotKindE'/>
+<fun r='_ZN3JSC2B33Air4Code10addSpecialESt10unique_ptrINS1_7SpecialESt14default_deleteIS4_EE'/>
+<fun r='_ZN3JSC2B33Air4Code12cCallSpecialEv'/>
+<fun r='_ZNK3JSC2B33Air4Code12isEntrypointEPNS1_10BasicBlockE'/>
+<fun r='_ZNK3JSC2B33Air4Code15entrypointIndexEPNS1_10BasicBlockE'/>
+<fun r='_ZN3JSC2B33Air4Code33setCalleeSaveRegisterAtOffsetListEONS_20RegisterAtOffsetListEPNS1_9StackSlotE'/>
+<fun r='_ZNK3JSC2B33Air4Code30calleeSaveRegisterAtOffsetListEv'/>
+<fun r='_ZN3JSC2B33Air4Code17resetReachabilityEv'/>
+<fun r='_ZNK3JSC2B33Air4Code4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZNK3JSC2B33Air4Code19findFirstBlockIndexEj'/>
+<fun r='_ZNK3JSC2B33Air4Code18findNextBlockIndexEj'/>
+<fun r='_ZNK3JSC2B33Air4Code13findNextBlockEPNS1_10BasicBlockE'/>
+<fun r='_ZN3JSC2B33Air4Code10addFastTmpENS1_3TmpE'/>
+<fun r='_ZN3JSC2B33Air4Code14addDataSectionEm'/>
+<fun r='_ZNK3JSC2B33Air4Code6jsHashEv'/>
+<fun r='_ZN3JSC2B33Air4Code17setNumEntrypointsEj'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirEliminateDeadCode.h' l='39' c='_ZN3JSC2B33Air17eliminateDeadCodeERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirEliminateDeadCode.cpp' l='40' c='_ZN3JSC2B33Air17eliminateDeadCodeERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirEmitShuffle.h' l='79' c='_ZNK3JSC2B33Air11ShufflePair5instsERNS1_4CodeEPNS0_5ValueE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirEmitShuffle.h' l='124' c='_ZN3JSC2B33Air11emitShuffleERNS1_4CodeEN3WTF6VectorINS1_11ShufflePairELm0ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEESt5arrayINS1_3ArgELm2EENS0_4BankEPNS0_5ValueE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirEmitShuffle.h' l='129' c='_ZN3JSC2B33Air11emitShuffleERNS1_4CodeERKN3WTF6VectorINS1_11ShufflePairELm0ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEERKSt5arrayINS1_3ArgELm2EESG_PNS0_5ValueE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirEmitShuffle.cpp' l='45' c='_ZN3JSC2B33Air12_GLOBAL__N_119findPossibleScratchERNS1_4CodeENS0_4BankERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirEmitShuffle.cpp' l='54' c='_ZN3JSC2B33Air12_GLOBAL__N_119findPossibleScratchERNS1_4CodeENS0_4BankERKNS1_3ArgES8_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirEmitShuffle.cpp' l='86' c='_ZNK3JSC2B33Air11ShufflePair5instsERNS1_4CodeEPNS0_5ValueE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirEmitShuffle.cpp' l='127' c='_ZN3JSC2B33Air11emitShuffleERNS1_4CodeEN3WTF6VectorINS1_11ShufflePairELm0ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEESt5arrayINS1_3ArgELm2EENS0_4BankEPNS0_5ValueE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirEmitShuffle.cpp' l='554' c='_ZN3JSC2B33Air11emitShuffleERNS1_4CodeERKN3WTF6VectorINS1_11ShufflePairELm0ENS4_15CrashOnOverflowELm16ENS4_10FastMallocEEERKSt5arrayINS1_3ArgELm2EESG_PNS0_5ValueE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirFixObviousSpills.h' l='37' c='_ZN3JSC2B33Air16fixObviousSpillsERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirFixObviousSpills.cpp' l='48' c='_ZN3JSC2B33Air12_GLOBAL__N_116FixObviousSpillsC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirFixObviousSpills.cpp' l='599'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirFixObviousSpills.cpp' l='608' c='_ZN3JSC2B33Air16fixObviousSpillsERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirFixPartialRegisterStalls.h' l='42' c='_ZN3JSC2B33Air24fixPartialRegisterStallsERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirFixPartialRegisterStalls.cpp' l='133' c='_ZN3JSC2B33Air24fixPartialRegisterStallsERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirFixSpillsAfterTerminals.cpp' l='37' c='_ZN3JSC2B33Air23fixSpillsAfterTerminalsERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirGenerate.h' l='42' c='_ZN3JSC2B33Air20prepareForGenerationERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirGenerate.h' l='46' c='_ZN3JSC2B33Air8generateERNS1_4CodeERNS_12CCallHelpersE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLogRegisterPressure.h' l='35' c='_ZN3JSC2B33Air19logRegisterPressureERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLowerAfterRegAlloc.h' l='37' c='_ZN3JSC2B33Air18lowerAfterRegAllocERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLowerEntrySwitch.h' l='37' c='_ZN3JSC2B33Air16lowerEntrySwitchERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLowerMacros.h' l='37' c='_ZN3JSC2B33Air11lowerMacrosERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirOptimizeBlockOrder.h' l='40' c='_ZN3JSC2B33Air22blocksInOptimizedOrderERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirOptimizeBlockOrder.h' l='45' c='_ZN3JSC2B33Air18optimizeBlockOrderERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirReportUsedRegisters.h' l='37' c='_ZN3JSC2B33Air19reportUsedRegistersERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirSimplifyCFG.h' l='36' c='_ZN3JSC2B33Air11simplifyCFGERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirValidate.h' l='34' c='_ZN3JSC2B33Air8validateERNS1_4CodeEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirGenerate.cpp' l='59' c='_ZN3JSC2B33Air20prepareForGenerationERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirGenerate.cpp' l='192' c='_ZN3JSC2B33AirL37generateWithAlreadyAllocatedRegistersERNS1_4CodeERNS_12CCallHelpersE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirGenerate.cpp' l='330' c='_ZN3JSC2B33Air8generateERNS1_4CodeERNS_12CCallHelpersE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirHandleCalleeSaves.cpp' l='37' c='_ZN3JSC2B33Air17handleCalleeSavesERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirHandleCalleeSaves.cpp' l='59' c='_ZN3JSC2B33Air17handleCalleeSavesERNS1_4CodeENS_11RegisterSetE'/>
+<size>328</size>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLogRegisterPressure.cpp' l='38' c='_ZN3JSC2B33Air19logRegisterPressureERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLowerAfterRegAlloc.cpp' l='54' c='_ZN3JSC2B33Air18lowerAfterRegAllocERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLowerEntrySwitch.cpp' l='38' c='_ZN3JSC2B33Air16lowerEntrySwitchERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLowerMacros.cpp' l='41' c='_ZN3JSC2B33Air11lowerMacrosERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLowerStackArgs.cpp' l='38' c='_ZN3JSC2B33Air14lowerStackArgsERNS1_4CodeE'/>
+<size>328</size>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirOptimizeBlockOrder.cpp' l='75' c='_ZN3JSC2B33Air22blocksInOptimizedOrderERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirOptimizeBlockOrder.cpp' l='128' c='_ZN3JSC2B33Air18optimizeBlockOrderERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirPadInterference.cpp' l='36' c='_ZN3JSC2B33Air15padInterferenceERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirPhaseScope.cpp' l='38' c='_ZN3JSC2B33Air10PhaseScopeC1ERNS1_4CodeEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirRegLiveness.cpp' l='36' c='_ZN3JSC2B33Air11RegLivenessC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirReportUsedRegisters.cpp' l='39' c='_ZN3JSC2B33Air19reportUsedRegistersERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirSimplifyCFG.cpp' l='36' c='_ZN3JSC2B33Air11simplifyCFGERNS1_4CodeE'/>
+<size>328</size>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirStackAllocation.cpp' l='44' c='_ZN3JSC2B33Air12_GLOBAL__N_136updateFrameSizeBasedOnStackSlotsImplERNS1_4CodeERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirStackAllocation.cpp' l='101' c='_ZN3JSC2B33Air55allocateAndGetEscapedStackSlotsWithoutChangingFrameSizeERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirStackAllocation.cpp' l='129' c='_ZN3JSC2B33Air25allocateEscapedStackSlotsERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirStackAllocation.cpp' l='135' c='_ZN3JSC2B33Air32updateFrameSizeBasedOnStackSlotsERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirTmpWidth.cpp' l='42' c='_ZN3JSC2B33Air8TmpWidthC1ERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirTmpWidth.cpp' l='53' c='_ZN3JSC2B33Air8TmpWidth9recomputeERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirValidate.cpp' l='42' c='_ZN3JSC2B33Air12_GLOBAL__N_19ValidaterC1ERNS1_4CodeEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirValidate.cpp' l='154'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirValidate.cpp' l='160' c='_ZN3JSC2B33Air8validateERNS1_4CodeEPKc'/>
+<size>328</size>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapSpecial.h' l='77' c='_ZN3JSC2B315StackmapSpecial16isArgValidForRepERNS0_3Air4CodeERKNS2_3ArgERKNS0_8ValueRepE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapSpecial.h' l='78' c='_ZN3JSC2B315StackmapSpecial9repForArgERNS0_3Air4CodeERKNS2_3ArgE'/>
+<size>328</size>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerMacrosAfterOptimizations.cpp' l='44'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='78'/>
+<size>328</size>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Procedure.cpp' l='51' c='_ZN3JSC2B39ProcedureC1Ev'/>
+<size>328</size>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapGenerationParams.cpp' l='88' c='_ZNK3JSC2B324StackmapGenerationParams4codeEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapSpecial.cpp' l='247' c='_ZN3JSC2B315StackmapSpecial16isArgValidForRepERNS0_3Air4CodeERKNS2_3ArgERKNS0_8ValueRepE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3StackmapSpecial.cpp' l='281' c='_ZN3JSC2B315StackmapSpecial9repForArgERNS0_3Air4CodeERKNS2_3ArgE'/>
+<size>328</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='202' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB35lowerEv'/>
+<size>328</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='723'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='830' c='_ZN3JSC4Wasm14AirIRGeneratorC1ERKNS0_17ModuleInformationERNS_2B39ProcedureEPNS0_16InternalFunctionERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENSA_7929608'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='3503' c='_ZN3JSC4Wasm18parseAndCompileAirERNS0_18CompilationContextERKNS0_12FunctionDataERKNS0_9SignatureERN3WTF6VectorINS0_22UnlinkedWasmToWasmCallELm0ENS9_1511364851'/>
+<size>328</size>

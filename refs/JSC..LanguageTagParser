@@ -1,0 +1,35 @@
+<def f='WebKit/Source/JavaScriptCore/runtime/IntlObject.cpp' l='1126' ll='1169'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlObject.cpp' l='1414' c='_ZN3JSC30isStructurallyValidLanguageTagEN3WTF10StringViewE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlObject.cpp' l='1428' c='_ZN3JSC19isUnicodeLanguageIdEN3WTF10StringViewE'/>
+<size>64</size>
+<doc f='WebKit/Source/JavaScriptCore/runtime/IntlObject.cpp' l='1115'>// The IsStructurallyValidLanguageTag abstract operation verifies that the locale argument (which must be a String value)
+//
+//     represents a well-formed &quot;Unicode BCP 47 locale identifier&quot; as specified in Unicode Technical Standard 35 section 3.2,
+//     does not include duplicate variant subtags, and
+//     does not include duplicate singleton subtags.
+//
+//  The abstract operation returns true if locale can be generated from the EBNF grammar in section 3.2 of the Unicode Technical Standard 35,
+//  starting with unicode_locale_id, and does not contain duplicate variant or singleton subtags (other than as a private use subtag).
+//  It returns false otherwise. Terminal value characters in the grammar are interpreted as the Unicode equivalents of the ASCII octet values given.
+//
+// https://unicode.org/reports/tr35/#Unicode_locale_identifier</doc>
+<fun r='_ZN3JSC17LanguageTagParserC1EN3WTF10StringViewE'/>
+<fun r='_ZN3JSC17LanguageTagParser20parseUnicodeLocaleIdEv'/>
+<fun r='_ZN3JSC17LanguageTagParser22parseUnicodeLanguageIdEv'/>
+<fun r='_ZN3JSC17LanguageTagParser5isEOSEv'/>
+<fun r='_ZN3JSC17LanguageTagParser4nextEv'/>
+<fun r='_ZN3JSC17LanguageTagParser30parseExtensionsAndPUExtensionsEv'/>
+<fun r='_ZN3JSC17LanguageTagParser32parseUnicodeExtensionAfterPrefixEv'/>
+<fun r='_ZN3JSC17LanguageTagParser36parseTransformedExtensionAfterPrefixEv'/>
+<fun r='_ZN3JSC17LanguageTagParser30parseOtherExtensionAfterPrefixEv'/>
+<fun r='_ZN3JSC17LanguageTagParser27parsePUExtensionAfterPrefixEv'/>
+<mbr r='JSC::LanguageTagParser::m_range' o='0' t='StringView::SplitResult'/>
+<mbr r='JSC::LanguageTagParser::m_cursor' o='192' t='StringView::SplitResult::Iterator'/>
+<mbr r='JSC::LanguageTagParser::m_current' o='384' t='WTF::StringView'/>
+<fun r='_ZN3JSC17LanguageTagParser20parseUnicodeLocaleIdEv'/>
+<fun r='_ZN3JSC17LanguageTagParser22parseUnicodeLanguageIdEv'/>
+<fun r='_ZN3JSC17LanguageTagParser32parseUnicodeExtensionAfterPrefixEv'/>
+<fun r='_ZN3JSC17LanguageTagParser36parseTransformedExtensionAfterPrefixEv'/>
+<fun r='_ZN3JSC17LanguageTagParser30parseOtherExtensionAfterPrefixEv'/>
+<fun r='_ZN3JSC17LanguageTagParser27parsePUExtensionAfterPrefixEv'/>
+<fun r='_ZN3JSC17LanguageTagParser30parseExtensionsAndPUExtensionsEv'/>

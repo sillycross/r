@@ -1,0 +1,16 @@
+<def f='include/wayland-client-protocol.h' l='1290' ll='1299' type='struct wl_buffer * wl_shm_pool_create_buffer(struct wl_shm_pool * wl_shm_pool, int32_t offset, int32_t width, int32_t height, int32_t stride, uint32_t format)'/>
+<doc f='include/wayland-client-protocol.h' l='1275'>/**
+ * @ingroup iface_wl_shm_pool
+ *
+ * Create a wl_buffer object from the pool.
+ *
+ * The buffer is created offset bytes into the pool and has
+ * width and height as specified.  The stride argument specifies
+ * the number of bytes from the beginning of one row to the beginning
+ * of the next.  The format is the pixel format of the buffer and
+ * must be one of those advertised through the wl_shm.format event.
+ *
+ * A buffer will keep a reference to the pool it was created from
+ * so it is valid to destroy the pool immediately after creating
+ * a buffer from it.
+ */</doc>

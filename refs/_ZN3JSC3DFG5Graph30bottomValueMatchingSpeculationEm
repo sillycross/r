@@ -1,0 +1,13 @@
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.h' l='258' type='JSC::DFG::FrozenValue * JSC::DFG::Graph::bottomValueMatchingSpeculation(JSC::SpeculatedType )'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.h' l='249'>// Use this to produce a value you know won&apos;t be accessed but the compiler
+    // might think is live. For exmaple, in our op_iterator_next parsing
+    // value VirtualRegister is only read if we are not &quot;done&quot;. Because the
+    // done control flow is not in the op_iterator_next bytecode this is not
+    // obvious to the compiler.
+    // FIXME: This isn&apos;t quite a true bottom value. For example, any object
+    // speculation will now be Object|Other as this returns null. We should
+    // fix this when we can allocate on the Compiler thread.
+    // https://bugs.webkit.org/show_bug.cgi?id=210627</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='7484' u='c' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='7563' u='c' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1510' ll='1536' type='JSC::DFG::FrozenValue * JSC::DFG::Graph::bottomValueMatchingSpeculation(JSC::SpeculatedType prediction)'/>

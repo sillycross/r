@@ -1,0 +1,81 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Heap.h' l='415'/>
+<inh f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITStubRoutine.h' l='56' c='JSC::JITStubRoutine'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCAwareJITStubRoutine.h' l='57' ll='91'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCAwareJITStubRoutine.h' l='64' c='_ZN3JSC21GCAwareJITStubRoutine6createERNS_2VMERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<ovr f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCAwareJITStubRoutine.h' l='93' c='JSC::PolymorphicAccessJITStubRoutine'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCAwareJITStubRoutine.h' l='93'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCAwareJITStubRoutine.h' l='95'/>
+<ovr f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PolymorphicCallStubRoutine.h' l='83' c='JSC::PolymorphicCallStubRoutine'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PolymorphicCallStubRoutine.h' l='83'/>
+<size>40</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/GCAwareJITStubRoutine.h' l='46'>// Use this stub routine if you know that your code might be on stack when
+// either GC or other kinds of stub deletion happen. Basicaly, if your stub
+// routine makes calls (either to JS code or to C++ code) then you should
+// assume that it&apos;s possible for that JS or C++ code to do something that
+// causes the system to try to delete your routine. Using this routine type
+// ensures that the actual deletion is delayed until the GC proves that the
+// routine is no longer running. You can also subclass this routine if you
+// want to mark additional objects during GC in those cases where the
+// routine is known to be executing, or if you want to force this routine to
+// keep other routines alive (for example due to the use of a slow-path
+// list which does not get reclaimed all at once).</doc>
+<fun r='_ZN3JSC21GCAwareJITStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutineD1Ev'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutine6createERNS_2VMERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutine19markRequiredObjectsERT_'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutine12deleteFromGCEv'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutine11makeGCAwareERNS_2VME'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutine19observeZeroRefCountEv'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutine27markRequiredObjectsInternalERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutine27markRequiredObjectsInternalERNS_11SlotVisitorE'/>
+<mbr r='JSC::GCAwareJITStubRoutine::m_mayBeExecuting' o='256' t='bool'/>
+<mbr r='JSC::GCAwareJITStubRoutine::m_isJettisoned' o='264' t='bool'/>
+<mbr r='JSC::GCAwareJITStubRoutine::m_isGCAware' o='272' t='bool'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.h' l='415'/>
+<inh f='WebKit/Source/JavaScriptCore/jit/JITStubRoutine.h' l='56' c='JSC::JITStubRoutine'/>
+<def f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.h' l='57' ll='91'/>
+<use f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.h' l='64' c='_ZN3JSC21GCAwareJITStubRoutine6createERNS_2VMERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<ovr f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.h' l='93' c='JSC::PolymorphicAccessJITStubRoutine'/>
+<use f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.h' l='93'/>
+<use f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.h' l='95'/>
+<ovr f='WebKit/Source/JavaScriptCore/jit/PolymorphicCallStubRoutine.h' l='83' c='JSC::PolymorphicCallStubRoutine'/>
+<use f='WebKit/Source/JavaScriptCore/jit/PolymorphicCallStubRoutine.h' l='83'/>
+<size>40</size>
+<doc f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.h' l='46'>// Use this stub routine if you know that your code might be on stack when
+// either GC or other kinds of stub deletion happen. Basicaly, if your stub
+// routine makes calls (either to JS code or to C++ code) then you should
+// assume that it&apos;s possible for that JS or C++ code to do something that
+// causes the system to try to delete your routine. Using this routine type
+// ensures that the actual deletion is delayed until the GC proves that the
+// routine is no longer running. You can also subclass this routine if you
+// want to mark additional objects during GC in those cases where the
+// routine is known to be executing, or if you want to force this routine to
+// keep other routines alive (for example due to the use of a slow-path
+// list which does not get reclaimed all at once).</doc>
+<fun r='_ZN3JSC21GCAwareJITStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutineD1Ev'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutine6createERNS_2VMERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutine19markRequiredObjectsERT_'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutine12deleteFromGCEv'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutine11makeGCAwareERNS_2VME'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutine19observeZeroRefCountEv'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutine27markRequiredObjectsInternalERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutine27markRequiredObjectsInternalERNS_11SlotVisitorE'/>
+<mbr r='JSC::GCAwareJITStubRoutine::m_mayBeExecuting' o='256' t='bool'/>
+<mbr r='JSC::GCAwareJITStubRoutine::m_isJettisoned' o='264' t='bool'/>
+<mbr r='JSC::GCAwareJITStubRoutine::m_isGCAware' o='272' t='bool'/>
+<use f='WebKit/Source/JavaScriptCore/heap/JITStubRoutineSet.h' l='50' c='_ZN3JSC17JITStubRoutineSet3addEPNS_21GCAwareJITStubRoutineE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/JITStubRoutineSet.h' l='73'/>
+<use f='WebKit/Source/JavaScriptCore/jit/GCAwareJITStubRoutine.cpp' l='82' c='_ZN3JSC31PolymorphicAccessJITStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEERNS_2VMEONS2_11FixedVectorINS2_6RefPtrINS_10AccessCaseEN14966298'/>
+<size>40</size>
+<fun r='_ZN3JSC21GCAwareJITStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEE'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutineD1Ev'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutine11makeGCAwareERNS_2VME'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutine19observeZeroRefCountEv'/>
+<fun r='_ZN3JSC21GCAwareJITStubRoutine12deleteFromGCEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/PolymorphicCallStubRoutine.cpp' l='71' c='_ZN3JSC26PolymorphicCallStubRoutineC1ERKNS_21MacroAssemblerCodeRefILN3WTF6PtrTagE49594EEERNS_2VMEPKNS_6JSCellEPNS_9CallFrameERNS_12CallLinkInfoERKNS2_4249919'/>
+<size>40</size>
+<use f='WebKit/Source/JavaScriptCore/heap/JITStubRoutineSet.cpp' l='39' c='_ZN3JSC17JITStubRoutineSetD1Ev'/>
+<use f='WebKit/Source/JavaScriptCore/heap/JITStubRoutineSet.cpp' l='53' c='_ZN3JSC17JITStubRoutineSet3addEPNS_21GCAwareJITStubRoutineE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/JITStubRoutineSet.cpp' l='136' c='_ZN3JSC17JITStubRoutineSet23traceMarkedStubRoutinesERT_'/>
+<size>40</size>

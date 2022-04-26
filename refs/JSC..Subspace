@@ -1,0 +1,202 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapCell.h' l='83' c='_ZNK3JSC8HeapCell8subspaceEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='126' c='_ZNK3JSC11MarkedBlock6Handle8subspaceEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='263'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedBlock.h' l='382' c='_ZNK3JSC11MarkedBlock8subspaceEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/BlockDirectory.h' l='63' c='_ZN3JSC14BlockDirectory11setSubspaceEPNS_8SubspaceE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/BlockDirectory.h' l='136' c='_ZNK3JSC14BlockDirectory8subspaceEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/BlockDirectory.h' l='172'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PreciseAllocation.h' l='46' c='_ZN3JSC17PreciseAllocation9tryCreateERNS_4HeapEmPNS_8SubspaceEj'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PreciseAllocation.h' l='48' c='_ZN3JSC17PreciseAllocation18createForLowerTierERNS_4HeapEmPNS_8SubspaceEh'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PreciseAllocation.h' l='51' c='_ZN3JSC17PreciseAllocation13tryReallocateEmPNS_8SubspaceE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PreciseAllocation.h' l='70' c='_ZNK3JSC17PreciseAllocation8subspaceEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PreciseAllocation.h' l='161' c='_ZN3JSC17PreciseAllocationC1ERNS_4HeapEmPNS_8SubspaceEjb'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/PreciseAllocation.h' l='173'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedSpace.h' l='186'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedSpace.h' l='195' c='_ZN3JSC11MarkedSpace18initializeSubspaceERNS_8SubspaceE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MarkedSpace.h' l='201'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Subspace.h' l='43' ll='124'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Subspace.h' l='44' c='_ZN3JSC8SubspaceC1ERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Subspace.h' l='44' c='_ZN3JSC8SubspaceaSERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Subspace.h' l='44' c='_ZN3JSC8SubspaceaSERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Subspace.h' l='97' c='_ZNK3JSC8Subspace36nextSubspaceInAlignedMemoryAllocatorEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Subspace.h' l='98' c='_ZN3JSC8Subspace39setNextSubspaceInAlignedMemoryAllocatorEPS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Subspace.h' l='117'/>
+<ovr f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CompleteSubspace.h' l='32' c='JSC::CompleteSubspace'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CompleteSubspace.h' l='32'/>
+<ovr f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoSubspace.h' l='38' c='JSC::IsoSubspace'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoSubspace.h' l='38'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VM.h' l='662' c='_ZN3JSC2VM11SpaceAndSet6setForERNS_8SubspaceE'/>
+<size>96</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Subspace.h' l='40'>// The idea of subspaces is that you can provide some custom behavior for your objects if you
+// allocate them from a custom Subspace in which you override some of the virtual methods. This
+// class is the baseclass of Subspaces. Usually you will use either Subspace or FixedSizeSubspace.</doc>
+<fun r='_ZN3JSC8SubspaceC1ERKS0_'/>
+<fun r='_ZN3JSC8SubspaceC1EN3WTF7CStringERNS_4HeapE'/>
+<fun r='_ZN3JSC8SubspaceD1Ev'/>
+<fun r='_ZNK3JSC8Subspace4nameEv'/>
+<fun r='_ZNK3JSC8Subspace5spaceEv'/>
+<fun r='_ZNK3JSC8Subspace10attributesEv'/>
+<fun r='_ZNK3JSC8Subspace12heapCellTypeEv'/>
+<fun r='_ZNK3JSC8Subspace22alignedMemoryAllocatorEv'/>
+<fun r='_ZN3JSC8Subspace11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<fun r='_ZN3JSC8Subspace7destroyERNS_2VMEPNS_6JSCellE'/>
+<fun r='_ZN3JSC8Subspace12allocatorForEmNS_16AllocatorForModeE'/>
+<fun r='_ZN3JSC8Subspace8allocateERNS_2VMEmPNS_17GCDeferralContextENS_21AllocationFailureModeE'/>
+<fun r='_ZN3JSC8Subspace20prepareForAllocationEv'/>
+<fun r='_ZN3JSC8Subspace23didCreateFirstDirectoryEPNS_14BlockDirectoryE'/>
+<fun r='_ZN3JSC8Subspace21findEmptyBlockToStealEv'/>
+<fun r='_ZN3JSC8Subspace16forEachDirectoryERKT_'/>
+<fun r='_ZN3JSC8Subspace23parallelDirectorySourceEv'/>
+<fun r='_ZN3JSC8Subspace18forEachMarkedBlockERKT_'/>
+<fun r='_ZN3JSC8Subspace26forEachNotEmptyMarkedBlockERKT_'/>
+<fun r='_ZN3JSC8Subspace33parallelNotEmptyMarkedBlockSourceEv'/>
+<fun r='_ZN3JSC8Subspace24forEachPreciseAllocationERKT_'/>
+<fun r='_ZN3JSC8Subspace17forEachMarkedCellERKT_'/>
+<fun r='_ZN3JSC8Subspace27forEachMarkedCellInParallelERKT0_'/>
+<fun r='_ZN3JSC8Subspace15forEachLiveCellERKT_'/>
+<fun r='_ZN3JSC8Subspace11sweepBlocksEv'/>
+<fun r='_ZNK3JSC8Subspace36nextSubspaceInAlignedMemoryAllocatorEv'/>
+<fun r='_ZN3JSC8Subspace39setNextSubspaceInAlignedMemoryAllocatorEPS0_'/>
+<fun r='_ZN3JSC8Subspace13didResizeBitsEj'/>
+<fun r='_ZN3JSC8Subspace14didRemoveBlockEj'/>
+<fun r='_ZN3JSC8Subspace26didBeginSweepingToFreeListEPNS_11MarkedBlock6HandleE'/>
+<fun r='_ZNK3JSC8Subspace13isIsoSubspaceEv'/>
+<fun r='_ZN3JSC8Subspace10initializeEPNS_12HeapCellTypeEPNS_22AlignedMemoryAllocatorE'/>
+<mbr r='JSC::Subspace::m_space' o='64' t='JSC::MarkedSpace &amp;'/>
+<mbr r='JSC::Subspace::m_heapCellType' o='128' t='JSC::HeapCellType *'/>
+<mbr r='JSC::Subspace::m_alignedMemoryAllocator' o='192' t='JSC::AlignedMemoryAllocator *'/>
+<mbr r='JSC::Subspace::m_firstDirectory' o='256' t='JSC::BlockDirectory *'/>
+<mbr r='JSC::Subspace::m_directoryForEmptyAllocation' o='320' t='JSC::BlockDirectory *'/>
+<mbr r='JSC::Subspace::m_preciseAllocations' o='384' t='SentinelLinkedList&lt;JSC::PreciseAllocation, PackedRawSentinelNode&lt;JSC::PreciseAllocation&gt; &gt;'/>
+<mbr r='JSC::Subspace::m_nextSubspaceInAlignedMemoryAllocator' o='576' t='JSC::Subspace *'/>
+<mbr r='JSC::Subspace::m_name' o='640' t='WTF::CString'/>
+<mbr r='JSC::Subspace::m_isIsoSubspace' o='704' t='bool'/>
+<mbr r='JSC::Subspace::m_remainingLowerTierCellCount' o='712' t='uint8_t'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/HeapCellInlines.h' l='93' c='_ZNK3JSC8HeapCell8subspaceEv'/>
+<size>96</size>
+<use f='WebKit/Source/JavaScriptCore/heap/HeapCell.h' l='83' c='_ZNK3JSC8HeapCell8subspaceEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='126' c='_ZNK3JSC11MarkedBlock6Handle8subspaceEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='263'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.h' l='382' c='_ZNK3JSC11MarkedBlock8subspaceEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/BlockDirectory.h' l='63' c='_ZN3JSC14BlockDirectory11setSubspaceEPNS_8SubspaceE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/BlockDirectory.h' l='136' c='_ZNK3JSC14BlockDirectory8subspaceEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/BlockDirectory.h' l='172'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.h' l='46' c='_ZN3JSC17PreciseAllocation9tryCreateERNS_4HeapEmPNS_8SubspaceEj'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.h' l='48' c='_ZN3JSC17PreciseAllocation18createForLowerTierERNS_4HeapEmPNS_8SubspaceEh'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.h' l='51' c='_ZN3JSC17PreciseAllocation13tryReallocateEmPNS_8SubspaceE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.h' l='70' c='_ZNK3JSC17PreciseAllocation8subspaceEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.h' l='161' c='_ZN3JSC17PreciseAllocationC1ERNS_4HeapEmPNS_8SubspaceEjb'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.h' l='173'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.h' l='186'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.h' l='195' c='_ZN3JSC11MarkedSpace18initializeSubspaceERNS_8SubspaceE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.h' l='201'/>
+<def f='WebKit/Source/JavaScriptCore/heap/Subspace.h' l='43' ll='124'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Subspace.h' l='44' c='_ZN3JSC8SubspaceC1ERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Subspace.h' l='44' c='_ZN3JSC8SubspaceaSERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Subspace.h' l='44' c='_ZN3JSC8SubspaceaSERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Subspace.h' l='97' c='_ZNK3JSC8Subspace36nextSubspaceInAlignedMemoryAllocatorEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Subspace.h' l='98' c='_ZN3JSC8Subspace39setNextSubspaceInAlignedMemoryAllocatorEPS0_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Subspace.h' l='117'/>
+<ovr f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.h' l='32' c='JSC::CompleteSubspace'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.h' l='32'/>
+<ovr f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.h' l='38' c='JSC::IsoSubspace'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.h' l='38'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.h' l='662' c='_ZN3JSC2VM11SpaceAndSet6setForERNS_8SubspaceE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/HeapCellInlines.h' l='93' c='_ZNK3JSC8HeapCell8subspaceEv'/>
+<size>96</size>
+<doc f='WebKit/Source/JavaScriptCore/heap/Subspace.h' l='40'>// The idea of subspaces is that you can provide some custom behavior for your objects if you
+// allocate them from a custom Subspace in which you override some of the virtual methods. This
+// class is the baseclass of Subspaces. Usually you will use either Subspace or FixedSizeSubspace.</doc>
+<fun r='_ZN3JSC8SubspaceC1ERKS0_'/>
+<fun r='_ZN3JSC8SubspaceC1EN3WTF7CStringERNS_4HeapE'/>
+<fun r='_ZN3JSC8SubspaceD1Ev'/>
+<fun r='_ZNK3JSC8Subspace4nameEv'/>
+<fun r='_ZNK3JSC8Subspace5spaceEv'/>
+<fun r='_ZNK3JSC8Subspace10attributesEv'/>
+<fun r='_ZNK3JSC8Subspace12heapCellTypeEv'/>
+<fun r='_ZNK3JSC8Subspace22alignedMemoryAllocatorEv'/>
+<fun r='_ZN3JSC8Subspace11finishSweepERNS_11MarkedBlock6HandleEPNS_8FreeListE'/>
+<fun r='_ZN3JSC8Subspace7destroyERNS_2VMEPNS_6JSCellE'/>
+<fun r='_ZN3JSC8Subspace12allocatorForEmNS_16AllocatorForModeE'/>
+<fun r='_ZN3JSC8Subspace8allocateERNS_2VMEmPNS_17GCDeferralContextENS_21AllocationFailureModeE'/>
+<fun r='_ZN3JSC8Subspace20prepareForAllocationEv'/>
+<fun r='_ZN3JSC8Subspace23didCreateFirstDirectoryEPNS_14BlockDirectoryE'/>
+<fun r='_ZN3JSC8Subspace21findEmptyBlockToStealEv'/>
+<fun r='_ZN3JSC8Subspace16forEachDirectoryERKT_'/>
+<fun r='_ZN3JSC8Subspace23parallelDirectorySourceEv'/>
+<fun r='_ZN3JSC8Subspace18forEachMarkedBlockERKT_'/>
+<fun r='_ZN3JSC8Subspace26forEachNotEmptyMarkedBlockERKT_'/>
+<fun r='_ZN3JSC8Subspace33parallelNotEmptyMarkedBlockSourceEv'/>
+<fun r='_ZN3JSC8Subspace24forEachPreciseAllocationERKT_'/>
+<fun r='_ZN3JSC8Subspace17forEachMarkedCellERKT_'/>
+<fun r='_ZN3JSC8Subspace27forEachMarkedCellInParallelERKT0_'/>
+<fun r='_ZN3JSC8Subspace15forEachLiveCellERKT_'/>
+<fun r='_ZN3JSC8Subspace11sweepBlocksEv'/>
+<fun r='_ZNK3JSC8Subspace36nextSubspaceInAlignedMemoryAllocatorEv'/>
+<fun r='_ZN3JSC8Subspace39setNextSubspaceInAlignedMemoryAllocatorEPS0_'/>
+<fun r='_ZN3JSC8Subspace13didResizeBitsEj'/>
+<fun r='_ZN3JSC8Subspace14didRemoveBlockEj'/>
+<fun r='_ZN3JSC8Subspace26didBeginSweepingToFreeListEPNS_11MarkedBlock6HandleE'/>
+<fun r='_ZNK3JSC8Subspace13isIsoSubspaceEv'/>
+<fun r='_ZN3JSC8Subspace10initializeEPNS_12HeapCellTypeEPNS_22AlignedMemoryAllocatorE'/>
+<mbr r='JSC::Subspace::m_space' o='64' t='JSC::MarkedSpace &amp;'/>
+<mbr r='JSC::Subspace::m_heapCellType' o='128' t='JSC::HeapCellType *'/>
+<mbr r='JSC::Subspace::m_alignedMemoryAllocator' o='192' t='JSC::AlignedMemoryAllocator *'/>
+<mbr r='JSC::Subspace::m_firstDirectory' o='256' t='JSC::BlockDirectory *'/>
+<mbr r='JSC::Subspace::m_directoryForEmptyAllocation' o='320' t='JSC::BlockDirectory *'/>
+<mbr r='JSC::Subspace::m_preciseAllocations' o='384' t='SentinelLinkedList&lt;JSC::PreciseAllocation, PackedRawSentinelNode&lt;JSC::PreciseAllocation&gt; &gt;'/>
+<mbr r='JSC::Subspace::m_nextSubspaceInAlignedMemoryAllocator' o='576' t='JSC::Subspace *'/>
+<mbr r='JSC::Subspace::m_name' o='640' t='WTF::CString'/>
+<mbr r='JSC::Subspace::m_isIsoSubspace' o='704' t='bool'/>
+<mbr r='JSC::Subspace::m_remainingLowerTierCellCount' o='712' t='uint8_t'/>
+<use f='WebKit/Source/JavaScriptCore/tools/VMInspector.cpp' l='625' c='_ZN3JSC11VMInspector18dumpSubspaceHashesEPNS_2VME'/>
+<size>96</size>
+<use f='WebKit/Source/JavaScriptCore/heap/AlignedMemoryAllocator.h' l='52' c='_ZN3JSC22AlignedMemoryAllocator16registerSubspaceEPNS_8SubspaceE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/AlignedMemoryAllocator.h' l='62'/>
+<use f='WebKit/Source/JavaScriptCore/heap/AlignedMemoryAllocator.cpp' l='49' c='_ZN3JSC22AlignedMemoryAllocator17registerDirectoryERNS_4HeapEPNS_14BlockDirectoryE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/AlignedMemoryAllocator.cpp' l='56' c='_ZN3JSC22AlignedMemoryAllocator16registerSubspaceEPNS_8SubspaceE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SubspaceInlines.h' l='93' c='_ZZN3JSC8Subspace27forEachMarkedCellInParallelERKT0_EN4TaskC1ERS0_S3_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/SubspaceInlines.h' l='126' c='_ZN3JSC8Subspace27forEachMarkedCellInParallelERKT0_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/BlockDirectory.cpp' l='54' c='_ZN3JSC14BlockDirectory11setSubspaceEPNS_8SubspaceE'/>
+<size>96</size>
+<fun r='_ZN3JSC8Subspace16forEachDirectoryERKT_'/>
+<fun r='_ZN3JSC8Subspace18forEachMarkedBlockERKT_'/>
+<fun r='_ZN3JSC8Subspace26forEachNotEmptyMarkedBlockERKT_'/>
+<fun r='_ZN3JSC8Subspace24forEachPreciseAllocationERKT_'/>
+<fun r='_ZN3JSC8Subspace17forEachMarkedCellERKT_'/>
+<fun r='_ZN3JSC8Subspace27forEachMarkedCellInParallelERKT0_'/>
+<fun r='_ZN3JSC8Subspace15forEachLiveCellERKT_'/>
+<fun r='_ZNK3JSC8Subspace10attributesEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.cpp' l='39' c='_ZN3JSC16CompleteSubspaceC1EN3WTF7CStringERNS_4HeapEPNS_12HeapCellTypeEPNS_22AlignedMemoryAllocatorE'/>
+<size>96</size>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.cpp' l='37' c='_ZN3JSC11IsoSubspaceC1EN3WTF7CStringERNS_4HeapEPNS_12HeapCellTypeEmh'/>
+<use f='WebKit/Source/JavaScriptCore/heap/LocalAllocator.cpp' l='137' c='_ZN3JSC14LocalAllocator16allocateSlowCaseERNS_4HeapEPNS_17GCDeferralContextENS_21AllocationFailureModeE'/>
+<size>96</size>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedBlock.cpp' l='378' c='_ZNK3JSC11MarkedBlock6Handle8subspaceEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.cpp' l='199' c='_ZN3JSC11MarkedSpace10freeMemoryEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/MarkedSpace.cpp' l='257' c='_ZN3JSC11MarkedSpace20prepareForAllocationEv'/>
+<size>96</size>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.cpp' l='43' c='_ZN3JSC17PreciseAllocation9tryCreateERNS_4HeapEmPNS_8SubspaceEj'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.cpp' l='68' c='_ZN3JSC17PreciseAllocation13tryReallocateEmPNS_8SubspaceE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.cpp' l='123' c='_ZN3JSC17PreciseAllocation18createForLowerTierERNS_4HeapEmPNS_8SubspaceEh'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.cpp' l='152' c='_ZN3JSC17PreciseAllocation17reuseForLowerTierEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/PreciseAllocation.cpp' l='170' c='_ZN3JSC17PreciseAllocationC1ERNS_4HeapEmPNS_8SubspaceEjb'/>
+<size>96</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCell.cpp' l='301' c='_ZN3JSC24reportZappedCellAndCrashERNS_4HeapEPKNS_6JSCellE'/>
+<size>96</size>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SubspaceInlines.h' l='93' c='_ZZN3JSC8Subspace27forEachMarkedCellInParallelERKT0_EN4TaskC1ERS0_S3_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SubspaceInlines.h' l='126' c='_ZN3JSC8Subspace27forEachMarkedCellInParallelERKT0_'/>
+<size>96</size>
+<fun r='_ZN3JSC8Subspace16forEachDirectoryERKT_'/>
+<fun r='_ZN3JSC8Subspace18forEachMarkedBlockERKT_'/>
+<fun r='_ZN3JSC8Subspace26forEachNotEmptyMarkedBlockERKT_'/>
+<fun r='_ZN3JSC8Subspace24forEachPreciseAllocationERKT_'/>
+<fun r='_ZN3JSC8Subspace17forEachMarkedCellERKT_'/>
+<fun r='_ZN3JSC8Subspace27forEachMarkedCellInParallelERKT0_'/>
+<fun r='_ZN3JSC8Subspace15forEachLiveCellERKT_'/>
+<fun r='_ZNK3JSC8Subspace10attributesEv'/>
+<use f='WebKit/Source/WebCore/bindings/js/DOMGCOutputConstraint.cpp' l='63' c='_ZN7WebCore21DOMGCOutputConstraint15executeImplImplERT_'/>
+<size>96</size>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AlignedMemoryAllocator.h' l='52' c='_ZN3JSC22AlignedMemoryAllocator16registerSubspaceEPNS_8SubspaceE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AlignedMemoryAllocator.h' l='62'/>
+<size>96</size>

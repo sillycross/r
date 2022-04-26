@@ -1,0 +1,14 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.h' l='141' type='JSCValue * jsc_value_new_object(JSCContext * context, gpointer instance, JSCClass * jsc_class)'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='604' ll='610' type='JSCValue * jsc_value_new_object(JSCContext * context, gpointer instance, JSCClass * jscClass)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='592'>/**
+ * jsc_value_new_object:
+ * @context: a #JSCContext
+ * @instance: (nullable) (transfer full): an object instance or %NULL
+ * @jsc_class: (nullable): the #JSCClass of @instance
+ *
+ * Create a new #JSCValue from @instance. If @instance is %NULL a new empty object is created.
+ * When @instance is provided, @jsc_class must be provided too. @jsc_class takes ownership of
+ * @instance that will be freed by the #GDestroyNotify passed to jsc_context_register_class().
+ *
+ * Returns: (transfer full): a #JSCValue.
+ */</doc>

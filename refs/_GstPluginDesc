@@ -1,0 +1,40 @@
+<use f='include/gstreamer-1.0/gst/gstplugin.h' l='42'/>
+<def f='include/gstreamer-1.0/gst/gstplugin.h' l='171' ll='185'/>
+<size>112</size>
+<doc f='include/gstreamer-1.0/gst/gstplugin.h' l='146'>/**
+ * GstPluginDesc:
+ * @major_version: the major version number of core that plugin was compiled for
+ * @minor_version: the minor version number of core that plugin was compiled for
+ * @name: a unique name of the plugin
+ * @description: description of plugin
+ * @plugin_init: pointer to the init function of this plugin.
+ * @version: version of the plugin
+ * @license: effective license of plugin
+ * @source: source module plugin belongs to
+ * @package: shipped package plugin belongs to
+ * @origin: URL to provider of plugin
+ * @release_datetime: (allow-none): date time string in ISO 8601
+ *     format (or rather, a subset thereof), or %NULL. Allowed are the
+ *     following formats: &quot;YYYY-MM-DD&quot; and &quot;YYY-MM-DDTHH:MMZ&quot; (with
+ *     &apos;T&apos; a separator and &apos;Z&apos; indicating UTC/Zulu time). This field
+ *     should be set via the GST_PACKAGE_RELEASE_DATETIME
+ *     preprocessor macro.
+ *
+ * A plugin should export a variable of this type called plugin_desc. The plugin
+ * loader will use the data provided there to initialize the plugin.
+ *
+ * The @licence parameter must be one of: LGPL, GPL, QPL, GPL/QPL, MPL,
+ * BSD, MIT/X11, Proprietary, unknown.
+ */</doc>
+<mbr r='_GstPluginDesc::major_version' o='0' t='gint'/>
+<mbr r='_GstPluginDesc::minor_version' o='32' t='gint'/>
+<mbr r='_GstPluginDesc::name' o='64' t='const gchar *'/>
+<mbr r='_GstPluginDesc::description' o='128' t='const gchar *'/>
+<mbr r='_GstPluginDesc::plugin_init' o='192' t='GstPluginInitFunc'/>
+<mbr r='_GstPluginDesc::version' o='256' t='const gchar *'/>
+<mbr r='_GstPluginDesc::license' o='320' t='const gchar *'/>
+<mbr r='_GstPluginDesc::source' o='384' t='const gchar *'/>
+<mbr r='_GstPluginDesc::package' o='448' t='const gchar *'/>
+<mbr r='_GstPluginDesc::origin' o='512' t='const gchar *'/>
+<mbr r='_GstPluginDesc::release_datetime' o='576' t='const gchar *'/>
+<mbr r='_GstPluginDesc::_gst_reserved' o='640' t='gpointer [4]'/>

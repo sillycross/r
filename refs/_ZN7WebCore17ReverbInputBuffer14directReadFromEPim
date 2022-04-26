@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/WebCore/platform/audio/ReverbInputBuffer.h' l='54' type='float * WebCore::ReverbInputBuffer::directReadFrom(int * readIndex, size_t numberOfFrames)'/>
+<use f='WebKit/Source/WebCore/platform/audio/ReverbConvolverStage.cpp' l='108' u='c' c='_ZN7WebCore20ReverbConvolverStage19processInBackgroundEPNS_15ReverbConvolverEm'/>
+<def f='WebKit/Source/WebCore/platform/audio/ReverbInputBuffer.cpp' l='59' ll='78' type='float * WebCore::ReverbInputBuffer::directReadFrom(int * readIndex, size_t numberOfFrames)'/>
+<doc f='WebKit/Source/WebCore/platform/audio/ReverbInputBuffer.h' l='50'>// The individual background threads read here (and hope that they can keep up with the buffer writing).
+    // readIndex is updated with the next readIndex to read from...
+    // The assumption is that the buffer&apos;s length is evenly divisible by numberOfFrames.
+    // FIXME: remove numberOfFrames restriction...</doc>

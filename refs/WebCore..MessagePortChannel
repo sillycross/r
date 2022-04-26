@@ -1,0 +1,56 @@
+<inh f='WebKit/WTF/Headers/wtf/RefCounted.h' l='184' c='WTF::RefCounted'/>
+<def f='WebKit/Source/WebCore/dom/messageports/MessagePortChannel.h' l='40' ll='80'/>
+<use f='WebKit/Source/WebCore/dom/messageports/MessagePortChannel.h' l='40'/>
+<use f='WebKit/Source/WebCore/dom/messageports/MessagePortChannel.h' l='42' c='_ZN7WebCore18MessagePortChannel6createERNS_26MessagePortChannelRegistryERKNS_21MessagePortIdentifierES5_'/>
+<use f='WebKit/Source/WebCore/dom/messageports/MessagePortChannel.h' l='73'/>
+<use f='WebKit/Source/WebCore/dom/messageports/MessagePortChannel.h' l='75'/>
+<use f='WebKit/Source/WebCore/dom/messageports/MessagePortChannel.h' l='76'/>
+<size>176</size>
+<fun r='_ZN7WebCore18MessagePortChannel6createERNS_26MessagePortChannelRegistryERKNS_21MessagePortIdentifierES5_'/>
+<fun r='_ZN7WebCore18MessagePortChannelD1Ev'/>
+<fun r='_ZNK7WebCore18MessagePortChannel5port1Ev'/>
+<fun r='_ZNK7WebCore18MessagePortChannel5port2Ev'/>
+<fun r='_ZN7WebCore18MessagePortChannel14processForPortERKNS_21MessagePortIdentifierE'/>
+<fun r='_ZN7WebCore18MessagePortChannel12includesPortERKNS_21MessagePortIdentifierE'/>
+<fun r='_ZN7WebCore18MessagePortChannel23entanglePortWithProcessERKNS_21MessagePortIdentifierEN3WTF16ObjectIdentifierINS_21ProcessIdentifierTypeEEE'/>
+<fun r='_ZN7WebCore18MessagePortChannel15disentanglePortERKNS_21MessagePortIdentifierE'/>
+<fun r='_ZN7WebCore18MessagePortChannel9closePortERKNS_21MessagePortIdentifierE'/>
+<fun r='_ZN7WebCore18MessagePortChannel19postMessageToRemoteEONS_23MessageWithMessagePortsERKNS_21MessagePortIdentifierE'/>
+<fun r='_ZN7WebCore18MessagePortChannel22takeAllMessagesForPortERKNS_21MessagePortIdentifierEON3WTF17CompletionHandlerIFvONS4_6VectorINS_23MessageWithMessageP15962156'/>
+<fun r='_ZN7WebCore18MessagePortChannel26checkRemotePortForActivityERKNS_21MessagePortIdentifierEON3WTF17CompletionHandlerIFvNS_26MessagePortChannelProvider11HasActivityEEEE'/>
+<fun r='_ZNK7WebCore18MessagePortChannel31hasAnyMessagesPendingOrInFlightEv'/>
+<fun r='_ZN7WebCore18MessagePortChannel21beingTransferredCountEv'/>
+<fun r='_ZN7WebCore18MessagePortChannelC1ERNS_26MessagePortChannelRegistryERKNS_21MessagePortIdentifierES5_'/>
+<mbr r='WebCore::MessagePortChannel::m_ports' o='64' t='WebCore::MessagePortIdentifier [2]'/>
+<mbr r='WebCore::MessagePortChannel::m_isClosed' o='320' t='bool [2]'/>
+<mbr r='WebCore::MessagePortChannel::m_processes' o='384' t='std::optional&lt;ProcessIdentifier&gt; [2]'/>
+<mbr r='WebCore::MessagePortChannel::m_entangledToProcessProtectors' o='640' t='RefPtr&lt;WebCore::MessagePortChannel&gt; [2]'/>
+<mbr r='WebCore::MessagePortChannel::m_pendingMessages' o='768' t='Vector&lt;WebCore::MessageWithMessagePorts&gt; [2]'/>
+<mbr r='WebCore::MessagePortChannel::m_pendingMessagePortTransfers' o='1024' t='HashSet&lt;RefPtr&lt;WebCore::MessagePortChannel&gt; &gt; [2]'/>
+<mbr r='WebCore::MessagePortChannel::m_pendingMessageProtectors' o='1152' t='RefPtr&lt;WebCore::MessagePortChannel&gt; [2]'/>
+<mbr r='WebCore::MessagePortChannel::m_messageBatchesInFlight' o='1280' t='uint64_t'/>
+<mbr r='WebCore::MessagePortChannel::m_registry' o='1344' t='WebCore::MessagePortChannelRegistry &amp;'/>
+<use f='WebKit/Source/WebCore/dom/messageports/MessagePortChannelRegistry.h' l='51' c='_ZN7WebCore26MessagePortChannelRegistry29existingChannelContainingPortERKNS_21MessagePortIdentifierE'/>
+<use f='WebKit/Source/WebCore/dom/messageports/MessagePortChannelRegistry.h' l='53' c='_ZN7WebCore26MessagePortChannelRegistry25messagePortChannelCreatedERNS_18MessagePortChannelE'/>
+<use f='WebKit/Source/WebCore/dom/messageports/MessagePortChannelRegistry.h' l='54' c='_ZN7WebCore26MessagePortChannelRegistry27messagePortChannelDestroyedERNS_18MessagePortChannelE'/>
+<use f='WebKit/Source/WebCore/dom/messageports/MessagePortChannelRegistry.h' l='59'/>
+<size>176</size>
+<use f='WebKit/Source/WebCore/dom/messageports/MessagePortChannel.cpp' l='36' c='_ZN7WebCore18MessagePortChannel6createERNS_26MessagePortChannelRegistryERKNS_21MessagePortIdentifierES5_'/>
+<use f='WebKit/Source/WebCore/dom/messageports/MessagePortChannel.cpp' l='38' c='_ZN7WebCore18MessagePortChannel6createERNS_26MessagePortChannelRegistryERKNS_21MessagePortIdentifierES5_'/>
+<size>176</size>
+<fun r='_ZN7WebCore18MessagePortChannel6createERNS_26MessagePortChannelRegistryERKNS_21MessagePortIdentifierES5_'/>
+<fun r='_ZN7WebCore18MessagePortChannelC1ERNS_26MessagePortChannelRegistryERKNS_21MessagePortIdentifierES5_'/>
+<fun r='_ZN7WebCore18MessagePortChannelD1Ev'/>
+<fun r='_ZN7WebCore18MessagePortChannel14processForPortERKNS_21MessagePortIdentifierE'/>
+<fun r='_ZN7WebCore18MessagePortChannel12includesPortERKNS_21MessagePortIdentifierE'/>
+<fun r='_ZN7WebCore18MessagePortChannel23entanglePortWithProcessERKNS_21MessagePortIdentifierEN3WTF16ObjectIdentifierINS_21ProcessIdentifierTypeEEE'/>
+<fun r='_ZN7WebCore18MessagePortChannel15disentanglePortERKNS_21MessagePortIdentifierE'/>
+<fun r='_ZN7WebCore18MessagePortChannel9closePortERKNS_21MessagePortIdentifierE'/>
+<fun r='_ZN7WebCore18MessagePortChannel19postMessageToRemoteEONS_23MessageWithMessagePortsERKNS_21MessagePortIdentifierE'/>
+<fun r='_ZN7WebCore18MessagePortChannel22takeAllMessagesForPortERKNS_21MessagePortIdentifierEON3WTF17CompletionHandlerIFvONS4_6VectorINS_23MessageWithMessageP15962156'/>
+<fun r='_ZN7WebCore18MessagePortChannel26checkRemotePortForActivityERKNS_21MessagePortIdentifierEON3WTF17CompletionHandlerIFvNS_26MessagePortChannelProvider11HasActivityEEEE'/>
+<fun r='_ZNK7WebCore18MessagePortChannel31hasAnyMessagesPendingOrInFlightEv'/>
+<use f='WebKit/Source/WebCore/dom/messageports/MessagePortChannelRegistry.cpp' l='53' c='_ZN7WebCore26MessagePortChannelRegistry25messagePortChannelCreatedERNS_18MessagePortChannelE'/>
+<use f='WebKit/Source/WebCore/dom/messageports/MessagePortChannelRegistry.cpp' l='68' c='_ZN7WebCore26MessagePortChannelRegistry27messagePortChannelDestroyedERNS_18MessagePortChannelE'/>
+<use f='WebKit/Source/WebCore/dom/messageports/MessagePortChannelRegistry.cpp' l='174' c='_ZN7WebCore26MessagePortChannelRegistry29existingChannelContainingPortERKNS_21MessagePortIdentifierE'/>
+<size>176</size>

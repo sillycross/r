@@ -1,0 +1,58 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='289' u='c' c='_ZN3JSC16SymbolTableEntry15disableWatchingERNS_2VME'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='318' ll='323' type='JSC::WatchpointSet * JSC::SymbolTableEntry::watchpointSet()'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSSymbolTableObject.h' l='174' u='c' c='_ZN3JSC14symbolTablePutEPT0_PNS_14JSGlobalObjectENS_12PropertyNameENS_7JSValueEbbRb'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SymbolTable.h' l='297'>// This watchpoint set is initialized clear, and goes through the following state transitions:
+    // 
+    // First write to this var, in any scope that has this symbol table: Clear-&gt;IsWatched.
+    //
+    // Second write to this var, in any scope that has this symbol table: IsWatched-&gt;IsInvalidated.
+    //
+    // We ensure that we touch the set (i.e. trigger its state transition) after we do the write. This
+    // means that if you&apos;re in the compiler thread, and you:
+    //
+    // 1) Observe that the set IsWatched and commit to adding your watchpoint.
+    // 2) Load a value from any scope that has this watchpoint set.
+    //
+    // Then you can be sure that that value is either going to be the correct value for that var forever,
+    // or the watchpoint set will invalidate and you&apos;ll get fired.
+    //
+    // It&apos;s possible to write a program that first creates multiple scopes with the same var, and then
+    // initializes that var in just one of them. This means that a compilation could constant-fold to one
+    // of the scopes that still has an undefined value for this variable. That&apos;s fine, because at that
+    // point any write to any of the instances of that variable would fire the watchpoint.
+    //
+    // Note that watchpointSet() returns nullptr if JIT is disabled.</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='289' u='c' c='_ZN3JSC16SymbolTableEntry15disableWatchingERNS_2VME'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='318' ll='323' type='JSC::WatchpointSet * JSC::SymbolTableEntry::watchpointSet()'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSSymbolTableObject.h' l='174' u='c' c='_ZN3JSC14symbolTablePutEPT0_PNS_14JSGlobalObjectENS_12PropertyNameENS_7JSValueEbbRb'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/SymbolTable.h' l='297'>// This watchpoint set is initialized clear, and goes through the following state transitions:
+    // 
+    // First write to this var, in any scope that has this symbol table: Clear-&gt;IsWatched.
+    //
+    // Second write to this var, in any scope that has this symbol table: IsWatched-&gt;IsInvalidated.
+    //
+    // We ensure that we touch the set (i.e. trigger its state transition) after we do the write. This
+    // means that if you&apos;re in the compiler thread, and you:
+    //
+    // 1) Observe that the set IsWatched and commit to adding your watchpoint.
+    // 2) Load a value from any scope that has this watchpoint set.
+    //
+    // Then you can be sure that that value is either going to be the correct value for that var forever,
+    // or the watchpoint set will invalidate and you&apos;ll get fired.
+    //
+    // It&apos;s possible to write a program that first creates multiple scopes with the same var, and then
+    // initializes that var in just one of them. This means that a compilation could constant-fold to one
+    // of the scopes that still has an undefined value for this variable. That&apos;s fine, because at that
+    // point any write to any of the instances of that variable would fire the watchpoint.
+    //
+    // Note that watchpointSet() returns nullptr if JIT is disabled.</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPathsInlines.h' l='65' u='c' c='_ZN3JSC15CommonSlowPaths24tryCachePutToScopeGlobalEPNS_14JSGlobalObjectEPNS_9CodeBlockERNS_12OpPutToScopeEPNS_8JSObjectERNS_15PutPropertySlotERKNS_10IdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPathsInlines.h' l='127' u='c' c='_ZN3JSC15CommonSlowPaths26tryCacheGetFromScopeGlobalEPNS_14JSGlobalObjectEPNS_9CodeBlockERNS_2VMERNS_14OpGetFromScopeEPNS_8JSObjectERNS_12PropertySlotERKNS_10IdentifierE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='7836' u='c' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGGraph.cpp' l='1371' u='c' c='_ZN3JSC3DFG5Graph24tryGetConstantClosureVarENS_7JSValueENS_11ScopeOffsetE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='625' u='c' c='_ZN3JSC9CodeBlock14finishCreationERNS_2VMEPNS_16ScriptExecutableEPNS_17UnlinkedCodeBlockEPNS_7JSScopeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='2263' u='c' c='_ZN3JSC14JSGlobalObject16addStaticGlobalsEPNS0_18GlobalPropertyInfoEi'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSScope.cpp' l='75' u='c' c='_ZN3JSCL14abstractAccessEPNS_14JSGlobalObjectEPNS_7JSScopeERKNS_10IdentifierENS_8GetOrPutEmRbRNS_9ResolveOpENS_18InitializationModeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSScope.cpp' l='94' u='c' c='_ZN3JSCL14abstractAccessEPNS_14JSGlobalObjectEPNS_7JSScopeERKNS_10IdentifierENS_8GetOrPutEmRbRNS_9ResolveOpENS_18InitializationModeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSScope.cpp' l='128' u='c' c='_ZN3JSCL14abstractAccessEPNS_14JSGlobalObjectEPNS_7JSScopeERKNS_10IdentifierENS_8GetOrPutEmRbRNS_9ResolveOpENS_18InitializationModeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSScope.cpp' l='152' u='c' c='_ZN3JSCL14abstractAccessEPNS_14JSGlobalObjectEPNS_7JSScopeERKNS_10IdentifierENS_8GetOrPutEmRbRNS_9ResolveOpENS_18InitializationModeE'/>

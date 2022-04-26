@@ -1,0 +1,20 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CallFrame.h' l='177' type='JSC::BytecodeIndex JSC::CallFrame::bytecodeIndex() const'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CallFrame.h' l='172'>// This will try to get you the bytecode offset, but you should be aware that
+        // this bytecode offset may be bogus in the presence of inlining. This will
+        // also return 0 if the call frame has no notion of bytecode offsets (for
+        // example if it&apos;s native code).
+        // https://bugs.webkit.org/show_bug.cgi?id=121754</doc>
+<dec f='WebKit/Source/JavaScriptCore/interpreter/CallFrame.h' l='177' type='JSC::BytecodeIndex JSC::CallFrame::bytecodeIndex() const'/>
+<doc f='WebKit/Source/JavaScriptCore/interpreter/CallFrame.h' l='172'>// This will try to get you the bytecode offset, but you should be aware that
+        // this bytecode offset may be bogus in the presence of inlining. This will
+        // also return 0 if the call frame has no notion of bytecode offsets (for
+        // example if it&apos;s native code).
+        // https://bugs.webkit.org/show_bug.cgi?id=121754</doc>
+<def f='WebKit/Source/JavaScriptCore/interpreter/CallFrame.cpp' l='131' ll='149' type='JSC::BytecodeIndex JSC::CallFrame::bytecodeIndex() const'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/CallFrame.cpp' l='298' u='c' c='_ZNK3JSC9CallFrame4dumpERN3WTF11PrintStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/Interpreter.cpp' l='465' u='c' c='_ZN3JSCL20findExceptionHandlerERNS_12StackVisitorEPNS_9CodeBlockENS_15RequiredHandlerE'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/ShadowChicken.cpp' l='332' u='c' c='_ZN3JSC13ShadowChicken6updateERNS_2VMEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/StackVisitor.cpp' l='184' u='c' c='_ZN3JSC12StackVisitor19readNonInlinedFrameEPNS_9CallFrameEPNS_10CodeOriginE'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/StackVisitor.cpp' l='477' u='c' c='_ZNK3JSC12StackVisitor5Frame4dumpERN3WTF11PrintStreamENS2_8IndenterENS2_8FunctionIFvS4_EEE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp' l='2296' u='c' c='JSC::LLInt::llint_slow_path_profile_catch'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGOSREntry.cpp' l='398' u='c' c='_ZN3JSC3DFG20prepareCatchOSREntryERNS_2VMEPNS_9CallFrameEPNS_9CodeBlockES6_NS_13BytecodeIndexE'/>

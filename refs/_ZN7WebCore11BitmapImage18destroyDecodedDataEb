@@ -1,0 +1,10 @@
+<dec f='WebKit/Source/WebCore/platform/graphics/BitmapImage.h' l='167' type='void WebCore::BitmapImage::destroyDecodedData(bool destroyAll = true)'/>
+<doc f='WebKit/Source/WebCore/platform/graphics/BitmapImage.h' l='161'>// Called to invalidate cached data. When |destroyAll| is true, we wipe out
+    // the entire frame buffer cache and tell the image source to destroy
+    // everything; this is used when e.g. we want to free some room in the image
+    // cache. If |destroyAll| is false, we only delete frames up to the current
+    // one; this is used while animating large images to keep memory footprint
+    // low without redecoding the whole image on every frame.</doc>
+<inh f='WebKit/Source/WebCore/platform/graphics/Image.h' l='134' c='_ZN7WebCore5Image18destroyDecodedDataEb'/>
+<def f='WebKit/Source/WebCore/platform/graphics/BitmapImage.cpp' l='76' ll='97' type='void WebCore::BitmapImage::destroyDecodedData(bool destroyAll = true)'/>
+<use f='WebKit/Source/WebCore/platform/graphics/BitmapImage.cpp' l='109' u='c' c='_ZN7WebCore11BitmapImage29destroyDecodedDataIfNecessaryEb'/>

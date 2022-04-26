@@ -1,0 +1,60 @@
+<def f='WebKit/Source/WebCore/platform/text/StringWithDirection.h' l='48' ll='51'/>
+<use f='WebKit/Source/WebCore/platform/text/StringWithDirection.h' l='53' c='_ZN7WebCoreeqERKNS_19StringWithDirectionES2_'/>
+<use f='WebKit/Source/WebCore/platform/text/StringWithDirection.h' l='53' c='_ZN7WebCoreeqERKNS_19StringWithDirectionES2_'/>
+<use f='WebKit/Source/WebCore/platform/text/StringWithDirection.h' l='58' c='_ZN7WebCoreneERKNS_19StringWithDirectionES2_'/>
+<use f='WebKit/Source/WebCore/platform/text/StringWithDirection.h' l='58' c='_ZN7WebCoreneERKNS_19StringWithDirectionES2_'/>
+<use f='WebKit/Source/WebCore/platform/text/StringWithDirection.h' l='63' c='_ZN7WebCore15truncateFromEndERKNS_19StringWithDirectionEj'/>
+<use f='WebKit/Source/WebCore/platform/text/StringWithDirection.h' l='63' c='_ZN7WebCore15truncateFromEndERKNS_19StringWithDirectionEj'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='932' c='_ZNK7WebCore8Document18titleWithDirectionEv'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='1679' c='_ZN7WebCore8Document11updateTitleERKNS_19StringWithDirectionE'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='1814'/>
+<use f='WebKit/Source/WebCore/dom/Document.h' l='1815'/>
+<size>16</size>
+<doc f='WebKit/Source/WebCore/platform/text/StringWithDirection.h' l='39'>// In some circumstances we want to store a String along with the TextDirection
+// of the String as learned from the context of the String. For example,
+// consider storing the title derived from &lt;title dir=&apos;rtl&apos;&gt;some title&lt;/title&gt;
+// in the history.
+//
+// Note that is explicitly *not* the direction of the string as learned
+// from the characters of the string; it&apos;s extra metadata we have external
+// to the string.</doc>
+<mbr r='WebCore::StringWithDirection::string' o='0' t='WTF::String'/>
+<mbr r='WebCore::StringWithDirection::direction' o='64' t='WebCore::TextDirection'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='215' c='_ZN7WebCore14DocumentLoader8setTitleERKNS_19StringWithDirectionE'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='265' c='_ZNK7WebCore14DocumentLoader5titleEv'/>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.h' l='563'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoaderClient.h' l='175' c='_ZN7WebCore17FrameLoaderClient23dispatchDidReceiveTitleERKNS_19StringWithDirectionE'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoaderClient.h' l='269' c='_ZN7WebCore17FrameLoaderClient8setTitleERKNS_19StringWithDirectionERKN3WTF3URLE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.h' l='117' c='_ZN6WebKit20WebFrameLoaderClient23dispatchDidReceiveTitleERKN7WebCore19StringWithDirectionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.h' l='198' c='_ZN6WebKit20WebFrameLoaderClient8setTitleERKN7WebCore19StringWithDirectionERKN3WTF3URLE'/>
+<size>16</size>
+<use f='WebKit/Source/WebCore/page/ChromeClient.h' l='239' c='_ZN7WebCore12ChromeClient5printERNS_5FrameERKNS_19StringWithDirectionE'/>
+<size>16</size>
+<use f='WebKit/Source/WebCore/html/HTMLTitleElement.h' l='38' c='_ZNK7WebCore16HTMLTitleElement17textWithDirectionEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLTitleElement.h' l='47' c='_ZN7WebCore16HTMLTitleElement25computedTextWithDirectionEv'/>
+<use f='WebKit/Source/WebCore/html/HTMLTitleElement.h' l='49'/>
+<size>16</size>
+<use f='WebKit/Source/WebCore/loader/EmptyFrameLoaderClient.h' l='87' c='_ZN7WebCore22EmptyFrameLoaderClient23dispatchDidReceiveTitleERKNS_19StringWithDirectionE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyFrameLoaderClient.h' l='153' c='_ZN7WebCore22EmptyFrameLoaderClient8setTitleERKNS_19StringWithDirectionERKN3WTF3URLE'/>
+<size>16</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebChromeClient.h' l='145' c='_ZN6WebKit15WebChromeClient5printERN7WebCore5FrameERKNS1_19StringWithDirectionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebChromeClient.cpp' l='724' c='_ZN6WebKit15WebChromeClient5printERN7WebCore5FrameERKNS1_19StringWithDirectionE'/>
+<size>16</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='543' c='_ZN6WebKit20WebFrameLoaderClient23dispatchDidReceiveTitleERKN7WebCore19StringWithDirectionE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebCoreSupport/WebFrameLoaderClient.cpp' l='1465' c='_ZN6WebKit20WebFrameLoaderClient8setTitleERKN7WebCore19StringWithDirectionERKN3WTF3URLE'/>
+<size>16</size>
+<use f='WebKit/Source/WebCore/loader/HistoryController.h' l='76' c='_ZN7WebCore11FrameLoader17HistoryController19setCurrentItemTitleERKNS_19StringWithDirectionE'/>
+<size>16</size>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.h' l='128' c='_ZN7WebCore17EmptyChromeClient5printERNS_5FrameERKNS_19StringWithDirectionE'/>
+<size>16</size>
+<use f='WebKit/Source/WebCore/html/HTMLTitleElement.cpp' l='81' c='_ZN7WebCore16HTMLTitleElement25computedTextWithDirectionEv'/>
+<size>16</size>
+<use f='WebKit/Source/WebCore/dom/Document.cpp' l='1702' c='_ZN7WebCore8Document11updateTitleERKNS_19StringWithDirectionE'/>
+<size>16</size>
+<use f='WebKit/Source/WebCore/loader/DocumentLoader.cpp' l='1742' c='_ZN7WebCore14DocumentLoader8setTitleERKNS_19StringWithDirectionE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='778' c='_ZN7WebCore22EmptyFrameLoaderClient23dispatchDidReceiveTitleERKNS_19StringWithDirectionE'/>
+<use f='WebKit/Source/WebCore/loader/EmptyClients.cpp' l='974' c='_ZN7WebCore22EmptyFrameLoaderClient8setTitleERKNS_19StringWithDirectionERKN3WTF3URLE'/>
+<size>16</size>
+<use f='WebKit/Source/WebCore/loader/HistoryController.cpp' l='605' c='_ZN7WebCore11FrameLoader17HistoryController19setCurrentItemTitleERKNS_19StringWithDirectionE'/>
+<use f='WebKit/Source/WebCore/loader/HistoryController.cpp' l='661' c='_ZN7WebCore11FrameLoader17HistoryController14initializeItemERNS_11HistoryItemE'/>
+<size>16</size>

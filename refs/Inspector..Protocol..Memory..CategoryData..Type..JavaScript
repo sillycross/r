@@ -1,0 +1,5 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/InspectorProtocolObjects.h' l='6564' type='55'/>
+<dec f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.h' l='6564' type='55'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='835' u='r' c='_ZN9Inspector8Protocol7Helpers24parseEnumValueFromStringERKN3WTF6StringE'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/inspector/InspectorProtocolObjects.cpp' l='835' u='r' c='_ZN9Inspector8Protocol7Helpers24parseEnumValueFromStringERKN3WTF6StringE'/>
+<use f='WebKit/Source/WebCore/inspector/agents/InspectorMemoryAgent.cpp' l='125' u='r' c='_ZN7WebCore20InspectorMemoryAgent13collectSampleERKNS_17ResourceUsageDataE'/>

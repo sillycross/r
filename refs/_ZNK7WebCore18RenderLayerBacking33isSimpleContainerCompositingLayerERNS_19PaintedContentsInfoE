@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='371' type='bool WebCore::RenderLayerBacking::isSimpleContainerCompositingLayer(WebCore::PaintedContentsInfo &amp; ) const'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderLayerBacking.h' l='370'>// Returns true if this compositing layer has no visible content.</doc>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='207' u='c' c='_ZN7WebCore19PaintedContentsInfo25contentsTypeDeterminationEv'/>
+<def f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='2700' ll='2724' type='bool WebCore::RenderLayerBacking::isSimpleContainerCompositingLayer(WebCore::PaintedContentsInfo &amp; contentsInfo) const'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderLayerBacking.cpp' l='2697'>// A &quot;simple container layer&quot; is a RenderLayer which has no visible content to render.
+// It may have no children, or all its children may be themselves composited.
+// This is a useful optimization, because it allows us to avoid allocating backing store.</doc>

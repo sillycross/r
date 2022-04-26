@@ -1,0 +1,14 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='353' type='void JSC::CodeBlock::resetJITData()'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='348'>// We call this when we want to reattempt compiling something with the baseline JIT. Ideally
+    // the baseline JIT would not add data to CodeBlock, but instead it would put its data into
+    // a newly created JITCode, which could be thrown away if we bail on JIT compilation. Then we
+    // would be able to get rid of this silly function.
+    // FIXME: https://bugs.webkit.org/show_bug.cgi?id=159061</doc>
+<dec f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='353' type='void JSC::CodeBlock::resetJITData()'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='348'>// We call this when we want to reattempt compiling something with the baseline JIT. Ideally
+    // the baseline JIT would not add data to CodeBlock, but instead it would put its data into
+    // a newly created JITCode, which could be thrown away if we bail on JIT compilation. Then we
+    // would be able to get rid of this silly function.
+    // FIXME: https://bugs.webkit.org/show_bug.cgi?id=159061</doc>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1546' u='c' c='_ZN3JSC9CodeBlock23finalizeUnconditionallyERNS_2VME'/>
+<def f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1756' ll='1784' type='void JSC::CodeBlock::resetJITData()'/>

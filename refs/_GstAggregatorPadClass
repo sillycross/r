@@ -1,0 +1,19 @@
+<use f='include/gstreamer-1.0/gst/base/gstaggregator.h' l='54'/>
+<def f='include/gstreamer-1.0/gst/base/gstaggregator.h' l='91' ll='100'/>
+<size>408</size>
+<doc f='include/gstreamer-1.0/gst/base/gstaggregator.h' l='79'>/**
+ * GstAggregatorPadClass:
+ * @flush:       Optional
+ *               Called when the pad has received a flush stop, this is the place
+ *               to flush any information specific to the pad, it allows for individual
+ *               pads to be flushed while others might not be.
+ * @skip_buffer: Optional
+ *               Called before input buffers are queued in the pad, return %TRUE
+ *               if the buffer should be skipped.
+ *
+ * Since: 1.14
+ */</doc>
+<mbr r='_GstAggregatorPadClass::parent_class' o='0' t='GstPadClass'/>
+<mbr r='_GstAggregatorPadClass::flush' o='1856' t='GstFlowReturn (*)(GstAggregatorPad *, GstAggregator *)'/>
+<mbr r='_GstAggregatorPadClass::skip_buffer' o='1920' t='gboolean (*)(GstAggregatorPad *, GstAggregator *, GstBuffer *)'/>
+<mbr r='_GstAggregatorPadClass::_gst_reserved' o='1984' t='gpointer [20]'/>

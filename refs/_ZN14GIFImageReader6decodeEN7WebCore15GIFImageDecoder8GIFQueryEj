@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/WebCore/platform/image-decoders/gif/GIFImageReader.h' l='242' type='bool GIFImageReader::decode(WebCore::GIFImageDecoder::GIFQuery , unsigned int haltAtFrame)'/>
+<use f='WebKit/Source/WebCore/platform/image-decoders/gif/GIFImageDecoder.cpp' l='335' u='c' c='_ZN7WebCore15GIFImageDecoder6decodeEjNS0_8GIFQueryEb'/>
+<use f='WebKit/Source/WebCore/platform/image-decoders/gif/GIFImageDecoder.cpp' l='340' u='c' c='_ZN7WebCore15GIFImageDecoder6decodeEjNS0_8GIFQueryEb'/>
+<use f='WebKit/Source/WebCore/platform/image-decoders/gif/GIFImageDecoder.cpp' l='350' u='c' c='_ZN7WebCore15GIFImageDecoder6decodeEjNS0_8GIFQueryEb'/>
+<doc f='WebKit/Source/WebCore/platform/image-decoders/gif/GIFImageReader.h' l='241'>// FIXME: haltAtFrame should be size_t.</doc>
+<def f='WebKit/Source/WebCore/platform/image-decoders/gif/GIFImageReader.cpp' l='356' ll='392' type='bool GIFImageReader::decode(GIFImageDecoder::GIFQuery query, unsigned int haltAtFrame)'/>
+<doc f='WebKit/Source/WebCore/platform/image-decoders/gif/GIFImageReader.cpp' l='353'>// Decode all frames before haltAtFrame.
+// This method uses GIFFrameContext:decode() to decode each frame; decoding error is reported to client as a critical failure.
+// Return true if decoding has progressed. Return false if an error has occurred.</doc>

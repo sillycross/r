@@ -1,0 +1,396 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Opcode.h' l='66'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Opcode.h' l='189' c='_ZN3JSC8isBranchENS_8OpcodeIDE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Opcode.h' l='223' c='_ZN3JSC21isUnconditionalBranchENS_8OpcodeIDE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Opcode.h' l='233' c='_ZN3JSC10isTerminalENS_8OpcodeIDE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Opcode.h' l='245' c='_ZN3JSC7isThrowENS_8OpcodeIDE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Opcode.h' l='256' c='_ZN3JSC12metadataSizeENS_8OpcodeIDE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Opcode.h' l='257' c='_ZN3JSC17metadataAlignmentENS_8OpcodeIDE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Opcode.h' l='265' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC8OpcodeIDE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Instruction.h' l='34'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Instruction.h' l='211'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/UnlinkedMetadataTable.h' l='54' c='_ZN3JSC21UnlinkedMetadataTable8addEntryENS_8OpcodeIDE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CallLinkInfo.h' l='61' c='_ZN3JSC12CallLinkInfo11callTypeForENS_8OpcodeIDE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/MetadataTable.h' l='49' c='_ZN3JSC13MetadataTable3getENS_8OpcodeIDE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CodeBlock.h' l='892' c='_ZN3JSC9CodeBlock8metadataENS_8OpcodeIDEj'/>
+<def f='WebKit/Source/JavaScriptCore/bytecode/Opcode.h' l='66'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Opcode.h' l='189' c='_ZN3JSC8isBranchENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Opcode.h' l='223' c='_ZN3JSC21isUnconditionalBranchENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Opcode.h' l='233' c='_ZN3JSC10isTerminalENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Opcode.h' l='245' c='_ZN3JSC7isThrowENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Opcode.h' l='256' c='_ZN3JSC12metadataSizeENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Opcode.h' l='257' c='_ZN3JSC17metadataAlignmentENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Opcode.h' l='265' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Instruction.h' l='34'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Instruction.h' l='211'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedMetadataTable.h' l='54' c='_ZN3JSC21UnlinkedMetadataTable8addEntryENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CallLinkInfo.h' l='61' c='_ZN3JSC12CallLinkInfo11callTypeForENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/MetadataTable.h' l='49' c='_ZN3JSC13MetadataTable3getENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.h' l='892' c='_ZN3JSC9CodeBlock8metadataENS_8OpcodeIDEj'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/Interpreter.h' l='99' c='_ZN3JSC11Interpreter9getOpcodeENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/Interpreter.h' l='101' c='_ZN3JSC11Interpreter11getOpcodeIDEPv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='53'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='344'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='367'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='658'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='681'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='972'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='995'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='1258'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='1284'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='1576'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='1605'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='1812'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='1831'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='2038'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='2057'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='2238'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='2256'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='2437'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='2455'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='2636'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='2654'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='2835'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='2855'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='3036'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='3054'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='3287'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='3307'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='3488'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='3506'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='3713'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='3732'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='3965'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='3985'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='4218'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='4238'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='4471'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='4491'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='4724'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='4744'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='4951'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='4970'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='5177'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='5196'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='5403'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='5422'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='5629'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='5648'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='5855'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='5874'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='6055'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='6073'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='6228'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='6245'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='6400'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='6417'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='6624'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='6643'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='6824'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='6842'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='7023'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='7041'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='7248'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='7267'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='7474'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='7493'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='7700'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='7720'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='7953'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='7973'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='8206'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='8226'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='8433'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='8454'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='8635'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='8653'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='8860'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='8879'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='9112'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='9135'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='9342'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='9363'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='9570'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='9592'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='9825'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='9848'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='10029'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='10049'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='10230'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='10249'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='10482'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='10502'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='10735'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='10755'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='10962'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='10981'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='11214'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='11235'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='11468'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='11489'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='11748'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='11770'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='12055'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='12078'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='12311'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='12332'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='12591'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='12623'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='12908'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='12939'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='13224'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='13254'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='13461'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='13480'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='13661'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='13679'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='13938'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='13959'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='14114'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='14131'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='14338'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='14357'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='14616'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='14637'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='14844'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='14863'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='14979'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='15095'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='15211'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='15347'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='15483'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='15646'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='15782'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='15918'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='16081'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='16217'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='16353'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='16489'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='16706'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='16869'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='17032'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='17195'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='17385'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='17575'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='17765'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='17955'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='18145'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='18335'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='18525'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='18715'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='18905'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='19095'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='19285'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='19475'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='19665'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='19828'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='19991'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='20154'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='20317'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='20480'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='20643'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='20806'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='20969'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='21132'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='21295'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='21458'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='21621'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='21784'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='21947'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='22110'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='22273'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='22463'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='22653'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='22843'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='23060'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='23223'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='23413'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='23603'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='23793'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='23983'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='24227'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='24444'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='24688'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='24905'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='25122'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='25339'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='25583'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='25800'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='26017'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='26234'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='26478'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='26614'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='26777'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='26940'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='27103'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='27266'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='27429'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='27592'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='27782'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='27972'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='28162'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='28352'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='28542'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='28732'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='28922'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='29112'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='29302'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='29492'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='29682'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='29872'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='30062'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='30252'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='30368'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='30558'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='30748'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='30938'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='31128'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='31318'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='31508'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='31698'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='31888'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='32078'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='32268'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='32458'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='32621'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='32757'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='32947'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='33110'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='33273'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='33463'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='33653'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='33870'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='34087'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='34250'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='34386'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='34549'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='34712'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='34848'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='35011'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='35228'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='35445'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='35662'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='35852'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='36015'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='36205'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='36395'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='36558'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='36674'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='36864'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='37027'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='37190'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='37306'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='37442'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='37605'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='37795'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='37985'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='38101'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/BytecodeStructs.h' l='38217'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedMetadataTableInlines.h' l='69' c='_ZN3JSC21UnlinkedMetadataTable8addEntryENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/parser/Nodes.h' l='1194' c='_ZN3JSC11UnaryOpNodeC1ERKNS_15JSTokenLocationENS_10ResultTypeEPNS_14ExpressionNodeENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/parser/Nodes.h' l='1199' c='_ZNK3JSC11UnaryOpNode8opcodeIDEv'/>
+<use f='WebKit/Source/JavaScriptCore/parser/Nodes.h' l='1205'/>
+<use f='WebKit/Source/JavaScriptCore/parser/Nodes.h' l='1237' c='_ZN3JSC12BinaryOpNodeC1ERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_NS_8OpcodeIDEb'/>
+<use f='WebKit/Source/JavaScriptCore/parser/Nodes.h' l='1238' c='_ZN3JSC12BinaryOpNodeC1ERKNS_15JSTokenLocationENS_10ResultTypeEPNS_14ExpressionNodeES6_NS_8OpcodeIDEb'/>
+<use f='WebKit/Source/JavaScriptCore/parser/Nodes.h' l='1255' c='_ZNK3JSC12BinaryOpNode8opcodeIDEv'/>
+<use f='WebKit/Source/JavaScriptCore/parser/Nodes.h' l='1261'/>
+<use f='WebKit/Source/JavaScriptCore/parser/Nodes.h' l='1338' c='_ZN3JSC21ThrowableBinaryOpNodeC1ERKNS_15JSTokenLocationENS_10ResultTypeEPNS_14ExpressionNodeES6_NS_8OpcodeIDEb'/>
+<use f='WebKit/Source/JavaScriptCore/parser/Nodes.h' l='1339' c='_ZN3JSC21ThrowableBinaryOpNodeC1ERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_NS_8OpcodeIDEb'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeUseDef.h' l='41' c='_ZN3JSC27computeUsesForBytecodeIndexEPT_PKNS_11InstructionEhRKT0_'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='63' c='_ZN3JSC5LLInt9getOpcodeENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='64' c='_ZN3JSC5LLInt15getOpcodeWide16ENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='65' c='_ZN3JSC5LLInt15getOpcodeWide32ENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='66' c='_ZN3JSC5LLInt16getOpcodeAddressENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='67' c='_ZN3JSC5LLInt22getOpcodeWide16AddressENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='68' c='_ZN3JSC5LLInt22getOpcodeWide32AddressENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='69' c='_ZN3JSC5LLInt10getCodePtrENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='70' c='_ZN3JSC5LLInt16getWide16CodePtrENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='71' c='_ZN3JSC5LLInt16getWide32CodePtrENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='72' c='_ZN3JSC5LLInt10getCodeRefENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='102' c='_ZN3JSC5LLInt9getOpcodeENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='111' c='_ZN3JSC5LLInt15getOpcodeWide16ENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='121' c='_ZN3JSC5LLInt15getOpcodeWide32ENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='133' c='_ZN3JSC5LLInt16getOpcodeAddressENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='138' c='_ZN3JSC5LLInt22getOpcodeWide16AddressENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='143' c='_ZN3JSC5LLInt22getOpcodeWide32AddressENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='163' c='_ZN3JSC5LLInt10getCodePtrENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='174' c='_ZN3JSC5LLInt16getWide16CodePtrENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='185' c='_ZN3JSC5LLInt16getWide32CodePtrENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='196' c='_ZN3JSC5LLInt10getCodeRefENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='202' c='_ZN3JSC5LLInt16getWide16CodeRefENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='208' c='_ZN3JSC5LLInt16getWide32CodeRefENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='215' c='_ZN3JSC5LLInt18getCodeFunctionPtrENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='225' c='_ZN3JSC5LLInt24getWide16CodeFunctionPtrENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntData.h' l='235' c='_ZN3JSC5LLInt24getWide32CodeFunctionPtrENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/InterpreterInlines.h' l='43' c='_ZN3JSC11Interpreter9getOpcodeENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/InterpreterInlines.h' l='51' c='_ZN3JSC11Interpreter11getOpcodeIDEPv'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/InterpreterInlines.h' l='61' c='_ZN3JSC11Interpreter11getOpcodeIDEPv'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/InterpreterInlines.h' l='61' c='_ZN3JSC11Interpreter11getOpcodeIDEPv'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerBytecode.h' l='44' c='_ZN3JSC8Profiler8BytecodeC1EjNS_8OpcodeIDERKN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerBytecode.h' l='52' c='_ZNK3JSC8Profiler8Bytecode8opcodeIDEv'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerBytecode.h' l='58'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.h' l='105' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/profiler/ProfilerBytecodeSequence.cpp' l='56' c='_ZN3JSC8Profiler16BytecodeSequenceC1EPNS_9CodeBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.h' l='1016' c='_ZN3JSC3JIT22emitRightShiftFastPathEPKNS_11InstructionENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCapabilities.h' l='48' c='_ZN3JSC3DFG15capabilityLevelENS_8OpcodeIDEPNS_9CodeBlockEPKNS_11InstructionE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.cpp' l='261' c='_ZN3JSC3JIT22privateCompileMainPassEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JIT.cpp' l='545' c='_ZN3JSC3JIT23privateCompileSlowCasesEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='391'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='545' c='_ZN3JSC17BytecodeGenerator14addMetadataForENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='719' c='_ZN3JSC17BytecodeGenerator11emitUnaryOpENS_8OpcodeIDEPNS_10RegisterIDES3_NS_10ResultTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='747' c='_ZN3JSC17BytecodeGenerator12emitBinaryOpENS_8OpcodeIDEPNS_10RegisterIDES3_S3_NS_12OperandTypesE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='1097' c='_ZNK3JSC17BytecodeGenerator12lastOpcodeIDEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITArithmetic.cpp' l='829' c='_ZN3JSC3JIT22emitRightShiftFastPathEPKNS_11InstructionENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCall.cpp' l='205' c='_ZN3JSC3JIT13compileOpCallEPKNS_11InstructionEj'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITCall.cpp' l='273' c='_ZN3JSC3JIT21compileOpCallSlowCaseEPKNS_11InstructionERPNS_13SlowCaseEntryEj'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='1585' c='_ZN3JSC3JIT17emitNewFuncCommonEPKNS_11InstructionE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='1630' c='_ZN3JSC3JIT21emitNewFuncExprCommonEPKNS_11InstructionE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='1594' c='_ZN3JSC17BytecodeGenerator11emitUnaryOpENS_8OpcodeIDEPNS_10RegisterIDES3_NS_10ResultTypeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='1618' c='_ZN3JSC17BytecodeGenerator12emitBinaryOpENS_8OpcodeIDEPNS_10RegisterIDES3_S3_NS_12OperandTypesE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='5454' c='_ZN3JSC21StructureForInContext8finalizeERNS_17BytecodeGeneratorEPNS_26UnlinkedCodeBlockGeneratorEj'/>
+<use f='WebKit/Source/JavaScriptCore/parser/NodeConstructors.h' l='521' c='_ZN3JSC11UnaryOpNodeC1ERKNS_15JSTokenLocationENS_10ResultTypeEPNS_14ExpressionNodeENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/parser/NodeConstructors.h' l='550' c='_ZN3JSC12BinaryOpNodeC1ERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_NS_8OpcodeIDEb'/>
+<use f='WebKit/Source/JavaScriptCore/parser/NodeConstructors.h' l='559' c='_ZN3JSC12BinaryOpNodeC1ERKNS_15JSTokenLocationENS_10ResultTypeEPNS_14ExpressionNodeES6_NS_8OpcodeIDEb'/>
+<use f='WebKit/Source/JavaScriptCore/parser/NodeConstructors.h' l='634' c='_ZN3JSC21ThrowableBinaryOpNodeC1ERKNS_15JSTokenLocationENS_10ResultTypeEPNS_14ExpressionNodeES6_NS_8OpcodeIDEb'/>
+<use f='WebKit/Source/JavaScriptCore/parser/NodeConstructors.h' l='639' c='_ZN3JSC21ThrowableBinaryOpNodeC1ERKNS_15JSTokenLocationEPNS_14ExpressionNodeES5_NS_8OpcodeIDEb'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp' l='2973' c='_ZN3JSCL15canFoldToBranchENS_8OpcodeIDEPNS_14ExpressionNodeENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp' l='3005' c='_ZN3JSC12BinaryOpNode15tryFoldToBranchERNS_17BytecodeGeneratorERN3WTF8TriStateERPNS_14ExpressionNodeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp' l='3021' c='_ZN3JSC12BinaryOpNode12emitBytecodeERNS_17BytecodeGeneratorEPNS_10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp' l='3053' c='_ZN3JSC12BinaryOpNode12emitBytecodeERNS_17BytecodeGeneratorEPNS_10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/NodesCodegen.cpp' l='3344' c='_ZN3JSCL24emitReadModifyAssignmentERNS_17BytecodeGeneratorEPNS_10RegisterIDES3_PNS_14ExpressionNodeENS_8OperatorENS_12OperandTypesEPNS_21ReadModifyRes8205272'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntSlowPaths.cpp' l='323' c='JSC::LLInt::llint_trace'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='96' c='_ZN3JSC5LLIntL23generateThunkWithJumpToENS_8OpcodeIDEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='102' c='_ZN3JSC5LLIntL31generateThunkWithJumpToPrologueENS_8OpcodeIDEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='133' c='_ZN3JSC5LLIntL39generateThunkWithJumpToLLIntReturnPointENS_8OpcodeIDEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/llint/LLIntThunks.cpp' l='545' c='_ZN3JSC5LLInt19returnLocationThunkENS_8OpcodeIDENS_10OpcodeSizeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/OpcodeInlines.h' l='42' c='_ZN3JSC13isOpcodeShapeENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/OpcodeInlines.h' l='63' c='_ZN3JSC13getOpcodeTypeENS_8OpcodeIDEDpOT0_'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='922' c='_ZN3JSC3DFG14ByteCodeParser27getPredictionWithoutOSRExitENS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='1117' c='_ZN3JSC3DFG14ByteCodeParser18needsDynamicLookupENS_11ResolveTypeENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='4248' c='_ZN3JSC3DFG14ByteCodeParser18needsDynamicLookupENS_11ResolveTypeENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGByteCodeParser.cpp' l='5458' c='_ZN3JSC3DFG14ByteCodeParser10parseBlockEj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCapabilities.cpp' l='97' c='_ZN3JSC3DFG9debugFailEPNS_9CodeBlockENS_8OpcodeIDENS0_15CapabilityLevelE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGCapabilities.cpp' l='103' c='_ZN3JSC3DFG15capabilityLevelENS_8OpcodeIDEPNS_9CodeBlockEPKNS_11InstructionE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeBasicBlock.cpp' l='64' c='_ZN3JSCL12isJumpTargetENS_8OpcodeIDERKN3WTF6VectorIjLm32ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEEj'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeBasicBlock.cpp' l='102' c='_ZN3JSC18BytecodeBasicBlock11computeImplEPT_RKNS_17InstructionStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeBasicBlock.cpp' l='139' c='_ZN3JSC18BytecodeBasicBlock11computeImplEPT_RKNS_17InstructionStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PreciseJumpTargets.cpp' l='40' c='_ZN3JSCL28getJumpTargetsForInstructionEPT0_RKNS_17InstructionStream7BaseRefIKN3WTF6VectorIhLm0ENS4_20UnsafeVectorOverflowELm16ENS4_10FastMallocEEEEERN15663942'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedMetadataTable.cpp' l='58' c='_ZN3JSC21UnlinkedMetadataTable8finalizeEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/UnlinkedMetadataTable.cpp' l='62' c='_ZN3JSC21UnlinkedMetadataTable8finalizeEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeUseDef.cpp' l='47' c='_ZN3JSC31computeUsesForBytecodeIndexImplENS_15VirtualRegisterEPKNS_11InstructionEhRKN3WTF12ScopedLambdaIFvS0_EEE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CallLinkInfo.cpp' l='43' c='_ZN3JSC12CallLinkInfo11callTypeForENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CallLinkStatus.cpp' l='68' c='_ZN3JSC14CallLinkStatus16computeFromLLIntERKNS_18ConcurrentJSLockerEPNS_9CodeBlockENS_13BytecodeIndexE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='472' c='_ZN3JSC9CodeBlock14finishCreationERNS_2VMEPNS_16ScriptExecutableEPNS_17UnlinkedCodeBlockEPNS_7JSScopeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='1441' c='_ZN3JSC9CodeBlock25finalizeLLIntInlineCachesEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='3055' c='_ZN3JSC9CodeBlock26notifyLexicalBindingUpdateEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/CodeBlock.cpp' l='3246' c='_ZN3JSC9CodeBlock8validateEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/MetadataTable.cpp' l='56' c='_ZN3JSC13MetadataTableD1Ev'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Opcode.cpp' l='234' c='_ZN3JSC12metadataSizeENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Opcode.cpp' l='239' c='_ZN3JSC17metadataAlignmentENS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/Opcode.cpp' l='250' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FileBasedFuzzerAgentBase.h' l='43'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FileBasedFuzzerAgentBase.h' l='62' c='_ZN3JSC24FileBasedFuzzerAgentBase15createLookupKeyERKN3WTF6StringENS_8OpcodeIDEii'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FileBasedFuzzerAgentBase.h' l='63' c='_ZN3JSC24FileBasedFuzzerAgentBase23opcodeAliasForLookupKeyERKNS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FileBasedFuzzerAgentBase.h' l='63' c='_ZN3JSC24FileBasedFuzzerAgentBase23opcodeAliasForLookupKeyERKNS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FileBasedFuzzerAgentBase.cpp' l='38' c='_ZN3JSC24FileBasedFuzzerAgentBase15createLookupKeyERKN3WTF6StringENS_8OpcodeIDEii'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FileBasedFuzzerAgentBase.cpp' l='51' c='_ZN3JSC24FileBasedFuzzerAgentBase23opcodeAliasForLookupKeyERKNS_8OpcodeIDE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FileBasedFuzzerAgentBase.cpp' l='51' c='_ZN3JSC24FileBasedFuzzerAgentBase23opcodeAliasForLookupKeyERKNS_8OpcodeIDE'/>

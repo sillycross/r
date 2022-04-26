@@ -1,0 +1,12 @@
+<use f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/State.h' l='721' u='a' c='_ZNK2gl5State22getActiveTexturesCacheEv'/>
+<dec f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/State.h' l='1015' type='gl::ActiveTexturesCache'/>
+<offset>115008</offset>
+<doc f='WebKit/Source/ThirdParty/ANGLE/src/libANGLE/State.h' l='1006'>// Active Textures Cache
+    // ---------------------
+    // The active textures cache gives ANGLE components access to a complete array of textures
+    // on a draw call. gl::State implements angle::Observer and watches gl::Texture for state
+    // changes via the onSubjectStateChange method above. We update the cache before draws.
+    // See Observer.h and the design doc linked there for more info on Subject/Observer events.
+    //
+    // On state change events (re-binding textures, samplers, programs etc) we clear the cache
+    // and flag dirty bits. nullptr indicates unbound or incomplete.</doc>

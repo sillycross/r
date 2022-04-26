@@ -1,0 +1,15 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitCookieManager.cpp' l='358' ll='364' type='GList * webkit_cookie_manager_get_cookies_finish(WebKitCookieManager * manager, GAsyncResult * result, GError ** error)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitCookieManager.cpp' l='344'>/**
+ * webkit_cookie_manager_get_cookies_finish:
+ * @cookie_manager: a #WebKitCookieManager
+ * @result: a #GAsyncResult
+ * @error: return location for error or %NULL to ignore
+ *
+ * Finish an asynchronous operation started with webkit_cookie_manager_get_cookies().
+ * The return value is a #GSList of #SoupCookie instances which should be released
+ * with g_list_free_full() and soup_cookie_free().
+ *
+ * Returns: (element-type SoupCookie) (transfer full): A #GList of #SoupCookie instances.
+ *
+ * Since: 2.20
+ */</doc>

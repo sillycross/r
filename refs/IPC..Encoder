@@ -1,0 +1,547 @@
+<use f='WebKit/Source/WebKit/Platform/IPC/Attachment.h' l='88' c='_ZNK3IPC10Attachment6encodeERNS_7EncoderE'/>
+<use f='WebKit/Source/WebKit/Platform/SharedMemory.h' l='114' c='_ZNK6WebKit12SharedMemory9IPCHandle6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/MessageReceiver.h' l='49' c='_ZN3IPC15MessageReceiver21didReceiveSyncMessageERNS_10ConnectionERNS_7DecoderERN3WTF9UniqueRefINS_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/StringReference.h' l='66' c='_ZNK3IPC15StringReference6encodeERNS_7EncoderE'/>
+<def f='WebKit/Source/WebKit/Platform/IPC/Encoder.h' l='43' ll='119'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Encoder.h' l='61' c='_ZN3IPC7Encoder14wrapForTestingEON3WTF9UniqueRefIS0_EE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Encoder.h' l='66' c='_ZN3IPC7EncoderlsEOT_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Encoder.h' l='84' c='_ZN3IPC7Encoder18encodeSingleObjectERKT_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='283' c='_ZN3IPC10Connection11sendMessageEON3WTF9UniqueRefINS_7EncoderEEENS1_9OptionSetINS_10SendOptionEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='284' c='_ZN3IPC10Connection24createSyncMessageEncoderENS_11MessageNameEmRN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='285' c='_ZN3IPC10Connection15sendSyncMessageEN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEEONS1_9UniqueRefINS_7EncoderEEENS_7TimeoutENS1_9OptionSetINS_14SendSyncOptionEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='286' c='_ZN3IPC10Connection13sendSyncReplyEON3WTF9UniqueRefINS_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='349' c='_ZN3IPC10Connection19sendOutgoingMessageEON3WTF9UniqueRefINS_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='419'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='517' c='_ZN3IPC10Connection4sendEOT_mN3WTF9OptionSetINS_10SendOptionEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.h' l='542' c='_ZN3IPC10Connection18sendWithAsyncReplyEOT_OT0_mN3WTF9OptionSetINS_10SendOptionEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/unix/UnixMessage.h' l='81' c='_ZN3IPC11UnixMessageC1ERNS_7EncoderE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/unix/ConnectionUnix.cpp' l='427' c='_ZN3IPC10Connection19sendOutgoingMessageEON3WTF9UniqueRefINS_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/IPCSemaphore.h' l='53' c='_ZNK3IPC9Semaphore6encodeERNS_7EncoderE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/unix/IPCSemaphoreUnix.cpp' l='59' c='_ZNK3IPC9Semaphore6encodeERNS_7EncoderE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='107' c='_ZN3IPC13ArgumentCoderIN3WTF9OptionSetIT_EEvE6encodeERNS_7EncoderERKS4_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='187' c='_ZN3IPC13ArgumentCoderIN3WTF3BoxIT_EEvE6encodeERNS_7EncoderERKS4_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='235' c='_ZN3IPC13ArgumentCoderISt4pairIT_T0_EvE6encodeERNS_7EncoderERKS4_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='360' c='_ZN3IPC13ArgumentCoderIN3WTF12KeyValuePairIT_T0_EEvE6encodeERNS_7EncoderERKS5_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='488' c='_ZN3IPC13ArgumentCoderIN3WTF7HashMapIT_T0_T1_T2_T3_T4_EEvE6encodeERNS_7EncoderERKS9_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='539' c='_ZN3IPC13ArgumentCoderIN3WTF7HashSetIT_T0_T1_T2_EEvE6encodeERNS_7EncoderERKS7_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='586' c='_ZN3IPC13ArgumentCoderIN3WTF14HashCountedSetIT_T0_T1_EEvE6encodeERNS_7EncoderERKS6_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='627' c='_ZN3IPC13ArgumentCoderINSt12experimental15fundamentals_v38expectedIT_T0_EEvE6encodeERNS_7EncoderERKS6_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='664' c='_ZN3IPC12VariantCoder6encodeERNS_7EncoderERKN3WTF7VariantIJDpT0_EEEj'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='688' c='_ZN3IPC12VariantCoderILm0EJDpT_EE6encodeERNS_7EncoderERKN3WTF7VariantIJS2_EEEj'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='706' c='_ZN3IPC13ArgumentCoderIN3WTF7VariantIJDpT_EEEvE6encodeERNS_7EncoderERKS5_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='724' c='_ZN3IPC13ArgumentCoderIN3WTF8WallTimeEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='730' c='_ZN3IPC13ArgumentCoderIN3WTF10AtomStringEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='735' c='_ZN3IPC13ArgumentCoderIN3WTF7CStringEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='747' c='_ZN3IPC13ArgumentCoderISt5arrayIhLm20EEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.h' l='759' c='_ZN3IPC13ArgumentCoderIN3WTF9MonostateEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Platform/unix/SharedMemoryUnix.cpp' l='80' c='_ZNK6WebKit12SharedMemory9IPCHandle6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<fun r='_ZN3IPC7EncoderC1ENS_11MessageNameEm'/>
+<fun r='_ZN3IPC7EncoderD1Ev'/>
+<fun r='_ZNK3IPC7Encoder19messageReceiverNameEv'/>
+<fun r='_ZNK3IPC7Encoder11messageNameEv'/>
+<fun r='_ZNK3IPC7Encoder13destinationIDEv'/>
+<fun r='_ZNK3IPC7Encoder13isSyncMessageEv'/>
+<fun r='_ZN3IPC7Encoder47setShouldDispatchMessageWhenWaitingForSyncReplyENS_37ShouldDispatchWhenWaitingForSyncReplyE'/>
+<fun r='_ZNK3IPC7Encoder44shouldDispatchMessageWhenWaitingForSyncReplyEv'/>
+<fun r='_ZN3IPC7Encoder33setFullySynchronousModeForTestingEv'/>
+<fun r='_ZN3IPC7Encoder42setShouldMaintainOrderingWithAsyncMessagesEv'/>
+<fun r='_ZN3IPC7Encoder14wrapForTestingEON3WTF9UniqueRefIS0_EE'/>
+<fun r='_ZN3IPC7Encoder21encodeFixedLengthDataEPKhmm'/>
+<fun r='_ZN3IPC7EncoderlsEOT_'/>
+<fun r='_ZNK3IPC7Encoder6bufferEv'/>
+<fun r='_ZNK3IPC7Encoder10bufferSizeEv'/>
+<fun r='_ZN3IPC7Encoder13addAttachmentEONS_10AttachmentE'/>
+<fun r='_ZN3IPC7Encoder18releaseAttachmentsEv'/>
+<fun r='_ZN3IPC7Encoder7reserveEm'/>
+<smbr r='IPC::Encoder::isIPCEncoder' t='const bool'/>
+<fun r='_ZN3IPC7Encoder18encodeSingleObjectERKT_'/>
+<fun r='_ZN3IPC7EncoderC1ENS0_25ConstructWithoutHeaderTagE'/>
+<fun r='_ZN3IPC7Encoder4growEmm'/>
+<fun r='_ZNK3IPC7Encoder14hasAttachmentsEv'/>
+<fun r='_ZN3IPC7Encoder12encodeHeaderEv'/>
+<fun r='_ZNK3IPC7Encoder12messageFlagsEv'/>
+<fun r='_ZN3IPC7Encoder12messageFlagsEv'/>
+<mbr r='IPC::Encoder::m_messageName' o='0' t='IPC::MessageName'/>
+<mbr r='IPC::Encoder::m_destinationID' o='64' t='uint64_t'/>
+<mbr r='IPC::Encoder::m_inlineBuffer' o='128' t='uint8_t [512]'/>
+<mbr r='IPC::Encoder::m_buffer' o='4224' t='uint8_t *'/>
+<mbr r='IPC::Encoder::m_bufferPointer' o='4288' t='uint8_t *'/>
+<mbr r='IPC::Encoder::m_bufferSize' o='4352' t='size_t'/>
+<mbr r='IPC::Encoder::m_bufferCapacity' o='4416' t='size_t'/>
+<mbr r='IPC::Encoder::m_attachments' o='4480' t='Vector&lt;IPC::Attachment&gt;'/>
+<use f='WebKit/Source/WebKit/Shared/AccessibilityPreferences.h' l='50' c='_ZN3IPC13ArgumentCoderIN6WebKit24AccessibilityPreferencesEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/AccessibilityPreferences.cpp' l='31' c='_ZN3IPC13ArgumentCoderIN6WebKit24AccessibilityPreferencesEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebContextMenuItemData.h' l='64' c='_ZNK6WebKit22WebContextMenuItemData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/ShareableBitmap.h' l='61' c='_ZNK6WebKit15ShareableBitmap13Configuration6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/ShareableBitmap.h' l='76' c='_ZNK6WebKit15ShareableBitmap6Handle6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebHitTestResultData.h' l='86' c='_ZNK6WebKit20WebHitTestResultData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebHitTestResultData.h' l='87' c='_ZNK6WebKit20WebHitTestResultData14platformEncodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/ContextMenuContextData.h' l='76' c='_ZNK6WebKit22ContextMenuContextData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/gtk/ArgumentCodersGtk.h' l='40' c='_ZN3IPC6encodeERNS_7EncoderEP17_GtkPrintSettings'/>
+<use f='WebKit/Source/WebKit/Shared/gtk/ArgumentCodersGtk.h' l='43' c='_ZN3IPC6encodeERNS_7EncoderEP13_GtkPageSetup'/>
+<use f='WebKit/Source/WebKit/Shared/gtk/ArgumentCodersGtk.h' l='47' c='_ZN3IPC13ArgumentCoderIN7WebCore13SelectionDataEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='231' c='_ZN3IPC13ArgumentCoderIN7WebCore15AffineTransformEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='236' c='_ZN3IPC13ArgumentCoderIN7WebCore16AttributedStringEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='241' c='_ZN3IPC13ArgumentCoderIN7WebCore17CacheQueryOptionsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='246' c='_ZN3IPC13ArgumentCoderIN7WebCore14CharacterRangeEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='251' c='_ZN3IPC13ArgumentCoderIN7WebCore14DOMCacheEngine9CacheInfoEvE6encodeERNS_7EncoderERKS3_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='256' c='_ZN3IPC13ArgumentCoderIN7WebCore14DOMCacheEngine6RecordEvE6encodeERNS_7EncoderERKS3_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='261' c='_ZN3IPC13ArgumentCoderIN7WebCore15TouchActionDataEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='266' c='_ZN3IPC13ArgumentCoderIN7WebCore20EventTrackingRegionsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='271' c='_ZN3IPC13ArgumentCoderIN7WebCore20TransformationMatrixEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='276' c='_ZN3IPC13ArgumentCoderIN7WebCore20LinearTimingFunctionEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='281' c='_ZN3IPC13ArgumentCoderIN7WebCore25CubicBezierTimingFunctionEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='286' c='_ZN3IPC13ArgumentCoderIN7WebCore19StepsTimingFunctionEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='291' c='_ZN3IPC13ArgumentCoderIN7WebCore20SpringTimingFunctionEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='296' c='_ZN3IPC13ArgumentCoderIN7WebCore15CertificateInfoEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='301' c='_ZN3IPC13ArgumentCoderIN7WebCore10FloatPointEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='307' c='_ZN3IPC13ArgumentCoderIN7WebCore12FloatPoint3DEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='312' c='_ZN3IPC13ArgumentCoderIN7WebCore9FloatRectEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='318' c='_ZN3IPC13ArgumentCoderIN7WebCore9RectEdgesIfEEvE6encodeERNS_7EncoderERKS3_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='323' c='_ZN3IPC13ArgumentCoderIN7WebCore9FloatSizeEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='328' c='_ZN3IPC13ArgumentCoderIN7WebCore16FloatRoundedRectEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='342' c='_ZN3IPC13ArgumentCoderIN7WebCore18ViewportAttributesEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='347' c='_ZN3IPC13ArgumentCoderIN7WebCore8IntPointEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='353' c='_ZN3IPC13ArgumentCoderIN7WebCore7IntRectEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='366' c='_ZN3IPC13ArgumentCoderIN7WebCore10LayoutSizeEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='371' c='_ZN3IPC13ArgumentCoderIN7WebCore11LayoutPointEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='376' c='_ZN3IPC13ArgumentCoderIN7WebCore6LengthEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='381' c='_ZN3IPC13ArgumentCoderIN7WebCore12VelocityDataEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='386' c='_ZN3IPC13ArgumentCoderIN7WebCore13MimeClassInfoEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='391' c='_ZN3IPC13ArgumentCoderIN7WebCore10PluginInfoEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='396' c='_ZN3IPC13ArgumentCoderIN7WebCore23AuthenticationChallengeEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='401' c='_ZN3IPC13ArgumentCoderIN7WebCore15ProtectionSpaceEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='403' c='_ZN3IPC13ArgumentCoderIN7WebCore15ProtectionSpaceEvE18encodePlatformDataERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='408' c='_ZN3IPC13ArgumentCoderIN7WebCore10CredentialEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='410' c='_ZN3IPC13ArgumentCoderIN7WebCore10CredentialEvE18encodePlatformDataERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='415' c='_ZN3IPC13ArgumentCoderIN7WebCore6CursorEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='420' c='_ZN3IPC13ArgumentCoderIN3WTF3RefIN7WebCore4FontENS1_12RawPtrTraitsIS4_EEEEvE6encodeERNS_7EncoderERKS7_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='422' c='_ZN3IPC13ArgumentCoderIN3WTF3RefIN7WebCore4FontENS1_12RawPtrTraitsIS4_EEEEvE18encodePlatformDataERNS_7EncoderERKS7_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='427' c='_ZN3IPC13ArgumentCoderIN7WebCore15ResourceRequestEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='429' c='_ZN3IPC13ArgumentCoderIN7WebCore15ResourceRequestEvE18encodePlatformDataERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='434' c='_ZN3IPC13ArgumentCoderIN7WebCore13ResourceErrorEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='436' c='_ZN3IPC13ArgumentCoderIN7WebCore13ResourceErrorEvE18encodePlatformDataERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='441' c='_ZN3IPC13ArgumentCoderIN7WebCore14WindowFeaturesEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='447' c='_ZN3IPC13ArgumentCoderIN7WebCore8DragDataEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='508' c='_ZN3IPC13ArgumentCoderIN7WebCore20PasteboardCustomDataEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='513' c='_ZN3IPC13ArgumentCoderIN7WebCore13PasteboardURLEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='519' c='_ZN3IPC13ArgumentCoderIN7WebCore24SoupNetworkProxySettingsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='539' c='_ZN3IPC13ArgumentCoderIN7WebCore20CompositionUnderlineEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='544' c='_ZN3IPC13ArgumentCoderIN7WebCore15DatabaseDetailsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='549' c='_ZN3IPC13ArgumentCoderIN7WebCore20DictationAlternativeEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='554' c='_ZN3IPC13ArgumentCoderIN7WebCore19FileChooserSettingsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='559' c='_ZN3IPC13ArgumentCoderIN7WebCore7RawFileEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='564' c='_ZN3IPC13ArgumentCoderIN7WebCore9ShareDataEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='569' c='_ZN3IPC13ArgumentCoderIN7WebCore22ShareDataWithParsedURLEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='574' c='_ZN3IPC13ArgumentCoderIN7WebCore13GrammarDetailEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='579' c='_ZN3IPC13ArgumentCoderIN7WebCore23TextCheckingRequestDataEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='584' c='_ZN3IPC13ArgumentCoderIN7WebCore18TextCheckingResultEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='589' c='_ZN3IPC13ArgumentCoderIN7WebCore14UserStyleSheetEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='594' c='_ZN3IPC13ArgumentCoderIN7WebCore24ScrollableAreaParametersEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='599' c='_ZN3IPC13ArgumentCoderIN7WebCore32FixedPositionViewportConstraintsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='604' c='_ZN3IPC13ArgumentCoderIN7WebCore33StickyPositionViewportConstraintsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='609' c='_ZN3IPC13ArgumentCoderIN7WebCore27AbsolutePositionConstraintsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='631' c='_ZN3IPC13ArgumentCoderIN7WebCore8BlobPartEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='643' c='_ZN3IPC13ArgumentCoderIN7WebCore17TextIndicatorDataEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='648' c='_ZN3IPC13ArgumentCoderIN7WebCore19DictionaryPopupInfoEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='650' c='_ZN3IPC13ArgumentCoderIN7WebCore19DictionaryPopupInfoEvE18encodePlatformDataERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='664' c='_ZN3IPC13ArgumentCoderIN7WebCore12RecentSearchEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='669' c='_ZN3IPC13ArgumentCoderIN7WebCore16ExceptionDetailsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='674' c='_ZN3IPC13ArgumentCoderIN7WebCore22ResourceLoadStatisticsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='739' c='_ZN3IPC13ArgumentCoderIN3WTF7VariantIJNS1_6StringENS1_6VectorIS3_Lm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEEEEEvE6encodeERNS_7EncoderERKS8_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='746' c='_ZN3IPC13ArgumentCoderIN3WTF7VariantIJN7WebCore17ServiceWorkerDataENS3_23ServiceWorkerClientDataEEEEvE6encodeERNS_7EncoderERKS6_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='751' c='_ZN3IPC13ArgumentCoderIN3WTF7VariantIJNS1_16ObjectIdentifierIN7WebCore27ServiceWorkerIdentifierTypeEEENS4_29ServiceWorkerClientIdentifierEEEEvE6encodeERNS_7EncoderERKS8_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='758' c='_ZN3IPC13ArgumentCoderIN7WebCore20MediaSelectionOptionEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='763' c='_ZN3IPC13ArgumentCoderIN7WebCore22PromisedAttachmentInfoEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='768' c='_ZN3IPC13ArgumentCoderIN3WTF6RefPtrIN7WebCore14SecurityOriginENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEEvE6encodeERNS_7EncoderERKS9_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='773' c='_ZN3IPC13ArgumentCoderIN7WebCore14FontAttributesEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='775' c='_ZN3IPC13ArgumentCoderIN7WebCore14FontAttributesEvE18encodePlatformDataERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='790' c='_ZN3IPC13ArgumentCoderIN7WebCore30SerializedPlatformDataCueValueEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='792' c='_ZN3IPC13ArgumentCoderIN7WebCore30SerializedPlatformDataCueValueEvE18encodePlatformDataERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='798' c='_ZN3IPC13ArgumentCoderIN3WTF6RefPtrIN7WebCore12SharedBufferENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEEvE6encodeERNS_7EncoderERKS9_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='803' c='_ZN3IPC13ArgumentCoderIN3WTF3RefIN7WebCore12SharedBufferENS1_12RawPtrTraitsIS4_EEEEvE6encodeERNS_7EncoderERKS7_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.h' l='808' c='_ZN3IPC13ArgumentCoderIN7WebCore12ScriptBufferEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/ContextMenuContextData.cpp' l='74' c='_ZNK6WebKit22ContextMenuContextData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/DebuggableInfoData.h' l='51' c='_ZNK6WebKit18DebuggableInfoData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/DebuggableInfoData.cpp' l='45' c='_ZNK6WebKit18DebuggableInfoData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/EditingRange.h' l='92' c='_ZN3IPC13ArgumentCoderIN6WebKit12EditingRangeEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/EditingRange.cpp' l='83' c='_ZN3IPC13ArgumentCoderIN6WebKit12EditingRangeEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/EditorState.h' l='144' c='_ZNK6WebKit11EditorState14PostLayoutData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/EditorState.h' l='151' c='_ZNK6WebKit11EditorState6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/EditorState.cpp' l='35' c='_ZNK6WebKit11EditorState6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/EditorState.cpp' l='103' c='_ZNK6WebKit11EditorState14PostLayoutData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/FontInfo.h' l='41' c='_ZNK6WebKit8FontInfo6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/FontInfo.cpp' l='37' c='_ZNK6WebKit8FontInfo6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/API/APIError.h' l='108' c='_ZNK3API5Error6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APINumber.h' l='45' c='_ZNK3API6Number6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIURL.h' l='87' c='_ZNK3API3URL6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIURLRequest.h' l='51' c='_ZNK3API10URLRequest6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIURLResponse.h' l='49' c='_ZNK3API11URLResponse6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebEvent.h' l='107' c='_ZNK6WebKit8WebEvent6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebMouseEvent.h' l='78' c='_ZNK6WebKit13WebMouseEvent6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIGeometry.h' l='49' c='_ZNK3API4Size6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIGeometry.h' l='70' c='_ZNK3API5Point6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIGeometry.h' l='90' c='_ZNK3API4Rect6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.h' l='414' c='_ZN6WebKit14NetworkProcess21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.h' l='425' c='_ZN6WebKit14NetworkProcess35didReceiveSyncNetworkProcessMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/MessageSender.h' l='47' c='_ZN3IPC13MessageSender4sendERKT_mN3WTF9OptionSetINS_10SendOptionEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/MessageSender.h' l='94' c='_ZN3IPC13MessageSender18sendWithAsyncReplyEOT_OT0_mN3WTF9OptionSetINS_10SendOptionEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/MessageSender.h' l='107' c='_ZN3IPC13MessageSender11sendMessageEON3WTF9UniqueRefINS_7EncoderEEENS1_9OptionSetINS_10SendOptionEEEOSt8optionalISt4pairINS1_17CompletionHandlerIFvPNS_7DecoderEEEEmEE'/>
+<use f='WebKit/Source/WebKit/Shared/SandboxExtension.h' l='76' c='_ZNK6WebKit16SandboxExtension6Handle6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/SandboxExtension.h' l='103' c='_ZNK6WebKit16SandboxExtension11HandleArray6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/SandboxExtension.h' l='149' c='_ZNK6WebKit16SandboxExtension6Handle6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/SandboxExtension.h' l='162' c='_ZNK6WebKit16SandboxExtension11HandleArray6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebsitePoliciesData.h' l='75' c='_ZNK6WebKit19WebsitePoliciesData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/LayerTreeContext.h' l='50' c='_ZNK6WebKit16LayerTreeContext6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Plugins/Plugin.h' l='97' c='_ZNK6WebKit6Plugin10Parameters6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/UserData.h' l='54' c='_ZNK6WebKit8UserData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/UserData.h' l='57' c='_ZN6WebKit8UserData6encodeERN3IPC7EncoderEPKN3API6ObjectE'/>
+<use f='WebKit/Source/WebKit/Shared/UserData.h' l='61' c='_ZN6WebKit8UserData6encodeERN3IPC7EncoderERKN3API6ObjectE'/>
+<use f='WebKit/Source/WebKit/Shared/WebBackForwardListCounts.h' l='37' c='_ZNK6WebKit24WebBackForwardListCounts6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.h' l='491' c='_ZN6WebKit15WebProcessProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.h' l='503' c='_ZN6WebKit15WebProcessProxy36didReceiveSyncWebProcessProxyMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/Shared/WebUserContentControllerDataTypes.h' l='40' c='_ZNK6WebKit17WebUserScriptData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebUserContentControllerDataTypes.h' l='49' c='_ZNK6WebKit21WebUserStyleSheetData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebUserContentControllerDataTypes.h' l='58' c='_ZNK6WebKit27WebScriptMessageHandlerData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/PrintInfo.h' l='77' c='_ZNK6WebKit9PrintInfo6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/glib/InputMethodState.h' l='69' c='_ZNK6WebKit16InputMethodState6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='505' c='_ZN6WebKit7WebPage21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.h' l='1508' c='_ZN6WebKit7WebPage28didReceiveSyncWebPageMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/Databases/IndexedDB/WebIDBResult.h' l='58' c='_ZNK6WebKit12WebIDBResult6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/Databases/IndexedDB/WebIDBResult.cpp' l='33' c='_ZNK6WebKit12WebIDBResult6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebsiteData/WebsiteData.h' l='53' c='_ZNK6WebKit11WebsiteData5Entry6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebsiteData/WebsiteData.h' l='70' c='_ZNK6WebKit11WebsiteData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebsiteData/WebsiteData.cpp' l='38' c='_ZNK6WebKit11WebsiteData5Entry6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebsiteData/WebsiteData.cpp' l='64' c='_ZNK6WebKit11WebsiteData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/glib/ArgumentCodersGLib.h' l='37' c='_ZN3IPC13ArgumentCoderIN3WTF7GRefPtrI9_GVariantEEvE6encodeERNS_7EncoderES4_'/>
+<use f='WebKit/Source/WebKit/Shared/glib/ArgumentCodersGLib.h' l='42' c='_ZN3IPC13ArgumentCoderIN3WTF7GRefPtrI16_GTlsCertificateEEvE6encodeERNS_7EncoderES4_'/>
+<use f='WebKit/Source/WebKit/Shared/glib/ArgumentCodersGLib.cpp' l='36' c='_ZN3IPC13ArgumentCoderIN3WTF7GRefPtrI9_GVariantEEvE6encodeERNS_7EncoderES4_'/>
+<use f='WebKit/Source/WebKit/Shared/glib/ArgumentCodersGLib.cpp' l='68' c='_ZN3IPC13ArgumentCoderIN3WTF7GRefPtrI16_GTlsCertificateEEvE6encodeERNS_7EncoderES4_'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/glib/InputMethodState.cpp' l='106' c='_ZNK6WebKit16InputMethodState6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/glib/UserMessage.h' l='58' c='_ZNK6WebKit11UserMessage6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/glib/UserMessage.cpp' l='36' c='_ZNK6WebKit11UserMessage6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/gtk/ArgumentCodersGtk.cpp' l='42' c='_ZN3IPCL11encodeImageERNS_7EncoderERN7WebCore5ImageE'/>
+<use f='WebKit/Source/WebKit/Shared/gtk/ArgumentCodersGtk.cpp' l='68' c='_ZN3IPC13ArgumentCoderIN7WebCore13SelectionDataEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/gtk/ArgumentCodersGtk.cpp' l='176' c='_ZN3IPCL14encodeGKeyFileERNS_7EncoderEP9_GKeyFile'/>
+<use f='WebKit/Source/WebKit/Shared/gtk/ArgumentCodersGtk.cpp' l='201' c='_ZN3IPC6encodeERNS_7EncoderEP17_GtkPrintSettings'/>
+<use f='WebKit/Source/WebKit/Shared/gtk/ArgumentCodersGtk.cpp' l='224' c='_ZN3IPC6encodeERNS_7EncoderEP13_GtkPageSetup'/>
+<use f='WebKit/Source/WebKit/Shared/gtk/GtkSettingsState.h' l='40' c='_ZNK6WebKit16GtkSettingsState6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/gtk/GtkSettingsState.cpp' l='33' c='_ZNK6WebKit16GtkSettingsState6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebKeyboardEvent.h' l='80' c='_ZNK6WebKit16WebKeyboardEvent6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebWheelEvent.h' l='77' c='_ZNK6WebKit13WebWheelEvent6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebTouchEvent.h' l='177' c='_ZNK6WebKit21WebPlatformTouchPoint6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebTouchEvent.h' l='199' c='_ZNK6WebKit13WebTouchEvent6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/soup/WebCoreArgumentCodersSoup.cpp' l='47' c='_ZN3IPC13ArgumentCoderIN7WebCore15ResourceRequestEvE18encodePlatformDataERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/soup/WebCoreArgumentCodersSoup.cpp' l='57' c='_ZN3IPC13ArgumentCoderIN7WebCore15CertificateInfoEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/soup/WebCoreArgumentCodersSoup.cpp' l='86' c='_ZN3IPC13ArgumentCoderIN7WebCore13ResourceErrorEvE18encodePlatformDataERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/soup/WebCoreArgumentCodersSoup.cpp' l='125' c='_ZN3IPC13ArgumentCoderIN7WebCore24SoupNetworkProxySettingsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/soup/WebCoreArgumentCodersSoup.cpp' l='174' c='_ZN3IPC13ArgumentCoderIN7WebCore15ProtectionSpaceEvE18encodePlatformDataERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/soup/WebCoreArgumentCodersSoup.cpp' l='185' c='_ZN3IPC13ArgumentCoderIN7WebCore10CredentialEvE18encodePlatformDataERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/soup/WebCoreArgumentCodersSoup.cpp' l='207' c='_ZN3IPC13ArgumentCoderIN7WebCore14FontAttributesEvE18encodePlatformDataERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/soup/WebCoreArgumentCodersSoup.cpp' l='218' c='_ZN3IPC13ArgumentCoderIN7WebCore19DictionaryPopupInfoEvE18encodePlatformDataERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/soup/WebCoreArgumentCodersSoup.cpp' l='229' c='_ZN3IPC13ArgumentCoderIN3WTF3RefIN7WebCore4FontENS1_12RawPtrTraitsIS4_EEEEvE18encodePlatformDataERNS_7EncoderERKS7_'/>
+<use f='WebKit/Source/WebKit/Shared/soup/WebCoreArgumentCodersSoup.cpp' l='241' c='_ZN3IPC13ArgumentCoderIN7WebCore30SerializedPlatformDataCueValueEvE18encodePlatformDataERNS_7EncoderERKS2_'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/MessageReceiverMap.h' l='56' c='_ZN3IPC18MessageReceiverMap19dispatchSyncMessageERNS_10ConnectionERNS_7DecoderERN3WTF9UniqueRefINS_7EncoderEEE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/FrameInfoData.h' l='40' c='_ZNK6WebKit13FrameInfoData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/FrameInfoData.cpp' l='33' c='_ZNK6WebKit13FrameInfoData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/LayerTreeContext.cpp' l='44' c='_ZNK6WebKit16LayerTreeContext6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/LoadParameters.h' l='47' c='_ZNK6WebKit14LoadParameters6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/LoadParameters.h' l='50' c='_ZNK6WebKit14LoadParameters14platformEncodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/FormDataReference.h' l='45' c='_ZNK3IPC17FormDataReference6encodeERNS_7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/LoadParameters.cpp' l='34' c='_ZNK6WebKit14LoadParameters6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/LoadParameters.cpp' l='152' c='_ZNK6WebKit14LoadParameters14platformEncodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/NavigationActionData.h' l='43' c='_ZNK6WebKit20NavigationActionData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/NavigationActionData.cpp' l='36' c='_ZNK6WebKit20NavigationActionData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/PlatformPopupMenuData.h' l='43' c='_ZNK6WebKit21PlatformPopupMenuData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/PlatformPopupMenuData.cpp' l='33' c='_ZNK6WebKit21PlatformPopupMenuData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/PrintInfo.cpp' l='37' c='_ZNK6WebKit9PrintInfo6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/ServiceWorkerInitializationData.h' l='42' c='_ZNK6WebKit31ServiceWorkerInitializationData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebCompiledContentRuleListData.h' l='58' c='_ZNK6WebKit30WebCompiledContentRuleListData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/ServiceWorkerInitializationData.cpp' l='36' c='_ZNK6WebKit31ServiceWorkerInitializationData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/SessionState.h' l='49' c='_ZNK6WebKit8HTTPBody7Element6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/SessionState.h' l='74' c='_ZNK6WebKit8HTTPBody6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/SessionState.h' l='83' c='_ZNK6WebKit10FrameState6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/SessionState.h' l='127' c='_ZNK6WebKit9PageState6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/SessionState.h' l='137' c='_ZNK6WebKit24BackForwardListItemState6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/SessionState.h' l='150' c='_ZNK6WebKit20BackForwardListState6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/SessionState.cpp' l='35' c='_ZNK6WebKit8HTTPBody7Element6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/SessionState.cpp' l='79' c='_ZNK6WebKit8HTTPBody6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/SessionState.cpp' l='95' c='_ZNK6WebKit10FrameState6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/SessionState.cpp' l='181' c='_ZNK6WebKit9PageState6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/SessionState.cpp' l='222' c='_ZNK6WebKit24BackForwardListItemState6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/SessionState.cpp' l='247' c='_ZNK6WebKit20BackForwardListState6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/ShareableResource.h' l='54' c='_ZNK6WebKit17ShareableResource6Handle6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/ShareableResource.cpp' l='39' c='_ZNK6WebKit17ShareableResource6Handle6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/URLSchemeTaskParameters.h' l='44' c='_ZNK6WebKit23URLSchemeTaskParameters6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/URLSchemeTaskParameters.cpp' l='35' c='_ZNK6WebKit23URLSchemeTaskParameters6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/UpdateInfo.h' l='50' c='_ZNK6WebKit10UpdateInfo6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/UpdateInfo.cpp' l='35' c='_ZNK6WebKit10UpdateInfo6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/UserContentControllerParameters.h' l='50' c='_ZNK6WebKit31UserContentControllerParameters6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/UserContentControllerParameters.cpp' l='35' c='_ZNK6WebKit31UserContentControllerParameters6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIData.h' l='100' c='_ZNK3API4Data6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIFrameHandle.h' l='49' c='_ZNK3API11FrameHandle6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebPageGroupData.h' l='39' c='_ZNK6WebKit16WebPageGroupData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIPageGroupHandle.h' l='47' c='_ZNK3API15PageGroupHandle6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIPageHandle.h' l='51' c='_ZNK3API10PageHandle6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/UserData.cpp' l='144' c='_ZNK6WebKit8UserData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/UserData.cpp' l='154' c='_ZN6WebKit8UserData6encodeERN3IPC7EncoderEPKN3API6ObjectE'/>
+<use f='WebKit/Source/WebKit/Shared/UserData.cpp' l='164' c='_ZN6WebKit8UserData6encodeERN3IPC7EncoderERKN3API6ObjectE'/>
+<use f='WebKit/Source/WebKit/UIProcess/SuspendedPageProxy.h' l='98' c='_ZN6WebKit18SuspendedPageProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/SuspendedPageProxy.h' l='103' c='_ZN6WebKit18SuspendedPageProxy11sendMessageEON3WTF9UniqueRefIN3IPC7EncoderEEENS1_9OptionSetINS3_10SendOptionEEEOSt8optionalISt4pairINS1_17CompletionHa10187433'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/SharedBufferCopy.h' l='59' c='_ZNK3IPC16SharedBufferCopy6encodeERNS_7EncoderE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/SharedBufferDataReference.h' l='47' c='_ZNK3IPC25SharedBufferDataReference6encodeERNS_7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebCompiledContentRuleListData.cpp' l='37' c='_ZNK6WebKit30WebCompiledContentRuleListData6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/WebHitTestResultData.cpp' l='104' c='_ZNK6WebKit20WebHitTestResultData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebHitTestResultData.cpp' l='204' c='_ZNK6WebKit20WebHitTestResultData14platformEncodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebPreferencesStore.h' l='39' c='_ZNK6WebKit19WebPreferencesStore6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebPageCreationParameters.h' l='70' c='_ZNK6WebKit25WebPageCreationParameters6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebPageCreationParameters.cpp' l='33' c='_ZNK6WebKit25WebPageCreationParameters6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebPageGroupData.cpp' l='33' c='_ZNK6WebKit16WebPageGroupData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebPageNetworkParameters.h' l='42' c='_ZNK6WebKit24WebPageNetworkParameters6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebPageNetworkParameters.cpp' l='33' c='_ZNK6WebKit24WebPageNetworkParameters6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebPopupItem.h' l='49' c='_ZNK6WebKit12WebPopupItem6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/WebPopupItem.cpp' l='66' c='_ZNK6WebKit12WebPopupItem6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/WebPreferencesStore.cpp' l='47' c='_ZNK6WebKit19WebPreferencesStore6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/API/APIError.cpp' l='87' c='_ZNK3API5Error6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIFrameHandle.cpp' l='51' c='_ZNK3API11FrameHandle6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIGeometry.cpp' l='35' c='_ZNK3API5Point6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIGeometry.cpp' l='54' c='_ZNK3API4Size6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIGeometry.cpp' l='73' c='_ZNK3API4Rect6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIPageGroupHandle.cpp' l='49' c='_ZNK3API15PageGroupHandle6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIPageHandle.cpp' l='56' c='_ZNK3API10PageHandle6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/ResourceLoadStatisticsParameters.h' l='54' c='_ZNK6WebKit32ResourceLoadStatisticsParameters6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSessionCreationParameters.h' l='54' c='_ZNK6WebKit32NetworkSessionCreationParameters6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/WebResourceLoadStatisticsStore.h' l='124' c='_ZNK6WebKit30WebResourceLoadStatisticsStore35ThirdPartyDataForSpecificFirstParty6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/WebResourceLoadStatisticsStore.h' l='136' c='_ZNK6WebKit30WebResourceLoadStatisticsStore14ThirdPartyData6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.h' l='120' c='_ZN6WebKit21AuxiliaryProcessProxy11sendMessageEON3WTF9UniqueRefIN3IPC7EncoderEEENS1_9OptionSetINS3_10SendOptionEEEOSt8optionalISt4pairINS1_17Completio15770633'/>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.h' l='148' c='_ZN6WebKit21AuxiliaryProcessProxy19dispatchSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.h' l='157'/>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.h' l='190' c='_ZN6WebKit21AuxiliaryProcessProxy4sendEOT_mN3WTF9OptionSetIN3IPC10SendOptionEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.h' l='214' c='_ZN6WebKit21AuxiliaryProcessProxy18sendWithAsyncReplyEOT_OT0_mN3WTF9OptionSetIN3IPC10SendOptionEEENS0_35ShouldStartProcessThrottlerActivityE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.h' l='283' c='_ZN6WebKit19NetworkProcessProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.h' l='286' c='_ZN6WebKit19NetworkProcessProxy40didReceiveSyncNetworkProcessProxyMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.h' l='175' c='_ZN6WebKit14WebProcessPool19dispatchSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.h' l='545' c='_ZN6WebKit14WebProcessPool21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/Shared/API/APIURLRequest.cpp' l='55' c='_ZNK3API10URLRequest6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/API/APIURLResponse.cpp' l='39' c='_ZNK3API11URLResponse6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/WebProcessCreationParameters.h' l='76' c='_ZNK6WebKit28WebProcessCreationParameters6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebProcess.h' l='554' c='_ZN6WebKit10WebProcess21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/NetworkProcessConnection.h' l='95' c='_ZN6WebKit24NetworkProcessConnection21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/WebProcess/Network/NetworkProcessConnectionInfo.h' l='65' c='_ZNK6WebKit28NetworkProcessConnectionInfo6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/WebProcess/WebProcess.cpp' l='848' c='_ZN6WebKit10WebProcess21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/WebProcess/Network/NetworkProcessConnection.cpp' l='182' c='_ZN6WebKit24NetworkProcessConnection21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoadParameters.h' l='48' c='_ZNK6WebKit29NetworkResourceLoadParameters6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='1792' c='_ZN6WebKit12WebPageProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.h' l='1995' c='_ZN6WebKit12WebPageProxy11sendMessageEON3WTF9UniqueRefIN3IPC7EncoderEEENS1_9OptionSetINS3_10SendOptionEEEOSt8optionalISt4pairINS1_17CompletionHandlerI3164643'/>
+<use f='WebKit/Source/WebKit/Shared/WebNavigationDataStore.h' l='39' c='_ZNK6WebKit22WebNavigationDataStore6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/WebsiteDataStoreParameters.h' l='49' c='_ZNK6WebKit26WebsiteDataStoreParameters6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkConnectionToWebProcess.h' l='197' c='_ZN6WebKit29NetworkConnectionToWebProcess21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkConnectionToWebProcess.h' l='203' c='_ZN6WebKit29NetworkConnectionToWebProcess50didReceiveSyncNetworkConnectionToWebProcessMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.cpp' l='247' c='_ZN6WebKit14NetworkProcess21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcessCreationParameters.h' l='54' c='_ZNK6WebKit32NetworkProcessCreationParameters6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcessCreationParameters.cpp' l='44' c='_ZNK6WebKit32NetworkProcessCreationParameters6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkResourceLoadParameters.cpp' l='34' c='_ZNK6WebKit29NetworkResourceLoadParameters6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSessionCreationParameters.cpp' l='41' c='_ZNK6WebKit32NetworkSessionCreationParameters6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/WebResourceLoadStatisticsStore.cpp' l='1675' c='_ZNK6WebKit30WebResourceLoadStatisticsStore35ThirdPartyDataForSpecificFirstParty6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Classifier/WebResourceLoadStatisticsStore.cpp' l='1717' c='_ZNK6WebKit30WebResourceLoadStatisticsStore14ThirdPartyData6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/WebStorage/StorageManager.h' l='77' c='_ZN6WebKit14StorageManager21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.cpp' l='168' c='_ZN6WebKit21AuxiliaryProcessProxy11sendMessageEON3WTF9UniqueRefIN3IPC7EncoderEEENS1_9OptionSetINS3_10SendOptionEEEOSt8optionalISt4pairINS1_17Completio15770633'/>
+<use f='WebKit/Source/WebKit/UIProcess/AuxiliaryProcessProxy.cpp' l='237' c='_ZN6WebKit21AuxiliaryProcessProxy19dispatchSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/FrameTreeNodeData.h' l='38' c='_ZNK6WebKit17FrameTreeNodeData6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/UIProcess/Downloads/DownloadProxy.h' l='83' c='_ZN6WebKit13DownloadProxy34didReceiveSyncDownloadProxyMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/UIProcess/ProvisionalPageProxy.h' l='116' c='_ZN6WebKit20ProvisionalPageProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/ProvisionalPageProxy.h' l='121' c='_ZN6WebKit20ProvisionalPageProxy11sendMessageEON3WTF9UniqueRefIN3IPC7EncoderEEENS1_9OptionSetINS3_10SendOptionEEEOSt8optionalISt4pairINS1_17Completion2566998'/>
+<use f='WebKit/Source/WebKit/UIProcess/ProvisionalPageProxy.cpp' l='586' c='_ZN6WebKit20ProvisionalPageProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/ProvisionalPageProxy.cpp' l='607' c='_ZN6WebKit20ProvisionalPageProxy11sendMessageEON3WTF9UniqueRefIN3IPC7EncoderEEENS1_9OptionSetINS3_10SendOptionEEEOSt8optionalISt4pairINS1_17Completion2566998'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/UIProcess/DrawingAreaProxy.h' l='143' c='_ZN6WebKit16DrawingAreaProxy11sendMessageEON3WTF9UniqueRefIN3IPC7EncoderEEENS1_9OptionSetINS3_10SendOptionEEEOSt8optionalISt4pairINS1_17CompletionHand7775075'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/UIProcess/Network/NetworkProcessProxy.cpp' l='338' c='_ZN6WebKit19NetworkProcessProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebPasteboardProxy.h' l='81' c='_ZN6WebKit18WebPasteboardProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/UIProcess/SuspendedPageProxy.cpp' l='265' c='_ZN6WebKit18SuspendedPageProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/SuspendedPageProxy.cpp' l='280' c='_ZN6WebKit18SuspendedPageProxy11sendMessageEON3WTF9UniqueRefIN3IPC7EncoderEEENS1_9OptionSetINS3_10SendOptionEEEOSt8optionalISt4pairINS1_17CompletionHa10187433'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebFullScreenManagerProxy.h' l='93' c='_ZN6WebKit25WebFullScreenManagerProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebPageProxy.cpp' l='6704' c='_ZN6WebKit12WebPageProxy11sendMessageEON3WTF9UniqueRefIN3IPC7EncoderEEENS1_9OptionSetINS3_10SendOptionEEEOSt8optionalISt4pairINS1_17CompletionHandlerI3164643'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessPool.cpp' l='1421' c='_ZN6WebKit14WebProcessPool19dispatchSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/UIProcess/WebProcessProxy.cpp' l='856' c='_ZN6WebKit15WebProcessProxy21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/UIProcess/LegacySessionStateCodingNone.cpp' l='42' c='_ZN6WebKit24encodeLegacySessionStateERKNS_12SessionStateE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.cpp' l='36' c='_ZN3IPC13ArgumentCoderIN3WTF8WallTimeEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.cpp' l='60' c='_ZN3IPC13ArgumentCoderIN3WTF10AtomStringEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.cpp' l='75' c='_ZN3IPC13ArgumentCoderIN3WTF7CStringEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.cpp' l='182' c='_ZN3IPC13ArgumentCoderISt5arrayIhLm20EEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/ArgumentCoders.cpp' l='209' c='_ZN3IPC13ArgumentCoderIN3WTF9MonostateEvE6encodeERNS_7EncoderERKS2_'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/Attachment.cpp' l='54' c='_ZNK3IPC10Attachment6encodeERNS_7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='402' c='_ZN3IPC10Connection30dispatchMessageReceiverMessageERNS_15MessageReceiverEOSt10unique_ptrINS_7DecoderESt14default_deleteIS4_EE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='445' c='_ZN3IPC10Connection24createSyncMessageEncoderENS_11MessageNameEmRN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='447' c='_ZN3IPC10Connection24createSyncMessageEncoderENS_11MessageNameEmRN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='456' c='_ZN3IPC10Connection11sendMessageEON3WTF9UniqueRefINS_7EncoderEEENS1_9OptionSetINS_10SendOptionEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='502' c='_ZN3IPC10Connection13sendSyncReplyEON3WTF9UniqueRefINS_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='625' c='_ZN3IPC10Connection15sendSyncMessageEN3WTF16ObjectIdentifierINS0_17SyncRequestIDTypeEEEONS1_9UniqueRefINS_7EncoderEEENS_7TimeoutENS1_9OptionSetINS_14SendSyncOptionEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='922' c='_ZN3IPC10Connection20sendOutgoingMessagesEv'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/Connection.cpp' l='954' c='_ZN3IPC10Connection19dispatchSyncMessageERNS_7DecoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/Encoder.cpp' l='131' c='_ZN3IPC7Encoder14wrapForTestingEON3WTF9UniqueRefIS0_EE'/>
+<size>576</size>
+<fun r='_ZN3IPC7EncoderC1ENS_11MessageNameEm'/>
+<fun r='_ZN3IPC7EncoderC1ENS0_25ConstructWithoutHeaderTagE'/>
+<fun r='_ZN3IPC7EncoderD1Ev'/>
+<fun r='_ZNK3IPC7Encoder44shouldDispatchMessageWhenWaitingForSyncReplyEv'/>
+<fun r='_ZN3IPC7Encoder47setShouldDispatchMessageWhenWaitingForSyncReplyENS_37ShouldDispatchWhenWaitingForSyncReplyE'/>
+<fun r='_ZN3IPC7Encoder33setFullySynchronousModeForTestingEv'/>
+<fun r='_ZN3IPC7Encoder42setShouldMaintainOrderingWithAsyncMessagesEv'/>
+<fun r='_ZN3IPC7Encoder14wrapForTestingEON3WTF9UniqueRefIS0_EE'/>
+<fun r='_ZN3IPC7Encoder7reserveEm'/>
+<fun r='_ZN3IPC7Encoder12encodeHeaderEv'/>
+<fun r='_ZN3IPC7Encoder12messageFlagsEv'/>
+<fun r='_ZNK3IPC7Encoder12messageFlagsEv'/>
+<fun r='_ZN3IPC7Encoder4growEmm'/>
+<fun r='_ZN3IPC7Encoder21encodeFixedLengthDataEPKhmm'/>
+<fun r='_ZN3IPC7Encoder13addAttachmentEONS_10AttachmentE'/>
+<fun r='_ZN3IPC7Encoder18releaseAttachmentsEv'/>
+<fun r='_ZNK3IPC7Encoder14hasAttachmentsEv'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/MessageReceiverMap.cpp' l='136' c='_ZN3IPC18MessageReceiverMap19dispatchSyncMessageERNS_10ConnectionERNS_7DecoderERN3WTF9UniqueRefINS_7EncoderEEE'/>
+<use f='WebKit/Source/WebKit/Platform/IPC/MessageSender.cpp' l='33' c='_ZN3IPC13MessageSender11sendMessageEON3WTF9UniqueRefINS_7EncoderEEENS1_9OptionSetINS_10SendOptionEEEOSt8optionalISt4pairINS1_17CompletionHandlerIFvPNS_7DecoderEEEEmEE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/SharedBufferCopy.cpp' l='38' c='_ZNK3IPC16SharedBufferCopy6encodeERNS_7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/SharedBufferDataReference.cpp' l='34' c='_ZNK3IPC25SharedBufferDataReference6encodeERNS_7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamConnectionBuffer.h' l='115' c='_ZNK3IPC22StreamConnectionBuffer6encodeERNS_7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamConnectionBuffer.cpp' l='70' c='_ZNK3IPC22StreamConnectionBuffer6encodeERNS_7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/StreamServerConnection.h' l='118' c='_ZN3IPC26StreamServerConnectionBase13sendSyncReplyEN3WTF16ObjectIdentifierINS_10Connection17SyncRequestIDTypeEEEDpOT0_'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Platform/IPC/StringReference.cpp' l='43' c='_ZNK3IPC15StringReference6encodeERNS_7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/ShareableBitmap.cpp' l='44' c='_ZNK6WebKit15ShareableBitmap6Handle6encodeERN3IPC7EncoderE'/>
+<use f='WebKit/Source/WebKit/Shared/ShareableBitmap.cpp' l='75' c='_ZNK6WebKit15ShareableBitmap13Configuration6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='129' c='_ZN3IPCL18encodeSharedBufferERNS_7EncoderEPKN7WebCore12SharedBufferE'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='205' c='_ZN3IPCL18encodeTypesAndDataERNS_7EncoderERKN3WTF6VectorINS2_6StringELm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEERKNS3_INS2_6RefPtrIN7WebCore12S14303260'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='235' c='_ZN3IPC13ArgumentCoderIN7WebCore15AffineTransformEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='245' c='_ZN3IPC13ArgumentCoderIN7WebCore17CacheQueryOptionsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='275' c='_ZN3IPC13ArgumentCoderIN7WebCore14CharacterRangeEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='296' c='_ZN3IPC13ArgumentCoderIN7WebCore14DOMCacheEngine9CacheInfoEvE6encodeERNS_7EncoderERKS3_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='317' c='_ZN3IPC13ArgumentCoderIN7WebCore14DOMCacheEngine6RecordEvE6encodeERNS_7EncoderERKS3_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='409' c='_ZN3IPC13ArgumentCoderIN7WebCore20EventTrackingRegionsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='429' c='_ZN3IPC13ArgumentCoderIN7WebCore20TransformationMatrixEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='510' c='_ZN3IPC13ArgumentCoderIN7WebCore20LinearTimingFunctionEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='521' c='_ZN3IPC13ArgumentCoderIN7WebCore25CubicBezierTimingFunctionEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='562' c='_ZN3IPC13ArgumentCoderIN7WebCore19StepsTimingFunctionEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='587' c='_ZN3IPC13ArgumentCoderIN7WebCore20SpringTimingFunctionEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='621' c='_ZN3IPC13ArgumentCoderIN7WebCore10FloatPointEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='639' c='_ZN3IPC13ArgumentCoderIN7WebCore12FloatPoint3DEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='650' c='_ZN3IPC13ArgumentCoderIN7WebCore9FloatRectEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='669' c='_ZN3IPC13ArgumentCoderIN7WebCore9RectEdgesIfEEvE6encodeERNS_7EncoderERKS3_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='680' c='_ZN3IPC13ArgumentCoderIN7WebCore9FloatSizeEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='691' c='_ZN3IPC13ArgumentCoderIN7WebCore16FloatRoundedRectEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='722' c='_ZN3IPC13ArgumentCoderIN7WebCore18ViewportAttributesEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='732' c='_ZN3IPC13ArgumentCoderIN7WebCore8IntPointEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='750' c='_ZN3IPC13ArgumentCoderIN7WebCore7IntRectEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='792' c='_ZN3IPC13ArgumentCoderIN7WebCore10LayoutSizeEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='803' c='_ZN3IPC13ArgumentCoderIN7WebCore11LayoutPointEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='813' c='_ZN3IPC13ArgumentCoderIN7WebCore12RecentSearchEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='833' c='_ZN3IPC13ArgumentCoderIN7WebCore6LengthEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='843' c='_ZN3IPC13ArgumentCoderIN7WebCore12VelocityDataEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='874' c='_ZN3IPC13ArgumentCoderIN7WebCore13MimeClassInfoEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='893' c='_ZN3IPC13ArgumentCoderIN7WebCore10PluginInfoEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='932' c='_ZN3IPC13ArgumentCoderIN7WebCore23AuthenticationChallengeEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='977' c='_ZN3IPC13ArgumentCoderIN7WebCore15ProtectionSpaceEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1024' c='_ZN3IPC13ArgumentCoderIN7WebCore10CredentialEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1062' c='_ZN3IPCL11encodeImageERNS_7EncoderERN7WebCore5ImageE'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1098' c='_ZN3IPCL19encodeOptionalImageERNS_7EncoderEPN7WebCore5ImageE'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1121' c='_ZN3IPC13ArgumentCoderIN3WTF3RefIN7WebCore4FontENS1_12RawPtrTraitsIS4_EEEEvE6encodeERNS_7EncoderERKS7_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1167' c='_ZN3IPC13ArgumentCoderIN7WebCore6CursorEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1238' c='_ZN3IPC13ArgumentCoderIN7WebCore15ResourceRequestEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1294' c='_ZN3IPC13ArgumentCoderIN7WebCore13ResourceErrorEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1405' c='_ZN3IPC13ArgumentCoderIN7WebCore14WindowFeaturesEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1451' c='_ZN3IPC13ArgumentCoderIN7WebCore8DragDataEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1508' c='_ZN3IPC13ArgumentCoderIN7WebCore20CompositionUnderlineEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1535' c='_ZN3IPC13ArgumentCoderIN7WebCore15DatabaseDetailsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1576' c='_ZN3IPC13ArgumentCoderIN7WebCore20PasteboardCustomData5EntryEvE6encodeERNS_7EncoderERKS3_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1580' c='_ZN3IPC13ArgumentCoderIN7WebCore20PasteboardCustomData5EntryEvE6encodeERNS_7EncoderERKS3_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1632' c='_ZN3IPC13ArgumentCoderIN7WebCore20PasteboardCustomDataEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1652' c='_ZN3IPC13ArgumentCoderIN7WebCore13PasteboardURLEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1816' c='_ZN3IPC13ArgumentCoderIN7WebCore20DictationAlternativeEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1836' c='_ZN3IPC13ArgumentCoderIN7WebCore19FileChooserSettingsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1868' c='_ZN3IPC13ArgumentCoderIN7WebCore7RawFileEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1883' c='_ZN3IPC13ArgumentCoderIN7WebCore9ShareDataEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1901' c='_ZN3IPC13ArgumentCoderIN7WebCore22ShareDataWithParsedURLEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1919' c='_ZN3IPC13ArgumentCoderIN7WebCore13GrammarDetailEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1946' c='_ZN3IPC13ArgumentCoderIN7WebCore23TextCheckingRequestDataEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='1976' c='_ZN3IPC13ArgumentCoderIN7WebCore18TextCheckingResultEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2008' c='_ZN3IPC13ArgumentCoderIN7WebCore14UserStyleSheetEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2054' c='_ZN3IPC13ArgumentCoderIN7WebCore24ScrollableAreaParametersEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2099' c='_ZN3IPC13ArgumentCoderIN7WebCore32FixedPositionViewportConstraintsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2136' c='_ZN3IPC13ArgumentCoderIN7WebCore27AbsolutePositionConstraintsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2158' c='_ZN3IPC13ArgumentCoderIN7WebCore33StickyPositionViewportConstraintsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2404' c='_ZN3IPC13ArgumentCoderIN7WebCore8BlobPartEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2445' c='_ZN3IPC13ArgumentCoderIN7WebCore17TextIndicatorDataEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2547' c='_ZN3IPC13ArgumentCoderIN7WebCore19DictionaryPopupInfoEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2580' c='_ZN3IPC13ArgumentCoderIN7WebCore16ExceptionDetailsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2609' c='_ZN3IPC13ArgumentCoderIN7WebCore22ResourceLoadStatisticsEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2784' c='_ZN3IPC13ArgumentCoderIN3WTF7VariantIJNS1_6StringENS1_6VectorIS3_Lm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEEEEEvE6encodeERNS_7EncoderERKS8_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2814' c='_ZN3IPC13ArgumentCoderIN3WTF7VariantIJN7WebCore17ServiceWorkerDataENS3_23ServiceWorkerClientDataEEEEvE6encodeERNS_7EncoderERKS6_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2847' c='_ZN3IPC13ArgumentCoderIN3WTF7VariantIJNS1_16ObjectIdentifierIN7WebCore27ServiceWorkerIdentifierTypeEEENS4_29ServiceWorkerClientIdentifierEEEEvE6encodeERNS_7EncoderERKS8_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2882' c='_ZN3IPC13ArgumentCoderIN7WebCore20MediaSelectionOptionEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2903' c='_ZN3IPC13ArgumentCoderIN7WebCore22PromisedAttachmentInfoEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2924' c='_ZN3IPC13ArgumentCoderIN3WTF6RefPtrIN7WebCore14SecurityOriginENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEEvE6encodeERNS_7EncoderERKS9_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='2937' c='_ZN3IPC13ArgumentCoderIN7WebCore14FontAttributesEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='3014' c='_ZN3IPC13ArgumentCoderIN7WebCore30SerializedPlatformDataCueValueEvE6encodeERNS_7EncoderERKS2_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='3042' c='_ZN3IPC13ArgumentCoderIN3WTF6RefPtrIN7WebCore12SharedBufferENS1_12RawPtrTraitsIS4_EENS1_21DefaultRefDerefTraitsIS4_EEEEvE6encodeERNS_7EncoderERKS9_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='3056' c='_ZN3IPC13ArgumentCoderIN3WTF3RefIN7WebCore12SharedBufferENS1_12RawPtrTraitsIS4_EEEEvE6encodeERNS_7EncoderERKS7_'/>
+<use f='WebKit/Source/WebKit/Shared/WebCoreArgumentCoders.cpp' l='3102' c='_ZN3IPC13ArgumentCoderIN7WebCore12ScriptBufferEvE6encodeERNS_7EncoderERKS2_'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/WebEvent.cpp' l='47' c='_ZNK6WebKit8WebEvent6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/WebKeyboardEvent.cpp' l='151' c='_ZNK6WebKit16WebKeyboardEvent6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/WebMouseEvent.cpp' l='65' c='_ZNK6WebKit13WebMouseEvent6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/WebPlatformTouchPoint.cpp' l='57' c='_ZNK6WebKit21WebPlatformTouchPoint6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/WebTouchEvent.cpp' l='44' c='_ZNK6WebKit13WebTouchEvent6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/Shared/WebWheelEvent.cpp' l='79' c='_ZNK6WebKit13WebWheelEvent6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/WebProcess/Plugins/Plugin.cpp' l='42' c='_ZNK6WebKit6Plugin10Parameters6encodeERN3IPC7EncoderE'/>
+<size>576</size>
+<use f='WebKit/Source/WebKit/WebProcess/WebPage/WebPage.cpp' l='4983' c='_ZN6WebKit7WebPage21didReceiveSyncMessageERN3IPC10ConnectionERNS1_7DecoderERN3WTF9UniqueRefINS1_7EncoderEEE'/>
+<size>576</size>

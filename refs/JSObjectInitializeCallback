@@ -1,0 +1,24 @@
+<doc f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSObjectRef.h' l='79'>/*! 
+@typedef JSObjectInitializeCallback
+@abstract The callback invoked when an object is first created.
+@param ctx The execution context to use.
+@param object The JSObject being created.
+@discussion If you named your function Initialize, you would declare it like this:
+
+void Initialize(JSContextRef ctx, JSObjectRef object);
+
+Unlike the other object callbacks, the initialize callback is called on the least
+derived class (the parent class) first, and the most derived class last.
+*/</doc>
+<doc f='WebKit/Source/JavaScriptCore/API/JSObjectRef.h' l='79'>/*! 
+@typedef JSObjectInitializeCallback
+@abstract The callback invoked when an object is first created.
+@param ctx The execution context to use.
+@param object The JSObject being created.
+@discussion If you named your function Initialize, you would declare it like this:
+
+void Initialize(JSContextRef ctx, JSObjectRef object);
+
+Unlike the other object callbacks, the initialize callback is called on the least
+derived class (the parent class) first, and the most derived class last.
+*/</doc>

@@ -1,0 +1,19 @@
+<dec f='include/xcb/xproto.h' l='6089' type='xcb_void_cookie_t xcb_destroy_window_checked(xcb_connection_t * c, xcb_window_t window)'/>
+<doc f='include/xcb/xproto.h' l='6070'>/**
+ * @brief Destroys a window
+ *
+ * @param c The connection
+ * @param window The window to destroy.
+ * @return A cookie
+ *
+ * Destroys the specified window and all of its subwindows. A DestroyNotify event
+ * is generated for each destroyed window (a DestroyNotify event is first generated
+ * for any given window&apos;s inferiors). If the window was mapped, it will be
+ * automatically unmapped before destroying.
+ * 
+ * Calling DestroyWindow on the root window will do nothing.
+ *
+ * This form can be used only if the request will not cause
+ * a reply to be generated. Any returned error will be
+ * saved for handling by xcb_request_check().
+ */</doc>

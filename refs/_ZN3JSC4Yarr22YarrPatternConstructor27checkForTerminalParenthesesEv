@@ -1,0 +1,9 @@
+<def f='WebKit/Source/JavaScriptCore/yarr/YarrPattern.cpp' l='959' ll='979' type='void JSC::Yarr::YarrPatternConstructor::checkForTerminalParentheses()'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrPattern.cpp' l='1121' u='c' c='_ZN3JSC4Yarr11YarrPattern7compileERKN3WTF6StringE'/>
+<doc f='WebKit/Source/JavaScriptCore/yarr/YarrPattern.cpp' l='952'>// This optimization identifies sets of parentheses that we will never need to backtrack.
+    // In these cases we do not need to store state from prior iterations.
+    // We can presently avoid backtracking for:
+    //   * where the parens are at the end of the regular expression (last term in any of the
+    //     alternatives of the main body disjunction).
+    //   * where the parens are non-capturing, and quantified unbounded greedy (*).
+    //   * where the parens do not contain any capturing subpatterns.</doc>

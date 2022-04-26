@@ -1,0 +1,22 @@
+<use f='include/gstreamer-1.0/gst/gstpad.h' l='32'/>
+<def f='include/gstreamer-1.0/gst/gstpad.h' l='588' ll='603'/>
+<size>72</size>
+<doc f='include/gstreamer-1.0/gst/gstpad.h' l='575'>/**
+ * GstPadProbeInfo:
+ * @type: the current probe type
+ * @id: the id of the probe
+ * @data: (allow-none): type specific data, check the @type field to know the
+ *    datatype.  This field can be %NULL.
+ * @offset: offset of pull probe, this field is valid when @type contains
+ *    #GST_PAD_PROBE_TYPE_PULL
+ * @size: size of pull probe, this field is valid when @type contains
+ *    #GST_PAD_PROBE_TYPE_PULL
+ *
+ * Info passed in the #GstPadProbeCallback.
+ */</doc>
+<mbr r='_GstPadProbeInfo::type' o='0' t='GstPadProbeType'/>
+<mbr r='_GstPadProbeInfo::id' o='64' t='gulong'/>
+<mbr r='_GstPadProbeInfo::data' o='128' t='gpointer'/>
+<mbr r='_GstPadProbeInfo::offset' o='192' t='guint64'/>
+<mbr r='_GstPadProbeInfo::size' o='256' t='guint'/>
+<mbr r='_GstPadProbeInfo::ABI' o='320' t='union (anonymous union at /usr/include/gstreamer-1.0/gst/gstpad.h:597:3)'/>

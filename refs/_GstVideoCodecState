@@ -1,0 +1,28 @@
+<use f='include/gstreamer-1.0/gst/video/gstvideoutils.h' l='39'/>
+<def f='include/gstreamer-1.0/gst/video/gstvideoutils.h' l='61' ll='77'/>
+<size>336</size>
+<doc f='include/gstreamer-1.0/gst/video/gstvideoutils.h' l='42'>/**
+ * GstVideoCodecState:
+ * @info: The #GstVideoInfo describing the stream
+ * @caps: The #GstCaps used in the caps negotiation of the pad.
+ * @codec_data: a #GstBuffer corresponding to the
+ *     &apos;codec_data&apos; field of a stream, or NULL.
+ * @allocation_caps: The #GstCaps for allocation query and pool
+ *     negotiation. Since: 1.10
+ *
+ * Structure representing the state of an incoming or outgoing video
+ * stream for encoders and decoders.
+ *
+ * Decoders and encoders will receive such a state through their
+ * respective @set_format vmethods.
+ *
+ * Decoders and encoders can set the downstream state, by using the
+ * @gst_video_decoder_set_output_state() or
+ * @gst_video_encoder_set_output_state() methods.
+ */</doc>
+<mbr r='_GstVideoCodecState::ref_count' o='0' t='gint'/>
+<mbr r='_GstVideoCodecState::info' o='64' t='GstVideoInfo'/>
+<mbr r='_GstVideoCodecState::caps' o='1280' t='GstCaps *'/>
+<mbr r='_GstVideoCodecState::codec_data' o='1344' t='GstBuffer *'/>
+<mbr r='_GstVideoCodecState::allocation_caps' o='1408' t='GstCaps *'/>
+<mbr r='_GstVideoCodecState::padding' o='1472' t='gpointer [19]'/>

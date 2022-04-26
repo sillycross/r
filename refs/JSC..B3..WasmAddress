@@ -1,0 +1,16 @@
+<dec f='WebKit/Source/JavaScriptCore/b3/B3Opcode.h' l='281' type='73'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.h' l='429' c='_ZN3JSC2B35Value18adjacencyListSpaceENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3WasmAddressValue.h' l='37' u='r' c='_ZN3JSC2B316WasmAddressValue7acceptsENS0_4KindE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3WasmAddressValue.h' l='52' u='r' c='_ZN3JSC2B316WasmAddressValue21opcodeFromConstructorENS0_6OriginEPNS0_5ValueENS_12X86Registers10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueInlines.h' l='147' c='_ZNK3JSC2B35Value19adjacencyListOffsetEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueInlines.h' l='147' c='_ZNK3JSC2B35Value9cloneImplEv'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/B3Opcode.h' l='277'>// This is used to compute the actual address of a Wasm memory operation. It takes an IntPtr
+    // and a pinned register then computes the appropriate IntPtr address. For the use-case of
+    // Wasm it is important that the first child initially be a ZExt32 so the top bits are cleared.
+    // We do WasmAddress(ZExt32(ptr), ...) so that we can avoid generating extraneous moves in Air.</doc>
+<use f='WebKit/Source/JavaScriptCore/b3/B3WasmAddressValue.cpp' l='45' u='r' c='_ZN3JSC2B316WasmAddressValueC1ENS0_6OriginEPNS0_5ValueENS_12X86Registers10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='611' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir13effectiveAddrEPNS0_5ValueET_NS0_5WidthE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='3452' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Opcode.cpp' l='321' c='_ZN3WTF13printInternalERNS_11PrintStreamEN3JSC2B36OpcodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Validate.cpp' l='431' c='_ZN3JSC2B312_GLOBAL__N_19Validater3runEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='629' c='_ZNK3JSC2B35Value7effectsEv'/>

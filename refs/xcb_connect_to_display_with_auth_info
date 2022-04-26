@@ -1,0 +1,18 @@
+<dec f='include/xcb/xcb.h' l='586' type='xcb_connection_t * xcb_connect_to_display_with_auth_info(const char * display, xcb_auth_info_t * auth, int * screen)'/>
+<doc f='include/xcb/xcb.h' l='569'>/**
+ * @brief Connects to the X server, using an authorization information.
+ * @param display The name of the display.
+ * @param auth The authorization information.
+ * @param screen A pointer to a preferred screen number.
+ * @return A newly allocated xcb_connection_t structure.
+ *
+ * Connects to the X server specified by @p displayname, using the
+ * authorization @p auth. If a particular screen on that server is
+ * preferred, the int pointed to by @p screenp (if not @c NULL) will
+ * be set to that screen; otherwise @p screenp will be set to 0.
+ *
+ * Always returns a non-NULL pointer to a xcb_connection_t, even on failure.
+ * Callers need to use xcb_connection_has_error() to check for failure.
+ * When finished, use xcb_disconnect() to close the connection and free
+ * the structure.
+ */</doc>

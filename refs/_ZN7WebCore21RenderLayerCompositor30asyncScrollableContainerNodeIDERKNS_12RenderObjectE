@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='220' type='static WebCore::ScrollingNodeID WebCore::RenderLayerCompositor::asyncScrollableContainerNodeID(const WebCore::RenderObject &amp; )'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.h' l='218'>// Returns the ScrollingNodeID for the containing async-scrollable layer that scrolls this renderer&apos;s border box.
+    // May return 0 for position-fixed content.</doc>
+<def f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='2958' ll='2986' type='static WebCore::ScrollingNodeID WebCore::RenderLayerCompositor::asyncScrollableContainerNodeID(const WebCore::RenderObject &amp; renderer)'/>
+<use f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='4951' u='c' c='_ZN7WebCore21RenderLayerCompositor31updateSynchronousScrollingNodesEv'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderLayerCompositor.cpp' l='2957'>// Note that this returns the ScrollingNodeID of the scroller this layer is embedded in, not the layer&apos;s own ScrollingNodeID if it has one.</doc>
+<use f='WebKit/Source/WebCore/page/scrolling/AsyncScrollingCoordinator.cpp' l='830' u='c' c='_ZNK7WebCore25AsyncScrollingCoordinator25scrollableContainerNodeIDERKNS_12RenderObjectE'/>

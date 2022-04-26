@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/WebCore/dom/EventPath.h' l='44' type='Vector&lt;WebCore::EventTarget *&gt; WebCore::EventPath::computePathUnclosedToTarget(const WebCore::EventTarget &amp; ) const'/>
+<use f='WebKit/Source/WebCore/dom/Event.cpp' l='144' u='c' c='_ZNK7WebCore5Event12composedPathEv'/>
+<def f='WebKit/Source/WebCore/dom/EventPath.cpp' l='237' ll='273' type='Vector&lt;WebCore::EventTarget *&gt; WebCore::EventPath::computePathUnclosedToTarget(const WebCore::EventTarget &amp; target) const'/>
+<doc f='WebKit/Source/WebCore/dom/EventPath.cpp' l='233'>// https://dom.spec.whatwg.org/#dom-event-composedpath
+// Any node whose depth computed in EventPath::buildPath is greater than the context object is excluded.
+// Because we can exit out of a closed shadow tree and re-enter another closed shadow tree via a slot,
+// we decrease the *allowed depth* whenever we moved to a &quot;shallower&quot; (closer-to-document) tree.</doc>

@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.h' l='228' type='bool JSC::AccessCase::couldStillSucceed() const'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.h' l='224'>// Is it still possible for this case to ever be taken? Must call this as a prerequisite for
+    // calling generate() and friends. If this returns true, then you can call generate(). If
+    // this returns false, then generate() will crash. You must call generate() in the same epoch
+    // as when you called couldStillSucceed().</doc>
+<def f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='587' ll='599' type='bool JSC::AccessCase::couldStillSucceed() const'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/PolymorphicAccess.cpp' l='452' u='c' c='_ZN3JSC17PolymorphicAccess10regenerateERKNS_24GCSafeConcurrentJSLockerERNS_2VMEPNS_14JSGlobalObjectEPNS_9CodeBlockENS_8ECMAModeERNS_17StructureStubInfoE'/>

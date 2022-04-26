@@ -1,0 +1,55 @@
+<use f='include/gtk-3.0/gtk/gtktextattributes.h' l='64'/>
+<def f='include/gtk-3.0/gtk/gtktextattributes.h' l='166' ll='227'/>
+<size>168</size>
+<doc f='include/gtk-3.0/gtk/gtktextattributes.h' l='137'>/**
+ * GtkTextAttributes:
+ * @appearance: #GtkTextAppearance for text.
+ * @justification: #GtkJustification for text.
+ * @direction: #GtkTextDirection for text.
+ * @font: #PangoFontDescription for text.
+ * @font_scale: Font scale factor.
+ * @left_margin: Width of the left margin in pixels.
+ * @right_margin: Width of the right margin in pixels.
+ * @indent: Amount to indent the paragraph, in pixels.
+ * @pixels_above_lines: Pixels of blank space above paragraphs.
+ * @pixels_below_lines: Pixels of blank space below paragraphs.
+ * @pixels_inside_wrap: Pixels of blank space between wrapped lines in
+ *   a paragraph.
+ * @tabs: Custom #PangoTabArray for this text.
+ * @wrap_mode: #GtkWrapMode for text.
+ * @language: #PangoLanguage for text.
+ * @invisible: Hide the text.
+ * @bg_full_height: Background is fit to full line height rather than
+ *    baseline +/- ascent/descent (font height).
+ * @editable: Can edit this text.
+ * @no_fallback: Whether to disable font fallback.
+ * @letter_spacing: Extra space to insert between graphemes, in Pango units
+ *
+ * Using #GtkTextAttributes directly should rarely be necessary.
+ * It’s primarily useful with gtk_text_iter_get_attributes().
+ * As with most GTK+ structs, the fields in this struct should only
+ * be read, never modified directly.
+ */</doc>
+<mbr r='_GtkTextAttributes::refcount' o='0' t='guint'/>
+<mbr r='_GtkTextAttributes::appearance' o='64' t='GtkTextAppearance'/>
+<mbr r='_GtkTextAttributes::justification' o='448' t='GtkJustification'/>
+<mbr r='_GtkTextAttributes::direction' o='480' t='GtkTextDirection'/>
+<mbr r='_GtkTextAttributes::font' o='512' t='PangoFontDescription *'/>
+<mbr r='_GtkTextAttributes::font_scale' o='576' t='gdouble'/>
+<mbr r='_GtkTextAttributes::left_margin' o='640' t='gint'/>
+<mbr r='_GtkTextAttributes::right_margin' o='672' t='gint'/>
+<mbr r='_GtkTextAttributes::indent' o='704' t='gint'/>
+<mbr r='_GtkTextAttributes::pixels_above_lines' o='736' t='gint'/>
+<mbr r='_GtkTextAttributes::pixels_below_lines' o='768' t='gint'/>
+<mbr r='_GtkTextAttributes::pixels_inside_wrap' o='800' t='gint'/>
+<mbr r='_GtkTextAttributes::tabs' o='832' t='PangoTabArray *'/>
+<mbr r='_GtkTextAttributes::wrap_mode' o='896' t='GtkWrapMode'/>
+<mbr r='_GtkTextAttributes::language' o='960' t='PangoLanguage *'/>
+<mbr r='_GtkTextAttributes::pg_bg_color' o='1024' t='GdkColor *'/>
+<mbr r='_GtkTextAttributes::invisible' o='1088' t='guint'/>
+<mbr r='_GtkTextAttributes::bg_full_height' o='1089' t='guint'/>
+<mbr r='_GtkTextAttributes::editable' o='1090' t='guint'/>
+<mbr r='_GtkTextAttributes::no_fallback' o='1091' t='guint'/>
+<mbr r='_GtkTextAttributes::pg_bg_rgba' o='1152' t='GdkRGBA *'/>
+<mbr r='_GtkTextAttributes::letter_spacing' o='1216' t='gint'/>
+<mbr r='_GtkTextAttributes::font_features' o='1280' t='gchar *'/>

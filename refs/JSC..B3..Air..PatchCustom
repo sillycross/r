@@ -1,0 +1,32 @@
+<def f='WebKit/Source/JavaScriptCore/b3/air/AirCustom.h' l='60' ll='117'/>
+<size>1</size>
+<doc f='WebKit/Source/JavaScriptCore/b3/air/AirCustom.h' l='40'>// This defines the behavior of custom instructions - i.e. those whose behavior cannot be
+// described using AirOpcode.opcodes. If you define an opcode as &quot;custom Foo&quot; in that file, then
+// you will need to create a &quot;struct FooCustom&quot; here that implements the custom behavior
+// methods.
+//
+// The customizability granted by the custom instruction mechanism is strictly less than what
+// you get using the Patch instruction and implementing a Special. However, that path requires
+// allocating a Special object and ensuring that it&apos;s the first operand. For many instructions,
+// that is not as convenient as using Custom, which makes the instruction look like any other
+// instruction. Note that both of those extra powers of the Patch instruction happen because we
+// special-case that instruction in many phases and analyses. Non-special-cased behaviors of
+// Patch are implemented using the custom instruction mechanism.
+//
+// Specials are still more flexible if you need to list extra clobbered registers and you&apos;d like
+// that to be expressed as a bitvector rather than an arglist. They are also more flexible if
+// you need to carry extra state around with the instruction. Also, Specials mean that you
+// always have access to Code&amp; even in methods that don&apos;t take a GenerationContext.
+
+// Definition of Patch instruction. Patch is used to delegate the behavior of the instruction to the
+// Special object, which will be the first argument to the instruction.</doc>
+<fun r='_ZN3JSC2B33Air11PatchCustom10forEachArgERNS1_4InstEN3WTF12ScopedLambdaIFvRNS1_3ArgENS7_4RoleENS0_4BankENS0_5WidthEEEE'/>
+<fun r='_ZN3JSC2B33Air11PatchCustom17isValidFormStaticEDpT_'/>
+<fun r='_ZN3JSC2B33Air11PatchCustom11isValidFormERNS1_4InstE'/>
+<fun r='_ZN3JSC2B33Air11PatchCustom11admitsStackERNS1_4InstEj'/>
+<fun r='_ZN3JSC2B33Air11PatchCustom24admitsExtendedOffsetAddrERNS1_4InstEj'/>
+<fun r='_ZN3JSC2B33Air11PatchCustom20shouldTryAliasingDefERNS1_4InstE'/>
+<fun r='_ZN3JSC2B33Air11PatchCustom10isTerminalERNS1_4InstE'/>
+<fun r='_ZN3JSC2B33Air11PatchCustom16hasNonArgEffectsERNS1_4InstE'/>
+<fun r='_ZN3JSC2B33Air11PatchCustom26hasNonArgNonControlEffectsERNS1_4InstE'/>
+<fun r='_ZN3JSC2B33Air11PatchCustom8generateERNS1_4InstERNS_12CCallHelpersERNS1_17GenerationContextE'/>

@@ -1,0 +1,174 @@
+<def f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_types.h' l='171' ll='236'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_types.h' l='176'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_types.h' l='189'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_types.h' l='204'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_types.h' l='245'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='47' c='ud_init'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='49' c='ud_set_mode'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='51' c='ud_set_pc'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='53' c='ud_set_input_hook'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='53' c='ud_set_input_hook'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='55' c='ud_set_input_buffer'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='58' c='ud_set_input_file'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='61' c='ud_set_vendor'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='63' c='ud_set_syntax'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='63' c='ud_set_syntax'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='65' c='ud_input_skip'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='67' c='ud_input_end'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='69' c='ud_decode'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='71' c='ud_disassemble'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='73' c='ud_translate_intel'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='75' c='ud_translate_att'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='77' c='ud_insn_asm'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='79' c='ud_insn_ptr'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='81' c='ud_insn_off'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='83' c='ud_insn_hex'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='85' c='ud_insn_len'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='87' c='ud_insn_opr'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='93' c='ud_insn_mnemonic'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='97' c='ud_set_user_opaque_data'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='99' c='ud_get_user_opaque_data'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='101' c='ud_set_asm_buffer'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='103' c='ud_set_sym_resolver'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_extern.h' l='104' c='ud_set_sym_resolver'/>
+<size>632</size>
+<doc f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_types.h' l='167'>/* -----------------------------------------------------------------------------
+ * struct ud - The udis86 object.
+ * -----------------------------------------------------------------------------
+ */</doc>
+<mbr r='ud::inp_hook' o='0' t='int (*)(struct ud *)'/>
+<mbr r='ud::inp_file' o='64' t='FILE *'/>
+<mbr r='ud::inp_buf' o='128' t='const uint8_t *'/>
+<mbr r='ud::inp_buf_size' o='192' t='size_t'/>
+<mbr r='ud::inp_buf_index' o='256' t='size_t'/>
+<mbr r='ud::inp_curr' o='320' t='uint8_t'/>
+<mbr r='ud::inp_ctr' o='384' t='size_t'/>
+<mbr r='ud::inp_sess' o='448' t='uint8_t [64]'/>
+<mbr r='ud::inp_end' o='960' t='int'/>
+<mbr r='ud::inp_peek' o='992' t='int'/>
+<mbr r='ud::translator' o='1024' t='void (*)(struct ud *)'/>
+<mbr r='ud::insn_offset' o='1088' t='uint64_t'/>
+<mbr r='ud::insn_hexcode' o='1152' t='char [64]'/>
+<mbr r='ud::asm_buf' o='1664' t='char *'/>
+<mbr r='ud::asm_buf_size' o='1728' t='size_t'/>
+<mbr r='ud::asm_buf_fill' o='1792' t='size_t'/>
+<mbr r='ud::asm_buf_int' o='1856' t='char [128]'/>
+<mbr r='ud::sym_resolver' o='2880' t='const char *(*)(struct ud *, uint64_t, int64_t *)'/>
+<mbr r='ud::dis_mode' o='2944' t='uint8_t'/>
+<mbr r='ud::pc' o='3008' t='uint64_t'/>
+<mbr r='ud::vendor' o='3072' t='uint8_t'/>
+<mbr r='ud::mnemonic' o='3104' t='enum ud_mnemonic_code'/>
+<mbr r='ud::operand' o='3136' t='struct ud_operand [4]'/>
+<mbr r='ud::error' o='4672' t='uint8_t'/>
+<mbr r='ud::_rex' o='4680' t='uint8_t'/>
+<mbr r='ud::pfx_rex' o='4688' t='uint8_t'/>
+<mbr r='ud::pfx_seg' o='4696' t='uint8_t'/>
+<mbr r='ud::pfx_opr' o='4704' t='uint8_t'/>
+<mbr r='ud::pfx_adr' o='4712' t='uint8_t'/>
+<mbr r='ud::pfx_lock' o='4720' t='uint8_t'/>
+<mbr r='ud::pfx_str' o='4728' t='uint8_t'/>
+<mbr r='ud::pfx_rep' o='4736' t='uint8_t'/>
+<mbr r='ud::pfx_repe' o='4744' t='uint8_t'/>
+<mbr r='ud::pfx_repne' o='4752' t='uint8_t'/>
+<mbr r='ud::opr_mode' o='4760' t='uint8_t'/>
+<mbr r='ud::adr_mode' o='4768' t='uint8_t'/>
+<mbr r='ud::br_far' o='4776' t='uint8_t'/>
+<mbr r='ud::br_near' o='4784' t='uint8_t'/>
+<mbr r='ud::have_modrm' o='4792' t='uint8_t'/>
+<mbr r='ud::modrm' o='4800' t='uint8_t'/>
+<mbr r='ud::modrm_offset' o='4808' t='uint8_t'/>
+<mbr r='ud::vex_op' o='4816' t='uint8_t'/>
+<mbr r='ud::vex_b1' o='4824' t='uint8_t'/>
+<mbr r='ud::vex_b2' o='4832' t='uint8_t'/>
+<mbr r='ud::primary_opcode' o='4840' t='uint8_t'/>
+<mbr r='ud::user_opaque_data' o='4864' t='void *'/>
+<mbr r='ud::itab_entry' o='4928' t='const struct ud_itab_entry *'/>
+<mbr r='ud::le' o='4992' t='const struct ud_lookup_table_list_entry *'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='39' c='ud_inp_init'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='47' c='ud_init'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='49' c='ud_init'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='68' c='ud_disassemble'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='89' c='ud_set_mode'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='104' c='ud_set_vendor'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='123' c='ud_set_pc'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='133' c='ud_set_syntax'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='133' c='ud_set_syntax'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='143' c='ud_insn_asm'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='153' c='ud_insn_off'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='164' c='ud_insn_hex'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='190' c='ud_insn_ptr'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='203' c='ud_insn_len'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='217' c='ud_insn_opr'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='263' c='ud_set_user_opaque_data'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='269' c='ud_get_user_opaque_data'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='282' c='ud_set_asm_buffer'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='309' c='ud_set_sym_resolver'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='309' c='ud_set_sym_resolver'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='323' c='ud_insn_mnemonic'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='351' c='ud_inp_init'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='371' c='ud_set_input_hook'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='371' c='ud_set_input_hook'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='383' c='ud_set_input_buffer'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='399' c='inp_file_hook'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='405' c='ud_set_input_file'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='420' c='ud_input_skip'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86.c' l='455' c='ud_input_end'/>
+<size>632</size>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='64' c='decode_ext'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='65' c='decode_opcode'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='81' c='inp_start'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='87' c='inp_peek'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='110' c='inp_next'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='134' c='inp_curr'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='148' c='inp_uint8'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='154' c='inp_uint16'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='164' c='inp_uint32'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='178' c='inp_uint64'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='234' c='decode_prefixes'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='302' c='vex_l'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='309' c='vex_w'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='317' c='modrm'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='329' c='resolve_operand_size'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='349' c='resolve_mnemonic'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='385' c='decode_a'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='407' c='decode_gpr'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='433' c='decode_reg'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='477' c='decode_imm'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='498' c='decode_mem_disp'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='530' c='decode_modrm_reg'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='547' c='decode_modrm_rm'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='689' c='decode_moffset'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='701' c='decode_vex_vvvv'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='715' c='decode_vex_immreg'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='733' c='decode_operand'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='902' c='decode_operands'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='930' c='clear_insn'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='956' c='resolve_pfx_str'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='972' c='resolve_mode'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='1037' c='decode_insn'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='1061' c='decode_3dnow'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='1079' c='decode_ssepfx'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='1116' c='decode_vex'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='1151' c='decode_ext'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='1221' c='decode_opcode'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_decode.c' l='1236' c='ud_decode'/>
+<size>632</size>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn.h' l='36' c='ud_syn_rel_target'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn.h' l='39' c='ud_asmprintf'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn.h' l='45' c='ud_syn_print_addr'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn.h' l='46' c='ud_syn_print_imm'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn.h' l='47' c='ud_syn_print_mem_disp'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn-att.c' l='43' c='opr_cast'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn-att.c' l='57' c='gen_operand'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn-att.c' l='128' c='ud_translate_att'/>
+<size>632</size>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn-intel.c' l='43' c='opr_cast'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn-intel.c' l='64' c='gen_operand'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn-intel.c' l='132' c='ud_translate_intel'/>
+<size>632</size>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn.c' l='97' c='ud_syn_rel_target'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn.c' l='118' c='ud_asmprintf'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn.c' l='137' c='ud_syn_print_addr'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn.c' l='157' c='ud_syn_print_imm'/>
+<use f='WebKit/Source/JavaScriptCore/disassembler/udis86/udis86_syn.c' l='184' c='ud_syn_print_mem_disp'/>
+<size>632</size>

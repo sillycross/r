@@ -1,0 +1,56 @@
+<dec f='WebKit/Source/JavaScriptCore/dfg/DFGStoreBarrierClusteringPhase.h' l='86' type='bool JSC::DFG::performStoreBarrierClustering(JSC::DFG::Graph &amp; )'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPlan.cpp' l='328' u='c' c='_ZN3JSC3DFG4Plan19compileInThreadImplEv'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGPlan.cpp' l='426' u='c' c='_ZN3JSC3DFG4Plan19compileInThreadImplEv'/>
+<doc f='WebKit/Source/JavaScriptCore/dfg/DFGStoreBarrierClusteringPhase.h' l='34'>// Picks up groups of barriers that could be executed in any order with respect to each other and
+// places then at the earliest point in the program where the cluster would be correct. This phase
+// makes only the first of the cluster be a FencedStoreBarrier while the rest are normal
+// StoreBarriers. This phase also removes redundant barriers - for example, the cluster may end up
+// with two or more barriers on the same object, in which case it is totally safe for us to drop
+// one of them. The reason why this is sound hinges on the &quot;earliest point where the cluster would
+// be correct&quot; property. For example, take this input:
+//
+//     a: Call()
+//     b: PutByOffset(@o, @o, @x)
+//     c: FencedStoreBarrier(@o)
+//     d: PutByOffset(@o, @o, @y)
+//     e: FencedStoreBarrier(@o)
+//     f: PutByOffset(@p, @p, @z)
+//     g: FencedStoreBarrier(@p)
+//     h: GetByOffset(@q)
+//     i: Call()
+//
+// The cluster of barriers is @c, @e, and @g. All of the barriers are between two doesGC effects:
+// the calls at @a and @i. Because there are no doesGC effects between @a and @i and there is no
+// possible control flow entry into this sequence between @ and @i, we could could just execute all
+// of the barriers just before @i in any order. The earliest point where the cluster would be
+// correct is just after @f, since that&apos;s the last operation that needs a barrier. We use the
+// earliest to reduce register pressure. When the barriers are clustered just after @f, we get:
+//
+//     a: Call()
+//     b: PutByOffset(@o, @o, @x)
+//     d: PutByOffset(@o, @o, @y)
+//     f: PutByOffset(@p, @p, @z)
+//     c: FencedStoreBarrier(@o)
+//     e: FencedStoreBarrier(@o)
+//     g: FencedStoreBarrier(@p)
+//     h: GetByOffset(@q)
+//     i: Call()
+//
+// This phase does more. It takes advantage of the clustering to remove fences and remove redundant
+// barriers. So this phase will output this:
+//
+//     a: Call()
+//     b: PutByOffset(@o, @o, @x)
+//     d: PutByOffset(@o, @o, @y)
+//     f: PutByOffset(@p, @p, @z)
+//     c: FencedStoreBarrier(@o)
+//     g: StoreBarrier(@p)
+//     h: GetByOffset(@q)
+//     i: Call()
+//
+// This optimization improves both overall throughput and the throughput while the concurrent GC is
+// running. In the former, we are simplifying instruction selection for all but the first fence. In
+// the latter, we are reducing the cost of all but the first barrier. The first barrier will awlays
+// take slow path when there is concurrent GC activity, since the slow path contains the fence. But
+// all of the other barriers will only take slow path if they really need to remember the object.</doc>
+<def f='WebKit/Source/JavaScriptCore/dfg/DFGStoreBarrierClusteringPhase.cpp' l='172' ll='175' type='bool JSC::DFG::performStoreBarrierClustering(JSC::DFG::Graph &amp; graph)'/>

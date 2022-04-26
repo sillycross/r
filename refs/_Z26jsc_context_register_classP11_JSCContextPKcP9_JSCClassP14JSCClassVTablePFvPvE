@@ -1,0 +1,18 @@
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCContext.cpp' l='1086' ll='1095' type='JSCClass * jsc_context_register_class(JSCContext * context, const char * name, JSCClass * parentClass, JSCClassVTable * vtable, GDestroyNotify destroyFunction)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCContext.cpp' l='1069'>/**
+ * jsc_context_register_class:
+ * @context: a #JSCContext
+ * @name: the class name
+ * @parent_class: (nullable): a #JSCClass or %NULL
+ * @vtable: (nullable): an optional #JSCClassVTable or %NULL
+ * @destroy_notify: (nullable): a destroy notifier for class instances
+ *
+ * Register a custom class in @context using the given @name. If the new class inherits from
+ * another #JSCClass, the parent should be passed as @parent_class, otherwise %NULL should be
+ * used. The optional @vtable parameter allows to provide a custom implementation for handling
+ * the class, for example, to handle external properties not added to the prototype.
+ * When an instance of the #JSCClass is cleared in the context, @destroy_notify is called with
+ * the instance as parameter.
+ *
+ * Returns: (transfer none): a #JSCClass
+ */</doc>

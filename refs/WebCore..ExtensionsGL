@@ -1,0 +1,152 @@
+<use f='WebKit/Source/WebCore/platform/graphics/GraphicsContextGL.h' l='1258' c='_ZN7WebCore17GraphicsContextGL13getExtensionsEv'/>
+<def f='WebKit/Source/WebCore/platform/graphics/ExtensionsGL.h' l='43' ll='299'/>
+<ovr f='WebKit/Source/WebCore/platform/graphics/opengl/ExtensionsGLOpenGLCommon.h' l='38' c='WebCore::ExtensionsGLOpenGLCommon'/>
+<use f='WebKit/Source/WebCore/platform/graphics/opengl/ExtensionsGLOpenGLCommon.h' l='38'/>
+<size>8</size>
+<doc f='WebKit/Source/WebCore/platform/graphics/ExtensionsGL.h' l='34'>// This is a base class containing only pure virtual functions.
+// Implementations must provide a subclass.
+//
+// The supported extensions are defined below and in subclasses,
+// possibly platform-specific ones.
+//
+// Calling any extension function not supported by the current context
+// must be a no-op; in particular, it may not have side effects. In
+// this situation, if the function has a return value, 0 is returned.</doc>
+<fun r='_ZN7WebCore12ExtensionsGLD1Ev'/>
+<fun r='_ZN7WebCore12ExtensionsGL8supportsERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore12ExtensionsGL13ensureEnabledERKN3WTF6StringE'/>
+<fun r='_ZN7WebCore12ExtensionsGL9isEnabledERKN3WTF6StringE'/>
+<smbr r='WebCore::ExtensionsGL::SRGB_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::SRGB_ALPHA_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::SRGB8_ALPHA8_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::MIN_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::MAX_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::BGRA_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::GUILTY_CONTEXT_RESET_ARB' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::INNOCENT_CONTEXT_RESET_ARB' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::UNKNOWN_CONTEXT_RESET_ARB' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::CONTEXT_ROBUST_ACCESS' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DEPTH24_STENCIL8' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::READ_FRAMEBUFFER' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DRAW_FRAMEBUFFER' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DRAW_FRAMEBUFFER_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::READ_FRAMEBUFFER_BINDING' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::RENDERBUFFER_SAMPLES' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::FRAMEBUFFER_INCOMPLETE_MULTISAMPLE' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::MAX_SAMPLES' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::RENDERBUFFER_SAMPLES_IMG' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_IMG' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::MAX_SAMPLES_IMG' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::TEXTURE_SAMPLES_IMG' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::FRAGMENT_SHADER_DERIVATIVE_HINT_OES' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::RGB8_OES' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::RGBA8_OES' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::VERTEX_ARRAY_BINDING_OES' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::TRANSLATED_SHADER_SOURCE_LENGTH_ANGLE' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::TEXTURE_RECTANGLE_ARB' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::TEXTURE_BINDING_RECTANGLE_ARB' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGB_S3TC_DXT1_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_S3TC_DXT1_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_S3TC_DXT3_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_S3TC_DXT5_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB_S3TC_DXT1_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::ETC1_RGB8_OES' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_R11_EAC' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SIGNED_R11_EAC' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RG11_EAC' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SIGNED_RG11_EAC' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGB8_ETC2' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB8_ETC2' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA8_ETC2_EAC' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB8_ALPHA8_ETC2_EAC' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGB_PVRTC_4BPPV1_IMG' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGB_PVRTC_2BPPV1_IMG' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_PVRTC_4BPPV1_IMG' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_PVRTC_2BPPV1_IMG' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_ATC_RGB_AMD' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_ATC_RGBA_EXPLICIT_ALPHA_AMD' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_ATC_RGBA_INTERPOLATED_ALPHA_AMD' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_ASTC_4x4_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_ASTC_5x4_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_ASTC_5x5_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_ASTC_6x5_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_ASTC_6x6_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_ASTC_8x5_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_ASTC_8x6_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_ASTC_8x8_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_ASTC_10x5_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_ASTC_10x6_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_ASTC_10x8_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_ASTC_10x10_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_ASTC_12x10_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RGBA_ASTC_12x12_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB8_ALPHA8_ASTC_4x4_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB8_ALPHA8_ASTC_5x4_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB8_ALPHA8_ASTC_5x5_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB8_ALPHA8_ASTC_6x5_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB8_ALPHA8_ASTC_6x6_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB8_ALPHA8_ASTC_8x5_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB8_ALPHA8_ASTC_8x6_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB8_ALPHA8_ASTC_8x8_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB8_ALPHA8_ASTC_10x5_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB8_ALPHA8_ASTC_10x6_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB8_ALPHA8_ASTC_10x8_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB8_ALPHA8_ASTC_10x10_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB8_ALPHA8_ASTC_12x10_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SRGB8_ALPHA8_ASTC_12x12_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RED_RGTC1_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SIGNED_RED_RGTC1_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_RED_GREEN_RGTC2_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPRESSED_SIGNED_RED_GREEN_RGTC2_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::TEXTURE_MAX_ANISOTROPY_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::MAX_TEXTURE_MAX_ANISOTROPY_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::MAX_DRAW_BUFFERS_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DRAW_BUFFER0_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DRAW_BUFFER1_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DRAW_BUFFER2_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DRAW_BUFFER3_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DRAW_BUFFER4_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DRAW_BUFFER5_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DRAW_BUFFER6_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DRAW_BUFFER7_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DRAW_BUFFER8_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DRAW_BUFFER9_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DRAW_BUFFER10_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DRAW_BUFFER11_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DRAW_BUFFER12_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DRAW_BUFFER13_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DRAW_BUFFER14_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::DRAW_BUFFER15_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::MAX_COLOR_ATTACHMENTS_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COLOR_ATTACHMENT0_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COLOR_ATTACHMENT1_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COLOR_ATTACHMENT2_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COLOR_ATTACHMENT3_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COLOR_ATTACHMENT4_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COLOR_ATTACHMENT5_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COLOR_ATTACHMENT6_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COLOR_ATTACHMENT7_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COLOR_ATTACHMENT8_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COLOR_ATTACHMENT9_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COLOR_ATTACHMENT10_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COLOR_ATTACHMENT11_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COLOR_ATTACHMENT12_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COLOR_ATTACHMENT13_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COLOR_ATTACHMENT14_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COLOR_ATTACHMENT15_EXT' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::COMPLETION_STATUS_KHR' t='const GCGLenum'/>
+<smbr r='WebCore::ExtensionsGL::REQUESTABLE_EXTENSIONS_ANGLE' t='const GCGLenum'/>
+<fun r='_ZN7WebCore12ExtensionsGL25getGraphicsResetStatusARBEv'/>
+<fun r='_ZN7WebCore12ExtensionsGL30getTranslatedShaderSourceANGLEEj'/>
+<fun r='_ZN7WebCore12ExtensionsGL14drawBuffersEXTE8GCGLSpanIKjLm18446744073709551615EE'/>
+<fun r='_ZN7WebCore12ExtensionsGL14readnPixelsEXTEiiiijjiPv'/>
+<fun r='_ZN7WebCore12ExtensionsGL16getnUniformfvEXTEjiiPf'/>
+<fun r='_ZN7WebCore12ExtensionsGL16getnUniformivEXTEjiiPi'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLDepthTexture.cpp' l='55' c='_ZN7WebCore17WebGLDepthTexture9supportedERNS_17GraphicsContextGLE'/>
+<size>8</size>

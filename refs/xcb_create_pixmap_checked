@@ -1,0 +1,20 @@
+<dec f='include/xcb/xproto.h' l='9113' type='xcb_void_cookie_t xcb_create_pixmap_checked(xcb_connection_t * c, uint8_t depth, xcb_pixmap_t pid, xcb_drawable_t drawable, uint16_t width, uint16_t height)'/>
+<doc f='include/xcb/xproto.h' l='9093'>/**
+ * @brief Creates a pixmap
+ *
+ * @param c The connection
+ * @param depth TODO
+ * @param pid The ID with which you will refer to the new pixmap, created by
+ * `xcb_generate_id`.
+ * @param drawable Drawable to get the screen from.
+ * @param width The width of the new pixmap.
+ * @param height The height of the new pixmap.
+ * @return A cookie
+ *
+ * Creates a pixmap. The pixmap can only be used on the same screen as \a drawable
+ * is on and only with drawables of the same \a depth.
+ *
+ * This form can be used only if the request will not cause
+ * a reply to be generated. Any returned error will be
+ * saved for handling by xcb_request_check().
+ */</doc>

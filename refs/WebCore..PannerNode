@@ -1,0 +1,131 @@
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.h' l='133' c='_ZN7WebCore16BaseAudioContext12createPannerEv'/>
+<inh f='WebKit/Source/WebCore/Modules/webaudio/AudioNode.h' l='52' c='WebCore::AudioNode'/>
+<def f='WebKit/Source/WebCore/Modules/webaudio/PannerNode.h' l='54' ll='151'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/PannerNode.h' l='55' c='_ZN7WebCore10PannerNode8bisoHeapEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/PannerNode.h' l='57' c='_ZN7WebCore10PannerNode6createERNS_16BaseAudioContextERKNS_13PannerOptionsE'/>
+<use f='WebKit/WebCore/DerivedSources/JSPannerNode.h' l='34'/>
+<use f='WebKit/WebCore/DerivedSources/JSPannerNode.h' l='35' c='_ZN7WebCore12JSPannerNode6createEPN3JSC9StructureEPNS_17JSDOMGlobalObjectEON3WTF3RefINS_10PannerNodeENS6_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSPannerNode.h' l='61' c='_ZNK7WebCore12JSPannerNode7wrappedEv'/>
+<use f='WebKit/WebCore/DerivedSources/JSPannerNode.h' l='63' c='_ZNK7WebCore12JSPannerNode7wrappedEv'/>
+<use f='WebKit/WebCore/DerivedSources/JSPannerNode.h' l='66' c='_ZN7WebCore12JSPannerNodeC1EPN3JSC9StructureERNS_17JSDOMGlobalObjectEON3WTF3RefINS_10PannerNodeENS6_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSPannerNode.h' l='71' c='_ZN7WebCore4toJSEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectERNS_10PannerNodeE'/>
+<use f='WebKit/WebCore/DerivedSources/JSPannerNode.h' l='72' c='_ZN7WebCore4toJSEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectEPNS_10PannerNodeE'/>
+<use f='WebKit/WebCore/DerivedSources/JSPannerNode.h' l='73' c='_ZN7WebCore16toJSNewlyCreatedEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectEON3WTF3RefINS_10PannerNodeENS5_12RawPtrTraitsIS7_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSPannerNode.h' l='74' c='_ZN7WebCore16toJSNewlyCreatedEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectEON3WTF6RefPtrINS_10PannerNodeENS5_12RawPtrTraitsIS7_EENS5_21DefaultRefDerefTraitsIS7_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSPannerNode.h' l='76'/>
+<use f='WebKit/WebCore/DerivedSources/JSPannerNode.h' l='78'/>
+<size>352</size>
+<doc f='WebKit/Source/WebCore/Modules/webaudio/PannerNode.h' l='47'>// PannerNode is an AudioNode with one input and one output.
+// It positions a sound in 3D space, with the exact effect dependent on the panning model.
+// It has a position and an orientation in 3D space which is relative to the position and orientation of the context&apos;s AudioListener.
+// A distance effect will attenuate the gain as the position moves away from the listener.
+// A cone effect will attenuate the gain as the orientation moves away from the listener.
+// All of these effects follow the OpenAL specification very closely.</doc>
+<fun r='_ZN7WebCore10PannerNode8bisoHeapEv'/>
+<fun r='_ZN7WebCore10PannerNode6createERNS_16BaseAudioContextERKNS_13PannerOptionsE'/>
+<fun r='_ZN7WebCore10PannerNodeD1Ev'/>
+<fun r='_ZN7WebCore10PannerNode7processEm'/>
+<fun r='_ZN7WebCore10PannerNode22processOnlyAudioParamsEm'/>
+<fun r='_ZN7WebCore10PannerNode8listenerEv'/>
+<fun r='_ZNK7WebCore10PannerNode23panningModelForBindingsEv'/>
+<fun r='_ZN7WebCore10PannerNode26setPanningModelForBindingsENS_16PanningModelTypeE'/>
+<fun r='_ZN7WebCore10PannerNode11setPositionEfff'/>
+<fun r='_ZN7WebCore10PannerNode9positionXEv'/>
+<fun r='_ZN7WebCore10PannerNode9positionYEv'/>
+<fun r='_ZN7WebCore10PannerNode9positionZEv'/>
+<fun r='_ZN7WebCore10PannerNode14setOrientationEfff'/>
+<fun r='_ZN7WebCore10PannerNode12orientationXEv'/>
+<fun r='_ZN7WebCore10PannerNode12orientationYEv'/>
+<fun r='_ZN7WebCore10PannerNode12orientationZEv'/>
+<fun r='_ZNK7WebCore10PannerNode24distanceModelForBindingsEv'/>
+<fun r='_ZN7WebCore10PannerNode27setDistanceModelForBindingsENS_17DistanceModelTypeE'/>
+<fun r='_ZNK7WebCore10PannerNode22refDistanceForBindingsEv'/>
+<fun r='_ZN7WebCore10PannerNode25setRefDistanceForBindingsEd'/>
+<fun r='_ZNK7WebCore10PannerNode22maxDistanceForBindingsEv'/>
+<fun r='_ZN7WebCore10PannerNode25setMaxDistanceForBindingsEd'/>
+<fun r='_ZNK7WebCore10PannerNode24rolloffFactorForBindingsEv'/>
+<fun r='_ZN7WebCore10PannerNode27setRolloffFactorForBindingsEd'/>
+<fun r='_ZNK7WebCore10PannerNode25coneInnerAngleForBindingsEv'/>
+<fun r='_ZN7WebCore10PannerNode28setConeInnerAngleForBindingsEd'/>
+<fun r='_ZNK7WebCore10PannerNode25coneOuterAngleForBindingsEv'/>
+<fun r='_ZN7WebCore10PannerNode28setConeOuterAngleForBindingsEd'/>
+<fun r='_ZNK7WebCore10PannerNode24coneOuterGainForBindingsEv'/>
+<fun r='_ZN7WebCore10PannerNode27setConeOuterGainForBindingsEd'/>
+<fun r='_ZN7WebCore10PannerNode15setChannelCountEj'/>
+<fun r='_ZN7WebCore10PannerNode19setChannelCountModeENS_16ChannelCountModeE'/>
+<fun r='_ZNK7WebCore10PannerNode8tailTimeEv'/>
+<fun r='_ZNK7WebCore10PannerNode11latencyTimeEv'/>
+<fun r='_ZN7WebCore10PannerNodeC1ERNS_16BaseAudioContextERKNS_13PannerOptionsE'/>
+<fun r='_ZN7WebCore10PannerNode25calculateAzimuthElevationEPdS1_RKNS_12FloatPoint3DES4_S4_S4_'/>
+<fun r='_ZN7WebCore10PannerNode25calculateDistanceConeGainERKNS_12FloatPoint3DES3_S3_'/>
+<fun r='_ZN7WebCore10PannerNode16distanceConeGainEv'/>
+<fun r='_ZNK7WebCore10PannerNode22requiresTailProcessingEv'/>
+<fun r='_ZN7WebCore10PannerNode16azimuthElevationEPdS1_'/>
+<fun r='_ZN7WebCore10PannerNode27processSampleAccurateValuesEPNS_8AudioBusEPKS1_m'/>
+<fun r='_ZNK7WebCore10PannerNode23hasSampleAccurateValuesEv'/>
+<fun r='_ZNK7WebCore10PannerNode14shouldUseARateEv'/>
+<fun r='_ZNK7WebCore10PannerNode8positionEv'/>
+<fun r='_ZNK7WebCore10PannerNode11orientationEv'/>
+<mbr r='WebCore::PannerNode::m_hrtfDatabaseLoader' o='1728' t='Ref&lt;WebCore::HRTFDatabaseLoader&gt;'/>
+<mbr r='WebCore::PannerNode::m_panningModel' o='1792' t='WebCore::PanningModelType'/>
+<mbr r='WebCore::PannerNode::m_panner' o='1856' t='std::unique_ptr&lt;Panner&gt;'/>
+<mbr r='WebCore::PannerNode::m_distanceEffect' o='1920' t='WebCore::DistanceEffect'/>
+<mbr r='WebCore::PannerNode::m_coneEffect' o='2176' t='WebCore::ConeEffect'/>
+<mbr r='WebCore::PannerNode::m_positionX' o='2368' t='Ref&lt;WebCore::AudioParam&gt;'/>
+<mbr r='WebCore::PannerNode::m_positionY' o='2432' t='Ref&lt;WebCore::AudioParam&gt;'/>
+<mbr r='WebCore::PannerNode::m_positionZ' o='2496' t='Ref&lt;WebCore::AudioParam&gt;'/>
+<mbr r='WebCore::PannerNode::m_orientationX' o='2560' t='Ref&lt;WebCore::AudioParam&gt;'/>
+<mbr r='WebCore::PannerNode::m_orientationY' o='2624' t='Ref&lt;WebCore::AudioParam&gt;'/>
+<mbr r='WebCore::PannerNode::m_orientationZ' o='2688' t='Ref&lt;WebCore::AudioParam&gt;'/>
+<mbr r='WebCore::PannerNode::m_processLock' o='2752' t='WTF::Lock'/>
+<use f='WebKit/WebCore/DerivedSources/JSPannerNode.cpp' l='144' c='_ZN7WebCore16JSDOMConstructor9constructEPN3JSC14JSGlobalObjectEPNS1_9CallFrameE'/>
+<use f='WebKit/WebCore/DerivedSources/JSPannerNode.cpp' l='147' c='_ZN7WebCore16JSDOMConstructor9constructEPN3JSC14JSGlobalObjectEPNS1_9CallFrameE'/>
+<use f='WebKit/WebCore/DerivedSources/JSPannerNode.cpp' l='201' c='_ZN7WebCore12JSPannerNodeC1EPN3JSC9StructureERNS_17JSDOMGlobalObjectEON3WTF3RefINS_10PannerNodeENS6_12RawPtrTraitsIS8_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSPannerNode.cpp' l='665' c='_ZN7WebCore16toJSNewlyCreatedEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectEON3WTF3RefINS_10PannerNodeENS5_12RawPtrTraitsIS7_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSPannerNode.cpp' l='686' c='_ZN7WebCore16toJSNewlyCreatedEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectEON3WTF3RefINS_10PannerNodeENS5_12RawPtrTraitsIS7_EEEE'/>
+<use f='WebKit/WebCore/DerivedSources/JSPannerNode.cpp' l='689' c='_ZN7WebCore4toJSEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectERNS_10PannerNodeE'/>
+<size>352</size>
+<use f='WebKit/WebCore/DerivedSources/JSBaseAudioContext.cpp' l='506' c='_ZN7WebCoreL52jsBaseAudioContextPrototypeFunction_createPannerBodyEPN3JSC14JSGlobalObjectEPNS0_9CallFrameEPNS_18JSBaseAudioContextE'/>
+<size>352</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/BaseAudioContext.cpp' l='392' c='_ZN7WebCore16BaseAudioContext12createPannerEv'/>
+<size>352</size>
+<use f='WebKit/Source/WebCore/Modules/webaudio/PannerNode.cpp' l='45' c='_ZN7WebCore10PannerNode8bisoHeapEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/PannerNode.cpp' l='45' c='_ZN7WebCore10PannerNode8bisoHeapEv'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/PannerNode.cpp' l='45' c='_ZN7WebCore10PannerNodenwEm'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/PannerNode.cpp' l='53' c='_ZN7WebCore10PannerNode6createERNS_16BaseAudioContextERKNS_13PannerOptionsE'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/PannerNode.cpp' l='55' c='_ZN7WebCore10PannerNode6createERNS_16BaseAudioContextERKNS_13PannerOptionsE'/>
+<size>352</size>
+<fun r='_ZN7WebCore10PannerNode8bisoHeapEv'/>
+<fun r='_ZN7WebCore10PannerNode6createERNS_16BaseAudioContextERKNS_13PannerOptionsE'/>
+<fun r='_ZN7WebCore10PannerNodeC1ERNS_16BaseAudioContextERKNS_13PannerOptionsE'/>
+<fun r='_ZN7WebCore10PannerNodeD1Ev'/>
+<fun r='_ZN7WebCore10PannerNode7processEm'/>
+<fun r='_ZN7WebCore10PannerNode22processOnlyAudioParamsEm'/>
+<fun r='_ZN7WebCore10PannerNode27processSampleAccurateValuesEPNS_8AudioBusEPKS1_m'/>
+<fun r='_ZNK7WebCore10PannerNode23hasSampleAccurateValuesEv'/>
+<fun r='_ZNK7WebCore10PannerNode14shouldUseARateEv'/>
+<fun r='_ZN7WebCore10PannerNode8listenerEv'/>
+<fun r='_ZN7WebCore10PannerNode26setPanningModelForBindingsENS_16PanningModelTypeE'/>
+<fun r='_ZNK7WebCore10PannerNode8positionEv'/>
+<fun r='_ZN7WebCore10PannerNode11setPositionEfff'/>
+<fun r='_ZNK7WebCore10PannerNode11orientationEv'/>
+<fun r='_ZN7WebCore10PannerNode14setOrientationEfff'/>
+<fun r='_ZNK7WebCore10PannerNode24distanceModelForBindingsEv'/>
+<fun r='_ZN7WebCore10PannerNode27setDistanceModelForBindingsENS_17DistanceModelTypeE'/>
+<fun r='_ZN7WebCore10PannerNode25setRefDistanceForBindingsEd'/>
+<fun r='_ZN7WebCore10PannerNode25setMaxDistanceForBindingsEd'/>
+<fun r='_ZN7WebCore10PannerNode27setRolloffFactorForBindingsEd'/>
+<fun r='_ZN7WebCore10PannerNode27setConeOuterGainForBindingsEd'/>
+<fun r='_ZN7WebCore10PannerNode28setConeOuterAngleForBindingsEd'/>
+<fun r='_ZN7WebCore10PannerNode28setConeInnerAngleForBindingsEd'/>
+<fun r='_ZN7WebCore10PannerNode15setChannelCountEj'/>
+<fun r='_ZN7WebCore10PannerNode19setChannelCountModeENS_16ChannelCountModeE'/>
+<fun r='_ZN7WebCore10PannerNode25calculateAzimuthElevationEPdS1_RKNS_12FloatPoint3DES4_S4_S4_'/>
+<fun r='_ZN7WebCore10PannerNode16azimuthElevationEPdS1_'/>
+<fun r='_ZNK7WebCore10PannerNode22requiresTailProcessingEv'/>
+<fun r='_ZN7WebCore10PannerNode25calculateDistanceConeGainERKNS_12FloatPoint3DES3_S3_'/>
+<fun r='_ZN7WebCore10PannerNode16distanceConeGainEv'/>
+<fun r='_ZNK7WebCore10PannerNode8tailTimeEv'/>
+<fun r='_ZNK7WebCore10PannerNode11latencyTimeEv'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSAudioNodeCustom.cpp' l='108' c='_ZN7WebCore16toJSNewlyCreatedEPN3JSC14JSGlobalObjectEPNS_17JSDOMGlobalObjectEON3WTF3RefINS_9AudioNodeENS5_12RawPtrTraitsIS7_EEEE'/>
+<size>352</size>

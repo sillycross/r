@@ -1,0 +1,18 @@
+<dec f='include/wayland-client-protocol.h' l='2306' type='void (*)(void *, struct wl_data_source *)'/>
+<offset>192</offset>
+<doc f='include/wayland-client-protocol.h' l='2290'>/**
+	 * the drag-and-drop operation physically finished
+	 *
+	 * The user performed the drop action. This event does not
+	 * indicate acceptance, wl_data_source.cancelled may still be
+	 * emitted afterwards if the drop destination does not accept any
+	 * mime type.
+	 *
+	 * However, this event might however not be received if the
+	 * compositor cancelled the drag-and-drop operation before this
+	 * event could happen.
+	 *
+	 * Note that the data_source may still be used in the future and
+	 * should not be destroyed here.
+	 * @since 3
+	 */</doc>

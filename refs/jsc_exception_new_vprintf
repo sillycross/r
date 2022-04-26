@@ -1,0 +1,16 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCException.h' l='74' type='JSCException * jsc_exception_new_vprintf(JSCContext * context, const char * format, __va_list_tag * args)'/>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCContext.cpp' l='675' u='c' c='jsc_context_throw_printf'/>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCException.cpp' l='151' u='c' c='jsc_exception_new_printf'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCException.cpp' l='169' ll='176' type='JSCException * jsc_exception_new_vprintf(JSCContext * context, const char * format, __va_list_tag * args)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCException.cpp' l='157'>/**
+ * jsc_exception_new_vprintf:
+ * @context: a #JSCContext
+ * @format: the string format
+ * @args: the parameters to insert into the format string
+ *
+ * Create a new #JSCException in @context using a formatted string
+ * for the message. This is similar to jsc_exception_new_printf()
+ * except that the arguments to the format string are passed as a va_list.
+ *
+ * Returns: (transfer full): a new #JSCException.
+ */</doc>

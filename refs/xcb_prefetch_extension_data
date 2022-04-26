@@ -1,0 +1,12 @@
+<dec f='include/xcb/xcb.h' l='445' type='void xcb_prefetch_extension_data(xcb_connection_t * c, xcb_extension_t * ext)'/>
+<doc f='include/xcb/xcb.h' l='434'>/**
+ * @brief Prefetch of extension data into the extension cache
+ * @param c The connection.
+ * @param ext The extension data.
+ *
+ * This function allows a &quot;prefetch&quot; of extension data into the
+ * extension cache. Invoking the function may cause a call to
+ * xcb_query_extension, but will not block waiting for the
+ * reply. xcb_get_extension_data will return the prefetched data after
+ * possibly blocking while it is retrieved.
+ */</doc>

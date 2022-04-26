@@ -1,0 +1,50 @@
+<use f='include/gstreamer-1.0/gst/audio/gstaudiometa.h' l='132'/>
+<def f='include/gstreamer-1.0/gst/audio/gstaudiometa.h' l='175' ll='185'/>
+<size>448</size>
+<doc f='include/gstreamer-1.0/gst/audio/gstaudiometa.h' l='134'>/**
+ * GstAudioMeta:
+ * @meta: parent #GstMeta
+ * @info: the audio properties of the buffer
+ * @samples: the number of valid samples in the buffer
+ * @offsets: the offsets (in bytes) where each channel plane starts in the
+ *   buffer or %NULL if the buffer has interleaved layout; if not %NULL, this
+ *   is guaranteed to be an array of @info.channels elements
+ *
+ * Buffer metadata describing how data is laid out inside the buffer. This
+ * is useful for non-interleaved (planar) buffers, where it is necessary to
+ * have a place to store where each plane starts and how long each plane is.
+ *
+ * It is a requirement for non-interleaved buffers to have this metadata
+ * attached and to be mapped with gst_audio_buffer_map() in order to ensure
+ * correct handling of clipping and channel reordering.
+ *
+ * The different channels in @offsets are always in the GStreamer channel order.
+ * Zero-copy channel reordering can be implemented by swapping the values in
+ * @offsets.
+ *
+ * It is not allowed for channels to overlap in memory,
+ * i.e. for each i in [0, channels), the range
+ * [@offsets[i], @offsets[i] + @samples * sample_stride) must not overlap
+ * with any other such range.
+ *
+ * It is, however, allowed to have parts of the buffer memory unused,
+ * by using @offsets and @samples in such a way that leave gaps on it.
+ * This is used to implement zero-copy clipping in non-interleaved buffers.
+ *
+ * Obviously, due to the above, it is not safe to infer the
+ * number of valid samples from the size of the buffer. You should always
+ * use the @samples variable of this metadata.
+ *
+ * Note that for interleaved audio it is not a requirement to have this
+ * metadata attached and at the moment of writing, there is actually no use
+ * case to do so. It is, however, allowed to attach it, for some potential
+ * future use case.
+ *
+ * Since: 1.16
+ */</doc>
+<mbr r='_GstAudioMeta::meta' o='0' t='GstMeta'/>
+<mbr r='_GstAudioMeta::info' o='128' t='GstAudioInfo'/>
+<mbr r='_GstAudioMeta::samples' o='2688' t='gsize'/>
+<mbr r='_GstAudioMeta::offsets' o='2752' t='gsize *'/>
+<mbr r='_GstAudioMeta::priv_offsets_arr' o='2816' t='gsize [8]'/>
+<mbr r='_GstAudioMeta::_gst_reserved' o='3328' t='gpointer [4]'/>

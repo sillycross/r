@@ -1,0 +1,113 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Allocator.h' l='40' ll='61'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Allocator.h' l='55' c='_ZNK3JSC9AllocatoreqERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Allocator.h' l='56' c='_ZNK3JSC9AllocatorneERKS0_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Allocator.h' l='57' c='_ZNK3JSC9AllocatorcvbEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Subspace.h' l='60' c='_ZN3JSC8Subspace12allocatorForEmNS_16AllocatorForModeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CompleteSubspace.h' l='42' c='_ZN3JSC16CompleteSubspace12allocatorForEmNS_16AllocatorForModeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CompleteSubspace.h' l='43' c='_ZN3JSC16CompleteSubspace22allocatorForNonVirtualEmNS_16AllocatorForModeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CompleteSubspace.h' l='51' c='_ZN3JSC16CompleteSubspace20allocatorForSizeStepEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CompleteSubspace.h' l='54' c='_ZN3JSC16CompleteSubspace16allocatorForSlowEm'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CompleteSubspace.h' l='60'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CompleteSubspace.h' l='65' c='_ZN3JSC16CompleteSubspace22allocatorForNonVirtualEmNS_16AllocatorForModeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CompleteSubspace.h' l='68' c='_ZN3JSC16CompleteSubspace22allocatorForNonVirtualEmNS_16AllocatorForModeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CompleteSubspace.h' l='83' c='_ZN3JSC16CompleteSubspace22allocatorForNonVirtualEmNS_16AllocatorForModeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoSubspace.h' l='45' c='_ZN3JSC11IsoSubspace12allocatorForEmNS_16AllocatorForModeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoSubspace.h' l='46' c='_ZN3JSC11IsoSubspace22allocatorForNonVirtualEmNS_16AllocatorForModeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoSubspace.h' l='75' c='_ZN3JSC11IsoSubspace22allocatorForNonVirtualEmNS_16AllocatorForModeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoSubspace.h' l='78' c='_ZN3JSC11IsoSubspace22allocatorForNonVirtualEmNS_16AllocatorForModeE'/>
+<size>8</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Allocator.h' l='37'>// This abstracts how we refer to LocalAllocator so that we could eventually support thread-local
+// caches.</doc>
+<fun r='_ZN3JSC9AllocatorC1Ev'/>
+<fun r='_ZN3JSC9AllocatorC1EPNS_14LocalAllocatorE'/>
+<fun r='_ZNK3JSC9Allocator8allocateERNS_4HeapEPNS_17GCDeferralContextENS_21AllocationFailureModeE'/>
+<fun r='_ZNK3JSC9Allocator8cellSizeEv'/>
+<fun r='_ZNK3JSC9Allocator14localAllocatorEv'/>
+<fun r='_ZNK3JSC9AllocatoreqERKS0_'/>
+<fun r='_ZNK3JSC9AllocatorneERKS0_'/>
+<fun r='_ZNK3JSC9AllocatorcvbEv'/>
+<mbr r='JSC::Allocator::m_localAllocator' o='0' t='JSC::LocalAllocator *'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CompleteSubspaceInlines.h' l='38' c='_ZN3JSC16CompleteSubspace18allocateNonVirtualERNS_2VMEmPNS_17GCDeferralContextENS_21AllocationFailureModeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ObjectAllocationProfile.h' l='62' c='_ZN3JSC27ObjectAllocationProfileBase5clearEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ObjectAllocationProfile.h' l='76'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/IsoSubspaceInlines.h' l='33' c='_ZN3JSC11IsoSubspace18allocateNonVirtualERNS_2VMEmPNS_17GCDeferralContextENS_21AllocationFailureModeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSCellInlines.h' l='167' c='_ZN3JSC34allocatorForNonVirtualConcurrentlyERNS_2VMEmNS_16AllocatorForModeE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITAllocator.h' l='41' c='_ZN3JSC12JITAllocator8constantENS_9AllocatorE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITAllocator.h' l='76' c='_ZNK3JSC12JITAllocator9allocatorEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITAllocator.h' l='84'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/AssemblyHelpers.h' l='1757' c='_ZN3JSC15AssemblyHelpers33emitAllocateJSObjectWithKnownSizeERNS_2VMENS_12X86Registers10RegisterIDET0_T1_S4_S4_RNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListEm'/>
+<size>8</size>
+<fun r='_ZNK3JSC9Allocator8allocateERNS_4HeapEPNS_17GCDeferralContextENS_21AllocationFailureModeE'/>
+<def f='WebKit/Source/JavaScriptCore/heap/Allocator.h' l='40' ll='61'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Allocator.h' l='55' c='_ZNK3JSC9AllocatoreqERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Allocator.h' l='56' c='_ZNK3JSC9AllocatorneERKS0_'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Allocator.h' l='57' c='_ZNK3JSC9AllocatorcvbEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/Subspace.h' l='60' c='_ZN3JSC8Subspace12allocatorForEmNS_16AllocatorForModeE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.h' l='42' c='_ZN3JSC16CompleteSubspace12allocatorForEmNS_16AllocatorForModeE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.h' l='43' c='_ZN3JSC16CompleteSubspace22allocatorForNonVirtualEmNS_16AllocatorForModeE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.h' l='51' c='_ZN3JSC16CompleteSubspace20allocatorForSizeStepEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.h' l='54' c='_ZN3JSC16CompleteSubspace16allocatorForSlowEm'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.h' l='60'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.h' l='65' c='_ZN3JSC16CompleteSubspace22allocatorForNonVirtualEmNS_16AllocatorForModeE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.h' l='68' c='_ZN3JSC16CompleteSubspace22allocatorForNonVirtualEmNS_16AllocatorForModeE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.h' l='83' c='_ZN3JSC16CompleteSubspace22allocatorForNonVirtualEmNS_16AllocatorForModeE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.h' l='45' c='_ZN3JSC11IsoSubspace12allocatorForEmNS_16AllocatorForModeE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.h' l='46' c='_ZN3JSC11IsoSubspace22allocatorForNonVirtualEmNS_16AllocatorForModeE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.h' l='75' c='_ZN3JSC11IsoSubspace22allocatorForNonVirtualEmNS_16AllocatorForModeE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.h' l='78' c='_ZN3JSC11IsoSubspace22allocatorForNonVirtualEmNS_16AllocatorForModeE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ObjectAllocationProfile.h' l='62' c='_ZN3JSC27ObjectAllocationProfileBase5clearEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ObjectAllocationProfile.h' l='76'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspaceInlines.h' l='38' c='_ZN3JSC16CompleteSubspace18allocateNonVirtualERNS_2VMEmPNS_17GCDeferralContextENS_21AllocationFailureModeE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspaceInlines.h' l='33' c='_ZN3JSC11IsoSubspace18allocateNonVirtualERNS_2VMEmPNS_17GCDeferralContextENS_21AllocationFailureModeE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCellInlines.h' l='167' c='_ZN3JSC34allocatorForNonVirtualConcurrentlyERNS_2VMEmNS_16AllocatorForModeE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITAllocator.h' l='41' c='_ZN3JSC12JITAllocator8constantENS_9AllocatorE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITAllocator.h' l='76' c='_ZNK3JSC12JITAllocator9allocatorEv'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITAllocator.h' l='84'/>
+<use f='WebKit/Source/JavaScriptCore/jit/AssemblyHelpers.h' l='1757' c='_ZN3JSC15AssemblyHelpers33emitAllocateJSObjectWithKnownSizeERNS_2VMENS_12X86Registers10RegisterIDET0_T1_S4_S4_RNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListEm'/>
+<size>8</size>
+<doc f='WebKit/Source/JavaScriptCore/heap/Allocator.h' l='37'>// This abstracts how we refer to LocalAllocator so that we could eventually support thread-local
+// caches.</doc>
+<fun r='_ZN3JSC9AllocatorC1Ev'/>
+<fun r='_ZN3JSC9AllocatorC1EPNS_14LocalAllocatorE'/>
+<fun r='_ZNK3JSC9Allocator8allocateERNS_4HeapEPNS_17GCDeferralContextENS_21AllocationFailureModeE'/>
+<fun r='_ZNK3JSC9Allocator8cellSizeEv'/>
+<fun r='_ZNK3JSC9Allocator14localAllocatorEv'/>
+<fun r='_ZNK3JSC9AllocatoreqERKS0_'/>
+<fun r='_ZNK3JSC9AllocatorneERKS0_'/>
+<fun r='_ZNK3JSC9AllocatorcvbEv'/>
+<mbr r='JSC::Allocator::m_localAllocator' o='0' t='JSC::LocalAllocator *'/>
+<fun r='_ZNK3JSC9Allocator8allocateERNS_4HeapEPNS_17GCDeferralContextENS_21AllocationFailureModeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLAbstractHeapRepository.cpp' l='64' macro='1' c='_ZN3JSC3FTL22AbstractHeapRepositoryC1Ev'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='93' c='_ZN3JSC3JIT18emit_op_new_objectEPKNS_11InstructionE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.cpp' l='48' c='_ZN3JSC16CompleteSubspace12allocatorForEmNS_16AllocatorForModeE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.cpp' l='58' c='_ZN3JSC16CompleteSubspace16allocatorForSlowEm'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.cpp' l='63' c='_ZN3JSC16CompleteSubspace16allocatorForSlowEm'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.cpp' l='74' c='_ZN3JSC16CompleteSubspace16allocatorForSlowEm'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.cpp' l='92' c='_ZN3JSC16CompleteSubspace16allocatorForSlowEm'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.cpp' l='127' c='_ZN3JSC16CompleteSubspace15tryAllocateSlowERNS_2VMEmPNS_17GCDeferralContextE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/heap/IsoSubspace.cpp' l='59' c='_ZN3JSC11IsoSubspace12allocatorForEmNS_16AllocatorForModeE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='1921' c='_ZN3JSC10AccessCase12generateImplERNS_21AccessGenerationStateE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ObjectAllocationProfileInlines.h' l='56' c='_ZN3JSC27ObjectAllocationProfileBase17initializeProfileERNS_2VMEPNS_14JSGlobalObjectEPNS_6JSCellEPNS_8JSObjectEjPNS_10JSFunctionEPNS_16FunctionRareDataE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ObjectAllocationProfileInlines.h' l='102' c='_ZN3JSC27ObjectAllocationProfileBase17initializeProfileERNS_2VMEPNS_14JSGlobalObjectEPNS_6JSCellEPNS_8JSObjectEjPNS_10JSFunctionEPNS_16FunctionRareDataE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ObjectAllocationProfileInlines.h' l='116' c='_ZN3JSC27ObjectAllocationProfileBase17initializeProfileERNS_2VMEPNS_14JSGlobalObjectEPNS_6JSCellEPNS_8JSObjectEjPNS_10JSFunctionEPNS_16FunctionRareDataE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='123' c='_ZN3JSC3DFG14SpeculativeJIT21emitAllocateRawObjectENS_12X86Registers10RegisterIDENS0_19RegisteredStructureES3_jj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='136' c='_ZN3JSC3DFG14SpeculativeJIT21emitAllocateRawObjectENS_12X86Registers10RegisterIDENS0_19RegisteredStructureES3_jj'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='10371' c='_ZN3JSC3DFG14SpeculativeJIT30compileAllocatePropertyStorageEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='10415' c='_ZN3JSC3DFG14SpeculativeJIT32compileReallocatePropertyStorageEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='14295' c='_ZN3JSC3DFG14SpeculativeJIT16compileNewObjectEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='15440' c='_ZN3JSC3DFG14SpeculativeJIT15compileMakeRopeEPNS0_4NodeE'/>
+<size>8</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='8467' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB315compileMakeRopeEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='13278' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB327compileMaterializeNewObjectEv'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='14257' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB335allocatePropertyStorageWithSizeImplEm'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='15933' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB316allocateHeapCellEPNS_2B35ValueEPNS3_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='16080' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB314allocateObjectEmT0_PNS_2B35ValueEPNS4_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='16101' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB316allocatorForSizeEPNS_2B35ValueES5_PNS3_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='16163' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB314allocateObjectENS_3DFG19RegisteredStructureE'/>
+<size>8</size>

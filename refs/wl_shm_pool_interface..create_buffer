@@ -1,0 +1,23 @@
+<dec f='include/wayland-server-protocol.h' l='1063' type='void (*)(struct wl_client *, struct wl_resource *, uint32_t, int32_t, int32_t, int32_t, int32_t, uint32_t)'/>
+<offset>0</offset>
+<doc f='include/wayland-server-protocol.h' l='1042'>/**
+	 * create a buffer from the pool
+	 *
+	 * Create a wl_buffer object from the pool.
+	 *
+	 * The buffer is created offset bytes into the pool and has width
+	 * and height as specified. The stride argument specifies the
+	 * number of bytes from the beginning of one row to the beginning
+	 * of the next. The format is the pixel format of the buffer and
+	 * must be one of those advertised through the wl_shm.format event.
+	 *
+	 * A buffer will keep a reference to the pool it was created from
+	 * so it is valid to destroy the pool immediately after creating a
+	 * buffer from it.
+	 * @param id buffer to create
+	 * @param offset buffer byte offset within the pool
+	 * @param width buffer width, in pixels
+	 * @param height buffer height, in pixels
+	 * @param stride number of bytes from the beginning of one row to the beginning of the next row
+	 * @param format buffer pixel format
+	 */</doc>

@@ -1,0 +1,96 @@
+<use f='include/gstreamer-1.0/gst/audio/gstaudioencoder.h' l='90'/>
+<def f='include/gstreamer-1.0/gst/audio/gstaudioencoder.h' l='196' ll='248'/>
+<size>760</size>
+<doc f='include/gstreamer-1.0/gst/audio/gstaudioencoder.h' l='122'>/**
+ * GstAudioEncoderClass:
+ * @element_class:  The parent class structure
+ * @start:          Optional.
+ *                  Called when the element starts processing.
+ *                  Allows opening external resources.
+ * @stop:           Optional.
+ *                  Called when the element stops processing.
+ *                  Allows closing external resources.
+ * @set_format:     Notifies subclass of incoming data format.
+ *                  GstAudioInfo contains the format according to provided caps.
+ * @handle_frame:   Provides input samples (or NULL to clear any remaining data)
+ *                  according to directions as configured by the subclass
+ *                  using the API.  Input data ref management is performed
+ *                  by base class, subclass should not care or intervene,
+ *                  and input data is only valid until next call to base class,
+ *                  most notably a call to gst_audio_encoder_finish_frame().
+ * @flush:          Optional.
+ *                  Instructs subclass to clear any codec caches and discard
+ *                  any pending samples and not yet returned encoded data.
+ * @sink_event:     Optional.
+ *                  Event handler on the sink pad. Subclasses should chain up to
+ *                  the parent implementation to invoke the default handler.
+ * @src_event:      Optional.
+ *                  Event handler on the src pad. Subclasses should chain up to
+ *                  the parent implementation to invoke the default handler.
+ * @pre_push:       Optional.
+ *                  Called just prior to pushing (encoded data) buffer downstream.
+ *                  Subclass has full discretionary access to buffer,
+ *                  and a not OK flow return will abort downstream pushing.
+ * @getcaps:        Optional.
+ *                  Allows for a custom sink getcaps implementation (e.g.
+ *                  for multichannel input specification).  If not implemented,
+ *                  default returns gst_audio_encoder_proxy_getcaps
+ *                  applied to sink template caps.
+ * @open:           Optional.
+ *                  Called when the element changes to GST_STATE_READY.
+ *                  Allows opening external resources.
+ * @close:          Optional.
+ *                  Called when the element changes to GST_STATE_NULL.
+ *                  Allows closing external resources.
+ * @negotiate:      Optional.
+ *                  Negotiate with downstream and configure buffer pools, etc.
+ *                  Subclasses should chain up to the parent implementation to
+ *                  invoke the default handler.
+ * @decide_allocation: Optional.
+ *                     Setup the allocation parameters for allocating output
+ *                     buffers. The passed in query contains the result of the
+ *                     downstream allocation query.
+ *                     Subclasses should chain up to the parent implementation to
+ *                     invoke the default handler.
+ * @propose_allocation: Optional.
+ *                      Propose buffer allocation parameters for upstream elements.
+ *                      Subclasses should chain up to the parent implementation to
+ *                      invoke the default handler.
+ * @transform_meta: Optional. Transform the metadata on the input buffer to the
+ *                  output buffer. By default this method copies all meta without
+ *                  tags and meta with only the &quot;audio&quot; tag. subclasses can
+ *                  implement this method and return %TRUE if the metadata is to be
+ *                  copied. Since: 1.6
+ * @sink_query:     Optional.
+ *                  Query handler on the sink pad. This function should
+ *                  return TRUE if the query could be performed. Subclasses
+ *                  should chain up to the parent implementation to invoke the
+ *                  default handler. Since: 1.6
+ * @src_query:      Optional.
+ *                  Query handler on the source pad. This function should
+ *                  return TRUE if the query could be performed. Subclasses
+ *                  should chain up to the parent implementation to invoke the
+ *                  default handler. Since: 1.6
+ *
+ * Subclasses can override any of the available virtual methods or not, as
+ * needed. At minimum @set_format and @handle_frame needs to be overridden.
+ */</doc>
+<mbr r='_GstAudioEncoderClass::element_class' o='0' t='GstElementClass'/>
+<mbr r='_GstAudioEncoderClass::start' o='3904' t='gboolean (*)(GstAudioEncoder *)'/>
+<mbr r='_GstAudioEncoderClass::stop' o='3968' t='gboolean (*)(GstAudioEncoder *)'/>
+<mbr r='_GstAudioEncoderClass::set_format' o='4032' t='gboolean (*)(GstAudioEncoder *, GstAudioInfo *)'/>
+<mbr r='_GstAudioEncoderClass::handle_frame' o='4096' t='GstFlowReturn (*)(GstAudioEncoder *, GstBuffer *)'/>
+<mbr r='_GstAudioEncoderClass::flush' o='4160' t='void (*)(GstAudioEncoder *)'/>
+<mbr r='_GstAudioEncoderClass::pre_push' o='4224' t='GstFlowReturn (*)(GstAudioEncoder *, GstBuffer **)'/>
+<mbr r='_GstAudioEncoderClass::sink_event' o='4288' t='gboolean (*)(GstAudioEncoder *, GstEvent *)'/>
+<mbr r='_GstAudioEncoderClass::src_event' o='4352' t='gboolean (*)(GstAudioEncoder *, GstEvent *)'/>
+<mbr r='_GstAudioEncoderClass::getcaps' o='4416' t='GstCaps *(*)(GstAudioEncoder *, GstCaps *)'/>
+<mbr r='_GstAudioEncoderClass::open' o='4480' t='gboolean (*)(GstAudioEncoder *)'/>
+<mbr r='_GstAudioEncoderClass::close' o='4544' t='gboolean (*)(GstAudioEncoder *)'/>
+<mbr r='_GstAudioEncoderClass::negotiate' o='4608' t='gboolean (*)(GstAudioEncoder *)'/>
+<mbr r='_GstAudioEncoderClass::decide_allocation' o='4672' t='gboolean (*)(GstAudioEncoder *, GstQuery *)'/>
+<mbr r='_GstAudioEncoderClass::propose_allocation' o='4736' t='gboolean (*)(GstAudioEncoder *, GstQuery *)'/>
+<mbr r='_GstAudioEncoderClass::transform_meta' o='4800' t='gboolean (*)(GstAudioEncoder *, GstBuffer *, GstMeta *, GstBuffer *)'/>
+<mbr r='_GstAudioEncoderClass::sink_query' o='4864' t='gboolean (*)(GstAudioEncoder *, GstQuery *)'/>
+<mbr r='_GstAudioEncoderClass::src_query' o='4928' t='gboolean (*)(GstAudioEncoder *, GstQuery *)'/>
+<mbr r='_GstAudioEncoderClass::_gst_reserved' o='4992' t='gpointer [17]'/>

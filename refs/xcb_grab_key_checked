@@ -1,0 +1,56 @@
+<dec f='include/xcb/xproto.h' l='7854' type='xcb_void_cookie_t xcb_grab_key_checked(xcb_connection_t * c, uint8_t owner_events, xcb_window_t grab_window, uint16_t modifiers, xcb_keycode_t key, uint8_t pointer_mode, uint8_t keyboard_mode)'/>
+<doc f='include/xcb/xproto.h' l='7798'>/**
+ * @brief Grab keyboard key(s)
+ *
+ * @param c The connection
+ * @param owner_events If 1, the \a grab_window will still get the pointer events. If 0, events are not
+ * reported to the \a grab_window.
+ * @param grab_window Specifies the window on which the pointer should be grabbed.
+ * @param modifiers The modifiers to grab.
+ * \n
+ * Using the special value `XCB_MOD_MASK_ANY` means grab the pointer with all
+ * possible modifier combinations.
+ * @param key The keycode of the key to grab.
+ * \n
+ * The special value `XCB_GRAB_ANY` means grab any key.
+ * @param pointer_mode A bitmask of #xcb_grab_mode_t values.
+ * @param pointer_mode \n
+ * @param keyboard_mode A bitmask of #xcb_grab_mode_t values.
+ * @param keyboard_mode \n
+ * @return A cookie
+ *
+ * Establishes a passive grab on the keyboard. In the future, the keyboard is
+ * actively grabbed (as for `GrabKeyboard`), the last-keyboard-grab time is set to
+ * the time at which the key was pressed (as transmitted in the KeyPress event),
+ * and the KeyPress event is reported if all of the following conditions are true:
+ * 
+ * The keyboard is not grabbed and the specified key (which can itself be a
+ * modifier key) is logically pressed when the specified modifier keys are
+ * logically down, and no other modifier keys are logically down.
+ * 
+ * Either the grab_window is an ancestor of (or is) the focus window, or the
+ * grab_window is a descendant of the focus window and contains the pointer.
+ * 
+ * A passive grab on the same key combination does not exist on any ancestor of
+ * grab_window.
+ * 
+ * The interpretation of the remaining arguments is as for XGrabKeyboard.  The active grab is terminated
+ * automatically when the logical state of the keyboard has the specified key released (independent of the
+ * logical state of the modifier keys), at which point a KeyRelease event is reported to the grabbing window.
+ * 
+ * Note that the logical state of a device (as seen by client applications) may lag the physical state if
+ * device event processing is frozen.
+ * 
+ * A modifiers argument of AnyModifier is equivalent to issuing the request for all possible modifier combinations (including the combination of no modifiers).  It is not required that all modifiers specified
+ * have currently assigned KeyCodes.  A keycode argument of AnyKey is equivalent to issuing the request for
+ * all possible KeyCodes.  Otherwise, the specified keycode must be in the range specified by min_keycode
+ * and max_keycode in the connection setup, or a BadValue error results.
+ * 
+ * If some other client has issued a XGrabKey with the same key combination on the same window, a BadAccess
+ * error results.  When using AnyModifier or AnyKey, the request fails completely, and a BadAccess error
+ * results (no grabs are established) if there is a conflicting grab for any combination.
+ *
+ * This form can be used only if the request will not cause
+ * a reply to be generated. Any returned error will be
+ * saved for handling by xcb_request_check().
+ */</doc>

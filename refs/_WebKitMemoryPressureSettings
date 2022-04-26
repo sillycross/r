@@ -1,0 +1,27 @@
+<use f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitMemoryPressureSettings.h' l='34'/>
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitMemoryPressureSettings.cpp' l='48' ll='50'/>
+<size>48</size>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitMemoryPressureSettings.cpp' l='25'>/**
+ * SECTION: WebKitMemoryPressureSettings
+ * @Short_description: A boxed type representing the settings for the MemoryPressureHandler
+ * @Title: WebKitMemoryPressureSettings
+ * @See_also: #WebKitWebContext.
+ *
+ * #WebKitMemoryPressureSettings is a boxed type that can be used to provide some custom settings
+ * to control how the memory pressure situations are handled by the different processes.
+ *
+ * The memory pressure system implemented inside the different process will try to keep the memory usage
+ * under the defined memory limit. In order to do that, it will check the used memory with a user defined
+ * frequency and decide whether it should try to release memory. The thresholds passed will define how urgent
+ * is to release that memory.
+ *
+ * Take into account that badly defined parameters can greatly reduce the performance of the engine. For
+ * example, setting memory limit too low with a fast poll interval can cause the process to constantly
+ * be trying to release memory.
+ *
+ * A #WebKitMemoryPressureSettings can be passed to a #WebKitWebContext constructor, and the settings will
+ * be applied to all the web processes created by that context.
+ *
+ * Since: 2.34
+ */</doc>
+<mbr r='_WebKitMemoryPressureSettings::configuration' o='0' t='MemoryPressureHandler::Configuration'/>

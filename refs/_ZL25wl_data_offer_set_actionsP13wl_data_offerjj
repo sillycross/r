@@ -1,0 +1,36 @@
+<def f='include/wayland-client-protocol.h' l='2214' ll='2219' type='void wl_data_offer_set_actions(struct wl_data_offer * wl_data_offer, uint32_t dnd_actions, uint32_t preferred_action)'/>
+<doc f='include/wayland-client-protocol.h' l='2179'>/**
+ * @ingroup iface_wl_data_offer
+ *
+ * Sets the actions that the destination side client supports for
+ * this operation. This request may trigger the emission of
+ * wl_data_source.action and wl_data_offer.action events if the compositor
+ * needs to change the selected action.
+ *
+ * This request can be called multiple times throughout the
+ * drag-and-drop operation, typically in response to wl_data_device.enter
+ * or wl_data_device.motion events.
+ *
+ * This request determines the final result of the drag-and-drop
+ * operation. If the end result is that no action is accepted,
+ * the drag source will receive wl_data_source.cancelled.
+ *
+ * The dnd_actions argument must contain only values expressed in the
+ * wl_data_device_manager.dnd_actions enum, and the preferred_action
+ * argument must only contain one of those values set, otherwise it
+ * will result in a protocol error.
+ *
+ * While managing an &quot;ask&quot; action, the destination drag-and-drop client
+ * may perform further wl_data_offer.receive requests, and is expected
+ * to perform one last wl_data_offer.set_actions request with a preferred
+ * action other than &quot;ask&quot; (and optionally wl_data_offer.accept) before
+ * requesting wl_data_offer.finish, in order to convey the action selected
+ * by the user. If the preferred action is not in the
+ * wl_data_offer.source_actions mask, an error will be raised.
+ *
+ * If the &quot;ask&quot; action is dismissed (e.g. user cancellation), the client
+ * is expected to perform wl_data_offer.destroy right away.
+ *
+ * This request can only be made on drag-and-drop offers, a protocol error
+ * will be raised otherwise.
+ */</doc>

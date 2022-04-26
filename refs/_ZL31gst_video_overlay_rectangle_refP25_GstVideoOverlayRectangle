@@ -1,0 +1,15 @@
+<def f='include/gstreamer-1.0/gst/video/video-overlay-composition.h' l='61' ll='65' type='GstVideoOverlayRectangle * gst_video_overlay_rectangle_ref(GstVideoOverlayRectangle * comp)'/>
+<doc f='include/gstreamer-1.0/gst/video/video-overlay-composition.h' l='47'>/**
+ * gst_video_overlay_rectangle_ref:
+ * @comp: a a #GstVideoOverlayRectangle.
+ *
+ * Increases the refcount of the given rectangle by one.
+ *
+ * Note that the refcount affects the writeability
+ * of @comp, use gst_video_overlay_rectangle_copy() to ensure a rectangle can
+ * be modified (there is no gst_video_overlay_rectangle_make_writable() because
+ * it is unlikely that someone will hold the single reference to the rectangle
+ * and not know that that&apos;s the case).
+ *
+ * Returns: (transfer full): @comp
+ */</doc>

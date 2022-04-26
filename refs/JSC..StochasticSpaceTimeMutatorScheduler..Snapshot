@@ -1,0 +1,22 @@
+<use f='WebKit/Source/JavaScriptCore/heap/StochasticSpaceTimeMutatorScheduler.h' l='66'/>
+<use f='WebKit/Source/JavaScriptCore/heap/StochasticSpaceTimeMutatorScheduler.h' l='70' c='_ZN3JSC35StochasticSpaceTimeMutatorScheduler26bytesSinceBeginningOfCycleERKNS0_8SnapshotE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/StochasticSpaceTimeMutatorScheduler.h' l='72' c='_ZN3JSC35StochasticSpaceTimeMutatorScheduler16headroomFullnessERKNS0_8SnapshotE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/StochasticSpaceTimeMutatorScheduler.h' l='73' c='_ZN3JSC35StochasticSpaceTimeMutatorScheduler18mutatorUtilizationERKNS0_8SnapshotE'/>
+<def f='WebKit/Source/JavaScriptCore/heap/StochasticSpaceTimeMutatorScheduler.cpp' l='37' ll='52'/>
+<use f='WebKit/Source/JavaScriptCore/heap/StochasticSpaceTimeMutatorScheduler.cpp' l='104' c='_ZN3JSC35StochasticSpaceTimeMutatorScheduler21didExecuteConstraintsEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/StochasticSpaceTimeMutatorScheduler.cpp' l='119' c='_ZN3JSC35StochasticSpaceTimeMutatorScheduler27synchronousDrainingDidStallEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/StochasticSpaceTimeMutatorScheduler.cpp' l='146' c='_ZN3JSC35StochasticSpaceTimeMutatorScheduler10timeToStopEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/StochasticSpaceTimeMutatorScheduler.cpp' l='173' c='_ZN3JSC35StochasticSpaceTimeMutatorScheduler3logEv'/>
+<use f='WebKit/Source/JavaScriptCore/heap/StochasticSpaceTimeMutatorScheduler.cpp' l='190' c='_ZN3JSC35StochasticSpaceTimeMutatorScheduler26bytesSinceBeginningOfCycleERKNS0_8SnapshotE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/StochasticSpaceTimeMutatorScheduler.cpp' l='200' c='_ZN3JSC35StochasticSpaceTimeMutatorScheduler16headroomFullnessERKNS0_8SnapshotE'/>
+<use f='WebKit/Source/JavaScriptCore/heap/StochasticSpaceTimeMutatorScheduler.cpp' l='216' c='_ZN3JSC35StochasticSpaceTimeMutatorScheduler18mutatorUtilizationERKNS0_8SnapshotE'/>
+<size>16</size>
+<doc f='WebKit/Source/JavaScriptCore/heap/StochasticSpaceTimeMutatorScheduler.cpp' l='33'>// The scheduler will often make decisions based on state that is in flux. It will be fine so
+// long as multiple uses of the same value all see the same value. We wouldn&apos;t get this for free,
+// since our need to modularize the calculation results in a tendency to access the same mutable
+// field in Heap multiple times, and to access the current time multiple times.</doc>
+<fun r='_ZN3JSC35StochasticSpaceTimeMutatorScheduler8SnapshotC1ERS0_'/>
+<fun r='_ZNK3JSC35StochasticSpaceTimeMutatorScheduler8Snapshot3nowEv'/>
+<fun r='_ZNK3JSC35StochasticSpaceTimeMutatorScheduler8Snapshot23bytesAllocatedThisCycleEv'/>
+<mbr r='JSC::StochasticSpaceTimeMutatorScheduler::Snapshot::m_now' o='0' t='WTF::MonotonicTime'/>
+<mbr r='JSC::StochasticSpaceTimeMutatorScheduler::Snapshot::m_bytesAllocatedThisCycle' o='64' t='double'/>

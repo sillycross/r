@@ -1,0 +1,26 @@
+<use f='include/pango-1.0/pango/pango-fontset.h' l='53'/>
+<def f='include/pango-1.0/pango/pango-fontset.h' l='103' ll='125'/>
+<size>200</size>
+<doc f='include/pango-1.0/pango/pango-fontset.h' l='89'>/**
+ * PangoFontsetClass:
+ * @parent_class: parent #GObjectClass.
+ * @get_font: a function to get the font in the fontset that contains the
+ * best glyph for the given Unicode character; see pango_fontset_get_font().
+ * @get_metrics: a function to get overall metric information for the fonts
+ * in the fontset; see pango_fontset_get_metrics().
+ * @get_language: a function to get the language of the fontset.
+ * @foreach: a function to loop over the fonts in the fontset. See
+ * pango_fontset_foreach().
+ *
+ * The #PangoFontsetClass structure holds the virtual functions for
+ * a particular #PangoFontset implementation.
+ */</doc>
+<mbr r='_PangoFontsetClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_PangoFontsetClass::get_font' o='1088' t='PangoFont *(*)(PangoFontset *, guint)'/>
+<mbr r='_PangoFontsetClass::get_metrics' o='1152' t='PangoFontMetrics *(*)(PangoFontset *)'/>
+<mbr r='_PangoFontsetClass::get_language' o='1216' t='PangoLanguage *(*)(PangoFontset *)'/>
+<mbr r='_PangoFontsetClass::foreach' o='1280' t='void (*)(PangoFontset *, PangoFontsetForeachFunc, gpointer)'/>
+<mbr r='_PangoFontsetClass::_pango_reserved1' o='1344' t='void (*)()'/>
+<mbr r='_PangoFontsetClass::_pango_reserved2' o='1408' t='void (*)()'/>
+<mbr r='_PangoFontsetClass::_pango_reserved3' o='1472' t='void (*)()'/>
+<mbr r='_PangoFontsetClass::_pango_reserved4' o='1536' t='void (*)()'/>

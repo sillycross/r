@@ -1,0 +1,69 @@
+<def f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='65' ll='75'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='81' c='_ZN3JSC4Wasm15StreamingParser8addBytesEPKhm'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='82' c='_ZN3JSC4Wasm15StreamingParser8finalizeEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='92' c='_ZN3JSC4Wasm15StreamingParser8addBytesEPKhmNS1_13IsEndOfStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='94' c='_ZN3JSC4Wasm15StreamingParser17parseModuleHeaderEON3WTF6VectorIhLm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='95' c='_ZN3JSC4Wasm15StreamingParser14parseSectionIDEON3WTF6VectorIhLm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='96' c='_ZN3JSC4Wasm15StreamingParser16parseSectionSizeEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='97' c='_ZN3JSC4Wasm15StreamingParser19parseSectionPayloadEON3WTF6VectorIhLm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='99' c='_ZN3JSC4Wasm15StreamingParser20parseCodeSectionSizeEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='100' c='_ZN3JSC4Wasm15StreamingParser17parseFunctionSizeEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='101' c='_ZN3JSC4Wasm15StreamingParser20parseFunctionPayloadEON3WTF6VectorIhLm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='104' c='_ZN3JSC4Wasm15StreamingParser16consumeVarUInt32EPKhmRmNS1_13IsEndOfStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='106' c='_ZN3JSC4Wasm15StreamingParser22moveToStateIfNotFailedENS1_5StateE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='107' c='_ZN3JSC4Wasm15StreamingParser4failEDpT_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='109' c='_ZN3JSC4Wasm15StreamingParser11failOnStateENS1_5StateE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='109' c='_ZN3JSC4Wasm15StreamingParser11failOnStateENS1_5StateE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='131'/>
+<doc f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.h' l='54'>// The layout of the Wasm module is the following.
+    //
+    // Module:       [ Header ][ Section ]*
+    // Section:      [ ID ][ SizeOfPayload ][ Payload ]
+    // Code Section: [ ID ][ SizeOfPayload ][                   Payload of Code Section                   ]
+    //                                      [ NumberOfFunctions ]([ SizeOfFunction ][ PayloadOfFunction ])*
+    //
+    // Basically we can parse Wasm sections by repeatedly (1) reading the size of the payload, and (2) reading the payload based on the size read in (1).
+    // So this streaming parser handles Section as the unit for incremental parsing. The exception is the Code section. The Code section is large since it
+    // includes all the functions in the wasm module. Since we would like to compile each function and parse the Code section concurrently, the streaming
+    // parser specially handles the Code section. In the Code section, the streaming parser uses Function as the unit for incremental parsing.</doc>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.cpp' l='64' c='_ZN3JSC4Wasm15StreamingParser4failEDpT_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.cpp' l='79' c='_ZN3JSC4Wasm15StreamingParser17parseModuleHeaderEON3WTF6VectorIhLm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.cpp' l='89' c='_ZN3JSC4Wasm15StreamingParser14parseSectionIDEON3WTF6VectorIhLm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.cpp' l='106' c='_ZN3JSC4Wasm15StreamingParser16parseSectionSizeEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.cpp' l='114' c='_ZN3JSC4Wasm15StreamingParser20parseCodeSectionSizeEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.cpp' l='133' c='_ZN3JSC4Wasm15StreamingParser17parseFunctionSizeEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.cpp' l='140' c='_ZN3JSC4Wasm15StreamingParser20parseFunctionPayloadEON3WTF6VectorIhLm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.cpp' l='160' c='_ZN3JSC4Wasm15StreamingParser19parseSectionPayloadEON3WTF6VectorIhLm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.cpp' l='222' c='_ZN3JSC4Wasm15StreamingParser16consumeVarUInt32EPKhmRmNS1_13IsEndOfStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.cpp' l='252' c='_ZN3JSC4Wasm15StreamingParser8addBytesEPKhmNS1_13IsEndOfStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.cpp' l='350' c='_ZN3JSC4Wasm15StreamingParser11failOnStateENS1_5StateE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.cpp' l='350' c='_ZN3JSC4Wasm15StreamingParser11failOnStateENS1_5StateE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmStreamingParser.cpp' l='374' c='_ZN3JSC4Wasm15StreamingParser8finalizeEv'/>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmStreamingParser.h' l='65' ll='75'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmStreamingParser.h' l='81' c='_ZN3JSC4Wasm15StreamingParser8addBytesEPKhm'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmStreamingParser.h' l='82' c='_ZN3JSC4Wasm15StreamingParser8finalizeEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmStreamingParser.h' l='92' c='_ZN3JSC4Wasm15StreamingParser8addBytesEPKhmNS1_13IsEndOfStreamE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmStreamingParser.h' l='94' c='_ZN3JSC4Wasm15StreamingParser17parseModuleHeaderEON3WTF6VectorIhLm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmStreamingParser.h' l='95' c='_ZN3JSC4Wasm15StreamingParser14parseSectionIDEON3WTF6VectorIhLm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmStreamingParser.h' l='96' c='_ZN3JSC4Wasm15StreamingParser16parseSectionSizeEj'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmStreamingParser.h' l='97' c='_ZN3JSC4Wasm15StreamingParser19parseSectionPayloadEON3WTF6VectorIhLm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmStreamingParser.h' l='99' c='_ZN3JSC4Wasm15StreamingParser20parseCodeSectionSizeEj'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmStreamingParser.h' l='100' c='_ZN3JSC4Wasm15StreamingParser17parseFunctionSizeEj'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmStreamingParser.h' l='101' c='_ZN3JSC4Wasm15StreamingParser20parseFunctionPayloadEON3WTF6VectorIhLm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmStreamingParser.h' l='104' c='_ZN3JSC4Wasm15StreamingParser16consumeVarUInt32EPKhmRmNS1_13IsEndOfStreamE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmStreamingParser.h' l='106' c='_ZN3JSC4Wasm15StreamingParser22moveToStateIfNotFailedENS1_5StateE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmStreamingParser.h' l='107' c='_ZN3JSC4Wasm15StreamingParser4failEDpT_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmStreamingParser.h' l='109' c='_ZN3JSC4Wasm15StreamingParser11failOnStateENS1_5StateE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmStreamingParser.h' l='109' c='_ZN3JSC4Wasm15StreamingParser11failOnStateENS1_5StateE'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmStreamingParser.h' l='131'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmStreamingParser.h' l='54'>// The layout of the Wasm module is the following.
+    //
+    // Module:       [ Header ][ Section ]*
+    // Section:      [ ID ][ SizeOfPayload ][ Payload ]
+    // Code Section: [ ID ][ SizeOfPayload ][                   Payload of Code Section                   ]
+    //                                      [ NumberOfFunctions ]([ SizeOfFunction ][ PayloadOfFunction ])*
+    //
+    // Basically we can parse Wasm sections by repeatedly (1) reading the size of the payload, and (2) reading the payload based on the size read in (1).
+    // So this streaming parser handles Section as the unit for incremental parsing. The exception is the Code section. The Code section is large since it
+    // includes all the functions in the wasm module. Since we would like to compile each function and parse the Code section concurrently, the streaming
+    // parser specially handles the Code section. In the Code section, the streaming parser uses Function as the unit for incremental parsing.</doc>

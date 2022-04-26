@@ -1,0 +1,18 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1334' ll='1348' type='void webkit_web_context_add_path_to_sandbox(WebKitWebContext * context, const char * path, gboolean readOnly)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebContext.cpp' l='1317'>/**
+ * webkit_web_context_add_path_to_sandbox:
+ * @context: a #WebKitWebContext
+ * @path: (type filename): an absolute path to mount in the sandbox
+ * @read_only: if %TRUE the path will be read-only
+ *
+ * Adds a path to be mounted in the sandbox. @path must exist before any web process
+ * has been created otherwise it will be silently ignored. It is a fatal error to
+ * add paths after a web process has been spawned.
+ *
+ * Paths in directories such as `/sys`, `/proc`, and `/dev` or all of `/`
+ * are not valid.
+ *
+ * See also webkit_web_context_set_sandbox_enabled()
+ *
+ * Since: 2.26
+ */</doc>

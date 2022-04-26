@@ -1,0 +1,40 @@
+<dec f='include/xcb/xproto.h' l='7382' type='xcb_grab_pointer_cookie_t xcb_grab_pointer_unchecked(xcb_connection_t * c, uint8_t owner_events, xcb_window_t grab_window, uint16_t event_mask, uint8_t pointer_mode, uint8_t keyboard_mode, xcb_window_t confine_to, xcb_cursor_t cursor, xcb_timestamp_t time)'/>
+<doc f='include/xcb/xproto.h' l='7342'>/**
+ * @brief Grab the pointer
+ *
+ * @param c The connection
+ * @param owner_events If 1, the \a grab_window will still get the pointer events. If 0, events are not
+ * reported to the \a grab_window.
+ * @param grab_window Specifies the window on which the pointer should be grabbed.
+ * @param event_mask Specifies which pointer events are reported to the client.
+ * \n
+ * TODO: which values?
+ * @param pointer_mode A bitmask of #xcb_grab_mode_t values.
+ * @param pointer_mode \n
+ * @param keyboard_mode A bitmask of #xcb_grab_mode_t values.
+ * @param keyboard_mode \n
+ * @param confine_to Specifies the window to confine the pointer in (the user will not be able to
+ * move the pointer out of that window).
+ * \n
+ * The special value `XCB_NONE` means don&apos;t confine the pointer.
+ * @param cursor Specifies the cursor that should be displayed or `XCB_NONE` to not change the
+ * cursor.
+ * @param time The time argument allows you to avoid certain circumstances that come up if
+ * applications take a long time to respond or if there are long network delays.
+ * Consider a situation where you have two applications, both of which normally
+ * grab the pointer when clicked on. If both applications specify the timestamp
+ * from the event, the second application may wake up faster and successfully grab
+ * the pointer before the first application. The first application then will get
+ * an indication that the other application grabbed the pointer before its request
+ * was processed.
+ * \n
+ * The special value `XCB_CURRENT_TIME` will be replaced with the current server
+ * time.
+ * @return A cookie
+ *
+ * Actively grabs control of the pointer. Further pointer events are reported only to the grabbing client. Overrides any active pointer grab by this client.
+ *
+ * This form can be used only if the request will cause
+ * a reply to be generated. Any returned error will be
+ * placed in the event queue.
+ */</doc>

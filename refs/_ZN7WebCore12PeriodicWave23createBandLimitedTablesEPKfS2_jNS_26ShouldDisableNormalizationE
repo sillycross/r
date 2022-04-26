@@ -1,0 +1,9 @@
+<dec f='WebKit/Source/WebCore/Modules/webaudio/PeriodicWave.h' l='102' type='void WebCore::PeriodicWave::createBandLimitedTables(const float * real, const float * imag, unsigned int numberOfComponents, WebCore::ShouldDisableNormalization  = ShouldDisableNormalization::No)'/>
+<doc f='WebKit/Source/WebCore/Modules/webaudio/PeriodicWave.h' l='101'>// Creates tables based on numberOfComponents Fourier coefficients.</doc>
+<use f='WebKit/Source/WebCore/Modules/webaudio/PeriodicWave.cpp' l='56' u='c' c='_ZN7WebCore12PeriodicWave6createEfRN3JSC21GenericTypedArrayViewINS1_14Float32AdaptorEEES5_'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/PeriodicWave.cpp' l='94' u='c' c='_ZN7WebCore12PeriodicWave6createERNS_16BaseAudioContextEONS_19PeriodicWaveOptionsE'/>
+<def f='WebKit/Source/WebCore/Modules/webaudio/PeriodicWave.cpp' l='185' ll='248' type='void WebCore::PeriodicWave::createBandLimitedTables(const float * realData, const float * imagData, unsigned int numberOfComponents, WebCore::ShouldDisableNormalization disableNormalization = ShouldDisableNormalization::No)'/>
+<use f='WebKit/Source/WebCore/Modules/webaudio/PeriodicWave.cpp' l='323' u='c' c='_ZN7WebCore12PeriodicWave21generateBasicWaveformENS0_4TypeE'/>
+<doc f='WebKit/Source/WebCore/Modules/webaudio/PeriodicWave.cpp' l='182'>// Convert into time-domain wave tables.
+// One table is created for each range for non-aliasing playback at different playback rates.
+// Thus, higher ranges have more high-frequency partials culled out.</doc>

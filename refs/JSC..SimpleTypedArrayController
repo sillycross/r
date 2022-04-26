@@ -1,0 +1,33 @@
+<inh f='WebKit/Source/JavaScriptCore/runtime/TypedArrayController.h' l='37' c='JSC::TypedArrayController'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/SimpleTypedArrayController.h' l='49' ll='67'/>
+<size>32</size>
+<doc f='WebKit/Source/JavaScriptCore/runtime/SimpleTypedArrayController.h' l='34'>// The default controller used for managing the relationship between
+// array buffers and their wrappers in JavaScriptCore. This isn&apos;t what
+// WebCore uses, but it is what JSC uses when running standalone. This
+// is pretty simple:
+//
+// - If the JSArrayBuffer is live, then the ArrayBuffer stays alive.
+//
+// - If there is a JSArrayBufferView that is holding an ArrayBuffer
+//   then any existing wrapper for that ArrayBuffer will be kept
+//   alive.
+//
+// - If you ask an ArrayBuffer for a JSArrayBuffer after one had
+//   already been created and it didn&apos;t die, then you get the same
+//   one.</doc>
+<fun r='_ZN3JSC26SimpleTypedArrayControllerC1Eb'/>
+<fun r='_ZN3JSC26SimpleTypedArrayControllerD1Ev'/>
+<fun r='_ZN3JSC26SimpleTypedArrayController4toJSEPNS_14JSGlobalObjectES2_PNS_11ArrayBufferE'/>
+<fun r='_ZN3JSC26SimpleTypedArrayController15registerWrapperEPNS_14JSGlobalObjectEPNS_11ArrayBufferEPNS_13JSArrayBufferE'/>
+<fun r='_ZN3JSC26SimpleTypedArrayController35isAtomicsWaitAllowedOnCurrentThreadEv'/>
+<mbr r='JSC::SimpleTypedArrayController::m_owner' o='128' t='JSC::SimpleTypedArrayController::JSArrayBufferOwner'/>
+<mbr r='JSC::SimpleTypedArrayController::m_allowAtomicsWait' o='192' t='bool'/>
+<fun r='_ZN3JSC26SimpleTypedArrayControllerC1Eb'/>
+<fun r='_ZN3JSC26SimpleTypedArrayControllerD1Ev'/>
+<fun r='_ZN3JSC26SimpleTypedArrayController4toJSEPNS_14JSGlobalObjectES2_PNS_11ArrayBufferE'/>
+<fun r='_ZN3JSC26SimpleTypedArrayController15registerWrapperEPNS_14JSGlobalObjectEPNS_11ArrayBufferEPNS_13JSArrayBufferE'/>
+<fun r='_ZN3JSC26SimpleTypedArrayController35isAtomicsWaitAllowedOnCurrentThreadEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.cpp' l='521' c='_ZN3JSC2VMC1ENS0_6VMTypeENS_8HeapTypeEPN3WTF7RunLoopEPb'/>
+<size>32</size>
+<use f='WebKit/Source/JavaScriptCore/jsc.cpp' l='3444' c='_Z6runJSCRK11CommandLinebRKT_'/>
+<size>32</size>

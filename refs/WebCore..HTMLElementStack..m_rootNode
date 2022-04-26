@@ -1,0 +1,10 @@
+<dec f='WebKit/Source/WebCore/html/parser/HTMLElementStack.h' l='174' type='WebCore::ContainerNode *'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLElementStack.cpp' l='177' u='w' c='_ZN7WebCore16HTMLElementStack6popAllEv'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLElementStack.cpp' l='296' u='w' c='_ZN7WebCore16HTMLElementStack18pushRootNodeCommonEON3WTF3RefINS_13HTMLStackItemENS1_12RawPtrTraitsIS3_EEEE'/>
+<use f='WebKit/Source/WebCore/html/parser/HTMLElementStack.cpp' l='528' u='r' c='_ZNK7WebCore16HTMLElementStack8rootNodeEv'/>
+<offset>64</offset>
+<doc f='WebKit/Source/WebCore/html/parser/HTMLElementStack.h' l='169'>// We remember the root node, &lt;head&gt; and &lt;body&gt; as they are pushed. Their
+    // ElementRecords keep them alive. The root node is never popped.
+    // FIXME: We don&apos;t currently require type-specific information about
+    // these elements so we haven&apos;t yet bothered to plumb the types all the
+    // way down through createElement, etc.</doc>

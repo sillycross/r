@@ -1,0 +1,9 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ScriptExecutable.h' l='51' type='const WTF::String &amp; JSC::ScriptExecutable::sourceURL() const'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/ScriptExecutable.h' l='50'>// This is NOT the path that should be used for computing relative paths from a script. Use SourceOrigin&apos;s URL for that, the values may or may not be the same... This should only be used for `error.sourceURL` and stack traces.</doc>
+<def f='WebKit/Source/JavaScriptCore/runtime/ScriptExecutable.h' l='51' type='const WTF::String &amp; JSC::ScriptExecutable::sourceURL() const'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/ScriptExecutable.h' l='50'>// This is NOT the path that should be used for computing relative paths from a script. Use SourceOrigin&apos;s URL for that, the values may or may not be the same... This should only be used for `error.sourceURL` and stack traces.</doc>
+<use f='WebKit/Source/JavaScriptCore/interpreter/StackVisitor.cpp' l='324' u='c' c='_ZNK3JSC12StackVisitor5Frame9sourceURLEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/FileBasedFuzzerAgentBase.cpp' l='67' u='c' c='_ZN3JSC24FileBasedFuzzerAgentBase13getPredictionEPNS_9CodeBlockERKNS_10CodeOriginEm'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/SamplingProfiler.cpp' l='954' u='c' c='_ZN3JSC16SamplingProfiler10StackFrame3urlEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/StackFrame.cpp' l='70' u='c' c='_ZNK3JSC10StackFrame9sourceURLEv'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSExecStateInstrumentation.h' l='44' u='c' c='_ZN7WebCore11JSExecState18instrumentFunctionEPNS_22ScriptExecutionContextERKN3JSC8CallDataE'/>

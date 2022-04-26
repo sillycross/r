@@ -1,0 +1,13 @@
+<def f='WebKit/Source/WebCore/rendering/FloatingObjects.h' l='121' ll='133'/>
+<use f='WebKit/Source/WebCore/rendering/FloatingObjects.h' l='139'/>
+<size>1</size>
+<doc f='WebKit/Source/WebCore/rendering/FloatingObjects.h' l='118'>// FIXME: This could be simplified if we made it inherit from PtrHash&lt;std::unique_ptr&lt;FloatingObject&gt;&gt; and
+// changed PtrHashBase to have all of its hash and equal functions bottleneck through single functions (as
+// is done here). That would allow us to only override those master hash and equal functions.</doc>
+<fun r='_ZN7WebCore27FloatingObjectHashFunctions4hashEPNS_14FloatingObjectE'/>
+<fun r='_ZN7WebCore27FloatingObjectHashFunctions5equalEPNS_14FloatingObjectES2_'/>
+<smbr r='WebCore::FloatingObjectHashFunctions::safeToCompareToEmptyOrDeleted' t='const bool'/>
+<fun r='_ZN7WebCore27FloatingObjectHashFunctions4hashERKSt10unique_ptrINS_14FloatingObjectESt14default_deleteIS2_EE'/>
+<fun r='_ZN7WebCore27FloatingObjectHashFunctions5equalERKSt10unique_ptrINS_14FloatingObjectESt14default_deleteIS2_EES7_'/>
+<fun r='_ZN7WebCore27FloatingObjectHashFunctions5equalEPNS_14FloatingObjectERKSt10unique_ptrIS1_St14default_deleteIS1_EE'/>
+<fun r='_ZN7WebCore27FloatingObjectHashFunctions5equalERKSt10unique_ptrINS_14FloatingObjectESt14default_deleteIS2_EEPS2_'/>

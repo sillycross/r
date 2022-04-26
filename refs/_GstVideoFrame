@@ -1,0 +1,24 @@
+<use f='include/gstreamer-1.0/gst/video/video-frame.h' l='27'/>
+<def f='include/gstreamer-1.0/gst/video/video-frame.h' l='81' ll='94'/>
+<size>664</size>
+<doc f='include/gstreamer-1.0/gst/video/video-frame.h' l='68'>/**
+ * GstVideoFrame:
+ * @info: the #GstVideoInfo
+ * @flags: #GstVideoFrameFlags for the frame
+ * @buffer: the mapped buffer
+ * @meta: pointer to metadata if any
+ * @id: id of the mapped frame. the id can for example be used to
+ *   indentify the frame in case of multiview video.
+ * @data: pointers to the plane data
+ * @map: mappings of the planes
+ *
+ * A video frame obtained from gst_video_frame_map()
+ */</doc>
+<mbr r='_GstVideoFrame::info' o='0' t='GstVideoInfo'/>
+<mbr r='_GstVideoFrame::flags' o='1216' t='GstVideoFrameFlags'/>
+<mbr r='_GstVideoFrame::buffer' o='1280' t='GstBuffer *'/>
+<mbr r='_GstVideoFrame::meta' o='1344' t='gpointer'/>
+<mbr r='_GstVideoFrame::id' o='1408' t='gint'/>
+<mbr r='_GstVideoFrame::data' o='1472' t='gpointer [4]'/>
+<mbr r='_GstVideoFrame::map' o='1728' t='GstMapInfo [4]'/>
+<mbr r='_GstVideoFrame::_gst_reserved' o='5056' t='gpointer [4]'/>

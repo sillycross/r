@@ -1,0 +1,11 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JITOperations.h' l='245' type='JSC::UnusedPtr JSC::operationHandleTraps(JSC::JSGlobalObject * )'/>
+<dec f='WebKit/Source/JavaScriptCore/jit/JITOperations.h' l='245' type='JSC::UnusedPtr JSC::operationHandleTraps(JSC::JSGlobalObject * )'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='1542' u='m' c='_ZN3JSC3JIT31op_check_traps_handlerGeneratorERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/jit/JITOpcodes.cpp' l='1555' u='r' c='_ZN3JSC3JIT31op_check_traps_handlerGeneratorERNS_2VME'/>
+<def f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='1917' ll='1925' macro='1' type='JSC::UnusedPtr JSC::operationHandleTraps(JSC::JSGlobalObject * globalObject)'/>
+<doc f='WebKit/Source/JavaScriptCore/jit/JITOperations.cpp' l='1913'>// The only reason for returning an UnusedPtr (instead of void) is so that we can reuse the
+// existing DFG slow path generator machinery when creating the slow path for CheckTraps
+// in the DFG. If a DFG slow path generator that supports a void return type is added in the
+// future, we can switch to using that then.</doc>
+<use f='WebKit/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp' l='2482' u='r' c='_ZN3JSC3DFG14SpeculativeJIT17compileCheckTrapsEPNS0_4NodeE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='13693' u='r' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB317compileCheckTrapsEv'/>

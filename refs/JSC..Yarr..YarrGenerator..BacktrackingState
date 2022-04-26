@@ -1,0 +1,33 @@
+<def f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='851' ll='952'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='4214'/>
+<size>112</size>
+<doc f='WebKit/Source/JavaScriptCore/yarr/YarrJIT.cpp' l='835'>// BacktrackingState
+    // This class encapsulates information about the state of code generation
+    // whilst generating the code for backtracking, when a term fails to match.
+    // Upon entry to code generation of the backtracking code for a given node,
+    // the Backtracking state will hold references to all control flow sources
+    // that are outputs in need of further backtracking from the prior node
+    // generated (which is the subsequent operation in the regular expression,
+    // and in the m_ops Vector, since we generated backtracking backwards).
+    // These references to control flow take the form of:
+    //  - A jump list of jumps, to be linked to code that will backtrack them
+    //    further.
+    //  - A set of DataLabelPtr values, to be populated with values to be
+    //    treated effectively as return addresses backtracking into complex
+    //    subpatterns.
+    //  - A flag indicating that the current sequence of generated code up to
+    //    this point requires backtracking.</doc>
+<fun r='_ZN3JSC4Yarr13YarrGenerator17BacktrackingStateC1Ev'/>
+<fun r='_ZN3JSC4Yarr13YarrGenerator17BacktrackingState6appendERKNS_22AbstractMacroAssemblerINS_12X86AssemblerEE4JumpE'/>
+<fun r='_ZN3JSC4Yarr13YarrGenerator17BacktrackingState6appendERNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListE'/>
+<fun r='_ZN3JSC4Yarr13YarrGenerator17BacktrackingState6appendERKNS_22AbstractMacroAssemblerINS_12X86AssemblerEE12DataLabelPtrE'/>
+<fun r='_ZN3JSC4Yarr13YarrGenerator17BacktrackingState11fallthroughEv'/>
+<fun r='_ZN3JSC4Yarr13YarrGenerator17BacktrackingState4linkEPNS_14MacroAssemblerE'/>
+<fun r='_ZN3JSC4Yarr13YarrGenerator17BacktrackingState6linkToENS_22AbstractMacroAssemblerINS_12X86AssemblerEE5LabelEPNS_14MacroAssemblerE'/>
+<fun r='_ZN3JSC4Yarr13YarrGenerator17BacktrackingState24takeBacktracksToJumpListERNS_22AbstractMacroAssemblerINS_12X86AssemblerEE8JumpListEPNS_14MacroAssemblerE'/>
+<fun r='_ZN3JSC4Yarr13YarrGenerator17BacktrackingState7isEmptyEv'/>
+<fun r='_ZN3JSC4Yarr13YarrGenerator17BacktrackingState14linkDataLabelsERNS_10LinkBufferE'/>
+<mbr r='JSC::Yarr::YarrGenerator::BacktrackingState::m_laterFailures' o='0' t='JSC::AbstractMacroAssembler&lt;JSC::X86Assembler&gt;::JumpList'/>
+<mbr r='JSC::Yarr::YarrGenerator::BacktrackingState::m_pendingFallthrough' o='192' t='bool'/>
+<mbr r='JSC::Yarr::YarrGenerator::BacktrackingState::m_pendingReturns' o='256' t='Vector&lt;JSC::AbstractMacroAssembler&lt;JSC::X86Assembler&gt;::DataLabelPtr, 4&gt;'/>
+<mbr r='JSC::Yarr::YarrGenerator::BacktrackingState::m_backtrackRecords' o='512' t='Vector&lt;JSC::Yarr::YarrGenerator::BacktrackingState::ReturnAddressRecord, 4&gt;'/>

@@ -1,0 +1,182 @@
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeDumper.h' l='135'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeDumper.h' l='137' c='_ZN3JSC4Wasm14BytecodeDumper9dumpBlockEPNS0_17FunctionCodeBlockERKNS0_17ModuleInformationERN3WTF11PrintStreamE'/>
+<def f='WebKit/Source/JavaScriptCore/wasm/WasmFunctionCodeBlock.h' l='53' ll='142'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmFunctionCodeBlock.h' l='55' c='_ZN3JSC4Wasm17FunctionCodeBlockC1ERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmFunctionCodeBlock.h' l='55' c='_ZN3JSC4Wasm17FunctionCodeBlockaSERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmFunctionCodeBlock.h' l='55' c='_ZN3JSC4Wasm17FunctionCodeBlockaSERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCallee.h' l='197' c='_ZN3JSC4Wasm11LLIntCallee6createESt10unique_ptrINS0_17FunctionCodeBlockESt14default_deleteIS3_EEmOSt4pairIPKN3WTF6VectorIhLm0ENS8_15CrashOnOverflowELm3807034'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCallee.h' l='224' c='_ZN3JSC4Wasm11LLIntCalleeC1ESt10unique_ptrINS0_17FunctionCodeBlockESt14default_deleteIS3_EEmOSt4pairIPKN3WTF6VectorIhLm0ENS8_15CrashOnOverflowELm16ENS7248520'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmCallee.h' l='235'/>
+<size>144</size>
+<doc f='WebKit/Source/JavaScriptCore/wasm/WasmFunctionCodeBlock.h' l='51'>// FIXME: Consider merging this with LLIntCallee
+// https://bugs.webkit.org/show_bug.cgi?id=203691</doc>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlockC1ERKS1_'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlockC1Ej'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock13functionIndexEv'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock7numVarsEv'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock15numCalleeLocalsEv'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock12numArgumentsEv'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock13constantTypesEv'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock9constantsEv'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock12instructionsEv'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock10setNumVarsEj'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock18setNumCalleeLocalsEj'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock11getConstantENS_15VirtualRegisterE'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock15getConstantTypeENS_15VirtualRegisterE'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock15setInstructionsESt10unique_ptrINS_17InstructionStreamESt14default_deleteIS3_EE'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock13addJumpTargetEj'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock19numberOfJumpTargetsEv'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock14lastJumpTargetEv'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock22addOutOfLineJumpTargetEji'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock19outOfLineJumpTargetEPKNS_11InstructionE'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock19outOfLineJumpOffsetEj'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock19outOfLineJumpOffsetERKNS_17InstructionStream7BaseRefIKN3WTF6VectorIhLm0ENS4_20UnsafeVectorOverflowELm16ENS4_10FastMallocEEEEE'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock14bytecodeOffsetEPKNS_11InstructionE'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock13tierUpCounterEv'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock12addSignatureERKNS0_9SignatureE'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock9signatureEj'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock12addJumpTableEm'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock9jumpTableEj'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock18numberOfJumpTablesEv'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_functionIndex' o='0' t='uint32_t'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_numVars' o='32' t='unsigned int'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_numCalleeLocals' o='64' t='unsigned int'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_numArguments' o='96' t='uint32_t'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_constantTypes' o='128' t='Vector&lt;JSC::Wasm::Type&gt;'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_constants' o='256' t='Vector&lt;uint64_t&gt;'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_instructions' o='384' t='std::unique_ptr&lt;InstructionStream&gt;'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_instructionsRawPointer' o='448' t='const void *'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_jumpTargets' o='512' t='Vector&lt;InstructionStream::Offset&gt;'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_signatures' o='640' t='Vector&lt;const JSC::Wasm::Signature *&gt;'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_outOfLineJumpTargets' o='768' t='JSC::Wasm::FunctionCodeBlock::OutOfLineJumpTargets'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_tierUpCounter' o='832' t='JSC::Wasm::LLIntTierUpCounter'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_jumpTables' o='1024' t='Vector&lt;JSC::Wasm::FunctionCodeBlock::JumpTable&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntPlan.h' l='90'/>
+<size>144</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntGenerator.h' l='39' c='_ZN3JSC4Wasm23parseAndCompileBytecodeEPKhmRKNS0_9SignatureERKNS0_17ModuleInformationEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmGeneratorTraits.h' l='39'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntGenerator.cpp' l='157' c='_ZN3JSC4Wasm14LLIntGenerator8finalizeEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntGenerator.cpp' l='445' c='_ZN3JSC4Wasm23parseAndCompileBytecodeEPKhmRKNS0_9SignatureERKNS0_17ModuleInformationEj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntGenerator.cpp' l='470' c='_ZN3JSC4Wasm14LLIntGeneratorC1ERKNS0_17ModuleInformationEjRKNS0_9SignatureE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntGenerator.cpp' l='488' c='_ZN3JSC4Wasm14LLIntGenerator8finalizeEv'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmLLIntPlan.cpp' l='87' c='_ZN3JSC4Wasm9LLIntPlan15compileFunctionEj'/>
+<size>144</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='83' c='_ZN3JSC5LLInt9shouldJITEPNS_4Wasm17FunctionCodeBlockENS0_15RequiredWasmJITE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='99' c='_ZN3JSC5LLInt26jitCompileAndSetHeuristicsEPNS_4Wasm11LLIntCalleeEPNS1_17FunctionCodeBlockEPNS1_8InstanceE'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='152' c='JSC::LLInt::slow_path_wasm_prologue_osr'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_prologue_osr'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='173' c='JSC::LLInt::slow_path_wasm_loop_osr'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_loop_osr'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_loop_osr'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='246' c='JSC::LLInt::slow_path_wasm_epilogue_osr'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_epilogue_osr'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_trace'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_out_of_line_jump_target'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_table_get'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_table_set'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_table_set'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_table_init'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_table_init'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_table_init'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_table_fill'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_table_fill'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_table_fill'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_table_copy'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_table_copy'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_table_copy'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_table_grow'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_table_grow'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_grow_memory'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_memory_fill'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_memory_fill'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_memory_fill'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_memory_copy'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_memory_copy'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_memory_copy'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_memory_init'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_memory_init'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_memory_init'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='_ZN3JSC5LLInt18doWasmCallIndirectEPNS_9CallFrameEPNS_4Wasm8InstanceEjjj'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_call_indirect'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_call_indirect_no_tls'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_call_ref'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_call_ref_no_tls'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_set_global_ref'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_set_global_ref_portable_binding'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_memory_atomic_wait32'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_memory_atomic_wait32'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_memory_atomic_wait32'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_memory_atomic_wait64'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_memory_atomic_wait64'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_memory_atomic_wait64'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_memory_atomic_notify'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmSlowPaths.cpp' l='73' c='JSC::LLInt::slow_path_wasm_memory_atomic_notify'/>
+<size>144</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeDumper.cpp' l='328' c='_ZN3JSC4Wasm14BytecodeDumper9dumpBlockEPNS0_17FunctionCodeBlockERKNS0_17ModuleInformationERN3WTF11PrintStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeDumper.cpp' l='374' c='_ZN3JSC4Wasm14BytecodeDumper13dumpConstantsEv'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/BytecodeDumper.cpp' l='388' c='_ZNK3JSC4Wasm14BytecodeDumper12constantNameENS_15VirtualRegisterE'/>
+<size>144</size>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='2145' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='2148' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='2151' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='2154' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='2157' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='2160' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='2145' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='2148' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='2151' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='2154' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='2157' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='2160' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<size>144</size>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmFunctionCodeBlock.h' l='53' ll='142'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmFunctionCodeBlock.h' l='55' c='_ZN3JSC4Wasm17FunctionCodeBlockC1ERKS1_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmFunctionCodeBlock.h' l='55' c='_ZN3JSC4Wasm17FunctionCodeBlockaSERKS1_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmFunctionCodeBlock.h' l='55' c='_ZN3JSC4Wasm17FunctionCodeBlockaSERKS1_'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmCallee.h' l='197' c='_ZN3JSC4Wasm11LLIntCallee6createESt10unique_ptrINS0_17FunctionCodeBlockESt14default_deleteIS3_EEmOSt4pairIPKN3WTF6VectorIhLm0ENS8_15CrashOnOverflowELm3807034'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmCallee.h' l='224' c='_ZN3JSC4Wasm11LLIntCalleeC1ESt10unique_ptrINS0_17FunctionCodeBlockESt14default_deleteIS3_EEmOSt4pairIPKN3WTF6VectorIhLm0ENS8_15CrashOnOverflowELm16ENS7248520'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmCallee.h' l='235'/>
+<size>144</size>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/WasmFunctionCodeBlock.h' l='51'>// FIXME: Consider merging this with LLIntCallee
+// https://bugs.webkit.org/show_bug.cgi?id=203691</doc>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlockC1ERKS1_'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlockC1Ej'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock13functionIndexEv'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock7numVarsEv'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock15numCalleeLocalsEv'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock12numArgumentsEv'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock13constantTypesEv'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock9constantsEv'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock12instructionsEv'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock10setNumVarsEj'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock18setNumCalleeLocalsEj'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock11getConstantENS_15VirtualRegisterE'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock15getConstantTypeENS_15VirtualRegisterE'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock15setInstructionsESt10unique_ptrINS_17InstructionStreamESt14default_deleteIS3_EE'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock13addJumpTargetEj'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock19numberOfJumpTargetsEv'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock14lastJumpTargetEv'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock22addOutOfLineJumpTargetEji'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock19outOfLineJumpTargetEPKNS_11InstructionE'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock19outOfLineJumpOffsetEj'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock19outOfLineJumpOffsetERKNS_17InstructionStream7BaseRefIKN3WTF6VectorIhLm0ENS4_20UnsafeVectorOverflowELm16ENS4_10FastMallocEEEEE'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock14bytecodeOffsetEPKNS_11InstructionE'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock13tierUpCounterEv'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock12addSignatureERKNS0_9SignatureE'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock9signatureEj'/>
+<fun r='_ZN3JSC4Wasm17FunctionCodeBlock12addJumpTableEm'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock9jumpTableEj'/>
+<fun r='_ZNK3JSC4Wasm17FunctionCodeBlock18numberOfJumpTablesEv'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_functionIndex' o='0' t='uint32_t'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_numVars' o='32' t='unsigned int'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_numCalleeLocals' o='64' t='unsigned int'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_numArguments' o='96' t='uint32_t'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_constantTypes' o='128' t='Vector&lt;JSC::Wasm::Type&gt;'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_constants' o='256' t='Vector&lt;uint64_t&gt;'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_instructions' o='384' t='std::unique_ptr&lt;InstructionStream&gt;'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_instructionsRawPointer' o='448' t='const void *'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_jumpTargets' o='512' t='Vector&lt;InstructionStream::Offset&gt;'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_signatures' o='640' t='Vector&lt;const JSC::Wasm::Signature *&gt;'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_outOfLineJumpTargets' o='768' t='JSC::Wasm::FunctionCodeBlock::OutOfLineJumpTargets'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_tierUpCounter' o='832' t='JSC::Wasm::LLIntTierUpCounter'/>
+<mbr r='JSC::Wasm::FunctionCodeBlock::m_jumpTables' o='1024' t='Vector&lt;JSC::Wasm::FunctionCodeBlock::JumpTable&gt;'/>

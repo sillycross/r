@@ -1,0 +1,40 @@
+<def f='WebKit/Source/JavaScriptCore/ftl/FTLLazySlowPath.h' l='46' ll='94'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLazySlowPath.h' l='47' c='_ZN3JSC3FTL12LazySlowPathC1ERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLazySlowPath.h' l='47' c='_ZN3JSC3FTL12LazySlowPathaSERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLazySlowPath.h' l='47' c='_ZN3JSC3FTL12LazySlowPathaSERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLazySlowPath.h' l='55'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLJITCode.h' l='75'/>
+<size>56</size>
+<doc f='WebKit/Source/JavaScriptCore/ftl/FTLLazySlowPath.h' l='41'>// A LazySlowPath is an object that represents a piece of code that is part of FTL generated code
+// that will be generated lazily. It holds all of the important information needed to generate that
+// code, such as where to link jumps to and which registers are in use. It also has a reference to a
+// SharedTask that will do the actual code generation. That SharedTask may have additional data, like
+// which registers hold the inputs or outputs.</doc>
+<fun r='_ZN3JSC3FTL12LazySlowPathC1ERKS1_'/>
+<fun r='_ZN3JSC3FTL12LazySlowPath15createGeneratorERKT_'/>
+<fun r='_ZN3JSC3FTL12LazySlowPathC1Ev'/>
+<fun r='_ZN3JSC3FTL12LazySlowPathD1Ev'/>
+<fun r='_ZN3JSC3FTL12LazySlowPath10initializeENS_16CodeLocationJumpILN3WTF6PtrTagE26432EEENS_17CodeLocationLabelILS4_26432EEENS6_ILS4_10924EEERKNS_11RegisterS14966625'/>
+<fun r='_ZNK3JSC3FTL12LazySlowPath13patchableJumpEv'/>
+<fun r='_ZNK3JSC3FTL12LazySlowPath4doneEv'/>
+<fun r='_ZNK3JSC3FTL12LazySlowPath13usedRegistersEv'/>
+<fun r='_ZNK3JSC3FTL12LazySlowPath13callSiteIndexEv'/>
+<fun r='_ZN3JSC3FTL12LazySlowPath8generateEPNS_9CodeBlockE'/>
+<fun r='_ZNK3JSC3FTL12LazySlowPath4stubEv'/>
+<mbr r='JSC::FTL::LazySlowPath::m_patchableJump' o='0' t='CodeLocationJump&lt;JSInternalPtrTag&gt;'/>
+<mbr r='JSC::FTL::LazySlowPath::m_done' o='64' t='CodeLocationLabel&lt;JSInternalPtrTag&gt;'/>
+<mbr r='JSC::FTL::LazySlowPath::m_exceptionTarget' o='128' t='CodeLocationLabel&lt;ExceptionHandlerPtrTag&gt;'/>
+<mbr r='JSC::FTL::LazySlowPath::m_usedRegisters' o='192' t='JSC::RegisterSet'/>
+<mbr r='JSC::FTL::LazySlowPath::m_callSiteIndex' o='224' t='JSC::CallSiteIndex'/>
+<mbr r='JSC::FTL::LazySlowPath::m_stub' o='256' t='MacroAssemblerCodeRef&lt;JITStubRoutinePtrTag&gt;'/>
+<mbr r='JSC::FTL::LazySlowPath::m_generator' o='384' t='RefPtr&lt;JSC::FTL::LazySlowPath::Generator&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLJITCode.cpp' l='175' c='_ZN3JSC3FTL7JITCode6findPCEPNS_9CodeBlockEPv'/>
+<size>56</size>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLOperations.cpp' l='741' c='_ZN3JSC3FTL31operationCompileFTLLazySlowPathEPNS_9CallFrameEj'/>
+<size>56</size>
+<fun r='_ZN3JSC3FTL12LazySlowPathD1Ev'/>
+<fun r='_ZN3JSC3FTL12LazySlowPath10initializeENS_16CodeLocationJumpILN3WTF6PtrTagE26432EEENS_17CodeLocationLabelILS4_26432EEENS6_ILS4_10924EEERKNS_11RegisterS14966625'/>
+<fun r='_ZN3JSC3FTL12LazySlowPath8generateEPNS_9CodeBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='17654' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB312lazySlowPathERKT_RKN3WTF6VectorIPNS_2B35ValueELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/ftl/FTLLowerDFGToB3.cpp' l='17654' c='_ZN3JSC3FTL12_GLOBAL__N_112LowerDFGToB312lazySlowPathERKT_RKN3WTF6VectorIPNS_2B35ValueELm0ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEE'/>
+<size>56</size>

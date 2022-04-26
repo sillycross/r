@@ -1,0 +1,14 @@
+<dec f='WebKit/Source/JavaScriptCore/b3/air/AirPadInterference.h' l='43' type='void JSC::B3::Air::padInterference(JSC::B3::Air::Code &amp; )'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersAndStackByLinearScan.cpp' l='120' u='c' c='_ZN3JSC2B33Air12_GLOBAL__N_110LinearScan3runEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirAllocateRegistersByGraphColoring.cpp' l='1757' u='c' c='_ZN3JSC2B33Air12_GLOBAL__N_131GraphColoringRegisterAllocation3runEv'/>
+<doc f='WebKit/Source/JavaScriptCore/b3/air/AirPadInterference.h' l='34'>// This isn&apos;t a phase - it&apos;s meant to be a utility that other phases use. Air reasons about liveness by
+// reasoning about interference at boundaries between instructions. This is convenient because it works
+// great in the most common case: early uses and late defs. However, this can go wrong - for example, a
+// late use in one instruction doesn&apos;t actually interfere with an early def of the next instruction, but
+// Air thinks that it does. It can also go wrong by having liveness incorrectly report that something is
+// dead when it isn&apos;t.
+//
+// See https://bugs.webkit.org/show_bug.cgi?id=163548#c2 for more info.</doc>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLowerAfterRegAlloc.cpp' l='79' u='c' c='_ZN3JSC2B33Air18lowerAfterRegAllocERNS1_4CodeE'/>
+<def f='WebKit/Source/JavaScriptCore/b3/air/AirPadInterference.cpp' l='36' ll='47' type='void JSC::B3::Air::padInterference(JSC::B3::Air::Code &amp; code)'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirReportUsedRegisters.cpp' l='45' u='c' c='_ZN3JSC2B33Air19reportUsedRegistersERNS1_4CodeE'/>

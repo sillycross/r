@@ -1,0 +1,49 @@
+<dec f='WebKit/Source/JavaScriptCore/runtime/IntlObject.h' l='38' type='const uint8_t [128]'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlObjectInlines.h' l='157' u='r' c='_ZN3JSC29canUseASCIIUCADUCETComparisonEDs'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlObjectInlines.h' l='188' u='r' c='_ZN3JSC24compareASCIIWithUCADUCETEPKT_jPKT0_j'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlObjectInlines.h' l='189' u='r' c='_ZN3JSC24compareASCIIWithUCADUCETEPKT_jPKT0_j'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/IntlObject.cpp' l='444' ll='461' type='const uint8_t [128]'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/IntlObject.cpp' l='400'>// This table is total ordering indexes for ASCII characters in UCA DUCET.
+// It is generated from CLDR common/uca/allkeys_DUCET.txt.
+//
+// Rough overview of UCA is the followings.
+// https://unicode.org/reports/tr10/#Main_Algorithm
+//
+//     1. Normalize each input string.
+//
+//     2. Produce an array of collation elements for each string.
+//
+//         There are 3 (or 4) levels. And each character has 4 weights. We concatenate them into one sequence called collation elements.
+//         For example, &quot;c&quot; has `[.0706.0020.0002]`. And &quot;ca◌́b&quot; becomes `[.0706.0020.0002], [.06D9.0020.0002], [.0000.0021.0002], [.06EE.0020.0002]`
+//         We need to consider variable weighting (https://unicode.org/reports/tr10/#Variable_Weighting), but if it is Non-ignorable, we can just use
+//         the collation elements defined in the table.
+//
+//     3. Produce a sort key for each string from the arrays of collation elements.
+//
+//         Generate sort key from collation elements. From lower levels to higher levels, we collect weights. But 0000 weight is skipped.
+//         Between levels, we insert 0000 weight if the boundary.
+//
+//             string: &quot;ca◌́b&quot;
+//             collation elements: `[.0706.0020.0002], [.06D9.0020.0002], [.0000.0021.0002], [.06EE.0020.0002]`
+//             sort key: `0706 06D9 06EE 0000 0020 0020 0021 0020 0000 0002 0002 0002 0002`
+//                                        ^                        ^
+//                                        level boundary           level boundary
+//
+//     4. Compare the two sort keys with a binary comparison operation.
+//
+// Key observations are the followings.
+//
+//     1. If an input is an ASCII string, UCA step-1 normalization does nothing.
+//     2. If an input is an ASCII string, non-starters (https://unicode.org/reports/tr10/#UTS10-D33) does not exist. So no special handling in UCA step-2 is required.
+//     3. If an input is an ASCII string, no multiple character collation elements exist. So no special handling in UCA step-2 is required. For example, &quot;L·&quot; is not ASCII.
+//     4. UCA step-3 handles 0000 weighted characters specially. And ASCII contains these characters. But 0000 elements are used only for rare control characters.
+//        We can ignore this special handling if ASCII strings do not include control characters.
+//     5. Level-1 weights are different except for 0000 cases and capital / lower ASCII characters. All non-0000 elements are larger than 0000.
+//     6. Level-2 weights are always 0020 except for 0000 cases. So if we include 0000 characters, we do not need to perform level-2 weight comparison.
+//     7. In all levels, characters have non-0000 weights if it does not have 0000 weight in level-1.
+//     8. In level-1, weights are the same only when characters are the same latin letters (&apos;A&apos; v.s. &apos;a&apos;). If level-1 weight comparison says EQUAL, and if characters are not binary-equal,
+//        then, the only case is they are including the same latin letters with different capitalization at the same position. Level-3 weight comparison must distinguish them since level-3
+//        weight is set only for latin capital letters. Thus, we do not need to perform level-4 weight comparison.
+//
+//  Based on the above observation, our fast path handles ASCII strings excluding control characters. We first compare strings with level-1 weights. And then,
+//  if we found they are the same and if we found they are not binary-equal strings, then we perform comparison with level-3 and level-4 weights.</doc>

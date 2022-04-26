@@ -1,0 +1,19 @@
+<use f='include/gstreamer-1.0/gst/gsttaskpool.h' l='39'/>
+<def f='include/gstreamer-1.0/gst/gsttaskpool.h' l='73' ll='86'/>
+<size>248</size>
+<doc f='include/gstreamer-1.0/gst/gsttaskpool.h' l='63'>/**
+ * GstTaskPoolClass:
+ * @parent_class: the parent class structure
+ * @prepare: prepare the threadpool
+ * @cleanup: make sure all threads are stopped
+ * @push: start a new thread
+ * @join: join a thread
+ *
+ * The #GstTaskPoolClass object.
+ */</doc>
+<mbr r='_GstTaskPoolClass::parent_class' o='0' t='GstObjectClass'/>
+<mbr r='_GstTaskPoolClass::prepare' o='1472' t='void (*)(GstTaskPool *, GError **)'/>
+<mbr r='_GstTaskPoolClass::cleanup' o='1536' t='void (*)(GstTaskPool *)'/>
+<mbr r='_GstTaskPoolClass::push' o='1600' t='gpointer (*)(GstTaskPool *, GstTaskPoolFunction, gpointer, GError **)'/>
+<mbr r='_GstTaskPoolClass::join' o='1664' t='void (*)(GstTaskPool *, gpointer)'/>
+<mbr r='_GstTaskPoolClass::_gst_reserved' o='1728' t='gpointer [4]'/>

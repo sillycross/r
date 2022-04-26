@@ -1,0 +1,27 @@
+<use f='include/gstreamer-1.0/gst/gstclock.h' l='281'/>
+<def f='include/gstreamer-1.0/gst/gstclock.h' l='483' ll='503'/>
+<size>264</size>
+<doc f='include/gstreamer-1.0/gst/gstclock.h' l='467'>/**
+ * GstClockClass:
+ * @parent_class: the parent class structure
+ * @change_resolution: change the resolution of the clock. Not all values might
+ *                     be acceptable. The new resolution should be returned.
+ * @get_resolution: get the resolution of the clock.
+ * @get_internal_time: get the internal unadjusted time of the clock.
+ *        implement @wait_jitter instead.
+ * @wait: perform a blocking wait on the given #GstClockEntry and return
+ *               the jitter.
+ * @wait_async: perform an asynchronous wait for the given #GstClockEntry.
+ * @unschedule: unblock a blocking or async wait operation.
+ *
+ * GStreamer clock class. Override the vmethods to implement the clock
+ * functionality.
+ */</doc>
+<mbr r='_GstClockClass::parent_class' o='0' t='GstObjectClass'/>
+<mbr r='_GstClockClass::change_resolution' o='1472' t='GstClockTime (*)(GstClock *, GstClockTime, GstClockTime)'/>
+<mbr r='_GstClockClass::get_resolution' o='1536' t='GstClockTime (*)(GstClock *)'/>
+<mbr r='_GstClockClass::get_internal_time' o='1600' t='GstClockTime (*)(GstClock *)'/>
+<mbr r='_GstClockClass::wait' o='1664' t='GstClockReturn (*)(GstClock *, GstClockEntry *, GstClockTimeDiff *)'/>
+<mbr r='_GstClockClass::wait_async' o='1728' t='GstClockReturn (*)(GstClock *, GstClockEntry *)'/>
+<mbr r='_GstClockClass::unschedule' o='1792' t='void (*)(GstClock *, GstClockEntry *)'/>
+<mbr r='_GstClockClass::_gst_reserved' o='1856' t='gpointer [4]'/>

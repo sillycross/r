@@ -1,0 +1,8 @@
+<def f='WebKit/Source/WebCore/loader/cache/CachedResource.h' l='210' type='void WebCore::CachedResource::setInCache(bool inCache)'/>
+<doc f='WebKit/Source/WebCore/loader/cache/CachedResource.h' l='206'>// Called by the cache if the object has been removed from the cache
+    // while still being referenced. This means the object should delete itself
+    // if the number of clients observing it ever drops to 0.
+    // The resource can be brought back to cache after successful revalidation.</doc>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.cpp' l='125' u='c' c='_ZN7WebCore11MemoryCache3addERNS_14CachedResourceE'/>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.cpp' l='153' u='c' c='_ZN7WebCore11MemoryCache21revalidationSucceededERNS_14CachedResourceERKNS_16ResourceResponseE'/>
+<use f='WebKit/Source/WebCore/loader/cache/MemoryCache.cpp' l='406' u='c' c='_ZN7WebCore11MemoryCache6removeERNS_14CachedResourceE'/>

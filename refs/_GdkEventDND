@@ -1,0 +1,26 @@
+<use f='include/gtk-3.0/gdk/gdkevents.h' l='139'/>
+<def f='include/gtk-3.0/gdk/gdkevents.h' l='1188' ll='1196'/>
+<size>40</size>
+<doc f='include/gtk-3.0/gdk/gdkevents.h' l='1172'>/**
+ * GdkEventDND:
+ * @type: the type of the event (%GDK_DRAG_ENTER, %GDK_DRAG_LEAVE,
+ *   %GDK_DRAG_MOTION, %GDK_DRAG_STATUS, %GDK_DROP_START or
+ *   %GDK_DROP_FINISHED).
+ * @window: the window which received the event.
+ * @send_event: %TRUE if the event was sent explicitly.
+ * @context: the #GdkDragContext for the current DND operation.
+ * @time: the time of the event in milliseconds.
+ * @x_root: the x coordinate of the pointer relative to the root of the
+ *   screen, only set for %GDK_DRAG_MOTION and %GDK_DROP_START.
+ * @y_root: the y coordinate of the pointer relative to the root of the
+ *   screen, only set for %GDK_DRAG_MOTION and %GDK_DROP_START.
+ *
+ * Generated during DND operations.
+ */</doc>
+<mbr r='_GdkEventDND::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventDND::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventDND::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventDND::context' o='192' t='GdkDragContext *'/>
+<mbr r='_GdkEventDND::time' o='256' t='guint32'/>
+<mbr r='_GdkEventDND::x_root' o='288' t='gshort'/>
+<mbr r='_GdkEventDND::y_root' o='304' t='gshort'/>

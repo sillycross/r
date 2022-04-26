@@ -1,0 +1,20 @@
+<dec f='include/unicode/usearch.h' l='266' type='4'/>
+<doc f='include/unicode/usearch.h' l='247'>/** 
+     * Value for USEARCH_ELEMENT_COMPARISON.
+     * collation element comparison is modified to effectively provide
+     * behavior between the specified strength and strength - 1. Collation
+     * elements in either the pattern or the searched text that have the
+     * base weight for the specified strength are treated as &quot;wildcards&quot;
+     * that match an element with any other weight at that collation level.
+     * For example, with a secondary-strength English collator, a plain &apos;e&apos;
+     * in the pattern will match a plain e or an e with any diacritic in the
+     * searched text, but an e with diacritic in the pattern will only
+     * match an e with the same diacritic or a plain e in the searched text.
+     *
+     * This option is similar to &quot;asymmetric search&quot; as described in
+     * [UTS #10 Unicode Collation Algorithm](http://www.unicode.org/reports/tr10/#Asymmetric_Search),
+     * but also allows unmarked characters in the searched text to match
+     * marked or unmarked versions of that character in the pattern.
+     *
+     * @stable ICU 4.4
+     */</doc>

@@ -1,0 +1,98 @@
+<def f='WebKit/Source/JavaScriptCore/b3/B3ValueKey.h' l='47' ll='176'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueKey.h' l='87' c='_ZN3JSC2B38ValueKey11intConstantENS0_4TypeEl'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueKey.h' l='98' c='_ZNK3JSC2B38ValueKeyeqERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueKey.h' l='105' c='_ZNK3JSC2B38ValueKeyneERKS1_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueKey.h' l='115' c='_ZNK3JSC2B38ValueKeycvbEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueKey.h' l='150' c='_ZNK3JSC2B38ValueKey23isHashTableDeletedValueEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueKey.h' l='179' c='_ZN3JSC2B312ValueKeyHash4hashERKNS0_8ValueKeyE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueKey.h' l='180' c='_ZN3JSC2B312ValueKeyHash5equalERKNS0_8ValueKeyES4_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueKey.h' l='180' c='_ZN3JSC2B312ValueKeyHash5equalERKNS0_8ValueKeyES4_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueKey.h' l='189'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueKey.h' l='192'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.h' l='301' c='_ZNK3JSC2B35Value3keyEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Procedure.h' l='196' c='_ZN3JSC2B39Procedure15addFastConstantERKNS0_8ValueKeyE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Procedure.h' l='197' c='_ZN3JSC2B39Procedure14isFastConstantERKNS0_8ValueKeyE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Procedure.h' l='298'/>
+<size>24</size>
+<doc f='WebKit/Source/JavaScriptCore/b3/B3ValueKey.h' l='41'>// ValueKeys are useful for CSE. They abstractly describe the value that a Value returns when it
+// executes. Any Value that has the same ValueKey is guaranteed to return the same value, provided
+// that they return a non-empty ValueKey. Operations that have effects, or that can have their
+// behavior affected by other operations&apos; effects, will return an empty ValueKey. You have to use
+// other mechanisms for doing CSE for impure operations.</doc>
+<fun r='_ZN3JSC2B38ValueKeyC1Ev'/>
+<fun r='_ZN3JSC2B38ValueKeyC1ENS0_4KindENS0_4TypeE'/>
+<fun r='_ZN3JSC2B38ValueKeyC1ENS0_4KindENS0_4TypeEPNS0_5ValueE'/>
+<fun r='_ZN3JSC2B38ValueKeyC1ENS0_4KindENS0_4TypeEPNS0_5ValueES5_'/>
+<fun r='_ZN3JSC2B38ValueKeyC1ENS0_4KindENS0_4TypeEPNS0_5ValueES5_S5_'/>
+<fun r='_ZN3JSC2B38ValueKeyC1ENS0_4KindENS0_4TypeEl'/>
+<fun r='_ZN3JSC2B38ValueKeyC1ENS0_4KindENS0_4TypeEd'/>
+<fun r='_ZN3JSC2B38ValueKeyC1ENS0_4KindENS0_4TypeEf'/>
+<fun r='_ZN3JSC2B38ValueKey11intConstantENS0_4TypeEl'/>
+<fun r='_ZNK3JSC2B38ValueKey4kindEv'/>
+<fun r='_ZNK3JSC2B38ValueKey6opcodeEv'/>
+<fun r='_ZNK3JSC2B38ValueKey4typeEv'/>
+<fun r='_ZNK3JSC2B38ValueKey10childIndexEj'/>
+<fun r='_ZNK3JSC2B38ValueKey5childERNS0_9ProcedureEj'/>
+<fun r='_ZNK3JSC2B38ValueKey5valueEv'/>
+<fun r='_ZNK3JSC2B38ValueKey11doubleValueEv'/>
+<fun r='_ZNK3JSC2B38ValueKey10floatValueEv'/>
+<fun r='_ZNK3JSC2B38ValueKeyeqERKS1_'/>
+<fun r='_ZNK3JSC2B38ValueKeyneERKS1_'/>
+<fun r='_ZNK3JSC2B38ValueKey4hashEv'/>
+<fun r='_ZNK3JSC2B38ValueKeycvbEv'/>
+<fun r='_ZNK3JSC2B38ValueKey4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZNK3JSC2B38ValueKey14canMaterializeEv'/>
+<fun r='_ZNK3JSC2B38ValueKey10isConstantEv'/>
+<fun r='_ZNK3JSC2B38ValueKey11materializeERNS0_9ProcedureENS0_6OriginE'/>
+<fun r='_ZN3JSC2B38ValueKeyC1EN3WTF25HashTableDeletedValueTypeE'/>
+<fun r='_ZNK3JSC2B38ValueKey23isHashTableDeletedValueEv'/>
+<mbr r='JSC::B3::ValueKey::m_kind' o='0' t='JSC::B3::Kind'/>
+<mbr r='JSC::B3::ValueKey::m_type' o='32' t='JSC::B3::Type'/>
+<mbr r='JSC::B3::ValueKey::u' o='64' t='union U'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='357'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmB3IRGenerator.cpp' l='619' c='_ZN3JSC4Wasm13B3IRGenerator8constantENS_2B34TypeEmSt8optionalINS2_6OriginEE'/>
+<size>24</size>
+<use f='WebKit/Source/JavaScriptCore/b3/B3PureCSE.h' l='51' c='_ZN3JSC2B37PureCSE9findMatchERKNS0_8ValueKeyEPNS0_10BasicBlockERNS0_10DominatorsE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3PureCSE.h' l='56'/>
+<size>24</size>
+<use f='WebKit/Source/JavaScriptCore/b3/B3MoveConstants.cpp' l='71' c='_ZN3JSC2B312_GLOBAL__N_113MoveConstants14hoistConstantsERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3MoveConstants.cpp' l='81' c='_ZN3JSC2B312_GLOBAL__N_113MoveConstants14hoistConstantsERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3MoveConstants.cpp' l='121' c='_ZN3JSC2B312_GLOBAL__N_113MoveConstants14hoistConstantsERKT_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3MoveConstants.cpp' l='265' c='_ZN3JSC2B312_GLOBAL__N_113MoveConstants16lowerFPConstantsEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3MoveConstants.cpp' l='288' c='_ZN3JSC2B312_GLOBAL__N_113MoveConstants16lowerFPConstantsEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3MoveConstants.cpp' l='306' c='_ZN3JSC2B312_GLOBAL__N_113MoveConstants16lowerFPConstantsEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3MoveConstants.cpp' l='342'/>
+<size>24</size>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Procedure.cpp' l='334' c='_ZN3JSC2B39Procedure15addFastConstantERKNS0_8ValueKeyE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Procedure.cpp' l='340' c='_ZN3JSC2B39Procedure14isFastConstantERKNS0_8ValueKeyE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3PureCSE.cpp' l='51' c='_ZN3JSC2B37PureCSE9findMatchERKNS0_8ValueKeyEPNS0_10BasicBlockERNS0_10DominatorsE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3PureCSE.cpp' l='80' c='_ZN3JSC2B37PureCSE7processEPNS0_5ValueERNS0_10DominatorsE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ReduceStrength.cpp' l='2342' c='_ZN3JSC2B312_GLOBAL__N_114ReduceStrength19reduceValueStrengthEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ReduceStrength.cpp' l='2358' c='_ZN3JSC2B312_GLOBAL__N_114ReduceStrength19reduceValueStrengthEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ReduceStrength.cpp' l='3036'/>
+<size>24</size>
+<fun r='_ZN3JSC2B38ValueKeyC1ENS0_4KindENS0_4TypeEPNS0_5ValueE'/>
+<fun r='_ZN3JSC2B38ValueKeyC1ENS0_4KindENS0_4TypeEPNS0_5ValueES5_'/>
+<fun r='_ZN3JSC2B38ValueKeyC1ENS0_4KindENS0_4TypeEPNS0_5ValueES5_S5_'/>
+<fun r='_ZNK3JSC2B38ValueKey5childERNS0_9ProcedureEj'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='685' c='_ZNK3JSC2B35Value3keyEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='691' c='_ZNK3JSC2B35Value3keyEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='712' c='_ZNK3JSC2B35Value3keyEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='740' c='_ZNK3JSC2B35Value3keyEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='742' c='_ZNK3JSC2B35Value3keyEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='744' c='_ZNK3JSC2B35Value3keyEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='746' c='_ZNK3JSC2B35Value3keyEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='748' c='_ZNK3JSC2B35Value3keyEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='750' c='_ZNK3JSC2B35Value3keyEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='752' c='_ZNK3JSC2B35Value3keyEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='754' c='_ZNK3JSC2B35Value3keyEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='758' c='_ZNK3JSC2B35Value3keyEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3Value.cpp' l='762' c='_ZNK3JSC2B35Value3keyEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueKey.cpp' l='39' c='_ZN3JSC2B38ValueKey11intConstantENS0_4TypeEl'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueKey.cpp' l='43' c='_ZN3JSC2B38ValueKey11intConstantENS0_4TypeEl'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueKey.cpp' l='45' c='_ZN3JSC2B38ValueKey11intConstantENS0_4TypeEl'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3ValueKey.cpp' l='48' c='_ZN3JSC2B38ValueKey11intConstantENS0_4TypeEl'/>
+<size>24</size>
+<fun r='_ZN3JSC2B38ValueKey11intConstantENS0_4TypeEl'/>
+<fun r='_ZNK3JSC2B38ValueKey4dumpERN3WTF11PrintStreamE'/>
+<fun r='_ZNK3JSC2B38ValueKey11materializeERNS0_9ProcedureENS0_6OriginE'/>

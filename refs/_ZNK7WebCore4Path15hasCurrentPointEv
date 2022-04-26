@@ -1,0 +1,10 @@
+<dec f='WebKit/Source/WebCore/platform/graphics/Path.h' l='160' type='bool WebCore::Path::hasCurrentPoint() const'/>
+<doc f='WebKit/Source/WebCore/platform/graphics/Path.h' l='156'>// Gets the current point of the current path, which is conceptually the final point reached by the path so far.
+    // Note the Path can be empty (isEmpty() == true) and still have a current point.
+    // FIXME: The above comment might need to be updated; on all supported platforms, the result of hasCurrentPoint() is identical
+    // to !isEmpty().</doc>
+<def f='WebKit/Source/WebCore/platform/graphics/Path.cpp' l='240' ll='243' type='bool WebCore::Path::hasCurrentPoint() const'/>
+<use f='WebKit/Source/WebCore/html/canvas/CanvasPath.cpp' l='76' u='c' c='_ZN7WebCore10CanvasPath6lineToEff'/>
+<use f='WebKit/Source/WebCore/html/canvas/CanvasPath.cpp' l='88' u='c' c='_ZN7WebCore10CanvasPath16quadraticCurveToEffff'/>
+<use f='WebKit/Source/WebCore/html/canvas/CanvasPath.cpp' l='103' u='c' c='_ZN7WebCore10CanvasPath13bezierCurveToEffffff'/>
+<use f='WebKit/Source/WebCore/html/canvas/CanvasPath.cpp' l='127' u='c' c='_ZN7WebCore10CanvasPath5arcToEfffff'/>

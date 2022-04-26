@@ -1,0 +1,13 @@
+<dec f='WebKit/WTF/Headers/wtf/AutomaticThread.h' l='173' type='void WTF::AutomaticThread::threadDidStart()'/>
+<doc f='WebKit/WTF/Headers/wtf/AutomaticThread.h' l='170'>// It&apos;s sometimes useful to allocate resources while the thread is running, and to destroy them
+    // when the thread dies. These methods let you do this. You can override these methods, and you
+    // can be sure that the default ones don&apos;t do anything (so you don&apos;t need a super call).</doc>
+<ovr f='WebKit/Source/JavaScriptCore/jit/JITWorklistThread.cpp' l='151' c='_ZN3JSC17JITWorklistThread14threadDidStartEv'/>
+<ovr f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='265' c='_ZN3JSC4Heap10HeapThread14threadDidStartEv'/>
+<dec f='WebKit/Source/WTF/wtf/AutomaticThread.h' l='173' type='void WTF::AutomaticThread::threadDidStart()'/>
+<use f='WebKit/Source/WTF/wtf/AutomaticThread.cpp' l='178' u='c' c='_ZN3WTF15AutomaticThread5startERKNS_14AbstractLockerE'/>
+<def f='WebKit/Source/WTF/wtf/AutomaticThread.cpp' l='239' ll='241' type='void WTF::AutomaticThread::threadDidStart()'/>
+<doc f='WebKit/Source/WTF/wtf/AutomaticThread.h' l='170'>// It&apos;s sometimes useful to allocate resources while the thread is running, and to destroy them
+    // when the thread dies. These methods let you do this. You can override these methods, and you
+    // can be sure that the default ones don&apos;t do anything (so you don&apos;t need a super call).</doc>
+<ovr f='WebKit/Source/WTF/wtf/WorkerPool.cpp' l='58' c='_ZN3WTF10WorkerPool6Worker14threadDidStartEv'/>

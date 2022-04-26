@@ -1,0 +1,17 @@
+<dec f='WebKit/Source/WebCore/loader/HistoryController.h' l='55' type='void WebCore::FrameLoader::HistoryController::restoreScrollPositionAndViewState()'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='2551' u='c' c='_ZN7WebCore11FrameLoader29checkLoadCompleteForThisFrameEv'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='2659' u='c' c='_ZN7WebCore11FrameLoader14didFirstLayoutEv'/>
+<use f='WebKit/Source/WebCore/loader/FrameLoader.cpp' l='3729' u='c' c='_ZN7WebCore11FrameLoader20loadSameDocumentItemERNS_11HistoryItemE'/>
+<def f='WebKit/Source/WebCore/loader/HistoryController.cpp' l='123' ll='179' type='void WebCore::FrameLoader::HistoryController::restoreScrollPositionAndViewState()'/>
+<use f='WebKit/Source/WebCore/loader/HistoryController.cpp' l='538' u='c' c='_ZN7WebCore11FrameLoader17HistoryController24recursiveUpdateForCommitEv'/>
+<doc f='WebKit/Source/WebCore/loader/HistoryController.cpp' l='112'>/*
+ There is a race condition between the layout and load completion that affects restoring the scroll position.
+ We try to restore the scroll position at both the first layout and upon load completion.
+ 
+ 1) If first layout happens before the load completes, we want to restore the scroll position then so that the
+ first time we draw the page is already scrolled to the right place, instead of starting at the top and later
+ jumping down.  It is possible that the old scroll position is past the part of the doc laid out so far, in
+ which case the restore silent fails and we will fix it in when we try to restore on doc completion.
+ 2) If the layout happens after the load completes, the attempt to restore at load completion time silently
+ fails.  We then successfully restore it when the layout happens.
+*/</doc>

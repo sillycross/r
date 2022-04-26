@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebCore/page/FrameView.h' l='286' type='static WebCore::LayoutRect WebCore::FrameView::visibleDocumentRect(const WebCore::FloatRect &amp; visibleContentRect, float headerHeight, float footerHeight, const WebCore::FloatSize &amp; totalContentsSize, float pageScaleFactor)'/>
+<use f='WebKit/Source/WebCore/page/scrolling/ScrollingTreeFrameScrollingNode.cpp' l='99' u='c' c='_ZNK7WebCore31ScrollingTreeFrameScrollingNode31layoutViewportForScrollPositionERKNS_10FloatPointEfNS_30ScrollBehaviorForFixedElementsE'/>
+<def f='WebKit/Source/WebCore/page/FrameView.cpp' l='1779' ll='1795' type='static WebCore::LayoutRect WebCore::FrameView::visibleDocumentRect(const WebCore::FloatRect &amp; visibleContentRect, float headerHeight, float footerHeight, const WebCore::FloatSize &amp; totalContentsSize, float pageScaleFactor)'/>
+<use f='WebKit/Source/WebCore/page/FrameView.cpp' l='1803' u='c' c='_ZNK7WebCore9FrameView18visualViewportRectEv'/>
+<doc f='WebKit/Source/WebCore/page/FrameView.cpp' l='1775'>// visibleContentRect is in the bounds of the scroll view content. That consists of an
+// optional header, the document, and an optional footer. Only the document is scaled,
+// so we have to compute the visible part of the document in unscaled document coordinates.
+// On iOS, pageScaleFactor is always 1 here, and we never have headers and footers.</doc>

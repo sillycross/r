@@ -1,0 +1,8 @@
+<dec f='WebKit/Source/WebCore/rendering/RenderGrid.h' l='112' type='void WebCore::RenderGrid::placeItemsOnGrid(WebCore::GridTrackSizingAlgorithm &amp; , std::optional&lt;LayoutUnit&gt; availableLogicalWidth) const'/>
+<use f='WebKit/Source/WebCore/rendering/RenderGrid.cpp' l='234' u='c' c='_ZN7WebCore10RenderGrid11layoutBlockEbNS_10LayoutUnitE'/>
+<use f='WebKit/Source/WebCore/rendering/RenderGrid.cpp' l='416' u='c' c='_ZNK7WebCore10RenderGrid29computeIntrinsicLogicalWidthsERNS_10LayoutUnitES2_'/>
+<def f='WebKit/Source/WebCore/rendering/RenderGrid.cpp' l='595' ll='672' type='void WebCore::RenderGrid::placeItemsOnGrid(WebCore::GridTrackSizingAlgorithm &amp; algorithm, std::optional&lt;LayoutUnit&gt; availableLogicalWidth) const'/>
+<doc f='WebKit/Source/WebCore/rendering/RenderGrid.cpp' l='591'>// FIXME: We shouldn&apos;t have to pass the available logical width as argument. The problem is that
+// availableLogicalWidth() does always return a value even if we cannot resolve it like when
+// computing the intrinsic size (preferred widths). That&apos;s why we pass the responsibility to the
+// caller who does know whether the available logical width is indefinite or not.</doc>

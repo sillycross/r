@@ -1,0 +1,35 @@
+<dec f='include/wayland-client-protocol.h' l='248' type='const struct wl_interface'/>
+<dec f='include/wayland-server-protocol.h' l='251' type='const struct wl_interface'/>
+<def f='include/wayland-server-protocol.h' l='1527' ll='1545'/>
+<size>8</size>
+<doc f='include/wayland-client-protocol.h' l='235'>/**
+ * @defgroup iface_wl_shm The wl_shm interface
+ *
+ * A singleton global object that provides support for shared
+ * memory.
+ *
+ * Clients can create wl_shm_pool objects using the create_pool
+ * request.
+ *
+ * At connection setup time, the wl_shm object emits one or more
+ * format events to inform clients about the valid pixel formats
+ * that can be used for buffers.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='238'>/**
+ * @defgroup iface_wl_shm The wl_shm interface
+ *
+ * A singleton global object that provides support for shared
+ * memory.
+ *
+ * Clients can create wl_shm_pool objects using the create_pool
+ * request.
+ *
+ * At connection setup time, the wl_shm object emits one or more
+ * format events to inform clients about the valid pixel formats
+ * that can be used for buffers.
+ */</doc>
+<doc f='include/wayland-server-protocol.h' l='1523'>/**
+ * @ingroup iface_wl_shm
+ * @struct wl_shm_interface
+ */</doc>
+<mbr r='wl_shm_interface::create_pool' o='0' t='void (*)(struct wl_client *, struct wl_resource *, uint32_t, int32_t, int32_t)'/>

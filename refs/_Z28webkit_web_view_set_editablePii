@@ -1,0 +1,19 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebView.cpp' l='4522' ll='4532' type='void webkit_web_view_set_editable(int * webView, gboolean editable)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebView.cpp' l='4504'>/**
+ * webkit_web_view_set_editable:
+ * @web_view: a #WebKitWebView
+ * @editable: a #gboolean indicating the editable state
+ *
+ * Sets whether the user is allowed to edit the HTML document.
+ *
+ * If @editable is %TRUE, @web_view allows the user to edit the HTML document. If
+ * @editable is %FALSE, an element in @web_view&apos;s document can only be edited if the
+ * CONTENTEDITABLE attribute has been set on the element or one of its parent
+ * elements. By default a #WebKitWebView is not editable.
+ *
+ * Normally, a HTML document is not editable unless the elements within the
+ * document are editable. This function provides a way to make the contents
+ * of a #WebKitWebView editable without altering the document or DOM structure.
+ *
+ * Since: 2.8
+ */</doc>

@@ -1,0 +1,90 @@
+<inh f='WebKit/Source/WebCore/platform/FileStreamClient.h' l='36' c='WebCore::FileStreamClient'/>
+<inh f='WebKit/Source/WebCore/platform/network/ResourceHandle.h' l='96' c='WebCore::ResourceHandle'/>
+<def f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.h' l='47' ll='120'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.h' l='49' c='_ZN7WebCore18BlobResourceHandle11createAsyncEPNS_8BlobDataERKNS_15ResourceRequestEPNS_20ResourceHandleClientE'/>
+<size>168</size>
+<fun r='_ZN7WebCore18BlobResourceHandle11createAsyncEPNS_8BlobDataERKNS_15ResourceRequestEPNS_20ResourceHandleClientE'/>
+<fun r='_ZN7WebCore18BlobResourceHandle25loadResourceSynchronouslyEPNS_8BlobDataERKNS_15ResourceRequestERNS_13ResourceErrorERNS_16ResourceResponseERN3WTF6Vect3974053'/>
+<fun r='_ZN7WebCore18BlobResourceHandle5startEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandle8readSyncEPhi'/>
+<fun r='_ZNK7WebCore18BlobResourceHandle7abortedEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandleC1EPNS_8BlobDataERKNS_15ResourceRequestEPNS_20ResourceHandleClientEb'/>
+<fun r='_ZN7WebCore18BlobResourceHandleD1Ev'/>
+<fun r='_ZN7WebCore18BlobResourceHandle10didGetSizeEx'/>
+<fun r='_ZN7WebCore18BlobResourceHandle7didOpenEb'/>
+<fun r='_ZN7WebCore18BlobResourceHandle7didReadEi'/>
+<fun r='_ZN7WebCore18BlobResourceHandle6cancelEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandle7doStartEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandle14getSizeForNextEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandle4seekEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandle11consumeDataEPKhi'/>
+<fun r='_ZN7WebCore18BlobResourceHandle6failedENS0_5ErrorE'/>
+<fun r='_ZN7WebCore18BlobResourceHandle9readAsyncEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandle13readDataAsyncERKNS_12BlobDataItemE'/>
+<fun r='_ZN7WebCore18BlobResourceHandle13readFileAsyncERKNS_12BlobDataItemE'/>
+<fun r='_ZN7WebCore18BlobResourceHandle12readDataSyncERKNS_12BlobDataItemEPvi'/>
+<fun r='_ZN7WebCore18BlobResourceHandle12readFileSyncERKNS_12BlobDataItemEPvi'/>
+<fun r='_ZN7WebCore18BlobResourceHandle14notifyResponseEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandle23notifyResponseOnSuccessEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandle21notifyResponseOnErrorEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandle17notifyReceiveDataEPKhi'/>
+<fun r='_ZN7WebCore18BlobResourceHandle10notifyFailENS0_5ErrorE'/>
+<fun r='_ZN7WebCore18BlobResourceHandle12notifyFinishEv'/>
+<fun r='_ZNK7WebCore18BlobResourceHandle16erroredOrAbortedEv'/>
+<mbr r='WebCore::BlobResourceHandle::m_blobData' o='256' t='RefPtr&lt;WebCore::BlobData&gt;'/>
+<mbr r='WebCore::BlobResourceHandle::m_async' o='320' t='bool'/>
+<mbr r='WebCore::BlobResourceHandle::m_asyncStream' o='384' t='std::unique_ptr&lt;AsyncFileStream&gt;'/>
+<mbr r='WebCore::BlobResourceHandle::m_stream' o='448' t='std::unique_ptr&lt;FileStream&gt;'/>
+<mbr r='WebCore::BlobResourceHandle::m_buffer' o='512' t='Vector&lt;uint8_t&gt;'/>
+<mbr r='WebCore::BlobResourceHandle::m_itemLengthList' o='640' t='Vector&lt;long long&gt;'/>
+<mbr r='WebCore::BlobResourceHandle::m_errorCode' o='768' t='WebCore::BlobResourceHandle::Error'/>
+<mbr r='WebCore::BlobResourceHandle::m_aborted' o='800' t='bool'/>
+<mbr r='WebCore::BlobResourceHandle::m_rangeOffset' o='832' t='long long'/>
+<mbr r='WebCore::BlobResourceHandle::m_rangeEnd' o='896' t='long long'/>
+<mbr r='WebCore::BlobResourceHandle::m_rangeSuffixLength' o='960' t='long long'/>
+<mbr r='WebCore::BlobResourceHandle::m_totalSize' o='1024' t='long long'/>
+<mbr r='WebCore::BlobResourceHandle::m_totalRemainingSize' o='1088' t='long long'/>
+<mbr r='WebCore::BlobResourceHandle::m_currentItemReadSize' o='1152' t='long long'/>
+<mbr r='WebCore::BlobResourceHandle::m_sizeItemCount' o='1216' t='unsigned int'/>
+<mbr r='WebCore::BlobResourceHandle::m_readItemCount' o='1248' t='unsigned int'/>
+<mbr r='WebCore::BlobResourceHandle::m_fileOpened' o='1280' t='bool'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='126' c='_ZN7WebCore12_GLOBAL__N_129BlobResourceSynchronousLoader23didReceiveResponseAsyncEPNS_14ResourceHandleEONS_16ResourceResponseEON3WTF17CompletionHandlerIFvvEEE'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='140' c='_ZN7WebCore18BlobResourceHandle11createAsyncEPNS_8BlobDataERKNS_15ResourceRequestEPNS_20ResourceHandleClientE'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='142' c='_ZN7WebCore18BlobResourceHandle11createAsyncEPNS_8BlobDataERKNS_15ResourceRequestEPNS_20ResourceHandleClientE'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='153' c='_ZN7WebCore18BlobResourceHandle25loadResourceSynchronouslyEPNS_8BlobDataERKNS_15ResourceRequestERNS_13ResourceErrorERNS_16ResourceResponseERN3WTF6Vect3974053'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='153' c='_ZN7WebCore18BlobResourceHandle25loadResourceSynchronouslyEPNS_8BlobDataERKNS_15ResourceRequestERNS_13ResourceErrorERNS_16ResourceResponseERN3WTF6Vect3974053'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='223' c='_ZN7WebCore18BlobResourceHandle7doStartEv'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='240' c='_ZN7WebCore18BlobResourceHandle14getSizeForNextEv'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='329' c='_ZN7WebCore18BlobResourceHandle8readSyncEPhi'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='457' c='_ZN7WebCore18BlobResourceHandle13readDataAsyncERKNS_12BlobDataItemE'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='513' c='_ZN7WebCore18BlobResourceHandle11consumeDataEPKhi'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='543' c='_ZN7WebCore18BlobResourceHandle6failedENS0_5ErrorE'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='561' c='_ZN7WebCore18BlobResourceHandle14notifyResponseEv'/>
+<use f='WebKit/Source/WebCore/platform/network/BlobResourceHandle.cpp' l='630' c='_ZN7WebCoreL14doNotifyFinishERNS_18BlobResourceHandleE'/>
+<size>168</size>
+<fun r='_ZN7WebCore18BlobResourceHandle11createAsyncEPNS_8BlobDataERKNS_15ResourceRequestEPNS_20ResourceHandleClientE'/>
+<fun r='_ZN7WebCore18BlobResourceHandle25loadResourceSynchronouslyEPNS_8BlobDataERKNS_15ResourceRequestERNS_13ResourceErrorERNS_16ResourceResponseERN3WTF6Vect3974053'/>
+<fun r='_ZN7WebCore18BlobResourceHandleC1EPNS_8BlobDataERKNS_15ResourceRequestEPNS_20ResourceHandleClientEb'/>
+<fun r='_ZN7WebCore18BlobResourceHandleD1Ev'/>
+<fun r='_ZN7WebCore18BlobResourceHandle6cancelEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandle5startEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandle7doStartEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandle14getSizeForNextEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandle10didGetSizeEx'/>
+<fun r='_ZN7WebCore18BlobResourceHandle4seekEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandle8readSyncEPhi'/>
+<fun r='_ZN7WebCore18BlobResourceHandle12readDataSyncERKNS_12BlobDataItemEPvi'/>
+<fun r='_ZN7WebCore18BlobResourceHandle12readFileSyncERKNS_12BlobDataItemEPvi'/>
+<fun r='_ZN7WebCore18BlobResourceHandle9readAsyncEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandle13readDataAsyncERKNS_12BlobDataItemE'/>
+<fun r='_ZN7WebCore18BlobResourceHandle13readFileAsyncERKNS_12BlobDataItemE'/>
+<fun r='_ZN7WebCore18BlobResourceHandle7didOpenEb'/>
+<fun r='_ZN7WebCore18BlobResourceHandle7didReadEi'/>
+<fun r='_ZN7WebCore18BlobResourceHandle11consumeDataEPKhi'/>
+<fun r='_ZN7WebCore18BlobResourceHandle6failedENS0_5ErrorE'/>
+<fun r='_ZN7WebCore18BlobResourceHandle14notifyResponseEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandle23notifyResponseOnSuccessEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandle21notifyResponseOnErrorEv'/>
+<fun r='_ZN7WebCore18BlobResourceHandle17notifyReceiveDataEPKhi'/>
+<fun r='_ZN7WebCore18BlobResourceHandle10notifyFailENS0_5ErrorE'/>
+<fun r='_ZN7WebCore18BlobResourceHandle12notifyFinishEv'/>

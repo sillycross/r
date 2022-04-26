@@ -1,0 +1,79 @@
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/Download.h' l='68' c='_ZN6WebKit8DownloadC1ERiN3WTF16ObjectIdentifierINS_22DownloadIdentifierTypeEEERNS_15NetworkDataTaskERNS_14NetworkSessionERKNS2_6StringE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/Download.h' l='114'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.h' l='207' c='_ZN6WebKit14NetworkProcess27findPendingDownloadLocationERNS_15NetworkDataTaskEOiRKN7WebCore16ResourceResponseE'/>
+<inh f='WebKit/WTF/Headers/wtf/ThreadSafeRefCounted.h' l='109' c='WTF::ThreadSafeRefCounted'/>
+<inh f='WebKit/WTF/Headers/wtf/WeakPtr.h' l='218' c='WTF::CanMakeWeakPtr'/>
+<def f='WebKit/Source/WebKit/NetworkProcess/NetworkDataTask.h' l='85' ll='173'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkDataTask.h' l='85'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkDataTask.h' l='85'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkDataTask.h' l='87' c='_ZN6WebKit15NetworkDataTask6createERNS_14NetworkSessionERNS_21NetworkDataTaskClientERKNS_21NetworkLoadParametersE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkLoad.h' l='96'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSession.h' l='93' c='_ZN6WebKit14NetworkSession23registerNetworkDataTaskERNS_15NetworkDataTaskE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSession.h' l='94' c='_ZN6WebKit14NetworkSession25unregisterNetworkDataTaskERNS_15NetworkDataTaskE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSession.h' l='189'/>
+<size>344</size>
+<fun r='_ZN6WebKit15NetworkDataTask6createERNS_14NetworkSessionERNS_21NetworkDataTaskClientERKNS_21NetworkLoadParametersE'/>
+<fun r='_ZN6WebKit15NetworkDataTaskD1Ev'/>
+<fun r='_ZN6WebKit15NetworkDataTask6cancelEv'/>
+<fun r='_ZN6WebKit15NetworkDataTask6resumeEv'/>
+<fun r='_ZN6WebKit15NetworkDataTask19invalidateAndCancelEv'/>
+<fun r='_ZN6WebKit15NetworkDataTask18didReceiveResponseEON7WebCore16ResourceResponseENS_19NegotiatedLegacyTLSEON3WTF17CompletionHandlerIFvNS1_12PolicyActionEEEE'/>
+<fun r='_ZNK6WebKit15NetworkDataTask36shouldCaptureExtraNetworkLoadMetricsEv'/>
+<fun r='_ZNK6WebKit15NetworkDataTask5stateEv'/>
+<fun r='_ZNK6WebKit15NetworkDataTask6clientEv'/>
+<fun r='_ZN6WebKit15NetworkDataTask11clearClientEv'/>
+<fun r='_ZNK6WebKit15NetworkDataTask17pendingDownloadIDEv'/>
+<fun r='_ZNK6WebKit15NetworkDataTask15pendingDownloadEv'/>
+<fun r='_ZN6WebKit15NetworkDataTask20setPendingDownloadIDEN3WTF16ObjectIdentifierINS_22DownloadIdentifierTypeEEE'/>
+<fun r='_ZN6WebKit15NetworkDataTask18setPendingDownloadERNS_15PendingDownloadE'/>
+<fun r='_ZN6WebKit15NetworkDataTask26setPendingDownloadLocationERKN3WTF6StringEONS_16SandboxExtension6HandleEb'/>
+<fun r='_ZNK6WebKit15NetworkDataTask23pendingDownloadLocationEv'/>
+<fun r='_ZNK6WebKit15NetworkDataTask10isDownloadEv'/>
+<fun r='_ZNK6WebKit15NetworkDataTask12firstRequestEv'/>
+<fun r='_ZNK6WebKit15NetworkDataTask17suggestedFilenameEv'/>
+<fun r='_ZN6WebKit15NetworkDataTask20setSuggestedFilenameERKN3WTF6StringE'/>
+<fun r='_ZN6WebKit15NetworkDataTask9partitionEv'/>
+<fun r='_ZNK6WebKit15NetworkDataTask20isTopLevelNavigationEv'/>
+<fun r='_ZNK6WebKit15NetworkDataTask11descriptionEv'/>
+<fun r='_ZN6WebKit15NetworkDataTask17setH2PingCallbackERKN3WTF3URLEONS1_17CompletionHandlerIFvONSt12experimental15fundamentals_v38expectedINS1_7SecondsEN7WebC5049262'/>
+<fun r='_ZN6WebKit15NetworkDataTask11setPriorityEN7WebCore20ResourceLoadPriorityE'/>
+<fun r='_ZNK6WebKit15NetworkDataTask9sessionIDEv'/>
+<fun r='_ZN6WebKit15NetworkDataTask14networkSessionEv'/>
+<fun r='_ZN6WebKit15NetworkDataTaskC1ERNS_14NetworkSessionERNS_21NetworkDataTaskClientERKN7WebCore15ResourceRequestENS5_23StoredCredentialsPolicyEbb'/>
+<fun r='_ZN6WebKit15NetworkDataTask15scheduleFailureENS0_11FailureTypeE'/>
+<fun r='_ZNK6WebKit15NetworkDataTask19isThirdPartyRequestERKN7WebCore15ResourceRequestE'/>
+<fun r='_ZN6WebKit15NetworkDataTask39restrictRequestReferrerToOriginIfNeededERN7WebCore15ResourceRequestE'/>
+<mbr r='WebKit::NetworkDataTask::m_session' o='192' t='WeakPtr&lt;WebKit::NetworkSession&gt;'/>
+<mbr r='WebKit::NetworkDataTask::m_client' o='256' t='WebKit::NetworkDataTaskClient *'/>
+<mbr r='WebKit::NetworkDataTask::m_pendingDownload' o='320' t='WebKit::PendingDownload *'/>
+<mbr r='WebKit::NetworkDataTask::m_pendingDownloadID' o='384' t='WebKit::DownloadID'/>
+<mbr r='WebKit::NetworkDataTask::m_user' o='448' t='WTF::String'/>
+<mbr r='WebKit::NetworkDataTask::m_password' o='512' t='WTF::String'/>
+<mbr r='WebKit::NetworkDataTask::m_partition' o='576' t='WTF::String'/>
+<mbr r='WebKit::NetworkDataTask::m_initialCredential' o='640' t='WebCore::Credential'/>
+<mbr r='WebKit::NetworkDataTask::m_storedCredentialsPolicy' o='896' t='WebCore::StoredCredentialsPolicy'/>
+<mbr r='WebKit::NetworkDataTask::m_lastHTTPMethod' o='960' t='WTF::String'/>
+<mbr r='WebKit::NetworkDataTask::m_pendingDownloadLocation' o='1024' t='WTF::String'/>
+<mbr r='WebKit::NetworkDataTask::m_firstRequest' o='1088' t='WebCore::ResourceRequest'/>
+<mbr r='WebKit::NetworkDataTask::m_shouldClearReferrerOnHTTPSToHTTPRedirect' o='2560' t='bool'/>
+<mbr r='WebKit::NetworkDataTask::m_suggestedFilename' o='2624' t='WTF::String'/>
+<mbr r='WebKit::NetworkDataTask::m_dataTaskIsForMainFrameNavigation' o='2688' t='bool'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/DownloadManager.h' l='89' c='_ZN6WebKit15DownloadManager26downloadDestinationDecidedEN3WTF16ObjectIdentifierINS_22DownloadIdentifierTypeEEEONS1_3RefINS_15NetworkDataTaskENS1_12RawPtrTraitsIS6_EEEE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/DownloadManager.h' l='117'/>
+<size>344</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkCORSPreflightChecker.h' l='85'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkProcess.cpp' l='2119' c='_ZN6WebKit14NetworkProcess27findPendingDownloadLocationERNS_15NetworkDataTaskEON3WTF17CompletionHandlerIFvN7WebCore12PolicyActionEEEERKNS5_16ResourceResponseE'/>
+<size>344</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSession.cpp' l='392' c='_ZN6WebKit14NetworkSession23registerNetworkDataTaskERNS_15NetworkDataTaskE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/NetworkSession.cpp' l='397' c='_ZN6WebKit14NetworkSession25unregisterNetworkDataTaskERNS_15NetworkDataTaskE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/PingLoad.h' l='72'/>
+<size>344</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/Download.cpp' l='52' c='_ZN6WebKit8DownloadC1ERNS_15DownloadManagerEN3WTF16ObjectIdentifierINS_22DownloadIdentifierTypeEEERNS_15NetworkDataTaskERNS_14NetworkSessionERKNS3_6StringE'/>
+<size>344</size>
+<use f='WebKit/Source/WebKit/NetworkProcess/Downloads/DownloadManager.cpp' l='91' c='_ZN6WebKit15DownloadManager26downloadDestinationDecidedEN3WTF16ObjectIdentifierINS_22DownloadIdentifierTypeEEEONS1_3RefINS_15NetworkDataTaskENS1_12RawPtrTraitsIS6_EEEE'/>
+<size>344</size>
+<ovr f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkDataTaskSoup.h' l='42' c='WebKit::NetworkDataTaskSoup'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkDataTaskSoup.h' l='42'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkDataTaskSoup.h' l='44' c='_ZN6WebKit19NetworkDataTaskSoup6createERNS_14NetworkSessionERNS_21NetworkDataTaskClientERKNS_21NetworkLoadParametersE'/>
+<use f='WebKit/Source/WebKit/NetworkProcess/soup/NetworkDataTaskSoup.cpp' l='58' c='_ZN6WebKit19NetworkDataTaskSoupC1ERNS_14NetworkSessionERNS_21NetworkDataTaskClientERKNS_21NetworkLoadParametersE'/>
+<size>344</size>

@@ -1,0 +1,51 @@
+<def f='WebKit/Source/JavaScriptCore/b3/air/AirKind.h' l='42' ll='84'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirKind.h' l='50' c='_ZN3JSC2B33Air4KindC1Ev'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirKind.h' l='54' c='_ZNK3JSC2B33Air4KindeqERKS2_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirKind.h' l='60' c='_ZNK3JSC2B33Air4KindneERKS2_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirKind.h' l='72' c='_ZNK3JSC2B33Air4KindcvbEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirInst.h' l='56' c='_ZN3JSC2B33Air4InstC1ENS1_4KindEPNS0_5ValueE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirInst.h' l='63' c='_ZN3JSC2B33Air4InstC1ENS1_4KindEPNS0_5ValueENS1_3ArgEDpT_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirInst.h' l='70' c='_ZN3JSC2B33Air4InstC1ENS1_4KindEPNS0_5ValueERKN3WTF6VectorINS1_3ArgELm3ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirInst.h' l='77' c='_ZN3JSC2B33Air4InstC1ENS1_4KindEPNS0_5ValueEON3WTF6VectorINS1_3ArgELm3ENS6_15CrashOnOverflowELm16ENS6_10FastMallocEEE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirInst.h' l='212'/>
+<size>4</size>
+<doc f='WebKit/Source/JavaScriptCore/b3/air/AirKind.h' l='36'>// Air opcodes are always carried around with some flags. These flags are understood as having no
+// meaning if they are set for an opcode to which they do not apply. This makes sense, since Air
+// is a complex instruction set and most of these flags can apply to basically any opcode. In
+// fact, it&apos;s recommended to only represent something as a flag if you believe that it is largely
+// opcode-agnostic.</doc>
+<fun r='_ZN3JSC2B33Air4KindC1ENS1_6OpcodeE'/>
+<fun r='_ZN3JSC2B33Air4KindC1Ev'/>
+<fun r='_ZNK3JSC2B33Air4KindeqERKS2_'/>
+<fun r='_ZNK3JSC2B33Air4KindneERKS2_'/>
+<fun r='_ZNK3JSC2B33Air4Kind4hashEv'/>
+<fun r='_ZNK3JSC2B33Air4KindcvbEv'/>
+<fun r='_ZNK3JSC2B33Air4Kind4dumpERN3WTF11PrintStreamE'/>
+<mbr r='JSC::B3::Air::Kind::opcode' o='0' t='JSC::B3::Air::Opcode'/>
+<mbr r='JSC::B3::Air::Kind::effects' o='16' t='bool'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLowerAfterRegAlloc.cpp' l='179' c='_ZN3JSC2B33Air18lowerAfterRegAllocERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLowerMacros.cpp' l='52' c='_ZN3JSC2B33Air11lowerMacrosERNS1_4CodeE'/>
+<size>4</size>
+<fun r='_ZNK3JSC2B33Air4Kind4dumpERN3WTF11PrintStreamE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3CheckSpecial.h' l='62' c='_ZN3JSC2B312CheckSpecial3KeyC1ENS0_3Air4KindEjNS0_15StackmapSpecial8RoleModeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3CheckSpecial.h' l='85' c='_ZNK3JSC2B312CheckSpecial3Key4kindEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3CheckSpecial.h' l='109'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3CheckSpecial.h' l='114' c='_ZN3JSC2B312CheckSpecialC1ENS0_3Air4KindEjNS0_15StackmapSpecial8RoleModeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3CheckSpecial.h' l='136'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3CheckSpecial.cpp' l='84' c='_ZN3JSC2B312CheckSpecialC1ENS0_3Air4KindEjNS0_15StackmapSpecial8RoleModeE'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='1140' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir11createStoreENS0_3Air4KindEPNS0_5ValueERKNS3_3ArgE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='1202' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir11appendStoreEPNS0_5ValueERKNS0_3Air3ArgE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='1242' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir6appendENS0_3Air4KindEDpOT_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='1248' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir14appendTrappingENS0_3Air4KindEDpOT_'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='2544' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='2567' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='2579' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='2591' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<use f='WebKit/Source/JavaScriptCore/b3/B3LowerToAir.cpp' l='2603' c='_ZN3JSC2B312_GLOBAL__N_110LowerToAir5lowerEv'/>
+<size>4</size>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='368' c='_ZN3JSC4Wasm14AirIRGenerator6appendEPNS_2B33Air10BasicBlockENS3_4KindEDpOT_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='376' c='_ZN3JSC4Wasm14AirIRGenerator6appendENS_2B33Air4KindEDpOT_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='384' c='_ZN3JSC4Wasm14AirIRGenerator15appendEffectfulENS_2B33Air6OpcodeEDpOT_'/>
+<use f='WebKit/Source/JavaScriptCore/wasm/WasmAirIRGenerator.cpp' l='392' c='_ZN3JSC4Wasm14AirIRGenerator15appendEffectfulEPNS_2B33Air10BasicBlockENS3_6OpcodeEDpOT_'/>
+<size>4</size>

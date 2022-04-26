@@ -1,0 +1,12 @@
+<dec f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='491' type='JSC::RegisterID * JSC::BytecodeGenerator::newBlockScopeVariable()'/>
+<doc f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.h' l='486'>// This will be allocated in the temporary region of registers, but it will
+        // not be marked as a temporary. This will ensure that finalDestination() does
+        // not overwrite a block scope variable that it mistakes as a temporary. These
+        // registers can be (and are) reclaimed when the lexical scope they belong to
+        // is no longer on the symbol table stack.</doc>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='207' u='c' c='_ZN3JSC17BytecodeGenerator8generateEv'/>
+<def f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='1308' ll='1313' type='JSC::RegisterID * JSC::BytecodeGenerator::newBlockScopeVariable()'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='1946' u='c' c='_ZN3JSC17BytecodeGenerator27instantiateLexicalVariablesERKNS_19VariableEnvironmentENS0_9ScopeTypeEPNS_11SymbolTableENS0_17ScopeRegisterTypeET_'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='2064' u='c' c='_ZN3JSC17BytecodeGenerator24pushLexicalScopeInternalERNS_19VariableEnvironmentENS0_20TDZCheckOptimizationENS0_15NestedScopeTypeEPPNS_10RegisterIDENS0_8923403'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='2289' u='c' c='_ZN3JSC17BytecodeGenerator42prepareLexicalScopeForNextForLoopIterationEPNS_23VariableEnvironmentNodeEPNS_10RegisterIDE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecompiler/BytecodeGenerator.cpp' l='3765' u='c' c='_ZN3JSC17BytecodeGenerator17emitPushWithScopeEPNS_10RegisterIDE'/>

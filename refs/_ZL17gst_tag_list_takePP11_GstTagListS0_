@@ -1,0 +1,16 @@
+<def f='include/gstreamer-1.0/gst/gsttaglist.h' l='566' ll='571' type='gboolean gst_tag_list_take(GstTagList ** old_taglist, GstTagList * new_taglist)'/>
+<doc f='include/gstreamer-1.0/gst/gsttaglist.h' l='551'>/**
+ * gst_tag_list_take:
+ * @old_taglist: (inout) (transfer full): pointer to a pointer to a #GstTagList
+ *     to be replaced.
+ * @new_taglist: (transfer full) (allow-none): pointer to a #GstTagList that
+ *     will replace the taglist pointed to by @old_taglist.
+ *
+ * Modifies a pointer to a #GstTagList to point to a different #GstTagList.
+ * This function is similar to gst_tag_list_replace() except that it takes
+ * ownership of @new_taglist.
+ *
+ * Returns: %TRUE if @new_taglist was different from @old_taglist
+ *
+ * Since: 1.16
+ */</doc>

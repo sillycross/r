@@ -1,0 +1,123 @@
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VMTraps.h' l='43' ll='264'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VM.h' l='1121' c='_ZN3JSC2VM5trapsEv'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VM.h' l='1277'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/VM.h' l='1308'/>
+<size>40</size>
+<smbr r='JSC::VMTraps::bitsInBitField' t='const size_t'/>
+<smbr r='JSC::VMTraps::NeedShellTimeoutCheck' t='const JSC::VMTraps::Event'/>
+<smbr r='JSC::VMTraps::NeedTermination' t='const JSC::VMTraps::Event'/>
+<smbr r='JSC::VMTraps::NeedWatchdogCheck' t='const JSC::VMTraps::Event'/>
+<smbr r='JSC::VMTraps::NeedDebuggerBreak' t='const JSC::VMTraps::Event'/>
+<smbr r='JSC::VMTraps::NeedExceptionHandling' t='const JSC::VMTraps::Event'/>
+<smbr r='JSC::VMTraps::NoEvent' t='const JSC::VMTraps::Event'/>
+<smbr r='JSC::VMTraps::AllEvents' t='const JSC::VMTraps::BitField'/>
+<smbr r='JSC::VMTraps::AsyncEvents' t='const JSC::VMTraps::BitField'/>
+<smbr r='JSC::VMTraps::NonDebuggerEvents' t='const JSC::VMTraps::BitField'/>
+<smbr r='JSC::VMTraps::NonDebuggerAsyncEvents' t='const JSC::VMTraps::BitField'/>
+<fun r='_ZN3JSC7VMTraps23onlyContainsAsyncEventsEj'/>
+<fun r='_ZN3JSC7VMTrapsD1Ev'/>
+<fun r='_ZN3JSC7VMTrapsC1Ev'/>
+<fun r='_ZN3JSC7VMTraps17initializeSignalsEv'/>
+<fun r='_ZN3JSC7VMTraps13willDestroyVMEv'/>
+<fun r='_ZNK3JSC7VMTraps12needHandlingEj'/>
+<fun r='_ZN3JSC7VMTraps15trapBitsAddressEv'/>
+<fun r='_ZNK3JSC7VMTraps22isDeferringTerminationEv'/>
+<fun r='_ZN3JSC7VMTraps16deferTerminationENS0_11DeferActionE'/>
+<fun r='_ZN3JSC7VMTraps20undoDeferTerminationENS0_11DeferActionE'/>
+<fun r='_ZN3JSC7VMTraps18notifyGrabAllLocksEv'/>
+<fun r='_ZN3JSC7VMTraps10hasTrapBitEjj'/>
+<fun r='_ZN3JSC7VMTraps12clearTrapBitEj'/>
+<fun r='_ZN3JSC7VMTraps10setTrapBitEj'/>
+<fun r='_ZN3JSC7VMTraps8fireTrapEj'/>
+<fun r='_ZN3JSC7VMTraps11handleTrapsEj'/>
+<fun r='_ZN3JSC7VMTraps25tryInstallTrapBreakpointsERNS_13SignalContextEN3WTF11StackBoundsE'/>
+<fun r='_ZNK3JSC7VMTraps2vmEv'/>
+<fun r='_ZN3JSC7VMTraps20deferTerminationSlowENS0_11DeferActionE'/>
+<fun r='_ZN3JSC7VMTraps24undoDeferTerminationSlowENS0_11DeferActionE'/>
+<fun r='_ZN3JSC7VMTraps19takeTopPriorityTrapEj'/>
+<fun r='_ZN3JSC7VMTraps27invalidateCodeBlocksOnStackEv'/>
+<fun r='_ZN3JSC7VMTraps27invalidateCodeBlocksOnStackEPNS_9CallFrameE'/>
+<fun r='_ZN3JSC7VMTraps27invalidateCodeBlocksOnStackERN3WTF6LockerINS1_4LockEEEPNS_9CallFrameE'/>
+<fun r='_ZN3JSC7VMTraps15addSignalSenderEPNS0_12SignalSenderE'/>
+<fun r='_ZN3JSC7VMTraps18removeSignalSenderEPNS0_12SignalSenderE'/>
+<smbr r='JSC::VMTraps::NeedExceptionHandlingMask' t='const JSC::VMTraps::BitField'/>
+<mbr r='JSC::VMTraps::m_lock' o='0' t='Box&lt;WTF::Lock&gt;'/>
+<mbr r='JSC::VMTraps::m_condition' o='64' t='Ref&lt;WTF::AutomaticThreadCondition&gt;'/>
+<mbr r='JSC::VMTraps::m_trapBits' o='128' t='Atomic&lt;JSC::VMTraps::BitField&gt;'/>
+<mbr r='JSC::VMTraps::m_needToInvalidatedCodeBlocks' o='160' t='bool'/>
+<mbr r='JSC::VMTraps::m_isShuttingDown' o='168' t='bool'/>
+<mbr r='JSC::VMTraps::m_suspendedTerminationException' o='176' t='bool'/>
+<mbr r='JSC::VMTraps::m_deferTerminationCount' o='192' t='unsigned int'/>
+<mbr r='JSC::VMTraps::m_signalSender' o='256' t='RefPtr&lt;JSC::VMTraps::SignalSender&gt;'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/VMTraps.h' l='43' ll='264'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.h' l='1121' c='_ZN3JSC2VM5trapsEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.h' l='1277'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.h' l='1308'/>
+<size>40</size>
+<smbr r='JSC::VMTraps::bitsInBitField' t='const size_t'/>
+<smbr r='JSC::VMTraps::NeedShellTimeoutCheck' t='const JSC::VMTraps::Event'/>
+<smbr r='JSC::VMTraps::NeedTermination' t='const JSC::VMTraps::Event'/>
+<smbr r='JSC::VMTraps::NeedWatchdogCheck' t='const JSC::VMTraps::Event'/>
+<smbr r='JSC::VMTraps::NeedDebuggerBreak' t='const JSC::VMTraps::Event'/>
+<smbr r='JSC::VMTraps::NeedExceptionHandling' t='const JSC::VMTraps::Event'/>
+<smbr r='JSC::VMTraps::NoEvent' t='const JSC::VMTraps::Event'/>
+<smbr r='JSC::VMTraps::AllEvents' t='const JSC::VMTraps::BitField'/>
+<smbr r='JSC::VMTraps::AsyncEvents' t='const JSC::VMTraps::BitField'/>
+<smbr r='JSC::VMTraps::NonDebuggerEvents' t='const JSC::VMTraps::BitField'/>
+<smbr r='JSC::VMTraps::NonDebuggerAsyncEvents' t='const JSC::VMTraps::BitField'/>
+<fun r='_ZN3JSC7VMTraps23onlyContainsAsyncEventsEj'/>
+<fun r='_ZN3JSC7VMTrapsD1Ev'/>
+<fun r='_ZN3JSC7VMTrapsC1Ev'/>
+<fun r='_ZN3JSC7VMTraps17initializeSignalsEv'/>
+<fun r='_ZN3JSC7VMTraps13willDestroyVMEv'/>
+<fun r='_ZNK3JSC7VMTraps12needHandlingEj'/>
+<fun r='_ZN3JSC7VMTraps15trapBitsAddressEv'/>
+<fun r='_ZNK3JSC7VMTraps22isDeferringTerminationEv'/>
+<fun r='_ZN3JSC7VMTraps16deferTerminationENS0_11DeferActionE'/>
+<fun r='_ZN3JSC7VMTraps20undoDeferTerminationENS0_11DeferActionE'/>
+<fun r='_ZN3JSC7VMTraps18notifyGrabAllLocksEv'/>
+<fun r='_ZN3JSC7VMTraps10hasTrapBitEjj'/>
+<fun r='_ZN3JSC7VMTraps12clearTrapBitEj'/>
+<fun r='_ZN3JSC7VMTraps10setTrapBitEj'/>
+<fun r='_ZN3JSC7VMTraps8fireTrapEj'/>
+<fun r='_ZN3JSC7VMTraps11handleTrapsEj'/>
+<fun r='_ZN3JSC7VMTraps25tryInstallTrapBreakpointsERNS_13SignalContextEN3WTF11StackBoundsE'/>
+<fun r='_ZNK3JSC7VMTraps2vmEv'/>
+<fun r='_ZN3JSC7VMTraps20deferTerminationSlowENS0_11DeferActionE'/>
+<fun r='_ZN3JSC7VMTraps24undoDeferTerminationSlowENS0_11DeferActionE'/>
+<fun r='_ZN3JSC7VMTraps19takeTopPriorityTrapEj'/>
+<fun r='_ZN3JSC7VMTraps27invalidateCodeBlocksOnStackEv'/>
+<fun r='_ZN3JSC7VMTraps27invalidateCodeBlocksOnStackEPNS_9CallFrameE'/>
+<fun r='_ZN3JSC7VMTraps27invalidateCodeBlocksOnStackERN3WTF6LockerINS1_4LockEEEPNS_9CallFrameE'/>
+<fun r='_ZN3JSC7VMTraps15addSignalSenderEPNS0_12SignalSenderE'/>
+<fun r='_ZN3JSC7VMTraps18removeSignalSenderEPNS0_12SignalSenderE'/>
+<smbr r='JSC::VMTraps::NeedExceptionHandlingMask' t='const JSC::VMTraps::BitField'/>
+<mbr r='JSC::VMTraps::m_lock' o='0' t='Box&lt;WTF::Lock&gt;'/>
+<mbr r='JSC::VMTraps::m_condition' o='64' t='Ref&lt;WTF::AutomaticThreadCondition&gt;'/>
+<mbr r='JSC::VMTraps::m_trapBits' o='128' t='Atomic&lt;JSC::VMTraps::BitField&gt;'/>
+<mbr r='JSC::VMTraps::m_needToInvalidatedCodeBlocks' o='160' t='bool'/>
+<mbr r='JSC::VMTraps::m_isShuttingDown' o='168' t='bool'/>
+<mbr r='JSC::VMTraps::m_suspendedTerminationException' o='176' t='bool'/>
+<mbr r='JSC::VMTraps::m_deferTerminationCount' o='192' t='unsigned int'/>
+<mbr r='JSC::VMTraps::m_signalSender' o='256' t='RefPtr&lt;JSC::VMTraps::SignalSender&gt;'/>
+<fun r='_ZNK3JSC7VMTraps2vmEv'/>
+<fun r='_ZN3JSC7VMTraps16deferTerminationENS0_11DeferActionE'/>
+<fun r='_ZN3JSC7VMTraps20undoDeferTerminationENS0_11DeferActionE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VMTraps.cpp' l='243' c='_ZN3JSC7VMTraps12SignalSender5trapsEv'/>
+<size>40</size>
+<fun r='_ZN3JSC7VMTraps25tryInstallTrapBreakpointsERNS_13SignalContextEN3WTF11StackBoundsE'/>
+<fun r='_ZN3JSC7VMTraps27invalidateCodeBlocksOnStackEv'/>
+<fun r='_ZN3JSC7VMTraps27invalidateCodeBlocksOnStackEPNS_9CallFrameE'/>
+<fun r='_ZN3JSC7VMTraps27invalidateCodeBlocksOnStackERN3WTF6LockerINS1_4LockEEEPNS_9CallFrameE'/>
+<fun r='_ZN3JSC7VMTraps17initializeSignalsEv'/>
+<fun r='_ZN3JSC7VMTraps13willDestroyVMEv'/>
+<fun r='_ZN3JSC7VMTraps8fireTrapEj'/>
+<fun r='_ZN3JSC7VMTraps11handleTrapsEj'/>
+<fun r='_ZN3JSC7VMTraps19takeTopPriorityTrapEj'/>
+<fun r='_ZN3JSC7VMTraps20deferTerminationSlowENS0_11DeferActionE'/>
+<fun r='_ZN3JSC7VMTraps24undoDeferTerminationSlowENS0_11DeferActionE'/>
+<fun r='_ZN3JSC7VMTrapsC1Ev'/>
+<fun r='_ZN3JSC7VMTrapsD1Ev'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='2133' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<use f='WebKit/JavaScriptCore/DerivedSources/LLIntDesiredOffsets.h' l='2133' c='_ZN3JSC21LLIntOffsetsExtractor5dummyEv'/>
+<size>40</size>

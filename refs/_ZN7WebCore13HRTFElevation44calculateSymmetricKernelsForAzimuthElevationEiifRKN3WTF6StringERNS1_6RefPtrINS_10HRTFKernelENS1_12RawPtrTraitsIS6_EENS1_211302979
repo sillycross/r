@@ -1,0 +1,7 @@
+<dec f='WebKit/Source/WebCore/platform/audio/HRTFElevation.h' l='97' type='static bool WebCore::HRTFElevation::calculateSymmetricKernelsForAzimuthElevation(int azimuth, int elevation, float sampleRate, const WTF::String &amp; subjectName, RefPtr&lt;WebCore::HRTFKernel&gt; &amp; kernelL, RefPtr&lt;WebCore::HRTFKernel&gt; &amp; kernelR)'/>
+<doc f='WebKit/Source/WebCore/platform/audio/HRTFElevation.h' l='94'>// Given a specific azimuth and elevation angle, returns the left and right HRTFKernel in kernelL and kernelR.
+    // This method averages the measured response using symmetry of azimuth (for example by averaging the -30.0 and +30.0 azimuth responses).
+    // Returns true on success.</doc>
+<def f='WebKit/Source/WebCore/platform/audio/HRTFElevation.cpp' l='97' ll='120' type='static bool WebCore::HRTFElevation::calculateSymmetricKernelsForAzimuthElevation(int azimuth, int elevation, float sampleRate, const WTF::String &amp; subjectName, RefPtr&lt;WebCore::HRTFKernel&gt; &amp; kernelL, RefPtr&lt;WebCore::HRTFKernel&gt; &amp; kernelR)'/>
+<doc f='WebKit/Source/WebCore/platform/audio/HRTFElevation.cpp' l='95'>// Takes advantage of the symmetry and creates a composite version of the two measured versions.  For example, we have both azimuth 30 and -30 degrees
+// where the roles of left and right ears are reversed with respect to each other.</doc>

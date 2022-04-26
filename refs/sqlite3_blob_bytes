@@ -1,0 +1,15 @@
+<dec f='include/sqlite3.h' l='7147' type='int sqlite3_blob_bytes(sqlite3_blob * )'/>
+<doc f='include/sqlite3.h' l='7133'>/*
+** CAPI3REF: Return The Size Of An Open BLOB
+** METHOD: sqlite3_blob
+**
+** ^Returns the size in bytes of the BLOB accessible via the 
+** successfully opened [BLOB handle] in its only argument.  ^The
+** incremental blob I/O routines can only read or overwriting existing
+** blob content; they cannot change the size of a blob.
+**
+** This routine only works on a [BLOB handle] which has been created
+** by a prior successful call to [sqlite3_blob_open()] and which has not
+** been closed by [sqlite3_blob_close()].  Passing any other pointer in
+** to this routine results in undefined and probably undesirable behavior.
+*/</doc>

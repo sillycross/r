@@ -1,0 +1,29 @@
+<use f='include/gtk-3.0/gtk/gtkbindings.h' l='41'/>
+<def f='include/gtk-3.0/gtk/gtkbindings.h' l='64' ll='74'/>
+<size>64</size>
+<doc f='include/gtk-3.0/gtk/gtkbindings.h' l='46'>/**
+ * GtkBindingSet:
+ * @set_name: unique name of this binding set
+ * @priority: unused
+ * @widget_path_pspecs: unused
+ * @widget_class_pspecs: unused
+ * @class_branch_pspecs: unused
+ * @entries: the key binding entries in this binding set
+ * @current: implementation detail
+ * @parsed: whether this binding set stems from a CSS file and is reset upon theme changes
+ *
+ * A binding set maintains a list of activatable key bindings.
+ * A single binding set can match multiple types of widgets.
+ * Similar to style contexts, can be matched by any information contained
+ * in a widgets #GtkWidgetPath. When a binding within a set is matched upon
+ * activation, an action signal is emitted on the target widget to carry out
+ * the actual activation.
+ */</doc>
+<mbr r='_GtkBindingSet::set_name' o='0' t='gchar *'/>
+<mbr r='_GtkBindingSet::priority' o='64' t='gint'/>
+<mbr r='_GtkBindingSet::widget_path_pspecs' o='128' t='GSList *'/>
+<mbr r='_GtkBindingSet::widget_class_pspecs' o='192' t='GSList *'/>
+<mbr r='_GtkBindingSet::class_branch_pspecs' o='256' t='GSList *'/>
+<mbr r='_GtkBindingSet::entries' o='320' t='GtkBindingEntry *'/>
+<mbr r='_GtkBindingSet::current' o='384' t='GtkBindingEntry *'/>
+<mbr r='_GtkBindingSet::parsed' o='448' t='guint'/>

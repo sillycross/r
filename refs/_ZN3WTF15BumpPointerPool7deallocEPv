@@ -1,0 +1,16 @@
+<def f='WebKit/WTF/Headers/wtf/BumpPointerAllocator.h' l='81' ll='89' type='WTF::BumpPointerPool * WTF::BumpPointerPool::dealloc(void * position)'/>
+<doc f='WebKit/WTF/Headers/wtf/BumpPointerAllocator.h' l='68'>// The dealloc method releases memory allocated using alloc.  Memory
+    // must be released in a LIFO fashion, e.g. if the client calls alloc
+    // four times, returning pointer A, B, C, D, then the only valid order
+    // in which these may be deallocaed is D, C, B, A.
+    //
+    // The client may optionally skip some deallocations.  In the example
+    // above, it would be valid to only explicitly dealloc C, A (D being
+    // dealloced along with C, B along with A).
+    //
+    // If pointer was not allocated from this pool (or pools) then dealloc
+    // will CRASH().  Callers should update any references they have to
+    // this current BumpPointerPool to instead point to the returned
+    // BumpPointerPool.</doc>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrInterpreter.cpp' l='102' u='c' c='_ZN3JSC4Yarr11Interpreter22freeDisjunctionContextEPNS1_18DisjunctionContextE'/>
+<use f='WebKit/Source/JavaScriptCore/yarr/YarrInterpreter.cpp' l='159' u='c' c='_ZN3JSC4Yarr11Interpreter33freeParenthesesDisjunctionContextEPNS1_29ParenthesesDisjunctionContextE'/>

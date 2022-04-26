@@ -1,0 +1,108 @@
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSCast.h' l='92'/>
+<use f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/JSCast.h' l='92' c='_ZN3JSC16JSCastingHelpers14InheritsTraitsINS_15ScopedArgumentsEE8inheritsERNS_2VMEPT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCast.h' l='92'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSCast.h' l='92' c='_ZN3JSC16JSCastingHelpers14InheritsTraitsINS_15ScopedArgumentsEE8inheritsERNS_2VMEPT_'/>
+<inh f='WebKit/Source/JavaScriptCore/runtime/GenericArguments.h' l='36' c='JSC::GenericArguments'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.h' l='39' ll='170'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.h' l='39'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.h' l='43'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.h' l='55' c='_ZN3JSC15ScopedArguments19createUninitializedERNS_2VMEPNS_9StructureEPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.h' l='59' c='_ZN3JSC15ScopedArguments6createERNS_2VMEPNS_9StructureEPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.h' l='62' c='_ZN3JSC15ScopedArguments15createByCopyingEPNS_14JSGlobalObjectEPNS_9CallFrameEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.h' l='65' c='_ZN3JSC15ScopedArguments19createByCopyingFromERNS_2VMEPNS_9StructureEPNS_8RegisterEjPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.h' l='151' c='_ZN3JSC15ScopedArguments22offsetOfOverrodeThingsEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.h' l='152' c='_ZN3JSC15ScopedArguments19offsetOfTotalLengthEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.h' l='153' c='_ZN3JSC15ScopedArguments13offsetOfTableEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.h' l='154' c='_ZN3JSC15ScopedArguments13offsetOfScopeEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.h' l='155' c='_ZN3JSC15ScopedArguments15offsetOfStorageEv'/>
+<size>64</size>
+<doc f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.h' l='33'>// This is an Arguments-class object that we create when you say &quot;arguments&quot; inside a function,
+// and one or more of the arguments may be captured in the function&apos;s activation. The function
+// will copy its formally declared arguments into the activation and then create this object. This
+// object will store the overflow arguments, if there are any. This object will use the symbol
+// table&apos;s ScopedArgumentsTable and the activation, or its overflow storage, to handle all indexed
+// lookups.</doc>
+<fun r='_ZN3JSC15ScopedArgumentsC1ERNS_2VMEPNS_9StructureEPNS_12WriteBarrierINS_7UnknownEN3WTF14RawValueTraitsIS6_EEEEj'/>
+<fun r='_ZN3JSC15ScopedArguments14finishCreationERNS_2VMEPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentE'/>
+<fun r='_ZN3JSC15ScopedArguments11subspaceForERNS_2VME'/>
+<fun r='_ZN3JSC15ScopedArguments19createUninitializedERNS_2VMEPNS_9StructureEPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentEj'/>
+<fun r='_ZN3JSC15ScopedArguments6createERNS_2VMEPNS_9StructureEPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentEj'/>
+<fun r='_ZN3JSC15ScopedArguments15createByCopyingEPNS_14JSGlobalObjectEPNS_9CallFrameEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentE'/>
+<fun r='_ZN3JSC15ScopedArguments19createByCopyingFromERNS_2VMEPNS_9StructureEPNS_8RegisterEjPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentE'/>
+<fun r='_ZN3JSC15ScopedArguments17visitChildrenImplEPNS_6JSCellERT_'/>
+<fun r='_ZN3JSC15ScopedArguments13visitChildrenEPNS_6JSCellERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC15ScopedArguments13visitChildrenEPNS_6JSCellERNS_11SlotVisitorE'/>
+<fun r='_ZNK3JSC15ScopedArguments14internalLengthEv'/>
+<fun r='_ZNK3JSC15ScopedArguments6lengthEPNS_14JSGlobalObjectE'/>
+<fun r='_ZNK3JSC15ScopedArguments16isMappedArgumentEj'/>
+<fun r='_ZNK3JSC15ScopedArguments21isMappedArgumentInDFGEj'/>
+<fun r='_ZNK3JSC15ScopedArguments15getIndexQuicklyEj'/>
+<fun r='_ZN3JSC15ScopedArguments15setIndexQuicklyERNS_2VMEjNS_7JSValueE'/>
+<fun r='_ZN3JSC15ScopedArguments6calleeEv'/>
+<fun r='_ZNK3JSC15ScopedArguments14overrodeThingsEv'/>
+<fun r='_ZN3JSC15ScopedArguments14overrideThingsEPNS_14JSGlobalObjectE'/>
+<fun r='_ZN3JSC15ScopedArguments25overrideThingsIfNecessaryEPNS_14JSGlobalObjectE'/>
+<fun r='_ZN3JSC15ScopedArguments13unmapArgumentEPNS_14JSGlobalObjectEj'/>
+<fun r='_ZN3JSC15ScopedArguments42initModifiedArgumentsDescriptorIfNecessaryEPNS_14JSGlobalObjectE'/>
+<fun r='_ZN3JSC15ScopedArguments29setModifiedArgumentDescriptorEPNS_14JSGlobalObjectEj'/>
+<fun r='_ZN3JSC15ScopedArguments28isModifiedArgumentDescriptorEj'/>
+<fun r='_ZN3JSC15ScopedArguments15copyToArgumentsEPNS_14JSGlobalObjectEPNS_7JSValueEjj'/>
+<smbr r='JSC::ScopedArguments::s_info' t='const ::JSC::ClassInfo'/>
+<fun r='_ZN3JSC15ScopedArguments4infoEv'/>
+<fun r='_ZN3JSC15ScopedArguments15createStructureERNS_2VMEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<fun r='_ZN3JSC15ScopedArguments22offsetOfOverrodeThingsEv'/>
+<fun r='_ZN3JSC15ScopedArguments19offsetOfTotalLengthEv'/>
+<fun r='_ZN3JSC15ScopedArguments13offsetOfTableEv'/>
+<fun r='_ZN3JSC15ScopedArguments13offsetOfScopeEv'/>
+<fun r='_ZN3JSC15ScopedArguments15offsetOfStorageEv'/>
+<fun r='_ZNK3JSC15ScopedArguments7storageEv'/>
+<mbr r='JSC::ScopedArguments::m_overrodeThings' o='192' t='bool'/>
+<mbr r='JSC::ScopedArguments::m_totalLength' o='224' t='unsigned int'/>
+<mbr r='JSC::ScopedArguments::m_callee' o='256' t='WriteBarrier&lt;JSC::JSFunction&gt;'/>
+<mbr r='JSC::ScopedArguments::m_table' o='320' t='WriteBarrier&lt;JSC::ScopedArgumentsTable&gt;'/>
+<mbr r='JSC::ScopedArguments::m_scope' o='384' t='WriteBarrier&lt;JSC::JSLexicalEnvironment&gt;'/>
+<mbr r='JSC::ScopedArguments::m_storage' o='448' t='AuxiliaryBarrier&lt;WriteBarrier&lt;JSC::Unknown&gt; *&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPaths.h' l='129' c='_ZN3JSC15CommonSlowPaths29canAccessArgumentIndexQuicklyERNS_8JSObjectEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/CommonSlowPaths.h' l='129' c='_ZN3JSC15CommonSlowPaths29canAccessArgumentIndexQuicklyERNS_8JSObjectEj'/>
+<size>64</size>
+<use f='WebKit/Source/JavaScriptCore/interpreter/Interpreter.cpp' l='185' c='_ZN3JSC13sizeOfVarargsEPNS_14JSGlobalObjectENS_7JSValueEj'/>
+<use f='WebKit/Source/JavaScriptCore/interpreter/Interpreter.cpp' l='258' c='_ZN3JSC11loadVarargsEPNS_14JSGlobalObjectEPNS_7JSValueES2_jj'/>
+<size>64</size>
+<use f='WebKit/Source/JavaScriptCore/jit/Repatch.cpp' l='258' c='_ZN3JSCL13tryCacheGetByEPNS_14JSGlobalObjectEPNS_9CodeBlockENS_7JSValueENS_19CacheableIdentifierERKNS_12PropertySlotERNS_17StructureStubInfoENS_9GetByKindE'/>
+<use f='WebKit/Source/JavaScriptCore/jit/Repatch.cpp' l='258' c='_ZN3JSCL13tryCacheGetByEPNS_14JSGlobalObjectEPNS_9CodeBlockENS_7JSValueENS_19CacheableIdentifierERKNS_12PropertySlotERNS_17StructureStubInfoENS_9GetByKindE'/>
+<size>64</size>
+<use f='WebKit/Source/JavaScriptCore/inspector/JSInjectedScriptHost.cpp' l='196' c='_ZN9Inspector20JSInjectedScriptHost7subtypeEPN3JSC14JSGlobalObjectEPNS1_9CallFrameE'/>
+<size>64</size>
+<use f='WebKit/Source/JavaScriptCore/bytecode/SpeculatedType.cpp' l='477' c='_ZN3JSC35speculationFromClassInfoInheritanceEPKNS_9ClassInfoE'/>
+<size>64</size>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.cpp' l='35'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.cpp' l='35'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.cpp' l='53' c='_ZN3JSC15ScopedArguments19createUninitializedERNS_2VMEPNS_9StructureEPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.cpp' l='61' c='_ZN3JSC15ScopedArguments19createUninitializedERNS_2VMEPNS_9StructureEPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.cpp' l='64' c='_ZN3JSC15ScopedArguments19createUninitializedERNS_2VMEPNS_9StructureEPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.cpp' l='63' c='_ZN3JSC15ScopedArguments19createUninitializedERNS_2VMEPNS_9StructureEPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.cpp' l='69' c='_ZN3JSC15ScopedArguments6createERNS_2VMEPNS_9StructureEPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.cpp' l='71' c='_ZN3JSC15ScopedArguments6createERNS_2VMEPNS_9StructureEPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentEj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.cpp' l='81' c='_ZN3JSC15ScopedArguments15createByCopyingEPNS_14JSGlobalObjectEPNS_9CallFrameEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.cpp' l='89' c='_ZN3JSC15ScopedArguments19createByCopyingFromERNS_2VMEPNS_9StructureEPNS_8RegisterEjPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.cpp' l='91' c='_ZN3JSC15ScopedArguments19createByCopyingFromERNS_2VMEPNS_9StructureEPNS_8RegisterEjPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.cpp' l='104' c='_ZN3JSC15ScopedArguments17visitChildrenImplEPNS_6JSCellERT_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ScopedArguments.cpp' l='104' c='_ZN3JSC15ScopedArguments17visitChildrenImplEPNS_6JSCellERT_'/>
+<size>64</size>
+<smbr r='JSC::ScopedArguments::s_info' t='const JSC::ClassInfo'/>
+<fun r='_ZN3JSC15ScopedArgumentsC1ERNS_2VMEPNS_9StructureEPNS_12WriteBarrierINS_7UnknownEN3WTF14RawValueTraitsIS6_EEEEj'/>
+<fun r='_ZN3JSC15ScopedArguments14finishCreationERNS_2VMEPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentE'/>
+<fun r='_ZN3JSC15ScopedArguments19createUninitializedERNS_2VMEPNS_9StructureEPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentEj'/>
+<fun r='_ZN3JSC15ScopedArguments6createERNS_2VMEPNS_9StructureEPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentEj'/>
+<fun r='_ZN3JSC15ScopedArguments15createByCopyingEPNS_14JSGlobalObjectEPNS_9CallFrameEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentE'/>
+<fun r='_ZN3JSC15ScopedArguments19createByCopyingFromERNS_2VMEPNS_9StructureEPNS_8RegisterEjPNS_10JSFunctionEPNS_20ScopedArgumentsTableEPNS_20JSLexicalEnvironmentE'/>
+<fun r='_ZN3JSC15ScopedArguments17visitChildrenImplEPNS_6JSCellERT_'/>
+<fun r='_ZN3JSC15ScopedArguments13visitChildrenEPNS_6JSCellERNS_19AbstractSlotVisitorE'/>
+<fun r='_ZN3JSC15ScopedArguments13visitChildrenEPNS_6JSCellERNS_11SlotVisitorE'/>
+<fun r='_ZN3JSC15ScopedArguments15createStructureERNS_2VMEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<fun r='_ZN3JSC15ScopedArguments14overrideThingsEPNS_14JSGlobalObjectE'/>
+<fun r='_ZN3JSC15ScopedArguments25overrideThingsIfNecessaryEPNS_14JSGlobalObjectE'/>
+<fun r='_ZN3JSC15ScopedArguments13unmapArgumentEPNS_14JSGlobalObjectEj'/>
+<fun r='_ZN3JSC15ScopedArguments15copyToArgumentsEPNS_14JSGlobalObjectEPNS_7JSValueEjj'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/VM.cpp' l='370' c='_ZN3JSC2VMC1ENS0_6VMTypeENS_8HeapTypeEPN3WTF7RunLoopEPb'/>
+<size>64</size>

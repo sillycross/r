@@ -1,0 +1,29 @@
+<dec f='include/wayland-server-protocol.h' l='2976' type='void (*)(struct wl_client *, struct wl_resource *, struct wl_resource *)'/>
+<offset>320</offset>
+<doc f='include/wayland-server-protocol.h' l='2949'>/**
+	 * set input region
+	 *
+	 * This request sets the region of the surface that can receive
+	 * pointer and touch events.
+	 *
+	 * Input events happening outside of this region will try the next
+	 * surface in the server surface stack. The compositor ignores the
+	 * parts of the input region that fall outside of the surface.
+	 *
+	 * The input region is specified in surface-local coordinates.
+	 *
+	 * Input region is double-buffered state, see wl_surface.commit.
+	 *
+	 * wl_surface.set_input_region changes the pending input region.
+	 * wl_surface.commit copies the pending region to the current
+	 * region. Otherwise the pending and current regions are never
+	 * changed, except cursor and icon surfaces are special cases, see
+	 * wl_pointer.set_cursor and wl_data_device.start_drag.
+	 *
+	 * The initial value for an input region is infinite. That means
+	 * the whole surface will accept input. Setting the pending input
+	 * region has copy semantics, and the wl_region object can be
+	 * destroyed immediately. A NULL wl_region causes the input region
+	 * to be set to infinite.
+	 * @param region input region of the surface
+	 */</doc>

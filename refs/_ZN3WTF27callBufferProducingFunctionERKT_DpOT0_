@@ -1,0 +1,53 @@
+<dec f='WebKit/WTF/Headers/wtf/unicode/icu/ICUHelpers.h' l='50' type='UErrorCode WTF::callBufferProducingFunction(const FunctionType &amp; , ArgumentTypes &amp;&amp;... )'/>
+<def f='WebKit/WTF/Headers/wtf/unicode/icu/ICUHelpers.h' l='94' ll='109' type='UErrorCode WTF::callBufferProducingFunction(const FunctionType &amp; function, ArgumentTypes &amp;&amp;... arguments)'/>
+<doc f='WebKit/WTF/Headers/wtf/unicode/icu/ICUHelpers.h' l='38'>// Use this to call a function from ICU that has the following properties:
+// - Takes a buffer pointer and capacity.
+// - Returns the length of the buffer needed.
+// - Takes a UErrorCode* as its last argument, returning the status, including U_BUFFER_OVERFLOW_ERROR.
+// Pass the arguments, but pass a Vector in place of the buffer pointer and capacity, and don&apos;t pass a UErrorCode*.
+// This will call the function, once or twice as needed, resizing the buffer as needed.
+//
+// Example:
+//
+//    Vector&lt;UChar, 32&gt; buffer;
+//    auto status = callBufferProducingFunction(ucal_getDefaultTimeZone, buffer);
+//</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlCache.cpp' l='50' u='c' c='_ZN3JSC9IntlCache22getBestDateTimePatternERKN3WTF7CStringEPKDsjR10UErrorCode'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlDisplayNames.cpp' l='251' u='c' c='_ZNK3JSC16IntlDisplayNames2ofEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlDisplayNames.cpp' l='261' u='c' c='_ZNK3JSC16IntlDisplayNames2ofEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlDisplayNames.cpp' l='271' u='c' c='_ZNK3JSC16IntlDisplayNames2ofEPNS_14JSGlobalObjectENS_7JSValueE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlLocale.cpp' l='353' u='c' c='_ZN3JSC10IntlLocale7maximalEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlLocale.cpp' l='404' u='c' c='_ZN3JSC10IntlLocale7minimalEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlLocale.cpp' l='455' u='c' c='_ZN3JSC10IntlLocale8languageEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlLocale.cpp' l='467' u='c' c='_ZN3JSC10IntlLocale6scriptEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlLocale.cpp' l='479' u='c' c='_ZN3JSC10IntlLocale6regionEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlNumberFormat.cpp' l='638' u='c' c='_ZNK3JSC16IntlNumberFormat6formatEPNS_14JSGlobalObjectEd'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlNumberFormat.cpp' l='672' u='c' c='_ZNK3JSC16IntlNumberFormat6formatEPNS_14JSGlobalObjectEPNS_8JSBigIntE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlNumberFormat.cpp' l='954' u='c' c='_ZNK3JSC16IntlNumberFormat13formatToPartsEPNS_14JSGlobalObjectEd'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlObject.cpp' l='339' u='c' c='_ZN3JSC22languageTagForLocaleIDEPKcb'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlObject.cpp' l='1454' u='c' c='_ZN3JSC41canonicalizeLocaleIDWithoutNullTerminatorEPKc'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlRelativeTimeFormat.cpp' l='255' u='c' c='_ZNK3JSC22IntlRelativeTimeFormat14formatInternalEPNS_14JSGlobalObjectEdN3WTF10StringViewE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlRelativeTimeFormat.cpp' l='292' u='c' c='_ZNK3JSC22IntlRelativeTimeFormat13formatToPartsEPNS_14JSGlobalObjectEdN3WTF10StringViewE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/StringPrototype.cpp' l='1622' u='c' c='_ZN3JSCL12toLocaleCaseEPNS_14JSGlobalObjectEPNS_9CallFrameE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlDateTimeFormat.cpp' l='140' u='c' c='_ZN3JSCL24canonicalizeTimeZoneNameERKN3WTF6StringE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlDateTimeFormat.cpp' l='853' u='c' c='_ZN3JSC18IntlDateTimeFormat24initializeDateTimeFormatEPNS_14JSGlobalObjectENS_7JSValueES3_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlDateTimeFormat.cpp' l='882' u='c' c='_ZN3JSC18IntlDateTimeFormat24initializeDateTimeFormatEPNS_14JSGlobalObjectENS_7JSValueES3_'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlDateTimeFormat.cpp' l='1202' u='c' c='_ZNK3JSC18IntlDateTimeFormat6formatEPNS_14JSGlobalObjectEd'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlDateTimeFormat.cpp' l='1289' u='c' c='_ZNK3JSC18IntlDateTimeFormat13formatToPartsEPNS_14JSGlobalObjectEdPNS_8JSStringE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlDateTimeFormat.cpp' l='1349' u='c' c='_ZN3JSC18IntlDateTimeFormat35createDateIntervalFormatIfNecessaryEPNS_14JSGlobalObjectE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/IntlDateTimeFormat.cpp' l='1358' u='c' c='_ZN3JSC18IntlDateTimeFormat35createDateIntervalFormatIfNecessaryEPNS_14JSGlobalObjectE'/>
+<dec f='WebKit/Source/WTF/wtf/unicode/icu/ICUHelpers.h' l='50' type='UErrorCode WTF::callBufferProducingFunction(const FunctionType &amp; , ArgumentTypes &amp;&amp;... )'/>
+<def f='WebKit/Source/WTF/wtf/unicode/icu/ICUHelpers.h' l='94' ll='109' type='UErrorCode WTF::callBufferProducingFunction(const FunctionType &amp; function, ArgumentTypes &amp;&amp;... arguments)'/>
+<doc f='WebKit/Source/WTF/wtf/unicode/icu/ICUHelpers.h' l='38'>// Use this to call a function from ICU that has the following properties:
+// - Takes a buffer pointer and capacity.
+// - Returns the length of the buffer needed.
+// - Takes a UErrorCode* as its last argument, returning the status, including U_BUFFER_OVERFLOW_ERROR.
+// Pass the arguments, but pass a Vector in place of the buffer pointer and capacity, and don&apos;t pass a UErrorCode*.
+// This will call the function, once or twice as needed, resizing the buffer as needed.
+//
+// Example:
+//
+//    Vector&lt;UChar, 32&gt; buffer;
+//    auto status = callBufferProducingFunction(ucal_getDefaultTimeZone, buffer);
+//</doc>
+<use f='WebKit/Source/WebCore/editing/TextIterator.cpp' l='1863' u='c' c='_ZN7WebCoreL19normalizeCharactersEPKDsjRN3WTF6VectorIDsLm0ENS2_15CrashOnOverflowELm16ENS2_10FastMallocEEE'/>

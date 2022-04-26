@@ -1,0 +1,32 @@
+<doc f='WebKit/JavaScriptCore/Headers/JavaScriptCore/JSObjectRef.h' l='263'>/*! 
+@typedef JSObjectConvertToTypeCallback
+@abstract The callback invoked when converting an object to a particular JavaScript type.
+@param ctx The execution context to use.
+@param object The JSObject to convert.
+@param type A JSType specifying the JavaScript type to convert to.
+@param exception A pointer to a JSValueRef in which to return an exception, if any.
+@result The objects&apos;s converted value, or NULL if the object was not converted.
+@discussion If you named your function ConvertToType, you would declare it like this:
+
+JSValueRef ConvertToType(JSContextRef ctx, JSObjectRef object, JSType type, JSValueRef* exception);
+
+If this function returns false, the conversion request forwards to object&apos;s parent class chain (which includes the default object class).
+
+This function is only invoked when converting an object to number or string. An object converted to boolean is &apos;true.&apos; An object converted to object is itself.
+*/</doc>
+<doc f='WebKit/Source/JavaScriptCore/API/JSObjectRef.h' l='263'>/*! 
+@typedef JSObjectConvertToTypeCallback
+@abstract The callback invoked when converting an object to a particular JavaScript type.
+@param ctx The execution context to use.
+@param object The JSObject to convert.
+@param type A JSType specifying the JavaScript type to convert to.
+@param exception A pointer to a JSValueRef in which to return an exception, if any.
+@result The objects&apos;s converted value, or NULL if the object was not converted.
+@discussion If you named your function ConvertToType, you would declare it like this:
+
+JSValueRef ConvertToType(JSContextRef ctx, JSObjectRef object, JSType type, JSValueRef* exception);
+
+If this function returns false, the conversion request forwards to object&apos;s parent class chain (which includes the default object class).
+
+This function is only invoked when converting an object to number or string. An object converted to boolean is &apos;true.&apos; An object converted to object is itself.
+*/</doc>

@@ -1,0 +1,15 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCException.h' l='79' type='JSCException * jsc_exception_new_with_name(JSCContext * context, const char * name, const char * message)'/>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCContext.cpp' l='693' u='c' c='jsc_context_throw_with_name'/>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCException.cpp' l='133' u='c' c='jsc_exception_new'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCException.cpp' l='188' ll='207' type='JSCException * jsc_exception_new_with_name(JSCContext * context, const char * name, const char * message)'/>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCException.cpp' l='250' u='c' c='jsc_exception_new_with_name_vprintf'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCException.cpp' l='178'>/**
+ * jsc_exception_new_with_name:
+ * @context: a #JSCContext
+ * @name: the error name
+ * @message: the error message
+ *
+ * Create a new #JSCException in @context with @name and @message.
+ *
+ * Returns: (transfer full): a new #JSCException.
+ */</doc>

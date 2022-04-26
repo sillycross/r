@@ -1,0 +1,14 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.h' l='130' type='JSCValue * jsc_value_new_array_from_garray(JSCContext * context, GPtrArray * array)'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='536' ll='549' type='JSCValue * jsc_value_new_array_from_garray(JSCContext * context, GPtrArray * gArray)'/>
+<use f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='573' u='c' c='jsc_value_new_array_from_strv'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='525'>/**
+ * jsc_value_new_array_from_garray:
+ * @context: a #JSCContext
+ * @array: (nullable) (element-type JSCValue): a #GPtrArray
+ *
+ * Create a new #JSCValue referencing an array with the items from @array. If @array
+ * is %NULL or empty a new empty array will be created. Elements of @array should be
+ * pointers to a #JSCValue.
+ *
+ * Returns: (transfer full): a #JSCValue.
+ */</doc>

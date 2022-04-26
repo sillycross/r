@@ -1,0 +1,22 @@
+<def f='WebKit/Source/JavaScriptCore/b3/air/AirRegLiveness.h' l='43' ll='128'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirRegLiveness.h' l='84' c='_ZN3JSC2B33Air11RegLiveness9LocalCalcC1ERS2_PNS1_10BasicBlockE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirRegLiveness.h' l='98'/>
+<size>48</size>
+<doc f='WebKit/Source/JavaScriptCore/b3/air/AirRegLiveness.h' l='39'>// Although we could trivially adapt Air::Liveness&lt;&gt; to work with Reg, this would not be so
+// efficient. There is a small number of registers, so it&apos;s much better to use bitvectors for
+// register liveness. This is a specialization of Liveness&lt;&gt; that uses bitvectors directly.
+// This makes the code sufficiently different that it didn&apos;t make sense to try to share code.</doc>
+<fun r='_ZN3JSC2B33Air11RegLivenessC1ERNS1_4CodeE'/>
+<fun r='_ZN3JSC2B33Air11RegLivenessD1Ev'/>
+<fun r='_ZNK3JSC2B33Air11RegLiveness10liveAtHeadEPNS1_10BasicBlockE'/>
+<fun r='_ZNK3JSC2B33Air11RegLiveness10liveAtTailEPNS1_10BasicBlockE'/>
+<mbr r='JSC::B3::Air::RegLiveness::m_liveAtHead' o='0' t='IndexMap&lt;JSC::B3::Air::BasicBlock *, JSC::RegisterSet&gt;'/>
+<mbr r='JSC::B3::Air::RegLiveness::m_liveAtTail' o='128' t='IndexMap&lt;JSC::B3::Air::BasicBlock *, JSC::RegisterSet&gt;'/>
+<mbr r='JSC::B3::Air::RegLiveness::m_actions' o='256' t='IndexMap&lt;JSC::B3::Air::BasicBlock *, JSC::B3::Air::RegLiveness::ActionsForBoundary&gt;'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLogRegisterPressure.cpp' l='43' c='_ZN3JSC2B33Air19logRegisterPressureERNS1_4CodeE'/>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirLowerAfterRegAlloc.cpp' l='83' c='_ZN3JSC2B33Air18lowerAfterRegAllocERNS1_4CodeE'/>
+<size>48</size>
+<use f='WebKit/Source/JavaScriptCore/b3/air/AirReportUsedRegisters.cpp' l='50' c='_ZN3JSC2B33Air19reportUsedRegistersERNS1_4CodeE'/>
+<size>48</size>
+<fun r='_ZN3JSC2B33Air11RegLivenessC1ERNS1_4CodeE'/>
+<fun r='_ZN3JSC2B33Air11RegLivenessD1Ev'/>

@@ -1,0 +1,21 @@
+<dec f='include/gstreamer-1.0/gst/gsttaglist.h' l='602'/>
+<doc f='include/gstreamer-1.0/gst/gsttaglist.h' l='582'>/**
+ * gst_tag_list_make_writable:
+ * @taglist: (transfer full): a #GstTagList
+ *
+ * Returns a writable copy of @taglist.
+ *
+ * If there is only one reference count on @taglist, the caller must be the
+ * owner, and so this function will return the taglist object unchanged. If on
+ * the other hand there is more than one reference on the object, a new taglist
+ * object will be returned (which will be a copy of @taglist). The caller&apos;s
+ * reference on @taglist will be removed, and instead the caller will own a
+ * reference to the returned object.
+ *
+ * In short, this function unrefs the taglist in the argument and refs the
+ * taglist that it returns. Don&apos;t access the argument after calling this
+ * function. See also: gst_tag_list_ref().
+ *
+ * Returns: (transfer full): a writable taglist which may or may not be the
+ *     same as @taglist
+ */</doc>

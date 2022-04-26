@@ -1,0 +1,12 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SlotVisitor.h' l='147' type='size_t JSC::SlotVisitor::performIncrementOfDraining(size_t bytes)'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/SlotVisitor.h' l='143'>// Attempts to perform an increment of draining that involves only walking `bytes` worth of data. This
+    // is likely to accidentally walk more or less than that. It will usually mark more than bytes. It may
+    // mark less than bytes if we&apos;re reaching termination or if the global worklist is empty (which may in
+    // rare cases happen temporarily even if we&apos;re not reaching termination).</doc>
+<dec f='WebKit/Source/JavaScriptCore/heap/SlotVisitor.h' l='147' type='size_t JSC::SlotVisitor::performIncrementOfDraining(size_t bytes)'/>
+<doc f='WebKit/Source/JavaScriptCore/heap/SlotVisitor.h' l='143'>// Attempts to perform an increment of draining that involves only walking `bytes` worth of data. This
+    // is likely to accidentally walk more or less than that. It will usually mark more than bytes. It may
+    // mark less than bytes if we&apos;re reaching termination or if the global worklist is empty (which may in
+    // rare cases happen temporarily even if we&apos;re not reaching termination).</doc>
+<use f='WebKit/Source/JavaScriptCore/heap/Heap.cpp' l='3014' u='c' c='_ZN3JSC4Heap16performIncrementEm'/>
+<def f='WebKit/Source/JavaScriptCore/heap/SlotVisitor.cpp' l='518' ll='577' type='size_t JSC::SlotVisitor::performIncrementOfDraining(size_t bytesRequested)'/>

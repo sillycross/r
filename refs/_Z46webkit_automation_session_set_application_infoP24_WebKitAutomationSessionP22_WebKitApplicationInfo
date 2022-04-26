@@ -1,0 +1,15 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitAutomationSession.cpp' l='431' ll='442' type='void webkit_automation_session_set_application_info(WebKitAutomationSession * session, _WebKitApplicationInfo * info)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitAutomationSession.cpp' l='417'>/**
+ * webkit_automation_session_set_application_info:
+ * @session: a #WebKitAutomationSession
+ * @info: a #WebKitApplicationInfo
+ *
+ * Set the application information to @session. This information will be used by the driver service
+ * to match the requested capabilities with the actual application information. If this information
+ * is not provided to the session when a new automation session is requested, the creation might fail
+ * if the client requested a specific browser name or version. This will not have any effect when called
+ * after the automation session has been fully created, so this must be called in the callback of
+ * #WebKitWebContext::automation-started signal.
+ *
+ * Since: 2.18
+ */</doc>

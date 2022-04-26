@@ -1,0 +1,22 @@
+<dec f='include/xcb/xproto.h' l='7945' type='xcb_void_cookie_t xcb_ungrab_key_checked(xcb_connection_t * c, xcb_keycode_t key, xcb_window_t grab_window, uint16_t modifiers)'/>
+<doc f='include/xcb/xproto.h' l='7923'>/**
+ * @brief release a key combination
+ *
+ * @param c The connection
+ * @param key The keycode of the specified key combination.
+ * \n
+ * Using the special value `XCB_GRAB_ANY` means releasing all possible key codes.
+ * @param grab_window The window on which the grabbed key combination will be released.
+ * @param modifiers The modifiers of the specified key combination.
+ * \n
+ * Using the special value `XCB_MOD_MASK_ANY` means releasing the key combination
+ * with every possible modifier combination.
+ * @return A cookie
+ *
+ * Releases the key combination on \a grab_window if you grabbed it using
+ * `xcb_grab_key` before.
+ *
+ * This form can be used only if the request will not cause
+ * a reply to be generated. Any returned error will be
+ * saved for handling by xcb_request_check().
+ */</doc>

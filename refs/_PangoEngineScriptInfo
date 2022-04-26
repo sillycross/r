@@ -1,0 +1,24 @@
+<use f='include/pango-1.0/pango/pango-engine.h' l='241'/>
+<def f='include/pango-1.0/pango/pango-engine.h' l='262' ll='266'/>
+<size>16</size>
+<doc f='include/pango-1.0/pango/pango-engine.h' l='243'>/**
+ * PangoEngineScriptInfo:
+ * @script: a #PangoScript. The value %PANGO_SCRIPT_COMMON has
+ * the special meaning here of &quot;all scripts&quot;
+ * @langs: a semicolon separated list of languages that this
+ * engine handles for this script. This may be empty,
+ * in which case the engine is saying that it is a
+ * fallback choice for all languages for this range,
+ * but should not be used if another engine
+ * indicates that it is specific for the language for
+ * a given code point. An entry in this list of &quot;*&quot;
+ * indicates that this engine is specific to all
+ * languages for this range.
+ *
+ * The #PangoEngineScriptInfo structure contains
+ * information about how the shaper covers a particular script.
+ *
+ * Deprecated: 1.38
+ */</doc>
+<mbr r='_PangoEngineScriptInfo::script' o='0' t='PangoScript'/>
+<mbr r='_PangoEngineScriptInfo::langs' o='64' t='const gchar *'/>

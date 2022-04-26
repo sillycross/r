@@ -1,0 +1,14 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Structure.h' l='286' type='void JSC::Structure::setGlobalObject(JSC::VM &amp; , JSC::JSGlobalObject * )'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/Structure.h' l='284'>// NOTE: This method should only be called during the creation of structures, since the global
+    // object of a structure is presumed to be immutable in a bunch of places.</doc>
+<def f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/StructureInlines.h' l='627' ll='630' macro='1' type='void JSC::Structure::setGlobalObject(JSC::VM &amp; vm, JSC::JSGlobalObject * globalObject)'/>
+<dec f='WebKit/Source/JavaScriptCore/runtime/Structure.h' l='286' type='void JSC::Structure::setGlobalObject(JSC::VM &amp; , JSC::JSGlobalObject * )'/>
+<def f='WebKit/Source/JavaScriptCore/runtime/StructureInlines.h' l='627' ll='630' macro='1' type='void JSC::Structure::setGlobalObject(JSC::VM &amp; vm, JSC::JSGlobalObject * globalObject)'/>
+<doc f='WebKit/Source/JavaScriptCore/runtime/Structure.h' l='284'>// NOTE: This method should only be called during the creation of structures, since the global
+    // object of a structure is presumed to be immutable in a bunch of places.</doc>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='2522' u='c' c='_ZN3JSC14JSGlobalObject14finishCreationERNS_2VME'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/JSGlobalObject.cpp' l='2533' u='c' c='_ZN3JSC14JSGlobalObject14finishCreationERNS_2VMEPNS_8JSObjectE'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSWindowProxy.cpp' l='85' u='c' c='_ZN7WebCore13JSWindowProxy9setWindowERN3JSC2VMERNS_17JSDOMGlobalObjectE'/>
+<use f='WebKit/Source/WebCore/bindings/js/JSWindowProxy.cpp' l='121' u='c' c='_ZN7WebCore13JSWindowProxy9setWindowERNS_17AbstractDOMWindowE'/>
+<use f='WebKit/Source/WebCore/workers/WorkerOrWorkletScriptController.cpp' l='507' u='c' c='_ZN7WebCore31WorkerOrWorkletScriptController22initScriptWithSubclassEv'/>
+<use f='WebKit/Source/WebCore/workers/WorkerOrWorkletScriptController.cpp' l='516' u='c' c='_ZN7WebCore31WorkerOrWorkletScriptController22initScriptWithSubclassEv'/>

@@ -1,0 +1,33 @@
+<inh f='WebKit/Source/JavaScriptCore/runtime/JSObject.h' l='1165' c='JSC::JSNonFinalObject'/>
+<def f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='129' ll='206'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='150' c='_ZN12_GLOBAL__N_119JSDollarVMCallFrame6createEPN3JSC14JSGlobalObjectEPNS1_9CallFrameEj'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='155' c='_ZN12_GLOBAL__N_119JSDollarVMCallFrame6createEPN3JSC14JSGlobalObjectEPNS1_9CallFrameEj'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='155' c='_ZN12_GLOBAL__N_119JSDollarVMCallFrame6createEPN3JSC14JSGlobalObjectEPNS1_9CallFrameEj'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='155' c='_ZN12_GLOBAL__N_119JSDollarVMCallFrame6createEPN3JSC14JSGlobalObjectEPNS1_9CallFrameEj'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='208'/>
+<use f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='208'/>
+<size>16</size>
+<doc f='WebKit/Source/JavaScriptCore/tools/JSDollarVM.cpp' l='113'>// We must RELEASE_ASSERT(Options::useDollarVM()) in all JSDollarVM functions
+// that are non-trivial at an eye&apos;s glance. This includes (but is not limited to):
+//      constructors
+//      create() factory
+//      createStructure() factory
+//      finishCreation()
+//      HOST_CALL or operation functions
+//      Constructors and methods of utility and test classes
+//      lambda functions
+//
+// The way to do this RELEASE_ASSERT is with the DollarVMAssertScope below.
+//
+// The only exception are some constexpr constructors used for instantiating
+// globals (since these must have trivial constructors) e.g. DOMJITAttribute.
+// Instead, these constructors should always be ALWAYS_INLINE.</doc>
+<fun r='_ZN12_GLOBAL__N_119JSDollarVMCallFrame11subspaceForERN3JSC2VME'/>
+<fun r='_ZN12_GLOBAL__N_119JSDollarVMCallFrameC1ERN3JSC2VMEPNS1_9StructureE'/>
+<fun r='_ZN12_GLOBAL__N_119JSDollarVMCallFrame15createStructureERN3JSC2VMEPNS1_14JSGlobalObjectENS1_7JSValueE'/>
+<fun r='_ZN12_GLOBAL__N_119JSDollarVMCallFrame6createEPN3JSC14JSGlobalObjectEPNS1_9CallFrameEj'/>
+<fun r='_ZN12_GLOBAL__N_119JSDollarVMCallFrame14finishCreationERN3JSC2VMEPNS1_9CallFrameEj'/>
+<smbr r='(anonymousnamespace)::JSDollarVMCallFrame::s_info' t='const ::JSC::ClassInfo'/>
+<fun r='_ZN12_GLOBAL__N_119JSDollarVMCallFrame4infoEv'/>
+<fun r='_ZN12_GLOBAL__N_119JSDollarVMCallFrame11addPropertyERN3JSC2VMEPKcNS1_7JSValueE'/>
+<smbr r='(anonymousnamespace)::JSDollarVMCallFrame::s_info' t='const JSC::ClassInfo'/>

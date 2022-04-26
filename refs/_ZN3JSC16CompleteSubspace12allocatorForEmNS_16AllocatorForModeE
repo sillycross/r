@@ -1,0 +1,16 @@
+<dec f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CompleteSubspace.h' l='42' type='JSC::Allocator JSC::CompleteSubspace::allocatorFor(size_t , JSC::AllocatorForMode )'/>
+<doc f='WebKit/JavaScriptCore/PrivateHeaders/JavaScriptCore/CompleteSubspace.h' l='37'>// In some code paths, we need it to be a compile error to call the virtual version of one of
+    // these functions. That&apos;s why we do final methods the old school way.
+    
+    // FIXME: Currently subspaces speak of BlockDirectories as &quot;allocators&quot;, but that&apos;s temporary.
+    // https://bugs.webkit.org/show_bug.cgi?id=181559</doc>
+<dec f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.h' l='42' type='JSC::Allocator JSC::CompleteSubspace::allocatorFor(size_t , JSC::AllocatorForMode )'/>
+<doc f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.h' l='37'>// In some code paths, we need it to be a compile error to call the virtual version of one of
+    // these functions. That&apos;s why we do final methods the old school way.
+    
+    // FIXME: Currently subspaces speak of BlockDirectories as &quot;allocators&quot;, but that&apos;s temporary.
+    // https://bugs.webkit.org/show_bug.cgi?id=181559</doc>
+<inh f='WebKit/Source/JavaScriptCore/heap/Subspace.h' l='60' c='_ZN3JSC8Subspace12allocatorForEmNS_16AllocatorForModeE'/>
+<def f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.cpp' l='48' ll='51' type='JSC::Allocator JSC::CompleteSubspace::allocatorFor(size_t size, JSC::AllocatorForMode mode)'/>
+<use f='WebKit/Source/JavaScriptCore/heap/CompleteSubspace.cpp' l='127' u='c' c='_ZN3JSC16CompleteSubspace15tryAllocateSlowERNS_2VMEmPNS_17GCDeferralContextE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/AccessCase.cpp' l='1921' u='c' c='_ZN3JSC10AccessCase12generateImplERNS_21AccessGenerationStateE'/>

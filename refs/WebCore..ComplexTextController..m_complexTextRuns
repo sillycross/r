@@ -1,0 +1,28 @@
+<dec f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='197' type='Vector&lt;RefPtr&lt;WebCore::ComplexTextController::ComplexTextRun&gt;, 16&gt;'/>
+<use f='WebKit/Source/WebCore/platform/graphics/harfbuzz/ComplexTextControllerHarfBuzz.cpp' l='490' u='m' c='_ZN7WebCore21ComplexTextController35collectComplexTextRunsForCharactersEPKDsjjPKNS_4FontE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/harfbuzz/ComplexTextControllerHarfBuzz.cpp' l='562' u='m' c='_ZN7WebCore21ComplexTextController35collectComplexTextRunsForCharactersEPKDsjjPKNS_4FontE'/>
+<offset>49664</offset>
+<doc f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.h' l='190'>// There is a 3-level hierarchy here. At the top, we are interested in m_run.string(). We partition that string
+    // into Lines, each of which is a sequence of characters which should use the same Font. Core Text then partitions
+    // the Line into ComplexTextRuns.
+    // ComplexTextRun::stringLocation() and ComplexTextRun::stringLength() refer to the offset and length of the Line
+    // relative to m_run.string(). ComplexTextRun::indexAt() returns to the offset of a codepoint relative to
+    // its Line. ComplexTextRun::glyphs() and ComplexTextRun::advances() refer to glyphs relative to the ComplexTextRun.
+    // The length of the entire TextRun is m_run.length()</doc>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='142' u='m' c='_ZN7WebCore21ComplexTextControllerC1ERKNS_11FontCascadeERKNS_7TextRunERN3WTF6VectorINS7_3RefINS0_14ComplexTextRunENS7_12RawPtrTraitsISA_EEEELm0ENS7_1513814495'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='152' u='m' c='_ZN7WebCore21ComplexTextController18finishConstructionEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='158' c='_ZN7WebCore21ComplexTextController18finishConstructionEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='158' c='_ZN7WebCore21ComplexTextController18finishConstructionEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='165' u='m' c='_ZN7WebCore21ComplexTextController18finishConstructionEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='180' u='m' c='_ZN7WebCore21ComplexTextController17offsetForPositionEfb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='184' u='m' c='_ZN7WebCore21ComplexTextController17offsetForPositionEfb'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='470' u='m' c='_ZN7WebCore21ComplexTextController22collectComplexTextRunsEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='508' u='m' c='_ZN7WebCore21ComplexTextController17indexOfCurrentRunERj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='514' u='m' c='_ZN7WebCore21ComplexTextController17indexOfCurrentRunERj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='526' u='m' c='_ZN7WebCore21ComplexTextController19incrementCurrentRunERj'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='569' u='m' c='_ZN7WebCore21ComplexTextController7advanceEjPNS_11GlyphBufferENS_19GlyphIterationStyleEPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTrai4476861'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='574' u='m' c='_ZN7WebCore21ComplexTextController7advanceEjPNS_11GlyphBufferENS_19GlyphIterationStyleEPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTrai4476861'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='619' u='m' c='_ZN7WebCore21ComplexTextController7advanceEjPNS_11GlyphBufferENS_19GlyphIterationStyleEPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTrai4476861'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='620' u='m' c='_ZN7WebCore21ComplexTextController7advanceEjPNS_11GlyphBufferENS_19GlyphIterationStyleEPN3WTF7HashSetIPKNS_4FontENS4_11DefaultHashIS8_EENS4_10HashTrai4476861'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='677' u='m' c='_ZN7WebCore21ComplexTextController23adjustGlyphsAndAdvancesEv'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='686' u='m' c='_ZN7WebCore21ComplexTextController23adjustGlyphsAndAdvancesEv'/>

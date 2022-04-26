@@ -1,0 +1,11 @@
+<dec f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.h' l='122' type='GBytes * jsc_value_to_string_as_bytes(JSCValue * value)'/>
+<def f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='433' ll='459' type='GBytes * jsc_value_to_string_as_bytes(JSCValue * value)'/>
+<doc f='WebKit/Source/JavaScriptCore/API/glib/JSCValue.cpp' l='424'>/**
+ * jsc_value_to_string_as_bytes:
+ * @value: a #JSCValue
+ *
+ * Convert @value to a string and return the results as #GBytes. This is needed
+ * to handle strings with null characters.
+ *
+ * Returns: (transfer full): a #GBytes with the result of the conversion.
+ */</doc>

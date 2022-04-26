@@ -1,0 +1,61 @@
+<dec f='WebKit/WTF/Headers/wtf/ASCIICType.h' l='52' type='bool WTF::isASCIISpace(CharacterType )'/>
+<def f='WebKit/WTF/Headers/wtf/ASCIICType.h' l='147' ll='150' type='bool WTF::isASCIISpace(CharacterType character)'/>
+<use f='WebKit/WTF/Headers/wtf/text/StringImpl.h' l='764' u='c' c='_ZN3WTF16isSpaceOrNewlineEi'/>
+<doc f='WebKit/WTF/Headers/wtf/ASCIICType.h' l='131'>/*
+    Statistics from a run of Apple&apos;s page load test for callers of isASCIISpace:
+
+    character          count
+    ---------          -----
+    non-spaces         689383
+    20  space          294720
+    0A  \n             89059
+    09  \t             28320
+    0D  \r             0
+    0C  \f             0
+    0B  \v             0
+
+    Because of those, we first check to quickly return false for non-control characters,
+    then check for space itself to quickly return true for that case, then do the rest.
+*/</doc>
+<use f='WebKit/Source/WebKit/Shared/linux/WebMemorySamplerLinux.cpp' l='61' u='c' c='_ZN6WebKitL9nextTokenEP8_IO_FILE'/>
+<use f='WebKit/Source/WebKit/Shared/linux/WebMemorySamplerLinux.cpp' l='63' u='c' c='_ZN6WebKitL9nextTokenEP8_IO_FILE'/>
+<use f='WebKit/Source/JavaScriptCore/tools/FunctionOverrides.cpp' l='199' u='c' c='_ZN3JSCL23hasDisallowedCharactersEPKcm'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ReduceWhitespace.cpp' l='41' u='c' c='_ZN3JSC16reduceWhitespaceERKN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/bytecode/ReduceWhitespace.cpp' l='42' u='c' c='_ZN3JSC16reduceWhitespaceERKN3WTF7CStringE'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/Options.cpp' l='748' u='c' c='_ZN3JSCL11isSeparatorEc'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ConfigFile.cpp' l='193' u='c' c='_ZN3JSC17ConfigFileScanner18fillBufferIfNeededEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ConfigFile.cpp' l='313' u='c' c='_ZN3JSC10ConfigFile5parseEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ConfigFile.cpp' l='318' u='c' c='_ZN3JSC10ConfigFile5parseEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ConfigFile.cpp' l='327' u='c' c='_ZN3JSC10ConfigFile5parseEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ConfigFile.cpp' l='335' u='c' c='_ZN3JSC10ConfigFile5parseEv'/>
+<use f='WebKit/Source/JavaScriptCore/runtime/ConfigFile.cpp' l='341' u='c' c='_ZN3JSC10ConfigFile5parseEv'/>
+<dec f='WebKit/Source/WTF/wtf/ASCIICType.h' l='52' type='bool WTF::isASCIISpace(CharacterType )'/>
+<def f='WebKit/Source/WTF/wtf/ASCIICType.h' l='147' ll='150' type='bool WTF::isASCIISpace(CharacterType character)'/>
+<doc f='WebKit/Source/WTF/wtf/ASCIICType.h' l='131'>/*
+    Statistics from a run of Apple&apos;s page load test for callers of isASCIISpace:
+
+    character          count
+    ---------          -----
+    non-spaces         689383
+    20  space          294720
+    0A  \n             89059
+    09  \t             28320
+    0D  \r             0
+    0C  \f             0
+    0B  \v             0
+
+    Because of those, we first check to quickly return false for non-control characters,
+    then check for space itself to quickly return true for that case, then do the rest.
+*/</doc>
+<use f='WebKit/Source/WTF/wtf/text/StringImpl.h' l='764' u='c' c='_ZN3WTF16isSpaceOrNewlineEi'/>
+<use f='WebKit/Source/WTF/wtf/DateMath.cpp' l='415' u='c' c='_ZN3WTFL21skipSpacesAndCommentsERPKc'/>
+<use f='WebKit/Source/WTF/wtf/DateMath.cpp' l='709' u='c' c='_ZN3WTF37parseDateFromNullTerminatedCharactersEPKcRb'/>
+<use f='WebKit/Source/WTF/wtf/DateMath.cpp' l='784' u='c' c='_ZN3WTF37parseDateFromNullTerminatedCharactersEPKcRb'/>
+<use f='WebKit/Source/WTF/wtf/DateMath.cpp' l='791' u='c' c='_ZN3WTF37parseDateFromNullTerminatedCharactersEPKcRb'/>
+<use f='WebKit/Source/WTF/wtf/DateMath.cpp' l='816' u='c' c='_ZN3WTF37parseDateFromNullTerminatedCharactersEPKcRb'/>
+<use f='WebKit/Source/WTF/wtf/DateMath.cpp' l='854' u='c' c='_ZN3WTF37parseDateFromNullTerminatedCharactersEPKcRb'/>
+<use f='WebKit/Source/WTF/wtf/text/Base64.cpp' l='208' u='c' c='_ZN3WTFL20base64DecodeInternalENS_4SpanIKT_Lm18446744073709551615EEENS_9OptionSetINS_19Base64DecodeOptionsEEENS_15Base64DecodeMapE'/>
+<use f='WebKit/Source/WebCore/platform/graphics/ComplexTextController.cpp' l='335' u='c' c='_ZN7WebCoreL16shouldSynthesizeEbPKNS_4FontEiSt8optionalIiENS_15FontVariantCapsEb'/>
+<use f='WebKit/Source/WebCore/page/WindowFeatures.cpp' l='50' u='c' c='_ZN7WebCoreL11isSeparatorEDsNS_11FeatureModeE'/>
+<use f='WebKit/Source/WebCore/page/linux/ResourceUsageThreadLinux.cpp' l='175' u='c' c='_ZN7WebCoreL14threadCPUUsageEifRNS_10ThreadInfoE'/>
+<use f='WebKit/Source/WebCore/html/canvas/WebGLRenderingContextBase.cpp' l='292' u='c' c='_ZN7WebCore12_GLOBAL__N_113StripComments7processEDs'/>

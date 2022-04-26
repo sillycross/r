@@ -1,0 +1,35 @@
+<use f='WebKit/Source/WebCore/rendering/LayerOverlapMap.h' l='62' c='_ZNK7WebCore15LayerOverlapMap12overlapStackEv'/>
+<use f='WebKit/Source/WebCore/rendering/LayerOverlapMap.h' l='65'/>
+<def f='WebKit/Source/WebCore/rendering/LayerOverlapMap.cpp' l='73' ll='163'/>
+<use f='WebKit/Source/WebCore/rendering/LayerOverlapMap.cpp' l='84' c='_ZN7WebCore19OverlapMapContainer6appendEOSt10unique_ptrIS0_St14default_deleteIS0_EE'/>
+<use f='WebKit/Source/WebCore/rendering/LayerOverlapMap.cpp' l='208' c='_ZN7WebCore19OverlapMapContainer6appendEOSt10unique_ptrIS0_St14default_deleteIS0_EE'/>
+<use f='WebKit/Source/WebCore/rendering/LayerOverlapMap.cpp' l='300' c='_ZN7WebCore15LayerOverlapMap24pushCompositingContainerEv'/>
+<use f='WebKit/Source/WebCore/rendering/LayerOverlapMap.cpp' l='309' c='_ZN7WebCorelsERN3WTF10TextStreamERKNS_19OverlapMapContainerE'/>
+<size>72</size>
+<doc f='WebKit/Source/WebCore/rendering/LayerOverlapMap.cpp' l='68'>// Used to store overlap rects in a way that takes overflow into account.
+// It stores a tree whose nodes are layers with composited scrolling. The tree is built lazily as layers are added whose containing block
+// chains contain composited scrollers. The tree always starts at the root layer.
+// Checking for overlap involves finding the node for the clipping layer enclosing the given layer (or the root),
+// and comparing against the bounds of earlier siblings.</doc>
+<fun r='_ZN7WebCore19OverlapMapContainerC1ERKNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore19OverlapMapContainer3addERKNS_11RenderLayerERKNS_10LayoutRectERKN3WTF6VectorINS_15LayerOverlapMap14LayerAndBoundsELm0ENS7_15CrashOnOverflo6345480'/>
+<fun r='_ZNK7WebCore19OverlapMapContainer14overlapsLayersERKNS_11RenderLayerERKNS_10LayoutRectERKN3WTF6VectorINS_15LayerOverlapMap14LayerAndBoundsELm0ENS7_15C12604530'/>
+<fun r='_ZN7WebCore19OverlapMapContainer6appendEOSt10unique_ptrIS0_St14default_deleteIS0_EE'/>
+<fun r='_ZNK7WebCore19OverlapMapContainer4dumpEj'/>
+<fun r='_ZN7WebCore19OverlapMapContainer42clippingScopeContainingLayerChildRecursiveERKNS0_13ClippingScopeERKNS_11RenderLayerE'/>
+<fun r='_ZNK7WebCore19OverlapMapContainer20scopeContainingLayerERKNS_11RenderLayerE'/>
+<fun r='_ZN7WebCore19OverlapMapContainer28mergeClippingScopesRecursiveERKNS0_13ClippingScopeERS1_'/>
+<fun r='_ZN7WebCore19OverlapMapContainer28ensureClippingScopeForLayersERKN3WTF6VectorINS_15LayerOverlapMap14LayerAndBoundsELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<fun r='_ZNK7WebCore19OverlapMapContainer26findClippingScopeForLayersERKN3WTF6VectorINS_15LayerOverlapMap14LayerAndBoundsELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<fun r='_ZNK7WebCore19OverlapMapContainer23recursiveOutputToStreamERN3WTF10TextStreamERKNS0_13ClippingScopeEj'/>
+<fun r='_ZNK7WebCore19OverlapMapContainer9rootScopeEv'/>
+<fun r='_ZN7WebCore19OverlapMapContainer9rootScopeEv'/>
+<mbr r='WebCore::OverlapMapContainer::m_rootScope' o='0' t='WebCore::OverlapMapContainer::ClippingScope'/>
+<fun r='_ZN7WebCore19OverlapMapContainer3addERKNS_11RenderLayerERKNS_10LayoutRectERKN3WTF6VectorINS_15LayerOverlapMap14LayerAndBoundsELm0ENS7_15CrashOnOverflo6345480'/>
+<fun r='_ZNK7WebCore19OverlapMapContainer14overlapsLayersERKNS_11RenderLayerERKNS_10LayoutRectERKN3WTF6VectorINS_15LayerOverlapMap14LayerAndBoundsELm0ENS7_15C12604530'/>
+<fun r='_ZN7WebCore19OverlapMapContainer28mergeClippingScopesRecursiveERKNS0_13ClippingScopeERS1_'/>
+<fun r='_ZN7WebCore19OverlapMapContainer6appendEOSt10unique_ptrIS0_St14default_deleteIS0_EE'/>
+<fun r='_ZN7WebCore19OverlapMapContainer28ensureClippingScopeForLayersERKN3WTF6VectorINS_15LayerOverlapMap14LayerAndBoundsELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<fun r='_ZNK7WebCore19OverlapMapContainer26findClippingScopeForLayersERKN3WTF6VectorINS_15LayerOverlapMap14LayerAndBoundsELm0ENS1_15CrashOnOverflowELm16ENS1_10FastMallocEEE'/>
+<fun r='_ZNK7WebCore19OverlapMapContainer23recursiveOutputToStreamERN3WTF10TextStreamERKNS0_13ClippingScopeEj'/>
+<fun r='_ZNK7WebCore19OverlapMapContainer4dumpEj'/>

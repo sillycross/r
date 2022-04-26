@@ -1,0 +1,27 @@
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebsitePolicies.cpp' l='196' ll='204' type='WebKitWebsitePolicies * webkit_website_policies_new_with_policies(const gchar * firstPolicyName)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitWebsitePolicies.cpp' l='170'>/**
+ * webkit_website_policies_new_with_policies:
+ * @first_policy_name: name of the first policy to set
+ * @...: value of first policy, followed by more policies, %NULL-terminated
+ *
+ * Create a new #WebKitWebsitePolicies with policies given as variadic
+ * arguments.
+ *
+ * Returns: (transfer full): the newly created #WebKitWebsitePolicies
+ *
+ * &lt;informalexample&gt;&lt;programlisting&gt;
+ * WebKitWebsitePolicies *default_website_policies = webkit_website_policies_new_with_policies(
+ *     &quot;autoplay&quot;, WEBKIT_AUTOPLAY_DENY,
+ *     NULL);
+ * ...
+ * WebKitWebView *view = WEBKIT_WEB_VIEW(g_object_new(WEBKIT_TYPE_WEB_VIEW,
+ *     &quot;web-context&quot;, ctx,
+ *     &quot;settings&quot;, settings,
+ *     &quot;user-content-manager&quot;, content_manager,
+ *     &quot;website-policies&quot;, default_website_policies,
+ *     NULL));
+ * ...
+ * &lt;/programlisting&gt;&lt;/informalexample&gt;
+ *
+ * Since: 2.30
+ */</doc>

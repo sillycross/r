@@ -1,0 +1,53 @@
+<use f='include/gstreamer-1.0/gst/gstbufferpool.h' l='33'/>
+<def f='include/gstreamer-1.0/gst/gstbufferpool.h' l='154' ll='176'/>
+<size>288</size>
+<doc f='include/gstreamer-1.0/gst/gstbufferpool.h' l='117'>/**
+ * GstBufferPoolClass:
+ * @object_class:  Object parent class
+ * @get_options: get a list of options supported by this pool
+ * @set_config: apply the bufferpool configuration. The default configuration
+ *              will parse the default config parameters
+ * @start: start the bufferpool. The default implementation will preallocate
+ *         min-buffers buffers and put them in the queue
+ * @stop: stop the bufferpool. the default implementation will free the
+ *        preallocated buffers. This function is called when all the buffers are
+ *        returned to the pool.
+ * @acquire_buffer: get a new buffer from the pool. The default implementation
+ *        will take a buffer from the queue and optionally wait for a buffer to
+ *        be released when there are no buffers available.
+ * @alloc_buffer: allocate a buffer. the default implementation allocates
+ *        buffers from the configured memory allocator and with the configured
+ *        parameters. All metadata that is present on the allocated buffer will
+ *        be marked as #GST_META_FLAG_POOLED and #GST_META_FLAG_LOCKED and will
+ *        not be removed from the buffer in @reset_buffer. The buffer should
+ *        have the GST_BUFFER_FLAG_TAG_MEMORY cleared.
+ * @reset_buffer: reset the buffer to its state when it was freshly allocated.
+ *        The default implementation will clear the flags, timestamps and
+ *        will remove the metadata without the #GST_META_FLAG_POOLED flag (even
+ *        the metadata with #GST_META_FLAG_LOCKED). If the
+ *        #GST_BUFFER_FLAG_TAG_MEMORY was set, this function can also try to
+ *        restore the memory and clear the #GST_BUFFER_FLAG_TAG_MEMORY again.
+ * @release_buffer: release a buffer back in the pool. The default
+ *        implementation will put the buffer back in the queue and notify any
+ *        blocking acquire_buffer calls when the #GST_BUFFER_FLAG_TAG_MEMORY
+ *        is not set on the buffer. If #GST_BUFFER_FLAG_TAG_MEMORY is set, the
+ *        buffer will be freed with @free_buffer.
+ * @free_buffer: free a buffer. The default implementation unrefs the buffer.
+ * @flush_start: enter the flushing state. (Since: 1.4)
+ * @flush_stop: leave the flushign state. (Since: 1.4)
+ *
+ * The GstBufferPool class.
+ */</doc>
+<mbr r='_GstBufferPoolClass::object_class' o='0' t='GstObjectClass'/>
+<mbr r='_GstBufferPoolClass::get_options' o='1472' t='const gchar **(*)(GstBufferPool *)'/>
+<mbr r='_GstBufferPoolClass::set_config' o='1536' t='gboolean (*)(GstBufferPool *, GstStructure *)'/>
+<mbr r='_GstBufferPoolClass::start' o='1600' t='gboolean (*)(GstBufferPool *)'/>
+<mbr r='_GstBufferPoolClass::stop' o='1664' t='gboolean (*)(GstBufferPool *)'/>
+<mbr r='_GstBufferPoolClass::acquire_buffer' o='1728' t='GstFlowReturn (*)(GstBufferPool *, GstBuffer **, GstBufferPoolAcquireParams *)'/>
+<mbr r='_GstBufferPoolClass::alloc_buffer' o='1792' t='GstFlowReturn (*)(GstBufferPool *, GstBuffer **, GstBufferPoolAcquireParams *)'/>
+<mbr r='_GstBufferPoolClass::reset_buffer' o='1856' t='void (*)(GstBufferPool *, GstBuffer *)'/>
+<mbr r='_GstBufferPoolClass::release_buffer' o='1920' t='void (*)(GstBufferPool *, GstBuffer *)'/>
+<mbr r='_GstBufferPoolClass::free_buffer' o='1984' t='void (*)(GstBufferPool *, GstBuffer *)'/>
+<mbr r='_GstBufferPoolClass::flush_start' o='2048' t='void (*)(GstBufferPool *)'/>
+<mbr r='_GstBufferPoolClass::flush_stop' o='2112' t='void (*)(GstBufferPool *)'/>
+<mbr r='_GstBufferPoolClass::_gst_reserved' o='2176' t='gpointer [2]'/>

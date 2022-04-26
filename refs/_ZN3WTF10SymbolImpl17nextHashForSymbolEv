@@ -1,0 +1,15 @@
+<dec f='WebKit/WTF/Headers/wtf/text/SymbolImpl.h' l='88' type='static unsigned int WTF::SymbolImpl::nextHashForSymbol()'/>
+<use f='WebKit/WTF/Headers/wtf/text/SymbolImpl.h' l='95' u='c' c='_ZN3WTF10SymbolImplC1EPKhjONS_3RefINS_10StringImplENS_12RawPtrTraitsIS4_EEEEj'/>
+<use f='WebKit/WTF/Headers/wtf/text/SymbolImpl.h' l='104' u='c' c='_ZN3WTF10SymbolImplC1EPKDsjONS_3RefINS_10StringImplENS_12RawPtrTraitsIS4_EEEEj'/>
+<use f='WebKit/WTF/Headers/wtf/text/SymbolImpl.h' l='113' u='c' c='_ZN3WTF10SymbolImplC1Ej'/>
+<dec f='WebKit/Source/WTF/wtf/text/SymbolImpl.h' l='88' type='static unsigned int WTF::SymbolImpl::nextHashForSymbol()'/>
+<use f='WebKit/Source/WTF/wtf/text/SymbolImpl.h' l='95' u='c' c='_ZN3WTF10SymbolImplC1EPKhjONS_3RefINS_10StringImplENS_12RawPtrTraitsIS4_EEEEj'/>
+<use f='WebKit/Source/WTF/wtf/text/SymbolImpl.h' l='104' u='c' c='_ZN3WTF10SymbolImplC1EPKDsjONS_3RefINS_10StringImplENS_12RawPtrTraitsIS4_EEEEj'/>
+<use f='WebKit/Source/WTF/wtf/text/SymbolImpl.h' l='113' u='c' c='_ZN3WTF10SymbolImplC1Ej'/>
+<def f='WebKit/Source/WTF/wtf/text/SymbolImpl.cpp' l='37' ll='43' type='static unsigned int WTF::SymbolImpl::nextHashForSymbol()'/>
+<doc f='WebKit/Source/WTF/wtf/text/SymbolImpl.cpp' l='31'>// In addition to the normal hash value, store specialized hash value for
+// symbolized StringImpl*. And don&apos;t use the normal hash value for symbolized
+// StringImpl* when they are treated as Identifiers. Unique nature of these
+// symbolized StringImpl* keys means that we don&apos;t need them to match any other
+// string (in fact, that&apos;s exactly the oposite of what we want!), and the
+// normal hash would lead to lots of conflicts.</doc>

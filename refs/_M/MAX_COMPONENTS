@@ -1,0 +1,9 @@
+<dec f='include/jmorecfg.h' l='27'/>
+<doc f='include/jmorecfg.h' l='18'>/*
+ * Maximum number of components (color channels) allowed in JPEG image.
+ * To meet the letter of Rec. ITU-T T.81 | ISO/IEC 10918-1, set this to 255.
+ * However, darn few applications need more than 4 channels (maybe 5 for CMYK +
+ * alpha mask).  We recommend 10 as a reasonable compromise; use 4 if you are
+ * really short on memory.  (Each allowed component costs a hundred or so
+ * bytes of storage, whether actually used in an image or not.)
+ */</doc>

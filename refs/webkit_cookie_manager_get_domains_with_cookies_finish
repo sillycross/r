@@ -1,0 +1,17 @@
+<dec f='WebKit/Source/WebKit/UIProcess/API/gtk/WebKitCookieManager.h' l='155' type='gchar ** webkit_cookie_manager_get_domains_with_cookies_finish(WebKitCookieManager * cookie_manager, GAsyncResult * result, GError ** error)'/>
+<def f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitCookieManager.cpp' l='467' ll='473' type='gchar ** webkit_cookie_manager_get_domains_with_cookies_finish(WebKitCookieManager * manager, GAsyncResult * result, GError ** error)'/>
+<doc f='WebKit/Source/WebKit/UIProcess/API/glib/WebKitCookieManager.cpp' l='452'>/**
+ * webkit_cookie_manager_get_domains_with_cookies_finish:
+ * @cookie_manager: a #WebKitCookieManager
+ * @result: a #GAsyncResult
+ * @error: return location for error or %NULL to ignore
+ *
+ * Finish an asynchronous operation started with webkit_cookie_manager_get_domains_with_cookies().
+ * The return value is a %NULL terminated list of strings which should
+ * be released with g_strfreev().
+ *
+ * Returns: (transfer full) (array zero-terminated=1): A %NULL terminated array of domain names
+ *    or %NULL in case of error.
+ *
+ * Deprecated: 2.16: Use webkit_website_data_manager_fetch_finish() instead.
+ */</doc>
